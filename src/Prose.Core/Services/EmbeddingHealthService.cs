@@ -54,8 +54,6 @@ public class EmbeddingHealthService
         )
         """;
 
-    // ── kNN score prediction ──────────────────────────────────────────────
-
     // ── Outlier detection ─────────────────────────────────────────────────
 
     /// <summary>
@@ -110,8 +108,8 @@ public class EmbeddingHealthService
 
     /// <summary>
     /// Measure each beat's distance from the voice fingerprint — the top-25%-
-    /// scored beats in this story. Returns empty when fewer than 4 scored beats
-    /// exist (not enough signal). Uses SubtreeCte for multi-chapter support.
+    /// scored beats in this story. Returns empty when the top quartile holds fewer
+    /// than 4 beats (roughly under 16 scored beats — not enough signal). Uses SubtreeCte for multi-chapter support.
     /// </summary>
     public async Task<IReadOnlyList<BeatDriftResult>> ComputeVoiceDriftAsync(
         Guid rootNodeId, CancellationToken ct = default)

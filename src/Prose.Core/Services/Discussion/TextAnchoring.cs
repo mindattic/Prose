@@ -71,10 +71,9 @@ public static class TextAnchoring
     /// JavaScript and keeping the two in step forever. Since the quote is the authority anyway,
     /// the browser sends text and the server finds it — one implementation, and the awkward part
     /// stays where it is already tested.</para>
-    ///
+    /// </summary>
     /// <returns>Null when the selection cannot be found in the text at all, which normally means
     /// the beat changed between the selection and the request.</returns>
-    /// </summary>
     public static TextAnchor? Locate(string text, string quote, string prefix, string suffix)
     {
         if (string.IsNullOrEmpty(quote)) return null;

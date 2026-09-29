@@ -133,8 +133,10 @@ public class TextIntegrityService(IDbContextFactory<ProseDbContext> dbFactory)
     /// Repairs one finding via a direct positional single-character replace (raw SQL STUFF at the
     /// finding's exact character position) — never a bulk REPLACE, since that function's
     /// unreliable matching against U+FFFD is the whole reason this service exists.
+    /// Returns the number of rows changed: 0 means the suspect character was no longer at that
+    /// position (the beat was edited after the scan) and nothing was repaired.
     /// </summary>
-    public async Task ApplyFixAsync(TextIntegrityFinding finding, char replacement, CancellationToken ct = default)
+    public async Task<int> ApplyFixAsync(TextIntegrityFinding finding, char replacement, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var pos = finding.Position + 1;
@@ -144,7 +146,7 @@ public class TextIntegrityService(IDbContextFactory<ProseDbContext> dbFactory)
         // Only if the suspect character is still THERE: an edit between scan and --fix shifts the
         // offset, and an unconditional STUFF replaced a real prose character.
         var cp = finding.FoundCodepoint;
-        await db.Database.ExecuteSqlInterpolatedAsync(
+        return await db.Database.ExecuteSqlInterpolatedAsync(
             $"UPDATE Beats SET Text = STUFF(Text, {pos}, 1, {repl}) WHERE Id = {finding.RowId} AND UNICODE(SUBSTRING(Text, {pos}, 1)) = {cp}", ct);
     }
 }

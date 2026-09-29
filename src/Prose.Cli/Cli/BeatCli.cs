@@ -28,7 +28,7 @@ namespace Prose.Cli;
 ///   clear   --node &lt;slug|id&gt;
 ///           Soft-delete every currently-enabled beat in a node, in one process —
 ///           for a full replot where the whole existing beat set is being discarded.
-///           Same soft-delete as `delete` (true = false); reversible via
+///           Same soft-delete as `delete`; reversible via
 ///           the writer UI's restore, never a raw SQL delete.
 /// </summary>
 public static class BeatCli
@@ -130,11 +130,21 @@ public static class BeatCli
             afterId = ag;
         }
 
-        if (text == "-") text = await Console.In.ReadToEndAsync();
-        // Nothing piped in reads "" from the Hub's own stdin: refuse rather than insert an empty beat.
-        if (string.IsNullOrWhiteSpace(text)) { Console.Error.WriteLine("[beat insert] no text (did you pipe it in for '-'?)."); return 1; }
+        if (text == "-")
+        {
+            text = await Console.In.ReadToEndAsync();
+            // Nothing piped in reads "" from the Hub's own stdin: refuse rather than insert an empty beat.
+            if (string.IsNullOrWhiteSpace(text)) { Console.Error.WriteLine("[beat insert] no text on stdin (did you pipe it in for '-'?)."); return 1; }
+        }
+        // No --text is a PLANNED beat (see the summary), but it needs a --title or --description
+        // saying what happens; this check used to refuse every textless insert, planned or not.
+        if (string.IsNullOrWhiteSpace(text) && string.IsNullOrWhiteSpace(title) && string.IsNullOrWhiteSpace(description))
+        {
+            Console.Error.WriteLine("[beat insert] pass --text, or --title/--description for a planned beat.");
+            return 1;
+        }
 
-        var beat = await workbench.InsertBeatAsync(nodeId.Value, afterId, text);
+        var beat = await workbench.InsertBeatAsync(nodeId.Value, afterId, text ?? "");
         if (!string.IsNullOrWhiteSpace(title) || !string.IsNullOrWhiteSpace(description))
             await workbench.UpdateBeatMetadataAsync(beat.Id, new NodeWorkbenchService.BeatMetadataUpdate(
                 Title: string.IsNullOrWhiteSpace(title) ? null : title,

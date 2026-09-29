@@ -180,6 +180,10 @@
     {
         if (pages.Count == 0) return;
 
+        // Each call owns the queue until the next one (or a stop) starts. Without this, pressing
+        // Next twice while listening left the first beat's loop still synthesizing, and its
+        // remaining sentences were enqueued in among the second beat's — two beats, interleaved.
+        var mine = ++speakTicket;
         await JsAsync("proseSpeech.stop");
 
         var chunker = new SentenceChunker();
@@ -188,25 +192,31 @@
 
         foreach (var sentence in sentences)
         {
-            if (!speaking) return;
+            if (!speaking || mine != speakTicket) return;
             try
             {
                 var audio = await ReadAloud.SpeakAsync(sentence);
+                if (!speaking || mine != speakTicket) return;
                 await JsAsync("proseSpeech.enqueue", audio.Base64, audio.MimeType);
             }
             catch
             {
                 // No voice installed. The page still reads; it just does not speak, and saying so
                 // in a banner would be an interruption in the pass this exists to protect.
-                speaking = false;
+                if (mine == speakTicket) speaking = false;
                 return;
             }
         }
     }
 
+    /// <summary>Which <see cref="SpeakCurrentAsync"/> may still enqueue; bumped by every new one
+    /// and by every stop.</summary>
+    private int speakTicket;
+
     private async Task StopAsync()
     {
         speaking = false;
+        speakTicket++;
         await JsAsync("proseSpeech.stop");
     }
 

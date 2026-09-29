@@ -303,23 +303,18 @@ public class DialogueService
     {
         var parts = new List<string>();
 
+        // Blank names are skipped: "anyName".Contains("") is true, so a relationship row with an
+        // empty target (see DataConsistencyService CHAR-REL-EMPTY-TARGET) matched EVERY scene
+        // partner and injected its tension into pairs it was never about.
         // Check A's relationship to B
-        var aToB = a.Relationships.FirstOrDefault(r =>
-            r.Name.Contains(b.Name, StringComparison.OrdinalIgnoreCase) ||
-            b.Name.Contains(r.Name, StringComparison.OrdinalIgnoreCase));
+        var aToB = a.Relationships.FirstOrDefault(r => NamesOverlap(r.Name, b.Name));
 
         // Check B's relationship to A
-        var bToA = b.Relationships.FirstOrDefault(r =>
-            r.Name.Contains(a.Name, StringComparison.OrdinalIgnoreCase) ||
-            a.Name.Contains(r.Name, StringComparison.OrdinalIgnoreCase));
+        var bToA = b.Relationships.FirstOrDefault(r => NamesOverlap(r.Name, a.Name));
 
         // Check interpersonal modes
-        var aModeKey = a.Behavioral.InterpersonalModes.Keys
-            .FirstOrDefault(k => k.Contains(b.Name, StringComparison.OrdinalIgnoreCase) ||
-                                  b.Name.Contains(k, StringComparison.OrdinalIgnoreCase));
-        var bModeKey = b.Behavioral.InterpersonalModes.Keys
-            .FirstOrDefault(k => k.Contains(a.Name, StringComparison.OrdinalIgnoreCase) ||
-                                  a.Name.Contains(k, StringComparison.OrdinalIgnoreCase));
+        var aModeKey = a.Behavioral.InterpersonalModes.Keys.FirstOrDefault(k => NamesOverlap(k, b.Name));
+        var bModeKey = b.Behavioral.InterpersonalModes.Keys.FirstOrDefault(k => NamesOverlap(k, a.Name));
 
         if (aToB != null && !string.IsNullOrWhiteSpace(aToB.StoryTension))
             parts.Add($"underlying tension: {ShortenToSignal(aToB.StoryTension)}");
@@ -338,6 +333,11 @@ public class DialogueService
 
         return parts.Count > 0 ? string.Join("; ", parts) : "";
     }
+
+    /// <summary>Either name contains the other (case-insensitive); false when either is blank.</summary>
+    private static bool NamesOverlap(string? x, string? y) =>
+        !string.IsNullOrWhiteSpace(x) && !string.IsNullOrWhiteSpace(y)
+        && (x.Contains(y, StringComparison.OrdinalIgnoreCase) || y.Contains(x, StringComparison.OrdinalIgnoreCase));
 
     private static string ShortenToSignal(string s)
     {

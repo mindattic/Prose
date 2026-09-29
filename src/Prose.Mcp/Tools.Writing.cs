@@ -94,9 +94,14 @@ public class WritingTools
         string status = "draft",
         string id = "")
     {
-        if (!string.IsNullOrEmpty(id) && chapters.LoadChapter(id) == null)
-            return $"Chapter not found: {id}";
-        var chapter = string.IsNullOrEmpty(id) ? new Chapter() : chapters.LoadChapter(id)!;
+        var existing = string.IsNullOrEmpty(id) ? null : chapters.LoadChapter(id);
+        if (!string.IsNullOrEmpty(id) && existing == null)
+            return JsonSerializer.Serialize(new { error = "chapter_not_found", id }, CanonTools.JsonOpts);
+        // A mistyped book id used to save the chapter pointing at a book that does not exist and
+        // answer ok:true, with the chapter in no book's ChapterIds.
+        if (!string.IsNullOrEmpty(bookId) && books.LoadBook(bookId) == null)
+            return JsonSerializer.Serialize(new { error = "book_not_found", bookId }, CanonTools.JsonOpts);
+        var chapter = existing ?? new Chapter();
         var previousBookId = chapter.BookId;
         chapter.Title      = title;
         chapter.Synopsis   = synopsis ?? "";

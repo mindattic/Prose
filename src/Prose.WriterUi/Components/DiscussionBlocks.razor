@@ -241,6 +241,14 @@
     /// <para>This matters more here than it looks. Beat prose carries real
     /// <c>&lt;entity guid="…"&gt;</c> markup, so a turn quoting a beat back to the author would
     /// otherwise inject live tags into the panel.</para>
+    ///
+    /// <para>Escaping the source is not the whole of it, so the HTML is scrubbed afterwards too.
+    /// The advanced extensions include generic attributes, which turn <c>{onclick=…}</c> after a
+    /// heading or a link into a real attribute on the element, and a link destination can be
+    /// <c>javascript:</c> — neither needs an angle bracket, and either runs script in the page
+    /// that holds the Blazor circuit. Markdig HTML-escapes every quote in text, so a
+    /// <c>name="…"</c> pair in its output is always an attribute Markdig wrote, which is what makes
+    /// matching them reliable.</para>
     /// </summary>
     private MarkupString RenderMarkdown(string? markdown)
     {
@@ -248,6 +256,39 @@
             .Replace("&", "&amp;")
             .Replace("<", "&lt;")
             .Replace(">", "&gt;");
-        return (MarkupString)Markdig.Markdown.ToHtml(safe, Pipeline);
+        return (MarkupString)Scrub(Markdig.Markdown.ToHtml(safe, Pipeline));
+    }
+
+    private static readonly System.Text.RegularExpressions.Regex EventAttribute = new(
+        "\\s+on[a-z]+\\s*=\\s*\"[^\"]*\"",
+        System.Text.RegularExpressions.RegexOptions.IgnoreCase
+        | System.Text.RegularExpressions.RegexOptions.CultureInvariant);
+
+    private static readonly System.Text.RegularExpressions.Regex UrlAttribute = new(
+        "\\b(href|src)\\s*=\\s*\"([^\"]*)\"",
+        System.Text.RegularExpressions.RegexOptions.IgnoreCase
+        | System.Text.RegularExpressions.RegexOptions.CultureInvariant);
+
+    /// <summary>Drop every event-handler attribute, and point every link or image whose scheme is
+    /// not http, https or mailto at nothing.</summary>
+    private static string Scrub(string html)
+    {
+        html = EventAttribute.Replace(html, "");
+        return UrlAttribute.Replace(html, m =>
+            IsSafeUrl(m.Groups[2].Value) ? m.Value : $"{m.Groups[1].Value}=\"#\"");
+    }
+
+    private static bool IsSafeUrl(string attributeValue)
+    {
+        // Decoded and stripped of whitespace and control characters first, because a browser
+        // ignores those inside a scheme: "java&#9;script:" is still javascript.
+        var url = new string(System.Net.WebUtility.HtmlDecode(attributeValue)
+                                  .Where(ch => ch > ' ').ToArray());
+        var colon = url.IndexOf(':');
+        if (colon < 0) return true;                        // relative, or a #fragment
+        var boundary = url.IndexOfAny(new[] { '/', '?', '#' });
+        if (boundary >= 0 && boundary < colon) return true; // a colon later in a relative path
+        var scheme = url[..colon].ToLowerInvariant();
+        return scheme is "http" or "https" or "mailto";
     }
 }

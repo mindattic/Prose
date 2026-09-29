@@ -51,11 +51,6 @@ public class EpisodeAudioService
         this.sp = sp;
     }
 
-    /// <summary>
-    /// Narrate every un-narrated beat for the episode. Saves MP3s and
-    /// updates EpisodeBeat.AudioPath as each completes, so the /listen page
-    /// can start playing the first one before the rest are ready.
-    /// </summary>
     /// <summary>Cancel any in-flight narration for the given episode. Idempotent;
     /// no-op if no narration is running. Beats already on disk stay; the
     /// in-progress beat may produce a partial file which the next retry will
@@ -404,6 +399,11 @@ public class EpisodeAudioService
         await NarrateAsync(episodeId, ct);
     }
 
+    /// <summary>
+    /// Narrate every un-narrated beat for the episode. Writes a WAV (or MP3 on tiers that refuse
+    /// PCM) and updates EpisodeBeat.AudioPath as each completes, so the /listen page can start
+    /// playing the first one before the rest are ready. Cancellable via <see cref="CancelNarration"/>.
+    /// </summary>
     public async Task NarrateAsync(Guid episodeId, CancellationToken ct = default)
     {
         if (!await tts.IsConfiguredAsync())
@@ -458,6 +458,9 @@ public class EpisodeAudioService
         {
             ct.ThrowIfCancellationRequested();
             if (!string.IsNullOrEmpty(beat.AudioPath)) continue; // already narrated
+            // Nothing to say: an empty beat from InsertBeatAfterAsync sent "" to the TTS, which
+            // refused it and failed the whole episode.
+            if (string.IsNullOrWhiteSpace(beat.Text)) continue;
 
             try
             {
@@ -702,10 +705,10 @@ public class EpisodeAudioService
     /// describing a PCM payload of <paramref name="dataChunkSize"/> bytes.
     /// Caller is responsible for writing the PCM bytes that follow. Used by
     /// the streaming concat path so we don't have to materialize the whole
-    /// node's PCM in memory before stamping the header.</summary>
-    /// <summary>For a long audiobook: WAV sizes are unsigned 32-bit (4 GB), and the int overload's
-    /// callers cast with checked((int)…), which threw past 2 GB — about 6.8 hours of 44.1 kHz mono —
-    /// after every segment had been paid for.</summary>
+    /// node's PCM in memory before stamping the header.
+    /// <para>The long overload is for a long audiobook: WAV sizes are unsigned 32-bit (4 GB), and
+    /// the int overload's callers cast with checked((int)…), which threw past 2 GB — about 6.8 hours
+    /// of 44.1 kHz mono — after every segment had been paid for.</para></summary>
     public static void WriteWavHeader(Stream dst, long dataChunkSize, int sampleRate, short channels, short bitsPerSample)
     {
         if (dataChunkSize < 0 || dataChunkSize > uint.MaxValue - 36)

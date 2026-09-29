@@ -52,6 +52,9 @@ public class CanonGroundingService
 
         var extracted = await ExtractEntitiesAsync(text, sourceContext, ct);
         var result = new CanonGroundingResult { SourceContext = sourceContext };
+        // The xref index is not rebuilt after a scaffold, so a name the model listed twice (it
+        // often does, once per mention) resolved as unknown both times and got two stub records.
+        var seenUnresolved = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
         foreach (var entity in extracted)
         {
@@ -67,6 +70,7 @@ public class CanonGroundingService
             }
             else
             {
+                if (!seenUnresolved.Add(entity.Name.Trim())) continue;
                 if (entity.InferredType is "character" or "person" or "unknown")
                 {
                     var stub = ScaffoldCharacter(entity, out var unparsedClaims);

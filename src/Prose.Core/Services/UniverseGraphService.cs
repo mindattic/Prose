@@ -395,13 +395,13 @@ public class UniverseGraphService : IUniverseGraphService
         return string.Join("\n", lines);
     }
 
+    /// <summary>Numeric story-point order ("chapter:9" before "chapter:12"), for sorting.</summary>
+    public static readonly IComparer<string> StoryPointOrder = Comparer<string>.Create(CompareStoryPoints);
+
     /// <summary>
     /// Compare two story points numerically. Handles "chapter:N" and "story:ID_NNNNN" formats.
     /// Returns negative if a &lt; b, zero if equal, positive if a &gt; b.
     /// </summary>
-    /// <summary>Numeric story-point order ("chapter:9" before "chapter:12"), for sorting.</summary>
-    public static readonly IComparer<string> StoryPointOrder = Comparer<string>.Create(CompareStoryPoints);
-
     public static int CompareStoryPoints(string a, string b)
     {
         if (string.IsNullOrEmpty(a) && string.IsNullOrEmpty(b)) return 0;
@@ -879,7 +879,8 @@ public class UniverseGraphService : IUniverseGraphService
                 events.Add((edge.ValidFrom, $"{edge.RelationType} with {otherName}: {edge.Description}"));
         }
 
-        return events.OrderBy(e => e.storyPoint).ToList();
+        // StoryPointOrder, not ordinal: "chapter:12" sorted before "chapter:9".
+        return events.OrderBy(e => e.storyPoint, StoryPointOrder).ToList();
     }
 
     // ── Maintenance ────────────────────────────────────────

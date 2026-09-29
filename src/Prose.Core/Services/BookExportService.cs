@@ -435,7 +435,9 @@ public class BookExportService
         sb.AppendLine("""<dc:language>en</dc:language>""");
         if (!string.IsNullOrEmpty(book.Premise))
             sb.AppendLine($"""<dc:description>{Esc(book.Premise)}</dc:description>""");
-        sb.AppendLine($"""<meta property="dcterms:modified">{DateTime.UtcNow:yyyy-MM-ddTHH:mm:ssZ}</meta>""");
+        // InvariantCulture: ':' in a custom format is the culture's time separator, and the EPUB
+        // spec requires an ISO-8601 dcterms:modified.
+        sb.AppendLine($"""<meta property="dcterms:modified">{DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ", System.Globalization.CultureInfo.InvariantCulture)}</meta>""");
         sb.AppendLine("""</metadata>""");
 
         sb.AppendLine("""<manifest>""");

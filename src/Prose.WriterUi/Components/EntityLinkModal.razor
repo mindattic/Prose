@@ -9,8 +9,8 @@
 @inject IJSRuntime JS
 @implements IAsyncDisposable
 
-@* aria-hidden, not a click handler: the scrim is decoration. Dismissal lives on Cancel and on
-   Escape, both of which a keyboard user can actually reach. *@
+@* aria-hidden: the scrim is not a target for assistive technology. A click on it cancels, but the
+   routes a keyboard user can reach are Cancel and Escape. *@
 <div class="scrim" aria-hidden="true" @onclick="() => OnCancel.InvokeAsync()"></div>
 <div class="modal" role="dialog" aria-modal="true" aria-labelledby="entity-modal-title"
      tabindex="-1" @ref="dialog" @onkeydown="OnKeyDown">

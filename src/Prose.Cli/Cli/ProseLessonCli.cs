@@ -40,7 +40,8 @@ public static class ProseLessonCli
             // Not a flag's VALUE: the last bare token was usually "glmz" or "voice", saved as the lesson.
             for (int i = args.Length - 1; i >= 0; i--)
             {
-                if (!args[i].StartsWith('-') && !(i > 0 && args[i - 1] is "--scope" or "--kind" or "--text"))
+                // --universe too: its slug is forwarded in args, and without --text it became the lesson.
+                if (!args[i].StartsWith('-') && !(i > 0 && args[i - 1] is "--scope" or "--kind" or "--text" or "--universe"))
                 {
                     text = args[i];
                     break;

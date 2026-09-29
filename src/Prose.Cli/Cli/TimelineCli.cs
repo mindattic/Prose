@@ -48,16 +48,11 @@ public static class TimelineCli
         var dbFactory = sp.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        Core.Data.Entities.Node? node;
-        if (!string.IsNullOrWhiteSpace(code))
-            node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-                .FirstOrDefaultAsync(s => s.NodeCode == code.ToUpperInvariant());
-        else if (!string.IsNullOrWhiteSpace(slug))
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug);
-        else
-            node = await db.Nodes.AsNoTracking()
-                .FirstOrDefaultAsync(s => s.Id.ToString().Replace("-", "").StartsWith(id!.Replace("-", "")));
+        // The shared resolver for code, slug and id alike. The private --id branch applied the
+        // ambient universe filter and took the FIRST node whose id started with the prefix, so an
+        // ambiguous prefix silently timelined an arbitrary book.
+        var reference = !string.IsNullOrWhiteSpace(code) ? code : !string.IsNullOrWhiteSpace(slug) ? slug : id;
+        Core.Data.Entities.Node? node = await NodeRefResolver.ResolveNodeAsync(db, reference);
 
         if (node is null)
         {
@@ -158,8 +153,11 @@ public static class TimelineCli
             // Pair entries with their original beats for display.
             for (int i = 0; i < entries.Count; i++)
             {
-                var beatIdx = i; // chunk-local
-                var beat = (beatIdx < beats.Count) ? beats[beatIdx] : beats[^1];
+                // By the beatIndex the model echoed back (global, 1-based), not by row position:
+                // one skipped or merged row used to shift every later row onto the wrong beat.
+                var beatIdx = entries[i].BeatIndex - globalBeatOffset - 1; // chunk-local
+                if (beatIdx < 0 || beatIdx >= beats.Count) beatIdx = Math.Min(i, beats.Count - 1);
+                var beat = beats[beatIdx];
                 allEntries.Add((entries[i], beat));
             }
 

@@ -89,9 +89,13 @@ public static class FindingsCli
     {
         FindingStatus? filter = null;
         var sIdx = Array.IndexOf(rest, "--status");
-        if (sIdx >= 0 && sIdx + 1 < rest.Length
-            && Enum.TryParse<FindingStatus>(rest[sIdx + 1], ignoreCase: true, out var parsed))
+        if (sIdx >= 0 && sIdx + 1 < rest.Length)
+        {
+            // A misspelt status ("--status open") used to drop the filter and list every status.
+            if (!Enum.TryParse<FindingStatus>(rest[sIdx + 1], ignoreCase: true, out var parsed))
+                return Fail($"unknown status: {rest[sIdx + 1]} (new|triaged|applied|dismissed)");
             filter = parsed;
+        }
 
         string? filePathPrefix = null;
         var nIdx = Array.IndexOf(rest, "--node");
@@ -178,7 +182,8 @@ public static class FindingsCli
     static int CmdSetStatus(string[] rest, FindingsService store, FindingStatus status)
     {
         if (rest.Length == 0 || !long.TryParse(rest[0], out var id)) return Fail("missing id");
-        store.SetStatus(id, status);
+        // SetStatus returns false for an id with no row; that used to print "#id → Dismissed".
+        if (!store.SetStatus(id, status)) return Fail($"finding #{id} not found");
         Console.WriteLine($"[findings] #{id} → {status}");
         return 0;
     }
@@ -241,13 +246,13 @@ public static class FindingsCli
     static void PrintUsage()
     {
         Console.WriteLine("Usage:");
-        Console.WriteLine("  prose --findings list [--status new|triaged|applied|dismissed] [--node <slug-or-code>] [--limit <n>]");
+        Console.WriteLine("  prose --findings list [--status new|triaged|applied|dismissed] [--node <slug-or-code>] [--file-prefix <path>] [--limit <n>]");
         Console.WriteLine("  prose --findings stats [--by-instrument]");
         Console.WriteLine("  prose --findings show <id>");
         Console.WriteLine("  prose --findings apply <id>");
         Console.WriteLine("  prose --findings triage <id>");
         Console.WriteLine("  prose --findings dismiss <id>");
         Console.WriteLine("  prose --findings scan <file-path>");
-        Console.WriteLine("  prose --findings bulk-dismiss [--category <cat>] [--prefix <text>] [--node <slug-or-code>]");
+        Console.WriteLine("  prose --findings bulk-dismiss [--category <cat>] [--prefix <text>] [--node <slug-or-code>] [--file-prefix <path>]");
     }
 }

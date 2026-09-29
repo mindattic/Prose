@@ -76,7 +76,8 @@ public static class CreateNodeCli
             Console.WriteLine($"   Code:  {(string.IsNullOrWhiteSpace(code) ? "-" : code!.Trim().ToUpperInvariant())}");
             Console.WriteLine($"   Kind:  {kind}");
             Console.WriteLine($"   URL:   https://localhost:7103/node/{slug}");
-            Console.WriteLine($"   Next:  add beats via the UI, prose --edit-beat --insert-after N, or prose --write-story.");
+            // (--write-story, which this used to suggest, no longer exists.)
+            Console.WriteLine($"   Next:  plan beats with prose --beat insert --node {slug} --title \"...\" (or the UI), then prose --expand-beat --slug {slug}.");
             return 0;
         }
         catch (Exception ex) when (ex is InvalidOperationException or ArgumentException)
@@ -86,9 +87,8 @@ public static class CreateNodeCli
         }
     }
 
-    /// <summary>Resolve a node reference (GUID or slug) to its id. Null input → null.</summary>
     /// <summary>
-    /// 2026-08-23: was a 7th private copy of "resolve a node reference" — slug-only (so
+    /// Resolve a node reference to its id; null input gives null. 2026-08-23: was a 7th private copy of "resolve a node reference" — slug-only (so
     /// <c>--previous BCODA</c>, a NodeCode, failed outright while creating a sequel) and missing
     /// <c>IgnoreQueryFilters()</c> on its slug branch, so a cross-universe parent/previous also
     /// resolved to null. Delegates to <see cref="NodeRefResolver"/>, which accepts slug, NodeCode,

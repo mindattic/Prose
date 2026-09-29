@@ -235,8 +235,14 @@ public class LoreTripleTools
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
     public string ResolveContinuityContradictionImpl(string aUid, string bUid, string winner, string customObject = "", string note = "")
     {
+        // Trim once and pass the trimmed uids on: the store matches ClaimUid exactly, so a padded
+        // uid passed the self-check below and then reported "not found".
+        aUid = aUid?.Trim() ?? "";
+        bUid = bUid?.Trim() ?? "";
+        if (aUid.Length == 0 || bUid.Length == 0)
+            return JsonSerializer.Serialize(new { error = "missing_uid", detail = "aUid and bUid are both required." }, CanonTools.JsonOpts);
         // One claim against itself was marked CANONICAL and then REJECTED, and answered ok.
-        if (string.Equals(aUid?.Trim(), bUid?.Trim(), StringComparison.OrdinalIgnoreCase))
+        if (string.Equals(aUid, bUid, StringComparison.OrdinalIgnoreCase))
             return JsonSerializer.Serialize(new { error = "same_claim", detail = "aUid and bUid must be two different claims." }, CanonTools.JsonOpts);
         try
         {

@@ -143,8 +143,11 @@ PROSE:
             {
                 foreach (var el in ip.EnumerateArray())
                 {
+                    // TryGetInt32, not GetInt32: a "beat": 12.0 (or an out-of-range number) threw
+                    // FormatException, which the catch below rethrows — one malformed issue failed
+                    // the whole lens.
                     int? beat = el.TryGetProperty("beat", out var bp) && bp.ValueKind == JsonValueKind.Number
-                        ? bp.GetInt32() : null;
+                        && bp.TryGetInt32(out var beatNum) ? beatNum : null;
                     var kind = Str(el, "kind", "issue");
                     var ev   = Str(el, "evidence", "");
                     var fix  = Str(el, "fix", "");

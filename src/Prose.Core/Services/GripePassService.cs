@@ -94,9 +94,6 @@ public sealed class GripePassService(
         var slug = node.Slug ?? nodeId.ToString("N");
 
         // Ordered enabled beats — the beat-number → BeatId map for anchoring gripes.
-        // Recurses past any nested Collection; returns leaves in reading order, which
-        // chapterOrder below relies on (2026-08-09 fix).
-        var sourceIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         // Exactly the beats the numbered export shows, in its order: the reading-order walk, empty
         // beats skipped. The leaf walk (with every empty placeholder) numbered differently, so a
         // reader's "Beat 40" was filed against beat 41.
@@ -209,7 +206,6 @@ public sealed class GripePassService(
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
         var slug = node.Slug ?? nodeId.ToString("N");
 
-        var sourceIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         // Exactly the beats the numbered export shows, in its order: the reading-order walk, empty
         // beats skipped. The leaf walk (with every empty placeholder) numbered differently, so a
         // reader's "Beat 40" was filed against beat 41.

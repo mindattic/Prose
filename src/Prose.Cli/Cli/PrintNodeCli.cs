@@ -9,8 +9,8 @@ namespace Prose.Cli;
 /// Each beat's Text is separated by a blank line. No headers, no beat numbers, no metadata.
 ///
 /// Args (one of --id / --slug required):
-///   --id <guid|prefix>  Node id; a unique prefix is enough.
-///   --slug <slug>       Node slug.
+///   --id &lt;guid|prefix&gt;  Node id; a unique prefix is enough.
+///   --slug &lt;slug&gt;       Node slug.
 ///
 /// Exit codes:
 ///   0 — success.

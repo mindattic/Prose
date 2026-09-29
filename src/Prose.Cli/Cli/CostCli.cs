@@ -9,11 +9,11 @@ namespace Prose.Cli;
 /// <summary>
 /// CLI handler for <c>prose --cost</c>.
 ///
-/// In long-running processes (MCP server, Blazor host) the <see cref="TokenLedger"/>
-/// accumulates every LLM call. In a one-shot CLI invocation the ledger captures only
-/// the calls made during that run — use <c>--cost</c> as a suffix on any command to
-/// see how much that operation spent, e.g.:
-///   <code>prose --expand-beat --slug foo --cost</code>
+/// The <see cref="TokenLedger"/> accumulates every LLM call made by the process that owns it.
+/// CLI handlers now run inside the long-lived Hub (see <c>CliDispatch</c>), so this table is the
+/// Hub's running total since it started or was last <c>--reset</c> — not one command's spend.
+/// For one operation's actual cost, use its cost scope (e.g. <c>--auto-run</c>'s session
+/// report) or <c>--cost --history</c>.
 ///
 /// Usage:
 ///   prose --cost             print the session cost table
@@ -143,17 +143,5 @@ public static class CostCli
     {
         var i = Array.IndexOf(args, name);
         return i >= 0 && i + 1 < args.Length ? args[i + 1] : null;
-    }
-
-    /// <summary>
-    /// Convenience method: print the cost report if <c>--cost</c> is present in args.
-    /// Call this at the end of any CLI handler that performs LLM calls.
-    /// </summary>
-    public static void PrintIfRequested(string[] args, IServiceProvider services)
-    {
-        if (!args.Contains("--cost")) return;
-        var ledger = services.GetRequiredService<TokenLedger>();
-        Console.WriteLine();
-        Console.WriteLine(ledger.RenderReport());
     }
 }

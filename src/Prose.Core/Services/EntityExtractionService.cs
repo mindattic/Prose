@@ -140,8 +140,11 @@ public class EntityExtractionService
 
                     if (trackableProps.Contains(key) && oldVal.Length > 0 && oldVal != value && !string.IsNullOrEmpty(storyPoint))
                     {
-                        // Temporal change — record in history
+                        // Temporal change — record in history. RecordPropertyChange replaces the
+                        // stored node (new value + History entry); mergedProps must carry the new
+                        // value too, or the AddNode below writes the old one back.
                         graph.RecordPropertyChange(id, key, value, storyPoint, storyId);
+                        mergedProps[key] = value;
                     }
                     else if (!mergedProps.ContainsKey(key))
                     {
@@ -156,7 +159,10 @@ public class EntityExtractionService
                 // Update node type if it was "unknown"
                 var updatedType = existing.NodeType == EntityTypes.Unknown ? nodeType : existing.NodeType;
 
-                graph.AddNode(existing with { NodeType = updatedType, Properties = mergedProps });
+                // Re-read, not `existing`: RecordPropertyChange above swapped in a node carrying the
+                // new History, and writing the stale snapshot back discarded every recorded change.
+                var current = graph.GetNode(id) ?? existing;
+                graph.AddNode(current with { NodeType = updatedType, Properties = mergedProps });
             }
             else
             {

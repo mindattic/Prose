@@ -36,8 +36,13 @@ public static class GroundEntityRecordsCli
             var resolved = await NodeRefResolver.ResolveAsync(db, slug);
             if (resolved == null) { Console.Error.WriteLine($"[ground-entity-records] {NodeRefResolver.NotFoundMessage(slug)}"); return 1; }
             // Stop at the BOOK: walking to the top reached the Series and audited every book in it.
-            root = await NodeWorkbenchService.ResolveBookAncestorIdAsync(db, resolved.Value) ?? resolved.Value;
-            if (root == resolved.Value)
+            // The top-of-tree walk is only the fallback for a node with NO book above it. It used to
+            // run whenever root == the resolved node — which is exactly the case of --slug naming a
+            // book (ResolveBookAncestorIdAsync returns the book itself), so a book under a Series
+            // still walked up to the Series.
+            var book = await NodeWorkbenchService.ResolveBookAncestorIdAsync(db, resolved.Value);
+            root = book ?? resolved.Value;
+            if (book == null)
             for (var depth = 0; depth < 10; depth++)
             {
                 var parent = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == root).Select(n => n.ParentNodeId).FirstOrDefaultAsync();

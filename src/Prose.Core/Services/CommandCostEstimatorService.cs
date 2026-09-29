@@ -30,9 +30,8 @@ public class CommandCostEstimatorService
             ["--interpersonal-check"] = 0.05,
             ["--harvest-entities"]    = 0.08,
             ["--storyscope-audit"]    = 0.05,
-            ["--audit-book"]          = 1.50, // FULL tier: one call/beat for SWAIN, DRAMATIC-Q, and
-                                               // several other checks — scales with book length,
-                                               // easily the most expensive single audit command.
+            // (--audit-book's entry removed with the command itself — the Full Battery was torn
+            // out 2026-09-06, see BookHealthService.)
             // --booktok: video-gen APIs (kling/runway/sora) charge dollars, not cents, and their
             // per-clip price differs by provider — keyed per provider so history doesn't blend.
             ["--booktok --provider=kling"]   = 3.00,

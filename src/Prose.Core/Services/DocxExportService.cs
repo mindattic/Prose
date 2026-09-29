@@ -5,7 +5,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Prose.Core.Data;
 using System.Linq;
-using System.Text.RegularExpressions;
 
 namespace Prose.Core.Services;
 
@@ -556,10 +555,12 @@ public class DocxExportService
         // Chapter title — shown in both print and web layout.
         link.AppendChild(new Run(
             new RunProperties(new RunStyle { Val = "Hyperlink" }, new NoProof()),
-            new Text(title) { Space = SpaceProcessingModeValues.Preserve }));
+            // Same C0-control scrub as MakeRun: the package writer throws on save otherwise.
+            new Text(XmlIllegalChars.Replace(title ?? "", "")) { Space = SpaceProcessingModeValues.Preserve }));
 
         // Tab + PAGEREF — webHidden so they are invisible in eBook/HTML layout.
-        // Placeholder "1" is updated by Word on open (UpdateFieldsOnOpen is set) or F9.
+        // Placeholder "1" stays until the reader presses F9 in Word — UpdateFieldsOnOpen is
+        // deliberately false (see the Settings part above).
         link.AppendChild(RunHW(new TabChar()));
         link.AppendChild(RunHW(new FieldChar { FieldCharType = FieldCharValues.Begin }));
         link.AppendChild(RunHW(new FieldCode($" PAGEREF {anchor} \\h ") { Space = SpaceProcessingModeValues.Preserve }));
@@ -665,14 +666,5 @@ public class DocxExportService
         // XML 1.0 forbids C0 controls other than tab/LF/CR; the package writer throws on save.
         run.AppendChild(new Text(XmlIllegalChars.Replace(text ?? "", "")) { Space = SpaceProcessingModeValues.Preserve });
         return run;
-    }
-
-
-    private static string HyphenateTitle(string title)
-    {
-        var kept = new string((title ?? "").Where(c => char.IsLetterOrDigit(c) || char.IsWhiteSpace(c) || c == '-').ToArray());
-        var hyphen = Regex.Replace(kept.Trim(), @"\s+", "-");
-        hyphen = Regex.Replace(hyphen, @"-+", "-").Trim('-');
-        return string.IsNullOrWhiteSpace(hyphen) ? "untitled" : hyphen;
     }
 }

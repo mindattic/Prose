@@ -350,13 +350,6 @@ public class Beat
 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-    /// <summary>Last-modified timestamp + optimistic-concurrency token. Every
-    /// write bumps this. EF's UPDATE includes <c>WHERE UpdatedAt = @loadedAt</c>
-    /// so a same-instant race between two clients fails one of them with
-    /// <see cref="Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException"/>.
-    /// The workbench also exposes an <c>expectedUpdatedAt</c> parameter so
-    /// the UI can detect the longer "user opened the editor, walked away,
-    /// another tab edited it" race window.</summary>
     /// <summary>Monotonic edit counter. Incremented by one each time the beat's
     /// prose is saved via <c>UpdateBeatTextAsync</c>. Zero = never edited after
     /// creation. Surfaces in the writer's version cycler as a stable label.</summary>
@@ -369,6 +362,13 @@ public class Beat
     /// before the column existed (or created via <c>InsertBeatAsync</c> and never edited since).</summary>
     public string? LastWriteReason { get; set; }
 
+    /// <summary>Last-modified timestamp + optimistic-concurrency token. Every
+    /// write bumps this. EF's UPDATE includes <c>WHERE UpdatedAt = @loadedAt</c>
+    /// so a same-instant race between two clients fails one of them with
+    /// <see cref="Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException"/>.
+    /// The workbench also exposes an <c>expectedUpdatedAt</c> parameter so
+    /// the UI can detect the longer "user opened the editor, walked away,
+    /// another tab edited it" race window.</summary>
     [ConcurrencyCheck]
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 

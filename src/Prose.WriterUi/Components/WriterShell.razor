@@ -542,11 +542,16 @@
         activity = "Loading book…";
         StateHasChanged();
 
-        spine = await Writer.GetSpineAsync(b.Id);
+        var loaded = await Writer.GetSpineAsync(b.Id);
+        // Another book was opened while this one loaded; that one's spine is the one to show.
+        if (book?.Id != b.Id) return;
+        spine = loaded;
 
         // Checked on open, once. Two windows editing the same beat surfaces as a conflict banner
         // after the fact; knowing beforehand is what lets the author avoid it.
-        otherSessions = await Writer.OpenSessionsAsync(b.Id);
+        var sessions = await Writer.OpenSessionsAsync(b.Id);
+        if (book?.Id != b.Id) return;
+        otherSessions = sessions;
 
         activity = "Idle";
         if (spine.Count > 0) await OpenBeatAsync(spine[0].BeatId);
@@ -584,7 +589,14 @@
 
         ClearBeatState();
         beatId = id;
-        beat = await Writer.GetBeatAsync(id);
+        var opened = await Writer.GetBeatAsync(id);
+
+        // Clicked past: a second beat was chosen while this one loaded. Loads can finish in either
+        // order, and the slower one used to win — the editor showed beat A while the navigator
+        // marked B as the one open.
+        if (beatId != id) return;
+
+        beat = opened;
         draft = beat?.Text ?? "";
     }
 
@@ -1065,6 +1077,8 @@
                 : $"“{word}” is {r.Note}.";
         }
         catch (ArgumentException ex) { tagNote = $"Not added: {ex.Message}"; }
+        // The database, not the word: an exception escaping a menu action ends the circuit.
+        catch (Exception ex) { tagNote = $"The dictionary could not be written: {ex.Message}"; }
         await JsVoidAsync("proseEditor.spellRecheck");
     }
 

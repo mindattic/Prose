@@ -171,8 +171,9 @@ public class NarrativeSessionContext
             var nameLower = node.Name.ToLowerInvariant();
             var nameNorm = StripDiacritics(nameLower);
 
-            // Full name match (with diacritic normalization)
-            if (textLower.Contains(nameLower) || textNorm.Contains(nameNorm))
+            // Full name match (with diacritic normalization). Whole words, like the part match
+            // below: a raw substring test made "Ash" primary in every scene with "wash" in it.
+            if (nameLower.Length > 0 && (ContainsWord(textLower, nameLower) || ContainsWord(textNorm, nameNorm)))
             {
                 primaryIds.Add(node.Id);
                 Resolve(node.Id);
@@ -198,7 +199,7 @@ public class NarrativeSessionContext
             {
                 var aliasList = aliases.Split(',', StringSplitOptions.TrimEntries);
                 if (aliasList.Any(a => a.Length > 2 &&
-                    (textLower.Contains(a.ToLowerInvariant()) || textNorm.Contains(StripDiacritics(a.ToLowerInvariant())))))
+                    (ContainsWord(textLower, a.ToLowerInvariant()) || ContainsWord(textNorm, StripDiacritics(a.ToLowerInvariant())))))
                 {
                     primaryIds.Add(node.Id);
                     Resolve(node.Id);
@@ -444,8 +445,10 @@ public class NarrativeSessionContext
         "the", "and", "for", "from", "with", "that", "this", "into", "over", "under", "last", "first", "black", "white", "old", "new",
     };
 
+    // Lookarounds rather than \b: \b needs a word character on its inner side, so a name that
+    // starts or ends with punctuation ("E.L.F.") could never match at all.
     private static bool ContainsWord(string text, string word) =>
-        System.Text.RegularExpressions.Regex.IsMatch(text, $@"\b{System.Text.RegularExpressions.Regex.Escape(word)}\b");
+        System.Text.RegularExpressions.Regex.IsMatch(text, $@"(?<!\w){System.Text.RegularExpressions.Regex.Escape(word)}(?!\w)");
 }
 
 public record SessionEntity

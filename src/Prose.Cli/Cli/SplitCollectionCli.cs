@@ -37,13 +37,9 @@ public static class SplitCollectionCli
         Guid sid; string title;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            Node? s;
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            if (!string.IsNullOrWhiteSpace(slug)) s = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug);
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            else if (Guid.TryParse(id, out var g)) s = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(x => x.Id == g);
-            else s = await db.Nodes.AsNoTracking().Where(x => x.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch
-            { { Count: 1 } m => m[0], _ => null };
+            // The shared resolver for slug, GUID and unique prefix alike; the private prefix branch
+            // applied the ambient universe filter, so a prefix of another universe's book missed.
+            Node? s = await NodeRefResolver.ResolveNodeAsync(db, !string.IsNullOrWhiteSpace(slug) ? slug : id);
             if (s == null) { Console.Error.WriteLine("[split-collection] Node not found (or id prefix ambiguous)."); return 1; }
             sid = s.Id; title = s.Title;
         }

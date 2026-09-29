@@ -183,6 +183,13 @@ public static class CliDispatch
         var callArgs = new object?[callParams.Length];
         for (var i = 0; i < callParams.Length; i++)
         {
+            // An ExtraParamValue that names no member of the enum threw out of Enum.Parse here —
+            // an unhandled 500 with no Command Ledger row. Answer it like any other bad request.
+            if (binding.Parameters[i] == DispatchResolution.ParamSource.ExtraEnum
+                && !Enum.TryParse(callParams[i].ParameterType, req.ExtraParamValue, ignoreCase: true, out _))
+                return new ExecuteOutcome("bad_extra_param_value",
+                    new { error = "bad_extra_param_value", req.HandlerClass, req.ExtraParamValue, expected = Enum.GetNames(callParams[i].ParameterType) }, null);
+
             callArgs[i] = binding.Parameters[i] switch
             {
                 DispatchResolution.ParamSource.Services => sp,

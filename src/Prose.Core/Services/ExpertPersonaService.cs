@@ -55,11 +55,11 @@ public class ExpertPersonaService
         return ListAll().FirstOrDefault(p => p.Id == id);
     }
 
-    /// <summary>Add or update a persona; persists immediately.</summary>
     // Singleton read-modify-write of one KV document: two concurrent saves each read the old list
     // and the second write dropped the first's persona.
     private readonly object docLock = new();
 
+    /// <summary>Add or update a persona; persists immediately.</summary>
     public void Save(ExpertPersona persona)
     {
         lock (docLock) SaveLocked(persona);

@@ -176,13 +176,14 @@ public class BookReviewService : IBookReviewService
         var chapter = chapters.LoadChapter(finding.ChapterId);
         if (chapter == null) return Task.FromResult(new ApplyFindingResult { Error = "Target chapter not found." });
 
-        var occurrences = CountOccurrences(chapter.Html, finding.BeforeText);
+        var html = chapter.Html ?? ""; // a chapter emptied since the review would NRE in IndexOf
+        var occurrences = CountOccurrences(html, finding.BeforeText);
         if (occurrences == 0)
             return Task.FromResult(new ApplyFindingResult { Error = "Snippet not found in chapter — prose may have changed since the review." });
         if (occurrences > 1)
             return Task.FromResult(new ApplyFindingResult { Error = $"Snippet appears {occurrences} times — ambiguous, can't safely apply." });
 
-        chapter.Html = ReplaceFirst(chapter.Html, finding.BeforeText, finding.AfterText);
+        chapter.Html = ReplaceFirst(html, finding.BeforeText, finding.AfterText);
         chapters.SaveChapter(chapter);
 
         finding.Status = ReviewStatus.Applied;
@@ -232,7 +233,6 @@ public class BookReviewService : IBookReviewService
             var hits = await embeddings.FindSimilarProseAsync(query, k: 3, scopeKind: "chapter", ct: ct);
             if (hits.Count == 0) return baseContext;
 
-            var lookup = ordered.ToDictionary(c => c.Id, c => c);
             var lines = new List<string>();
             foreach (var h in hits)
             {
@@ -464,14 +464,14 @@ public class BookReviewService : IBookReviewService
     private static string NormalizeTitle(string s) =>
         new(s.Where(char.IsLetterOrDigit).Take(30).Select(char.ToLowerInvariant).ToArray());
 
-    private static ReviewLayer ParseLayer(string s) => s switch
+    private static ReviewLayer ParseLayer(string? s) => s switch
     {
         "book" => ReviewLayer.Book,
         "seam" => ReviewLayer.Seam,
         _ => ReviewLayer.Chapter,
     };
 
-    private static ReviewKind ParseKind(string s) => s switch
+    private static ReviewKind ParseKind(string? s) => s switch
     {
         "motif" => ReviewKind.Motif,
         "statuscarry" or "status_carry" or "status-carry" => ReviewKind.StatusCarry,
@@ -485,7 +485,7 @@ public class BookReviewService : IBookReviewService
         _ => ReviewKind.Continuity,
     };
 
-    private static ReviewSeverity ParseSeverity(string s) => s switch
+    private static ReviewSeverity ParseSeverity(string? s) => s switch
     {
         "critical" => ReviewSeverity.Critical,
         "warning" => ReviewSeverity.Warning,

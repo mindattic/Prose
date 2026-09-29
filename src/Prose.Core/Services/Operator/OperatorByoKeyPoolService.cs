@@ -66,7 +66,9 @@ public class OperatorByoKeyPoolService
     public bool RemoveKey(string provider, string key)
     {
         var pool = GetPool(provider).ToList();
-        var removed = pool.RemoveAll(k => string.Equals(k, key, StringComparison.Ordinal)) > 0;
+        // Keys are stored trimmed, so a key pasted with padding must be trimmed to match.
+        var trimmed = key.Trim();
+        var removed = pool.RemoveAll(k => string.Equals(k, trimmed, StringComparison.Ordinal)) > 0;
         if (removed) SetPool(provider, pool);
         return removed;
     }

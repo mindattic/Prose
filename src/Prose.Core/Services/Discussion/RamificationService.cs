@@ -251,11 +251,16 @@ public sealed class RamificationService(
 
         var present = await db.BeatEntityMentions.AsNoTracking()
             .Where(m => m.BeatId == beatId)
-            .Select(m => m.EntityId.ToString())
+            .Select(m => m.EntityId)
+            .Distinct()
             .ToListAsync(ct);
         if (present.Count == 0) return;
 
-        var here = present.ToHashSet(StringComparer.OrdinalIgnoreCase);
+        // Claims store the entity id in "N" form (32 hex digits — see the typed mappers and
+        // ContinuityExtractionService.ResolveEntity); a hyphenated "D" string never matched one,
+        // so this check reported nothing for every beat.
+        var here = present.SelectMany(id => new[] { id.ToString("N"), id.ToString("D") })
+            .ToHashSet(StringComparer.OrdinalIgnoreCase);
 
         List<ContradictionGroup> groups;
         try

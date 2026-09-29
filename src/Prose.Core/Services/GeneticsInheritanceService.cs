@@ -55,12 +55,6 @@ public class GeneticsInheritanceService
     /// <summary>Drop ancestry entries below this % after renormalization.</summary>
     public const double DustThreshold = 0.1;
 
-    private static readonly JsonSerializerOptions JsonOpts = new()
-    {
-        WriteIndented = false,
-        PropertyNameCaseInsensitive = true,
-    };
-
     public GeneticsInheritanceService(
         IDbContextFactory<ProseDbContext> dbFactory,
         FamilyTieService                          family,

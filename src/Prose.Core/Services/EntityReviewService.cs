@@ -31,27 +31,6 @@ public class EntityReviewService
     private readonly ILogger<EntityReviewService> log;
     private readonly VotingGate votingGate;
 
-    private readonly CharacterRepository characters;
-    private readonly TechnologyRepository technology;
-    private readonly WeaponryRepository weaponry;
-    private readonly AmmunitionRepository ammunition;
-    private readonly EquipmentRepository equipment;
-    private readonly CyberwareRepository cyberware;
-    private readonly GenemodRepository genemods;
-    private readonly TransportationRepository transportation;
-    private readonly AutomatonRepository automata;
-    private readonly SubsidiaryRepository subsidiaries;
-    private readonly EntertainmentRepository entertainment;
-    private readonly ApparelRepository apparel;
-    private readonly MaterialRepository materials;
-    private readonly PharmaceuticalRepository pharmaceuticals;
-    private readonly ConsumerGoodRepository consumerGoods;
-    private readonly FactionRepository factions;
-    private readonly DistrictRepository districts;
-    private readonly ContractRepository contracts;
-    private readonly LabSpecimenRepository labSpecimens;
-    private readonly PsionicRepository psionics;
-
     private const int MaxConcurrency      = 8;
     private const int MaxConcurrencyLocal = 20;
 
@@ -60,53 +39,13 @@ public class EntityReviewService
         VotingConfiguration cfg,
         IDbContextFactory<ProseDbContext> dbFactory,
         ILogger<EntityReviewService> log,
-        VotingGate votingGate,
-        CharacterRepository characters,
-        TechnologyRepository technology,
-        WeaponryRepository weaponry,
-        AmmunitionRepository ammunition,
-        EquipmentRepository equipment,
-        CyberwareRepository cyberware,
-        GenemodRepository genemods,
-        TransportationRepository transportation,
-        AutomatonRepository automata,
-        SubsidiaryRepository subsidiaries,
-        EntertainmentRepository entertainment,
-        ApparelRepository apparel,
-        MaterialRepository materials,
-        PharmaceuticalRepository pharmaceuticals,
-        ConsumerGoodRepository consumerGoods,
-        FactionRepository factions,
-        DistrictRepository districts,
-        ContractRepository contracts,
-        LabSpecimenRepository labSpecimens,
-        PsionicRepository psionics)
+        VotingGate votingGate)
     {
         this.legion          = legion;
         this.cfg             = cfg;
         this.dbFactory       = dbFactory;
         this.log             = log;
         this.votingGate      = votingGate;
-        this.characters      = characters;
-        this.technology      = technology;
-        this.weaponry        = weaponry;
-        this.ammunition      = ammunition;
-        this.equipment       = equipment;
-        this.cyberware       = cyberware;
-        this.genemods        = genemods;
-        this.transportation  = transportation;
-        this.automata        = automata;
-        this.subsidiaries    = subsidiaries;
-        this.entertainment   = entertainment;
-        this.apparel         = apparel;
-        this.materials       = materials;
-        this.pharmaceuticals = pharmaceuticals;
-        this.consumerGoods   = consumerGoods;
-        this.factions        = factions;
-        this.districts       = districts;
-        this.contracts       = contracts;
-        this.labSpecimens    = labSpecimens;
-        this.psionics        = psionics;
     }
 
     // ── Public API ────────────────────────────────────────────────────────────
@@ -132,42 +71,6 @@ public class EntityReviewService
             skipRated, ballotCount, proseCount, entityType ?? "all", localUrl ?? "cloud");
         await RunBatches(skipRated, ballotCount, proseCount, entityType, localUrl, localKey, localModel, ct);
         log.LogInformation("EntityReviewService: ReviewAllAsync complete");
-    }
-
-    /// <summary>Returns all reviewed entities (Rating > 0) across all repos,
-    /// sorted by Rating descending.</summary>
-    public IEnumerable<(string Name, string Type, string Route, string Id, double Rating, int VoteCount)> GetAllReviewed()
-    {
-        var results = new List<(string Name, string Type, string Route, string Id, double Rating, int VoteCount)>();
-
-        void Collect<T>(List<T> entities, Func<T, string> name, string type, string route) where T : ICanonEntity
-        {
-            foreach (var e in entities.Where(e => e.Rating > 0))
-                results.Add((name(e), type, route, e.Id, e.Rating, e.VoteCount));
-        }
-
-        Collect(characters.GetAll(),      e => e.Name,      "character",     "/characters");
-        Collect(technology.GetAll(),      e => e.Name,      "technology",    "/technology");
-        Collect(weaponry.GetAll(),        e => e.Name,      "weapon",        "/weaponry");
-        Collect(ammunition.GetAll(),      e => e.Name,      "ammunition",    "/ammunition");
-        Collect(equipment.GetAll(),       e => e.Name,      "equipment",     "/equipment");
-        Collect(cyberware.GetAll(),       e => e.Name,      "cyberware",     "/cyberware");
-        Collect(genemods.GetAll(),        e => e.Name,      "genemod",       "/genemods");
-        Collect(transportation.GetAll(),  e => e.Name,      "transportation","/transportation");
-        Collect(automata.GetAll(),        e => e.Name,      "automaton",     "/automata");
-        Collect(subsidiaries.GetAll(),    e => e.Name,      "subsidiary",    "/subsidiaries");
-        Collect(entertainment.GetAll(),   e => e.Name,      "entertainment", "/entertainment");
-        Collect(apparel.GetAll(),         e => e.Name,      "apparel",       "/apparel");
-        Collect(materials.GetAll(),       e => e.Name,      "material",      "/materials");
-        Collect(pharmaceuticals.GetAll(), e => e.Name,      "pharmaceutical","/pharmaceuticals");
-        Collect(consumerGoods.GetAll(),   e => e.Name,      "consumer-good", "/goods");
-        Collect(factions.GetAll(),        e => e.Name,      "faction",       "/factions");
-        Collect(districts.GetAll(),       e => e.Name,      "district",      "/places");
-        Collect(contracts.GetAll(),       e => e.Codename,  "contract",      "/contracts");
-        Collect(labSpecimens.GetAll(),    e => e.Name,      "lab-specimen",  "/lab-specimens");
-        Collect(psionics.GetAll(),        e => e.Name,      "psionic",       "/psionics");
-
-        return results.OrderByDescending(r => r.Rating);
     }
 
     // ── Private — batch runner ────────────────────────────────────────────────
@@ -203,107 +106,6 @@ public class EntityReviewService
         // Unknown types: if --type was supplied and didn't match anything above, still attempt it.
         if (!all && !knownTypes.Contains(entityType, StringComparer.OrdinalIgnoreCase))
             await ReviewGenericBatchAsync(entityType!, skipRated, ballotCount, proseCount, localUrl, localKey, localModel, ct);
-    }
-
-    private async Task ReviewBatch<T>(
-        List<T> entities,
-        Func<T, (string id, string name, string text)> getContext,
-        Action<T> save,
-        string entityType,
-        bool skipRated,
-        int ballotCount,
-        int proseCount,
-        string? localUrl,
-        string? localKey,
-        string? localModel,
-        CancellationToken ct) where T : ICanonEntity
-    {
-        var targets = skipRated ? entities.Where(e => e.Rating == 0).ToList() : entities;
-        if (targets.Count == 0) return;
-
-        log.LogInformation("EntityReview: {Count} {Type} entities ({Ballots} ballots + {Prose} prose each)",
-            targets.Count, entityType, ballotCount, proseCount);
-
-        var useLocal = !string.IsNullOrWhiteSpace(localUrl);
-        var providers = useLocal ? ["local"] : ReviewProviderIds();
-        if (providers.Count == 0) { log.LogWarning("No providers configured — skipping"); return; }
-        var concurrency = useLocal ? MaxConcurrencyLocal : MaxConcurrency;
-
-        foreach (var entity in targets)
-        {
-            if (ct.IsCancellationRequested) break;
-
-            var (entityId, name, rawText) = getContext(entity);
-            var text = (rawText ?? "").Length > 3000 ? rawText![..3000] : rawText ?? "";
-            var contentHash = ComputeContentHash(name, text);
-
-            // ── Tier 1: cheap ballots ─────────────────────────────────────────
-            var personas = SampleEnrichedPersonas(ballotCount);
-            var sem = new SemaphoreSlim(concurrency);
-            var bag = new ConcurrentBag<EntityReview>();
-            var failed = 0;
-
-            await Task.WhenAll(personas.Select((persona, i) => Task.Run(async () =>
-            {
-                await sem.WaitAsync(ct);
-                try
-                {
-                    var provider = useLocal ? "local" : providers[i % providers.Count];
-                    var r = await BallotOnceAsync(entityId, entityType, name, text, contentHash,
-                                persona, provider, localUrl, localKey, localModel, ct);
-                    if (r != null) bag.Add(r);
-                    else Interlocked.Increment(ref failed);
-                }
-                catch (Exception ex) { Interlocked.Increment(ref failed); log.LogWarning(ex, "Ballot failed: {P}", persona.Id); }
-                finally { sem.Release(); }
-            }, ct)));
-
-            var saved = bag.ToList();
-            if (saved.Count == 0)
-            {
-                log.LogWarning("EntityReview: {Type} '{Name}' — all {N} ballots failed", entityType, name, ballotCount);
-                continue;
-            }
-
-            // ── Tier 2: prose upgrades on the most informative ballots ────────
-            if (proseCount > 0)
-            {
-                var picks = SelectInformative(saved, Math.Min(proseCount, saved.Count));
-                var psem = new SemaphoreSlim(concurrency);
-                await Task.WhenAll(picks.Select(rv => Task.Run(async () =>
-                {
-                    await psem.WaitAsync(ct);
-                    try
-                    {
-                        var persona = PersonasByIds([rv.PersonaId]).FirstOrDefault();
-                        if (persona == null) return;
-                        var provider = useLocal ? "local" : rv.ProviderId;
-                        var prose = await ProseOnceAsync(entityType, name, text, persona,
-                                        provider, localUrl, localKey, localModel, ct);
-                        if (prose != null) { rv.ReviewText = prose.Value.review; rv.Improvements = prose.Value.improvements; }
-                    }
-                    catch (Exception ex) { log.LogWarning(ex, "Prose upgrade failed: {P}", rv.PersonaId); }
-                    finally { psem.Release(); }
-                }, ct)));
-            }
-
-            // ── Persist + update entity.Rating + EntityReviewSummary ─────────
-            await using (var db = await dbFactory.CreateDbContextAsync(ct))
-            {
-                db.EntityReviews.AddRange(saved);
-                await db.SaveChangesAsync(ct);
-            }
-            await UpsertSummaryAsync(entityId, entityType, name, contentHash, ct);
-
-            var mean = saved.Average(r => (double)r.Score);
-            entity.Rating    = Math.Round(mean, 1);
-            entity.VoteCount = entity.VoteCount + saved.Count;
-            save(entity);
-
-            log.LogInformation(
-                "EntityReview: {Type} '{Name}' → {Rating} ({New} ballots, {F} failed, {Prose} prose)",
-                entityType, name, entity.Rating, saved.Count, failed, proseCount > 0 ? saved.Count(r => !string.IsNullOrEmpty(r.ReviewText)) : 0);
-        }
     }
 
     // ── Generic batch — direct Entities table, no typed repo ─────────────────

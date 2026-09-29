@@ -708,6 +708,9 @@ public class GearEntityCrudTools
         m.Aliases      = MergeList(m.Aliases,      aliases,      appendLists);
 
         materials.Save(m);
+        // Tags REPLACE (or clear on "[]"), as in every create_* here: the repository's tag sync only
+        // adds, so without this a replaced or cleared tag read back still attached.
+        if (!string.IsNullOrEmpty(tags)) FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(m.Id), m.Tags).GetAwaiter().GetResult();
 
         // Read back rather than reporting ok:true on faith — an entity write that returns success
         // having changed nothing is a documented failure mode of this system's MCP surface.
@@ -1146,6 +1149,9 @@ public class WorldEntityCrudTools
         }
 
         vocabulary.Save(v);
+        // Tags REPLACE (or clear on "[]"): the repository's tag sync only adds, so without this a
+        // replaced or cleared tag read back still attached.
+        if (!string.IsNullOrEmpty(tags)) FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(v.Id), v.Tags).GetAwaiter().GetResult();
 
         var after = vocabulary.GetAll().FirstOrDefault(x =>
             string.Equals(x.Term, term, StringComparison.OrdinalIgnoreCase));

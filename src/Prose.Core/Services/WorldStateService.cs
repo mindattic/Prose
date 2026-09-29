@@ -115,7 +115,8 @@ public class WorldStateService
             if (db == null) return null;
             if (!db.Database.IsSqlServer()) return null;
 
-            var formatted = sysTime.ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss.fffffff");
+            // Invariant: ':' in a custom format is the culture's time separator, spliced into T-SQL.
+            var formatted = sysTime.ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss.fffffff", System.Globalization.CultureInfo.InvariantCulture);
             // FOR SYSTEM_TIME AS OF requires a literal datetime — EF cannot parameterize it.
             // EntityId is parameterized to follow the safe-query contract.
             var sql = $"SELECT [Json] FROM [dbo].[Records] FOR SYSTEM_TIME AS OF '{formatted}' WHERE [EntityId] = @p0";

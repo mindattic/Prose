@@ -169,7 +169,7 @@ public class CanonDocTools
     [McpServerTool, Description(
         "Regenerate a world-canon .md file from its DB sections. Writes the assembled content to disk and " +
         "updates the LastChecksum so codex doctor validates the file as current. " +
-        "Run this after every set_canon_section call.")]
+        "set_canon_section already does this as part of its own call; use this to regenerate on demand.")]
     public Task<string> GenerateCanonMd(
         [Description("Document type — call list_canon_document_types for the current valid values.")] string documentType,
         [Description("Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.")] string universeSlug = "glmz") =>

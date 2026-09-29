@@ -85,7 +85,6 @@ public class WeaponAmmoLinkerService
             .GroupBy(a => a.Name, StringComparer.OrdinalIgnoreCase)
             .ToDictionary(g => g.Key, g => g.First(), StringComparer.OrdinalIgnoreCase);
 
-        var useLocal = !string.IsNullOrWhiteSpace(localUrl);
         var key      = string.IsNullOrWhiteSpace(localKey) ? "local" : localKey;
         var model    = string.IsNullOrWhiteSpace(localModel) ? "qwen2.5-72b-32k" : localModel;
 
@@ -103,11 +102,7 @@ public class WeaponAmmoLinkerService
                 var weaponDesc = (w.Description ?? "").Length > 1200 ? w.Description![..1200] : (w.Description ?? "(none)");
                 var userMsg = $"Weapon name: {w.Name}\n\nDescription:\n{weaponDesc}";
 
-                string raw;
-                if (useLocal)
-                    raw = await legion.CallAsync("local", key, model, system, userMsg, localUrl!, maxTokens: 150, temperature: 0.3, ct);
-                else
-                    raw = await legion.CallAsync("claude", key, model, system, userMsg, maxTokens: 150, temperature: 0.3, ct);
+                var raw = await legion.CallAsync("local", key, model, system, userMsg, localUrl!, maxTokens: 150, temperature: 0.3, ct);
 
                 if (!TryParseMatch(raw, out var ammoName, out var confidence))
                 {

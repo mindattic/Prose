@@ -248,14 +248,16 @@ NO is a correct and common answer. Most of what you are shown will be complement
                     true, verdict.Severity ?? "MODERATE", verdict.Note ?? "", verdict.EvidenceQuote ?? "",
                     anchors.Where(a => a != null).Select(a => a!.Number).ToArray()));
             }
-            else
+            else if (string.IsNullOrEmpty(verdict.RejectedReason))
             {
                 compatible++;
-                // A verdict that could not be reached (call failed, unparseable, ungrounded) is
-                // NOT evidence of compatibility — leave those rows exactly as they are.
-                if (opts.Apply && string.IsNullOrEmpty(verdict.RejectedReason))
+                if (opts.Apply)
                     cleared += await ClearGroupAsync(db, g, verdict.Note ?? "", ct);
             }
+            // else: a verdict that could not be reached (call failed, unparseable, ungrounded) is
+            // NOT evidence of compatibility — it is counted under GroundingRejected only (it was
+            // also counted as "compatible", so an outage printed as a clean run) and its rows are
+            // left exactly as they are.
         }
 
         if (opts.Apply)
@@ -368,8 +370,9 @@ NO is a correct and common answer. Most of what you are shown will be complement
             raw = await llm.GenerateAsync(System, user.ToString(),
                 temperature: 0.1, maxTokens: 500, model: Model, ct: ct);
         }
-        catch (Exception ex)
+        catch (Exception ex) when (ex is not OperationCanceledException || !ct.IsCancellationRequested)
         {
+            // A cancelled run propagates instead of being cached as a "call failed" verdict.
             log.LogWarning(ex, "[ledger-adjudicate] call failed for {Entity}.{Predicate}", g.EntityName, g.Predicate);
             row.IsContradiction = false;
             row.RejectedReason = "adjudication call failed: " + ex.Message;

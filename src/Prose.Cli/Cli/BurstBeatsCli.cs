@@ -69,7 +69,10 @@ public static class BurstBeatsCli
         var bookDescendantIds = new HashSet<Guid>();
         if (bookFilters.Count > 0)
         {
-            var allNodes = await db.Nodes
+            // IgnoreQueryFilters(): the --book refs are resolved across universes (NodeRefResolver),
+            // so the descendant walk must be too — under a different ambient universe it found no
+            // children and the book's beats were silently never scanned.
+            var allNodes = await db.Nodes.IgnoreQueryFilters()
                 .Select(s => new { s.Id, s.Slug, s.ParentNodeId })
                 .ToListAsync();
             // Each filter through the shared resolver (NodeCode, GUID); any miss is an error, not a skip.
@@ -105,7 +108,7 @@ public static class BurstBeatsCli
             }
             nodesQuery = nodesQuery.IgnoreQueryFilters().Where(s => nodeIds.Contains(s.Id));
         }
-        if (bookDescendantIds.Count > 0) nodesQuery = nodesQuery.Where(s => bookDescendantIds.Contains(s.Id));
+        if (bookDescendantIds.Count > 0) nodesQuery = nodesQuery.IgnoreQueryFilters().Where(s => bookDescendantIds.Contains(s.Id));
         if (!string.IsNullOrEmpty(kindFilter)) nodesQuery = nodesQuery.Where(s => s.Kind == kindFilter);
         var nodes = await nodesQuery.OrderBy(s => s.CreatedAt).ToListAsync();
 

@@ -204,8 +204,6 @@ public class GlobalSearchService
     /// </summary>
     public void WarmUp() => EnsureBuilt();
 
-    private void Invalidate() { lock (syncLock) { index = []; } }
-
     private void EnsureBuilt()
     {
         lock (syncLock)
@@ -229,8 +227,12 @@ public class GlobalSearchService
         lock (syncLock)
         {
             if (index.Count == 0) return;
-            index.RemoveAll(e => e.Id == entry.Id);
-            index.Add(entry);
+            // Copy-on-write: searches enumerate `index` outside the lock, and mutating the live
+            // list under one threw "Collection was modified" whenever a save landed mid-search.
+            var next = new List<SearchIndexEntry>(index);
+            next.RemoveAll(e => e.Id == entry.Id);
+            next.Add(entry);
+            index = next;
         }
     }
 

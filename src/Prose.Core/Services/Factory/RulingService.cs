@@ -175,8 +175,20 @@ public sealed class RulingService(IDbContextFactory<ProseDbContext> dbFactory, B
             if (CanonRecordLoader.Load(db, e.EntityType, e.Id) is not { } record) continue;
             foreach (var (field, value) in StringLeaves(record, ""))
                 foreach (var (law, rx) in laws)
-                    foreach (Match m in rx.Matches(value))
-                        hits.Add(new RecordLawHit(law.Id, law.Text, e.Id, e.Name, e.EntityType, field, m.Value, Context(value, m.Index, m.Length)));
+                {
+                    // Same contract as FindLawViolationsAsync: a pathological pattern is a failing hit
+                    // naming it, not an exception out of F1's commit and every caller.
+                    try
+                    {
+                        foreach (Match m in rx.Matches(value))
+                            hits.Add(new RecordLawHit(law.Id, law.Text, e.Id, e.Name, e.EntityType, field, m.Value, Context(value, m.Index, m.Length)));
+                    }
+                    catch (RegexMatchTimeoutException)
+                    {
+                        hits.Add(new RecordLawHit(law.Id, law.Text, e.Id, e.Name, e.EntityType, field,
+                            $"(pattern /{law.Pattern}/ timed out on this field — tighten it)", ""));
+                    }
+                }
         }
         return hits;
     }

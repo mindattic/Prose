@@ -88,7 +88,16 @@ public static class UniverseInterchangeCli
         PrintImportResult(importResult);
         if (!importResult.Success) return 1;
 
-        await svc.ExportToFileAsync(importResult.UniverseSlug, path);
+        try
+        {
+            await svc.ExportToFileAsync(importResult.UniverseSlug, path);
+        }
+        catch (InvalidOperationException ex)
+        {
+            // Same handling as --universe-export: the import landed, the normalizing export did not.
+            Console.Error.WriteLine($"[universe-sync] Imported, but the export back to {path} failed: {ex.Message}");
+            return 1;
+        }
         Console.WriteLine($"[universe-sync] Normalized {path}");
         return 0;
     }

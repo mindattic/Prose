@@ -69,9 +69,9 @@ public class ContinuityEnforcer
         // vice versa.
         var claims = continuity.GetByStatus("CANONICAL")
             .Concat(continuity.GetByStatus("CONFIRMED"))
-            .Where(c => sceneNames.Any(n =>
+            .Where(c => !string.IsNullOrWhiteSpace(c.EntityName) && sceneNames.Any(n => n.Length > 0 && (
                 c.EntityName.StartsWith(n, StringComparison.OrdinalIgnoreCase) ||
-                n.StartsWith(c.EntityName, StringComparison.OrdinalIgnoreCase)))
+                n.StartsWith(c.EntityName, StringComparison.OrdinalIgnoreCase))))
             // 2026-08-23: exclude point-in-time state. A stored location_current /
             // appearance_in_story from an earlier book is not something a later book can
             // "contradict" — the character moved. Including them made this check report a

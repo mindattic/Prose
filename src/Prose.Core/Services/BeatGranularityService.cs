@@ -30,7 +30,8 @@ public class BeatGranularityService(IDbContextFactory<ProseDbContext> factory)
     /// <summary>
     /// Target word count injected into BeatContext.TargetWords by ProseWriterRouter.
     /// Midpoint of the optimal range (800–1,500 words). Produces the full-scene
-    /// length instruction in BeatGeneratorService rather than the default "2-4 paragraphs."
+    /// length instruction in BeatGeneratorService rather than the default untargeted
+    /// Scene/Sequel instruction.
     /// </summary>
     public const int TargetWordsRecommended = 950;
 

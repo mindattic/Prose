@@ -128,8 +128,6 @@ public static class DcmVizCli
 
     // ── beat collection ───────────────────────────────────────────────────────
 
-    private sealed record BeatEntry(int BeatIndex, string? Title, string? Goal);
-
     private static async Task<IReadOnlyList<(int BeatIndex, string? BeatTitle, string? BeatGoal)>> CollectBeatsAsync(
         Guid nodeId, IDbContextFactory<ProseDbContext> dbFactory)
     {

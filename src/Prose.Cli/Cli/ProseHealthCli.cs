@@ -4,6 +4,13 @@ using Prose.Core.Services;
 
 namespace Prose.Cli;
 
+/// <summary>
+/// prose --prose-health [--slug &lt;slug&gt;] [--json] [--out &lt;dir&gt;]
+///
+/// Runs <see cref="NightlyHealthService"/> (deterministic, no LLM calls) over one book or every
+/// non-WIP story, prints the three risk tiers, and writes a markdown report. Exit 1 when any
+/// Tier 1 beat is found. Deactivated 2026-09-22 (see <see cref="DeactivatedInstruments"/>).
+/// </summary>
 public static class ProseHealthCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)

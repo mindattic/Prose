@@ -86,7 +86,7 @@ public class CanonContradictionService
         // keep weighing a book-specific entity by a stale vector indefinitely; only a manual
         // `prose --reembed` ever closed the gap. Refresh is hash-gated (no-op unless the source
         // text actually changed) and scoped to just this book's own entities (OriginNodeId ==
-        // nodeId) — cheap and bounded, not a corpus-wide sweep — so check-canon never audits a
+        // scopeNodeId, the book) — cheap and bounded, not a corpus-wide sweep — so check-canon never audits a
         // book against its own stale vectors again.
         var bookEntities = await db.Entities.AsNoTracking().IgnoreQueryFilters()
             .Where(e => e.OriginNodeId == scopeNodeId)

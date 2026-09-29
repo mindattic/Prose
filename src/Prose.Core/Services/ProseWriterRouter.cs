@@ -402,9 +402,9 @@ public class ProseWriterRouter(
                     .ToHashSet(StringComparer.OrdinalIgnoreCase);
                 var claims = continuity.GetByStatus("CANONICAL")
                     .Concat(continuity.GetByStatus("CONFIRMED"))
-                    .Where(c => sceneNames.Any(n =>
+                    .Where(c => !string.IsNullOrWhiteSpace(c.EntityName) && sceneNames.Any(n => n.Length > 0 && (
                         c.EntityName.StartsWith(n, StringComparison.OrdinalIgnoreCase) ||
-                        n.StartsWith(c.EntityName, StringComparison.OrdinalIgnoreCase)))
+                        n.StartsWith(c.EntityName, StringComparison.OrdinalIgnoreCase))))
                     // 2026-08-23: never hand the model point-in-time state as a
                     // do-not-contradict constraint. A stale location_current from a previous
                     // book would instruct this beat to put the character where they used to be

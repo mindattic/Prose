@@ -88,6 +88,20 @@ public class OneShotGenerationService(
                     throw new InvalidOperationException(NodeRefResolver.NotFoundMessage(req.Node));
                 nodeId = node.Id;
                 attachedNodeSlug = node.Slug;
+
+                // Attached mode with no explicit universe: write in the NODE's universe. Left to
+                // the ambient default, a book from another universe got this universe's canon,
+                // characters and grounding (and universeId Guid.Empty below).
+                if (universeId == null)
+                {
+                    var owner = universeContext.ListUniverses().FirstOrDefault(u => u.Id == node.UniverseId);
+                    if (owner != null)
+                    {
+                        universeId = owner.Id;
+                        universeSlug = owner.Slug;
+                        universeContext.SetFlowUniverse(universeId);
+                    }
+                }
             }
 
             var characters = await ResolveCharacterNamesAsync(req.Characters, ct);

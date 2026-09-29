@@ -6,8 +6,8 @@ using Prose.Core.Data.Entities;
 namespace Prose.Core.Services.WriteGate;
 
 /// <summary>
-/// The write-gate's first real check (2026-08-22): rejects a <c>CharacterAlias</c>/
-/// <c>PlaceAlias</c>/<c>FactionAlias</c>/<c>WeaponAlias</c> insert/update outright when its
+/// The write-gate's first real check (2026-08-22): rejects an alias-bridge row (every
+/// <c>*Alias</c> table — see <see cref="AppliesTo"/>) insert/update outright when its
 /// <c>Value</c> matches (case-insensitively) its own owning entity's canonical <c>Name</c> — a
 /// redundant, meaningless self-alias.
 ///

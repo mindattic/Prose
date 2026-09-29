@@ -142,8 +142,9 @@ public class SceneContextBuilder
         var loc = location.ToLowerInvariant();
 
         // Try to match district name in the location string
+        // A nameless district would "match" every location (Contains("") is always true).
         return districtRepo.GetAll().FirstOrDefault(d =>
-            loc.Contains(d.Name.ToLowerInvariant()));
+            !string.IsNullOrWhiteSpace(d.Name) && loc.Contains(d.Name.ToLowerInvariant()));
     }
 
     private List<WorldbuildingDocument> FindDocsByTags(string[] tags)

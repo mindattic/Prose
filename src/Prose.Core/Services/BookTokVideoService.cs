@@ -201,6 +201,9 @@ public class BookTokVideoService
         foreach (var a in args) psi.ArgumentList.Add(a);
 
         using var p = Process.Start(psi)!;
+        // Same guard as BookTokMockupService.RunMagickAsync: disposing does not end the process,
+        // so a cancel left ffmpeg encoding into a temp dir the finally block then failed to delete.
+        using var kill = ct.Register(() => { try { p.Kill(entireProcessTree: true); } catch { } });
         var errTask = p.StandardError.ReadToEndAsync(ct);
         await p.StandardOutput.ReadToEndAsync(ct);
         await p.WaitForExitAsync(ct);

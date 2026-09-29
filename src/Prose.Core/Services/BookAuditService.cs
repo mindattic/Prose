@@ -8,31 +8,20 @@ namespace Prose.Core.Services;
 // ─────────────────────────────────────────────────────────────────────────────
 // BookAuditService
 //
-// Audits a node against the 7 Gateway Commandments (standalone / first-in-
-// series) or the 7 Sequel Commandments (when PreviousNodeId is set).
+// Holds the Gateway Commandments (standalone / first-in-series) and the
+// Sequel Commandments (when PreviousNodeId is set), and renders them as a
+// writing-goal block for the generator (BuildCommandmentContext). The
+// per-commandment LLM audit that used to live here is gone; only the
+// context builder remains, called by BeatGeneratorService.
 //
-// Which set applies is determined automatically from Node.PreviousNodeId:
+// Which set applies is decided by the caller from Node.PreviousNodeId:
 //   null  → gateway commandments (seduce the cold reader)
 //   set   → sequel commandments  (honor the returning reader)
-//
-// Each commandment is an independent LLM check run in parallel. The audit
-// returns pass / warn / fail per commandment, evidence, and a fix suggestion.
-//
-// Commandment 6 (gateway: "reward re-reading without requiring it") and
-// the analogous sequel commandment ("reward the long memory without taxing
-// the short one") are enriched with actual PlantPayoff registry data.
+// GLMZ books additionally get the GLMZ-specific gateway commandment.
 // ─────────────────────────────────────────────────────────────────────────────
 
-public class BookAuditService(
-    AuditRunner auditRunner,
-    PlantPayoffService plantPayoffs,
-    GlossaryService glossary,
-    FindingsService findingsSvc,
-    IDbContextFactory<ProseDbContext> dbFactory)
+public class BookAuditService
 {
-    // AuditProseUtils.ClampProse's own threshold — kept here too so this service can tell
-    // whether the commandments it's about to run will actually see the whole manuscript.
-    const int ClampThreshold = 100_000;
     // GLMZ universe ID — used to append universe-specific commandments
     static readonly Guid GlmzUniverseId = new("0197E9C9-0001-7000-8000-000000000001");
 
@@ -179,14 +168,3 @@ public class BookAuditService(
         return sb.ToString();
     }
 }
-
-// ── Result models ─────────────────────────────────────────────────────────────
-
-public record BookAuditCheck(
-    string  Key,
-    string  Title,
-    string  Status,     // "pass" | "warn" | "fail"
-    string  Evidence,
-    string? Fix);
-
- // true when the manuscript exceeded ClampProse's 100k-char cap

@@ -348,6 +348,9 @@ public class AudiblePackageService
     private sealed class PhoneticsEntry
     {
         public string? Term   { get; set; }
+        // The prompt asks for "say_as"; case-insensitive matching does not bridge the
+        // underscore, so without this every respelling deserialized as null.
+        [System.Text.Json.Serialization.JsonPropertyName("say_as")]
         public string? SayAs  { get; set; }
         public string? Note   { get; set; }
     }

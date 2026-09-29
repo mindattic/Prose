@@ -73,7 +73,7 @@ public class NightlyHealthService
     }
 
     /// <summary>
-    /// Run the nightly health scan on all non-WIP book nodes (or a single
+    /// Run the nightly health scan on every book node in every universe (or a single
     /// book when <paramref name="slug"/> is supplied). Returns the consolidated
     /// report and writes findings to FindingsService.
     /// </summary>
@@ -87,7 +87,7 @@ public class NightlyHealthService
         var books = await ResolveBooksAsync(slug, ct);
         if (books.Count == 0)
         {
-            warnings.Add(slug != null ? $"No non-WIP book found with slug '{slug}'" : "No non-WIP books found");
+            warnings.Add(slug != null ? $"No book found with slug '{slug}'" : "No books found");
             return new NightlyHealthReport(runAt, 0, 0, [], [], [], warnings);
         }
 
@@ -292,7 +292,7 @@ public class NightlyHealthService
     private async Task<List<BookMeta>> ResolveBooksAsync(string? slug, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        // IgnoreQueryFilters() unconditionally: "analysing all non-WIP books" is meant to sweep
+        // IgnoreQueryFilters() unconditionally: "analysing all books" is meant to sweep
         // every universe's books, not whichever universe happens to be ambient in this process —
         // and an explicit --slug target is exactly as much an explicit identifier as an id, so it
         // must bypass ambient scope too (found live 2026-08-17: the single-slug branch was missing

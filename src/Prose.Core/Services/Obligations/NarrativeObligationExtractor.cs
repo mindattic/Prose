@@ -384,7 +384,9 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
         }
 
         // Gate against the WHOLE beat: a quote is a literal substring of the text the row anchors to.
-        return Parse(raw, input.BeatText, input.OpenObligations.Count);
+        // The index bound is what the model was SHOWN (the list is cut at MaxOpenListed): an index
+        // past it names an obligation the model never saw.
+        return Parse(raw, input.BeatText, Math.Min(input.OpenObligations.Count, MaxOpenListed));
     }
 
     /// <summary>Parse leniently (first '{' to last '}') and apply the quote gate. Internal so the

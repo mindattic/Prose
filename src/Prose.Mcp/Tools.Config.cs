@@ -122,9 +122,9 @@ public class ConfigTools
         DateTime? asOfDt = null;
         if (asOf != null)
         {
-            if (!DateTime.TryParse(asOf, null, System.Globalization.DateTimeStyles.RoundtripKind, out var parsed))
+            if (!TryParseUtc(asOf, out var parsed))
                 return JsonSerializer.Serialize(new { error = "invalid_as_of", hint = "use ISO 8601, e.g. 2026-06-01T00:00:00Z" }, JsonOpts);
-            asOfDt = parsed.ToUniversalTime();
+            asOfDt = parsed;
         }
 
         var row = await svc.GetAsync(relativePath, asOfDt);
@@ -250,9 +250,9 @@ public class ConfigTools
         DateTime? asOfDt = null;
         if (asOf != null)
         {
-            if (!DateTime.TryParse(asOf, null, System.Globalization.DateTimeStyles.RoundtripKind, out var parsed))
+            if (!TryParseUtc(asOf, out var parsed))
                 return JsonSerializer.Serialize(new { error = "invalid_as_of", hint = "use ISO 8601, e.g. 2026-06-01T00:00:00Z" }, JsonOpts);
-            asOfDt = parsed.ToUniversalTime();
+            asOfDt = parsed;
         }
 
         var result = await svc.RestoreAsync(relativePath, asOfDt, dryRun);
@@ -459,6 +459,14 @@ public class ConfigTools
     }
 
     // ── Helpers ───────────────────────────────────────────────────────────────
+
+    /// <summary>asOf is documented as UTC: an offset-less value is taken as UTC (it was converted
+    /// from the Hub's local time, shifting the lookup by the machine's offset), and the parse is
+    /// culture-invariant.</summary>
+    private static bool TryParseUtc(string s, out DateTime utc) =>
+        DateTime.TryParse(s, System.Globalization.CultureInfo.InvariantCulture,
+            System.Globalization.DateTimeStyles.AssumeUniversal | System.Globalization.DateTimeStyles.AdjustToUniversal,
+            out utc);
 
     private async Task<(Guid Id, string Path, string? Error)> ResolveDocIdAsync(string doc)
     {

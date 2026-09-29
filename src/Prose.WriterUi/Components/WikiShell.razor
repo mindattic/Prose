@@ -423,12 +423,33 @@
     private int scanCap = 25, scanDone, scanTotal;
     private ContradictionScanResult? scanResult;
 
+    /// <summary>The page the per-page state belongs to.</summary>
+    private (string? Type, string? Slug) shownFor;
+
     // Route values arrive as parameters (no <Router>), so a navigation re-runs this rather than
     // OnInitialized — every load path must be here.
     protected override async Task OnParametersSetAsync()
     {
         error = null;
         saveNote = null;
+
+        // A link followed inside the wiki keeps this component and hands it new parameters, so
+        // whatever belonged to the last page has to go explicitly. Before this, following a
+        // Related link showed the previous entity's contradiction results and version diff under
+        // the new entity's name, and moving to another repository kept the old one's filter and
+        // page number.
+        if (shownFor != (Type, Slug))
+        {
+            if (shownFor.Type != Type) { search = ""; pageNo = 1; rows = null; total = 0; }
+            shownFor = (Type, Slug);
+            entity = null;
+            versions = null;
+            selectedVersion = null;
+            diff = null;
+            editing = false;
+            scanResult = null;
+            loading = true;
+        }
 
         if (!string.IsNullOrWhiteSpace(At) && DateTime.TryParse(
                 At, null, System.Globalization.DateTimeStyles.AdjustToUniversal
@@ -626,6 +647,8 @@
         string.IsNullOrEmpty(s) ? "" : s.Length <= max ? s : s[..max] + "…";
 
     private static string Humanise(string slug) =>
-        string.Join(' ', slug.Split('_', '-', StringSplitOptions.RemoveEmptyEntries)
+        // An array, not two chars: Split('_', '-', options) binds to Split(char, int count, …)
+        // with '-' read as a count of 45, so hyphenated slugs were never split.
+        string.Join(' ', slug.Split(new[] { '_', '-' }, StringSplitOptions.RemoveEmptyEntries)
             .Select(w => w.Length == 0 ? w : char.ToUpperInvariant(w[0]) + w[1..]));
 }

@@ -38,7 +38,12 @@ public static class CharacterDepthAuditCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var charIds = await db.Characters.AsNoTracking().Select(c => c.Id).ToListAsync();
+        // Characters has no universe query filter of its own (Entities does), so scope through the
+        // Entity spine: `--universe scry` used to survey every universe's characters, and the
+        // other universes' rows printed as "(unknown)" because the name lookup below IS scoped.
+        var charIds = await db.Characters.AsNoTracking()
+            .Where(c => db.Entities.Any(e => e.Id == c.Id))
+            .Select(c => c.Id).ToListAsync();
         if (charIds.Count == 0)
         {
             Console.WriteLine("[character-depth-audit] No characters found in scope.");

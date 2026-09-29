@@ -245,10 +245,7 @@ public class ObligationCalibrationService(
         return doomed.Count;
     }
 
-    /// <summary>Rescan the whole book (synchronously, in reading order), reconcile, and score the
-    /// instrument against the injection manifest. Findings are written so the run is auditable.
-    /// The ledger is reset first (<see cref="ResetLedgerAsync(Guid, CancellationToken)"/>) so the
-    /// score measures this instrument, not the residue of every run before it.</summary>
+    /// <summary>How one injection scored — see <see cref="Classify"/>.</summary>
     public enum InjectionOutcome { TruePositive, FalseNegative, ResolvedMisflagged }
 
     /// <summary>The ledger row an injection produced, matched by origin beat and grounded quote.
@@ -297,6 +294,10 @@ public class ObligationCalibrationService(
         return (InjectionOutcome.FalseNegative, $"FN  resolved  @ {inj.BeatId:N} — \"{Trunc(inj.Sentence, 60)}\" → {match.State} (neither carried nor paid)");
     }
 
+    /// <summary>Rescan the whole book (synchronously, in reading order), reconcile, and score the
+    /// instrument against the injection manifest. Findings are written so the run is auditable.
+    /// The ledger is reset first (<see cref="ResetLedgerAsync(Guid, CancellationToken)"/>) so the
+    /// score measures this instrument, not the residue of every run before it.</summary>
     public async Task<Score> ScoreAsync(Guid bookNodeId, bool deep, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);

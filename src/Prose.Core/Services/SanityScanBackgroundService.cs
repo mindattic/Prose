@@ -26,12 +26,9 @@ namespace Prose.Core.Services;
 /// host), never the Writer or CLI/MCP hosts — same one-process-only rule as every other
 /// background sweep in this file, to avoid duplicate corpus scans hitting the shared DB.
 ///
-/// 2026-08-21: this sweep is no longer zero-cost end to end — it also hash-gates a draft-tier
-/// the (since-deleted, RFC 0010) EmotionalDepthService examination per book, which made
-/// real LLM calls, but ONLY for a book whose beat text actually changed since its last
-/// examination (explicit user decision, given this project's LLM-billing history — see
-/// <c>feedback_leaked_api_keys_critical</c> memory). The original deterministic sanity/
-/// readability checks below remain zero-cost.
+/// 2026-08-21 to 2026-09-06 this sweep also ran a hash-gated EmotionalDepthService examination
+/// (real LLM calls); that service was deleted under RFC 0010, so the sweep is back to the
+/// deterministic sanity and readability checks below — zero LLM cost.
 /// </summary>
 public class SanityScanBackgroundService : BackgroundService
 {
@@ -158,8 +155,8 @@ public class SanityScanBackgroundService : BackgroundService
             // use. Uses the SAME FindingCategory.ProseHealth NightlyHealthService already
             // writes under, but a distinct "READABILITY " summary prefix and filePath
             // ($"node:{slug}", not NightlyHealthService's bare slug) so the two coexist without
-            // colliding and this one is queryable by BuildFindingsGuidanceAsync's exact-match
-            // FilePath lookup.
+            // colliding and this one is matched by BuildFindingsGuidanceAsync's "node:{slug}"
+            // FilePath prefix lookup.
             try { await FileReadabilityFindingsAsync(book.Id, book.Slug, ct); }
             catch (Exception ex)
             {

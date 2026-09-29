@@ -81,8 +81,11 @@ public class FindAndOpenBookTool : IKdpTool
     {
         try
         {
-            await ctx.Browser.EvalAsync(
-                $"window.location.href = 'https://kdp.amazon.com/en_US/title-setup/kindle/{titleId}/content'; ''", ct);
+            // The id comes from the model: escaped and serialized, never spliced raw into script,
+            // so a stray quote in it cannot break (or rewrite) the navigation.
+            var url = JsonSerializer.Serialize(
+                $"https://kdp.amazon.com/en_US/title-setup/kindle/{Uri.EscapeDataString(titleId.Trim())}/content");
+            await ctx.Browser.EvalAsync($"window.location.href = {url}; ''", ct);
         }
         catch { /* navigation tears down the script context; a thrown eval is expected here */ }
         await Task.Delay(2500, ct);

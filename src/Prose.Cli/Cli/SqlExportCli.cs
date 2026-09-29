@@ -107,6 +107,11 @@ public static class SqlExportCli
             Console.WriteLine($"[sql-export] total rows: {totalRows:N0}");
         }
 
+        // The header opens a transaction; without this the script ended with it still open, so
+        // closing the session that ran it rolled every DROP/CREATE/INSERT back.
+        await w.WriteLineAsync("COMMIT TRANSACTION;");
+        await w.WriteLineAsync("GO");
+
         await w.FlushAsync();
         var info = new FileInfo(outPath);
         Console.WriteLine($"[sql-export] wrote {info.Length / 1024.0:F1} KB → {outPath}");

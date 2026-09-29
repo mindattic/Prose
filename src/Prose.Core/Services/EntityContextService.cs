@@ -394,7 +394,8 @@ public sealed class EntityContextService(
                     options: ["FixProse", "UpdateEntity", "Ignore"],
                     context: $"Prose says: \"{proseClaim}\"\nCanon says: \"{entity.Description[..Math.Min(entity.Description.Length, 200)]}\"",
                     quorum: Quorum.Plurality,
-                    maxTokens: 300);
+                    maxTokens: 300,
+                    ct: ct);
 
                 legionChoice = decision.Choice;
                 legionReasoning = decision.Reasoning ?? "";

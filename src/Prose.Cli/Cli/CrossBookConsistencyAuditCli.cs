@@ -23,8 +23,16 @@ public static class CrossBookConsistencyAuditCli
 
         DateTime? since = null;
         var sinceArg = args.SkipWhile(a => a != "--since").Skip(1).FirstOrDefault();
-        if (sinceArg != null && double.TryParse(sinceArg, System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out var hours))
+        if (sinceArg != null)
+        {
+            // An unparseable value ("24h") used to drop the filter and audit all time as if asked.
+            if (!double.TryParse(sinceArg, System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out var hours))
+            {
+                Console.Error.WriteLine($"[consistency] --since takes a number of hours, got '{sinceArg}'.");
+                return 2;
+            }
             since = DateTime.UtcNow.AddHours(-hours);
+        }
 
         Console.WriteLine(since.HasValue
             ? $"[consistency] Checking cross-book conflicts since {since:yyyy-MM-dd HH:mm} UTC..."

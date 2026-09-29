@@ -1555,7 +1555,14 @@ window.proseSpeech = (() => {
     let queue = [];
     let draining = false;
 
+    // Bumped by every stop(). A drain loop belongs to the generation it started in: without this,
+    // the loop that stop() interrupted resumed when its clip's promise settled, found the NEW
+    // queue, and played it alongside the new loop — two voices at once — and then its `finally`
+    // nulled `current` under the new clip, so the next Stop could no longer silence it.
+    let generation = 0;
+
     function stop() {
+        generation++;
         queue = [];
         draining = false;
         if (!current) return;
@@ -1580,17 +1587,21 @@ window.proseSpeech = (() => {
     async function drain() {
         if (draining) return;
         draining = true;
+        const mine = generation;
         try {
-            while (queue.length > 0) {
+            // stop() clears the queue and bumps the generation; that is how barge-in cuts a reply
+            // off mid-sentence rather than after it.
+            while (queue.length > 0 && mine === generation) {
                 const next = queue.shift();
                 await playOne(next);
-                // stop() clears the queue and nulls current; that is how barge-in cuts a reply off
-                // mid-sentence rather than after it.
-                if (current === null) break;
             }
         } finally {
-            draining = false;
-            current = null;
+            // A loop a stop() already retired leaves the state alone: it now belongs to whatever
+            // started after the stop.
+            if (mine === generation) {
+                draining = false;
+                current = null;
+            }
         }
     }
 
@@ -1612,8 +1623,6 @@ window.proseSpeech = (() => {
 
         /** Barge-in: the author started talking again, or moved on. */
         stop() { stop(); return true; },
-
-        speaking() { return draining || (current !== null && !current.paused); },
     };
 })();
 
@@ -1632,6 +1641,7 @@ window.proseMic = (() => {
     let recorder = null;
     let chunks = [];
     let startedAt = 0;
+    let starting = null;   // the start() in flight, if any
 
     // Chromium gives webm/opus; the list is ordered by what Whisper handles most happily.
     const PREFERRED = ['audio/webm;codecs=opus', 'audio/webm', 'audio/ogg;codecs=opus', 'audio/mp4'];
@@ -1679,10 +1689,20 @@ window.proseMic = (() => {
         /**
          * Begin recording. Resolves { ok, error } — a denied permission is an expected outcome,
          * not an exception.
+         *
+         * A second call while the first is still waiting on getUserMedia (the mic button pressed
+         * and F4 held in the same moment) shares the first one's outcome. It used to open a
+         * second stream over the first, and the first — no longer referenced by anything — kept
+         * the OS microphone indicator lit until the window closed.
          */
-        async start() {
-            if (recorder) return { ok: true, error: null };
+        start() {
+            if (recorder) return Promise.resolve({ ok: true, error: null });
+            if (!starting) starting = this.open().finally(() => { starting = null; });
+            return starting;
+        },
 
+        /** The body of start(); call start(), which is what keeps two of these from overlapping. */
+        async open() {
             if (!this.supported()) {
                 return { ok: false, error: 'This window cannot record audio — MediaRecorder is unavailable.' };
             }
@@ -1747,6 +1767,11 @@ window.proseMic = (() => {
             const durationMs = Date.now() - startedAt;
 
             const blob = await new Promise(resolve => {
+                // A recorder whose track ended (the microphone unplugged or taken by another app)
+                // has already stopped itself, and stop() on it neither throws nor fires onstop —
+                // this promise would never settle and the panel would sit on "…" until the interop
+                // call timed out.
+                if (rec.state === 'inactive') { resolve(new Blob(chunks, { type: mime })); return; }
                 // onstop fires after the last ondataavailable, which is the only point at which
                 // the chunk list is complete.
                 rec.onstop = () => resolve(new Blob(chunks, { type: mime }));
@@ -1773,8 +1798,6 @@ window.proseMic = (() => {
             chunks = [];
             return true;
         },
-
-        recording() { return recorder !== null; },
     };
 })();
 
@@ -1872,8 +1895,6 @@ window.proseHotkeys = (() => {
             shell = null;
             return true;
         },
-
-        key() { return PTT; },
     };
 })();
 

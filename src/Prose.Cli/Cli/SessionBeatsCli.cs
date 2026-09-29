@@ -3,6 +3,10 @@ using Prose.Core.Services;
 
 namespace Prose.Cli;
 
+/// <summary>
+/// prose --session-beats --session-id &lt;guid&gt; — lists the beats an edit session touched, with
+/// each beat's version before the session and its current version. Read-only.
+/// </summary>
 public static class SessionBeatsCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)

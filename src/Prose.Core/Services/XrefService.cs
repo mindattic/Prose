@@ -501,9 +501,11 @@ public class XrefService
             yield return new PlainSegment(text[plainStart..]);
     }
 
-    /// <summary>All indexed entries, for typeahead / full search.</summary>
+    /// <summary>Names claimed by more than one entity in the last index build, with the winner
+    /// (the one more mentioned in prose) and the loser.</summary>
     public IReadOnlyList<XrefConflict> GetConflicts() { EnsureBuilt(); return conflicts; }
 
+    /// <summary>All indexed entries (one per entity), for typeahead / full search.</summary>
     public IEnumerable<XrefEntry> AllEntries()
     {
         EnsureBuilt();

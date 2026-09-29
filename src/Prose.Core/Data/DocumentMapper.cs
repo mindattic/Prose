@@ -169,7 +169,9 @@ public static class DocumentMapper
     /// <summary>Populate scalar columns on Document from src (no DB touch).</summary>
     public static void FillScalars(Document d, WorldbuildingDocument src)
     {
-        d.Name             = src.FileName ?? src.Title ?? "";  // Entity.Name mirrors FileName (per repo)
+        // Entity.Name mirrors FileName (per repo), falling back to Title. `??` never fell back:
+        // an unset FileName arrives as "" (the model's default), not null.
+        d.Name             = !string.IsNullOrEmpty(src.FileName) ? src.FileName : src.Title ?? "";
         d.FileName         = src.FileName ?? "";
         d.Title            = src.Title ?? "";
         d.Category         = src.Category ?? "";

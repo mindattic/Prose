@@ -130,8 +130,11 @@ public sealed class BeatSearchService(
         var beatIds = ordered.Select(o => o.Beat.Id).ToList();
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
+        // ScopeBeatNode ("BeatNode"), not "beat": beats are embedded under the BeatNode scope
+        // (ScopeId = the beat id); nothing writes ScopeKind='beat', so this always reported
+        // "0 of N indexed" however much of the book the live index held.
         var indexed = await db.ProseEmbeddings.AsNoTracking()
-            .Where(e => e.ScopeKind == "beat" && beatIds.Contains(e.ScopeId))
+            .Where(e => e.ScopeKind == EmbeddingService.ScopeBeatNode && beatIds.Contains(e.ScopeId))
             .Select(e => e.ScopeId)
             .Distinct()
             .CountAsync(ct);

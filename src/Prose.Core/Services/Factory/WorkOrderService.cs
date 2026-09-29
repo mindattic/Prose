@@ -165,7 +165,7 @@ public sealed class WorkOrderService(
 
         var results = new List<CheckResult>();
         foreach (var check in ParseChecks(order.ChecksJson))
-            results.Add(await EvaluateAsync(db, order, check.AsObject(), inputs, ct));
+            results.Add(await EvaluateAsync(db, order, check!.AsObject(), inputs, ct)); // ParseChecks rejects non-objects
 
         if (results.Any(r => !r.Ok))
             return new CloseResult(false, results, [], "not every check passed; the order stays open.");

@@ -7,8 +7,8 @@ namespace Prose.Cli;
 /// <c>prose --set-narrative-mode --slug &lt;slug-or-code&gt; --mode original|retelling|historical</c>
 ///
 /// Sets <see cref="Prose.Core.Data.Entities.Node.NarrativeMode"/> on a book node. This gates
-/// whether personality/goal-drift checks apply (<c>BookHealthService.SacredFlawAsync</c> /
-/// <c>NarrativeScienceService.AnalyzeSacredFlawAsync</c>): "original" fiction has author-invented
+/// whether personality/goal-drift checks apply (today: <c>TrinityReconciliationService</c>'s scope):
+/// "original" fiction has author-invented
 /// psychology that must stay internally consistent; "retelling" (a close/1:1 adaptation of a
 /// pre-existing fixed narrative — e.g. Paradise Lost, the Gospels) and "historical" (nonfiction —
 /// real people/events) both have motivations already fixed by an external source, so the

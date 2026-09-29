@@ -348,7 +348,7 @@ public class MarkdownFileService
                         .Where(m => m.RelatedIds != null && m.RelatedIds != "").ToListAsync(ct))
                     .Where(m => synced.Contains((m.FileRoot, m.RelativePath)) && !rawRelatedMap.ContainsKey((m.FileRoot, m.RelativePath)))
                     .ToList();
-                foreach (var m in stale) m.RelatedIds = null;
+                foreach (var m in stale) m.RelatedIds = "";
                 if (stale.Count > 0) await db.SaveChangesAsync(ct);
             }
             catch (Exception ex) { errors.Add($"related-resolution: {ex.Message}"); }
@@ -416,7 +416,11 @@ public class MarkdownFileService
                 // assembled content (and so not the hash), and a universe-scoped type like
                 // UniverseCraft has one CanonDocuments row per universe pointing at a DIFFERENT
                 // path, so the stamp is the only thing that separates them in MarkdownFiles.
+                // Tier/AutoTier participate too: a type whose ExtraFrontMatter changed only its
+                // `tier:` (same content, same triggers) otherwise kept the stale tier forever.
                 var contentChanged = !isNew && (existing!.ContentHash != hash
+                    || existing.Tier != resolvedTier
+                    || existing.AutoTier != resolvedAuto
                     || existing.Triggers != resolvedTrigs
                     || existing.Scope != resolvedScope
                     || existing.UniverseId != doc.UniverseId);

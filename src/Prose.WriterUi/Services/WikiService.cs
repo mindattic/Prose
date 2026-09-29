@@ -117,15 +117,20 @@ public sealed class WikiService(
     // ── One entity ──────────────────────────────────────────────────────────
 
     /// <summary>Resolves <c>{type}/{slug}</c> to an entity id, ignoring universe scope so a link
-    /// from a book in one universe still opens an entity in another.</summary>
+    /// from a book in one universe still opens an entity in another. A slug is unique per
+    /// (universe, type) only, so when several universes hold it the ambient universe's wins —
+    /// taking whichever row came back first opened another universe's entity from this
+    /// universe's own index.</summary>
     public async Task<Guid?> ResolveAsync(string type, string slug, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var id = await db.Entities.AsNoTracking().IgnoreQueryFilters()
+        var hits = await db.Entities.AsNoTracking().IgnoreQueryFilters()
             .Where(e => e.EntityType == type && e.Slug == slug)
-            .Select(e => e.Id)
-            .FirstOrDefaultAsync(ct);
-        return id == Guid.Empty ? null : id;
+            .Select(e => new { e.Id, e.UniverseId })
+            .ToListAsync(ct);
+        if (hits.Count == 0) return null;
+        var ambient = UniverseScope.EffectiveId;
+        return (hits.FirstOrDefault(h => h.UniverseId == ambient) ?? hits[0]).Id;
     }
 
     /// <summary>Where a chip's guid points. The Writer has the guid but not the route.</summary>
@@ -389,6 +394,6 @@ public sealed class WikiService(
         => ramification.ScanForContradictionsAsync(entityId, maxBeats, progress, ct);
 
     private static string Humanise(string slug)
-        => string.Join(' ', slug.Split('_', '-', StringSplitOptions.RemoveEmptyEntries)
+        => string.Join(' ', slug.Split(['_', '-'], StringSplitOptions.RemoveEmptyEntries)
             .Select(w => w.Length == 0 ? w : char.ToUpperInvariant(w[0]) + w[1..]));
 }

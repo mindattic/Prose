@@ -103,14 +103,11 @@ public class EditSessionTools(
         }), new JsonSerializerOptions { WriteIndented = true });
     }
 
+    /// <summary>Delegates to <see cref="NodeRefResolver"/>: this private copy scoped a slug to the
+    /// ambient universe and took whichever of several same-slug nodes came back first.</summary>
     private async Task<Prose.Core.Data.Entities.Node?> ResolveNodeAsync(string nodeIdOrSlug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        if (Guid.TryParse(nodeIdOrSlug, out var id))
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            return await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == id);
-        return await db.Nodes.FirstOrDefaultAsync(
-            n => n.Slug == nodeIdOrSlug ||
-                 (n.NodeCode != null && n.NodeCode.ToUpper() == nodeIdOrSlug.ToUpper()));
+        return await NodeRefResolver.ResolveNodeAsync(db, nodeIdOrSlug);
     }
 }

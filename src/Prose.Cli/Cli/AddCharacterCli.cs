@@ -36,9 +36,11 @@ public static class AddCharacterCli
         {
             PropertyNameCaseInsensitive = true,
         });
-        if (data == null)
+        // Same guard as the --dir path: a nameless CharacterData was saved as a new, unnamed
+        // character instead of refused.
+        if (data == null || string.IsNullOrWhiteSpace(data.Name))
         {
-            Console.Error.WriteLine("could not deserialize CharacterData");
+            Console.Error.WriteLine("[add-character] could not deserialize CharacterData or missing name");
             return 1;
         }
 

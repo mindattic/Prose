@@ -99,10 +99,14 @@ public static class EntityRelationshipCli
             // intentional off-page reference is legitimate — but say so plainly rather than
             // writing a null link silently, which is how the whole corpus ended up with 493
             // unresolved rows before the backfill.
-            var targetId = await db.Entities.AsNoTracking()
+            // Two same-named entities: leave the link null (reported below) rather than bind to
+            // whichever row SQL returns first.
+            var targetHits = await db.Entities.AsNoTracking()
                 .Where(e => e.Name == target)
                 .Select(e => (Guid?)e.Id)
-                .FirstOrDefaultAsync();
+                .Take(2)
+                .ToListAsync();
+            var targetId = targetHits.Count == 1 ? targetHits[0] : null;
 
             var row = new CharacterRelationshipRow
             {
@@ -180,7 +184,8 @@ public static class EntityRelationshipCli
     /// reports counts with capped samples, which is a census, not a search.</para>
     ///
     /// <para>Case-insensitive substring match. Deliberately universe-scoped like the rest of this
-    /// command (the owner resolves through <c>db.Characters</c>, which the query filter scopes).</para>
+    /// command (the owner is joined through <c>db.Entities</c>, which the query filter scopes;
+    /// <c>db.Characters</c> itself is not filtered).</para>
     /// </summary>
     private static async Task<int> SearchAsync(ProseDbContext db, string needle, bool asJson)
     {
@@ -257,7 +262,8 @@ public static class EntityRelationshipCli
         }
     }
 
-    /// <summary>Resolve a character by Guid, 32-char hex id, or exact name.</summary>
+    /// <summary>Resolve a character by Guid (any format, any universe) or by exact name within
+    /// the ambient universe; an ambiguous name returns null.</summary>
     private static async Task<(Guid Id, string Name)?> ResolveCharacterAsync(ProseDbContext db, string who)
     {
         if (Guid.TryParse(who, out var parsed))
@@ -267,9 +273,18 @@ public static class EntityRelationshipCli
             if (byId != null) return (byId.Id, byId.Name);
         }
 
+        // Characters carries no universe query filter (Entities does), so a bare name used to
+        // resolve to whichever same-named character SQL returned first, in any universe — and
+        // --remove/--add then edited that one. Scope through the Entity spine and refuse a tie.
         var byName = await db.Characters.AsNoTracking()
-            .Where(c => c.Name == who).Select(c => new { c.Id, c.Name }).FirstOrDefaultAsync();
-        return byName == null ? null : (byName.Id, byName.Name);
+            .Where(c => c.Name == who && db.Entities.Any(e => e.Id == c.Id))
+            .Select(c => new { c.Id, c.Name }).Take(2).ToListAsync();
+        if (byName.Count > 1)
+        {
+            Console.Error.WriteLine($"[entity-relationships] '{who}' matches more than one character — pass its id.");
+            return null;
+        }
+        return byName.Count == 0 ? null : (byName[0].Id, byName[0].Name);
     }
 
     private static string? Flag(string[] args, string name)

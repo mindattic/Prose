@@ -102,7 +102,6 @@ public static class TemporalHistoryCli
         var conn = db0.Database.GetDbConnection();
         await conn.OpenAsync();
         var byDay = new SortedDictionary<DateOnly, HashSet<Guid>>();
-        var byDayCreates = new SortedDictionary<DateOnly, int>();
 
         // Batch in chunks to keep the IN(...) list reasonable.
         foreach (var chunk in beatIds.Chunk(200))
@@ -203,11 +202,30 @@ public static class TemporalHistoryCli
         if (dryRun) { Console.WriteLine("[reconstruct-book] --dry-run: stopping before any write."); break; }
 
         // ---- Actually build it ----
+        // The rebuilt book belongs in the SOURCE's universe. Left unset it was stamped with the
+        // ambient one, so reconstructing another universe's book (or running under an inherited
+        // default) put the copy in the wrong universe — or had the write gate refuse it.
+        Guid sourceUniverseId;
+        await using (var ucmd = conn.CreateCommand())
+        {
+            ucmd.CommandText = "SELECT UniverseId FROM Nodes FOR SYSTEM_TIME AS OF @asOf WHERE Id = @id";
+            var p1 = ucmd.CreateParameter(); p1.ParameterName = "@asOf"; p1.Value = asOf; ucmd.Parameters.Add(p1);
+            var p2 = ucmd.CreateParameter(); p2.ParameterName = "@id"; p2.Value = sourceId; ucmd.Parameters.Add(p2);
+            if (await ucmd.ExecuteScalarAsync() is not Guid u)
+            {
+                Console.Error.WriteLine($"[reconstruct-book] Source node {sourceId} did not exist as of {asOf:yyyy-MM-dd HH:mm} — nothing written.");
+                Environment.ExitCode = 1;
+                return;
+            }
+            sourceUniverseId = u;
+        }
+
         var workbench = services.GetRequiredService<NodeWorkbenchService>();
         await using (var writeDb = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync())
         {
             var bookNode = NodeFactory.Create("book");
             bookNode.Id = Guid.CreateVersion7();
+            bookNode.UniverseId = sourceUniverseId;
             var baseSlug = System.Text.RegularExpressions.Regex.Replace(newTitle.ToLowerInvariant(), @"[^a-z0-9]+", "-").Trim('-');
             bookNode.Slug = $"{baseSlug}-{bookNode.Id.ToString("N")[..8]}";
             bookNode.Title = newTitle;
@@ -226,9 +244,10 @@ public static class TemporalHistoryCli
                 chapterSort += 100.0;
                 var chNode = NodeFactory.Create("chapter");
                 chNode.Id = Guid.CreateVersion7();
+                chNode.UniverseId = sourceUniverseId;
                 var chBaseSlug = System.Text.RegularExpressions.Regex.Replace((chapterTitle ?? "chapter").ToLowerInvariant(), @"[^a-z0-9]+", "-").Trim('-');
                 chNode.Slug = $"{chBaseSlug}-{chNode.Id.ToString("N")[..8]}";
-                chNode.Title = chapterTitle;
+                chNode.Title = chapterTitle ?? "";
                 chNode.Status = "draft";
                 chNode.ParentNodeId = bookNode.Id;
                 chNode.SortKey = chapterSort;

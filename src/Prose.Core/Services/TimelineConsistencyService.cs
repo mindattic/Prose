@@ -27,7 +27,7 @@ namespace Prose.Core.Services;
 ///   (Conservative: only clear ordering violations.) Severity: medium.
 ///
 /// Both detectors are no-ops when the event ledger is unpopulated — they
-/// return an empty list rather than throw.
+/// return an empty list.
 /// </summary>
 public class TimelineConsistencyService
 {
@@ -72,8 +72,8 @@ public class TimelineConsistencyService
 
     /// <summary>
     /// Runs both detectors over the given node and returns any findings.
-    /// Returns an empty list when the event ledger has no relevant data —
-    /// never throws.
+    /// Returns an empty list when the event ledger has no relevant data. Unexpected errors are
+    /// logged and rethrown, never turned into an empty (falsely clean) list.
     /// </summary>
     public async Task<List<TimelineFinding>> CheckNodeAsync(
         Guid nodeId,

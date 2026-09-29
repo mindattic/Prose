@@ -34,9 +34,6 @@ public static partial class UnnamedReferentScanner
         RegexOptions.IgnoreCase | RegexOptions.CultureInvariant)]
     private static partial Regex ReferentPattern();
 
-    [GeneratedRegex(@"[.!?]\s+|^", RegexOptions.CultureInvariant)]
-    private static partial Regex SentenceStart();
-
     /// <summary>
     /// Scan one beat's stripped text. <paramref name="knownAliases"/> (lower-case names and
     /// aliases of entities already in the graph) suppresses phrases that ARE a known entity

@@ -5,6 +5,10 @@ using Prose.Core.Services;
 
 namespace Prose.Cli;
 
+/// <summary>
+/// <c>prose --close-session (--slug &lt;slug|code|id&gt; | --session-id &lt;guid&gt;)</c> — close one
+/// edit session: the node's open session, or the exact one named by id.
+/// </summary>
 public static class CloseSessionCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)

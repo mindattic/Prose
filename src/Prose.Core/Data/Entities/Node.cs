@@ -102,8 +102,8 @@ public abstract class Node
     public bool IsCanon { get; set; }
 
     /// <summary>How this book's characters relate to authorial invention. Gates whether
-    /// personality/goal-drift checks apply (<c>BookHealthService.SacredFlawAsync</c> /
-    /// <c>NarrativeScienceService.AnalyzeSacredFlawAsync</c>):
+    /// personality/goal-drift checks apply (today: the scope of <c>TrinityReconciliationService</c>, which
+    /// reconciles only "original" books):
     /// "original"   (default) — author-invented psychology; motivations are designed from
     ///              scratch and must stay internally consistent. Full drift-prevention applies.
     /// "retelling"  — a close/1:1 adaptation of a pre-existing fixed narrative (myth, scripture,
@@ -376,8 +376,9 @@ public abstract class Node
 public static class NodeFactory
 {
     /// <summary>New empty node of the concrete type implied by a free-form
-    /// kind label ("series"/"saga"/"anthology" → SeriesNode; "chapter"/"scene"/
-    /// "episode"/"snippet" → ChapterNode; anything else → BookNode). Used where
+    /// kind label ("series"/"saga"/"anthology" → SeriesNode; "sequence"/"act" →
+    /// SequenceNode; "scene"/"sequel" → SceneNode; "chapter"/"episode"/"snippet" →
+    /// ChapterNode; anything else → BookNode). Used where
     /// the type arrives as data (CLI flags, import files) rather than statically.
     /// The label itself is preserved on <see cref="Node.Kind"/> for display.</summary>
     public static Node Create(string? kind)

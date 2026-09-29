@@ -232,7 +232,7 @@ public class SurveyService(IDbContextFactory<ProseDbContext> dbFactory)
         sb.Append("  const SURVEY_SLUG = '").Append(He(survey.Slug)).AppendLine("';");
         sb.AppendLine(@"  function pick(q, v, el) {
     ans['q-' + q] = v;
-    document.querySelectorAll('[name=""q' + q + '""]').forEach(r => r.closest('.opt').classList.remove('selected'));
+    document.querySelectorAll('input[name=""' + el.name + '""]').forEach(r => r.closest('.opt').classList.remove('selected'));
     el.closest('.opt').classList.add('selected');
     const done = Object.keys(ans).length;
     document.getElementById('pc').textContent = done;

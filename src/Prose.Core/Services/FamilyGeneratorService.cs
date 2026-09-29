@@ -494,34 +494,30 @@ public class FamilyGeneratorService
     private async Task<SpouseDonor?> PickSpouseDonorAsync(ProseDbContext db,
         Guid subjectId, HashSet<string> subjectAncestries, CancellationToken ct)
     {
-        var sample = await db.Records.AsNoTracking()
-            .Where(r => r.Entity!.EntityType == "character"
-                     && r.EntityId != subjectId)
-            .Select(r => r.Json)
+        // The relational Character/GeneticAncestry tables, as ProposeAsync reads the subject: the
+        // Records JSON blob this used to parse is retired, so no donor was ever found and every
+        // generated spouse came out heritage-blank. Scoped through Entities (universe-filtered) so a
+        // donor is never drawn from another universe's cast.
+        var sample = await db.Characters.AsNoTracking()
+            .Where(c => c.Id != subjectId && c.GeneticAncestry.Any() && db.Entities.Any(e => e.Id == c.Id))
+            .Select(c => new
+            {
+                c.Heritage,
+                Ancestry = c.GeneticAncestry.Select(g => new { g.Region, g.Percent }).ToList(),
+            })
             .Take(2000)
             .ToListAsync(ct);
 
         var candidates = new List<SpouseDonor>();
-        foreach (var json in sample)
+        foreach (var row in sample)
         {
-            try
-            {
-                using var doc = JsonDocument.Parse(json);
-                var heritage = doc.RootElement.TryGetProperty("physical_description", out var pd)
-                    && pd.TryGetProperty("heritage", out var h)
-                        ? h.GetString() ?? "" : "";
-                if (!doc.RootElement.TryGetProperty("genetic_ancestry", out var ga)
-                    || ga.ValueKind != JsonValueKind.Object) continue;
-                var anc = new Dictionary<string, double>(StringComparer.OrdinalIgnoreCase);
-                foreach (var p in ga.EnumerateObject())
-                    if (p.Value.ValueKind == JsonValueKind.Number) anc[p.Name] = p.Value.GetDouble();
-                if (anc.Count == 0) continue;
-                var top = anc.OrderByDescending(kv => kv.Value).FirstOrDefault().Key ?? "";
-                if (string.IsNullOrEmpty(top)) continue;
-                if (subjectAncestries.Contains(top)) continue;
-                candidates.Add(new SpouseDonor(heritage, anc));
-            }
-            catch { /* malformed records ignored */ }
+            var anc = new Dictionary<string, double>(StringComparer.OrdinalIgnoreCase);
+            foreach (var g in row.Ancestry)
+                if (!string.IsNullOrWhiteSpace(g.Region)) anc[g.Region] = g.Percent;
+            if (anc.Count == 0) continue;
+            var top = anc.OrderByDescending(kv => kv.Value).First().Key;
+            if (subjectAncestries.Contains(top)) continue;
+            candidates.Add(new SpouseDonor(row.Heritage ?? "", anc));
         }
         if (candidates.Count == 0) return null;
         return candidates[Random.Shared.Next(candidates.Count)];
@@ -568,7 +564,9 @@ public class FamilyGeneratorService
         var rows = await db.Characters.AsNoTracking()
             .Where(c => c.Id != excludeId
                      && c.FirstName != null && c.FirstName != ""
-                     && c.LastName  != null)
+                     && c.LastName  != null
+                     // Characters has no universe filter of its own; Entities does.
+                     && db.Entities.Any(e => e.Id == c.Id))
             .Select(c => new { c.FirstName, c.LastName, c.Gender })
             .ToListAsync(ct);
 

@@ -7,7 +7,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// prose --duel --beat &lt;guid&gt; --candidate &lt;file&gt; [--goal "..."] [--apply] [--json]
+/// prose --duel --beat-id &lt;guid&gt; --candidate &lt;file&gt; [--goal "..."] [--apply] [--json]
 ///
 /// Blind A/B duel between a beat's current prose and a candidate revision.
 /// Round 1: 3 voters (register / structural-goal / cold-reader lenses),

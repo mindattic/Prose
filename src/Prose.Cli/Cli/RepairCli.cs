@@ -15,6 +15,10 @@ namespace Prose.Cli;
 ///   prose --repair --beat-facts     # also run Knowledge + Conditions extraction (LLM-heavy)
 ///   prose --repair --backfill-dates # populate Chapter.InWorldDate (and beats) via LLM
 ///   prose --repair --force          # re-extract even chapters that already ran
+///
+/// Also: --orphan-chapters, --fix-mojibake, --extract-state,
+/// --seed-cacophony, --link-ammunition (see the usage text printed with no phase flag).
+/// Exit 1 when any phase reported errors.
 /// </summary>
 public static class RepairCli
 {
@@ -27,11 +31,20 @@ public static class RepairCli
         var withState         = args.Contains("--extract-state");
         var withCacophonySeed = args.Contains("--seed-cacophony");
         var withLinkAmmo      = args.Contains("--link-ammunition");
-        var withNormKinds     = args.Contains("--normalize-kinds");
         var withOrphans       = args.Contains("--orphan-chapters");
         // --prune-json-* / --prune-types retired 2026-05-08 with JsonPruneService;
         // engine/data/*.json no longer exists, so there's nothing to prune.
         var force             = args.Contains("--force");
+
+        // --normalize-kinds (retired 2026-09-29) was a v3/v4-unification one-shot: it set every
+        // non-series root to 'book' and every other child to 'chapter', overwriting the sequence,
+        // scene, sequel, episode, saga and anthology kinds the tree now uses. Refuse it loudly
+        // rather than skip it silently.
+        if (args.Contains("--normalize-kinds"))
+        {
+            Console.Error.WriteLine("--normalize-kinds is retired: it overwrote structural node kinds (sequence/scene/episode/saga) with chapter/book.");
+            return 2;
+        }
 
         var repair = sp.GetRequiredService<StoryRepairService>();
         var ct = CancellationToken.None;
@@ -62,21 +75,6 @@ public static class RepairCli
             Console.WriteLine($"  errors             : {timeline.Errors.Count}");
             foreach (var e in timeline.Errors.Take(10)) Console.WriteLine($"    - {e}");
             failures++;
-        }
-
-        if (withNormKinds)
-        {
-            Console.WriteLine();
-            Console.WriteLine("[normalize-kinds]");
-            await using var db = await sp.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
-            // series/book: root level (ParentNodeId IS NULL), except explicit series nodes which stay "series"
-            // book: null-parent nodes that aren't already "series"
-            var storyRows = await db.Database.ExecuteSqlRawAsync(
-                "UPDATE Nodes SET Kind = 'book' WHERE ParentNodeId IS NULL AND Kind <> 'series'");
-            var chapterRows = await db.Database.ExecuteSqlRawAsync(
-                "UPDATE Nodes SET Kind = 'chapter' WHERE ParentNodeId IS NOT NULL AND Kind NOT IN ('book','series')");
-            Console.WriteLine($"  root nodes set to book   : {storyRows}");
-            Console.WriteLine($"  child nodes set to chapter: {chapterRows}");
         }
 
         if (withOrphans)
@@ -130,11 +128,10 @@ public static class RepairCli
 
         if (!withContinuity && !withBeatFacts && !withDates && !withMojibake
             && !withState && !withCacophonySeed && !withLinkAmmo
-            && !withNormKinds && !withOrphans)
+            && !withOrphans)
         {
             Console.WriteLine();
             Console.WriteLine("Skipping LLM/repair phases. Add one of:");
-            Console.WriteLine("  --normalize-kinds       set root nodes→story, child nodes→chapter (idempotent)");
             Console.WriteLine("  --orphan-chapters       reparent Kind=chapter/no-parent nodes to a 'Drafts' story");
             Console.WriteLine("  --continuity            LLM continuity-claim extraction");
             Console.WriteLine("  --beat-facts            knowledge + conditions extraction");

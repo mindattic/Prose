@@ -84,9 +84,15 @@ public class FileSecurePreferences : ISecurePreferences
 
         var encrypted = aes.EncryptCbc(plaintext, aes.IV);
 
-        // Write IV + ciphertext
-        using var fs = File.Create(filePath);
-        fs.Write(aes.IV);
-        fs.Write(encrypted);
+        // Write IV + ciphertext to a temp file, then swap it in: truncating the live file first meant
+        // a crash mid-write left a file Load could not decrypt, and Load then silently reset every
+        // stored credential to empty.
+        var tmp = filePath + ".tmp";
+        using (var fs = File.Create(tmp))
+        {
+            fs.Write(aes.IV);
+            fs.Write(encrypted);
+        }
+        File.Move(tmp, filePath, overwrite: true);
     }
 }

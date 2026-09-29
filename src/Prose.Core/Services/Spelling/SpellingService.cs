@@ -42,6 +42,7 @@ public sealed class SpellingService(IDbContextFactory<ProseDbContext> dbFactory)
 
     private readonly SemaphoreSlim gate = new(1, 1);
     private volatile AuthorWords? authorWords;
+    private int authorWordsVersion;
     private readonly ConcurrentDictionary<Guid, (DateTime At, HashSet<string> Words)> entityWords = new();
 
     // ── Checking ─────────────────────────────────────────────────────────
@@ -170,6 +171,7 @@ public sealed class SpellingService(IDbContextFactory<ProseDbContext> dbFactory)
             var row = new SpellingWord { Word = w, AddedBy = string.IsNullOrWhiteSpace(addedBy) ? "author" : addedBy.Trim() };
             db.SpellingWords.Add(row);
             await db.SaveChangesAsync(ct);
+            Interlocked.Increment(ref authorWordsVersion);
             authorWords = null;
             return new AddResult(true, row, null);
         }
@@ -190,6 +192,7 @@ public sealed class SpellingService(IDbContextFactory<ProseDbContext> dbFactory)
             if (rows.Count == 0) return false;
             db.SpellingWords.RemoveRange(rows);
             await db.SaveChangesAsync(ct);
+            Interlocked.Increment(ref authorWordsVersion);
             authorWords = null;
             return true;
         }
@@ -199,9 +202,14 @@ public sealed class SpellingService(IDbContextFactory<ProseDbContext> dbFactory)
     private async Task<AuthorWords> AuthorWordsAsync(CancellationToken ct)
     {
         if (authorWords is { } cached) return cached;
+        // A load that started before an add/remove saved must not publish its pre-edit list over
+        // the invalidation (the new word would read as misspelled until the next edit).
+        var version = Volatile.Read(ref authorWordsVersion);
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var words = await db.SpellingWords.AsNoTracking().Select(w => w.Word).ToListAsync(ct);
-        return authorWords = new AuthorWords(words);
+        var loaded = new AuthorWords(words);
+        if (Volatile.Read(ref authorWordsVersion) == version) authorWords = loaded;
+        return loaded;
     }
 
     /// <summary>

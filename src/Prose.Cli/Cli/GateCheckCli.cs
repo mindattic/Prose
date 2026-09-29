@@ -101,7 +101,7 @@ public static class GateCheckCli
         {
             var names = brief.MustInclude.Select(n => n.Trim()).Where(n => n.Length > 0).ToHashSet(StringComparer.OrdinalIgnoreCase);
             var claims = continuity.GetByStatus("CANONICAL").Concat(continuity.GetByStatus("CONFIRMED"))
-                .Where(c => names.Any(n => c.EntityName.StartsWith(n, StringComparison.OrdinalIgnoreCase) || n.StartsWith(c.EntityName, StringComparison.OrdinalIgnoreCase)))
+                .Where(c => !string.IsNullOrWhiteSpace(c.EntityName) && names.Any(n => c.EntityName.StartsWith(n, StringComparison.OrdinalIgnoreCase) || n.StartsWith(c.EntityName, StringComparison.OrdinalIgnoreCase)))
                 .Where(c => !ContinuityService.IsVolatilePredicate(c.Predicate))
                 .Take(40).ToList();
             if (claims.Count > 0) facts = string.Join("\n", claims.Select(c => $"- {c.EntityName}: {c.Predicate} = {c.Object}"));

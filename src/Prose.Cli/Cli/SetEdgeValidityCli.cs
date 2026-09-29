@@ -67,7 +67,9 @@ public static class SetEdgeValidityCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var edge = await db.Edges.FirstOrDefaultAsync(e => e.Id == edgeId);
+        // IgnoreQueryFilters: an explicit edge id, not an ambient-scope lookup (an edge in another
+        // universe than the Hub's was "No edge with id").
+        var edge = await db.Edges.IgnoreQueryFilters().FirstOrDefaultAsync(e => e.Id == edgeId);
         if (edge == null)
         {
             Console.Error.WriteLine($"[set-edge-validity] No edge with id {edgeId}.");

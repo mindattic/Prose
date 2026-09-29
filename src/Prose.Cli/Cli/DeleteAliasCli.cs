@@ -5,10 +5,11 @@ using Prose.Core.Data;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>prose --delete-alias --value "&lt;alias&gt;" [--type &lt;character|place|…&gt;] [--apply]</c>
+/// <c>prose --delete-alias --value "&lt;alias&gt;" [--type &lt;character|place|…&gt;] [--owner &lt;entityGuid&gt;] [--apply]</c>
 ///
 /// Remove a single bad alias row. Dry-run by default: prints every matching row and changes
-/// nothing unless <c>--apply</c> is passed.
+/// nothing unless <c>--apply</c> is passed. <c>--owner</c> limits the match to one entity's row
+/// (the value match itself is exact and case-sensitive).
 ///
 /// Exists because alias pollution is a recurring, corpus-wide defect class and there was no
 /// sanctioned way to fix it. An ordinary phrase registered as an entity alias makes
@@ -47,7 +48,7 @@ public static class DeleteAliasCli
         if (string.IsNullOrWhiteSpace(value))
         {
             Console.Error.WriteLine("[delete-alias] --value \"<alias text>\" is required.");
-            Console.Error.WriteLine("Usage: prose --delete-alias --value \"<alias>\" [--type <character|place|…>] [--apply]");
+            Console.Error.WriteLine("Usage: prose --delete-alias --value \"<alias>\" [--type <character|place|…>] [--owner <entityGuid>] [--apply]");
             return 2;
         }
 

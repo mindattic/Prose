@@ -385,7 +385,7 @@ DATA.beats.forEach(b=>{beatByPos[b.n]=b;});
 $('#heat').innerHTML = DATA.beats.map(b=>{
   const c=heatColor(b.mean);
   const label=b.num??b.n;
-  const titleLine=b.title?` — ${b.title}`:'';
+  const titleLine=b.title?` — ${esc(b.title)}`:'';
   return `<div class="cell ${b.contested?'contested':''}" style="background:${c}" title="Beat ${label}${titleLine}: mean ${b.mean} (min ${b.min}, max ${b.max}, n=${b.count})${b.contested?' · readers split (clusters diverge ≥1.2)':''}">${label}</div>`;
 }).join('') || '<span class="muted">No per-beat scores in this run.</span>';
 
@@ -398,12 +398,13 @@ $('#heat').innerHTML = DATA.beats.map(b=>{
 
 // Provider + cluster filters
 (()=>{const provs=[...new Set(DATA.voters.map(v=>v.provider))].sort();
-  $('#prov').innerHTML = `<option value="">all brains</option>`+provs.map(p=>`<option value="${p}">${p}</option>`).join('');
+  $('#prov').innerHTML = `<option value="">all brains</option>`+provs.map(p=>`<option value="${esc(p)}">${esc(p)}</option>`).join('');
   const cls=DATA.clusters; $('#clust').innerHTML = `<option value="">all clusters</option>`+cls.map(c=>`<option value="${c.id}">${esc(c.label)} (${c.size})</option>`).join('');
 })();
 
 let sortK='score', sortAsc=false;
-function esc(s){return (s??'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+// Quotes too: beat titles and provider ids land inside title="…" / value="…" attributes.
+function esc(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
 
 function render(){
   const q=$('#q').value.toLowerCase(), prov=$('#prov').value, clust=$('#clust').value, proseOnly=$('#proseOnly').checked;
@@ -420,7 +421,7 @@ function render(){
   $('#count').textContent = `${rows.length} of ${DATA.voters.length} voters`;
   $('#rows').innerHTML = rows.map((v,i)=>{
     const beats=Object.entries(v.beatScores||{});
-    const chips=beats.map(([n,s])=>{const bm=beatByPos[+n];const label=bm?.num??n;const tl=bm?.title?` — ${bm.title}`:'';return `<span class="chip" style="background:${heatColor(s)}" title="Beat ${label}${tl}: ${s}/5">${label}</span>`;}).join('');
+    const chips=beats.map(([n,s])=>{const bm=beatByPos[+n];const label=bm?.num??n;const tl=bm?.title?` — ${esc(bm.title)}`:'';return `<span class="chip" style="background:${heatColor(s)}" title="Beat ${label}${tl}: ${s}/5">${label}</span>`;}).join('');
     const detail=`<tr class="detail" id="d${i}" style="display:none"><td colspan="6">`+
       (v.blurb?`<div class="muted" style="font-style:italic;margin-bottom:.35rem">${esc(v.blurb)}</div>`:'')+
       (v.review?`<div class="rev">${esc(v.review)}</div>`:'')+

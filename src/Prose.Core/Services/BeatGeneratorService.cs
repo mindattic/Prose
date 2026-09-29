@@ -274,7 +274,7 @@ public class BeatGeneratorService
               {lengthInstruction}
               """;
 
-        // When TargetWords is explicit, scale to it (300 chars/word * 3).
+        // When TargetWords is explicit, scale to it (~3 tokens per target word, clamped).
         // Default (Swain doctrine): 4096 gives the model room to write a full
         // Scene or Sequel without being truncated before the turn.
         var maxTokens = context.TargetWords > 0
@@ -803,14 +803,22 @@ public class BeatGeneratorService
             {
                 if (e.ValueKind != System.Text.Json.JsonValueKind.Object) continue;
                 result.Add(new OocFinding(
-                    Field:      e.TryGetProperty("field", out var f)        ? f.GetString() ?? "" : "",
-                    Detected:   e.TryGetProperty("detected", out var d)     ? d.GetString() ?? "" : "",
-                    CanonValue: e.TryGetProperty("canon_value", out var cv) ? cv.GetString() ?? "" : "",
-                    Suggestion: e.TryGetProperty("suggestion", out var s)   ? s.GetString() ?? "" : ""));
+                    Field:      StringProp(e, "field"),
+                    Detected:   StringProp(e, "detected"),
+                    CanonValue: StringProp(e, "canon_value"),
+                    Suggestion: StringProp(e, "suggestion")));
             }
         }
         return result;
     }
+
+    /// <summary>A string property's value, or "" when it is absent or not a JSON string.
+    /// GetString() THROWS on a number/object/bool, so one model reply with
+    /// <c>"canon_value": 3</c> used to escape the parser and fail the whole audit call.</summary>
+    private static string StringProp(System.Text.Json.JsonElement e, string name) =>
+        e.TryGetProperty(name, out var v) && v.ValueKind == System.Text.Json.JsonValueKind.String
+            ? v.GetString() ?? ""
+            : "";
 
     /// <summary>Parse a "[{id, score}, ...]" JSON payload tolerantly — accepts a JSON array anywhere in the response.</summary>
     internal static IEnumerable<(int id, double score)> ParseRankPayload(string payload)
@@ -828,8 +836,12 @@ public class BeatGeneratorService
             foreach (var e in doc.RootElement.EnumerateArray())
             {
                 if (e.ValueKind != System.Text.Json.JsonValueKind.Object) continue;
-                if (!e.TryGetProperty("id",    out var idEl)    || !idEl.TryGetInt32(out var id)) continue;
-                if (!e.TryGetProperty("score", out var scoreEl) || !scoreEl.TryGetDouble(out var score)) continue;
+                // ValueKind first: TryGetInt32/TryGetDouble THROW on a non-number (e.g. "id": "1"),
+                // which escaped this iterator and discarded every persona's scores.
+                if (!e.TryGetProperty("id",    out var idEl)    || idEl.ValueKind != System.Text.Json.JsonValueKind.Number
+                    || !idEl.TryGetInt32(out var id)) continue;
+                if (!e.TryGetProperty("score", out var scoreEl) || scoreEl.ValueKind != System.Text.Json.JsonValueKind.Number
+                    || !scoreEl.TryGetDouble(out var score)) continue;
                 yield return (id, score);
             }
         }
@@ -927,10 +939,10 @@ public record BeatContext
     public string Subtext { get; init; } = "";
 
     /// <summary>
-    /// Node this beat belongs to. When set, BeatGeneratorService injects:
-    ///   - active plant/payoff pairs (PlantPayoffService)
-    ///   - gateway or sequel commandments (BookAuditService, per PreviousNodeId)
-    /// Leave as Guid.Empty to skip both injections (legacy callers).
+    /// Node this beat belongs to. When set, BeatGeneratorService injects gateway or sequel
+    /// commandments (BookAuditService, per PreviousNodeId) and scopes the style-anchor lookup to
+    /// it. Plant/payoff context no longer comes from here — it arrives in
+    /// <see cref="OpenThreadsContext"/>. Leave as Guid.Empty to skip (legacy callers).
     /// </summary>
     public Guid NodeId { get; init; }
 
@@ -1092,8 +1104,9 @@ public record BeatContext
     public string SceneCollisionGuidance { get; init; } = "";
 
     /// <summary>
-    /// Target prose length for this beat in words. 0 = the classic short-beat
-    /// instruction (2-4 paragraphs, ~350 words). Set ~950 for chapter-scale
+    /// Target prose length for this beat in words. 0 = no word target: the Swain
+    /// Scene/Sequel instruction (the beat ends when its dramatic function is complete,
+    /// 4096 max tokens). Set ~950 for chapter-scale
     /// full-scene beats (the proven TLC shape: ~1000-word beats for 100+ page
     /// works). Raises the generation maxTokens accordingly.
     /// </summary>

@@ -51,31 +51,12 @@ public static class PrepareAudibleCli
 
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            Node? node;
-            if (!string.IsNullOrWhiteSpace(slug))
-            {
-                node = await db.Nodes.AsNoTracking()
-                    .FirstOrDefaultAsync(s => s.Slug == slug);
-            }
-            else if (Guid.TryParse(id, out var exact))
-            {
-                node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-                    .FirstOrDefaultAsync(s => s.Id == exact);
-            }
-            else
-            {
-                var prefix = id!.ToLowerInvariant();
-                var matches = await db.Nodes.AsNoTracking()
-                    .Where(s => s.Id.ToString().StartsWith(prefix))
-                    .Take(2)
-                    .ToListAsync();
-                if (matches.Count > 1)
-                {
-                    Console.Error.WriteLine($"[prepare-audible] Id prefix '{id}' is ambiguous. Use a longer prefix or the full id.");
-                    return 1;
-                }
-                node = matches.FirstOrDefault();
-            }
+            // The shared resolver (slug, NodeCode, GUID, unique prefix; IgnoreQueryFilters with the
+            // ambient universe as tie-break). The private copy filtered the slug and prefix lookups
+            // by the ambient universe and took the first same-slug match, so a book outside the
+            // current scope was "not found" and a duplicated slug could package the wrong book.
+            // An ambiguous prefix now resolves to null ("not found") instead of its own message.
+            Node? node = await NodeRefResolver.ResolveNodeAsync(db, !string.IsNullOrWhiteSpace(slug) ? slug : id);
 
             if (node == null)
             {

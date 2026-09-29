@@ -30,11 +30,12 @@ public partial class ExportService
         md = Regex.Replace(md, @"<h2[^>]*>(.*?)</h2>", m => $"\n## {Strip(m.Groups[1].Value)}\n", RegexOptions.Singleline);
         md = Regex.Replace(md, @"<h3[^>]*>(.*?)</h3>", m => $"\n### {Strip(m.Groups[1].Value)}\n", RegexOptions.Singleline);
 
-        // Bold, italic, underline, strikethrough
-        md = Regex.Replace(md, @"<(b|strong)[^>]*>(.*?)</\1>", "**$2**", RegexOptions.Singleline);
-        md = Regex.Replace(md, @"<(i|em)[^>]*>(.*?)</\1>", "*$2*", RegexOptions.Singleline);
-        md = Regex.Replace(md, @"<(u)[^>]*>(.*?)</\1>", "<u>$2</u>", RegexOptions.Singleline);
-        md = Regex.Replace(md, @"<(s|strike|del)[^>]*>(.*?)</\1>", "~~$2~~", RegexOptions.Singleline);
+        // Bold, italic, underline, strikethrough. The \b keeps "<b" from matching <br>/<blockquote>,
+        // "<i" from <img>, "<s" from <span>, "<u" from <ul> — "a<br>b <b>c</b>" came out "a**b <b>c**".
+        md = Regex.Replace(md, @"<(b|strong)\b[^>]*>(.*?)</\1>", "**$2**", RegexOptions.Singleline);
+        md = Regex.Replace(md, @"<(i|em)\b[^>]*>(.*?)</\1>", "*$2*", RegexOptions.Singleline);
+        md = Regex.Replace(md, @"<(u)\b[^>]*>(.*?)</\1>", "<u>$2</u>", RegexOptions.Singleline);
+        md = Regex.Replace(md, @"<(s|strike|del)\b[^>]*>(.*?)</\1>", "~~$2~~", RegexOptions.Singleline);
 
         // Blockquotes
         md = Regex.Replace(md, @"<blockquote[^>]*>(.*?)</blockquote>", m =>

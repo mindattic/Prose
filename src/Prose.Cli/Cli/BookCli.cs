@@ -43,9 +43,9 @@ public static class BookCli
             "show"     => CmdShow(rest, bookRepo),
             "chapters" => CmdChapters(rest, bookRepo, chapterRepo),
             "absorb"   => CmdAbsorb(rest, bookRepo, chapterRepo),
-            "review"   => await CmdReview(rest, services.GetRequiredService<IBookReviewService>(), services.GetRequiredService<VotingGate>()),
-            "apply"    => await CmdApply(rest, services.GetRequiredService<IBookReviewService>()),
-            "export"   => CmdExport(rest, services.GetRequiredService<BookExportService>()),
+            "review"   => await CmdReview(rest, bookRepo, services.GetRequiredService<IBookReviewService>(), services.GetRequiredService<VotingGate>()),
+            "apply"    => await CmdApply(rest, bookRepo, services.GetRequiredService<IBookReviewService>()),
+            "export"   => CmdExport(rest, bookRepo, services.GetRequiredService<BookExportService>()),
             "export-all" => CmdExportAll(rest, services.GetRequiredService<BookExportService>()),
             "delete"   => CmdDelete(rest, bookRepo),
             _          => Fail($"unknown subcommand: {sub}"),
@@ -146,10 +146,15 @@ public static class BookCli
         return 0;
     }
 
-    static async Task<int> CmdReview(string[] args, IBookReviewService svc, VotingGate votingGate)
+    // review/apply/export resolve the id like show/chapters/absorb/delete do: the usage text
+    // promises "an 8-char prefix, or an exact title" for every subcommand, but these three passed
+    // the raw token through and failed on anything but the full id.
+    static async Task<int> CmdReview(string[] args, IBookRepository repo, IBookReviewService svc, VotingGate votingGate)
     {
         if (args.Length == 0) return Fail("usage: --book review <bookId> [--allow-votes]");
-        var bookId = args[0];
+        var book = ResolveBook(args[0], repo);
+        if (book == null) return 1;
+        var bookId = book.Id;
         var allowVotes = args.Contains("--allow-votes");
 
         // SS-A44: the book review casts a multi-LLM vote panel — disabled by default.
@@ -173,10 +178,12 @@ public static class BookCli
         return 0;
     }
 
-    static async Task<int> CmdApply(string[] args, IBookReviewService svc)
+    static async Task<int> CmdApply(string[] args, IBookRepository repo, IBookReviewService svc)
     {
         if (args.Length < 2) return Fail("usage: --book apply <bookId> <findingId>");
-        var result = await svc.ApplyFindingAsync(args[0], args[1]);
+        var book = ResolveBook(args[0], repo);
+        if (book == null) return 1;
+        var result = await svc.ApplyFindingAsync(book.Id, args[1]);
         if (!result.Success)
         {
             Console.Error.WriteLine($"[book apply] {result.Error}");
@@ -186,11 +193,16 @@ public static class BookCli
         return 0;
     }
 
-    static int CmdExport(string[] args, BookExportService svc)
+    static int CmdExport(string[] args, IBookRepository repo, BookExportService svc)
     {
         if (args.Length == 0) return Fail("usage: --book export <bookId> [--format pdf|epub|html|md]");
-        var bookId = args[0];
+        var book = ResolveBook(args[0], repo);
+        if (book == null) return 1;
+        var bookId = book.Id;
         var format = (ArgValue(args, "--format") ?? "epub").ToLowerInvariant();
+        // An unknown format ("docx", "pfd") used to fall through to epub and report success.
+        if (format is not ("pdf" or "epub" or "html" or "md" or "markdown"))
+            return Fail($"--format must be one of pdf|epub|html|md (got '{format}')");
 
         try
         {
@@ -308,11 +320,12 @@ public static class BookCli
           --book apply <bookId> <findingId>
           --book export <bookId> [--format pdf|epub|html|md]
           --book export-all --format <pdf|epub|html|md>
-          --book archive <bookId> --confirm <bookId>
+          --book delete <bookId> --confirm <bookId>
 
         Book ids accept the full guid, an 8-char prefix, or an exact title match (when unambiguous).
-        Archive moves the book file to engine/data/archives/books/. The --confirm token must be the
-        full 32-char guid of the same book; this guard mirrors the UI's type-the-id modal.
+        Delete is PERMANENT (hard-deletes the book row); for a snapshot use `prose --archive-book`.
+        The --confirm token must be the full 32-char guid of the same book; this guard mirrors the
+        UI's type-the-id modal.
         Operation status messages go to stderr; result data (book json, file paths) goes to stdout.
         """);
 }

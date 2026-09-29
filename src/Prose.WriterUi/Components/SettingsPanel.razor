@@ -244,15 +244,21 @@
             await DictionaryChanged.InvokeAsync();
         }
         catch (ArgumentException ex) { note = $"Not added: {ex.Message}"; }
+        // The database, not the word: an exception escaping a click handler ends the circuit.
+        catch (Exception ex) { note = $"The dictionary could not be written: {ex.Message}"; }
     }
 
     private async Task RemoveWordAsync(string word)
     {
-        note = await Spelling.RemoveAsync(word)
-            ? $"Removed “{word}” from the dictionary."
-            : $"“{word}” was not in the dictionary.";
-        dictionary = await Spelling.ListAsync();
-        await DictionaryChanged.InvokeAsync();
+        try
+        {
+            note = await Spelling.RemoveAsync(word)
+                ? $"Removed “{word}” from the dictionary."
+                : $"“{word}” was not in the dictionary.";
+            dictionary = await Spelling.ListAsync();
+            await DictionaryChanged.InvokeAsync();
+        }
+        catch (Exception ex) { note = $"The dictionary could not be written: {ex.Message}"; }
     }
 
     private Task OnWordKeyDown(KeyboardEventArgs e) =>

@@ -90,7 +90,9 @@ public class CanonExportService
     public async Task<ExportResult> ExportEntityAsync(Guid entityId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var row = await db.Records.AsNoTracking()
+        // IgnoreQueryFilters: an explicit id. The Entity navigation carries the universe filter,
+        // so an entity outside the ambient universe read as "No Record found" (or lost its name).
+        var row = await db.Records.AsNoTracking().IgnoreQueryFilters()
             .Where(r => r.EntityId == entityId)
             .Select(r => new { r.Json, r.Entity!.Name, r.Entity.EntityType, r.Entity.Slug })
             .FirstOrDefaultAsync(ct);
@@ -117,7 +119,8 @@ public class CanonExportService
     public async Task<ExportResult> ExportEntityDeepAsync(Guid entityId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var row = await db.Records.AsNoTracking()
+        // IgnoreQueryFilters: explicit id — same reason as ExportEntityAsync.
+        var row = await db.Records.AsNoTracking().IgnoreQueryFilters()
             .Where(r => r.EntityId == entityId)
             .Select(r => new { r.Json, r.Entity!.Name, r.Entity.EntityType, r.Entity.Slug })
             .FirstOrDefaultAsync(ct);

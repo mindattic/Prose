@@ -35,8 +35,8 @@ public class EmbeddingService
 
     /// <summary>ProseEmbeddings ScopeKind for a node beat (Beat.Id keyed). Distinct
     /// from 'beat' (which keys ChapterBeat.BeatGuid) so the two content models
-    /// never collide in the polymorphic prose table.</summary>
-    /// <summary>Public so instruments can REPORT index coverage rather than assume it. A
+    /// never collide in the polymorphic prose table.
+    /// Public so instruments can REPORT index coverage rather than assume it. A
     /// retrieval tier that silently serves a stub index looks exactly like one that found nothing
     /// (RFC 0013, 2026-09-16: a k=400 sweep over the gutenberg universe returned 12 of 116 beats,
     /// and six paid calibration runs never noticed).</summary>
@@ -723,11 +723,6 @@ public class EmbeddingService
         return true;
     }
 
-    /// <summary>
-    /// Upsert one row's worth of vector + metadata via raw SQL MERGE so the
-    /// VECTOR(1536) column is populated server-side via CAST. EF Core can't
-    /// bind the VECTOR type natively yet; this is the workaround.
-    /// </summary>
     /// <summary>The universe to stamp on a freshly-written embedding (RFC 0006). Embedding runs
     /// under the current universe scope; fall back to GLMZ when no scope is wired.</summary>
     private static Guid EmbedUniverseId()
@@ -737,6 +732,11 @@ public class EmbeddingService
     /// <c>Guid.Empty</c> means "no scope" and the SQL predicate lets every universe through.</summary>
     private static Guid QueryUniverseId() => UniverseScope.EffectiveId;
 
+    /// <summary>
+    /// Upsert one row's worth of vector + metadata via raw SQL MERGE so the
+    /// VECTOR(1536) column is populated server-side via CAST. EF Core can't
+    /// bind the VECTOR type natively yet; this is the workaround.
+    /// </summary>
     private async Task UpsertVectorRawAsync(
         ProseDbContext db, Guid entityId, byte[] hash, float[] vector, CancellationToken ct)
     {
@@ -958,7 +958,7 @@ public class EmbeddingService
             }
 
             // 4) Bulk-upsert this batch via raw SQL. EF can't bind VECTOR yet,
-            //    and re-issuing one MERGE per row is fine at batch=128 (sub-second
+            //    and re-issuing one MERGE per row is fine at batch=100 (sub-second
             //    aggregate at this scale; SQL Server batches the round-trips
             //    when context is reused).
             await using var batchDb = await dbFactory.CreateDbContextAsync(ct);
@@ -978,8 +978,9 @@ public class EmbeddingService
     }
 
     /// <summary>
-    /// Send a batch of texts to OpenAI in a single request. Returns vectors in
-    /// the input order. Empty array on full-batch failure (caller logs).
+    /// Embed one text against the configured OpenAI-compatible local endpoint
+    /// (<see cref="SettingsService.LocalEmbeddingBaseUrl"/>). Empty array on failure (logged
+    /// and recorded); caller cancellation propagates.
     /// </summary>
     private async Task<float[]> EmbedLocalAsync(string text, CancellationToken ct)
     {
@@ -988,7 +989,7 @@ public class EmbeddingService
         var model = settings.LocalEmbeddingModel;
         var http  = httpFactory.CreateClient(nameof(EmbeddingService) + "Local");
         http.Timeout = TimeSpan.FromSeconds(60);
-        var req = new HttpRequestMessage(HttpMethod.Post, url)
+        using var req = new HttpRequestMessage(HttpMethod.Post, url)
         {
             Content = JsonContent.Create(new EmbeddingRequest(text, model)),
         };
@@ -997,7 +998,7 @@ public class EmbeddingService
         var sw = System.Diagnostics.Stopwatch.StartNew();
         try
         {
-            var resp = await http.SendAsync(req, ct);
+            using var resp = await http.SendAsync(req, ct);
             if (!resp.IsSuccessStatusCode)
             {
                 var body = await resp.Content.ReadAsStringAsync(ct);
@@ -1009,7 +1010,9 @@ public class EmbeddingService
             await RecordCallAsync(LocalProviderId, model, text.Length, payload?.Usage?.PromptTokens, (int)sw.ElapsedMilliseconds, success: true, null, ct);
             return NormalizeVector(payload?.Data?.FirstOrDefault()?.Embedding ?? Array.Empty<float>());
         }
-        catch (Exception ex)
+        // A caller's cancellation propagates; an HttpClient timeout (also an OCE) still degrades
+        // to "no vector" like any other transport failure.
+        catch (Exception ex) when (!(ex is OperationCanceledException && ct.IsCancellationRequested))
         {
             log.LogWarning(ex, "Local embedding call failed");
             await RecordCallAsync(LocalProviderId, model, text.Length, null, (int)sw.ElapsedMilliseconds, success: false, ex.Message, CancellationToken.None);
@@ -1024,7 +1027,7 @@ public class EmbeddingService
         var model = settings.LocalEmbeddingModel;
         var http  = httpFactory.CreateClient(nameof(EmbeddingService) + "Local");
         http.Timeout = TimeSpan.FromSeconds(120);
-        var req = new HttpRequestMessage(HttpMethod.Post, url)
+        using var req = new HttpRequestMessage(HttpMethod.Post, url)
         {
             Content = JsonContent.Create(new BatchEmbeddingRequest(texts.ToArray(), model)),
         };
@@ -1032,7 +1035,7 @@ public class EmbeddingService
             req.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", key);
         var sw = System.Diagnostics.Stopwatch.StartNew();
         var inputChars = texts.Sum(t => t.Length);
-        var resp = await http.SendAsync(req, ct);
+        using var resp = await http.SendAsync(req, ct);
         if (!resp.IsSuccessStatusCode)
         {
             var body = await resp.Content.ReadAsStringAsync(ct);
@@ -1063,7 +1066,7 @@ public class EmbeddingService
         var http = httpFactory.CreateClient(nameof(EmbeddingService));
         http.BaseAddress ??= new Uri("https://api.openai.com/");
         http.Timeout = TimeSpan.FromSeconds(120);
-        var req = new HttpRequestMessage(HttpMethod.Post, "v1/embeddings")
+        using var req = new HttpRequestMessage(HttpMethod.Post, "v1/embeddings")
         {
             Content = JsonContent.Create(new BatchEmbeddingRequest(texts.ToArray(), Model)),
         };
@@ -1071,7 +1074,7 @@ public class EmbeddingService
 
         var sw = System.Diagnostics.Stopwatch.StartNew();
         var inputChars = texts.Sum(t => t.Length);
-        var resp = await http.SendAsync(req, ct);
+        using var resp = await http.SendAsync(req, ct);
         if (!resp.IsSuccessStatusCode)
         {
             var body = await resp.Content.ReadAsStringAsync(ct);
@@ -1107,7 +1110,7 @@ public class EmbeddingService
         var http = httpFactory.CreateClient(nameof(EmbeddingService));
         http.BaseAddress ??= new Uri("https://api.openai.com/");
         http.Timeout = TimeSpan.FromSeconds(60);
-        var req = new HttpRequestMessage(HttpMethod.Post, "v1/embeddings")
+        using var req = new HttpRequestMessage(HttpMethod.Post, "v1/embeddings")
         {
             Content = JsonContent.Create(new EmbeddingRequest(text, Model)),
         };
@@ -1116,7 +1119,7 @@ public class EmbeddingService
         var sw = System.Diagnostics.Stopwatch.StartNew();
         try
         {
-            var resp = await http.SendAsync(req, ct);
+            using var resp = await http.SendAsync(req, ct);
             if (!resp.IsSuccessStatusCode)
             {
                 var body = await resp.Content.ReadAsStringAsync(ct);
@@ -1128,7 +1131,9 @@ public class EmbeddingService
             await RecordCallAsync(OpenAiProviderId, Model, text.Length, payload?.Usage?.PromptTokens, (int)sw.ElapsedMilliseconds, success: true, null, ct);
             return NormalizeVector(payload?.Data?.FirstOrDefault()?.Embedding ?? Array.Empty<float>());
         }
-        catch (Exception ex)
+        // A caller's cancellation propagates; an HttpClient timeout (also an OCE) still degrades
+        // to "no vector" like any other transport failure.
+        catch (Exception ex) when (!(ex is OperationCanceledException && ct.IsCancellationRequested))
         {
             log.LogWarning(ex, "Embedding API call failed");
             await RecordCallAsync(OpenAiProviderId, Model, text.Length, null, (int)sw.ElapsedMilliseconds, success: false, ex.Message, CancellationToken.None);

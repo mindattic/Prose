@@ -175,21 +175,3 @@ public class CorponationData : ICanonEntity
     [JsonPropertyName("image_prompt")] public string MidjourneyPrompt { get; set; } = "";
     [JsonPropertyName("dalle3_prompt")] public string Dalle3Prompt { get; set; } = "";
 }
-
-/// <summary>
-/// The master canon database — single JSON file containing all structured data.
-/// </summary>
-public class Database
-{
-    [JsonPropertyName("version")] public int Version { get; set; } = 1;
-    [JsonPropertyName("generated_at")] public DateTime GeneratedAt { get; set; }
-    [JsonPropertyName("characters")] public List<CharacterData> Characters { get; set; } = [];
-    [JsonPropertyName("districts")] public List<DistrictData> Districts { get; set; } = [];
-    [JsonPropertyName("factions")] public List<FactionData> Factions { get; set; } = [];
-    [JsonPropertyName("corponations")] public List<CorponationData> Corponations { get; set; } = [];
-    [JsonPropertyName("worldbuilding_docs")] public List<WorldbuildingDocument> WorldbuildingDocs { get; set; } = [];
-    [JsonPropertyName("story_bible")] public StoryBibleData StoryBible { get; set; } = new();
-    [JsonPropertyName("literary_rules")] public LiteraryRulesData LiteraryRules { get; set; } = new();
-    [JsonPropertyName("motifs")] public List<MotifData> Motifs { get; set; } = [];
-    [JsonPropertyName("character_profile")] public CharacterProfileData CharacterProfile { get; set; } = new();
-}

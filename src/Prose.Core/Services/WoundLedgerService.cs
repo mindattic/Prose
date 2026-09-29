@@ -63,12 +63,15 @@ public class WoundLedgerService(
         // log_wound calls (e.g. two characters wounded in the same beat) could hand the
         // second caller the FIRST caller's row id, and a later set_wound_status(woundId,...)
         // would silently flip the wrong character's wound.
-        var id = await db.Database.SqlQueryRaw<long>("""
+        // ToListAsync, not FirstAsync: FirstAsync composes a TOP(1) SELECT around the SQL, and an
+        // INSERT cannot be composed over (EF throws "non-composable SQL"). AS [Value] is the
+        // column name EF's scalar SqlQuery maps.
+        var id = (await db.Database.SqlQueryRaw<long>("""
             INSERT INTO [dbo].[WoundLedger]
                 ([CharacterId],[BodyLocation],[Description],[Severity],[SourceNodeSlug],[SourceBeatId],[InWorldDate],[ExpectedHealingDays],[Status],[ResidualEffect])
-            OUTPUT INSERTED.[Id]
+            OUTPUT INSERTED.[Id] AS [Value]
             VALUES ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9})
-            """, characterId, bodyLocation, description, severity, (object?)sourceNodeSlug ?? DBNull.Value, (object?)sourceBeatId ?? DBNull.Value, (object?)inWorldDate ?? DBNull.Value, expectedHealingDays, status, residualEffect).FirstAsync(ct);
+            """, characterId, bodyLocation, description, severity, (object?)sourceNodeSlug ?? DBNull.Value, (object?)sourceBeatId ?? DBNull.Value, (object?)inWorldDate ?? DBNull.Value, expectedHealingDays, status, residualEffect).ToListAsync(ct)).Single();
         log.LogInformation("Wound logged: {Char} {Loc} ({Sev})", characterId, bodyLocation, severity);
         return id;
     }

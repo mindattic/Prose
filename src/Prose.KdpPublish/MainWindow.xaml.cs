@@ -415,7 +415,8 @@ public partial class MainWindow : Window
         currentRunId = runLog.StartRun(KdpManifestService.FindRepoRoot(), codes);
 
         var operatorService = App.Services.GetRequiredService<KdpOperatorService>();
-        var ctx = new KdpOperatorContext { Browser = kdpBrowser };
+        // RunSelectedAsync refuses to start before the pane exists, so this cannot be null here.
+        var ctx = new KdpOperatorContext { Browser = kdpBrowser ?? throw new InvalidOperationException("KDP browser pane is not ready.") };
         var toRun = lastManifest.Where(e => codes.Contains(e.Code)).ToList();
         await PostLogAsync($"Starting run: {toRun.Count} book(s) — {string.Join(", ", toRun.Select(e => e.Code))}");
 

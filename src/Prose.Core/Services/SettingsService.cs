@@ -8,6 +8,13 @@ using Prose.Core.Interfaces;
 
 namespace Prose.Core.Services;
 
+/// <summary>
+/// Per-machine application settings (models, voices, export folders, review defaults, feature
+/// flags) persisted to <c>%LOCALAPPDATA%\MindAttic\Prose\Settings.json</c>, shared by every Prose
+/// process on the machine. Setters debounce a save; <see cref="Flush"/> merges only the keys this
+/// process changed onto the file. API-key properties resolve through the credential chain in
+/// <see cref="ResolveApiKey"/> rather than the file alone.
+/// </summary>
 public class SettingsService : IDisposable
 {
     private const string AppId = "prose";
@@ -753,7 +760,12 @@ public class SettingsService : IDisposable
     /// <summary>Formats a UTC or local DateTime according to the user's configured timestamp format and timezone.</summary>
     public string FormatTimestamp(DateTime timestamp)
     {
-        var tz = TimeZoneInfo.FindSystemTimeZoneById(TimezoneId);
+        // A blank or unknown TimezoneId (hand-edited Settings.json, another OS's id) must not
+        // make every timestamp display throw; fall back to the machine's local zone.
+        TimeZoneInfo tz;
+        try { tz = TimeZoneInfo.FindSystemTimeZoneById(TimezoneId); }
+        catch (Exception ex) when (ex is TimeZoneNotFoundException or InvalidTimeZoneException or ArgumentException)
+        { tz = TimeZoneInfo.Local; }
         var converted = TimeZoneInfo.ConvertTime(timestamp, tz);
         return converted.ToString(TimestampFormat);
     }

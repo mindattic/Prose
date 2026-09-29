@@ -65,7 +65,7 @@ public record AuditContext(
 public record AuditVerdict(
     string RuleKey,
     string Title,
-    string Severity,   // "PASS" | "BLOCKER" | "MODERATE" | "MINOR" | "DEVIATION"
+    string Severity,   // "PASS" | "BLOCKER" | "MODERATE" | "MINOR" | "DEVIATION" | "ERROR" (rule never ran; see AuditRunner)
     string Evidence,
     string? Location = null,
     string? Fix = null);

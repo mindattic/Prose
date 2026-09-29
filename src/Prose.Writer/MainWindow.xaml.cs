@@ -75,6 +75,9 @@ public partial class MainWindow : Window
         ConnectButton.IsEnabled = false;
         StopHealthWatch();
         StopReconnectWatch();
+        // This path reloads the editor, so the page is no longer "as it was when the Hub stalled".
+        // A stale set here let a later failed navigation be "recovered" by un-hiding its error page.
+        lostHubPids = [];
 
         try
         {
@@ -170,6 +173,8 @@ public partial class MainWindow : Window
                 }
                 else
                 {
+                    // The page failed to load: recovery must navigate again, never just un-hide it.
+                    lostHubPids = [];
                     ShowSplash($"Could not open {HubProcess.BaseUrl}/writer — {args.WebErrorStatus}.",
                                offerConnect: true);
                     StartReconnectWatch();
@@ -186,6 +191,8 @@ public partial class MainWindow : Window
                 // navigating again is enough.
                 if (args.ProcessFailedKind == CoreWebView2ProcessFailedKind.BrowserProcessExited)
                     ReplaceWebView();
+                // The page is gone with its process: recovery must navigate, not un-hide it.
+                lostHubPids = [];
                 ShowSplash($"The editor's browser process stopped ({args.ProcessFailedKind}).",
                            offerConnect: true);
                 StartReconnectWatch();

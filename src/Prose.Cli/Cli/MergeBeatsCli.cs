@@ -119,14 +119,17 @@ public static class MergeBeatsCli
 
         int merged = 0, unchanged = 0, kept = 0, failed = 0;
         long grownFrom = 0, grownTo = 0;
-        var startCost = ledger?.GetSummary().TotalCost ?? 0;
+        // Cost scopes, not before/after deltas of the ledger's process-wide total: in the Hub that
+        // total also moves with every other caller's LLM spend, which was charged to this run and
+        // written into each beat's report line (same fix as AutoRunCli; see LlmActionContext).
+        using var runScope = LlmActionContext.BeginCostScope();
 
         foreach (var (ob, pos) in targets)
         {
             var beat = ob.Beat;
             var original = beat.Text ?? "";
             var goal = beat.Description ?? beat.Title ?? "";
-            var beatCost = ledger?.GetSummary().TotalCost ?? 0;
+            using var beatScope = LlmActionContext.BeginCostScope();
             var failures = new List<string>();
             var unknownNames = new List<string>();
             string status = "kept"; string? reason = null; int attempts = 0; var mergedChars = 0;
@@ -208,7 +211,7 @@ public static class MergeBeatsCli
                 status = "error"; reason = ex.Message;
             }
 
-            var cost = (ledger?.GetSummary().TotalCost ?? 0) - beatCost;
+            var cost = ledger?.CostForScope(beatScope.Id) ?? 0;
             var outcome = new BeatOutcome(beat.Number, beat.Id.ToString(), pos, status,
                 original.Length, mergedChars, reason, failures, unknownNames,
                 Math.Round(cost, 4), attempts, DateTime.UtcNow);
@@ -225,7 +228,7 @@ public static class MergeBeatsCli
             }
         }
 
-        var total = (ledger?.GetSummary().TotalCost ?? 0) - startCost;
+        var total = ledger?.CostForScope(runScope.Id) ?? 0;
         Console.WriteLine();
         Console.WriteLine($"[merge-beats] {merged} merged · {unchanged} unchanged · {kept} kept original · {failed} errors · ${total:F2}");
         if (grownFrom > 0)
@@ -233,7 +236,8 @@ public static class MergeBeatsCli
         Console.WriteLine($"[merge-beats] report: {reportPath}");
         if (merged > 0)
             Console.WriteLine($"[merge-beats] Next: re-read the merged beats — they are unread again: prose --read-status --node {slug} --list");
-        return 0;
+        // A beat that threw is not a completed pass; "kept original" is a legitimate outcome, an error is not.
+        return failed > 0 ? 1 : 0;
     }
 
     /// <summary>Canon claims for the beat's cast, plus the original beat itself — everything in
@@ -245,7 +249,7 @@ public static class MergeBeatsCli
         {
             var names = brief.MustInclude.Select(n => n.Trim()).Where(n => n.Length > 0).ToHashSet(StringComparer.OrdinalIgnoreCase);
             var claims = continuity.GetByStatus("CANONICAL").Concat(continuity.GetByStatus("CONFIRMED"))
-                .Where(c => names.Any(n => c.EntityName.StartsWith(n, StringComparison.OrdinalIgnoreCase) || n.StartsWith(c.EntityName, StringComparison.OrdinalIgnoreCase)))
+                .Where(c => !string.IsNullOrWhiteSpace(c.EntityName) && names.Any(n => c.EntityName.StartsWith(n, StringComparison.OrdinalIgnoreCase) || n.StartsWith(c.EntityName, StringComparison.OrdinalIgnoreCase)))
                 .Where(c => !ContinuityService.IsVolatilePredicate(c.Predicate))
                 .Take(40).ToList();
             if (claims.Count > 0) facts = string.Join("\n", claims.Select(c => $"- {c.EntityName}: {c.Predicate} = {c.Object}"));

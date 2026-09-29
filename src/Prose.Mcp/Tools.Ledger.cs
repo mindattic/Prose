@@ -5,6 +5,7 @@ using ModelContextProtocol.Server;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
 using Prose.Core.Services;
+using Prose.Core.Services.Factory;
 
 namespace Prose.Mcp;
 
@@ -82,8 +83,15 @@ public class LedgerTools
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var query = db.CommandLedgerEntries.AsNoTracking().AsQueryable();
-        if (!string.IsNullOrWhiteSpace(since) && DateTime.TryParse(since, out var sinceDt))
-            query = query.Where(e => e.At >= sinceDt.ToUniversalTime());
+        // An unparseable `since` used to drop the filter silently and answer with the newest rows as
+        // if they were the window; culture-sensitive DateTime.TryParse also read an offset-less ISO
+        // time as local. TryParseInstant is invariant, assumes UTC, and accepts "90m"/"6h"/"2d".
+        if (!string.IsNullOrWhiteSpace(since))
+        {
+            if (!FactoryJournal.TryParseInstant(since, out var sinceUtc))
+                return JsonSerializer.Serialize(new { error = "bad_since", since });
+            query = query.Where(e => e.At >= sinceUtc);
+        }
         if (!string.IsNullOrWhiteSpace(handler))
             query = query.Where(e => e.HandlerClass == handler);
         var rows = await query.OrderByDescending(e => e.At).Take(take).ToListAsync();
@@ -104,8 +112,13 @@ public class LedgerTools
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var query = db.DecisionLedgerEntries.AsNoTracking().AsQueryable();
-        if (!string.IsNullOrWhiteSpace(since) && DateTime.TryParse(since, out var sinceDt))
-            query = query.Where(e => e.At >= sinceDt.ToUniversalTime());
+        // Same parse as CommandLogImpl: a bad `since` is refused, not silently dropped.
+        if (!string.IsNullOrWhiteSpace(since))
+        {
+            if (!FactoryJournal.TryParseInstant(since, out var sinceUtc))
+                return JsonSerializer.Serialize(new { error = "bad_since", since });
+            query = query.Where(e => e.At >= sinceUtc);
+        }
         if (!string.IsNullOrWhiteSpace(sessionId))
             query = query.Where(e => e.SessionId == sessionId);
         var rows = await query.OrderByDescending(e => e.At).Take(take).ToListAsync();
@@ -128,7 +141,11 @@ public class LedgerTools
     {
         var results = logging.Search(new LogSearchRequest
         {
-            Since = !string.IsNullOrWhiteSpace(since) && DateTime.TryParse(since, out var s) ? s : null,
+            // Lenient on purpose: the Observer Logs tab passes free text here and deserializes the
+            // reply as a list, so an error object would break its circuit. A bad value falls back to
+            // the default window. Invariant culture so an ISO date reads the same on any machine.
+            Since = !string.IsNullOrWhiteSpace(since)
+                    && DateTime.TryParse(since, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out var s) ? s : null,
             MinSeverity = severity,
             SearchText = text,
             MaxResults = take,

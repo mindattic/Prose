@@ -93,7 +93,12 @@ public static class WoundCli
         if (characterId == null) { Console.Error.WriteLine($"[wound log] Character '{character}' not found."); return 1; }
 
         Guid? beatId = null;
-        if (!string.IsNullOrWhiteSpace(beatIdStr) && Guid.TryParse(beatIdStr, out var bg)) beatId = bg;
+        if (!string.IsNullOrWhiteSpace(beatIdStr))
+        {
+            // Was silently dropped when malformed: the wound logged with no source beat.
+            if (!Guid.TryParse(beatIdStr, out var bg)) { Console.Error.WriteLine($"[wound log] --beat must be a beat GUID, got '{beatIdStr}'."); return 1; }
+            beatId = bg;
+        }
         DateTime? inWorldDt = inWorldDate != null ? CliDates.ParseAsGiven(inWorldDate, "--in-world-date") : null;
 
         var ledger = services.GetRequiredService<WoundLedgerService>();

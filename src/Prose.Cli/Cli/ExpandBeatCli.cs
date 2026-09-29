@@ -30,9 +30,9 @@ namespace Prose.Cli;
 ///   --lean                    RFC 0012 §3.2: drop the tier-E opinion blocks (finding loop-backs,
 ///                             story-science, StoryScope loop-back, offscreen chart, style anchors,
 ///                             tension, collision). The A/B arm.
-///   --dry-run [--out <file>]  Write nothing to the beat and run no post-write extraction; the
+///   --dry-run [--out &lt;file&gt;]  Write nothing to the beat and run no post-write extraction; the
 ///                             draft goes to --out (or stdout). A gate refusal writes
-///                             <file>.refused.txt. For the §4 A/B.
+///                             &lt;file&gt;.refused.txt. For the §4 A/B.
 ///
 /// Exit codes:
 ///   0 — at least one beat expanded successfully.
@@ -160,7 +160,17 @@ public static class ExpandBeatCli
 
         // Filter to target beat(s)
         Guid? targetBeatId = null;
-        if (!string.IsNullOrWhiteSpace(beatId) && Guid.TryParse(beatId, out var bg)) targetBeatId = bg;
+        if (!string.IsNullOrWhiteSpace(beatId))
+        {
+            // A --beat that is not a GUID ("--beat 12") used to fall through to "every beat in the
+            // node" — a billed pass over the whole node, and with --force an overwrite of all of it.
+            if (!Guid.TryParse(beatId, out var bg))
+            {
+                Console.Error.WriteLine($"[expand-beat] --beat must be a beat GUID, got '{beatId}'.");
+                return 1;
+            }
+            targetBeatId = bg;
+        }
 
         var targets = targetBeatId.HasValue
             ? ordered.Where(ob => ob.Beat.Id == targetBeatId.Value).ToList()

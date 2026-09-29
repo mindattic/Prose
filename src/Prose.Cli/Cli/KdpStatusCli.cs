@@ -90,8 +90,6 @@ public static class KdpStatusCli
             .GroupBy(x => leafIdToBookId[x.NodeId])
             .ToDictionary(g => g.Key, g => (DateTime?)g.Max(x => x.UpdatedAt));
 
-        // Resolve node IDs for the status nodes
-
         Console.WriteLine($"\n{"CODE",-8}  {"UNIVERSE",-8}  {"STATUS",-16}  {"KDP PUBLISHED",-22}  {"LAST EDIT",-22}  NOTE");
         Console.WriteLine(new string('-', 108));
 

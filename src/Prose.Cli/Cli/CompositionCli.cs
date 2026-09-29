@@ -277,6 +277,8 @@ public static class CompositionCli
         }
         Console.WriteLine();
         Console.WriteLine($"[calibrate-gate] {pass}/{CalibrationFixtures.All.Count} correct.");
+        // A miscalibrated gate is the answer "do not trust it yet"; exit 0 read as a pass.
+        if (pass < CalibrationFixtures.All.Count) Environment.ExitCode = 1;
         break;
     }
     case "calibrate-plants":

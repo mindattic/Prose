@@ -196,7 +196,7 @@ public class RelationshipDiscoveryService
                 graph.AddNode(new UniverseNode
                 {
                     Id = archId, Name = archName, NodeType = "archetype",
-                    Properties = new Dictionary<string, string> { ["score"] = score.ToString("F1") }
+                    Properties = new Dictionary<string, string> { ["score"] = score.ToString("F1", System.Globalization.CultureInfo.InvariantCulture) }
                 });
             }
             var existing = graph.GetRelationshipsBetween(charId, archId);

@@ -449,8 +449,8 @@ public sealed class ComprehensionProbeService(
 
     // ── helpers ────────────────────────────────────────────────────────────────────
 
-    /// <summary>Recap = full synopses of the previous 3 chapters + titles-only earlier.
-    /// Costs nothing (reuses the stored Sonnet summaries) and mirrors what a real
+    /// <summary>Recap = full synopses of the previous 3 chapters + a 160-char gist of each earlier
+    /// one. Costs no extra call (reuses this run's Sonnet summaries) and mirrors what a real
     /// reader retains: recent chapters vividly, older ones as gist.</summary>
     private static string BuildRollingRecap(int chapterIndex, IReadOnlyDictionary<int, string> summaryByIndex)
     {

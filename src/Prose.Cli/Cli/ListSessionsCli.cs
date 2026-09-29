@@ -5,6 +5,10 @@ using Prose.Core.Services;
 
 namespace Prose.Cli;
 
+/// <summary>
+/// <c>prose --list-sessions --slug &lt;slug|code|id&gt; [--limit N]</c> — a node's edit sessions,
+/// most recent first (open or closed, label, duration, beats touched). Read-only.
+/// </summary>
 public static class ListSessionsCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)

@@ -61,7 +61,7 @@ public class BookHealthService(
     /// --until-dry round history, fact-ledger findings, and Reader-Proxy QA findings by hand.
     /// Read-only: makes no LLM calls and runs no new checks — it only reads what earlier
     /// sweep/audit/ledger runs already filed or persisted, so this is safe (and cheap) to call
-    /// at any time, not just after a fresh --audit-book run.
+    /// at any time.
     /// </summary>
     public async Task<PublishReadinessReport> PublishReadinessAsync(Guid nodeId, CancellationToken ct = default)
     {
@@ -270,12 +270,10 @@ public class BookHealthService(
     /// This check's coverage is bounded by whether ContinuityExtractionService has ever been run
     /// for this book (nothing runs it automatically per beat save yet) — HasAnyClaimsForBook
     /// distinguishes "extracted and clean" from "never extracted," same honest-gap pattern as
-    /// the (since-deleted) battery's no-pov-data finding.</summary>
-    /// <summary>Public (2026-09-01) so a narrow, zero-LLM-cost CLI command
-    /// (<c>prose --fact-ledger-refresh</c>) can re-run just this check on demand — the only
-    /// existing entry point was the cost-gated <c>--audit-book --deep</c> bundle (~15 other
-    /// LLM-call checks alongside this free one), which made "did my ContinuityService fix
-    /// actually shrink this book's fact-ledger count" a ~$70 question to answer.</summary>
+    /// the (since-deleted) battery's no-pov-data finding.
+    /// <para>Public (2026-09-01) so a narrow, zero-LLM-cost CLI command
+    /// (<c>prose --fact-ledger-refresh</c>) can re-run just this check on demand; it is now its
+    /// only entry point, since the <c>--audit-book</c> battery that also ran it was removed.</para></summary>
     public Task FactLedgerAsync(string slug, CancellationToken ct)
     {
         ct.ThrowIfCancellationRequested();

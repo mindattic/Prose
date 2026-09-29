@@ -182,10 +182,21 @@ public class FactoryTools(
     public async Task<string> WorkOrderAddImpl(string kind, string title, string? parentId = null, string? rootApprovedBy = null,
         string? nodeIdOrSlug = null, string? paths = null, string? checksJson = null, bool blocking = false, string? detail = null)
     {
+        // A mistyped parent or book used to be dropped to null and answered ok: the order landed as a
+        // root (or off the factory line) instead of where the caller put it.
+        Guid? parent = null;
+        if (!string.IsNullOrWhiteSpace(parentId))
+        {
+            if (!Guid.TryParse(parentId, out var p)) return JsonSerializer.Serialize(new { ok = false, error = "bad_parent_id", parentId }, JsonOpts);
+            parent = p;
+        }
+        var book = await Resolve(nodeIdOrSlug);
+        if (!string.IsNullOrWhiteSpace(nodeIdOrSlug) && book == null)
+            return JsonSerializer.Serialize(new { ok = false, error = "node_not_found", nodeIdOrSlug }, JsonOpts);
         try
         {
             var row = await orders.AddAsync(new WorkOrderDraft(kind, title, detail,
-                Guid.TryParse(parentId, out var p) ? p : null, rootApprovedBy, await Resolve(nodeIdOrSlug),
+                parent, rootApprovedBy, book,
                 (paths ?? "").Split(';', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries),
                 checksJson ?? "[]", blocking), await sessions.CurrentSessionIdAsync());
             return JsonSerializer.Serialize(new { ok = true, row.Id, row.Kind, row.Title, row.Blocking }, JsonOpts);

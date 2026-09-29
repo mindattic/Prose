@@ -1365,10 +1365,6 @@ Return ONLY a JSON object, nothing else:
 
     /// <summary>One cheap SCORE-ONLY ballot: overall + flow + per-beat 1-5 + a single
     /// weakness tag, no prose paragraph. The wide-net scoring/per-beat tier.</summary>
-    /// <summary>Resolve the model for a ballot/prose call — delegated to the shared
-    /// <see cref="ReviewLlmTransport"/> (RFC 0009 cheap-tier map lives there now).</summary>
-    private string ResolveBallotModel(string provider, bool cheap) => transport.ResolveModel(provider, cheap);
-
     private async Task<NodeReview?> BallotOnceAsync(
         Guid nodeId, NodeMarkdownExporter.NodeExport export, Persona persona, string provider, ReviewLlmTransport.Route route, CancellationToken ct,
         string? lessonsBlock = null, bool cheapModels = false, IReadOnlyDictionary<int, string>? beatHashes = null,
@@ -2066,8 +2062,6 @@ Be specific; do not invent praise the reviews don't support.";
     /// The default allowed list keeps legacy panel behavior identical.</summary>
     private List<string> ReviewProviderIds(string? allowedOverride = null) => transport.ProviderIds(allowedOverride);
 
-    /// <summary>Distinct enriched personas (real personalities, not the empty
-    /// per-provider defaults), drawn without replacement.</summary>
     /// <summary>Look up a focus group by name; returns its id + member persona
     /// ids, or (null, empty) if no such group exists.</summary>
     private async Task<(Guid? id, List<string> memberIds)> GetGroupAsync(string name, CancellationToken ct)
@@ -2180,9 +2174,8 @@ Be specific; do not invent praise the reviews don't support.";
         return sb.ToString();
     }
 
-    /// <summary>Tolerant JSON extraction: strips code fences, isolates the first
-    /// {...} object, reads score/review/improvements. Falls back to a bare
-    /// "score": N scan with the whole text as the review.</summary>
+    /// <summary>The <c>contradictions</c> string array from a review response's outermost
+    /// {...} object; empty when absent or unparseable.</summary>
     private static List<string> ExtractContradictions(string? raw)
     {
         if (string.IsNullOrWhiteSpace(raw)) return [];
@@ -2203,6 +2196,9 @@ Be specific; do not invent praise the reviews don't support.";
         catch { return []; }
     }
 
+    /// <summary>Tolerant JSON extraction: strips code fences, isolates the first
+    /// {...} object, reads score/review/improvements. Falls back to a bare
+    /// "score": N scan with the whole text as the review.</summary>
     private static bool TryParseReview(string? raw, out int score, out string review, out List<string> improvements)
     {
         score = 0; review = ""; improvements = new List<string>();
@@ -2704,7 +2700,9 @@ Changed beats to score: {changedList}. Do not output scores for beats marked [CO
         var sb = new StringBuilder();
         foreach (var b in orderedBeats)
         {
-            var text = (b.Text ?? "").Trim();
+            // Tags stripped, as NodeMarkdownExporter hashes: over the raw tagged text, the same
+            // prose got a different fingerprint from the one every panel run was stamped with.
+            var text = BeatMarkup.StripEntityTags(b.Text).Trim();
             if (text.Length > 0) sb.Append(text).Append('\n');
         }
         using var sha = SHA256.Create();

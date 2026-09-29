@@ -175,7 +175,7 @@ public class ChapterCloseResult
     public int  ChapterIndex      { get; set; }
     public int  ContradictionCount { get; set; }
     public int  ChapterScore      { get; set; }   // Tier 1 quick score
-    public int  ReviewTier        { get; set; }   // 1=pass, 2=draft panel, 3=standard panel
+    public int  ReviewTier        { get; set; }   // 0=not scored (voting off / score failed), 1=pass, 2=draft panel, 3=standard panel
     public double PanelScore      { get; set; }   // Set when ReviewTier >= 2
     public int  PanelBallotsSaved { get; set; }
     public int  ForkWinnerIndex  { get; set; }   // 1-based; 0 = no fork run

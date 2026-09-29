@@ -225,7 +225,11 @@ public class FindingApplyService
             var html = v.GetValue<string>();
             if (!html.Contains(snippet)) return false;
 
-            obj["html"] = html.Replace(snippet, fix);
+            // One occurrence only, as for beats: Replace() rewrote every copy of the snippet.
+            // Ambiguous → false, and the caller's raw-content path reports it.
+            var single = ReplaceSingle(html, snippet, fix);
+            if (single == null) return false;
+            obj["html"] = single;
             updated = obj.ToJsonString(new JsonSerializerOptions { WriteIndented = true });
             return true;
         }

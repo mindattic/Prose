@@ -287,6 +287,7 @@ public class SceneContextAssembler(
     private Dictionary<string, List<(Guid Id, string Name, string Type, bool SingleToken, Guid? OriginNodeId)>>? nameIndex;
     private DateTime nameIndexBuiltAt;
     private int nameIndexBuiltEpoch = -1;
+    private Guid nameIndexBuiltUniverse = Guid.Empty;
     private static readonly TimeSpan NameIndexTtl = TimeSpan.FromMinutes(10);
     private readonly SemaphoreSlim indexLock = new(1, 1);
 
@@ -515,13 +516,19 @@ public class SceneContextAssembler(
         // process that switches universe mid-run (CLI --universe, MCP switch_universe, the
         // web dropdown) must not keep serving the previous universe's roster for up to
         // NameIndexTtl minutes.
+        // Keyed by the universe too: the epoch is process-wide, so a flow-scoped universe that
+        // differs from the one the index was built under (same epoch) would otherwise be served
+        // the other universe's names — see CharacterRepository.GetAll (RFC 0007 bug #3).
         var currentEpoch = UniverseScope.Epoch;
-        if (nameIndex != null && nameIndexBuiltEpoch == currentEpoch && DateTime.UtcNow - nameIndexBuiltAt < NameIndexTtl)
+        var currentUniverse = UniverseScope.EffectiveId;
+        if (nameIndex != null && nameIndexBuiltEpoch == currentEpoch && nameIndexBuiltUniverse == currentUniverse
+            && DateTime.UtcNow - nameIndexBuiltAt < NameIndexTtl)
             return nameIndex;
         await indexLock.WaitAsync(ct);
         try
         {
-            if (nameIndex != null && nameIndexBuiltEpoch == currentEpoch && DateTime.UtcNow - nameIndexBuiltAt < NameIndexTtl)
+            if (nameIndex != null && nameIndexBuiltEpoch == currentEpoch && nameIndexBuiltUniverse == currentUniverse
+                && DateTime.UtcNow - nameIndexBuiltAt < NameIndexTtl)
                 return nameIndex;
 
             // List-valued (not TryAdd-first-wins): two entities CAN legitimately share a Name
@@ -571,6 +578,7 @@ public class SceneContextAssembler(
             nameIndex = idx;
             nameIndexBuiltAt = DateTime.UtcNow;
             nameIndexBuiltEpoch = currentEpoch;
+            nameIndexBuiltUniverse = currentUniverse;
             log.LogInformation("Scene name index built: {Count} triggers", idx.Count);
             return idx;
         }
@@ -808,6 +816,7 @@ public class SceneContextAssembler(
 
         var block = new StringBuilder();
         block.AppendLine("HOW THEY DECIDE (honor these — they are not a plot puppet):");
+        var headerLength = block.Length;
         foreach (var grp in grouped)
         {
             if (block.Length >= MaxBehavioralChars) break;
@@ -821,7 +830,7 @@ public class SceneContextAssembler(
             block.AppendLine($"- {label}: {Clip(combined, Math.Max(40, remaining - label.Length - 4))}");
         }
 
-        if (block.Length > 2) // more than just the header line
+        if (block.Length > headerLength) // more than just the header line
             sb.Append(block);
     }
 

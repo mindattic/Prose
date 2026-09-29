@@ -842,7 +842,10 @@ app.MapPost("/api/edges", async (EdgeRequest req, UniverseGraphService graph, ID
     // or an alias resolving two different wordings onto the same canonical string). That case
     // is unambiguous — it's the identical fact, not a judgment call — so the write is made
     // idempotent: return the existing live edge instead of inserting a second copy of it.
-    var exactMatch = await db.Edges
+    // IgnoreQueryFilters on these explicit-id lookups: with no ?universe the ambient default
+    // filtered out the pair's existing edges when the entities belong to another universe, so the
+    // idempotency check missed and a second copy was inserted — stamped with the ambient universe.
+    var exactMatch = await db.Edges.IgnoreQueryFilters()
         .Where(e => e.SourceId == req.Source && e.TargetId == req.Target && e.InvalidatedAt == null)
         .Where(e => e.RelationType.ToLower() == resolvedRelationType)
         .FirstOrDefaultAsync();
@@ -874,13 +877,19 @@ app.MapPost("/api/edges", async (EdgeRequest req, UniverseGraphService graph, ID
     // safely tell "owns" and "wields" apart for a given pair (both can be true at once), only a
     // human/LLM with story knowledge can — so this is surfaced as a warning, the write still
     // goes through, and the caller decides whether to prose --merge-edge the two together.
-    var possibleDuplicate = await db.Edges.AsNoTracking()
+    var possibleDuplicate = await db.Edges.AsNoTracking().IgnoreQueryFilters()
         .Where(e => e.SourceId == req.Source && e.TargetId == req.Target && e.InvalidatedAt == null)
         .Select(e => new { e.Id, e.RelationType, e.Description })
         .FirstOrDefaultAsync();
 
+    // The edge belongs to its endpoints' universe (source and target share one), not to whatever
+    // the ambient default is; Guid.Empty falls back to the context's ambient stamping.
+    var sourceUniverseId = await db.Entities.AsNoTracking().IgnoreQueryFilters()
+        .Where(e => e.Id == req.Source).Select(e => (Guid?)e.UniverseId).FirstOrDefaultAsync();
+
     var newEdge = new Edge
     {
+        UniverseId = sourceUniverseId ?? Guid.Empty,
         SourceId = req.Source,
         TargetId = req.Target,
         RelationType = resolvedRelationType,

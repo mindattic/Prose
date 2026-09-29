@@ -95,27 +95,29 @@
         await InvokeAsync(StateHasChanged);
     }
 
-    private void OnRunStarted(DcmRunDto run)
+    // The three hub events arrive on SignalR threads; each is marshalled onto the circuit whole, so
+    // a beat that lands while a run is starting cannot increment a count the start then resets.
+    private void OnRunStarted(DcmRunDto run) => _ = InvokeAsync(() =>
     {
         currentRun = run;
         beatCount = 0;
         lastBeatTitle = null;
-        InvokeAsync(StateHasChanged);
-    }
+        StateHasChanged();
+    });
 
-    private void OnBeat(DcmBeatDto beat)
+    private void OnBeat(DcmBeatDto beat) => _ = InvokeAsync(() =>
     {
         if (currentRun == null || beat.RunId != currentRun.RunId) return;
         beatCount++;
         lastBeatTitle = beat.BeatTitle;
-        InvokeAsync(StateHasChanged);
-    }
+        StateHasChanged();
+    });
 
-    private void OnRunEnded(DcmRunDto run)
+    private void OnRunEnded(DcmRunDto run) => _ = InvokeAsync(() =>
     {
         if (currentRun != null && run.RunId == currentRun.RunId) currentRun = null;
-        InvokeAsync(StateHasChanged);
-    }
+        StateHasChanged();
+    });
 
     public ValueTask DisposeAsync()
     {

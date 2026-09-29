@@ -64,27 +64,34 @@ public class StoryRepairService
             if (string.IsNullOrWhiteSpace(character.Name)) continue;
 
             var nameTokens = BuildSearchTokens(character);
-            bool dirty = false;
+            var additions = new List<TimelineEvent>();
 
             foreach (var chapter in allChapters)
             {
                 if (!ChapterMentions(chapter, nameTokens)) continue;
                 if (HasTimelineEntry(character, chapter.Id)) continue;
-
-                character.Timeline.Add(BuildTimelineEntry(chapter));
-                dirty = true;
-                result.TimelineEntriesAdded++;
+                additions.Add(BuildTimelineEntry(chapter));
             }
 
-            if (dirty)
+            if (additions.Count > 0)
             {
                 try
                 {
-                    character.Timeline = character.Timeline
+                    // Save the live record, not the GetAll projection: Save wipes and re-inserts
+                    // every child table from what it is handed, and the projection can lag a
+                    // bridge-table write (see CharacterRepository.GetById) — saving it would
+                    // silently drop those rows. Mutating the projection also edited the shared
+                    // GetAll cache in place.
+                    var fresh = characters.GetById(character.Id);
+                    if (fresh == null) continue;
+                    var added = additions.Where(a => !HasTimelineEntry(fresh, a.StoryId)).ToList();
+                    if (added.Count == 0) continue;
+                    fresh.Timeline = fresh.Timeline.Concat(added)
                         .OrderBy(t => ParseChapterNumber(t.Date) ?? int.MaxValue)
                         .ThenBy(t => t.Date, StringComparer.Ordinal)
                         .ToList();
-                    characters.Save(character);
+                    characters.Save(fresh);
+                    result.TimelineEntriesAdded += added.Count;
                     result.CharactersUpdated++;
                 }
                 catch (Exception ex)
@@ -100,8 +107,9 @@ public class StoryRepairService
 
     /// <summary>
     /// Expensive pass — LLM-driven. Runs ContinuityExtractionService against every
-    /// chapter so canonical facts in the SQLite store reflect the prose. Filters
-    /// out chapters whose extraction run already completed (cheap idempotence).
+    /// chapter so canonical facts in the claim store reflect the prose. Every chapter is
+    /// extracted on every run (one LLM call each): no already-extracted filter exists, so
+    /// <paramref name="forceReExtract"/> currently changes nothing.
     /// </summary>
     public async Task<RepairContinuityResult> RepairContinuityAsync(
         bool forceReExtract = false,
@@ -146,9 +154,17 @@ public class StoryRepairService
     {
         var result = new RepairBeatFactsResult();
         var allCharacters = characters.GetAll();
-        // The mutated records themselves, by reference: names are not unique (two "Boris"es in
-        // different books), so a name-keyed dictionary threw after every LLM call was paid for.
-        var touched = new HashSet<CharacterData>(ReferenceEqualityComparer.Instance);
+        // Additions per record, by reference: names are not unique (two "Boris"es in different
+        // books), so a name-keyed dictionary threw after every LLM call was paid for. Collected
+        // rather than applied to the GetAll projection, which is a shared cache and can lag the
+        // live record — the save below applies them to a fresh GetById copy instead.
+        var pending = new Dictionary<CharacterData, (List<CharacterKnowledge> Knowledge, List<CharacterCondition> Conditions)>(
+            ReferenceEqualityComparer.Instance);
+        (List<CharacterKnowledge> Knowledge, List<CharacterCondition> Conditions) PendingFor(CharacterData c)
+        {
+            if (!pending.TryGetValue(c, out var p)) pending[c] = p = (new(), new());
+            return p;
+        }
         var allChapters = chapters.ListChapters()
             .OrderBy(c => c.Number ?? int.MaxValue)
             .ThenBy(c => c.Created)
@@ -179,40 +195,56 @@ public class StoryRepairService
                 {
                     var c = MatchCharacter(presentCharacters, name);
                     if (c == null) continue;
-                    if (c.Knowledge.Any(existing => string.Equals(existing.Topic, k.Topic, StringComparison.OrdinalIgnoreCase)
-                                                  && (existing.LearnedChapter ?? -1) == (k.LearnedChapter ?? -1))) continue;
-                    c.Knowledge.Add(k);
-                    result.KnowledgeAdded++;
-                    result.TouchedCharacters.Add(c.Name); touched.Add(c);
+                    var p = PendingFor(c);
+                    if (c.Knowledge.Concat(p.Knowledge).Any(existing => SameKnowledge(existing, k))) continue;
+                    p.Knowledge.Add(k);
+                    result.TouchedCharacters.Add(c.Name);
                 }
 
                 foreach (var (name, cnd) in facts.Conditions)
                 {
                     var c = MatchCharacter(presentCharacters, name);
                     if (c == null) continue;
-                    if (c.Conditions.Any(existing =>
-                            string.Equals(existing.Kind, cnd.Kind, StringComparison.OrdinalIgnoreCase)
-                         && string.Equals(existing.Name, cnd.Name, StringComparison.OrdinalIgnoreCase))) continue;
-                    c.Conditions.Add(cnd);
-                    result.ConditionsAdded++;
-                    result.TouchedCharacters.Add(c.Name); touched.Add(c);
+                    var p = PendingFor(c);
+                    if (c.Conditions.Concat(p.Conditions).Any(existing => SameCondition(existing, cnd))) continue;
+                    p.Conditions.Add(cnd);
+                    result.TouchedCharacters.Add(c.Name);
                 }
             }
         }
 
-        // Persist every character we touched — use the in-memory (mutated) copy from
-        // allCharacters, not a fresh fetch which would discard the accumulated mutations.
-        foreach (var c in touched)
+        // Persist every character with additions: applied to the live record (GetById), so a
+        // projection that lagged a child-table write cannot wipe those rows on Save. Counts are
+        // what was actually saved.
+        foreach (var (c, p) in pending)
         {
+            if (p.Knowledge.Count == 0 && p.Conditions.Count == 0) continue;
             try
             {
-                characters.Save(c);
+                var fresh = characters.GetById(c.Id);
+                if (fresh == null) { result.Errors.Add($"{c.Name}: record not found at save time"); continue; }
+                var knowledge = p.Knowledge.Where(k => !fresh.Knowledge.Any(e => SameKnowledge(e, k))).ToList();
+                var conditions = p.Conditions.Where(k => !fresh.Conditions.Any(e => SameCondition(e, k))).ToList();
+                if (knowledge.Count == 0 && conditions.Count == 0) continue;
+                fresh.Knowledge.AddRange(knowledge);
+                fresh.Conditions.AddRange(conditions);
+                characters.Save(fresh);
+                result.KnowledgeAdded += knowledge.Count;
+                result.ConditionsAdded += conditions.Count;
             }
             catch (Exception ex) { log.LogWarning(ex, "Failed to save character '{Name}' after beat-fact merge", c.Name); result.Errors.Add($"{c.Name}: {ex.Message}"); }
         }
 
         return result;
     }
+
+    private static bool SameKnowledge(CharacterKnowledge a, CharacterKnowledge b) =>
+        string.Equals(a.Topic, b.Topic, StringComparison.OrdinalIgnoreCase)
+        && (a.LearnedChapter ?? -1) == (b.LearnedChapter ?? -1);
+
+    private static bool SameCondition(CharacterCondition a, CharacterCondition b) =>
+        string.Equals(a.Kind, b.Kind, StringComparison.OrdinalIgnoreCase)
+        && string.Equals(a.Name, b.Name, StringComparison.OrdinalIgnoreCase);
 
     private static bool CharacterInBeat(CharacterData c, ChapterBeat beat)
     {

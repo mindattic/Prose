@@ -242,6 +242,15 @@ public class ContinuityApplyService
             var record = await LocateRecordAsync(db, claim, ct);
             if (record == null)
             {
+                // Character claims applied by TryApplyToCharacterAsync live in the
+                // CharacterBelongingsGear bridge ("belongings.{bucket}"), never in a Records.Json
+                // blob — reporting them as entity_record_missing flagged every one as drifted.
+                var characterDrift = await CheckCharacterBelongingsClaimAsync(db, claim, ct);
+                if (characterDrift != null)
+                {
+                    if (characterDrift.Drifted) results.Add(characterDrift);
+                    continue;
+                }
                 results.Add(new AppliedClaimDriftResult
                 {
                     Claim = claim, Drifted = true,
@@ -282,7 +291,18 @@ public class ContinuityApplyService
                 continue;
             }
 
-            if (!obj.ContainsKey(field))
+            // ApplyToField writes one-level dotted paths ("belongings.residence") into a nested
+            // object; resolve the same way here, or every nested-field claim reads as field_removed.
+            var container = obj;
+            var leaf = field;
+            var dot = field.IndexOf('.');
+            if (dot > 0)
+            {
+                container = obj[field[..dot]] as JsonObject ?? new JsonObject();
+                leaf = field[(dot + 1)..];
+            }
+
+            if (!container.ContainsKey(leaf))
             {
                 results.Add(new AppliedClaimDriftResult
                 {
@@ -292,7 +312,7 @@ public class ContinuityApplyService
                 continue;
             }
 
-            switch (obj[field])
+            switch (container[leaf])
             {
                 case JsonValue v:
                     var current = v.ToString();
@@ -441,6 +461,43 @@ public class ContinuityApplyService
         };
     }
 
+    /// <summary>
+    /// Drift check for a claim that <see cref="TryApplyToCharacterAsync"/> wrote into a Character's
+    /// belongings bucket. Returns null when the claim is not that shape (the caller then reports
+    /// entity_record_missing as before); otherwise a result whose <c>Drifted</c> says whether the
+    /// bucket still holds the claimed value.
+    /// </summary>
+    private static async Task<AppliedClaimDriftResult?> CheckCharacterBelongingsClaimAsync(
+        ProseDbContext db, ContinuityClaim claim, CancellationToken ct)
+    {
+        const string prefix = "belongings.";
+        var field = claim.AppliedToField ?? "";
+        if (!field.StartsWith(prefix, StringComparison.Ordinal)) return null;
+        if (!TryParseGuid(claim.EntityId, out var characterId)) return null;
+        var bucket = field[prefix.Length..];
+        if (!CharacterBelongingsBuckets.Contains(bucket)) return null;
+
+        var current = await db.CharacterBelongingsGear.AsNoTracking()
+            .Where(g => g.CharacterId == characterId && g.Bucket == bucket)
+            .OrderBy(g => g.Position)
+            .Select(g => g.GearName)
+            .FirstOrDefaultAsync(ct);
+
+        if (current == null)
+            return new AppliedClaimDriftResult
+            {
+                Claim = claim, Drifted = true, Reason = "field_removed",
+                Detail = $"Character belongings bucket '{bucket}' is now empty (was {claim.Object}).",
+            };
+        if (!ContinuityService.ObjectsMatch(claim.Predicate, current, claim.Object))
+            return new AppliedClaimDriftResult
+            {
+                Claim = claim, Drifted = true, Reason = "value_changed",
+                Detail = $"Character belongings bucket '{bucket}' is now \"{current}\", claim says \"{claim.Object}\".",
+            };
+        return new AppliedClaimDriftResult { Claim = claim, Drifted = false };
+    }
+
     private static bool TryParseGuid(string raw, out Guid id)
     {
         if (string.IsNullOrWhiteSpace(raw)) { id = default; return false; }
@@ -583,7 +640,7 @@ public class ApplyResult
     /// <summary>
     /// Existing claims on the same entity that share semantic content with the
     /// claim being applied — surfaced for caller review. Populated by the
-    /// embedding-similarity dedup pass (see ContinuityApplyService.ApplyAsync).
+    /// token-set Jaccard pass (see ContinuityApplyService.FindSimilarClaimsOnEntity).
     /// Empty when no soft-duplicates were found.
     /// </summary>
     public List<SimilarClaimWarning> SimilarClaims { get; set; } = new();

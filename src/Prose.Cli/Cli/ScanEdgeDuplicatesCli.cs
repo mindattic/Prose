@@ -44,11 +44,13 @@ public static class ScanEdgeDuplicatesCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var edges = await db.Edges.AsNoTracking()
+        // IgnoreQueryFilters: the universe is filtered explicitly below; the ambient scope must not
+        // also apply, or a --universe that differs from the Hub's ambient one scanned nothing.
+        var edges = await db.Edges.AsNoTracking().IgnoreQueryFilters()
             .Where(e => e.UniverseId == universeId.Value && e.InvalidatedAt == null)
             .ToListAsync();
 
-        var entityNames = await db.Entities.AsNoTracking()
+        var entityNames = await db.Entities.AsNoTracking().IgnoreQueryFilters()
             .Where(e => e.UniverseId == universeId.Value)
             .Select(e => new { e.Id, e.Name, e.EntityType })
             .ToDictionaryAsync(e => e.Id);

@@ -60,7 +60,7 @@ public static class CreateMaterialCli
 
         var repo = services.GetRequiredService<MaterialRepository>();
 
-        // Match on the exact name the read surfaces use, so --set-material and get_material
+        // Match on the exact name the read surfaces use, so --create-material and get_material
         // always mean the same record.
         var existing = repo.GetAll().FirstOrDefault(m =>
             string.Equals(m.Name, name, StringComparison.OrdinalIgnoreCase));

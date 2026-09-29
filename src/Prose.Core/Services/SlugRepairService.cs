@@ -361,8 +361,29 @@ public class SlugRepairService(
             n.UpdatedAt = DateTime.UtcNow;
         }
 
-        await MoveNodeSlugReferencesAsync(db, n, old, slug, apply, effects, warnings, ct);
+        // Same ordering as RepairAsync: folder renames are queued and run only after the save,
+        // or a save that threw left the audio folders moved and every AudioPath pointing at the
+        // old name. Pinning an unchanged slug moves nothing (a self-rename only warned).
+        var moves = new List<(string From, string To, List<string> Effects)>();
+        PendingMoves.Value = moves;
+        if (old != slug)
+            await MoveNodeSlugReferencesAsync(db, n, old, slug, apply, effects, warnings, ct);
+        PendingMoves.Value = null;
         if (apply) await db.SaveChangesAsync(ct);
+        if (apply)
+            foreach (var (from, to, moveEffects) in moves)
+            {
+                try
+                {
+                    Directory.Move(from, to);
+                    moveEffects.Add($"dir {from} → {Path.GetFileName(to)}/");
+                }
+                catch (Exception ex)
+                {
+                    warnings.Add($"dir rename failed for {from}: {ex.Message}");
+                    log.LogWarning(ex, "Set slug: directory rename failed for {Dir}", from);
+                }
+            }
 
         foreach (var w in warnings) log.LogWarning("Set slug: {Warning}", w);
         log.LogInformation("Set node slug ({Mode}): {Old} → {New} ({Effects})",

@@ -57,6 +57,7 @@ public sealed class FindingsUiService(
             // "{slug}#{beat}". Both belong to this book and both belong in one list.
             foreach (var prefix in new[] { $"node:{slug}", slug + "#" })
                 rows.AddRange(findings.List(status, limit: 200, filePathPrefix: prefix)
+                                      .Where(f => IsThisBook(f.FilePath, prefix))
                                       .Select(Map));
         }
 
@@ -72,6 +73,19 @@ public sealed class FindingsUiService(
     public void Triage(long id) => findings.SetStatus(id, FindingStatus.Triaged);
 
     public void Dismiss(long id) => findings.SetStatus(id, FindingStatus.Dismissed);
+
+    /// <summary>
+    /// A bare prefix match is not a book match: "node:bcoda" also prefixes "node:bcoda-sequel/…",
+    /// which put another book's findings in this book's inbox. The slug must end where the path
+    /// does, or at one of the separators the instruments write ('/', '#', ':').
+    /// </summary>
+    private static bool IsThisBook(string path, string prefix)
+    {
+        // Case-insensitive, as the database's own prefix match is.
+        if (!path.StartsWith(prefix, StringComparison.OrdinalIgnoreCase)) return false;
+        if (path.Length == prefix.Length || prefix.EndsWith('#')) return true;
+        return path[prefix.Length] is '/' or '#' or ':';
+    }
 
     private static Row Map(Finding f)
     {

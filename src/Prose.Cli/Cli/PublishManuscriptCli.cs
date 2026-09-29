@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>ss (--publish-md | --publish-pdf) (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--author "Name"]</c>
+/// <c>prose (--publish-md | --publish-pdf) (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--author "Name"]</c>
 /// — render a node to Markdown or PDF in the configured publish directory (Desktop fallback).
 /// Markdown output embeds <c>&lt;!-- beat:N:id7 --&gt;</c> markers enabling
 /// <c>prose --import-md</c> round-trip. The headless twin of the writer page's Export items.
@@ -46,12 +46,10 @@ public static class PublishManuscriptCli
         Guid nodeId; string nodeTitle;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var q = db.Nodes.AsNoTracking();
-            Node? node;
-            if (!string.IsNullOrWhiteSpace(slug)) node = await q.FirstOrDefaultAsync(s => s.Slug == slug);
-            else if (Guid.TryParse(id, out var g)) node = await q.FirstOrDefaultAsync(s => s.Id == g);
-            else node = await q.Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch
-            { { Count: 1 } m => m[0], _ => null };
+            // The shared resolver: NodeCode, books outside the current universe, unique prefixes,
+            // ambiguity refused. The private copy applied the ambient universe filter to every
+            // branch (a book in another universe was "not found") and took the first same-slug row.
+            Node? node = await NodeRefResolver.ResolveNodeAsync(db, !string.IsNullOrWhiteSpace(slug) ? slug : id);
             if (node == null) { Console.Error.WriteLine($"[{tag}] Node not found."); return 1; }
             nodeId = node.Id; nodeTitle = node.Title;
         }

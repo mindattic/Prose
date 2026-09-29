@@ -2314,7 +2314,9 @@ public class GenemodRepository : EfRepository<GenemodData>
 
         var name = item.ProductName.Length > 0 ? item.ProductName : (item.Name ?? "");
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
-        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, GenemodMapper.LoadOne)) return;
+        // The Entities row stores item.Name, not the ProductName-preferring `name` above; comparing
+        // against `name` made every re-save of a genemod with a ProductName look like a change.
+        if (SaveGuard.IsUnchanged(db, id, item, item.Name ?? "", item.Description, GenemodMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -3846,7 +3848,9 @@ public class MaterialRepository : EfRepository<MaterialData>
 
         var name = item.ProductName.Length > 0 ? item.ProductName : (item.Name ?? "");
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
-        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, MaterialMapper.LoadOne)) return;
+        // The Entities row stores item.Name, not the ProductName-preferring `name` above; comparing
+        // against `name` made every re-save of a material with a ProductName look like a change.
+        if (SaveGuard.IsUnchanged(db, id, item, item.Name ?? "", item.Description, MaterialMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -4355,7 +4359,9 @@ public class QuoteRepository : EfRepository<QuoteData>
 
         var name = item.Quote.Length > 40 ? item.Quote[..40] : item.Quote;
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
-        if (SaveGuard.IsUnchanged(db, id, item, name, null, QuoteMapper.LoadOne)) return;
+        // The Entities row stores the whole quote, not the 40-char `name`; comparing against `name`
+        // made every re-save of a quote longer than 40 characters look like a change.
+        if (SaveGuard.IsUnchanged(db, id, item, item.Quote, null, QuoteMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -4974,6 +4980,10 @@ public class SpeciesRepository
 {
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private List<Species>? cache;
+    // Species rows are per-universe (universe query filter), and this repository is a singleton:
+    // the cache is keyed by the universe it was read under, so a universe switch does not keep
+    // serving the previous universe's species set.
+    private Guid cacheUniverseId = Guid.Empty;
     private readonly object gate = new();
 
     public SpeciesRepository(IDbContextFactory<ProseDbContext> dbFactory) => this.dbFactory = dbFactory;
@@ -4982,7 +4992,9 @@ public class SpeciesRepository
     {
         lock (gate)
         {
-            if (cache != null) return cache;
+            var universeId = UniverseScope.EffectiveId;
+            if (cache != null && cacheUniverseId == universeId) return cache;
+            cacheUniverseId = universeId;
             using var db = dbFactory.CreateDbContext();
             // Tolerate a not-yet-migrated DB (table absent) by returning the
             // in-code canonical set rather than throwing.

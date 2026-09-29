@@ -103,7 +103,9 @@ public class BeatArchiveService(
         var rosterIds = roster.Select(r => r.EntityId).Distinct().ToList();
         if (rosterIds.Count > 0 && db.Database.IsSqlServer())
         {
-            var ts = asOf.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffffff");
+            // InvariantCulture: ':' in a custom format is the CULTURE's time separator, so a
+            // machine whose culture uses '.' produced a literal SQL Server cannot parse.
+            var ts = asOf.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffffff", System.Globalization.CultureInfo.InvariantCulture);
             var placeholders = string.Join(",", Enumerable.Range(0, rosterIds.Count).Select(i => "{" + i + "}"));
             var args = rosterIds.Cast<object>().ToArray();
             var rawEdges = await db.Database.SqlQueryRaw<EdgeQueryRow>(

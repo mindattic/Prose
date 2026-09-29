@@ -7,8 +7,7 @@ namespace Prose.Cli;
 
 /// <summary>
 /// <c>prose --import-book --file path.node</c> — materialize a node from a
-/// human-authored "beat + gap + beat" text file. The complement to
-/// <see cref="WriteNodeCli"/> (which generates nodes via the LLM) — this
+/// human-authored "beat + gap + beat" text file. Unlike generation, this
 /// is for hand-authored content (a draft pasted in from a chat, a transcript,
 /// a rewrite from an external editor).
 ///
@@ -29,7 +28,8 @@ namespace Prose.Cli;
 ///
 /// %% gap 800
 /// A standalone gap line sets the PRECEDING beat's GapAfterMs override.
-/// You can also write 'gap:800' on the next %% beat line — same effect.
+/// 'gap:800' on a %% beat line instead sets THAT beat's own GapAfterMs
+/// (the pause after it), like every other key on the line.
 ///
 /// %% beat chapter:"After the Fall" gap:1500
 /// This beat starts a new chapter; the chapter heading is "After the Fall".
@@ -131,12 +131,16 @@ public static class ImportNodeCli
         await using var db = await dbFactory.CreateDbContextAsync();
 
         Guid? parentNodeId = null;
+        Guid? parentUniverseId = null;
         if (!string.IsNullOrWhiteSpace(parentSlug))
         {
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            // Resolved across universes (NodeRefResolver), so the child must take the parent's
+            // universe: left to the ambient stamp, a chapter imported under another universe's
+            // book landed in the caller's universe while hanging off that book.
             var p = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, parentSlug);
             if (p == null) { Console.Error.WriteLine($"[import-book] --parent slug not found: {parentSlug}"); return 1; }
             parentNodeId = p.Id;
+            parentUniverseId = p.UniverseId;
         }
 
         var nodeId = Guid.CreateVersion7();
@@ -151,7 +155,9 @@ public static class ImportNodeCli
         await using var tx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable);
 
         var siblingMaxSort = parentNodeId.HasValue
-            ? await db.Nodes.Where(s => s.ParentNodeId == parentNodeId).Select(s => (double?)s.SortKey).MaxAsync() ?? 0
+            // IgnoreQueryFilters(): the siblings of an explicitly-named parent, whatever the ambient
+            // universe (otherwise a cross-universe parent reads as childless and SortKeys collide).
+            ? await db.Nodes.IgnoreQueryFilters().Where(s => s.ParentNodeId == parentNodeId).Select(s => (double?)s.SortKey).MaxAsync() ?? 0
             : await db.Nodes.Where(s => s.ParentNodeId == null).Select(s => (double?)s.SortKey).MaxAsync() ?? 0;
 
         var node = NodeFactory.Create(kind);
@@ -162,6 +168,7 @@ public static class ImportNodeCli
         node.Description  = parsed.Description;
         node.VoiceId      = parsed.VoiceId;
         node.ParentNodeId = parentNodeId;
+        if (parentUniverseId is { } pu && pu != Guid.Empty) node.UniverseId = pu;
         node.SortKey      = siblingMaxSort + 100.0;
         db.Nodes.Add(node);
 

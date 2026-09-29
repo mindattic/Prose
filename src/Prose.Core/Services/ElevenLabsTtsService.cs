@@ -175,7 +175,7 @@ public class ElevenLabsTtsService : ITtsService
             Encoding.UTF8,
             "application/json");
 
-        var response = await http.SendAsync(request, ct);
+        using var response = await http.SendAsync(request, ct);
         if (!response.IsSuccessStatusCode)
         {
             // ElevenLabs returns a JSON body explaining WHY a request was
@@ -218,11 +218,11 @@ public class ElevenLabsTtsService : ITtsService
         using var request = new HttpRequestMessage(HttpMethod.Get, "https://api.elevenlabs.io/v1/voices");
         request.Headers.Add("xi-api-key", settings.ElevenLabsApiKey);
 
-        var response = await http.SendAsync(request, ct);
+        using var response = await http.SendAsync(request, ct);
         if (!response.IsSuccessStatusCode) return [];
 
         var json = await response.Content.ReadAsStringAsync(ct);
-        var doc = JsonDocument.Parse(json);
+        using var doc = JsonDocument.Parse(json);
         var voices = new List<TtsVoice>();
 
         if (doc.RootElement.TryGetProperty("voices", out var voicesArr))
@@ -267,7 +267,7 @@ public class ElevenLabsTtsService : ITtsService
             {
                 using var request = new HttpRequestMessage(HttpMethod.Get, "https://api.elevenlabs.io/v1/models");
                 request.Headers.Add("xi-api-key", settings.ElevenLabsApiKey);
-                var response = await http.SendAsync(request, ct);
+                using var response = await http.SendAsync(request, ct);
                 if (response.IsSuccessStatusCode)
                 {
                     var json = await response.Content.ReadAsStringAsync(ct);
@@ -310,7 +310,7 @@ public class ElevenLabsTtsService : ITtsService
         using var request = new HttpRequestMessage(HttpMethod.Get, "https://api.elevenlabs.io/v1/user/subscription");
         request.Headers.Add("xi-api-key", settings.ElevenLabsApiKey);
 
-        var response = await http.SendAsync(request, ct);
+        using var response = await http.SendAsync(request, ct);
         if (!response.IsSuccessStatusCode)
         {
             string body;

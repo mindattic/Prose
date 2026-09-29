@@ -432,16 +432,6 @@ public sealed class WriterService(
             sent.Where(s => !kept.ContainsKey(s.Key)).Select(s => s.Value).Distinct().ToList());
     }
 
-    /// <summary>
-    /// The analysis the quiet saves skipped, run once for the beat the author has finished with.
-    /// This is the same work <see cref="NodeWorkbenchService.UpdateBeatTextAsync"/> fires on a
-    /// normal save — the blast radius of the edit, swept by the six logic rules — just moved to a
-    /// moment where it runs once instead of once per keystroke batch.
-    ///
-    /// <para>Costs real money (six LLM rules over the radius), so it is only ever called when the
-    /// author leaves a beat they actually changed, closes the book, or makes an edit the
-    /// ramifications check flagged as risky.</para>
-    /// </summary>
     // ── Structural editing ─────────────────────────────────────────────────
     //
     // The workbench has had all of these since long before the Writer existed, and the Writer
@@ -517,7 +507,10 @@ public sealed class WriterService(
         Guid bookNodeId, Guid chapterNodeId, Guid beatId, CancellationToken ct = default)
     {
         await ScopeToBookAsync(bookNodeId, ct);
-        await workbench.DeleteBeatAsync(chapterNodeId, beatId, ct);
+        // False means nothing was removed (the beat hangs on another node); ignoring it reported
+        // "Beat deleted." for a beat that was still there.
+        if (!await workbench.DeleteBeatAsync(chapterNodeId, beatId, ct))
+            throw new InvalidOperationException("the beat is not in that chapter, so nothing was deleted.");
     }
 
     /// <summary>What a deferred sweep did, so the UI can say so.</summary>
@@ -526,9 +519,17 @@ public sealed class WriterService(
         bool Ran, int BeatsChecked, int Findings, double Cost, TimeSpan Elapsed, string? Error);
 
     /// <summary>
-    /// The logic sweep over everything the last edit could have broken.
+    /// The logic sweep over everything the last edit could have broken — the analysis the quiet
+    /// saves skipped, run once for the beat the author has finished with. This is the same work
+    /// <see cref="NodeWorkbenchService.UpdateBeatTextAsync"/> fires on a normal save, moved to a
+    /// moment where it runs once instead of once per keystroke batch.
     /// </summary>
     /// <remarks>
+    /// <para>Costs real money (six LLM rules over the radius), so it is only ever called when the
+    /// author leaves a beat they actually changed, closes the book, or makes an edit the
+    /// ramifications check flagged as risky.</para>
+    ///
+
     /// <para>Now returns what it did. It used to return void: six logic rules over a blast radius
     /// take minutes and spend real money, and the author had no indication that it had started,
     /// finished, failed or cost anything. A background task that silently bills you is not a

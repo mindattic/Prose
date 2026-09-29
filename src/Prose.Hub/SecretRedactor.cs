@@ -24,8 +24,11 @@ public static class SecretRedactor
     };
 
     /// <summary>CLI argv: the value after a secret flag (or in <c>--flag=value</c>) becomes ***.</summary>
-    public static string[] RedactArgs(string[] args)
+    public static string[] RedactArgs(string[]? args)
     {
+        // A request body that omits Args deserialises it as null; Clone() then threw before the
+        // command was even logged.
+        if (args is null) return [];
         var copy = (string[])args.Clone();
         for (int i = 0; i < copy.Length; i++)
         {

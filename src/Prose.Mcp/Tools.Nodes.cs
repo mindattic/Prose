@@ -199,8 +199,8 @@ public class NodeTools
         }
     }
 
-    /// <summary>Resolve a node reference (GUID or slug) to its id. Empty input → null.</summary>
     /// <summary>
+    /// Resolve a node reference (GUID, slug or NodeCode) to its id. Empty input → null.
     /// 2026-08-23: applied the 2026-08-17 <c>IgnoreQueryFilters()</c> fix to its GUID branch but
     /// not its slug/code branch, so an explicit slug still resolved to null cross-universe.
     /// Delegates to <see cref="NodeRefResolver"/>.

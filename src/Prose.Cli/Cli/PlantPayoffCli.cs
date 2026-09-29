@@ -2,14 +2,12 @@
 using Microsoft.Extensions.DependencyInjection;
 using System.Text.Json;
 using Prose.Core.Data;
+using Prose.Core.Data.Entities;
 using Prose.Core.Services;
 
 namespace Prose.Cli;
 
 /// <summary>
-/// prose --plant-audit  --slug &lt;nodeSlug&gt; [--json]
-///   Audit all plant/payoff pairs: orphaned plants, transparency violations, coverage.
-///
 /// prose --list-plants  --slug &lt;nodeSlug&gt; [--json]
 ///   List all registered plant/payoff pairs for a node.
 ///
@@ -19,7 +17,13 @@ namespace Prose.Cli;
 ///              [--cat detail|echo|irony|motif|character-truth|structural]
 ///   Register a new plant/payoff pair.
 ///
-/// Exit codes: 0 = ok / no issues, 1 = advisory, 2 = blocking violations.
+/// prose --update-plant --id &lt;guid&gt; [--plant "..."] [--payoff "..."]
+///   Correct a registered pair's descriptions in place.
+///
+/// (The --plant-audit mode was removed 2026-09-06, RFC 0010.)
+///
+/// Exit codes: 0 = ok, 1 = the service refused the write (unknown id, bad description),
+/// 2 = bad usage / node not found.
 /// </summary>
 public static class PlantPayoffCli
 {
@@ -44,7 +48,17 @@ public static class PlantPayoffCli
                 Console.Error.WriteLine("Usage: prose --update-plant --id <plant-payoff guid> [--plant \"...\"] [--payoff \"...\"]");
                 return 2;
             }
-            var updated = await services.GetRequiredService<PlantPayoffService>().UpdateDescriptionsAsync(ppId, newPlant, newPayoff);
+            PlantPayoff updated;
+            try
+            {
+                updated = await services.GetRequiredService<PlantPayoffService>().UpdateDescriptionsAsync(ppId, newPlant, newPayoff);
+            }
+            catch (Exception ex) when (ex is InvalidOperationException or ArgumentException)
+            {
+                // Unknown id / blank or over-long description: a usage error, not a crash.
+                Console.Error.WriteLine($"[update-plant] {ex.Message}");
+                return 1;
+            }
             Console.WriteLine($"Updated {updated.Id}");
             Console.WriteLine($"   Plant:  {updated.PlantDescription}");
             Console.WriteLine($"   Payoff: {updated.PayoffDescription}");
@@ -108,7 +122,16 @@ public static class PlantPayoffCli
                 return 2;
             }
 
-            var pp = await svc.RegisterAsync(node.Id, plant, payoff, cat);
+            PlantPayoff pp;
+            try
+            {
+                pp = await svc.RegisterAsync(node.Id, plant, payoff, cat);
+            }
+            catch (Exception ex) when (ex is InvalidOperationException or ArgumentException)
+            {
+                Console.Error.WriteLine($"[add-plant] {ex.Message}");
+                return 1;
+            }
             if (jsonMode)
             {
                 Console.WriteLine(JsonSerializer.Serialize(new { id = pp.Id, status = "registered" },

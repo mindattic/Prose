@@ -50,13 +50,10 @@ public static class RebeatNodeCli
             }
             else
             {
-                Node? node;
-                // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-                if (!string.IsNullOrWhiteSpace(slug)) node = await NodeRefResolver.ResolveNodeAsync(db, slug);
-                // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-                else if (Guid.TryParse(id, out var g)) node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == g);
-                else node = await db.Nodes.AsNoTracking().Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch
-                { { Count: 1 } m => m[0], _ => null };
+                // The shared resolver for slug, NodeCode, GUID and unique prefix alike. The private
+                // prefix branch still applied the ambient universe filter, so a prefix of a book in
+                // another universe was "not found".
+                Node? node = await NodeRefResolver.ResolveNodeAsync(db, !string.IsNullOrWhiteSpace(slug) ? slug : id);
                 if (node == null) { Console.Error.WriteLine("[rebeat] Node not found (or id prefix ambiguous)."); return 1; }
 
                 // Rebeat targets chapters, not the book node — beats live in chapters.
@@ -97,13 +94,13 @@ public static class RebeatNodeCli
         if (targets.Count == 0) { Console.WriteLine("[rebeat] Nothing to do."); return 0; }
         if (!apply) Console.WriteLine("[rebeat] DRY RUN — no changes. Re-run with --apply to commit.\n");
 
-        int applied = 0, blocked = 0;
+        int applied = 0, blocked = 0, errors = 0;
         foreach (var (sid, sTitle) in targets)
         {
             Console.WriteLine($"── {sTitle}");
             BeatRebuildService.BeatRebuildReport r;
             try { r = await rebuilder.RebuildAsync(sid, apply); }
-            catch (Exception ex) { Console.Error.WriteLine($"   ERROR: {ex.Message}"); blocked++; continue; }
+            catch (Exception ex) { Console.Error.WriteLine($"   ERROR: {ex.Message}"); blocked++; errors++; continue; }
 
             var guard = r.GuardPassed ? "guard OK" : "GUARD BLOCK";
             Console.WriteLine($"   {r.OldBeats} → {r.NewBeats} beats · retention {r.WordRetention:P0} · {guard}");
@@ -116,7 +113,9 @@ public static class RebeatNodeCli
         Console.WriteLine(apply
             ? $"[rebeat] Applied {applied}/{targets.Count}; {blocked} blocked/flagged."
             : $"[rebeat] Dry run complete for {targets.Count} node(s). Add --apply to commit.");
-        return 0;
+        // Was always 0: a run where every node errored, or an --apply the guard blocked, looked
+        // like success to any caller that checks the exit code.
+        return errors > 0 || (apply && blocked > 0) ? 1 : 0;
     }
 
     /// <summary>

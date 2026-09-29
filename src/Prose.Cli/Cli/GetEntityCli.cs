@@ -38,8 +38,11 @@ public static class GetEntityCli
             {
                 var c = Guid.TryParse(query, out var g)
                     ? await db.Characters.AsNoTracking().FirstOrDefaultAsync(x => x.Id == g)
+                    // Characters has no universe query filter of its own; scope the NAME search
+                    // through the Entity spine like the other types here, or "Kyle" answered
+                    // with another universe's Kyle.
                     : await db.Characters.AsNoTracking().FirstOrDefaultAsync(x =>
-                        x.Name.ToLower().Contains(query.ToLower()));
+                        x.Name.ToLower().Contains(query.ToLower()) && db.Entities.Any(e => e.Id == x.Id));
                 if (c == null) { Console.Error.WriteLine($"[get] Character '{query}' not found."); return 1; }
                 Console.WriteLine($"Id:       {c.Id}");
                 Console.WriteLine($"Name:     {c.Name}");

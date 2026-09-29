@@ -171,7 +171,12 @@ public static class EntityHistoryCli
             | System.Globalization.DateTimeStyles.AssumeUniversal, out value)
         && !string.IsNullOrWhiteSpace(s);
 
-    private static string Trim(string? s, int max) =>
-        string.IsNullOrEmpty(s) ? "" :
-        s.Length <= max ? s.ReplaceLineEndings(" ") : s.ReplaceLineEndings(" ")[..max] + "…";
+    // Measure AFTER flattening line endings: "\r\n" → " " shortens the string, so a value just
+    // over max with a few CRLFs was cut at [..max] past its new end and threw.
+    private static string Trim(string? s, int max)
+    {
+        if (string.IsNullOrEmpty(s)) return "";
+        var flat = s.ReplaceLineEndings(" ");
+        return flat.Length <= max ? flat : flat[..max] + "…";
+    }
 }

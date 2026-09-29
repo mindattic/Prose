@@ -223,9 +223,13 @@ public class SemanticIndexService
     /// </summary>
     public List<(string term, double weight)> GetTopTerms(string nodeId, int topK = 10)
     {
-        if (!_vectors.TryGetValue(nodeId, out var vector)) return [];
-        return vector.OrderByDescending(kv => kv.Value).Take(topK)
-            .Select(kv => (kv.Key, kv.Value)).ToList();
+        // Under the gate like every other reader: a concurrent rebuild clears _vectors.
+        lock (gate)
+        {
+            if (!_vectors.TryGetValue(nodeId, out var vector)) return [];
+            return vector.OrderByDescending(kv => kv.Value).Take(topK)
+                .Select(kv => (kv.Key, kv.Value)).ToList();
+        }
     }
 
     private static double CosineSimilarity(Dictionary<string, double> a, Dictionary<string, double> b)

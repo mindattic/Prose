@@ -41,10 +41,18 @@
         root.style.fontFamily = 'ui-monospace,SFMono-Regular,Menlo,monospace';
         root.style.color = COLOR.ink;
 
-        const tip = document.createElement('div');
+        // One tooltip per root, reused. A new one per call leaked a <div> into <body> on every live
+        // beat, and a tip that was showing when the chart was rebuilt stayed on screen for good:
+        // the element whose mouseleave would have hidden it had just been thrown away.
+        const tipId = rootElementId + '-tip';
+        let tip = document.getElementById(tipId);
+        if (!tip) {
+            tip = document.createElement('div');
+            tip.id = tipId;
+            document.body.appendChild(tip);
+        }
         tip.style.cssText = 'position:fixed;pointer-events:none;background:' + COLOR.surf + ';border:1px solid ' + COLOR.line +
             ';padding:8px 10px;border-radius:6px;font-size:11px;max-width:380px;display:none;z-index:99;line-height:1.6;color:' + COLOR.ink;
-        document.body.appendChild(tip);
         function showTip(e, html) {
             tip.style.display = 'block'; tip.innerHTML = html;
             const pad = 14, tw = tip.offsetWidth, th = tip.offsetHeight;
@@ -168,7 +176,7 @@
                     const bar = svgEl('rect', { x: bx(s), y: barY, width: (e - s + 1) * BEAT_W, height: BAR_H, rx: '2', fill: color, style: 'cursor:pointer' });
                     bar.addEventListener('mouseenter', ev => {
                         const range = s === e ? 'beat #' + s : 'beats ' + s + '–' + e + ' (' + (e - s + 1) + ' consecutive)';
-                        showTip(ev, '<b>' + esc(doc.path) + '</b><br>tier: ' + doc.tier + '<br>' + range +
+                        showTip(ev, '<b>' + esc(doc.path) + '</b><br>tier: ' + esc(doc.tier) + '<br>' + range +
                             '<br>total active: ' + doc.total + ' / ' + D.totalBeats + ' beats (' + Math.round(doc.total / D.totalBeats * 100) + '%)');
                     });
                     bar.addEventListener('mouseleave', hideTip);

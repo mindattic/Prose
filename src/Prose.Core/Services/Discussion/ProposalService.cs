@@ -201,13 +201,6 @@ public sealed class ProposalService(
     }
 
     /// <summary>
-    /// What would happen, without writing anything.
-    ///
-    /// <para>Shared by the listing and the apply so they cannot disagree — a pending row that says
-    /// "ready" and an apply that refuses would be two different implementations of the same
-    /// question.</para>
-    /// </summary>
-    /// <summary>
     /// Point the proposal's own thread at the passage it now reads. Nothing did: the thread still
     /// quoted the OLD words, so it showed as Detached from then on, and the ramification review
     /// reported the author's own thread as "another discussion that no longer points at anything".
@@ -247,6 +240,13 @@ public sealed class ProposalService(
         }
     }
 
+    /// <summary>
+    /// What would happen, without writing anything.
+    ///
+    /// <para>Shared by the listing and the apply so they cannot disagree — a pending row that says
+    /// "ready" and an apply that refuses would be two different implementations of the same
+    /// question.</para>
+    /// </summary>
     private async Task<(SpanWriteOutcome Outcome, DateTime? BeatUpdatedAt)> DryRunAsync(
         ChangeProposal proposal, Guid beatId, CancellationToken ct)
     {

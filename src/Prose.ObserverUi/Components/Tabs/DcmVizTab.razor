@@ -68,13 +68,21 @@
         InvokeAsync(async () => { pastRuns = await api.GetDcmRunsAsync(); StateHasChanged(); });
     }
 
+    // Raised on a SignalR thread: marshalled onto the circuit before reading `mode` or calling JS.
     private void OnPayload(string json)
     {
-        if (mode != Mode.Live) return;
-        _ = js.InvokeVoidAsync("dcmVizInterop.render", rootId, json);
+        _ = InvokeAsync(async () =>
+        {
+            if (mode != Mode.Live) return;
+            try { await js.InvokeVoidAsync("dcmVizInterop.render", rootId, json); }
+            catch (JSDisconnectedException) { }
+            catch (JSException) { }
+        });
     }
 
-    private async void SetMode(Mode m)
+    // Task, not async void: a failed fetch from an async void handler escapes to the circuit's
+    // synchronization context and takes the whole page down instead of this one click.
+    private async Task SetMode(Mode m)
     {
         mode = m;
         if (m == Mode.History) pastRuns = await api.GetDcmRunsAsync();

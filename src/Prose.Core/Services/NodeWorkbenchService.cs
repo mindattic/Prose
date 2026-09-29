@@ -143,9 +143,8 @@ public class NodeWorkbenchService
     /// return its beats in reading order. Each entry includes its source
     /// node so the UI can group beats under sub-node headers when the
     /// caller wants to render a multi-level page.</summary>
-    /// <param name="includeDisabled">When true, soft-deleted (IsEnabled=false) beats
-    /// are included in the result with <see cref="true"/> = false.
-    /// Default false — the normal writing view only shows live beats.</param>
+    /// <param name="includeDisabled">No-op, kept for call-site compatibility: BeatNodes has no
+    /// soft-delete flag any more (IsEnabled was dropped), so every linked beat is returned.</param>
     public async Task<List<OrderedBeat>> GetOrderedBeatsAsync(Guid nodeId, CancellationToken ct = default, bool includeDisabled = false)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -553,23 +552,12 @@ public class NodeWorkbenchService
         // ══════════════════════════════════════════════════════════════════════════════════════
     }
 
-    /// <summary>
-    /// Batch prose edit — the sanctioned path for a fix pass touching many beats in one book
-    /// (a logic-sweep fix round, a corpus-wide entity-rename splice), added 2026-08-22 (write-gate
-    /// Phase 0) to replace callers looping <see cref="UpdateBeatTextAsync"/> per-beat, which fires
-    /// one full blast-radius + narrow-logic-sweep pass PER beat — redundant work when the same fix
-    /// round touches N beats in the same book, and N separate async passes racing each other
-    /// rather than one pass over their union. Each edit still gets its own concurrency check,
-    /// hash recompute, and entity-tag re-derivation exactly as the single-beat path does; only the
-    /// blast-radius/logic-sweep/continuity-extraction tail is deduplicated across the batch.
-    /// </summary>
     /// <summary>The pinned tags' entities, as they exist RIGHT NOW in this universe — live and
     /// non-archived only, keyed by guid. A tag whose guid is absent from the result is stale and
     /// gets dropped by the re-derivation exactly as it always did. The canonical Name/EntityType
     /// come from here rather than from the tag's inner text, for the same reason
     /// <c>DeriveAndSaveMentionsAsync</c> re-looks them up: the guid is the permanent fact, the
-    /// tag's display text is not.</summary>
-    /// <summary>Resolve pinned tag guids to live, non-archived entities in one query.
+    /// tag's display text is not.
     /// <para>Public, not private: <c>TagEntitiesCli</c> (a different assembly) needs the identical
     /// guard when it honours pinned mentions during a re-tag pass. Sharing this one implementation
     /// keeps the staleness rule — archived/deleted guids are dropped — from drifting between the
@@ -586,6 +574,16 @@ public class NodeWorkbenchService
         return rows.ToDictionary(r => r.Id, r => (r.Name, r.EntityType));
     }
 
+    /// <summary>
+    /// Batch prose edit — the sanctioned path for a fix pass touching many beats in one book
+    /// (a logic-sweep fix round, a corpus-wide entity-rename splice), added 2026-08-22 (write-gate
+    /// Phase 0) to replace callers looping <see cref="UpdateBeatTextAsync"/> per-beat, which fires
+    /// one full blast-radius + narrow-logic-sweep pass PER beat — redundant work when the same fix
+    /// round touches N beats in the same book, and N separate async passes racing each other
+    /// rather than one pass over their union. Each edit still gets its own hash recompute and
+    /// entity-tag re-derivation exactly as the single-beat path does; only the
+    /// blast-radius/logic-sweep/continuity-extraction tail is deduplicated across the batch.
+    /// </summary>
     public async Task UpdateBeatTextBatchAsync(
         IReadOnlyList<(Guid BeatId, string NewText)> edits, BeatWriteReason reason, CancellationToken ct = default)
     {
@@ -600,24 +598,10 @@ public class NodeWorkbenchService
             var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct)
                 ?? throw new InvalidOperationException($"Beat {beatId} not found.");
 
-            Guid? thisBookNodeId = null;
-            var directNodeId = await db.BeatNodes.AsNoTracking()
-                .Where(bn => bn.BeatId == beatId)
-                .Select(bn => bn.NodeId)
-                .FirstOrDefaultAsync(ct);
-            if (directNodeId != Guid.Empty)
-            {
-                var walkId = directNodeId;
-                for (var depth = 0; depth < 10; depth++)
-                {
-                    var parent = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-                        .Where(n => n.Id == walkId)
-                        .Select(n => n.ParentNodeId)
-                        .FirstOrDefaultAsync(ct);
-                    if (parent == null) { thisBookNodeId = walkId; break; }
-                    walkId = parent.Value;
-                }
-            }
+            // The nearest BOOK, as the single-beat path resolves it — the old walk to the tree
+            // root landed on the series for a book under a series, so the candidate index, the
+            // obligation scan and the narrow sweep below were all scoped to the wrong node.
+            var thisBookNodeId = await ResolveBookAncestorForBeatAsync(db, beatId, ct);
             bookNodeId ??= thisBookNodeId;
 
             var universeId = thisBookNodeId.HasValue
@@ -769,24 +753,8 @@ public class NodeWorkbenchService
 
         if (blastRadius != null && logicSweep != null)
         {
-            var directNodeId = await db.BeatNodes.AsNoTracking()
-                .Where(bn => bn.BeatId == beatId)
-                .Select(bn => bn.NodeId)
-                .FirstOrDefaultAsync(ct);
-            Guid? bookNodeId = null;
-            if (directNodeId != Guid.Empty)
-            {
-                var walkId = directNodeId;
-                for (var depth = 0; depth < 10; depth++)
-                {
-                    var parent = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-                        .Where(n => n.Id == walkId)
-                        .Select(n => n.ParentNodeId)
-                        .FirstOrDefaultAsync(ct);
-                    if (parent == null) { bookNodeId = walkId; break; }
-                    walkId = parent.Value;
-                }
-            }
+            // Nearest book, not the tree root (a series, for a book under one).
+            var bookNodeId = await ResolveBookAncestorForBeatAsync(db, beatId, ct);
             if (bookNodeId.HasValue)
             {
                 var bnId = bookNodeId.Value;
@@ -1442,7 +1410,9 @@ public class NodeWorkbenchService
         // Guard: refuse to split a node that is ALREADY a Collection (has child
         // nodes). Splitting its direct beats too would create a second, parallel
         // set of chapters alongside the existing children — reconcile first.
-        var existingChildren = await db.Nodes.CountAsync(s => s.ParentNodeId == nodeId, ct);
+        // IgnoreQueryFilters: an explicit parent id. Under another universe's ambient scope the
+        // children read as 0 and the guard waved through exactly the duplicate split it exists to stop.
+        var existingChildren = await db.Nodes.IgnoreQueryFilters().CountAsync(s => s.ParentNodeId == nodeId, ct);
         if (existingChildren > 0)
             throw new InvalidOperationException(
                 $"'{parent.Title}' already has {existingChildren} child node(s) — it's already a Collection. " +
@@ -1480,7 +1450,7 @@ public class NodeWorkbenchService
         if (segments.Count < 2)
             throw new InvalidOperationException($"Node has {segments.Count} chapter segment(s) — nothing to split. Mark IsChapterStart on beats first.");
 
-        // Drop only enabled beat links — disabled (soft-deleted) rows stay on the parent so they remain restorable.
+        // Drop every direct beat link; each beat is re-linked under its new chapter below.
         var oldLinks = await db.BeatNodes.Where(sb => sb.NodeId == nodeId).ToListAsync(ct);
         db.BeatNodes.RemoveRange(oldLinks);
 
@@ -1552,7 +1522,8 @@ public class NodeWorkbenchService
         var story = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == storyId, ct)
             ?? throw new InvalidOperationException($"Node {storyId} not found.");
 
-        var existingChildren = await db.Nodes.CountAsync(s => s.ParentNodeId == storyId, ct);
+        // IgnoreQueryFilters: explicit id — see SplitIntoCollectionAsync's identical guard.
+        var existingChildren = await db.Nodes.IgnoreQueryFilters().CountAsync(s => s.ParentNodeId == storyId, ct);
         if (existingChildren > 0) return null; // already chaptered — nothing to do
 
         var enabled = await db.BeatNodes.Where(sb => sb.NodeId == storyId)
@@ -2522,14 +2493,6 @@ public class NodeWorkbenchService
     // ProseDbContext, not by IsTemporal()), so these read raw SQL — same shape as
     // RestoreBeatTextCli.
 
-    /// <summary>Count of stored versions (current + history) for every beat in
-    /// a node, keyed by beat id. Drives the cycler arrows' disabled state in
-    /// one grouped query. A beat never edited since versioning was enabled has
-    /// count 1 (just the current row → both arrows dead).</summary>
-    /// <remarks>SS-A43: resolves beats through <c>BeatNodes</c> by <paramref name="nodeId"/>
-    /// directly, which finds nothing for a book-mode story whose beats hang off ChapterNode
-    /// children. Use <see cref="GetBeatVersionCountsByIdsAsync"/> with the ids from
-    /// <see cref="GetOrderedBeatsAsync"/> for those.</remarks>
     /// <summary>
     /// Which beats of this book have been written to since <paramref name="sinceUtc"/>.
     /// </summary>
@@ -2549,8 +2512,6 @@ public class NodeWorkbenchService
     public async Task<List<Beat>> GetBeatsChangedSinceAsync(
         Guid nodeId, DateTime sinceUtc, CancellationToken ct = default)
     {
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-
         // Through the ordered walk, not a one-level child query: a book with a split mega-chapter
         // holds its beats two levels down, and the shallow idiom silently misses them.
         var ordered = await GetOrderedBeatsAsync(nodeId, ct);
@@ -2561,6 +2522,14 @@ public class NodeWorkbenchService
             .ToList();
     }
 
+    /// <summary>Count of stored versions (current + history) for every beat in
+    /// a node, keyed by beat id. Drives the cycler arrows' disabled state in
+    /// one grouped query. A beat never edited since versioning was enabled has
+    /// count 1 (just the current row → both arrows dead).</summary>
+    /// <remarks>SS-A43: resolves beats through <c>BeatNodes</c> by <paramref name="nodeId"/>
+    /// directly, which finds nothing for a book-mode story whose beats hang off ChapterNode
+    /// children. Use <see cref="GetBeatVersionCountsByIdsAsync"/> with the ids from
+    /// <see cref="GetOrderedBeatsAsync"/> for those.</remarks>
     public async Task<Dictionary<Guid, int>> GetBeatVersionCountsAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -3288,7 +3257,13 @@ public class NodeWorkbenchService
             try { await db.SaveChangesAsync(CancellationToken.None); } catch (Exception dbEx) { log.LogWarning(dbEx, "Failed to save audio error event"); }
             throw;
         }
-        finally { try { File.Delete(tmpWav); } catch (Exception delEx) { log.LogWarning(delEx, "Failed to delete temporary audio file"); } }
+        finally
+        {
+            // Cleared as ExportCombinedAsync clears it: a failed run otherwise left a stale
+            // "segment k of n" snapshot that read as an export still in flight.
+            exportProgress.TryRemove(nodeId, out _);
+            try { File.Delete(tmpWav); } catch (Exception delEx) { log.LogWarning(delEx, "Failed to delete temporary audio file"); }
+        }
     }
 
     /// <summary>Greedy segmenter: keep beats together up to the char budget,
@@ -3337,7 +3312,10 @@ public class NodeWorkbenchService
                 var next = seg[i + 1].Beat;
                 var pauseMs = beat.GapAfterMs ?? ComputeTrailingSilenceMs(beat, next, settings);
                 var secs = Math.Clamp(pauseMs / 1000.0, 0.0, 3.0);
-                sb.Append(secs >= 0.1 ? $" <break time=\"{secs:0.0}s\" />\n\n" : "\n\n");
+                // Invariant: SSML wants "1.5s"; a comma-decimal culture wrote "1,5s", an invalid break.
+                sb.Append(secs >= 0.1
+                    ? string.Create(System.Globalization.CultureInfo.InvariantCulture, $" <break time=\"{secs:0.0}s\" />\n\n")
+                    : "\n\n");
             }
         }
         // Apply spoken-only pronunciation substitutions to the whole assembled segment.
@@ -3975,7 +3953,9 @@ public class NodeWorkbenchService
             {
                 if (silenceCache.TryGetValue(ms, out var existing)) return existing;
                 var file = Path.Combine(tmpDir, $"silence_{ms}.mp3");
-                var args = $"-hide_banner -loglevel error -y -f lavfi -i anullsrc=channel_layout=mono:sample_rate=44100 -t {ms / 1000.0:F3} -b:a 128k \"{file}\"";
+                // Invariant: ffmpeg's -t rejects a comma-decimal duration ("0,400").
+                var args = string.Create(System.Globalization.CultureInfo.InvariantCulture,
+                    $"-hide_banner -loglevel error -y -f lavfi -i anullsrc=channel_layout=mono:sample_rate=44100 -t {ms / 1000.0:F3} -b:a 128k \"{file}\"");
                 var psi = new System.Diagnostics.ProcessStartInfo
                 {
                     FileName = ffmpegPath,

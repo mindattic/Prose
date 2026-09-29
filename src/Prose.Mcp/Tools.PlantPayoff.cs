@@ -8,7 +8,7 @@ using Prose.Core.Services;
 namespace Prose.Mcp;
 
 // ── Plant/Payoff tools ────────────────────────────────────────────────────────
-// Four tools for managing narrative plants and their payoffs per node.
+// Tools for managing narrative plants and their payoffs per node.
 // Enforces: "reward re-reading without requiring it."
 //
 //   get_plant_payoffs      — list all registered pairs for a node
@@ -16,7 +16,7 @@ namespace Prose.Mcp;
 //   link_plant_beat        — bind a pair's plant to its actual beat
 //   link_payoff_beat       — bind a pair's payoff to its actual beat
 //   set_plant_transparency — record whether the payoff stands alone + what re-readers gain
-//   audit_plant_payoffs    — find orphaned plants and transparency violations
+//   update_plant_payoff    — correct a pair's descriptions in place
 
 [McpServerToolType]
 public class PlantPayoffTools(
@@ -204,13 +204,12 @@ public class PlantPayoffTools(
         catch (Exception ex) { return JsonSerializer.Serialize(new { error = ex.Message }, JsonOpts); }
     }
 
-    // ── audit_plant_payoffs ───────────────────────────────────────────────────
+    // ── helpers ───────────────────────────────────────────────────────────────
 
     /// <summary>
-    /// 2026-08-24 consolidation — see the note on <c>BookAuditTools.ResolveNodeAsync</c>. This
-    /// copy had no <c>IgnoreQueryFilters()</c> on either branch, so the plant/payoff tools
-    /// (<c>audit_plant_payoffs</c>, <c>register_plant_payoff</c>, <c>link_plant_beat</c>,
-    /// <c>link_payoff_beat</c>) could not reach any book outside the ambient universe by slug.
+    /// 2026-08-24 consolidation. This copy had no <c>IgnoreQueryFilters()</c> on either branch,
+    /// so the node-scoped plant/payoff tools (<c>get_plant_payoffs</c>, <c>register_plant_payoff</c>)
+    /// could not reach any book outside the ambient universe by slug.
     /// Delegates to <see cref="NodeRefResolver"/>.
     /// </summary>
     Task<Guid?> ResolveNodeAsync(string idOrSlug) =>

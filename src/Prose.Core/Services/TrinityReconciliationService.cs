@@ -495,7 +495,13 @@ public class TrinityReconciliationService(
             DecisionConfidence = decisionResult.Confidence,
             LosingClaimUidsJson = JsonSerializer.Serialize(new[] { claim.ClaimUid }),
             EditMechanism = "entity_record",
-            EditTargetJson = JsonSerializer.Serialize(new { claimUid = claim.ClaimUid, field }),
+            // Keyed by mechanism like every other decision row: the flat { claimUid, field } shape
+            // this used to write failed ExtractEditTargets' parse, so a revert reported success
+            // while leaving the entity record edited.
+            EditTargetJson = JsonSerializer.Serialize(new Dictionary<string, object[]>
+            {
+                ["entity_record"] = [new { claimUid = claim.ClaimUid, field }],
+            }),
             DryRun = false,
             CreatedAt = editTimestamp,
             TriggeredBy = triggeredBy,
@@ -518,7 +524,9 @@ public class TrinityReconciliationService(
         if (row.Reverted) return false;
         if (row.DryRun) throw new InvalidOperationException("Cannot revert a dry-run decision — no edit was ever made.");
 
-        var asOf = row.CreatedAt.AddSeconds(-1).ToString("yyyy-MM-ddTHH:mm:ss.fffffff");
+        // Invariant: ':' in a custom format is the culture's time separator, and this string is
+        // spliced into T-SQL.
+        var asOf = row.CreatedAt.AddSeconds(-1).ToString("yyyy-MM-ddTHH:mm:ss.fffffff", System.Globalization.CultureInfo.InvariantCulture);
 
         foreach (var mechanism in row.EditMechanism.Split(',', StringSplitOptions.RemoveEmptyEntries))
         {
@@ -624,7 +632,18 @@ public class TrinityReconciliationService(
             var doc = JsonSerializer.Deserialize<Dictionary<string, List<Dictionary<string, object?>>>>(editTargetJson);
             return doc != null && doc.TryGetValue(mechanism, out var list) ? list : new();
         }
-        catch { return new(); }
+        catch (JsonException)
+        {
+            // Legacy applied_claim_drift rows stored one flat { claimUid, field } target.
+            try
+            {
+                var flat = JsonSerializer.Deserialize<Dictionary<string, object?>>(editTargetJson);
+                return mechanism == "entity_record" && flat != null && flat.ContainsKey("claimUid")
+                    ? new List<Dictionary<string, object?>> { flat }
+                    : new List<Dictionary<string, object?>>();
+            }
+            catch (JsonException) { return new(); }
+        }
     }
 
     // ── helpers ───────────────────────────────────────────────────────────────
@@ -662,22 +681,6 @@ public class TrinityReconciliationService(
         return null;
     }
 
-    /// <summary>Surgical single-LINE patch: locates the exact line containing the losing claim's
-    /// <c>Snippet</c> (exact-substring grounded, same discipline as
-    /// <see cref="ContinuityExtractionService"/>'s snippet-quote extraction), asks the LLM to
-    /// rewrite ONLY that one line, then replaces it via a plain string swap. Returns null when the
-    /// snippet is no longer present verbatim — refuse rather than guess which passage to touch.
-    ///
-    /// Replaces an earlier whole-section-rewrite approach that handed the LLM the entire section
-    /// and trusted it to reproduce everything else byte-for-byte except the flagged fact: proven
-    /// unsafe live 2026-08-19 on the very first hand-picked-divergence proof run — it rewrote an
-    /// UNRELATED line about a different character ("Ren's unregistered status") into the corrected
-    /// fact instead of touching the line that actually asserted the wrong value, because the
-    /// section-wide prompt gave the model too much surface to misattribute the fix to. Scoping the
-    /// LLM call to exactly one already-located line removes that failure mode structurally: the
-    /// call can only ever change the one line handed to it, and a plain <see cref="string.Replace"/>
-    /// on the ORIGINAL line text (not on positional line index) confirms that exact line is what's
-    /// swapped, immune to any reflow the LLM's response introduces.</summary>
     /// <summary>Rejects a <see cref="PatchBeatAsync"/> rewrite whose length moved too far from the
     /// original paragraph's. Upper bound is 2x-or-+200 chars (not the 3x a naive port of
     /// <c>BeatRepairService.IsUnsafeShrink</c> might suggest) — the incident that motivated

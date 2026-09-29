@@ -36,7 +36,10 @@ public class SetDescriptionTool : IKdpTool
     public async Task<string> InvokeAsync(JsonElement args, KdpOperatorContext ctx, CancellationToken ct)
     {
         var text = args.GetProperty("text").GetString() ?? "";
-        var textJs = JsonSerializer.Serialize(text);
+        // CKEditor's setData takes HTML, not text: raw plain text lost every paragraph break (the
+        // exported description.txt's blank-line paragraphs, and its appended reading-time line,
+        // collapsed into one run-on block) and mis-parsed any '&' or '<' in it.
+        var textJs = JsonSerializer.Serialize(PlainTextToHtml(text));
 
         var script = $$"""
         (function() {
@@ -62,5 +65,17 @@ public class SetDescriptionTool : IKdpTool
         """;
 
         return await ctx.Browser.EvalAsync(script, ct);
+    }
+
+    /// <summary>Plain text → the HTML CKEditor expects: HTML-escaped, one &lt;p&gt; per
+    /// blank-line-separated paragraph, single line breaks kept as &lt;br&gt;.</summary>
+    internal static string PlainTextToHtml(string text)
+    {
+        var paragraphs = System.Text.RegularExpressions.Regex
+            .Split(text.Replace("\r\n", "\n").Trim(), @"\n\s*\n")
+            .Select(p => p.Trim())
+            .Where(p => p.Length > 0);
+        return string.Concat(paragraphs.Select(p =>
+            "<p>" + System.Net.WebUtility.HtmlEncode(p).Replace("\n", "<br>") + "</p>"));
     }
 }

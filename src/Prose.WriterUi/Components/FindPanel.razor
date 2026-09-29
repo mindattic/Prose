@@ -40,7 +40,11 @@
     </div>
 
     <div class="find-status" role="status">
-        @if (result is null)
+        @if (failure is not null)
+        {
+            <span class="set-warn">@failure</span>
+        }
+        else if (result is null)
         {
             <span class="muted">Searches every beat of the open book.</span>
         }
@@ -122,6 +126,7 @@
     private bool wholeWord;
     private bool busy;
     private BeatSearchResult? result;
+    private string? failure;
     private SearchIndexCoverage? coverage;
 
     private Guid openedFor;
@@ -131,6 +136,7 @@
         if (BookNodeId == openedFor) return;
         openedFor = BookNodeId;
         result = null;
+        failure = null;
         // Asked once per book rather than per search: it is a count over the whole book, and the
         // answer does not change between two presses of Find.
         coverage = BookNodeId == Guid.Empty ? null : await Search.CoverageAsync(BookNodeId);
@@ -169,9 +175,16 @@
         if (busy || needle.Length == 0 || BookNodeId == Guid.Empty) return;
 
         busy = true;
+        failure = null;
         try
         {
             result = await Search.SearchAsync(BookNodeId, needle, matchCase, wholeWord);
+        }
+        catch (Exception ex)
+        {
+            // A search that throws out of a key handler ends the circuit and freezes the window.
+            result = null;
+            failure = $"The search failed: {ex.Message}";
         }
         finally { busy = false; }
     }

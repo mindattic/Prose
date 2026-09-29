@@ -319,7 +319,14 @@ if (UniverseBootstrap.RequestedSlug == null
         // The spelling dictionary (SpellingWords) is one engine-wide list, not a universe's.
         "--dictionary",
     ];
-    var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
+    // These allowlisted flags are ALSO sub-flags of universe-scoped commands (`--create-book
+    // --seed`, `--family-gen --seed N`, `--narrative-health --history`, `--expand-beat … --cost`,
+    // `--legion --help`), and matching them anywhere in argv let those commands skip this gate and
+    // run against the persisted default universe. They count only as the leading command.
+    string[] AgnosticOnlyWhenLeading = ["--seed", "--history", "--cost", "--help", "-h"];
+    var leadingFlag = LeadingFlagIgnoringUniverse(args);
+    var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(f =>
+        AgnosticOnlyWhenLeading.Contains(f) ? leadingFlag == f : args.Contains(f));
     if (!isAgnostic)
     {
         Console.Error.WriteLine(
@@ -329,6 +336,22 @@ if (UniverseBootstrap.RequestedSlug == null
         return;
     }
 }
+
+// Dispatch flags that are ALSO sub-flags of a command dispatched further down. The first
+// matching block wins, so each of these blocks stands aside when the owning command is present;
+// without that, `--continuity extract --book <id>` ran BookCli, `--sql-export --schema` ran
+// SchemaCli, `--cost --history` ran TemporalHistoryCli, `--repair-slugs --family nodes` ran
+// FamilyCli and `--wound log --beat <id>` ran BeatCli. The owners live in named arrays rather
+// than in the guard lines so CommandDocGenerator does not list them as aliases of the command.
+// (`--cost --history` is recognised by --cost LEADING, since --cost is also a suffix any other
+// command may carry.)
+string[] BookSubFlagOwners = ["--continuity", "--burst-beats"];
+string[] ContinuitySubFlagOwners = ["--repair"];
+string[] SchemaSubFlagOwners = ["--sql-export"];
+string[] HistorySubFlagOwners = ["--narrative-health"];
+string?[] HistoryLeadingOwners = ["--cost"];
+string[] FamilySubFlagOwners = ["--repair-slugs"];
+string[] BeatSubFlagOwners = ["--wound", "--liberty-report"];
 
 // CLI mode: dotnet run --project ... -- --rebuild-graph [--universe <slug>]
 // Rebuilds the scoped universe's <slug>_universe_graph.json cache from source data
@@ -360,16 +383,17 @@ if (args.Contains("--reset-password"))
 // explicit instruction, not quarantined. The live book-writing path is --auto-run (AutoRunCli).
 
 // CLI mode: book operations — list / new / show / chapters / absorb / review / apply / export / delete.
-// Run `dotnet run --project Prose.Blazor -- --book` (no subcommand) to see full usage.
-if (args.Contains("--book") && !args.Contains("--ask")) // --ask documents --book as its --node alias
+// Run `prose --book` (no subcommand) to see full usage. --ask documents --book as its --node
+// alias, so it is excluded here too.
+if (args.Contains("--book") && !args.Contains("--ask") && !BookSubFlagOwners.Any(args.Contains))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("BookCli", args);
     return;
 }
 
 // CLI mode: unified continuity store — migrate / stats / contradictions / resolve / entity.
-// Run `dotnet run --project Prose.Blazor -- --continuity` (no subcommand) to see full usage.
-if (args.Contains("--continuity"))
+// Run `prose --continuity` (no subcommand) to see full usage.
+if (args.Contains("--continuity") && !ContinuitySubFlagOwners.Any(args.Contains))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("ContinuityCli", args);
     return;
@@ -494,7 +518,7 @@ if (args.Contains("--add-news"))
 // CLI mode: per-table schema operations (snapshot + safe column-reorder rebuild).
 //   prose --schema snapshot --table NAME [--out path.sql]
 //   prose --schema rebuild  --table NAME --order "col1,col2,col3,…"
-if (args.Contains("--schema"))
+if (args.Contains("--schema") && !SchemaSubFlagOwners.Any(args.Contains))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("SchemaCli", args);
     return;
@@ -510,10 +534,9 @@ if (args.Contains("--sql-export"))
     return;
 }
 
-// CLI mode: dossier-driven story repair — walks every chapter, augments character
-// records with timeline entries and (optionally) LLM-extracted continuity claims.
-//   prose --repair                # cheap timeline-only pass
-//   prose --repair --continuity   # also run continuity extraction (LLM-heavy)
+// CLI mode: read-only report of UTF-8-read-as-Windows-1252 corruption in a node's beats.
+// Exits 1 when anything is found, so a runbook can loop `prose --repair --fix-mojibake` until 0.
+//   prose --detect-mojibake --slug <slug|code|id> [--json]
 if (args.Contains("--detect-mojibake"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("DetectMojibakeCli", args);
@@ -542,7 +565,7 @@ if (args.Contains("--composition"))
 // prose --history <verb> …
 // Read-only SQL Server temporal-history forensics — what a beat used to say, which day a book was
 // rewritten wholesale. Free: no LLM call, no write.
-if (args.Contains("--history"))
+if (args.Contains("--history") && !HistorySubFlagOwners.Any(args.Contains) && !HistoryLeadingOwners.Contains(LeadingFlagIgnoringUniverse(args)))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("TemporalHistoryCli", args);
     return;
@@ -584,6 +607,10 @@ if (args.Contains("--narrative-health"))
     return;
 }
 
+// CLI mode: dossier-driven story repair — walks every chapter, augments character
+// records with timeline entries and (optionally) LLM-extracted continuity claims.
+//   prose --repair                # cheap timeline-only pass
+//   prose --repair --continuity   # also run continuity extraction (LLM-heavy)
 if (args.Contains("--repair"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("RepairCli", args);
@@ -655,7 +682,7 @@ if (args.Contains("--genetics"))
 //   prose --family sibling --a <id|slug> --b <id|slug>
 //   prose --family spouse  --a <id|slug> --b <id|slug>
 //   prose --family show    --of <id|slug>
-if (args.Contains("--family"))
+if (args.Contains("--family") && !FamilySubFlagOwners.Any(args.Contains))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("FamilyCli", args);
     return;
@@ -1063,7 +1090,7 @@ if (args.Contains("--set-canon-section"))
 }
 
 // prose --set-narrative-mode --slug <slug> --mode original|retelling|historical
-// Gates BookHealthService.SacredFlawAsync — see SetNarrativeModeCli.
+// Gates TrinityReconciliationService's book scope — see SetNarrativeModeCli.
 if (args.Contains("--set-narrative-mode"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("SetNarrativeModeCli", args);
@@ -1549,7 +1576,6 @@ if (args.Contains("--timeline-check"))
     return;
 }
 
-// CLI mode: set the ParentNodeId on an existing node (move it into a collection).
 // X-Ray scene assembly (RFC 0002): print the entity roster + voice context block
 // for a beat or raw prose. CLI twin of the MCP tool assemble_scene_context.
 //   prose --assemble-scene (--beat <guid> | --text "<prose>") [--budget N]
@@ -1559,6 +1585,7 @@ if (args.Contains("--assemble-scene"))
     return;
 }
 
+// CLI mode: set the ParentNodeId on an existing node (move it into a collection).
 //   prose --reparent-node (--slug <slug> | --id <id>) (--parent-slug <slug> | --parent-id <id>)
 //   prose --reparent-node --slug <slug> --clear   — detach from parent
 if (args.Contains("--reparent-node"))
@@ -2386,7 +2413,7 @@ if (args.Contains("--seed-sensory-hints"))
 //   meta    --id <beatId> [--title "..."] [--kind "..."] [--description "..."] [--tone "..."] ...
 //   show    --id <beatId>
 //   list    --node <slug|id>
-if (args.Contains("--beat"))
+if (args.Contains("--beat") && !BeatSubFlagOwners.Any(args.Contains))
 {
     var beatArgs = args.SkipWhile(a => a != "--beat").Skip(1).ToArray();
     Environment.ExitCode = await HubCliClient.ForwardAsync("BeatCli", beatArgs);
@@ -2428,7 +2455,7 @@ if (args.Contains("--harvest-entities"))
 //   use       --slug <slug> | --id <guid>
 // Only hijacks dispatch when --universe is the PRIMARY command (args[0]) AND is followed by a
 // real universe subcommand. Elsewhere in argv, --universe <slug> is the scoping flag other
-// commands accept (parsed at line 28 into UniverseBootstrap.RequestedSlug) —
+// commands accept (parsed near the top of this file into UniverseBootstrap.RequestedSlug) —
 // args.Contains("--universe") would incorrectly steal dispatch from every command block defined
 // after this one.
 //
@@ -2448,7 +2475,7 @@ if (isUniverseManagementCommand)
 // RFC 0007 "Universe Interchange" — import/export between an app's
 // <app>/universe/<slug>.universe.json contract file and Prose's Entity spine.
 // Each subcommand resolves its own explicit universe (file's own id, or a required
-// positional slug) — see UniverseAgnosticCommands below.
+// positional slug) — see UniverseAgnosticCommands near the top of this file.
 if (args.Contains("--universe-import"))
 {
     var rest = args.SkipWhile(a => a != "--universe-import").Skip(1).ToArray();
@@ -3107,6 +3134,18 @@ if (args.Contains("--cost") && (args.Contains("--history")
     Environment.ExitCode = await HubCliClient.ForwardAsync("CostCli", args);
     return;
 }
+
+// Nothing above matched. Falling off the end used to exit 0 with no output, so a mistyped flag
+// read as a command that ran and found nothing, and `--help` (allowlisted above) printed nothing.
+if (args.Length == 0 || args.Contains("--help") || args.Contains("-h"))
+{
+    Console.WriteLine("Usage: prose [--universe <slug>] <command> [options]");
+    Console.WriteLine("  Every command is listed in docs/CLI_COMMANDS.md (regenerate it with `prose --export-commands`).");
+    return;
+}
+Console.Error.WriteLine($"[prose] Unknown command: {string.Join(' ', args)}");
+Console.Error.WriteLine("  Every command is listed in docs/CLI_COMMANDS.md (`prose --help`).");
+Environment.ExitCode = 2;
 
 // ────────────────────────────────────────────────────────────────────────────
 // DI bootstrap helpers — replace WebApplication.CreateBuilder in every CLI block.

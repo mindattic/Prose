@@ -37,7 +37,7 @@ public class AuditRunner(ILlmService llm, FindingsService findings, ILogger<Audi
     /// left exactly as-is. Without this carve-out, a transient provider outage would delete real,
     /// previously-found violations and replace them with a single meaningless "Evaluation failed"
     /// row — permanent data loss triggered by a temporary rate limit. The failure IS still
-    /// returned to the caller (as a MODERATE verdict) so a console/CLI caller watching this run
+    /// returned to the caller (as an ERROR verdict) so a console/CLI caller watching this run
     /// sees that the rule didn't execute; it's only excluded from what gets written to the DB.
     /// </summary>
     public async Task<IReadOnlyList<AuditVerdict>> RunAsync(

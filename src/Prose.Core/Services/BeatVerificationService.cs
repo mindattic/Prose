@@ -223,9 +223,6 @@ public class BeatVerificationService
             .ToList();
     }
 
-    /// <summary>Walks ParentNodeId up from a leaf (chapter) node to its book ancestor (no parent,
-    /// or a Collection-kind root) — same walk-up shape as the rest of this service's book-scoping,
-    /// inverted (leaf-to-root instead of root-to-leaf via GetLeafDescendantIdsAsync).</summary>
     // Book resolution now lives in NodeWorkbenchService.ResolveBookAncestorIdAsync. The copy that
     // was here walked to the TREE ROOT, so for a book under a series it returned the series and
     // every stale-book grouping below was keyed on the wrong node.

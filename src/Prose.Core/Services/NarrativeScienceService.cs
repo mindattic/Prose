@@ -12,12 +12,10 @@ namespace Prose.Core.Services;
 // Operationalizes Will Storr's "The Science of Storytelling" frameworks as
 // LLM-backed analysis tools:
 //
-//   • AnalyzeSacredFlawAsync      — character's theory of control, origin damage,
-//                                   secret dread, hero-maker narrative
-//   • CheckDramaticQuestionAsync  — scores whether a beat poses/answers "who is
-//                                   this person really?" at surface + subconscious
-//   • MapFiveActStructureAsync    — maps a node's beats to Storr's 5-act arc
 //   • CheckAntiheroEmpathyAsync   — scores the 4 antihero empathy levers
+//
+// AnalyzeSacredFlawAsync, CheckDramaticQuestionAsync and MapFiveActStructureAsync were
+// cut in 1cb5a9489 ("Cut group A"); their result models went with them.
 //
 // AuditSceneEngagementAsync (6-point scene anatomy) was removed 2026-08-13 — its
 // mechanisms (unexpected change, cause-effect, specificity, show-not-tell)
@@ -34,13 +32,7 @@ public class NarrativeScienceService(
     ILlmService llm,
     IDbContextFactory<ProseDbContext> dbFactory)
 {
-    static readonly JsonSerializerOptions JsonOpts = new()
-    {
-        WriteIndented = true,
-        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
-    };
-
-    // ── Sacred Flaw ───────────────────────────────────────────────────────────
+    // ── Antihero empathy ──────────────────────────────────────────────────────
 
     public async Task<AntiheroEmpathyResult> CheckAntiheroEmpathyAsync(
         Guid characterId, string beatText, CancellationToken ct = default)
@@ -99,29 +91,6 @@ public class NarrativeScienceService(
 
     // ── Helpers ───────────────────────────────────────────────────────────────
 
-    static string BuildPsychologyBlob(Data.Entities.Character c)
-    {
-        var sb = new System.Text.StringBuilder();
-        if (!string.IsNullOrWhiteSpace(c.PsychologySecret))
-            sb.AppendLine($"Secret: {c.PsychologySecret}");
-        var buckets = new[] { "core_fears", "core_desires", "coping_mechanisms", "blind_spots" };
-        foreach (var b in buckets)
-        {
-            var items = c.PsychologyTraits.Where(t => t.Bucket == b).OrderBy(t => t.Position)
-                .Select(t => t.Trait).ToList();
-            if (items.Count > 0)
-                sb.AppendLine($"{b.Replace('_', ' ')}: {string.Join("; ", items)}");
-        }
-        foreach (var b in new[] { "decision_rules", "breaking_points", "contradictions" })
-        {
-            var items = c.BehavioralRules.Where(r => r.Bucket == b).OrderBy(r => r.Position)
-                .Select(r => r.Rule).ToList();
-            if (items.Count > 0)
-                sb.AppendLine($"{b.Replace('_', ' ')}: {string.Join("; ", items)}");
-        }
-        return sb.ToString();
-    }
-
     static T? ParseJson<T>(string raw)
     {
         try
@@ -139,53 +108,6 @@ public class NarrativeScienceService(
 }
 
 // ── Result models ─────────────────────────────────────────────────────────────
-
-public class SacredFlawAnalysis
-{
-    [JsonPropertyName("theory_of_control")]   public string TheoryOfControl    { get; set; } = "";
-    [JsonPropertyName("origin_damage")]       public string OriginDamage       { get; set; } = "";
-    [JsonPropertyName("secret_dread")]        public string SecretDread        { get; set; } = "";
-    [JsonPropertyName("hero_maker_narrative")]public string HeroMakerNarrative  { get; set; } = "";
-    [JsonPropertyName("material_gains")]      public string MaterialGains       { get; set; } = "";
-    [JsonPropertyName("confidence")]          public string Confidence          { get; set; } = "";
-    [JsonPropertyName("diagnosis")]           public string Diagnosis           { get; set; } = "";
-    [JsonIgnore]                              public string? RawResponse        { get; set; }
-}
-
-public class DramaticQuestionResult
-{
-    [JsonPropertyName("surface_score")]          public int    SurfaceScore         { get; set; }
-    [JsonPropertyName("subconscious_score")]     public int    SubconsciousScore    { get; set; }
-    [JsonPropertyName("overall_score")]          public int    OverallScore         { get; set; }
-    [JsonPropertyName("surface_summary")]        public string SurfaceSummary       { get; set; } = "";
-    [JsonPropertyName("subconscious_summary")]   public string SubconsciousSummary  { get; set; } = "";
-    [JsonPropertyName("dramatic_question_active")]public bool  DramaticQuestionActive{ get; set; }
-    [JsonPropertyName("improvement_hint")]       public string ImprovementHint      { get; set; } = "";
-    [JsonIgnore]                                 public string? RawResponse         { get; set; }
-}
-
-public class FiveActEntry
-{
-    [JsonPropertyName("beat_numbers")]   public List<int> BeatNumbers  { get; set; } = new();
-    [JsonPropertyName("ignition_beat")]  public int?  IgnitionBeat     { get; set; }
-    [JsonPropertyName("trigger_beat")]   public int?  TriggerBeat      { get; set; }
-    [JsonPropertyName("god_moment_beat")]public int?  GodMomentBeat    { get; set; }
-    [JsonPropertyName("resolution")]     public string? Resolution     { get; set; }
-    [JsonPropertyName("assessment")]     public string Assessment      { get; set; } = "";
-}
-
-public class FiveActMap
-{
-    [JsonPropertyName("node_title")]         public string NodeTitle        { get; set; } = "";
-    [JsonPropertyName("acts")]                 public Dictionary<string, FiveActEntry> Acts { get; set; } = new();
-    [JsonPropertyName("structural_gaps")]      public List<string> StructuralGaps    { get; set; } = new();
-    [JsonPropertyName("structural_strengths")] public List<string> StructuralStrengths { get; set; } = new();
-    [JsonPropertyName("overall_assessment")]   public string OverallAssessment   { get; set; } = "";
-    [JsonIgnore] public string  NodeSlug  { get; set; } = "";
-    [JsonIgnore] public int     BeatCount   { get; set; }
-    [JsonIgnore] public string? Error       { get; set; }
-    [JsonIgnore] public string? RawResponse { get; set; }
-}
 
 public class AntiheroEmpathyLever
 {

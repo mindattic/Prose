@@ -42,19 +42,21 @@ public class AssignTiersService(IDbContextFactory<ProseDbContext> dbFactory) : D
 
     private static int Assign(JsonObject obj, bool overwrite)
     {
-        if (!overwrite && obj["tier"] != null)
+        if (!overwrite && obj["tier"] is JsonNode existing)
         {
-            var existing = obj["tier"]?.GetValueKind();
-            if (existing == System.Text.Json.JsonValueKind.Number ||
-                existing == System.Text.Json.JsonValueKind.String)
-                return 0;
+            // An empty string is how SyntheticLifeData serializes "no tier" ("tier": ""), so it is
+            // not an existing assignment: counting it as one made the scan skip every synthetic.
+            var kind = existing.GetValueKind();
+            if (kind == System.Text.Json.JsonValueKind.Number) return 0;
+            if (kind == System.Text.Json.JsonValueKind.String
+                && !string.IsNullOrWhiteSpace(existing.GetValue<string>())) return 0;
         }
 
         var text = string.Join(" ",
-            obj["role"]?.GetValue<string>()        ?? "",
-            obj["description"]?.GetValue<string>() ?? "",
-            obj["affiliation"]?.GetValue<string>() ?? "",
-            string.Join(" ", (obj["tags"] as JsonArray)?.Select(t => t?.GetValue<string>() ?? "") ?? []))
+            Str(obj["role"]),
+            Str(obj["description"]),
+            Str(obj["affiliation"]),
+            string.Join(" ", (obj["tags"] as JsonArray)?.Select(Str) ?? []))
             .ToLowerInvariant();
 
         int tier = 2; // default
@@ -68,4 +70,10 @@ public class AssignTiersService(IDbContextFactory<ProseDbContext> dbFactory) : D
         obj["tier"] = JsonValue.Create(tier);
         return 1;
     }
+
+    // GetValue<string>() throws on a non-string node (a legacy blob with an object "role" or an
+    // array "affiliation"), which failed the whole record instead of just ignoring that field.
+    private static string Str(JsonNode? node)
+        => node is JsonValue v && v.GetValueKind() == System.Text.Json.JsonValueKind.String
+            ? v.GetValue<string>() : "";
 }

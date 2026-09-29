@@ -29,10 +29,27 @@ public class PlaceExitConverter : JsonConverter<PlaceExit>
             Destination = obj["destination"]?.GetValue<string>() ?? "",
             Type        = obj["type"]?.GetValue<string>() ?? "road",
             Description = obj["description"]?.GetValue<string>() ?? "",
-            Restricted  = obj["restricted"]?.GetValue<bool>() ?? false,
-            DangerLevel = obj["danger_level"]?.GetValue<int>() ?? 0,
+            Restricted  = ReadBool(obj["restricted"]),
+            DangerLevel = ReadInt(obj["danger_level"]),
             Tags        = obj["tags"]?.Deserialize<List<string>>() ?? [],
         };
+    }
+
+    // GetValue<bool>/GetValue<int> throw on "restricted": "true" or "danger_level": "3" / 2.5, and
+    // one such exit failed the whole place's deserialization. Anything unreadable falls back to the
+    // default instead.
+    private static bool ReadBool(JsonNode? n) => n is JsonValue v
+        && (v.TryGetValue<bool>(out var b) ? b
+            : v.TryGetValue<string>(out var s) && bool.TryParse(s, out var parsed) && parsed);
+
+    private static int ReadInt(JsonNode? n)
+    {
+        if (n is not JsonValue v) return 0;
+        if (v.TryGetValue<int>(out var i)) return i;
+        if (v.TryGetValue<double>(out var d)) return (int)Math.Round(d);
+        return v.TryGetValue<string>(out var s)
+            && int.TryParse(s, System.Globalization.NumberStyles.Integer, System.Globalization.CultureInfo.InvariantCulture, out var p)
+            ? p : 0;
     }
 
     public override void Write(Utf8JsonWriter writer, PlaceExit value, JsonSerializerOptions options)

@@ -23,7 +23,9 @@ public static class MorningReportCli
         if (hoursArg != null && double.TryParse(hoursArg, System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out var h)) hours = h;
 
         var since = DateTime.UtcNow.AddHours(-hours);
-        var db    = sp.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContext();
+        // Disposed: this runs inside the long-lived Hub process, where an undisposed context
+        // holds its pooled connection until the GC happens to finalize it.
+        await using var db = sp.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContext();
         var cross = sp.GetRequiredService<CrossBookConsistencyService>();
         var metrics = sp.GetRequiredService<BeatProseMetricsService>();
         var settings = sp.GetRequiredService<SettingsService>();
@@ -79,7 +81,6 @@ public static class MorningReportCli
         // ── 2. New findings ──────────────────────────────────────────────────
         Console.WriteLine("§2  New Findings");
         Console.WriteLine(new string('─', 60));
-        var sinceStr  = since.ToString("o");
         var newFindings = await db.Findings
             .AsNoTracking()
             .Where(f => f.DetectedAt >= since && f.Status == "New")

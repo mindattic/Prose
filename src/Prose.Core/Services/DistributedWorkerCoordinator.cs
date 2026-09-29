@@ -8,8 +8,10 @@ namespace Prose.Core.Services;
 
 /// <summary>
 /// Central coordinator for distributed work.  Remote workers (RunPod pods, local GPU boxes,
-/// etc.) claim batches via the REST API, run their local LLM, and POST results back.
-/// This service is the only layer that writes to EntityReviews, NodeReviews, Edges, or Beats.
+/// etc.) were meant to claim batches, run their local LLM, and post results back. Only the
+/// Populate* methods have a caller today (<c>PopulateQueueCli</c>); no endpoint exposes
+/// <see cref="ClaimBatchAsync"/>/<see cref="SubmitAsync"/>, and <see cref="WorkerResult.Failed"/>
+/// is not acted on by <see cref="SubmitAsync"/> — a failed item stays claimed until the timeout.
 ///
 /// Personas come from PersonaLibrary (in-process static registry, not DB).
 /// Claim timeout: 15 minutes.  If a worker dies mid-batch the items auto-release.

@@ -41,18 +41,22 @@ public static class TextIntegrityCli
         var highConfidence = findings.Where(f => f.SuggestedFix != null).ToList();
         var needsReview = findings.Where(f => f.SuggestedFix == null).ToList();
 
+        // A fix changes nothing when the beat was edited after the scan; only a changed row counts.
+        var applied = new HashSet<TextIntegrityFinding>();
         if (fix)
         {
             foreach (var f in highConfidence)
-                await svc.ApplyFixAsync(f, f.SuggestedFix!.Value);
+                if (await svc.ApplyFixAsync(f, f.SuggestedFix!.Value) > 0) applied.Add(f);
         }
+        var stale = fix ? highConfidence.Count - applied.Count : 0;
 
         if (json)
         {
             Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(new
             {
                 totalFindings = findings.Count,
-                autoFixed = fix ? highConfidence.Count : 0,
+                autoFixed = applied.Count,
+                staleFixes = stale,
                 needsReview = needsReview.Count,
                 findings = findings.Select(f => new
                 {
@@ -60,7 +64,7 @@ public static class TextIntegrityCli
                     suggestedFix = f.SuggestedFix?.ToString(), f.SuggestedFixReason,
                 }),
             }, new System.Text.Json.JsonSerializerOptions { WriteIndented = true }));
-            return findings.Count > 0 && !fix ? 1 : 0;
+            return findings.Count > 0 && (!fix || needsReview.Count > 0 || stale > 0) ? 1 : 0;
         }
 
         if (findings.Count == 0)
@@ -73,7 +77,7 @@ public static class TextIntegrityCli
         Console.WriteLine();
         foreach (var f in findings)
         {
-            var fixedTag = fix && f.SuggestedFix != null ? " [FIXED]" : f.SuggestedFix != null ? " [fixable with --fix]" : " [needs manual review]";
+            var fixedTag = applied.Contains(f) ? " [FIXED]" : fix && f.SuggestedFix != null ? " [NOT FIXED — beat changed since the scan; re-run]" : f.SuggestedFix != null ? " [fixable with --fix]" : " [needs manual review]";
             Console.WriteLine($"  {f.Table}.{f.Column} — {f.RowLabel} ({f.RowId}) @ pos {f.Position}{fixedTag}");
             Console.WriteLine($"    ...{f.Context}...");
             if (f.SuggestedFixReason != null) Console.WriteLine($"    reason: {f.SuggestedFixReason}");
@@ -85,6 +89,6 @@ public static class TextIntegrityCli
         if (needsReview.Count > 0)
             Console.WriteLine($"{needsReview.Count} finding(s) need manual review — not auto-fixable (not immediately followed by a digit).");
 
-        return findings.Count > 0 && (!fix || needsReview.Count > 0) ? 1 : 0;
+        return findings.Count > 0 && (!fix || needsReview.Count > 0 || stale > 0) ? 1 : 0;
     }
 }

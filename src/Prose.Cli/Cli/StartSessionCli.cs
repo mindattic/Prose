@@ -5,6 +5,11 @@ using Prose.Core.Services;
 
 namespace Prose.Cli;
 
+/// <summary>
+/// prose --start-session --slug &lt;slug|code|guid&gt; --label "…" [--type prose-pass|gripes-cleanup|logic-sweep|custom]
+/// — opens an edit session on a node so the beats edited during a pass can be listed afterwards
+/// (<c>prose --session-beats</c>). Prints the new session id.
+/// </summary>
 public static class StartSessionCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)

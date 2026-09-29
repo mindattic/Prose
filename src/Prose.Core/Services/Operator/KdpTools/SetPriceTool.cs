@@ -92,7 +92,7 @@ public class SetPriceTool : IKdpTool
         await ctx.Browser.TypeTextAsync(price, ct);
         await Task.Delay(200, ct);
 
-        var readBack = await ctx.Browser.EvalAsync("(function(){ var el = document.activeElement; return JSON.stringify({ value: el ? el.value : null }); })()", ct);
+        var readBack = await ctx.Browser.EvalAsync("(function(){ var el = document.activeElement; return JSON.stringify({ value: el && el.value != null ? String(el.value) : null }); })()", ct);
         using var readDoc = JsonDocument.Parse(readBack);
         return JsonSerializer.Serialize(new { found = true, typed = price, value = readDoc.RootElement.GetProperty("value").GetString() });
     }

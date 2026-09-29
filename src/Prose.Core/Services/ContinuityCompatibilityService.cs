@@ -166,11 +166,9 @@ public class ContinuityCompatibilityService(
         await db.SaveChangesAsync(ct);
     }
 
-    /// <summary>Case-insensitive substring containment either direction — one value being a
-    /// superset/rephrasing of the other (e.g. "ex-Arcturus" ⊂ "ex-Arcturus Defense Solutions")
-    /// is never itself a genuine conflict.</summary>
     /// <summary>
-    /// True when one value is a plain elaboration of the other ("Chicago" / "downtown Chicago").
+    /// True when one value is a plain elaboration of the other ("Chicago" / "downtown Chicago",
+    /// "ex-Arcturus" / "ex-Arcturus Defense Solutions"), case-insensitive, either direction.
     /// Not for negations: "alive"/"not alive", "married"/"unmarried", "armed"/"unarmed" all
     /// contain each other as substrings, were cached "compatible" and hid real contradictions.
     /// The shorter value must sit on word boundaries and the extra text must carry no negation.

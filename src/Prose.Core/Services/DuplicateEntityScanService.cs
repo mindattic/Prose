@@ -273,7 +273,9 @@ public class DuplicateEntityScanService(IDbContextFactory<ProseDbContext> dbFact
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var fullRows = await db.Entities.AsNoTracking()
+        // IgnoreQueryFilters: the universe is named explicitly, exactly as in ScanAsync — an ambient
+        // scope set to a different universe made this return nothing and report "no duplicates".
+        var fullRows = await db.Entities.IgnoreQueryFilters().AsNoTracking()
             .Where(e => e.UniverseId == universeId && e.EntityType == entityType && e.OriginNodeId == null)
             .Select(e => new FullEntityRow(e.Id, e.Name, e.Description))
             .ToDictionaryAsync(e => e.Id, ct);

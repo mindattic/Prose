@@ -175,7 +175,7 @@ public class ManuscriptExportService
         return path;
     }
 
-    /// <summary>Export the node as a KDP-ready PDF to Downloads; returns the path.</summary>
+    /// <summary>Export the node as a KDP-ready PDF to the book's folder in the publish directory; returns the path. Read-gated.</summary>
     public async Task<string> ExportPdfAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
     {
         await readGate.EnsureReadAsync(nodeId, ct);
@@ -257,7 +257,7 @@ public class ManuscriptExportService
         return path;
     }
 
-    /// <summary>Export the node as a KDP-ready EPUB 3 to Downloads; returns the path.</summary>
+    /// <summary>Export the node as a KDP-ready EPUB 3 to the book's folder in the publish directory; returns the path. Read-gated.</summary>
     public async Task<string> ExportEpubAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
     {
         await readGate.EnsureReadAsync(nodeId, ct);

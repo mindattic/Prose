@@ -12,6 +12,10 @@ namespace Prose.Cli;
 ///   --beat-number &lt;N&gt;       1-indexed beat position in reading order.
 ///   --file &lt;path&gt;           Path to a text file whose contents replace the beat prose.
 ///
+/// Edit-by-id mode (--id):
+///   --id &lt;beatGuid&gt;         Overwrite that exact beat (no --slug / --beat-number needed).
+///   --file &lt;path&gt;           Path to a text file whose contents replace the beat prose.
+///
 /// Insert mode (--insert-after):
 ///   --slug &lt;slug&gt;           Node slug.
 ///   --insert-after &lt;N&gt;      Insert a new beat after position N (0 = insert at top).

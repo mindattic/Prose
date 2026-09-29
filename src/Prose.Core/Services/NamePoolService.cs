@@ -192,7 +192,9 @@ public class NamePoolService
 
     string? PickUnusedFromPool(HashSet<string> used)
     {
-        var candidates = Pool.Where(n => !used.Contains(n)).ToList();
+        // FirstOf, as in SamplePreferredNames: a multi-word pool entry ("Ama Serwaa") never equals
+        // a used FIRST name, so the raw comparison could hand back a name whose first is taken.
+        var candidates = Pool.Where(n => !used.Contains(FirstOf(n))).ToList();
         if (candidates.Count == 0) return null;
         return candidates[Random.Shared.Next(candidates.Count)];
     }

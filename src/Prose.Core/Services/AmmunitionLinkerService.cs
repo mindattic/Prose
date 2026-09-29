@@ -223,7 +223,13 @@ public class AmmunitionLinkerService
 
         // Skip melee — only firearms get ammo. Heuristic: Category contains
         // "rifle"/"pistol"/"shotgun"/"smg"/"carbine"/"revolver"/"handgun".
-        var allWeapons = await db.Weapons.AsNoTracking().ToListAsync(ct);
+        // Weapons (the subtype table) carries no universe filter; the Entities spine does. Without
+        // this join the scan linked every universe's firearms and minted their ammunition in the
+        // current one.
+        var weaponEntityIds = db.Entities.Where(e => e.EntityType == "weapon").Select(e => e.Id);
+        var allWeapons = await db.Weapons.AsNoTracking()
+            .Where(w => weaponEntityIds.Contains(w.Id))
+            .ToListAsync(ct);
         var firearms = allWeapons
             .Where(w => IsFirearm(w.Category) || IsFirearm(w.Name))
             .ToList();

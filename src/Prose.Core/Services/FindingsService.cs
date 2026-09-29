@@ -365,7 +365,7 @@ public class FindingsService
             q = q.Where(f => f.Status == key);
         }
         if (!string.IsNullOrWhiteSpace(filePathPrefix))
-            q = q.Where(f => f.FilePath.StartsWith(filePathPrefix));
+            q = WhereUnderPath(q, filePathPrefix);
         var rows = q
             .OrderBy(f => f.Severity == "High" ? 0 : f.Severity == "Medium" ? 1 : f.Severity == "Low" ? 2 : 3)
             .ThenByDescending(f => f.DetectedAt)
@@ -490,7 +490,7 @@ public class FindingsService
         var q = db.Findings.Where(f => f.Status == "New" || f.Status == "Triaged");
         if (category is FindingCategory c) { var key = c.ToString(); q = q.Where(f => f.Category == key); }
         if (!string.IsNullOrWhiteSpace(summaryPrefix)) q = q.Where(f => f.Summary.StartsWith(summaryPrefix));
-        if (!string.IsNullOrWhiteSpace(filePathPrefix)) q = q.Where(f => f.FilePath.StartsWith(filePathPrefix));
+        if (!string.IsNullOrWhiteSpace(filePathPrefix)) q = WhereUnderPath(q, filePathPrefix);
 
         var rows = await q.ToListAsync(ct);
         foreach (var row in rows)
@@ -521,6 +521,24 @@ public class FindingsService
     }
 
     /// <summary>
+    /// Filters to findings at or under <paramref name="filePathPrefix"/>. A complete path
+    /// ("node:bcoda") matches itself and its sub-paths ("/…", "#…", ":…") only: a bare StartsWith
+    /// also matched "node:bcoda5", so listing, bulk-dismissing or re-linting one book reached into
+    /// another's findings. A prefix that already ends in a separator (or is empty) keeps plain
+    /// prefix semantics.
+    /// </summary>
+    private static IQueryable<FindingRow> WhereUnderPath(IQueryable<FindingRow> q, string filePathPrefix)
+    {
+        var delimited = filePathPrefix.Length > 0 && char.IsLetterOrDigit(filePathPrefix[^1]);
+        if (!delimited) return q.Where(f => f.FilePath.StartsWith(filePathPrefix));
+        var slash = filePathPrefix + "/";
+        var hash = filePathPrefix + "#";
+        var colon = filePathPrefix + ":";
+        return q.Where(f => f.FilePath == filePathPrefix || f.FilePath.StartsWith(slash)
+                         || f.FilePath.StartsWith(hash) || f.FilePath.StartsWith(colon));
+    }
+
+    /// <summary>
     /// Delete the OPEN (New/Triaged) findings for a given file-path prefix whose Summary starts
     /// with a given text prefix (e.g. <c>"NARRATIVE-SCIENCE [dramatic-question]:"</c>). Used to
     /// supersede stale results before an instrument writes fresh ones.
@@ -539,18 +557,8 @@ public class FindingsService
     public int DeleteBySummaryPrefix(string filePathPrefix, string summaryPrefix)
     {
         using var db = dbFactory.CreateDbContext();
-        // A complete path ("node:bcoda") matches itself and its sub-paths ("/…", "#…", ":…") only:
-        // a bare StartsWith also deleted "node:bcoda5"'s open findings when BCODA was re-linted.
-        // A prefix that already ends in a separator (or is empty) keeps plain prefix semantics.
-        var delimited = filePathPrefix.Length > 0 && char.IsLetterOrDigit(filePathPrefix[^1]);
-        var slash = filePathPrefix + "/";
-        var hash = filePathPrefix + "#";
-        var colon = filePathPrefix + ":";
-        var rows = db.Findings
-            .Where(f => (delimited
-                        ? f.FilePath == filePathPrefix || f.FilePath.StartsWith(slash) || f.FilePath.StartsWith(hash) || f.FilePath.StartsWith(colon)
-                        : f.FilePath.StartsWith(filePathPrefix))
-                     && f.Summary.StartsWith(summaryPrefix)
+        var rows = WhereUnderPath(db.Findings, filePathPrefix)
+            .Where(f => f.Summary.StartsWith(summaryPrefix)
                      && (f.Status == "New" || f.Status == "Triaged"))
             .ToList();
         if (rows.Count == 0) return 0;

@@ -56,7 +56,7 @@ public class WeaponAmmoCompatibilityService
     public WeaponAmmoCompatibilityService(IDbContextFactory<ProseDbContext> dbFactory)
         => this.dbFactory = dbFactory;
 
-    /// All weapons compatible with a given ammunition entity ID.
+    /// <summary>All weapons compatible with a given ammunition entity ID.</summary>
     public async Task<List<Weapon>> GetCompatibleWeaponsAsync(
         Guid ammoEntityId,
         CancellationToken ct = default)
@@ -82,7 +82,7 @@ public class WeaponAmmoCompatibilityService
             .ToListAsync(ct);
     }
 
-    /// Full ammo network for a weapon: its ammo types + sibling weapons that share any of them.
+    /// <summary>Full ammo network for a weapon: its ammo types + sibling weapons that share any of them.</summary>
     public async Task<AmmoNetwork> GetSharedAmmoNetworkAsync(
         Guid weaponId,
         CancellationToken ct = default)
@@ -109,7 +109,7 @@ public class WeaponAmmoCompatibilityService
         // Resolve ammo entity names
         var linkedIds = ammoRows.Where(a => a.AmmunitionId.HasValue).Select(a => a.AmmunitionId!.Value).ToList();
         var ammoNames = linkedIds.Count > 0
-            ? await db.Entities.AsNoTracking()
+            ? await db.Entities.AsNoTracking().IgnoreQueryFilters()
                 .Where(e => linkedIds.Contains(e.Id))
                 .ToDictionaryAsync(e => e.Id, e => e.Name, ct)
             : [];
@@ -149,7 +149,7 @@ public class WeaponAmmoCompatibilityService
         return network;
     }
 
-    /// A character's weapon loadout (from CharacterBelongingsGear) with ammo for each weapon.
+    /// <summary>A character's weapon loadout (from CharacterBelongingsGear) with ammo for each weapon.</summary>
     public async Task<CharacterLoadout> GetCharacterLoadoutAsync(
         Guid characterId,
         DateTime? asOfDate = null,
@@ -157,7 +157,9 @@ public class WeaponAmmoCompatibilityService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var character = await db.Entities.AsNoTracking()
+        // IgnoreQueryFilters: explicit id — the ambient universe filter blanked the name of a
+        // character from any other universe.
+        var character = await db.Entities.AsNoTracking().IgnoreQueryFilters()
             .Where(e => e.Id == characterId)
             .Select(e => new { e.Id, e.Name })
             .FirstOrDefaultAsync(ct);
@@ -195,7 +197,7 @@ public class WeaponAmmoCompatibilityService
             var ammoEntityIds = allAmmoRows
                 .Where(a => a.AmmunitionId.HasValue).Select(a => a.AmmunitionId!.Value).Distinct().ToList();
             var ammoNames = ammoEntityIds.Count > 0
-                ? await db.Entities.AsNoTracking()
+                ? await db.Entities.AsNoTracking().IgnoreQueryFilters()
                     .Where(e => ammoEntityIds.Contains(e.Id))
                     .ToDictionaryAsync(e => e.Id, e => e.Name, ct)
                 : [];

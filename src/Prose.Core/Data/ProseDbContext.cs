@@ -3705,6 +3705,14 @@ public class ProseDbContext : DbContext
     };
 
     /// <summary>
+    /// In-world-canon anchor for the temporal history. Every row that exists at the
+    /// moment SYSTEM_VERSIONING is enabled gets SysStart = this value, so a query
+    /// like <c>FOR SYSTEM_TIME AS OF '2026-01-01'</c> returns the initial corpus
+    /// rather than rows dated to the moment we ran the migration.
+    /// </summary>
+    public static readonly DateTime TemporalAnchor = new(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+
+    /// <summary>
     /// Enable SQL Server <c>SYSTEM_VERSIONING</c> on every table in
     /// <see cref="SystemVersionedTables"/>. Idempotent: skips tables that are
     /// already temporal. No-op on non-SQL-Server providers (SQLite tests).
@@ -3714,19 +3722,13 @@ public class ProseDbContext : DbContext
     /// gives you the database state as it was at any point in time — that's the
     /// "rewindable" property the user asked for.
     /// </summary>
-    /// <summary>
-    /// In-world-canon anchor for the temporal history. Every row that exists at the
-    /// moment SYSTEM_VERSIONING is enabled gets SysStart = this value, so a query
-    /// like <c>FOR SYSTEM_TIME AS OF '2026-01-01'</c> returns the initial corpus
-    /// rather than rows dated to the moment we ran the migration.
-    /// </summary>
-    public static readonly DateTime TemporalAnchor = new(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc);
-
     public async Task EnableSystemVersioningAsync(CancellationToken ct = default, Action<string, Exception>? onError = null)
     {
         if (!Database.IsSqlServer()) return;
 
-        var anchor = TemporalAnchor.ToString("yyyy-MM-ddTHH:mm:ss.fffffff");
+        // Invariant: ':' in a custom format is the culture's time separator, and this literal goes
+        // into DDL that SQL Server must parse.
+        var anchor = TemporalAnchor.ToString("yyyy-MM-ddTHH:mm:ss.fffffff", System.Globalization.CultureInfo.InvariantCulture);
 
         foreach (var table in SystemVersionedTables)
         {

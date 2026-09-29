@@ -106,6 +106,12 @@ public static class LogsCli
         }
 
         // ── Faults from the log files ───────────────────────────────────────
+        // A --since that does not parse ("2 days") used to fall back to 24h as if it were absent.
+        if (since != null && ParseSince(since) == null)
+        {
+            Console.Error.WriteLine($"[logs] --since is not a window or date: '{since}' (use 90m, 6h, 3d, or ISO).");
+            return 2;
+        }
         var window = ParseSince(since) ?? DateTime.Now.AddDays(-1);
         var faults = svc.GroupFaults(window, level ?? "Error", search);
 
@@ -225,7 +231,12 @@ public static class LogsCli
         _                    => "ignored",
     };
 
-    private static string Clip(string s, int max) =>
-        string.IsNullOrEmpty(s) ? "" :
-        s.Length <= max ? s.ReplaceLineEndings(" ") : s.ReplaceLineEndings(" ")[..max] + "…";
+    // Measure AFTER flattening: "\r\n" → " " shortens the string, so a message just over max with
+    // a few CRLFs was sliced past its new end and the whole listing threw.
+    private static string Clip(string s, int max)
+    {
+        if (string.IsNullOrEmpty(s)) return "";
+        var flat = s.ReplaceLineEndings(" ");
+        return flat.Length <= max ? flat : flat[..max] + "…";
+    }
 }

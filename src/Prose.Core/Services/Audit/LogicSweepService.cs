@@ -101,26 +101,10 @@ public class LogicSweepService(
             chapterTitles.TryGetValue(b.NodeId, out var chTitle) ? chTitle : "",
             chapterOrder.TryGetValue(b.NodeId, out var chIdx) ? chIdx : int.MaxValue)).ToList();
 
-        // A few distinctive disabled-beat snippets so OrphanReferencesRule can spot a live beat
-        // still referencing something a cut beat established — an approximation of the skill's
-        // "grep every disabled beat's distinctive phrase" step, not a full replacement for it.
-        // Strip tags before truncating (must materialize raw Text first — BeatMarkup.StripEntityTags
-        // can't translate into the SQL Substring EF would otherwise generate for the old inline
-        // truncation).
-        // Same chapter-local SortKey tie problem as beatRows above: order by chapter position
-        // first so the Take(40) sample spreads across the whole book instead of an arbitrary
-        // tie-broken cluster from whichever chapters happen to share low SortKey values.
-        var disabledSnippetsRows = await db.BeatNodes.AsNoTracking().Include(bn => bn.Beat)
-            .Where(bn => nodeIds.Contains(bn.NodeId) && !true && bn.Beat != null && bn.Beat!.Text != null)
-            .Select(bn => new { bn.NodeId, bn.SortKey, Text = bn.Beat!.Text })
-            .ToListAsync(ct);
-        var disabledSnippets = disabledSnippetsRows
-            .OrderBy(b => chapterOrder.TryGetValue(b.NodeId, out var idx) ? idx : int.MaxValue)
-            .ThenBy(b => b.SortKey)
-            .Take(40)
-            .Select(b => BeatMarkup.StripEntityTags(b.Text))
-            .Select(t => t.Length > 200 ? t[..200] : t)
-            .ToList();
+        // Beats no longer carry a disabled flag (a cut beat is deleted, not hidden), so there are
+        // no disabled-beat snippets to hand OrphanReferencesRule. The query that used to build
+        // them had decayed to a constant-false filter (`!true`) that still cost a round trip.
+        var disabledSnippets = new List<string>();
 
         var plants = await plantPayoffs.GetByNodeAsync(nodeId, ct);
 
@@ -393,19 +377,17 @@ public class LogicSweepService(
     /// walk, ordered by BeatNodes.SortKey) <see cref="RunAsync"/> itself reads them in — any
     /// beat text change anywhere in the book changes this fingerprint. Computed from live
     /// Beat.Text directly rather than trusting the stored Beat.TextHash column, which can be
-    /// null or stale for a beat that predates the stamping mechanism.</summary>
-    /// <summary>Internal (was private) so the publish gate can ask "was this instrument's last run
+    /// null or stale for a beat that predates the stamping mechanism.
+    /// <para>Internal (was private) so the publish gate can ask "was this instrument's last run
     /// against the prose the book has now?" — the same freshness question convergence already
-    /// asks, which every other check was answering by assumption.</summary>
+    /// asks, which every other check was answering by assumption.</para>
     /// <para>RFC 0015 §3.1: the definition now lives in <see cref="Factory.BookFingerprint"/>, shared
-    /// with the press, so the sweep and F7 can never disagree about what "the same book" means.</para>
+    /// with the press, so the sweep and F7 can never disagree about what "the same book" means.</para></summary>
     internal static Task<string> ComputeBookFingerprintAsync(ProseDbContext db, Guid nodeId, CancellationToken ct) =>
         Factory.BookFingerprint.ComputeAsync(db, nodeId, ct);
 
-    // ── Shared JSON-array parsing for all six dimensions ──────────────────────────
+    // ── Prose clamping and shared JSON-array parsing for all dimensions ───────────
 
-    /// <summary>Every dimension asks for the same finding shape — a JSON array of
-    /// {beat_number, severity, evidence, fix} — so there is one parser instead of six.</summary>
     /// <summary>Beat-number-aware alternative to <see cref="AuditProseUtils.ClampProse"/> for an
     /// oversized book: keeps the same head+tail 50k-char scheme, but names the actual elided
     /// beat-number range in the placeholder and tells the model not to cite any beat inside it.
@@ -511,6 +493,8 @@ public class LogicSweepService(
             ? $"[Beat #{b.Number}]"
             : $"[Beat #{b.Number} | {b.ChapterTitle}]";
 
+    /// <summary>Every dimension asks for the same finding shape — a JSON array of
+    /// {beat_number, severity, evidence, fix} — so there is one parser instead of six.</summary>
     /// <param name="strict">The rules pass true: a reply with no array, or one that does not
     /// parse (cut off at the token limit, chatter around it), THROWS so the runner marks the
     /// dimension Failed and keeps its existing findings. Returning [] for it read as "this

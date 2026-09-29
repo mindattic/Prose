@@ -145,10 +145,16 @@ public sealed class EntityRenameService(
         return await db.Nodes.IgnoreQueryFilters().Where(n => n.Id == nodeId).Select(n => n.UniverseId).FirstAsync(ct);
     }
 
-    private static async Task<Prose.Core.Data.Entities.Entity?> ResolveEntityAsync(ProseDbContext db, string idOrSlug, CancellationToken ct) =>
-        Guid.TryParse(idOrSlug, out var id)
-            ? await db.Entities.FirstOrDefaultAsync(e => e.Id == id, ct)
-            : await db.Entities.FirstOrDefaultAsync(e => e.Slug == idOrSlug, ct);
+    /// <summary>Resolves by id, else by slug. Slugs are unique per (universe, type) only — a
+    /// character and a place can both be "raven" — so two slug matches resolve to nothing rather
+    /// than renaming whichever row SQL returned first.</summary>
+    private static async Task<Prose.Core.Data.Entities.Entity?> ResolveEntityAsync(ProseDbContext db, string idOrSlug, CancellationToken ct)
+    {
+        if (Guid.TryParse(idOrSlug, out var id))
+            return await db.Entities.FirstOrDefaultAsync(e => e.Id == id, ct);
+        var matches = await db.Entities.Where(e => e.Slug == idOrSlug).Take(2).ToListAsync(ct);
+        return matches.Count == 1 ? matches[0] : null;
+    }
 
     private static Regex NameRegex(string name) => new($@"(?<![\p{{L}}\p{{N}}]){Regex.Escape(name)}(?![\p{{L}}\p{{N}}])", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
 

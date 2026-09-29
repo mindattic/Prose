@@ -10,12 +10,14 @@ namespace Prose.Core.Services.WriteGate;
 /// </summary>
 public static class WriteGateScope
 {
-    /// <summary>Registered fast pre-save checks, wired once at startup. Empty until Layer B adds
-    /// concrete checks — an empty list makes the gate a no-op, never a save-time regression.</summary>
+    /// <summary>Registered fast pre-save checks, wired once at startup by
+    /// <see cref="WriteGateBootstrap"/>. Empty in a process that never resolves it — an empty list
+    /// makes the gate a no-op, never a save-time regression.</summary>
     public static IReadOnlyList<IWriteGateSyncCheck> SyncChecks { get; set; } = Array.Empty<IWriteGateSyncCheck>();
 
-    /// <summary>Registered post-save async dispatcher, wired once at startup. Null until Layer B
-    /// wires a concrete implementation — a null dispatcher makes the post-save step a no-op.</summary>
+    /// <summary>Registered post-save async dispatcher, wired once at startup by
+    /// <see cref="WriteGateBootstrap"/>. Null when never wired — a null dispatcher makes the
+    /// post-save step a no-op.</summary>
     public static IWriteAuditService? AuditService { get; set; }
 
     /// <summary>

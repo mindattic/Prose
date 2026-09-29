@@ -151,6 +151,15 @@ public static class ContextCli
         // Look up by RelativePath (partial match OK)
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
+        // An exact path wins outright: otherwise a doc whose path is a prefix of another's
+        // ("canon/x.md" vs "canon/x.md.bak") could never be named at all — always "Ambiguous".
+        var exact = await db.MarkdownFiles.AsNoTracking()
+            .Where(m => m.RelativePath == docArg)
+            .Select(m => (Guid?)m.Id)
+            .Take(2)
+            .ToListAsync();
+        if (exact.Count == 1) return exact[0];
+
         var hits = await db.MarkdownFiles.AsNoTracking()
             .Where(m => m.RelativePath.Contains(docArg))
             .Select(m => new { m.Id, m.RelativePath })

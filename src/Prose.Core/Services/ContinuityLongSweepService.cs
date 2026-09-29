@@ -90,6 +90,10 @@ public class ContinuityLongSweepService : BackgroundService
                 // First sweep, no prior watermark, or full-sweep interval elapsed
                 // → run the full re-baseline. Otherwise → incremental from
                 // LastSweepAt, which is bumped on every successful tick.
+                // Watermark taken BEFORE the sweep: the genuine-filter can spend minutes on LLM
+                // classification, and a claim touched during that window fell outside the next
+                // tick's "since" when the watermark was stamped after the sweep finished.
+                var sweepStartedAt = DateTime.UtcNow;
                 var needFull = LastSweepAt is null
                             || LastFullSweepAt is null
                             || DateTime.UtcNow - LastFullSweepAt.Value >= FullSweepInterval;
@@ -102,7 +106,7 @@ public class ContinuityLongSweepService : BackgroundService
                 if (needFull)
                 {
                     groups = await compatibility.GetGenuineContradictionGroupsAsync(ct: stoppingToken);
-                    LastFullSweepAt = DateTime.UtcNow;
+                    LastFullSweepAt = sweepStartedAt;
                     LastSweepMode   = "full";
                 }
                 else
@@ -115,7 +119,7 @@ public class ContinuityLongSweepService : BackgroundService
                     LastSweepMode = "incremental";
                 }
 
-                LastSweepAt = DateTime.UtcNow;
+                LastSweepAt = sweepStartedAt;
                 LastSweepGroupCount = groups.Count;
                 log.LogInformation("Continuity long-sweep ({Mode}): {Count} contradiction group(s)",
                     LastSweepMode, groups.Count);

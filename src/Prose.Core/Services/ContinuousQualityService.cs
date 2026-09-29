@@ -9,13 +9,13 @@ namespace Prose.Core.Services;
 
 /// <summary>
 /// Autonomous quality monitor. Subscribes to <see cref="IChapterRepository.OnChapterSaved"/>
-/// and runs scoped contradiction + cliché checks on each saved chapter.
+/// and runs a scoped canon-contradiction check on each saved chapter.
 ///
 /// Grounding comes from SQL: for each chapter we resolve the entities the prose
-/// mentions via <see cref="UniverseGraphService"/> and pull dossiers via
+/// mentions (semantic hits from <see cref="EmbeddingService"/>, else name matches in
+/// <see cref="UniverseGraphService"/>) and pull dossiers via
 /// <see cref="WorldStateService"/> so the contradiction prompt is anchored to
-/// canon. The cliché scan needs no grounding — it goes straight to the LLM.
-/// Findings land in <see cref="FindingsService"/> for triage at /findings.
+/// canon. Findings land in <see cref="FindingsService"/> for triage at /findings.
 /// </summary>
 public class ContinuousQualityService
 {

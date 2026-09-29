@@ -41,7 +41,12 @@ public static class LegionCli
         var context  = ArgValue(args, "--context") ?? "";
         var maxTok   = int.TryParse(ArgValue(args, "--max-tokens"), out var mt) ? mt : 1024;
         var pretty   = args.Contains("--pretty");
-        var quorum   = ParseQuorum(ArgValue(args, "--quorum"));
+        // A misspelt --quorum ("unanimus") used to run silently as Plurality.
+        if (ParseQuorum(ArgValue(args, "--quorum")) is not { } quorum)
+        {
+            Console.Error.WriteLine($"error: unknown --quorum '{ArgValue(args, "--quorum")}' (plurality|majority|supermajority|unanimous).");
+            return 1;
+        }
 
         if (string.IsNullOrWhiteSpace(question))
         {
@@ -137,13 +142,19 @@ public static class LegionCli
         Console.WriteLine("Output is JSON on stdout (`choice`, `reasoning`, `confidence`, per-voter votes).");
     }
 
-    private static Quorum ParseQuorum(string? raw) => (raw ?? "").ToLowerInvariant() switch
+    /// <summary>No flag means Plurality; an unrecognised value returns null so the caller refuses it.</summary>
+    private static Quorum? ParseQuorum(string? raw)
     {
-        "majority" or "simplemajority" or "simple-majority" => Quorum.SimpleMajority,
-        "supermajority" or "twothirds" or "two-thirds"      => Quorum.TwoThirds,
-        "unanimous"                                          => Quorum.Unanimous,
-        _                                                    => Quorum.Plurality,
-    };
+        if (raw is null) return Quorum.Plurality;
+        switch (raw.ToLowerInvariant())
+        {
+            case "plurality":                                          return Quorum.Plurality;
+            case "majority" or "simplemajority" or "simple-majority": return Quorum.SimpleMajority;
+            case "supermajority" or "twothirds" or "two-thirds":      return Quorum.TwoThirds;
+            case "unanimous":                                          return Quorum.Unanimous;
+            default:                                                   return null;
+        }
+    }
 
     private static string? ArgValue(string[] args, string flag)
     {

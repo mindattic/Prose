@@ -25,8 +25,8 @@ public static class ExpertReaderCatalog
 {
     /// <summary>
     /// Shared calibration appended to every persona below: the "member berries" /
-    /// homage-and-subversion-recognition instruction. Written once so all nine
-    /// personas apply the identical standard for what counts as an earned callback
+    /// homage-and-subversion-recognition instruction. Written once so every
+    /// persona applies the identical standard for what counts as an earned callback
     /// vs. a fumbled one.
     /// </summary>
     private const string HomageCalibration =
@@ -45,7 +45,7 @@ public static class ExpertReaderCatalog
     /// <summary>Every expert-reader persona across all universes.</summary>
     public static IReadOnlyList<Persona> All => byId.Value.Values.ToList();
 
-    /// <summary>The fixed 3-persona panel for a universe slug ("glmz"/"scry"/"gspl").
+    /// <summary>The fixed ten-persona panel for a universe slug ("glmz"/"scry"/"gspl").
     /// Returns an empty list for an unrecognized slug.</summary>
     public static IReadOnlyList<Persona> ForUniverse(string universeSlug)
     {

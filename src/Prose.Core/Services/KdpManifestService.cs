@@ -367,7 +367,7 @@ public class KdpManifestService
                 // signal) records when this was last observed; while that timestamp is recent,
                 // report "Publishing" instead of "Outdated" and don't flag it for a redundant run.
                 if (stale && publishMarker?.PublishingDetectedAtUtc is string detectedRaw
-                    && DateTime.TryParse(detectedRaw, null, System.Globalization.DateTimeStyles.RoundtripKind, out var detectedAt)
+                    && DateTime.TryParse(detectedRaw, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.RoundtripKind, out var detectedAt)
                     && DateTime.UtcNow - detectedAt < PublishingDetectedWindow)
                 {
                     effectiveStatus = "Publishing";

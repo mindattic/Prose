@@ -166,6 +166,15 @@ public static class FactoryCli
                         var scanner = services.GetRequiredService<CaptureScanner>();
                         var report = await scanner.ScanAsync(book);
                         var limit = int.TryParse(Flag("--limit"), out var lim) ? lim : 200;
+                        // A repair flag whose id does not parse used to be skipped silently (the run
+                        // then reported the book as found) — and a mistyped --to read as "no --to",
+                        // which TAKES THE TAGS OFF instead of moving them.
+                        if (Flag("--pin-name") is not null && !Guid.TryParse(Flag("--entity"), out _))
+                            throw new ArgumentException("--pin-name needs --entity <entity guid>.");
+                        if (Flag("--retag-name") is not null && !Guid.TryParse(Flag("--from"), out _))
+                            throw new ArgumentException("--retag-name needs --from <entity guid>.");
+                        if (Flag("--to") is { } rawTo && !Guid.TryParse(rawTo, out _))
+                            throw new ArgumentException($"--to '{rawTo}' is not an entity guid (omit --to to take the tag off).");
                         Console.WriteLine($"[capture] {report.BeatsScanned} beats, {report.Candidates} known names/aliases, {report.Millis} ms.");
                         Console.WriteLine($"  (a) {report.Unresolved.Count} unresolved name(s) used in {CaptureScanner.MinBeats}+ beats:");
                         foreach (var n in report.Unresolved.Take(limit))
@@ -406,6 +415,9 @@ public static class FactoryCli
                 {
                     case "add":
                     {
+                        // A mistyped --parent used to file the order as a new ROOT, outside the tree it belonged to.
+                        if (Flag("--parent") is { } rawParent && !Guid.TryParse(rawParent, out _))
+                            throw new ArgumentException($"--parent '{rawParent}' is not an order id.");
                         var checks = Flag("--checks") ?? (Flag("--checks-file") is { } cf ? await File.ReadAllTextAsync(cf) : "[]");
                         var row = await orders.AddAsync(new WorkOrderDraft(
                             Kind: Flag("--kind") ?? WorkOrderKinds.Engine,
@@ -529,7 +541,7 @@ public static class FactoryCli
             return 1;
         }
 
-        Console.Error.WriteLine("Usage: prose --factory status|next · --order add|list|close|abandon|seed · --session end");
+        Console.Error.WriteLine("Usage: prose --factory status|next|capture|context|journal|usage · --order add|list|show|close|abandon|seed · --ruling add|seed|list|supersede|violations|metrics · --session end");
         return 1;
     }
 

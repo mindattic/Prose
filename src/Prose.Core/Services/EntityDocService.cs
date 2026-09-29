@@ -57,6 +57,13 @@ public sealed class EntityDocService(
             .Where(e => e.Id == entityId)
             .FirstOrDefaultAsync(ct);
         if (entity == null) return false;
+        // No slug, no path: every slugless entity mapped to "docs/entities/.md" and each one
+        // overwrote the last one's doc (and its EntityId back-reference).
+        if (string.IsNullOrWhiteSpace(entity.Slug))
+        {
+            log.LogDebug("EntityDocService: entity {Id} ({Name}) has no slug; no entity doc written", entity.Id, entity.Name);
+            return false;
+        }
 
         var (content, triggers) = await BuildContentAsync(db, entity, ct);
         var hash    = ComputeHash(content);

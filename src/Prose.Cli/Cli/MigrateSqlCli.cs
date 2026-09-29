@@ -123,8 +123,18 @@ public static class MigrateSqlCli
                 // Enable SYSTEM_VERSIONING on every table in the temporal set.
                 // Idempotent — skips tables that are already temporal. No-op on SQLite.
                 Console.WriteLine("  · enabling system versioning…");
-                await db.EnableSystemVersioningAsync();
-                Console.WriteLine("  ✔ temporal: system versioning is on.");
+                // EnableSystemVersioningAsync swallows per-table failures (it only logs them), so
+                // without onError a failed table still printed "system versioning is on" and exit 0.
+                var versioningFailures = 0;
+                await db.EnableSystemVersioningAsync(onError: (t, ex) =>
+                {
+                    versioningFailures++;
+                    Console.WriteLine($"  ✘ system versioning failed for {t}: {ex.Message}");
+                });
+                if (versioningFailures == 0)
+                    Console.WriteLine("  ✔ temporal: system versioning is on.");
+                else
+                    failures++;
             }
             catch (Exception ex)
             {
@@ -485,9 +495,16 @@ public static class MigrateSqlCli
 
                 // Enable system versioning via the same idempotent EnableSystemVersioningAsync path.
                 Console.WriteLine("  · enabling system versioning on MarkdownFiles…");
+                var versioningFailures = 0;
                 await db.EnableSystemVersioningAsync(onError: (t, ex) =>
-                    Console.WriteLine($"  ✘ system versioning failed for {t}: {ex.Message}"));
-                Console.WriteLine("  ✔ MarkdownFiles is temporal (MarkdownFiles_History).");
+                {
+                    versioningFailures++;
+                    Console.WriteLine($"  ✘ system versioning failed for {t}: {ex.Message}");
+                });
+                if (versioningFailures == 0)
+                    Console.WriteLine("  ✔ MarkdownFiles is temporal (MarkdownFiles_History).");
+                else
+                    failures++;
             }
             catch (Exception ex)
             {

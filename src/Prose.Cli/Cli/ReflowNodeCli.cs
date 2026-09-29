@@ -73,7 +73,8 @@ public static class ReflowNodeCli
             Console.WriteLine($"\n[reflow-book] {report.Total} beats: " +
                 $"{report.Changed} changed, {report.Unchanged} unchanged, {report.Rejected} rejected, {report.Errors} errors. " +
                 (apply ? "Written to DB." : "Dry run — nothing written. Re-run with --apply to commit."));
-            return 0;
+            // A beat that errored was not reflowed; exit 0 there read as a clean pass.
+            return report.Errors > 0 ? 1 : 0;
         }
         catch (Exception ex) { Console.Error.WriteLine($"[reflow-book] Failed: {ex.Message}"); return 1; }
     }

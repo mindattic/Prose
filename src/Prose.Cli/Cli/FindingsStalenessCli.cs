@@ -9,10 +9,10 @@ namespace Prose.Cli;
 ///
 /// RFC 0011 Brick 2 — the generic staleness report at the FindingsService layer, covering any
 /// category that stamps <c>Findings.SourceRuleVersion</c> on write. Currently wired:
-/// CraftChecklist (<see cref="BeatChecklistGateService.GetCurrentRuleSetVersionAsync"/>) and
-/// StructuralFailure (<see cref="BeatVerificationService.CurrentRuleVersion"/>). A future check
-/// category joins this report by doing the same two things Brick 1/2 already established for
-/// these two: expose its own "what's current right now" value, and pass it into
+/// StructuralFailure (<see cref="BeatVerificationService.CurrentRuleVersion"/>) only — CraftChecklist
+/// left this report when its LLM checklist was deleted (RFC 0010). A future check category joins
+/// this report by doing the same two things Brick 1/2 established: expose its own "what's current
+/// right now" value, and pass it into
 /// <c>FindingsService.Upsert</c>'s <c>sourceRuleVersion</c> parameter — no new staleness query or
 /// CLI flag required.
 ///
@@ -62,7 +62,7 @@ public static class FindingsStalenessCli
         foreach (var g in stale)
             Console.WriteLine($"  {g.StaleCount,4}/{g.TotalCount,-4} stale — {g.Category,-20} {g.FilePath}");
         Console.WriteLine();
-        Console.WriteLine("Re-run: prose --audit-book --slug <slug> (StructuralFailure) or --craft-checklist --slug <slug> (CraftChecklist) for each.");
+        Console.WriteLine("Re-run: prose --audit-book --slug <slug> (StructuralFailure) for each.");
         return 1;
     }
 }

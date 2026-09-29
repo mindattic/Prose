@@ -595,6 +595,13 @@ false is a correct, common answer.
 
     // ── helpers ──────────────────────────────────────────────────────────────
 
+    /// <summary>A row that records "we could not ask" (the call failed, or the reply did not
+    /// parse) rather than an answer. Stored for the record, but a cached one is re-asked.</summary>
+    internal static bool IsTransientFailure(TunedReadAdjudication v) =>
+        v.RejectedReason is { } r
+        && (r.StartsWith("adjudication call failed", StringComparison.Ordinal)
+            || r.StartsWith("adjudicator response was not parseable", StringComparison.Ordinal));
+
     /// <summary>
     /// Mechanical quote grounding, byte-identical in behaviour to
     /// <c>LogicSweepService.QuotedEvidenceAppearsInBeat</c>'s substring half: normalize
@@ -605,13 +612,6 @@ false is a correct, common answer.
     /// is passed through; here an unquotable contradiction is exactly what must be rejected, so
     /// an empty or too-short quote fails closed.</para>
     /// </summary>
-    /// <summary>A row that records "we could not ask" (the call failed, or the reply did not
-    /// parse) rather than an answer. Stored for the record, but a cached one is re-asked.</summary>
-    internal static bool IsTransientFailure(TunedReadAdjudication v) =>
-        v.RejectedReason is { } r
-        && (r.StartsWith("adjudication call failed", StringComparison.Ordinal)
-            || r.StartsWith("adjudicator response was not parseable", StringComparison.Ordinal));
-
     internal static bool QuoteAppearsIn(string? quote, string? prose)
     {
         if (string.IsNullOrWhiteSpace(quote) || string.IsNullOrWhiteSpace(prose)) return false;

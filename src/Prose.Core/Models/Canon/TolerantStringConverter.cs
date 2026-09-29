@@ -28,7 +28,11 @@ public class TolerantStringConverter : JsonConverter<string>
             case JsonTokenType.String:
                 return reader.GetString() ?? "";
             case JsonTokenType.Number:
-                return reader.TryGetInt64(out var l) ? l.ToString() : reader.GetDouble().ToString();
+                // Invariant: the result is persisted, and 12.5 must not become "12,5" on a
+                // comma-decimal machine.
+                return reader.TryGetInt64(out var l)
+                    ? l.ToString(System.Globalization.CultureInfo.InvariantCulture)
+                    : reader.GetDouble().ToString(System.Globalization.CultureInfo.InvariantCulture);
             case JsonTokenType.True:
             case JsonTokenType.False:
                 return reader.GetBoolean().ToString();

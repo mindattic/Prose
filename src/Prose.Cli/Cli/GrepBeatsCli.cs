@@ -79,11 +79,14 @@ public static class GrepBeatsCli
             scopeLabel = $"{node.Title} ({scopedBeatIds.Count} beats)";
         }
 
-        var beats = await db.Beats.AsNoTracking()
+        // Scope in SQL: filtering after the load pulled every beat's text in the corpus into the
+        // Hub just to search one book.
+        var beatQuery = db.Beats.AsNoTracking();
+        if (scopedBeatIds != null)
+            beatQuery = beatQuery.Where(b => scopedBeatIds.Contains(b.Id));
+        var beats = await beatQuery
             .Select(b => new { b.Id, b.Number, b.Text })
             .ToListAsync();
-        if (scopedBeatIds != null)
-            beats = beats.Where(b => scopedBeatIds.Contains(b.Id)).ToList();
 
         var matcher = BuildMatcher(pattern, wholeWord, caseSensitive, comparison);
         var hits = beats.Where(b => !string.IsNullOrEmpty(b.Text) && matcher(b.Text)).ToList();

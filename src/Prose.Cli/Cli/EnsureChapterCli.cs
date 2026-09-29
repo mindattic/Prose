@@ -60,7 +60,7 @@ public static class EnsureChapterCli
             return 0;
         }
 
-        int wrapped = 0, skipped = 0;
+        int wrapped = 0, skipped = 0, failed = 0;
         foreach (var t in targets)
         {
             try
@@ -80,11 +80,14 @@ public static class EnsureChapterCli
             catch (InvalidOperationException ex)
             {
                 Console.Error.WriteLine($"  FAIL  {t.Title} — {ex.Message}");
+                failed++;
             }
         }
 
         Console.WriteLine();
-        Console.WriteLine($"Wrapped {wrapped} flat book{(wrapped == 1 ? "" : "s")}; {skipped} already chaptered.");
-        return 0;
+        Console.WriteLine($"Wrapped {wrapped} flat book{(wrapped == 1 ? "" : "s")}; {skipped} already chaptered" +
+                          (failed > 0 ? $"; {failed} FAILED." : "."));
+        // A book that could not be wrapped still violates the invariant: exit 0 read as "done".
+        return failed > 0 ? 1 : 0;
     }
 }

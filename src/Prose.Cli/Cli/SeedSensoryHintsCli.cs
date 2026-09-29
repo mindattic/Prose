@@ -202,7 +202,9 @@ public static class SeedSensoryHintsCli
 
             if (weaponEntity == null) continue;
 
-            var exists = await db.Edges.AnyAsync(
+            // Unfiltered: the edge is written to GLMZ below regardless of the ambient universe, so a
+            // filtered check from another universe missed the existing edge and added a duplicate.
+            var exists = await db.Edges.IgnoreQueryFilters().AnyAsync(
                 e => e.SourceId == KyleId && e.TargetId == weaponEntity.Id
                   && e.RelationType == "carries" && e.InvalidatedAt == null);
 

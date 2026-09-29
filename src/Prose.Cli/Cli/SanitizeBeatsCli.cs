@@ -62,7 +62,9 @@ public static class SanitizeBeatsCli
             if (!dryRun)
             {
                 beat.Text      = clean;
-                beat.TextHash  = ComputeHash(clean);
+                // The canonical hash (trims first). The private copy hashed untrimmed text, so any
+                // beat with leading/trailing whitespace got a TextHash no other writer would produce.
+                beat.TextHash  = NodeWorkbenchService.ComputeTextHash(clean);
                 beat.UpdatedAt = DateTime.UtcNow;
                 // RFC 0009/0012 §3.6: mojibake repair is mechanical, meaning-preserving text
                 // maintenance — declared as such, never a silent write.
@@ -79,12 +81,5 @@ public static class SanitizeBeatsCli
             ? $"\nFound {dirty} beat(s) with mojibake{scope} (dry-run — no changes written)."
             : $"\nFixed {fixed_}/{dirty} beat(s){scope}.");
         return 0;
-    }
-
-    static string ComputeHash(string text)
-    {
-        var bytes = System.Security.Cryptography.SHA256.HashData(
-            System.Text.Encoding.UTF8.GetBytes(text));
-        return Convert.ToHexString(bytes).ToLowerInvariant();
     }
 }

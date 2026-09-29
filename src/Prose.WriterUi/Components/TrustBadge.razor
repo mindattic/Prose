@@ -1,8 +1,9 @@
-@* How far a recorded claim can be trusted against the prose it describes.
+@* How far a recorded claim can be trusted against the prose it describes — today, the beat's
+   stated intent in IntentStrip (Beat.DescriptionState).
 
-   Beat.SummaryTrustState already computes this by comparing the hash a summary was stamped with
-   against the beat's current text hash. Nothing was showing it, so a summary written three
-   rewrites ago read exactly like one written a minute ago.
+   Beat.SummaryTrustState computes this by comparing the hash the claim was stamped with against
+   the beat's current text hash. Nothing was showing it, so an intent written three rewrites ago
+   read exactly like one written a minute ago.
 
    "unverified" is its own state and not folded into "stale", deliberately: with no fingerprint for
    the prose there is nothing to compare against, and calling that drift would be a claim about
@@ -16,7 +17,7 @@
 }
 
 @code {
-    /// <summary>"current", "stale" or "unverified". Null when there is no summary to trust.</summary>
+    /// <summary>"current", "stale" or "unverified". Null when there is no claim to trust.</summary>
     [Parameter] public string? State { get; set; }
 
     private static string Explain(string state) => state switch

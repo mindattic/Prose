@@ -34,8 +34,7 @@ public enum WriteSubject
     /// 2026-08-22 cross-book contamination bug (see EntityOriginService).</summary>
     EntityOrigin,
 
-    /// <summary>A CharacterRelationships row changed. No dedicated checks exist yet (see
-    /// project plan "make Prose.Hub the real gatekeeper" — left unrouted deliberately until a
-    /// concrete problem surfaces, not a placeholder for future expansion by default).</summary>
+    /// <summary>A CharacterRelationships row changed. Guarded pre-save by
+    /// <see cref="CharacterRelationshipTargetCheck"/>; no post-save audit is routed for it.</summary>
     CharacterRelationship,
 }

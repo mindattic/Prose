@@ -177,7 +177,8 @@ public static class SubsidiaryMapper
         FillBridges(db, id, src);
     }
 
-    /// <summary>Populate scalar columns on Subsidiary from src (no DB touch).</summary>
+    /// <summary>Populate scalar columns on Subsidiary from src. Queries <paramref name="db"/> once to
+    /// resolve the parent corponation alias to its entity id.</summary>
     public static void FillScalars(Subsidiary s, SubsidiaryData src, ProseDbContext db)
     {
         s.Name                    = src.Name ?? "";

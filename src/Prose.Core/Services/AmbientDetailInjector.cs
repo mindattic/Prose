@@ -119,7 +119,7 @@ public class AmbientDetailInjector
         return palette;
     }
 
-    /// Formats the palette as a prompt block. Returns null when the palette is empty.
+    /// <summary>Formats the palette as a prompt block. Returns null when the palette is empty.</summary>
     public string? FormatPaletteAsPromptBlock(AmbientPalette palette)
     {
         if (palette.IsEmpty) return null;

@@ -54,9 +54,10 @@ public static class LocalTts
 /// <para>Resolution (per engine ENG = kokoro|chatterbox):
 /// 1. python: env <c>PROSE_PYTHON</c>, else a venv at <c>tools\ENG\.venv\Scripts\python.exe</c>,
 ///    else <c>python</c> on PATH;
-/// 2. script: env <c>PROSE_ENG_SCRIPT</c>, else <c>tools\ENG\synth.py</c> (walking up from the
-///    app base dir), else <c>%LOCALAPPDATA%\Prose\ENG\synth.py</c>;
-/// 3. voice: env <c>PROSE_ENG_VOICE</c> (optional; the adapter has a default).</para>
+/// 2. script: env <c>SS_ENG_SCRIPT</c> (upper-case engine name, e.g. <c>SS_KOKORO_SCRIPT</c>),
+///    else <c>tools\ENG\synth.py</c> (walking up from the app base dir), else
+///    <c>%LOCALAPPDATA%\Prose\ENG\synth.py</c>;
+/// 3. voice: env <c>SS_ENG_VOICE</c> (optional; the adapter has a default).</para>
 /// </summary>
 public sealed class PythonTtsService : ILocalTtsEngine
 {
@@ -144,12 +145,21 @@ public sealed class PythonTtsService : ILocalTtsEngine
 
             using (var p = Process.Start(psi)!)
             {
-                var outTask = p.StandardOutput.ReadToEndAsync(ct);
-                var errTask = p.StandardError.ReadToEndAsync(ct);
-                await p.WaitForExitAsync(ct);
-                await Task.WhenAll(outTask, errTask);
-                if (p.ExitCode != 0)
-                    throw new InvalidOperationException($"{engine} synth exited {p.ExitCode}: {Truncate(errTask.Result, 500)}");
+                try
+                {
+                    var outTask = p.StandardOutput.ReadToEndAsync(ct);
+                    var errTask = p.StandardError.ReadToEndAsync(ct);
+                    await p.WaitForExitAsync(ct);
+                    await Task.WhenAll(outTask, errTask);
+                    if (p.ExitCode != 0)
+                        throw new InvalidOperationException($"{engine} synth exited {p.ExitCode}: {Truncate(errTask.Result, 500)}");
+                }
+                catch (OperationCanceledException)
+                {
+                    // A cancelled export left the synth process running (and holding the temp files).
+                    try { p.Kill(entireProcessTree: true); } catch { }
+                    throw;
+                }
             }
             if (!File.Exists(tmpWav) || new FileInfo(tmpWav).Length == 0)
                 throw new InvalidOperationException($"{engine} synth produced no audio.");
@@ -166,9 +176,17 @@ public sealed class PythonTtsService : ILocalTtsEngine
             using var f = Process.Start(psf)!;
             using var ms = new MemoryStream();
             var errF = f.StandardError.ReadToEndAsync(ct);
-            await f.StandardOutput.BaseStream.CopyToAsync(ms, ct);
-            await f.WaitForExitAsync(ct);
-            await errF;
+            try
+            {
+                await f.StandardOutput.BaseStream.CopyToAsync(ms, ct);
+                await f.WaitForExitAsync(ct);
+                await errF;
+            }
+            catch (OperationCanceledException)
+            {
+                try { f.Kill(entireProcessTree: true); } catch { }
+                throw;
+            }
             if (f.ExitCode != 0)
                 throw new InvalidOperationException($"ffmpeg resample exited {f.ExitCode}: {Truncate(errF.Result, 400)}");
 

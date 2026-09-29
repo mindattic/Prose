@@ -11,8 +11,9 @@ namespace Prose.Core.Services;
 /// (via <see cref="BeatEntityMention"/>) and marks those beats
 /// <see cref="Beat.EntityStale"/>.
 ///
-/// The index side (<see cref="IndexBeatMentionsAsync"/>) is called by
-/// <see cref="NodeWorkbenchService"/> after every beat write.
+/// The index side (<see cref="IndexBeatMentionsAsync"/>) is the name/alias scan for untagged
+/// beats, run by the <c>--scan-entity-mentions</c> backfill. Beat saves derive mentions from
+/// entity tags instead (<see cref="EntityMentionScanner"/>, via <see cref="NodeWorkbenchService"/>).
 ///
 /// <para><b>COST — the save path is FREE and must stay that way.</b>
 /// <see cref="ProcessEntityUpdateAsync"/>, <see cref="IndexBeatMentionsAsync"/> and its
@@ -90,12 +91,18 @@ public class EntityRamificationService(
 
     /// <summary>
     /// Extracts entity name matches from <paramref name="beatText"/> and
-    /// upserts <see cref="BeatEntityMention"/> rows for <paramref name="beatId"/>.
-    /// Called after every beat write.
+    /// replaces the <see cref="BeatEntityMention"/> rows for <paramref name="beatId"/> with them.
+    /// Used by <see cref="BackfillAllBeatsAsync"/> for beats that carry no entity tags.
     /// </summary>
     public async Task IndexBeatMentionsAsync(Guid beatId, string beatText, CancellationToken ct = default)
     {
-        if (string.IsNullOrWhiteSpace(beatText)) return;
+        if (string.IsNullOrWhiteSpace(beatText))
+        {
+            // A beat emptied of text mentions nothing; returning early left its old rows behind.
+            await using var clearDb = await dbFactory.CreateDbContextAsync(ct);
+            await clearDb.BeatEntityMentions.Where(m => m.BeatId == beatId).ExecuteDeleteAsync(ct);
+            return;
+        }
 
         var index = await GetNameIndexAsync(ct);
 
@@ -252,7 +259,7 @@ public class EntityRamificationService(
             if (BeatMarkup.ExtractEntityGuids(beat.Text).Any())
                 await EntityMentionScanner.DeriveAndSaveMentionsAsync(dbFactory, beat.Id, beat.Text ?? "", ct);
             else
-                await IndexBeatMentionsAsync(beat.Id, beat.Text, ct);
+                await IndexBeatMentionsAsync(beat.Id, beat.Text ?? "", ct);
             progress?.Report((++done, beatIds.Count));
         }
     }
@@ -405,7 +412,7 @@ public class EntityRamificationService(
 
         try
         {
-            var raw = await llm.GenerateAsync(RamificationSystem, user, temperature: 0.0f, maxTokens: 120);
+            var raw = await llm.GenerateAsync(RamificationSystem, user, temperature: 0.0f, maxTokens: 120, ct: ct);
 
             // Reason-first contract: pull the reason out, then decide on the verdict line.
             // Anything that doesn't clearly say CONFLICT is treated as consistent — a malformed

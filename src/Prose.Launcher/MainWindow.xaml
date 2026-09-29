@@ -50,7 +50,7 @@
                                 <Setter Property="Foreground" Value="#ffffff" />
                             </Trigger>
                             <!-- Templating away the default also throws away its focus visual, and
-                                 this window is three buttons and nothing else — a keyboard user
+                                 this window is four buttons and nothing else — a keyboard user
                                  would have had no idea which one was selected. -->
                             <Trigger Property="IsKeyboardFocused" Value="True">
                                 <Setter TargetName="Shell" Property="BorderBrush" Value="#7ab8ff" />

@@ -103,6 +103,7 @@ public static class BackfillBeatMetaCli
             var sem = new SemaphoreSlim(5);
             var results = new System.Collections.Concurrent.ConcurrentDictionary<Guid, string>();
             var done = 0;
+            var failed = 0;
             await Task.WhenAll(targets.Select(async id =>
             {
                 await sem.WaitAsync();
@@ -116,7 +117,7 @@ public static class BackfillBeatMetaCli
                     var n = Interlocked.Increment(ref done);
                     if (n % 25 == 0 || n == targets.Count) Console.WriteLine($"    {n}/{targets.Count}");
                 }
-                catch (Exception ex) { Console.Error.WriteLine($"    beat {id}: {ex.Message}"); }
+                catch (Exception ex) { Interlocked.Increment(ref failed); Console.Error.WriteLine($"    beat {id}: {ex.Message}"); }
                 finally { sem.Release(); }
             }));
 
@@ -125,6 +126,13 @@ public static class BackfillBeatMetaCli
             await ApplyAsync(dbFactory, results.ToDictionary(k => k.Key, v => v.Value),
                 (b, v) => { b.Description = v; b.DescriptionHash = Beat.ComputeHash(b.Text); });
             Console.WriteLine($"  Descriptions: {results.Count} beat(s) written.");
+            // Every LLM failure was printed but the run still exited 0, so a pass where the model
+            // was unreachable read as a success with "0 beat(s) written".
+            if (failed > 0)
+            {
+                Console.Error.WriteLine($"  Descriptions: {failed} beat(s) failed.");
+                return 1;
+            }
         }
 
         return 0;

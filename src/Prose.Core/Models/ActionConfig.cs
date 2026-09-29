@@ -32,8 +32,8 @@ public class ActionConfig
 
     /// <summary>
     /// Model tier for every voter on this panel. Stored as a string so old
-    /// configs survive enum drift. Read into <c>ModelTier</c> via
-    /// <see cref="GetTier"/>; defaults to Medium when unparseable.
+    /// configs survive enum drift. Read into <c>ModelTierLite</c> via
+    /// <see cref="Prose.Core.Services.ActionConfigService.ParseTier"/>; defaults to Medium when unparseable.
     /// </summary>
     [JsonPropertyName("tier")]
     public string Tier { get; set; } = "Medium";

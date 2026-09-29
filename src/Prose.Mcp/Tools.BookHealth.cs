@@ -49,7 +49,9 @@ public class BookHealthTools(
         return JsonSerializer.Serialize(new
         {
             node_id = report.NodeId, node_slug = report.Slug, ready = report.Ready,
-            checks = report.Checks.Select(c => new { name = c.Name, pass = c.Pass, detail = c.Detail }),
+            // outcome carries the third answer the description promises: pass=false alone could
+            // not tell a Fail from a CouldNotLook.
+            checks = report.Checks.Select(c => new { name = c.Name, pass = c.Pass, outcome = c.Outcome.ToString(), detail = c.Detail }),
         }, JsonOpts);
     }
 

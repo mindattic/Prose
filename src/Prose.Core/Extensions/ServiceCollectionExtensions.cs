@@ -240,7 +240,7 @@ public static class ServiceCollectionExtensions
             typeof(PharmaceuticalRepository), typeof(ConsumerGoodRepository), typeof(AutomatonRepository),
             typeof(ApparelRepository),      typeof(SubsidiaryRepository),   typeof(EntertainmentRepository),
             typeof(LabSpecimenRepository),  typeof(FlyoverEntityRepository), typeof(PsionicRepository),
-            typeof(MotifRepository),
+            typeof(MotifRepository),        typeof(SyntheticLifeRepository),
         })
         {
             var captured = exportableType;
@@ -301,7 +301,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<MarkdownService>();
         // Unified continuity store — atomic (entity, predicate, object) claims
         // extracted from chapter prose AND entity records via Legion Quorum.
-        // One SQLite at engine/data/continuity.db. Replaces the prior
+        // Lives in the Prose database (ContinuityClaims / ClaimContradictions; the
+        // old continuity.db SQLite file was folded in). Replaces the prior
         // LoreTriple* services (now removed).
         services.AddSingleton<ContinuityService>();
         services.AddSingleton<ContinuityExtractionService>();
@@ -334,10 +335,6 @@ public static class ServiceCollectionExtensions
         // too fine (MERGE) relative to the 4,000–7,500 char optimal dramatic-scene range.
         // Used by prose --beat-granularity and ProseWriterRouter (TargetWords injection).
         services.AddSingleton<BeatGranularityService>();
-
-        // Swain Scene/Sequel doctrine auditor (SS-A47): classifies every enabled beat
-        // as Scene / Sequel / Ambiguous / Deficient and splices the missing structural
-        // element (disaster turn, decision, etc.) when --repair is requested.
 
         // Universal KV façade over the Settings table — used by every per-book /
         // per-world JSON store that previously wrote to engine_data/*.json.
@@ -672,8 +669,8 @@ public static class ServiceCollectionExtensions
         // publishing reads it. The BookTok video providers below are a SEPARATE feature that
         // consumes a finished cover; they were not touched.
 
-        // BookTok video providers (kling/runway/sora) — same named-client + singleton +
-        // AddSingleton<TInterface> pattern as the cover-image providers above.
+        // BookTok video providers (kling/runway/sora) — named HttpClient + concrete singleton +
+        // one IVideoGenerationProvider registration each.
         services.AddHttpClient(nameof(Services.VideoGen.KlingVideoProvider));
         services.AddSingleton<Services.VideoGen.KlingVideoProvider>();
         services.AddHttpClient(nameof(Services.VideoGen.RunwayVideoProvider));
@@ -709,9 +706,6 @@ public static class ServiceCollectionExtensions
         // TTS service
         services.AddHttpClient<ElevenLabsTtsService>();
         services.AddSingleton<ITtsService>(sp => sp.GetRequiredService<ElevenLabsTtsService>());
-
-        // Audio file service
-        services.AddSingleton<IAudioFileService, AudioFileService>();
 
         // Multi-LLM service — calls multiple providers for majority voting.
         // Wire transport delegated to MindAttic.Legion's LegionClient.
@@ -933,10 +927,6 @@ public static class ServiceCollectionExtensions
         // same as craft_checklist / logic sweep).
         services.AddSingleton<ComprehensionProbeService>();
 
-        // Reader-Proxy QA Instrument 2: hash-gated binary craft/delight checklist —
-        // CRAFT §8 DON'Ts per beat + "≥1 applicable DELIGHT move" per beat + book-level
-        // move-monotony counters (DELIGHT §14). One cheap call per CHANGED beat only.
-
         // Book Health — the single "does this book work" battery + Structural Integrity
         // Index (SII), consolidating the ~30 previously-scattered quality/scoring systems
         // behind one deterministic rollup over Findings. See BookHealthService.cs remarks.
@@ -1106,12 +1096,6 @@ public static class ServiceCollectionExtensions
         // Available via `prose --narrative-science` and the Tools.NarrativeScience MCP tools.
         services.AddSingleton<NarrativeScienceService>();
 
-        // Controlling-idea / theme coherence (McKee/Truby): infers the book's testable
-        // thematic claim from Seed+Bible+bookend beats, flags theme told as commentary
-        // instead of dramatized, flags an ending that never engages the opening's
-        // value-question. Wired into BookHealthService's DEEP tier — no standalone CLI,
-        // same as its FiveAct/DramaticQuestion siblings.
-
         // Plant/Payoff registry — tracks seeded narrative details and their payoffs.
         // Enforces "reward re-reading without requiring it."
         // Available via `prose --plant-audit`, `prose --list-plants`, `prose --add-plant`
@@ -1128,10 +1112,6 @@ public static class ServiceCollectionExtensions
         // Available via `prose --commandment-audit` (renamed from --book-audit 2026-08-30) and
         // the Tools.StoryAudit MCP tools.
         services.AddSingleton<BookAuditService>();
-
-        // StoryScope audit — verifies the structural anti-tells held after writing
-        // (deterministic checks + LLM-graded checks; findings loop back into future
-        // beat prompts via the STORYSCOPE Findings prefix).
 
         // Beat duels — blind A/B panel gate for beat rewrites (3 voters, escalate
         // to 7 on dissent). SS-A44: duels are votes; allowVotes must be passed

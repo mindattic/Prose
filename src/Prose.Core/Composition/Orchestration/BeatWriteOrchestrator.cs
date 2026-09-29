@@ -291,11 +291,19 @@ public sealed class BeatWriteOrchestrator
         // member of), not the book root — a book-level node holds no BeatNodes rows of its own once
         // beats live under chapters. bookNodeId above is only ever used for the window/facts/
         // obligations reads, which are correctly scoped to the whole book.
+        // A beat may be a member of several nodes (BeatNode is composition, not ownership), so the
+        // membership is chosen from THIS book's leaves; an unordered first row could name a chapter
+        // of another book that shares the beat, and the new beat would be inserted there.
         Guid chapterNodeId;
         await using (var lookupDb = await dbFactory.CreateDbContextAsync(ct))
         {
-            chapterNodeId = await lookupDb.BeatNodes.AsNoTracking()
-                .Where(bn => bn.BeatId == afterBeatId).Select(bn => bn.NodeId).FirstAsync(ct);
+            var bookLeaves = await NodeWorkbenchService.GetLeafDescendantIdsAsync(lookupDb, bookNodeId, ct);
+            var memberships = await lookupDb.BeatNodes.AsNoTracking()
+                .Where(bn => bn.BeatId == afterBeatId).Select(bn => bn.NodeId).ToListAsync(ct);
+            chapterNodeId = memberships.FirstOrDefault(bookLeaves.Contains);
+            if (chapterNodeId == Guid.Empty)
+                throw new InvalidOperationException(
+                    $"Beat {afterBeatId} is not in any chapter of book {bookNodeId}; nothing was saved.");
         }
 
         var newBeat = await workbench.InsertBeatAsync(chapterNodeId, afterBeatId, preview.GeneratedText, ct);

@@ -14,8 +14,9 @@ namespace Prose.Cli;
 /// + viewpoint diversity.
 ///
 /// Args (one of --id / --slug required):
-///   --id <guid|prefix>  Node id; a unique prefix is enough.
-///   --slug <slug>       Node slug.
+///   --id &lt;guid|prefix&gt;  Node id; a unique prefix is enough.
+///   --slug &lt;slug&gt;       Node slug.
+///   --code &lt;code&gt;       Node code (e.g. BCODA).
 ///   --readers N         Number of persona reviewers (default 50).
 ///   --effort TIER       Cost tier for the sampled default (RFC 0009): draft|standard|deep.
 ///                       Scales ballots/prose/diagnosis to the task's importance. Explicit

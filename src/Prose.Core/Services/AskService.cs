@@ -88,11 +88,15 @@ public class AskService
             // Recurses past any nested Collection (2026-08-09 fix).
             var askSearchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, sid, ct);
 
-            var beats = await (from sb in db.BeatNodes.AsNoTracking()
-                               join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                               where askSearchIds.Contains(sb.NodeId)
-                               orderby sb.SortKey
-                               select new { b.Id, b.Text, b.Title }).ToListAsync(ct);
+            // BeatNodes.SortKey is per-parent, so ordering by it alone interleaved every
+            // chapter's beats. Order by the leaf's reading position first, then SortKey.
+            var leafOrder = askSearchIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
+            var beats = (await (from sb in db.BeatNodes.AsNoTracking()
+                                join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
+                                where askSearchIds.Contains(sb.NodeId)
+                                select new { sb.NodeId, sb.SortKey, b.Id, b.Text, b.Title }).ToListAsync(ct))
+                .OrderBy(x => leafOrder[x.NodeId]).ThenBy(x => x.SortKey)
+                .ToList();
 
             const long CharBudget = 90_000; // ~22k tokens — safe for a novella
             long used = 0;

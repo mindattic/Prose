@@ -23,16 +23,15 @@ namespace Prose.Cli;
 /// NodeCode, cover art, KDP fields, voice settings, etc). Only the beat
 /// content changes — the book keeps its identity.
 ///
-/// Safety: Beats/Nodes/BeatNodes are no longer system-versioned (that
-/// mechanism is what let disabled-but-undeleted beats accumulate across
-/// every past revision with nothing forcing reconciliation — see
-/// ProseDbContext.SystemVersionedTables). Instead, the OLD content is
-/// captured once, in full, as an ArchivedBook markdown snapshot
-/// (reason "pre-reimport") immediately before the old BeatNode links —
-/// and any Beat rows left with no remaining links at all — are actually
-/// deleted. There is exactly one live version of every beat afterward.
+/// Safety: the OLD content is captured once, in full, as an ArchivedBook
+/// markdown snapshot (reason "pre-reimport") immediately before the old
+/// BeatNode links — and any Beat rows left with no remaining links at all —
+/// are deleted. Beats/Nodes/BeatNodes are also system-versioned again (re-enabled
+/// 2026-08-17, see ProseDbContext.SystemVersionedTables), so the deleted rows
+/// survive in their _History tables too. There is exactly one live version of
+/// every beat afterward.
 ///
-/// A rough word-count comparison between the old (currently enabled) content
+/// A rough word-count comparison between the old content
 /// and the new parsed content is printed before writing. If the new content
 /// is under 50% of the old word count, the command refuses to write unless
 /// --force is passed — this catches "I pointed it at the wrong file" before
@@ -130,7 +129,7 @@ public static class ReimportNodeCli
         var retention = oldWordCount == 0 ? 1.0 : (double)newWordCount / oldWordCount;
 
         Console.WriteLine($"[reimport-node] target=\"{node.Title}\" ({node.Slug})");
-        Console.WriteLine($"[reimport-node] old: {oldLinks.Count} enabled beats, {oldWordCount:N0} words");
+        Console.WriteLine($"[reimport-node] old: {oldLinks.Count} beats, {oldWordCount:N0} words");
         Console.WriteLine($"[reimport-node] new: {parsed.Beats.Count} beats, {newWordCount:N0} words (from {file})");
         Console.WriteLine($"[reimport-node] retention: {retention:P0} of old word count");
 

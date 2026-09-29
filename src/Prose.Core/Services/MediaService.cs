@@ -96,7 +96,10 @@ public class MediaService
     {
         var src = GetPath(filename);
         if (src == null) return false;
-        var dest = Path.Combine(archiveDir, filename);
+        // Same traversal guard as GetPath: the source was sanitized, the destination must be too,
+        // or "../x.png" would resolve the source in mediaDir and move it OUTSIDE archiveDir.
+        Directory.CreateDirectory(archiveDir);
+        var dest = Path.Combine(archiveDir, Path.GetFileName(src));
         File.Move(src, dest, overwrite: false);
         return true;
     }

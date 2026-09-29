@@ -23,11 +23,6 @@ namespace Prose.Core.Data;
 public static class CharacterMapper
 {
     /// <summary>
-    /// Eager-load every active Character row + every child collection in one
-    /// trip and project to CharacterData. The Records.Json column is never
-    /// touched on this path.
-    /// </summary>
-    /// <summary>
     /// Lightweight list-view projection. Returns one <see cref="CharacterData"/>
     /// per active character with ONLY the fields the dictionary list view
     /// renders: <c>Id</c>, <c>Name</c>, <c>Slug</c> (via Entity), <c>Role</c>,
@@ -74,6 +69,11 @@ public static class CharacterMapper
         return result;
     }
 
+    /// <summary>
+    /// Eager-load every Character row in scope + every child collection in one
+    /// trip and project to CharacterData. The Records.Json column is never
+    /// touched on this path.
+    /// </summary>
     public static List<CharacterData> LoadAll(ProseDbContext db, bool includeArchived = false)
     {
         var query = BuildIncludeChain(db.Characters.AsNoTracking());
@@ -1318,7 +1318,9 @@ public static class CharacterMapper
         // inside a name is not a quote, and pairing any two of them turned "D'Angelo O'Neil"
         // into "DNeil".
         var stripped = System.Text.RegularExpressions.Regex.Replace(fullName, "(?<=^|\\s)(['\"])([^'\"]+)\\1(?=\\s|$)", "");
-        var tokens = stripped.Split(' ', '\t', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+        // An array, not Split(' ', '\t', options): that binds to Split(char, int count, options)
+        // with '\t' read as count 9, so tabs never split and a tenth token merged into the ninth.
+        var tokens = stripped.Split([' ', '\t'], StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
         if (tokens.Length == 0) return new("", "", "", "");
 
         // Pull off a leading title if present. We allow at most one title token.

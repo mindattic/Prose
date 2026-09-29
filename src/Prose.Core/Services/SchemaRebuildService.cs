@@ -432,6 +432,29 @@ public class SchemaRebuildService
               FROM sys.indexes i
               JOIN sys.index_columns ic ON ic.object_id = i.object_id AND ic.index_id = i.index_id
              WHERE i.object_id = OBJECT_ID('dbo.' + QUOTENAME(@t)) AND ic.is_included_column = 1
+            UNION ALL
+            -- Only nonclustered rowstore indexes are re-emitted, and the primary key is always
+            -- recreated CLUSTERED: a clustered non-PK index, a columnstore/XML/spatial index or a
+            -- nonclustered PK would come back missing or changed.
+            SELECT 'index ' + i.name + ' (' + i.type_desc + ')'
+              FROM sys.indexes i
+             WHERE i.object_id = OBJECT_ID('dbo.' + QUOTENAME(@t)) AND i.is_primary_key = 0 AND i.type NOT IN (0, 2)
+            UNION ALL
+            SELECT 'nonclustered primary key ' + i.name
+              FROM sys.indexes i
+             WHERE i.object_id = OBJECT_ID('dbo.' + QUOTENAME(@t)) AND i.is_primary_key = 1 AND i.type <> 1
+            UNION ALL
+            -- Column collations are not re-emitted (the new column takes the database default).
+            SELECT 'collation ' + c.collation_name + ' on ' + c.name
+              FROM sys.columns c
+             WHERE c.object_id = OBJECT_ID('dbo.' + QUOTENAME(@t)) AND c.collation_name IS NOT NULL
+               AND c.collation_name COLLATE DATABASE_DEFAULT
+                   <> CONVERT(sysname, DATABASEPROPERTYEX(DB_NAME(), 'Collation')) COLLATE DATABASE_DEFAULT
+            UNION ALL
+            -- PERSISTED is not re-emitted on computed columns.
+            SELECT 'PERSISTED computed column ' + c.name
+              FROM sys.computed_columns c
+             WHERE c.object_id = OBJECT_ID('dbo.' + QUOTENAME(@t)) AND c.is_persisted = 1
             """;
         var list = new List<string>();
         await using var cmd = new SqlCommand(sql, conn);

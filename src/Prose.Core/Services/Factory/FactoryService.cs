@@ -7,7 +7,8 @@ namespace Prose.Core.Services.Factory;
 
 public sealed record FactoryUnit(int Ordinal, Guid NodeId, string Heading, IReadOnlyList<Guid> BeatIds, int FirstPosition, int LastPosition, int Words);
 
-/// <summary>One station's verdict. State: pass | fail | not-built.</summary>
+/// <summary>One station's verdict. State: pass | fail | waiting (blocked on an earlier station,
+/// not failing) | not-built.</summary>
 public sealed record StationResult(string Code, string State, string Detail)
 {
     public bool Pass => State == "pass";
@@ -380,7 +381,9 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
                 var parts = new List<string>();
                 if (unresolved > 0)
                 {
-                    var first = cap.Unresolved.First(n => n.Numbers.Any(num => ctx.Beats.Values.Any(b => b.Number == num && inUnit.Contains(b.Id))));
+                    // By beat id: matching on beat Number named a name from another unit whose
+                    // beat merely shared a number with one of this unit's.
+                    var first = cap.Unresolved.First(n => n.BeatIds.Any(inUnit.Contains));
                     parts.Add($"{unresolved} unresolved name use(s), first \"{first.Name}\" ({first.Beats} beats in the book)");
                 }
                 if (untagged > 0)

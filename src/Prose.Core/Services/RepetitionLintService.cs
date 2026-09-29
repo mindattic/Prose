@@ -102,7 +102,7 @@ public class RepetitionLintService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         // The shared resolver: GUIDs, other universes, and no Slug-vs-NodeCode OR tie.
-        var node = await NodeRefResolver.ResolveNodeAsync(db, slugOrCode)
+        var node = await NodeRefResolver.ResolveNodeAsync(db, slugOrCode, ct)
             ?? throw new InvalidOperationException($"Node not found: {slugOrCode}");
         var nodeCode = node.NodeCode?.ToUpperInvariant() ?? node.Slug.ToUpperInvariant();
         var fp = $"node:{node.Slug}";
@@ -197,8 +197,11 @@ public class RepetitionLintService
             }
 
             // 2. Crutch phrases (3-4-grams) within the beat + accumulate per chapter
-            var beatPhrases = CountNgrams(tokens);
-            foreach (var (phrase, count) in beatPhrases)
+            // The chapter tally takes the RAW counts: CountNgrams drops singletons, so feeding it
+            // the per-beat result meant a phrase used once in each of three beats never reached
+            // the chapter threshold — the cross-chapter check only ever saw within-beat repeats.
+            var rawPhrases = RawNgramCounts(tokens);
+            foreach (var (phrase, count) in CountNgrams(rawPhrases))
             {
                 if (count >= PhraseMinPerBeat)
                 {
@@ -207,10 +210,11 @@ public class RepetitionLintService
                         $"beat #{beat.Number}: phrase \"{phrase}\" appears {count}x in one beat — crutch phrase.",
                         fix: "Keep the strongest instance; rewrite the others.");
                 }
-                if (!chapterPhrases.TryGetValue(beat.Chapter, out var chMap))
-                    chapterPhrases[beat.Chapter] = chMap = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
-                chMap[phrase] = chMap.GetValueOrDefault(phrase) + count;
             }
+            if (!chapterPhrases.TryGetValue(beat.Chapter, out var chMap))
+                chapterPhrases[beat.Chapter] = chMap = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
+            foreach (var (phrase, count) in rawPhrases)
+                chMap[phrase] = chMap.GetValueOrDefault(phrase) + count;
 
             // 4. Dialogue attribution: consecutive quoted-only paragraphs without a tag/action
             var paragraphs = stripped.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
@@ -237,7 +241,9 @@ public class RepetitionLintService
         // 2b. Chapter-level crutch phrases
         foreach (var (chapter, phrases) in chapterPhrases)
         {
-            foreach (var (phrase, count) in phrases.Where(p => p.Value >= PhraseMinPerChapter).Take(5))
+            var recurring = SuppressSubPhrases(phrases.Where(p => p.Value >= PhraseMinPerChapter)
+                .ToDictionary(p => p.Key, p => p.Value, StringComparer.OrdinalIgnoreCase));
+            foreach (var (phrase, count) in recurring.OrderByDescending(p => p.Value).Take(5))
             {
                 phraseCount++;
                 File(FindingSeverity.Low,
@@ -516,9 +522,19 @@ public class RepetitionLintService
         return count;
     }
 
-    /// <summary>Distinctive 3-4-grams: every token lowercased; n-grams that are all stopwords
-    /// or contain an entity-name token are skipped.</summary>
-    private Dictionary<string, int> CountNgrams(List<string> tokens)
+    /// <summary>Recurring distinctive 3-4-grams (count ≥ 2), every token lowercased. An n-gram
+    /// needs at least two non-stopword tokens of length ≥ 4; entity names are NOT excluded here.
+    /// A 3-gram fully explained by a recurring 4-gram containing it is dropped.</summary>
+    private static Dictionary<string, int> CountNgrams(Dictionary<string, int> rawCounts)
+    {
+        // Only phrases that actually recur are interesting; drop singletons early.
+        return SuppressSubPhrases(rawCounts.Where(kv => kv.Value >= 2)
+            .ToDictionary(kv => kv.Key, kv => kv.Value, StringComparer.OrdinalIgnoreCase));
+    }
+
+    /// <summary>Every distinctive 3-4-gram in <paramref name="tokens"/> with its count, singletons
+    /// included (the chapter-level tally sums these across beats).</summary>
+    private static Dictionary<string, int> RawNgramCounts(List<string> tokens)
     {
         var counts = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
         for (int n = 3; n <= 4; n++)
@@ -532,9 +548,11 @@ public class RepetitionLintService
                 counts[phrase] = counts.GetValueOrDefault(phrase) + 1;
             }
         }
-        // Only phrases that actually recur are interesting; drop singletons early.
-        var recurring = counts.Where(kv => kv.Value >= 2).ToDictionary(kv => kv.Key, kv => kv.Value);
+        return counts;
+    }
 
+    private static Dictionary<string, int> SuppressSubPhrases(Dictionary<string, int> recurring)
+    {
         // Maximal-phrase suppression (2026-09-06). Counting 3-grams AND 4-grams over the same
         // token run reports one repetition up to five times: BCODA beat #5222 filed "crack the
         // plaster crack", "the plaster crack the", "crack the plaster", "plaster crack the" and

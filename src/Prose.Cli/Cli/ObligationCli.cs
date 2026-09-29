@@ -83,7 +83,7 @@ public static class ObligationCli
         var slug = Flag("--slug");
         if (string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("Usage: prose --obligations <list|trial-balance|open|rescan> --slug <slug> [--json] …");
+            Console.Error.WriteLine("Usage: prose --obligations <list|trial-balance|open|rescan|completeness|coverage> --slug <slug> [--json] …");
             return 2;
         }
 
@@ -170,13 +170,17 @@ public static class ObligationCli
                 var arg = args.SkipWhile(a => a != "--complete").Skip(1).FirstOrDefault();
                 if (arg != null)
                 {
-                    bool? value = arg.ToLowerInvariant() switch
+                    bool? value;
+                    switch (arg.ToLowerInvariant())
                     {
-                        "true" or "yes" or "1"  => true,
-                        "false" or "no" or "0"  => false,
-                        "unset" or "null"       => null,
-                        _ => throw new ArgumentException($"--complete expects true|false|unset, got '{arg}'"),
-                    };
+                        case "true" or "yes" or "1":  value = true;  break;
+                        case "false" or "no" or "0":  value = false; break;
+                        case "unset" or "null":       value = null;  break;
+                        default:
+                            // Was an unhandled ArgumentException: a stack trace instead of a usage error.
+                            Console.Error.WriteLine($"[obligations] --complete expects true|false|unset, got '{arg}'.");
+                            return 2;
+                    }
                     node.StructurallyComplete = value;
                     await db.SaveChangesAsync();
                     Console.WriteLine($"[obligations] {title}: StructurallyComplete = {Describe(value)}");

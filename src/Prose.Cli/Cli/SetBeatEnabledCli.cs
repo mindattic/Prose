@@ -22,9 +22,10 @@ namespace Prose.Cli;
 ///                        a disabled beat drops out of reading order, so re-enabling it needs
 ///                        --beat-id instead since it's no longer addressable by position).
 ///   --beat-id &lt;guid&gt;    Beat GUID — works regardless of current enabled state.
-///   --enable             Re-enable a previously-disabled membership (default: disable).
+///   --enable             Refused (exit 1): there is no disabled state to switch back on. A
+///                        removed membership is restored only by a point-in-time restore.
 ///
-/// Exit codes: 0 = success, 1 = bad args / node not found / beat not found.
+/// Exit codes: 0 = success, 1 = bad args / node not found / beat not found / --enable.
 /// </summary>
 public static class SetBeatEnabledCli
 {
@@ -32,7 +33,13 @@ public static class SetBeatEnabledCli
     {
         string? slug = null, beatIdStr = null;
         int beatNumber = 0;
-        bool enable = args.Contains("--enable");
+        // A BeatNode row IS the enabled state, so --enable could only ever report success on a
+        // beat that was never disabled, and fail on one that was. Say so instead.
+        if (args.Contains("--enable"))
+        {
+            Console.Error.WriteLine("[set-beat-enabled] --enable is not possible: disabling removes the membership row (and the beat, if no other node holds it). Restore it from temporal history instead.");
+            return 1;
+        }
 
         for (int i = 0; i < args.Length; i++)
         {
@@ -114,8 +121,8 @@ public static class SetBeatEnabledCli
             actualNodeId = membership.NodeId;
         }
 
-        Console.Write($"[set-beat-enabled] Setting beat {subjectId} IsEnabled={enable} (chapter {actualNodeId})… ");
-        await workbench.SetBeatMembershipEnabledAsync(actualNodeId, subjectId, enable);
+        Console.Write($"[set-beat-enabled] Removing beat {subjectId} from chapter {actualNodeId}… ");
+        await workbench.SetBeatMembershipEnabledAsync(actualNodeId, subjectId, enabled: false);
         Console.WriteLine("ok.");
         return 0;
     }

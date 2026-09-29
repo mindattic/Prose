@@ -229,7 +229,7 @@ List every place / district in canon. Use this to find a location for a scene.
 
 ### `generate_canon_md`
 
-Regenerate a world-canon .md file from its DB sections. Writes the assembled content to disk and updates the LastChecksum so codex doctor validates the file as current. Run this after every set_canon_section call.
+Regenerate a world-canon .md file from its DB sections. Writes the assembled content to disk and updates the LastChecksum so codex doctor validates the file as current. set_canon_section already does this as part of its own call; use this to regenerate on demand.
 
 - `documentType` (string, required) — Document type — call list_canon_document_types for the current valid values.
 - `universeSlug` (string, optional) — Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.

@@ -148,8 +148,10 @@ public static class QuoteMapper
     /// <summary>Populate scalar columns on Quote from src (no DB touch).</summary>
     public static void FillScalars(Quote q, QuoteData src)
     {
-        q.Name        = src.Quote.Length > 40 ? src.Quote[..40] : src.Quote;
-        q.QuoteText   = src.Quote ?? "";
+        // A blob with "quote": null deserializes to null despite the "" initializer.
+        var text      = src.Quote ?? "";
+        q.Name        = text.Length > 40 ? text[..40] : text;
+        q.QuoteText   = text;
         q.Attribution = src.Attribution ?? "";
         q.Source      = src.Source ?? "";
         q.Context     = src.Context ?? "";

@@ -387,13 +387,6 @@ public class ContinuityService
     }
 
     /// <summary>
-    /// True when two claim Object values represent the same fact. For predicates in
-    /// <see cref="NumericPredicates"/>, compares parsed numeric value when both sides parse
-    /// (so "fifty" == "50"); falls back to the original ToLower/Trim string-equality semantics
-    /// otherwise — non-numeric predicates and unparseable numeric-predicate values behave
-    /// exactly as before this change.
-    /// </summary>
-    /// <summary>
     /// True when two claims are the SAME assertion re-extracted, rather than two competing facts:
     /// same source chapter, same underlying sentence, only the model's paraphrase of it differs.
     ///
@@ -605,6 +598,13 @@ public class ContinuityService
         return t.TrimEnd('.', ',', ';', ':', '!', '?', ' ');
     }
 
+    /// <summary>
+    /// True when two claim Object values represent the same fact. For predicates in
+    /// <see cref="NumericPredicates"/>, compares parsed numeric value when both sides parse
+    /// (so "fifty" == "50"); falls back to the original ToLower/Trim string-equality semantics
+    /// otherwise — non-numeric predicates and unparseable numeric-predicate values behave
+    /// exactly as before this change.
+    /// </summary>
     internal static bool ObjectsMatch(string predicate, string a, string b)
     {
         if (NumericPredicates.Contains(Normalize(predicate))
@@ -765,14 +765,33 @@ public class ContinuityService
 
     // ── Read methods ─────────────────────────────────────────────────────────
 
+    /// <summary>Every claim on one entity. A GUID id matches in either its "N" (32 hex digits, what
+    /// the extractors store) or "D" (hyphenated, what <c>Guid.ToString()</c> gives) form — callers
+    /// holding a <see cref="Guid"/> passed the "D" form and silently got no claims back.</summary>
     public List<ContinuityClaim> GetByEntity(string entityId)
     {
+        var forms = EntityIdForms(entityId);
         using var db = dbFactory.CreateDbContext();
         return db.ContinuityClaims
             .AsNoTracking()
-            .Where(c => c.EntityId == entityId)
+            .Where(c => forms.Contains(c.EntityId))
             .OrderBy(c => c.Predicate).ThenBy(c => c.Object)
             .ToList();
+    }
+
+    /// <summary>The stored spellings an entity id may have: the raw value, plus the "N" and "D"
+    /// forms when it parses as a GUID.</summary>
+    internal static List<string> EntityIdForms(string? entityId)
+    {
+        var forms = new List<string>();
+        if (string.IsNullOrEmpty(entityId)) { forms.Add(""); return forms; }
+        forms.Add(entityId);
+        if (Guid.TryParse(entityId, out var g))
+        {
+            foreach (var f in new[] { g.ToString("N"), g.ToString("D") })
+                if (!forms.Contains(f, StringComparer.Ordinal)) forms.Add(f);
+        }
+        return forms;
     }
 
     public List<ContinuityClaim> GetByStatus(string status)
@@ -1246,16 +1265,27 @@ public class ContinuityService
 
         if (touchedKeys.Count == 0) return new List<ContradictionGroup>();
 
+        // Pull every live claim for each touched (entity, predicate) — a new claim can contradict
+        // an arbitrarily-old one, so the variant check has to see the full set, not just the
+        // recent additions. One query for all keys, not one per key: the same N+1 shape
+        // GetContradictionGroups dropped after it timed out (a re-extracted book touches hundreds).
+        // Keys folded to lower case: the per-key SQL this replaced compared under the database's
+        // case-insensitive collation, so matching must stay case-insensitive here too.
+        static (string, string) KeyOf(string entityId, string predicate) =>
+            (entityId.ToLowerInvariant(), predicate.ToLowerInvariant());
+        var wantedEntityIds = touchedKeys.Select(k => k.EntityId).Distinct().ToList();
+        var wantedKeys = touchedKeys.Select(k => KeyOf(k.EntityId, k.Predicate)).ToHashSet();
+        var claimsByKey = db.ContinuityClaims.AsNoTracking()
+            .Where(c => wantedEntityIds.Contains(c.EntityId) && live.Contains(c.Status))
+            .ToList()
+            .Where(c => wantedKeys.Contains(KeyOf(c.EntityId, c.Predicate)))
+            .GroupBy(c => KeyOf(c.EntityId, c.Predicate))
+            .ToDictionary(g => g.Key, g => g.OrderBy(c => c.FirstAssertedAt, StringComparer.Ordinal).ToList());
+
         var groups = new List<ContradictionGroup>();
         foreach (var k in touchedKeys)
         {
-            // Pull every live claim for this (entity, predicate) — a new claim
-            // can contradict an arbitrarily-old one, so the variant check has
-            // to see the full set, not just the recent additions.
-            var claims = db.ContinuityClaims.AsNoTracking()
-                .Where(c => c.EntityId == k.EntityId && c.Predicate == k.Predicate && live.Contains(c.Status))
-                .OrderBy(c => c.FirstAssertedAt)
-                .ToList();
+            if (!claimsByKey.TryGetValue(KeyOf(k.EntityId, k.Predicate), out var claims)) continue;
             // The same paraphrase/numeric collapse the full sweep uses: exact-string variants
             // reported "fifty" vs "50" and rewordings the full sweep deliberately suppresses.
             var distinct = new List<ContinuityClaim>();

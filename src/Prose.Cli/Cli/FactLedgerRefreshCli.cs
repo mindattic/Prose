@@ -38,7 +38,14 @@ public static class FactLedgerRefreshCli
         await bookHealth.FactLedgerAsync(slug, CancellationToken.None);
 
         var findings = services.GetRequiredService<FindingsService>();
-        var count = findings.List(limit: 500, filePathPrefix: $"node:{slug}")
+        // Two ways the count was wrong: List's plain StartsWith("node:bcoda") also returned
+        // node:bcoda5's findings, and the 500-row cap applied to EVERY finding category under the
+        // book before this FACT-LEDGER filter ran, so a book with a big lint backlog undercounted.
+        var root = $"node:{slug}";
+        var count = findings.List(limit: int.MaxValue, filePathPrefix: root)
+            .Where(f => f.FilePath == root || f.FilePath.StartsWith(root + "/", StringComparison.Ordinal)
+                     || f.FilePath.StartsWith(root + "#", StringComparison.Ordinal)
+                     || f.FilePath.StartsWith(root + ":", StringComparison.Ordinal))
             .Count(f => f.Summary.StartsWith("FACT-LEDGER [", StringComparison.Ordinal)
                      && !f.Summary.Contains("[not-extracted]", StringComparison.Ordinal)
                      && (f.Status == FindingStatus.New || f.Status == FindingStatus.Triaged));

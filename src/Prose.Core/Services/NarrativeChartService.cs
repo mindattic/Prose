@@ -90,7 +90,7 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
         var node = await db.Nodes.IgnoreQueryFilters()
             .AsNoTracking()
             .Where(n => n.Id == nodeId)
-            .Select(n => new { n.Id, n.Title, n.DefaultLocation })
+            .Select(n => new { n.Id, n.Title, n.DefaultLocation, n.UniverseId })
             .FirstOrDefaultAsync(ct)
             ?? throw new ArgumentException($"Node {nodeId} not found.");
 
@@ -132,6 +132,7 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
         // Entity must be joined to get the name and type.
         var presenceEventRows = await db.EntityStateEvents
             .AsNoTracking()
+            .IgnoreQueryFilters() // keyed by this book's explicit beat ids, not the ambient universe
             .Where(e => e.BeatGuid != null
                      && beatIds.Contains(e.BeatGuid!.Value)
                      && (e.AspectKey == "location" || e.AspectKey == "companion.with"
@@ -175,12 +176,9 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
         // whose name (or first name) appears in any beat goal.
         if (allCharacters.Count < 3)
         {
-            var universeId = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-                .Where(n => n.Id == nodeId)
-                .Select(n => n.UniverseId)
-                .FirstOrDefaultAsync(ct);
+            var universeId = node.UniverseId;
             var allGoalsLower = string.Join(" ", beatRows.Select(b => b.Description ?? "")).ToLowerInvariant();
-            var entityChars = await db.Entities.AsNoTracking()
+            var entityChars = await db.Entities.AsNoTracking().IgnoreQueryFilters()
                 .Where(e => e.UniverseId == universeId
                          && (e.EntityType == "character" || e.EntityType == "person"))
                 .Select(e => e.Name)
@@ -200,7 +198,7 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
         // for any character at that position, regardless of who they actually are. Built once
         // here (not per-beat) from each character's own documented core_desires — the closest
         // existing "what do they actually want" signal already used elsewhere (SceneContextAssembler).
-        var offscreenLibrary = await BuildOffscreenLibraryAsync(db, allCharacters, ct);
+        var offscreenLibrary = await BuildOffscreenLibraryAsync(db, node.UniverseId, allCharacters, ct);
 
         // 2026-08-22 fix (reconciliation half): without this, a dead/missing character still
         // got the same agenda-driven "maneuvering" boilerplate as anyone else — a direct
@@ -211,9 +209,13 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
         // alive/dead/missing). Cheap to check (one query, no LLM) and prevents the most obvious
         // cross-service disagreement this service could introduce.
         var inactiveNames = (await (
-                from e in db.Entities.AsNoTracking()
+                from e in db.Entities.AsNoTracking().IgnoreQueryFilters()
                 join c in db.Set<Character>().AsNoTracking() on e.Id equals c.Id
-                where e.EntityType == "character" && allCharacters.Contains(e.Name)
+                // The book's own universe: names are not unique across universes, and the ambient
+                // filter is a no-op when no universe is scoped (the Hub), so a same-named dead
+                // character elsewhere marked this book's living one inactive.
+                where e.UniverseId == node.UniverseId
+                   && e.EntityType == "character" && allCharacters.Contains(e.Name)
                    && !string.IsNullOrEmpty(c.LifeStatus) && c.LifeStatus != "alive"
                 select e.Name)
             .ToListAsync(ct))
@@ -281,13 +283,14 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
     /// fallback.
     /// </summary>
     private static async Task<Dictionary<string, string[]>> BuildOffscreenLibraryAsync(
-        ProseDbContext db, List<string> allCharacters, CancellationToken ct)
+        ProseDbContext db, Guid universeId, List<string> allCharacters, CancellationToken ct)
     {
         var library = new Dictionary<string, string[]>(StringComparer.OrdinalIgnoreCase);
         if (allCharacters.Count == 0) return library;
 
-        var entities = await db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "character" && allCharacters.Contains(e.Name))
+        var entities = await db.Entities.AsNoTracking().IgnoreQueryFilters()
+            .Where(e => e.UniverseId == universeId
+                     && e.EntityType == "character" && allCharacters.Contains(e.Name))
             .Select(e => new { e.Id, e.Name })
             .ToListAsync(ct);
         if (entities.Count == 0) return library;

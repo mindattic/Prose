@@ -94,6 +94,12 @@ public static class ToolDispatch
 
     private static async Task<(IResult Result, bool Success, string? Output, string? Error)> InvokeCoreAsync(InvokeRequest req, IServiceProvider sp)
     {
+        // A body that omits ToolClass/Method deserialises them as null: LooksMutating and the
+        // type cache's GetOrAdd then threw an unhandled 500 (the CliDispatch 2026-09-12 fix, here).
+        if (string.IsNullOrWhiteSpace(req.ToolClass) || string.IsNullOrWhiteSpace(req.Method))
+            return (Results.Json(new { error = "missing_tool", req.ToolClass, req.Method }, statusCode: 400),
+                false, null, "missing_tool");
+
         var universe = sp.GetRequiredService<Prose.Core.Services.IUniverseContext>();
         var requiresScope = LooksMutating(req.Method);
         if (requiresScope && !req.ScopeExplicit)

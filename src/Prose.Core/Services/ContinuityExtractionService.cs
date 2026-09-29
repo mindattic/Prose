@@ -526,7 +526,9 @@ public class ContinuityExtractionService
         };
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var blob = await db.Records.AsNoTracking()
+        // IgnoreQueryFilters(): explicit entityId. The projection joins Entity, whose universe
+        // filter would otherwise turn a record outside the ambient scope into "no Records.Json".
+        var blob = await db.Records.IgnoreQueryFilters().AsNoTracking()
             .Where(r => r.EntityId == entityId)
             .Select(r => new { r.Json, EntityType = r.Entity!.EntityType, EntityName = r.Entity.Name })
             .FirstOrDefaultAsync(ct);
@@ -540,8 +542,10 @@ public class ContinuityExtractionService
         using var doc = JsonDocument.Parse(blob.Json);
         var root = doc.RootElement;
 
-        var entityIdStr = root.TryGetProperty("id",   out var i) ? i.GetString() ?? entityId.ToString("N") : entityId.ToString("N");
-        var entityName  = root.TryGetProperty("name", out var n) ? n.GetString() ?? blob.EntityName : blob.EntityName;
+        // String-kind checks: GetString() throws on a numeric/object "id" or "name", which aborted
+        // the whole extraction instead of falling back to the Entities row.
+        var entityIdStr = root.TryGetProperty("id",   out var i) && i.ValueKind == JsonValueKind.String ? i.GetString() ?? entityId.ToString("N") : entityId.ToString("N");
+        var entityName  = root.TryGetProperty("name", out var n) && n.ValueKind == JsonValueKind.String ? n.GetString() ?? blob.EntityName : blob.EntityName;
         var entityKind  = InferKindFromEntityType(blob.EntityType);
 
         if (string.IsNullOrEmpty(entityIdStr) || string.IsNullOrEmpty(entityName))
@@ -696,21 +700,6 @@ public class ContinuityExtractionService
     private static string Normalize(string s)
         => string.IsNullOrEmpty(s) ? "" : Regex.Replace(s.ToLowerInvariant(), @"\s+", " ").Trim();
 
-    /// <summary>Strips the hand-authored-markdown syntax bible content carries (heading `#`/`##`
-    /// markers, `**bold**`/`*italic*`, and `` `backticks` ``) down to plain readable text — so the
-    /// LLM's quoted snippets land as exact substrings of what extraction actually sees, the same
-    /// grounding guarantee beat prose already gets from <see cref="BeatMarkup.StripEntityTags"/>.
-    /// Only strips the markers themselves, keeps the enclosed words (`**Heritage:**` → `Heritage:`).</summary>
-    internal static string StripMarkdownFormatting(string s)
-    {
-        if (string.IsNullOrEmpty(s)) return s;
-        var noHeadings = Regex.Replace(s, @"(?m)^#{1,6}\s*", "");
-        var noBold     = Regex.Replace(noHeadings, @"\*\*(.+?)\*\*", "$1");
-        var noItalic   = Regex.Replace(noBold, @"(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)", "$1");
-        var noTicks    = noItalic.Replace("`", "");
-        return noTicks;
-    }
-
     private (string Id, string Name, string Kind)? ResolveEntity(string rawName)
     {
         if (string.IsNullOrWhiteSpace(rawName)) return null;
@@ -743,8 +732,6 @@ public class ContinuityExtractionService
 
         return null;
     }
-
-    private static JsonElement? ExtractJsonArrayFromText(string text) => ExtractJsonArrayFromText(text, out _);
 
     /// <param name="salvaged">True when the array came from <see cref="SalvageCompleteObjects"/>:
     /// the reply was truncated, so what came back is a PART of the answer, not all of it.</param>

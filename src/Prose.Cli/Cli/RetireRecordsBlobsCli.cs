@@ -129,7 +129,9 @@ public static class RetireRecordsBlobsCli
         await using var db = await dbFactory.CreateDbContextAsync();
 
         var blobCounts = await db.Records.AsNoTracking()
-            .Join(db.Entities.AsNoTracking(), r => r.EntityId, e => e.Id, (r, e) => e.EntityType)
+            // IgnoreQueryFilters like every other query here: --apply deletes across every
+            // universe, so a status scoped to the ambient one under-reported what it would delete.
+            .Join(db.Entities.AsNoTracking().IgnoreQueryFilters(), r => r.EntityId, e => e.Id, (r, e) => e.EntityType)
             .GroupBy(t => t)
             .Select(g => new { Type = g.Key, Count = g.Count() })
             .ToListAsync();

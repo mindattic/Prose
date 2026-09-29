@@ -106,11 +106,16 @@
         StateHasChanged();
     }
 
+    // Raised on a SignalR thread. The append is marshalled too, not only the repaint: `lines` is
+    // enumerated by the render, and a List mutated mid-enumeration throws out of the render tree.
     private void OnLine(LogLineDto line)
     {
-        if (paused) return;
-        Append(line);
-        InvokeAsync(StateHasChanged);
+        _ = InvokeAsync(() =>
+        {
+            if (paused) return;
+            Append(line);
+            StateHasChanged();
+        });
     }
 
     private void Append(LogLineDto line)

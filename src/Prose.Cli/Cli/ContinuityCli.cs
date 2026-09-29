@@ -122,8 +122,8 @@ public static class ContinuityCli
             var all = svc.GetByEntity(entity!);
             if (all.Count == 0)
             {
-                // GetByEntity takes an id; fall back to a name match over the live ledger so the
-                // command works from the name the --continuity entity listing prints.
+                // GetByEntity takes an id, not a name: say so rather than report "no claims" as if
+                // the entity were clean.
                 Console.Error.WriteLine(
                     $"[continuity] No claims found for entity id '{entity}'. " +
                     "This form takes the ENTITY ID (the hex string --continuity entity prints in " +
@@ -984,6 +984,9 @@ public static class ContinuityCli
                   Live prose claims whose own snippet no longer appears anywhere in their book —
                   the ledger asserting what the book has stopped saying. Report is read-only;
                   --supersede is the reversible write, guarded by the exact count you just read.
+              prose --continuity reassess [--slug <s>] [--apply]
+                  Re-run today's conflict test over every CONTRADICTED claim; --apply moves the
+                  cleared ones back to NEW. Dry run by default. Reversible (system-versioned).
               prose --continuity predicates [--slug <s>] [--min N] [--limit N] [--all]
               prose --continuity predicates --co-occur [--family <f>] [--slug <s>] [--min N]
                   The ledger's real predicate vocabulary, grouped into the families an exclusion
@@ -998,7 +1001,7 @@ public static class ContinuityCli
               prose --continuity extract --chapter <chapterId>
               prose --continuity extract --book <bookId>
               prose --continuity extract --node <nodeIdOrSlug>
-              prose --continuity extract --entity <path-to-entity-json>
+              prose --continuity extract --entity <entityId-guid>
               prose --continuity apply --claim <claimUid>
               prose --continuity relabel --entity <entityId> --set-name "<name>" --yes [--note "..."]
                   Rewrite every claim's stale EntityName snapshot for one entity to its current

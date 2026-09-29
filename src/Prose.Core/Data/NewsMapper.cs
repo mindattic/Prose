@@ -199,10 +199,13 @@ public static class NewsMapper
         n.MidjourneyPrompt = src.MidjourneyPrompt ?? "";
         n.Dalle3Prompt    = src.Dalle3Prompt ?? "";
 
-        // Parse DateText into PublishedDate when possible.
-        if (!string.IsNullOrWhiteSpace(src.Date)
-            && DateTime.TryParse(src.Date, out var dt))
-            n.PublishedDate = dt;
+        // Derive PublishedDate from DateText. Invariant culture: the text is persisted canon, so
+        // "03/04/2089" must not mean March on one machine and April on another. An unparseable or
+        // cleared date nulls the column rather than leaving the previous save's value behind.
+        n.PublishedDate = !string.IsNullOrWhiteSpace(src.Date)
+            && DateTime.TryParse(src.Date, System.Globalization.CultureInfo.InvariantCulture,
+                   System.Globalization.DateTimeStyles.None, out var dt)
+            ? dt : null;
     }
 
     /// <summary>Insert all bridge rows (assumes parent bridges have already been wiped).</summary>

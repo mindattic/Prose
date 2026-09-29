@@ -53,21 +53,15 @@ public static class CloneNodeCli
         Node? source;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            if (!string.IsNullOrWhiteSpace(slug))
-                source = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug);
-            else if (Guid.TryParse(id, out var g))
-                source = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == g);
-            else
-                source = await db.Nodes.AsNoTracking()
-                    .Where(s => s.Id.ToString().StartsWith(id!.ToLower()))
-                    .Take(2).ToListAsync() switch
-                    { { Count: 1 } m => m[0], _ => null };
+            // NodeRefResolver takes slug, NodeCode, GUID or a unique GUID prefix across universes.
+            // The hand-rolled prefix branch it replaces was ambient-universe-scoped (a prefix of a
+            // node in another universe came back "not found") unlike its full-GUID sibling.
+            source = await NodeRefResolver.ResolveNodeAsync(db, !string.IsNullOrWhiteSpace(slug) ? slug : id);
         }
 
         if (source == null)
         {
-            Console.Error.WriteLine("[clone-book] Source node not found.");
+            Console.Error.WriteLine($"[clone-book] {NodeRefResolver.NotFoundMessage(!string.IsNullOrWhiteSpace(slug) ? slug : id)}");
             return 1;
         }
 

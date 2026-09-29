@@ -33,7 +33,15 @@ public static class ReparentNodeCli
                 case "--parent-id":   if (i + 1 < args.Length) parentId = args[++i]; break;
                 case "--parent-slug": if (i + 1 < args.Length) parentSlug = args[++i]; break;
                 case "--clear":       clear = true; break;
-                case "--sort-key":    if (i + 1 < args.Length && double.TryParse(args[++i], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out var sk)) sortKey = sk; break;
+                case "--sort-key":
+                    // An unparsable value was silently dropped, so "--parent-slug x --sort-key 1,5"
+                    // reparented with no SortKey change and reported success.
+                    if (i + 1 >= args.Length || !double.TryParse(args[++i], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out var sk))
+                    {
+                        Console.Error.WriteLine("[reparent-node] --sort-key needs a number (invariant culture, e.g. 150.5).");
+                        return 1;
+                    }
+                    sortKey = sk; break;
                 case "--after-slug":  if (i + 1 < args.Length) afterSlug = args[++i]; break;
             }
         }
@@ -53,13 +61,11 @@ public static class ReparentNodeCli
         var workbench = services.GetRequiredService<NodeWorkbenchService>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var childQ = db.Nodes.AsQueryable();
-        var child = !string.IsNullOrWhiteSpace(slug)
-            ? await childQ.FirstOrDefaultAsync(s => s.Slug == slug)
-            : Guid.TryParse(id, out var cg)
-                ? await childQ.FirstOrDefaultAsync(s => s.Id == cg)
-                : await childQ.Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync()
-                    is { Count: 1 } cm ? cm[0] : null;
+        // The shared resolver for child and parent alike (slug, NodeCode, GUID, unique prefix,
+        // IgnoreQueryFilters, ambiguity refused). The private lookups applied the ambient universe
+        // filter and took the first same-slug row, so a node outside the scope was "not found"
+        // and a slug shared by two universes could reparent the wrong node.
+        var child = await NodeRefResolver.ResolveNodeAsync(db, !string.IsNullOrWhiteSpace(slug) ? slug : id);
 
         if (child == null) { Console.Error.WriteLine("[reparent-node] Child node not found."); return 1; }
 
@@ -93,13 +99,7 @@ public static class ReparentNodeCli
             return 0;
         }
 
-        var parentQ = db.Nodes.AsQueryable();
-        var parent = !string.IsNullOrWhiteSpace(parentSlug)
-            ? await parentQ.FirstOrDefaultAsync(s => s.Slug == parentSlug)
-            : Guid.TryParse(parentId, out var pg)
-                ? await parentQ.FirstOrDefaultAsync(s => s.Id == pg)
-                : await parentQ.Where(s => s.Id.ToString().StartsWith(parentId!.ToLower())).Take(2).ToListAsync()
-                    is { Count: 1 } pm ? pm[0] : null;
+        var parent = await NodeRefResolver.ResolveNodeAsync(db, !string.IsNullOrWhiteSpace(parentSlug) ? parentSlug : parentId);
 
         if (parent == null) { Console.Error.WriteLine("[reparent-node] Parent node not found."); return 1; }
         if (parent.Id == child.Id) { Console.Error.WriteLine("[reparent-node] A node cannot be its own parent."); return 1; }
