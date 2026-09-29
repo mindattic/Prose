@@ -144,7 +144,13 @@ public static class BeatCli
             return 1;
         }
 
-        var beat = await workbench.InsertBeatAsync(nodeId.Value, afterId, text ?? "");
+        // Prose goes in through the one door (tags derived, mentions written), as MCP insert_beat's does.
+        var beat = await workbench.InsertBeatAsync(nodeId.Value, afterId, "");
+        if (!string.IsNullOrWhiteSpace(text))
+        {
+            try { await workbench.UpdateBeatTextAsync(beat.Id, text, BeatWriteReason.AuthorEdit); }
+            catch { await workbench.DeleteBeatAsync(nodeId.Value, beat.Id); throw; }
+        }
         if (!string.IsNullOrWhiteSpace(title) || !string.IsNullOrWhiteSpace(description))
             await workbench.UpdateBeatMetadataAsync(beat.Id, new NodeWorkbenchService.BeatMetadataUpdate(
                 Title: string.IsNullOrWhiteSpace(title) ? null : title,

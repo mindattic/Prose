@@ -12,25 +12,23 @@ namespace Prose.Core.Services.Factory;
 /// </summary>
 public static class BookFingerprint
 {
-    /// <summary>Hash over every non-empty beat's own text hash, chapter order then SortKey. Computed
-    /// from live <see cref="Beat.Text"/> rather than the stored TextHash column, which can be null or
-    /// stale for a beat that predates stamping.</summary>
+    /// <summary>Hash over every non-empty beat's own text hash, in the reading order the exports and
+    /// the read gate walk (<see cref="NodeWorkbenchService.WalkAsync"/>). Computed from live
+    /// <see cref="Beat.Text"/> rather than the stored TextHash column, which can be null or stale for
+    /// a beat that predates stamping.
+    ///
+    /// <para>The walk, not the leaf set: a leaf walk skipped beats hanging directly on a node that
+    /// also has children (a chapter with scene children, a book root with chapters), so an edit to
+    /// one of those exported beats left F7 passing on a stale press; and it included Drafts-bucket
+    /// (Kind "book") children the exports never print, so editing a draft un-pressed the book. For a
+    /// book whose beats all hang on leaves the hash is unchanged.</para></summary>
     public static async Task<string> ComputeAsync(ProseDbContext db, Guid nodeId, CancellationToken ct = default)
     {
-        var nodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
-        // Ordered chapter-then-SortKey: raw SortKey alone is chapter-local (every chapter's beats
-        // restart near the same values), so ordering the whole book by it would tie across chapters
-        // and let the fingerprint flap between two runs of unchanged content.
-        var chapterOrder = nodeIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
-        var rows = await db.BeatNodes.AsNoTracking()
-            .Where(bn => nodeIds.Contains(bn.NodeId) && bn.Beat != null
-                      && bn.Beat!.Text != null && bn.Beat.Text != "")
-            .Select(bn => new { bn.NodeId, bn.SortKey, Text = bn.Beat!.Text })
-            .ToListAsync(ct);
-        var texts = rows
-            .OrderBy(b => chapterOrder.TryGetValue(b.NodeId, out var idx) ? idx : int.MaxValue)
-            .ThenBy(b => b.SortKey)
-            .Select(b => b.Text);
+        var ordered = new List<NodeWorkbenchService.OrderedBeat>();
+        await NodeWorkbenchService.WalkAsync(db, nodeId, ordered, new HashSet<Guid>(), false, ct);
+        var texts = ordered
+            .Where(o => !string.IsNullOrEmpty(o.Beat.Text))
+            .Select(o => o.Beat.Text);
         return Beat.ComputeHash(string.Join("|", texts.Select(Beat.ComputeHash)));
     }
 

@@ -430,6 +430,11 @@ public class ContinuityApplyService
         else
             row.GearName = claim.Object;
 
+        // The record changed, so its ModifiedAt moves, as the blob path above does: the read gate
+        // un-reads the beats that mention the character, and an open F1 verification is voided.
+        var entity = await db.Entities.IgnoreQueryFilters().FirstOrDefaultAsync(e => e.Id == characterId, ct);
+        if (entity != null) entity.ModifiedAt = DateTime.UtcNow;
+
         await db.SaveChangesAsync(ct);
 
         // Not optional: every read surface (get_character included) serves from

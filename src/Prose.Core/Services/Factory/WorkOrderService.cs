@@ -103,7 +103,7 @@ public sealed class WorkOrderService(
         if (string.IsNullOrWhiteSpace(d.Title) || d.Title.Length > 200) throw new ArgumentException("title is required (≤200 chars).");
 
         var checks = ParseChecks(d.ChecksJson ?? "[]");
-        var paths = (d.Paths ?? []).Where(p => !string.IsNullOrWhiteSpace(p)).Select(p => p.Replace('\\', '/').Trim()).ToList();
+        var paths = (d.Paths ?? []).Where(p => !string.IsNullOrWhiteSpace(p)).Select(NormalizePath).Where(p => p.Length > 0).ToList();
         if (d.Kind == WorkOrderKinds.Engine && checks.Any(c => Type(c) == WorkOrderChecks.Commit) && paths.Count == 0)
             throw new ArgumentException("an engine order with a commit check must declare the paths it may touch.");
 
@@ -342,8 +342,12 @@ public sealed class WorkOrderService(
 
     public static JsonArray ParseChecks(string json)
     {
-        var node = JsonNode.Parse(string.IsNullOrWhiteSpace(json) ? "[]" : json) as JsonArray
-                   ?? throw new ArgumentException("checks must be a JSON array.");
+        // Malformed JSON is a bad argument like any other: a JsonException escaped work_order_add's
+        // ArgumentException handler (and the CLI's) as an unstructured failure.
+        JsonNode? parsed;
+        try { parsed = JsonNode.Parse(string.IsNullOrWhiteSpace(json) ? "[]" : json); }
+        catch (JsonException ex) { throw new ArgumentException($"checks must be a JSON array: {ex.Message}"); }
+        var node = parsed as JsonArray ?? throw new ArgumentException("checks must be a JSON array.");
         foreach (var c in node)
         {
             if (c is not JsonObject o || !WorkOrderChecks.All.Contains(Type(o)))
@@ -352,7 +356,19 @@ public sealed class WorkOrderService(
         return node;
     }
 
-    private static string Type(JsonNode? check) => check?["type"]?.GetValue<string>() ?? "";
+    /// <summary>A declared path as git reports changed files: forward slashes, repo-relative. A leading
+    /// "./" or "/" never matches a git path, so the order covered nothing — neither the commit check
+    /// nor the Stop hook could ever see it.</summary>
+    public static string NormalizePath(string path)
+    {
+        var p = path.Replace('\\', '/').Trim();
+        while (p.StartsWith("./", StringComparison.Ordinal)) p = p[2..];
+        return p.TrimStart('/');
+    }
+
+    // A non-string "type" (a number, an object) is "no type", never an InvalidOperationException.
+    private static string Type(JsonNode? check) =>
+        check?["type"] is JsonValue v && v.TryGetValue<string>(out var s) ? s : "";
 
     /// <summary>The pre-commit hook regenerates and stages docs/MCP_TOOLS.md whenever an MCP tool
     /// source changes, so the doc is the hook's output, not the agent's edit. It counts as in scope

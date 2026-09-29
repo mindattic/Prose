@@ -45,18 +45,7 @@ public sealed class RulingService(IDbContextFactory<ProseDbContext> dbFactory, B
 
     public async Task<Ruling> RecordAsync(RulingDraft d, CancellationToken ct = default)
     {
-        if (!RulingKinds.All.Contains(d.Kind)) throw new ArgumentException($"kind must be one of {string.Join(", ", RulingKinds.All)}.");
-        if (string.IsNullOrWhiteSpace(d.Text) || d.Text.Length > 2000) throw new ArgumentException("text is required (≤2000 chars): the author's words.");
-        if (d.Pattern is { Length: > 400 }) throw new ArgumentException("pattern must be ≤400 chars.");
-        if (d.Kind is RulingKinds.Metric or RulingKinds.Incidental && string.IsNullOrWhiteSpace(d.Pattern))
-            throw new ArgumentException($"a {d.Kind} ruling needs a pattern.");
-        if (d.Kind == RulingKinds.Metric && d.MaxPer1kWords is not > 0)
-            throw new ArgumentException("a metric ruling needs maxPer1kWords > 0.");
-        if (!string.IsNullOrWhiteSpace(d.Pattern) && d.Kind != RulingKinds.Incidental)
-        {
-            try { _ = Compile(d.Pattern); }
-            catch (ArgumentException ex) { throw new ArgumentException($"the pattern does not compile: {ex.Message}"); }
-        }
+        Validate(d);
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         // A universe-wide ruling with no universe named takes the caller's scope — only when the
@@ -90,10 +79,32 @@ public sealed class RulingService(IDbContextFactory<ProseDbContext> dbFactory, B
         return row;
     }
 
+    /// <summary>The draft checks RecordAsync makes before it touches the database (kind, text, pattern,
+    /// ceiling). Throws <see cref="ArgumentException"/>. A batch (the CLI's seed) runs it over every
+    /// draft first, so one bad item cannot leave the batch half-recorded.</summary>
+    public static void Validate(RulingDraft d)
+    {
+        if (!RulingKinds.All.Contains(d.Kind)) throw new ArgumentException($"kind must be one of {string.Join(", ", RulingKinds.All)}.");
+        if (string.IsNullOrWhiteSpace(d.Text) || d.Text.Length > 2000) throw new ArgumentException("text is required (≤2000 chars): the author's words.");
+        if (d.Pattern is { Length: > 400 }) throw new ArgumentException("pattern must be ≤400 chars.");
+        if (d.Kind is RulingKinds.Metric or RulingKinds.Incidental && string.IsNullOrWhiteSpace(d.Pattern))
+            throw new ArgumentException($"a {d.Kind} ruling needs a pattern.");
+        if (d.Kind == RulingKinds.Metric && d.MaxPer1kWords is not > 0)
+            throw new ArgumentException("a metric ruling needs maxPer1kWords > 0.");
+        if (!string.IsNullOrWhiteSpace(d.Pattern) && d.Kind != RulingKinds.Incidental)
+        {
+            try { _ = Compile(d.Pattern); }
+            catch (ArgumentException ex) { throw new ArgumentException($"the pattern does not compile: {ex.Message}"); }
+        }
+    }
+
     /// <summary>Active rulings that apply to a book: the book's own plus its universe-wide ones.</summary>
     public async Task<List<Ruling>> ListAsync(Guid bookId, string? kind = null, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
+        // RecordAsync stores a chapter's ruling on its book; a chapter id here must read the same
+        // row, or list/violations/metrics for a chapter silently drop the book's own laws.
+        bookId = await NodeWorkbenchService.ResolveBookAncestorIdAsync(db, bookId, ct) ?? bookId;
         var universe = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == bookId).Select(n => n.UniverseId).FirstOrDefaultAsync(ct);
         var q = db.Rulings.AsNoTracking().Where(r => r.SupersededById == null
             && (r.BookId == bookId || (r.BookId == null && r.UniverseId == universe)));
@@ -101,14 +112,20 @@ public sealed class RulingService(IDbContextFactory<ProseDbContext> dbFactory, B
         return await q.OrderBy(r => r.Kind).ThenBy(r => r.At).ToListAsync(ct);
     }
 
-    /// <summary>Replace a ruling: the new one is recorded, the old one points at it and goes inert.</summary>
+    /// <summary>Replace a ruling: the new one is recorded, the old one points at it and goes inert.
+    /// A blank <see cref="RulingDraft.Kind"/> keeps the old ruling's kind.</summary>
     public async Task<Ruling> SupersedeAsync(Guid id, RulingDraft replacement, CancellationToken ct = default)
     {
         await using (var db0 = await dbFactory.CreateDbContextAsync(ct))
         {
             var old = await db0.Rulings.AsNoTracking().FirstOrDefaultAsync(r => r.Id == id, ct) ?? throw new ArgumentException($"ruling {id} not found.");
             if (old.SupersededById != null) throw new ArgumentException("that ruling is already superseded.");
-            replacement = replacement with { BookId = replacement.BookId ?? old.BookId, UniverseId = replacement.UniverseId ?? old.UniverseId };
+            replacement = replacement with
+            {
+                BookId = replacement.BookId ?? old.BookId,
+                UniverseId = replacement.UniverseId ?? old.UniverseId,
+                Kind = string.IsNullOrWhiteSpace(replacement.Kind) ? old.Kind : replacement.Kind,
+            };
         }
         var row = await RecordAsync(replacement, ct);
         await using var db = await dbFactory.CreateDbContextAsync(ct);

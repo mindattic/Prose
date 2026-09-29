@@ -121,10 +121,14 @@ public class CharacterGearService
             .FirstOrDefaultAsync(g => g.Id == rowId && g.CharacterId == characterId, ct);
         if (row == null) return null;
 
-        var owner = await db.Entities.IgnoreQueryFilters().AsNoTracking()
-            .Where(e => e.Id == characterId).Select(e => e.Name).FirstOrDefaultAsync(ct) ?? "";
+        // Tracked: the removal changes the character's record, so its ModifiedAt moves with it — the
+        // read gate un-reads the beats that mention the character, and an open F1 verification
+        // (sealed on ModifiedAt) no longer commits against the old record.
+        var entity = await db.Entities.IgnoreQueryFilters().FirstOrDefaultAsync(e => e.Id == characterId, ct);
+        var owner = entity?.Name ?? "";
         var snapshot = new GearRow(row.Id, row.CharacterId, owner, row.Bucket, row.Position, row.GearName, row.GearEntityId);
 
+        if (entity != null) entity.ModifiedAt = DateTime.UtcNow;
         db.CharacterBelongingsGear.Remove(row);
         await db.SaveChangesAsync(ct);
 

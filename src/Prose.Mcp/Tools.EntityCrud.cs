@@ -16,6 +16,15 @@ namespace Prose.Mcp;
 // speech_patterns, physical_description for characters) accept optional JSON
 // strings — omit or pass empty to keep defaults.
 
+/// <summary>The create_* tools' tags parameter. "[]" clears, as create_material and
+/// create_vocabulary already did: split on commas it became a literal tag "[]", and the tag
+/// replace that follows each save then detached every real tag.</summary>
+public static class CrudTags
+{
+    public static List<string> Parse(string tags) =>
+        tags.Trim() == "[]" ? [] : [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
+}
+
 /// <summary>
 /// Tool group for creating and updating the core canon entities: characters,
 /// places, factions, and CorpoNations. These are the primary entities most
@@ -203,7 +212,7 @@ public class CoreEntityCrudTools
         if (!string.IsNullOrEmpty(augmentations)) c.Augmentations = augmentations;
         if (!string.IsNullOrEmpty(narrativeFunction)) c.NarrativeFunction = narrativeFunction;
         if (!string.IsNullOrEmpty(tags))
-            c.Tags = [.. tags.Split(',').Select(t => t.Trim()).Where(t => t.Length > 0)];
+            c.Tags = CrudTags.Parse(tags);
         if (!string.IsNullOrEmpty(storyHooks))
             c.StoryHooks = [.. storyHooks.Split(',').Select(h => h.Trim()).Where(h => h.Length > 0)];
 
@@ -401,7 +410,7 @@ public class CoreEntityCrudTools
         if (!string.IsNullOrEmpty(storyHooks))
             p.StoryHooks = [.. storyHooks.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
         if (!string.IsNullOrEmpty(tags))
-            p.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
+            p.Tags = CrudTags.Parse(tags);
 
         places.Save(p);
         if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(p.Id), p.Tags).GetAwaiter().GetResult(); places.Reload(); }
@@ -462,7 +471,7 @@ public class CoreEntityCrudTools
         if (!string.IsNullOrEmpty(storyHooks))
             f.StoryHooks = [.. storyHooks.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
         if (!string.IsNullOrEmpty(tags))
-            f.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
+            f.Tags = CrudTags.Parse(tags);
 
         factions.Save(f);
         if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(f.Id), f.Tags).GetAwaiter().GetResult(); factions.Reload(); }
@@ -517,7 +526,7 @@ public class CoreEntityCrudTools
         if (!string.IsNullOrEmpty(keyDetail)) corp.KeyDetail = keyDetail;
         if (!string.IsNullOrEmpty(fullText)) corp.FullText = fullText;
         if (!string.IsNullOrEmpty(tags))
-            corp.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
+            corp.Tags = CrudTags.Parse(tags);
 
         corponations.Save(corp);
         if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(corp.Id), corp.Tags).GetAwaiter().GetResult(); corponations.Reload(); }
@@ -625,7 +634,7 @@ public class GearEntityCrudTools
         if (!string.IsNullOrEmpty(storyHooks))
             w.StoryHooks = [.. storyHooks.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
         if (!string.IsNullOrEmpty(tags))
-            w.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
+            w.Tags = CrudTags.Parse(tags);
         // KnownUsers was unreachable from this tool until 2026-09-02: WeaponMapper.PersistAsync
         // has always written it, but nothing here ever populated it, so a caller passing the
         // field got ok:true and a silent no-op. "[]" clears; empty leaves unchanged.
@@ -694,7 +703,11 @@ public class GearEntityCrudTools
     {
         // Resolve by id first, then by exact name — so a caller who knows only the name (which is
         // all get_material takes) updates the record rather than silently creating a duplicate.
-        var m = !string.IsNullOrEmpty(id) ? materials.GetById(id) : null;
+        var m = !string.IsNullOrEmpty(id)
+            // An unknown id is refused, as in every create_* here — it used to fall through to a
+            // name match, or to a brand-new material, and answer ok:true.
+            ? materials.GetById(id) ?? throw new InvalidOperationException($"No MaterialData with id {id} in this universe. Pass an empty id to create one, or omit it to match by name.")
+            : null;
         m ??= materials.GetAll().FirstOrDefault(x => string.Equals(x.Name, name, StringComparison.OrdinalIgnoreCase));
         var isNew = m is null;
         m ??= new MaterialData();
@@ -825,7 +838,7 @@ public class GearEntityCrudTools
         if (!string.IsNullOrEmpty(storyHooks))
             cw.StoryHooks = [.. storyHooks.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
         if (!string.IsNullOrEmpty(tags))
-            cw.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
+            cw.Tags = CrudTags.Parse(tags);
 
         cyberware.Save(cw);
         if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(cw.Id), cw.Tags).GetAwaiter().GetResult(); cyberware.Reload(); }
@@ -873,7 +886,7 @@ public class GearEntityCrudTools
         if (!string.IsNullOrEmpty(manufacturer)) eq.Manufacturer = manufacturer;
         if (!string.IsNullOrEmpty(tierAvailability)) eq.TierAvailability = tierAvailability;
         if (!string.IsNullOrEmpty(tags))
-            eq.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
+            eq.Tags = CrudTags.Parse(tags);
 
         equipment.Save(eq);
         if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(eq.Id), eq.Tags).GetAwaiter().GetResult(); equipment.Reload(); }
@@ -927,7 +940,7 @@ public class GearEntityCrudTools
         if (!string.IsNullOrEmpty(storyHooks))
             tech.StoryHooks = [.. storyHooks.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
         if (!string.IsNullOrEmpty(tags))
-            tech.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
+            tech.Tags = CrudTags.Parse(tags);
 
         technology.Save(tech);
         if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(tech.Id), tech.Tags).GetAwaiter().GetResult(); technology.Reload(); }
@@ -966,7 +979,7 @@ public class GearEntityCrudTools
         if (!string.IsNullOrEmpty(description)) ap.Description = description;
         if (!string.IsNullOrEmpty(manufacturer)) ap.Manufacturer = manufacturer;
         if (!string.IsNullOrEmpty(tags))
-            ap.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
+            ap.Tags = CrudTags.Parse(tags);
 
         apparel.Save(ap);
         if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(ap.Id), ap.Tags).GetAwaiter().GetResult(); apparel.Reload(); }
@@ -1005,7 +1018,7 @@ public class GearEntityCrudTools
         if (!string.IsNullOrEmpty(description)) ph.Description = description;
         if (!string.IsNullOrEmpty(manufacturer)) ph.Manufacturer = manufacturer;
         if (!string.IsNullOrEmpty(tags))
-            ph.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
+            ph.Tags = CrudTags.Parse(tags);
 
         pharmaceuticals.Save(ph);
         if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(ph.Id), ph.Tags).GetAwaiter().GetResult(); pharmaceuticals.Reload(); }
@@ -1044,7 +1057,7 @@ public class GearEntityCrudTools
         if (!string.IsNullOrEmpty(description)) am.Description = description;
         if (!string.IsNullOrEmpty(manufacturer)) am.Manufacturer = manufacturer;
         if (!string.IsNullOrEmpty(tags))
-            am.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
+            am.Tags = CrudTags.Parse(tags);
 
         ammunition.Save(am);
         if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(am.Id), am.Tags).GetAwaiter().GetResult(); ammunition.Reload(); }
@@ -1205,7 +1218,7 @@ public class WorldEntityCrudTools
         if (!string.IsNullOrEmpty(description)) a.Description = description;
         if (!string.IsNullOrEmpty(manufacturer)) a.Manufacturer = manufacturer;
         if (!string.IsNullOrEmpty(tags))
-            a.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
+            a.Tags = CrudTags.Parse(tags);
 
         automata.Save(a);
         if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(a.Id), a.Tags).GetAwaiter().GetResult(); automata.Reload(); }
@@ -1244,7 +1257,7 @@ public class WorldEntityCrudTools
         if (!string.IsNullOrEmpty(description)) t.Description = description;
         if (!string.IsNullOrEmpty(manufacturer)) t.Manufacturer = manufacturer;
         if (!string.IsNullOrEmpty(tags))
-            t.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
+            t.Tags = CrudTags.Parse(tags);
 
         transportation.Save(t);
         if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(t.Id), t.Tags).GetAwaiter().GetResult(); transportation.Reload(); }
@@ -1286,7 +1299,7 @@ public class WorldEntityCrudTools
         if (!string.IsNullOrEmpty(description)) g.Description = description;
         if (!string.IsNullOrEmpty(manufacturer)) g.Manufacturer = manufacturer;
         if (!string.IsNullOrEmpty(tags))
-            g.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
+            g.Tags = CrudTags.Parse(tags);
 
         consumerGoods.Save(g);
         if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(g.Id), g.Tags).GetAwaiter().GetResult(); consumerGoods.Reload(); }
@@ -1325,7 +1338,7 @@ public class WorldEntityCrudTools
         if (!string.IsNullOrEmpty(category)) d.Category = category;
         if (!string.IsNullOrEmpty(body)) d.Body = body;
         if (!string.IsNullOrEmpty(tags))
-            d.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
+            d.Tags = CrudTags.Parse(tags);
 
         documents.Save(d);
         if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(d.Id), d.Tags).GetAwaiter().GetResult(); documents.Reload(); }
@@ -1361,7 +1374,7 @@ public class WorldEntityCrudTools
         if (!string.IsNullOrEmpty(parentCorponation)) s.ParentCorponation = parentCorponation;
         if (!string.IsNullOrEmpty(description)) s.Description = description;
         if (!string.IsNullOrEmpty(tags))
-            s.Tags = [.. tags.Split(',').Select(s2 => s2.Trim()).Where(s2 => s2.Length > 0)];
+            s.Tags = CrudTags.Parse(tags);
 
         subsidiaries.Save(s);
         if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(s.Id), s.Tags).GetAwaiter().GetResult(); subsidiaries.Reload(); }

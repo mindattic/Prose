@@ -417,7 +417,25 @@ public class NodeTools
                 return JsonSerializer.Serialize(new { error = "bad_beat_id", afterBeatId }, CanonTools.JsonOpts);
             after = ag;
         }
-        var beat = await workbench.InsertBeatAsync(node.Id, after, text ?? "");
+        // Same refusal as the CLI twin (prose --beat insert): a beat with no text, title or
+        // description is neither written nor planned — it only fails F2 later.
+        if (string.IsNullOrWhiteSpace(text) && string.IsNullOrWhiteSpace(title) && string.IsNullOrWhiteSpace(description))
+            return JsonSerializer.Serialize(new { ok = false, error = "empty_beat", message = "Pass text, or a title/description for a planned beat." }, CanonTools.JsonOpts);
+        Prose.Core.Data.Entities.Beat beat;
+        try { beat = await workbench.InsertBeatAsync(node.Id, after, ""); }
+        catch (InvalidOperationException ex)
+        {
+            // The anchor beat is not on this node (usually the book was named instead of the chapter).
+            return JsonSerializer.Serialize(new { ok = false, error = "anchor_not_in_node", message = ex.Message }, CanonTools.JsonOpts);
+        }
+        // The prose goes in through the one door, as update_beat_text's does: entity tags derived,
+        // mention rows written, the write reason named. Inserted raw it stayed untagged — F4 flagged
+        // it and the read gate could not see what it mentions — until some later edit re-saved it.
+        if (!string.IsNullOrWhiteSpace(text))
+        {
+            try { await workbench.UpdateBeatTextAsync(beat.Id, text, BeatWriteReason.AuthorEdit); }
+            catch { await workbench.DeleteBeatAsync(node.Id, beat.Id); throw; }
+        }
         if (!string.IsNullOrWhiteSpace(title) || !string.IsNullOrWhiteSpace(description))
             await workbench.UpdateBeatMetadataAsync(beat.Id, new NodeWorkbenchService.BeatMetadataUpdate(
                 Title:       string.IsNullOrWhiteSpace(title) ? null : title,

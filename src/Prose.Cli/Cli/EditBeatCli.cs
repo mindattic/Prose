@@ -177,7 +177,14 @@ public static class EditBeatCli
                 afterId = anchor.Beat.Id;
                 insertNodeId = anchor.NodeId;
             }
-            var newBeat = await workbench.InsertBeatAsync(insertNodeId, afterId, prose);
+            // Inserted empty, then the prose through the one door (tags derived, mentions written).
+            var newBeat = await workbench.InsertBeatAsync(insertNodeId, afterId, "");
+            try
+            {
+                await workbench.UpdateBeatTextAsync(newBeat.Id, prose, BeatWriteReason.AuthorEdit,
+                                                    expectedUpdatedAt: null, deferAnalysis: deferAnalysis);
+            }
+            catch { await workbench.DeleteBeatAsync(insertNodeId, newBeat.Id); throw; }
             Console.WriteLine($"[edit-beat] Inserted new beat after position {insertAfter} (chapter {insertNodeId}) → id {newBeat.Id} ({prose.Length} chars).");
             return 0;
         }

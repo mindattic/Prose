@@ -35,7 +35,9 @@ public sealed class EntityRenameService(
             .Join(db.Beats.AsNoTracking(), bn => bn.BeatId, b => b.Id, (_, b) => b)
             .Where(b => b.Text != null).Select(b => new { b.Id, b.Text }).ToListAsync(ct);
 
-        var beatIds = beats.Where(b => matcher.IsMatch(b.Text!)).Select(b => b.Id).ToList();
+        // Distinct: a beat linked under two nodes of the book came back twice, so the preview
+        // over-counted it and apply rewrote it twice.
+        var beatIds = beats.Where(b => matcher.IsMatch(b.Text!)).Select(b => b.Id).Distinct().ToList();
         var ledgerCount = continuity.GetByEntity(entity.Id.ToString()).Count(c => !string.Equals(c.EntityName, newName.Trim(), StringComparison.Ordinal));
         return new EntityRenamePreview(true, null, entity.Id, entity.Name, entity.Slug, newName.Trim(), node.Id, node.Slug,
             beatIds, ledgerCount, entity.EntityType);

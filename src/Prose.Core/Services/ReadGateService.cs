@@ -66,9 +66,13 @@ public sealed class ReadGateService(IDbContextFactory<ProseDbContext> dbFactory,
             bookId = await NodeWorkbenchService.ResolveBookAncestorIdAsync(db, nodeId, ct) ?? nodeId;
 
         var bookOrder = await workbench.GetOrderedBeatsAsync(bookId, ct);
-        HashSet<Guid>? scope = null;
+        // Scoped to a chapter: positions are the chapter's own (1-based, as read_beats / --read-beats
+        // number them for the same node), so "read positions 3–5" can be fed straight back to
+        // read_beats on that node. Book positions here sent the reader to the wrong beats.
+        Dictionary<Guid, int>? scope = null;
         if (bookId != nodeId)
-            scope = (await workbench.GetOrderedBeatsAsync(nodeId, ct)).Select(o => o.Beat.Id).ToHashSet();
+            scope = (await workbench.GetOrderedBeatsAsync(nodeId, ct)).Select((o, i) => (o.Beat.Id, i))
+                .DistinctBy(x => x.Id).ToDictionary(x => x.Id, x => x.i + 1);
 
         var ids = bookOrder.Select(o => o.Beat.Id).ToList();
         Dictionary<Guid, BeatReadReceipt> receipts;
@@ -94,14 +98,21 @@ public sealed class ReadGateService(IDbContextFactory<ProseDbContext> dbFactory,
             .ToLookup(m => m.BeatId);
 
         var unread = new List<UnreadBeat>();
+        // A beat linked under two nodes appears twice in the walk. It is judged once, at its first
+        // occurrence — the one MarkReadAsync records neighbours from. Judging the second occurrence
+        // too made it "moved" forever (its neighbours never match the receipt), so the book could
+        // never export, and listed the beat twice, which broke every ToDictionary(BeatId) caller
+        // (FactoryService, EntityVerificationService) — factory status/next threw.
+        var judged = new HashSet<Guid>();
         for (var i = 0; i < bookOrder.Count; i++)
         {
             var beat = bookOrder[i].Beat;
-            if (scope != null && !scope.Contains(beat.Id)) continue;
+            if (!judged.Add(beat.Id)) continue;
+            if (scope != null && !scope.ContainsKey(beat.Id)) continue;
             var prev = i > 0 ? bookOrder[i - 1].Beat.Id : (Guid?)null;
             var next = i < bookOrder.Count - 1 ? bookOrder[i + 1].Beat.Id : (Guid?)null;
             var why = Judge(beat, prev, next, receipts.GetValueOrDefault(beat.Id), mentionsByBeat[beat.Id]);
-            if (why is { } u) unread.Add(new UnreadBeat(i + 1, beat.Number, beat.Id, u.Reason, u.Detail));
+            if (why is { } u) unread.Add(new UnreadBeat(scope?[beat.Id] ?? i + 1, beat.Number, beat.Id, u.Reason, u.Detail));
         }
         return new ReadStatus(bookId, scope?.Count ?? bookOrder.Count, unread);
     }
@@ -141,10 +152,13 @@ public sealed class ReadGateService(IDbContextFactory<ProseDbContext> dbFactory,
         var rows = await db.BeatReadReceipts.AsNoTracking()
             .Join(db.Beats.IgnoreQueryFilters().AsNoTracking(), r => r.BeatId, b => b.Id,
                 (r, b) => new { r.ReadAt, ReadHash = r.TextHash, b.Id, b.Number, b.TextHash, b.Text })
-            .Where(x => x.ReadAt >= modifiedAt && x.ReadHash == x.TextHash
+            .Where(x => x.ReadAt >= modifiedAt && (x.ReadHash == x.TextHash || x.TextHash == null)
                         && (x.Text.Contains(dashed) || x.Text.Contains(bare)))
             .ToListAsync(ct);
-        return rows.Where(x => BeatMarkup.ExtractEntityGuids(x.Text).Contains(entityId))
+        // A NULL stored hash is compared the way Judge compares it (HashOf: computed from the text),
+        // or a beat the gate counts as read was left out of what the write would un-read.
+        return rows.Where(x => x.ReadHash == (x.TextHash ?? Beat.ComputeHash(x.Text))
+                               && BeatMarkup.ExtractEntityGuids(x.Text).Contains(entityId))
             .Select(x => new ReadMention(x.Id, x.Number)).OrderBy(x => x.Number).ToList();
     }
 

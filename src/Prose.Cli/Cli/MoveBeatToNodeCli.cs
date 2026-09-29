@@ -118,7 +118,21 @@ public static class MoveBeatToNodeCli
         }
 
         Console.Write($"[move-beat-to-node] Moving beat #{beatNumber} (id {subject.Id}, chapter {actualFromNodeId}) from '{slug}' to chapter {actualToNodeId} (under '{toSlug}') after position {after}… ");
-        await workbench.MoveBeatToNodeAsync(subject.Id, actualFromNodeId, actualToNodeId, afterId);
+        try
+        {
+            // Both positions resolved into the same chapter (e.g. --slug and --to-slug both the book):
+            // that is a within-node re-slot, which MoveBeatToNodeAsync refuses by design.
+            if (actualFromNodeId == actualToNodeId)
+                await workbench.MoveBeatAsync(actualFromNodeId, subject.Id, afterId);
+            else
+                await workbench.MoveBeatToNodeAsync(subject.Id, actualFromNodeId, actualToNodeId, afterId);
+        }
+        catch (InvalidOperationException ex)
+        {
+            Console.WriteLine();
+            Console.Error.WriteLine($"[move-beat-to-node] Refused: {ex.Message}");
+            return 1;
+        }
         Console.WriteLine("ok.");
         return 0;
     }

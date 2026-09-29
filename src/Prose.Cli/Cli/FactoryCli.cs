@@ -75,16 +75,33 @@ public static class FactoryCli
                         var file = Flag("--file");
                         if (file == null || !File.Exists(file)) { Console.Error.WriteLine("[ruling] --file rulings.json is required."); return 1; }
                         var items = JsonNode.Parse(await File.ReadAllTextAsync(file)) as JsonArray ?? throw new ArgumentException("the file must be a JSON array.");
-                        var n = 0;
+                        // Every item is parsed and validated BEFORE the first is recorded: a bad item
+                        // mid-file used to leave the earlier ones recorded, and a re-run duplicated them.
+                        var drafts = new List<RulingDraft>();
                         foreach (var it in items)
                         {
-                            var row = await rulings.RecordAsync(new RulingDraft(
-                                Kind: it?["kind"]?.GetValue<string>() ?? RulingKinds.Law,
-                                Text: it?["text"]?.GetValue<string>() ?? "",
-                                BookId: book,
-                                Pattern: it?["pattern"]?.GetValue<string>(),
-                                MaxPer1kWords: it?["maxPer1kWords"]?.GetValue<decimal>(),
-                                Source: it?["source"]?.GetValue<string>() ?? "author"));
+                            RulingDraft draft;
+                            try
+                            {
+                                draft = new RulingDraft(
+                                    Kind: it?["kind"]?.GetValue<string>() ?? RulingKinds.Law,
+                                    Text: it?["text"]?.GetValue<string>() ?? "",
+                                    BookId: book,
+                                    Pattern: it?["pattern"]?.GetValue<string>(),
+                                    MaxPer1kWords: it?["maxPer1kWords"]?.GetValue<decimal>(),
+                                    Source: it?["source"]?.GetValue<string>() ?? "author");
+                                RulingService.Validate(draft);
+                            }
+                            catch (Exception ex) when (ex is ArgumentException or InvalidOperationException or FormatException)
+                            {
+                                throw new ArgumentException($"item {drafts.Count + 1}: {ex.Message} Nothing was recorded.");
+                            }
+                            drafts.Add(draft);
+                        }
+                        var n = 0;
+                        foreach (var draft in drafts)
+                        {
+                            var row = await rulings.RecordAsync(draft);
                             Console.WriteLine($"[ruling] {row.Id} {row.Kind}: {row.Text}");
                             n++;
                         }
@@ -103,8 +120,10 @@ public static class FactoryCli
                     case "supersede":
                     {
                         if (!Guid.TryParse(Flag("--id"), out var id)) { Console.Error.WriteLine("[ruling] --id is required."); return 1; }
+                        // No --kind keeps the old ruling's kind: defaulting to law turned a superseded
+                        // metric into a zero-tolerance law on its tic pattern.
                         var row = await rulings.SupersedeAsync(id, new RulingDraft(
-                            Kind: Flag("--kind") ?? RulingKinds.Law, Text: Flag("--text") ?? "", Pattern: Flag("--pattern"),
+                            Kind: Flag("--kind") ?? "", Text: Flag("--text") ?? "", Pattern: Flag("--pattern"),
                             MaxPer1kWords: decimal.TryParse(Flag("--max-per-1k"), System.Globalization.NumberStyles.Number, System.Globalization.CultureInfo.InvariantCulture, out var mx) ? mx : null,
                             Source: Flag("--source") ?? "author"));
                         Console.WriteLine($"[ruling] {id} superseded by {row.Id}.");

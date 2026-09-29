@@ -76,6 +76,7 @@ public static class EntityRelationshipCli
             }
 
             db.CharacterRelationships.Remove(row);
+            await TouchAsync(db, charId);
             await db.SaveChangesAsync();
             await RefreshReadModelAsync(db, charId);
             Console.WriteLine(
@@ -117,6 +118,7 @@ public static class EntityRelationshipCli
                 Description = Flag(args, "--description") ?? "",
             };
             db.CharacterRelationships.Add(row);
+            await TouchAsync(db, charId);
             await db.SaveChangesAsync();
             await RefreshReadModelAsync(db, charId);
 
@@ -260,6 +262,15 @@ public static class EntityRelationshipCli
                 $"({ex.Message}). Readers may still serve the old value until " +
                 $"`prose --rebuild-character-read-models` (or any CharacterRepository.Save) runs.");
         }
+    }
+
+    /// <summary>A relationship is part of the character's record, so its ModifiedAt moves with the
+    /// row: the read gate un-reads the beats that mention the character, and an open F1
+    /// verification (sealed on ModifiedAt) no longer commits against the old record.</summary>
+    private static async Task TouchAsync(ProseDbContext db, Guid characterId)
+    {
+        var entity = await db.Entities.IgnoreQueryFilters().FirstOrDefaultAsync(e => e.Id == characterId);
+        if (entity != null) entity.ModifiedAt = DateTime.UtcNow;
     }
 
     /// <summary>Resolve a character by Guid (any format, any universe) or by exact name within

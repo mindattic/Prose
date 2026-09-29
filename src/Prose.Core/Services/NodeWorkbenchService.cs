@@ -790,9 +790,15 @@ public class NodeWorkbenchService
 
         if (newParentNodeId.HasValue)
         {
-            var parentExists = await db.Nodes.IgnoreQueryFilters().AnyAsync(n => n.Id == newParentNodeId.Value, ct);
-            if (!parentExists)
+            var parentUniverse = await db.Nodes.IgnoreQueryFilters().Where(n => n.Id == newParentNodeId.Value)
+                .Select(n => (Guid?)n.UniverseId).FirstOrDefaultAsync(ct);
+            if (parentUniverse == null)
                 throw new InvalidOperationException($"New parent node {newParentNodeId.Value} not found.");
+            // Universe division is absolute: a child keeps its own UniverseId, so under a parent in
+            // another universe it vanished from every universe-scoped read of that book.
+            if (parentUniverse.Value != node.UniverseId)
+                throw new InvalidOperationException(
+                    $"Cannot reparent {nodeId} under {newParentNodeId.Value}: the two nodes are in different universes.");
             if (await WouldCreateCycleAsync(db, nodeId, newParentNodeId.Value, ct))
                 throw new InvalidOperationException(
                     $"Cannot reparent {nodeId} under {newParentNodeId.Value} — that node is {nodeId}'s own " +
@@ -820,6 +826,9 @@ public class NodeWorkbenchService
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
         var afterSibling = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == afterSiblingId, ct)
             ?? throw new InvalidOperationException($"Sibling node {afterSiblingId} not found.");
+        if (afterSibling.UniverseId != node.UniverseId)
+            throw new InvalidOperationException(
+                $"Cannot move {nodeId} after {afterSiblingId}: the two nodes are in different universes.");
 
         var siblings = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
             .Where(n => n.ParentNodeId == afterSibling.ParentNodeId && n.Id != nodeId)
@@ -1174,6 +1183,7 @@ public class NodeWorkbenchService
             .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.SortKey, Beat = b })
             .ToListAsync(ct);
         var now = DateTime.UtcNow;
+        var cloneOf = new Dictionary<Guid, Guid>();
         foreach (var row in srcBeats)
         {
             var s = row.Beat;
@@ -1211,6 +1221,23 @@ public class NodeWorkbenchService
             };
             db.Beats.Add(nb);
             db.BeatNodes.Add(new BeatNode { NodeId = newId, BeatId = nb.Id, SortKey = row.SortKey });
+            cloneOf[s.Id] = nb.Id;
+        }
+
+        // The mention index follows the text: the copy carries the same tags, so it carries the same
+        // BeatEntityMentions rows. Without them get_entity_beat_mentions — the rebuild protocol's
+        // step 1 on a fresh clone — found none of the clone's beats until each was re-saved.
+        if (cloneOf.Count > 0)
+        {
+            var srcIds = cloneOf.Keys.ToList();
+            var mentions = await db.BeatEntityMentions.AsNoTracking()
+                .Where(m => srcIds.Contains(m.BeatId)).ToListAsync(ct);
+            foreach (var m in mentions)
+                db.BeatEntityMentions.Add(new BeatEntityMention
+                {
+                    BeatId = cloneOf[m.BeatId], EntityId = m.EntityId,
+                    EntityName = m.EntityName, EntityType = m.EntityType, CreatedAt = now,
+                });
         }
 
         // Recurse into child nodes, preserving their order.
@@ -1802,6 +1829,10 @@ public class NodeWorkbenchService
             ?? throw new InvalidOperationException($"Beat {beatId} has no membership row in node {fromNodeId}.");
         if (await db.BeatNodes.AnyAsync(bn => bn.NodeId == toNodeId && bn.BeatId == beatId, ct))
             throw new InvalidOperationException($"Beat {beatId} is already a member of node {toNodeId}.");
+        var universes = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+            .Where(n => n.Id == fromNodeId || n.Id == toNodeId).Select(n => n.UniverseId).Distinct().ToListAsync(ct);
+        if (universes.Count > 1)
+            throw new InvalidOperationException($"Cannot move beat {beatId} from node {fromNodeId} to node {toNodeId}: the two nodes are in different universes.");
 
         var targetSiblings = await db.BeatNodes
             .Where(sb => sb.NodeId == toNodeId)

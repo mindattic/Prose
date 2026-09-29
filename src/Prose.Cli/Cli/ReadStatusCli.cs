@@ -59,7 +59,14 @@ public static class ReadStatusCli
                     return 0;
                 case "resolve":
                     if (!Guid.TryParse(Flag("--id"), out var id)) { Console.Error.WriteLine("[read-note] --id <noteId> is required."); return 1; }
-                    int? by = int.TryParse(Flag("--by-beat"), out var b) ? b : null;
+                    // A --by-beat that does not parse is an error, as MCP's int? byBeat is: dropping it
+                    // resolved the note with no answering beat recorded.
+                    int? by = null;
+                    if (Flag("--by-beat") is { } rawBy)
+                    {
+                        if (!int.TryParse(rawBy.TrimStart('#'), out var b)) { Console.Error.WriteLine("[read-note] --by-beat needs a Beat.Number."); return 1; }
+                        by = b;
+                    }
                     var ok = await gate.ResolveNoteAsync(id, nodeId.Value, by);
                     Console.WriteLine(ok ? "[read-note] resolved." : "[read-note] no such note.");
                     return ok ? 0 : 1;

@@ -75,7 +75,9 @@ public static class AddPlaceCli
 
         if (args.Contains("--print"))
         {
-            var saved = repo.GetBySlug(JsonDirectoryRepository<DistrictData>.ToSlug(data.Name));
+            // By the id just saved: a name-slug lookup echoed another same-named place (or nothing,
+            // once the save disambiguated the slug) as if it were this record.
+            var saved = repo.GetById(data.Id);
             Console.WriteLine(JsonSerializer.Serialize(saved, new JsonSerializerOptions { WriteIndented = true }));
         }
         return 0;

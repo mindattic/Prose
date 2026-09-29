@@ -81,6 +81,10 @@ public sealed class FactorySessionService(IDbContextFactory<ProseDbContext> dbFa
 
         var problems = new List<string>();
         if (summary["next"] is null) problems.Add("the summary has no 'next'.");
+        // Present but not an array (one object, a string) used to be read as "no decisions" and
+        // the session ended with every one of them unvalidated.
+        if (summary["decisions"] is not null and not JsonArray)
+            problems.Add("'decisions' must be an array [{text, rulingId|orderId}].");
         var decisions = summary["decisions"] as JsonArray ?? [];
         var i = 0;
         foreach (var d in decisions)
