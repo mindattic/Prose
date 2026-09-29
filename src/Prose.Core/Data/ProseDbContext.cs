@@ -112,8 +112,9 @@ public class ProseDbContext : DbContext
     /// NOTE: raw-SQL writes bypass EF entirely and cannot be caught here. Those are the
     /// backstop's job — see scripts/audit_beat_text_hash.ps1.
     /// </summary>
-    private void StampBeatTextHash()
+    private List<(Guid BeatId, string OldHash, string NewHash)> StampBeatTextHash()
     {
+        var tagOnly = new List<(Guid BeatId, string OldHash, string NewHash)>();
         foreach (var entry in ChangeTracker.Entries<Beat>())
         {
             if (entry.State != EntityState.Added && entry.State != EntityState.Modified) continue;
@@ -124,8 +125,49 @@ public class ProseDbContext : DbContext
             // Sent even when unchanged: the hash trims, so a leading/trailing-whitespace edit keeps
             // it equal, EF skipped the column, and the drift-guard trigger (Text changed, TextHash
             // not) nulled a correct hash.
-            if (entry.State == EntityState.Modified) entry.Property(nameof(Beat.TextHash)).IsModified = true;
+            if (entry.State == EntityState.Modified)
+            {
+                entry.Property(nameof(Beat.TextHash)).IsModified = true;
+                var original = entry.Property(nameof(Beat.Text)).OriginalValue as string;
+                var oldHash = Beat.ComputeHash(original);
+                if (oldHash != expected && IsTagOnlyChange(original, entry.Entity.Text))
+                    tagOnly.Add((entry.Entity.Id, oldHash, expected));
+            }
         }
+        return tagOnly;
+    }
+
+    /// <summary>True when two beat texts read the same once entity tags are stripped: the edit added,
+    /// removed or retargeted tags and changed no word the reader sees.</summary>
+    internal static bool IsTagOnlyChange(string? before, string? after) =>
+        Beat.ComputeHash(BeatMarkup.StripEntityTags(before ?? "")) == Beat.ComputeHash(BeatMarkup.StripEntityTags(after ?? ""));
+
+    /// <summary>
+    /// A tag-only edit (re-tag, pin, merge retarget) changes <see cref="Beat.TextHash"/> but no word
+    /// on the page, and un-read the beat all the same (2026-09-29 source review). A receipt taken at
+    /// the old text is moved to the new hash in the same save, so the beat stays read as it stands;
+    /// its seams and the entities it mentions are still judged by the gate as before. A receipt taken
+    /// at some other text is left alone.
+    /// </summary>
+    private void CarryReceiptsAcrossTagOnlyEdits(List<(Guid BeatId, string OldHash, string NewHash)> tagOnly, List<BeatReadReceipt> receipts)
+    {
+        foreach (var (beatId, oldHash, newHash) in tagOnly)
+            foreach (var r in receipts.Where(r => r.BeatId == beatId && r.TextHash == oldHash))
+                r.TextHash = newHash;
+    }
+
+    private List<BeatReadReceipt> LoadReceiptsFor(List<(Guid BeatId, string OldHash, string NewHash)> tagOnly)
+    {
+        if (tagOnly.Count == 0) return [];
+        var ids = tagOnly.Select(t => t.BeatId).ToList();
+        return BeatReadReceipts.IgnoreQueryFilters().Where(r => ids.Contains(r.BeatId)).ToList();
+    }
+
+    private async Task<List<BeatReadReceipt>> LoadReceiptsForAsync(List<(Guid BeatId, string OldHash, string NewHash)> tagOnly, CancellationToken ct)
+    {
+        if (tagOnly.Count == 0) return [];
+        var ids = tagOnly.Select(t => t.BeatId).ToList();
+        return await BeatReadReceipts.IgnoreQueryFilters().Where(r => ids.Contains(r.BeatId)).ToListAsync(ct).ConfigureAwait(false);
     }
 
     // Alias values a mapper removed with ExecuteDeleteAsync ahead of the pending save. Those
@@ -150,7 +192,8 @@ public class ProseDbContext : DbContext
         try
         {
             StampUniverseOnAdded();
-            StampBeatTextHash();
+            var tagOnly = StampBeatTextHash();
+            CarryReceiptsAcrossTagOnlyEdits(tagOnly, LoadReceiptsFor(tagOnly));
             RunWriteGateSyncChecks();
             var events = ClassifyPendingWriteEvents();
             var result = base.SaveChanges(acceptAllChangesOnSuccess);
@@ -165,7 +208,8 @@ public class ProseDbContext : DbContext
         try
         {
             StampUniverseOnAdded();
-            StampBeatTextHash();
+            var tagOnly = StampBeatTextHash();
+            CarryReceiptsAcrossTagOnlyEdits(tagOnly, await LoadReceiptsForAsync(tagOnly, cancellationToken).ConfigureAwait(false));
             await RunWriteGateSyncChecksAsync(cancellationToken).ConfigureAwait(false);
             var events = ClassifyPendingWriteEvents();
             var result = await base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken).ConfigureAwait(false);

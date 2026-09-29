@@ -134,13 +134,56 @@ public static class ToolDispatch
         }
     }
 
-    private static bool LooksMutating(string method)
+    private static readonly string[] MutatingVerbs =
+        ["create", "insert", "update", "delete", "remove", "set", "add", "apply", "write", "generate", "sync", "import", "restore", "reflow", "rebeat", "split", "join", "close", "start", "rename"];
+
+    /// <summary>
+    /// Tools that change Prose state although their names start with no mutating verb. The verb
+    /// prefix alone let these run without an explicit universe (2026-09-29 source review): a
+    /// splice, a ruling, a clone, an export's fingerprint, read receipts, findings filed by a sweep
+    /// or lint, obligations. A new write tool whose name does not start with a verb above must be
+    /// listed here.
+    /// </summary>
+    private static readonly HashSet<string> MutatingTools = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "AnswerSurveyQuestion", "BulkDismissFindings", "ClearBeatGapAfter", "ClearContext", "ClearEntityStale",
+        "CloneBook", "CompleteSurvey", "DocContextPrepare", "DraftCombatScene", "DuplicateBook",
+        "ExcludeContextDoc", "ExportAudiobook", "ExportBarks", "ExportNode", "ExportUniverseFile",
+        "ExtractContinuityFromBook", "ExtractContinuityFromChapter", "ExtractContinuityFromEntityRecord",
+        "ExtractEntities", "FactoryCapture", "HarvestVoice", "HarvestVoiceAll", "HarvestVoiceCanon",
+        "LogDecision", "LogWound", "MarkSurveyQuestionApplied", "MoveNodeAfterSibling", "NarrateBook",
+        "PlantMotif", "PrepareAudible", "ReadBeats", "RecordLawViolations", "RecordRuling",
+        "RejectVoiceProposal", "ResolveContinuityContradiction", "ResolveReadNote", "ReviewBook",
+        "SanityScanNode", "SpliceBeats", "SupersedeRuling", "UpsertGlossaryTerm", "ValidateNouns",
+        "VerifyEntityCommit", "CheckGearCarry",
+        "accept_obligation", "defer_obligation", "drop_obligation", "reopen_obligation", "open_obligation",
+        "link_obligation_entity", "link_payoff_beat", "link_plant_beat", "register_plant_payoff",
+        "reconcile_obligations", "clear_entity_context", "scan_entity_context", "extract_beat_locations",
+        "ground_entity_records", "logic_sweep", "logic_sweep_until_dry", "lint_prose", "location_scan",
+        "reader_qa_comprehension", "reader_qa_full_order_read", "reader_qa_gripe_pass", "compute_metrics",
+    };
+
+    /// <summary>
+    /// Writes to engine-wide state that belongs to no universe, so they never need a scope: the
+    /// factory's work orders and session end, the one spelling dictionary, the operator key pool,
+    /// and the universe switch itself.
+    /// </summary>
+    private static readonly HashSet<string> UniverseFreeTools = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "WorkOrderAdd", "WorkOrderClose", "WorkOrderAbandon", "SessionEnd", "SwitchUniverse",
+        "AddDictionaryWord", "RemoveDictionaryWord",
+        "AddOperatorByoKey", "RemoveOperatorByoKey", "SetOperatorByoKeys", "ClearOperatorByoKeys",
+    };
+
+    /// <summary>True when a tool can change universe-scoped state and so needs an explicit universe.</summary>
+    internal static bool LooksMutating(string method)
     {
         var name = method.EndsWith("Impl", StringComparison.Ordinal)
             ? method[..^4]
             : method;
-        var verbs = new[] { "create", "insert", "update", "delete", "remove", "set", "add", "apply", "write", "generate", "sync", "import", "restore", "reflow", "rebeat", "split", "join", "close", "start", "rename" };
-        return verbs.Any(v => name.StartsWith(v, StringComparison.OrdinalIgnoreCase));
+        if (UniverseFreeTools.Contains(name)) return false;
+        return MutatingTools.Contains(name)
+            || MutatingVerbs.Any(v => name.StartsWith(v, StringComparison.OrdinalIgnoreCase));
     }
 
     private static async Task<(IResult Result, bool Success, string? Output, string? Error)> InvokeCoreUnscopedAsync(InvokeRequest req, IServiceProvider sp)

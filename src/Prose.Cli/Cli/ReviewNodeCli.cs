@@ -369,7 +369,7 @@ public static class ReviewNodeCli
                     if (answer is not ("y" or "yes"))
                     {
                         Console.WriteLine("[review-node] Cancelled (no confirmation). Pass --yes to proceed without the prompt.");
-                        return 1;
+                        return HubCliClient.ExitCostDeclined;
                     }
                     Console.WriteLine();
                 }

@@ -89,7 +89,7 @@ public sealed class EntityRenameService(
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
             var text = await db.Beats.AsNoTracking().Where(b => b.Id == beatId).Select(b => b.Text).FirstAsync(ct);
-            await workbench.UpdateBeatTextAsync(beatId, matcher.Replace(text ?? "", preview.NewName), BeatWriteReason.AuthorEdit, null, ct: ct);
+            await workbench.UpdateBeatTextAsync(beatId, ReplaceName(matcher, text ?? "", preview.OldName, preview.NewName), BeatWriteReason.AuthorEdit, null, ct: ct);
         }
 
         // The rule prevents later prose from reintroducing the old canonical form.
@@ -160,7 +160,28 @@ public sealed class EntityRenameService(
         return matches.Count == 1 ? matches[0] : null;
     }
 
-    private static Regex NameRegex(string name) => new($@"(?<![\p{{L}}\p{{N}}]){Regex.Escape(name)}(?![\p{{L}}\p{{N}}])", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
+    /// <summary>
+    /// Matches the name as the record spells it, and its ALL-CAPS form, as a whole word. Not
+    /// case-insensitive: that also rewrote the ordinary word, so renaming "Silence" changed every
+    /// lowercase "silence" in the book (2026-09-29 source review).
+    /// </summary>
+    internal static Regex NameRegex(string name)
+    {
+        var forms = new[] { name, name.ToUpperInvariant() }.Distinct(StringComparer.Ordinal).Select(Regex.Escape);
+        return new($@"(?<![\p{{L}}\p{{N}}])(?:{string.Join("|", forms)})(?![\p{{L}}\p{{N}}])", RegexOptions.CultureInvariant);
+    }
+
+    /// <summary>Replaces each match with the new name in the matched case: as spelled, or in ALL
+    /// CAPS where the prose shouted the old name. A name already written in capitals ("ELF") has no
+    /// shouted form, so every match takes the new name as spelled.</summary>
+    internal static string ReplaceName(Regex matcher, string text, string oldName, string newName)
+    {
+        var shout = oldName.ToUpperInvariant();
+        var hasShout = !string.Equals(shout, oldName, StringComparison.Ordinal);
+        return matcher.Replace(text, m => hasShout && string.Equals(m.Value, shout, StringComparison.Ordinal)
+            ? newName.ToUpperInvariant()
+            : newName);
+    }
 
     private static async Task<string> UniqueSlugAsync(ProseDbContext db, Prose.Core.Data.Entities.Entity entity, string name, CancellationToken ct)
     {

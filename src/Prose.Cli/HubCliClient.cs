@@ -127,9 +127,13 @@ public static class HubCliClient
     /// (<c>api/cli-cost-gate</c>); only the actual terminal y/n read happens here, on this
     /// process's real console — see CostGateDispatch.cs for the two-round-trip protocol.
     /// Declining (either by explicit 'n' or the same redirected-stdin fail-closed rule
-    /// CostGateCli always used) exits 0, matching the pre-migration Program.cs callers'
-    /// `if (!proceed) return;`.
+    /// CostGateCli always used) exits <see cref="ExitCostDeclined"/>, not 0: the command did not
+    /// run, and an agent or script reading 0 took a refused billed pass for a finished one.
     /// </summary>
+    /// <summary>Exit code of a billed command refused at the cost prompt — distinct from 1 (failed)
+    /// and 2 (bad usage) so a caller can tell "not run, confirm with --yes" apart.</summary>
+    public const int ExitCostDeclined = 3;
+
     public static async Task<int> ForwardWithCostGateAsync(string handlerClass, string commandName, string[] args, string? method = null, string? extraParamValue = null)
     {
         var universe = Prose.Core.Services.UniverseBootstrap.RequestedSlug
@@ -149,7 +153,7 @@ public static class HubCliClient
                 Console.Error.WriteLine($"  Command  : {commandName}");
                 Console.Error.WriteLine($"  Est cost : ${gate.Value.Estimated:F3}  ({gate.Value.Confidence})");
                 Console.Error.WriteLine("  Input is redirected (non-interactive) — refusing to proceed without --no-confirm.");
-                return 0;
+                return ExitCostDeclined;
             }
 
             Console.WriteLine();
@@ -158,7 +162,7 @@ public static class HubCliClient
             Console.Write("  Proceed? [y/n]: ");
             var key = Console.ReadKey(intercept: false);
             Console.WriteLine();
-            if (key.KeyChar is not ('y' or 'Y')) return 0;
+            if (key.KeyChar is not ('y' or 'Y')) return ExitCostDeclined;
 
             gate = await PostCostGateAsync(handlerClass, commandName, args, universe, method, extraParamValue, cwd, stdin, noConfirm: true);
             if (gate == null) return 1;

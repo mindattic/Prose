@@ -574,142 +574,16 @@ public class NodeWorkbenchService
         return rows.ToDictionary(r => r.Id, r => (r.Name, r.EntityType));
     }
 
-    /// <summary>
-    /// Batch prose edit — the sanctioned path for a fix pass touching many beats in one book
-    /// (a logic-sweep fix round, a corpus-wide entity-rename splice), added 2026-08-22 (write-gate
-    /// Phase 0) to replace callers looping <see cref="UpdateBeatTextAsync"/> per-beat, which fires
-    /// one full blast-radius + narrow-logic-sweep pass PER beat — redundant work when the same fix
-    /// round touches N beats in the same book, and N separate async passes racing each other
-    /// rather than one pass over their union. Each edit still gets its own hash recompute and
-    /// entity-tag re-derivation exactly as the single-beat path does; only the
-    /// blast-radius/logic-sweep/continuity-extraction tail is deduplicated across the batch.
-    /// </summary>
-    public async Task UpdateBeatTextBatchAsync(
-        IReadOnlyList<(Guid BeatId, string NewText)> edits, BeatWriteReason reason, CancellationToken ct = default)
-    {
-        if (edits.Count == 0) return;
-
-        var touchedBeatIds = new List<Guid>();
-        Guid? bookNodeId = null;
-
-        foreach (var (beatId, newText) in edits)
-        {
-            await using var db = await dbFactory.CreateDbContextAsync(ct);
-            var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct)
-                ?? throw new InvalidOperationException($"Beat {beatId} not found.");
-
-            // The nearest BOOK, as the single-beat path resolves it — the old walk to the tree
-            // root landed on the series for a book under a series, so the candidate index, the
-            // obligation scan and the narrow sweep below were all scoped to the wrong node.
-            var thisBookNodeId = await ResolveBookAncestorForBeatAsync(db, beatId, ct);
-            bookNodeId ??= thisBookNodeId;
-
-            var universeId = thisBookNodeId.HasValue
-                ? await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == thisBookNodeId.Value).Select(n => n.UniverseId).FirstOrDefaultAsync(ct)
-                : Guid.Empty;
-
-            // Same pinned-mention handling as the single-beat path above — a batch edit must not
-            // be the one that loses an ambiguous name's tag.
-            var pinnedMentions = BeatMarkup.ExtractTaggedMentions(newText);
-            var plainText = BeatMarkup.StripEntityTags(TextSanitizerService.Sanitize((newText ?? "").Trim()));
-            var candidates = universeId != Guid.Empty
-                ? await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, thisBookNodeId, ct)
-                : [];
-            if (universeId != Guid.Empty && pinnedMentions.Count > 0)
-                candidates = EntityMentionScanner.WithPinnedMentions(
-                    candidates, pinnedMentions, await LoadLiveEntitiesAsync(db, universeId, pinnedMentions, ct));
-            var mentionMatches = EntityMentionScanner.Scan(plainText, candidates);
-            var trimmed = EntityMentionScanner.ApplyTags(plainText, mentionMatches);
-
-            if (beat.Text == trimmed) continue; // no-op — don't bump UpdatedAt for nothing
-
-            beat.Text         = trimmed;
-            beat.TextHash     = ComputeTextHash(trimmed);
-            beat.WasCorrected = true;
-            beat.Stale        = true;
-            beat.Score        = null;
-            beat.ScoredAt     = null;
-            beat.Version++;
-            beat.LastWriteReason = reason.ToString();   // RFC 0009
-            InvalidateAudioOnBeat(db, beat);
-            beat.UpdatedAt = DateTime.UtcNow;
-            await db.SaveChangesAsync(ct);
-            touchedBeatIds.Add(beatId);
-
-            await DeriveMentionsLoggedAsync(beatId, trimmed);
-
-            // RFC 0013: a batch edit registers its promises too (per beat — the ledger's running
-            // open list is what each scan reads, so order matters and there is no union shortcut).
-            if (obligations != null && thisBookNodeId.HasValue
-                && reason is not BeatWriteReason.TagMaintenance)
-            {
-                var bnId = thisBookNodeId.Value;
-                var stripped = BeatMarkup.StripEntityTags(trimmed);
-                _ = Task.Run(() => obligations.ScanBeatAsync(bnId, beatId, stripped, ObligationActor.SystemRescan, CancellationToken.None), CancellationToken.None)
-                    .ContinueWith(t => log.LogError(t.Exception, "NarrativeObligationService.ScanBeatAsync background task failed (batch)"),
-                        TaskContinuationOptions.OnlyOnFaulted);
-            }
-        }
-
-        if (touchedBeatIds.Count == 0) return;
-
-        log.LogInformation("UpdateBeatTextBatchAsync: {Count} beat(s) edited by {Source}", touchedBeatIds.Count, reason);
-
-        // One blast-radius + narrow-logic-sweep pass over the UNION of every touched beat's
-        // radius, instead of one pass per beat — the whole point of the batch path.
-        if (blastRadius != null && logicSweep != null && bookNodeId.HasValue)
-        {
-            var bnId = bookNodeId.Value;
-            var seedBeatIds = touchedBeatIds.ToList();
-            _ = Task.Run(async () =>
-                {
-                    var radiusIds = new HashSet<Guid>();
-                    foreach (var seedId in seedBeatIds)
-                        foreach (var id in await blastRadius.GetBlastRadiusBeatIdsAsync(seedId, ct: CancellationToken.None))
-                            radiusIds.Add(id);
-                    if (radiusIds.Count > 0)
-                        await logicSweep.RunNarrowAsync(bnId, radiusIds.ToList(), seedBeatIds[0], CancellationToken.None);
-                }, CancellationToken.None)
-                .ContinueWith(t => log.LogError(t.Exception, "Blast-radius RunNarrowAsync background task failed (batch)"),
-                    TaskContinuationOptions.OnlyOnFaulted);
-        }
-
-        if (continuityExtraction != null)
-        {
-            // Re-extraction is per-chapter and hash-gated (no-op if the chapter's text is
-            // unchanged since its last extraction) — safe to fan out one call per distinct
-            // chapter touched by the batch rather than trying to dedupe further here.
-            var chapterIds = new List<Guid>();
-            await using var db2 = await dbFactory.CreateDbContextAsync(ct);
-            foreach (var beatId in touchedBeatIds)
-            {
-                var nodeId = await db2.BeatNodes.AsNoTracking()
-                    .Where(bn => bn.BeatId == beatId)
-                    .Select(bn => bn.NodeId)
-                    .FirstOrDefaultAsync(ct);
-                if (nodeId != Guid.Empty) chapterIds.Add(nodeId);
-            }
-            foreach (var chapterNodeId in chapterIds.Distinct())
-            {
-                var cid = chapterNodeId;
-                _ = Task.Run(() => continuityExtraction.ReExtractChapterIfChangedAsync(cid, ct: CancellationToken.None), CancellationToken.None)
-                    .ContinueWith(t => log.LogError(t.Exception, "ReExtractChapterIfChangedAsync background task failed (batch)"),
-                        TaskContinuationOptions.OnlyOnFaulted);
-            }
-        }
-    }
-
     /// <summary>Update a beat's narrative metadata — the fields that drive
     /// <see cref="BeatPromptBuilder"/> at narration time. Does NOT touch
     /// the prose, the audio, or the hash; the user can tune tone without
     /// invalidating the existing recording. The next re-record picks up
     /// the new tone via the prompt builder.
     ///
-    /// Fires the same blast-radius + narrow logic-sweep hook as
-    /// <see cref="UpdateBeatTextAsync"/> (added 2026-08-22, write-gate Phase 0) — this method
-    /// previously had zero validation hooks, but <c>StructureRole</c>/<c>IsChapterStart</c>/
-    /// <c>Act</c> are exactly the fields a chapter-boundary check depends
-    /// on, and a metadata-only edit could silently invalidate them with nothing ever re-checking.</summary>
+    /// Makes no LLM call. It used to fire the blast-radius + narrow logic-sweep hook (six calls)
+    /// on every metadata edit; the 2026-09-22 author ruling (RFC 0014) switched that tail off on
+    /// the prose save in <see cref="UpdateBeatTextAsync"/>, and it is off here for the same
+    /// reason (4,359 blast-radius findings, 0 ever applied).</summary>
     public async Task UpdateBeatMetadataAsync(Guid beatId, BeatMetadataUpdate update, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -750,24 +624,6 @@ public class NodeWorkbenchService
         if (update.Kind           is not null) beat.Kind           = Blank(update.Kind)?.ToLowerInvariant() ?? "prose";
         beat.UpdatedAt      = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);
-
-        if (blastRadius != null && logicSweep != null)
-        {
-            // Nearest book, not the tree root (a series, for a book under one).
-            var bookNodeId = await ResolveBookAncestorForBeatAsync(db, beatId, ct);
-            if (bookNodeId.HasValue)
-            {
-                var bnId = bookNodeId.Value;
-                _ = Task.Run(async () =>
-                    {
-                        var radiusIds = await blastRadius.GetBlastRadiusBeatIdsAsync(beatId, ct: CancellationToken.None);
-                        if (radiusIds.Count > 0)
-                            await logicSweep.RunNarrowAsync(bnId, radiusIds, beatId, CancellationToken.None);
-                    }, CancellationToken.None)
-                    .ContinueWith(t => log.LogError(t.Exception, "Blast-radius RunNarrowAsync background task failed (metadata update)"),
-                        TaskContinuationOptions.OnlyOnFaulted);
-            }
-        }
     }
 
     /// <summary>

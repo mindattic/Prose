@@ -165,6 +165,60 @@ public class ReadGateTests
         Assert.That(s.Unread.Single().Detail, Does.Contain("Silence"));
     }
 
+    /// <summary>Wraps an existing word of a beat in an entity tag, changing no word on the page.
+    /// <paramref name="replaceWith"/> also swaps the tagged word, for the edits that are not tag-only.</summary>
+    private async Task RetagWordAsync(Guid beatId, string word, string? replaceWith = null)
+    {
+        var entityId = Guid.CreateVersion7();
+        await using var db = await dbFactory.CreateDbContextAsync();
+        db.Entities.Add(new Entity { Id = entityId, EntityType = "weapon", Name = word, Slug = word.ToLowerInvariant(),
+            ModifiedAt = DateTime.UtcNow.AddDays(-1) });
+        var beat = await db.Beats.SingleAsync(b => b.Id == beatId);
+        beat.Text = beat.Text.Replace(word, $"<entity repo=\"weapon\" guid=\"{entityId}\">{replaceWith ?? word}</entity>");
+        await db.SaveChangesAsync();
+    }
+
+    [Test]
+    public async Task A_tag_only_edit_keeps_the_beat_read()
+    {
+        var book = await MakeBookAsync();
+        var ids = await ThreeBeatsAsync(book);
+        await ReadAllAsync(book);
+
+        await RetagWordAsync(ids[1], "second");
+
+        Assert.That((await gate.GetStatusAsync(book)).AllRead, Is.True,
+            "the reader sees the same words, so the receipt follows the new hash");
+    }
+
+    [Test]
+    public async Task A_retag_that_changes_a_word_makes_the_beat_unread()
+    {
+        var book = await MakeBookAsync();
+        var ids = await ThreeBeatsAsync(book);
+        await ReadAllAsync(book);
+
+        await RetagWordAsync(ids[1], "second", replaceWith: "other");
+
+        var s = await gate.GetStatusAsync(book);
+        Assert.That(s.Unread.Single().BeatId, Is.EqualTo(ids[1]));
+        Assert.That(s.Unread.Single().Reason, Is.EqualTo(UnreadReason.TextChanged));
+    }
+
+    [Test]
+    public async Task A_tag_only_edit_does_not_bless_a_receipt_taken_at_older_words()
+    {
+        var book = await MakeBookAsync();
+        var ids = await ThreeBeatsAsync(book);
+        await ReadAllAsync(book);
+        await workbench.UpdateBeatTextAsync(ids[1], "The second beat, revised.", BeatWriteReason.AuthorEdit);
+
+        await RetagWordAsync(ids[1], "revised");
+
+        Assert.That((await gate.GetStatusAsync(book)).Unread.Single().Reason, Is.EqualTo(UnreadReason.TextChanged),
+            "the receipt was for the unrevised words, which a retag must not carry forward");
+    }
+
     [Test]
     public async Task Mentions_come_from_the_beat_tags_not_the_background_mention_table()
     {
