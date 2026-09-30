@@ -817,7 +817,7 @@ List every weapon in canon. Returns name + category + manufacturer. Use this to 
 
 ### `apply_entity_rename`
 
-Apply a reviewed deterministic entity rename. Requires confirmed=true and an explicit active universe. Replaces exact full-name references in the selected book's beats, relabels linked Story Ledger claims, and registers the old name as deprecated.
+Apply a reviewed deterministic entity rename. Requires confirmed=true and an explicit active universe. Rewrites the text of the entity's own tags that read exactly the old name in the selected book's beats (untagged words and tags that read otherwise are left alone), relabels linked Story Ledger claims, and registers the old name as deprecated.
 
 - `entityIdOrSlug` (string, required) — Canonical entity GUID7 or slug.
 - `nodeIdOrSlug` (string, required) — Book GUID, slug, or NodeCode that scopes the beats.
@@ -854,7 +854,7 @@ Inspect the entity working memory currently active for a node. Shows depth-0 (di
 
 ### `preview_entity_rename`
 
-Preview a deterministic entity rename. Finds exact full-name references in one book's descendant beats, plus linked Story Ledger claims. Does not write.
+Preview a deterministic entity rename. Finds the entity's own tags (entity guid) whose text is exactly its current name in one book's descendant beats, plus linked Story Ledger claims. Untagged words are never counted. Does not write.
 
 - `entityIdOrSlug` (string, required) — Canonical entity GUID7 or slug.
 - `nodeIdOrSlug` (string, required) — Book GUID, slug, or NodeCode that scopes the beats.

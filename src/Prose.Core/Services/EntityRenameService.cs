@@ -29,7 +29,6 @@ public sealed class EntityRenameService(
         if (node.UniverseId != entity.UniverseId) return EntityRenamePreview.Failure("cross_universe_scope");
         if (string.Equals(entity.Name, newName.Trim(), StringComparison.Ordinal)) return EntityRenamePreview.Failure("name_unchanged");
 
-        var matcher = NameRegex(entity.Name);
         var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
         var beats = await db.BeatNodes.AsNoTracking().Where(bn => leafIds.Contains(bn.NodeId))
             .Join(db.Beats.AsNoTracking(), bn => bn.BeatId, b => b.Id, (_, b) => b)
@@ -37,7 +36,7 @@ public sealed class EntityRenameService(
 
         // Distinct: a beat linked under two nodes of the book came back twice, so the preview
         // over-counted it and apply rewrote it twice.
-        var beatIds = beats.Where(b => matcher.IsMatch(b.Text!)).Select(b => b.Id).Distinct().ToList();
+        var beatIds = beats.Where(b => MentionsByName(b.Text!, entity.Id, entity.Name)).Select(b => b.Id).Distinct().ToList();
         var ledgerCount = continuity.GetByEntity(entity.Id.ToString()).Count(c => !string.Equals(c.EntityName, newName.Trim(), StringComparison.Ordinal));
         return new EntityRenamePreview(true, null, entity.Id, entity.Name, entity.Slug, newName.Trim(), node.Id, node.Slug,
             beatIds, ledgerCount, entity.EntityType);
@@ -84,12 +83,11 @@ public sealed class EntityRenameService(
             await db.SaveChangesAsync(ct);
         }
 
-        var matcher = NameRegex(preview.OldName);
         foreach (var beatId in preview.BeatIds)
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
             var text = await db.Beats.AsNoTracking().Where(b => b.Id == beatId).Select(b => b.Text).FirstAsync(ct);
-            await workbench.UpdateBeatTextAsync(beatId, ReplaceName(matcher, text ?? "", preview.OldName, preview.NewName), BeatWriteReason.AuthorEdit, null, ct: ct);
+            await workbench.UpdateBeatTextAsync(beatId, RenameTaggedMentions(text ?? "", preview.EntityId, preview.OldName, preview.NewName), BeatWriteReason.AuthorEdit, null, ct: ct);
         }
 
         // The rule prevents later prose from reintroducing the old canonical form.
@@ -161,27 +159,30 @@ public sealed class EntityRenameService(
     }
 
     /// <summary>
-    /// Matches the name as the record spells it, and its ALL-CAPS form, as a whole word. Not
-    /// case-insensitive: that also rewrote the ordinary word, so renaming "Silence" changed every
-    /// lowercase "silence" in the book (2026-09-29 source review).
+    /// A rename touches the entity's own tags and nothing else: every real mention of an entity is
+    /// an <c>&lt;entity guid="…"&gt;</c> tag carrying its id, so a loose word that happens to spell
+    /// the old name is not a mention of it and is never rewritten (author, 2026-09-29: "there is
+    /// one sword whose name is Silence … no reason to be fucking with words"). Within the entity's
+    /// tags, only those whose visible text is exactly the old name change; a tag that reads "the
+    /// blade" stays as written.
     /// </summary>
-    internal static Regex NameRegex(string name)
-    {
-        var forms = new[] { name, name.ToUpperInvariant() }.Distinct(StringComparer.Ordinal).Select(Regex.Escape);
-        return new($@"(?<![\p{{L}}\p{{N}}])(?:{string.Join("|", forms)})(?![\p{{L}}\p{{N}}])", RegexOptions.CultureInvariant);
-    }
+    private static readonly Regex TagPattern =
+        new(@"(<entity\b[^>]*\bguid=""([^""]*)""[^>]*>)(.*?)(</entity\s*>)", RegexOptions.Singleline | RegexOptions.CultureInvariant);
 
-    /// <summary>Replaces each match with the new name in the matched case: as spelled, or in ALL
-    /// CAPS where the prose shouted the old name. A name already written in capitals ("ELF") has no
-    /// shouted form, so every match takes the new name as spelled.</summary>
-    internal static string ReplaceName(Regex matcher, string text, string oldName, string newName)
-    {
-        var shout = oldName.ToUpperInvariant();
-        var hasShout = !string.Equals(shout, oldName, StringComparison.Ordinal);
-        return matcher.Replace(text, m => hasShout && string.Equals(m.Value, shout, StringComparison.Ordinal)
-            ? newName.ToUpperInvariant()
-            : newName);
-    }
+    /// <summary>True when <paramref name="text"/> carries a tag for <paramref name="entityId"/> that reads <paramref name="name"/>.</summary>
+    internal static bool MentionsByName(string text, Guid entityId, string name) =>
+        TagPattern.Matches(text).Any(m => IsTagFor(m, entityId) && string.Equals(m.Groups[3].Value, name, StringComparison.Ordinal));
+
+    /// <summary>Rewrites the visible text of <paramref name="entityId"/>'s tags that read
+    /// <paramref name="oldName"/> to <paramref name="newName"/>. Everything outside those tags is
+    /// returned unchanged.</summary>
+    internal static string RenameTaggedMentions(string text, Guid entityId, string oldName, string newName) =>
+        TagPattern.Replace(text, m => IsTagFor(m, entityId) && string.Equals(m.Groups[3].Value, oldName, StringComparison.Ordinal)
+            ? m.Groups[1].Value + newName + m.Groups[4].Value
+            : m.Value);
+
+    private static bool IsTagFor(Match m, Guid entityId) =>
+        Guid.TryParse(m.Groups[2].Value, out var id) && id == entityId;
 
     private static async Task<string> UniqueSlugAsync(ProseDbContext db, Prose.Core.Data.Entities.Entity entity, string name, CancellationToken ct)
     {

@@ -71,6 +71,12 @@ public class EntityRenameServiceTests : WorldFixture
         {
             var universe = await db.Nodes.IgnoreQueryFilters().Where(n => n.Id == book).Select(n => n.UniverseId).SingleAsync();
             (await db.Entities.IgnoreQueryFilters().SingleAsync(e => e.Id == placeId)).UniverseId = universe;
+            // A mention is the place's tag; the loose words in the second sentence are not one.
+            var tag = $"<entity repo=\"place\" guid=\"{placeId}\">Harbor Grill</entity>";
+            foreach (var beat in await db.Beats.ToListAsync())
+                beat.Text = beat.Text.StartsWith("They")
+                    ? $"They ate at {tag} that night. A sign read harbor grill specials."
+                    : $"{tag} was closed by morning.";
             await db.SaveChangesAsync();
         }
         var full = new EntityRenameService(dbFactory, workbench,
@@ -90,8 +96,9 @@ public class EntityRenameServiceTests : WorldFixture
         Assert.That(places.GetById(p.Id)!.Name, Is.EqualTo("Cuisine"));
         Assert.That(await check.Entities.IgnoreQueryFilters().Where(e => e.Id == placeId).Select(e => e.Name).SingleAsync(), Is.EqualTo("Cuisine"));
         var texts = await check.Beats.AsNoTracking().Select(b => b.Text).ToListAsync();
-        Assert.That(texts, Has.None.Contains("Harbor Grill"));
+        Assert.That(texts.Select(BeatMarkup.StripEntityTags), Has.None.Contains("Harbor Grill"), "every tagged mention moved");
         Assert.That(texts, Has.Some.Contains("Cuisine"));
+        Assert.That(texts, Has.Some.Contains("harbor grill specials"), "an untagged word is not a mention and is never rewritten");
     }
 
     [Test]
