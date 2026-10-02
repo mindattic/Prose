@@ -3,6 +3,8 @@ using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Windows;
 using System.Windows.Input;
+using AutoWebNav;
+using AutoWebNav.WebView2;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Web.WebView2.Core;
 using Prose.Core.Kdp;
@@ -31,6 +33,12 @@ public partial class MainWindow : Window
 
     private List<KdpManifestEntry> lastManifest = new();
     private IKdpBrowser? kdpBrowser;
+    /// <summary>Spectator Mode for the KDP pane — the shared AutoWebNav capability every
+    /// AutoWebNav host app (JobHunt, Automata, this app) wires up the same way. Captures a real
+    /// session's clicks/typing as self-healing fingerprints, for writing or fixing an IKdpTool
+    /// from ground truth instead of a guess.</summary>
+    private RecorderSession? spectator;
+    private readonly List<RecorderEvent> spectatorEvents = [];
     private CancellationTokenSource? runCts;
     private KdpRunLogService? runLog;
     private Guid? currentRunId;
@@ -115,6 +123,16 @@ public partial class MainWindow : Window
             _ = PostLogAsync($"⚠ KDP page raised a {args.Kind} dialog: \"{args.Message}\" — auto-accepting.");
             args.Accept();
         };
+
+        // Spectator Mode rides along on every document, dormant until armed from the control
+        // panel — same mechanism and wire protocol as Automata's "● Record" and JobHunt's
+        // Spectator Mode toggle, since this capability lives once in AutoWebNav and every host
+        // app adopts it the same way.
+        spectator = new RecorderSession(KdpBrowser.CoreWebView2);
+        await spectator.InstallAsync();
+        spectator.EventCaptured += evt => spectatorEvents.Add(evt);
+        KdpBrowser.CoreWebView2.NavigationCompleted += (_, _) =>
+            _ = spectator.OnNavigatedAsync(KdpBrowser.CoreWebView2.Source);
 
         KdpBrowser.CoreWebView2.Navigate("https://kdp.amazon.com/en_US/bookshelf");
 
@@ -244,6 +262,12 @@ public partial class MainWindow : Window
                 case "export-json":
                     await ExportJsonAsync();
                     break;
+                case "start-spectator":
+                    await StartSpectatorAsync();
+                    break;
+                case "stop-spectator":
+                    await StopSpectatorAsync();
+                    break;
             }
         }
         catch (Exception ex)
@@ -299,6 +323,27 @@ public partial class MainWindow : Window
             "MindAttic", "Prose", "kdp-export", DateTime.Now.ToString("yyyyMMdd-HHmmss"));
         var counts = await App.Services.GetRequiredService<KdpJsonTransfer>().ExportAsync(new KdpExportRequest { ToDir = to });
         await PostLogAsync($"Exported JSON to {to}: {counts}.");
+    }
+
+    private async Task StartSpectatorAsync()
+    {
+        if (spectator == null) { await PostLogAsync("⚠ KDP pane isn't ready yet — can't start Spectator Mode."); return; }
+        spectatorEvents.Clear();
+        await spectator.ArmAsync();
+        await PostLogAsync("◉ Spectator Mode — perform the actions to capture, then stop it.");
+    }
+
+    private async Task StopSpectatorAsync()
+    {
+        if (spectator == null) return;
+        await spectator.DisarmAsync();
+        var steps = RecordingBuilder.Build(spectatorEvents);
+        spectatorEvents.Clear();
+        if (steps.Count == 0) { await PostLogAsync("Spectator Mode stopped — nothing was captured."); return; }
+
+        var path = Path.Combine(KnownFolders.Downloads, $"kdp-{DateTime.Now:yyyyMMdd-HHmmss}{RecordingExport.FileExtension}");
+        await File.WriteAllTextAsync(path, RecordingExport.Export(steps, DateTimeOffset.Now));
+        await PostLogAsync($"Spectator Mode stopped — {steps.Count} step(s) captured, saved to {path}.");
     }
 
     private async Task RefreshManifestAsync()

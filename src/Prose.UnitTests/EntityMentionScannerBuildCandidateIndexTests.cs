@@ -324,6 +324,32 @@ public class EntityMentionScannerBuildCandidateIndexTests
     }
 
     [Test]
+    public async Task BuildCandidateIndexAsync_AConnective_IsNeverDerivedOrAnchoredAsAName()
+    {
+        // Found live 2026-09-25: "The Dioscuri (Castor and Polydeuces)". "The" is a stopword and the
+        // two bracket-edged words are dropped, which left [Dioscuri, and] — and the last of those was
+        // derived as the twins' name, so every "and" in four planning docs (496 of them) tagged as
+        // the Dioscuri. A curated alias "and" must not anchor a tag either.
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var twins = Guid.NewGuid();
+        db.Entities.Add(new Entity { Id = twins, UniverseId = universeId, EntityType = "character", Name = "The Dioscuri (Castor and Polydeuces)", Slug = "dioscuri", Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+        db.Characters.Add(new Character { Id = twins, Name = "The Dioscuri (Castor and Polydeuces)" });
+        var other = Guid.NewGuid();
+        db.Entities.Add(new Entity { Id = other, UniverseId = universeId, EntityType = "character", Name = "Mira Vance", Slug = "mira-vance", Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+        db.Characters.Add(new Character { Id = other, Name = "Mira Vance" });
+        db.CharacterAliases.Add(new CharacterAlias { CharacterId = other, Position = 0, Value = "and" });
+        await db.SaveChangesAsync();
+
+        var candidates = await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, bookNodeId: null);
+
+        Assert.That(candidates.Any(c => string.Equals(c.Text, "and", StringComparison.OrdinalIgnoreCase)), Is.False,
+            "a connective is never a name, derived or curated");
+        Assert.That(EntityMentionScanner.Scan("Bread and salt, and then the road.", candidates), Is.Empty);
+        Assert.That(EntityMentionScanner.Scan("Mira Vance came in.", candidates).Single().EntityId, Is.EqualTo(other),
+            "the whole name still tags");
+    }
+
+    [Test]
     public async Task BuildCandidateIndexAsync_ALeadingTitle_IsNeverDerivedAsABareName()
     {
         await using var db = await dbFactory.CreateDbContextAsync();

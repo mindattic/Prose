@@ -79,8 +79,8 @@ their state as the book opens (pre-1381 baseline) — see §10 for the full enti
 | <entity repo="character" guid="019fc3ba-ab59-7523-bd4b-e98bfd97ebdf">Wat Tyler</entity> | Obscure before 7 June 1381; likely served as an archer in <entity repo="character" guid="019fc3c0-cf72-7f06-9c14-d3a7f34e65bd">France</entity>; elected leader of the Kentish rebels at <entity repo="place" guid="019fc3ba-cd48-74e1-b7a6-037ad32784ca">Maidstone</entity> |
 | <entity repo="character" guid="019fc3ba-aa19-7e32-9242-f7e3fec0dcd4">John Ball</entity> | "<entity repo="vocabulary" guid="57c1e374-2cb2-43c2-8bae-247d24eab383">Hedge-priest</entity>" of Kent, excommunicated and repeatedly imprisoned since the 1360s for radical egalitarian preaching, active more than a decade before Wycliffe |
 | <entity repo="character" guid="019fc3ba-a9e1-7611-b92b-1785add2d195">Jack Straw</entity> | Named by several chroniclers as an Essex/Kentish leader; identity contested — possibly a real figure, possibly a chronicler's alias for <entity repo="character" guid="019fc3ba-ab59-7523-bd4b-e98bfd97ebdf">Tyler</entity> or <entity repo="character" guid="019fc3ba-aa6e-7730-8b14-f07da32e98af">Wrawe</entity> |
-| <entity repo="character" guid="019fc3ba-aafe-71b8-bac6-b7a7c6aa08ab">Simon Sudbury</entity> | Archbishop of <entity repo="place" guid="019fc3ba-cd27-7f6d-95d3-239edc9e5974">Canterbury</entity> and Lord Chancellor; author, in that office, of the unpopular tax policy the rebels blame him for |
-| <entity repo="character" guid="019fc3ba-aad1-7b74-88b9-e7134608ea85">Robert Hales</entity> | Prior of the Knights Hospitaller of England and Lord Treasurer; the tax's chief administrator |
+| <entity repo="character" guid="019fc3ba-aafe-71b8-bac6-b7a7c6aa08ab">Simon Sudbury</entity> | Archbishop of <entity repo="place" guid="019fc3ba-cd27-7f6d-95d3-239edc9e5974">Canterbury</entity> and Lord Chancellor; author, in that office, of the unpopular <entity repo="character" guid="019fc3ba-a58c-7bef-b745-9e31526437a4">tax</entity> policy the rebels blame him for |
+| <entity repo="character" guid="019fc3ba-aad1-7b74-88b9-e7134608ea85">Robert Hales</entity> | Prior of the Knights Hospitaller of England and Lord Treasurer; the <entity repo="character" guid="019fc3ba-a58c-7bef-b745-9e31526437a4">tax</entity>'s chief administrator |
 | <entity repo="character" guid="019fc3ba-aba5-7695-96b2-00e5f495792f">William Walworth</entity> | Lord Mayor of London |
 | <entity repo="character" guid="019fc3ba-aa6e-7730-8b14-f07da32e98af">John Wrawe</entity> | Chaplain; leads the Suffolk rising north from Essex |
 | <entity repo="character" guid="019fc3ba-a976-7ee6-89aa-9fa74b476b43">Geoffrey Litster</entity> | Norfolk dyer/weaver; leads the East Anglian rising |
@@ -116,7 +116,7 @@ Not applicable in the fiction sense. The one long-range thread this book must pa
 
 ## 8. Thematic Complement {#SS-BRIEF-1381-§8}
 
-**Theme:** A tax collector gets run out of an Essex town, and six weeks later the Archbishop of
+**Theme:** A <entity repo="character" guid="019fc3ba-a58c-7bef-b745-9e31526437a4">tax</entity> collector gets run out of an Essex town, and six weeks later the Archbishop of
 <entity repo="place" guid="019fc3ba-cd27-7f6d-95d3-239edc9e5974">Canterbury</entity> is dead on Tower Hill and a fourteen-year-old king is negotiating, on horseback, with
 the largest crowd London has ever seen — and within a month the whole thing is over and almost
 nothing the rebels won survives on paper. The book's spine is the gap between how fast it moved
@@ -191,7 +191,7 @@ trial — following the real event sequence, not an invented dramatic palette.
 3. Steven Justice, *Writing and Rebellion: England in 1381* (University of California Press, 1994)
    — the revisionist turn on rebel literacy, rhetoric, and textuality
 4. Juliet Barker, *England, Arise: The People, the King and the <entity repo="character" guid="019f9ff0-74c1-706f-953b-168d90c9dba0">Great</entity> Revolt of 1381* (Little,
-   <entity repo="character" guid="019fa009-fe80-767a-a8ce-5d4d15e343e4">Brown</entity>, 2014) — the most recent full narrative synthesis, "the <entity repo="character" guid="019f9ff0-74c1-706f-953b-168d90c9dba0">Great</entity> Revolt" naming choice
+   Brown, 2014) — the most recent full narrative synthesis, "the <entity repo="character" guid="019f9ff0-74c1-706f-953b-168d90c9dba0">Great</entity> Revolt" naming choice
 
 ---
 
@@ -210,7 +210,7 @@ London, <entity repo="place" guid="019fc3ba-cd5d-7dbe-bc6b-3db5af774ed7">Mile En
 
 ### Documents / Sources
 <entity repo="document" guid="bf9dec1f-f902-41d1-9966-57b4f7305f97">The Anonimalle Chronicle</entity>, <entity repo="character" guid="019f9ff0-75ad-7e78-bed0-99d6e73bbec3">Thomas</entity> Walsingham's *Historia Anglicana*, Henry Knighton's *Chronicon*,
-Jean Froissart's *Chroniques*, the Statute of Labourers (1351), the <entity repo="vocabulary" guid="51c0aa7c-eb0d-4154-8ba0-bb0b9bdc1336">poll tax</entity> return membranes
+Jean Froissart's *Chroniques*, <entity repo="document" guid="cdf5f475-00ef-4212-a1dd-0815f4620263">the Statute of Labourers (1351)</entity>, the <entity repo="vocabulary" guid="51c0aa7c-eb0d-4154-8ba0-bb0b9bdc1336">poll tax</entity> return membranes
 (E 179 series, The National Archives), King's Bench indictment rolls.
 
 ### Terms

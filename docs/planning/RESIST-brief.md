@@ -100,7 +100,7 @@ a set of unrelated episodes. **Node code: `TIRE`.**
 documented rounds of armed and civil resistance across three centuries:
 1. **The tory insurgency** (c. 1650-early 1660s) — after <entity repo="place" guid="019fc925-c261-7468-9fb9-2bff9c859455">Rathmines</entity> (1649) and <entity repo="place" guid="019fc925-c272-7763-90a3-d3f849342c20">Scarrifhollis</entity>
    (1650) destroy the last Confederate field armies. *[Deepest-documented anchor #1.]*
-2. **The 1798 Rebellion** — <entity repo="character" guid="019fc93e-a5e8-7725-8446-9992acb97b46">Wolfe Tone</entity>'s United Irishmen, the <entity repo="place" guid="019fc925-c286-7c13-af59-b8b3d404af58">Wexford</entity> rising (<entity repo="character" guid="019fc93e-a9cf-7106-8cc4-fd3997abec76">Father</entity> John
+2. **The 1798 Rebellion** — <entity repo="character" guid="019fc93e-a5e8-7725-8446-9992acb97b46">Wolfe Tone</entity>'s United Irishmen, the <entity repo="place" guid="019fc925-c286-7c13-af59-b8b3d404af58">Wexford</entity> rising (Father John
    <entity repo="character" guid="019fc93e-a9cf-7106-8cc4-fd3997abec76">Murphy</entity>, <entity repo="place" guid="019fc93e-ba3c-7952-a8ff-45e17d339023">Vinegar Hill</entity>), and <entity repo="character" guid="019fc93e-a9ee-7dca-a87f-e002d3063594">Michael Dwyer</entity>'s Wicklow guerrilla holdout, which runs on past the
    main rising's defeat into a five-and-a-half-year individual campaign (1798-1803) — the
    longest sustained guerrilla holdout this book documents, bridging directly into:
@@ -182,7 +182,7 @@ their state as their respective conflict opens — see §10 for the full entity 
 |---|---|---|
 | <entity repo="character" guid="019fc925-8808-7dcc-b440-c3813c9d1935">Oliver Cromwell</entity> | Cromwellian | Lands at Dublin, August 1649, as Lord Lieutenant and Commander-in-Chief; departs Ireland May 1650, leaving the campaign to subordinates |
 | <entity repo="character" guid="019fc925-8bc0-7913-86eb-a3a1f014f241">Michael Jones</entity> | Cromwellian | Parliamentarian commander holding Dublin; wins the decisive field battle at <entity repo="place" guid="019fc925-c261-7468-9fb9-2bff9c859455">Rathmines</entity>, August 1649, before <entity repo="character" guid="019fc925-8808-7dcc-b440-c3813c9d1935">Cromwell</entity> even lands |
-| <entity repo="character" guid="019fc925-8bdc-7126-a2d9-6c4e64011599">Henry Ireton</entity> | Cromwellian | <entity repo="character" guid="019fc925-8808-7dcc-b440-c3813c9d1935">Cromwell</entity>'s son-in-law; succeeds him as Lord Deputy/Commander-in-Chief in Ireland, 1650; dies of plague at the siege of Limerick, November 1651 |
+| <entity repo="character" guid="019fc925-8bdc-7126-a2d9-6c4e64011599">Henry Ireton</entity> | Cromwellian | <entity repo="character" guid="019fc925-8808-7dcc-b440-c3813c9d1935">Cromwell</entity>'s <entity repo="character" guid="019fa1c7-0043-79ae-8e05-22e2182431fe">son</entity>-in-law; succeeds him as Lord Deputy/Commander-in-Chief in Ireland, 1650; dies of plague at the siege of Limerick, November 1651 |
 | <entity repo="character" guid="019fc925-8bf5-7e48-ba3d-a018546e9a64">Charles Fleetwood</entity> | Cromwellian | Succeeds <entity repo="character" guid="019fc925-8bdc-7126-a2d9-6c4e64011599">Ireton</entity> as Commander-in-Chief, 1652; oversees the settlement/transplantation phase and the anti-tory sweeps |
 | <entity repo="character" guid="019fc925-8c08-788b-a38b-27adcff82535">Owen Roe O'Neill</entity> | Cromwellian | Confederate Ulster army's ablest commander; dies (illness, not battle) November 1649, before <entity repo="character" guid="019fc925-8808-7dcc-b440-c3813c9d1935">Cromwell</entity>'s campaign is decided |
 | <entity repo="character" guid="019fc925-8c25-79b1-9722-c07edb23a1bd">Heber MacMahon</entity> | Cromwellian | Catholic Bishop of Clogher; assumes command of the leaderless Ulster army after <entity repo="character" guid="019fc925-8c08-788b-a38b-27adcff82535">O'Neill</entity>'s death, against the advice of his own officers |
@@ -197,7 +197,7 @@ their state as their respective conflict opens — see §10 for the full entity 
 | <entity repo="character" guid="019fc925-8cea-7c58-bfe3-24b123cd6a6a">Cathal Brugha</entity> | War of Independence | Dáil Minister for Defence |
 | Éamon de <entity repo="character" guid="019fc925-8d04-78ea-8445-a7066c7eb1d5">Valera</entity> | War of Independence | Dáil Éireann President; largely in the United States on a fundraising/diplomatic mission for much of 1919–20 |
 | <entity repo="character" guid="019fc925-8d18-7c30-9204-5376c544524f">William "Rick" Joyce</entity> | War of Independence | Rank-and-file Volunteer, West Mayo Brigade Flying Column under <entity repo="character" guid="0de09e19-557e-40ff-a974-05c00665c49a">Michael</entity> Kilroy — named ("<entity repo="character" guid="019fc925-8d18-7c30-9204-5376c544524f">R. Joyce</entity>") in the Military Archives' 1920-21 roster/photograph, the same column that fought Tourmakeady, Kilmeena, and Carrowkennedy; individual actions beyond column membership not yet found in available sources — an openly stated gap, not smoothed over |
-| <entity repo="character" guid="019fc925-8d36-7b33-b806-2101afe9fd86">William Brooke Joyce</entity> | War of Independence | Teenage son of a strongly pro-Unionist <entity repo="place" guid="019fc925-c2b2-70db-a239-a16ab7c194ad">Galway</entity> family; scouts/informs for British forces against the local IRA — the counterinsurgent-side informer case this book uses (later "<entity repo="character" guid="019fc925-8d36-7b33-b806-2101afe9fd86">Lord Haw-Haw</entity>"; his post-1921 career is explicitly out of scope) |
+| <entity repo="character" guid="019fc925-8d36-7b33-b806-2101afe9fd86">William Brooke Joyce</entity> | War of Independence | Teenage <entity repo="character" guid="019fa1c7-0043-79ae-8e05-22e2182431fe">son</entity> of a strongly pro-Unionist <entity repo="place" guid="019fc925-c2b2-70db-a239-a16ab7c194ad">Galway</entity> family; scouts/informs for British forces against the local IRA — the counterinsurgent-side informer case this book uses (later "<entity repo="character" guid="019fc925-8d36-7b33-b806-2101afe9fd86">Lord Haw-Haw</entity>"; his post-1921 career is explicitly out of scope) |
 
 ---
 
@@ -469,7 +469,7 @@ were all deleted/disabled 2026-08-03. Do not re-add him without the user asking 
 
 ### Places (seeded)
 <entity repo="place" guid="019fc925-c0d4-7272-b469-f830259c06a2">Glen of Aherlow</entity>, <entity repo="place" guid="019fc925-c261-7468-9fb9-2bff9c859455">Rathmines</entity>, <entity repo="place" guid="019fc925-c272-7763-90a3-d3f849342c20">Scarrifhollis</entity>, <entity repo="place" guid="019fc925-c27e-75d8-964b-f3ca7f3d3c9b">Drogheda</entity>, <entity repo="place" guid="019fc925-c286-7c13-af59-b8b3d404af58">Wexford</entity>, <entity repo="place" guid="019fc925-c28d-7277-85f1-121b2f9d2b05">Connacht</entity>; <entity repo="place" guid="019fc93e-ba3c-7952-a8ff-45e17d339023">Vinegar Hill</entity>, Glen of Imaal
-(Wicklow Mountains), <entity repo="character" guid="019f9ff0-75ad-7e78-bed0-99d6e73bbec3">Thomas</entity> Street (Dublin), <entity repo="place" guid="019fc93e-bc0e-7af7-94b1-eb89ef941b33">Manchester</entity>, County Mayo (Land League origin);
+(Wicklow Mountains), <entity repo="character" guid="019f9ff0-75ad-7e78-bed0-99d6e73bbec3">Thomas</entity> Street (Dublin), <entity repo="place" guid="019fc93e-bc0e-7af7-94b1-eb89ef941b33">Manchester</entity>, <entity repo="place" guid="019fc93e-bc26-7d4a-8d34-5e25bf82df5b">County Mayo (Land League origin)</entity>;
 <entity repo="place" guid="019fc925-c299-725f-a89d-e5d8a61ec5a4">Soloheadbeg</entity>, <entity repo="place" guid="019fc925-c29f-7369-b923-ae9cc36cb5eb">Kilmichael</entity>, <entity repo="place" guid="019fc925-c2a5-7872-a4b2-dd8fe3848397">Crossbarry</entity>, <entity repo="place" guid="019fc925-c2ab-7e17-9c18-7035f5cbdf57">Dublin Castle</entity>. **<entity repo="place" guid="019fc925-c2b2-70db-a239-a16ab7c194ad">Galway</entity> was seeded (for the Joyce informer
 case) then REMOVED alongside <entity repo="character" guid="019fc925-8d36-7b33-b806-2101afe9fd86">William Brooke Joyce</entity> — see above.**
 
@@ -488,7 +488,7 @@ inserted then deleted alongside his removal — the numbering has a deliberate g
 
 ### Terms
 Tory (*tóraí*), rapparee (*rapaire* — Restoration-era overlap with "tory," not a clean
-Williamite-only split), flying column, collective/official reprisal, boycott (coined 1880, Land
+Williamite-only split), flying column, collective/<entity repo="character" guid="019f9ff0-7948-73d3-a399-ae6022b5f621">official</entity> reprisal, boycott (coined 1880, Land
 War), the Act for the Settlement of Ireland (1652) and the <entity repo="place" guid="019fc925-c28d-7277-85f1-121b2f9d2b05">Connacht</entity> transplantation (background
 driver only).
 

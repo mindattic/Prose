@@ -21,6 +21,7 @@
                 <button id="btn-hold" title="Hold the selected books back: a run skips them">Hold</button>
                 <button id="btn-import-json" title="Merge tools/kdp JSON (title-ids.json, category trees, logs) into the KDP store">Import JSON</button>
                 <button id="btn-export-json" title="Write the KDP store out as JSON to a new folder under %LocalAppData%\MindAttic\Prose\kdp-export">Export JSON</button>
+                <button id="btn-spectator" title="Capture what you do in the KDP pane as self-healing steps, for writing or fixing a KDP tool from a real session instead of a guess">◉ Spectator Mode</button>
             </div>
 
             <div class="ss-checklist">
@@ -208,6 +209,13 @@
             });
             document.getElementById('btn-export-json').addEventListener('click', function () {
                 post({ action: 'export-json' });
+            });
+            var spectatorOn = false;
+            document.getElementById('btn-spectator').addEventListener('click', function () {
+                spectatorOn = !spectatorOn;
+                post({ action: spectatorOn ? 'start-spectator' : 'stop-spectator' });
+                this.textContent = spectatorOn ? '◉ Stop Spectator Mode' : '◉ Spectator Mode';
+                this.classList.toggle('ss-recording', spectatorOn);
             });
             document.getElementById('btn-start').addEventListener('click', function () {
                 post({ action: 'start', codes: Array.from(selected) });

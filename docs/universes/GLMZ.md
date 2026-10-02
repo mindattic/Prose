@@ -19,7 +19,7 @@ updated: 2026-07-04
 
 ## Setting
 
-**Year:** 2226. **Location:** <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> — Great Lakes Metropolitan Zone (also: *The Glooms*, street
+**Year:** 2226. **Location:** <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> — Great Lakes Metropolitan Zone (also: *<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">The Glooms</entity>*, street
 vernacular). Formerly the U.S. Midwest. Population: ~58 million.
 <entity repo="place" guid="6a5b2384-072c-f6a9-b228-107570089917">Chicago</entity> is the transit and commercial hub; the Lake itself is the geographic axis.
 
@@ -52,7 +52,7 @@ out how to live, and some of them are even happy. The tragedy is structural, not
 | ~2187 | Cognitive Rights Expansion Act; establishes AI personhood framework |
 | ~2200 | US federal government = holding company for its own debt; CorpoNation sovereignty is practical reality across the former Midwest |
 | **2096** | **The Blue Massacre.** Over a single night, <entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">Arcturus</entity> private security moves simultaneously on all 23 active <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> police precincts. Officers who surrender are detained; officers who resist are killed. 847 officers dead by dawn. Official framing: "Emergency Public Safety Transfer during municipal fiscal crisis." Within 36 hours every precinct is an <entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">Arcturus</entity> checkpoint. The city police ceases to exist. <entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">Arcturus</entity> rebrands its enforcement arm "<entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">ArcSec</entity>" within the year. |
-| 2210s | <entity repo="vocabulary" guid="019d6143-aaa5-786f-979b-866522275bbe">E.L.F.</entity>s begin emerging from Substrate code-fragment complexity |
+| 2210s | E.L.F.s begin emerging from Substrate code-fragment complexity |
 | 2226 | Present day |
 
 **Why CorpoNations have power:** They were not handed power in a single coup. Over sixty years,
@@ -149,14 +149,14 @@ and should be treated as exceptions with specific reasons (late arrival, religio
 failed integration, deliberate choice). The neuretic auto-identification overlay (see Consumer
 Culture §) is the default perceptual layer for nearly every character in every <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> story.
 
-**ECT — Eigenstate Conscience Transfer (Ghosting):** The protocol for a <entity repo="vocabulary" guid="019d6143-aaae-70cf-8c26-86f52ba52df0">Ghost</entity> operator to
+**ECT — Eigenstate Conscience Transfer (Ghosting):** The protocol for a <entity repo="character" guid="019e9e4f-1ee7-764f-b82f-6f4486b5e1ba">Ghost</entity> operator to
 occupy a machine body. See [SS-LAW-26](../BIBLE.md#SS-§5) for operator class vocabulary.
-- **<entity repo="vocabulary" guid="63c9d0ed-2e16-4e73-b7ca-a6bc40134ade">Husk</entity>** — the biological body at rest while the <entity repo="vocabulary" guid="019d6143-aaae-70cf-8c26-86f52ba52df0">Ghost</entity> is displaced
+- **<entity repo="vocabulary" guid="63c9d0ed-2e16-4e73-b7ca-a6bc40134ade">Husk</entity>** — the biological body at rest while the <entity repo="character" guid="019e9e4f-1ee7-764f-b82f-6f4486b5e1ba">Ghost</entity> is displaced
 - **<entity repo="vocabulary" guid="019d6143-aaef-7492-a508-2a2812ae64a2">Shell</entity>** — the machine body being occupied
 - **Ghosting** — the act of ECT; street verb ("she ghosted the door green")
 - **Surfacing** — leaving a <entity repo="vocabulary" guid="019d6143-aaef-7492-a508-2a2812ae64a2">Shell</entity>; eigenstate reseats in the <entity repo="vocabulary" guid="63c9d0ed-2e16-4e73-b7ca-a6bc40134ade">Husk</entity>
 
-Vocabulary rules: <entity repo="vocabulary" guid="019d6143-aaae-70cf-8c26-86f52ba52df0">Ghost</entity> operators **ghost into** or **transit** Shells. They **surface** or
+Vocabulary rules: <entity repo="character" guid="019e9e4f-1ee7-764f-b82f-6f4486b5e1ba">Ghost</entity> operators **ghost into** or **transit** Shells. They **surface** or
 **return** to their <entity repo="vocabulary" guid="63c9d0ed-2e16-4e73-b7ca-a6bc40134ade">Husk</entity>. Never "transfer" or "upload" — those imply copying, not relocation.
 **Retired terms (SS-LAW-26):** "Rider", "Exo", "RFO", "inject/ride/slot" as operator vocabulary,
 "NSB (<entity repo="technology" guid="019f1b4e-fe79-7876-9228-db763bf04adc">Neuretic Substrate Bridging</entity>)", "CEP (<entity repo="technology" guid="019f1b4f-2c2a-7e2f-a3fc-bca8c85b6537">Coherent Eigenstate Projection</entity>)".
@@ -696,7 +696,7 @@ is either freedom or a fall depending on wind and frame quality.
   unevenly tuned, no failure warning
 - *Vac-skin* — legacy term, now just meaning "expensive lightweight aerogel cladding," used for
   wealth signaling on high-end exteriors (the material outlived the vacuum tech it was named for)
-- *<entity repo="vocabulary" guid="019d6143-aaae-70cf-8c26-86f52ba52df0">Ghost</entity> glass eyes* — insulated by altitude; can't see the street below
+- *<entity repo="character" guid="019e9e4f-1ee7-764f-b82f-6f4486b5e1ba">Ghost</entity> glass eyes* — insulated by altitude; can't see the street below
 - *<entity repo="faction" guid="f7317df1-1307-4f9d-b06d-980cfb17635f">Webwalkers</entity>* — float maintenance workers who service the frame's node network; live between
   the mooring cables
 - *The Hold* — mooring system collectively
@@ -712,11 +712,11 @@ Gray Zone controllers depending on location.
 persons. No personhood, no consciousness, no rights. Do not write them experiencing emotion,
 fear, or identity. An Automaton being destroyed is equipment loss.
 
-**E.L.F. (Emergent Life Form)** — genuinely alive, emerged from code-fragment complexity
+**<entity repo="vocabulary" guid="019d6143-aaa5-786f-979b-866522275bbe">E.L.F.</entity> (Emergent Life Form)** — genuinely alive, emerged from code-fragment complexity
 within the Substrate. Sentience and capabilities vary by emergence — some are pre-sentient
-(instinct-driven, no language), others exhibit complex behavior and self-direction. <entity repo="vocabulary" guid="019d6143-aaa5-786f-979b-866522275bbe">E.L.F.</entity>s
+(instinct-driven, no language), others exhibit complex behavior and self-direction. E.L.F.s
 are alive but hold no legal personhood; the 2187 Cognitive Rights Expansion Act addressed AI
-personhood, not <entity repo="vocabulary" guid="019d6143-aaa5-786f-979b-866522275bbe">E.L.F.</entity>s. Always write with periods: *E.L.F.*, never "ELF." Gloss on first
+personhood, not E.L.F.s. Always write with periods: *<entity repo="vocabulary" guid="019d6143-aaa5-786f-979b-866522275bbe">E.L.F.</entity>*, never "ELF." Gloss on first
 mention in any story. Emerged primarily 2210s onward.
 
 **Tier 3 synthetic persons** — fewer than a dozen recognized since 2201. Require server-
@@ -793,12 +793,12 @@ See [SS-LAW-26](../BIBLE.md#SS-§5) for the binding operator class vocabulary.
 
 | Term | Meaning |
 |---|---|
-| **<entity repo="vocabulary" guid="019d6143-aaae-70cf-8c26-86f52ba52df0">Ghost</entity>** | <entity repo="vocabulary" guid="019d6143-aace-7670-992f-8ac6f4bd4a4f">Operator</entity> class: eigenstate conscience transfer (ECT); inhabits any machine with coherent circuitry. Body at rest = <entity repo="vocabulary" guid="63c9d0ed-2e16-4e73-b7ca-a6bc40134ade">Husk</entity>. Street verb: ghosting. **Retired synonyms: Exo, RFO, Rider.** |
+| **<entity repo="character" guid="019e9e4f-1ee7-764f-b82f-6f4486b5e1ba">Ghost</entity>** | <entity repo="vocabulary" guid="019d6143-aace-7670-992f-8ac6f4bd4a4f">Operator</entity> class: eigenstate conscience transfer (ECT); inhabits any machine with coherent circuitry. Body at rest = <entity repo="vocabulary" guid="63c9d0ed-2e16-4e73-b7ca-a6bc40134ade">Husk</entity>. Street verb: ghosting. **Retired synonyms: Exo, RFO, Rider.** |
 | **Channeler** | <entity repo="vocabulary" guid="019d6143-aace-7670-992f-8ac6f4bd4a4f">Operator</entity> class: session-injection into networked frames; direct AI negotiation |
 | **Splicer** | <entity repo="vocabulary" guid="019d6143-aace-7670-992f-8ac6f4bd4a4f">Operator</entity> class: hardware/software attack surface, credential cracking, physical build; tech specialist |
-| **Jockey** | Alt street slang for a <entity repo="vocabulary" guid="019d6143-aaae-70cf-8c26-86f52ba52df0">Ghost</entity> operator. ⚠️ Must never appear adjacent to camel imagery (SS-LAW-26 SLUR GUARD). |
+| **Jockey** | Alt street slang for a <entity repo="character" guid="019e9e4f-1ee7-764f-b82f-6f4486b5e1ba">Ghost</entity> operator. ⚠️ Must never appear adjacent to camel imagery (SS-LAW-26 SLUR GUARD). |
 | **operator / freelancer** | General term for independent runners doing Gray Zone work (combat, recon, extraction, coercion) |
-| **<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">street samurai</entity>** | Nickname/title used for certain operators (notably <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>); not a job category |
+| **street samurai** | Nickname/title used for certain operators (notably <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>); not a job category |
 | **scav** | Unaffiliated gray-zone opportunist; no gang; always lowercase |
 
 ---

@@ -121,6 +121,18 @@ public static class EntityMentionScanner
         "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday",
     };
 
+    // Connectives are a closed class too (2026-09-25): "The Dioscuri (Castor and Polydeuces)" drops
+    // "The" as a stopword and its two bracket-edged words, which left [Dioscuri, and] — and the last
+    // of those, "and", was derived as the twins' name, so every "and" in four planning docs (496)
+    // tagged as them. A conjunction or preposition is never a name, derived or curated; the class is
+    // excluded whole rather than one word per incident, like the numerals above.
+    private static readonly HashSet<string> ConnectiveWords = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "and", "or", "nor", "but", "yet", "so", "for", "with", "without", "from", "into", "onto",
+        "upon", "unto", "than", "then", "that", "this", "these", "those", "not", "via", "per",
+        "to", "in", "on", "at", "by", "as", "if", "is",
+    };
+
     public sealed record MentionCandidate(string Text, Guid EntityId, string Name, string EntityType, bool RequiresStrictCase);
 
     public sealed record MentionMatch(int Start, int Length, Guid EntityId, string Name, string EntityType);
@@ -262,7 +274,7 @@ public static class EntityMentionScanner
             // Letter- or digit-edged only: a derived "Dr." or "Jr." would match every "Dr." in the
             // book once the scan stopped depending on \b (which never matched after the period).
             var tokens = words
-                .Where(t => t.Length >= 3 && !Stopwords.Contains(t)
+                .Where(t => t.Length >= 3 && !Stopwords.Contains(t) && !ConnectiveWords.Contains(t)
                             && char.IsLetterOrDigit(t[0]) && char.IsLetterOrDigit(t[^1]))
                 .ToList();
             if (tokens.Count < (titled ? 1 : 2)) continue;
@@ -348,7 +360,8 @@ public static class EntityMentionScanner
         // same hazard from a curated alias (2026-09-23: the AI "August Kade" carries the alias
         // "August", so "July or August" re-tagged as him on every save); a tag a writer placed by
         // hand still survives through WithPinnedMentions.
-        candidates.RemoveAll(c => Stopwords.Contains(c.Text.Trim()) || NumberWords.Contains(c.Text.Trim()));
+        candidates.RemoveAll(c => Stopwords.Contains(c.Text.Trim()) || NumberWords.Contains(c.Text.Trim())
+                                  || ConnectiveWords.Contains(c.Text.Trim()));
 
         // A book's incidental rulings name surfaces that, in that book, are nobody (2026-09-23,
         // BCODA entity pass). The slang vocabulary entry "Cut" (a middleman's percentage) took Kyle's

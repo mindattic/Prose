@@ -222,10 +222,10 @@ assassination attempt hides inside
 | Entity | Type | House | Notes |
 |---|---|---|---|
 | <entity repo="place" guid="019f5d87-1dfd-7e6a-8d85-103617362b00">Three Points</entity> | place | Neutral (<entity repo="place" guid="019f9174-8a29-75f0-b492-b78133f5cda8">Verlaine</entity>/<entity repo="place" guid="019f9174-aa45-7114-baf8-a8d2e47d7ec8">Atrament</entity>/<entity repo="place" guid="019f9174-db18-7f47-8d08-10dc45ee472c">Pallor</entity> convergence) | **Already established in ENTOS.md** — seed as formal place entity if not already present |
-| The Lists (<entity repo="place" guid="019f5d87-1dfd-7e6a-8d85-103617362b00">Three Points</entity>) | place | Neutral | <entity repo="character" guid="019f63b6-1015-716b-9ccc-82edbc7c5d35">Heloth</entity> jousting grounds |
-| The Pit (<entity repo="place" guid="019f5d87-1dfd-7e6a-8d85-103617362b00">Three Points</entity>) | place | Neutral | Gladiator/<entity repo="character" guid="97bcbe67-af90-4505-8e54-b27ae8ae80da">Sinterspawn</entity> combat arena |
-| The Bond Market (<entity repo="place" guid="019f5d87-1dfd-7e6a-8d85-103617362b00">Three Points</entity>) | place | Neutral | Indenture/war-captive contract auctions held during the truce fair |
-| The <entity repo="character" guid="019f5754-8b5d-7fe1-98b4-d3d0538916a5">Long</entity> Table (<entity repo="place" guid="019f5d87-1dfd-7e6a-8d85-103617362b00">Three Points</entity>) | place | Neutral | Diplomatic tent where House heads treat during the truce |
+| <entity repo="place" guid="019fc106-a7e8-79f9-aa5e-2aefa572de9f">The Lists (Three Points)</entity> | place | Neutral | <entity repo="character" guid="019f63b6-1015-716b-9ccc-82edbc7c5d35">Heloth</entity> jousting grounds |
+| <entity repo="place" guid="019fc106-a803-78d7-859d-1e2f077299e9">The Pit (Three Points)</entity> | place | Neutral | Gladiator/<entity repo="character" guid="97bcbe67-af90-4505-8e54-b27ae8ae80da">Sinterspawn</entity> combat arena |
+| <entity repo="place" guid="019fc106-a61c-7dbc-8567-63e079000535">The Bond Market (Three Points)</entity> | place | Neutral | Indenture/war-captive contract auctions held during the truce fair |
+| <entity repo="place" guid="019fc106-a7f6-7dbe-9789-381d97e78f1d">The Long Table (Three Points)</entity> | place | Neutral | Diplomatic tent where House heads treat during the truce |
 
 ### Factions
 | Entity | Type | Notes |
@@ -236,7 +236,7 @@ assassination attempt hides inside
 | Entity | Type | Notes |
 |---|---|---|
 | <entity repo="character" guid="019fc104-ea2d-7ddf-a874-8965f8e7a2d1">Kaeric</entity>'s axe (unnamed war-axe) | weapon | <entity repo="place" guid="019f9174-db18-7f47-8d08-10dc45ee472c">Pallor</entity>-forged; single-bit, long haft; his only inheritance from his father |
-| Duel-team lance (<entity repo="character" guid="019f63b6-1015-716b-9ccc-82edbc7c5d35">Heloth</entity> pattern) | weapon | Standard tournament lance used by riders mounted on <entity repo="character" guid="019f63b6-1015-716b-9ccc-82edbc7c5d35">Heloth</entity> courier-variant constructs (Entos has no horses — SS-CAUL-HELOTH / SS-CAUL-TRAVEL) |
+| <entity repo="weapon" guid="019fc107-5379-7170-b5c9-66bbffed6f80">Duel-team lance (Heloth pattern)</entity> | weapon | Standard tournament lance used by riders mounted on <entity repo="character" guid="019f63b6-1015-716b-9ccc-82edbc7c5d35">Heloth</entity> courier-variant constructs (Entos has no horses — SS-CAUL-HELOTH / SS-CAUL-TRAVEL) |
 
 ### Technology
 | Entity | Type | Notes |

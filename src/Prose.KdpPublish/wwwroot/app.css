@@ -144,6 +144,8 @@ html, body {
     border-radius: 4px; cursor: pointer; font-size: 10px; font-weight: 600;
 }
 .ss-toolbar button:hover { background: #F0F2F2; border-color: #007185; }
+.ss-toolbar button.ss-recording { background: #C7221F; border-color: #C7221F; color: #FFFFFF; }
+.ss-toolbar button.ss-recording:hover { background: #A11B18; }
 
 .ss-checklist {
     flex: 1; overflow-y: auto; padding: 8px 9px;
