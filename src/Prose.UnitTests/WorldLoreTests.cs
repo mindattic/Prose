@@ -129,17 +129,7 @@ public class WorldLoreTests
 
     private static readonly string DataRoot = FindDataRoot();
 
-    private static string FindDataRoot()
-    {
-        var dir = AppContext.BaseDirectory;
-        while (!string.IsNullOrEmpty(dir))
-        {
-            var candidate = Path.Combine(dir, "engine", "data");
-            if (Directory.Exists(candidate)) return candidate;
-            dir = Path.GetDirectoryName(dir);
-        }
-        return Path.Combine("engine", "data");
-    }
+    private static string FindDataRoot() => RepoPaths.Combine("engine", "data");
     private static readonly string[] SkipDirs = ["graph", "archives"];
 
     private static IEnumerable<string> LiveJsonFiles()

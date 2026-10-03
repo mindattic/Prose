@@ -374,7 +374,7 @@ public class KdpStoreTests
     /// both category trees, copied verbatim) plus a run log, and one book folder per legacy marker.</summary>
     private string BuildLegacyFixture(out List<KdpBookFolder> bookFolders)
     {
-        var repoKdp = Path.Combine(KdpManifestService.FindRepoRoot(TestContext.CurrentContext.TestDirectory), "tools", "kdp");
+        var repoKdp = RepoPaths.Combine("tools", "kdp");
         var source = Path.Combine(temp, "tools", "kdp");
         Directory.CreateDirectory(Path.Combine(source, "logs"));
         File.Copy(Path.Combine(repoKdp, "title-ids.json"), Path.Combine(source, "title-ids.json"));
@@ -395,7 +395,7 @@ public class KdpStoreTests
 
     private static int RepoTitleIdCount()
     {
-        var repoKdp = Path.Combine(KdpManifestService.FindRepoRoot(TestContext.CurrentContext.TestDirectory), "tools", "kdp");
+        var repoKdp = RepoPaths.Combine("tools", "kdp");
         using var doc = JsonDocument.Parse(File.ReadAllText(Path.Combine(repoKdp, "title-ids.json")));
         return doc.RootElement.EnumerateObject().Count(p => !p.Name.StartsWith('_'));
     }

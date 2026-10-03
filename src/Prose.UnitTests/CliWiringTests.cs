@@ -1,5 +1,4 @@
 using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 using NUnit.Framework;
 using Prose.Hub.Contracts;
@@ -184,24 +183,5 @@ public class CliWiringTests
     private static int LineOf(string text, int index) =>
         text.AsSpan(0, index).Count('\n') + 1;
 
-    private static string? repoRoot;
-
-    private static string FindRepoRoot()
-    {
-        if (repoRoot != null) return repoRoot;
-        var dir = AppDomain.CurrentDomain.BaseDirectory;
-        while (dir != null)
-        {
-            if (Directory.Exists(Path.Combine(dir, "src", "Prose.Core"))) return repoRoot = dir;
-            dir = Directory.GetParent(dir)?.FullName;
-        }
-        // Build artefacts may live outside the repo; fall back to this file's compile-time path.
-        var fromSource = Directory.GetParent(SourceFilePath())?.Parent?.Parent?.FullName;
-        if (fromSource != null && Directory.Exists(Path.Combine(fromSource, "src", "Prose.Core")))
-            return repoRoot = fromSource;
-        Assert.Fail("Could not locate the repo root (no src/Prose.Core above the test binary or this source file).");
-        return "";
-    }
-
-    private static string SourceFilePath([CallerFilePath] string path = "") => path;
+    private static string FindRepoRoot() => RepoPaths.Root;
 }

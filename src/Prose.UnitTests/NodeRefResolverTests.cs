@@ -262,15 +262,5 @@ public class NodeRefResolverTests
         public void Refresh() { }
     }
 
-    private static string FindRepoRoot()
-    {
-        var dir = AppDomain.CurrentDomain.BaseDirectory;
-        while (dir != null)
-        {
-            if (Directory.Exists(Path.Combine(dir, "src", "Prose.Core"))) return dir;
-            dir = Directory.GetParent(dir)?.FullName;
-        }
-        Assert.Fail("Could not locate the repo root (no src/Prose.Core above the test binary).");
-        return "";
-    }
+    private static string FindRepoRoot() => RepoPaths.Root;
 }

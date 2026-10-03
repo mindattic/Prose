@@ -95,9 +95,7 @@ public class VotingGateTests
     public void CommittedLegionJson_ShipsVotingDisabled()
     {
         // The repo's committed legion.json must keep voting OFF by default (SS-LAW-17).
-        var repoRoot = FindRepoRoot();
-        Assert.That(repoRoot, Is.Not.Null, "could not locate repo root (legion.json)");
-        Assert.That(VotingGate.ReadVotingEnabledDefault(repoRoot!), Is.False,
+        Assert.That(VotingGate.ReadVotingEnabledDefault(RepoPaths.Root), Is.False,
             "committed legion.json must keep votingEnabled=false");
     }
 
@@ -159,17 +157,5 @@ public class VotingGateTests
     private static void CleanUp(string dir)
     {
         try { Directory.Delete(dir, recursive: true); } catch { /* best effort */ }
-    }
-
-    private static string? FindRepoRoot()
-    {
-        var current = new DirectoryInfo(TestContext.CurrentContext.TestDirectory);
-        for (int depth = 0; depth < 12 && current != null; depth++)
-        {
-            if (File.Exists(Path.Combine(current.FullName, "legion.json")))
-                return current.FullName;
-            current = current.Parent;
-        }
-        return null;
     }
 }

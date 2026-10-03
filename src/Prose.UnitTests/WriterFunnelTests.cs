@@ -139,23 +139,5 @@ public class WriterFunnelTests
     private static bool IsOnlyInComments(string text, string token)
         => !StripComments(text).Contains(token, StringComparison.Ordinal);
 
-    private static string? repoRoot;
-    private static string FindRepoRoot()
-    {
-        if (repoRoot != null) return repoRoot;
-        var dir = AppDomain.CurrentDomain.BaseDirectory;
-        while (dir != null)
-        {
-            if (Directory.Exists(Path.Combine(dir, "src", "Prose.Core"))) return repoRoot = dir;
-            dir = Directory.GetParent(dir)?.FullName;
-        }
-        // Build artefacts may live outside the repo (Directory.Build.props); fall back to the
-        // compile-time source path of this file.
-        var fromSource = Directory.GetParent(SourceFilePath())?.Parent?.Parent?.FullName;
-        if (fromSource != null && Directory.Exists(Path.Combine(fromSource, "src", "Prose.Core"))) return repoRoot = fromSource;
-        Assert.Fail("Could not locate the repo root (no src/Prose.Core above the test binary or this source file).");
-        return "";
-    }
-
-    private static string SourceFilePath([System.Runtime.CompilerServices.CallerFilePath] string path = "") => path;
+    private static string FindRepoRoot() => RepoPaths.Root;
 }

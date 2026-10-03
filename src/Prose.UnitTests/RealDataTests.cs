@@ -22,8 +22,7 @@ public class RealDataTests
     private const string RetiredCorpus =
         "Retired file-based corpus (2026-05-08 JSON→SQL migration); canon is the SQL DB. See class comment.";
 
-    private static readonly string EngineDataDir = Path.Combine(
-        FindRepoRoot(), "engine", "data");
+    private static readonly string EngineDataDir = RepoPaths.Combine("engine", "data");
 
     private ReadOnlyDataGuard guard = null!;
     private IPathProvider paths = null!;
@@ -503,18 +502,6 @@ public class RealDataTests
         if (inString) trimmed += "\"";
         while (stack.Count > 0) trimmed += stack.Pop();
         return trimmed;
-    }
-
-    private static string FindRepoRoot()
-    {
-        var dir = AppDomain.CurrentDomain.BaseDirectory;
-        while (dir != null)
-        {
-            if (Directory.Exists(Path.Combine(dir, "engine", "data"))) return dir;
-            dir = Directory.GetParent(dir)?.FullName;
-        }
-        // Fallback: relative from test project
-        return Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "..", ".."));
     }
 }
 

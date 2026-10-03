@@ -235,17 +235,11 @@ public class TokenContrastTests
         }
     }
 
-    /// <summary>Walks up from the test binary to the repo copy — the point is to read the file the
-    /// app actually ships, not a fixture that can drift away from it.</summary>
+    /// <summary>The repo copy — the point is to read the file the app actually ships, not a fixture
+    /// that can drift away from it.</summary>
     private static string LocateTokensCss()
     {
-        var dir = new DirectoryInfo(AppContext.BaseDirectory);
-        while (dir is not null)
-        {
-            var candidate = Path.Combine(dir.FullName, "Prose.WriterUi", "wwwroot", "tokens.css");
-            if (File.Exists(candidate)) return candidate;
-            dir = dir.Parent;
-        }
-        throw new FileNotFoundException("Could not find Prose.WriterUi/wwwroot/tokens.css above the test binary.");
+        var path = RepoPaths.Combine("src", "Prose.WriterUi", "wwwroot", "tokens.css");
+        return File.Exists(path) ? path : throw new FileNotFoundException($"Could not find {path}.");
     }
 }
