@@ -73,7 +73,34 @@ A round is dry when, across every included book: no continuity contradictions; n
 - Parked: Eyes on the Light. Standing Contract feeds the BCODA sequel and is not on this line.
 - Reading order is world-chronological, read from the graph. BCODA is the anchor (present day 2226).
 
-## 7. Checks
+## 7. Operating the line (what each step costs)
+
+Commands that do each step, all through the Hub, all with `--universe glmz`:
+
+| Step | Command |
+|---|---|
+| Read a range and mark it read | `prose --read-beats --slug <s> --from N --to M --mark-read --read-by "<who>"` |
+| File, list, resolve a read note | `prose --read-note add\|list\|resolve --node <s> --beat <#id> --kind defect\|question\|note --text "…"` (`--beat` takes the `#` id, not the position) |
+| Archive before editing prose | `prose --archive-book --slug <s> --reason "…"` |
+| Hand splice | `prose --splice-beats --node <s> --file docket.json` (dry-run), then `--apply`. A docket row is `{beat, old, new, count}` with exact stored text; keep `old` clear of `<entity …>` tags |
+| Move or delete a beat | `prose --beat insert\|delete --node <chapter node id> …` (the chapter node, not the book) |
+| Entity gaps in a unit | `prose --factory capture --node <s>` (unresolved names, untagged mentions); `--retag` tags them; `--retag-name "<surface>" --from <id> [--to <id>]` takes a tag off |
+| A word that is not an entity | `prose --ruling add --kind incidental --pattern "<surface>" --node <s> --text "…"` |
+| Merge duplicates | `prose --merge-entity --winner <guid> --loser <guid>` (restorable with `--restore-entity`) |
+| New entities | `--add-corponation`, `--add-faction`, `--add-place` (JSON file), `--create-vocabulary`; `--add-alias` works for characters, places and factions, not corporations or vocabulary |
+| Fix an entity record | `prose --set-character-fields \| --set-entity-fields --id <guid> --file patch.json --confirm-unread` (send only the changed fields) |
+| Verify an entity | `prose --verify-entity begin --entity <guid> --node <s>`, then `commit --nonce <nonce>` |
+
+Costs and traps found in use:
+
+- **An entity record edit un-reads every beat that mentions the entity, in every book.** The command refuses and lists the beats until `--confirm-unread` is passed. Editing Stash un-read 107 beats: 85 in The Long Cut and 22 in Bushido Coda. Batch record edits, re-read the listed beats in each book, then verify the entity in each book.
+- **A new alias or entity can turn another book's plain text into an untagged known name** and put that book's F4 red. After creating an entity or alias, run `--factory capture` on every book that shares the name. Adding the alias "Gray Zone" did this to Bushido Coda.
+- **Retagging a verified book un-verifies every entity in the retagged beats.** Undo with `--restore-beat-text --id <beat> --as-of <utc>` (dry-run first) after removing the alias that caused it. This restored Bushido Coda to its pressed state.
+- A scanner name that two entities share is unresolved, not tagged. Merge the duplicate or add a distinguishing alias.
+- An incidental ruling is scoped to its book. Use it for a surface that means something else in that book.
+- Aliases cannot be removed by `--set-character-fields`; use `prose --delete-alias --value "<alias>" --type character` (dry-run first; it lists every owner).
+
+## 8. Checks
 
 - `prose --progress` (page and score table, every universe)
 - `prose --universe glmz --factory status --node <code>` and `prose --factory next`
