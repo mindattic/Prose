@@ -98,6 +98,11 @@ Costs and traps found in use:
 - **Retagging a verified book un-verifies every entity in the retagged beats.** Undo with `--restore-beat-text --id <beat> --as-of <utc>` (dry-run first) after removing the alias that caused it. This restored Bushido Coda to its pressed state.
 - A scanner name that two entities share is unresolved, not tagged. Merge the duplicate or add a distinguishing alias.
 - An incidental ruling is scoped to its book. Use it for a surface that means something else in that book.
+- **`--beat insert|update --text "..."` loses text.** The argument drops every double quote and cuts the text at the first blank line. Send the beat on stdin instead, one paragraph per beat: `$text | prose --beat update --id <beatId> --node <chapter> --text -` (quotes and Unicode survive). Read the stored beat back after inserting.
+- New chapter nodes land at the end of the book. Reorder with `prose --reparent-node --slug <chapter> --sort-key <n>` (a negative key goes first). Create one with `prose --create-book --kind chapter --parent <book> --title "…"`; `--beat insert --node` takes the chapter slug.
+- To delete a chapter node use `prose --delete-node --id <guid>`; the guid shows in `prose --entity-mentions` output as `<chapterId>.<beatId>`. `prose --beat delete --id <beatId> --node <chapter slug>` removes one beat.
+- Long background jobs can be stopped by the host when memory is short. Run bulk beat writes in foreground chunks of about 70 beats.
+- **Prior drafts live in `engine/data/exports/`.** A book node can be rewritten while an earlier draft still holds canon the new one depends on (Critical Mass replaced Double Entry; the new text's "That's twice now" only works if the old story happened first). Check older exports before expanding a short book.
 - Aliases cannot be removed by `--set-character-fields`; use `prose --delete-alias --value "<alias>" --type character` (dry-run first; it lists every owner).
 
 ## 8. Checks
