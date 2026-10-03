@@ -1,3 +1,12 @@
+---
+codex: 1
+project: Prose
+code: SS
+layer: rfc
+status: in-progress
+updated: 2026-09-07
+---
+
 # RFC 0012 — The Single-Source Writer
 
 **Status:** step one executed (instrumentation, 2026-09-07); no service cut, folded, or reordered ·

@@ -1,3 +1,12 @@
+---
+codex: 1
+project: Prose
+code: SS
+layer: rfc
+status: in-progress
+updated: 2026-09-22
+---
+
 # RFC 0014 — Instrument Value Audit: prove them, or shut them off
 
 **Status:** in progress · opened 2026-09-22

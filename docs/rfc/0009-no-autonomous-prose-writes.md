@@ -1,3 +1,12 @@
+---
+codex: 1
+project: Prose
+code: SS
+layer: rfc
+status: draft
+updated: 2026-09-06
+---
+
 # RFC 0009 — No Autonomous Prose Writes
 
 **Status:** proposed · **Author ruling:** 2026-09-06 · **Supersedes:** nothing (this is new law)

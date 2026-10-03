@@ -1,3 +1,12 @@
+---
+codex: 1
+project: Prose
+code: SS
+layer: rfc
+status: in-progress
+updated: 2026-09-23
+---
+
 # RFC 0015 — the Novel Factory: complete system design and 48-hour build
 
 **Status:** APPROVED by the author 2026-09-23 (~05:00 UTC). Build in progress; the live build state is the factory itself (prose --order list, prose --factory next), not this file. This document changes only through an engine work order.

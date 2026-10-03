@@ -1,3 +1,12 @@
+---
+codex: 1
+project: Prose
+code: SS
+layer: rfc
+status: draft
+updated: 2026-09-06
+---
+
 # RFC 0010 — What the Full Battery Actually Brings to the Table
 
 **Status:** research, no code changed · **Requested by author, 2026-09-06:** *"research 3 — what

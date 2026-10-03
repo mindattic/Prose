@@ -1,3 +1,12 @@
+---
+codex: 1
+project: Prose
+code: SS
+layer: rfc
+status: in-progress
+updated: 2026-09-15
+---
+
 # RFC 0013 — The Narrative Obligation Ledger
 
 **Status:** approved by the author 2026-09-15; Phases 0–2 implemented the same day (mojibake
