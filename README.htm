@@ -944,7 +944,7 @@ prose --logic-sweep --slug &lt;slug&gt; --until-dry --required-dry 2 --max-round
 <td><code>ConnectionStrings__Prose</code></td>
 </tr>
 </tbody></table>
-<p>Run the Hub with <code>ASPNETCORE_ENVIRONMENT=Development</code>, or MindAttic authentication fails closed (only <code>--reset-password</code> is affected). MindAttic.Authentication (5.0.0) sends its own auth email over SMTP from the Vault <code>Notifications</code> bucket (<code>MindAttic:Vault:Notifications:email</code>, loaded by the Hub), not the <code>PROSE_SMTP_*</code> settings; without it the Hub logs a startup warning that auth email will not be delivered.</p>
+<p>Run the Hub with <code>ASPNETCORE_ENVIRONMENT=Development</code>, or MindAttic authentication fails closed (only <code>--reset-password</code> is affected). MindAttic.Authentication (6.0.0) sends its own security alerts (for example when <code>--reset-password</code> sets a new password) over SMTP from the Vault <code>Notifications</code> bucket (<code>MindAttic:Vault:Notifications:email</code>, loaded by the Hub), not the <code>PROSE_SMTP_*</code> settings; without it the Hub logs a startup warning that auth email will not be delivered. Prose has no web sign-in, so there is no self-service reset page and no <code>PublicBaseUrl</code>.</p>
 <h2 id="project-layout">Project layout</h2>
 <pre><code class="language-text">Prose/
   prose.cmd                 the CLI shim (dotnet run on src/Prose.Cli)

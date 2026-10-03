@@ -474,7 +474,7 @@ All environment variables are optional; set only what a feature you use needs.
 | Local TTS | `PROSE_PYTHON`, `PROSE_CA_BUNDLE`, `PROSE_PIPER_EXE`, `PROSE_PIPER_MODEL` |
 | Database | `ConnectionStrings__Prose` |
 
-Run the Hub with `ASPNETCORE_ENVIRONMENT=Development`, or MindAttic authentication fails closed (only `--reset-password` is affected). MindAttic.Authentication (5.0.0) sends its own auth email over SMTP from the Vault `Notifications` bucket (`MindAttic:Vault:Notifications:email`, loaded by the Hub), not the `PROSE_SMTP_*` settings; without it the Hub logs a startup warning that auth email will not be delivered.
+Run the Hub with `ASPNETCORE_ENVIRONMENT=Development`, or MindAttic authentication fails closed (only `--reset-password` is affected). MindAttic.Authentication (6.0.0) sends its own security alerts (for example when `--reset-password` sets a new password) over SMTP from the Vault `Notifications` bucket (`MindAttic:Vault:Notifications:email`, loaded by the Hub), not the `PROSE_SMTP_*` settings; without it the Hub logs a startup warning that auth email will not be delivered. Prose has no web sign-in, so there is no self-service reset page and no `PublicBaseUrl`.
 
 ## Project layout
 
