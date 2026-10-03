@@ -173,3 +173,16 @@ MCP writes can return `ok:true` while the server runs a stale schema: read every
 - **Meridian charters** (01a10245): the 2208 Identity Charter and the 2219 Charter are two documents.
 - **Names:** only Dr. Nadia Park keeps Nadia (the Attendance courier is Nilsa); Bear the Pilsen fixer is Boris Johansen of Testament; Halcyon Civil Security is held through Halcyon Combine.
 - **Steppin' Razor** is 2217 (Sasha at nineteen on her first break from Sigma).
+
+## Round 2 world laws (2026-10-03, author's words, recorded as `law` rulings on bushido-coda; the world sweep reads each book against them)
+
+- **The two worlds** (01a10319-b50b): CorpoNation arcologies hold the wealthy like kept pets, ignorant of their imprisonment; the Seams (the Gray Zones) hold the real people, abandoned, ignored, run by gangs. A wealthy character who knows is a ruled exception with a reason on the page.
+- **Arcturus is the only police** (01a10319-e032): ArcSec is the one fascist police faction; the city police dissolved in 2208. Corporate security guards its own property and never polices the Seams.
+- **Geography and the Blur** (01a10319-e91c): Chicago is the GLMZ, the center of commerce. The Spine runs Chicago to Green Bay, around Lake Superior, through Michigan and Detroit, on to Buffalo. No New York, no California, no contact with Florida: those are the Blur, seen from a Pulse tube to Denver or Seattle. Records: The Spine (extended), The Blur (new place).
+- **The weather** (01a10319-f203): reality anomalies so old that people call them weather. Never a crisis on the page.
+- **The dark truth** (01a10319-faf8, truth layer): the Super Minds broke reality trying to reach higher dimensions. Never stated by any source; only symptoms. The Observation Rule outranks it. Record: The Super Minds (faction, tagged hidden).
+- **The Atmospheric Processors** (01a1031c-5241, supersedes 01a1031b-fef4): vague, unexplained weather infrastructure; perfect days for the CorpoNations, hot misting runoff that collects in and flows through the Seams, iridescent in every puddle (thin-film interference). Record: vocabulary entry "The Atmospheric Processors" (full term in prose; vocabulary entries take no aliases).
+- **The pillars** (01a1031d-a72b): Atmospheric Processors, nanites, cyberware, synthetic intelligence, quanta, street wars, tiered civilian life. Each book shows what its POV meets; none contradicts one.
+- **E.L.F.s** (01a1031e-9bdc): Emergent Life Forms, assembling from the wreckage of destroyed Super Minds; common knowledge that they exist, origin never stated. The vocabulary entry E.L.F. carries the new expansion; older documents keep the street's "electronic life form" gloss.
+
+Sweep recipe used for the geography and police audit: loop `dev_scan`-style over every book's `--read-beats` dump with one case-insensitive regex (place names, police words) and read every hit by hand; the hit list is a to-do for the pass, not a stored artifact.
