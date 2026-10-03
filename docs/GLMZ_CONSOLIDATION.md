@@ -138,3 +138,29 @@ Costs and traps found in use:
 - `prose --world-state --beat <beatId>`
 
 MCP writes can return `ok:true` while the server runs a stale schema: read every write back, or use the CLI.
+
+## Recipes the passes reuse (PowerShell, run from the repo root; nothing here is a tool, each line is an existing `prose` command)
+
+**Start a book pass** (archive first, then the state a reader needs):
+
+    prose --universe glmz --archive-book --slug <slug> --reason "<CODE> pass before edits"
+    prose --universe glmz --factory capture --node <CODE>        # unresolved / untagged names
+    prose --universe glmz --ruling violations --node <slug>      # law hits
+    prose --universe glmz --read-beats --slug <slug> --from 1 --to 3000 > dump.txt   # strip <entity> tags to read
+
+**Re-read and re-verify a whole book** after any record edit or retag (verification is per entity, so loop over the guids the beats carry; do it in the foreground in chunks under two minutes):
+
+    prose --read-beats --slug <slug> --from 1 --to 3000 --mark-read --read-by claude
+    # for each guid="..." in the dump:
+    prose --verify-entity begin --entity <guid> --node <slug>     # read the record against its mentions
+    prose --verify-entity commit --nonce <nonce from begin>
+
+**Add a scene** (one beat per block of paragraphs; the beat is auto-tagged on insert):
+
+    $text | prose --beat insert --after <previous beat guid> --node <chapter slug> --title "<optional>" --text -
+    prose --tag-entities --slug <slug>; prose --factory capture --node <slug>
+    prose --beat show --id <new guid>                             # read it back
+
+**Fix a sentence by hand**: a splice docket of `{beat:#, old, new, count}` rows, dry-run first, then `--apply`, one chapter node per docket.
+
+**Close a book pass**: `--factory capture` clean, `--ruling violations` 0, every beat re-marked read, every tagged entity verified, then `--factory status --node <CODE>` shows no failing cell before F7.
