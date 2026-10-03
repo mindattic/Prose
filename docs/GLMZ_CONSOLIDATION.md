@@ -186,3 +186,10 @@ MCP writes can return `ok:true` while the server runs a stale schema: read every
 - **E.L.F.s** (01a1031e-9bdc): Emergent Life Forms, assembling from the wreckage of destroyed Super Minds; common knowledge that they exist, origin never stated. The vocabulary entry E.L.F. carries the new expansion; older documents keep the street's "electronic life form" gloss.
 
 Sweep recipe used for the geography and police audit: loop `dev_scan`-style over every book's `--read-beats` dump with one case-insensitive regex (place names, police words) and read every hit by hand; the hit list is a to-do for the pass, not a stored artifact.
+
+### Round 2 additions (2026-10-03)
+
+- **Hyperreality** (01a1031f-dbd9, builds on 01a0da85-0af4): augmented reality masks the dingy streets; the lie only works if people want to believe it. The arcology wage slaves buy it; the Seams do not.
+- **No police, no justice, ArcSec keeps people down** (01a10320-f122, supersedes 01a10319-e032 and 01a10320-721f): the Seams have protection rackets and mob rule, no courts. Any hearing is a corporate or military proceeding (review boards, charter desks, court-martial), never a public court. Round-2 splices replaced court, judge, magistrate, tribunal, felony, lawsuit, deposition and lawyer wording across IxS, TLC, VATD, NxR, DWIACE, ATTE, BLST, UNDR, SPRW and Testament; ArcSec and corporate security stay as written.
+- **Thread is a pod line**, not a space elevator (TWU, RTR, SRZR fixed). **GLMZ** is the Great Lakes Metropolitan Zone (Mnemosync fixed). Empire State Building reference removed from I Cannot Find the Ignorance.
+- **Method note:** a dump can stop short of the book. Check `grep -c "^--- \["` against the beat count before marking read; round-1 inserts through stdin can carry "??" for non-ASCII, so grep every dump for it.
