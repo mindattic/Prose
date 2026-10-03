@@ -39,7 +39,7 @@ public interface IUniverseContext
     /// The world-grounding text for a prompt: returns <paramref name="glmzFallback"/> verbatim when
     /// the current universe is GLMZ (zero drift), otherwise the current universe's UniversePrimer (or a
     /// neutral phrase if it has none). The single seam that segregates the prompt "cards" — a site
-    /// keeps its GLMZ string as the fallback and can never feed it to another universe (RFC 0006).
+    /// keeps its GLMZ string as the fallback and can never feed it to another universe (SS-LAW-15).
     /// </summary>
     string UniverseGroundingOr(string glmzFallback);
 

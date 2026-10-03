@@ -217,7 +217,7 @@ public class CoreEntityCrudTools
             c.StoryHooks = [.. storyHooks.Split(',').Select(h => h.Trim()).Where(h => h.Length > 0)];
 
         // Parse failures are surfaced as warnings, not silently swallowed — a swallowed error here
-        // returned ok:true while the register/psychology never persisted (the SS-A46 voice no-op bug).
+        // returned ok:true while the register/psychology never persisted (the voice no-op bug).
         var warnings = new List<string>();
 
         // Aliases are ADDITIVE. CharacterMapper.ToEntity replaces the whole CharacterAliases

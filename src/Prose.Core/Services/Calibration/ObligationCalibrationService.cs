@@ -118,7 +118,7 @@ public class ObligationCalibrationService(
 
         /// <summary>An incomplete read can never meet the bar, whatever the arithmetic says: the
         /// numbers describe the beats the instrument managed to read, and say nothing about the rest.
-        /// A partial run is void, not passing and not failing (RFC 0010 — zero findings can mean
+        /// A partial run is void, not passing and not failing (BIBLE ADR-10 — zero findings can mean
         /// "could not look").</summary>
         public bool MeetsBar(double minPrecision = 0.85, double minRecall = 0.70, double minF1 = 0.678, double maxControlPer10k = 1.0, double maxResolvedMisflagRate = 0.10) =>
             !CouldNotLook

@@ -79,7 +79,7 @@ public class BeatNodeSimilarityScopeTests
     [Test]
     public void BothForms_KeepTheUniverseFilterOnTheNode_NotOnTheEmbeddingTag()
     {
-        // SS-A46: pe.UniverseId is a drift-prone copy that defaults to GLMZ. Scoping must not
+        // register doctrine: pe.UniverseId is a drift-prone copy that defaults to GLMZ. Scoping must not
         // have quietly reintroduced it.
         foreach (var scoped in new[] { true, false })
         {

@@ -145,7 +145,7 @@ public class LibertyReportService(
             var nodeId = await NodeRefResolver.ResolveAsync(db, slug); // NodeCode, GUID, other universes
             if (nodeId == null) return [];
 
-            // SS-A43: beats live on chapter nodes (children), not directly on the book node.
+            // SS-LAW-6: beats live on chapter nodes (children), not directly on the book node.
             // Recurses past any nested Collection (2026-08-09 fix).
             var beatNodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId!.Value, ct);
 

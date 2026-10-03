@@ -237,7 +237,7 @@ public class MojibakeRepairService
         IEnumerable<Prose.Core.Data.Entities.Beat> beats;
         if (nodeId.HasValue)
         {
-            // SS-A43: beats live on chapter children for book-mode stories.
+            // SS-LAW-6: beats live on chapter children for book-mode stories.
             // Recurses past any nested Collection (2026-08-09 fix).
             var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId.Value, ct);
 

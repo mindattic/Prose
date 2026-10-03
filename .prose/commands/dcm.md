@@ -3,7 +3,7 @@
 Usage: `/dcm [what to log, or omit to log whatever was just discussed/discovered]`
 
 **The point of this command**: this project has many ephemeral `.md` files under `docs/` that are
-GENERATED MIRRORS, regenerated on demand (SS-A45). They are not memory — they are a cache. The
+GENERATED MIRRORS, regenerated on demand (SS-LAW-1). They are not memory — they are a cache. The
 actual persistent memory is the SQL database: `CanonDocumentSections` (world/craft/universe facts),
 the beats themselves (a book IS its beats — there is no per-book outline or bible, author ruling
 2026-09-22), character/entity records (`Speech*`/`Psychology*` fields, wounds, continuity claims). **When you
@@ -20,7 +20,7 @@ for project canon — canon belongs in this project's own DB so the prose engine
 | Engine invariant, GLMZ world fact, Fantasy/Entos world fact | `CanonDocuments`/`CanonDocumentSections` | `set_canon_section` (MCP), then `prose --generate-canon-md --type <Type>` |
 | Something that happens in one book | The beats — the prose IS the record; there is no outline, bible, blueprint or stored summary to log it in | Nothing to log. If the prose should change, that is a hand edit of the beat (`prose --edit-beat` / `prose --splice-beats`), not a /dcm entry. A planned beat's intent goes in its Description (`update_beat_metadata`) |
 | A **structural/state note about a book** (like "this book's chapter split regressed in the live DB") | `BeatReadNotes` | `prose --read-note add --node <slug> [--beat N] --kind note --text "..." --read-by <name>` |
-| A character's voice, psychology, wounds, relationships | That character's `Entity`/`Character` record | `create_character` (MCP, pass the id + the changed field) — never a `docs/registers/*.md` file, those are retired (SS-A46) |
+| A character's voice, psychology, wounds, relationships | That character's `Entity`/`Character` record | `create_character` (MCP, pass the id + the changed field) — never a `docs/registers/*.md` file |
 | A craft principle (universal prose rule, or a universe-specific craft addition) | `CanonDocumentSections` row inside the CraftGuide/GLMZ-craft/SCRY-craft document | Same as row 1 — **do NOT hand-edit `docs/CRAFT.md`/`docs/GLMZ.md`/`docs/SCRY.md` directly**; those files carry a "GENERATED — do not hand-edit" banner (verify DB-backed generation is still true via `Program.cs`'s `--generate-canon-md` handler before trusting either source blindly) |
 
 If genuinely unsure which table owns it, query `CanonDocuments`/`CanonDocumentSections` for the

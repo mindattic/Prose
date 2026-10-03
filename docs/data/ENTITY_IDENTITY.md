@@ -13,7 +13,7 @@ updated: 2026-06-07
 > authoritative canon is the SQL database (`Entities` + `Records.Json`); `engine_data/*.json` is the
 > **seed/export mirror**. This table maps, per type: the on-disk corpus → its JSON Schema → its
 > stable `id` derivation → its name/key fields. Registration only — **no canon values were
-> rewritten** and the files were **not relocated** (see [RFC 0001](../rfc/0001-canon-as-data-registration.md)).
+> rewritten** and the files were **not relocated** (see [BIBLE §4.4](../BIBLE.md#SS-§4)).
 
 ## Identity scheme
 

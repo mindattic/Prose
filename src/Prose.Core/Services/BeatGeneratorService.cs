@@ -57,7 +57,7 @@ public class BeatGeneratorService
     /// or when no universe context is wired) this is byte-identical to the original hardcoded
     /// string — zero voice drift. For any other universe it uses that universe's seeded UniversePrimer
     /// so prose is grounded in the right world. This is the seam other GLMZ-hardcoded prompt sites
-    /// should adopt (SS-A2 / SS-LAW-15).
+    /// should adopt (SS-LAW-15).
     /// </summary>
     private string UniverseLine()
     {
@@ -985,7 +985,7 @@ public record BeatContext
     /// </summary>
     public string DocScopeCode { get; init; } = "";
 
-    // ── New ProseWriterRouter enrichment fields (SS-A28) ─────────────────────
+    // ── New ProseWriterRouter enrichment fields ─────────────────────
 
     /// <summary>Raw location hint (e.g. "The Spine, Zone 3") for SceneContextBuilder.BuildAmbientContext.
     /// ProseWriterRouter calls BuildAmbientContext and injects the result into LocationContext when this is set
@@ -1028,7 +1028,7 @@ public record BeatContext
     /// Non-empty when the last N beats have been at low intensity and the reader needs the stakes raised.</summary>
     public string TensionGuidanceContext { get; init; } = "";
 
-    // ── New ProseWriterRouter enrichment fields (SS-A29) ─────────────────────
+    // ── New ProseWriterRouter enrichment fields ─────────────────────
 
     /// <summary>Character state constraints from ConsequenceService.
     /// Gear, cyberware, status — hard constraints injected before generation.</summary>

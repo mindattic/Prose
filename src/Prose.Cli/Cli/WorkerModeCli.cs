@@ -60,7 +60,7 @@ public static class WorkerModeCli
             return 1;
         }
 
-        // SS-A44: entity-review / node-review work types cast score ballots and
+        // SS-LAW-17: entity-review / node-review work types cast score ballots and
         // are disabled by default. beat-write is prose generation and is never
         // gated. Require --allow-votes to claim ballot work.
         if (workType is "entity-review" or "node-review")

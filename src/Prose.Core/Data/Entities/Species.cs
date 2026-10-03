@@ -12,7 +12,7 @@ public class Species
     public Guid Id { get; set; }
 
     /// <summary>The universe this species belongs to (1:M). GLMZ's set is the canonical five;
-    /// another universe defines its own (RFC 0006 / SS-LAW-4). Backfilled to GLMZ.</summary>
+    /// another universe defines its own (SS-LAW-15 / SS-LAW-4). Backfilled to GLMZ.</summary>
     public Guid UniverseId { get; set; }
 
     /// <summary>Canonical lowercase key used as the bridge value on

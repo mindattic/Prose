@@ -94,7 +94,7 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
             .FirstOrDefaultAsync(ct)
             ?? throw new ArgumentException($"Node {nodeId} not found.");
 
-        // SS-A43: beats live on chapter children for book-mode books.
+        // SS-LAW-6: beats live on chapter children for book-mode books.
         // Recurses past any nested Collection (2026-08-09 fix).
         var beatNodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 

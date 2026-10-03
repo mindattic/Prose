@@ -57,7 +57,7 @@ public static class DeactivatedInstruments
         "--unresolved-nouns", "--scan-unnamed-referents", "--prose-health",
         "--liberty-report", "--gear-check",
 
-        // The full battery — RFC 0010 measured $27–135 a run for zero applied findings.
+        // The full battery — the battery value audit (BIBLE ADR-10) measured $27–135 a run for zero applied findings.
         "--auto-run", "--auto-correct-nightly",
     ];
 

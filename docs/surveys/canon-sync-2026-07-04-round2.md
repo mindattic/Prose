@@ -1,7 +1,7 @@
 # Canon Sync Survey — Round 2 (2026-07-04)
 
 **Status:** completed  
-**Purpose:** Second contradiction-discovery pass following the Round 1 apply cycle. Targets entity descriptions, faction data, prose beats, and post-SS-A35 physics consistency.  
+**Purpose:** Second contradiction-discovery pass following the Round 1 apply cycle. Targets entity descriptions, faction data, prose beats, and post-eigenlift physics consistency.  
 **Apply protocol:** See `docs/SURVEY_PROTOCOL.md`.
 
 ---
@@ -85,7 +85,7 @@ The Graviton Compression Emitter GCE-3 'Flatline' description says it
 "draws on the same graviton manipulation research that underlies GLMZ's
 commercial anti-gravity transit infrastructure."
 
-SS-A35 retired anti-grav transit in favour of vacuum-cell (ANGEL) lift. This
+The eigenlift ruling retired anti-grav transit in favour of vacuum-cell (ANGEL) lift. This
 cross-reference is now a broken canon link.
 
 **Choose one:**
@@ -97,14 +97,14 @@ cross-reference is now a broken canon link.
 
 ---
 
-## Q-006 — WEAPONS: Graviton Physics Post-SS-A35
+## Q-006 — WEAPONS: Graviton Physics after the eigenlift ruling
 
 Three weapons use gravitational manipulation as their mechanism:
 - GCE-3 'Flatline' (Graviton Compression Emitter)
 - Arcturus GL-3 'Crush Depth' (Graviton Lens)
 - Zheng-Dao GL-1 'Weight of the World' (Graviton Lance)
 
-SS-A35 retired anti-gravity *transport*, but these weapons project localised force
+The eigenlift ruling retired anti-gravity *transport*, but these weapons project localised force
 fields rather than lift — a different application. Is graviton weapons tech
 consistent with GLMZ physics?
 

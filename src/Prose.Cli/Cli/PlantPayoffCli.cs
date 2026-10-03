@@ -20,7 +20,7 @@ namespace Prose.Cli;
 /// prose --update-plant --id &lt;guid&gt; [--plant "..."] [--payoff "..."]
 ///   Correct a registered pair's descriptions in place.
 ///
-/// (The --plant-audit mode was removed 2026-09-06, RFC 0010.)
+/// (The --plant-audit mode was removed 2026-09-06, BIBLE ADR-10.)
 ///
 /// Exit codes: 0 = ok, 1 = the service refused the write (unknown id, bad description),
 /// 2 = bad usage / node not found.

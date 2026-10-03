@@ -10,7 +10,7 @@ namespace Prose.Cli;
 /// RFC 0011 Brick 2 — the generic staleness report at the FindingsService layer, covering any
 /// category that stamps <c>Findings.SourceRuleVersion</c> on write. Currently wired:
 /// StructuralFailure (<see cref="BeatVerificationService.CurrentRuleVersion"/>) only — CraftChecklist
-/// left this report when its LLM checklist was deleted (RFC 0010). A future check category joins
+/// left this report when its LLM checklist was deleted (BIBLE ADR-10). A future check category joins
 /// this report by doing the same two things Brick 1/2 established: expose its own "what's current
 /// right now" value, and pass it into
 /// <c>FindingsService.Upsert</c>'s <c>sourceRuleVersion</c> parameter — no new staleness query or
@@ -34,7 +34,7 @@ public static class FindingsStalenessCli
 
         var currentVersions = new Dictionary<string, string>
         {
-            // CraftChecklist: the LLM checklist (BeatChecklistGateService) was deleted 2026-09-06 (RFC 0010);
+            // CraftChecklist: the LLM checklist (BeatChecklistGateService) was deleted 2026-09-06 (BIBLE ADR-10);
             // the category now holds only deterministic LINT rows, which are hash-gated on beat text, not a rule set.
             ["StructuralFailure"] = BeatVerificationService.CurrentRuleVersion,
         };
@@ -62,7 +62,7 @@ public static class FindingsStalenessCli
         foreach (var g in stale)
             Console.WriteLine($"  {g.StaleCount,4}/{g.TotalCount,-4} stale — {g.Category,-20} {g.FilePath}");
         Console.WriteLine();
-        // --audit-book, which used to re-run StructuralFailure, was deleted (RFC 0010); pointing at it
+        // --audit-book, which used to re-run StructuralFailure, was deleted (BIBLE ADR-10); pointing at it
         // sent the reader to an unknown command.
         Console.WriteLine("No live command re-runs StructuralFailure (--audit-book was removed, RFC 0010); dismiss stale rows with prose --findings bulk-dismiss --category StructuralFailure --node <slug>.");
         return 1;

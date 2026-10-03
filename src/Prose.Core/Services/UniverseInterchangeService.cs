@@ -53,7 +53,7 @@ public class InterchangeFile
 /// <c>--universe</c>, but an MCP tool call (via Prose.Hub's ToolDispatch) carries no such
 /// ambient scope at all — this service must be correct under either caller, and under
 /// concurrent calls targeting different universes, without mutating any shared/async-local
-/// state. See SS-LAW-15 / RFC 0006 (universe segregation is structural, not caller-discipline).
+/// state. See SS-LAW-15 (universe segregation is structural, not caller-discipline).
 ///
 /// Storage design (a documented, minimal deviation from the RFC's suggested type-mapping
 /// table — see docs/rfc/0007-universe-interchange.md "Deviations" section):

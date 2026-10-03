@@ -48,7 +48,7 @@ public class SemanticFidelityServiceTests
     // corpus-wide starting 2026-07-20 despite every other Findings category staying active, and a
     // fresh --check-fidelity run against the highest-volume affected book produced zero violations
     // because Beat.Score (its trigger) is populated on <1% of beats now that voting is off by
-    // default (SS-A44). Fixed by adding a (beatId, nodeId, text, goal) overload and wiring it into
+    // default (SS-LAW-17). Fixed by adding a (beatId, nodeId, text, goal) overload and wiring it into
     // ProseWriterRouter's existing post-write fire-and-forget block, same pattern as LibertyReportService.
 
     [Test]

@@ -12,7 +12,7 @@ using Prose.Core.Services.Audit;
 namespace Prose.Core.Services;
 
 /// <summary>
-/// The two DETERMINISTIC craft rules that survived the 2026-09-06 cut (RFC 0010).
+/// The two DETERMINISTIC craft rules that survived the 2026-09-06 cut (BIBLE ADR-10).
 ///
 /// <para>They used to be nested inside <c>BeatChecklistGateService</c>, the LLM-driven binary craft
 /// checklist. That service was deleted — corpus apply rate zero, one more instrument with an opinion

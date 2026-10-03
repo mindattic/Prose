@@ -157,7 +157,7 @@ public class ProseWriterRouter(
         // 2026-08-28: moved ABOVE the DocContextService stage (was after the findings-guidance
         // blocks) and PersistPovAsync is now awaited, not fire-and-forget. The old order was an
         // ordering race: DocContextService read the beat's BeatEntityPresence 'pov' row to pin
-        // the narrator's register (SS-A46 layer 4) BEFORE this stage — the only live writer of
+        // the narrator's register (register-doctrine layer 4) BEFORE this stage — the only live writer of
         // that row — had run, so POV register pinning was a guaranteed no-op on every beat's
         // FIRST generation and only took effect on regeneration passes over the same beatId.
         var xRayContext = context.XRayContext;
@@ -189,7 +189,7 @@ public class ProseWriterRouter(
         {
             await TraceStageAsync(nameof(DocContextService), async () =>
             {
-                // POV register priority (GLMZ §0 / SS-A46 layer 4): find this beat's narrator from the
+                // POV register priority (GLMZ §0 / register doctrine layer 4): find this beat's narrator from the
                 // bible POV map (BeatEntityPresence 'pov' row) so its register is pinned/dominant — a
                 // multi-POV book voices each beat in that beat's narrator, not a blend of everyone present.
                 // Shared lookup (RFC 0011 Brick 1) — was inlined here AND independently re-implemented
@@ -250,7 +250,7 @@ public class ProseWriterRouter(
             });
         }
 
-        // ── New enrichments (SS-A28) ─────────────────────────────────────────
+        // ── New enrichments ─────────────────────────────────────────
 
         // Ambient sensory grounding: SceneContextBuilder from the Location hint on BeatContext.
         var locationContext = context.LocationContext;
@@ -284,7 +284,7 @@ public class ProseWriterRouter(
         var emotionalGuidanceContext = context.EmotionalGuidanceContext;
         if (string.IsNullOrEmpty(emotionalGuidanceContext) && dbFactory != null && context.NodeId != Guid.Empty && !context.LeanContext)
         {
-            await TraceStageAsync("EmotionalDepthLoopback", async () =>   // producer deleted 2026-09-06 (RFC 0010); reads prior findings only
+            await TraceStageAsync("EmotionalDepthLoopback", async () =>   // producer deleted 2026-09-06 (BIBLE ADR-10); reads prior findings only
             {
                 emotionalGuidanceContext = await BuildFindingsGuidanceAsync(
                     context.NodeId,

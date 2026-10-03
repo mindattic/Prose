@@ -157,7 +157,7 @@ public static class BookCli
         var bookId = book.Id;
         var allowVotes = args.Contains("--allow-votes");
 
-        // SS-A44: the book review casts a multi-LLM vote panel — disabled by default.
+        // SS-LAW-17: the book review casts a multi-LLM vote panel — disabled by default.
         try { votingGate.EnsureAllowed("book-review", allowVotes); }
         catch (VotingDisabledException ex) { Console.Error.WriteLine($"[book review] {ex.Message}"); return 1; }
 

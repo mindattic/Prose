@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.UnitTests;
 
 /// <summary>
-/// SS-A44 voting kill-switch. Verifies the central gate blocks ballot/score
+/// SS-LAW-17 voting kill-switch. Verifies the central gate blocks ballot/score
 /// flows by default, lifts on an explicit override, correctly reads the
 /// legion.json default, and — critically — that prose-generation paths never
 /// depend on the gate (generation must keep working when voting is off).
@@ -14,7 +14,7 @@ namespace Prose.UnitTests;
 [TestFixture]
 public class VotingGateTests
 {
-    // ── (a) Blocks by default, with the exact SS-A44 message ──────────────────
+    // ── (a) Blocks by default, with the exact SS-LAW-17 message ──────────────────
 
     [Test]
     public void EnsureAllowed_Disabled_NoOverride_Throws_WithExactMessage()
@@ -94,7 +94,7 @@ public class VotingGateTests
     [Test]
     public void CommittedLegionJson_ShipsVotingDisabled()
     {
-        // The repo's committed legion.json must keep voting OFF by default (SS-A44).
+        // The repo's committed legion.json must keep voting OFF by default (SS-LAW-17).
         var repoRoot = FindRepoRoot();
         Assert.That(repoRoot, Is.Not.Null, "could not locate repo root (legion.json)");
         Assert.That(VotingGate.ReadVotingEnabledDefault(repoRoot!), Is.False,
@@ -107,7 +107,7 @@ public class VotingGateTests
     public void ProseGenerationServices_DoNotDependOnVotingGate()
     {
         // Representative prose-generation entry points must not take a VotingGate
-        // dependency — generation is never gated (SS-A44 gates scoring, not prose).
+        // dependency — generation is never gated (SS-LAW-17 gates scoring, not prose).
         foreach (var typeName in new[]
         {
             "Prose.Core.Services.BeatGeneratorService",

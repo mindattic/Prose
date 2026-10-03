@@ -50,7 +50,7 @@ public class CharacterRepository : EfRepository<CharacterData>
     {
         lock (mappedCacheLock)
         {
-            // Invalidate on SwitchUniverse so a GLMZ roster isn't served under Fantasy (RFC 0006).
+            // Invalidate on SwitchUniverse so a GLMZ roster isn't served under Fantasy (SS-LAW-15).
             // Epoch alone is not enough: it is a process-wide counter bumped by every universe
             // switch anywhere, not a record of which universe THIS cache slot holds, so two
             // different universes racing SetFlowUniverse could otherwise both pass the epoch

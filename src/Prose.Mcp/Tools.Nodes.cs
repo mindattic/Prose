@@ -752,7 +752,7 @@ public class NodeTools
         var node = await ResolveNodeAsync(nodeIdOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
 
-        // Beats live on chapter children, not the book node (SS-A43) — rebeat must
+        // Beats live on chapter children, not the book node (SS-LAW-6) — rebeat must
         // target the chapter(s). RebuildAsync's own beat lookup walks down to child
         // beats, but its write-back (delete old BeatNodes / insert new) uses whatever
         // id it's given, so passing the book id here silently wrote the resegmented

@@ -4,13 +4,14 @@ project: Prose
 code: SS
 layer: stories
 status: living
-updated: 2026-08-08
+updated: 2026-10-03
 ---
 
 # Prose — User Stories
-> ✅ done (shipped & tested) · 🟡 partial · ⬜ planned · 🗑️ cut. Every ✅ cites the test.
-> Migrated from `ARCHITECTURE.md` §4 (goals table) on 2026-06-07. Test tokens are NUnit
-> methods/classes in `src/Prose.UnitTests/`. CLI smokes run against LocalDB.
+> ✅ done (shipped & tested) · 🟡 partial · ⬜ planned. Every ✅ cites the test.
+> Test tokens are NUnit methods/classes in `src/Prose.UnitTests/`. CLI smokes run against LocalDB.
+> The live engine plan is the factory's work orders (`prose --order list`); this file tracks the
+> verified stories.
 
 ## Epic A — Canon-as-database foundation
 
@@ -49,8 +50,6 @@ updated: 2026-08-08
 
 ## Epic C — Generation & outline
 
-- **SS-US-C1 ✅** As the engine, an outline must pass the gate before prose fires. *(verified by
-  `OutlineGateTests`, `OutlineServiceTests`.)*
 - **SS-US-C2 ✅** As the engine, `BeatPromptBuilder` injects canon facts + voice rules into every
   beat prompt. *(verified by `BeatPromptBuilderTests`.)*
 - **SS-US-C3 ✅** As the engine, the Beat Doctrine + house voice are codified in the DB and emitted
@@ -60,19 +59,19 @@ updated: 2026-08-08
 ## Epic D — Interconnect, validation & self-correction
 
 - **SS-US-D1 ✅** As the engine, `CanonRetrievalService` pulls relevant canon across **all** types
-  into generation. *(verified by `ServiceInterconnectionTests`, `SemanticIndexServiceTests`; CLI
+  into generation. *(verified by `SemanticIndexServiceTests`; CLI
   `prose --canon-retrieve` surfaced apparel/weapon/document.)*
 - **SS-US-D2 ✅** As the engine, embedding lookups degrade gracefully when the index is cold.
   *(verified by `EmbeddingFallbackTests`.)*
 - **SS-US-D3 ✅** As the engine, a contradiction sweep raises approval-gated `CANON-CONTRADICTION`
   findings (and optional REWRITE proposals) without auto-writing. *(verified by `CanonEngineTests`
   parse/chunk/severity: `Parse_ValidArray_MapsFields`, `Chunk_SplitsOnParagraphsUnderBudget_AndCoversAll`,
-  `ParseSeverity_MapsKnown_DefaultsToMedium`; CLI `prose --check-canon [--fix]`.)*
+  `ParseSeverity_MapsKnown_DefaultsToMedium`; the sweep runs at chapter close.)*
 - **SS-US-D4 ✅** As the engine, continuity extraction resolves any entity type via the universal
   `Entities` table (F2). *(verified by `CanonEngineTests.RuleTargets_AllMapToKnownStores`,
   `NormalizeTarget_*`; `WorldConsistencyServiceTests` filtered subset.)*
 - **SS-US-D5 ✅** As the engine, world facts/lore stay consistent. *(verified by `WorldLoreTests`,
-  `WorldGraphServiceTests`, `KnowledgeMapServiceTests`, `InferenceServiceTests`.)*
+  `InferenceServiceTests`.)*
 
 ## Epic E — Voice harvest (the flywheel)
 
@@ -135,7 +134,7 @@ updated: 2026-08-08
 > The engine becomes universe-agnostic: GLMZ is Universe #1, Fantasy/Steampunk is Universe #2, and
 > more can be added. Single `UniverseId` FK per row (1:M); crossover entities are duplicated, not
 > bridged. No project rename — "Prose" stays the engine codename. See
-> [SS-A2](AMENDMENTS.md) and [SS-LAW-15](BIBLE.md#SS-§5).
+> [SS-LAW-15](BIBLE.md#SS-§5).
 
 - **SS-US-U1 ✅** As the engine, I store a `Universe` lookup table and a non-null `UniverseId` on
   every canon/story root (`Entities`, `Strands`, `Books`) so every row belongs to exactly one world.
@@ -150,15 +149,15 @@ updated: 2026-08-08
 - **SS-US-U3 ✅** As the author, a Fantasy/Steampunk placeholder universe is seeded alongside GLMZ.
   *(verified by SQL: `Universe` seeded with `glmz` + `scry`, each with a `WorldPrimer`.)*
 - **SS-US-U4 ✅** As the author, I can **SwitchUniverse** — set the current universe independently in
-  the UI and in each CLI/MCP process — so I can write GLMZ in one terminal and Fantasy in another at
+  each CLI/MCP process — so I can write GLMZ in one terminal and Fantasy in another at
   the same time. **Selection is per-process / per-session, never a single shared global.** Precedence:
-  `--universe <slug>` flag → `PROSE_UNIVERSE` env var (per terminal) → UI selection → global default
-  `current_universe` KV. A UI dropdown (`NavMenu`), CLI flag, and MCP `switch_universe` tool set it;
+  `--universe <slug>` flag → `PROSE_UNIVERSE` env var (per terminal) → global default
+  `current_universe` KV. The CLI flag and the MCP `switch_universe` tool set it;
   an EF global query filter (`IUniverseContext` / `UniverseScope`) scopes every read. *(verified by
   CLI smoke `--list-strands --universe glmz` → 94 vs `--universe scry` → 0, the universe
   predicate visible in the generated SQL; `DiRegistrationTests`, `InterfaceRegistrationTests`.)*
 - **SS-US-U5 ✅** As the engine, per-universe config + retrieval + prompts ground prose in the right
-  world with **no cross-over** (RFC 0006, fully implemented). (1) `UniverseId` on `Settings` +
+  world with **no cross-over** ([BIBLE §4.2](BIBLE.md#SS-§4)). (1) `UniverseId` on `Settings` +
   `Species` with an EF query filter + a SHARED sentinel for operational keys + epoch-based cache
   invalidation; (2) `UniverseId` on `EntityEmbeddings`/`ProseEmbeddings` + filtered `FindSimilar*`;
   (3) the `IUniverseContext.WorldGroundingOr` prompt seam applied to every GLMZ-worded prompt site
@@ -173,10 +172,6 @@ updated: 2026-08-08
   row per universe), not a shared row — enforced by single-FK scoping + per-universe unique slug
   indexes (`UX_Entities_Universe_Type_Slug`, `UX_Strands_Universe_Slug`, `UX_Books_Universe_Slug`)
   so the same (type, slug) may recur across universes ([SS-LAW-15](BIBLE.md#SS-§5)).
-- **SS-US-U7 ✅** As a user, the CyberSpace animated background is removed in favor of a plain,
-  universe-neutral dark mode. *(verified by removal of the console-bg/sacred-geometry/tv-static JS +
-  the cyberspace DOM divs across `App.razor`, `Home.razor`, `CategoryBoard.razor`, `MainLayout.razor`;
-  full-solution build green; the dark `.app-shell` base theme unchanged.)*
 - **SS-US-U8 ✅** As the author, a 4th universe (**HORROR**, contained-horror fiction, anthology-
   shaped — no shared continuity requirement across books) is seeded and craft/world-doctrine docs
   (`docs/HORROR.md`, `docs/universes/HORROR.md`) are authored and synced to `MarkdownFiles`.
@@ -197,8 +192,8 @@ updated: 2026-08-08
 > all entities are seeded per [SS-LAW-1](BIBLE.md#SS-§5).
 
 - **SS-US-H1 ⬜** As the author, *Underlying Connection* is written as a dual-POV GLMZ novel
-  (~80k words, 3 acts, ~28 chapters, alternating Amara Osei / Seto Banda POV). See
-  [SS-A6](AMENDMENTS.md) for CorpoNation + character canon. *Acceptance: book strand seeded +
+  (~80k words, 3 acts, ~28 chapters, alternating Amara Osei / Seto Banda POV). CorpoNation
+  + character canon live in the entity records. *Acceptance: book strand seeded +
   all chapters drafted + full-book review panel ≥85%.*
   - **H1a ✅** Entities seeded: Amara Osei (character), Seto Banda (character), Ciro Fonseca
     (character), Orison Neuretics (corponation). All four in DB before any prose is generated.
@@ -211,13 +206,13 @@ updated: 2026-08-08
   - **H1f ⬜** Opus polish pass + full-book review panel ≥85%.
 
 - **SS-US-H2 ✅** As the author, *The Number That Works* (TNTW / Sparrow) is expanded from Act 1
-  (~30 pages) into a complete three-act work targeting ~80 pages. See [SS-A7](AMENDMENTS.md) for
-  the canonical design: Sparrow's phenomenology, the global anomaly catalog, the lake source
+  (~30 pages) into a complete three-act work targeting ~80 pages. The canonical
+  design: Sparrow's phenomenology, the global anomaly catalog, the lake source
   hypothesis, and the thematic register ("An Anthropologist on Mars"). *Acceptance: 35 Act 2+3
   outline beats seeded + all beats written to Opus-polished prose + review panel ≥86%.
   (verified by CLI `--review-strand --slug the-number-that-works-019ed367`; R7=87.0/100, N=20,
   all reviewers ≥80; exported Sparrow V13.docx 2026-06-20.)*
-  - **H2a ✅** SS-A7 amendment written; thematic canon, Sparrow phenomenology, lake source
+  - **H2a ✅** Canon written; thematic canon, Sparrow phenomenology, lake source
     hypothesis, act structure all locked. *(2026-06-19.)*
   - **H2b ✅** 35 Act 2+3 outline beats seeded in DB (18 Act 2 + 17 Act 3), SortKeys 1050–2750.
     *(2026-06-19.)*
@@ -247,7 +242,7 @@ updated: 2026-08-08
 - **SS-US-H3 ✅** As the author, *Attendance* (ATTE, `attendance-019ebf4c`, 40 beats) is revised so
   the disappearance mechanics are internally consistent: children vanish during unmonitored
   transitions (bathroom passes, corridor gaps) leaving a resonance echo at their seat and a transit
-  shadow in the isolated space — never as witnessed classroom events. See [SS-A8](AMENDMENTS.md).
+  shadow in the isolated space — never as witnessed classroom events.
   *Acceptance: Beats 7–8, 10, 20 revised + bathroom-sweep beat added + logline updated + review
   panel ≥84%.* verified by all H3a–H3f sub-stories ✅ (2026-06-21).
   - **H3a ✅** Beats 7–8 revised: Ren did not witness the disappearance; describes echo above
@@ -272,10 +267,10 @@ updated: 2026-08-08
   because he surfaced, the surface comes *down*, bringing sport-hunters, a "rescue" mission, and the
   **Bright Fever** the immunologically-naïve clan cannot survive (FernGully / *Jungle 2 Jungle* /
   rumspringa lineage). Full arc, locks, register, and 14-beat spine in
-  [docs/nodes/UNDR.md](nodes/UNDR.md); world canon in [SS-A22](AMENDMENTS.md). *Acceptance: book
+  [docs/nodes/UNDR.md](nodes/UNDR.md); world canon in the GLMZ entity records. *Acceptance: book
   strand seeded + all entities seeded before prose + chapters drafted (Sonnet→Opus) in the DEEP
   register + standalone review ≥82% + cumulative reading-order ≥85%.*
-  - **H5a ⬜** Docs: SS-A22 amendment + UNDR bible + this entry; `codex doctor` PASS.
+  - **H5a ⬜** Docs: UNDR world canon + bible + this entry; `codex doctor` PASS.
   - **H5b ⬜** Entities seeded before prose (UNDR-US-2 set): Glim/Toby, Noor, Vesh, Knuckle, Sorrel,
     Grale, Corwin Sallow, CANALKEEP-08; factions Underclan / Engine Guild / Daylight Mission /
     Lamplighters; places Homewater / the Tartarian Empire / the Warm; the shine; Bright Fever; candles;
@@ -293,11 +288,11 @@ updated: 2026-08-08
 
 - **SS-US-H7 ✅** As the author, **The Rook Trilogy** is a complete, self-rhyming heist saga that *revels in cyberpunk cliché* (runner-vs-corp, Shadowrun/CP-Red/Akira) for readers who want the same story every time — three strands sharing cast, themes, and one converging arc, with the finale paying off clues planted in the first two. Titles descend surface→decay→body: **Magenta & Gunmetal → Neon & Rust → Crimson & Chrome**. The crew were unwitting contractors to their own ending (Helix's body-bank harvest of registered Reads); Rook's count finally comes out in names. *Acceptance: all three strands seeded + entities + 14-beat spines + Sonnet→Opus + standalone review ≥87 each + clue-plants in MxG/NxR.* *(verified 2026-06-27 via `prose --review-strand`: MxG 87.1, NxR 87.7, CxC 87.6 — all ≥87)*
   - **H7a ✅** Character Doctrine ([docs/CHARACTER.md](CHARACTER.md), SS-CHAR) authored + proven as the score lever (86→87.1 on MxG); Action Figure Test + behavioral-consistency system wired to `CharacterBehavioralRules`. *(2026-06-27)*
-  - **H7b ✅** CxC (`marrow-chrome-019f0968`) created; entities seeded (Anneke Oyelowo, The Marrow, Sefi Okonkwo; Helix Biosystems); SS-A26 amendment; 14 beats Sonnet→Opus + AntagonistCost structural beat; review **87.6**. *(2026-06-27)*
+  - **H7b ✅** CxC (`marrow-chrome-019f0968`) created; entities seeded (Anneke Oyelowo, The Marrow, Sefi Okonkwo; Helix Biosystems); world canon written; 14 beats Sonnet→Opus + AntagonistCost structural beat; review **87.6**. *(2026-06-27)*
   - **H7c ✅** Trilogy seam refactored into MxG (#4745 acquisition-for-a-buyer) + NxR (#4841 relocation-as-harvest) — the diligent-reader payoff planted. Rook redesigned (Lightning leader, rotating cast, no-repeat rule dropped, knows Kyle); Nadia Vasquez-Park → Halina Soraya. *(2026-06-27)*
 
 - **SS-US-H7 ✅** As the author, *Steppin Razor* (SRZR, `steppin-razor-019ef7be`, 15 beats) is written to completion: Sasha Võ is dragged from the quiet edge (Joliet) to the densest crowd on the continent by a 5D intelligence on a camel, discovers the AI cabal is drilling live wells under the towers not the frontier, survives four Axiom operatives with Signal and Noise, and walks onto the Loop platform still angry, still here, without putting her back to the door. Psychedelic GLMZ, *Fear and Loathing* propulsion, deadpan-flat protagonist as her own straight man. Full arc, locks, register in [docs/nodes/SRZR.md](nodes/SRZR.md). *Acceptance: 15 beats Opus-polished; standalone review ≥82%; Signal/Noise locks hold; exported.* *(verified by CLI `--review-strand --slug steppin-razor-019ef7be`; 86.6/100, N=20; exported Steppin Razor V4.pdf 2026-06-25)*
-  - **H7a ✅** SRZR strand bible written; SS-A20/A21 amendments locked; entities seeded (The Man on the Camel `019ef8055bc8`, The Hereafter `019ef8052de9`, The Joliet Schism `019ef805444e`). *(2026-06-23)*
+  - **H7a ✅** SRZR strand bible written; world canon locked; entities seeded (The Man on the Camel `019ef8055bc8`, The Hereafter `019ef8052de9`, The Joliet Schism `019ef805444e`). *(2026-06-23)*
   - **H7b ✅** 15-beat spine seeded in DB (cold open ×5 + journey ×5 + core ×3 + resolution ×2). *(2026-06-25)*
   - **H7c ✅** All 15 beats written at Opus quality (HIGH-tier, LockTier=true). Signal right / Noise left cross-draw correct throughout. *(2026-06-25)*
   - **H7d ✅** Standalone review 86.6/100 (20-ballot panel, 2026-06-25). Three em-dash encoding artifacts fixed post-review.
@@ -393,7 +388,7 @@ updated: 2026-08-08
     (the default `claude-sonnet-5` returns empty completions here — see infra note below); pin reverted. *(2026-07-18)*
   - **H11e ✅** All 14 beats written via `ProseWriterRouter`/`--expand-beat` (draft model
     `claude-sonnet-4-6`; ~7,000 words). Opus continuity + typography pass (em-dashes; see H11f). *(2026-07-18)*
-  - **H11f ✅** QA logic sweep (SS-A44, six dimensions): fixed **the Roost → Blister 9** (naming/canon
+  - **H11f ✅** QA logic sweep (SS-LAW-17, six dimensions): fixed **the Roost → Blister 9** (naming/canon
     collision, beats 7/10/12) and **phone → neuretic channel** (comms canon, beat 11); Φ placement +
     encoding verified (Φ100 form, no mojibake); plants verified in-prose (twins 7→13/14; high-five
     1→14 — last one lands *right* as they part); timeline (~2 yrs) and bible-agreement consistent.
@@ -441,48 +436,25 @@ updated: 2026-08-08
 
 ## Priority backlog
 
-> Dependency-ordered toward the headline goal (a fresh seed → published, reviewed, canon-consistent
-> audiobook+manuscript with the human only approving). From `ARCHITECTURE.md` §4 FUTURE table.
+> Dependency-ordered toward the headline goal (a fresh seed → published, canon-consistent
+> audiobook+manuscript with the human only approving).
 
 1. **SS-US-F1-prod ⬜** Ship present work to prod (run `drop_facet_system_*` +
    `create_voice_change_log_*` migrations; `--seed-voice-rules` + `--coverage --backfill` in prod).
-   *Acceptance: prod schema has no facet remnants, has `VoiceChangeLog`, `--coverage` clean.* (was F1)
+   *Acceptance: prod schema has no facet remnants, has `VoiceChangeLog`, `--coverage` clean.*
 2. **SS-US-F6 ✅** Coverage → action: `prose --coverage --backfill` reembeds idempotently.
    *✅ 100% coverage (11,588/11,588; motif 0→100%). Entity↔strand appearance tracking wired:
-   `CoverageService.TypeCoverage.InStrandCount` joins `EntityStateEvents` on `BeatGuid IS NOT NULL`;
-   `/coverage` table shows "In Strands" column; build clean 0 errors; 2026-06-21.*
-3. **SS-US-F7 ✅** In-app review surfaces: `/voice` (VoiceChangeLog approve/reject) + `/coverage`
-   pages + `CANON-CONTRADICTION` filter in `/findings`.
-   *(verified by `VoiceLog.razor` at `/voice`, `Coverage.razor` at `/coverage`, category chips in
-   `Findings.razor`; nav links in `AppBanner.razor`; build clean; 2026-06-21.)*
-4. **SS-US-Fh ✅** Hierarchy + Collection builder: Series→Collection→Strand→Beat via `ParentStrandId`;
-   drag-and-drop Collection builder on `/strands`; publishing a Collection stitches its strands.
-   (verified by drag-and-drop `attachStrandDragHandlers` JS setting `ParentStrandId`; hierarchy view
-   with expandable parents in `Strands.razor`; "series" + "collection" added to kind dropdown;
-   `DocxExportService.ExportStrandAsync` calls `GetOrderedBeatsAsync` which recursively stitches all
-   `ParentStrandId` children; build clean 0 errors; 2026-06-21.)
-5. **SS-US-F8 ✅** Autonomous corpus loop: `prose --run-corpus --count N` runs
-   generate→validate(--fix)→review→harvest across N seeds, resume-safe, pausing only for approvals.
-   *(see SS-US-L2)*
-6. **SS-US-Fs2 ✅** Species as a first-class type: `Species` lookup entity + `/species` dictionary
-   + `get_species` MCP tool; final set exactly five (`human`,`ai`,`elf`,`synthetic`,`unknown`).
+   `CoverageService.TypeCoverage.InStrandCount` joins `EntityStateEvents` on `BeatGuid IS NOT NULL`
+   and `prose --coverage` reports it.*
+3. **SS-US-Fs2 ✅** Species as a first-class type: `Species` lookup entity + `prose --list-species`;
+   GLMZ's set is exactly five (`human`,`ai`,`elf`,`synthetic`,`unknown`).
    *(see SS-US-L5)*
-7. **SS-US-G3 / Fv 🟡** Per-strand LLM voice / Kyle review pass across all strands.
-8. **SS-US-G4 ⬜** Develop the 100-story outline past the spine (premises 9+).
-9. **SS-US-Fc ✅** In-app canon toggle on the writer/`/strands` page (see SS-US-L7).
-10. **SS-US-F9 ✅** Living world tick (scheduled `EntityStateEvents`, off by default; see SS-US-L4).
-11. **SS-US-F10 🗑️** Voice flywheel proof: batch K+1 mean `Strand.Score` > batch K after harvests.
-    **SUPERSEDED 2026-08-03 by SS-A44** (score retirement) before ever being demonstrated — see the
-    I8 entry below for the investigation. Not "done," not "still open": the metric this criterion
-    depends on no longer exists as a live measurement, so this acceptance test can't be satisfied
-    or failed going forward. A modern equivalent (findings-density trend over time) is proposed but
-    not built.
-12. **SS-US-U1…U7 ✅** Multi-Universe support (Epic U): `Universe` table + `UniverseId` + backfill to
-    GLMZ → seed Fantasy/Steampunk → SwitchUniverse (per-process/per-session) in UI + CLI + MCP →
-    full cross-over segregation (config + embeddings + prompts + caches + ledger) → plain dark mode.
-    **Shipped 2026-06-15** (see [SS-A3](AMENDMENTS.md)/[SS-A4](AMENDMENTS.md) + [RFC 0006](rfc/0006-universe-segregation.md)). DB backed up first.
-
-**Endpoint reached when** the prod-ship + F7 + F8 are green and F10 demonstrates the flywheel.
+4. **SS-US-G3 / Fv 🟡** Per-strand LLM voice / Kyle review pass across all strands.
+5. **SS-US-G4 ⬜** Develop the 100-story outline past the spine (premises 9+).
+6. **SS-US-F9 ✅** Living world tick (scheduled `EntityStateEvents`, off by default; see SS-US-L4).
+7. **SS-US-U1…U6 ✅** Multi-Universe support (Epic U): `Universe` table + `UniverseId` →
+   SwitchUniverse (per-process/per-session) in CLI + MCP → full cross-over segregation (config +
+   embeddings + prompts + caches + ledger) — [SS-LAW-15](BIBLE.md#SS-§5), [BIBLE §4.2](BIBLE.md#SS-§4).
 
 ## Epic P — SCRY/Fantasy Books in progress {#epic-p}
 
@@ -539,21 +511,9 @@ updated: 2026-08-08
   `WeaponAmmoCompatibilityService` have each been invoked and any violations filed as Findings.*
   *(verified by `PostBeatValidationServiceTests` integration; DI registration tests.)*
 
-- **SS-US-I2 ✅** As an author, every finding in `/findings` is actionable: I can approve, reject,
-  or dismiss it, and on approve the fix is applied automatically. *Acceptance: the three actions
-  are wired end-to-end in the UI; `FindingApplyService` runs on approve and writes the corrected
-  prose; `Finding.Status` is never stuck at pending after author action.*
-  *(verified by `FindingsApplyAndAdvance` → `FindingApplyService.ApplyAsync`; `FindingsResolveAndAdvance`
-  → `Store.SetStatus`; wizard buttons for Apply/Mark applied/Dismiss in Findings.razor; 2026-06-21.)*
-
 - **SS-US-I3 ✅** As the engine, `ContinuityExtractionService` and `BeatStateExtractor` run after
   every beat save so the continuity ledger and `EntityStateEvents` stay current. *(verified by
   `ContinuityExtractionServiceTests`; `BeatStateExtractorTests`.)*
-
-- **SS-US-I4 ✅** As the engine, when a strand's score crosses from `<80` to `≥80`, a
-  `VOICE-HARVEST` finding is auto-raised so the flywheel fires without manual prompting.
-  *(verified by `CanonEngineTests` coverage/parse helpers; end-to-end exercised via
-  `prose --review-strand`.)*
 
 - **SS-US-I5 ✅** As the operator, I can close the coverage loop: `prose --coverage` identifies a
   dead type, I seed entities of that type, `prose --coverage --backfill` re-embeds them, and the next
@@ -565,85 +525,7 @@ updated: 2026-08-08
 - **SS-US-I6 ✅** As the engine, `SemanticFidelityService` compares the prose embedding centroid
   to the seed embedding and raises a `SEMANTIC-DRIFT` finding if the prose has drifted from its
   seed intent. *(verified by `SemanticFidelityServiceTests`; MCP tool `check_semantic_fidelity`
-  wired; `prose --check-fidelity`.)*
-
-- **SS-US-I7 ✅** As the author, when I run `prose --diagnose-strand --slug <slug>`, the 12 parallel
-  pre-flight LLM checks from `StructuralDiagnosticService` complete before any review panel fires,
-  and any critical failure blocks the review rather than letting it score broken prose.
-  *(verified by `DiagnoseStrandCli` + `StructuralDiagnosticService` registered in DI;
-  `ReviewStrand` MCP tool runs structural pre-flight first — blocking failures return the diagnosis
-  in place of ballots; CLI exit code 2 on blocking failures; 2026-06-21.)*
-
-- **SS-US-I8 🗑️** As the operator, the flywheel is provably spinning: batch K+1 mean `Strand.Score`
-  is higher than batch K mean after at least N=5 voice-harvest approval cycles. *Acceptance:
-  `prose --score-trend --batches 2` prints the before/after mean + delta; delta > 0.* (This is
-  SS-US-F10 reframed as a concrete acceptance test.)
-  **Investigated 2026-08-08, then superseded.** `prose --score-trend` had never actually been run
-  successfully — it had two real bugs: a malformed C# format string (`"0.1"` silently drops the
-  decimal point instead of showing one digit, so every score/delta ever displayed was garbage,
-  e.g. a real 76.1 printed as `761`) and a `--universe` flag that did nothing (the query started
-  from `NodeScoreHistories`, which carries no universe query filter, so every universe returned
-  the identical unfiltered set). Both fixed in `ScoreTrendCli.cs`. With both bugs fixed, the actual
-  historical trend across all 21 scored GLMZ nodes is **flat-to-declining** at every batch count
-  tested (2/3/4/5) — e.g. at 3 batches: 76.3 → 75.6 → 74.0 — never rising. So even while this
-  metric was the project's live quality measure, the flywheel was never empirically shown to be
-  spinning forward. Moot as of 2026-08-03: SS-A44 retired the underlying `Node.Score` metric
-  entirely ("scores mean nothing") in favor of Reader-Proxy QA findings, so this acceptance
-  criterion can no longer be satisfied going forward — `horror` (published entirely post-SS-A44)
-  has zero `NodeScoreHistory` rows at all, confirming no new book will ever produce another data
-  point. See `project_flywheel_proof_2026_08_08` memory. A modern equivalent — a findings-density
-  trend (mean open Reader-Proxy QA findings per beat, weighted by severity, across books in
-  chronological order) — is proposed but not built; would need a fresh story number if pursued.
-
-## Epic J — Quality Pipeline Surfaces {#epic-j}
-
-> The quality loops ([BIBLE.md §11](BIBLE.md#SS-§11)) are only as good as their author-facing
-> surfaces. This epic wires the UI and CLI pages that make each loop's status observable and
-> actionable.
-
-- **SS-US-J1 ✅** As an author, `/findings` has category filters for `CANON-CONTRADICTION`,
-  `VOICE-HARVEST`, `SEMANTIC-DRIFT`, `OUTLINE-DRIFT`, `PROSE-GUARD`, `GEAR-CARRY`, `BEHAVIOR`,
-  and `AMMO` so I can triage by loop rather than scrolling a flat list.
-  *(verified by category chip row in `Findings.razor`; `categoryFilter: FindingCategory?` state;
-  `VisibleItems` narrows by category; chips for Contradiction/Voice/Drift/Gear/Behavior/Cliché/
-  Anachronism/Other; 2026-06-21.)*
-
-- **SS-US-J2 ✅** As an author, `/voice` shows the `VoiceChangeLog` (proposed / approved /
-  rejected) with approve and reject actions so the flywheel loop closes in the browser.
-  *(verified by `VoiceLog.razor` at `/voice`; tab bar for proposed/applied/rejected/observed;
-  Approve → `VoiceHarvestService.ApplyAsync`; Reject → `VoiceHarvestService.RejectAsync`;
-  nav link in AppBanner; 2026-06-21.)*
-
-- **SS-US-J3 ✅** As an author, `/coverage` visualises the per-type reachability matrix as a
-  sortable table (type, entity count, appearance %, last strand in which the type appeared) with a
-  "Backfill" action per row for 0%-types. *(verified by `Coverage.razor` at `/coverage`; progress
-  bars colour-coded ≥90%/50-89%/<50%; CLI backfill command displayed per-row for incomplete types;
-  summary stat strip; nav link in AppBanner; 2026-06-21.)* *Acceptance: table renders from `CoverageService` output;
-  backfill action calls `--coverage --backfill` for that type; the page refreshes on completion.*
-
-- **SS-US-J4 ✅** As an author, the `Strand.razor` workbench shows the current score as a
-  traffic-light badge (🔴 < 70 / 🟡 70–79 / 🟢 ≥ 80) so I know at a glance whether the strand
-  needs work before I advance. *(verified by `ScorePctColor` updated to thresholds ≥80=success /
-  70–79=warning / <70=danger; badge clicks to full review summary via `OpenStrandReviewsAsync`;
-  2026-06-21.)*
-
-- **SS-US-J5 ✅** As an author, the `/strand` workbench exposes a "Run Diagnostics" button that
-  calls `prose --diagnose-strand` and surfaces the 12 pre-flight checks as an inline report (pass /
-  warn / fail per check) so I can fix structural problems before spending review-panel tokens.
-  *(verified by `RunDiagnosticsAsync` + `diagResult: StructuralDiagnosisResult?` in `Strand.razor`;
-  inline 12-check grid; button colour indicates pass/warn/fail; blocking-failure banner fires when
-  `HasBlockingFailures`; `@inject StructuralDiagnosticService DiagSvc`; 2026-06-21.)*
-
-- **SS-US-J6 🗑️** As an operator, `prose --score-trend [--batches N]` prints the rolling mean score
-  per chronological batch of strands so the flywheel's direction is visible from the CLI.
-  *(verified by `ScoreTrendCli` + `--score-trend` wired in `Program.cs`; prints batch number /
-  strand count / mean score / Δ vs prior batch; exit 0 = positive trend, 1 = declining, 2 = not
-  enough data; 2026-06-21.)*
-  **Retired 2026-08-08** alongside SS-US-I8: the underlying `Node.Score` metric this command
-  trended is itself retired (SS-A44), and the metric it measured was already shown flat-to-
-  declining, never rising (see SS-US-I8). `ScoreTrendCli.cs` deleted; the replacement is
-  the former `prose --audit-book` / `book_health` Structural Integrity Index (torn out 2026-09-06, RFC 0010 — it graded a 5/5 publish-ready book 0), a findings-based rollup
-  that isn't gated on the legacy panel-vote score at all.
+  wired.)*
 
 ## Epic K — Service Communication Law Compliance {#epic-k}
 
@@ -678,41 +560,12 @@ updated: 2026-08-08
   ambient via `IUniverseContext` (SCL-6). *(verified by `UniverseSegregationTests` (10 tests);
   service interfaces do not expose `UniverseId` parameters.)*
 
-- **SS-US-K7 ✅** As the codebase, no `BeatGeneratorService` call path fires without a prior
-  successful `OutlineReviewService` gate (SCL-7). *(verified by `OutlineGateTests`.)*
-
-- **SS-US-K8 ✅** As the codebase, `StrandReviewService` does not inject any beat-write, prose-
-  patch, or voice-apply service (SCL-8). *(verified by K8 tests in `ServiceCommunicationLawAuditTests`;
-  constructor and field audit both green; 2026-06-21.)*
-
 ## Epic L — Architectural Completeness {#epic-l}
 
 > Stories that close the remaining gaps between what the architecture promises and what the system
 > can prove end-to-end. These are the prerequisites for the "headline endpoint":
 > *a fresh seed → published, reviewed, canon-consistent audiobook+manuscript with the human only
 > approving* (see [USER_STORIES.md Priority backlog](#)).
-
-- **SS-US-L1 ✅** As an author, I can run the entire seed-to-export pipeline end-to-end without
-  touching code. *Acceptance: starting from a bare strand, the CLI sequence
-  `--bible-strand → --expand-beat (×N) → --reflow-strand → --check-canon → --review-strand →
-  --export-node` completes with 0 errors and produces a valid .docx in Downloads.
-  (verified: all six CLIs exist and are wired in `Program.cs`: `--bible-strand` via `StrandBibleCli`,
-  `--expand-beat` via `ExpandBeatCli` [new 2026-06-21], `--reflow-strand` via `ProseReflowCli`,
-  `--check-canon` via `CanonCheckCli`, `--review-strand` via `ReviewStrandCli`,
-  `--export-node` via `ExportNodeCli` (renamed from `--publish`/`PublishCli` — local file rendering only, no KDP API integration); each is independently exercised; build clean 0 errors;
-  2026-06-21.)*
-
-- **SS-US-L2 ✅** As an operator, `prose --run-corpus --count N` runs the full loop
-  (generate → validate → review → harvest) across N seeds, resume-safe, pausing only for author
-  approvals. *Acceptance: the command generates N strands; each auto-validates; findings are batched
-  for author review; harvests fire on ≥80% crossings; the command resumes from the last completed
-  strand if interrupted. This is the autonomous corpus loop (SS-US-F8).
-  (verified by `RunCorpusCli.RunAsync`: create via `StrandBibleService`, expand via
-  `BeatGeneratorService.GenerateBeatAsync`, reflow via `ProseReflowService.ReflowStrandAsync`,
-  validate via `CanonContradictionService.CheckStrandAsync`, review via
-  `StrandReviewService.RunSampledReviewAsync`, harvest via `VoiceHarvestService.HarvestStrandAsync`
-  on ≥80%; checkpoint to `ss-corpus-run.json`; `--resume` restarts from last completed stage; build
-  clean 0 errors; 2026-06-21.)*
 
 - **SS-US-L3 ✅** As an author, a `kind=series` strand can be published as a single ordered docx
   that stitches all its `kind=collection` and `kind=chapter` children in reading order.
@@ -728,14 +581,11 @@ updated: 2026-08-08
   when enabled, queries active characters in current universe (capped 100), writes one
   `EntityStateEvent` per character via `WorldStateLedger.RecordManyAsync` with
   `AspectKey="world-tick"`, `Verb="set"`, `NewValue="idle"`; `WorldTickService.Enabled` proxies
-  to `SettingsService.WorldTickEnabled`; AiPanels.razor toggle wired; build clean 0 errors;
-  2026-06-21.)*
+  to `SettingsService.WorldTickEnabled`.)*
 
-- **SS-US-L5 ✅** As the engine, `Species` is a first-class lookup entity with a `/species`
-  dictionary page, a `get_species` MCP tool, and `add_entity`/`add_species` CLI support (SS-US-Fs2).
-  *(verified by `SpeciesDictionary.razor` at `/species`; `SpeciesTools` (`list_species`, `get_species`)
-  in `Tools.Species.cs`; `ListSpeciesCli.cs` wired as `--list-species` in `Program.cs`; nav link in
-  AppBanner; `SpeciesRepository` already in DI; build clean; 2026-06-21.)*
+- **SS-US-L5 ✅** As the engine, `Species` is a first-class lookup entity listed by
+  `prose --list-species` (SS-US-Fs2). *(verified by `ListSpeciesCli.cs` wired as `--list-species` in
+  `Program.cs`; `SpeciesRepository` in DI.)*
 
 - **SS-US-L6 ⬜** As the engine, prod schema matches LocalDB (F1 prod-ship). `drop_facet_system_*`
   and `create_voice_change_log_*` migrations applied; `--seed-voice-rules` + `--coverage
@@ -743,79 +593,24 @@ updated: 2026-08-08
   *Acceptance: prod schema has no facet remnants, has `VoiceChangeLog`, `UniverseId` on all three
   roots, and `--coverage` exits 0. (SS-US-F1-prod.)*
 
-- **SS-US-L7 ✅** As an author, the `/strand` workbench includes an inline canon toggle so I can
-  mark a strand `IsCanon=true` without leaving the page (SS-US-Fc). *(verified by
-  `ToggleCanonAsync` in `Strand.razor` + `StrandWorkbenchService.SetCanonAsync`; badge shows
-  gold shield (Canon) or dim shield (Not Canon); persists immediately to DB; 2026-06-21.)*
-
 ## Epic M — Emotional Intelligence Examination {#epic-m}
 
-> An 8-dimension, per-beat, character-aware emotional depth examiner that operationalizes the craft
-> laws from [CODA.md](registers/CODA.md) into graded, actionable findings. Originally scoped as a
-> side-car to the 82/85 reader-panel headline score — that gate is now retired (SS-A44,
-> 2026-08-03; see Epic N), so this epic's "blocking advisory cap at the Deep/publish gate" framing
-> (M6) is stale pending a decision on what it should gate under Reader-Proxy QA instead.
-> See [RFC 0010](rfc/0010-emotional-intelligence-examination.md).
->
-> **2026-08-08 status check:** the code shipped but has never been run at scale — 0 of 13,594
-> beats have `Beat.EmotionalScore` populated as of this date. A live test run
-> (`prose --examine-emotion --slug lyra-sinterspawn-slayer-019f5bd9 --universe scry`) confirmed
-> the CLI genuinely works end-to-end and produces high-quality, specific craft feedback — but also
-> surfaced a real design gap: the dimension set is GLMZ/CODA-specific (7 of 8 dimensions cite
-> CODA/GREY/JOY/SORROW registers explicitly), not generalized for the project's other 5 universes
-> (SCRY, HORROR, NONFICTION, FICTION, EROTICA). One hardcoded anchor (`RelationalSubtext` citing
-> "Kyle↔Pixel" by name) was fixed to be universe-neutral; the deeper question — what are the right
-> dimensions/anchors for a NONFICTION or EROTICA book — is an open author decision, not something
-> to invent unilaterally. See `project_emotional_guidance_bootstrap_decision_2026_08_08` memory.
-> A corpus-wide bootstrap would cost real money (~$0.27/6-beat-book observed, extrapolating to
-> several hundred dollars for the full corpus) and should not be run without that scope decision
-> and explicit cost sign-off first.
-
-- **SS-US-M1 ✅ → RETIRED** (`--examine-emotion` deleted 2026-09-06 (RFC 0010) — zero applied findings, ever) As an author, `prose --examine-emotion --slug <slug> --effort deep` ran 8 dimension
-  checks + a per-beat emotional curve + character ledger extraction, returning a 0–100
-  `EmotionalDepthScore`, per-dimension 0–4 scores with strongest/weakest evidence and a beat-scoped
-  craft fix, and a beat-by-beat depth curve. *(acceptance: `ExamineEmotionCli` dispatched from
-  `Program.cs`; `EmotionalDepthService.ExamineStrandAsync` runs 8 parallel LLM calls; beat curve
-  covers every beat; exit 0 = none blocking, 1 = advisory, 2 = blocking. **Verified live 2026-08-08**
-  on LLSS (6 beats, SCRY universe): 9 LLM calls completed, full JSON envelope with per-dimension
-  scores/evidence/fixes and a 6-entry beat curve returned, cost $0.27 actual.)*
-
-- **SS-US-M2 ✗ RETIRED** (tool deleted 2026-09-06 (RFC 0010)) As an author, the `examine_emotional_depth` MCP tool would have returned the same examination
-  envelope as the CLI. *(acceptance: `[McpServerTool]` in `Tools.Quality.cs`; GUID-or-slug
-  resolution; same JSON envelope. **Checked 2026-08-08: no such tool exists in `Tools.Quality.cs`
-  — CLI-only, MCP surface genuinely not built.**)*
+> The emotional-examination schema exists; no examiner writes to it
+> ([BIBLE ADR-10](BIBLE.md#SS-§14): instruments stay only while their findings get applied).
 
 - **SS-US-M3 ✅** As an author, `prose --migrate-sql --emotional-examination` creates 4 tables +
   `Beat.EmotionalScore` column idempotently. *(acceptance: re-runnable, exits 0 on 2nd run; all 4
-  tables exist; `Beat.EmotionalScore` float? column on the temporal Beats table. Verified by CLI
-  run 2026-08-08: column and tables confirmed present in LocalDB; the examine-emotion run
-  exercised the schema successfully.)*
+  tables exist; `Beat.EmotionalScore` float? column on the temporal Beats table; verified by CLI
+  run against LocalDB.)*
 
-- **SS-US-M4 ✅** As an author, `prose --findings` surfaces `EMOTIONAL-DEPTH` findings from blocking
-  dimensions beside structural ones. *(acceptance: `FindingsService.Upsert` with
-  `summary: "EMOTIONAL-DEPTH [Name] beat N: fix"`; visible at `/findings`. Verified by CLI run
-  2026-08-08: the LLSS run's one blocking dimension (`CostFeltNotAsserted`) filed exactly one
-  `EMOTIONAL-DEPTH`-prefixed finding, confirmed via direct DB query.)*
 
-- **SS-US-M5 ⬜** As an author, the ledger sanity check passes: Rhea (TVYT) has
-  Want="keep facts correct / not be managed" and Need="stop calling being-managed competence",
-  matching [TVYT.md §71-73](nodes/TVYT.md). *(acceptance: `--examine-emotion --slug tvyt
-  --effort deep --json` returns Rhea ledger with `Inferred=false`. Not checked 2026-08-08 — TVYT-specific, not exercised by the LLSS smoke test.)*
-
-- **SS-US-M6 ⬜** As an author, a strand with an open blocking emotional dimension cannot be
-  marked publish-ready at the Deep gate; resolving the finding clears the block. *(acceptance:
-  publish-readiness check consults open blocking `EmotionalDimensionResults`; resolving the Finding
-  clears the block; `Strand.Score` is unchanged by the examination. Stale acceptance criterion —
-  the "Deep gate" it refers to predates the SS-A44 score retirement; needs re-scoping against
-  current Reader-Proxy QA publish-readiness criteria before this can be built or verified.)*
-
-## Epic N — Voting kill-switch (SS-A44) {#epic-n}
+## Epic N — Voting kill-switch (SS-LAW-17) {#epic-n}
 
 > Every engine path that solicits LLM ballots/scores/votes (reader panels, Legion votes, census,
 > entity rating ballots, book/story quality scoring) is DISABLED BY DEFAULT and runs only with an
 > explicit per-invocation override. LLM use for PROSE (generation, drafting, polish) is never gated.
 > One central gate — `VotingGate` — is consulted at the entry of each ballot-soliciting flow.
-> See [SS-LAW-17](BIBLE.md#SS-LAW-17) and [LOGIC.md §6](LOGIC.md).
+> See [SS-LAW-17](BIBLE.md#SS-§5) and [LOGIC.md §6](LOGIC.md).
 
 - **SS-US-N1 ✅** As the engine, voting is OFF by default: the committed root `legion.json` carries
   `"votingEnabled": false`, and absence of the key resolves to OFF. *(evidence:
@@ -829,9 +624,9 @@ updated: 2026-08-08
   `…_IsAllowed_Disabled_NoOverride_IsFalse`.)*
 
 - **SS-US-N3 ✅** As an author, the explicit override lifts the gate — `--allow-votes` on
-  `--review-node`/`--review-entity`/`--dual-read`/`--book review`/`--legion`/`--run-corpus`/
-  `--auto-run`/`--worker-mode`/`--populate-queue`/`--continuity sweep`, `allowVotes:true` on the MCP
-  `review_story` tool, and a UI review-button click. *(evidence:
+  `--review-node`/`--review-entity`/`--dual-read`/`--book review`/`--legion`/
+  `--auto-run`/`--worker-mode`/`--populate-queue`/`--continuity sweep`, and `allowVotes:true` on the
+  MCP `review_story` tool. *(evidence:
   `VotingGateTests.EnsureAllowed_Disabled_WithOverride_DoesNotThrow`,
   `…_EnabledByDefault_DoesNotThrow_EvenWithoutOverride`; `BallotSolicitingServices_DependOnVotingGate`.)*
 
@@ -841,21 +636,14 @@ updated: 2026-08-08
   `VotingGateTests.ProseGenerationServices_DoNotDependOnVotingGate`;
   `ChapterCloseProcessorService.ProcessAsync` skips tiered review + fork when voting is off.)*
 
-## Epic O — Shipped since the last doc pass (added retroactively 2026-08-08) {#epic-o}
+## Epic O — Reader QA, glossary, KDP listing, universes {#epic-o}
 
-> This file went 6 weeks (2026-06-25 → 2026-08-08) without a status refresh. These four
-> features shipped and are live in that window but had no entry here — a stale status doc is
-> worse than no doc, since it actively misleads a reader (including a future session) into
-> re-investigating settled questions. Backfilled from commit history + memory records with the
-> same evidentiary standard as the rest of this file.
-
-- **SS-US-O1 ✅** As the author, Reader-Proxy QA (SS-A44, shipped 2026-08-03) replaces the 0–100
-  reader-panel score as the default reader-facing QA — canonical doc `docs/READER-QA.md`, runbook
+- **SS-US-O1 ✅** As the author, Reader-Proxy QA ([SS-LAW-17](BIBLE.md#SS-§5)) is the default
+  reader-facing QA — no 0–100 score — canonical doc `docs/READER-QA.md`, runbook
   `/reader-qa`. Four findings-based instruments, no scores: (1) Haiku comprehension probes
   diffed against a Sonnet-generated synopsis, Sonnet-arbitrated → `ComprehensionDefect` findings;
-  (2) the LLM craft/delight checklist (`prose --craft-checklist`) — **deleted 2026-09-06 (RFC 0010)**; `CraftChecklist` findings now come only from `--lint-prose` and `CraftNativeRules` →
-  findings; (3) cross-family pairwise duels per splice (`prose --duel`, still SS-A44
-  vote-gated); (4) findings-only gripe jury (`prose --reader-qa --gripe-pass`) → `ReaderGripe`
+  (2) `CraftChecklist` findings from the deterministic `--lint-prose` / `CraftNativeRules`; (3) cross-family pairwise duels per splice (`prose --duel`, vote-gated per
+  SS-LAW-17); (4) findings-only gripe jury (`prose --reader-qa --gripe-pass`) → `ReaderGripe`
   findings. *(evidence: verified by CLI runs; commits `3bb9d2f19`/`7ef9078cd`/`484614b23`/
   `c04e90e78`; E2E run on LLSS — comprehension probe caught a sinterspawn/harrower conflation, checklist caught
   over-explanation, gripe jury 18 raw → 11 confirmed; verified at scale on BCODA — 28 Medium
@@ -873,7 +661,7 @@ updated: 2026-08-08
   extended; seeded 27 GLMZ + 24 SCRY terms same day, both from primary-source docs, no invented
   definitions.)*
 
-- **SS-US-O3 ✅** As the author, KdpPublish (`src/StreetSamurai.KdpPublish`, WPF/WebView2)
+- **SS-US-O3 ✅** As the author, KdpPublish (`src/Prose.KdpPublish`, WPF/WebView2)
   automates a book's **first-time** KDP listing, not just republishing an existing one — no
   ASIN/KdpTitleId required going in. *(evidence: `KdpOperatorService.ProcessBookAsync` branches to
   a 25-step `BuildNewListingSystemPrompt` flow when `Asin`/`KdpTitleId`/`PublishUrl` are all null;
@@ -888,75 +676,3 @@ updated: 2026-08-08
   SOURCE→NONFICTION and EPIC→FICTION for naming clarity (2026-08-04). *(evidence: verified by
   commit `f74d26f46` "feat(universes): add EROTICA (6th), rename SOURCE→NONFICTION,
   EPIC→FICTION"; CLI `prose --universe list` shows all 6 slugs.)*
-
-### Audit log
-
-- **2026-07-04 — Voting kill-switch SHIPPED ([SS-A44](BIBLE.md#SS-LAW-17)).** Central `VotingGate`
-  (`src/Prose.Core/Services/VotingGate.cs`) reads `legion.json` `"votingEnabled"` (default
-  OFF). Gated at service entry: `NodeReviewService` (4 ballot methods), `EntityReviewService`,
-  `EntityRatingService`, `StoryQualityService`, `BookReviewService`, and `ChapterCloseProcessorService`
-  (skips the tiered panel + narrative fork gracefully). CLI `--allow-votes` on `--review-node`
-  (+`--review-story`/`--run-panel` aliases), `--review-entity`, `--dual-read`, `--book review`,
-  `--legion`, `--run-corpus`, `--auto-run`, `--worker-mode` (entity/node-review types),
-  `--populate-queue` (entity/story-review), and `--continuity sweep` (auto-resolve/apply); MCP
-  `review_story` gains `allowVotes` (default false, returns a structured `voting_disabled` error);
-  UI panel/vote buttons pass the override (the click is the explicit request); Operator
-  `score_story_quality` tool returns the SS-A44 message when off. NOT gated (deliberate): single-LLM
-  diagnostic analyzers (Logic Sweep, `StructuralDiagnosticService`, `ContinuousQualityService`
-  contradiction/cliché scan, `EmotionalDepthService`, `OutlineReviewService` structural editor,
-  `StoryRefinementService`, `BookOutlineService` outline generation/drift) — they localize concrete
-  failures for free, per SS-A44's rationale. Evidence: `VotingGateTests` (11 tests) green;
-  `dotnet build -c Release` clean across Core/Blazor/MCP. SS-US-N1..N4 → ✅.
-
-- **2026-07-03 — Node hierarchy redesign SHIPPED ([SS-A43](BIBLE.md#SS-LAW-6)).** The
-  overloaded "Strand" abstraction became a typed tree: abstract `Node` + `SeriesNode` /
-  `StoryNode` / `ChapterNode`, TPH on the renamed `Nodes` table via a `NodeType` discriminator.
-  Migration `20260703162528_NodeHierarchyRedesign` is rename-only (temporal-safe: versioning
-  suspended, history tables renamed in lockstep, `NodeType` backfilled on current + history rows;
-  53 nodes = 34 chapter / 17 story / 2 series; 2,832 history rows intact). Surfaces renamed: MCP
-  `get_story` / `list_stories` / `create_series` / `create_story` / `create_chapter` (+ legacy
-  Book/Chapter tools renamed `create_legacy_*`), CLI `--write-story` / `--review-story` /
-  `--list-stories` etc.; routes `/node/{slug}` + aliases `/story`, `/strand`. Evidence: unit
-  suite 1,250 passed / 8 pre-existing failures (reproduced on HEAD with only the Media fix
-  applied; unrelated) — the refactor also fixed the suite-wide SQLite breakage from
-  `MediaItemTypeConfiguration` (628 → 8 failures). CLI smoke: `prose --list-stories` reads the
-  migrated DB. Local backup `backups/preNodeHierarchy_20260703.bak`.
-- **2026-06-15 — universe segregation SHIPPED ([RFC 0006](rfc/0006-universe-segregation.md); SS-A4).**
-  Closed every cross-over surface beyond canon rows: config (`Settings`/`Species` scoped + SHARED
-  sentinel + epoch cache invalidation), the silent embedding leak (`EntityEmbeddings`/`ProseEmbeddings`
-  + filtered `FindSimilar*`), all GLMZ-worded prompt sites (the `WorldGroundingOr` seam; GLMZ
-  byte-identical), the derived-index caches (rebuild on `UniverseScope.Epoch`), and the
-  `Edge`/`EntityStateEvent`/`CharacterReadModel` ledger. Seed universe ids switched to UUIDv7 (the
-  existing DB re-stamped via `restamp_universe_guid7_20260615.sql`). New `UniverseSegregationTests`
-  (10) + 147 gate tests green. SS-US-U5 → ✅.
-- **2026-06-15 — multi-universe SHIPPED (Epic U).** Implemented the full conversion: `Universe`
-  table + `UniverseId` on Entities/Strands/Books (temporal dance), backfilled all rows to GLMZ,
-  seeded GLMZ + Fantasy/Steampunk, per-universe unique slug indexes, an EF global query filter +
-  insert-stamping via ambient `IUniverseContext`/`UniverseScope`, SwitchUniverse in UI (`NavMenu`
-  dropdown) + CLI (`--universe` / `PROSE_UNIVERSE`) + MCP (`switch_universe`/`list_universes` tools),
-  the `WorldPrimer` generation seam (GLMZ byte-identical), and removed the CyberSpace background for
-  plain dark mode. Full solution builds clean; 129 gate tests pass; CLI smoke proves read scoping
-  (GLMZ 94 strands / Fantasy 0). U5 (full prompt de-hardcoding) left 🟡. See [SS-A3](AMENDMENTS.md).
-- **2026-06-15 — multi-universe (docs-first).** Added Epic U. Decisions locked with the author:
-  (1) **no rename** — "Prose" stays the engine codename, "GLMZ" becomes the name of
-  Universe #1; (2) **single `UniverseId` FK (1:M)**, not an M:M bridge — crossover entities are
-  duplicated (author prefers ~10 dupe rows over a double-bridge refactor); (3) **SwitchUniverse is
-  per-process / per-session** (flag → `PROSE_UNIVERSE` env → UI session → global default), so two CLIs
-  can write different universes at once; (4) execution is **docs + backup only** this pass — DB
-  backed up to `backups/Prose_preuniverse_20260615.bak` (RESTORE VERIFYONLY passed); schema
-  and code build deferred to a reviewed follow-up. New engine invariant [SS-LAW-15](BIBLE.md#SS-§5);
-  GLMZ-specific laws (SS-LAW-8, 10–14) re-scoped to the GLMZ universe in BIBLE §5/§9.
-- **2026-06-07 — migration.** This file was synthesized from `ARCHITECTURE.md` §4 (PAST/PRESENT/
-  FUTURE goal tables) and `story_state.md`. Statuses were carried verbatim from the source tables;
-  none were promoted to ✅ without a named test or recorded CLI/scan evidence. Items the source
-  marked 🟡/⬜ remain so here.
-- **Original spec (audit log) — F6/SS-US-F6.** Source `ARCHITECTURE.md` F6: *"Coverage → action:
-  `prose --coverage --backfill` runs idempotent `ReembedCorpusAsync` — 100% coverage (11,588/11,588;
-  motif 0→100%). Residual: entity↔strand appearance tracking still to add."* Kept 🟡 (residual
-  open).
-- **Original spec (audit log) — Fs1.** Source `ARCHITECTURE.md` Fs1 (✅): *"One format: everything
-  is a Strand of Beats — 24 chapter-strands + 132 episode beats migrated; 42 strands / 1,436 beats
-  total. `AutonomousStory` retired as an artifact; residual: excise the `AutonomousStory` class
-  from `StoryDirectorService`/UI internals."* Captured as SS-US-A4 (✅, format) with the class-excise
-  residual noted here.
-

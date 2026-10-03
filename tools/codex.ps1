@@ -4,7 +4,7 @@
   Subcommands:
     doctor  - validate the Codex docs (front-matter, IDs, cross-refs, data schemas, stories,
               cited paths, generatedFrom freshness, digest freshness). Exit non-zero on hard error.
-    digest  - regenerate docs/BIBLE.digest.md from BIBLE.md (1, 3, 5, 9) + status index + latest amendment.
+    digest  - regenerate docs/BIBLE.digest.md from BIBLE.md (1, 3, 5, 9) + status index + pending decisions (only when docs/AMENDMENTS.md has entries).
 
   PowerShell 5.1 / Windows-1252 safe. No build step. Run from anywhere:
     pwsh tools/codex.ps1 doctor
@@ -89,7 +89,7 @@ function Invoke-Doctor {
   # 2. front-matter
   Test-FrontMatter $Bible   'bible'
   Test-FrontMatter $Stories 'stories'
-  if (Test-Path $Amend) { Test-FrontMatter $Amend 'amendments' }  # AMENDMENTS.md retired 2026-07-04
+  if (Test-Path $Amend) { Test-FrontMatter $Amend 'amendments' }  # AMENDMENTS.md is optional (pending decisions only)
   if (Test-Path $RfcDir) {
     Get-ChildItem -LiteralPath $RfcDir -Filter '*.md' -ErrorAction SilentlyContinue | ForEach-Object {
       Test-FrontMatter $_.FullName 'rfc'
@@ -266,9 +266,6 @@ function Invoke-Doctor {
     }
   }
 
-  # (Check 11, the generated node-doc checksum, was removed 2026-09-22 with the book outline:
-  # docs/nodes/*.md mirrors are no longer generated. docs/nodes/ still holds the glossary files.)
-
   # --- report ---
   Write-Host ""
   Write-Host "Checklist:" -ForegroundColor Cyan
@@ -317,28 +314,24 @@ function Build-DigestText {
   $s5 = Get-Section $btext 5
   $s9 = Get-Section $btext 9
 
-  # status index: count check / partial / planned / cut glyphs across stories.
+  # status index: count check / partial / planned glyphs across stories.
   # Use surrogate-pair-safe string literals (PS 5.1 cannot cast code points > 0xFFFF to [char]).
   $gDone    = [char]0x2705                                   # check mark (BMP)
   $gPartial = [string]::new([char[]]@(0xD83D, 0xDFE1))       # yellow circle U+1F7E1
   $gPlanned = [char]0x2B1C                                   # white large square (BMP)
-  $gCut     = [string]::new([char[]]@(0xD83D, 0xDDD1))       # wastebasket U+1F5D1
-  $counts = [ordered]@{ done = 0; partial = 0; planned = 0; cut = 0 }
+  $counts = [ordered]@{ done = 0; partial = 0; planned = 0 }
   if (Test-Path $Stories) {
     $stext = Get-Content -LiteralPath $Stories -Raw -Encoding UTF8
     $counts.done    = ([regex]::Matches($stext, [regex]::Escape($gDone))).Count
     $counts.partial = ([regex]::Matches($stext, [regex]::Escape($gPartial))).Count
     $counts.planned = ([regex]::Matches($stext, [regex]::Escape($gPlanned))).Count
-    $counts.cut     = ([regex]::Matches($stext, [regex]::Escape($gCut))).Count
   }
 
-  # latest amendment head: amendments are append-only (CODE-A1, CODE-A2, ...), so the LAST
-  # "## CODE-A..." block in file order is the most recent. Take all matches and keep the last.
-  $amHead = ''
+  # pending decisions: every "## CODE-A<n>" entry still in AMENDMENTS.md (normally none).
+  $pending = @()
   if (Test-Path $Amend) {
     $atext = Get-Content -LiteralPath $Amend -Raw -Encoding UTF8
-    $ams = [regex]::Matches($atext, "(?ms)^##\s+$Code-A\d+.*?(?=^##\s+$Code-A\d+|\z)")
-    if ($ams.Count -gt 0) { $amHead = $ams[$ams.Count - 1].Value.Trim() }
+    foreach ($m in [regex]::Matches($atext, "(?m)^##\s+($Code-A\d+.*)$")) { $pending += $m.Groups[1].Value.Trim() }
   }
 
   $nl = "`n"
@@ -357,10 +350,12 @@ function Build-DigestText {
   [void]$sb.AppendLine($s9)
   [void]$sb.AppendLine("")
   [void]$sb.AppendLine("## Status index (from USER_STORIES.md)")
-  [void]$sb.AppendLine("- done: $($counts.done)  partial: $($counts.partial)  planned: $($counts.planned)  cut: $($counts.cut)")
-  [void]$sb.AppendLine("")
-  [void]$sb.AppendLine("## Latest amendment")
-  [void]$sb.AppendLine($amHead)
+  [void]$sb.AppendLine("- done: $($counts.done)  partial: $($counts.partial)  planned: $($counts.planned)")
+  if ($pending.Count -gt 0) {
+    [void]$sb.AppendLine("")
+    [void]$sb.AppendLine("## Pending decisions (docs/AMENDMENTS.md)")
+    foreach ($h in $pending) { [void]$sb.AppendLine("- " + $h) }
+  }
   return $sb.ToString()
 }
 

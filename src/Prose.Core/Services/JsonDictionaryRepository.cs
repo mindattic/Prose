@@ -35,7 +35,7 @@ public class JsonSingletonRepository<T> where T : class, new()
     /// <summary>The universe this key's row belongs to: SHARED for the operational allow-list,
     /// else the current universe (GLMZ fallback when no context is wired). Ensures a per-universe
     /// voice/lore document (tone_bible, literary_rules, …) NEVER resolves to another universe's
-    /// row — the seam that stops GLMZ's Kyle voice bleeding into Fantasy (RFC 0006).</summary>
+    /// row — the seam that stops GLMZ's Kyle voice bleeding into Fantasy (SS-LAW-15).</summary>
     private static Guid TargetUniverse()
     {
         // Callers resolve SharedConfigKeys before calling; this method provides the universe fallback.
@@ -46,7 +46,7 @@ public class JsonSingletonRepository<T> where T : class, new()
     public T Get()
     {
         // Cache is per-universe: a SwitchUniverse bumps the epoch so the voice/lore document is
-        // re-read for the new universe instead of serving the previous one's (RFC 0006).
+        // re-read for the new universe instead of serving the previous one's (SS-LAW-15).
         var epoch = UniverseScope.Epoch;
         var target = UniverseScope.SharedConfigKeys.Contains(key) ? Data.Entities.Universe.SharedId : TargetUniverse();
         var e = entry;

@@ -30,7 +30,7 @@ Rules live in `DeprecatedEntityNames`. Each rule has:
 | `CanonicalName` | The correct replacement to show in violation reports |
 | `UniverseId` | GLMZ rules don't fire in Fantasy and vice versa |
 | `EntityId` | Optional FK to the canonical Entity row when it exists |
-| `Notes` | Reason for the rename (e.g. "Renamed in SS-A38") |
+| `Notes` | Reason for the rename (e.g. "Renamed per SS-LAW-26") |
 
 Matching is **whole-word, case-insensitive**. "VacCell" matches "VacCell" and "vaccell"
 but not "VacCellular". One violation is reported per rule per beat.
@@ -63,7 +63,7 @@ exists rather than inserting a `DeprecatedEntityNames` row directly.
 - **Before export** — run `validate_nouns` on any story that has had noun renames since its
   last export.
 - **After a rename** — scan all GLMZ stories immediately after registering the deprecated rule.
-- **During logic sweep** — a Logic Sweep (SS-A44) checks causality and continuity; a noun scan
+- **During logic sweep** — a Logic Sweep (SS-LAW-17) checks causality and continuity; a noun scan
   checks naming consistency. They are complementary, not overlapping.
 
 ## Relationship to Existing Alias Tables

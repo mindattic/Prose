@@ -27,7 +27,7 @@ public class CharacterReadModel
     public Guid CharacterId { get; set; }
 
     /// <summary>The universe this character belongs to (denormalized from the entity). Backfilled to
-    /// GLMZ; refreshed from the entity on read-model rebuild (RFC 0006).</summary>
+    /// GLMZ; refreshed from the entity on read-model rebuild (SS-LAW-15).</summary>
     public Guid UniverseId { get; set; }
 
     /// <summary>

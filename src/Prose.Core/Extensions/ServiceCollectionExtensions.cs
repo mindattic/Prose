@@ -923,7 +923,7 @@ public static class ServiceCollectionExtensions
 
         // Reader-Proxy QA Instrument 1: Haiku comprehension probes diffed against the
         // Sonnet synopsis ground truth, Sonnet-arbitrated, filed as ComprehensionDefect
-        // findings. A measurement, not a vote — not VotingGate-gated (SS-A44 exemption,
+        // findings. A measurement, not a vote — not VotingGate-gated (SS-LAW-17 exemption,
         // same as craft_checklist / logic sweep).
         services.AddSingleton<ComprehensionProbeService>();
 
@@ -936,7 +936,7 @@ public static class ServiceCollectionExtensions
         // full-read complaints (NO scores), deterministic quote-grounding, Sonnet
         // arbitration, ReaderGripe findings. Replaces ConsolidateGripesAsync
         // (console-only) and ProposeEditsAsync (orphaned temp JSON). The optional
-        // apply arm routes every splice through the BeatDuelService gate (SS-A44).
+        // apply arm routes every splice through the BeatDuelService gate (SS-LAW-17).
         services.AddSingleton<GripePassService>();
         services.AddSingleton<VotingConfiguration>(sp =>
         {
@@ -972,7 +972,7 @@ public static class ServiceCollectionExtensions
             return cfg;
         });
 
-        // SS-A44 voting kill-switch. One central gate consulted at the entry of
+        // SS-LAW-17 voting kill-switch. One central gate consulted at the entry of
         // every ballot/score/vote-soliciting flow. Default read from legion.json
         // ("votingEnabled"); absent = OFF. Prose generation is never gated.
         services.AddSingleton<VotingGate>(sp =>
@@ -1114,7 +1114,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<BookAuditService>();
 
         // Beat duels — blind A/B panel gate for beat rewrites (3 voters, escalate
-        // to 7 on dissent). SS-A44: duels are votes; allowVotes must be passed
+        // to 7 on dissent). SS-LAW-17: duels are votes; allowVotes must be passed
         // consciously under an explicit user instruction. `prose --duel`.
         services.AddSingleton<BeatDuelService>();
 

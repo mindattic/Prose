@@ -27,7 +27,7 @@ updated: 2026-08-04
 >
 > **DOCS-TO-DB MIGRATION (2026-08-02, later still):** `docs/milton/*.md` (README.md,
 > milton-biography.md, character-catalog.md, theology-and-sources.md) has been **deleted**. Per
-> SS-A45, the DB is the heap and `.md` files must only ever be ephemeral, regenerated-on-demand
+> SS-LAW-1, the DB is the heap and `.md` files must only ever be ephemeral, regenerated-on-demand
 > mirrors — a permanent hand-committed research folder was the wrong pattern (this is also why
 > NEPH, correctly, never had one). That research is now migrated into the actual entity records:
 > Satan and <entity repo="character" guid="019fc13e-bb8e-705d-b9e7-94f4caa1ebf0">John Milton</entity>'s `Entities.Description` carry the full sourcing/biography depth; <entity repo="character" guid="019fc13e-bb5a-7007-ac22-4432326e20b4">God</entity> the

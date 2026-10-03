@@ -306,7 +306,7 @@ public class TrinityReconciliationService(
             var located = await LocateBeatForClaimAsync(losing, ct);
             if (located == null)
             {
-                // A claim with no BookSlug can only have come from the legacy pre-SS-A43
+                // A claim with no BookSlug can only have come from the legacy pre-Node-tree
                 // ExtractFromBookAsync/ExtractFromChapterAsync path (IBookRepository/IChapterRepository
                 // model), which stamps SourceChapterId from that repo's own id scheme — never a real
                 // Nodes.Id — and hardcodes BookSlug: null. Such a claim can never resolve here no

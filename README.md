@@ -226,7 +226,7 @@ Flags: `--local` (use the stored `LocalLlmBaseUrl`), `--local-url`, `--local-mod
 
 ## Quality checks
 
-The 0 to 100 score gates and persona vote panels are retired (SS-A44, 2026-08-03). A named, fixable finding tells you more than a number.
+There are no 0 to 100 score gates, and persona vote panels are off by default (bible law SS-LAW-17). A named, fixable finding tells you more than a number.
 
 On 2026-09-22 RFC 0014 measured every instrument by its findings: 30,745 filed, all time, and 8 ever applied. Three producers earned those 8, and they stay live:
 
@@ -619,7 +619,7 @@ Ten invention disclosures describe systems in the engine as designed. They are p
 - [docs/CRAFT.md](docs/CRAFT.md), [docs/DELIGHT.md](docs/DELIGHT.md) and [docs/CRAFT\_SCIENCES.md](docs/CRAFT%5FSCIENCES.md): craft doctrine and its sources.
 - [docs/CLI\_COMMANDS.md](docs/CLI%5FCOMMANDS.md) and [docs/MCP\_TOOLS.md](docs/MCP%5FTOOLS.md): generated command and tool references.
 - [docs/schema.md](docs/schema.md): the database schema.
-- [docs/rfc](docs/rfc): design notes, RFC 0001 to RFC 0015.
+- [docs/rfc](docs/rfc): open design notes (decided ones are folded into the bible and deleted).
 - [src/README.md](src/README.md): the solution map.
 
 ## License

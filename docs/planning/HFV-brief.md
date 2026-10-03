@@ -58,8 +58,8 @@ Which of the 5 overarching <entity repo="place" guid="019d6143-a927-73ac-abfa-37
   into two solos. It plants nothing that locks the series and answers no mystery.
 
 **Canon-sensitivity note:** HFV touches only established, non-locked world facts — <entity repo="place" guid="019d6143-a94e-7740-8aa9-4b82bbd9a223">the Gray Zone</entity>
-(SS-A32/A33 aerostatic strata, 30–320m ungoverned band), altitude = class + <entity repo="vocabulary" guid="24bb37dd-1cca-45c0-a5aa-fc1eddf769f6">the Air Tax</entity>,
-<entity repo="technology" guid="019f1b70-ebf5-79ef-bc5a-2f7af4a8181f">The Glass</entity> (BTL) and <entity repo="technology" guid="019f1b71-20cb-751f-819e-71f69f4a27a8">Volume</entity> (Trideo) as the hyperreality tech (SS-A35), eigenlift as the only
+(aerostatic strata, 30–320m ungoverned band), altitude = class + <entity repo="vocabulary" guid="24bb37dd-1cca-45c0-a5aa-fc1eddf769f6">the Air Tax</entity>,
+<entity repo="technology" guid="019f1b70-ebf5-79ef-bc5a-2f7af4a8181f">The Glass</entity> (BTL) and <entity repo="technology" guid="019f1b71-20cb-751f-819e-71f69f4a27a8">Volume</entity> (Trideo) as the hyperreality tech, eigenlift as the only
 aerostatic lift (no ANGEL), QUANTA/Φ + credstick-only economy, job-name canon
 (Ghost/Channeler/Splicer), and the Thread on the southern horizon. It introduces no new world
 law and confirms no locked revelation (§6). The boys are far beneath ATLAS-9, the entity, the

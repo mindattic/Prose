@@ -1,4 +1,4 @@
-# /logic-sweep — the canonical QA pass (SS-A44)
+# /logic-sweep — the canonical QA pass (SS-LAW-17)
 
 Usage: `/logic-sweep [slug ...]`; no argument = every book with beats changed since its last sweep.
 

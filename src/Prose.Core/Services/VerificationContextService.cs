@@ -8,7 +8,7 @@ namespace Prose.Core.Services;
 /// RFC 0011, Brick 1 — the Verification Context Provider.
 ///
 /// <para>Generation solved "what do I already know about this beat that should shape the
-/// output" months ago: SS-A46's DCM four-layer hierarchy (Base/Universe/BookOutline/Register),
+/// output" months ago: register doctrine's DCM four-layer hierarchy (Base/Universe/BookOutline/Register),
 /// with <see cref="DocContextService"/> pinning a beat's POV character's register dominant.
 /// Verification never got the same treatment — every check service that needed "who's narrating
 /// this beat, and what's their established voice" re-implemented the same
@@ -32,7 +32,7 @@ public class VerificationContextService(
 {
     /// <summary>This beat's POV entity id, from the bible's POV map
     /// (<c>BeatEntityPresence.PresenceType = 'pov'</c>) — the same row
-    /// <see cref="DocContextService.PrepareForNodeAsync"/> pins dominant per SS-A46 layer 4.
+    /// <see cref="DocContextService.PrepareForNodeAsync"/> pins dominant per register-doctrine layer 4.
     /// Null if the beat has no recorded POV.</summary>
     public async Task<Guid?> GetPovEntityIdAsync(Guid beatId, CancellationToken ct = default)
     {
@@ -43,7 +43,7 @@ public class VerificationContextService(
             // AS [Value]: Database.SqlQuery<T> for a scalar wraps the statement and projects
             // [Value] from it. Without the alias every call threw "Invalid column name" and the
             // catch below turned it into a silent null — so this beat's POV, and with it the
-            // Register layer DocContextService pins dominant (SS-A46 tier 4), was NEVER resolved
+            // Register layer DocContextService pins dominant (register doctrine tier 4), was NEVER resolved
             // through this path. Found 2026-09-07; the sibling queries in SceneContextAssembler
             // and BeatBriefBuilder already alias correctly.
             var ids = await db.Database

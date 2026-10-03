@@ -14,7 +14,7 @@ updated: 2026-08-02
 > <entity repo="character" guid="70664164-09fd-436e-bf38-a62093957207">Story</entity> Workflow). Universe: NONFICTION (`dbo.Universe` slug `nonfiction` (was `source`, was `gspl`)), same schema/pipeline as
 > GLMZ/SCRY, same citation-grounding discipline as the Gospel books and NEPH. Third production
 > line in NONFICTION, first fully secular-historical (no confessional/theological spectrum) subject.
-> Per SS-A45 / the NEPH precedent: **no permanent `docs/1381/` research folder** — research is
+> Per SS-LAW-1 / the NEPH precedent: **no permanent `docs/1381/` research folder** — research is
 > WebSearch-verified as each claim is drafted, and lands directly in Entity `Description` fields
 > and Notes-chapter beats, not in a hand-committed markdown pile.
 

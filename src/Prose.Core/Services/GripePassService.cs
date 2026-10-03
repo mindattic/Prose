@@ -24,7 +24,7 @@ namespace Prose.Core.Services;
 /// printed grouped gripes to console and threw them away; ProposeEditsAsync wrote
 /// proposals to a temp JSON no apply arm ever read. Gripes now persist, supersede on
 /// re-run, and can be applied through the duel gate
-/// (<c>ProposeAndDuelFixAsync</c> (DELETED 2026-09-06, RFC 0009 — it had no callers and rewrote finished prose) — SS-A44: the duel is a vote, apply passes
+/// (<c>ProposeAndDuelFixAsync</c> (DELETED 2026-09-06, RFC 0009 — it had no callers and rewrote finished prose) — SS-LAW-17: the duel is a vote, apply passes
 /// allowVotes under the explicit user action).</para>
 ///
 /// <para>The report-only pass emits no scores and is not vote-gated.</para>

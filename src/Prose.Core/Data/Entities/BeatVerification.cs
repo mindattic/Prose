@@ -16,7 +16,7 @@ namespace Prose.Core.Data.Entities;
 ///   BibleAgreement     — prose contradicts entity bible or CanonDocumentSection (semantic)
 ///   WorldStatePost     — post-prose entity states diverge from declared WorldStatePost (semantic)
 ///
-/// Severity levels mirror the logic sweep (SS-A44):
+/// Severity levels mirror the logic sweep (SS-LAW-17):
 ///   BLOCKER  — blocks codex doctor / export gate (INV-05)
 ///   MODERATE — surfaces in Truth Table dashboard; does not block export
 ///   MINOR    — informational

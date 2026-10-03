@@ -8,7 +8,7 @@ updated: 2026-09-04
 
 # THE LOGIC SWEEP — canonical QA methodology {#SS-LOGIC}
 
-> **Status: LAW** (see [[AMENDMENTS#SS-A44]]). The logic sweep is the default and mandatory
+> **Status: LAW** (see [SS-LAW-17](BIBLE.md#SS-§5)). The logic sweep is the default and mandatory
 > quality mechanism for every story. It replaced score panels and votes as of 2026-07-04 —
 > voting happens **only on explicit user request**, never automatically. Origin: the
 > 2026-07-03/04 corpus campaign, where logic sweeps found and fixed ~25 blocker-level defects
@@ -116,7 +116,7 @@ Audit every story against all six. Findings cite SortKeys and quote the offendin
    `ReconciliationDecision` row rather than a silent auto-win. This dimension is
    checked ACROSS ALTITUDES (see [§8](#SS-LOGIC-8)): chapter synopses
    (`NodeChapterSummaries` / `story-synopsis.txt`) are the 100-ft instrument, and
-   The sweep's `outline_agreement` dimension owns the 10,000↔100 ft comparison (the separate `--altitude-audit` was deleted 2026-09-06 (RFC 0010) — 100 % false-positive against a lossy synopsis). Sweeps may
+   The sweep's `outline_agreement` dimension owns the 10,000↔100 ft comparison (the separate `--altitude-audit` was deleted 2026-09-06 ([BIBLE ADR-10](BIBLE.md#SS-§14)) — 100 % false-positive against a lossy synopsis). Sweeps may
    read `story-synopsis.txt` for cheap chapter-altitude scoping before deep beat reads.
 
 ## 4. Triage and fix protocol {#SS-LOGIC-4}
@@ -167,7 +167,7 @@ Audit every story against all six. Findings cite SortKeys and quote the offendin
 ## 6. No votes {#SS-LOGIC-6}
 
 Score panels, Legion votes, and census reviews are DISABLED BY DEFAULT engine-wide
-(SS-A44). They run only on an explicit user request ("vote", "review", "score it") in that
+(SS-LAW-17). They run only on an explicit user request ("vote", "review", "score it") in that
 conversation, via the explicit override. Rationale: panels cost real money per ballot and
 localize nothing — every unanimous panel complaint in the origin campaign traced to a concrete
 logic defect a careful read caught directly. The sweep is cheaper, names the failure, and the
@@ -196,7 +196,7 @@ describing a superseded draft (10,000↔10), two chapters telling incompatible e
 authoritative — the divergence is judged case-by-case on evidence (which side is stale, and
 why), never by a blanket rule.
 
-**Instruments per comparison:** 10,000↔100 ft = the sweep's `outline_agreement` dimension (designed vs told; the former `--altitude-audit` was deleted 2026-09-06 (RFC 0010);
+**Instruments per comparison:** 10,000↔100 ft = the sweep's `outline_agreement` dimension (designed vs told; the former `--altitude-audit` was deleted 2026-09-06 ([BIBLE ADR-10](BIBLE.md#SS-§14));
 findings filed as `OutlineDrift`); 100↔10 ft and 10↔10 ft = the logic sweep itself
 (dimensions 1–5). Planning and review START at chapter altitude — read
 `story-synopsis.txt` first, drop to beat altitude only where a finding points. The same

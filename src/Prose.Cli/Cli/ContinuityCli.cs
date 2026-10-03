@@ -25,7 +25,7 @@ namespace Prose.Cli;
 ///                                                       --predicate-prefix). Reversible.
 ///   prose --continuity extract --chapter &lt;chapterId&gt;    Extract claims from one chapter's prose (legacy Book/Chapter model).
 ///   prose --continuity extract --book &lt;bookId&gt;          Extract claims from every chapter in a book (legacy Book/Chapter model).
-///   prose --continuity extract --node &lt;nodeIdOrSlug&gt;    Extract claims from every leaf chapter under a modern SS-A43 BookNode.
+///   prose --continuity extract --node &lt;nodeIdOrSlug&gt;    Extract claims from every leaf chapter under a modern SS-LAW-6 BookNode.
 ///   prose --continuity extract --entity &lt;guid&gt;          Extract claims from one entity's Records.Json blob (by EntityId).
 ///   prose --continuity apply --claim &lt;uid&gt;              Apply a CANONICAL claim back to its entity record (Legion picks the field).
 ///   prose --continuity relabel --entity &lt;id&gt; --set-name "&lt;name&gt;" [--yes] [--note "..."]
@@ -774,7 +774,7 @@ public static class ContinuityCli
         var skipApply    = args.Contains("--skip-apply");
         var dryRun       = args.Contains("--dry-run");
 
-        // SS-A44: the auto-resolve (step 3) and apply (step 4) phases decide
+        // SS-LAW-17: the auto-resolve (step 3) and apply (step 4) phases decide
         // canonical values via a Legion panel vote (DecideAsync). Those are
         // disabled by default — extraction still runs, but resolution/apply are
         // skipped unless --allow-votes is passed. The sweep never fails on this.

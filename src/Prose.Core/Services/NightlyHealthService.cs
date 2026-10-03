@@ -41,7 +41,7 @@ public sealed record NightlyHealthReport(
 ///
 /// Dropped its kNN score-prediction signal 2026-08-08: <c>EmbeddingHealthService.PredictScoreAsync</c> (since removed)
 /// only draws neighbors from beats with a non-null Beat.Score, which is under 1% of the corpus
-/// since panel-voting went opt-in (SS-A44) — the neighbor pool can't grow under the current
+/// since panel-voting went opt-in (SS-LAW-17) — the neighbor pool can't grow under the current
 /// regime, so unlike other score-gated checks fixed this session, this one has no un-gating fix;
 /// the training data itself is frozen. The remaining signals below (outlier detection, adverb
 /// density, passive voice, telling-language, adjacent-beat monotony/jarring) are all

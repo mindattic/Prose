@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.UnitTests;
 
 /// <summary>
-/// Regression cover for the 2026-08-09 fix to SanityScanService.ScanAsync's SS-A43 child-rollup
+/// Regression cover for the 2026-08-09 fix to SanityScanService.ScanAsync's SS-LAW-6 child-rollup
 /// fallback. It only pulled beats from a book's chapter children when the book's OWN direct beat
 /// count was exactly zero — so a book with even one stray/orphaned direct BeatNode (architecturally
 /// unexpected for a chaptered book, but confirmed live on a real GLMZ book: one enabled direct

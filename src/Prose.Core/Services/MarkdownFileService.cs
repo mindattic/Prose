@@ -622,7 +622,7 @@ public class MarkdownFileService
             return new("node", RegisterScope.GetValueOrDefault(reg, ""), "", AutoTier: true, relatedRaw, universeSlug);
         }
 
-        // Node bibles live in docs/nodes/<CODE>.md (SS-A43); docs/strands/ kept for legacy layouts.
+        // Node bibles live in docs/nodes/<CODE>.md (SS-LAW-6); docs/strands/ kept for legacy layouts.
         var relPath = f.RelativePath.Replace('\\', '/');
         if (relPath.StartsWith("docs/nodes/", StringComparison.OrdinalIgnoreCase)
             || relPath.StartsWith("docs/strands/", StringComparison.OrdinalIgnoreCase))

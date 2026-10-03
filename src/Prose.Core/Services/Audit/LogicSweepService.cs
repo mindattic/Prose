@@ -8,7 +8,7 @@ using Prose.Core.Services;
 namespace Prose.Core.Services.Audit;
 
 /// <summary>
-/// Codifies docs/LOGIC.md's six-dimension sweep (SS-A44) as six independent
+/// Codifies docs/LOGIC.md's six-dimension sweep (SS-LAW-17) as six independent
 /// <see cref="ILlmAuditRule"/>s on the shared <see cref="AuditRunner"/> — causality chain,
 /// knowledge states, timeline, plant/payoff (two-way), orphan references, plus inserted-beat drift.
 ///

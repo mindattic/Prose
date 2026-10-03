@@ -18,7 +18,7 @@ namespace Prose.Cli;
 /// (Category=ComprehensionDefect) and a markdown report is written to
 /// <c>audit-outlines-&lt;date&gt;/reader-qa/&lt;SLUG&gt;.md</c>.
 ///
-/// Emits NO scores — this is a measurement, not a vote (SS-A44 exempt).
+/// Emits NO scores — this is a measurement, not a vote (SS-LAW-17 exempt).
 /// Cost: hash-cached per chapter; unchanged chapters re-run free.
 /// Exit 0 = clean, 1 = defects found, 2 = error.
 /// </summary>

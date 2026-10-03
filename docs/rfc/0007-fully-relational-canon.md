@@ -3,8 +3,8 @@ codex: 1
 project: Prose
 code: SS
 layer: rfc
-status: accepted
-updated: 2026-06-15
+status: in-progress
+updated: 2026-10-03
 ---
 
 # RFC 0007 — Fully relational canon: retire `Records.Json` into typed tables + bridges {#SS-RFC-0007}
@@ -35,7 +35,7 @@ Modeled 1:1 on the Character relationalization:
    (→ a `{Type}{Collection}` bridge table with FK to the parent + a `Position` for order).
 2. **Schema** — add the typed table + bridges (system-versioned, like the rest). **No per-table
    `UniverseId` needed** — universe scoping derives from the `Entities` spine (the same id-set
-   pattern Character uses; see [RFC 0006](0006-universe-segregation.md)), so it carries over free.
+   pattern Character uses; see [BIBLE §4.2](../BIBLE.md#SS-§4)), so it carries over free.
 3. **Mapper** — `{Type}Mapper` with `FillScalars` / `FillBridges` / `Materialize`, mirroring
    `CharacterMapper`.
 4. **Repository** — convert `{Type}Repository` from `EfRepository<{Type}Data>` (JSON round-trip) to a

@@ -115,7 +115,7 @@ public class DistributedWorkerCoordinator
             var sid = node.Id.ToString("N");
             if (alreadyQueued.Contains(sid)) continue;
 
-            // Load beat texts via junction; SS-A43: expand to chapter children for book nodes.
+            // Load beat texts via junction; SS-LAW-6: expand to chapter children for book nodes.
             // Recurses past any nested Collection (2026-08-09 fix).
             var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
             // Leaf-walk order, then SortKey: SortKey alone put beat 1 of every chapter first,

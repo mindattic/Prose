@@ -31,7 +31,7 @@ public static class LegionCli
             return 0;
         }
 
-        // SS-A44: the Legion panel vote is disabled by default. Require the override.
+        // SS-LAW-17: the Legion panel vote is disabled by default. Require the override.
         var votingGate = sp.GetRequiredService<VotingGate>();
         try { votingGate.EnsureAllowed($"legion {sub}", args.Contains("--allow-votes")); }
         catch (VotingDisabledException ex) { Console.Error.WriteLine($"[legion] {ex.Message}"); return 1; }

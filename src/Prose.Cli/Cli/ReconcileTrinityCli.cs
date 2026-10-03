@@ -16,7 +16,7 @@ namespace Prose.Cli;
 ///       breakdown. Zero DecideAsync calls.
 ///
 ///   prose --reconcile-trinity --slug &lt;slug&gt;|--all --allow-votes --confirm-auto-edit [--dry-run]
-///       Phase 3: actually reconcile. TWO independent gates required — --allow-votes (SS-A44
+///       Phase 3: actually reconcile. TWO independent gates required — --allow-votes (SS-LAW-17
 ///       VotingGate) AND --confirm-auto-edit (new; this is the first DecideAsync caller that
 ///       rewrites live prose/bible content, not just a ledger flip or JSON-field pick).
 ///       --dry-run still requires both flags but calls zero DecideAsync/edit methods — it prints

@@ -11,7 +11,7 @@ updated: 2026-09-22
 
 **Status:** in progress · opened 2026-09-22
 **Predecessors:** [RFC 0009](0009-no-autonomous-prose-writes.md) (no autonomous prose writes),
-[RFC 0010](0010-full-battery-value-audit.md) (the first value audit, which deleted 27 of 32 checks),
+[the battery value audit](../BIBLE.md#SS-§14) (BIBLE ADR-10) (the first value audit, which deleted 27 of 32 checks),
 [RFC 0013](0013-narrative-obligation-ledger.md) (the only instrument with a real calibration harness)
 
 ---
@@ -37,7 +37,7 @@ Measured 2026-09-22, corpus-wide, all time (`prose --findings stats`):
 | Dismissed | 14,914 |
 | **Total** | **30,745** |
 
-**8 findings out of 30,745 have ever been acted on — 0.026%.** RFC 0010 measured the same ratio
+**8 findings out of 30,745 have ever been acted on — 0.026%.** the battery value audit (BIBLE ADR-10) measured the same ratio
 at ~26,000 findings and 8 applied in September; in the two-and-a-half weeks since, the corpus has
 produced ~4,700 more findings and **not one** of them has been applied.
 
@@ -68,7 +68,7 @@ nobody could answer this question without reading the table by hand):
 Three instruments have ever produced an applied finding. Everything else — 30,000+ rows across
 ~40 producers — has produced none, ever.
 
-Two corrections to the record while we are here. RFC 0010 attributed 5 applied findings to
+Two corrections to the record while we are here. the battery value audit (BIBLE ADR-10) attributed 5 applied findings to
 "fact-ledger"; the producer is actually **LEDGER-CONFLICT** (the Story Ledger's
 same-predicate/different-object detector). The summary prefix `FACT-LEDGER ` belongs to
 `BookHealthService.FactLedgerAsync`, which has filed 129 findings and had **none** applied. They

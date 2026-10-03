@@ -136,7 +136,7 @@ Standard (12 threads) → Extend (48) → Prime (240) → Sovereign (2,400 threa
 cap). Ungoverned Sovereign-tier = fatal within 1–3 years.
 
 **Growth-window lock:** <entity repo="technology" guid="019f0464-2fee-725a-a5e0-00628447b431">Neuretics</entity> must be grown during a developmental window; nearly universal
-lock after ~age twelve. Rare adult-open cases exist (SS-A21) but are exceptional.
+lock after ~age twelve. Rare adult-open cases exist but are exceptional.
 
 **Cognitive divide:** ~18% global population remains unaugmented. The gap between
 unaugmented → Tier 1 → Tier 4 is qualitative, not gradient. Tier 1 subsidized in core
@@ -607,7 +607,7 @@ matter instead of cognition. A powered **<entity repo="technology" guid="fd62cd0
 vehicle's, or wearer's) skeleton continuously drives the matter in its field into a partially
 decohered mass-state, suppressing — not eliminating — its coupling to the local gravitational
 field. Rest mass, inertia, and structural integrity are unchanged; only the gravitational
-coupling is reduced. This is *not* <entity repo="technology" guid="abe4f0eb-b85d-cf80-832e-69a967bb4f29">Graviton Manipulation Theory</entity> (SS-A35; detection without
+coupling is reduced. This is *not* <entity repo="technology" guid="abe4f0eb-b85d-cf80-832e-69a967bb4f29">Graviton Manipulation Theory</entity> (detection without
 control, permanently dead-ended) — it doesn't touch the field, it changes how strongly the
 object's own mass-state answers to it. There is no other lift technology in <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> — no vacuum
 cells, no antigrav, no balloons. (Historical note: an earlier, cruder "vacuum-cell buoyancy"
@@ -815,7 +815,7 @@ Flat screens are antique; the <entity repo="technology" guid="019f1b71-20cb-751f
 neglected curbs and walls. Clean curbs = corpo-adjacent class signal.
 
 **No graviton manipulation. No zero-point energy extraction.** <entity repo="technology" guid="abe4f0eb-b85d-cf80-832e-69a967bb4f29">Graviton Manipulation Theory</entity>
-is a confirmed dead end (detection without control, SS-A35) and ZPE extraction remains
+is a confirmed dead end (detection without control) and ZPE extraction remains
 thermodynamically impossible. Any reference to "anti-grav" or "ANGEL"/"vacuum-cell" in prose or
 entity descriptions is an error — <entity repo="technology" guid="019f3a83-1416-7959-856a-e2a11812359e">Eigenlift</entity> (coherent mass-state suspension, see Aerostatic
 Architecture) is the only altitude technology. <entity repo="technology" guid="019f3a83-1416-7959-856a-e2a11812359e">Eigenlift</entity> is not anti-gravity in the graviton

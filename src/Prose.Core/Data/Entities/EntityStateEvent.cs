@@ -41,7 +41,7 @@ public class EntityStateEvent
     public long Id { get; set; }
 
     /// <summary>The universe this event belongs to (denormalized from the entity). Backfilled to
-    /// GLMZ; stamped on insert from the current universe (RFC 0006).</summary>
+    /// GLMZ; stamped on insert from the current universe (SS-LAW-15).</summary>
     public Guid UniverseId { get; set; }
 
     /// <summary>The entity whose state changed. FK <c>Entities.Id</c>.</summary>

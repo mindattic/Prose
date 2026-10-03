@@ -293,7 +293,7 @@ public sealed class DocContextService(
         if (inferEntities && entityDocs != null && !string.IsNullOrWhiteSpace(triggerText))
             await entityDocs.InferFromTextAsync(triggerText, ct, nodeId);
 
-        // POV register priority (SS-A46 layer 4 + GLMZ §0): when the caller knows this beat's
+        // POV register priority (register doctrine layer 4 + GLMZ §0): when the caller knows this beat's
         // narrator (from the bible POV map), materialize that character's register doc and mark it
         // for pinning so it DOMINATES over other present characters' registers — the beat is voiced
         // in the narrator's register, not a blend. POV can change beat to beat in a multi-POV book.
@@ -469,7 +469,7 @@ public sealed class DocContextService(
 
     /// <summary>
     /// Resolves the NodeCode that scopes this node's "node" tier doc match (the book's one bible +
-    /// one register, per <see cref="PrepareContextAsync"/> §2). SS-A43 book+chapter books set
+    /// one register, per <see cref="PrepareContextAsync"/> §2). SS-LAW-6 book+chapter books set
     /// NodeCode ONLY on the book-level node (docs/GSPL.md §5a — chapters never carry one), but
     /// beats live on chapter children. Without this ancestor walk, a chapter node's own NodeCode is
     /// always empty, <see cref="ScopeMatches"/> requires a non-empty code and always returns false,

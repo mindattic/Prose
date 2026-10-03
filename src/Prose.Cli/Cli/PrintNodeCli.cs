@@ -52,7 +52,7 @@ public static class PrintNodeCli
             return 1;
         }
 
-        // SS-A43: beats live on chapter children for book-mode stories.
+        // SS-LAW-6: beats live on chapter children for book-mode stories.
         // Recurses past any nested Collection (2026-08-09 fix); searchIds is already in
         // correct global reading order — materialize first, THEN reorder by its list
         // position client-side (List<Guid>.IndexOf has no SQL translation).

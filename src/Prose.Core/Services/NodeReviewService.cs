@@ -19,7 +19,7 @@ namespace Prose.Core.Services;
 /// docs/READER-QA.md: ComprehensionProbeService, BeatChecklistGateService,
 /// BeatDuelService, GripePassService — all findings-based, no scores.
 ///
-/// This class stays compilable and callable BEHIND the SS-A44 VotingGate for explicit
+/// This class stays compilable and callable BEHIND the SS-LAW-17 VotingGate for explicit
 /// user-requested runs only; the 1024-persona library it samples lives in the external
 /// MindAttic.Legion package, preserved for other projects. Do not wire it into any
 /// default path.
@@ -2253,12 +2253,12 @@ Be specific; do not invent praise the reviews don't support.";
         return false;
     }
 
-    /// <summary>Four-dimensional per-beat score entry (SS-A47 — Swain doctrine).
+    /// <summary>Four-dimensional per-beat score entry (four-dimension beat scoring — Swain doctrine).
     /// <see cref="Score"/> is the canonical single value persisted to <see cref="NodeReviewBeatScore.Score"/>.
     /// New ballots supply all four dimensions; legacy ballots (old integer format) leave Beat/Chapter/Arc/Story null.</summary>
     private sealed record BeatScoreEntry(int Score, int? Beat, int? Chapter, int? Arc, int? Story)
     {
-        /// <summary>Parse one beat_scores value: either an int (legacy) or an object with beat/chapter/arc/story keys (SS-A47).
+        /// <summary>Parse one beat_scores value: either an int (legacy) or an object with beat/chapter/arc/story keys (four-dimension beat scoring).
         /// Returns null on parse failure.</summary>
         internal static BeatScoreEntry? Parse(JsonElement el)
         {

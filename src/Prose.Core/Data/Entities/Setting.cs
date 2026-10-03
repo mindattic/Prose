@@ -12,7 +12,7 @@ public class Setting
 
     /// <summary>The universe this config row belongs to (part of the composite key, so the same
     /// Key recurs per universe). Operational/shared keys (LLM routing, TTS, user accounts) carry
-    /// <see cref="Universe.SharedId"/> and are visible from every universe (RFC 0006).</summary>
+    /// <see cref="Universe.SharedId"/> and are visible from every universe (SS-LAW-15).</summary>
     public Guid UniverseId { get; set; }
 
     public string Json { get; set; } = "";

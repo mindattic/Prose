@@ -37,7 +37,7 @@ public static class ReviewEntityCli
             return 1;
         }
 
-        // SS-A44: entity ballot panels are disabled by default.
+        // SS-LAW-17: entity ballot panels are disabled by default.
         var votingGate = sp.GetRequiredService<VotingGate>();
         try { votingGate.EnsureAllowed("review-entity", allowVotes); }
         catch (VotingDisabledException ex) { Console.Error.WriteLine($"[review-entity] {ex.Message}"); return 1; }

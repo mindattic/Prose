@@ -37,7 +37,7 @@ public class ChapterCloseProcessorService(
     {
         var result = new ChapterCloseResult { ChapterIndex = chapterIndex };
 
-        // SS-A44: the tiered review gate and the narrative fork both solicit LLM scores/ballots.
+        // SS-LAW-17: the tiered review gate and the narrative fork both solicit LLM scores/ballots.
         // When voting is disabled and not explicitly overridden, skip them gracefully — the
         // contradiction audit still runs. Auto-run must not fail.
         var votingAllowed = votingGate.IsAllowed(allowVotes);
@@ -53,7 +53,7 @@ public class ChapterCloseProcessorService(
             result.Warnings.Add($"Contradiction check: {ex.Message}");
         }
 
-        // 2. Tiered review gate (SS-A44: scoring — skipped when voting disabled)
+        // 2. Tiered review gate (SS-LAW-17: scoring — skipped when voting disabled)
         if (!votingAllowed)
         {
             result.ReviewTier = 0;
@@ -94,7 +94,7 @@ public class ChapterCloseProcessorService(
         }
 
         // 3. Narrative fork — optional; generates N competing arcs for next chapter, keeps best.
-        //    Fork selection scores candidates (SS-A44) — skipped when voting disabled.
+        //    Fork selection scores candidates (SS-LAW-17) — skipped when voting disabled.
         if (forkCount >= 2 && votingAllowed)
         {
             try

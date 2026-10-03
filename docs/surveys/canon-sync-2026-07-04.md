@@ -34,11 +34,11 @@ questions: 34
 
 ### Q-002 · date · Story present year
 > Is the GLMZ story present year 2226 (canonical docs) or 2200 (DB cyberware entries)?
-> Context: BIBLE.md and all node bibles fix the present at 2226 per SS-A28; multiple
+> Context: BIBLE.md and all node bibles fix the present at 2226 per the 2226 canon date; multiple
 > cyberware DB entries use 2200 as their current-year anchor. This affects how far any
 > historical reference is from "now."
 
-- [x] **A** — 2226 — canonical per SS-A28 *(source: BIBLE.md)*
+- [x] **A** — 2226 — canonical per the 2226 canon date *(source: BIBLE.md)*
 - [ ] **B** — 2200 — used as present in DB cyberware entries *(source: DB:Cyberware)*
 - [ ] **C** — Custom: _____________________
 
@@ -62,11 +62,11 @@ questions: 34
 ### Q-004 · vocabulary · NSB operator job title
 > Is the in-world term for an NSB operator "Rider" or "Exo / RFO"?
 > Context: DB:Technology defines "Rider" as the current GLMZ freelance term for NSB
-> operators; SS-A38 retired Rider in favor of Exo (street) and RFO (formal/corpo). Affects
+> operators; the operator-class ruling retired Rider in favor of Exo (street) and RFO (formal/corpo). Affects
 > every prose line and entity description referencing NSB pilots.
 
 - [ ] **A** — Rider — current GLMZ freelance term *(source: DB:Technology)*
-- [ ] **B** — Exo (street) / RFO (formal) — Rider is retired per SS-A38 *(source: nodes/PNHL.md)*
+- [ ] **B** — Exo (street) / RFO (formal) — Rider is retired per the operator-class ruling *(source: nodes/PNHL.md)*
 - [ ] **C** — Both — Rider as legacy/historical slang, Exo/RFO as current
 - [x] **D** — Custom: Exo is the term
 
@@ -75,10 +75,10 @@ questions: 34
 ### Q-005 · vocabulary · Rider in active prose beats
 > Should enabled prose beats using capitalized "Rider" as a job title be corrected to Exo/RFO?
 > Context: Four enabled prose beats (019EC96D, DB888A00, CF0F5987, 5E05F5F1) use "Rider"
-> as an active NSB job title; SS-A38 retired the term. DB:Automaton Black Ice description
+> as an active NSB job title; the operator-class ruling retired the term. DB:Automaton Black Ice description
 > also uses "the Rider" as present-tense vocabulary.
 
-- [x] **A** — Yes — replace Rider with Exo/RFO per SS-A38 *(source: nodes/PNHL.md)*
+- [x] **A** — Yes — replace Rider with Exo/RFO per the operator-class ruling *(source: nodes/PNHL.md)*
 - [ ] **B** — No — keep Rider in those beats as valid in-world usage *(source: DB:Prose)*
 - [ ] **C** — Custom: _____________________
 
@@ -111,12 +111,12 @@ questions: 34
 ---
 
 ### Q-008 · vocabulary · Anti-grav in four transportation entities
-> Should the four Transportation entities still using "anti-grav" be updated to reflect SS-A35?
-> Context: SS-A35 retired "anti-grav" and active prose has zero uses, but Grav-Board, SN
+> Should the four Transportation entities still using "anti-grav" be updated to reflect the eigenlift ruling?
+> Context: The eigenlift ruling retired "anti-grav" and active prose has zero uses, but Grav-Board, SN
 > Tempest Air Racer, SN Kestrel Hover-Bike, and Axiom Executive Helicopter descriptions still
 > reference it.
 
-- [ ] **A** — Yes — update all four entities to remove anti-grav per SS-A35 *(source: DB:Prose)*
+- [ ] **A** — Yes — update all four entities to remove anti-grav per the eigenlift ruling *(source: DB:Prose)*
 - [ ] **B** — No — keep anti-grav in entity descriptions as acceptable legacy text *(source: DB:Transportation)*
 - [x] **C** — Custom: No, there is no antigrav technology; if it suspended in air its due to ANGEL
   cells (*terminology update 2026-07-06: "VacCell"/"VABC" retired in favor of the branded ANGEL
@@ -184,7 +184,7 @@ questions: 34
 > sweep, not a vote panel. The conflict is internal to BIBLE.md.
 
 - [ ] **A** — Legion panel vote — target ≥82% before next chapter *(source: BIBLE.md §workflow)*
-- [x] **B** — Logic sweep — SS-LAW-17 / SS-A44 overrides as default *(source: BIBLE.md §SS-LAW-17)*
+- [x] **B** — Logic sweep — SS-LAW-17 overrides as default *(source: BIBLE.md §SS-LAW-17)*
 - [ ] **C** — Custom: _____________________
 
 ---
@@ -229,7 +229,7 @@ questions: 34
 
 ### Q-017 · geography · Permanent underwater communities
 > Are permanent underwater communities prohibited, or does the Abyssal Threshold exist?
-> Context: GLMZ.md and SS-A42 (nodes/SPRW.md) prohibit permanent lakebed communities;
+> Context: GLMZ.md and nodes/SPRW.md prohibit permanent lakebed communities;
 > DB:Place contains the Abyssal Threshold as a city 420 feet below Lake Superior. The
 > two cannot both be true without reconciliation.
 
@@ -411,11 +411,11 @@ questions: 34
 ### Q-031 · biology · Neuretics adult-lock universality
 > Is the neuretics growth-window lock universal after age twelve, or are rare adult-open exceptions possible?
 > Context: ATTE.md states the lock is universal with no exceptions after the growth window;
-> SRZR.md and SS-A21 codify rare adult-open cases as real, which is the foundation for
+> SRZR.md codifies rare adult-open cases as real, which is the foundation for
 > Sasha Võ's character.
 
 - [ ] **A** — Universal after ~age twelve — no exceptions stated *(source: nodes/ATTE.md)*
-- [x] **B** — Nearly universal — rare adult-open exceptions exist (SS-A21) *(source: nodes/SRZR.md)*
+- [x] **B** — Nearly universal — rare adult-open exceptions exist *(source: nodes/SRZR.md)*
 - [ ] **C** — Custom: _____________________
 
 ---

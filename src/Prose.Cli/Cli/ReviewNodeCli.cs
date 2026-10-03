@@ -113,7 +113,7 @@ public static class ReviewNodeCli
             }
         }
 
-        // SS-A44: score panels are disabled by default. Require the explicit override.
+        // SS-LAW-17: score panels are disabled by default. Require the explicit override.
         var votingGate = services.GetRequiredService<VotingGate>();
         try { votingGate.EnsureAllowed("review-node", allowVotes); }
         catch (VotingDisabledException ex) { Console.Error.WriteLine($"[review-node] {ex.Message}"); return 1; }
@@ -522,7 +522,7 @@ public static class ReviewNodeCli
             // Reviews are saved; summary is best-effort.
         }
 
-        // Advisory cap (SS-A15): at the Deep gate, warn if open blocking emotional findings exist.
+        // Advisory cap (emotional examination): at the Deep gate, warn if open blocking emotional findings exist.
         // This does NOT alter the score; it surfaces the gate so the author knows to resolve them.
         if (profile?.Name == "deep" || effort == "deep")
         {

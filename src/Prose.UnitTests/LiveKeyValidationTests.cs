@@ -16,7 +16,7 @@ namespace Prose.UnitTests;
 /// (no network calls) when <c>legion.json</c>'s <c>votingEnabled</c> is false —
 /// author ruling 2026-08-22: Legion's multi-provider "voting" never once caught
 /// a real defect (a contradiction, a dead character reappearing) in practice,
-/// it's disabled by default project-wide (SS-A44, <see cref="VotingGate"/>), and
+/// it's disabled by default project-wide (SS-LAW-17, <see cref="VotingGate"/>), and
 /// a flaky third-party key (e.g. DeepSeek timing out) has no business blocking
 /// an unrelated code commit for a feature nobody is running. Re-enable this
 /// check automatically by flipping <c>votingEnabled</c> back to <c>true</c> if

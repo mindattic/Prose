@@ -13,7 +13,7 @@ updated: 2026-09-07
 **Requested by author, 2026-09-06/07:** *"writing needs to be from a single source, not 20+ LLM
 calls doing whatever they want"* · *"a single source writer that takes in information from other
 services but is the sole funnel through which all changes to beats happens"* · **Companion to:**
-RFC 0009 (no autonomous prose writes), RFC 0010 (battery value audit)
+RFC 0009 (no autonomous prose writes), the battery value audit (BIBLE ADR-10)
 
 ---
 
@@ -23,13 +23,13 @@ One writer. It **consumes** what the enrichment services produce (context, const
 and is the **only** code path that changes a beat. Coherence machinery stays — the Story Ledger,
 the logic sweep, DCM, `BeatWriteReason`. Opinion machinery goes. Which of the services that fan out
 from today's `ProseWriterRouter.WriteAsync` earn their LLM call is decided **by measurement, not by
-argument** — the same rule RFC 0010 applied to the battery.
+argument** — the same rule the battery value audit (BIBLE ADR-10) applied to the battery.
 
 ## 1. Step one — make one beat write observable (done)
 
 ### 1.1 What was wrong with the picture before
 
-RFC 0010 §6a recorded: *"93 `await …Async(` sites per beat write, at least nine enrichment
+The battery value audit (BIBLE ADR-10) recorded: *"93 `await …Async(` sites per beat write, at least nine enrichment
 services make their own LLM call, and the coverage log instruments five of ~35 services."* On
 reading the code, two of those three were off:
 
@@ -240,10 +240,10 @@ to the front. Tier order in the prompt, each with a character ceiling logged per
 | Tier | Blocks (today's names) | Ceiling | Why it stays |
 |---|---|---|---|
 | **A · Brief** | `BeatBrief` (goal, stop-before, POV, must-include, length) | — | it is the job |
-| **B · Facts** | canon claims (`ContinuityService`), consequences/gear, world state, X-ray roster, relationship context, universal facts | 6,000 ch | contradictions are the defects the author actually fixes (RFC 0010 §1) |
+| **B · Facts** | canon claims (`ContinuityService`), consequences/gear, world state, X-ray roster, relationship context, universal facts | 6,000 ch | contradictions are the defects the author actually fixes (the battery value audit (BIBLE ADR-10) §1) |
 | **C · Memory** | scene-so-far tail, narrative summary, chapter summary, open threads, plot state, reader knowledge, motifs, beat place | 8,000 ch | the closed loop that keeps a 500-page book coherent |
 | **D · Voice** | register (POV record), CRAFT base, universe craft, DELIGHT (3 rules), pacing, structural role | 3,000 ch | measured in §4; kept only at the level the A/B supports |
-| **E · Opinion** | six finding loop-backs, story-science, blueprint slice, offscreen chart, style anchors, tension, collision | **0 by default** | none has an applied finding (RFC 0010); each is re-admitted only by the §4 A/B showing it changed the output |
+| **E · Opinion** | six finding loop-backs, story-science, blueprint slice, offscreen chart, style anchors, tension, collision | **0 by default** | none has an applied finding (the battery value audit (BIBLE ADR-10)); each is re-admitted only by the §4 A/B showing it changed the output |
 
 The bible goes in the cached prefix as today. Temperature becomes a brief field (default 0.7;
 combat 0.6) instead of a constant.
@@ -325,7 +325,7 @@ Scored, per beat, by things that do not need a panel:
 
 Cost: ~10 drafts ≈ $0.30. Decision rule, fixed in advance: a tier-E block is re-admitted only if
 removing it changed (1) or (4) for the worse on ≥2 of 5 beats. Everything else in tier E is deleted
-under the RFC 0010 rule. If the *Brief* arm loses on (4), the design in §3.2 is wrong and this RFC
+under the the battery value audit (BIBLE ADR-10) rule. If the *Brief* arm loses on (4), the design in §3.2 is wrong and this RFC
 stops here and says so.
 
 Also answered by the same five traces, for free: why `SceneContextAssembler` produced an empty
@@ -368,7 +368,7 @@ after step 5 as a regression check; it must still be 5/5 (it will — nothing he
 
 ## 7. What is deliberately not in this RFC
 
-- **Panels, votes, scores.** SS-A44 stands. The gate's verifier answers three yes/no questions
+- **Panels, votes, scores.** SS-LAW-17 stands. The gate's verifier answers three yes/no questions
   with reasons; it does not grade.
 - **Rewriting any accepted beat**, including #17292's predecessors or the throwaway itself. The
   throwaway is deleted by the author or left; the writer never touches it.

@@ -65,7 +65,7 @@ public class WorkflowMonitorTools(
             .FirstOrDefaultAsync();
         if (node == null) return $"Node not found: {slug}";
 
-        // SS-A43: beats live on chapter descendants for book-mode stories. Descend to LEAF
+        // SS-LAW-6: beats live on chapter descendants for book-mode stories. Descend to LEAF
         // nodes, not just direct children — a split-collection book (Book -> "Chapter N"
         // container with 0 direct beats -> real chapters -> beats, e.g. BLST/ICFI/RTR/VIGL)
         // has its real chapters two levels down. Same bug class fixed in WorkflowMonitorService

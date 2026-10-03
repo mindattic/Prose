@@ -29,7 +29,7 @@ public class DeprecatedEntityName
     /// <summary>Optional FK to the canonical Entity row when seeded in the Entities table.</summary>
     public Guid? EntityId { get; set; }
 
-    /// <summary>Human note explaining the rename (e.g. "Renamed SS-A38 when Rider job was retired").</summary>
+    /// <summary>Human note explaining the rename (e.g. "Renamed SS-LAW-26 when Rider job was retired").</summary>
     public string? Notes { get; set; }
 
     public DateTime AddedAt { get; set; } = DateTime.UtcNow;

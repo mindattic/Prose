@@ -20,7 +20,7 @@ namespace Prose.Core.Services;
 /// Quorum vote (every active LLM provider as a voter). That vote's only
 /// externally-visible product beyond the candidate list was a corroboration
 /// count nothing downstream actually consumed, and Quorum/panel voting is
-/// project-wide quarantined by SS-A44 ("no votes/panels unless explicitly
+/// project-wide quarantined by SS-LAW-17 ("no votes/panels unless explicitly
 /// requested"). Now a single <see cref="ILlmService"/> call, same pattern as
 /// NarrativeScienceService/ThemeCoherenceService. Snippet-in-prose grounding
 /// (every fact must be an exact substring quote) is unchanged and is the real
@@ -133,7 +133,7 @@ public class ContinuityExtractionService
     }
 
     /// <summary>
-    /// Extract continuity claims from every leaf chapter under a modern SS-A43 BookNode
+    /// Extract continuity claims from every leaf chapter under a modern SS-LAW-6 BookNode
     /// (<c>Nodes</c>/<c>BeatNodes</c>/<c>Beats</c>) — the counterpart to
     /// <see cref="ExtractFromBookAsync"/>, which only knows the legacy
     /// <see cref="IBookRepository"/>/<see cref="IChapterRepository"/> model. Every book created
@@ -365,7 +365,7 @@ public class ContinuityExtractionService
 
     /// <summary>Shared body for "extract atomic claims from one block of prose, upsert each" —
     /// used by the legacy IChapterRepository path (<see cref="ExtractFromChapterAsync"/>), the
-    /// SS-A43 Nodes path (<see cref="ExtractFromBookNodeAsync"/>) so the extraction prompt, JSON parsing,
+    /// SS-LAW-6 Nodes path (<see cref="ExtractFromBookNodeAsync"/>) so the extraction prompt, JSON parsing,
     /// snippet-grounding, and upsert logic exist exactly once.</summary>
     private async Task<ContinuityExtractionResult> ExtractClaimsFromProseAsync(
         string prose, string contextHeader, string sourceChapterId, int? sourceChapterNumber,

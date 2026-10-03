@@ -452,7 +452,7 @@ public class ProseDbContext : DbContext
     public DbSet<NodeReviewBeatScore> NodeReviewBeatScores => Set<NodeReviewBeatScore>();
     // Reader-Proxy QA Instrument 2 — hash-gated per-beat craft/delight checklist cache.
     public DbSet<BeatChecklistResult> BeatChecklistResults => Set<BeatChecklistResult>();
-    // Emotional Intelligence Examination (SS-A15): examination parent + dimension/beat children + ledger cache.
+    // Emotional Intelligence Examination: examination parent + dimension/beat children + ledger cache.
     public DbSet<EmotionalExamination>      EmotionalExaminations      => Set<EmotionalExamination>();
     public DbSet<EmotionalDimensionResult>  EmotionalDimensionResults  => Set<EmotionalDimensionResult>();
     public DbSet<EmotionalBeatScore>        EmotionalBeatScores        => Set<EmotionalBeatScore>();
@@ -709,7 +709,7 @@ public class ProseDbContext : DbContext
     public DbSet<StructuralReading>      StructuralReadings      => Set<StructuralReading>();
 
     // Beat duel verdicts — blind A/B panel decisions on beat rewrites, cached by
-    // the SHA-256 pair of both texts. SS-A44: duels are votes; explicit ask only.
+    // the SHA-256 pair of both texts. SS-LAW-17: duels are votes; explicit ask only.
     public DbSet<BeatDuelVerdict>        BeatDuelVerdicts        => Set<BeatDuelVerdict>();
 
     // Workflow monitoring — tracks which prose services were active per beat write.
@@ -1505,7 +1505,7 @@ public class ProseDbContext : DbContext
             e.Property(x => x.BeatTextHash).HasMaxLength(80);
         });
 
-        // ── Emotional Intelligence Examination (SS-A15) ──────────────────────
+        // ── Emotional Intelligence Examination ──────────────────────
         b.Entity<EmotionalExamination>(e =>
         {
             e.HasKey(x => x.Id);
@@ -1686,7 +1686,7 @@ public class ProseDbContext : DbContext
             e.HasIndex(x => new { x.SourceId, x.RelationType, x.StoryValidFrom });
             e.HasIndex(x => new { x.TargetId, x.RelationType, x.StoryValidFrom });
             e.HasIndex(x => x.UniverseId);
-            // Universe scoping (RFC 0006). Source/target share a universe; no-op when unscoped.
+            // Universe scoping (SS-LAW-15). Source/target share a universe; no-op when unscoped.
             e.HasQueryFilter(x => ScopedUniverseId == Guid.Empty || x.UniverseId == ScopedUniverseId);
             // Filtered indexes — "current edges only" is the hot read path
             // (family ties, lives_at, member_of, deployed_at all use
@@ -1812,7 +1812,7 @@ public class ProseDbContext : DbContext
             // No HasMaxLength → nvarchar(max) on SQL Server; TEXT on SQLite tests.
             e.HasIndex(x => x.Version);
             e.HasIndex(x => x.UniverseId);
-            // Universe scoping (RFC 0006). Defense-in-depth — read-model ids already come from the
+            // Universe scoping (SS-LAW-15). Defense-in-depth — read-model ids already come from the
             // filtered Entities set; this guards direct CharacterReadModels scans. No-op when unscoped.
             e.HasQueryFilter(x => ScopedUniverseId == Guid.Empty || x.UniverseId == ScopedUniverseId);
         });
@@ -2274,7 +2274,7 @@ public class ProseDbContext : DbContext
         ConfigureGear(b);
         ConfigureMisc(b);
 
-        // MarkdownFiles universe scoping (RFC 0006 / SS-LAW-15). Declared HERE, not in the static
+        // MarkdownFiles universe scoping (SS-LAW-15). Declared HERE, not in the static
         // ConfigureMisc where the rest of MarkdownFile is configured, because the filter has to
         // close over the INSTANCE property ScopedUniverseId: EF re-evaluates an instance member per
         // query, but treats a static property access as a constant and bakes it into the cached
@@ -2359,7 +2359,7 @@ public class ProseDbContext : DbContext
         // ── Settings (single-document) ────────────────────────────────────────
         b.Entity<Setting>(e =>
         {
-            // Composite key so the same config Key recurs once per universe (RFC 0006).
+            // Composite key so the same config Key recurs once per universe (SS-LAW-15).
             e.HasKey(x => new { x.Key, x.UniverseId });
             e.Property(x => x.Key).HasMaxLength(120);
             // Universe scoping: a row is visible when it belongs to the current universe OR is a
@@ -2475,7 +2475,7 @@ public class ProseDbContext : DbContext
             e.HasIndex(x => x.ChapterId);
             e.HasIndex(x => x.BeatGuid);
             e.HasIndex(x => x.UniverseId);
-            // Universe scoping (RFC 0006). No-op when unscoped.
+            // Universe scoping (SS-LAW-15). No-op when unscoped.
             e.HasQueryFilter(x => ScopedUniverseId == Guid.Empty || x.UniverseId == ScopedUniverseId);
         });
 

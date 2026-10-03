@@ -73,7 +73,7 @@ public static class BeatCli
 
         var workbench = services.GetRequiredService<NodeWorkbenchService>();
         // (NodeId, BeatId) pairs — beats live on chapter children, not the book node
-        // (SS-A43), so DeleteBeatAsync must be called with each beat's ACTUAL owning
+        // (SS-LAW-6), so DeleteBeatAsync must be called with each beat's ACTUAL owning
         // node, not the id/slug the caller passed in. Using the passed-in id blindly
         // (as this command originally did) silently no-ops when it's a book: the
         // junction lookup finds nothing under the book id and returns early.

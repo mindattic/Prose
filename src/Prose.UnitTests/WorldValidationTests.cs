@@ -9,7 +9,7 @@ namespace Prose.UnitTests;
 
 /// <summary>
 /// Live validation suite against the REAL Prose SQL database — canon is a SQL DB, not
-/// a folder of JSON (SS-A45), so this is now an integration test, not a hermetic unit test. It
+/// a folder of JSON (SS-LAW-1), so this is now an integration test, not a hermetic unit test. It
 /// is the only test in this project that reads live production data rather than a synthetic
 /// fixture; everything else in this project (including <see cref="WorldConsistencyServiceTests"/>
 /// and <see cref="XrefServiceTests"/>, which already cover the RuleScan/Xref-conflict LOGIC with

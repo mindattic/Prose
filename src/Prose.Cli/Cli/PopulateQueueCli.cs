@@ -40,7 +40,7 @@ public static class PopulateQueueCli
             return 0;
         }
 
-        // SS-A44: entity-review / story-review enqueue score-ballot work for
+        // SS-LAW-17: entity-review / story-review enqueue score-ballot work for
         // remote workers — disabled by default. beat-write / status are unaffected.
         if (doEntityReview || doNodeReview)
         {

@@ -3,8 +3,8 @@ codex: 1
 project: Prose
 code: SS
 layer: rfc
-status: draft
-updated: 2026-09-06
+status: in-progress
+updated: 2026-10-03
 ---
 
 # RFC 0009 — No Autonomous Prose Writes
@@ -173,7 +173,7 @@ that has never produced an applied finding is deleted, not disabled.** Retain, f
 with hand-validated evidence:
 
 - `Contradiction` — 2 of 2 hand-read real, one applied by the author; backs the publish gate.
-- `Causality` — logic sweep, the canonical QA (SS-A44), gates publication.
+- `Causality` — logic sweep, the canonical QA (SS-LAW-17), gates publication.
 - `OutlineDrift` — feeds the altitude audit the author reads directly.
 
 Everything else is reviewed category by category against its measured apply rate before it is

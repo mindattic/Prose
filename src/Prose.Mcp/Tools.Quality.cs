@@ -156,7 +156,7 @@ public class QualityTools
         string? localModel = null,
         bool allowVotes = false)
     {
-        // SS-A44 voting kill-switch — refuse cleanly (no throw) when not overridden.
+        // SS-LAW-17 voting kill-switch — refuse cleanly (no throw) when not overridden.
         if (!votingGate.IsAllowed(allowVotes))
             return JsonSerializer.Serialize(new { error = "voting_disabled", message = VotingGate.DisabledMessage }, CanonTools.JsonOpts);
 

@@ -8,7 +8,7 @@ namespace Prose.Core.Services;
 /// NightlyHealthService.OpensWithCapsHeaderBlock). Ports the algorithm from
 /// <see cref="WritingQualityService"/>'s CheckVoiceCadence (Jaccard overlap between a chapter's
 /// distinctive tokens and each protagonist's established vocabulary), which is real, working,
-/// tested code — but stuck behind the legacy Books/Chapters model and the SS-A44 voting-gate
+/// tested code — but stuck behind the legacy Books/Chapters model and the SS-LAW-17 voting-gate
 /// default, meaning it never actually runs for any book on the live Nodes/Beats pipeline. Rather
 /// than migrate that whole service, this reimplements just the algorithm against plain string
 /// inputs so <see cref="BookHealthService"/> can drive it directly from BeatEntityPresence data.

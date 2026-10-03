@@ -5,8 +5,8 @@ namespace Prose.Core.Services;
 
 /// <summary>
 /// Thrown when a voting/ballot/score-soliciting flow runs while voting is
-/// disabled by default (SS-A44) and no explicit per-invocation override was
-/// supplied. The message is the canonical, actionable SS-A44 message.
+/// disabled by default (SS-LAW-17) and no explicit per-invocation override was
+/// supplied. The message is the canonical, actionable SS-LAW-17 message.
 /// </summary>
 public sealed class VotingDisabledException : InvalidOperationException
 {
@@ -14,7 +14,7 @@ public sealed class VotingDisabledException : InvalidOperationException
 }
 
 /// <summary>
-/// SS-A44 — the single central gate that every LLM ballot / score / vote
+/// SS-LAW-17 — the single central gate that every LLM ballot / score / vote
 /// soliciting flow consults before spending API tokens on a panel. Score
 /// panels (--review-node), Legion votes, census reviews, entity rating
 /// ballots and book/story quality scoring are DISABLED BY DEFAULT engine-wide;
@@ -26,7 +26,7 @@ public sealed class VotingDisabledException : InvalidOperationException
 /// scoring/balloting, never on generation. Single-LLM diagnostic analyzers
 /// (Logic Sweep, structural diagnosis, continuity/contradiction scans,
 /// emotional-depth examination, outline review) are likewise NOT gated: they
-/// localize concrete failures for free, which is exactly what SS-A44 endorses
+/// localize concrete failures for free, which is exactly what SS-LAW-17 endorses
 /// over blind panels.
 ///
 /// The default is read from <c>legion.json</c> (<c>"votingEnabled"</c>).
@@ -36,7 +36,7 @@ public sealed class VotingGate
 {
     /// <summary>
     /// The canonical, actionable message shown when a gated flow is blocked.
-    /// Kept verbatim per SS-A44 — tests assert on this exact string.
+    /// Kept verbatim per SS-LAW-17 — tests assert on this exact string.
     /// </summary>
     public const string DisabledMessage =
         "Voting is disabled by default (SS-A44). Pass --allow-votes (CLI) / allowVotes:true (MCP) to run this explicitly.";
@@ -63,7 +63,7 @@ public sealed class VotingGate
     /// Enforce the gate at the entry of a ballot/score-soliciting flow. When
     /// voting is disabled and no override was supplied, logs one warning line
     /// and throws <see cref="VotingDisabledException"/> with the canonical
-    /// SS-A44 message.
+    /// SS-LAW-17 message.
     /// </summary>
     public void EnsureAllowed(string operation, bool explicitOverride)
     {

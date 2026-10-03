@@ -140,7 +140,7 @@ strongest AI fiction signal in structural classifier studies").
 
 ## The six-dimension Logic Sweep
 
-[docs/LOGIC.md](LOGIC.md) (SS-A44) — this project's own methodology, not borrowed from outside
+[docs/LOGIC.md](LOGIC.md) (SS-LAW-17) — this project's own methodology, not borrowed from outside
 research, adopted as **LAW** 2026-07-04 (replaced score-panel voting as the default QA mechanism).
 Six independent checks over a book's full prose: causality chain, knowledge states, timeline,
 plant/payoff (two-way), orphan references, bible agreement.

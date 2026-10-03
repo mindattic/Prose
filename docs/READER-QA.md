@@ -36,7 +36,7 @@ mean nothing"). The research basis is structural, not a tuning problem:
   a large model *pretending* to be a reader is not.
 
 The legacy panel machinery is quarantined, not deleted — `--review-node` /
-`review_book` still run behind the SS-A44 VotingGate on explicit request only, and
+`review_book` still run behind the SS-LAW-17 VotingGate on explicit request only, and
 the 1024-persona library lives on in the MindAttic.Legion package for other projects.
 
 ## 2. The five instruments {#SS-RQA-2}
@@ -44,8 +44,8 @@ the 1024-persona library lives on in the MindAttic.Legion package for other proj
 | # | Instrument | What it measures | Cost model |
 |---|---|---|---|
 | 1 | **Comprehension probes** (`prose --reader-qa`) | A cheap model (Haiku) reads each chapter cold with only a rolling recap; its genuine reading is diffed against the fidelity-strict Sonnet synopsis (`SynopsisExportService`); a Sonnet arbiter keeps only mismatches the chapter text plausibly supports. | Hash-cached per chapter (`NodeChapterSummary.ComprehensionJson`) — unchanged chapters re-run free. |
-| 2 | **Craft/delight checklist** — **deleted 2026-09-06 (RFC 0010).** The LLM binary checklist is gone; `CraftChecklist` findings now come only from the deterministic linter (`prose --lint-prose`) and the two native rules in `CraftNativeRules`. *Historical description:* (`prose --craft-checklist`) | Binary checks per beat: CRAFT.md §8 DON'Ts (literal) + "≥1 applicable DELIGHT move lands" (short connective beats exempt), rules parsed live from CanonDocumentSections. Book-level move-monotony counters implement DELIGHT §14 — never "all 13 moves per beat". | Hash-gated per beat (`BeatChecklistResults`, Beat.TextHash + rule-set hash) — only changed beats re-bill. |
-| 3 | **Pairwise edit gate** (`prose --duel`) | Before-vs-after for every splice: cross-family jury (one lens per live model family; Claude tiers fill in when families are dead), each lens judging BOTH presentation orders — an order-flipped verdict is discarded as noise. REPLACE ≥2 better + 0 worse. | Verdicts cached by text-hash pair (`BeatDuelVerdicts`). SS-A44: duels ARE votes — `--allow-votes` required. |
+| 2 | **Craft/delight checklist** — **deleted 2026-09-06 ([BIBLE ADR-10](BIBLE.md#SS-§14)).** The LLM binary checklist is gone; `CraftChecklist` findings now come only from the deterministic linter (`prose --lint-prose`) and the two native rules in `CraftNativeRules`. *Historical description:* (`prose --craft-checklist`) | Binary checks per beat: CRAFT.md §8 DON'Ts (literal) + "≥1 applicable DELIGHT move lands" (short connective beats exempt), rules parsed live from CanonDocumentSections. Book-level move-monotony counters implement DELIGHT §14 — never "all 13 moves per beat". | Hash-gated per beat (`BeatChecklistResults`, Beat.TextHash + rule-set hash) — only changed beats re-bill. |
+| 3 | **Pairwise edit gate** (`prose --duel`) | Before-vs-after for every splice: cross-family jury (one lens per live model family; Claude tiers fill in when families are dead), each lens judging BOTH presentation orders — an order-flipped verdict is discarded as noise. REPLACE ≥2 better + 0 worse. | Verdicts cached by text-hash pair (`BeatDuelVerdicts`). SS-LAW-17: duels ARE votes — `--allow-votes` required. |
 | 4 | **Gripe jury** (`prose --reader-qa --gripe-pass`) | 3–5 cross-family full-read readers emit ONLY page-anchored complaints (beat + verbatim quote + what's wrong). Deterministic quote-grounding kills hallucinated citations free; a Sonnet arbiter confirms each against the beat text; triage blocker/moderate/minor. | Fresh per run (readers should re-read changed books); arbitration only on unique grounded complaints. |
 | 5 | **Full-Order Read** (`prose --reader-qa --full-order-read`) | 3–5 cross-family readers narrate ONE continuous read start-to-finish and flag only where their own engagement died — the beat it started, and whether it ever recovered. NOT a complaint list: no craft judgment, only "where did I stop caring." Severity comes from the recovery signal (never recovers = blocker; recovers after a long stretch = moderate; brief dip = minor). Every filed finding carries a standing `suggestedFix` steering toward the doctrine's weight-by-length fix (more page-time before the flat beat, or cut the inert scene in front of it — never rewrite the same-length prose to sound more intense; docs/LOGIC.md §10). | Fresh per run, same as instrument 4; arbitration only on unique grounded spans. |
 
@@ -55,7 +55,7 @@ All five file into the **Findings** table (categories `ComprehensionDefect`,
 Reports land in `audit-outlines-<date>/reader-qa/<SLUG>.md`.
 
 Instruments 1, 2, 4, and 5 (report mode) are **measurements, not votes** — they are
-outside the SS-A44 VotingGate, same exemption as `craft_checklist` and the logic sweep.
+outside the SS-LAW-17 VotingGate, same exemption as `craft_checklist` and the logic sweep.
 Instrument 3 and any automated apply arm go through the gate.
 
 **Instrument 5 is a proxy, not the ritual itself (docs/LOGIC.md §10).** The felt-pass doctrine's
@@ -66,7 +66,7 @@ replace the author actually reading the book straight through before calling it 
 
 ## 3. Fix discipline {#SS-RQA-3}
 
-Same law as the logic sweep (SS-A44 / "target not score"): **fix what a finding
+Same law as the logic sweep (SS-LAW-17 / "target not score"): **fix what a finding
 names; if you can't name the failure, leave the beat alone.** Minimal splices via
 `update_beat_text`; a contested splice goes through the duel gate and a KEEP verdict
 returns the dissent rationales as revision fuel, never a silent force-replace.

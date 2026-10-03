@@ -318,7 +318,7 @@ free is the difference between a useful instrument and a bill.
 | Join | Mechanism |
 |---|---|
 | **Publish-readiness gate 2** | [LOGIC.md §9](LOGIC.md#SS-LOGIC-9) condition 2 reads all three faces: `CONTRADICTED` claim rows (volatile predicates excluded), `FACT-LEDGER ` findings, `TUNEDREAD ` findings. **A book whose ledger was never populated FAILS** — not checked is not checked clean. |
-| **The battery** | `tuned-read` is run directly (`prose --tuned-read`); the `--audit-book --full` battery that bundled it was torn out 2026-09-06 (RFC 0010) — cost is per uncached candidate, the same multi-call class as storyscope/swain/chekhov. |
+| **The battery** | `tuned-read` is run directly (`prose --tuned-read`); the `--audit-book --full` battery that bundled it was deleted ([BIBLE ADR-10](BIBLE.md#SS-§14)) — cost is per uncached candidate, the same multi-call class as storyscope/swain/chekhov. |
 | **Generation loop-back** | `ProseWriterRouter` injects prior `TUNEDREAD` findings as forward guidance, so the beat that would create the next contradiction is written knowing about the last one. |
 | **Write gates** | `CharacterRelationshipTargetCheck` rejects a relationship row with an unresolvable or empty target; `UnscopedUniverseWriteCheck` fails closed on an ambiently-scoped write. |
 | **Caching** | Adjudication verdicts key on `(claim pair, axiom, both anchor TextHashes)`; extraction is hash-gated per chapter. **An unchanged book costs nothing to re-read** — including the verdicts that came back clean, or a clean book would cost the same as a broken one forever. |
@@ -334,7 +334,7 @@ free is the difference between a useful instrument and a bill.
   defects are fixed one beat at a time by hand.
 - **It is not a felt pass** ([LOGIC.md §10](LOGIC.md#SS-LOGIC-10)). Every claim can reconcile while
   the book reads dead.
-- **It is not a vote.** A measurement, outside the SS-A44 VotingGate, same exemption as the logic
+- **It is not a vote.** A measurement, outside the SS-LAW-17 VotingGate, same exemption as the logic
   sweep and craft checklist.
 - **Entity-record and bible claims carry no beat**, so a cross-source pair (a prose claim against
   an entity-record claim) is adjudicable only from the prose side.

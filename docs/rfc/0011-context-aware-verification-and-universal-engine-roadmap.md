@@ -10,7 +10,7 @@ updated: 2026-08-10
 # RFC 0011 — Context-Aware Verification & the Path to a Universal Engine {#SS-RFC-0011}
 
 > Status: **draft, awaiting author direction** · Author: engine pass 2026-08-10 · Extends
-> [SS-A46 (Register doctrine)](../BIBLE.md) and the DCM four-layer hierarchy (CLAUDE.md) by
+> the Register doctrine and the DCM four-layer hierarchy (CLAUDE.md) by
 > generalizing them from generation-only to generation-and-verification.
 
 ## 0. Why this RFC exists
@@ -28,7 +28,7 @@ A single session (2026-08-10) fixed four separate bugs, in four separate service
 Each was fixed individually, well, and honestly. But each fix was **local** — a bespoke patch to
 one service — when the actual defect is architectural: **the verification layer has no shared
 way to ask "what do I already know about this beat/book/character that should change how I judge
-it?"** Generation solved this exact problem months ago (SS-A46, the DCM Register/BookBible/
+it?"** Generation solved this exact problem months ago (the Register doctrine, the DCM Register/BookBible/
 Universe/Base hierarchy). Verification never got the same treatment, so it keeps failing the same
 way, in a new service, every time someone adds a new check — and every fix has looked, in the
 moment, like it might be the one-off "magic bullet" instead of an instance of a known class.
@@ -71,7 +71,7 @@ This RFC defines it as four properties, each with a concrete acceptance test:
 - **`FindingsService` is a real, working shared sink**: every category lands in one table with
   consistent `Upsert`/`DeleteBySummaryPrefix`/status lifecycle. This RFC's staleness work extends
   that table rather than inventing a parallel one.
-- **The logic-sweep/Reader-Proxy QA doctrine (SS-A44) already rejected the wrong abstraction**
+- **The logic-sweep/Reader-Proxy QA doctrine (SS-LAW-17) already rejected the wrong abstraction**
   (holistic vote panels) in favor of the right one (binary, reproducible, hash-cached checks).
   This RFC is downstream of that decision, not a reversal of it.
 
@@ -267,7 +267,7 @@ prevents repeat bugs"):
   it, and doesn't need new architecture to proceed once credits return.
 - Any new craft doctrine (DELIGHT.md moves, CRAFT.md DON'Ts) — this RFC is about how checks find
   and use context, not what the checks say.
-- The retired review/vote panel machinery (SS-A44) — dead, staying dead.
+- The retired review/vote panel machinery (SS-LAW-17) — dead, staying dead.
 
 ## 9. The rule this RFC asks the project to adopt going forward
 

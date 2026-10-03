@@ -8,7 +8,7 @@ namespace Prose.Core.Services.Obligations;
 /// the curtain", "the woman in the tan coat", "the togishi". Works on tag-stripped text;
 /// capitalised heads are skipped (those are names, and <c>EntityMentionScanner</c> owns names).
 ///
-/// <para>Hint-only by design (RFC 0010: a deterministic detector earns a verdict role by
+/// <para>Hint-only by design (BIBLE ADR-10: a deterministic detector earns a verdict role by
 /// evidence). The extractor decides whether a hint is a promise; the counts land on the write
 /// trace so the detector's precision can be measured before it is ever trusted alone.</para>
 /// </summary>

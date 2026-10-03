@@ -67,7 +67,7 @@ public static class SanityScanCli
         SanityScanService scanSvc,
         bool jsonMode)
     {
-        // Only BookNodes are scan targets. SS-A43: a chaptered book holds beats on its
+        // Only BookNodes are scan targets. SS-LAW-6: a chaptered book holds beats on its
         // ChapterNode children, not on itself — ScanAsync already rolls those up automatically
         // when given the book's own id (see its "orderedBeats.Count == 0 -> pull from children"
         // fallback). The previous filter here ("any node with >2 direct BeatNodes") missed that

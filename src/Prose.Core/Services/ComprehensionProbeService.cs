@@ -29,7 +29,7 @@ namespace Prose.Core.Services;
 /// hallucinations are recorded in the cache but never filed.</para>
 ///
 /// <para>This is a MEASUREMENT, not a vote — it emits no scores and is deliberately
-/// outside the SS-A44 <see cref="VotingGate"/> (same exemption as craft_checklist and the
+/// outside the SS-LAW-17 <see cref="VotingGate"/> (same exemption as craft_checklist and the
 /// logic sweep). Nothing is cached: the ground-truth synopsis and the probe are both
 /// regenerated on every run (no stored retelling of the story — author ruling 2026-09-22).</para>
 /// </summary>
@@ -117,7 +117,7 @@ public sealed class ComprehensionProbeService(
                 snippet: null, suggestedFix: null);
 
         // A chapter that errored out was NOT read, and the gate has to be able to see that. This
-        // check gates publication on zero High-severity findings while RFC 0010 records it has
+        // check gates publication on zero High-severity findings while BIBLE ADR-10 records it has
         // never produced a single applied finding corpus-wide — the least it can do is be honest
         // about how much of the book it managed to look at.
         if (runLedger != null)

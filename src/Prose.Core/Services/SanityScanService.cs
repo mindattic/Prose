@@ -272,7 +272,7 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
             .Select(sb => sb.Beat!)
             .ToList();
 
-        // SS-A43: book-mode nodes have beats on chapter children, not directly on the story node.
+        // SS-LAW-6: book-mode nodes have beats on chapter children, not directly on the story node.
         // Aggregate from children whenever any exist — NOT only when orderedBeats is empty.
         // Confirmed live 2026-08-09: a GLMZ book had exactly one enabled direct BeatNode of its
         // own (an orphan/stray row, architecturally not expected for a chaptered book) sitting

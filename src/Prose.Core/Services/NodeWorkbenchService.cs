@@ -2427,7 +2427,7 @@ public class NodeWorkbenchService
     /// a node, keyed by beat id. Drives the cycler arrows' disabled state in
     /// one grouped query. A beat never edited since versioning was enabled has
     /// count 1 (just the current row → both arrows dead).</summary>
-    /// <remarks>SS-A43: resolves beats through <c>BeatNodes</c> by <paramref name="nodeId"/>
+    /// <remarks>SS-LAW-6: resolves beats through <c>BeatNodes</c> by <paramref name="nodeId"/>
     /// directly, which finds nothing for a book-mode story whose beats hang off ChapterNode
     /// children. Use <see cref="GetBeatVersionCountsByIdsAsync"/> with the ids from
     /// <see cref="GetOrderedBeatsAsync"/> for those.</remarks>
@@ -2442,7 +2442,7 @@ public class NodeWorkbenchService
     }
 
     /// <summary>Like <see cref="GetBeatVersionCountsAsync"/> but scoped to an explicit set of beat IDs.
-    /// Use this for book-mode nodes where beats live on ChapterNode children (SS-A43).</summary>
+    /// Use this for book-mode nodes where beats live on ChapterNode children (SS-LAW-6).</summary>
     public async Task<Dictionary<Guid, int>> GetBeatVersionCountsByIdsAsync(IEnumerable<Guid> beatIds, CancellationToken ct = default)
     {
         var ids = beatIds.Distinct().ToList();

@@ -68,7 +68,7 @@ public class RealDataTests
     [Test]
     public void AllJsonFiles_AreReadOnlyDuringTest()
     {
-        // engine/data/*.json is empty post-migration (SS-A45; canon is the SQL DB) in a genuinely
+        // engine/data/*.json is empty post-migration (SS-LAW-1; canon is the SQL DB) in a genuinely
         // fresh checkout — this test (unlike every other test in this fixture) was never updated
         // for that retirement, so it only "passed" locally because of leftover legacy JSON files
         // that shouldn't be there. Confirmed 2026-08-09 via a fresh-clone test run: this failed
@@ -338,7 +338,7 @@ public class RealDataTests
         var repo = new CorponationRepository(paths);
         var all = repo.GetAll();
         Assert.That(all, Is.Empty,
-            "engine/data corponations corpus is expected empty post-JSON→SQL migration (SS-A45); " +
+            "engine/data corponations corpus is expected empty post-JSON→SQL migration (SS-LAW-1); " +
             "if this fails, the file-based corpus is back and this test needs re-pointing at the SQL DB.");
 
         foreach (var corp in all)
@@ -357,7 +357,7 @@ public class RealDataTests
         var repo = new VocabularyRepository(paths);
         var all = repo.GetAll();
         Assert.That(all, Is.Empty,
-            "engine/data vocabulary corpus is expected empty post-JSON→SQL migration (SS-A45); " +
+            "engine/data vocabulary corpus is expected empty post-JSON→SQL migration (SS-LAW-1); " +
             "if this fails, the file-based corpus is back and this test needs re-pointing at the SQL DB.");
 
         foreach (var v in all)

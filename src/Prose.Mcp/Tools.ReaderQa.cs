@@ -12,7 +12,7 @@ namespace Prose.Mcp;
 //   reader_qa_comprehension — Instrument 1: cheap-model comprehension probes per
 //     chapter, diffed against the Sonnet synopsis ground truth, Sonnet-arbitrated,
 //     filed as ComprehensionDefect findings. A MEASUREMENT, not a vote — no
-//     allowVotes parameter by design (SS-A44 exemption, same as craft_checklist /
+//     allowVotes parameter by design (SS-LAW-17 exemption, same as craft_checklist /
 //     logic_sweep). Emits no scores, ever.
 
 // DEACTIVATED 2026-09-22 (RFC 0014): every tool in this class is a zero-applied

@@ -3,8 +3,8 @@ codex: 1
 project: Prose
 code: SS
 layer: rfc
-status: implemented
-updated: 2026-08-26
+status: in-progress
+updated: 2026-10-03
 ---
 
 # RFC 0007 — Universe Interchange & the EVE Universe {#SS-RFC-0007-INTERCHANGE}
@@ -19,7 +19,7 @@ updated: 2026-08-26
 Status: **PHASE 1 IMPLEMENTED (2026-08-26)** — execution keyword: `/eve` in the Prose CLI.
 Phase 2 (game-writing deliverables as Books) remains design-approved, not yet built.
 Author: handoff from the ExperimentEve session (Claude, D:\Projects\MindAttic\ExperimentEve)
-Depends on: RFC 0001 (canon-as-data), RFC 0006 (universe segregation)
+Depends on: BIBLE §4.4 (canon-as-data) and §4.2 / SS-LAW-15 (universe segregation)
 
 ## Purpose
 

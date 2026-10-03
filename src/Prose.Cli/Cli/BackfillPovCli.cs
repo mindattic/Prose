@@ -14,7 +14,7 @@ namespace Prose.Cli;
 ///
 /// Built 2026-08-13 (plan "Making Prose readable, character-true, and legible") after finding
 /// BeatEntityPresence has no live write path anywhere in the codebase — DocContextService's
-/// per-beat voice-pinning (SS-A46 layer 4) and several audits (SACRED-FLAW, VOICE-DRIFT) depend
+/// per-beat voice-pinning (register-doctrine layer 4) and several audits (SACRED-FLAW, VOICE-DRIFT) depend
 /// on this table and were silently starved for POV data on effectively the whole corpus.
 /// ProseWriterRouter.WriteAsync now writes this forward for every new beat
 /// (SceneContextAssembler.PersistPovAsync); this CLI is the one-time backward pass for beats

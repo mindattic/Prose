@@ -25,7 +25,7 @@ namespace Prose.Core.Services;
 ///
 /// <see cref="AuditNodeAsync"/> evaluates every beat that has prose — it does NOT gate on
 /// <see cref="ScoreGamingThreshold"/> (fixed 2026-08-08: under the no-panel-vote regime,
-/// SS-A44, fewer than 1% of beats corpus-wide ever have a Beat.Score, so gating on it here
+/// SS-LAW-17, fewer than 1% of beats corpus-wide ever have a Beat.Score, so gating on it here
 /// silently evaluated ~0 beats on 34 of 35 live books). Only <see cref="AuditNodeAsync"/>'s
 /// caller in NodeReviewService still uses the threshold — to decide whether a *just-reviewed*
 /// node scored well enough to be worth auditing for gaming at all; that's a legacy-panel-only
@@ -36,7 +36,7 @@ namespace Prose.Core.Services;
 public class SemanticFidelityService
 {
     /// <summary>Used only by NodeReviewService to decide whether a node's post-review score is
-    /// high enough to bother auditing for score-gaming at all (legacy panel path only — SS-A44).
+    /// high enough to bother auditing for score-gaming at all (legacy panel path only — SS-LAW-17).
     /// Does NOT gate which beats <see cref="AuditNodeAsync"/> evaluates; see its remarks above.</summary>
     public const double ScoreGamingThreshold = 70.0;
 
@@ -142,7 +142,7 @@ public class SemanticFidelityService
         var bibleAnchor = FirstNonEmpty(node.Seed, node.Description, node.Title);
         bool hasBibleAnchor = !string.IsNullOrWhiteSpace(bibleAnchor);
 
-        // SS-A43: beats live on chapter nodes (children), not directly on the story node.
+        // SS-LAW-6: beats live on chapter nodes (children), not directly on the story node.
         // Recurses past any nested Collection (2026-08-09 fix).
         var beatNodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 

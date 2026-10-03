@@ -4,8 +4,8 @@
 # the trusted panel (claude / openai / gemini / deepseek) must authenticate
 # LIVE before a commit — no point committing when a panel key is dead.
 #
-# Legion voting is OFF by default project-wide (SS-A44) and, per author ruling
-# 2026-08-22, considered unreliable in practice (never once caught a real
+# Legion voting is OFF by default project-wide (BIBLE SS-LAW-17) and, per author ruling,
+# considered unreliable in practice (never once caught a real
 # defect) — LiveKeyValidationTests skips this check entirely with no network
 # calls while votingEnabled=false, so this gate is a no-op until voting is
 # re-enabled.

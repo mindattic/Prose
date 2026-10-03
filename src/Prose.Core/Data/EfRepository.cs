@@ -120,7 +120,7 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
         lock (cacheLock)
         {
             // Invalidate the cache when the current universe changes (SwitchUniverse), so a list
-            // built under GLMZ is never served while Fantasy is active (RFC 0006).
+            // built under GLMZ is never served while Fantasy is active (SS-LAW-15).
             // The epoch alone is not enough: a per-call (flow) universe in the Hub changes the
             // effective scope without bumping it, so the universe the list was built for is checked
             // too — as CharacterRepository's own caches already do.

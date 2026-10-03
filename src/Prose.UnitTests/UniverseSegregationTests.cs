@@ -7,7 +7,7 @@ using Prose.Core.Services;
 namespace Prose.UnitTests;
 
 /// <summary>
-/// RFC 0006 — proves universe segregation: the EF global query filter + insert-stamping scope
+/// SS-LAW-15 — proves universe segregation: the EF global query filter + insert-stamping scope
 /// canon/config to the current universe, shared config rows are visible everywhere, the prompt
 /// "cards" seam keeps GLMZ byte-identical, the CLI/env bootstrap resolves seed slugs, and a
 /// universe switch bumps the cache-invalidation epoch. All against the in-memory SQLite test DB.

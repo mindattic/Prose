@@ -80,7 +80,7 @@ updated: 2026-08-03
 > GLMZ/SCRY, same citation-grounding discipline as the Gospel books, NEPH, and 1381. Fourth
 > production line in NONFICTION, second fully secular-historical subject (after 1381), and the
 > first **explicitly comparative** NONFICTION book — two events studied side by side rather than
-> one event studied in isolation. Per SS-A45 / the 1381 precedent: **no permanent `docs/tire/`
+> one event studied in isolation. Per SS-LAW-1 / the 1381 precedent: **no permanent `docs/tire/`
 > research folder** — research is WebSearch-verified as each claim is drafted, landing directly
 > in Entity `Description` fields and Notes-chapter beats, not in a hand-committed markdown pile.
 

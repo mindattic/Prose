@@ -573,7 +573,7 @@ if (args.Contains("--history") && !HistorySubFlagOwners.Any(args.Contains) && !H
 
 // RFC 0013 instruments. The free trial-balance rules forward plainly; --deep adds the paid
 // resurfacing judge and is cost-gated under its own command name (the gate keys estimates on the
-// name alone, so a cheap and an expensive mode must not share one — RFC 0010 §5).
+// name alone, so a cheap and an expensive mode must not share one — BIBLE ADR-10).
 if (args.Contains("--reconcile-obligations"))
 {
     Environment.ExitCode = args.Contains("--deep")
@@ -2184,7 +2184,7 @@ if (args.Contains("--findings"))
 
 // prose --fact-ledger-refresh --slug <slug-or-code> — zero-LLM-cost re-run of just the
 // fact-ledger check (see FactLedgerRefreshCli's own doc comment). Not cost-gated: it is the
-// deliberate cheap alternative to the (since-deleted, RFC 0010) --audit-book --deep bundle.
+// deliberate cheap alternative to the (since-deleted, BIBLE ADR-10) --audit-book --deep bundle.
 if (args.Contains("--fact-ledger-refresh"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("FactLedgerRefreshCli", args);
@@ -2289,7 +2289,7 @@ if (args.Contains("--write-synopsis"))
 }
 
 // prose --logic-sweep --slug <nodeSlug> [--json]
-// Codifies docs/LOGIC.md's sweep (SS-A44) as one LLM call per dimension: causality chain,
+// Codifies docs/LOGIC.md's sweep (SS-LAW-17) as one LLM call per dimension: causality chain,
 // knowledge states, timeline, plant/payoff (two-way), orphan references, inserted-beat drift.
 // A single-pass approximation over the whole node's prose — for a large
 // book or a thorough pass, prefer the /logic-sweep Claude Code skill (range-scoped
@@ -2317,7 +2317,7 @@ if (args.Contains("--dcm-backfill"))
 // Reader-Proxy QA (docs/READER-QA.md) — the default reader-facing quality instrument.
 // Phase 1: comprehension probes — a cheap model reads each chapter cold, diffed against
 // the Sonnet synopsis ground truth, Sonnet-arbitrated, filed as ComprehensionDefect
-// findings. NO scores (measurement, not vote — SS-A44 exempt). Hash-cached per chapter.
+// findings. NO scores (measurement, not vote — SS-LAW-17 exempt). Hash-cached per chapter.
 // Exit 0 = clean, 1 = defects found, 2 = error.
 if (args.Contains("--reader-qa"))
 {
@@ -2777,7 +2777,7 @@ if (args.Contains("--estimate-cost"))
 // Blind A/B duel: beat's current prose vs a candidate revision. 3 voters
 // (register/goal/reader lenses), three-way ballot; replace needs >=2 better
 // with zero dissent; splits escalate to 7 voters with written rationales.
-// Verdicts hash-cached by text pair. SS-A44: invoking this IS the explicit ask.
+// Verdicts hash-cached by text pair. SS-LAW-17: invoking this IS the explicit ask.
 // Exit 0 = replace, 1 = keep, 2 = error.
 if (args.Contains("--duel"))
 {

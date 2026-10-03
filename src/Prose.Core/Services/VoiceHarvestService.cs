@@ -225,7 +225,7 @@ public class VoiceHarvestService
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
         if (!force && (node.Score ?? 0) < 80)
         {
-            // Score gates were retired project-wide (SS-A44) — most books now carry a
+            // Score gates were retired project-wide (SS-LAW-17) — most books now carry a
             // null Score by design, not a low one. Say so plainly instead of printing
             // a blank/misleading "scored  — below 80%".
             var reason = node.Score is null
@@ -236,7 +236,7 @@ public class VoiceHarvestService
 
         // 1) Mine generated→final edits from the temporal beat history.
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
-        // SS-A43: GetBeatVersionCountsAsync queries BeatNodes by NodeId directly, which
+        // SS-LAW-6: GetBeatVersionCountsAsync queries BeatNodes by NodeId directly, which
         // returns 0 for book-mode stories. Use the beat IDs from the recursive walk.
         var beatIds = ordered.Select(ob => ob.Beat.Id);
         var counts = await workbench.GetBeatVersionCountsByIdsAsync(beatIds, ct);

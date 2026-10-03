@@ -27,7 +27,7 @@ namespace Prose.Core.Services;
 /// background sweep in this file, to avoid duplicate corpus scans hitting the shared DB.
 ///
 /// 2026-08-21 to 2026-09-06 this sweep also ran a hash-gated EmotionalDepthService examination
-/// (real LLM calls); that service was deleted under RFC 0010, so the sweep is back to the
+/// (real LLM calls); that service was deleted under BIBLE ADR-10, so the sweep is back to the
 /// deterministic sanity and readability checks below — zero LLM cost.
 /// </summary>
 public class SanityScanBackgroundService : BackgroundService

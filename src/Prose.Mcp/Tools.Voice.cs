@@ -58,7 +58,7 @@ public class VoiceTools
     }
 
     /// <summary>Harvest voice rules from all nodes scored ≥threshold and return the combined proposals grouped by node.
-    /// NOTE (SS-A44, 2026-08-03): the 0-100 score-panel gates were retired project-wide, so almost no node carries a
+    /// NOTE (SS-LAW-17, 2026-08-03): the 0-100 score-panel gates were retired project-wide, so almost no node carries a
     /// Score anymore (verified: 22/421 nodes have any Score at all, 2/421 are ≥80) — this tool will return an empty
     /// result against most of the live corpus regardless of threshold. Prefer harvest_voice_canon (selects by
     /// Node.IsCanon, the current recommended gate) or harvest_voice_node with force=true for a specific book.</summary>
@@ -85,7 +85,7 @@ public class VoiceTools
     }
 
     /// <summary>Harvest voice rules from every node the author has marked Canon (Node.IsCanon) —
-    /// the SS-A44-era recommended gate now that 0-100 score panels are retired. Canon is an
+    /// the SS-LAW-17-era recommended gate now that 0-100 score panels are retired. Canon is an
     /// explicit author trust decision, so every canon node is harvested unconditionally.</summary>
     [McpServerTool, Description("Distill voice rules from every node the author has marked Canon (IsCanon=true) — the recommended harvest gate post-SS-A44, since almost no node carries a Score anymore. Returns proposals grouped by node slug. Nothing is written to the live rule store until apply_voice_proposal is called.")]
     public Task<string> HarvestVoiceCanon() =>

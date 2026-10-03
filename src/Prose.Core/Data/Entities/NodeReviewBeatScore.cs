@@ -31,8 +31,8 @@ public class NodeReviewBeatScore
     /// Append-only — never cleared.</summary>
     public string? Contradictions { get; set; }
 
-    // ── Four-dimensional scoring (Swain doctrine — added SS-A47) ─────────────
-    // New ballots populate all four. Legacy rows (pre-SS-A47) have nulls here;
+    // ── Four-dimensional scoring (Swain doctrine) ─────────────
+    // New ballots populate all four. Legacy rows (older) have nulls here;
     // Score above remains the canonical single value for backward compatibility.
 
     /// <summary>Beat intrinsic: does this beat execute its dramatic function?

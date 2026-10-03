@@ -12,7 +12,7 @@ namespace Prose.Mcp;
 //
 //   write_synopsis — generate a beat-by-beat narrative synopsis (act-grouped) FROM
 //                    the written prose. Ephemeral: returned, never stored.
-//   logic_sweep    — docs/LOGIC.md's logic sweep (SS-A44) as a single-pass
+//   logic_sweep    — docs/LOGIC.md's logic sweep (SS-LAW-17) as a single-pass
 //                    LLM-per-dimension check. For a large book or a thorough pass,
 //                    prefer the /logic-sweep Claude Code skill instead (range-scoped
 //                    subagents + quote verification + fix + re-verify).

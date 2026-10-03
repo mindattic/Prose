@@ -30,14 +30,14 @@ namespace Prose.Core.Services;
 // Verdicts are cached by the SHA-256 pair of both texts (Beats.TextHash
 // scheme): identical comparisons are free, and any text change re-keys.
 //
-// SS-A44 (voting law): duels are votes. AllowVotes must be passed true by a
+// SS-LAW-17 (voting law): duels are votes. AllowVotes must be passed true by a
 // caller holding an explicit user instruction; it defaults to refusing.
 // ─────────────────────────────────────────────────────────────────────────────
 
 /// <summary>
 /// Blind A/B LLM-panel adjudication of a beat's current text against a candidate rewrite
 /// (3 voters, escalating to 7). Refuses to run unless the caller passes <c>allowVotes: true</c>
-/// (SS-A44). Returns a verdict and ballots, caching verdicts by text-hash pair; it never edits the beat.
+/// (SS-LAW-17). Returns a verdict and ballots, caching verdicts by text-hash pair; it never edits the beat.
 /// </summary>
 public class BeatDuelService(
     ILlmService llm,
@@ -76,7 +76,7 @@ public class BeatDuelService(
     /// Returns the verdict plus ballots; does NOT modify the beat — callers
     /// apply the replacement themselves on "replace".
     /// </summary>
-    /// <param name="allowVotes">SS-A44 gate: must be true, passed consciously by a
+    /// <param name="allowVotes">SS-LAW-17 gate: must be true, passed consciously by a
     /// caller holding an explicit user instruction to run votes. Defaults to refusing.</param>
     public async Task<DuelResult> DuelAsync(
         string originalText,

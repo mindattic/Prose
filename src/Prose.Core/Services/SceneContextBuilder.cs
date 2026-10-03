@@ -20,7 +20,7 @@ public class SceneContextBuilder
     private readonly DistrictRepository districtRepo;
 
     // Cached per (universe, epoch). A Lazy built once served the FIRST universe's anomaly docs to
-    // every later universe (GLMZ strangeness in a Fantasy prompt, the RFC 0006 leak), never saw
+    // every later universe (GLMZ strangeness in a Fantasy prompt, the SS-LAW-15 leak), never saw
     // docs added later, and cached a first-use failure forever.
     private sealed record AnomalyCache(Guid Universe, int Epoch, List<(string title, string snippet, List<string> tags)> Items);
     private volatile AnomalyCache? anomalyCache;

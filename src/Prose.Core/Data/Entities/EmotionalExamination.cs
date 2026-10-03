@@ -1,7 +1,7 @@
 namespace Prose.Core.Data.Entities;
 
 /// <summary>
-/// One run of the Emotional Intelligence Examination for a node (SS-A15).
+/// One run of the Emotional Intelligence Examination for a node.
 /// Parent record; cascades to <see cref="EmotionalDimensionResult"/> and
 /// <see cref="EmotionalBeatScore"/> children.
 /// </summary>

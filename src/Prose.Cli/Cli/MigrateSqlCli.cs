@@ -51,7 +51,7 @@ public static class MigrateSqlCli
         // Codex docs, Claude Code memory) can be backed up + restored by timestamp.
         var markdownFiles = args.Contains("--markdown-files");
 
-        // Emotional examination (SS-A15): 4 new tables + Beat.EmotionalScore column.
+        // Emotional examination: 4 new tables + Beat.EmotionalScore column.
         var emotionalExamination = args.Contains("--emotional-examination");
 
         // Node draft flag: add IsDraft BIT to Nodes (+ history). Draft nodes
@@ -66,7 +66,7 @@ public static class MigrateSqlCli
         // entity-review / node-review / beat-review / beat-write.
         var distributedQueue = args.Contains("--distributed-queue");
 
-        // Four-dimensional per-beat scoring (SS-A47 — Swain doctrine):
+        // Four-dimensional per-beat scoring (four-dimension beat scoring — Swain doctrine):
         // add ScoreBeat/ScoreChapter/ScoreArc/ScoreStory to NodeReviewBeatScores.
         var beatScoreDimensions = args.Contains("--beat-score-dimensions");
 
@@ -513,7 +513,7 @@ public static class MigrateSqlCli
             }
         }
 
-        // ── Emotional examination (SS-A15) ────────────────────────────────────
+        // ── Emotional examination ────────────────────────────────────
         if (emotionalExamination)
         {
             using var eeScope = sp.CreateScope();

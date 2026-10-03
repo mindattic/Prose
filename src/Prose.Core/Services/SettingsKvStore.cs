@@ -35,7 +35,7 @@ public class SettingsKvStore
     /// (action_configs / tts.rules / users.accounts / current_universe), otherwise the current
     /// universe (falling back to GLMZ when no universe context is wired — tests / pre-migration).
     /// Centralizes "which universe's row" so a per-universe voice/tone/register read can never
-    /// silently resolve to another universe's config (RFC 0006 — no cross-universe prompt cards).
+    /// silently resolve to another universe's config (SS-LAW-15 — no cross-universe prompt cards).
     /// </summary>
     private static Guid TargetUniverse(string key)
     {

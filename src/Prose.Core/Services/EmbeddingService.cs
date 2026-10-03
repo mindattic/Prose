@@ -333,7 +333,7 @@ public class EmbeddingService
         // FindSimilarAsync / FindSimilarBeatNodesAsync, which join to the authoritative
         // Entities/Nodes table). That column is a drift-prone copy stamped from whatever
         // universe happened to be active when the row was last (re)embedded — trusting it
-        // directly caused the SS-A46 cross-universe leak fixed elsewhere in this file.
+        // directly caused the cross-universe leak fixed elsewhere in this file.
         // This method has no authoritative per-ScopeKind table to join instead (its one live
         // caller uses ScopeKind="markdown", and MarkdownFile isn't a universe-owned entity —
         // docs like CRAFT.md are intentionally cross-universe). Correctness here comes from
@@ -723,7 +723,7 @@ public class EmbeddingService
         return true;
     }
 
-    /// <summary>The universe to stamp on a freshly-written embedding (RFC 0006). Embedding runs
+    /// <summary>The universe to stamp on a freshly-written embedding (SS-LAW-15). Embedding runs
     /// under the current universe scope; fall back to GLMZ when no scope is wired.</summary>
     private static Guid EmbedUniverseId()
         => UniverseScope.EffectiveId == Guid.Empty ? Universe.GlmzId : UniverseScope.EffectiveId;

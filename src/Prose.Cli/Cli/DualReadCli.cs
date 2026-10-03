@@ -34,7 +34,7 @@ public static class DualReadCli
             return 1;
         }
 
-        // SS-A44: dual-read casts two panels of ballots — disabled by default.
+        // SS-LAW-17: dual-read casts two panels of ballots — disabled by default.
         var votingGate = sp.GetRequiredService<VotingGate>();
         try { votingGate.EnsureAllowed("dual-read", allowVotes); }
         catch (VotingDisabledException ex) { Console.Error.WriteLine($"[dual-read] {ex.Message}"); return 1; }

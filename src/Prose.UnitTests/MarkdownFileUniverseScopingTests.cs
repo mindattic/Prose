@@ -7,7 +7,7 @@ using Prose.Core.Services;
 namespace Prose.UnitTests;
 
 /// <summary>
-/// MarkdownFiles universe scoping (RFC 0006 / SS-LAW-15).
+/// MarkdownFiles universe scoping (SS-LAW-15).
 ///
 /// MarkdownFiles was the last DCM-relevant table with no universe filter, so
 /// <c>DocContextService</c>'s candidate query saw every doc in every universe on every beat.

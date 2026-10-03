@@ -143,7 +143,7 @@ public class RepetitionLintService
                 LintPrefix + summary, snippet, fix);
         }
 
-        // ── native craft rules (deterministic; RFC 0010, 2026-09-06) ─────────────────────
+        // ── native craft rules (deterministic; BIBLE ADR-10, 2026-09-06) ─────────────────────
         // InteriorityDensityRule and RetiredTicRule used to run inside the LLM craft checklist
         // (BeatChecklistGateService). That service was deleted; these two are regexes over the
         // prose with the same answer every time, the author's instrument review kept them

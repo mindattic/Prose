@@ -191,7 +191,7 @@ public class BookHealthService(
              || f.Category == nameof(FindingCategory.CraftChecklist)
              || f.Category == nameof(FindingCategory.ReaderGripe))
             && f.Severity == "High");
-        // Third instance of the same false green, and the one with the least excuse: RFC 0010
+        // Third instance of the same false green, and the one with the least excuse: BIBLE ADR-10
         // records that the comprehension probes have never produced a single applied finding,
         // corpus-wide, all time — yet this check gates publication, and on a book they had never
         // read it gated it GREEN. Any one of the three reader-proxy instruments having run counts

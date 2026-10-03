@@ -144,7 +144,7 @@ become a `question` row so the trial balance can age it instead of dropping it.
 On GCNEG / GCSH / GCTOC with N = 8–20 injected defects (half abandoned, half resolved): precision
 ≥ 0.85, recall ≥ 0.70, F1 ≥ 0.678 (the *Lost in Stories* bar), ≤ 1.0 MODERATE+ control finding per
 10k words on the un-injected text, ≤ 10% of resolved injections mis-flagged. Any extractor or
-judge prompt change re-runs the harness before it ships (RFC 0010: re-admission by evidence).
+judge prompt change re-runs the harness before it ships (the battery value audit (BIBLE ADR-10): re-admission by evidence).
 
 ## 6a. GCTOC answer key — what Book the First actually owes (hand-read 2026-09-16)
 

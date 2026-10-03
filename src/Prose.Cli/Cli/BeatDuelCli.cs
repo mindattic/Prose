@@ -19,7 +19,7 @@ namespace Prose.Cli;
 /// --apply: on a "replace" verdict, write the candidate into the beat
 /// (Text + TextHash recomputed + Stale=1). Without it, verdict only.
 ///
-/// SS-A44: duels are votes — this command IS the explicit ask; invoking it
+/// SS-LAW-17: duels are votes — this command IS the explicit ask; invoking it
 /// passes the allowVotes gate.
 ///
 /// Exit codes: 0 = replace, 1 = keep, 2 = error.
@@ -110,7 +110,7 @@ public static class BeatDuelCli
         var result = await duelSvc.DuelAsync(
             originalText, candidateText,
             new DuelContext(storyTitle, goal, registerNotes, precedingText, beatId),
-            allowVotes: true); // this command is the explicit ask (SS-A44)
+            allowVotes: true); // this command is the explicit ask (SS-LAW-17)
 
         if (jsonMode)
         {
