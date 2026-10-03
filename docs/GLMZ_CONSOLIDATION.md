@@ -164,3 +164,12 @@ MCP writes can return `ok:true` while the server runs a stale schema: read every
 **Fix a sentence by hand**: a splice docket of `{beat:#, old, new, count}` rows, dry-run first, then `--apply`, one chapter node per docket.
 
 **Close a book pass**: `--factory capture` clean, `--ruling violations` 0, every beat re-marked read, every tagged entity verified, then `--factory status --node <CODE>` shows no failing cell before F7.
+
+## Standing decisions recorded in the Hub (2026-10-03, rule of cool, all as rulings; read them with `prose --ruling list --node <slug>`)
+
+- **Rook-series chronology** (01a10250): Magenta & Gunmetal Nov 2225 (Critical Mass Dec 2225), Neon & Rust 2227, Crimson & Chrome 2229, Iron & Silk early 2230. Iron & Silk's Headcount data covers 2211-2226; Phase 0 began 2229.
+- **Soraya's partition** (01a10251, Crimson & Chrome): one partition sealed mid-2225, cracked in Neon & Rust, count held two years.
+- **Devices** (01a10251, Bushido Coda): handheld screens are right for the unmeshed, for anyone who must stay off a traceable mesh, and for institutional or professional equipment; meshed characters use AR windows.
+- **Meridian charters** (01a10245): the 2208 Identity Charter and the 2219 Charter are two documents.
+- **Names:** only Dr. Nadia Park keeps Nadia (the Attendance courier is Nilsa); Bear the Pilsen fixer is Boris Johansen of Testament; Halcyon Civil Security is held through Halcyon Combine.
+- **Steppin' Razor** is 2217 (Sasha at nineteen on her first break from Sigma).
