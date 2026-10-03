@@ -12,11 +12,11 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "cd D:\Projects\MindAttic
 
 It will:
 
-1. `git pull` the sibling `MindAttic.UiUx` repo (hard-fail if dirty).
-2. Run `MindAttic.UiUx/sync/sync-prose.ps1` to splice latest components into the web host wwwroot (Writer/Codex).
+1. `git pull` the sibling `MindAttic.Web` monorepo, which holds the shared asset package in `MindAttic.Web/MindAttic.Web.Shared/` (hard-fail if dirty).
+2. Run `MindAttic.Web/MindAttic.Web.Shared/sync/sync-prose.ps1` to splice latest components into the web host wwwroot (Writer/Codex).
 3. `dotnet build` of the web host project(s) to catch compile errors locally before pushing.
 4. `git add` the updated wwwroot.
-5. If anything staged: `git commit -m "Sync MindAttic.UiUx for deploy (UTC)"`.
+5. If anything staged: `git commit -m "Sync MindAttic.Web.Shared for deploy (UTC)"`.
 6. `git push origin master` — Azure CI/CD fires automatically: **build → migrate → deploy**. The `migrate` stage applies schema + enables temporal versioning against Azure SQL via the OIDC service principal before `deploy` ships the app.
 7. Print the Actions URL for monitoring: <https://github.com/mindattic/Prose/actions/workflows/azure-deploy.yml>.
 
@@ -25,4 +25,5 @@ After running, summarize: which steps ran, what was committed/pushed (or that th
 Notes:
 - For a no-push rehearsal (sync + build only), append `--dry-run`: `npm run deploy -- --app prose --dry-run`. That stages the sync changes but skips the commit + push.
 - The legacy `scripts/cli/deploy.ps1` in this repo is dead code -- do not invoke it directly.
-- App profile lives in `MindAttic.Deploy/projects.json` under `apps[]` slug `prose`.
+- App profile lives in `MindAttic.Deploy/projects.json` under `apps[]` slug `prose`. It is currently `disabled` (Prose is local-only, with no hosted deployment target), so the command prints the profile's note and fires nothing until it is re-enabled.
+- The `prose` app is not part of the linked web deploy. That one (`npm run deploy -- --uiux`) publishes `MindAttic.Web.Shared` as a `V<n>` tag of `MindAttic.Web`, served from `https://cdn.jsdelivr.net/gh/mindattic/MindAttic.Web@V<n>/MindAttic.Web.Shared/<path>`, and deploys mindattic.com, ryandebraal.com, mindatticcares.com and Hyperspace.
