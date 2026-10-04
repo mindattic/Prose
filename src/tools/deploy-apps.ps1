@@ -16,12 +16,11 @@
             Writer.exe            the book editor (a WebView2 window onto the Hub)
             Hub.exe               the resident server - owns wwwroot\ in this folder
             wwwroot\              Hub's static assets, _content\ and _framework\
-            KdpPublish\           its own subfolder, deliberately
 
-    KdpPublish is NOT flat with the others. It ships its own wwwroot\ and its own launch.bat and
-    writes run logs beside its exe; publishing it into the same directory as the Hub would merge
-    two unrelated wwwroot trees and have the two launch.bat files overwrite each other. Writer and
-    Launcher have no content of their own, so they sit flat quite safely.
+    KdpPublish is NOT built here. It was decoupled into its own repo 2026-10-04
+    (github.com/mindattic/KdpPublish) with its own deploy pipeline, publishing standalone to
+    C:\Apps\KdpPublish\ — see that repo's Prose.KdpPublish\tools\deploy.ps1. The Launcher still
+    opens it from there (Prose.Launcher\MainWindow.xaml.cs's OpenKdp).
 
 .PARAMETER Apps
     Which to publish. Default: all of them.
@@ -49,7 +48,7 @@ param(
     # and drops the rest). ValidateSet rejects the first and misses the second. Since every
     # launch.bat invokes this through -File, the argument is normalised and checked below instead,
     # so all three spellings work and a typo gets a real error rather than a silent no-op.
-    [string[]]$Apps = @('Hub', 'Writer', 'Launcher', 'KdpPublish'),
+    [string[]]$Apps = @('Hub', 'Writer', 'Launcher'),
     [switch]$Launch,
     [string]$Start = ''
 )
@@ -57,7 +56,7 @@ param(
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 
-$known = @('Hub', 'Writer', 'Launcher', 'KdpPublish')
+$known = @('Hub', 'Writer', 'Launcher')
 $Apps = @($Apps | ForEach-Object { $_ -split '[,;\s]+' } | Where-Object { $_ })
 $unknown = @($Apps | Where-Object { $known -notcontains $_ })
 if ($unknown) {
@@ -93,7 +92,6 @@ $catalog = @{
     Hub        = @{ Proj = 'Prose.Hub\Prose.Hub.csproj';               Exe = 'Hub.exe';           Out = $root }
     Writer     = @{ Proj = 'Prose.Writer\Prose.Writer.csproj';         Exe = 'Writer.exe';        Out = $root }
     Launcher   = @{ Proj = 'Prose.Launcher\Prose.Launcher.csproj';     Exe = 'Launcher.exe';      Out = $root }
-    KdpPublish = @{ Proj = 'Prose.KdpPublish\Prose.KdpPublish.csproj'; Exe = 'Prose.KdpPublish.exe'; Out = (Join-Path $root 'KdpPublish') }
 }
 
 function Stop-App {
@@ -208,11 +206,7 @@ Write-Host '  Launchers' -ForegroundColor Cyan
 # letting the author edit in yesterday's UI believing they had just redeployed it.
 Write-Launcher -File 'Writer.bat'  -Title 'Prose Writer' -AppList 'Writer'     -StartApp 'Writer'
 Write-Launcher -File 'Hub.bat'     -Title 'Prose Hub'    -AppList 'Hub'        -StartApp 'Hub'
-Write-Launcher -File 'launch.bat'  -Title 'Prose'        -AppList 'Hub,Writer,Launcher,KdpPublish' -StartApp 'Launcher'
-
-# In its own subfolder, so plain launch.bat collides with nothing.
-Write-Launcher -File 'launch.bat' -Title 'KdpPublish' -AppList 'KdpPublish' `
-               -StartApp 'KdpPublish' -Dir $catalog.KdpPublish.Out
+Write-Launcher -File 'launch.bat'  -Title 'Prose'        -AppList 'Hub,Writer,Launcher' -StartApp 'Launcher'
 
 Write-Host ''
 Write-Host '  Published successfully.' -ForegroundColor Green

@@ -57,11 +57,20 @@ public partial class MainWindow : Window
         Close();
     }
 
+    /// <summary>KdpPublish's own absolute deploy location — decoupled into its own repo
+    /// (github.com/mindattic/KdpPublish) 2026-10-04, with its own deploy pipeline publishing
+    /// standalone here rather than side by side with this app under <see cref="Here"/>.</summary>
+    private const string KdpPublishExePath = @"C:\Apps\KdpPublish\Prose.KdpPublish.exe";
+
     private async void OpenKdp(object sender, RoutedEventArgs e)
     {
         if (!await EnsureHubAsync()) return;
-        // KdpPublish is deployed into its own subfolder (deploy-apps.ps1), with its own wwwroot.
-        if (!Launch(Path.Combine("KdpPublish", "Prose.KdpPublish.exe"))) return;
+        if (!File.Exists(KdpPublishExePath))
+        {
+            HubStatus.Text = $"{KdpPublishExePath} not found. Deploy it from the KdpPublish repo (tools\\deploy.ps1).";
+            return;
+        }
+        Process.Start(new ProcessStartInfo(KdpPublishExePath) { WorkingDirectory = Path.GetDirectoryName(KdpPublishExePath)!, UseShellExecute = true });
         Close();
     }
 
