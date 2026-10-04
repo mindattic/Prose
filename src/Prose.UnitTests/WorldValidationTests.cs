@@ -79,9 +79,18 @@ public class WorldValidationTests
     // subtype row and zero prose mentions, discarded outright rather than merged):
     //   ("character", "mira quintero") — MNEMOSYNC/Rhea stub discarded, OPTIC-7 row kept.
     //   ("place", "the circuit") — unmarked-clinic stub discarded, Meridian bazaar row kept.
-    // Kept as an empty, live tripwire — add an entry here only for a genuinely new
+    // Kept as a live tripwire — add an entry here only for a genuinely new
     // author-pending case, never to silence an unreviewed collision.
-    private static readonly (string EntityType, string Name)[] KnownUnresolvedDuplicates = [];
+    //   ("place", "the narrows") — reviewed 2026-10-03 (work order 01a10433-e508): two different
+    //   places. 01a0ce71-7174 is the Lotus district BCODA law 01a0e653-d65e places at Clybourn/
+    //   Fullerton/Ashland; 019d6143-a948 is the Mackinac Straits checkpoint, which Standing Contract
+    //   (SCON) tags five times, once in a beat that puts the Narrows at the Mackinac Bridge. Which
+    //   record keeps the name, and what SCON's Narrows is, is the author's call. Remove this entry
+    //   when it is resolved.
+    private static readonly (string EntityType, string Name)[] KnownUnresolvedDuplicates =
+    [
+        ("place", "the narrows"),
+    ];
 
     // ── 1. No two entities of the same type share a name ─────────────────
 
@@ -149,11 +158,12 @@ public class WorldValidationTests
     [Test]
     public void NoStaleForbiddenTerms()
     {
-        // Terms that have been corrected and must not reappear in live canon.
-        var forbidden = new (string term, string fix)[]
-        {
-            ("Emergent Life Form", "ELF = Electronic Life Form"),
-        };
+        // Terms that have been corrected and must not reappear in live canon. Empty, kept as a live
+        // tripwire: add an entry only when a recorded author ruling retires a term.
+        // Retired 2026-10-03: ("Emergent Life Form" → "Electronic Life Form"). Author law
+        // 01a1031e-9bdc reversed it: E.L.F. stands for Emergent Life Form, and older records that
+        // say "Electronic Life Form" keep the street's folk gloss. Neither expansion is forbidden.
+        var forbidden = Array.Empty<(string term, string fix)>();
 
         using var db = factory.CreateDbContext();
         var rows = db.Entities.AsNoTracking()
