@@ -79,18 +79,11 @@ public class WorldValidationTests
     // subtype row and zero prose mentions, discarded outright rather than merged):
     //   ("character", "mira quintero") — MNEMOSYNC/Rhea stub discarded, OPTIC-7 row kept.
     //   ("place", "the circuit") — unmarked-clinic stub discarded, Meridian bazaar row kept.
-    // Kept as a live tripwire — add an entry here only for a genuinely new
+    //   ("place", "the narrows") — resolved 2026-10-03 by author decision: the name is retired; the
+    //   Lotus district is The Clybourn Corridor, the Mackinac record the Straits of Mackinac Checkpoint.
+    // Kept as an empty, live tripwire — add an entry here only for a genuinely new
     // author-pending case, never to silence an unreviewed collision.
-    //   ("place", "the narrows") — reviewed 2026-10-03 (work order 01a10433-e508): two different
-    //   places. 01a0ce71-7174 is the Lotus district BCODA law 01a0e653-d65e places at Clybourn/
-    //   Fullerton/Ashland; 019d6143-a948 is the Mackinac Straits checkpoint, which Standing Contract
-    //   (SCON) tags five times, once in a beat that puts the Narrows at the Mackinac Bridge. Which
-    //   record keeps the name, and what SCON's Narrows is, is the author's call. Remove this entry
-    //   when it is resolved.
-    private static readonly (string EntityType, string Name)[] KnownUnresolvedDuplicates =
-    [
-        ("place", "the narrows"),
-    ];
+    private static readonly (string EntityType, string Name)[] KnownUnresolvedDuplicates = [];
 
     // ── 1. No two entities of the same type share a name ─────────────────
 

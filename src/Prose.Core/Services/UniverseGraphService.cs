@@ -723,7 +723,7 @@ public class UniverseGraphService : IUniverseGraphService
     }
 
     private static readonly string[] KnownTerritories = [
-        "The Shelf", "The Circuit", "The Narrows", "Old Harbor", "Geartown",
+        "The Shelf", "The Circuit", "The Clybourn Corridor", "Old Harbor", "Geartown",
         "The Spires", "The Core", "The Underworld", "The Gulch", "The Grind",
         "Mirror Mile", "The Threshold", "Dearborn Forge", "The Arcade"
     ];
