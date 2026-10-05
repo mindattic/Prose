@@ -844,7 +844,9 @@ an entity's tags — list / add / REMOVE. Added 2026-09-03: tags could be added 
 
 ### `--entity-tree`
 
-prose --entity-tree (--id <guid> | --slug <slug>) [--depth N] [--rel-types type1,type2] [--as-of date]
+prose --entity-tree (--id <guid> | --slug <slug>) [--depth N] [--rel-types type1,type2] [--as-of-beat <beat guid>]
+
+`--as-of-beat` drops edges whose `ValidFromBeatId`/`ValidUntilBeatId` window excludes that beat (same book); a cross-book window keeps the edge.
 
 <sub>handler `EntityTreeCli`</sub>
 

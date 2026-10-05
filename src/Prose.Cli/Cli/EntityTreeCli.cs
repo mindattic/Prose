@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// prose --entity-tree (--id &lt;guid&gt; | --slug &lt;slug&gt;) [--depth N] [--rel-types type1,type2] [--as-of "date"]
+/// prose --entity-tree (--id &lt;guid&gt; | --slug &lt;slug&gt;) [--depth N] [--rel-types type1,type2] [--as-of-beat &lt;beat guid&gt;]
 /// Prints a formatted relationship tree rooted at the entity.
 /// </summary>
 public static class EntityTreeCli
@@ -17,7 +17,7 @@ public static class EntityTreeCli
         string? slug = null;
         int depth = 3;
         string[]? relTypes = null;
-        DateTime? asOf = null;
+        Guid? asOfBeat = null;
 
         for (int i = 0; i < args.Length - 1; i++)
         {
@@ -36,8 +36,13 @@ public static class EntityTreeCli
                     relTypes = args[i + 1].Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
                     i++;
                     break;
-                case "--as-of":
-                    asOf = CliDates.ParseAsGiven(args[i + 1], "--as-of"); i++;
+                case "--as-of-beat":
+                    if (!Guid.TryParse(args[i + 1], out var b))
+                    {
+                        Console.Error.WriteLine($"--as-of-beat needs a beat GUID, got '{args[i + 1]}'.");
+                        return 1;
+                    }
+                    asOfBeat = b; i++;
                     break;
             }
         }
@@ -61,12 +66,12 @@ public static class EntityTreeCli
 
         if (entityId == null)
         {
-            Console.Error.WriteLine("Usage: prose --entity-tree (--id <guid> | --slug <slug>) [--depth N] [--rel-types type1,type2] [--as-of date]");
+            Console.Error.WriteLine("Usage: prose --entity-tree (--id <guid> | --slug <slug>) [--depth N] [--rel-types type1,type2] [--as-of-beat <beat guid>]");
             return 1;
         }
 
         var svc = services.GetRequiredService<EntityRelationshipService>();
-        var tree = await svc.GetTreeAsync(entityId.Value, depth, relTypes, asOf);
+        var tree = await svc.GetTreeAsync(entityId.Value, depth, relTypes, asOfBeat);
 
         if (string.IsNullOrEmpty(tree.Name))
         {

@@ -9,6 +9,8 @@ namespace Prose.Cli;
 /// prose --relation-aliases --list
 /// prose --relation-aliases --add --alias &lt;wording&gt; --canonical &lt;standardizedRelationType&gt; [--notes &lt;notes&gt;]
 /// prose --relation-aliases --remove --id &lt;id&gt;
+/// prose --relation-aliases --types
+/// prose --relation-aliases --apply [--dry-run]
 ///
 /// CRUD surface for <see cref="RelationTypeAlias"/>, the registry the <c>POST /api/edges</c> Hub
 /// endpoint consults to normalize free-text relationType wording (e.g. "has" -> "owns") before
@@ -22,6 +24,12 @@ public static class RelationAliasCli
     {
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
+
+        if (args.Contains("--types"))
+            return await ListTypesAsync(db);
+
+        if (args.Contains("--apply"))
+            return await ApplyAsync(db, dryRun: args.Contains("--dry-run"));
 
         if (args.Contains("--remove"))
         {
@@ -91,6 +99,74 @@ public static class RelationAliasCli
                 (string.IsNullOrWhiteSpace(r.Notes) ? "" : $"  — {r.Notes}"));
         return 0;
     }
+
+    /// <summary>Every live RelationType in the active universe with its count, plus the alias it resolves to.</summary>
+    static async Task<int> ListTypesAsync(ProseDbContext db)
+    {
+        var aliases = await LoadAliasMapAsync(db);
+        var types = await db.Edges.AsNoTracking()
+            .Where(e => e.InvalidatedAt == null)
+            .GroupBy(e => e.RelationType)
+            .Select(g => new { Type = g.Key, Count = g.Count() })
+            .OrderByDescending(x => x.Count).ThenBy(x => x.Type)
+            .ToListAsync();
+        foreach (var t in types)
+        {
+            var mapped = aliases.GetValueOrDefault(Normalize(t.Type));
+            Console.WriteLine($"  {t.Count,6}  {t.Type}" + (mapped != null ? $"  -> {mapped}" : ""));
+        }
+        Console.WriteLine($"[relation-aliases] {types.Count} distinct live relation types.");
+        return 0;
+    }
+
+    /// <summary>
+    /// Relabel every live edge whose RelationType is a registered alias to its canonical type.
+    /// When the same (source, target) already holds a live edge of the canonical type, the alias
+    /// edge is invalidated instead (same soft-delete as --merge-edge), so no pair ends up doubled.
+    /// </summary>
+    static async Task<int> ApplyAsync(ProseDbContext db, bool dryRun)
+    {
+        var aliases = await LoadAliasMapAsync(db);
+        if (aliases.Count == 0)
+        {
+            Console.WriteLine("[relation-aliases] No aliases registered — nothing to apply.");
+            return 0;
+        }
+
+        var live = await db.Edges.Where(e => e.InvalidatedAt == null).ToListAsync();
+        var occupied = live
+            .Select(e => (e.SourceId, e.TargetId, Type: Normalize(e.RelationType)))
+            .Where(k => !aliases.ContainsKey(k.Type))
+            .ToHashSet();
+
+        int relabeled = 0, invalidated = 0;
+        var now = DateTime.UtcNow;
+        foreach (var e in live)
+        {
+            if (!aliases.TryGetValue(Normalize(e.RelationType), out var canonical)) continue;
+            if (!occupied.Add((e.SourceId, e.TargetId, canonical)))
+            {
+                invalidated++;
+                if (!dryRun) e.InvalidatedAt = now;
+                Console.WriteLine($"  invalidate {e.Id}: '{e.RelationType}' (pair already has '{canonical}')");
+            }
+            else
+            {
+                relabeled++;
+                if (!dryRun) e.RelationType = canonical;
+            }
+        }
+
+        if (!dryRun) await db.SaveChangesAsync();
+        Console.WriteLine($"[relation-aliases] {(dryRun ? "DRY RUN — would relabel" : "Relabeled")} {relabeled}, " +
+            $"{(dryRun ? "would invalidate" : "invalidated")} {invalidated} duplicate(s).");
+        return 0;
+    }
+
+    static async Task<Dictionary<string, string>> LoadAliasMapAsync(ProseDbContext db) =>
+        (await db.Set<RelationTypeAlias>().AsNoTracking().ToListAsync())
+            .GroupBy(a => Normalize(a.Alias))
+            .ToDictionary(g => g.Key, g => Normalize(g.First().CanonicalRelationType));
 
     /// <summary>Same normalization POST /api/edges applies: trim, lowercase, spaces -> underscores.</summary>
     static string Normalize(string s) => s.Trim().ToLowerInvariant().Replace(' ', '_');

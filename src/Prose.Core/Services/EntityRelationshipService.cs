@@ -28,20 +28,26 @@ public class EntityRelTree
 public class EntityRelationshipService
 {
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
+    private readonly BeatRangeService beatRange;
 
-    public EntityRelationshipService(IDbContextFactory<ProseDbContext> dbFactory)
-        => this.dbFactory = dbFactory;
+    public EntityRelationshipService(IDbContextFactory<ProseDbContext> dbFactory, BeatRangeService beatRange)
+    {
+        this.dbFactory = dbFactory;
+        this.beatRange = beatRange;
+    }
 
     /// <summary>
     /// BFS traversal of the Edge graph rooted at <paramref name="entityId"/>.
     /// Bidirectional — follows both SourceId and TargetId edges.
     /// Each entity is visited at most once (cycle-safe).
+    /// With <paramref name="asOfBeatId"/>, an edge whose beat window excludes that beat is skipped;
+    /// an indeterminate window (cross-book bound) keeps the edge.
     /// </summary>
     public async Task<EntityRelTree> GetTreeAsync(
         Guid entityId,
         int maxDepth = 3,
         string[]? relTypes = null,
-        DateTime? asOfStoryDate = null,
+        Guid? asOfBeatId = null,
         CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -62,15 +68,15 @@ public class EntityRelationshipService
         };
 
         var visited = new HashSet<Guid> { entityId };
-        await ExpandAsync(db, tree, relTypes, asOfStoryDate, maxDepth, visited, ct);
+        await ExpandAsync(db, tree, relTypes, asOfBeatId, maxDepth, visited, ct);
         return tree;
     }
 
-    private static async Task ExpandAsync(
+    private async Task ExpandAsync(
         ProseDbContext db,
         EntityRelTree node,
         string[]? relTypes,
-        DateTime? asOfDate,
+        Guid? asOfBeatId,
         int maxDepth,
         HashSet<Guid> visited,
         CancellationToken ct)
@@ -84,12 +90,19 @@ public class EntityRelationshipService
         if (relTypes is { Length: > 0 })
             edgesQ = edgesQ.Where(e => relTypes.Contains(e.RelationType));
 
-        if (asOfDate.HasValue)
-            edgesQ = edgesQ.Where(e =>
-                (e.StoryValidFrom == null || e.StoryValidFrom <= asOfDate) &&
-                (e.StoryValidUntil == null || e.StoryValidUntil > asOfDate));
-
         var edges = await edgesQ.ToListAsync(ct);
+
+        if (asOfBeatId.HasValue)
+        {
+            var kept = new List<Edge>(edges.Count);
+            foreach (var e in edges)
+            {
+                if (e.ValidFromBeatId == null && e.ValidUntilBeatId == null) { kept.Add(e); continue; }
+                var result = await beatRange.CheckBeatInRangeAsync(asOfBeatId.Value, e.ValidFromBeatId, e.ValidUntilBeatId, ct);
+                if (result.InRange != false) kept.Add(e);
+            }
+            edges = kept;
+        }
 
         var neighborIds = edges
             .Select(e => e.SourceId == node.EntityId ? e.TargetId : e.SourceId)
@@ -126,7 +139,7 @@ public class EntityRelationshipService
         // child's subtree mark a sibling visited at a deeper level, so that sibling was skipped
         // here and whatever lay beyond it (within maxDepth) was never reached.
         foreach (var child in node.Children)
-            await ExpandAsync(db, child, relTypes, asOfDate, maxDepth, visited, ct);
+            await ExpandAsync(db, child, relTypes, asOfBeatId, maxDepth, visited, ct);
     }
 
     /// Formats a tree as a prompt-injectable context block.
@@ -154,10 +167,10 @@ public class EntityRelationshipService
         Guid entityId,
         int maxHops = 2,
         string[]? relTypes = null,
-        DateTime? asOfStoryDate = null,
+        Guid? asOfBeatId = null,
         CancellationToken ct = default)
     {
-        var tree = await GetTreeAsync(entityId, maxHops, relTypes, asOfStoryDate, ct);
+        var tree = await GetTreeAsync(entityId, maxHops, relTypes, asOfBeatId, ct);
         var ids = new HashSet<Guid>();
         CollectIds(tree, ids);
         return ids;
