@@ -5,7 +5,9 @@ using Prose.Core.Data.Entities;
 namespace Prose.Core.Services;
 
 public record CoOccurrence(Guid BeatId, Guid ChapterId, string ChapterTitle, int Ordinal, string Excerpt);
-public record GraphLink(Guid SourceId, string SourceName, string RelationType, Guid TargetId, string TargetName, string? Description);
+/// <summary>Origin "edge" = an Edges row (EdgeId set); "character" = a resolved row of the source
+/// character's own relationships field, read in place, never copied into Edges.</summary>
+public record GraphLink(Guid SourceId, string SourceName, string RelationType, Guid TargetId, string TargetName, string? Description, long? EdgeId, string Origin);
 public record SharedNeighbor(Guid Id, string Name, string EntityType, string RelationFromA, string RelationFromB);
 public record CastMember(Guid Id, string Name, string EntityType, int Beats);
 
@@ -52,10 +54,9 @@ public class GraphQueryService(IDbContextFactory<ProseDbContext> dbFactory)
     public async Task<List<SharedNeighbor>> SharedNeighborsAsync(Guid a, Guid b, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var edges = await db.Edges.AsNoTracking()
-            .Where(e => e.InvalidatedAt == null &&
-                (e.SourceId == a || e.TargetId == a || e.SourceId == b || e.TargetId == b))
-            .ToListAsync(ct);
+        var edges = (await LiveLinksAsync(db, ct))
+            .Where(e => e.SourceId == a || e.TargetId == a || e.SourceId == b || e.TargetId == b)
+            .ToList();
 
         Dictionary<Guid, string> RelationsOf(Guid id) => edges
             .Where(e => e.SourceId == id || e.TargetId == id)
@@ -78,7 +79,7 @@ public class GraphQueryService(IDbContextFactory<ProseDbContext> dbFactory)
     public async Task<List<GraphLink>?> PathBetweenAsync(Guid a, Guid b, int maxHops = 4, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var edges = await db.Edges.AsNoTracking().Where(e => e.InvalidatedAt == null).ToListAsync(ct);
+        var edges = await LiveLinksAsync(db, ct);
         var path = ShortestPath(edges, a, b, maxHops);
         if (path == null) return null;
         var ids = path.SelectMany(e => new[] { e.SourceId, e.TargetId }).Distinct().ToList();
@@ -145,9 +146,10 @@ public class GraphQueryService(IDbContextFactory<ProseDbContext> dbFactory)
             .Select(id => new CastMember(id, info[id].Name, info[id].EntityType, counts[id]))
             .OrderByDescending(c => c.Beats).ThenBy(c => c.Name).ToList();
 
-        var edges = await db.Edges.AsNoTracking()
-            .Where(e => e.InvalidatedAt == null && ids.Contains(e.SourceId) && ids.Contains(e.TargetId))
-            .ToListAsync(ct);
+        var idSet = ids.ToHashSet();
+        var edges = (await LiveLinksAsync(db, ct))
+            .Where(e => idSet.Contains(e.SourceId) && idSet.Contains(e.TargetId))
+            .ToList();
         var names = info.ToDictionary(kv => kv.Key, kv => kv.Value.Name);
         return (cast, edges.Select(e => ToLink(e, names)).ToList());
     }
@@ -161,9 +163,44 @@ public class GraphQueryService(IDbContextFactory<ProseDbContext> dbFactory)
         return ordered.Select(o => o.Beat.Id).ToList();
     }
 
+    public const string CharacterRecordSource = "character-record";
+
+    /// <summary>
+    /// Live Edges in the active universe plus every character relationship row whose target is
+    /// resolved, as transient Edge values (Id 0, Source = <see cref="CharacterRecordSource"/>).
+    /// A row whose (source, target, type) already has a live edge is skipped.
+    /// </summary>
+    private static async Task<List<Edge>> LiveLinksAsync(ProseDbContext db, CancellationToken ct)
+    {
+        var edges = await db.Edges.AsNoTracking().Where(e => e.InvalidatedAt == null).ToListAsync(ct);
+        var rows = await db.CharacterRelationships.AsNoTracking()
+            .Where(r => r.TargetEntityId != null && r.Status != "severed")
+            .Join(db.Entities, r => r.CharacterId, e => e.Id, (r, _) => r)
+            .Select(r => new { r.CharacterId, Target = r.TargetEntityId!.Value, r.Type, r.Description, r.StoryTension, r.Status })
+            .ToListAsync(ct);
+
+        var seen = edges.Select(e => (e.SourceId, e.TargetId, Norm(e.RelationType))).ToHashSet();
+        foreach (var r in rows)
+        {
+            var type = string.IsNullOrWhiteSpace(r.Type) ? "relationship" : r.Type.Trim();
+            if (!seen.Add((r.CharacterId, r.Target, Norm(type)))) continue;
+            var detail = string.Join(" — ", new[] { r.Description, r.StoryTension }.Where(s => !string.IsNullOrWhiteSpace(s)));
+            if (!string.IsNullOrWhiteSpace(r.Status) && r.Status != "active") detail = $"[{r.Status}] {detail}".Trim();
+            edges.Add(new Edge
+            {
+                SourceId = r.CharacterId, TargetId = r.Target, RelationType = type,
+                Description = detail.Length == 0 ? null : detail, Source = CharacterRecordSource,
+            });
+        }
+        return edges;
+    }
+
+    private static string Norm(string s) => s.Trim().ToLowerInvariant().Replace(' ', '_');
+
     private static GraphLink ToLink(Edge e, IReadOnlyDictionary<Guid, string> names) =>
         new(e.SourceId, names.GetValueOrDefault(e.SourceId, "?"), e.RelationType,
-            e.TargetId, names.GetValueOrDefault(e.TargetId, "?"), e.Description);
+            e.TargetId, names.GetValueOrDefault(e.TargetId, "?"), e.Description,
+            e.Id == 0 ? null : e.Id, e.Source == CharacterRecordSource ? "character" : "edge");
 
     private static Task<Dictionary<Guid, string>> NamesAsync(ProseDbContext db, List<Guid> ids, CancellationToken ct) =>
         db.Entities.AsNoTracking().IgnoreQueryFilters().Where(e => ids.Contains(e.Id)).ToDictionaryAsync(e => e.Id, e => e.Name, ct);

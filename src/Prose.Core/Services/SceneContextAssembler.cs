@@ -459,7 +459,7 @@ public class SceneContextAssembler(
             if (!edgesByEntity.TryGetValue(e.SourceId, out var listA)) edgesByEntity[e.SourceId] = listA = new();
             listA.Add((e.TargetId, e.RelationType, e.Description));
             if (!edgesByEntity.TryGetValue(e.TargetId, out var listB)) edgesByEntity[e.TargetId] = listB = new();
-            listB.Add((e.SourceId, e.RelationType, e.Description));
+            listB.Add((e.SourceId, IncomingMarker + e.RelationType, e.Description));
         }
         var namesById = matched.Values.ToDictionary(r => r.EntityId, r => r.Name);
 
@@ -658,7 +658,11 @@ public class SceneContextAssembler(
     /// rival, wields, betrayed-by, …), even though the graph-expansion pass above already
     /// queried that exact data to decide roster membership.
     /// </summary>
-    private static void AppendRelationships(
+    /// <summary>Prefix on an edgesByEntity entry seen from the edge's TARGET side, so it renders
+    /// "Kyle frequents them", not "frequents Kyle" (which inverted every edge on the target's block).</summary>
+    internal const string IncomingMarker = "←";
+
+    internal static void AppendRelationships(
         StringBuilder sb, Guid entityId,
         Dictionary<Guid, List<(Guid OtherId, string RelationType, string? Description)>> edgesByEntity,
         Dictionary<Guid, string> namesById)
@@ -666,7 +670,9 @@ public class SceneContextAssembler(
         if (!edgesByEntity.TryGetValue(entityId, out var edges) || edges.Count == 0) return;
         var lines = edges
             .Where(e => namesById.ContainsKey(e.OtherId))
-            .Select(e => $"{e.RelationType} {namesById[e.OtherId]}" +
+            .Select(e => (e.RelationType.StartsWith(IncomingMarker, StringComparison.Ordinal)
+                    ? $"{namesById[e.OtherId]} {e.RelationType[IncomingMarker.Length..]} them"
+                    : $"{e.RelationType} {namesById[e.OtherId]}") +
                 (string.IsNullOrWhiteSpace(e.Description) ? "" : $" — {Clip(e.Description, 80)}"))
             .Take(5)
             .ToList();

@@ -67,7 +67,7 @@ public static class GraphQueryCli
                 }
                 foreach (var link in path)
                     Console.WriteLine($"  {link.SourceName} —{link.RelationType}→ {link.TargetName}" +
-                        (string.IsNullOrWhiteSpace(link.Description) ? "" : $"  ({link.Description})"));
+                        (string.IsNullOrWhiteSpace(link.Description) ? "" : $"  ({link.Description})") + Tag(link));
                 Console.WriteLine($"[graph-query] {path.Count} hop(s).");
                 return 0;
             }
@@ -92,7 +92,7 @@ public static class GraphQueryCli
         var (cast, links) = await graph.CastAsync(beatIds);
         foreach (var c in cast) Console.WriteLine($"  {c.Name} [{c.EntityType}]  in {c.Beats} beat(s)");
         if (links.Count > 0) Console.WriteLine("  links:");
-        foreach (var link in links) Console.WriteLine($"    {link.SourceName} —{link.RelationType}→ {link.TargetName}");
+        foreach (var link in links) Console.WriteLine($"    {link.SourceName} —{link.RelationType}→ {link.TargetName}" + Tag(link));
         Console.WriteLine($"[graph-query] {cast.Count} tagged entit(ies), {links.Count} link(s) among them, over {beatIds.Count} beat(s).");
         return 0;
     }
@@ -104,6 +104,8 @@ public static class GraphQueryCli
         if (hit == null) Console.Error.WriteLine($"[graph-query] {flag} '{idOrSlug}' did not resolve to exactly one entity — pass the GUID.");
         return hit;
     }
+
+    static string Tag(GraphLink link) => link.EdgeId is { } id ? $"  [edge {id}]" : "  [character record]";
 
     static int Usage()
     {

@@ -53,6 +53,28 @@ public class CharacterBehaviorFormatterTests
     }
 
     [Test]
+    public void Relationships_render_from_the_side_reading_them()
+    {
+        var employer = Guid.NewGuid();
+        var worker = Guid.NewGuid();
+        var names = new Dictionary<Guid, string> { [employer] = "Acme", [worker] = "John Doe" };
+        var byEntity = new Dictionary<Guid, List<(Guid OtherId, string RelationType, string? Description)>>
+        {
+            [worker] = [(employer, "works_for", null)],
+            [employer] = [(worker, SceneContextAssembler.IncomingMarker + "works_for", null)],
+        };
+
+        var workerBlock = new System.Text.StringBuilder();
+        SceneContextAssembler.AppendRelationships(workerBlock, worker, byEntity, names);
+        var employerBlock = new System.Text.StringBuilder();
+        SceneContextAssembler.AppendRelationships(employerBlock, employer, byEntity, names);
+
+        Assert.That(workerBlock.ToString(), Does.Contain("works_for Acme"));
+        Assert.That(employerBlock.ToString(), Does.Contain("John Doe works_for them"));
+        Assert.That(employerBlock.ToString(), Does.Not.Contain("works_for John Doe"));
+    }
+
+    [Test]
     public void NamesOverlap_rejects_blank_and_tiny_names()
     {
         Assert.That(CharacterBehaviorFormatter.NamesOverlap("", "John"), Is.False);
