@@ -8,6 +8,7 @@ namespace Prose.Cli;
 /// <summary>
 /// prose --set-edge-validity --edge &lt;edgeId&gt; [--slug &lt;slug&gt;]
 ///        [--from-beat-number &lt;N&gt;] [--until-beat-number &lt;N&gt;] [--clear-from] [--clear-until]
+/// prose --set-edge-validity --edge &lt;edgeId&gt; --invalidate --reason "&lt;why it was never true&gt;"
 ///
 /// Sets/adjusts/clears an existing Edge's beat-scoped validity window
 /// (Edge.ValidFromBeatId/ValidUntilBeatId — see BeatRangeService). The common real workflow: an
@@ -38,6 +39,9 @@ public static class SetEdgeValidityCli
                 "[--from-beat-number <N>] [--until-beat-number <N>] [--clear-from] [--clear-until]");
             return 2;
         }
+
+        if (args.Contains("--invalidate"))
+            return await InvalidateAsync(services, edgeId, Flag(args, "--reason"));
 
         var wantsFrom = fromBeatNumberArg != null || clearFrom;
         var wantsUntil = untilBeatNumberArg != null || clearUntil;
@@ -123,6 +127,28 @@ public static class SetEdgeValidityCli
         Console.WriteLine($"[set-edge-validity] Edge {edgeId} (\"{edge.RelationType}\"):");
         Console.WriteLine($"  ValidFromBeatId:  {beforeFrom} -> {edge.ValidFromBeatId}");
         Console.WriteLine($"  ValidUntilBeatId: {beforeUntil} -> {edge.ValidUntilBeatId}");
+        return 0;
+    }
+
+    /// <summary>Retire an edge that was never true (a test row, a wrong link): soft-delete via
+    /// InvalidatedAt, the same as --merge-edge's loser. The reason is appended to its Description.</summary>
+    static async Task<int> InvalidateAsync(IServiceProvider services, long edgeId, string? reason)
+    {
+        if (string.IsNullOrWhiteSpace(reason))
+        {
+            Console.Error.WriteLine("[set-edge-validity] --invalidate requires --reason \"<why this edge was never true>\".");
+            return 2;
+        }
+        var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var edge = await db.Edges.IgnoreQueryFilters().FirstOrDefaultAsync(e => e.Id == edgeId);
+        if (edge == null) { Console.Error.WriteLine($"[set-edge-validity] No edge with id {edgeId}."); return 1; }
+        if (edge.InvalidatedAt != null) { Console.Error.WriteLine($"[set-edge-validity] Edge {edgeId} is already invalidated."); return 1; }
+
+        edge.InvalidatedAt = DateTime.UtcNow;
+        edge.Description = string.IsNullOrWhiteSpace(edge.Description) ? $"[invalidated: {reason}]" : $"{edge.Description} [invalidated: {reason}]";
+        await db.SaveChangesAsync();
+        Console.WriteLine($"[set-edge-validity] Invalidated edge {edgeId} (\"{edge.RelationType}\") {edge.SourceId} -> {edge.TargetId}.");
         return 0;
     }
 

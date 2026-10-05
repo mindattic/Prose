@@ -2130,6 +2130,8 @@ the world's write path and station F1 (RFC 0015 §3.3–3.4).
 
 prose --set-edge-validity --edge <edgeId> [--slug <slug>] [--from-beat-number <N>] [--until-beat-number <N>] [--clear-from] [--clear-until] Sets/adjusts/clears an existing edge's beat-scoped validity window (2026-09-02, replaces the dead DateTime story-time mechanism). See SetEdgeValidityCli.
 
+prose --set-edge-validity --edge <edgeId> --invalidate --reason "<why it was never true>" retires an edge that was never true (test row, wrong link): sets InvalidatedAt and appends the reason to its Description. Edge ids show in `--graph-query path|cast` output.
+
 <sub>handler `SetEdgeValidityCli`</sub>
 
 ### `--set-narrative-mode`
