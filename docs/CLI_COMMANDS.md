@@ -1112,6 +1112,19 @@ GraphHealthService — orphaned/weakly-connected/malformed world-graph node audi
 
 <sub>handler `GraphHealthCli`</sub>
 
+### `--graph-query`
+
+```
+prose --universe <u> --graph-query co-occurrence --a <id|slug> --b <id|slug> [--book <slug>] [--limit N]
+prose --universe <u> --graph-query shared-neighbors --a <id|slug> --b <id|slug>
+prose --universe <u> --graph-query path --a <id|slug> --b <id|slug> [--max-hops N]
+prose --universe <u> --graph-query cast (--beat <guid> | --chapter <id|slug>)
+```
+
+Read-only answers over the two stored connections: entity tags in beats (`BeatEntityMentions`) and live `Edges`. `co-occurrence` = beats tagging both entities (reading order with `--book`); `shared-neighbors` = entities with a live edge to both; `path` = shortest chain of live edges; `cast` = tagged entities in a beat/chapter and every edge among them. Files nothing, scores nothing.
+
+<sub>handler `GraphQueryCli`</sub>
+
 ### `--grep-beats`
 
 ```
@@ -1806,6 +1819,8 @@ replace an EXISTING node's beats wholesale from a .node file. The other half of 
 prose --relation-aliases --list
 prose --relation-aliases --add --alias <wording> --canonical <standardizedRelationType> [--notes <notes>]
 prose --relation-aliases --remove --id <id>
+prose --universe <u> --relation-aliases --types              # live relation types, counts, and the canonical each alias resolves to
+prose --universe <u> --relation-aliases --apply [--dry-run]  # relabel alias edges to canonical; a pair already holding the canonical edge invalidates the duplicate
 ```
 
 CRUD for RelationTypeAliases — normalizes link_entities free-text RelationType wording (e.g. "has" -> "owns") so the same relationship doesn't fork into multiple Edge rows.
