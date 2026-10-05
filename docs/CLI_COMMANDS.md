@@ -1115,10 +1115,10 @@ GraphHealthService — orphaned/weakly-connected/malformed world-graph node audi
 ### `--graph-query`
 
 ```
-prose --universe <u> --graph-query co-occurrence --a <id|slug> --b <id|slug> [--book <slug>] [--limit N]
+prose --universe <u> --graph-query co-occurrence --a <id|slug> --b <id|slug> [--in-book <slug>] [--limit N]
 prose --universe <u> --graph-query shared-neighbors --a <id|slug> --b <id|slug>
 prose --universe <u> --graph-query path --a <id|slug> --b <id|slug> [--max-hops N]
-prose --universe <u> --graph-query cast (--beat <guid> | --chapter <id|slug>)
+prose --universe <u> --graph-query cast (--at-beat <guid> | --chapter <id|slug>)
 ```
 
 Read-only answers over the two stored connections: entity tags in beats (`BeatEntityMentions`) and live `Edges`. `co-occurrence` = beats tagging both entities (reading order with `--book`); `shared-neighbors` = entities with a live edge to both; `path` = shortest chain of live edges; `cast` = tagged entities in a beat/chapter and every edge among them. Files nothing, scores nothing.
