@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**285 tools** across **51 tool families.**
+**289 tools** across **52 tool families.**
 
 ## Families
 
@@ -40,6 +40,7 @@
 | [Findings](#findings) | 5 |
 | [Gear Entity Crud](#gear-entity-crud) | 8 |
 | [Glossary](#glossary) | 4 |
+| [Graph Query](#graph-query) | 4 |
 | [Hub](#hub) | 3 |
 | [Ledger](#ledger) | 4 |
 | [Lore Triple](#lore-triple) | 4 |
@@ -1182,6 +1183,40 @@ Add or update one Master Glossary entry for the current universe. term is the wo
 - `fullForm` (string, required) — Full expansion if an acronym; empty for plain vocabulary.
 - `definition` (string, required) — Reader-facing definition shown in the glossary.
 - `category` (string, optional) — Optional grouping category (e.g. 'Enforcement', 'Currency').
+
+## Graph Query
+
+<sub>`GraphQueryTools`</sub>
+
+### `beat_cast`
+
+Who and what is in a beat or a whole chapter: every tagged entity (with how many beats it appears in) and every live relationship edge among them. Read-only.
+
+- `beatOrChapter` (string, required) — A beat GUID, or a chapter GUID/slug/NodeCode.
+
+### `co_occurrence`
+
+Every beat where two entities are both tagged (e.g. two characters sharing a scene, or a character and a motif). With a book, results are in that book's reading order. Read-only; derived from the entity tags the prose carries.
+
+- `a` (string, required) — First entity GUID or slug.
+- `b` (string, required) — Second entity GUID or slug.
+- `book` (string, optional) — Optional book GUID, slug or NodeCode to restrict to and order by.
+- `limit` (int, optional) — Maximum beats (default 100).
+
+### `path_between`
+
+Shortest chain of live relationship edges connecting two entities (either direction), e.g. how a minor character is tied to the antagonist. Returns null path when none exists within maxHops. Read-only.
+
+- `a` (string, required) — Start entity GUID or slug.
+- `b` (string, required) — End entity GUID or slug.
+- `maxHops` (int, optional) — Maximum hops (default 4).
+
+### `shared_neighbors`
+
+Entities that have a live relationship edge to BOTH given entities (common allies, shared employer, a place both frequent), with each side's relation type. Read-only.
+
+- `a` (string, required) — First entity GUID or slug.
+- `b` (string, required) — Second entity GUID or slug.
 
 ## Hub
 
