@@ -419,7 +419,7 @@ public class SceneContextAssembler(
             if (ids.Count > 0)
             {
                 graphEdges = await db.Set<Edge>().AsNoTracking()
-                    .Where(e => ids.Contains(e.SourceId) || ids.Contains(e.TargetId))
+                    .Where(e => e.InvalidatedAt == null && (ids.Contains(e.SourceId) || ids.Contains(e.TargetId)))
                     .OrderByDescending(e => e.Weight)
                     .Take(64)
                     .ToListAsync(ct);
