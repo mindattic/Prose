@@ -669,6 +669,20 @@ public class CapturePinTests : WorldFixture
     }
 
     [Test]
+    public void PinNameBlockers_names_the_tag_that_stops_a_pin_and_ignores_the_pin_itself()
+    {
+        // 2026-10-05: "Rogers Park" pinned 0 beats because "Park" was tagged as a character inside it.
+        var park = Guid.CreateVersion7();
+        var place = Guid.CreateVersion7();
+        var stored = $"north to Rogers <entity repo=\"character\" guid=\"{park}\">Park</entity>, then " +
+                     $"<entity repo=\"place\" guid=\"{place}\">Rogers Park</entity> again, and Park alone.";
+        Assert.That(CaptureScanner.PinName(stored, "Rogers Park", place, "place"), Is.EqualTo(stored), "the blocked use is left alone");
+        var blockers = CaptureScanner.PinNameBlockers(stored, "Rogers Park", place);
+        Assert.That(blockers, Is.EqualTo(new List<(string, Guid)> { ("Park", park) }), "only the character tag inside the name blocks; the place's own tag does not");
+        Assert.That(CaptureScanner.PinNameBlockers("no name here at all", "Rogers Park", place), Is.Empty);
+    }
+
+    [Test]
     public async Task A_name_the_universe_makes_ambiguous_is_resolved_from_what_the_book_already_tags()
     {
         // "Sable" is Sable's whole name and also a curated alias of "Sable Whitfield": two whole

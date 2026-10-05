@@ -214,11 +214,16 @@ public static class FactoryCli
                             if (pinType == null) { Console.Error.WriteLine($"[capture] no entity {pinTo}."); return 1; }
                             var sp = await services.GetRequiredService<BookSpineService>().GetAsync(book);
                             int pinnedBeats = 0;
+                            // Uses the pin had to leave alone, by the tag in the way (2026-10-05: "Rogers Park"
+                            // pinned 0 beats in silence because "Park" was tagged as a character inside it).
+                            var blockers = new Dictionary<(string Surface, Guid EntityId), int>();
                             foreach (var beatId in sp.Chapters.SelectMany(c => c.Beats).Select(b => b.BeatId))
                             {
                                 string before;
                                 await using (var db0 = await dbf.CreateDbContextAsync())
                                     before = await db0.Beats.AsNoTracking().Where(b => b.Id == beatId).Select(b => b.Text).FirstAsync();
+                                foreach (var blocker in CaptureScanner.PinNameBlockers(before, pinName, pinTo))
+                                    blockers[blocker] = blockers.GetValueOrDefault(blocker) + 1;
                                 var pinned = CaptureScanner.PinName(before, pinName, pinTo, pinType);
                                 if (pinned == before) continue;
                                 await workbench.UpdateBeatTextAsync(beatId, pinned, BeatWriteReason.TagMaintenance, deferAnalysis: true);
@@ -226,6 +231,18 @@ public static class FactoryCli
                             }
                             report = await scanner.ScanAsync(book);
                             Console.WriteLine($"[capture] pinned \"{pinName}\" to {pinTo} ({pinType}) in {pinnedBeats} beat(s). Unresolved now: {report.Unresolved.Count}.");
+                            foreach (var ((blockSurface, blockId), n) in blockers)
+                                Console.WriteLine($"[capture] left {n} use(s) of \"{pinName}\" alone: \"{blockSurface}\" inside it is already tagged as {blockId}. " +
+                                                  $"Take that tag off with --retag-name \"{blockSurface}\" --from {blockId} (add --except-beats where it is right), then pin again.");
+                            await using (var dbr = await dbf.CreateDbContextAsync())
+                            {
+                                var nobody = await dbr.Rulings.AsNoTracking()
+                                    .Where(r => r.Kind == RulingKinds.Incidental && r.SupersededById == null && r.BookId == book && r.Pattern != null)
+                                    .Select(r => new { r.Id, r.Pattern }).ToListAsync();
+                                foreach (var r in nobody.Where(r => string.Equals(r.Pattern!.Trim(), pinName.Trim(), StringComparison.OrdinalIgnoreCase)))
+                                    Console.WriteLine($"[capture] incidental ruling {r.Id} says \"{pinName}\" is nobody in this book, so saves will not derive it; " +
+                                                      $"supersede that ruling if \"{pinName}\" is now {pinTo}.");
+                            }
                         }
                         if (Flag("--retag-name") is { } surface && Guid.TryParse(Flag("--from"), out var fromId))
                         {
@@ -273,7 +290,17 @@ public static class FactoryCli
                             }
                             Console.WriteLine($"[capture] \"{surface}\": {moved} tag(s) {(toId is null ? "taken off" : $"moved to {toId} ({toType})")} in {beatsSaved} beat(s); " +
                                               $"{kept} beat(s) kept as they were (--except-beats).");
-                            if (cameBack > 0) return 3;
+                            if (cameBack > 0)
+                            {
+                                // The save re-derives every tag from the book's names and aliases, so a removed tag
+                                // only stays off when this book says the surface is nobody (EntityMentionScanner).
+                                if (toId is null)
+                                    Console.Error.WriteLine($"[capture] to keep \"{surface}\" untagged in this book, record that it is nobody here, then run this again: " +
+                                                            $"prose --universe <u> --ruling add --kind incidental --node <book> --pattern \"{surface}\" --text \"<why>\". " +
+                                                            $"Tags already in place elsewhere in the book stay (they are pins); new mentions will need tagging by hand. " +
+                                                            $"If the name is an alias on a record that should not carry it, remove the alias instead.");
+                                return 3;
+                            }
                             report = await scanner.ScanAsync(book);
                         }
                         if (args.Contains("--pin") && report.Unresolved.Any(n => n.BookSays != null))

@@ -167,6 +167,38 @@ public sealed class CaptureScanner(IDbContextFactory<ProseDbContext> dbFactory, 
         return sb.ToString();
     }
 
+    /// <summary>Why <see cref="PinName"/> left whole-word uses of <paramref name="name"/> alone: every
+    /// existing tag that covers part of such a use in the readable text (e.g. "Rogers Park" where "Park"
+    /// is already tagged as a character), as its surface and entity, once each. A tag that already wraps
+    /// exactly <paramref name="name"/> for <paramref name="target"/> is not a blocker.</summary>
+    public static List<(string Surface, Guid EntityId)> PinNameBlockers(string stored, string name, Guid target)
+    {
+        var tags = TagWithGuid.Matches(stored);
+        var plain = new StringBuilder();
+        var owner = new List<int>();
+        int i = 0;
+        for (int t = 0; t < tags.Count; t++)
+        {
+            var m = tags[t];
+            for (; i < m.Index; i++) { plain.Append(stored[i]); owner.Add(-1); }
+            foreach (var c in m.Groups[2].Value) { plain.Append(c); owner.Add(t); }
+            i = m.Index + m.Length;
+        }
+        for (; i < stored.Length; i++) { plain.Append(stored[i]); owner.Add(-1); }
+        var result = new List<(string, Guid)>();
+        var seen = new HashSet<int>();
+        foreach (System.Text.RegularExpressions.Match h in System.Text.RegularExpressions.Regex.Matches(plain.ToString(),
+                     $@"(?<!\w){System.Text.RegularExpressions.Regex.Escape(name)}(?!\w)"))
+            foreach (var t in Enumerable.Range(h.Index, h.Length).Select(k => owner[k]).Where(k => k >= 0).Distinct())
+            {
+                var tag = tags[t];
+                if (!Guid.TryParse(tag.Groups[1].Value, out var id)) continue;
+                if (id == target && tag.Groups[2].Value == name) continue;
+                if (seen.Add(t)) result.Add((tag.Groups[2].Value, id));
+            }
+        return result;
+    }
+
     private static readonly System.Text.RegularExpressions.Regex TagWithGuid =
         new(@"<entity\b[^>]*\bguid=""([^""]*)""[^>]*>(.*?)</entity>", System.Text.RegularExpressions.RegexOptions.Singleline);
 
