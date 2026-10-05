@@ -2896,8 +2896,8 @@ if (args.Contains("--set-edge-validity"))
     return;
 }
 
-// prose --universe <u> --graph-query co-occurrence|shared-neighbors|path --a <id|slug> --b <id|slug> [--book <slug>] [--max-hops N]
-// prose --universe <u> --graph-query cast (--beat <guid> | --chapter <id|slug>)
+// prose --universe <u> --graph-query co-occurrence|shared-neighbors|path --a <id|slug> --b <id|slug> [--in-book <slug>] [--max-hops N]
+// prose --universe <u> --graph-query cast (--at-beat <guid> | --chapter <id|slug>)
 // Read-only answers over entity tags in beats and live Edges. See GraphQueryCli.
 if (args.Contains("--graph-query"))
 {

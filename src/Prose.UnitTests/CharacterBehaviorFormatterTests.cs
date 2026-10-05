@@ -15,7 +15,7 @@ public class CharacterBehaviorFormatterTests
             ["high"] = "snaps at allies",
             ["medium"] = "counts exits",
         };
-        var line = CharacterBehaviorFormatter.FormatUnderPressure(stress, ["cleans his gun"], ["his own temper"], "short words", 800);
+        var line = CharacterBehaviorFormatter.FormatUnderPressure(stress, ["cleans his gun"], ["his own temper"], "short words");
 
         Assert.That(line, Does.StartWith("UNDER PRESSURE"));
         var low = line.IndexOf("low: jokes", StringComparison.Ordinal);
@@ -32,14 +32,14 @@ public class CharacterBehaviorFormatterTests
     [Test]
     public void UnderPressure_is_empty_when_nothing_is_recorded()
     {
-        Assert.That(CharacterBehaviorFormatter.FormatUnderPressure(new Dictionary<string, string>(), [], [], null, 400), Is.Empty);
+        Assert.That(CharacterBehaviorFormatter.FormatUnderPressure(new Dictionary<string, string>(), [], [], null), Is.Empty);
     }
 
     [Test]
     public void UnderPressure_long_entry_cannot_crowd_out_critical()
     {
         var stress = new Dictionary<string, string> { ["low"] = new string('x', 2000), ["critical"] = "breaks" };
-        var line = CharacterBehaviorFormatter.FormatUnderPressure(stress, [], [], null, 300);
+        var line = CharacterBehaviorFormatter.FormatUnderPressure(stress, [], [], null);
         Assert.That(line, Does.Contain("critical: breaks"));
     }
 

@@ -211,7 +211,7 @@ public class DialogueService
 
         var pressure = CharacterBehaviorFormatter.FormatUnderPressure(
             c.Behavioral.StressResponses, c.Psychology.CopingMechanisms, c.Psychology.BlindSpots,
-            speechUnderPressure: null, maxChars: 400);
+            speechUnderPressure: null);
         if (pressure.Length > 0) signals.Add(pressure);
 
         // Contradictions — what they do when values conflict (often surface as dialog)

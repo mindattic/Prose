@@ -6,10 +6,10 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// prose --universe &lt;u&gt; --graph-query co-occurrence --a &lt;id|slug&gt; --b &lt;id|slug&gt; [--book &lt;slug&gt;] [--limit N]
+/// prose --universe &lt;u&gt; --graph-query co-occurrence --a &lt;id|slug&gt; --b &lt;id|slug&gt; [--in-book &lt;slug&gt;] [--limit N]
 /// prose --universe &lt;u&gt; --graph-query shared-neighbors --a &lt;id|slug&gt; --b &lt;id|slug&gt;
 /// prose --universe &lt;u&gt; --graph-query path --a &lt;id|slug&gt; --b &lt;id|slug&gt; [--max-hops N]
-/// prose --universe &lt;u&gt; --graph-query cast (--beat &lt;guid&gt; | --chapter &lt;id|slug&gt;)
+/// prose --universe &lt;u&gt; --graph-query cast (--at-beat &lt;guid&gt; | --chapter &lt;id|slug&gt;)
 ///
 /// Read-only answers over entity tags in beats and live Edges. See <see cref="GraphQueryService"/>.
 /// </summary>
@@ -33,7 +33,7 @@ public static class GraphQueryCli
             case "co-occurrence":
             {
                 Guid? bookId = null;
-                if (Flag(args, "--book") is { } bookRef)
+                if (Flag(args, "--in-book") is { } bookRef)
                 {
                     await using var db = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
                     var book = await NodeRefResolver.ResolveNodeAsync(db, bookRef);
@@ -79,7 +79,7 @@ public static class GraphQueryCli
     static async Task<int> CastAsync(string[] args, IServiceProvider services, GraphQueryService graph)
     {
         List<Guid> beatIds;
-        if (Guid.TryParse(Flag(args, "--beat"), out var beatId)) beatIds = [beatId];
+        if (Guid.TryParse(Flag(args, "--at-beat"), out var beatId)) beatIds = [beatId];
         else if (Flag(args, "--chapter") is { } chapterRef)
         {
             await using var db = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
@@ -108,8 +108,8 @@ public static class GraphQueryCli
     static int Usage()
     {
         Console.Error.WriteLine(
-            "Usage: prose --universe <u> --graph-query co-occurrence|shared-neighbors|path --a <id|slug> --b <id|slug> [--book <slug>] [--max-hops N]\n" +
-            "       prose --universe <u> --graph-query cast (--beat <guid> | --chapter <id|slug>)");
+            "Usage: prose --universe <u> --graph-query co-occurrence|shared-neighbors|path --a <id|slug> --b <id|slug> [--in-book <slug>] [--max-hops N]\n" +
+            "       prose --universe <u> --graph-query cast (--at-beat <guid> | --chapter <id|slug>)");
         return 2;
     }
 

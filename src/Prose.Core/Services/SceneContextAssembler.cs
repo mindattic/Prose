@@ -752,8 +752,6 @@ public class SceneContextAssembler(
         ProseDbContext db, StringBuilder sb, SceneEntityRef r, string? speechUnderPressure,
         Dictionary<Guid, string> namesById, CancellationToken ct)
     {
-        const int MaxPressureChars = 500;
-
         var maps = await db.Set<CharacterBehavioralMap>().AsNoTracking()
             .Where(m => m.CharacterId == r.EntityId &&
                 (m.Bucket == "stress_responses" || m.Bucket == "interpersonal_modes"))
@@ -772,7 +770,7 @@ public class SceneContextAssembler(
         var coping = traits.Where(t => t.Bucket == "coping_mechanisms" && !string.IsNullOrWhiteSpace(t.Trait)).Select(t => t.Trait).ToList();
         var blind = traits.Where(t => t.Bucket == "blind_spots" && !string.IsNullOrWhiteSpace(t.Trait)).Select(t => t.Trait).ToList();
 
-        var pressure = CharacterBehaviorFormatter.FormatUnderPressure(stress, coping, blind, speechUnderPressure, MaxPressureChars);
+        var pressure = CharacterBehaviorFormatter.FormatUnderPressure(stress, coping, blind, speechUnderPressure);
         if (pressure.Length > 0) sb.AppendLine(pressure);
 
         var modes = maps.Where(m => m.Bucket == "interpersonal_modes")

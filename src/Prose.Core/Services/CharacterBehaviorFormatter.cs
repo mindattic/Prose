@@ -9,28 +9,28 @@ public static class CharacterBehaviorFormatter
 {
     public static readonly string[] StressLevels = ["low", "medium", "high", "critical"];
 
+    /// <summary>Per-part caps: each stress level is the payload, so it gets more room than the rest.
+    /// Fixed per part so a long "low" entry cannot crowd out "critical".</summary>
+    public const int LevelChars = 140, OtherChars = 90;
+
     public static string FormatUnderPressure(
         IReadOnlyDictionary<string, string> stressResponses,
         IReadOnlyList<string> copingMechanisms,
         IReadOnlyList<string> blindSpots,
-        string? speechUnderPressure,
-        int maxChars)
+        string? speechUnderPressure)
     {
         var parts = new List<string>();
         foreach (var level in StressLevels)
         {
             var value = Lookup(stressResponses, level);
-            if (!string.IsNullOrWhiteSpace(value)) parts.Add($"{level}: {value.Trim()}");
+            if (!string.IsNullOrWhiteSpace(value)) parts.Add(Clip($"{level}: {value.Trim()}", LevelChars));
         }
-        if (copingMechanisms.Count > 0) parts.Add("copes by: " + string.Join("; ", copingMechanisms));
-        if (blindSpots.Count > 0) parts.Add("blind to: " + string.Join("; ", blindSpots));
-        if (!string.IsNullOrWhiteSpace(speechUnderPressure)) parts.Add("speech: " + speechUnderPressure.Trim());
+        if (copingMechanisms.Count > 0) parts.Add(Clip("copes by: " + string.Join("; ", copingMechanisms), OtherChars));
+        if (blindSpots.Count > 0) parts.Add(Clip("blind to: " + string.Join("; ", blindSpots), OtherChars));
+        if (!string.IsNullOrWhiteSpace(speechUnderPressure)) parts.Add(Clip("speech: " + speechUnderPressure.Trim(), OtherChars));
         if (parts.Count == 0) return "";
 
-        // Every part gets an even share so a long "low" entry cannot crowd out "critical".
-        var share = Math.Max(40, maxChars / parts.Count);
-        return "UNDER PRESSURE (pick the level the beat's stressor puts them at): "
-            + string.Join(" | ", parts.Select(p => Clip(p, share)));
+        return "UNDER PRESSURE (pick the level the beat's stressor puts them at): " + string.Join(" | ", parts);
     }
 
     public static string? ModeToward(IReadOnlyDictionary<string, string> interpersonalModes, string otherName)
