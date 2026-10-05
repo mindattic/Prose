@@ -693,7 +693,6 @@ public class SceneContextAssembler(
             AppendField(sb, "VOICE — vocabulary", c.SpeechVocabulary);
             AppendField(sb, "VOICE — cadence", c.SpeechCadence);
             AppendField(sb, "VOICE — subtext", c.SpeechSubtext);
-            AppendField(sb, "VOICE — under pressure", c.SpeechUnderPressure);
             AppendField(sb, "VOICE — intimacy register", c.SpeechIntimacyRegister);
             if (!string.IsNullOrWhiteSpace(c.NarrationVoice))
                 AppendField(sb, "NARRATION VOICE", c.NarrationVoice);
@@ -737,9 +736,55 @@ public class SceneContextAssembler(
             // without needing a post-generation LLM check (RFC 0009 §5 Part B).
             // Cap at ~400 chars total to respect the scene-context token budget.
             await AppendBehavioralRulesAsync(db, sb, r.EntityId, ct);
+
+            await AppendPressureAndModesAsync(db, sb, r, c.SpeechUnderPressure, namesById, ct);
         }
         sb.AppendLine();
         return sb.ToString();
+    }
+
+    /// <summary>
+    /// The character's recorded stress ladder (all levels), coping, blind spots and speech under
+    /// pressure, then one TOWARD line per other scene entity the character has an interpersonal
+    /// mode for. Formatting shared with DialogueService via <see cref="CharacterBehaviorFormatter"/>.
+    /// </summary>
+    private static async Task AppendPressureAndModesAsync(
+        ProseDbContext db, StringBuilder sb, SceneEntityRef r, string? speechUnderPressure,
+        Dictionary<Guid, string> namesById, CancellationToken ct)
+    {
+        const int MaxPressureChars = 500;
+
+        var maps = await db.Set<CharacterBehavioralMap>().AsNoTracking()
+            .Where(m => m.CharacterId == r.EntityId &&
+                (m.Bucket == "stress_responses" || m.Bucket == "interpersonal_modes"))
+            .Select(m => new { m.Bucket, m.KeyName, m.Value })
+            .ToListAsync(ct);
+        var traits = await db.Set<CharacterPsychologyTrait>().AsNoTracking()
+            .Where(t => t.CharacterId == r.EntityId &&
+                (t.Bucket == "coping_mechanisms" || t.Bucket == "blind_spots"))
+            .OrderBy(t => t.Position)
+            .Select(t => new { t.Bucket, t.Trait })
+            .ToListAsync(ct);
+
+        var stress = maps.Where(m => m.Bucket == "stress_responses")
+            .GroupBy(m => m.KeyName, StringComparer.OrdinalIgnoreCase)
+            .ToDictionary(g => g.Key, g => g.First().Value, StringComparer.OrdinalIgnoreCase);
+        var coping = traits.Where(t => t.Bucket == "coping_mechanisms" && !string.IsNullOrWhiteSpace(t.Trait)).Select(t => t.Trait).ToList();
+        var blind = traits.Where(t => t.Bucket == "blind_spots" && !string.IsNullOrWhiteSpace(t.Trait)).Select(t => t.Trait).ToList();
+
+        var pressure = CharacterBehaviorFormatter.FormatUnderPressure(stress, coping, blind, speechUnderPressure, MaxPressureChars);
+        if (pressure.Length > 0) sb.AppendLine(pressure);
+
+        var modes = maps.Where(m => m.Bucket == "interpersonal_modes")
+            .GroupBy(m => m.KeyName, StringComparer.OrdinalIgnoreCase)
+            .ToDictionary(g => g.Key, g => g.First().Value, StringComparer.OrdinalIgnoreCase);
+        if (modes.Count == 0) return;
+        foreach (var (otherId, otherName) in namesById)
+        {
+            if (otherId == r.EntityId) continue;
+            var mode = CharacterBehaviorFormatter.ModeToward(modes, otherName);
+            if (mode != null) sb.AppendLine($"TOWARD {otherName}: {Clip(mode, 160)}");
+        }
     }
 
     /// <summary>

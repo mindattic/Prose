@@ -209,24 +209,14 @@ public class DialogueService
     {
         var signals = new List<string>();
 
-        // Stress responses that manifest in speech
-        var stress = c.Behavioral.StressResponses;
-        if (stress.TryGetValue("low", out var lowStress) && !string.IsNullOrWhiteSpace(lowStress))
-            signals.Add($"low stress: {ShortenToSignal(lowStress)}");
-        if (stress.TryGetValue("high", out var highStress) && !string.IsNullOrWhiteSpace(highStress))
-            signals.Add($"high stress: {ShortenToSignal(highStress)}");
+        var pressure = CharacterBehaviorFormatter.FormatUnderPressure(
+            c.Behavioral.StressResponses, c.Psychology.CopingMechanisms, c.Psychology.BlindSpots,
+            speechUnderPressure: null, maxChars: 400);
+        if (pressure.Length > 0) signals.Add(pressure);
 
         // Contradictions — what they do when values conflict (often surface as dialog)
         if (c.Behavioral.Contradictions.Count > 0)
             signals.Add($"contradiction: {ShortenToSignal(c.Behavioral.Contradictions[0])}");
-
-        // Coping mechanisms often drive dialog behavior
-        if (c.Psychology.CopingMechanisms.Count > 0)
-            signals.Add($"coping: {ShortenToSignal(c.Psychology.CopingMechanisms[0])}");
-
-        // Blind spots affect what they fail to notice or deflect from in conversation
-        if (c.Psychology.BlindSpots.Count > 0)
-            signals.Add($"blind spot: {ShortenToSignal(c.Psychology.BlindSpots[0])}");
 
         return signals.Count > 0 ? string.Join("; ", signals) : "";
     }
@@ -334,10 +324,7 @@ public class DialogueService
         return parts.Count > 0 ? string.Join("; ", parts) : "";
     }
 
-    /// <summary>Either name contains the other (case-insensitive); false when either is blank.</summary>
-    private static bool NamesOverlap(string? x, string? y) =>
-        !string.IsNullOrWhiteSpace(x) && !string.IsNullOrWhiteSpace(y)
-        && (x.Contains(y, StringComparison.OrdinalIgnoreCase) || y.Contains(x, StringComparison.OrdinalIgnoreCase));
+    private static bool NamesOverlap(string? x, string? y) => CharacterBehaviorFormatter.NamesOverlap(x, y);
 
     private static string ShortenToSignal(string s)
     {
