@@ -8,7 +8,7 @@ Claude hook and command syntax:
 |---|---|
 | Structural, database, canon, universe, DCM, and approval laws in `CLAUDE.md` | `PROSE_PROTOCOL.md`, canon docs, and generated operation metadata |
 | `/dcm`, `/show`, `/progress`, and reader/logic workflows | Curated catalog operations plus CLI/MCP workflow documentation |
-| `/quicksave`, `/quickload`, and `UserPromptSubmit` injection | Hub-routed agent session handoff and `agent bootstrap` |
+| `/quicksave`, `/quickload`, and `UserPromptSubmit` injection | Portable prompt aliases in `docs/agent/PROMPT_COMMANDS.md`, run through the `.prose/commands` registry and `tools/prose-agent.ps1` (RFC 0015's CLI/MCP factory twins — `cli --session end` / `cli --factory next`), not a Claude-only hook |
 | MCP build/start hooks | Native MCP client configuration using `docs/agent/CLIENTS.md` |
 | Post-edit validation hooks | Hub-routed verification operations and explicit protocol checkpoints |
 | Commit, discard, and revert skills | Host-neutral repository workflow instructions; mutations remain human-approved |

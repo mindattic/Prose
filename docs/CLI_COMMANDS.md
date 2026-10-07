@@ -19,7 +19,7 @@
 > deliberate: RFC 0014 §2.4 is about a gate documented as seven checks, coded as six
 > and advertised as five, and this reference is not going to repeat that.
 
-**277 commands.** 30 deactivated. 10 cost-gated. 19 have no description in their dispatch comment (13 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**285 commands.** 30 deactivated. 10 cost-gated. 18 have no description in their dispatch comment (12 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -153,7 +153,7 @@ cloud RAG over the canon corpus. Replaces the retired Ollama path.
 prose --assemble-scene (--beat <guid> | --text "<prose>") [--budget N]
 ```
 
-set the ParentNodeId on an existing node (move it into a collection). X-Ray scene assembly (RFC 0002): print the entity roster + voice context block for a beat or raw prose. CLI twin of the MCP tool assemble_scene_context.
+X-Ray scene assembly (RFC 0002): print the entity roster + voice context block for a beat or raw prose. CLI twin of the MCP tool assemble_scene_context.
 
 <sub>handler `AssembleSceneCli`</sub>
 
@@ -371,6 +371,12 @@ prose --beat-write-trace (--beat-id <guid> | --last) [--json] Single-source-writ
 
 <sub>handler `BeatWriteTraceCli`</sub>
 
+### `--book` / `--ask`
+
+book operations — list / new / show / chapters / absorb / review / apply / export / delete. Run `prose --book` (no subcommand) to see full usage. --ask documents --book as its --node alias, so it is excluded here too.
+
+<sub>handler `BookCli`</sub>
+
 ### `--booktok`
 
 ```
@@ -533,7 +539,7 @@ Doc Context Stack dry-run — print the rotating cast of .md docs that WOULD loa
 
 ### `--continuity` — **DEACTIVATED**
 
-unified continuity store — migrate / stats / contradictions / resolve / entity. Run `dotnet run --project Prose.Blazor -- --continuity` (no subcommand) to see full usage.
+unified continuity store — migrate / stats / contradictions / resolve / entity. Run `prose --continuity` (no subcommand) to see full usage.
 
 <sub>handler `ContinuityCli` · **deactivated 2026-09-22 (RFC 0014)** — handler intact; remove its line from `DeactivatedInstruments.cs` to restore</sub>
 
@@ -559,6 +565,16 @@ prose --coverage
 per-entity-type reachability matrix (how much canon is embedded and thus pullable into prose). The standing gap-finder.
 
 <sub>handler `CoverageCli`</sub>
+
+### `--create-archetype`
+
+```
+prose --create-archetype --name "<name>" [--category …] [--description …] [--behavioral-signature …]
+```
+
+[--under-stress …] [--at-rest …] [--will-always a;b] [--will-never a;b] [--unless a;b] [--tags a,b] Create or update an archetype — the CLI twin of MCP create_archetype. Same gap again: ArchetypeRepository.Save existed with nothing exposing it.
+
+<sub>handler `CreateArchetypeCli`</sub>
 
 ### `--create-book`
 
@@ -658,6 +674,16 @@ remove a bad entity alias row (dry-run unless --apply). The sanctioned fix for a
 
 <sub>handler `DeleteAliasCli`</sub>
 
+### `--delete-canon-document`
+
+```
+prose --delete-canon-document --type <DocumentType> --confirm <sectionCount> [--universe <slug>]
+```
+
+_(no description in the dispatch comment — add one above the guard in `Program.cs`)_
+
+<sub>handler `DeleteCanonDocumentCli`</sub>
+
 ### `--delete-entity-cluster`
 
 prose --delete-entity-cluster --root <entityGuid> --universe <slug> --confirm <entityCount> The execution half of --export-entity-cluster — hard-deletes the reviewed cluster after re-verifying the count and checking every entity for outside references. See DeleteEntityClusterCli.
@@ -702,13 +728,18 @@ report beats whose Beat.Description was verified against prose that has since ch
 ### `--detect-mojibake`
 
 ```
-prose --repair                # cheap timeline-only pass
-prose --repair --continuity   # also run continuity extraction (LLM-heavy)
+prose --detect-mojibake --slug <slug|code|id> [--json]
 ```
 
-dossier-driven story repair — walks every chapter, augments character records with timeline entries and (optionally) LLM-extracted continuity claims.
+read-only report of UTF-8-read-as-Windows-1252 corruption in a node's beats. Exits 1 when anything is found, so a runbook can loop `prose --repair --fix-mojibake` until 0.
 
 <sub>handler `DetectMojibakeCli`</sub>
+
+### `--dictionary`
+
+prose --dictionary list|add <word>|remove <word>|check <word> … The author's spelling dictionary, the same rows as the Writer's "Add to dictionary" and Settings.
+
+<sub>handler `SpellingCli`</sub>
 
 ### `--doc-context`
 
@@ -740,7 +771,7 @@ dual-read comparative review — the SAME pinned panel grades both versions of a
 
 ### `--duel` — **DEACTIVATED**
 
-prose --duel --beat-id <guid> --candidate <file> [--goal "..."] [--apply] [--json] Blind A/B duel: beat's current prose vs a candidate revision. 3 voters (register/goal/reader lenses), three-way ballot; replace needs >=2 better with zero dissent; splits escalate to 7 voters with written rationales. Verdicts hash-cached by text pair. SS-A44: invoking this IS the explicit ask. Exit 0 = replace, 1 = keep, 2 = error.
+prose --duel --beat-id <guid> --candidate <file> [--goal "..."] [--apply] [--json] Blind A/B duel: beat's current prose vs a candidate revision. 3 voters (register/goal/reader lenses), three-way ballot; replace needs >=2 better with zero dissent; splits escalate to 7 voters with written rationales. Verdicts hash-cached by text pair. SS-LAW-17: invoking this IS the explicit ask. Exit 0 = replace, 1 = keep, 2 = error.
 
 <sub>handler `BeatDuelCli` · **deactivated 2026-09-22 (RFC 0014)** — handler intact; remove its line from `DeactivatedInstruments.cs` to restore</sub>
 
@@ -844,9 +875,7 @@ an entity's tags — list / add / REMOVE. Added 2026-09-03: tags could be added 
 
 ### `--entity-tree`
 
-prose --entity-tree (--id <guid> | --slug <slug>) [--depth N] [--rel-types type1,type2] [--as-of-beat <beat guid>]
-
-`--as-of-beat` drops edges whose `ValidFromBeatId`/`ValidUntilBeatId` window excludes that beat (same book); a cross-book window keeps the edge.
+prose --entity-tree (--id <guid> | --slug <slug>) [--depth N] [--rel-types type1,type2] [--as-of date]
 
 <sub>handler `EntityTreeCli`</sub>
 
@@ -928,7 +957,7 @@ prose --extract-beat-locations --slug <slug> [--force] [--limit N] [--dry-run] B
 
 ### `--fact-ledger-refresh` — **DEACTIVATED**
 
-prose --fact-ledger-refresh --slug <slug-or-code> — zero-LLM-cost re-run of just the fact-ledger check (see FactLedgerRefreshCli's own doc comment). Not cost-gated: it is the deliberate cheap alternative to the (since-deleted, RFC 0010) --audit-book --deep bundle.
+prose --fact-ledger-refresh --slug <slug-or-code> — zero-LLM-cost re-run of just the fact-ledger check (see FactLedgerRefreshCli's own doc comment). Not cost-gated: it is the deliberate cheap alternative to the (since-deleted, BIBLE ADR-10) --audit-book --deep bundle.
 
 <sub>handler `FactLedgerRefreshCli` · **deactivated 2026-09-22 (RFC 0014)** — handler intact; remove its line from `DeactivatedInstruments.cs` to restore</sub>
 
@@ -1082,6 +1111,18 @@ _(no description in the dispatch comment — add one above the guard in `Program
 
 <sub>handler `GetCanonSectionCli`</sub>
 
+### `--get-entity-fields` / `--set-character-fields` / `--set-entity-fields` / `--verify-entity`
+
+```
+prose --universe glmz --get-entity-fields --id <id>   (read only; never writes)
+prose --universe glmz --set-character-fields | --set-entity-fields --id <id> --file fields.json [--confirm-unread]
+prose --universe glmz --verify-entity begin --entity <id> --node <book> | commit --nonce <nonce>
+```
+
+the world's read and write path and station F1 (RFC 0015 §3.3–3.4). (the key "summary" writes the entity's one-paragraph summary, Entities.Description)
+
+<sub>handler `WorldCli`</sub>
+
 ### `--get-place`
 
 ```
@@ -1114,14 +1155,7 @@ GraphHealthService — orphaned/weakly-connected/malformed world-graph node audi
 
 ### `--graph-query`
 
-```
-prose --universe <u> --graph-query co-occurrence --a <id|slug> --b <id|slug> [--in-book <slug>] [--limit N]
-prose --universe <u> --graph-query shared-neighbors --a <id|slug> --b <id|slug>
-prose --universe <u> --graph-query path --a <id|slug> --b <id|slug> [--max-hops N]
-prose --universe <u> --graph-query cast (--at-beat <guid> | --chapter <id|slug>)
-```
-
-Read-only answers over the two stored connections: entity tags in beats (`BeatEntityMentions`) and live `Edges`. `co-occurrence` = beats tagging both entities (reading order with `--book`); `shared-neighbors` = entities with a live edge to both; `path` = shortest chain of live edges; `cast` = tagged entities in a beat/chapter and every edge among them. Files nothing, scores nothing.
+prose --universe <u> --graph-query co-occurrence|shared-neighbors|path --a <id|slug> --b <id|slug> [--in-book <slug>] [--max-hops N] prose --universe <u> --graph-query cast (--at-beat <guid> | --chapter <id|slug>) Read-only answers over entity tags in beats and live Edges. See GraphQueryCli.
 
 <sub>handler `GraphQueryCli`</sub>
 
@@ -1161,11 +1195,22 @@ distill voice rules from winning (≥80%) nodes into the codified DB-backed rule
 
 <sub>handler `HarvestVoiceCli` · **cost-gated (spends LLM money)**</sub>
 
+### `--help`
+
+Nothing above matched. Falling off the end used to exit 0 with no output, so a mistyped flag read as a command that ran and found nothing, and `--help` (allowlisted above) printed nothing.
+
+
 ### `--history`
 
 prose --history <verb> … Read-only SQL Server temporal-history forensics — what a beat used to say, which day a book was rewritten wholesale. Free: no LLM call, no write.
 
 <sub>handler `TemporalHistoryCli`</sub>
+
+### `--hub-narration`
+
+prose --hub-narration on|off|status Runtime toggle for CommandNarrator's Haiku command gloss. Default OFF.
+
+<sub>handler `HubNarrationCli`</sub>
 
 ### `--image-prompts`
 
@@ -1184,7 +1229,7 @@ rewrite ethnicity-keyed visual descriptors in image prompts to match a character
 prose --import-book --file path.node [--title ...] [--kind ...] [--slug ...] [--parent ...] [--dry-run]
 ```
 
-import a hand-authored .node file (beat + gap + beat …) into a fresh node. The complement to --write-story (LLM-generated): this is for drafts written elsewhere (chat exports, transcripts, paper notes typed up). See ImportNodeCli class doc for the file format.
+import a hand-authored .node file (beat + gap + beat …) into a fresh node — for drafts written elsewhere (chat exports, transcripts, paper notes typed up), as opposed to LLM-generated via --auto-run (AutoRunCli; --write-story/--refine-story, the predecessor this once complemented, was removed 2026-08-13 — see this file's own note near StoryDirectorService). See ImportNodeCli class doc for the file format.
 
 <sub>handler `ImportNodeCli`</sub>
 
@@ -1436,7 +1481,7 @@ prose --log-search [--since <dt>] [--severity <lvl>] [--text <q>] [--take N] [--
 
 ### `--logic-sweep`
 
-prose --logic-sweep --slug <nodeSlug> [--json] Codifies docs/LOGIC.md's sweep (SS-A44) as one LLM call per dimension: causality chain, knowledge states, timeline, plant/payoff (two-way), orphan references, inserted-beat drift. A single-pass approximation over the whole node's prose — for a large book or a thorough pass, prefer the /logic-sweep Claude Code skill (range-scoped subagents + quote verification + fix + re-verify). Findings persist to Findings and auto-heal on re-run. Exit 0 = clean, 1 = MODERATE/MINOR only, 2 = any BLOCKER.
+prose --logic-sweep --slug <nodeSlug> [--json] Codifies docs/LOGIC.md's sweep (SS-LAW-17) as one LLM call per dimension: causality chain, knowledge states, timeline, plant/payoff (two-way), orphan references, inserted-beat drift. A single-pass approximation over the whole node's prose — for a large book or a thorough pass, prefer the /logic-sweep Claude Code skill (range-scoped subagents + quote verification + fix + re-verify). Findings persist to Findings and auto-heal on re-run. Exit 0 = clean, 1 = MODERATE/MINOR only, 2 = any BLOCKER.
 
 <sub>handler `LogicSweepCli`</sub>
 
@@ -1730,7 +1775,7 @@ which beats are unread (never read / text changed / moved / entity changed), and
 
 ### `--reader-qa` — **DEACTIVATED**
 
-prose --reader-qa (--slug <slug> | --all) [--force] [--json] Reader-Proxy QA (docs/READER-QA.md) — the default reader-facing quality instrument. Phase 1: comprehension probes — a cheap model reads each chapter cold, diffed against the Sonnet synopsis ground truth, Sonnet-arbitrated, filed as ComprehensionDefect findings. NO scores (measurement, not vote — SS-A44 exempt). Hash-cached per chapter. Exit 0 = clean, 1 = defects found, 2 = error.
+prose --reader-qa (--slug <slug> | --all) [--force] [--json] Reader-Proxy QA (docs/READER-QA.md) — the default reader-facing quality instrument. Phase 1: comprehension probes — a cheap model reads each chapter cold, diffed against the Sonnet synopsis ground truth, Sonnet-arbitrated, filed as ComprehensionDefect findings. NO scores (measurement, not vote — SS-LAW-17 exempt). Hash-cached per chapter. Exit 0 = clean, 1 = defects found, 2 = error.
 
 <sub>handler `ReaderQaCli` · **deactivated 2026-09-22 (RFC 0014)** — handler intact; remove its line from `DeactivatedInstruments.cs` to restore</sub>
 
@@ -1772,7 +1817,7 @@ keyword recall — call up (print) or create (--to-disk) the select few tracked 
 
 ### `--reconcile-obligations` — **DEACTIVATED**
 
-RFC 0013 instruments. The free trial-balance rules forward plainly; --deep adds the paid resurfacing judge and is cost-gated under its own command name (the gate keys estimates on the name alone, so a cheap and an expensive mode must not share one — RFC 0010 §5).
+RFC 0013 instruments. The free trial-balance rules forward plainly; --deep adds the paid resurfacing judge and is cost-gated under its own command name (the gate keys estimates on the name alone, so a cheap and an expensive mode must not share one — BIBLE ADR-10).
 
 <sub>handler `ReconcileObligationsCli` · **cost-gated (spends LLM money)** · **deactivated 2026-09-22 (RFC 0014)** — handler intact; remove its line from `DeactivatedInstruments.cs` to restore</sub>
 
@@ -1819,8 +1864,6 @@ replace an EXISTING node's beats wholesale from a .node file. The other half of 
 prose --relation-aliases --list
 prose --relation-aliases --add --alias <wording> --canonical <standardizedRelationType> [--notes <notes>]
 prose --relation-aliases --remove --id <id>
-prose --universe <u> --relation-aliases --types              # live relation types, counts, and the canonical each alias resolves to
-prose --universe <u> --relation-aliases --apply [--dry-run]  # relabel alias edges to canonical; a pair already holding the canonical edge invalidates the duplicate
 ```
 
 CRUD for RelationTypeAliases — normalizes link_entities free-text RelationType wording (e.g. "has" -> "owns") so the same relationship doesn't fork into multiple Edge rows.
@@ -1857,7 +1900,12 @@ prose --renumber-chapters --slug <slug|id> [--apply] Titles only, no prose: clos
 
 ### `--repair`
 
-_(no description in the dispatch comment — add one above the guard in `Program.cs`)_
+```
+prose --repair                # cheap timeline-only pass
+prose --repair --continuity   # also run continuity extraction (LLM-heavy)
+```
+
+dossier-driven story repair — walks every chapter, augments character records with timeline entries and (optionally) LLM-extracted continuity claims.
 
 <sub>handler `RepairCli`</sub>
 
@@ -1884,7 +1932,7 @@ prose --reparent-node (--slug <slug> | --id <id>) (--parent-slug <slug> | --pare
 prose --reparent-node --slug <slug> --clear   — detach from parent
 ```
 
-_(no description in the dispatch comment — add one above the guard in `Program.cs`)_
+set the ParentNodeId on an existing node (move it into a collection).
 
 <sub>handler `ReparentNodeCli`</sub>
 
@@ -2115,28 +2163,21 @@ _(no description in the dispatch comment — add one above the guard in `Program
 
 <sub>handler `SetCanonSectionCli`</sub>
 
-### `--set-character-fields` / `--set-entity-fields` / `--verify-entity`
-
-```
-prose --universe glmz --set-character-fields | --set-entity-fields --id <id> --file fields.json [--confirm-unread]
-prose --universe glmz --verify-entity begin --entity <id> --node <book> | commit --nonce <nonce>
-```
-
-the world's write path and station F1 (RFC 0015 §3.3–3.4).
-
-<sub>handler `WorldCli`</sub>
-
 ### `--set-edge-validity`
 
 prose --set-edge-validity --edge <edgeId> [--slug <slug>] [--from-beat-number <N>] [--until-beat-number <N>] [--clear-from] [--clear-until] Sets/adjusts/clears an existing edge's beat-scoped validity window (2026-09-02, replaces the dead DateTime story-time mechanism). See SetEdgeValidityCli.
 
-prose --set-edge-validity --edge <edgeId> --invalidate --reason "<why it was never true>" retires an edge that was never true (test row, wrong link): sets InvalidatedAt and appends the reason to its Description. Edge ids show in `--graph-query path|cast` output.
-
 <sub>handler `SetEdgeValidityCli`</sub>
+
+### `--set-entity-slug` / `--set-entity-name` / `--edit-edge` / `--prune-orphan-tag` / `--delete-obligation`
+
+prose --set-entity-slug --id <guid> --to <slug> [--apply] prose --set-entity-name --id <guid> --to "<name>" [--apply] prose --edit-edge --edge <id> [--target <guid>] [--description "<text>"] [--apply] prose --prune-orphan-tag --name "<tag>" [--apply] prose --delete-obligation --id <guid> [--apply] Corrections no record writer reaches: an entity slug or row name, an edge's target and wording, a tag name no entity carries, a retired narrative obligation. Dry-run unless --apply. See CanonMaintenanceCli.
+
+<sub>handler `CanonMaintenanceCli`</sub>
 
 ### `--set-narrative-mode`
 
-prose --set-narrative-mode --slug <slug> --mode original|retelling|historical Gates BookHealthService.SacredFlawAsync — see SetNarrativeModeCli.
+prose --set-narrative-mode --slug <slug> --mode original|retelling|historical Gates TrinityReconciliationService's book scope — see SetNarrativeModeCli.
 
 <sub>handler `SetNarrativeModeCli`</sub>
 
@@ -2305,7 +2346,7 @@ _(no description in the dispatch comment — add one above the guard in `Program
 
 ### `--universe-import`
 
-RFC 0007 "Universe Interchange" — import/export between an app's <app>/universe/<slug>.universe.json contract file and Prose's Entity spine. Each subcommand resolves its own explicit universe (file's own id, or a required positional slug) — see UniverseAgnosticCommands below.
+RFC 0007 "Universe Interchange" — import/export between an app's <app>/universe/<slug>.universe.json contract file and Prose's Entity spine. Each subcommand resolves its own explicit universe (file's own id, or a required positional slug) — see UniverseAgnosticCommands near the top of this file.
 
 <sub>handler `UniverseInterchangeCli`</sub>
 

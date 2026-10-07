@@ -176,6 +176,9 @@ if (UniverseBootstrap.RequestedSlug == null
         "--verification-staleness", "--findings-staleness",
         // Provider health/config touch no universe-scoped data at all.
         "--provider-status",
+        // CommandNarrator's toggle (SettingsService.HubNarrationEnabled) is one engine-wide
+        // flag, not a universe's — same rationale as --dictionary above.
+        "--hub-narration",
         // Corpus-wide relationship backfill: resolves each row against its OWNER's own universe,
         // not an ambient scope (see BackfillCharacterRelationshipsCli).
         "--backfill-character-relationships",
@@ -214,6 +217,9 @@ if (UniverseBootstrap.RequestedSlug == null
         // Takes two explicit numeric Edge ids and operates on those rows directly — same shape
         // as --merge-entity above (see MergeEdgeCli).
         "--merge-edge",
+        // Explicit entity/edge/obligation ids (or a global tag name) read via IgnoreQueryFilters —
+        // no ambient scope to resolve (see CanonMaintenanceCli).
+        "--set-entity-slug", "--set-entity-name", "--edit-edge", "--prune-orphan-tag", "--delete-obligation",
         // Takes an explicit numeric Edge id directly; --slug (when passed, for beat-number
         // resolution) is looked up via IgnoreQueryFilters() same as MoveBeatToNodeCli — no
         // ambient scope needed (see SetEdgeValidityCli).
@@ -1065,15 +1071,15 @@ if (args.Contains("--get-canon-section"))
     Environment.ExitCode = await HubCliClient.ForwardAsync("GetCanonSectionCli", args);
     return;
 }
-
-// CLI mode: search seeded entities by name or alias — the read-side counterpart to
-// --add-character, so authoring can check for an existing entity before creating a duplicate.
 //   prose --delete-canon-document --type <DocumentType> --confirm <sectionCount> [--universe <slug>]
 if (args.Contains("--delete-canon-document"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("DeleteCanonDocumentCli", args);
     return;
 }
+
+// CLI mode: search seeded entities by name or alias — the read-side counterpart to
+// --add-character, so authoring can check for an existing entity before creating a duplicate.
 //   prose --find-entity --name "<text>" [--type character] [--universe <slug>] [--limit N]
 if (args.Contains("--find-entity"))
 {
@@ -1195,10 +1201,25 @@ if (LeadingFlagIgnoringUniverse(args) is "--factory" or "--order" or "--session"
     return;
 }
 
-// CLI mode: the world's write path and station F1 (RFC 0015 §3.3–3.4).
+// prose --set-entity-slug --id <guid> --to <slug> [--apply]
+// prose --set-entity-name --id <guid> --to "<name>" [--apply]
+// prose --edit-edge --edge <id> [--target <guid>] [--description "<text>"] [--apply]
+// prose --prune-orphan-tag --name "<tag>" [--apply]
+// prose --delete-obligation --id <guid> [--apply]
+// Corrections no record writer reaches: an entity slug or row name, an edge's target and wording, a tag name no
+// entity carries, a retired narrative obligation. Dry-run unless --apply. See CanonMaintenanceCli.
+if (args.Contains("--set-entity-slug") || args.Contains("--set-entity-name") || args.Contains("--edit-edge") || args.Contains("--prune-orphan-tag") || args.Contains("--delete-obligation"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CanonMaintenanceCli", args);
+    return;
+}
+
+// CLI mode: the world's read and write path and station F1 (RFC 0015 §3.3–3.4).
+//   prose --universe glmz --get-entity-fields --id <id>   (read only; never writes)
 //   prose --universe glmz --set-character-fields | --set-entity-fields --id <id> --file fields.json [--confirm-unread]
+//     (the key "summary" writes the entity's one-paragraph summary, Entities.Description)
 //   prose --universe glmz --verify-entity begin --entity <id> --node <book> | commit --nonce <nonce>
-if (args.Contains("--set-character-fields") || args.Contains("--set-entity-fields") || args.Contains("--verify-entity"))
+if (args.Contains("--get-entity-fields") || args.Contains("--set-character-fields") || args.Contains("--set-entity-fields") || args.Contains("--verify-entity"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("WorldCli", args);
     return;
@@ -1331,6 +1352,14 @@ if (args.Contains("--findings-staleness"))
 if (args.Contains("--provider-status"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("ProviderStatusCli", args);
+    return;
+}
+
+// prose --hub-narration on|off|status
+// Runtime toggle for CommandNarrator's Haiku command gloss. Default OFF.
+if (args.Contains("--hub-narration"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("HubNarrationCli", args);
     return;
 }
 
@@ -2004,8 +2033,10 @@ if (args.Contains("--duplicate-book"))
 }
 
 // CLI mode: import a hand-authored .node file (beat + gap + beat …) into a
-// fresh node. The complement to --write-story (LLM-generated): this is for
-// drafts written elsewhere (chat exports, transcripts, paper notes typed up).
+// fresh node — for drafts written elsewhere (chat exports, transcripts, paper
+// notes typed up), as opposed to LLM-generated via --auto-run (AutoRunCli;
+// --write-story/--refine-story, the predecessor this once complemented, was
+// removed 2026-08-13 — see this file's own note near StoryDirectorService).
 // See ImportNodeCli class doc for the file format.
 //   prose --import-book --file path.node [--title ...] [--kind ...] [--slug ...] [--parent ...] [--dry-run]
 if (args.Contains("--import-book"))

@@ -51,13 +51,16 @@ public static class ToolDispatch
     public static async Task<IResult> InvokeAsync(InvokeRequest req, IServiceProvider sp)
     {
         var label = req.ToolClass + "." + req.Method;
-        HubConsoleEcho.LogIn("mcp", label, SecretRedactor.RedactJson(req.Args)); // never echo raw keys
+        var redactedArgs = SecretRedactor.RedactJson(req.Args); // never echo raw keys
+        HubConsoleEcho.LogIn("mcp", label, redactedArgs);
 
         var sw = Stopwatch.StartNew();
         var (result, success, output, error) = await InvokeCoreAsync(req, sp);
         sw.Stop();
 
         HubConsoleEcho.LogOut("mcp", label, success, output?.Length ?? 0, sw.Elapsed.TotalMilliseconds, error);
+        sp.GetRequiredService<CommandNarrator>()
+            .NarrateFireAndForget(label, redactedArgs, success, output, error, sw.Elapsed.TotalMilliseconds);
 
         await WriteLedgerEntryAsync(req, sp, success, output, error, sw.Elapsed.TotalMilliseconds);
         return result;

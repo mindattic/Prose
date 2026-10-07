@@ -3,7 +3,6 @@ using System.Reflection;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
 using Prose.Core.Services;
@@ -101,13 +100,13 @@ public static class CliDispatch
         var argLine = string.Join(' ', SecretRedactor.RedactArgs(req.Args)); // --password/--key values never logged
         HubConsoleEcho.LogIn(source, label, argLine);
 
-        // The Command Ledger row below is written only on COMPLETION, and HubConsoleEcho goes to
-        // the Hub's console, not to the durable Serilog files — so a command that is still running
-        // (or queued behind ConsoleGate) has left no durable trace anywhere. On 2026-09-05 three
-        // abandoned commands (one of them a billed LLM pass) were invisible to `search_logs` for
-        // exactly that reason. A START line with no END line is the honest signal.
-        var logger = sp.GetService<ILoggerFactory>()?.CreateLogger("CliDispatch");
-        logger?.LogInformation("[cli-invoke] START {Source} {Label} {Args}", source, label, argLine);
+        // A command that is still running (or queued behind ConsoleGate) when the Hub dies has no
+        // durable trace of having started. HubConsoleEcho.LogIn above now rides ILogger/Serilog
+        // too (2026-10-07 fix — it used to reach only the console, not the durable `log-.txt`
+        // file), which is what makes a START-with-no-END line answer "it was running" instead of
+        // silently vanishing with the console scrollback. Previously this method kept its own
+        // bespoke ILoggerFactory calls to work around that exact gap; now HubConsoleEcho's own
+        // LogIn/LogOut already cover it, so a second copy here would just double every line.
 
         var sw = Stopwatch.StartNew();
         var outcome = await ExecuteCoreInnerAsync(req, sp);
@@ -119,10 +118,8 @@ public static class CliDispatch
             outputChars: outcome.Response?.Output.Length ?? 0,
             elapsedMs: sw.Elapsed.TotalMilliseconds,
             error: outcome.ErrorCode ?? outcome.Response?.Error);
-        logger?.LogInformation("[cli-invoke] END {Source} {Label} ok={Ok} exit={Exit} {Ms:F0}ms out={Chars}ch{Error}",
-            source, label, ok, outcome.Response?.ExitCode, sw.Elapsed.TotalMilliseconds,
-            outcome.Response?.Output.Length ?? 0,
-            string.IsNullOrWhiteSpace(outcome.ErrorCode ?? outcome.Response?.Error) ? "" : " ERROR");
+        sp.GetRequiredService<CommandNarrator>().NarrateFireAndForget(
+            label, argLine, ok, outcome.Response?.Output, outcome.ErrorCode ?? outcome.Response?.Error, sw.Elapsed.TotalMilliseconds);
 
         await WriteLedgerEntryAsync(req, sp, source, outcome, sw.Elapsed.TotalMilliseconds);
         return outcome;

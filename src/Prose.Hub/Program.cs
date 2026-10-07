@@ -249,6 +249,11 @@ builder.Logging.AddFilter("Microsoft.EntityFrameworkCore.Database.Command", Micr
 builder.Services.AddSignalR();
 builder.Services.AddSingleton<Prose.Hub.ObservabilityBridge>();
 
+// Haiku command narration (2026-10-07): follows each command's existing HubConsoleEcho log line
+// with a one-sentence plain-English gloss, off by default, toggled at runtime via
+// `prose --hub-narration on|off` (CommandNarrator.cs / SettingsService.HubNarrationEnabled).
+builder.Services.AddSingleton<Prose.Hub.CommandNarrator>();
+
 // Observability plan, Phase 5: the Hub hosts the shared observability UI directly as an
 // interactive Blazor Server web head, at /app - no separate process, since the Hub already
 // holds every resident singleton the UI needs to observe. AddProseObserverUi is called with
@@ -287,6 +292,42 @@ await using (var migrationScope = app.Services.CreateAsyncScope())
 // ObservabilityBridge's own doc comment. Must run after Build() so DI can resolve
 // IHubContext<ObservabilityHub> (registered by AddSignalR/MapHub).
 app.Services.GetRequiredService<Prose.Hub.ObservabilityBridge>().Wire();
+
+// Durability fix (2026-10-07): HubConsoleEcho's lines (the command echo, and CommandNarrator's
+// gloss) used to reach only the live console window - ILoggerFactory doesn't exist until after
+// Build(), which is why this couldn't be done at CaptureOriginal() time up top. From here on,
+// every line also rides the already-configured Serilog `log-.txt` sink (durable, 14-day
+// retention, already searchable via search_logs) instead of a second, purpose-built sink.
+Prose.Hub.HubConsoleEcho.AttachLogger(
+    app.Services.GetRequiredService<Microsoft.Extensions.Logging.ILoggerFactory>().CreateLogger("HubConsoleEcho"));
+
+// Shutdown guarantee (2026-10-07): nothing previously ran on Hub shutdown at all - a DCM run
+// mid-flight when the process died vanished silently, with no "ended here" marker anywhere.
+// ApplicationStopping fires on Ctrl+C/SIGTERM/a normal graceful stop via the generic host's own
+// handling - this only needed to be registered, not wired to OS signals by hand. Confirmed this
+// does NOT fire on `Stop-Process -Force` (what deploy-apps.ps1 uses to stop the Hub for a
+// redeploy) - a forceful kill gives no process any chance to run a shutdown hook. The console/
+// narration durability fix above does not depend on this at all (it writes in real time, not at
+// shutdown); this hook only helps the DCM-run-marking case, and only for a graceful stop.
+app.Lifetime.ApplicationStopping.Register(() =>
+{
+    Prose.Hub.HubConsoleEcho.Out.WriteLine($"[{DateTime.Now:HH:mm:ss}] *** Hub shutting down (PID {Environment.ProcessId}) ***");
+    var telemetry = app.Services.GetRequiredService<ContextTelemetryService>();
+    if (telemetry.IsActive)
+    {
+        // No real final score exists for a run that's being cut off mid-flight, not completed -
+        // BaselineScore/BaselineFlow ("ended, no measured change") is a more honest placeholder
+        // than 0/0, which would read as a crash rather than an interruption.
+        var run = telemetry.Current!;
+        telemetry.EndRun(DateTime.UtcNow, run.BaselineScore, run.BaselineFlow);
+        // ObservabilityBridge.Fire is itself a detached ContinueWith (its own persistence is not
+        // awaitable from here) - this is a pragmatic bridge to give it a moment to land before
+        // the process actually exits, not a guarantee. A cleaner fix would give ObservabilityBridge
+        // an awaitable PersistRunEndAsync this hook could call directly instead.
+        Task.Delay(TimeSpan.FromMilliseconds(250)).Wait();
+    }
+    Serilog.Log.CloseAndFlush();
+});
 // Cross-site WebSocket guard (2026-09-29): WebSockets are exempt from CORS, so any page the author
 // visits could open ws://127.0.0.1:5900/hubs/observability (skipNegotiation) and stream the live
 // log/DCM feed. Registered ahead of MapHub's own inner UseWebSockets, so this instance owns the

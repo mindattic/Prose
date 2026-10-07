@@ -553,6 +553,11 @@ public class SettingsService : IDisposable
     /// overhead until you opt in). Use <c>prose --dcm-viz</c> to generate the .htm without a full prose run.</summary>
     public bool DcmLoggingEnabled { get => data.DcmLoggingEnabled; set { data.DcmLoggingEnabled = value; ScheduleSave(); } }
 
+    /// <summary>When ON, CommandNarrator (Prose.Hub) follows every command's existing log line with
+    /// a Haiku-generated plain-English gloss of what it did. Default OFF. Toggle with
+    /// <c>prose --hub-narration on|off</c> — takes effect on the running Hub immediately, no restart.</summary>
+    public bool HubNarrationEnabled { get => data.HubNarrationEnabled; set { data.HubNarrationEnabled = value; ScheduleSave(); } }
+
     // ── Review voting ──────────────────────────────────────────────────────────
     /// <summary>Default number of cheap score-only ballots per sampled node review (--ballots).</summary>
     public int ReviewBallots { get => data.ReviewBallots; set { data.ReviewBallots = Math.Max(1, value); ScheduleSave(); } }
@@ -1147,6 +1152,7 @@ public class SettingsService : IDisposable
         public bool DocxIncludeToc { get; set; } = false;
         public bool DocContextEnabled { get; set; } = true;
         public bool DcmLoggingEnabled { get; set; } = false;
+        public bool HubNarrationEnabled { get; set; } = false;
         public string SmtpHost { get; set; } = "";
         public int SmtpPort { get; set; } = 587;
         public string SmtpUsername { get; set; } = "";
