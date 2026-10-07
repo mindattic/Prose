@@ -1068,6 +1068,12 @@ if (args.Contains("--get-canon-section"))
 
 // CLI mode: search seeded entities by name or alias — the read-side counterpart to
 // --add-character, so authoring can check for an existing entity before creating a duplicate.
+//   prose --delete-canon-document --type <DocumentType> --confirm <sectionCount> [--universe <slug>]
+if (args.Contains("--delete-canon-document"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("DeleteCanonDocumentCli", args);
+    return;
+}
 //   prose --find-entity --name "<text>" [--type character] [--universe <slug>] [--limit N]
 if (args.Contains("--find-entity"))
 {

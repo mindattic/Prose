@@ -97,6 +97,36 @@ public static class GetCanonSectionCli
 }
 
 /// <summary>
+/// <c>prose --delete-canon-document --type &lt;DocumentType&gt; --confirm &lt;sectionCount&gt; [--universe &lt;slug&gt;]</c> —
+/// hard-delete one canon document (sections, MarkdownFiles row, .md mirror). Run
+/// <c>--list-canon-sections</c> first; <c>--confirm</c> must equal the section count it shows.
+/// </summary>
+public static class DeleteCanonDocumentCli
+{
+    public static async Task<int> RunAsync(string[] args, IServiceProvider services)
+    {
+        var type = args.SkipWhile(a => a != "--type").Skip(1).FirstOrDefault();
+        var confirm = args.SkipWhile(a => a != "--confirm").Skip(1).FirstOrDefault();
+        var universeSlug = args.SkipWhile(a => a != "--universe").Skip(1).FirstOrDefault() ?? services.GetRequiredService<IUniverseContext>().CurrentUniverse?.Slug ?? "glmz";
+        if (string.IsNullOrWhiteSpace(type) || !int.TryParse(confirm, out var count))
+        {
+            Console.Error.WriteLine("Usage: prose --delete-canon-document --type <DocumentType> --confirm <sectionCount> [--universe <slug>]  (see --list-canon-sections for the count)");
+            return 1;
+        }
+
+        var canonDocs = services.GetRequiredService<CanonDocumentService>();
+        var universeId = await canonDocs.ResolveUniverseIdAsync(universeSlug);
+        if (universeId == null) { Console.Error.WriteLine($"[delete-canon-document] Unknown universe '{universeSlug}'."); return 1; }
+
+        var r = await canonDocs.DeleteDocumentAsync(type, universeId.Value, count);
+        if (!r.Ok) { Console.Error.WriteLine($"[delete-canon-document] {r.Error}: {r.ErrorMessage}"); return 1; }
+        Console.WriteLine($"[delete-canon-document] Deleted {type} ({universeSlug}): {r.SectionsDeleted} section(s), " +
+                          $"{r.MarkdownRowsDeleted} MarkdownFiles row(s), mirror {(r.FileDeleted ?? "(none on disk)")}.");
+        return 0;
+    }
+}
+
+/// <summary>
 /// <c>prose --set-canon-section --type &lt;DocumentType&gt; --key &lt;sectionKey&gt; --file &lt;path.md&gt;
 /// [--title &lt;title&gt;] [--universe &lt;slug&gt;]</c> — CLI equivalent of the MCP tool
 /// <c>set_canon_section</c>. Content is read from a file (not an inline arg) since canon section

@@ -205,6 +205,54 @@ public class CanonDocumentService
         return new GenerateResult(true, filePath, null, null, doc.Sections.Count, checksum);
     }
 
+    // ── Delete a whole document ───────────────────────────────────────────────
+
+    /// <summary>
+    /// Hard-deletes one canon document: its sections, its row, its MarkdownFiles row (what
+    /// generation reads, which the sync never removes on its own) and its read-only .md mirror
+    /// (which --migrate-canon-docs would otherwise re-import). The caller must state the section
+    /// count it reviewed; a mismatch deletes nothing. The CanonDocumentTypes row is left alone.
+    /// </summary>
+    public async Task<DeleteResult> DeleteDocumentAsync(
+        string documentType,
+        Guid universeId,
+        int confirmSectionCount,
+        CancellationToken ct = default)
+    {
+        universeId = await typeRegistry.ResolveEffectiveUniverseIdAsync(documentType, universeId, ct);
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        var doc = await db.CanonDocuments
+            .Include(d => d.Sections)
+            .FirstOrDefaultAsync(d => d.UniverseId == universeId && d.DocumentType == documentType, ct);
+        if (doc == null)
+            return new DeleteResult(false, "document_not_found", $"No {documentType} document for universe {universeId}.");
+        if (doc.Sections.Count != confirmSectionCount)
+            return new DeleteResult(false, "confirm_mismatch",
+                $"{documentType} has {doc.Sections.Count} section(s), not {confirmSectionCount}. Nothing was deleted.");
+
+        var relPath  = await typeRegistry.GetRelativePathAsync(documentType, universeId, ct);
+        var filePath = await typeRegistry.GetFilePathAsync(documentType, universeId, paths.DataRoot, ct);
+        var mdRows = relPath == null ? [] : await db.MarkdownFiles.IgnoreQueryFilters()
+            .Where(m => m.RelativePath == relPath && m.FileRoot == "project")
+            .ToListAsync(ct);
+
+        var sectionCount = doc.Sections.Count;
+        db.CanonDocumentSections.RemoveRange(doc.Sections);
+        db.CanonDocuments.Remove(doc);
+        db.MarkdownFiles.RemoveRange(mdRows);
+        await db.SaveChangesAsync(ct);
+
+        var fileDeleted = false;
+        if (filePath != null && File.Exists(filePath))
+        {
+            File.SetAttributes(filePath, FileAttributes.Normal);   // GeneratedFileWriter writes it read-only
+            File.Delete(filePath);
+            fileDeleted = true;
+        }
+        return new DeleteResult(true, null, null, sectionCount, mdRows.Count, fileDeleted ? filePath : null);
+    }
+
     // ── Helpers ───────────────────────────────────────────────────────────────
 
     private static string AssembleDocument(string title, IEnumerable<CanonDocumentSection> sections)
@@ -258,6 +306,14 @@ public record UpsertResult(
     string? ErrorMessage,
     string? Action = null,
     string? SectionKey = null);
+
+public record DeleteResult(
+    bool Ok,
+    string? Error,
+    string? ErrorMessage,
+    int SectionsDeleted = 0,
+    int MarkdownRowsDeleted = 0,
+    string? FileDeleted = null);
 
 public record GenerateResult(
     bool Ok,
