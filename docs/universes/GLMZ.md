@@ -529,16 +529,16 @@ Fatal in Gray Zones where Substrate provides basic life support.
 
 ## Schisms
 
-**The Schism** (historical event) — an AI cabal attempted to bore a fifth-dimensional
-corridor; the physics rupture reshaped global infrastructure. The resulting 5D anomalies
+**The Schism** (historical event) — an AI cabal attempted to bore a higher-dimensional
+corridor; the physics rupture reshaped global infrastructure. The resulting hyperdimensional anomalies
 persist as localized phenomena throughout <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>.
 
 **Five synonyms for a local anomaly** (all in use; register varies):
 - *Schism* / *riven* — formal, institutional
 - *Rip* / *tear* — street vernacular
-- *Interstice* — academic (lowercase "interstice" = a specific anomaly; "the Interstice" = the 5D substrate itself)
+- *Interstice* — academic (lowercase "interstice" = a specific anomaly; "the Interstice" = the higher-dimensional substrate itself)
 
-**"There is no inside"** — the defining rule of 5D physics. A 5D shape can reach into a
+**"There is no inside"** — the defining rule of hyperdimensional physics. A higher-dimensional shape can reach into a
 sealed box or skull without breaking any surface. Nothing is truly sealed from schism intrusion.
 The colloquial image: **<entity repo="place" guid="6ec69e6d-608e-4c12-9d41-92fee7cdf75f">the Gingerbread House</entity>** — something that looks like a place, that lures
 you in, that is not a place at all. You can be adjacent to a Schism or pass through one; you
@@ -555,12 +555,12 @@ cannot be *inside* one.
 | 5 | Regional | Theoretically civilization-ending |
 
 **Frequencies:**
-- **19 Hz** — resonant frequency of the 5D substrate itself; every active schism rings at this base frequency
-- Phenomena *within* 5D manifest at shifted higher frequencies; documented readings from the intelligences at 35th/Halsted: **19.415 Hz** and **19.771 Hz**
+- **19 Hz** — resonant frequency of the higher-dimensional substrate itself; every active schism rings at this base frequency
+- Phenomena *within* the Nth dimension manifest at shifted higher frequencies; documented readings from the intelligences at 35th/Halsted: **19.415 Hz** and **19.771 Hz**
 - **72–74 Hz** — the **Counter** (the second intelligence at 35th/Halsted)
 
 **The two intelligences at 35th/Halsted:**
-- **<entity repo="schism-entity" guid="d0068627-05ff-40d8-97ee-d7eba460a57b">The Lure</entity>** — a collector; draws things toward Schism boundaries; motives unknown; resonates near the 19 Hz 5D base (documented: 19.415 Hz and 19.771 Hz)
+- **<entity repo="schism-entity" guid="d0068627-05ff-40d8-97ee-d7eba460a57b">The Lure</entity>** — a collector; draws things toward Schism boundaries; motives unknown; resonates near the 19 Hz hyperdimensional base (documented: 19.415 Hz and 19.771 Hz)
 - **<entity repo="schism-entity" guid="fed0faf3-4d66-4ed2-8fab-e407c585ebb2">The Counter</entity>** — a limiter; "this far and no further"; documented resisting Schism expansion; 72–74 Hz signature
 
 **Micro-schisms** — floating pebble clusters (~2 inches) on street corners; treated like
