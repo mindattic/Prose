@@ -555,7 +555,7 @@ cannot be *inside* one.
 | 5 | Regional | Theoretically civilization-ending |
 
 **Frequencies:**
-- **19 Hz** — resonant frequency of the 5D substrate itself; every active schism membrane rings at this base frequency
+- **19 Hz** — resonant frequency of the 5D substrate itself; every active schism rings at this base frequency
 - Phenomena *within* 5D manifest at shifted higher frequencies; documented readings from the intelligences at 35th/Halsted: **19.415 Hz** and **19.771 Hz**
 - **72–74 Hz** — the **Counter** (the second intelligence at 35th/Halsted)
 
