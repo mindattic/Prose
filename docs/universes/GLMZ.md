@@ -205,9 +205,6 @@ cannot afford the float layer. Do not conflate them.
 
 **Green Bay** — full metropolis, low millions population. Not a frontier town.
 
-**Bathysphere** — submerged ruins below the Lake; one sealed black site. There are no
-underwater communities. Stories referencing communities under the Lake are incorrect.
-
 **Building scale:** Heights increase toward the Lake. Buildings over one mile high (~1,609m)
 are common in the inner districts — made possible by ferrocrete composites. CorpoNation
 arcologies are the tallest structures, clearing even supertall residential towers.
