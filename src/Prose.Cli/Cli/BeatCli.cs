@@ -15,7 +15,7 @@ namespace Prose.Cli;
 ///           (no outline exists); the writer writes the beat from that description.
 ///   delete  --id &lt;beatId&gt;
 ///           Delete a beat (soft-delete; the node loses it immediately).
-///   update  --id &lt;beatId&gt; --text "..."
+///   update  --id &lt;beatId&gt; (--file &lt;path&gt; | --text "...")
 ///           Replace a beat's prose. Use `--text -` to read from stdin.
 ///   meta    --id &lt;beatId&gt; [--title "..."] [--kind "..."] [--note "..."] [--in-world-date "..."]
 ///           Update beat metadata without touching prose. Only the fields you pass change
@@ -222,18 +222,29 @@ public static class BeatCli
 
     private static async Task<int> UpdateAsync(string[] args, IServiceProvider services)
     {
-        string? beatIdStr = null, text = null;
+        string? beatIdStr = null, text = null, file = null;
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
             {
                 case "--id":   if (i + 1 < args.Length) beatIdStr = args[++i]; break;
                 case "--text": if (i + 1 < args.Length) text = args[++i]; break;
+                case "--file": if (i + 1 < args.Length) file = args[++i]; break;
             }
         }
         if (string.IsNullOrWhiteSpace(beatIdStr)) { Console.Error.WriteLine("[beat update] --id <beatGuid> is required."); return 1; }
         if (!Guid.TryParse(beatIdStr, out var beatId)) { Console.Error.WriteLine("[beat update] --id must be a GUID."); return 1; }
-        if (string.IsNullOrWhiteSpace(text)) { Console.Error.WriteLine("[beat update] --text is required (or '-' for stdin)."); return 1; }
+        if (file != null && text != null) { Console.Error.WriteLine("[beat update] pass --file or --text, not both."); return 1; }
+        if (file != null)
+        {
+            // The safe path for prose: argv and stdin both cross the Windows console code page
+            // (en dashes arrived as 0x96) and stdin also injected CRLF. A file is read as strict
+            // UTF-8 (BOM honoured) and refused, unwritten, if it is not valid UTF-8.
+            if (!File.Exists(file)) { Console.Error.WriteLine($"[beat update] file not found: {file}"); return 1; }
+            try { text = await File.ReadAllTextAsync(file, new System.Text.UTF8Encoding(false, throwOnInvalidBytes: true)); }
+            catch (System.Text.DecoderFallbackException) { Console.Error.WriteLine($"[beat update] {file} is not valid UTF-8; beat left unchanged."); return 1; }
+        }
+        if (string.IsNullOrWhiteSpace(text)) { Console.Error.WriteLine("[beat update] --file <path> or --text is required (or '-' for stdin)."); return 1; }
 
         if (text == "-") text = await Console.In.ReadToEndAsync();
         // Checked AFTER the stdin read: with nothing piped in, "-" read "" from the Hub's stdin
@@ -359,7 +370,7 @@ public static class BeatCli
         Console.Error.WriteLine("  insert  --node <slug|id> [--after <beatId>] [--text \"...\"] [--title \"...\"] [--description \"...\"]  (no --text = a planned beat)");
         Console.Error.WriteLine("  delete  --id <beatId> [--node <slug|id>]");
         Console.Error.WriteLine("  clear   --node <slug|id>  (soft-delete every enabled beat in the node)");
-        Console.Error.WriteLine("  update  --id <beatId> --text \"...\"  (use '-' for stdin)");
+        Console.Error.WriteLine("  update  --id <beatId> --file <path.txt>  (strict UTF-8; the safe path for prose)  |  --text \"...\"  (use '-' for stdin)");
         Console.Error.WriteLine("  meta    --id <beatId> [--title \"...\"] [--kind \"...\"] [--description \"...\"] [--tone \"...\"] [--pace \"...\"] [--role \"...\"] [--scene-type \"...\"] [--act N] [--chapter-start | --no-chapter-start]");
         Console.Error.WriteLine("          (only the fields you pass change; pass \"\" to clear one)");
         Console.Error.WriteLine("  show    --id <beatId>");
