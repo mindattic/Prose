@@ -988,9 +988,11 @@ public static class ServiceCollectionExtensions
         // instantiating it at startup makes the subscription live immediately.
         // Every chapter save triggers a background contradiction + cliché scan
         // via the cloud LLM, with grounding pulled from SQL via WorldStateService.
+        services.AddSingleton<FindingSuppressionService>();
         services.AddSingleton<FindingsService>();
         services.AddSingleton<FindingApplyService>();
         services.AddSingleton<ContinuousQualityService>();
+        services.AddSingleton<BookReportService>();
         services.AddSingleton<LlmVotingProvider>(sp =>
         {
             var cfg  = sp.GetRequiredService<VotingConfiguration>();

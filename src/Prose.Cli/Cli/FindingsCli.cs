@@ -40,6 +40,21 @@ namespace Prose.Cli;
 ///                                                                      Dismiss every open finding
 ///                                                                      matching the filter(s). At
 ///                                                                      least one filter is required.
+///   prose --findings codes                                            Print the stable code registry
+///                                                                      (FindingCodeRegistry) — what you
+///                                                                      can pass to --code below.
+///   prose --findings suppress --node &lt;slug-or-code&gt; --code &lt;code&gt; [--beat &lt;guid&gt;] [--reason "..."]
+///                                                                      Record an exception: a finding
+///                                                                      matching this code at this scope
+///                                                                      (book-wide, or one beat with
+///                                                                      --beat) files pre-dismissed from
+///                                                                      now on instead of landing in New.
+///                                                                      Never edits beat text or entity
+///                                                                      tags — a side-table, by design
+///                                                                      (see FindingSuppressionRow).
+///   prose --findings unsuppress &lt;id&gt;                                  Deactivate one suppression (its
+///                                                                      own row stays, Active=0).
+///   prose --findings list-suppressions [--node &lt;slug-or-code&gt;]        List active exceptions.
 /// </summary>
 public static class FindingsCli
 {
@@ -54,15 +69,19 @@ public static class FindingsCli
 
         return sub switch
         {
-            "list"         => await CmdList(rest, store, services),
-            "stats"        => CmdStats(store, rest.Contains("--by-instrument")),
-            "show"         => CmdShow(rest, store),
-            "apply"        => await CmdApply(rest, services),
-            "dismiss"      => CmdSetStatus(rest, store, FindingStatus.Dismissed),
-            "triage"       => CmdSetStatus(rest, store, FindingStatus.Triaged),
-            "scan"         => await CmdScan(rest, services),
-            "bulk-dismiss" => await CmdBulkDismiss(rest, store, services),
-            _              => Fail($"unknown subcommand: {sub}"),
+            "list"              => await CmdList(rest, store, services),
+            "stats"             => CmdStats(store, rest.Contains("--by-instrument")),
+            "show"              => CmdShow(rest, store),
+            "apply"             => await CmdApply(rest, services),
+            "dismiss"           => CmdSetStatus(rest, store, FindingStatus.Dismissed),
+            "triage"            => CmdSetStatus(rest, store, FindingStatus.Triaged),
+            "scan"              => await CmdScan(rest, services),
+            "bulk-dismiss"      => await CmdBulkDismiss(rest, store, services),
+            "codes"             => CmdCodes(),
+            "suppress"          => await CmdSuppress(rest, services),
+            "unsuppress"        => CmdUnsuppress(rest, services),
+            "list-suppressions" => await CmdListSuppressions(rest, services),
+            _                   => Fail($"unknown subcommand: {sub}"),
         };
     }
 
@@ -243,6 +262,86 @@ public static class FindingsCli
 
     static string Truncate(string s, int max) => string.IsNullOrEmpty(s) || s.Length <= max ? s : max <= 1 ? "…" : s.Substring(0, max - 1) + "…";
 
+    static int CmdCodes()
+    {
+        Console.WriteLine($"{"CODE",-20}{"CATEGORY",-22}MATCHES / DESCRIPTION");
+        Console.WriteLine(new string('-', 90));
+        Console.WriteLine($"{"<CategoryName>",-20}{"(any)",-22}Bare FindingCategory name (e.g. CraftChecklist) — suppresses the whole category.");
+        foreach (var c in FindingCodeRegistry.Codes)
+            Console.WriteLine($"{c.Code,-20}{c.Category,-22}{c.Description}");
+        return 0;
+    }
+
+    static async Task<int> CmdSuppress(string[] rest, IServiceProvider services)
+    {
+        var nodeRef = ArgValue(rest, "--node");
+        var code    = ArgValue(rest, "--code");
+        var beatArg = ArgValue(rest, "--beat");
+        var reason  = ArgValue(rest, "--reason");
+        if (nodeRef is null || code is null) return Fail("suppress requires --node <slug-or-code> and --code <code>");
+
+        if (!Prose.Core.Services.FindingCodeRegistry.IsKnownCode(code))
+            return Fail($"unknown code: {code} — see `prose --findings codes`");
+
+        Guid? beatId = null;
+        if (beatArg != null)
+        {
+            if (!Guid.TryParse(beatArg, out var g)) return Fail($"--beat is not a GUID: {beatArg}");
+            beatId = g;
+        }
+
+        var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var node = await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, nodeRef) is { } id
+            ? await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == id)
+            : null;
+        if (node is null) return Fail($"node not found: {nodeRef}");
+
+        var suppressions = services.GetRequiredService<FindingSuppressionService>();
+        var row = suppressions.Add(node.Slug, beatId, code, reason, createdBy: "prose-cli");
+        Console.WriteLine($"[findings] suppression #{row.Id} active: {node.Slug}{(beatId is null ? " (book-wide)" : $" beat:{beatId}")} code={code}" +
+                           (reason is null ? "" : $" reason=\"{reason}\""));
+        return 0;
+    }
+
+    static int CmdUnsuppress(string[] rest, IServiceProvider services)
+    {
+        if (rest.Length == 0 || !long.TryParse(rest[0], out var id)) return Fail("missing id");
+        var suppressions = services.GetRequiredService<FindingSuppressionService>();
+        if (!suppressions.Deactivate(id)) return Fail($"suppression #{id} not found");
+        Console.WriteLine($"[findings] suppression #{id} deactivated");
+        return 0;
+    }
+
+    static async Task<int> CmdListSuppressions(string[] rest, IServiceProvider services)
+    {
+        string? nodeSlug = null;
+        var nodeRef = ArgValue(rest, "--node");
+        if (nodeRef != null)
+        {
+            var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
+            await using var db = await dbFactory.CreateDbContextAsync();
+            var node = await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, nodeRef) is { } id
+                ? await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == id)
+                : null;
+            if (node is null) return Fail($"node not found: {nodeRef}");
+            nodeSlug = node.Slug;
+        }
+
+        var suppressions = services.GetRequiredService<FindingSuppressionService>();
+        var rows = suppressions.List(nodeSlug);
+        if (rows.Count == 0) { Console.WriteLine("[findings] no active suppressions" + (nodeSlug is null ? "" : $" for {nodeSlug}")); return 0; }
+        foreach (var r in rows)
+            Console.WriteLine($"#{r.Id,-5} {r.NodeSlug,-30} {(r.BeatId is null ? "(book)" : $"beat:{r.BeatId}"),-45} {r.Code,-20} {r.Reason}");
+        return 0;
+    }
+
+    static string? ArgValue(string[] rest, string flag)
+    {
+        var i = Array.IndexOf(rest, flag);
+        return i >= 0 && i + 1 < rest.Length ? rest[i + 1] : null;
+    }
+
     static void PrintUsage()
     {
         Console.WriteLine("Usage:");
@@ -254,5 +353,9 @@ public static class FindingsCli
         Console.WriteLine("  prose --findings dismiss <id>");
         Console.WriteLine("  prose --findings scan <file-path>");
         Console.WriteLine("  prose --findings bulk-dismiss [--category <cat>] [--prefix <text>] [--node <slug-or-code>] [--file-prefix <path>]");
+        Console.WriteLine("  prose --findings codes");
+        Console.WriteLine("  prose --findings suppress --node <slug-or-code> --code <code> [--beat <guid>] [--reason \"...\"]");
+        Console.WriteLine("  prose --findings unsuppress <id>");
+        Console.WriteLine("  prose --findings list-suppressions [--node <slug-or-code>]");
     }
 }

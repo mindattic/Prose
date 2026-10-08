@@ -372,6 +372,7 @@ public class ProseDbContext : DbContext
     public DbSet<Tag>             Tags             => Set<Tag>();
     public DbSet<EntityTag>       EntityTags       => Set<EntityTag>();
     public DbSet<FindingRow>      Findings         => Set<FindingRow>();
+    public DbSet<FindingSuppressionRow> FindingSuppressions => Set<FindingSuppressionRow>();
     // PENDING DROP (author ruling 2026-09-22): no code reads/writes this; removed by the drop migration.
     public DbSet<ReaderKnowledgeFact> ReaderKnowledgeFacts => Set<ReaderKnowledgeFact>();
 
@@ -2616,11 +2617,26 @@ public class ProseDbContext : DbContext
             e.Property(x => x.Status).HasMaxLength(20).IsRequired();
             e.Property(x => x.DedupKey).HasMaxLength(450).IsRequired();
             e.Property(x => x.SourceRuleVersion).HasMaxLength(40);
+            e.Property(x => x.SuppressedBy).HasMaxLength(200);
             e.HasIndex(x => x.DedupKey).IsUnique().HasDatabaseName("UQ_Findings_DedupKey");
             e.HasIndex(x => x.Status).HasDatabaseName("IX_Findings_Status");
             e.HasIndex(x => x.FilePath).HasDatabaseName("IX_Findings_FilePath");
             e.HasIndex(x => x.ChapterId).HasDatabaseName("IX_Findings_ChapterId");
             e.HasIndex(x => new { x.Category, x.SourceRuleVersion }).HasDatabaseName("IX_Findings_Category_SourceRuleVersion");
+        });
+
+        // Author-declared "don't re-flag this" exceptions — see FindingSuppressionRow's doc
+        // comment for why this is a side-table and not inline prose/entity-tag markup.
+        b.Entity<FindingSuppressionRow>(e =>
+        {
+            e.ToTable("FindingSuppressions");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Id).ValueGeneratedOnAdd();
+            e.Property(x => x.NodeSlug).HasMaxLength(200).IsRequired();
+            e.Property(x => x.Code).HasMaxLength(100).IsRequired();
+            e.Property(x => x.Reason).HasMaxLength(500);
+            e.Property(x => x.CreatedBy).HasMaxLength(100);
+            e.HasIndex(x => new { x.NodeSlug, x.Active }).HasDatabaseName("IX_FindingSuppressions_Node");
         });
 
         b.Entity<ClaimContradictionRow>(e =>

@@ -56,4 +56,11 @@ public class FindingRow
     /// (table-scoped, not Findings-scoped) RuleVersion column.
     /// </summary>
     public string? SourceRuleVersion { get; set; }
+
+    /// <summary>Non-null when <see cref="Prose.Core.Services.FindingSuppressionService"/> matched
+    /// an active <see cref="FindingSuppressionRow"/> at file time — the matched code plus scope
+    /// (e.g. "CRAFT-8.2 (book)"). The finding is still filed (never silently dropped — the
+    /// audit trail accumulates same as a quote-grounding check), just pre-set to Dismissed instead
+    /// of landing in the New queue. Null = filed and judged in the ordinary way.</summary>
+    public string? SuppressedBy { get; set; }
 }

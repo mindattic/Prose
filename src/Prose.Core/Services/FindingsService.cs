@@ -46,7 +46,8 @@ public record Finding(
     string? Snippet,
     string? SuggestedFix,
     FindingStatus Status,
-    DateTime? ResolvedAt);
+    DateTime? ResolvedAt,
+    string? SuppressedBy = null);
 
 /// <summary>
 /// SQL Server-backed inbox of findings detected by ContinuousQualityService and
@@ -64,13 +65,16 @@ public class FindingsService
 {
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly IPathProvider paths;
+    private readonly FindingSuppressionService? suppressions;
 
     public FindingsService(
         IDbContextFactory<ProseDbContext> dbFactory,
-        IPathProvider paths)
+        IPathProvider paths,
+        FindingSuppressionService? suppressions = null)
     {
-        this.dbFactory = dbFactory;
-        this.paths     = paths;
+        this.dbFactory    = dbFactory;
+        this.paths        = paths;
+        this.suppressions = suppressions;
         EnsureSchema();
         TryImportLegacySqlite();
     }
@@ -180,6 +184,52 @@ public class FindingsService
     internal const string BeatFilePathPrefix = "beat:";
 
     /// <summary>
+    /// Resolves a finding's (NodeSlug, BeatId) scope for the suppression check, from whichever of
+    /// the two live <c>FilePath</c> conventions this finding uses: the node-rooted form
+    /// ("node:{slug}", "node:{slug}/beat:{guid}", "node:{slug}/ch:{n}" — what logic-sweep,
+    /// comprehension, craft-checklist and entity-drift all file under), or the older bare
+    /// "beat:{guid}[:suffix]" form (<see cref="DismissStaleBeatFindingsAsync"/>'s
+    /// <c>EntityContextService</c> findings), resolved to its node via <c>BeatNodes</c>. A FilePath
+    /// matching neither convention returns a null slug, and the caller skips suppression entirely —
+    /// never guesses a scope.
+    /// </summary>
+    private static (string? NodeSlug, Guid? BeatId) ResolveSuppressionScope(ProseDbContext db, string filePath)
+    {
+        const string nodePrefix = "node:";
+        if (filePath.StartsWith(nodePrefix, StringComparison.OrdinalIgnoreCase))
+        {
+            var rest = filePath[nodePrefix.Length..];
+            var slash = rest.IndexOf('/');
+            var slug = slash < 0 ? rest : rest[..slash];
+            Guid? beatId = null;
+            if (slash >= 0)
+            {
+                var tail = rest[(slash + 1)..];
+                if (tail.StartsWith(BeatFilePathPrefix, StringComparison.OrdinalIgnoreCase) &&
+                    Guid.TryParse(tail[BeatFilePathPrefix.Length..], out var g))
+                    beatId = g;
+            }
+            return (slug, beatId);
+        }
+
+        if (filePath.StartsWith(BeatFilePathPrefix, StringComparison.OrdinalIgnoreCase))
+        {
+            var rest = filePath[BeatFilePathPrefix.Length..];
+            var colon = rest.IndexOf(':');
+            var idPart = (colon >= 0 ? rest[..colon] : rest).Trim();
+            if (Guid.TryParse(idPart, out var beatId))
+            {
+                var slug = db.BeatNodes.AsNoTracking()
+                    .Where(bn => bn.BeatId == beatId)
+                    .Join(db.Nodes.AsNoTracking(), bn => bn.NodeId, n => n.Id, (bn, n) => n.Slug)
+                    .FirstOrDefault();
+                return (slug, beatId);
+            }
+        }
+        return (null, null);
+    }
+
+    /// <summary>
     /// Dismiss open findings anchored to a beat that no longer exists in any node.
     ///
     /// <b>The bug this closes.</b> Beat-scoped findings (ENTITY-CONFLICT from
@@ -256,15 +306,33 @@ public class FindingsService
         }
 
         using var db = dbFactory.CreateDbContext();
+
+        // Check the author's exception list before anything else touches the New queue — see
+        // FindingSuppressionRow's doc comment. Filed either way (never silently dropped); a match
+        // just pre-sets Status/SuppressedBy instead of leaving it New.
+        var (scopeNodeSlug, scopeBeatId) = ResolveSuppressionScope(db, filePath);
+        var suppressedBy = scopeNodeSlug is null
+            ? null
+            : suppressions?.FindMatch(scopeNodeSlug, scopeBeatId, category, summary);
+
         var existing = db.Findings.FirstOrDefault(f => f.DedupKey == dedup);
         if (existing != null)
         {
-            // Conflict update — same shape as the prior SQLite UPSERT.
+            // Conflict update — same shape as the prior SQLite UPSERT. A suppression added after
+            // the finding was first filed now takes effect on this re-detection; one that only
+            // ever matched before still does, so a human Dismiss/Applied on an UNSUPPRESSED finding
+            // is never silently overwritten by a later checker run.
             existing.Severity          = severity.ToString();
             existing.Snippet           = snippet;
             existing.SuggestedFix      = suggestedFix;
             existing.DetectedAt        = DateTime.UtcNow;
             existing.SourceRuleVersion = sourceRuleVersion;
+            if (suppressedBy != null && existing.Status == nameof(FindingStatus.New))
+            {
+                existing.Status       = nameof(FindingStatus.Dismissed);
+                existing.ResolvedAt   = DateTime.UtcNow;
+                existing.SuppressedBy = suppressedBy;
+            }
             db.SaveChanges();
             return existing.Id;
         }
@@ -279,9 +347,11 @@ public class FindingsService
             Summary            = summary,
             Snippet            = snippet,
             SuggestedFix       = suggestedFix,
-            Status             = nameof(FindingStatus.New),
+            Status             = suppressedBy != null ? nameof(FindingStatus.Dismissed) : nameof(FindingStatus.New),
             DedupKey           = dedup,
             SourceRuleVersion  = sourceRuleVersion,
+            SuppressedBy       = suppressedBy,
+            ResolvedAt         = suppressedBy != null ? DateTime.UtcNow : null,
         };
         db.Findings.Add(row);
         try
@@ -590,5 +660,6 @@ public class FindingsService
         Snippet:      r.Snippet,
         SuggestedFix: r.SuggestedFix,
         Status:       Enum.TryParse<FindingStatus>(r.Status, out var st) ? st : FindingStatus.New,
-        ResolvedAt:   r.ResolvedAt);
+        ResolvedAt:   r.ResolvedAt,
+        SuppressedBy: r.SuppressedBy);
 }

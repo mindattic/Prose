@@ -150,6 +150,13 @@ Audit every story against all six. Findings cite SortKeys and quote the offendin
   version (the one stated most, or locked), not to a new number.
 - Report-only first, then fix: audits never write; fixes are a separate pass with the audit
   report as input. Auditors must be told "do not invent problems — if the logic holds, say so."
+- **A repeated false positive against an established, intentional pattern gets suppressed, not
+  re-dismissed by hand forever (2026-10-08, [docs/FINDING-CODES.md](FINDING-CODES.md)).**
+  `prose --findings suppress --node <slug> --code <code> [--beat <guid>] --reason "..."` records a
+  side-table exception keyed to a stable code (CRAFT.md §8's own numbered list, DELIGHT §14, or a
+  bare `FindingCategory` name) — never inline prose/entity-tag markup, which would either silently
+  vanish on the next beat save or leak into the exported book. A suppressed finding still files,
+  pre-set to Dismissed with the matched code recorded, so the audit trail never goes silent.
 
 ## 5. Verification gates (every fix pass) {#SS-LOGIC-5}
 

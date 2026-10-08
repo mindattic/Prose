@@ -2286,6 +2286,15 @@ if (args.Contains("--morning-report"))
     return;
 }
 
+// prose --book-report --slug <slug-or-code> [--out <dir>] [--code <CODE>] [--complete]
+// Deterministic findings/convergence/decision-log pull for one book, written to
+// Downloads\GLMZ_Book_Reports\drafts\{CODE}[_complete].md (see BookReportService/BookReportCli).
+if (args.Contains("--book-report"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BookReportCli", args);
+    return;
+}
+
 // prose --prose-health [--slug <nodeSlug>] [--json] [--out <dir>]
 // Zero-cost overnight health scan: surface stats + kNN score prediction +
 // semantic outlier detection using cached ProseEmbeddings. No API calls.
