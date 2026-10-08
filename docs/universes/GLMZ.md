@@ -70,10 +70,10 @@ continental bedrock and laid on ocean floors. Pods move at Mach 5–6 (~6,000 kp
 **Routes:** <entity repo="place" guid="6a5b2384-072c-f6a9-b228-107570089917">Chicago</entity> → <entity repo="place" guid="01a06ee1-ed6c-7a54-97a5-56afca1f1f19">Rotterdam</entity>: 43 min. <entity repo="place" guid="6a5b2384-072c-f6a9-b228-107570089917">Chicago</entity> → Lagos: 51 min. <entity repo="place" guid="6a5b2384-072c-f6a9-b228-107570089917">Chicago</entity> → Osaka: 97 min
 (via Bering Strait arc, the longest route).
 
-**The Blur:** The in-universe name for a <entity repo="corponation" guid="0d831459-182f-4efc-9920-bdf9e032c61d">Pulse</entity> transit — the entire journey between boarding
+**<entity repo="place" guid="01a1031a-5206-7ba2-ad8f-78f1790cb597">The Blur</entity>:** The in-universe name for a <entity repo="corponation" guid="0d831459-182f-4efc-9920-bdf9e032c61d">Pulse</entity> transit — the entire journey between boarding
 and arrival. Not a geographic zone. Not jurisdictional. Everything passes so fast it can't be
-locked onto: the whole ride is called The Blur. *"She watched <entity repo="vocabulary" guid="019d6143-aabb-7370-8444-839d7f7bc429">Iowa</entity> in The Blur."* *"The Blur
-thinned"* (arriving). Correct usage: "somewhere in The Blur" = during transit.
+locked onto: the whole ride is called <entity repo="place" guid="01a1031a-5206-7ba2-ad8f-78f1790cb597">The Blur</entity>. *"She watched <entity repo="vocabulary" guid="019d6143-aabb-7370-8444-839d7f7bc429">Iowa</entity> in <entity repo="place" guid="01a1031a-5206-7ba2-ad8f-78f1790cb597">The Blur</entity>."* *"<entity repo="place" guid="01a1031a-5206-7ba2-ad8f-78f1790cb597">The Blur</entity>
+thinned"* (arriving). Correct usage: "somewhere in <entity repo="place" guid="01a1031a-5206-7ba2-ad8f-78f1790cb597">The Blur</entity>" = during transit.
 
 **<entity repo="corponation" guid="0d831459-182f-4efc-9920-bdf9e032c61d">Pulse</entity> pod mechanic — spheres + Hyper Reality:** Physically, passengers ride in individual
 sealed spheres (one per person), pitch-black inside, lit only by the GIDS-4 status ring.
@@ -185,7 +185,7 @@ authorization is its own kind of statement. Inside is <entity repo="place" guid=
 
 **Key named districts:**
 - **<entity repo="place" guid="01a01887-b5f4-781c-8d38-122f7e1f38ba">The Loop</entity>** — <entity repo="place" guid="6a5b2384-072c-f6a9-b228-107570089917">Chicago</entity> core; prestige corporate towers, arcology rows, banking; highest <entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">ArcSec</entity> presence
-- **Bloom Quarter** — nanotech R&D and biomodification district; legal-gray clinics, corpo labs, body-mod culture; Substrate coverage degraded here (see Nanotechnology)
+- **<entity repo="place" guid="019ef735-1581-7998-9cfa-2c6411898545">Bloom Quarter</entity>** — nanotech R&D and biomodification district; legal-gray clinics, corpo labs, body-mod culture; Substrate coverage degraded here (see Nanotechnology)
 - **The Yards** — western lakeshore industrial strip; shipyards, heavy manufacturing, <entity repo="vocabulary" guid="019d6143-aabb-75d1-9889-22df001c8982">Iowan Behemoth</entity> staging grounds
 - **Gray Zone** — ungoverned buffer between CorpoNation arcologies; where operators, Splicers, and scavs work; not a slum — a free-fire zone of opportunity and danger
 
@@ -198,10 +198,10 @@ cannot afford the float layer. Do not conflate them.
 **Altitude = class in practice:**
 - **Sky People** — most privileged residents; altitude physically separates money from the city below
 - **<entity repo="vocabulary" guid="019d6143-aaab-7ce0-be22-5325b5260bcd">Float</entity> layer** — aeroblocs, aeroquarters (<entity repo="vocabulary" guid="019d6143-aaab-7ce0-be22-5325b5260bcd">Float</entity> Districts), aeropolises (Cloudtowns); wealth lives here
-- **The Low** (30–320m) — ungoverned gap: <entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">ArcSec</entity> patrol ceiling ~50m, MATA radar floor 320m; neither covers this band → gray-market vertical transit, industrial haze, building-wake turbulence
+- **<entity repo="place" guid="019f1b3c-3b28-759b-9806-ff5fcc3f5560">The Low</entity>** (30–320m) — ungoverned gap: <entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">ArcSec</entity> patrol ceiling ~50m, MATA radar floor 320m; neither covers this band → gray-market vertical transit, industrial haze, building-wake turbulence
 - **Street level** — where most stories happen
 
-**The Spine** — the western lakeshore corridor specifically: <entity repo="place" guid="6a5b2384-072c-f6a9-b228-107570089917">Chicago</entity> → Milwaukee → Green Bay.
+**<entity repo="place" guid="01a101d4-5b69-70c9-9f2c-cf8161569ec8">The Spine</entity>** — the western lakeshore corridor specifically: <entity repo="place" guid="6a5b2384-072c-f6a9-b228-107570089917">Chicago</entity> → Milwaukee → Green Bay.
 
 **Green Bay** — full metropolis, low millions population. Not a frontier town.
 
@@ -210,10 +210,10 @@ are common in the inner districts — made possible by ferrocrete composites. Co
 arcologies are the tallest structures, clearing even supertall residential towers.
 
 **Space elevator** — visible over the southern horizon from <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>; operational; most residents
-stop noticing after a year. Street names: **the Thread**, **the Stitch**. Corporate designation:
+stop noticing after a year. Street names: **the <entity repo="vocabulary" guid="01a1016d-9a65-7f7d-9273-3680683cde1f">Thread</entity>**, **the Stitch**. Corporate designation:
 Apex Tether Authority (ATA), private concessional operator.
 
-At night, the Thread is the most striking object in the southern sky: a near-invisible filament
+At night, the <entity repo="vocabulary" guid="01a1016d-9a65-7f7d-9273-3680683cde1f">Thread</entity> is the most striking object in the southern sky: a near-invisible filament
 rising from the horizon to a point that vanishes into the upper atmosphere, and along it the
 cargo and transit pods rise and descend like a gossamer string of water droplets — lit against
 the dark, widely spaced, moving so slowly they seem still until you track one for a few seconds
@@ -222,7 +222,7 @@ visual. <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</e
 a very good or very bad night always do.
 
 **Prose ground rule:** Any night scene with a clear view of the southern sky — outdoor,
-rooftop, elevated, wide open — must include at least one reference to the Thread. It does
+rooftop, elevated, wide open — must include at least one reference to the <entity repo="vocabulary" guid="01a1016d-9a65-7f7d-9273-3680683cde1f">Thread</entity>. It does
 not need to be foregrounded; a single clause is enough. The character's relationship to it
 (noticing it / not noticing it / watching a pod for a moment) is a register detail.
 
@@ -495,7 +495,7 @@ basic medical response) and passive functions (structural scaffolding, wound clo
 
 **The Ongoing** — continuous molecular warfare inside the Substrate between competing
 nano-organisms. Background condition. A **Bloom event** = local Substrate failure. The
-Bloom Quarter averages 31% coverage due to the known Substrate seam there.
+<entity repo="place" guid="019ef735-1581-7998-9cfa-2c6411898545">Bloom Quarter</entity> averages 31% coverage due to the known Substrate seam there.
 
 **Five-class nano system:**
 - Class I — atmospheric, municipal permit; common as weather
@@ -747,7 +747,7 @@ Taiwanese, Vietnamese, Cambodian, Lao, Thai, Burmese, Mongolian, maritime SE Asi
 carry pure East Asian names. You are BORN <entity repo="faction" guid="019d6143-a893-7801-860b-0eda6a216393">Lotus</entity> or never belong. Non-bloodline operators
 ("dogs") are used for dirty work and never seated at council.
 
-**Structure:** Stems (council) + Root (half-mythical senior leadership) + Thorns (enforcers).
+**Structure:** <entity repo="faction" guid="01a101f8-53bd-7bc9-84cd-ad1b68368f4a">Stems</entity> (council) + Root (half-mythical senior leadership) + <entity repo="faction" guid="01a101f8-48af-7a55-bcb0-93e27980095c">Thorns</entity> (enforcers).
 
 **Territory:** Centered in <entity repo="place" guid="01a018a4-086e-73c5-b9ca-65a52a73f25c">Pilsen</entity>, Bridgeport, Back of the Yards (<entity repo="place" guid="6a5b2384-072c-f6a9-b228-107570089917">Chicago</entity> Gray Zone).
 

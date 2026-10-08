@@ -900,8 +900,8 @@ public class FactionRepository : EfRepository<FactionData>
 /// Fully relational WorldbuildingDocRepository. Reads materialize WorldbuildingDocument
 /// from the Documents table + DocumentHeadings bridge â€” never from Records.Json. Writes
 /// persist via <see cref="DocumentMapper"/>. Records.Json is left intact (additive-only).
-/// Note: Entity.Name mirrors FileName (or Title as fallback), matching the original
-/// EfRepository nameSelector <c>d => d.FileName</c>.
+/// Note: Entity.Name is the Title (see <see cref="DocumentEntityName"/>); GetByName still keys on
+/// FileName, matching the original EfRepository nameSelector <c>d => d.FileName</c>.
 /// </summary>
 public class WorldbuildingDocRepository : EfRepository<WorldbuildingDocument>
 {
@@ -987,8 +987,8 @@ public class WorldbuildingDocRepository : EfRepository<WorldbuildingDocument>
 
         using var db = dbFactory.CreateDbContext();
 
-        // Entity.Name mirrors FileName (per DocumentMapper.FillScalars contract)
-        var name = item.FileName?.Length > 0 ? item.FileName : (item.Title ?? "");
+        var name = DocumentEntityName(item,
+            db.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => e.Id == id).Select(e => e.Name).FirstOrDefault());
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, null, DocumentMapper.LoadOne)) return;
         // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
@@ -1043,6 +1043,16 @@ public class WorldbuildingDocRepository : EfRepository<WorldbuildingDocument>
         base.Delete(name);
         InvalidateMappedCache();
     }
+
+    /// <summary>The entity row's name for a document: its Title when it has one; otherwise the name
+    /// the row already carries (the corpus names an untitled document "(untitled document)"); a new
+    /// untitled row takes its FileName. The FileName is a storage key, not a name — mirroring it
+    /// renamed (and re-slugged) every titled document on its first save, so a one-field edit of
+    /// file_name rewrote the entity's name and slug (2026-10-03, 53 documents).</summary>
+    public static string DocumentEntityName(WorldbuildingDocument item, string? currentName) =>
+        !string.IsNullOrWhiteSpace(item.Title) ? item.Title
+        : !string.IsNullOrWhiteSpace(currentName) ? currentName
+        : item.FileName ?? "";
 
     private static Guid ParseDocumentGuid(string s)
     {

@@ -1,7 +1,7 @@
 {
   "title": "Attendance \u2014 Glossary",
-  "generatedAt": "2026-08-14T08:28:06.7886517Z",
-  "termCount": 42,
+  "generatedAt": "2026-10-08T15:45:37.1072069Z",
+  "termCount": 46,
   "terms": [
     {
       "term": "AAMA",
@@ -10,16 +10,16 @@
       "category": "Bureaucracy"
     },
     {
+      "term": "Air Tax",
+      "fullForm": null,
+      "definition": "The toll line marking where a district\u0027s altitude -- and the tax levied for the privilege of occupying it -- steps up. Used colloquially as a spatial marker (\u0022below the Air Tax line\u0022) for where the paid-for tiers of a structure end and the unmetered lower floors begin.",
+      "category": "Economy"
+    },
+    {
       "term": "AR",
       "fullForm": "Augmented Reality",
       "definition": "Displayed content layered over physical sight -- distinct from full Hyper Reality, which has no physical counterpart at all. AR overlays annotate or decorate what\u0027s actually there; Hyper Reality substitutes for it entirely.",
       "category": null
-    },
-    {
-      "term": "ARC",
-      "fullForm": "Aerostatic Regulatory Command",
-      "definition": "The checkpoint-enforcement arm governing crossings between corporate interior blocs and the Grey Zone ground \u2014 customs, biometric processing, and dispatch of Direct Response Units. Distinct from Arcturus Defense Solutions (ArcSec), which handles physical/military security; ARC is a civil processing and customs authority.",
-      "category": "Enforcement"
     },
     {
       "term": "Archology",
@@ -29,8 +29,8 @@
     },
     {
       "term": "ArcSec",
-      "fullForm": "Arcturus Military Command (Arcturus Defense Solutions)",
-      "definition": "The physical-security monopoly chartered under the Meridian Compact: sovereign perimeter defense, PMC contracting, corporate military, autonomous weapons. Does not compete with Halcyon/NCID\u0027s neuretics-crime jurisdiction.",
+      "fullForm": "Arcturus Civil Security",
+      "definition": "Arcturus\u0027s uniformed, armed street force and the only badge in the GLMZ: checkpoints, patrols, raids, ration-window scans. It keeps people down for the CorpoNations; it is not paid to protect. The city police dissolved in 2208.",
       "category": "Enforcement"
     },
     {
@@ -40,15 +40,21 @@
       "category": null
     },
     {
+      "term": "Arrangement, The",
+      "fullForm": null,
+      "definition": "The gray-zone name for the unwritten broker\u0027s standard: a deal neither side names on paper, with no after-clause. At an Ironbend dock, to ask for the Arrangement is to ask to be put in touch with the House. In the deepest sense the street never uses, it is the shape the drilling makes in the world.",
+      "category": "Economy"
+    },
+    {
+      "term": "Atmospheric Processors, The",
+      "fullForm": null,
+      "definition": "The vague, never-explained weather infrastructure of the GLMZ. It keeps the CorpoNations in perfect days and sheds warm, misting runoff that collects in the Seams, filming every gutter and puddle with a rainbow. Nobody in the Seams knows who runs it or how; people point at the towers and the stacks and say the Processors.",
+      "category": "World Physics"
+    },
+    {
       "term": "Automaton",
       "fullForm": null,
       "definition": "A non-sentient machine -- built, not born, and not alive, however convincingly it behaves. The category GLMZ law and custom draw a hard line against confusing with an E.L.F., which is alive.",
-      "category": null
-    },
-    {
-      "term": "Black Ice",
-      "fullForm": null,
-      "definition": "A category of neuretics-crime NCID investigates: defensive countermeasures embedded in a data system, deployed against an intruding Channeler, Ghost, or Splicer. Exact mechanics aren\u0027t spelled out on the page beyond the term itself -- but deploying it is a crime, not a legitimate defense.",
       "category": null
     },
     {
@@ -68,6 +74,12 @@
       "fullForm": null,
       "definition": "A named Schism Intelligence measured at a 72-74 Hz resonance signature.",
       "category": "Anomaly"
+    },
+    {
+      "term": "DataEast",
+      "fullForm": null,
+      "definition": "The CorpoNation dominating GLMZ\u0027s Simulated Reality entertainment market.",
+      "category": "CorpoNation"
     },
     {
       "term": "E.L.F.",
@@ -108,8 +120,14 @@
     {
       "term": "Halcyon",
       "fullForm": "Halcyon Civil Security",
-      "definition": "The CorpoNation holding GLMZ\u0027s neuretics-crime enforcement monopoly. Administers augmentation certification and maintenance across the corridor -- which is what gives its investigative arm, NCID, forensic access no other body can match.",
-      "category": null
+      "definition": "The CorpoNation that polices the digital: cybercrime, data theft, intrusion, access and licensing, neural and network offenses, compliance holds and review boards. It never runs street raids or armed operations; where it needs armed bodies they wear Arcturus or a hired crew, with Halcyon supplying the license, paper or hold. Its investigative arm is NCID.",
+      "category": "Enforcement"
+    },
+    {
+      "term": "hamon",
+      "fullForm": null,
+      "definition": "The temper line visible along a traditional blade, marking the boundary between its hardened edge and softer spine -- the signature left by differential quenching, and the thing a collector reads first. Silence has none: its edge and spine are covalently cross-linked rather than quenched, and the junction leaves nothing to see. To a knowledgeable eye the absence says more than any pattern would.",
+      "category": "Swordsmithing"
     },
     {
       "term": "Husk",
@@ -130,15 +148,15 @@
       "category": "Geography"
     },
     {
-      "term": "Meridian Compact",
+      "term": "Low, The",
       "fullForm": null,
-      "definition": "The charter under which GLMZ\u0027s two enforcement monopolies -- ArcSec (physical) and Halcyon/NCID (neuretics-crime) -- split jurisdiction and agree not to compete on each other\u0027s terrain.",
-      "category": null
+      "definition": "The ungoverned altitude band between thirty and three hundred twenty meters above the ground. Corporate authority reaches to twenty-five meters and above 320; between lies a stretch no charter claims. A bloc that sinks below 320 meters drops out of the city\u0027s counted air: no governance line, no Air Tax bracket, no insurer.",
+      "category": "Geography"
     },
     {
       "term": "NCID",
       "fullForm": "Neuretic Crime Investigation Division",
-      "definition": "Halcyon Civil Security\u0027s investigative field arm -- street name RaNCID. The neuretics-crime enforcement monopoly: illegal ghosting (ECT), unauthorized neural surveillance, black ice deployment, neuretics assault. Halcyon\u0027s administrative control of augmentation certification gives NCID forensic access no other body can match.",
+      "definition": "Halcyon\u0027s digital-forensics and records division (street name RaNCID). It investigates neuretic and network offenses by data, license and access, files holds and reports, and asks Arcturus when a body is needed. It never runs raids or armed patrols; Arcturus (ArcSec) is the only street force.",
       "category": "Enforcement"
     },
     {
@@ -190,6 +208,12 @@
       "category": "Enforcement"
     },
     {
+      "term": "saya",
+      "fullForm": null,
+      "definition": "The scabbard of a Japanese sword -- a close-fitted sheath that carries the blade and protects its edge. On Silence the saya is also the mount: electro-permanent magnets seated at its throat hold the blade in place until the hilt confirms its owner\u0027s genetic markers and releases them. In anyone else\u0027s hands, sword and scabbard are a single inert object.",
+      "category": "Swordsmithing"
+    },
+    {
       "term": "Schism",
       "fullForm": null,
       "definition": "Official term for the geometry-breaking anomalies scattered across GLMZ -- a hum at 19Hz from no direction, a block that takes eleven steps when geometry says nine. Classified Class-1 through Class-5 by intensity by the Anomalous Activity Monitoring Authority; what they actually are remains an open question, even to the people whose job is to classify them.",
@@ -204,13 +228,13 @@
     {
       "term": "Silence",
       "fullForm": null,
-      "definition": "Kyle Mercer\u0027s matte-black, mono-edged katana with a carbon-nanotube blade -- no powers, no glow, no charge state, just an exceptionally kept sword.",
+      "definition": "A matte-black, mono-edged katana with no markings, no piezo, no glow, no charge state -- nothing about it that looks like what it is. Edge and spine are two different materials covalently cross-linked into one continuous object with no seam: a high-entropy metallic-glass edge that shear-bands and self-sharpens as it cuts, joined to a carbon-nanotube-titanium spine with no crystal lattice to crack. The insulated tsuka and genetic lock keep it from conducting a charge into its owner\u0027s hand or working in anyone else\u0027s (see tsuka, saya, hamon). No powers -- just an exceptionally kept sword.",
       "category": "Weapon"
     },
     {
       "term": "Spine, The",
       "fullForm": null,
-      "definition": "The western lakeshore corridor territory of GLMZ.",
+      "definition": "The megastructure corridor of the GLMZ: from Chicago west to Green Bay, around Lake Superior, through Michigan and Detroit, and on through the sprawl to Buffalo. It carries freight tubes, elevated track and the long lakeshore walkway. \u0027The Spine aeroplex\u0027 is its Chicago lakeshore node (480 meters), which Chicagoans also shorthand as \u0027the Spine\u0027.",
       "category": "Geography"
     },
     {
@@ -232,10 +256,10 @@
       "category": "Tech"
     },
     {
-      "term": "Thread, The",
+      "term": "tsuka",
       "fullForm": null,
-      "definition": "A long-haul aerial transit line visible climbing out of the haze on the horizon, running lights on, indifferent to the ground below it.",
-      "category": "Transportation"
+      "definition": "The hilt of a Japanese sword -- core, collar, wrap, and on a modern instrumented blade everything housed inside them. Silence\u0027s tsuka is boron nitride under a capillary microfluidic mesh wrap: both insulators, so its owner\u0027s hand never touches a conductive surface. It also carries the genetic lock and the magnets that retain the blade in its scabbard.",
+      "category": "Swordsmithing"
     },
     {
       "term": "Veil, The",

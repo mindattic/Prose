@@ -10,12 +10,14 @@ namespace Prose.Cli;
 /// The world's write path and station F1, CLI twin of MCP set_character_fields / verify_entity_*
 /// (RFC 0015 §3.3–3.4). Runs in the Hub, so it works right after a Hub deploy.
 ///
+///   prose --universe glmz --get-entity-fields --id &lt;any entity id&gt;   (read only: record, name, slug, summary)
 ///   prose --universe glmz --set-character-fields --id &lt;character id&gt; --file fields.json [--confirm-unread]
 ///   prose --universe glmz --set-entity-fields --id &lt;any entity id&gt; --file fields.json [--confirm-unread]
 ///   prose --universe glmz --verify-entity begin --entity &lt;id&gt; --node &lt;book&gt; [--text-budget N] [--out packet.json]
 ///   prose --universe glmz --verify-entity commit --nonce &lt;nonce&gt; [--by claude]
 ///
 /// fields.json is one JSON object keyed by get_character's snake_case names; null clears a field.
+/// The key "summary" writes the entity's own one-paragraph summary (Entities.Description) on any type.
 /// Exit codes: 0 ok · 1 bad args / not found · 2 refused (cost not confirmed, a field did not land,
 /// or the verification no longer matches the book).
 /// </summary>
@@ -26,6 +28,16 @@ public static class WorldCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         string? Flag(string name) { var i = Array.IndexOf(args, name); return i >= 0 && i + 1 < args.Length ? args[i + 1] : null; }
+
+        if (args.Contains("--get-entity-fields"))
+        {
+            var id = Flag("--id");
+            if (string.IsNullOrWhiteSpace(id)) { Console.Error.WriteLine("[world] usage: --get-entity-fields --id <entity id>"); return 1; }
+            var r = await services.GetRequiredService<EntityFieldWriter>().GetFieldsAsync(id);
+            Console.WriteLine(JsonSerializer.Serialize(r, Json));
+            if (!r.Ok) Console.Error.WriteLine($"[world] {r.Error}");
+            return r.Ok ? 0 : 1;
+        }
 
         if (args.Contains("--set-character-fields") || args.Contains("--set-entity-fields"))
         {

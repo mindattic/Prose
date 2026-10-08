@@ -139,9 +139,24 @@ public class KdpManifestService
             var universeSlug = universeNames.TryGetValue(n.UniverseId, out var slug) ? slug : "glmz";
             var code = n.NodeCode ?? n.Slug;
 
-            bool hasPublishUrl = !string.IsNullOrWhiteSpace(n.PublishUrl);
+            // The KDP store (not the DB) is ground truth for whether a book is actually live —
+            // confirmed live 2026-10-04: VATD showed "Unpublished" here because its DB PublishUrl/
+            // KdpPublishedAt columns were never backfilled, even though the store's own publish
+            // record (imported from its legacy .publish marker) already confirmed it published
+            // 2026-08-16 with a real ASIN. Resolved here, early, so both the status computation
+            // below AND the DB-column fallback can defer to it instead of only trusting columns
+            // that a one-time import never wrote back to.
+            kdpBooks.TryGetValue(code, out var kdpBook);
+            var publishMarker = KdpJsonTransfer.ToPublishMarker(kdpBook);
+            var storeConfirmedPublishedAt = publishMarker?.PublishedAtUtc is string storeAtRaw
+                && DateTime.TryParse(storeAtRaw, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.RoundtripKind, out var storeAt)
+                ? (DateTime?)storeAt
+                : null;
+            var storeConfirmedLive = storeConfirmedPublishedAt != null;
+
+            bool hasPublishUrl = !string.IsNullOrWhiteSpace(n.PublishUrl) || storeConfirmedLive;
             string? baselineWarning = null;
-            if (hasPublishUrl && n.KdpPublishedAt == null)
+            if (hasPublishUrl && n.KdpPublishedAt == null && storeConfirmedPublishedAt == null)
             {
                 // Live on Amazon (PublishUrl set) but we never recorded when — can't tell if the
                 // current disk version has already gone up or not. Conservative: flag for a check
@@ -241,17 +256,28 @@ public class KdpManifestService
                 : new List<string>();
 
             // Asin/KdpTitleId are DB columns now (canon), not recomputed each time — but fall
-            // back to the legacy derivations (regex off PublishUrl, the KDP store's title-id
-            // crosswalk) for any book published before these columns existed and not yet backfilled.
+            // back to the legacy derivations (regex off PublishUrl, the KDP store's confirmed
+            // publish record, the KDP store's title-id crosswalk) for any book published before
+            // these columns existed and not yet backfilled.
             var asin = n.Asin;
             if (string.IsNullOrWhiteSpace(asin) && !string.IsNullOrWhiteSpace(n.PublishUrl))
             {
                 var m = Regex.Match(n.PublishUrl, @"/dp/([A-Z0-9]{10})");
                 if (m.Success) asin = m.Groups[1].Value;
             }
+            if (string.IsNullOrWhiteSpace(asin) && !string.IsNullOrWhiteSpace(publishMarker?.Asin))
+                asin = publishMarker.Asin;
+
+            // Same ground-truth fallback as hasPublishUrl above: a book the store confirms
+            // published, but whose DB PublishUrl was never backfilled, must still report a real
+            // link and a real "last published" date instead of null/— (confirmed live 2026-10-04,
+            // VATD: store had ASIN B0H59FBCZV and a confirmed 2026-08-16 publish; DB had neither).
+            var effectivePublishUrl = n.PublishUrl;
+            if (string.IsNullOrWhiteSpace(effectivePublishUrl) && !string.IsNullOrWhiteSpace(asin))
+                effectivePublishUrl = $"https://www.amazon.com/dp/{asin}";
+            var effectiveKdpPublishedAt = n.KdpPublishedAt ?? storeConfirmedPublishedAt;
 
             titleIds.TryGetValue(code, out var titleIdInfo);
-            kdpBooks.TryGetValue(code, out var kdpBook);
             var titleId = n.KdpTitleId ?? titleIdInfo?.TitleId;
             var directEditUrl = titleId is string tid && tid.Length > 0
                 ? $"https://kdp.amazon.com/en_US/title-setup/kindle/{tid}/content"
@@ -277,7 +303,6 @@ public class KdpManifestService
             // UpToDateViaLocalMarker lets the caller skip launching the browser entirely instead
             // of opening the book just to discover the same thing three steps in.
             var readyToPublish = kdpBook?.SignOff.Ready == true;
-            var publishMarker = KdpJsonTransfer.ToPublishMarker(kdpBook);
             // Transition hint only (the file is not read): a marker dropped into a folder after
             // the one-time import no longer signs a book off, so say so instead of silently
             // treating the book as work in progress.
@@ -343,7 +368,7 @@ public class KdpManifestService
             // live but has no confirmed-publish record at all (see hasConfirmedPublish above)
             // can't be judged either way — keep the original "needs a check" baseline warning
             // rather than asserting Outdated or Published on no real evidence.
-            if (!(hasPublishUrl && n.KdpPublishedAt == null))
+            if (!(hasPublishUrl && effectiveKdpPublishedAt == null))
             {
                 stale = !isIncomplete && hasPublishUrl && hasNewerVersionThanPublished;
                 // "Unpublished" (distinct from "WorkInProgress"): the hard gate is fully met —
@@ -393,8 +418,8 @@ public class KdpManifestService
                 Keywords: keywords,
                 PublicationStatus: effectiveStatus,
                 NeedsRepublish: stale,
-                KdpPublishedAt: n.KdpPublishedAt,
-                PublishUrl: n.PublishUrl,
+                KdpPublishedAt: effectiveKdpPublishedAt,
+                PublishUrl: effectivePublishUrl,
                 Asin: asin,
                 KdpTitleId: titleId,
                 KdpDirectEditUrl: directEditUrl,

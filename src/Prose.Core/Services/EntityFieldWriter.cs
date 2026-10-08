@@ -8,6 +8,9 @@ using Prose.Core.Data;
 
 namespace Prose.Core.Services;
 
+/// <summary>A record as stored, with the entity row's name, slug and summary (<c>Entities.Description</c>).</summary>
+public sealed record FieldReadResult(bool Ok, string? Error, string? EntityType, string? Name, string? Slug, string? Summary, JsonNode? Record);
+
 /// <summary>
 /// The write path for every entity type a repository serves (RFC 0015 §3.4, widened in I4 real
 /// use): the same rules as <see cref="CharacterFieldWriter"/> — JSON Merge Patch by the record's
@@ -68,7 +71,86 @@ public sealed class EntityFieldWriter(
         ["vote_count"] = "a reader vote count, written by the voting UI, not canon.",
     };
 
+    /// <summary>The pseudo-key for the entity's own one-paragraph summary (<c>Entities.Description</c>),
+    /// which every type carries beside its record and no repository writes. Without it a stale summary
+    /// could be read by every search and context load but corrected by nothing short of raw SQL.</summary>
+    public const string SummaryKey = "summary";
+
+    /// <summary>The record as stored, plus the entity row's name, slug and summary — the read half of
+    /// this writer. It never saves: an agent that needed to see a record used to send a "no-op" write
+    /// as a probe, and a probe with one wrong value rewrote 53 documents (2026-10-03).</summary>
+    public async Task<FieldReadResult> GetFieldsAsync(string id, CancellationToken ct = default)
+    {
+        if (!Guid.TryParse(id, out var entityId)) return new FieldReadResult(false, $"'{id}' is not an entity id.", null, null, null, null, null);
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var row = await db.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => e.Id == entityId)
+            .Select(e => new { e.EntityType, e.Name, e.Slug, e.Description }).FirstOrDefaultAsync(ct);
+        if (row == null) return new FieldReadResult(false, $"no entity with id {id}.", null, null, null, null, null);
+        return new FieldReadResult(true, null, row.EntityType, row.Name, row.Slug, row.Description,
+            CanonRecordLoader.Load(db, row.EntityType, entityId));
+    }
+
     public async Task<FieldWriteResult> SetFieldsAsync(string id, string fieldsJson, bool confirmUnread = false, CancellationToken ct = default)
+    {
+        JsonObject parsed;
+        try { parsed = JsonNode.Parse(fieldsJson ?? "") as JsonObject ?? throw new JsonException(); }
+        catch (JsonException) { return FieldWriteResult.Fail("fields must be one JSON object: {\"field\": value, …}."); }
+        if (!parsed.ContainsKey(SummaryKey)) return await SetRecordFieldsAsync(id, fieldsJson!, confirmUnread, ct);
+
+        var summaryNode = parsed[SummaryKey];
+        if (summaryNode is not null && (summaryNode is not JsonValue sv || !sv.TryGetValue<string>(out _)))
+            return FieldWriteResult.Fail($"'{SummaryKey}' must be a string (or null to clear it).");
+        var summary = summaryNode?.GetValue<string>();
+        parsed.Remove(SummaryKey);
+
+        FieldWriteResult? record = null;
+        if (parsed.Count > 0)
+        {
+            record = await SetRecordFieldsAsync(id, parsed.ToJsonString(), confirmUnread, ct);
+            if (!record.Ok) return record;
+        }
+        var s = await SetSummaryAsync(id, summary, confirmUnread, ct);
+        if (record == null || !s.Ok) return s;
+        return record with
+        {
+            Changed = record.Changed.Concat(s.Changed).ToList(),
+            Warnings = s.Changed.Count == 0 ? record.Warnings : record.Warnings.Where(w => !w.StartsWith("nothing changed")).ToList(),
+            UnreadCost = Math.Max(record.UnreadCost, s.UnreadCost),
+            UnreadBeats = record.UnreadBeats ?? s.UnreadBeats,
+        };
+    }
+
+    /// <summary>Writes <c>Entities.Description</c> with the same rules as a record field: unchanged
+    /// writes nothing, a change that un-reads beats needs <paramref name="confirmUnread"/>, and the
+    /// value is read back.</summary>
+    private async Task<FieldWriteResult> SetSummaryAsync(string id, string? summary, bool confirmUnread, CancellationToken ct)
+    {
+        if (!Guid.TryParse(id, out var entityId)) return FieldWriteResult.Fail($"'{id}' is not an entity id.");
+        var value = string.IsNullOrWhiteSpace(summary) ? null : summary.Trim();
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var row = await db.Entities.IgnoreQueryFilters().FirstOrDefaultAsync(e => e.Id == entityId, ct);
+        if (row == null) return FieldWriteResult.Fail($"no entity with id {id}.");
+        if (string.Equals(row.Description ?? null, value, StringComparison.Ordinal)
+            || (string.IsNullOrEmpty(row.Description) && value == null))
+            return new FieldWriteResult(true, null, [], [], ["nothing changed; nothing was written."], 0, null, null);
+
+        var cost = await gate.ReadBeatsMentioningAsync(entityId, ct);
+        var costRuns = cost.Count == 0 ? null : ReadGateService.Runs(cost.Select(c => c.Number));
+        if (cost.Count > 0 && !confirmUnread)
+            return FieldWriteResult.Fail($"this edit un-reads {cost.Count} beat(s) that mention {row.Name} (#{costRuns}). " +
+                                         "Pass confirmUnread to make it, then re-read them.", cost.Count, costRuns);
+        row.Description = value;
+        row.ModifiedAt = DateTime.UtcNow;
+        await db.SaveChangesAsync(ct);
+
+        await using var check = await dbFactory.CreateDbContextAsync(ct);
+        var back = await check.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => e.Id == entityId).Select(e => e.Description).FirstOrDefaultAsync(ct);
+        var landed = string.Equals(back, value, StringComparison.Ordinal);
+        return new FieldWriteResult(landed, landed ? null : "saved, but the summary read back different from what was written.",
+            [SummaryKey], landed ? [] : [SummaryKey], [], cost.Count, costRuns, null);
+    }
+
+    private async Task<FieldWriteResult> SetRecordFieldsAsync(string id, string fieldsJson, bool confirmUnread, CancellationToken ct)
     {
         if (!Guid.TryParse(id, out var entityId)) return FieldWriteResult.Fail($"'{id}' is not an entity id.");
         string? entityType;
@@ -131,7 +213,11 @@ public sealed class EntityFieldWriter(
         // The record's name — whatever its key: "name", or "term"/"headline"/"codename"/"file_name"/
         // "title" — may not end up blank. Only a null "name" was refused, so {"name":""} or
         // {"term":null} emptied the Entity's name and slug.
-        var nameKey = new[] { "name", "term", "headline", "codename", "file_name", "title" }.FirstOrDefault(props.ContainsKey);
+        // A document is the exception: its entity name is its title, else the name it already has
+        // (WorldbuildingDocRepository.DocumentEntityName), so no field edit can blank it, and an
+        // untitled document's file_name is legitimately empty in the corpus.
+        var nameKey = entityType == "document" ? null
+            : new[] { "name", "term", "headline", "codename", "file_name", "title" }.FirstOrDefault(props.ContainsKey);
         if (nameKey != null && fields.ContainsKey(nameKey) && string.IsNullOrWhiteSpace(intended[nameKey]?.ToString()))
             return FieldWriteResult.Fail($"'{nameKey}' is the record's name and cannot be blank.");
         var changed = fields.Select(f => f.Key).Where(k => !FieldPatch.Same(k, before[k], intended[k])).ToList();

@@ -177,6 +177,40 @@ internal static class KdpFormHelpers
             return el.tagName === 'INPUT' ? el.checked : el.getAttribute('aria-checked') === 'true';
         }
 
+        // A checkbox's OWN bounding rect can be covered, for hit-testing purposes, by an
+        // overlapping sibling — confirmed live 2026-10-04 on KDP's "confirm your answers"
+        // checkbox on the republish Content step: the role=checkbox div's rect spans the full
+        // label row, but document.elementFromPoint at its center resolves to the sibling label
+        // <p> text, not the checkbox or any of its descendants, so a real mouse click at that
+        // point is silently swallowed (the checkbox never toggles, and the caller just finds the
+        // same unchecked box again next iteration). Verify the computed point actually resolves
+        // into the checkbox's own subtree; if not, fall back to the narrowest visible descendant
+        // (the actual rendered icon/glyph, reliably inside its own hit-testable box) instead.
+        function resolvesInto(cb, x, y) {
+            var hit = document.elementFromPoint(x, y);
+            return !!hit && (hit === cb || cb.contains(hit));
+        }
+        function clickPointFor(cb) {
+            var rect = cb.getBoundingClientRect();
+            var cx = rect.left + rect.width / 2, cy = rect.top + rect.height / 2;
+            if (resolvesInto(cb, cx, cy)) return { x: cx, y: cy };
+
+            var narrowest = null;
+            var descendants = cb.querySelectorAll('*');
+            for (var d = 0; d < descendants.length; d++) {
+                var r = descendants[d].getBoundingClientRect();
+                if (r.width <= 0 || r.height <= 0) continue;
+                if (!narrowest || (r.width * r.height) < (narrowest.width * narrowest.height)) narrowest = r;
+            }
+            if (narrowest) {
+                var ncx = narrowest.x + narrowest.width / 2, ncy = narrowest.y + narrowest.height / 2;
+                if (resolvesInto(cb, ncx, ncy)) return { x: ncx, y: ncy };
+            }
+            // Nothing verified cleanly — return the original center anyway; the caller can tell
+            // from isChecked() not having changed, rather than this script guessing further.
+            return { x: cx, y: cy };
+        }
+
         // Match BOTH native <input type=checkbox> AND custom accessible <div role=checkbox>
         // widgets — KDP's real confirm control is the latter, not the former.
         var boxes = Array.from(document.querySelectorAll('input[type=checkbox], [role=checkbox]'));
@@ -188,12 +222,12 @@ internal static class KdpFormHelpers
                 for (var j = 0; j < candidates.length; j++) {
                     if (texts[t].indexOf(candidates[j]) !== -1) {
                         cb.scrollIntoView({ block: 'center', inline: 'center' });
-                        var rect = cb.getBoundingClientRect();
+                        var point = clickPointFor(cb);
                         return JSON.stringify({
                             found: true,
                             text: texts[t].slice(0, 200),
-                            centerX: rect.left + rect.width / 2,
-                            centerY: rect.top + rect.height / 2
+                            centerX: point.x,
+                            centerY: point.y
                         });
                     }
                 }

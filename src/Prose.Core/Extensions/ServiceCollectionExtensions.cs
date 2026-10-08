@@ -526,6 +526,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<Prose.Core.Services.Factory.FactoryUsageCheck>();          // use-or-delete, run at session start
         services.AddSingleton<CharacterFieldWriter>();                                   // set_character_fields
         services.AddSingleton<EntityFieldWriter>();                                      // set_entity_fields (every repository type)
+        services.AddSingleton<CanonMaintenanceService>();                                // entity slug, edge, orphan tag, obligation corrections
         services.AddSingleton<Prose.Core.Services.Factory.WorkOrderService>(sp => new Prose.Core.Services.Factory.WorkOrderService(
             sp.GetRequiredService<IDbContextFactory<ProseDbContext>>(),
             (book, station) => sp.GetRequiredService<Prose.Core.Services.Factory.FactoryService>().StationPassesAsync(book, station)));
@@ -854,6 +855,9 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.CapturePublishedAsinTool>();
         services.AddSingleton<Services.Operator.KdpToolRegistry>();
         services.AddScoped<Services.Operator.KdpOperatorService>();
+        // Full-roster ground-truth sweep (replaces KdpPublish's old subset-driven Start run) —
+        // reuses KdpOperatorService for the actual publish flow, so it shares its scope.
+        services.AddScoped<Services.Operator.KdpReconcileService>();
 
         // NavigationService + DynamicPlaceGenerator removed 2026-09-01 — confirmed dead code.
         // Their only caller, StoryDirectorService's "Surprise Me" pipeline, was deliberately
