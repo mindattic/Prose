@@ -68,7 +68,7 @@ public class DocxExportService
 
     /// <summary>Render the node to a KDP-ready .docx in the export directory; returns the path.
     /// Refuses (<see cref="UnreadBeatsException"/>) if any beat is unread — no override.</summary>
-    public async Task<string> ExportNodeAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
+    public async Task<string> ExportNodeAsync(Guid nodeId, string? author = null, CancellationToken ct = default, string? previewDir = null)
     {
         await readGate.EnsureReadAsync(nodeId, ct);
 
@@ -98,8 +98,12 @@ public class DocxExportService
         var (nodeDir, fileBaseName) = await ExportPathResolver.ResolveAsync(db, node, baseDir, ct);
         // Archive the previous live bundle before writing the next version. The node's current
         // version is the fallback for metadata files without a V<N> filename.
-        cleanup.Clean(nodeDir, node.Version);
-        var exportPath = Path.Combine(nodeDir, $"{fileBaseName} V{nextVersion}.docx");
+        // Preview (verification): render the CURRENT version into a scratch folder — no archive
+        // pass, no version bump, no database write, no press record.
+        var preview = previewDir is not null;
+        if (preview) { nodeDir = previewDir!; Directory.CreateDirectory(nodeDir); }
+        else cleanup.Clean(nodeDir, node.Version);
+        var exportPath = Path.Combine(nodeDir, $"{fileBaseName} V{(preview ? node.Version : nextVersion)}.docx");
 
         using (var doc = WordprocessingDocument.Create(exportPath, WordprocessingDocumentType.Document))
         {
@@ -340,6 +344,8 @@ public class DocxExportService
             body.AppendChild(SectionProps(estimatedPages));
             main.Document.Save();
         }
+
+        if (preview) return exportPath;
 
         // Commit version increment only after the file is successfully written.
         node.Version = nextVersion;

@@ -148,6 +148,70 @@ public class NodeFullExportService
             descPath, descriptionRepaired, kwPath, keywordCount);
     }
 
+    /// <summary>
+    /// Renders the whole bundle (docx, epub, pdf, txt, md, description.txt, keywords.txt) for the
+    /// node's CURRENT version into <paramref name="previewDir"/>, read-only: no archive pass, no
+    /// version bump, no description or page-count write-back, no press record, no ArchivedBooks
+    /// snapshot. EPUB identifier/timestamp and PDF metadata are fixed so two previews of the same
+    /// book compare byte for byte. The read gate still applies to every gated format (law 9).
+    /// Used to verify renderer changes against the whole corpus without publishing anything.
+    /// </summary>
+    public async Task<Result> PreviewAllAsync(Guid nodeId, string? author, string previewDir, CancellationToken ct = default)
+    {
+        Directory.CreateDirectory(previewDir);
+        var docxPath = await docx.ExportNodeAsync(nodeId, author, ct, previewDir);
+        var epubPath = await manuscript.ExportEpubAsync(nodeId, author, ct, previewDir);
+        var pdfPath = await manuscript.ExportPdfAsync(nodeId, author, ct, previewDir);
+        var txtPath = await manuscript.ExportAudioTxtAsync(nodeId, author, ct, previewDir);
+        var mdPath = await manuscript.ExportMarkdownAsync(nodeId, author, ct, previewDir);
+        var (descPath, repaired, kwPath, kwCount) = await PreviewSidecarsAsync(nodeId, previewDir, ct);
+        return new Result(docxPath, epubPath, pdfPath, txtPath, mdPath,
+            MojibakeRepairService.CountDocxMojibake(docxPath), descPath, repaired, kwPath, kwCount);
+    }
+
+    /// <summary>Markdown only — the one format the read gate does not cover — for verification of
+    /// books that cannot yet be pressed.</summary>
+    public Task<string> PreviewMarkdownAsync(Guid nodeId, string? author, string previewDir, CancellationToken ct = default)
+    {
+        Directory.CreateDirectory(previewDir);
+        return manuscript.ExportMarkdownAsync(nodeId, author, ct, previewDir);
+    }
+
+    private async Task<(string? DescPath, bool Repaired, string? KwPath, int KwCount)> PreviewSidecarsAsync(
+        Guid nodeId, string previewDir, CancellationToken ct)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+        var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
+        var wordCount = ordered.Sum(ob => CountWords(BeatMarkup.StripEntityTags(ob.Beat.Text ?? "")));
+        var kindlePages = Math.Max(1, (int)Math.Round(wordCount / 250.0));
+        var readingMinutes = Math.Max(1, (int)Math.Round(wordCount / 200.0));
+
+        var description = node.Description;
+        var repaired = false;
+        if (!string.IsNullOrWhiteSpace(description) && MojibakeRepairService.RepairMixed(description) is string fixedText)
+        {
+            description = fixedText;
+            repaired = true;
+        }
+        var authorPart = StripReadingInfoLine(description ?? "").TrimEnd();
+        var readingLine = $"Approximately {kindlePages} pages and {FormatReadingTime(readingMinutes)} to read.";
+        description = string.IsNullOrWhiteSpace(authorPart) ? readingLine : $"{authorPart}\n\n{readingLine}";
+        var descPath = Path.Combine(previewDir, "description.txt");
+        await File.WriteAllTextAsync(descPath, description.Trim(), ct);
+
+        var keywords = await db.NodeKeywords.AsNoTracking()
+            .Where(k => k.NodeId == nodeId).OrderBy(k => k.SortOrder).Select(k => k.Keyword).ToListAsync(ct);
+        string? kwPath = null;
+        if (keywords.Count > 0)
+        {
+            kwPath = Path.Combine(previewDir, "keywords.txt");
+            await File.WriteAllTextAsync(kwPath, string.Join(Environment.NewLine, keywords), ct);
+        }
+        return (descPath, repaired, kwPath, keywords.Count);
+    }
+
     private static int CountWords(string text) =>
         text.Split([' ', '\t', '\n', '\r'], StringSplitOptions.RemoveEmptyEntries).Length;
 

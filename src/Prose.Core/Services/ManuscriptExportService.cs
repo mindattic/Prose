@@ -63,7 +63,7 @@ public class ManuscriptExportService
     /// Each beat is prefixed with a <c>&lt;!-- beat:N:id32 --&gt;</c> marker
     /// (invisible in rendered MD, unambiguous for <c>prose --import-md</c> reimport).
     /// </summary>
-    public async Task<string> ExportMarkdownAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
+    public async Task<string> ExportMarkdownAsync(Guid nodeId, string? author = null, CancellationToken ct = default, string? previewDir = null)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         // IgnoreQueryFilters(): explicit nodeId, not an ambient scope — a book outside whatever
@@ -148,11 +148,14 @@ public class ManuscriptExportService
         // universe directory — keeps the whole export bundle, including the round-trip
         // .md, in one place per SS-A-whatever-this-becomes.
         var (nodeDir, fileBaseName) = await ExportPathResolver.ResolveAsync(db, node, dir, ct);
+        // Preview (verification) renders into a scratch folder and never touches the book's own.
+        if (previewDir is not null) nodeDir = previewDir;
         Directory.CreateDirectory(nodeDir);
         var path = Path.Combine(nodeDir, $"{fileBaseName} V{node.Version}.md");
         var mdText = md.ToString().TrimEnd() + "\n";
         await File.WriteAllTextAsync(path, mdText, new UTF8Encoding(false), ct);
         log.LogInformation("Exported node {Node} to Markdown {Path}", node.Slug, path);
+        if (previewDir is not null) return path;   // preview writes no ArchivedBooks snapshot
 
         // Every completed export is the historical record now — no temporal
         // table to fall back on. Snapshot the full assembled text so nothing
@@ -176,10 +179,10 @@ public class ManuscriptExportService
     }
 
     /// <summary>Export the node as a KDP-ready PDF to the book's folder in the publish directory; returns the path. Read-gated.</summary>
-    public async Task<string> ExportPdfAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
+    public async Task<string> ExportPdfAsync(Guid nodeId, string? author = null, CancellationToken ct = default, string? previewDir = null)
     {
         await readGate.EnsureReadAsync(nodeId, ct);
-        var (manuscript, path) = await LoadAsync(nodeId, "pdf", ct);
+        var (manuscript, path) = await LoadAsync(nodeId, "pdf", ct, previewDir);
         // Resolution order: explicit param → node.Author (via manuscript) → "MindAttic" (pen name)
         author = string.IsNullOrWhiteSpace(author)
             ? (string.IsNullOrWhiteSpace(manuscript.Author) ? "MindAttic" : manuscript.Author!.Trim())
@@ -197,7 +200,7 @@ public class ManuscriptExportService
         var trim = new PageSize(432, 648);
         const float marginTop = 72f, marginBottom = 72f, marginLeft = 54f, marginRight = 54f;
 
-        QuestPDF.Fluent.Document.Create(container =>
+        var document = QuestPDF.Fluent.Document.Create(container =>
         {
             // ── Title page ──
             container.Page(p =>
@@ -250,24 +253,27 @@ public class ManuscriptExportService
                     });
                 });
             }
-        }).GeneratePdf(path);
-        await recorder.RecordAsync(nodeId, "pdf", path, ct);
+        });
+        if (previewDir is not null)
+            document = document.WithMetadata(PreviewPdfMetadata(manuscript.Title, author));
+        document.GeneratePdf(path);
+        if (previewDir is null) await recorder.RecordAsync(nodeId, "pdf", path, ct);
 
         log.LogInformation("Exported node {Node} to PDF {Path}", manuscript.Slug, path);
         return path;
     }
 
     /// <summary>Export the node as a KDP-ready EPUB 3 to the book's folder in the publish directory; returns the path. Read-gated.</summary>
-    public async Task<string> ExportEpubAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
+    public async Task<string> ExportEpubAsync(Guid nodeId, string? author = null, CancellationToken ct = default, string? previewDir = null)
     {
         await readGate.EnsureReadAsync(nodeId, ct);
-        var (manuscript, path) = await LoadAsync(nodeId, "epub", ct);
+        var (manuscript, path) = await LoadAsync(nodeId, "epub", ct, previewDir);
         // Resolution order: explicit param → node.Author (via manuscript) → "MindAttic" (pen name)
         author = string.IsNullOrWhiteSpace(author)
             ? (string.IsNullOrWhiteSpace(manuscript.Author) ? "MindAttic" : manuscript.Author!.Trim())
             : author.Trim();
         var authorName = author;
-        var bookUuid = $"urn:uuid:{Guid.NewGuid()}";
+        var bookUuid = previewDir is null ? $"urn:uuid:{Guid.NewGuid()}" : PreviewBookId;
 
         // Back-matter glossary — same subset DocxExportService already appends (SS-LAW-20:
         // never interrupt in-voice prose to spell out an acronym). PDF/EPUB never had this;
@@ -292,10 +298,10 @@ public class ManuscriptExportService
         for (int i = 0; i < manuscript.Chapters.Count; i++)
             EpubWriteEntry(zip, $"OEBPS/chapter-{i + 1:D3}.xhtml", EpubChapterXhtml(manuscript.Chapters[i], manuscript.Title));
 
-        EpubWriteEntry(zip, "OEBPS/content.opf", EpubContentOpf(manuscript, authorName, bookUuid));
+        EpubWriteEntry(zip, "OEBPS/content.opf", EpubContentOpf(manuscript, authorName, bookUuid, previewDir is null ? DateTime.UtcNow : PreviewTimestamp));
         zip.Dispose();   // finish the archive before the press is recorded
         fs.Dispose();
-        await recorder.RecordAsync(nodeId, "epub", path, ct);
+        if (previewDir is null) await recorder.RecordAsync(nodeId, "epub", path, ct);
 
         log.LogInformation("Exported node {Node} to EPUB {Path}", manuscript.Slug, path);
         return path;
@@ -308,10 +314,10 @@ public class ManuscriptExportService
     /// all <c>*italic*</c> markup stripped and no beat markers. UTF-8, blank line between
     /// paragraphs.
     /// </summary>
-    public async Task<string> ExportAudioTxtAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
+    public async Task<string> ExportAudioTxtAsync(Guid nodeId, string? author = null, CancellationToken ct = default, string? previewDir = null)
     {
         await readGate.EnsureReadAsync(nodeId, ct);
-        var (manuscript, path) = await LoadAsync(nodeId, "txt", ct);
+        var (manuscript, path) = await LoadAsync(nodeId, "txt", ct, previewDir);
         // Resolution order: explicit param → node.Author (via manuscript) → "MindAttic" (pen name)
         author = string.IsNullOrWhiteSpace(author)
             ? (string.IsNullOrWhiteSpace(manuscript.Author) ? "MindAttic" : manuscript.Author!.Trim())
@@ -341,7 +347,7 @@ public class ManuscriptExportService
         }
 
         await File.WriteAllTextAsync(path, sb.ToString().TrimEnd() + "\n", new UTF8Encoding(false), ct);
-        await recorder.RecordAsync(nodeId, "txt", path, ct);
+        if (previewDir is null) await recorder.RecordAsync(nodeId, "txt", path, ct);
         log.LogInformation("Exported node {Node} to audio manuscript {Path}", manuscript.Slug, path);
         return path;
     }
@@ -349,6 +355,20 @@ public class ManuscriptExportService
     /// <summary>Strip every inline marker (see <see cref="ProseInline"/>) for clean narration text.
     /// Unmatched asterisks stay: they are real characters in the prose.</summary>
     private static string StripInlineMarkup(string text) => ProseInline.StripFormatting(text);
+
+    // ── preview (verification) constants ─────────────────────────────────────
+    // A preview render is reproducible: fixed EPUB identifier/modified time and fixed PDF
+    // metadata, so two renders of the same book can be compared byte for byte.
+    public const string PreviewBookId = "urn:uuid:00000000-0000-0000-0000-000000000000";
+    public static readonly DateTime PreviewTimestamp = new(2000, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+
+    public static DocumentMetadata PreviewPdfMetadata(string title, string? author) => new()
+    {
+        Title = title,
+        Author = author ?? "",
+        CreationDate = new DateTimeOffset(PreviewTimestamp),
+        ModifiedDate = new DateTimeOffset(PreviewTimestamp)
+    };
 
     // ── EPUB builders ────────────────────────────────────────────────────────
 
@@ -440,7 +460,7 @@ public class ManuscriptExportService
         return sb.ToString();
     }
 
-    private static string EpubContentOpf(Manuscript m, string author, string uuid)
+    private static string EpubContentOpf(Manuscript m, string author, string uuid, DateTime modified)
     {
         var sb = new StringBuilder();
         sb.AppendLine("""<?xml version="1.0" encoding="UTF-8"?>""");
@@ -452,7 +472,7 @@ public class ManuscriptExportService
         sb.AppendLine("""  <dc:language>en</dc:language>""");
         if (!string.IsNullOrWhiteSpace(m.Description))
             sb.AppendLine($"""  <dc:description>{EpubEsc(m.Description)}</dc:description>""");
-        sb.AppendLine($"""  <meta property="dcterms:modified">{DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ", System.Globalization.CultureInfo.InvariantCulture)}</meta>""");
+        sb.AppendLine($"""  <meta property="dcterms:modified">{modified.ToString("yyyy-MM-ddTHH:mm:ssZ", System.Globalization.CultureInfo.InvariantCulture)}</meta>""");
         sb.AppendLine("</metadata>");
         sb.AppendLine("<manifest>");
         sb.AppendLine("""  <item id="css"   href="styles.css"  media-type="text/css"/>""");
@@ -533,7 +553,7 @@ public class ManuscriptExportService
 
     /// <summary>Resolve the node, walk its ordered beats into chapters, and
     /// compute the publish-directory path for the given extension.</summary>
-    private async Task<(Manuscript Manuscript, string Path)> LoadAsync(Guid nodeId, string ext, CancellationToken ct)
+    private async Task<(Manuscript Manuscript, string Path)> LoadAsync(Guid nodeId, string ext, CancellationToken ct, string? previewDir = null)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         // IgnoreQueryFilters(): explicit nodeId, not an ambient scope — a book outside whatever
@@ -594,6 +614,8 @@ public class ManuscriptExportService
 
         var dir = ResolveExportDir(universeSlug);
         var (nodeDir, fileBaseName) = await ExportPathResolver.ResolveAsync(db, node, dir, ct);
+        // Preview (verification) renders into a scratch folder and never touches the book's own.
+        if (previewDir is not null) nodeDir = previewDir;
         Directory.CreateDirectory(nodeDir);
 
         var path = Path.Combine(nodeDir, $"{fileBaseName} V{node.Version}.{ext}");

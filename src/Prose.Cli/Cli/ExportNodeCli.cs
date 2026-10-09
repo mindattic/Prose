@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>prose --export-node (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--author "Name"] [--export-dir &lt;path&gt;]</c>
+/// <c>prose --export-node (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--author "Name"] [--export-dir &lt;path&gt;] [--preview &lt;dir&gt;]</c>
 /// — render a node to .docx + .epub + .pdf + .txt in the configured export
 /// directory (Desktop fallback). Also writes <c>description.txt</c> when
 /// <c>Node.Description</c> is set. <c>--export-dir</c> overrides and persists the
@@ -25,7 +25,7 @@ public static class ExportNodeCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
-        string? id = null, slug = null, author = null, exportDir = null;
+        string? id = null, slug = null, author = null, exportDir = null, previewDir = null;
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
@@ -34,6 +34,7 @@ public static class ExportNodeCli
                 case "--slug":       if (i + 1 < args.Length) slug = args[++i]; break;
                 case "--author":     if (i + 1 < args.Length) author = args[++i]; break;
                 case "--export-dir": if (i + 1 < args.Length) exportDir = args[++i]; break;
+                case "--preview":    if (i + 1 < args.Length) previewDir = args[++i]; break;
             }
         }
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
@@ -47,18 +48,44 @@ public static class ExportNodeCli
         var mojiChecker = services.GetRequiredService<MojibakeRepairService>();
         var readGate = services.GetRequiredService<ReadGateService>();
 
-        Guid nodeId; string nodeTitle; string nodeSlug; string? universeSlug; int nodeVersion;
+        Guid nodeId; string nodeTitle; string nodeSlug; string? nodeCode; string? universeSlug; int nodeVersion;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
             // NodeRefResolver: slug, NodeCode ("--slug BCODA" failed before), GUID or unique prefix,
             // across universes — the old lookup was exact-slug only and universe-filtered.
             Node? node = await NodeRefResolver.ResolveNodeAsync(db, !string.IsNullOrWhiteSpace(slug) ? slug : id);
             if (node == null) { Console.Error.WriteLine("[export-node] Node not found."); return 1; }
-            nodeId = node.Id; nodeTitle = node.Title; nodeSlug = node.Slug; nodeVersion = node.Version;
+            nodeId = node.Id; nodeTitle = node.Title; nodeSlug = node.Slug; nodeCode = node.NodeCode; nodeVersion = node.Version;
             universeSlug = await db.Universes.AsNoTracking()
                 .Where(u => u.Id == node.UniverseId)
                 .Select(u => u.Slug)
                 .FirstOrDefaultAsync();
+        }
+
+        // ── preview: read-only render into a scratch folder (verification) ──────────────
+        // `--preview <dir>` renders the current version into <dir>\<CODE|slug>\ with no archive
+        // pass, no version bump, no database write and no press record. The read gate still
+        // decides which formats may be rendered (law 9, no override): a fully read book renders
+        // every format; any other book renders only its Markdown, the one ungated format.
+        if (previewDir is not null)
+        {
+            var target = Path.Combine(Path.GetFullPath(previewDir), ExportPathResolver.SanitizeTitle(nodeCode ?? nodeSlug));
+            var gate = await readGate.GetStatusAsync(nodeId);
+            try
+            {
+                if (gate.AllRead)
+                {
+                    var preview = await fullExport.PreviewAllAsync(nodeId, author, target);
+                    Console.WriteLine($"[export-node] preview (all formats): {Path.GetDirectoryName(preview.DocxPath)}");
+                }
+                else
+                {
+                    var md = await fullExport.PreviewMarkdownAsync(nodeId, author, target);
+                    Console.WriteLine($"[export-node] preview (md only; read gate: {ReadGateService.Describe(gate)}): {md}");
+                }
+                return 0;
+            }
+            catch (Exception ex) { Console.Error.WriteLine($"[export-node] preview failed: {ex.Message}"); return 1; }
         }
 
         // --export-dir persists to THIS node's universe key, never the shared
