@@ -1,11 +1,10 @@
 namespace Prose.Core.Data.Entities;
 
 /// <summary>
-/// One generated <c>/book-report</c> for one book (<c>prose --book-report</c>). Every run appends a
-/// row — the table is the history; the newest row per <see cref="NodeId"/> is "the latest report",
-/// the same document that is rewritten in place in the book's export directory
-/// (<see cref="ExportFilePath"/>). Rows are never updated or deleted: a report's own history is
-/// evidence of what had been read, verified and fixed when it was written.
+/// The <c>/book-report</c> for one book (<c>prose --book-report</c>) — exactly ONE row per
+/// <see cref="NodeId"/>, overwritten on every run, the same document that is rewritten in place in
+/// the book's export directory (<see cref="ExportFilePath"/>). A report exists to drive a prose
+/// pass; once that pass lands the old report is moot, so there is no history to keep.
 /// </summary>
 public class BookReportRow
 {
@@ -40,5 +39,9 @@ public class BookReportRow
     /// file write was skipped.</summary>
     public string? ExportFilePath { get; set; }
 
+    /// <summary>When this book's report was first generated.</summary>
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+    /// <summary>When this row was last overwritten by a run.</summary>
+    public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 }

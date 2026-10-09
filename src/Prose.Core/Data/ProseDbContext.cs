@@ -2626,7 +2626,7 @@ public class ProseDbContext : DbContext
             e.HasIndex(x => new { x.Category, x.SourceRuleVersion }).HasDatabaseName("IX_Findings_Category_SourceRuleVersion");
         });
 
-        // /book-report history — append-only; newest row per NodeId is the latest report.
+        // /book-report — one row per book, overwritten by each run.
         b.Entity<BookReportRow>(e =>
         {
             e.ToTable("BookReports");
@@ -2637,7 +2637,7 @@ public class ProseDbContext : DbContext
             e.Property(x => x.Title).HasMaxLength(500).IsRequired();
             e.Property(x => x.Markdown).IsRequired();
             e.Property(x => x.ExportFilePath).HasMaxLength(500);
-            e.HasIndex(x => new { x.NodeId, x.CreatedAt }).HasDatabaseName("IX_BookReports_Node_CreatedAt");
+            e.HasIndex(x => x.NodeId).IsUnique().HasDatabaseName("UX_BookReports_Node");
             e.HasIndex(x => x.BookCode).HasDatabaseName("IX_BookReports_BookCode");
         });
 

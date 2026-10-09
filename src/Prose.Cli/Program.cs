@@ -2296,6 +2296,14 @@ if (args.Contains("--book-report"))
     return;
 }
 
+// prose --export-book-report --slug <slug-or-code>
+// Writes the stored BookReports row to {book export dir}\{CODE}_BookReport.md (ExportBookReportCli).
+if (args.Contains("--export-book-report"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ExportBookReportCli", args);
+    return;
+}
+
 // prose --prose-health [--slug <nodeSlug>] [--json] [--out <dir>]
 // Zero-cost overnight health scan: surface stats + kNN score prediction +
 // semantic outlier detection using cached ProseEmbeddings. No API calls.
