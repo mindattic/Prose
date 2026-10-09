@@ -2,6 +2,8 @@ using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using MindAttic.Authentication;
 using MindAttic.Authentication.Web;
+using MindAttic.Log;
+using MindAttic.Log.Extensions;
 using MindAttic.Vault.Configuration;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
@@ -157,6 +159,31 @@ builder.Services.Configure<Microsoft.AspNetCore.HostFiltering.HostFilteringOptio
 // the same pipeline: one for live-tail, one for durable/searchable history.
 builder.Logging.AddSerilog(hubSerilogLogger, dispose: true);
 
+// MindAttic.Log (ecosystem-wide shared pipeline, see that repo's docs/MIGRATION.md): a THIRD,
+// purely additive provider alongside hubSerilogLogger and RingBufferLoggerProvider above — same
+// connection-string resolution AddProseCoreServices uses for ProseDbContext (env var → appsettings
+// config → LocalDB "Prose" fallback), read from builder.Configuration directly since this must run
+// before builder.Build() to register as a logging provider at all. Writes into MindAttic_Log in the
+// SAME "Prose" database ProseDbContext/LogIssue already use. Nothing about the existing file
+// pipeline, LoggingService's search, or LogIssue triage changes — this is a second durable copy for
+// cross-app querying via MindAttic.Log.Reader, not a replacement.
+var mindAtticLogConnectionString =
+    Environment.GetEnvironmentVariable("ConnectionStrings__Prose")
+    ?? builder.Configuration.GetConnectionString("Prose")
+    ?? @"Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;";
+var mindAtticLogger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
+    .MinimumLevel.Override("Microsoft.EntityFrameworkCore.Database.Command", LogEventLevel.Warning)
+    .WriteToMindAtticLog(new MindAtticLogOptions
+    {
+        Application = "Prose.Hub",
+        Destination = LogDestination.SqlServer,
+        SqlServerConnectionString = mindAtticLogConnectionString,
+    })
+    .CreateLogger();
+builder.Logging.AddSerilog(mindAtticLogger, dispose: true);
+
 // Bug fix (2026-08-28, root cause finally found 2026-09-13): the default Console logger provider
 // (added implicitly by WebApplication.CreateBuilder) writes ANSI colour codes around each
 // "info:"/"warn:" level tag — literally ESC[40m ESC[32m info ESC[39m ESC[22m ESC[49m. The trailing
@@ -285,6 +312,18 @@ await using (var migrationScope = app.Services.CreateAsyncScope())
         Console.WriteLine($"[hub] Applying {pending.Count} pending migration(s): {string.Join(", ", pending)}");
         await migrationDb.Database.MigrateAsync();
         Console.WriteLine("[hub] Migrations applied.");
+    }
+
+    // MindAttic.Log's table is NOT an EF migration (LOG-LAW-1: the sink never auto-creates it,
+    // and it isn't part of ProseDbContext's own model) — created here instead, idempotently
+    // (CREATE TABLE IF NOT EXISTS), reusing this same migrated connection so there is no chance
+    // of it drifting from the database Prose itself just migrated.
+    await using (var connection = new Microsoft.Data.SqlClient.SqlConnection(migrationDb.Database.GetConnectionString()))
+    {
+        await connection.OpenAsync();
+        await using var command = connection.CreateCommand();
+        command.CommandText = MindAttic.Log.Schema.LogSchema.CreateTableSqlServer;
+        await command.ExecuteNonQueryAsync();
     }
 }
 

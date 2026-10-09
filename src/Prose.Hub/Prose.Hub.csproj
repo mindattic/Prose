@@ -21,6 +21,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- Ecosystem-wide shared logging pipeline (see that repo's docs/MIGRATION.md) - a second,
+         purely additive Serilog sink alongside the Hub's own file logger, see Program.cs. -->
+    <PackageReference Include="MindAttic.Log" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <!-- Re-uses every Core service (repositories, UniverseGraphService, DocContextStack,
          SemanticIndexService, ContinuityService, etc) via AddProseServices() - same DI
          entry point as Prose.Cli, Prose.Mcp, and Prose.KdpPublish. -->
