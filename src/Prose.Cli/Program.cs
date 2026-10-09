@@ -2286,9 +2286,10 @@ if (args.Contains("--morning-report"))
     return;
 }
 
-// prose --book-report --slug <slug-or-code> [--out <dir>] [--code <CODE>] [--complete]
+// prose --book-report --slug <slug-or-code> [--out <dir>] [--code <CODE>] [--complete] [--no-export]
 // Deterministic findings/convergence/decision-log pull for one book, written to
-// Downloads\GLMZ_Book_Reports\drafts\{CODE}[_complete].md (see BookReportService/BookReportCli).
+// Downloads\GLMZ_Book_Reports\drafts\{CODE}[_complete].md, plus a BookReports DB row and the latest
+// {CODE}_BookReport.md in the book's export directory (see BookReportService/BookReportStore/BookReportCli).
 if (args.Contains("--book-report"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("BookReportCli", args);

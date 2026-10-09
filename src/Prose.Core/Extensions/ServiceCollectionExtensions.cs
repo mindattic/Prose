@@ -997,6 +997,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<FindingApplyService>();
         services.AddSingleton<ContinuousQualityService>();
         services.AddSingleton<BookReportService>();
+        services.AddSingleton<BookReportStore>();
         services.AddSingleton<LlmVotingProvider>(sp =>
         {
             var cfg  = sp.GetRequiredService<VotingConfiguration>();

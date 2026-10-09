@@ -373,6 +373,7 @@ public class ProseDbContext : DbContext
     public DbSet<EntityTag>       EntityTags       => Set<EntityTag>();
     public DbSet<FindingRow>      Findings         => Set<FindingRow>();
     public DbSet<FindingSuppressionRow> FindingSuppressions => Set<FindingSuppressionRow>();
+    public DbSet<BookReportRow>   BookReports      => Set<BookReportRow>();
     // PENDING DROP (author ruling 2026-09-22): no code reads/writes this; removed by the drop migration.
     public DbSet<ReaderKnowledgeFact> ReaderKnowledgeFacts => Set<ReaderKnowledgeFact>();
 
@@ -2623,6 +2624,21 @@ public class ProseDbContext : DbContext
             e.HasIndex(x => x.FilePath).HasDatabaseName("IX_Findings_FilePath");
             e.HasIndex(x => x.ChapterId).HasDatabaseName("IX_Findings_ChapterId");
             e.HasIndex(x => new { x.Category, x.SourceRuleVersion }).HasDatabaseName("IX_Findings_Category_SourceRuleVersion");
+        });
+
+        // /book-report history — append-only; newest row per NodeId is the latest report.
+        b.Entity<BookReportRow>(e =>
+        {
+            e.ToTable("BookReports");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Id).ValueGeneratedOnAdd();
+            e.Property(x => x.NodeSlug).HasMaxLength(200).IsRequired();
+            e.Property(x => x.BookCode).HasMaxLength(100).IsRequired();
+            e.Property(x => x.Title).HasMaxLength(500).IsRequired();
+            e.Property(x => x.Markdown).IsRequired();
+            e.Property(x => x.ExportFilePath).HasMaxLength(500);
+            e.HasIndex(x => new { x.NodeId, x.CreatedAt }).HasDatabaseName("IX_BookReports_Node_CreatedAt");
+            e.HasIndex(x => x.BookCode).HasDatabaseName("IX_BookReports_BookCode");
         });
 
         // Author-declared "don't re-flag this" exceptions — see FindingSuppressionRow's doc

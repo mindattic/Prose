@@ -6,7 +6,9 @@ using Prose.Core.Services.Audit;
 
 namespace Prose.Core.Services;
 
-public sealed record BookReportResult(Guid NodeId, string NodeSlug, string? NodeCode, string Title, string Markdown);
+public sealed record BookReportResult(
+    Guid NodeId, string NodeSlug, string? NodeCode, string Title, string Markdown,
+    int WordCount = 0, int BeatCount = 0, int OpenFindings = 0, bool Converged = false);
 
 /// <summary>
 /// Codifies the read-the-backlog-by-hand-then-report pass this engine's QA work has always done
@@ -34,7 +36,7 @@ public class BookReportService
         this.logicSweep = logicSweep;
     }
 
-    public async Task<BookReportResult?> GenerateAsync(string nodeRef, CancellationToken ct = default)
+    public async Task<BookReportResult?> GenerateAsync(string nodeRef, bool complete = false, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var nodeId = await NodeRefResolver.ResolveAsync(db, nodeRef, ct);
@@ -68,15 +70,16 @@ public class BookReportService
             .Take(10)
             .ToListAsync(ct);
 
-        var md = Render(node.Title, node.NodeCode, node.Slug, wordCount, beatCount,
+        var md = Render(node.Title, node.NodeCode, node.Slug, complete, wordCount, beatCount,
             open, handTriaged, autoSuppressed, converged, convergenceState?.ConsecutiveDryRounds ?? 0,
             convergenceState?.TotalRoundsRun ?? 0, decisions);
 
-        return new BookReportResult(nodeId.Value, node.Slug, node.NodeCode, node.Title, md);
+        return new BookReportResult(nodeId.Value, node.Slug, node.NodeCode, node.Title, md,
+            wordCount, beatCount, open.Count, converged);
     }
 
     private static string Render(
-        string title, string? code, string slug, int wordCount, int beatCount,
+        string title, string? code, string slug, bool complete, int wordCount, int beatCount,
         IReadOnlyList<Finding> open, IReadOnlyList<Finding> handTriaged, IReadOnlyList<Finding> autoSuppressed,
         bool converged, int consecutiveDryRounds, int totalRounds,
         IReadOnlyList<Data.Entities.DecisionLedgerEntry> decisions)
@@ -85,7 +88,7 @@ public class BookReportService
         sb.AppendLine($"# {title}{(code is null ? "" : $" ({code})")}");
         sb.AppendLine();
         sb.AppendLine($"**Word count:** {wordCount:N0}  **Beats:** {beatCount:N0}  **Slug:** `{slug}`  " +
-                       $"**Generated:** {DateTime.UtcNow:yyyy-MM-dd}");
+                       $"**Generated:** {DateTime.UtcNow:yyyy-MM-dd}  **Status:** {(complete ? "Complete" : "Draft")}");
         sb.AppendLine();
 
         sb.AppendLine("## Logic-sweep convergence");

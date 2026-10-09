@@ -55,9 +55,17 @@ step 2 with an automated score.** See `docs/LOGIC.md` SS-LAW-17 and `docs/FINDIN
 7. **Generate the report.**
    `prose --book-report --slug <slug-or-code> [--complete]` — pass `--complete` once this pass
    actually read the backlog through and fixed what was real (not just skimmed it); omit it for a
-   first-look draft. Writes `Downloads\GLMZ_Book_Reports\drafts\{CODE}[_complete].md`. Tell the
-   author to run `make_pdfs.py` in that folder when they want the PDF refreshed (this command
-   does not invoke Python itself).
+   first-look draft. Every run does three things:
+   - writes the Downloads draft `Downloads\GLMZ_Book_Reports\drafts\{CODE}[_complete].md` (feeds
+     `make_pdfs.py`; tell the author to run it in that folder when they want the PDF refreshed — this
+     command does not invoke Python itself);
+   - rewrites **`{book export dir}\{CODE}_BookReport.md`** (the folder `ExportPathResolver` gives that
+     book), so the newest report is always sitting with the book's other exports;
+   - appends a row to the **`BookReports`** table (BookCode, Title, IsComplete, word/beat/open-finding
+     counts, Converged, the full Markdown, the export file path, CreatedAt). Rows are never updated
+     or deleted: the table is the history, the newest row per book is "the latest report".
+   `--no-export` records the DB row only. The command runs inside the Hub, so a change to it needs a
+   Hub redeploy before it takes effect.
 
 8. **Log the decision.** `log_decision` (or `prose --log-decision`) summarizing what was verified,
    what was fixed, what was suppressed and why, and what's still open — this is what
