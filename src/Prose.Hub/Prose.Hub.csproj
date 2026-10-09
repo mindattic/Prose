@@ -23,7 +23,7 @@
   <ItemGroup>
     <!-- Ecosystem-wide shared logging pipeline (see that repo's docs/MIGRATION.md) - a second,
          purely additive Serilog sink alongside the Hub's own file logger, see Program.cs. -->
-    <PackageReference Include="MindAttic.Log" Version="1.0.0" />
+    <PackageReference Include="MindAttic.Log" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
