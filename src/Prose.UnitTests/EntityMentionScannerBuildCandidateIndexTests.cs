@@ -162,6 +162,33 @@ public class EntityMentionScannerBuildCandidateIndexTests
     }
 
     [Test]
+    public async Task BuildCandidateIndexAsync_IronWallSergeantTokenInCharacterName_IsNotDerived_ButFullNameAndLiteralEntityStillTag()
+    {
+        // Found live 2026-10-09 (VIGL book-report pass): multi-word character names derived the
+        // bare ordinary words "Iron", "Wall" and "Sergeant". The derived-only stopword drops them
+        // at derivation; a full name and an entity literally named "Wall" must still tag.
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var names = new[] { "Iron Maren", "Maren Wall", "Sergeant Dovik Hale" };
+        foreach (var name in names)
+        {
+            var id = Guid.NewGuid();
+            db.Entities.Add(new Entity { Id = id, UniverseId = universeId, EntityType = "character", Name = name, Slug = name.ToLowerInvariant().Replace(" ", "-"), Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+            db.Characters.Add(new Character { Id = id, Name = name });
+        }
+        var wallPlaceId = Guid.NewGuid();
+        db.Entities.Add(new Entity { Id = wallPlaceId, UniverseId = universeId, EntityType = "place", Name = "Wall", Slug = "wall-place", Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+        await db.SaveChangesAsync();
+
+        var candidates = await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, bookNodeId: null);
+
+        Assert.That(candidates.Any(c => c.Text == "Iron"), Is.False, "'Iron' must not be derived as a bare tagging candidate");
+        Assert.That(candidates.Any(c => c.Text == "Sergeant"), Is.False, "'Sergeant' must not be derived as a bare tagging candidate");
+        Assert.That(candidates.Any(c => c.Text == "Wall" && c.EntityId != wallPlaceId), Is.False, "'Wall' must not be derived onto a character");
+        Assert.That(candidates.Any(c => c.Text == "Wall" && c.EntityId == wallPlaceId), Is.True, "an entity literally named Wall still tags");
+        Assert.That(candidates.Any(c => c.Text == "Iron Maren"), Is.True, "the full name still tags");
+    }
+
+    [Test]
     public async Task BuildCandidateIndexAsync_NumeralInCharacterName_IsNeverDerived_AndNoWordIsPromotedInItsPlace()
     {
         // Found live 2026-09-23 (BCODA read): "Praxis Operator Five" derived bare "Five", so every

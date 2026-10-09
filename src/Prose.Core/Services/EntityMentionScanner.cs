@@ -101,6 +101,15 @@ public static class EntityMentionScanner
     private static readonly HashSet<string> Stopwords =
         new(StringComparer.OrdinalIgnoreCase) { "the", "a", "an", "of", "von", "van", "de", "der", "la", "le", "el", "al", "first", "sunday", "unit", "last", "patient", "can", "gate", "director", "war" };
 
+    // Ordinary words that are only ever a stray token of a longer character name (2026-10-09, VIGL
+    // book-report pass): multi-word character names derived the bare tokens "Iron", "Wall" and
+    // "Sergeant" (found in VIGL), so every "the Wall", "iron" and "Sergeant" in the book's prose tagged as that
+    // character. Unlike <see cref="Stopwords"/> this applies ONLY at token derivation, never in the
+    // final candidate guard, so an entity whose canonical Name or curated alias is literally "Iron"
+    // or "Wall" (a place, a material) and the full multi-word names still tag normally.
+    private static readonly HashSet<string> DerivedOnlyStopwords =
+        new(StringComparer.OrdinalIgnoreCase) { "iron", "wall", "sergeant" };
+
     // Numerals are a closed class, never a name on their own, so they are excluded as a class
     // rather than one incident at a time (2026-09-23, BCODA read): "Praxis Operator Five" derived
     // bare "Five", and every sentence that began with the number five tagged as him — 18 of the
@@ -275,6 +284,7 @@ public static class EntityMentionScanner
             // book once the scan stopped depending on \b (which never matched after the period).
             var tokens = words
                 .Where(t => t.Length >= 3 && !Stopwords.Contains(t) && !ConnectiveWords.Contains(t)
+                            && !DerivedOnlyStopwords.Contains(t)
                             && char.IsLetterOrDigit(t[0]) && char.IsLetterOrDigit(t[^1]))
                 .ToList();
             if (tokens.Count < (titled ? 1 : 2)) continue;
