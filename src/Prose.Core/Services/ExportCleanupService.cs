@@ -1,4 +1,3 @@
-using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
 
@@ -26,49 +25,13 @@ public class ExportCleanupService
         return nodeDir;
     }
 
-    /// <summary>Copies existing export artifacts into Archives\v&lt;version&gt;, then removes live copies.</summary>
-    public void Clean(string nodeDir, int? fallbackVersion = null)
-    {
-        Directory.CreateDirectory(nodeDir);
-        foreach (var file in Directory.EnumerateFiles(nodeDir, "*", SearchOption.TopDirectoryOnly))
-        {
-            var name = Path.GetFileName(file);
-            var version = ExtractVersion(name) ?? fallbackVersion ?? 0;
-            var archiveDir = Path.Combine(nodeDir, "Archives", $"v{version}");
-            Directory.CreateDirectory(archiveDir);
-            var destination = Path.Combine(archiveDir, name);
-            if (File.Exists(destination)) destination = Path.Combine(archiveDir, $"{Path.GetFileNameWithoutExtension(name)}__{DateTime.UtcNow:yyyyMMddHHmmssfff}{Path.GetExtension(name)}");
-            try
-            {
-                File.Copy(file, destination, overwrite: false);
-                if (!name.Equals("cover.jpg", StringComparison.OrdinalIgnoreCase)) File.Delete(file);
-            }
-            catch (IOException) { }
-            catch (UnauthorizedAccessException) { }
-        }
-    }
+    /// <summary>Copies existing export artifacts into Archives\v&lt;version&gt;, then removes live copies
+    /// (cover.jpg stays). Implemented once in MindAttic.Export
+    /// (<see cref="MindAttic.Export.Paths.ExportArchive.Clean"/>).</summary>
+    public void Clean(string nodeDir, int? fallbackVersion = null) =>
+        MindAttic.Export.Paths.ExportArchive.Clean(nodeDir, fallbackVersion);
 
     /// <summary>Copies the completed live export bundle into its permanent version archive.</summary>
-    public void ArchiveCurrent(string nodeDir, int version)
-    {
-        Directory.CreateDirectory(nodeDir);
-        var archiveDir = Path.Combine(nodeDir, "Archives", $"v{version}");
-        Directory.CreateDirectory(archiveDir);
-        foreach (var file in Directory.EnumerateFiles(nodeDir, "*", SearchOption.TopDirectoryOnly))
-        {
-            var name = Path.GetFileName(file);
-            var destination = Path.Combine(archiveDir, name);
-            if (File.Exists(destination))
-                destination = Path.Combine(archiveDir, $"{Path.GetFileNameWithoutExtension(name)}__{DateTime.UtcNow:yyyyMMddHHmmssfff}{Path.GetExtension(name)}");
-            try { File.Copy(file, destination, overwrite: false); }
-            catch (IOException) { }
-            catch (UnauthorizedAccessException) { }
-        }
-    }
-
-    private static int? ExtractVersion(string fileName)
-    {
-        var match = Regex.Match(fileName, @"(?:^|\s)[Vv](\d+)(?:\.|\s|$)");
-        return match.Success && int.TryParse(match.Groups[1].Value, out var v) ? v : null;
-    }
+    public void ArchiveCurrent(string nodeDir, int version) =>
+        MindAttic.Export.Paths.ExportArchive.ArchiveCurrent(nodeDir, version);
 }

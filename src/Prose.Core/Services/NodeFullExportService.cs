@@ -1,4 +1,3 @@
-using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
 
@@ -215,22 +214,11 @@ public class NodeFullExportService
     private static int CountWords(string text) =>
         text.Split([' ', '\t', '\n', '\r'], StringSplitOptions.RemoveEmptyEntries).Length;
 
-    private static string FormatReadingTime(int totalMinutes)
-    {
-        var hours = totalMinutes / 60;
-        var minutes = totalMinutes % 60;
-        if (hours > 0 && minutes > 0) return $"{hours} hr {minutes} min";
-        if (hours > 0) return $"{hours} hr";
-        return $"{minutes} min";
-    }
+    // Reading-time formatting and the stale-line strip are implemented once in MindAttic.Export
+    // (MindAttic.Export.Metadata.ReadingInfo; migrated 2026-10-08).
+    private static string FormatReadingTime(int totalMinutes) =>
+        MindAttic.Export.Metadata.ReadingInfo.FormatReadingTime(totalMinutes);
 
-    private static readonly Regex ReadingInfoLineRx =
-        new(@"\n*\s*Approximately\s+\d+\s+pages?\s+and\s+.+?\s+to\s+read\.\s*$",
-            RegexOptions.IgnoreCase | RegexOptions.RightToLeft);
-
-    /// <summary>Removes a previously-appended "Approximately N pages and X to read." trailing
-    /// line (case-insensitive, whatever whitespace precedes it) so re-exporting never piles up
-    /// duplicate copies as prose length changes across edits.</summary>
     private static string StripReadingInfoLine(string description) =>
-        ReadingInfoLineRx.Replace(description, "", 1);
+        MindAttic.Export.Metadata.ReadingInfo.StripReadingInfoLine(description);
 }

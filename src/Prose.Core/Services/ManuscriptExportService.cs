@@ -1,22 +1,27 @@
-using System.IO.Compression;
-using System.Text;
-using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using QuestPDF.Fluent;
-using QuestPDF.Helpers;
-using QuestPDF.Infrastructure;
+using MindAttic.Export;
+using MindAttic.Export.Model;
+using MindAttic.Export.Renderers;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
+using QuestPDF.Infrastructure;
+using Chapter = MindAttic.Export.Model.Chapter;
 
 namespace Prose.Core.Services;
 
 /// <summary>
-/// Renders a node's ordered beats to the three KDP deliverables: EPUB 3 (ebook upload),
-/// PDF (paperback upload), and Markdown (offline editing aid with beat markers for
-/// <c>prose --import-md</c>). All three land in the configured publish directory (Desktop
-/// fallback). The Word .docx is produced by <see cref="DocxExportService"/>; all three
-/// formats share the same 6"×9" KDP trim.
+/// Renders a node's ordered beats to the KDP deliverables: EPUB 3 (ebook upload), PDF
+/// (paperback upload), the plain-text audio manuscript, and Markdown (offline editing aid with
+/// beat markers for <c>prose --import-md</c>). All land in the configured publish directory
+/// (Desktop fallback). The Word .docx is produced by <see cref="DocxExportService"/>; every
+/// format shares the same 6"×9" KDP trim.
+///
+/// <para>Rendering lives in the shared MindAttic.Export library (<see cref="EpubRenderer"/>,
+/// <see cref="PdfRenderer"/>, <see cref="TextRenderer"/>, <see cref="MarkdownRenderer"/>; migrated
+/// 2026-10-08, WO:01a11e53-ec02-766e-a2bc-b66a5158ad04). This service keeps what needs the
+/// database: the read gate, the beat walk and chapter spine, the glossary, the export path, the
+/// press record and the ArchivedBooks snapshot.</para>
 /// </summary>
 public class ManuscriptExportService
 {
@@ -58,6 +63,24 @@ public class ManuscriptExportService
     /// backup format, does not. No override exists — see <see cref="ReadGateService"/>.</summary>
     private readonly ReadGateService readGate;
 
+    // ── preview (verification) constants ─────────────────────────────────────
+    // A preview render is reproducible: fixed EPUB identifier/modified time and fixed PDF
+    // metadata, so two renders of the same book can be compared byte for byte.
+    public const string PreviewBookId = "urn:uuid:00000000-0000-0000-0000-000000000000";
+    public static readonly DateTime PreviewTimestamp = new(2000, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+
+    public static DocumentMetadata PreviewPdfMetadata(string title, string? author) => new()
+    {
+        Title = title,
+        Author = author ?? "",
+        CreationDate = new DateTimeOffset(PreviewTimestamp),
+        ModifiedDate = new DateTimeOffset(PreviewTimestamp)
+    };
+
+    private static ExportOptions BookOptions(string? previewDir) => previewDir is null
+        ? ExportOptions.ProseBook
+        : ExportOptions.ProseBook with { BookIdentifier = PreviewBookId, FixedTimestamp = PreviewTimestamp };
+
     /// <summary>
     /// Export the node as Markdown to the publish directory; returns the path.
     /// Each beat is prefixed with a <c>&lt;!-- beat:N:id32 --&gt;</c> marker
@@ -77,28 +100,10 @@ public class ManuscriptExportService
             : author.Trim();
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
 
-        var md = new StringBuilder();
-        md.AppendLine($"# {node.Title}");
-        if (!string.IsNullOrWhiteSpace(node.Subtitle))
-            md.AppendLine($"### {node.Subtitle!.Trim()}");
-        md.AppendLine();
-        if (!string.IsNullOrWhiteSpace(author))
-        {
-            md.AppendLine($"_by {author!.Trim()}_");
-            md.AppendLine();
-        }
-        // Synopsis is intentionally NOT printed on the title page — it is a back-cover/catalog
-        // blurb, exported separately as "Back Cover.txt" and as the ebook <dc:description>.
-
-        // Chapter boundaries come from BookSpineService. This method used to carry a THIRD
-        // derivation of them — "(nodeChanged && multiChapter) || flatMarker", where LoadAsync
-        // below used "nodeChanged || flatMarker" and DocxExportService used bare "nodeChanged" —
-        // so the same book could export with three different chapter structures depending on which
-        // file you asked for. One walk now answers for all of them.
-        var spine = await spineService.GetAsync(nodeId, ct);
-
+        // Chapter boundaries come from BookSpineService, the one walk every format reads.
         // A story that resolves to a single chapter prints no chapter heading — we never emit
-        // "Chapter 1". Unchanged rule, now asked of the spine rather than of a distinct-node count.
+        // "Chapter 1".
+        var spine = await spineService.GetAsync(nodeId, ct);
         bool multiChapter = spine.ChapterCount > 1;
         var headingAt = new Dictionary<Guid, string>();
         var subHeadingAt = new Dictionary<Guid, string>();
@@ -111,33 +116,28 @@ public class ManuscriptExportService
                     subHeadingAt[beat.BeatId] = beat.Title;
         }
 
+        // The Markdown is the round-trip backup: beat text as STORED (entity tags kept), one
+        // marker per non-empty beat. A heading opens a chapter; a sub-heading is its own line.
+        var chapters = new List<Chapter> { new((string?)null) };
         int beatNo = 0;
         foreach (var ob in ordered)
         {
             var beat = ob.Beat;
             if (headingAt.TryGetValue(beat.Id, out var heading))
-            {
-                md.AppendLine($"## {heading}");
-                md.AppendLine();
-            }
+                chapters.Add(new Chapter(heading));
             else if (subHeadingAt.TryGetValue(beat.Id, out var subHeading))
-            {
                 // Genuine mid-chapter sub-heading — its own heading text, not a new chapter.
-                md.AppendLine($"### {subHeading}");
-                md.AppendLine();
-            }
+                chapters[^1].Blocks.Add(new SubHeadingBlock(subHeading));
             var text = (beat.Text ?? "").Trim();
             if (text.Length == 0) continue;
             beatNo++;
             // Full 32-char id: batch-created GUIDv7 beats share long time-ordered
             // prefixes, so a 7-char prefix is ambiguous for --import-md.
-            md.AppendLine($"<!-- beat:{beatNo}:{beat.Id:N} -->");
+            chapters[^1].Blocks.Add(new MarkerBlock($"beat:{beatNo}:{beat.Id:N}"));
             foreach (var para in SplitParagraphs(text))
-            {
-                md.AppendLine(para);
-                md.AppendLine();
-            }
+                chapters[^1].Blocks.Add(new ParagraphBlock(para));
         }
+        var manuscript = new Manuscript { Title = node.Title, Subtitle = node.Subtitle, Author = author, Chapters = chapters };
 
         var universeSlug = await db.Universes.AsNoTracking()
             .Where(u => u.Id == node.UniverseId)
@@ -146,14 +146,14 @@ public class ManuscriptExportService
         var dir = ResolveExportDir(universeSlug);
         // Same per-book folder as docx/epub/pdf/txt (ExportPathResolver), not the bare
         // universe directory — keeps the whole export bundle, including the round-trip
-        // .md, in one place per SS-A-whatever-this-becomes.
+        // .md, in one place.
         var (nodeDir, fileBaseName) = await ExportPathResolver.ResolveAsync(db, node, dir, ct);
         // Preview (verification) renders into a scratch folder and never touches the book's own.
         if (previewDir is not null) nodeDir = previewDir;
         Directory.CreateDirectory(nodeDir);
         var path = Path.Combine(nodeDir, $"{fileBaseName} V{node.Version}.md");
-        var mdText = md.ToString().TrimEnd() + "\n";
-        await File.WriteAllTextAsync(path, mdText, new UTF8Encoding(false), ct);
+        var mdText = MarkdownRenderer.Render(manuscript);
+        await File.WriteAllTextAsync(path, mdText, new System.Text.UTF8Encoding(false), ct);
         log.LogInformation("Exported node {Node} to Markdown {Path}", node.Slug, path);
         if (previewDir is not null) return path;   // preview writes no ArchivedBooks snapshot
 
@@ -182,81 +182,12 @@ public class ManuscriptExportService
     public async Task<string> ExportPdfAsync(Guid nodeId, string? author = null, CancellationToken ct = default, string? previewDir = null)
     {
         await readGate.EnsureReadAsync(nodeId, ct);
-        var (manuscript, path) = await LoadAsync(nodeId, "pdf", ct, previewDir);
-        // Resolution order: explicit param → node.Author (via manuscript) → "MindAttic" (pen name)
-        author = string.IsNullOrWhiteSpace(author)
-            ? (string.IsNullOrWhiteSpace(manuscript.Author) ? "MindAttic" : manuscript.Author!.Trim())
-            : author.Trim();
+        var (manuscript, path) = await LoadAsync(nodeId, "pdf", author, ct, previewDir);
+        // Back-matter glossary — same subset DocxExportService appends (SS-LAW-20: never
+        // interrupt in-voice prose to spell out an acronym); the renderer appends it.
+        await AddGlossaryAsync(manuscript, nodeId, ct);
 
-        // Back-matter glossary — same subset DocxExportService already appends (SS-LAW-20:
-        // never interrupt in-voice prose to spell out an acronym). PDF/EPUB never had this;
-        // only .docx did, which is not what KDP actually ingests for the ebook.
-        var glossaryTerms = await glossary.GetUsedTermsAsync(nodeId, ct);
-        if (glossaryTerms.Count > 0)
-            manuscript.Chapters.Add(BuildGlossaryChapter(glossaryTerms));
-
-        // 6" × 9" KDP paperback trim (points: 1" = 72pt).
-        // Margins: top/bottom 1", left/right 0.75" symmetric for screen reading.
-        var trim = new PageSize(432, 648);
-        const float marginTop = 72f, marginBottom = 72f, marginLeft = 54f, marginRight = 54f;
-
-        var document = QuestPDF.Fluent.Document.Create(container =>
-        {
-            // ── Title page ──
-            container.Page(p =>
-            {
-                p.Size(trim);
-                p.MarginTop(marginTop); p.MarginBottom(marginBottom);
-                p.MarginLeft(marginLeft); p.MarginRight(marginRight);
-                p.PageColor(Colors.White);
-                p.DefaultTextStyle(t => t.FontFamily("Garamond").FontSize(12).FontColor(Colors.Black));
-                p.Content().AlignCenter().AlignMiddle().Column(col =>
-                {
-                    col.Item().Text(manuscript.Title).FontSize(28).Bold();
-                    if (!string.IsNullOrWhiteSpace(manuscript.Subtitle))
-                        col.Item().PaddingTop(8).Text(manuscript.Subtitle!.Trim()).FontSize(16).FontColor(Colors.Grey.Darken2);
-                    if (!string.IsNullOrWhiteSpace(author))
-                        col.Item().PaddingTop(24).Text(author!.Trim()).FontSize(14).Italic().FontColor(Colors.Grey.Darken1);
-                    // Synopsis intentionally omitted from the title page (back-cover blurb only).
-                });
-            });
-
-            // ── Body — one page section per chapter so each chapter starts fresh ──
-            foreach (var chapter in manuscript.Chapters)
-            {
-                container.Page(p =>
-                {
-                    p.Size(trim);
-                    p.MarginTop(marginTop); p.MarginBottom(marginBottom);
-                    p.MarginLeft(marginLeft); p.MarginRight(marginRight);
-                    p.PageColor(Colors.White);
-                    p.DefaultTextStyle(t => t.FontFamily("Garamond").FontSize(12).LineHeight(1.4f).FontColor(Colors.Black));
-                    p.Content().Column(col =>
-                    {
-                        if (!string.IsNullOrWhiteSpace(chapter.Heading))
-                            col.Item().PaddingBottom(18).AlignCenter().Text(chapter.Heading).FontSize(16).Bold();
-                        foreach (var block in chapter.Blocks)
-                        {
-                            if (block.IsSubHeading)
-                                col.Item().PaddingTop(12).PaddingBottom(10).AlignCenter().Text(block.Text).FontSize(13).Bold();
-                            else
-                                col.Item().PaddingBottom(6).Text(t =>
-                                {
-                                    t.Justify();
-                                    AppendInline(t, block.Text);
-                                });
-                        }
-                    });
-                    p.Footer().AlignCenter().Text(t =>
-                    {
-                        t.CurrentPageNumber().FontSize(9).FontColor(Colors.Grey.Medium);
-                    });
-                });
-            }
-        });
-        if (previewDir is not null)
-            document = document.WithMetadata(PreviewPdfMetadata(manuscript.Title, author));
-        document.GeneratePdf(path);
+        PdfRenderer.Render(manuscript, path, BookOptions(previewDir));
         if (previewDir is null) await recorder.RecordAsync(nodeId, "pdf", path, ct);
 
         log.LogInformation("Exported node {Node} to PDF {Path}", manuscript.Slug, path);
@@ -267,40 +198,10 @@ public class ManuscriptExportService
     public async Task<string> ExportEpubAsync(Guid nodeId, string? author = null, CancellationToken ct = default, string? previewDir = null)
     {
         await readGate.EnsureReadAsync(nodeId, ct);
-        var (manuscript, path) = await LoadAsync(nodeId, "epub", ct, previewDir);
-        // Resolution order: explicit param → node.Author (via manuscript) → "MindAttic" (pen name)
-        author = string.IsNullOrWhiteSpace(author)
-            ? (string.IsNullOrWhiteSpace(manuscript.Author) ? "MindAttic" : manuscript.Author!.Trim())
-            : author.Trim();
-        var authorName = author;
-        var bookUuid = previewDir is null ? $"urn:uuid:{Guid.NewGuid()}" : PreviewBookId;
+        var (manuscript, path) = await LoadAsync(nodeId, "epub", author, ct, previewDir);
+        await AddGlossaryAsync(manuscript, nodeId, ct);
 
-        // Back-matter glossary — same subset DocxExportService already appends (SS-LAW-20:
-        // never interrupt in-voice prose to spell out an acronym). PDF/EPUB never had this;
-        // only .docx did, which is not what KDP actually ingests for the ebook.
-        var glossaryTerms = await glossary.GetUsedTermsAsync(nodeId, ct);
-        if (glossaryTerms.Count > 0)
-            manuscript.Chapters.Add(BuildGlossaryChapter(glossaryTerms));
-
-        using var fs = File.Create(path);
-        using var zip = new ZipArchive(fs, ZipArchiveMode.Create);
-
-        // EPUB spec: mimetype must be the first entry, stored (not deflated).
-        var mimeEntry = zip.CreateEntry("mimetype", CompressionLevel.NoCompression);
-        using (var s = mimeEntry.Open()) using (var w = new StreamWriter(s, Encoding.ASCII))
-            w.Write("application/epub+zip");
-
-        EpubWriteEntry(zip, "META-INF/container.xml", EpubContainerXml());
-        EpubWriteEntry(zip, "OEBPS/styles.css", EpubStylesCss());
-        EpubWriteEntry(zip, "OEBPS/title.xhtml", EpubTitlePageXhtml(manuscript, authorName));
-        EpubWriteEntry(zip, "OEBPS/toc.xhtml", EpubTocXhtml(manuscript));
-
-        for (int i = 0; i < manuscript.Chapters.Count; i++)
-            EpubWriteEntry(zip, $"OEBPS/chapter-{i + 1:D3}.xhtml", EpubChapterXhtml(manuscript.Chapters[i], manuscript.Title));
-
-        EpubWriteEntry(zip, "OEBPS/content.opf", EpubContentOpf(manuscript, authorName, bookUuid, previewDir is null ? DateTime.UtcNow : PreviewTimestamp));
-        zip.Dispose();   // finish the archive before the press is recorded
-        fs.Dispose();
+        EpubRenderer.Render(manuscript, path, BookOptions(previewDir));
         if (previewDir is null) await recorder.RecordAsync(nodeId, "epub", path, ct);
 
         log.LogInformation("Exported node {Node} to EPUB {Path}", manuscript.Slug, path);
@@ -311,249 +212,32 @@ public class ManuscriptExportService
     /// Export the node as a plain-text **audio manuscript** (narration script) to the
     /// publish directory; returns the path. This is the text a TTS narrator reads: title,
     /// optional author line, then each chapter as a heading line followed by its prose with
-    /// all <c>*italic*</c> markup stripped and no beat markers. UTF-8, blank line between
-    /// paragraphs.
+    /// all inline markup stripped and no beat markers. UTF-8, blank line between paragraphs.
     /// </summary>
     public async Task<string> ExportAudioTxtAsync(Guid nodeId, string? author = null, CancellationToken ct = default, string? previewDir = null)
     {
         await readGate.EnsureReadAsync(nodeId, ct);
-        var (manuscript, path) = await LoadAsync(nodeId, "txt", ct, previewDir);
-        // Resolution order: explicit param → node.Author (via manuscript) → "MindAttic" (pen name)
-        author = string.IsNullOrWhiteSpace(author)
-            ? (string.IsNullOrWhiteSpace(manuscript.Author) ? "MindAttic" : manuscript.Author!.Trim())
-            : author.Trim();
+        var (manuscript, path) = await LoadAsync(nodeId, "txt", author, ct, previewDir);
 
-        var sb = new StringBuilder();
-        sb.AppendLine(manuscript.Title);
-        if (!string.IsNullOrWhiteSpace(manuscript.Subtitle))
-            sb.AppendLine(manuscript.Subtitle!.Trim());
-        if (!string.IsNullOrWhiteSpace(author))
-            sb.AppendLine($"by {author!.Trim()}");
-        sb.AppendLine();
-
-        for (int i = 0; i < manuscript.Chapters.Count; i++)
-        {
-            var chapter = manuscript.Chapters[i];
-            if (!string.IsNullOrWhiteSpace(chapter.Heading))
-            {
-                sb.AppendLine(chapter.Heading!);
-                sb.AppendLine();
-            }
-            foreach (var block in chapter.Blocks)
-            {
-                sb.AppendLine(StripInlineMarkup(block.Text));
-                sb.AppendLine();
-            }
-        }
-
-        await File.WriteAllTextAsync(path, sb.ToString().TrimEnd() + "\n", new UTF8Encoding(false), ct);
+        await File.WriteAllTextAsync(path, TextRenderer.Render(manuscript), new System.Text.UTF8Encoding(false), ct);
         if (previewDir is null) await recorder.RecordAsync(nodeId, "txt", path, ct);
         log.LogInformation("Exported node {Node} to audio manuscript {Path}", manuscript.Slug, path);
         return path;
     }
 
-    /// <summary>Strip every inline marker (see <see cref="ProseInline"/>) for clean narration text.
-    /// Unmatched asterisks stay: they are real characters in the prose.</summary>
-    private static string StripInlineMarkup(string text) => ProseInline.StripFormatting(text);
-
-    // ── preview (verification) constants ─────────────────────────────────────
-    // A preview render is reproducible: fixed EPUB identifier/modified time and fixed PDF
-    // metadata, so two renders of the same book can be compared byte for byte.
-    public const string PreviewBookId = "urn:uuid:00000000-0000-0000-0000-000000000000";
-    public static readonly DateTime PreviewTimestamp = new(2000, 1, 1, 0, 0, 0, DateTimeKind.Utc);
-
-    public static DocumentMetadata PreviewPdfMetadata(string title, string? author) => new()
-    {
-        Title = title,
-        Author = author ?? "",
-        CreationDate = new DateTimeOffset(PreviewTimestamp),
-        ModifiedDate = new DateTimeOffset(PreviewTimestamp)
-    };
-
-    // ── EPUB builders ────────────────────────────────────────────────────────
-
-    private static string EpubContainerXml() => """
-        <?xml version="1.0" encoding="UTF-8"?>
-        <container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">
-          <rootfiles>
-            <rootfile full-path="OEBPS/content.opf" media-type="application/oebps-package+xml"/>
-          </rootfiles>
-        </container>
-        """;
-
-    private static string EpubStylesCss() => """
-        body { font-family: Georgia, "Times New Roman", serif; line-height: 1.55; margin: 1em; }
-        h1, h2, h3 { font-family: inherit; line-height: 1.2; }
-        h1.book-title { font-size: 2em; margin: 1.5em 0 0.4em; text-align: center; }
-        p.book-subtitle { text-align: center; font-size: 1.2em; color: #555; margin: 0 0 1em; }
-        p.author { text-align: center; margin-top: 2em; font-size: 1.1em; }
-        p.synopsis { text-align: center; color: #666; font-style: italic; margin-top: 1em; }
-        body.title-page { text-align: center; }
-        h2.chapter-heading { font-size: 1.4em; margin: 2em 0 1em; text-align: center; }
-        h3.sub-heading { font-size: 1.1em; margin: 1.6em 0 0.8em; text-align: center; }
-        p { margin: 0.4em 0; }
-        em { font-style: italic; }
-        """;
-
-    private static string EpubTitlePageXhtml(Manuscript m, string author)
-    {
-        // Synopsis intentionally omitted from the title page (back-cover blurb only);
-        // it still ships as the ebook <dc:description> catalog metadata.
-        var synopsis = "";
-        var subtitleHtml = string.IsNullOrWhiteSpace(m.Subtitle)
-            ? ""
-            : $"""<p class="book-subtitle">{EpubEsc(m.Subtitle!.Trim())}</p>""";
-        return $"""
-            <?xml version="1.0" encoding="UTF-8"?>
-            <!DOCTYPE html>
-            <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-            <head><title>{EpubEsc(m.Title)}</title><link rel="stylesheet" type="text/css" href="styles.css"/></head>
-            <body class="title-page">
-              <h1 class="book-title">{EpubEsc(m.Title)}</h1>
-              {subtitleHtml}
-              <p class="author">{EpubEsc(author)}</p>{synopsis}
-            </body></html>
-            """;
-    }
-
-    private static string EpubTocXhtml(Manuscript m)
-    {
-        var sb = new StringBuilder();
-        sb.AppendLine("""<?xml version="1.0" encoding="UTF-8"?>""");
-        sb.AppendLine("""<!DOCTYPE html>""");
-        sb.AppendLine("""<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en">""");
-        sb.AppendLine($"""<head><title>{EpubEsc(m.Title)} — Contents</title><link rel="stylesheet" type="text/css" href="styles.css"/></head>""");
-        sb.AppendLine("""<body><nav epub:type="toc" id="toc"><h1>Contents</h1><ol>""");
-        for (int i = 0; i < m.Chapters.Count; i++)
-        {
-            // Single-chapter story: heading is null, so the sole TOC entry uses the
-            // book title rather than a "Chapter 1" label we never want to print.
-            var label = string.IsNullOrWhiteSpace(m.Chapters[i].Heading)
-                ? m.Title : m.Chapters[i].Heading!;
-            sb.AppendLine($"""  <li><a href="chapter-{i + 1:D3}.xhtml">{EpubEsc(label)}</a></li>""");
-        }
-        sb.AppendLine("""</ol></nav></body></html>""");
-        return sb.ToString();
-    }
-
-    private static string EpubChapterXhtml(Chapter chapter, string bookTitle)
-    {
-        // Heading is null for a single-chapter story (never print "Chapter 1") — the
-        // page <title> falls back to the book title and no <h2> heading is emitted.
-        var heading = string.IsNullOrWhiteSpace(chapter.Heading) ? null : chapter.Heading!.Trim();
-        var sb = new StringBuilder();
-        sb.AppendLine("""<?xml version="1.0" encoding="UTF-8"?>""");
-        sb.AppendLine("""<!DOCTYPE html>""");
-        sb.AppendLine("""<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">""");
-        sb.AppendLine($"""<head><title>{EpubEsc(heading ?? bookTitle)}</title><link rel="stylesheet" type="text/css" href="styles.css"/></head>""");
-        sb.AppendLine("<body>");
-        if (heading is not null)
-            sb.AppendLine($"""<h2 class="chapter-heading">{EpubEsc(heading)}</h2>""");
-        foreach (var block in chapter.Blocks)
-        {
-            if (block.IsSubHeading)
-                sb.AppendLine($"""<h3 class="sub-heading">{EpubEsc(block.Text)}</h3>""");
-            else
-                sb.AppendLine($"<p>{EpubRenderInline(block.Text)}</p>");
-        }
-        sb.AppendLine("</body></html>");
-        return sb.ToString();
-    }
-
-    private static string EpubContentOpf(Manuscript m, string author, string uuid, DateTime modified)
-    {
-        var sb = new StringBuilder();
-        sb.AppendLine("""<?xml version="1.0" encoding="UTF-8"?>""");
-        sb.AppendLine("""<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="bookid" xml:lang="en">""");
-        sb.AppendLine("""<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">""");
-        sb.AppendLine($"""  <dc:identifier id="bookid">{uuid}</dc:identifier>""");
-        sb.AppendLine($"""  <dc:title>{EpubEsc(m.Title)}</dc:title>""");
-        sb.AppendLine($"""  <dc:creator opf:role="aut">{EpubEsc(author)}</dc:creator>""");
-        sb.AppendLine("""  <dc:language>en</dc:language>""");
-        if (!string.IsNullOrWhiteSpace(m.Description))
-            sb.AppendLine($"""  <dc:description>{EpubEsc(m.Description)}</dc:description>""");
-        sb.AppendLine($"""  <meta property="dcterms:modified">{modified.ToString("yyyy-MM-ddTHH:mm:ssZ", System.Globalization.CultureInfo.InvariantCulture)}</meta>""");
-        sb.AppendLine("</metadata>");
-        sb.AppendLine("<manifest>");
-        sb.AppendLine("""  <item id="css"   href="styles.css"  media-type="text/css"/>""");
-        sb.AppendLine("""  <item id="title" href="title.xhtml" media-type="application/xhtml+xml"/>""");
-        sb.AppendLine("""  <item id="toc"   href="toc.xhtml"   media-type="application/xhtml+xml" properties="nav"/>""");
-        for (int i = 0; i < m.Chapters.Count; i++)
-            sb.AppendLine($"""  <item id="ch{i + 1:D3}" href="chapter-{i + 1:D3}.xhtml" media-type="application/xhtml+xml"/>""");
-        sb.AppendLine("</manifest>");
-        sb.AppendLine("<spine>");
-        sb.AppendLine("""  <itemref idref="title"/>""");
-        sb.AppendLine("""  <itemref idref="toc"/>""");
-        for (int i = 0; i < m.Chapters.Count; i++)
-            sb.AppendLine($"""  <itemref idref="ch{i + 1:D3}"/>""");
-        sb.AppendLine("</spine>");
-        sb.AppendLine("</package>");
-        return sb.ToString();
-    }
-
     /// <summary>Render the inline markers (<see cref="ProseInline"/>: bold, italic, underline,
     /// strikethrough) as XHTML elements; HTML-escape everything else. Mirrors the .docx export.</summary>
-    internal static string EpubRenderInline(string text)
+    internal static string EpubRenderInline(string text) => EpubRenderer.RenderInline(text);
+
+    private async Task AddGlossaryAsync(Manuscript manuscript, Guid nodeId, CancellationToken ct)
     {
-        var sb = new StringBuilder();
-        foreach (var span in ProseInline.Parse(text))
-        {
-            var open = new StringBuilder();
-            var close = new StringBuilder();
-            if (span.Style.HasFlag(ProseInline.Style.Bold)) { open.Append("<strong>"); close.Insert(0, "</strong>"); }
-            if (span.Style.HasFlag(ProseInline.Style.Italic)) { open.Append("<em>"); close.Insert(0, "</em>"); }
-            if (span.Style.HasFlag(ProseInline.Style.Underline)) { open.Append("<u>"); close.Insert(0, "</u>"); }
-            if (span.Style.HasFlag(ProseInline.Style.Strikethrough)) { open.Append("<s>"); close.Insert(0, "</s>"); }
-            sb.Append(open).Append(EpubEsc(span.Text)).Append(close);
-        }
-        return sb.ToString();
-    }
-
-    // XML 1.0 forbids C0 controls other than tab/LF/CR; one stray \f or \v pasted into a beat made
-    // the whole EPUB unparseable.
-    private static readonly System.Text.RegularExpressions.Regex XmlIllegalChars =
-        new(@"[\x00-\x08\x0B\x0C\x0E-\x1F]", System.Text.RegularExpressions.RegexOptions.Compiled);
-
-    private static string EpubEsc(string s) =>
-        XmlIllegalChars.Replace(s ?? "", "").Replace("&", "&amp;").Replace("<", "&lt;").Replace(">", "&gt;").Replace("\"", "&quot;");
-
-    private static void EpubWriteEntry(ZipArchive zip, string entryPath, string content)
-    {
-        var entry = zip.CreateEntry(entryPath, CompressionLevel.Optimal);
-        using var s = entry.Open();
-        using var w = new StreamWriter(s, new UTF8Encoding(false));
-        w.Write(content);
-    }
-
-    // ── shared load + beat walk ──────────────────────────────────────────────
-
-    private sealed record Manuscript(string Title, string? Subtitle, string Slug, string? Description, string? Author, List<Chapter> Chapters);
-    private sealed record Chapter(string? Heading, List<ContentBlock> Blocks);
-    /// <summary>One rendered unit of chapter content: either an ordinary body paragraph
-    /// (<c>IsSubHeading=false</c>) or a genuine mid-chapter sub-heading like "Three Barrels"
-    /// (<c>IsSubHeading=true</c>) — rendered in its own smaller heading style but never
-    /// counted, paginated, or spine/TOC-listed as a chapter in its own right.</summary>
-    private sealed record ContentBlock(bool IsSubHeading, string Text);
-
-    /// <summary>Builds the back-matter "Glossary" chapter — one sub-heading-styled block per
-    /// term ("Term — FullForm", mirroring DocxExportService.GlossaryEntryHeading's bold-term/
-    /// italic-fullform pairing) followed by its definition as an ordinary block. Terms arrive
-    /// pre-sorted alphabetically from GlossaryService, so no extra sort is needed here.</summary>
-    private static Chapter BuildGlossaryChapter(IReadOnlyList<GlossaryTerm> terms)
-    {
-        var blocks = new List<ContentBlock>();
-        foreach (var term in terms)
-        {
-            var heading = string.IsNullOrWhiteSpace(term.FullForm) ? term.Term : $"{term.Term} — {term.FullForm}";
-            blocks.Add(new ContentBlock(true, heading));
-            blocks.Add(new ContentBlock(false, term.Definition));
-        }
-        return new Chapter("Glossary", blocks);
+        var terms = await glossary.GetUsedTermsAsync(nodeId, ct);
+        manuscript.Glossary.AddRange(terms.Select(t => new GlossaryEntry(t.Term, t.FullForm, t.Definition)));
     }
 
     /// <summary>Resolve the node, walk its ordered beats into chapters, and
     /// compute the publish-directory path for the given extension.</summary>
-    private async Task<(Manuscript Manuscript, string Path)> LoadAsync(Guid nodeId, string ext, CancellationToken ct, string? previewDir = null)
+    private async Task<(Manuscript Manuscript, string Path)> LoadAsync(Guid nodeId, string ext, string? author, CancellationToken ct, string? previewDir = null)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         // IgnoreQueryFilters(): explicit nodeId, not an ambient scope — a book outside whatever
@@ -568,16 +252,14 @@ public class ManuscriptExportService
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
 
         // Chapter boundaries come from BookSpineService — the shared walk that docx, markdown and
-        // print_book now read too. This method's own derivation ("nodeChanged || flatMarker") was
-        // the one that survived the reconciliation, so epub/pdf/txt output is unchanged by the move;
-        // what changed is that the other three agree with it instead of each deciding for itself.
+        // print_book read too.
         var spine = await spineService.GetAsync(nodeId, ct);
         var beatsById = ordered.DistinctBy(o => o.Beat.Id).ToDictionary(o => o.Beat.Id, o => o.Beat); // a beat linked to two nodes walks twice
 
         var chapters = new List<Chapter>();
         foreach (var unit in spine.Chapters)
         {
-            var current = new Chapter(unit.Heading, new List<ContentBlock>());
+            var current = new Chapter(unit.Heading);
             chapters.Add(current);
 
             foreach (var spineBeat in unit.Beats)
@@ -585,15 +267,14 @@ public class ManuscriptExportService
                 if (!beatsById.TryGetValue(spineBeat.BeatId, out var beat)) continue;
 
                 // Genuine mid-chapter sub-heading — its own heading text, not a new chapter. The
-                // spine has already excluded the chapter's opening beat, which is where the old
-                // `else if` did that job.
+                // spine has already excluded the chapter's opening beat.
                 if (spineBeat.IsSubHeading && spineBeat.Title is not null)
-                    current.Blocks.Add(new ContentBlock(true, spineBeat.Title.Trim()));
+                    current.Blocks.Add(new SubHeadingBlock(spineBeat.Title.Trim()));
 
                 var text = BeatMarkup.StripEntityTags(beat.Text).Trim();
                 if (text.Length == 0) continue;
                 foreach (var para in SplitParagraphs(text))
-                    current.Blocks.Add(new ContentBlock(false, para));
+                    current.Blocks.Add(new ParagraphBlock(para));
             }
         }
 
@@ -620,31 +301,26 @@ public class ManuscriptExportService
 
         var path = Path.Combine(nodeDir, $"{fileBaseName} V{node.Version}.{ext}");
 
-        return (new Manuscript(node.Title, node.Subtitle, node.Slug, node.Description, node.Author, chapters), path);
+        // Resolution order: explicit param → node.Author → "MindAttic" (pen name)
+        author = string.IsNullOrWhiteSpace(author)
+            ? (string.IsNullOrWhiteSpace(node.Author) ? "MindAttic" : node.Author!.Trim())
+            : author.Trim();
+
+        var manuscript = new Manuscript
+        {
+            Title = node.Title,
+            Subtitle = node.Subtitle,
+            Slug = node.Slug,
+            Description = node.Description,
+            Author = author,
+            Chapters = chapters
+        };
+        return (manuscript, path);
     }
 
     private string ResolveExportDir(string? universeSlug = null)
         => settings.GetExportDirectory(universeSlug);
 
-    // AddLeadChapter and the "leftover pre-Node-hierarchy heading" regex both retired here: the
-    // spine gives every beat a unit, so there is no pre-first-chapter remainder to catch, and the
-    // regex now lives once as ChapterTitle.IsLegacyBeatHeading.
-
     private static IEnumerable<string> SplitParagraphs(string text) =>
         text.Replace("\r\n", "\n").Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
-
-    /// <summary>Emit a paragraph into a QuestPDF text block, rendering the inline markers
-    /// (<see cref="ProseInline"/>) as styled runs (mirrors the .docx export).</summary>
-    private static void AppendInline(TextDescriptor t, string text)
-    {
-        foreach (var span in ProseInline.Parse(text))
-        {
-            var run = t.Span(span.Text);
-            if (span.Style.HasFlag(ProseInline.Style.Bold)) run = run.Bold();
-            if (span.Style.HasFlag(ProseInline.Style.Italic)) run = run.Italic();
-            if (span.Style.HasFlag(ProseInline.Style.Underline)) run = run.Underline();
-            if (span.Style.HasFlag(ProseInline.Style.Strikethrough)) run = run.Strikethrough();
-        }
-    }
-
 }

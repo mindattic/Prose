@@ -333,7 +333,7 @@
     private bool Dirty => beat is not null && draft != beat.Text;
 
     private int WordCount =>
-        Prose.Core.Services.ProseInline.StripFormatting(
+        MindAttic.Export.Text.ProseInline.StripFormatting(
             Prose.Core.Services.BeatMarkup.StripEntityTags(draft))
             .Split([' ', '\n', '\r', '\t'], StringSplitOptions.RemoveEmptyEntries).Length;
 
