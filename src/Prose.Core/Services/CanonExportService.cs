@@ -102,7 +102,7 @@ public class CanonExportService
         var fileName = $"{ResolveSlug(row.Slug, row.Name)}-{DateTime.Now:yyyyMMdd-HHmmss}.json";
         var path = Path.Combine(PublishDir, fileName);
         var pretty = TryPrettyPrint(row.Json);
-        await File.WriteAllTextAsync(path, pretty, new UTF8Encoding(false), ct);
+        await ProseArtifacts.WriteTextAsync(path, pretty, ProseArtifacts.Overwrite, ct);
 
         log.LogInformation("Exported entity {Name} ({Type}) → {Path}", row.Name, row.EntityType, path);
         return new ExportResult(path, 1, new FileInfo(path).Length);
@@ -159,9 +159,7 @@ public class CanonExportService
         var rootSlug = ResolveSlug(row.Slug, row.Name);
         var fileName = $"{rootSlug}-bundle-{DateTime.Now:yyyyMMdd-HHmmss}.zip";
         var path = Path.Combine(PublishDir, fileName);
-        if (File.Exists(path)) File.Delete(path);
-        using (var fs = File.Create(path))
-        using (var zip = new ZipArchive(fs, ZipArchiveMode.Create))
+        await ProseArtifacts.WriteZipAsync(path, (zip, _) =>
         {
             AddJsonEntry(zip, $"{rootSlug}.json", row.Json);
             // Two distinct names can slugify to the same stem ("Kyle" / "Kyle!"): without the
@@ -173,7 +171,8 @@ public class CanonExportService
                 var folder = Slugify(hit.Repo);
                 AddJsonEntry(zip, UniqueEntryName(used, $"references/{folder}/{hit.Slug}"), hit.Json);
             }
-        }
+            return Task.CompletedTask;
+        }, ProseArtifacts.Overwrite, ct);
 
         log.LogInformation("Deep-exported {Name} ({Type}) + {RefCount} references → {Path}",
             row.Name, row.EntityType, refs.Count, path);
@@ -201,7 +200,7 @@ public class CanonExportService
     /// under the publish directory. Repo name match is case-insensitive against
     /// <see cref="ExportDiscoveryService.GetAllRepos"/>.
     /// </summary>
-    public Task<ExportResult> ExportRepoAsync(string repoName, CancellationToken ct = default)
+    public async Task<ExportResult> ExportRepoAsync(string repoName, CancellationToken ct = default)
     {
         if (string.IsNullOrWhiteSpace(repoName))
             throw new ArgumentException("Repo name required.", nameof(repoName));
@@ -217,9 +216,7 @@ public class CanonExportService
         var fileName = $"{Slugify(matched.Key)}-{DateTime.Now:yyyyMMdd-HHmmss}.zip";
         var path = Path.Combine(PublishDir, fileName);
 
-        if (File.Exists(path)) File.Delete(path);
-        using (var fs = File.Create(path))
-        using (var zip = new ZipArchive(fs, ZipArchiveMode.Create))
+        await ProseArtifacts.WriteZipAsync(path, (zip, _) =>
         {
             var used = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
             foreach (var (name, json) in entries)
@@ -227,26 +224,25 @@ public class CanonExportService
                 ct.ThrowIfCancellationRequested();
                 AddJsonEntry(zip, UniqueEntryName(used, Slugify(name)), json);
             }
-        }
+            return Task.CompletedTask;
+        }, ProseArtifacts.Overwrite, ct);
 
         log.LogInformation("Exported repo {Repo} ({N} entries) → {Path}", matched.Key, entries.Count, path);
-        return Task.FromResult(new ExportResult(path, entries.Count, new FileInfo(path).Length));
+        return new ExportResult(path, entries.Count, new FileInfo(path).Length);
     }
 
     /// <summary>
     /// Zip every repo into a single timestamped archive under the publish directory.
     /// Entries are namespaced as <c>&lt;RepoName&gt;/&lt;EntityName&gt;.json</c>.
     /// </summary>
-    public Task<ExportResult> ExportAllAsync(CancellationToken ct = default)
+    public async Task<ExportResult> ExportAllAsync(CancellationToken ct = default)
     {
         var repos = discovery.GetAllRepos();
         var fileName = $"prose-export-{DateTime.Now:yyyyMMdd-HHmmss}.zip";
         var path = Path.Combine(PublishDir, fileName);
 
         int total = 0;
-        if (File.Exists(path)) File.Delete(path);
-        using (var fs = File.Create(path))
-        using (var zip = new ZipArchive(fs, ZipArchiveMode.Create))
+        await ProseArtifacts.WriteZipAsync(path, (zip, _) =>
         {
             var used = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
             foreach (var (repoName, entries) in repos.OrderBy(kv => kv.Key, StringComparer.OrdinalIgnoreCase))
@@ -259,11 +255,12 @@ public class CanonExportService
                     total++;
                 }
             }
-        }
+            return Task.CompletedTask;
+        }, ProseArtifacts.Overwrite, ct);
 
         log.LogInformation("Exported global archive ({Repos} repos, {N} entries) → {Path}",
             repos.Count, total, path);
-        return Task.FromResult(new ExportResult(path, total, new FileInfo(path).Length));
+        return new ExportResult(path, total, new FileInfo(path).Length);
     }
 
     /// <summary>"{stem}.json", or "{stem}-2.json" and so on when that name is taken. Different names

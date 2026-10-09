@@ -25,9 +25,7 @@ public sealed class DcmVisualizationService
     public void Generate(string slug, IReadOnlyList<BeatSnapshot> beats, string outputPath)
     {
         var html = BuildHtml(slug, beats);
-        var dir = Path.GetDirectoryName(outputPath);
-        if (!string.IsNullOrEmpty(dir)) Directory.CreateDirectory(dir);
-        File.WriteAllText(outputPath, html, new System.Text.UTF8Encoding(false));
+        ProseArtifacts.WriteText(outputPath, html, ProseArtifacts.Overwrite);
     }
 
     // ── JSON payload ─────────────────────────────────────────────────────────────

@@ -27,3 +27,18 @@ archive pass above (`ExportCleanupService`), path sanitising and `ProseInline` a
 - `prose --export-book-report --slug X [--formats md,txt,docx,pdf]` writes `{CODE}_BookReport.md`
   as before and renders the same report as `.txt`, `.docx` and `.pdf` beside it (Letter document
   style). Report files are overwritten in place, as the `.md` always was.
+
+# Where writing lives
+
+Every user-facing file Prose exports — reports, data dumps (`--sql-export`, canon json/zip, KDP
+transfer, universe interchange, barks, personas), the legacy `BookExportService` formats, the static
+HTML site, episode scripts, audiobook and episode audio, BookTok clips, DALL·E images, the KDP
+staging copy — is written through the library's `ArtifactWriter`, via `ProseArtifacts`
+(`src/Prose.Core/Services/ProseArtifacts.cs`). Its `Overwrite` preset reproduces what these sites
+always did: replace the file in place under its exact name, UTF-8 without a BOM
+(`OverwriteWithBom` for the reader-QA report, which has always carried one). The write is atomic: a
+temp file beside the target is moved into place, so a failed or cancelled export leaves the previous
+file, never a partial one. Renderers that need a path (QuestPDF) render to that temp path; ffmpeg,
+which picks its muxer from the output extension, still renders into its scratch folder and the
+finished file is copied into place. Version archiving stays where it was (`ExportCleanupService`
+before a bundle is written).

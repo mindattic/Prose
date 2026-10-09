@@ -148,7 +148,7 @@ public class EpisodeExportService
             }
             var combined = EpisodeAudioService.WrapPcmAsWav(allPcm, sampleRate: 44100, channels: 1, bitsPerSample: 16);
             combinedPath = Path.Combine(dir, "episode.wav");
-            await File.WriteAllBytesAsync(combinedPath, combined, ct);
+            await ProseArtifacts.WriteBytesAsync(combinedPath, combined, ProseArtifacts.Overwrite, ct);
             combinedLen = combined.Length;
             episode.CombinedAudioPath = $"{slug}/episode.wav";
         }
@@ -172,14 +172,18 @@ public class EpisodeExportService
                 log.LogWarning("Episode #{Ep}: none of its narrated beats' audio files exist — no combined audio written", episodeId);
                 return;
             }
-            await using var output = File.Create(combinedPath);
-            foreach (var fullPath in parts)
+            long written = 0;
+            await ProseArtifacts.WriteStreamAsync(combinedPath, async (output, c) =>
             {
-                ct.ThrowIfCancellationRequested();
-                var bytes = await File.ReadAllBytesAsync(fullPath, ct);
-                await output.WriteAsync(bytes, ct);
-            }
-            combinedLen = output.Length;
+                foreach (var fullPath in parts)
+                {
+                    c.ThrowIfCancellationRequested();
+                    var bytes = await File.ReadAllBytesAsync(fullPath, c);
+                    await output.WriteAsync(bytes, c);
+                }
+                written = output.Length;
+            }, ProseArtifacts.Overwrite, ct);
+            combinedLen = written;
             episode.CombinedAudioPath = $"{slug}/episode.mp3";
         }
 
@@ -217,7 +221,7 @@ public class EpisodeExportService
             sb.AppendLine();
         }
 
-        await File.WriteAllTextAsync(path, sb.ToString(), ct);
+        await ProseArtifacts.WriteTextAsync(path, sb.ToString(), ProseArtifacts.Overwrite, ct);
         return $"{slug}/script.md";
     }
 
@@ -227,7 +231,7 @@ public class EpisodeExportService
     {
         var path = Path.Combine(dir, "script.pdf");
 
-        QuestPDF.Fluent.Document.Create(container =>
+        var document = QuestPDF.Fluent.Document.Create(container =>
         {
             // Title page
             container.Page(p =>
@@ -271,7 +275,9 @@ public class EpisodeExportService
                     t.Span(" —").FontSize(9).FontColor(Colors.Grey.Medium);
                 });
             });
-        }).GeneratePdf(path);
+        });
+        // QuestPDF needs a path: render to the ArtifactWriter's temp path, moved into place.
+        ProseArtifacts.WriteViaPath(path, p => document.GeneratePdf(p), ProseArtifacts.Overwrite);
 
         return $"{slug}/script.pdf";
     }

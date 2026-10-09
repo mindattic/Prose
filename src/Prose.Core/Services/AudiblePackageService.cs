@@ -101,7 +101,7 @@ public class AudiblePackageService
             : new Dictionary<Guid, string>();
         var (manuscriptText, wordCount) = BuildManuscript(node.Title, node.Slug, ordered, headings);
         var manuscriptPath = Path.Combine(audibleDir, $"{node.Slug}.audible.txt");
-        await File.WriteAllTextAsync(manuscriptPath, manuscriptText, new UTF8Encoding(false), ct);
+        await ProseArtifacts.WriteTextAsync(manuscriptPath, manuscriptText, ProseArtifacts.Overwrite, ct);
 
         // ── (b) pronunciation guide ────────────────────────────────────────────
         Dictionary<string, (string SayAs, string Note)> phonetics = new();
@@ -115,12 +115,12 @@ public class AudiblePackageService
 
         var pronunciationText = BuildPronunciationGuide(distinctTerms, phonetics);
         var pronunciationPath = Path.Combine(audibleDir, $"{node.Slug}.pronunciation.md");
-        await File.WriteAllTextAsync(pronunciationPath, pronunciationText, new UTF8Encoding(false), ct);
+        await ProseArtifacts.WriteTextAsync(pronunciationPath, pronunciationText, ProseArtifacts.Overwrite, ct);
 
         // ── (c) README ────────────────────────────────────────────────────────
         var readmePath = Path.Combine(audibleDir, "AUDIBLE_README.md");
         var readmeText = BuildReadme(node.Title, node.Slug);
-        await File.WriteAllTextAsync(readmePath, readmeText, new UTF8Encoding(false), ct);
+        await ProseArtifacts.WriteTextAsync(readmePath, readmeText, ProseArtifacts.Overwrite, ct);
 
         log.LogInformation(
             "Audible package for node {Slug}: manuscript={MS}, lexicon={LEX}, readme={RME}",

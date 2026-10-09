@@ -63,30 +63,32 @@ public class BookExportService
         if (ordered.Count == 0)
             throw new InvalidOperationException($"Book {bookId} has no chapters to export");
 
-        Directory.CreateDirectory(paths.ExportDir);
         var epubPath = Path.Combine(paths.ExportDir, $"{Slug(book.Title)}.{book.Id[..8]}.epub");
 
         // Author defaults to the lead protagonist or "Unknown" — Calibre lets you override at conversion.
         var author = book.Protagonists.FirstOrDefault() ?? "Unknown";
         var bookUuid = $"urn:uuid:{Guid.NewGuid()}";
 
-        using var fs = File.Create(epubPath);
-        using var zip = new ZipArchive(fs, ZipArchiveMode.Create);
+        // Written through the shared ArtifactWriter (overwrite in place, exact name, atomic).
+        ProseArtifacts.WriteStream(epubPath, fs =>
+        {
+            using var zip = new ZipArchive(fs, ZipArchiveMode.Create, leaveOpen: true);
 
-        // EPUB spec: mimetype must be the FIRST entry, STORED (not deflated), no extra fields.
-        var mimetypeEntry = zip.CreateEntry("mimetype", CompressionLevel.NoCompression);
-        using (var s = mimetypeEntry.Open()) using (var w = new StreamWriter(s, Encoding.ASCII))
-            w.Write("application/epub+zip");
+            // EPUB spec: mimetype must be the FIRST entry, STORED (not deflated), no extra fields.
+            var mimetypeEntry = zip.CreateEntry("mimetype", CompressionLevel.NoCompression);
+            using (var s = mimetypeEntry.Open()) using (var w = new StreamWriter(s, Encoding.ASCII))
+                w.Write("application/epub+zip");
 
-        WriteEntry(zip, "META-INF/container.xml", ContainerXml());
-        WriteEntry(zip, "OEBPS/styles.css", StylesCss());
-        WriteEntry(zip, "OEBPS/title.xhtml", TitlePage(book, author));
-        WriteEntry(zip, "OEBPS/toc.xhtml", TocXhtml(book, ordered));
+            WriteEntry(zip, "META-INF/container.xml", ContainerXml());
+            WriteEntry(zip, "OEBPS/styles.css", StylesCss());
+            WriteEntry(zip, "OEBPS/title.xhtml", TitlePage(book, author));
+            WriteEntry(zip, "OEBPS/toc.xhtml", TocXhtml(book, ordered));
 
-        for (int i = 0; i < ordered.Count; i++)
-            WriteEntry(zip, $"OEBPS/chapter-{i + 1:D3}.xhtml", ChapterXhtml(ordered[i], i + 1));
+            for (int i = 0; i < ordered.Count; i++)
+                WriteEntry(zip, $"OEBPS/chapter-{i + 1:D3}.xhtml", ChapterXhtml(ordered[i], i + 1));
 
-        WriteEntry(zip, "OEBPS/content.opf", ContentOpf(book, author, bookUuid, ordered));
+            WriteEntry(zip, "OEBPS/content.opf", ContentOpf(book, author, bookUuid, ordered));
+        }, ProseArtifacts.Overwrite);
 
         log.LogInformation("Exported book {BookId} to {Path} ({Chapters} chapters)",
             bookId, epubPath, ordered.Count);
@@ -105,7 +107,6 @@ public class BookExportService
             .Cast<Chapter>()
             .ToList();
 
-        Directory.CreateDirectory(paths.ExportDir);
         var path = Path.Combine(paths.ExportDir, $"{Slug(book.Title)}.{book.Id[..8]}.md");
 
         var sb = new StringBuilder();
@@ -125,7 +126,7 @@ public class BookExportService
             sb.AppendLine();
         }
 
-        File.WriteAllText(path, sb.ToString());
+        ProseArtifacts.WriteText(path, sb.ToString(), ProseArtifacts.Overwrite);
         log.LogInformation("Exported book {BookId} markdown to {Path}", bookId, path);
         return path;
     }
@@ -150,11 +151,10 @@ public class BookExportService
         if (ordered.Count == 0)
             throw new InvalidOperationException($"Book {bookId} has no chapters to export");
 
-        Directory.CreateDirectory(paths.ExportDir);
         var pdfPath = Path.Combine(paths.ExportDir, $"{Slug(book.Title)}.{book.Id[..8]}.pdf");
         var author = book.Protagonists.FirstOrDefault() ?? "Unknown";
 
-        QuestPDF.Fluent.Document.Create(container =>
+        var document = QuestPDF.Fluent.Document.Create(container =>
         {
             // Title page
             container.Page(p =>
@@ -205,7 +205,9 @@ public class BookExportService
                     });
                 });
             }
-        }).GeneratePdf(pdfPath);
+        });
+        // QuestPDF needs a path: render to the ArtifactWriter's temp path, moved into place.
+        ProseArtifacts.WriteViaPath(pdfPath, p => document.GeneratePdf(p), ProseArtifacts.Overwrite);
 
         log.LogInformation("Exported book {BookId} pdf to {Path} ({Chapters} chapters)",
             bookId, pdfPath, ordered.Count);
@@ -313,7 +315,7 @@ public class BookExportService
             {
                 var bytes = await tts.SynthesizeAsync(chunks[pi], voiceId, ct);
                 var partPath = Path.Combine(outDir, $"chapter-{ci + 1:D3}-part-{pi + 1:D3}.mp3");
-                await File.WriteAllBytesAsync(partPath, bytes, ct);
+                await ProseArtifacts.WriteBytesAsync(partPath, bytes, ProseArtifacts.Overwrite, ct);
                 totalParts++;
             }
         }
@@ -387,7 +389,6 @@ public class BookExportService
             .Cast<Chapter>()
             .ToList();
 
-        Directory.CreateDirectory(paths.ExportDir);
         var path = Path.Combine(paths.ExportDir, $"{Slug(book.Title)}.{book.Id[..8]}.html");
 
         var sb = new StringBuilder();
@@ -407,7 +408,7 @@ public class BookExportService
         }
         sb.AppendLine("</body></html>");
 
-        File.WriteAllText(path, sb.ToString());
+        ProseArtifacts.WriteText(path, sb.ToString(), ProseArtifacts.Overwrite);
         log.LogInformation("Exported book {BookId} html to {Path}", bookId, path);
         return path;
     }

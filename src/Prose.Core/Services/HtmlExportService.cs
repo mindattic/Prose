@@ -30,7 +30,7 @@ public class HtmlExportService
         var html = BuildPage($"{entryName} — {repoName}", BuildEntryHtml(entryName, jsonContent), false, null);
         var fileName = $"{Slugify(repoName)}_{Slugify(entryName)}.htm";
         var filePath = Path.Combine(ExportDir, fileName);
-        File.WriteAllText(filePath, html);
+        ProseArtifacts.WriteText(filePath, html);
         return filePath;
     }
 
@@ -63,7 +63,7 @@ public class HtmlExportService
 
         var html = BuildPage($"{repoName}", sb.ToString(), true, null);
         var fileName = $"{Slugify(repoName)}.htm";
-        File.WriteAllText(Path.Combine(ExportDir, fileName), html);
+        ProseArtifacts.WriteText(Path.Combine(ExportDir, fileName), html);
         return Path.Combine(ExportDir, fileName);
     }
 
@@ -117,7 +117,7 @@ public class HtmlExportService
             first = false;
         }
         xrefJson.Append("\n}");
-        File.WriteAllText(Path.Combine(ExportDir, "xref.json"), xrefJson.ToString());
+        ProseArtifacts.WriteText(Path.Combine(ExportDir, "xref.json"), xrefJson.ToString());
 
         // Generate repo pages
         foreach (var (repoName, entries) in repos.OrderBy(r => r.Key))
@@ -145,7 +145,7 @@ public class HtmlExportService
 
             var html = BuildPage($"{repoName}", sb.ToString(), true, repoFiles);
             var fileName = $"{Slugify(repoName)}.htm";
-            File.WriteAllText(Path.Combine(ExportDir, fileName), html);
+            ProseArtifacts.WriteText(Path.Combine(ExportDir, fileName), html);
             repoFiles.Add((repoName, fileName, sorted.Count));
         }
 
@@ -177,7 +177,7 @@ public class HtmlExportService
 
             var html = BuildPage($"{repoName}", sb.ToString(), true, repoFiles);
             var fileName = $"{Slugify(repoName)}.htm";
-            File.WriteAllText(Path.Combine(ExportDir, fileName), html);
+            ProseArtifacts.WriteText(Path.Combine(ExportDir, fileName), html);
         }
 
         // Master index — dashboard style, grouped by RepoGroups
@@ -228,7 +228,7 @@ public class HtmlExportService
 
         var indexHtml = BuildPage("Prose Encyclopedia", indexSb.ToString(), false, repoFiles);
         var indexPath = Path.Combine(ExportDir, "index.htm");
-        File.WriteAllText(indexPath, indexHtml);
+        ProseArtifacts.WriteText(indexPath, indexHtml);
         return indexPath;
     }
 
@@ -312,7 +312,7 @@ function initMap() {{
 <script src=""https://maps.googleapis.com/maps/api/js?key={apiKey}&callback=initMap"" async defer></script>";
 
         var html = BuildPage("World Map", body, false, repoFiles);
-        File.WriteAllText(Path.Combine(ExportDir, "map.htm"), html);
+        ProseArtifacts.WriteText(Path.Combine(ExportDir, "map.htm"), html);
         repoFiles.Add(("Map", "map.htm", 0));
     }
 
@@ -442,7 +442,7 @@ heritageTreemap.render('heritage-treemap', heritageData);
 </script>";
 
         var html = BuildPage("Genetic Ancestry Heatmap", body, false, repoFiles);
-        File.WriteAllText(Path.Combine(ExportDir, "heritage.htm"), html);
+        ProseArtifacts.WriteText(Path.Combine(ExportDir, "heritage.htm"), html);
         repoFiles.Add(("Heritage", "heritage.htm", 0));
     }
 
@@ -654,8 +654,8 @@ window.heritageTreemap = {
     private void EnsureSharedAssets()
     {
         Directory.CreateDirectory(ExportDir);
-        File.WriteAllText(Path.Combine(ExportDir, "export.css"), ExportCss);
-        File.WriteAllText(Path.Combine(ExportDir, "export.js"), ExportJs);
+        ProseArtifacts.WriteText(Path.Combine(ExportDir, "export.css"), ExportCss);
+        ProseArtifacts.WriteText(Path.Combine(ExportDir, "export.js"), ExportJs);
     }
 
     private string BuildPage(string title, string body, bool includeFilter, List<(string repoName, string fileName, int count)>? navItems)

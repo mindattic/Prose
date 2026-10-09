@@ -85,10 +85,9 @@ public class NodeMarkdownExporter
         var contentHash = Sha256Hex(proseForHash.ToString().Trim());
         var markdown = md.ToString();
 
-        Directory.CreateDirectory(paths.ExportDir);
         var suffix = numberBeats ? ".numbered" : "";
         var path = Path.Combine(paths.ExportDir, $"{node.Slug}.{node.Id.ToString("N")[..8]}{suffix}.md");
-        await File.WriteAllTextAsync(path, markdown, ct);
+        await ProseArtifacts.WriteTextAsync(path, markdown, ProseArtifacts.Overwrite, ct);
 
         return new NodeExport(markdown, contentHash, n, node.Title, path);
     }

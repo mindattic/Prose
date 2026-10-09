@@ -396,14 +396,14 @@ public sealed class KdpJsonTransfer
         var notes = await db.TitleNotes.AsNoTracking().ToListAsync(ct);
         if (titles.Count + notes.Count > 0)
         {
-            await File.WriteAllTextAsync(Path.Combine(request.ToDir, TitleIdsFile), RenderTitleIds(titles, notes), ct);
+            await ProseArtifacts.WriteTextAsync(Path.Combine(request.ToDir, TitleIdsFile), RenderTitleIds(titles, notes), ProseArtifacts.Overwrite, ct);
             counts.Titles = titles.Count;
         }
 
         // category-tree-<slug>.json
         foreach (var tree in await db.CategoryTrees.AsNoTracking().ToListAsync(ct))
         {
-            await File.WriteAllTextAsync(Path.Combine(request.ToDir, $"{CategoryTreePrefix}{tree.Slug}.json"), RenderCategoryTree(tree.Tree), ct);
+            await ProseArtifacts.WriteTextAsync(Path.Combine(request.ToDir, $"{CategoryTreePrefix}{tree.Slug}.json"), RenderCategoryTree(tree.Tree), ProseArtifacts.Overwrite, ct);
             counts.CategoryTrees++;
         }
 
@@ -416,7 +416,7 @@ public sealed class KdpJsonTransfer
             foreach (var run in runs)
             {
                 var name = run.LogFileName ?? $"kdp-run-{run.StartedAt.UtcDateTime.ToString("yyyyMMdd-HHmmss", CultureInfo.InvariantCulture)}.log";
-                await File.WriteAllTextAsync(Path.Combine(logsDir, name), KdpRunLogFormat.Render(run.Lines), ct);
+                await ProseArtifacts.WriteTextAsync(Path.Combine(logsDir, name), KdpRunLogFormat.Render(run.Lines), ProseArtifacts.Overwrite, ct);
                 counts.Runs++;
                 counts.RunLines += run.Lines.Count;
             }
@@ -434,7 +434,7 @@ public sealed class KdpJsonTransfer
             {
                 var dir = book.SignOff.Ready ? markersDir : heldDir;
                 Directory.CreateDirectory(dir);
-                await File.WriteAllTextAsync(Path.Combine(dir, book.Code + MarkerFileName), RenderMarker(book), ct);
+                await ProseArtifacts.WriteTextAsync(Path.Combine(dir, book.Code + MarkerFileName), RenderMarker(book), ProseArtifacts.Overwrite, ct);
                 // Remove the book's marker from the OTHER folder: import reads held/ last, so a stale
                 // held marker left from an earlier export silently undid a later sign-off.
                 var stale = Path.Combine(book.SignOff.Ready ? heldDir : markersDir, book.Code + MarkerFileName);
@@ -447,7 +447,7 @@ public sealed class KdpJsonTransfer
                 var byCode = books.Where(b => b.SignOff.Ready).ToDictionary(b => b.Code, StringComparer.Ordinal);
                 foreach (var folder in inPlace)
                     if (byCode.TryGetValue(folder.Code, out var book) && Directory.Exists(folder.FolderPath))
-                        await File.WriteAllTextAsync(Path.Combine(folder.FolderPath, MarkerFileName), RenderMarker(book), ct);
+                        await ProseArtifacts.WriteTextAsync(Path.Combine(folder.FolderPath, MarkerFileName), RenderMarker(book), ProseArtifacts.Overwrite, ct);
             }
         }
 

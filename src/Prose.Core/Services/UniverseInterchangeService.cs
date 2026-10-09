@@ -309,7 +309,7 @@ public class UniverseInterchangeService
     public async Task ExportToFileAsync(string universeSlug, string path, CancellationToken ct = default)
     {
         var (file, json) = await ExportCoreAsync(universeSlug, ct);
-        await File.WriteAllTextAsync(path, json, ct);
+        await ProseArtifacts.WriteTextAsync(path, json, ProseArtifacts.Overwrite, ct);
 
         if (outbox != null)
         {

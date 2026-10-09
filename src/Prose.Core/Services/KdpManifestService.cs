@@ -233,10 +233,14 @@ public class KdpManifestService
                 try
                 {
                     var stageDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads", "KDP-Upload");
-                    Directory.CreateDirectory(stageDir);
                     var stagedExt = Path.GetExtension(manuscriptSourcePath);
                     stagedPath = Path.Combine(stageDir, $"{code}{stagedExt}");
-                    File.Copy(manuscriptSourcePath, stagedPath, overwrite: true);
+                    // File.Copy into the ArtifactWriter's temp path (same attributes and timestamps
+                    // as before), then moved into place over any earlier staged copy.
+                    var source = manuscriptSourcePath;
+                    await ProseArtifacts.WriteViaPathAsync(stagedPath,
+                        (temp, _) => { File.Copy(source, temp, overwrite: true); return Task.CompletedTask; },
+                        ProseArtifacts.Overwrite, ct);
 
                     var pickerExe = Path.Combine(repoRoot, "tools", "kdp", "KdpFilePicker", "bin", "Debug", "net10.0-windows", "KdpFilePicker.exe");
                     if (File.Exists(pickerExe))

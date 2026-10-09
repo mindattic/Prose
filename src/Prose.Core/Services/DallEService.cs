@@ -80,7 +80,7 @@ public class DallEService
         var filename = $"{entityId}.{idx:D2}.png";
         var destPath = Path.Combine(paths.MediaDir, filename);
 
-        await File.WriteAllBytesAsync(destPath, bytes, ct);
+        await ProseArtifacts.WriteBytesAsync(destPath, bytes, ProseArtifacts.Overwrite, ct);
         log.LogInformation("DALL·E 3 saved: {Filename} ({Bytes} bytes)", filename, bytes.Length);
         return filename;
     }

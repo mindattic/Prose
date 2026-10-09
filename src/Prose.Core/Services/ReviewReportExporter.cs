@@ -92,8 +92,8 @@ public sealed class ReviewReportExporter
         var jsonPath = Path.Combine(dir, stem + ".json");
         var htmPath = Path.Combine(dir, stem + ".htm");
 
-        await File.WriteAllTextAsync(jsonPath, json, ct);
-        await File.WriteAllTextAsync(htmPath, BuildHtm(input.Title, json), ct);
+        await ProseArtifacts.WriteTextAsync(jsonPath, json, ProseArtifacts.Overwrite, ct);
+        await ProseArtifacts.WriteTextAsync(htmPath, BuildHtm(input.Title, json), ProseArtifacts.Overwrite, ct);
         return (jsonPath, htmPath);
     }
 

@@ -111,9 +111,8 @@ public class BookReportStore
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var row = await db.BookReports.FirstOrDefaultAsync(r => r.NodeId == nodeId, ct);
         if (row is null) return null;
-        Directory.CreateDirectory(exportDir);
         var path = Path.Combine(exportDir, ExportFileName(fileBaseName));
-        await File.WriteAllTextAsync(path, row.Markdown, new System.Text.UTF8Encoding(false), ct);
+        await ProseArtifacts.WriteTextAsync(path, row.Markdown, ProseArtifacts.Overwrite, ct);
         row.ExportFilePath = path;
         await db.SaveChangesAsync(ct);
         return path;
