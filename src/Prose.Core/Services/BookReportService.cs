@@ -45,12 +45,15 @@ public class BookReportService
         var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct);
         if (node is null) return null;
 
+        // A book's beats hang off its chapters, not the book node itself — walk to the leaves
+        // (a flat book returns just itself). Without this the report said "0 words, 0 beats".
+        var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId.Value, ct);
         var beatTexts = await db.BeatNodes.AsNoTracking()
-            .Where(bn => bn.NodeId == nodeId)
+            .Where(bn => leafIds.Contains(bn.NodeId))
             .Join(db.Beats.AsNoTracking(), bn => bn.BeatId, b => b.Id, (bn, b) => b.Text)
             .ToListAsync(ct);
         var beatCount = beatTexts.Count;
-        var wordCount = beatTexts.Sum(t => Regex.Matches(t ?? "", @"\S+").Count);
+        var wordCount = beatTexts.Sum(t => Regex.Matches(Regex.Replace(t ?? "", @"</?entity[^>]*>", ""), @"\S+").Count);
 
         var all = findings.List(status: null, limit: 20000, filePathPrefix: $"node:{node.Slug}");
         var open = all.Where(f => f.Status is FindingStatus.New or FindingStatus.Triaged).ToList();
