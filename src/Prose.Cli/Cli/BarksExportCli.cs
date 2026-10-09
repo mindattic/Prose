@@ -27,7 +27,7 @@ public static class BarksExportCli
         {
             var result = await svc.ExportAsync(universe, node);
             var json = JsonSerializer.Serialize(result.Barks, new JsonSerializerOptions { WriteIndented = true });
-            await File.WriteAllTextAsync(path, json);
+            await ProseArtifacts.WriteTextAsync(path, json, ProseArtifacts.Overwrite);
             Console.WriteLine($"[barks-export] Wrote {result.Barks.Count} bark(s) to {path} " +
                 $"(universe: {result.UniverseSlug}, {result.Skipped} beat(s) skipped — no single recorded POV).");
             return 0;

@@ -101,7 +101,7 @@ public static class DualReadCli
             Directory.CreateDirectory(dir);
             var stem = $"dualread-{oldId.ToString("N")[..6]}-vs-{newId.ToString("N")[..6]}";
             var md = Path.Combine(dir, stem + ".md");
-            File.WriteAllText(md, report, new UTF8Encoding(false));
+            await ProseArtifacts.WriteTextAsync(md, report, ProseArtifacts.Overwrite);
             Console.WriteLine($"[dual-read] report: {md}");
         }
         catch (Exception ex) { Console.Error.WriteLine($"[dual-read] report write failed: {ex.Message}"); }

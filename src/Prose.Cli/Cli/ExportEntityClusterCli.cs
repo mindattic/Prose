@@ -111,9 +111,7 @@ public static class ExportEntityClusterCli
             sb.AppendLine($"| {sourceName} | {edge.RelationType} | {targetName} | {edge.Sentiment} | {desc} |");
         }
 
-        var dir = Path.GetDirectoryName(Path.GetFullPath(outPath));
-        if (!string.IsNullOrEmpty(dir)) Directory.CreateDirectory(dir);
-        await File.WriteAllTextAsync(outPath, sb.ToString());
+        await ProseArtifacts.WriteTextAsync(outPath, sb.ToString(), ProseArtifacts.Overwrite);
 
         Console.WriteLine($"[export-entity-cluster] Wrote {cluster.Entities.Count} entities, {cluster.Edges.Count} edges to {outPath}");
         Console.WriteLine();

@@ -2868,7 +2868,7 @@ if (args.Contains("--export-personas-json"))
     var json = System.Text.Json.JsonSerializer.Serialize(
         personas.ToList(),
         new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
-    await File.WriteAllTextAsync(outPath, json);
+    await Prose.Core.Services.ProseArtifacts.WriteTextAsync(outPath, json, Prose.Core.Services.ProseArtifacts.Overwrite);
     Console.WriteLine($"Exported {MindAttic.Legion.PersonaLibrary.AllDetails.Count()} personas to {outPath}");
     return;
 }

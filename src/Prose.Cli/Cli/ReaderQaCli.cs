@@ -216,7 +216,8 @@ public static class ReaderQaCli
                               "(the arbiter's own evidence called the chapter working as intended)._");
             sb.AppendLine();
         }
-        File.WriteAllText(path, sb.ToString(), new UTF8Encoding(true));
+        // UTF-8 WITH BOM, as this report has always been written.
+        ProseArtifacts.WriteText(path, sb.ToString(), ProseArtifacts.OverwriteWithBom);
         return path;
     }
 }

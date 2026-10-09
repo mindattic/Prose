@@ -61,7 +61,7 @@ public static class ProseHealthCli
         Directory.CreateDirectory(dir);
         var fileName = slug != null ? $"{slug}-prose-health.md" : "prose-health.md";
         var filePath = Path.Combine(dir, fileName);
-        await File.WriteAllTextAsync(filePath, md);
+        await ProseArtifacts.WriteTextAsync(filePath, md, ProseArtifacts.Overwrite);
         Console.WriteLine($"Report written: {filePath}");
 
         return report.Tier1.Count > 0 ? 1 : 0;

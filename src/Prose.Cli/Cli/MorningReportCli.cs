@@ -187,7 +187,7 @@ public static class MorningReportCli
         if (!string.IsNullOrEmpty(exportDir) && Directory.Exists(exportDir))
         {
             var htmlPath = Path.Combine(exportDir, $"morning_report_{DateTime.UtcNow:yyyy-MM-dd}.html");
-            await File.WriteAllTextAsync(htmlPath, BuildFullHtml(sections, hours, since));
+            await ProseArtifacts.WriteTextAsync(htmlPath, BuildFullHtml(sections, hours, since), ProseArtifacts.Overwrite);
             Console.WriteLine($"[report] HTML written to: {htmlPath}");
         }
 

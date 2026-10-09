@@ -40,11 +40,10 @@ public static class BookReportCli
 
         var code = codeArg ?? result.NodeCode ?? result.NodeSlug;
         var draftsDir = Path.Combine(outDir, "drafts");
-        Directory.CreateDirectory(draftsDir);
 
         var stem = complete ? $"{code}_complete" : code;
         var mdPath = Path.Combine(draftsDir, $"{stem}.md");
-        await File.WriteAllTextAsync(mdPath, result.Markdown);
+        await ProseArtifacts.WriteTextAsync(mdPath, result.Markdown, ProseArtifacts.Overwrite);
 
         Console.WriteLine($"[book-report] {result.Title} ({code}) -> {mdPath}");
 

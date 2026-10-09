@@ -56,63 +56,67 @@ public static class SqlExportCli
         await using var conn = new SqlConnection(connStr);
         await conn.OpenAsync();
 
-        await using var fs = File.Create(outPath);
-        await using var w = new StreamWriter(fs, new UTF8Encoding(false));
-
-        await WriteHeaderAsync(w, conn, withData);
-
-        var tables = await LoadOrderedTablesAsync(conn);
-        Console.WriteLine($"[sql-export] tables: {tables.Count}");
-
-        // 1) DDL — drop existing, create columns + PK
-        await w.WriteLineAsync("-- =================================================================");
-        await w.WriteLineAsync("-- 1. DROP existing tables (children first via FK order)");
-        await w.WriteLineAsync("-- =================================================================");
-        foreach (var t in ((IEnumerable<TableInfo>)tables).Reverse())
-            await w.WriteLineAsync($"IF OBJECT_ID('[dbo].{Q(t.Name)}','U') IS NOT NULL DROP TABLE [dbo].{Q(t.Name)};");
-        await w.WriteLineAsync("GO");
-        await w.WriteLineAsync();
-
-        await w.WriteLineAsync("-- =================================================================");
-        await w.WriteLineAsync("-- 2. CREATE TABLE (columns + PRIMARY KEY)");
-        await w.WriteLineAsync("-- =================================================================");
-        foreach (var t in tables)
-            await WriteCreateTableAsync(w, conn, t);
-
-        // 2) Foreign keys — added after every table exists
-        await w.WriteLineAsync("-- =================================================================");
-        await w.WriteLineAsync("-- 3. FOREIGN KEYS");
-        await w.WriteLineAsync("-- =================================================================");
-        await WriteForeignKeysAsync(w, conn);
-
-        // 3) Indexes — nonclustered + unique, after FKs
-        await w.WriteLineAsync("-- =================================================================");
-        await w.WriteLineAsync("-- 4. NONCLUSTERED INDEXES");
-        await w.WriteLineAsync("-- =================================================================");
-        await WriteIndexesAsync(w, conn);
-
-        // 4) Data
-        if (withData)
+        // Streamed through the shared ArtifactWriter: written to a temp file beside the target and
+        // moved into place (overwriting, as File.Create did) once the script is complete.
+        await Prose.Core.Services.ProseArtifacts.WriteStreamAsync(outPath, async (fs, _) =>
         {
+            await using var w = new StreamWriter(fs, new UTF8Encoding(false), bufferSize: -1, leaveOpen: true);
+
+            await WriteHeaderAsync(w, conn, withData);
+
+            var tables = await LoadOrderedTablesAsync(conn);
+            Console.WriteLine($"[sql-export] tables: {tables.Count}");
+
+            // 1) DDL — drop existing, create columns + PK
             await w.WriteLineAsync("-- =================================================================");
-            await w.WriteLineAsync("-- 5. DATA");
+            await w.WriteLineAsync("-- 1. DROP existing tables (children first via FK order)");
             await w.WriteLineAsync("-- =================================================================");
-            int totalRows = 0;
+            foreach (var t in ((IEnumerable<TableInfo>)tables).Reverse())
+                await w.WriteLineAsync($"IF OBJECT_ID('[dbo].{Q(t.Name)}','U') IS NOT NULL DROP TABLE [dbo].{Q(t.Name)};");
+            await w.WriteLineAsync("GO");
+            await w.WriteLineAsync();
+
+            await w.WriteLineAsync("-- =================================================================");
+            await w.WriteLineAsync("-- 2. CREATE TABLE (columns + PRIMARY KEY)");
+            await w.WriteLineAsync("-- =================================================================");
             foreach (var t in tables)
+                await WriteCreateTableAsync(w, conn, t);
+
+            // 2) Foreign keys — added after every table exists
+            await w.WriteLineAsync("-- =================================================================");
+            await w.WriteLineAsync("-- 3. FOREIGN KEYS");
+            await w.WriteLineAsync("-- =================================================================");
+            await WriteForeignKeysAsync(w, conn);
+
+            // 3) Indexes — nonclustered + unique, after FKs
+            await w.WriteLineAsync("-- =================================================================");
+            await w.WriteLineAsync("-- 4. NONCLUSTERED INDEXES");
+            await w.WriteLineAsync("-- =================================================================");
+            await WriteIndexesAsync(w, conn);
+
+            // 4) Data
+            if (withData)
             {
-                var rows = await WriteTableDataAsync(w, conn, t);
-                if (rows > 0) Console.WriteLine($"  {t.Name,-40} {rows,8:N0} rows");
-                totalRows += rows;
+                await w.WriteLineAsync("-- =================================================================");
+                await w.WriteLineAsync("-- 5. DATA");
+                await w.WriteLineAsync("-- =================================================================");
+                int totalRows = 0;
+                foreach (var t in tables)
+                {
+                    var rows = await WriteTableDataAsync(w, conn, t);
+                    if (rows > 0) Console.WriteLine($"  {t.Name,-40} {rows,8:N0} rows");
+                    totalRows += rows;
+                }
+                Console.WriteLine($"[sql-export] total rows: {totalRows:N0}");
             }
-            Console.WriteLine($"[sql-export] total rows: {totalRows:N0}");
-        }
 
-        // The header opens a transaction; without this the script ended with it still open, so
-        // closing the session that ran it rolled every DROP/CREATE/INSERT back.
-        await w.WriteLineAsync("COMMIT TRANSACTION;");
-        await w.WriteLineAsync("GO");
+            // The header opens a transaction; without this the script ended with it still open, so
+            // closing the session that ran it rolled every DROP/CREATE/INSERT back.
+            await w.WriteLineAsync("COMMIT TRANSACTION;");
+            await w.WriteLineAsync("GO");
 
-        await w.FlushAsync();
+            await w.FlushAsync();
+        }, Prose.Core.Services.ProseArtifacts.Overwrite);
         var info = new FileInfo(outPath);
         Console.WriteLine($"[sql-export] wrote {info.Length / 1024.0:F1} KB → {outPath}");
         return 0;

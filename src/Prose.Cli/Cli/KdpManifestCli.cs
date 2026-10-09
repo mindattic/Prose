@@ -46,7 +46,7 @@ public static class KdpManifestCli
 
         var jsonOpts = new JsonSerializerOptions { WriteIndented = true, PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
         var json = JsonSerializer.Serialize(entries, jsonOpts);
-        await File.WriteAllTextAsync(outPath, json);
+        await ProseArtifacts.WriteTextAsync(outPath, json, ProseArtifacts.Overwrite);
         Console.WriteLine($"[kdp-manifest] Wrote {outPath}");
 
         if (writeUserscript)
