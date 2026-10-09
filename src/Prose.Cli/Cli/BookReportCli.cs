@@ -4,6 +4,11 @@ namespace Prose.Cli;
 
 /// <summary>
 /// prose --book-report --slug &lt;slug-or-code&gt; [--out &lt;dir&gt;] [--code &lt;CODE&gt;] [--complete]
+/// prose --book-report --slug &lt;slug-or-code&gt; --import &lt;report.md&gt;
+///
+/// --import stores an already-written report (e.g. an earlier drafts\{CODE}.md) as the book's
+/// BookReports row verbatim — no Downloads draft is written. The word/beat counts on the row are
+/// the book's current ones; the report text is the file's.
 ///
 /// Deterministic report pull (see <see cref="BookReportService"/>'s doc comment) — findings by
 /// status/category, logic-sweep convergence, and any Decision Ledger entries mentioning this book,
@@ -38,6 +43,17 @@ public static class BookReportCli
         var result = await reportService.GenerateAsync(slug, complete);
         if (result is null) { Console.Error.WriteLine($"[book-report] node not found: {slug}"); return 1; }
 
+        var import = ArgValue(args, "--import");
+        if (import is not null)
+        {
+            if (!File.Exists(import)) { Console.Error.WriteLine($"[book-report] file not found: {import}"); return 1; }
+            var text = (await File.ReadAllTextAsync(import)).Replace("\r\n", "\n");
+            var imported = await services.GetRequiredService<BookReportStore>()
+                .SaveAsync(result with { Markdown = text }, complete);
+            Console.WriteLine($"[book-report] imported {import} -> BookReports row {imported.Id} for {result.NodeCode ?? result.NodeSlug} ({text.Length} chars).");
+            return 0;
+        }
+
         var code = codeArg ?? result.NodeCode ?? result.NodeSlug;
         var draftsDir = Path.Combine(outDir, "drafts");
 
@@ -63,6 +79,6 @@ public static class BookReportCli
 
     private static void PrintUsage()
     {
-        Console.WriteLine("Usage: prose --book-report --slug <slug-or-code> [--out <dir>] [--code <CODE>] [--complete]");
+        Console.WriteLine("Usage: prose --book-report --slug <slug-or-code> [--out <dir>] [--code <CODE>] [--complete] | --import <report.md>");
     }
 }
