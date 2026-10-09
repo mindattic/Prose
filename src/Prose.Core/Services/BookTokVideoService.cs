@@ -103,7 +103,7 @@ public class BookTokVideoService
 
         var videoResult = await provider.DownloadAsync(jobId, ct);
         var clipPath     = Path.Combine(outDir, $"{opts.Slug}-clip.{videoResult.Extension}");
-        await File.WriteAllBytesAsync(clipPath, videoResult.Bytes, ct);
+        await ProseArtifacts.WriteBytesAsync(clipPath, videoResult.Bytes, ProseArtifacts.Overwrite, ct);
 
         var finalPath = Path.Combine(outDir, $"booktok-{opts.Slug}.mp4");
         await AssembleAsync(mockupPath, clipPath, finalPath, opts.Title, ct);
@@ -167,8 +167,13 @@ public class BookTokVideoService
             string EscapeConcat(string p) => "file '" + p.Replace("\\", "/").Replace("'", "'\\''") + "'";
             await File.WriteAllTextAsync(concatList, $"{EscapeConcat(introClip)}\n{EscapeConcat(scaledClip)}\n", ct);
 
+            // ffmpeg picks the muxer from the output extension, so it renders to a real .mp4 in the
+            // scratch folder; the finished file is then placed through the shared ArtifactWriter
+            // (overwrite in place, as -y did; atomic).
+            var assembled = Path.Combine(tmpDir, "final.mp4");
             await RunFfmpegAsync(ffmpeg, ct,
-                "-y", "-f", "concat", "-safe", "0", "-i", concatList, "-c", "copy", outPath);
+                "-y", "-f", "concat", "-safe", "0", "-i", concatList, "-c", "copy", assembled);
+            await ProseArtifacts.CopyFileAsync(assembled, outPath, ProseArtifacts.Overwrite, ct);
         }
         finally
         {

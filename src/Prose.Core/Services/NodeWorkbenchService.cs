@@ -3136,7 +3136,9 @@ public class NodeWorkbenchService
             Directory.CreateDirectory(nodePubDir);
             var engineLabel = ResolveAudioEngineLabel(ttsProvider);
             var dl = Path.Combine(nodePubDir, $"{safeTitle} {engineLabel} V{node.Version}.{ext}");
-            await File.WriteAllBytesAsync(dl, finalBytes, ct);
+            // The encode ran on a scratch WAV above; only the finished bytes go through the shared
+            // ArtifactWriter (overwrite in place, exact name, atomic).
+            await ProseArtifacts.WriteBytesAsync(dl, finalBytes, ProseArtifacts.Overwrite, ct);
 
             node.CombinedAudioPath = $"{node.Slug}/node.{ext}";
             node.CharsNarrated = (int)Math.Min(chars, int.MaxValue);
@@ -3458,7 +3460,7 @@ public class NodeWorkbenchService
                                  ?? Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
                     var friendly = $"{SafeFileName(string.IsNullOrWhiteSpace(node.Title) ? node.Slug : node.Title)} V{node.Version}.{finalExt}";
                     var outPath = Path.Combine(outDir, friendly);
-                    await File.WriteAllBytesAsync(outPath, combinedBytes, ct);
+                    await ProseArtifacts.WriteBytesAsync(outPath, combinedBytes, ProseArtifacts.Overwrite, ct);
                     exportedTo = outPath;
                     db.NodeAudioEvents.Add(NewAudioEvent(nodeId, null, pub.Id, "exported-to-folder", outPath));
                     log.LogInformation("Node {S} published to {Path}", nodeId, outPath);

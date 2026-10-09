@@ -352,19 +352,21 @@ public class ChapterRecordingService
             var off = 0;
             foreach (var p in pcmParts) { Buffer.BlockCopy(p, 0, all, off, p.Length); off += p.Length; }
             var wav = EpisodeAudioService.WrapPcmAsWav(all, 44100, 1, 16);
-            await File.WriteAllBytesAsync(outPath, wav, ct);
+            await ProseArtifacts.WriteBytesAsync(outPath, wav, ProseArtifacts.Overwrite, ct);
         }
         else
         {
-            await using var output = File.Create(outPath);
-            foreach (var ep in ordered)
+            await ProseArtifacts.WriteStreamAsync(outPath, async (output, c) =>
             {
-                ct.ThrowIfCancellationRequested();
-                var src = Path.Combine(audio.GetAudioRoot(), ep!.CombinedAudioPath!);
-                if (!File.Exists(src)) continue;
-                var bytes = await File.ReadAllBytesAsync(src, ct);
-                await output.WriteAsync(bytes, ct);
-            }
+                foreach (var ep in ordered)
+                {
+                    c.ThrowIfCancellationRequested();
+                    var src = Path.Combine(audio.GetAudioRoot(), ep!.CombinedAudioPath!);
+                    if (!File.Exists(src)) continue;
+                    var bytes = await File.ReadAllBytesAsync(src, c);
+                    await output.WriteAsync(bytes, c);
+                }
+            }, ProseArtifacts.Overwrite, ct);
         }
 
         log.LogInformation("Book {BookId} combined audio written to {Path} ({Chapters} chapters)",
