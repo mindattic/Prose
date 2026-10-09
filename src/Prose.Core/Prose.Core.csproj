@@ -27,7 +27,7 @@
          Confirmed 2026-08-09 via dotnet's package vulnerability check. -->
     <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="3.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.9" />
-    <PackageReference Include="MindAttic.Export" Version="1.0.0" />
+    <PackageReference Include="MindAttic.Export" Version="2.0.0" />
     <PackageReference Include="MindAttic.Media" Version="1.0.0" />
     <PackageReference Include="MindAttic.Media.Azure" Version="1.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.9" />
