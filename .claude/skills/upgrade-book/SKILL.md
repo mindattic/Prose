@@ -38,4 +38,11 @@ Canonical definition: **RFC 0015 §7 protocol G** (`docs/rfc/0015-novel-factory.
 - **Common-word aliases.** Never pin an alias that is a common word (One, Seven, Read).
 - **Name collisions.** The universe holds about 13k names; check with `find_entities` before naming anyone.
 
+**Traps** (from upgrading the first eight GLMZ books, order 01a1272e)
+- **List drift.** Write each chapter's Descriptions as a list against a dump of the chapter. Before pushing, check that the list length equals the beat count and that no entry matches the next beat better than its own. One beat with two paragraphs given two entries shifts every Description after it.
+- **Edges: read before you register.** Call `get_plant_payoffs` first. Bind the old plan's unbound rows to the real beats and correct their text (the page wins), then register new arcs. There is no delete, so a duplicate stays.
+- **NULL TextHash.** A beat that stays "unreconciled" after its Description is sent has a NULL TextHash. Re-save the identical text with `--beat update --file`, then send the Description again.
+- **File defects, don't fix them.** File every Rule #1 defect the read surfaces as a read note on the beat where the reader gets confused. Check every beat number cited in the note's text against the dump.
+- **Gate after confirming the push.** The count of "metadata updated" must equal the beat count, and `factory_status` must show F3 passing. Only then record the gate.
+
 **Session end:** `/quicksave`, with every decision referencing a ruling or order id.

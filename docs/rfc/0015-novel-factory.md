@@ -403,6 +403,27 @@ Every tool has an MCP name and a CLI twin, and every call goes to the ledger wit
       - **Capture traps.** A sentence-start capital ("Since Erie", "Not Seven", "Every Schism", "Then Seven", "The Speaker") reads as an unresolved name, so reword it. A common-word alias (One, Seven) must never be pinned case-insensitively. Pin longest names first, or "DELVE" splits "DELVE-9". New minor names collide with the universe's 13k names (Wren, Marisol and Teodor all existed), so run `find_entities` before naming anyone. Series-scoped incidentals resolve F4, but they do not stop the scanner from re-deriving a tag; for that, reword or use a book-scoped incidental.
       - **What carried the books was the edges, not the Descriptions.** The 24 cross-book plant/payoff pairs (the count, the tubing, the log, "nobody asked for it back", "I know the way") were what each later book was written toward. The Descriptions kept each beat honest; the edges kept the series whole.
       - **For the upgrade campaign:** start by reading the book's entity records and its last finished chapter's prose, not its old outline. Restate Descriptions in chapter-sized batches with capture already done. Never run a book-wide re-stamp.
+    - **Upgrading the first eight GLMZ books (CRIT, ATTE, MxG, BLST, NxR, TEST, TLC, IxS; about 5,000 beats, 2026-10-10; order 01a1272e):**
+      - **The read is the yield.** Writing a Description forces every beat to be read on its own and against its neighbours, and that surfaces Rule #1 defects no earlier read caught. Defects filed: CRIT 1, ATTE 1, MxG 1, BLST 2, NxR 2, TEST 5, TLC 3, IxS 23.
+        - Number and clock contradictions (36 vs 32 minutes, "eight days" two days later, a 48-hour timeout with "eight hours" left).
+        - Dropped threads (an ambush raised and never resolved; a deck the plan needs and never reaches).
+        - Location slips (a wall the scene isn't behind; a cluster in two buildings).
+        - Misattributed callbacks ("Boiler's two words" that were Scout's).
+        - Offstage scenes treated as already known.
+        The longest, earliest-drafted books carry the most. The defects are filed, not fixed, so the gate can pass while F6 holds the book.
+      - **Grain follows the old book, not the plan.** Old books run from about 15 to over 1,100 beats, often a sentence or a line of dialogue each. A one-line beat gets a one-clause Description; a chapter's opening beat gets the label `Opening of Chapter N, Title.` Do not pad, and do not merge beats to fit the plan grain (that would touch the prose).
+      - **Write a chapter's Descriptions as a list against a dump of that chapter, then check the alignment before sending anything.** The recurring error is drift: one beat that holds two paragraphs gets two entries, and every Description after it lands one beat late. It happened about ten times across the eight books.
+        - A deterministic word-overlap check per chapter (an entry matching the next beat better than its own; list length against beat count) catches it before the push.
+        - Fix by merging the two entries, then recheck.
+        - The check is scratch arithmetic, not a judge (Law 7), and it changes nothing in the Hub.
+      - **A NULL TextHash keeps a beat "unreconciled" forever.** The fix is to re-save the identical text (`--beat update --file`), which restamps the hash (order 01a12612), then send the Description again.
+      - **The old plan's edges are unbound and often wrong.** Books planned before the gate carry plant/payoff rows with no beat ids, written against the outline: a character's old name ("Casimir" for Ekow), a scene in the wrong chapter, a fact the page changed. The page wins.
+        - Run `get_plant_payoffs` **before** registering anything.
+        - Bind each old row to the beats that actually plant and pay it off (`link_plant_beat` / `link_payoff_beat`).
+        - Correct its text with `update_plant_payoff`.
+        - Only then register the arcs the read surfaced. Registering first produced duplicates in IxS, because there is no delete.
+      - **Verify every beat number you cite inside a note's text against the dump.** Two IxS notes cited neighbours of the right beat and had to be resolved and re-filed.
+      - **Throughput.** `--beat meta` runs at a few seconds per beat and the CLI is one process at a time, so a 1,000-beat book is hours of pushing. Run books serially in one background queue and log each "metadata updated". Gate a book only after its log count equals its beat count and `factory_status` shows strict F3 passing.
 
 ---
 
