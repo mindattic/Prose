@@ -423,7 +423,20 @@ public class NodeWorkbenchService
         var mentionMatches = EntityMentionScanner.Scan(plainText, candidates);
         var trimmed = EntityMentionScanner.ApplyTags(plainText, mentionMatches);
 
-        if (beat.Text == trimmed) return; // no-op — don't bump UpdatedAt for nothing
+        if (beat.Text == trimmed)
+        {
+            // No-op — don't bump UpdatedAt for nothing. But an explicit save of the prose as it
+            // stands is the one EF path that can repair a hash the drift-guard trigger nulled (or a
+            // raw write left wrong): restamp TextHash only, nothing else moves. Without this a
+            // NULL-hash beat could never have its Description reconciled (RFC 0015 strict F3).
+            var expectedHash = ComputeTextHash(trimmed);
+            if (beat.TextHash != expectedHash)
+            {
+                beat.TextHash = expectedHash;
+                await db.SaveChangesAsync(ct);
+            }
+            return;
+        }
 
         beat.Text          = trimmed;
         beat.TextHash      = ComputeTextHash(trimmed);

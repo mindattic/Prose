@@ -162,6 +162,33 @@ public class NodeWorkbenchServiceTests
     }
 
     [Test]
+    public async Task UpdateBeatText_Unchanged_RestampsANulledHash_AndNothingElse()
+    {
+        var s = await MakeNodeAsync();
+        var b = await svc.InsertBeatAsync(s.Id, null, "Same text.");
+
+        DateTime updatedBefore; int versionBefore;
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            // The drift-guard trigger's NULL, reproduced the way a raw write would leave it.
+            await db.Database.ExecuteSqlRawAsync("UPDATE Beats SET TextHash = NULL WHERE Id = {0}", b.Id);
+            var row = await db.Beats.AsNoTracking().FirstAsync(x => x.Id == b.Id);
+            Assert.That(row.TextHash, Is.Null, "precondition: hash nulled");
+            updatedBefore = row.UpdatedAt; versionBefore = row.Version;
+        }
+
+        await svc.UpdateBeatTextAsync(b.Id, "Same text.", BeatWriteReason.AuthorEdit);
+
+        await using (var db2 = await dbFactory.CreateDbContextAsync())
+        {
+            var fresh = await db2.Beats.FirstAsync(x => x.Id == b.Id);
+            Assert.That(fresh.TextHash, Is.EqualTo(NodeWorkbenchService.ComputeTextHash("Same text.")));
+            Assert.That(fresh.Version, Is.EqualTo(versionBefore), "a restamp is not a prose edit");
+            Assert.That(fresh.UpdatedAt, Is.EqualTo(updatedBefore));
+        }
+    }
+
+    [Test]
     public async Task SplitBeat_AtSentenceBoundary_ProducesTwoBeats()
     {
         var s = await MakeNodeAsync();
