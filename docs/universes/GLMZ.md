@@ -493,7 +493,7 @@ Municipal service: both active functions (atmospheric remediation, structural mo
 basic medical response) and passive functions (structural scaffolding, wound closure).
 <entity repo="place" guid="6a5b2384-072c-f6a9-b228-107570089917">Chicago</entity> core: ~98.7% coverage; Gray Zones: 12–18%; Bathysphere: 0%.
 
-**The Ongoing** — continuous molecular warfare inside the Substrate between competing
+**The Ongoing** — continuous molecular warfare inside <entity repo="vocabulary" guid="01a12476-90e7-7779-97a3-3f5f970323ec">the Substrate</entity> between competing
 nano-organisms. Background condition. A **Bloom event** = local Substrate failure. The
 <entity repo="place" guid="019ef735-1581-7998-9cfa-2c6411898545">Bloom Quarter</entity> averages 31% coverage due to the known Substrate seam there.
 
@@ -710,7 +710,7 @@ persons. No personhood, no consciousness, no rights. Do not write them experienc
 fear, or identity. An Automaton being destroyed is equipment loss.
 
 **<entity repo="vocabulary" guid="019d6143-aaa5-786f-979b-866522275bbe">E.L.F.</entity> (Emergent Life Form)** — genuinely alive, emerged from code-fragment complexity
-within the Substrate. Sentience and capabilities vary by emergence — some are pre-sentient
+within <entity repo="vocabulary" guid="01a12476-90e7-7779-97a3-3f5f970323ec">the Substrate</entity>. Sentience and capabilities vary by emergence — some are pre-sentient
 (instinct-driven, no language), others exhibit complex behavior and self-direction. E.L.F.s
 are alive but hold no legal personhood; the 2187 Cognitive Rights Expansion Act addressed AI
 personhood, not E.L.F.s. Always write with periods: *<entity repo="vocabulary" guid="019d6143-aaa5-786f-979b-866522275bbe">E.L.F.</entity>*, never "ELF." Gloss on first
