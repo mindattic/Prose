@@ -386,7 +386,15 @@ Every tool has an MCP name and a CLI twin, and every call goes to the ledger wit
   4. The prose is not touched. A beat that cannot be described honestly is a Rule #1 defect (`add_read_note`, kind defect) for its own pass.
   5. When F3 and F7's edge check pass, `record_ruling(kind: gate, text: plan-first)` on the book so it cannot regress.
   - *Lessons from the plan-first series (appended per chapter):*
-    - (none yet)
+    - **Planning the Cyberocracy series (CYB1-3, 431 planned beats, 2026-10-10):**
+      - **Grain.** About six planned beats per chapter, each one scene segment. A Description names who is present, what changes, and what it PLANTS or PAYS OFF, by chapter. Opening beats carry the POV and what the cold reader must learn there.
+      - **Insertion order.** `insert_beat` with an empty `afterBeatId` prepends. Inserting a chapter's beats last-to-first gives the right order with no id bookkeeping, and chapters can be filled in any order. Cost: beat `#N` numbers run in reverse within a chapter.
+      - **Canon first, as the plan names it.** Naming a minor character in a Description means creating the entity at that moment. `find_entities` caught a first-name collision (Fenwick) before any prose existed, at the cost of one Description edit.
+      - **The plan is cheap to change because it is one row.** A late reveal (Ambrose soothed Seven, not a child) needed four upstream Description edits and nothing else. The same change after prose would have needed splices and re-reads.
+      - **Mistakes in order are cheap too.** A beat inserted in the wrong position is fixed by `delete_beat` plus `insert_beat` with `afterBeatId`, before it has prose.
+      - **Edges last.** A cross-book arc can be registered only once both ends exist, so plan every book first, then register the series edges on the series node with both beat ids. Record the key arcs as edges; minor within-chapter echoes can stay in Descriptions.
+      - **One decision per ruling.** Only the author's premise, the lifted secrecy, the mecha rule, the ending, and the gate were recorded as rulings. Everything else lives in beats and entity records, so nothing parallels the plan.
+      - **For upgrading old books:** an existing book's prose already decides what a beat does, so its Description is a restatement, not a plan. That is the same row and the same F3 check, but its job is to describe what is there, never to plan anew.
 
 ---
 
