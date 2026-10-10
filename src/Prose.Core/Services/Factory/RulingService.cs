@@ -91,6 +91,8 @@ public sealed class RulingService(IDbContextFactory<ProseDbContext> dbFactory, B
             throw new ArgumentException($"a {d.Kind} ruling needs a pattern.");
         if (d.Kind == RulingKinds.Metric && d.MaxPer1kWords is not > 0)
             throw new ArgumentException("a metric ruling needs maxPer1kWords > 0.");
+        if (d.Kind == RulingKinds.Gate && (!RulingGates.All.Contains(d.Text.Trim()) || !string.IsNullOrWhiteSpace(d.Pattern)))
+            throw new ArgumentException($"a gate ruling's text is the gate's name ({string.Join(", ", RulingGates.All)}) and it has no pattern.");
         if (!string.IsNullOrWhiteSpace(d.Pattern) && d.Kind != RulingKinds.Incidental)
         {
             try { _ = Compile(d.Pattern); }
@@ -98,7 +100,8 @@ public sealed class RulingService(IDbContextFactory<ProseDbContext> dbFactory, B
         }
     }
 
-    /// <summary>Active rulings that apply to a book: the book's own plus its universe-wide ones.</summary>
+    /// <summary>Active rulings that apply to a book: the book's own, those on any ancestor (a series),
+    /// plus its universe-wide ones.</summary>
     public async Task<List<Ruling>> ListAsync(Guid bookId, string? kind = null, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -106,11 +109,31 @@ public sealed class RulingService(IDbContextFactory<ProseDbContext> dbFactory, B
         // row, or list/violations/metrics for a chapter silently drop the book's own laws.
         bookId = await NodeWorkbenchService.ResolveBookAncestorIdAsync(db, bookId, ct) ?? bookId;
         var universe = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == bookId).Select(n => n.UniverseId).FirstOrDefaultAsync(ct);
+        var scope = await SelfAndAncestorsAsync(db, bookId, ct);
         var q = db.Rulings.AsNoTracking().Where(r => r.SupersededById == null
-            && (r.BookId == bookId || (r.BookId == null && r.UniverseId == universe)));
+            && ((r.BookId != null && scope.Contains(r.BookId.Value)) || (r.BookId == null && r.UniverseId == universe)));
         if (!string.IsNullOrWhiteSpace(kind)) q = q.Where(r => r.Kind == kind);
         return await q.OrderBy(r => r.Kind).ThenBy(r => r.At).ToListAsync(ct);
     }
+
+    /// <summary>The node and every ancestor up to the root: a ruling recorded on a series binds each
+    /// book under it.</summary>
+    private static async Task<List<Guid>> SelfAndAncestorsAsync(ProseDbContext db, Guid nodeId, CancellationToken ct)
+    {
+        var result = new List<Guid>();
+        Guid? current = nodeId;
+        while (current is { } id && !result.Contains(id)) // cycle guard
+        {
+            result.Add(id);
+            current = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == id)
+                .Select(n => n.ParentNodeId).FirstOrDefaultAsync(ct);
+        }
+        return result;
+    }
+
+    /// <summary>Is <paramref name="gate"/> switched on for the book (on it, an ancestor, or its universe)?</summary>
+    public async Task<bool> GateOnAsync(Guid bookId, string gate, CancellationToken ct = default) =>
+        (await ListAsync(bookId, RulingKinds.Gate, ct)).Any(r => r.Text == gate);
 
     /// <summary>Replace a ruling: the new one is recorded, the old one points at it and goes inert.
     /// A blank <see cref="RulingDraft.Kind"/> keeps the old ruling's kind.</summary>

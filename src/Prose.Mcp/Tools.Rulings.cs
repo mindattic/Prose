@@ -28,11 +28,11 @@ public class RulingTools(RulingService rulings, MetricsReport metrics, IDbContex
 
     Task<Guid?> Resolve(string? r) => string.IsNullOrWhiteSpace(r) ? Task.FromResult<Guid?>(null) : NodeRefResolver.ResolveAsync(dbFactory, r);
 
-    [McpServerTool, Description("Record one of the author's rulings the moment it is made. kind law = a constraint (pattern-less text the writer is shown, or a zero-tolerance regex neither the prose nor any record the book tags may match; case-insensitive unless the pattern starts with (?-i)); kind page-law = a fact the world holds but the page must never say (its pattern binds the prose only); kind metric = a book-wide tic ceiling (pattern + maxPer1kWords); kind incidental = a proper name that intentionally has no entity (pattern = the name). Entity facts do NOT go here — write them on the entity record. Returns the stored row as the read-back.")]
+    [McpServerTool, Description("Record one of the author's rulings the moment it is made. kind law = a constraint (pattern-less text the writer is shown, or a zero-tolerance regex neither the prose nor any record the book tags may match; case-insensitive unless the pattern starts with (?-i)); kind page-law = a fact the world holds but the page must never say (its pattern binds the prose only); kind metric = a book-wide tic ceiling (pattern + maxPer1kWords); kind incidental = a proper name that intentionally has no entity (pattern = the name); kind gate = switch a factory gate on (text = the gate's name, e.g. plan-first: F3 then needs every prose beat's Description current against its prose, F7 every plant/payoff bound). A ruling on a series node binds every book under it. Entity facts do NOT go here — write them on the entity record. Returns the stored row as the read-back.")]
     public Task<string> record_ruling(
-        [Description("law | page-law | metric | incidental")] string kind,
+        [Description("law | page-law | metric | incidental | gate")] string kind,
         [Description("The author's words, verbatim.")] string text,
-        [Description("Book id, slug or NodeCode (omit only for a universe-wide ruling).")] string? nodeIdOrSlug = null,
+        [Description("Book or series id, slug or NodeCode (omit only for a universe-wide ruling).")] string? nodeIdOrSlug = null,
         [Description(".NET regex (law/metric) or the name (incidental).")] string? pattern = null,
         [Description("Metric only: the ceiling per 1,000 words of the whole book.")] decimal? maxPer1kWords = null,
         [Description("author (default) or session:<id>.")] string source = "author") =>
@@ -54,7 +54,7 @@ public class RulingTools(RulingService rulings, MetricsReport metrics, IDbContex
     }
 
     [McpServerTool, Description("The active rulings that apply to a book (its own plus universe-wide ones).")]
-    public Task<string> list_rulings([Description("Book id, slug or NodeCode.")] string nodeIdOrSlug, [Description("law | page-law | metric | incidental")] string? kind = null) =>
+    public Task<string> list_rulings([Description("Book id, slug or NodeCode.")] string nodeIdOrSlug, [Description("law | page-law | metric | incidental | gate")] string? kind = null) =>
         hub.InvokeAsync(nameof(RulingTools), nameof(ListRulingsImpl), new { nodeIdOrSlug, kind });
 
     [FactoryTool("list_rulings", "2026-09-23", Cli = "FactoryCli --ruling list")]
@@ -68,7 +68,7 @@ public class RulingTools(RulingService rulings, MetricsReport metrics, IDbContex
     [McpServerTool, Description("Replace a ruling: the new one is recorded and the old one goes inert (history is kept).")]
     public Task<string> supersede_ruling(
         [Description("The ruling to replace.")] string id,
-        [Description("law | page-law | metric | incidental")] string kind,
+        [Description("law | page-law | metric | incidental | gate")] string kind,
         [Description("The author's new words, verbatim.")] string text,
         [Description("New pattern.")] string? pattern = null,
         [Description("Metric only.")] decimal? maxPer1kWords = null,

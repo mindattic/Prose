@@ -1938,7 +1938,7 @@ Every place an active law's zero-tolerance pattern matches the book's prose, in 
 The active rulings that apply to a book (its own plus universe-wide ones).
 
 - `nodeIdOrSlug` (string, required) — Book id, slug or NodeCode.
-- `kind` (string, optional) — law | page-law | metric | incidental
+- `kind` (string, optional) — law | page-law | metric | incidental | gate
 
 ### `record_law_violations`
 
@@ -1950,11 +1950,11 @@ Every place an active law's pattern matches the canonical record of an entity th
 
 ### `record_ruling`
 
-Record one of the author's rulings the moment it is made. kind law = a constraint (pattern-less text the writer is shown, or a zero-tolerance regex neither the prose nor any record the book tags may match; case-insensitive unless the pattern starts with (?-i)); kind page-law = a fact the world holds but the page must never say (its pattern binds the prose only); kind metric = a book-wide tic ceiling (pattern + maxPer1kWords); kind incidental = a proper name that intentionally has no entity (pattern = the name). Entity facts do NOT go here — write them on the entity record. Returns the stored row as the read-back.
+Record one of the author's rulings the moment it is made. kind law = a constraint (pattern-less text the writer is shown, or a zero-tolerance regex neither the prose nor any record the book tags may match; case-insensitive unless the pattern starts with (?-i)); kind page-law = a fact the world holds but the page must never say (its pattern binds the prose only); kind metric = a book-wide tic ceiling (pattern + maxPer1kWords); kind incidental = a proper name that intentionally has no entity (pattern = the name); kind gate = switch a factory gate on (text = the gate's name, e.g. plan-first: F3 then needs every prose beat's Description current against its prose, F7 every plant/payoff bound). A ruling on a series node binds every book under it. Entity facts do NOT go here — write them on the entity record. Returns the stored row as the read-back.
 
-- `kind` (string, required) — law | page-law | metric | incidental
+- `kind` (string, required) — law | page-law | metric | incidental | gate
 - `text` (string, required) — The author's words, verbatim.
-- `nodeIdOrSlug` (string, optional) — Book id, slug or NodeCode (omit only for a universe-wide ruling).
+- `nodeIdOrSlug` (string, optional) — Book or series id, slug or NodeCode (omit only for a universe-wide ruling).
 - `pattern` (string, optional) — .NET regex (law/metric) or the name (incidental).
 - `maxPer1kWords` (Decimal, optional) — Metric only: the ceiling per 1,000 words of the whole book.
 - `source` (string, optional) — author (default) or session:<id>.
@@ -1964,7 +1964,7 @@ Record one of the author's rulings the moment it is made. kind law = a constrain
 Replace a ruling: the new one is recorded and the old one goes inert (history is kept).
 
 - `id` (string, required) — The ruling to replace.
-- `kind` (string, required) — law | page-law | metric | incidental
+- `kind` (string, required) — law | page-law | metric | incidental | gate
 - `text` (string, required) — The author's new words, verbatim.
 - `pattern` (string, optional) — New pattern.
 - `maxPer1kWords` (Decimal, optional) — Metric only.

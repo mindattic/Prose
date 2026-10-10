@@ -187,7 +187,8 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
     private static IReadOnlyList<string> CallsFor(string code, BookStatus s, FactoryUnit? u) => code switch
     {
         "F2" => [$"plan every beat of unit {u!.Ordinal}: insert_beat(title, description) / update_beat_metadata"],
-        "F3" => [$"write the empty beats of unit {u!.Ordinal} in-session and push them: update_beat_text (one door)"],
+        "F3" => [$"write the empty beats of unit {u!.Ordinal} in-session and push them: update_beat_text (one door)",
+                 "plan-first: restate each written beat's Description against its prose as it stands (update_beat_metadata stamps it current)"],
         "F6" => [$"prose --universe <u> --read-note list --node {s.Slug}  (open defects) and prose --universe <u> --ruling violations --node {s.Slug}  (law hits)",
                  $"fix each by hand: prose --universe <u> --splice-beats --node {s.Slug} --file <docket.json> (dry run, then --apply)",
                  $"re-read what changed: prose --universe <u> --read-beats --slug {s.Slug} --from {u!.FirstPosition} --to {u.LastPosition} --mark-read --read-by claude",
@@ -266,7 +267,16 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
 
     // ── evaluation ────────────────────────────────────────────────────────────
 
-    private sealed record BeatRow(Guid Id, int Number, string Text, string? TextHash, string? Title, string? Description);
+    private sealed record BeatRow(Guid Id, int Number, string Text, string? TextHash, string? Title, string? Description,
+        string? DescriptionHash = null, string Kind = "prose")
+    {
+        public string? DescriptionState => Beat.SummaryTrustState(Description, DescriptionHash, TextHash);
+    }
+
+    /// <summary>A plan edge this book holds: a plant/payoff registered on the book (or under it), or on
+    /// a series above it with an end in this book. An end is null until bound — and again when its beat
+    /// is deleted (DeleteBeatsAsync clears it; the foreign key never lets an id dangle).</summary>
+    private sealed record PlanEdge(Guid Id, string Plant, Guid? PlantBeatId, Guid? PayoffBeatId);
 
     private sealed class BookContext
     {
@@ -290,6 +300,10 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
         // F7 / A: the book's fingerprint now, and the latest press of each format.
         public string Fingerprint = "";
         public Dictionary<string, ExportRecord> Exports = [];
+        // The plan-first gate (a `gate` ruling on the book, a series above it, or the universe):
+        // strict F3, and the plan edges checked in F7 (an unbound end).
+        public bool PlanFirst;
+        public List<PlanEdge> Edges = [];
     }
 
     private async Task<BookContext> LoadAsync(Guid bookId, CancellationToken ct)
@@ -309,8 +323,8 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
             ctx.Beats = (await db.Beats.AsNoTracking().Where(b => ids.Contains(b.Id))
-                    .Select(b => new { b.Id, b.Number, b.Text, b.TextHash, b.Title, b.Description }).ToListAsync(ct))
-                .ToDictionary(b => b.Id, b => new BeatRow(b.Id, b.Number, b.Text ?? "", b.TextHash, b.Title, b.Description));
+                    .Select(b => new { b.Id, b.Number, b.Text, b.TextHash, b.Title, b.Description, b.DescriptionHash, b.Kind }).ToListAsync(ct))
+                .ToDictionary(b => b.Id, b => new BeatRow(b.Id, b.Number, b.Text ?? "", b.TextHash, b.Title, b.Description, b.DescriptionHash, b.Kind ?? "prose"));
 
             ctx.Tags = ctx.Beats.Values.ToDictionary(b => b.Id, b => BeatMarkup.ExtractEntityGuids(b.Text).ToList());
             var tagged = ctx.Tags.Values.SelectMany(t => t).Distinct().ToList();
@@ -339,6 +353,8 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
                     .GroupBy(n => n.BeatId).Select(g => new { g.Key, N = g.Count() }).ToListAsync(ct))
                 .ToDictionary(x => x.Key, x => x.N);
         }
+        ctx.PlanFirst = await rulings.GateOnAsync(bookId, RulingGates.PlanFirst, ct);
+        if (ctx.PlanFirst) ctx.Edges = await LoadEdgesAsync(bookId, ids, ct);
         ctx.LawHits = (await rulings.FindLawViolationsAsync(bookId, ct)).ToLookup(h => h.BeatId);
         ctx.Metrics = await metrics.ComputeAsync(bookId, ct);
         ctx.Capture = await capture.ScanAsync(bookId, ct);
@@ -349,6 +365,27 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
                 .GroupBy(e => e.Format).ToDictionary(g => g.Key, g => g.OrderByDescending(e => e.At).First());
         }
         return ctx;
+    }
+
+    /// <summary>The plan edges this book holds: every plant/payoff registered on the book or under
+    /// it, plus those registered on an ancestor (a series) with an end among the book's beats.</summary>
+    private async Task<List<PlanEdge>> LoadEdgesAsync(Guid bookId, List<Guid> bookBeatIds, CancellationToken ct)
+    {
+        var own = await new PlantPayoffService(dbFactory).GetByNodeAsync(bookId, ct);
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var ancestors = new List<Guid>();
+        var parent = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == bookId).Select(n => n.ParentNodeId).FirstOrDefaultAsync(ct);
+        while (parent is { } p && !ancestors.Contains(p) && p != bookId)
+        {
+            ancestors.Add(p);
+            parent = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == p).Select(n => n.ParentNodeId).FirstOrDefaultAsync(ct);
+        }
+        var inBook = bookBeatIds.ToHashSet();
+        var series = ancestors.Count == 0 ? [] : await db.PlantPayoffs.AsNoTracking()
+            .Where(pp => ancestors.Contains(pp.NodeId)).ToListAsync(ct);
+        var pairs = own.Concat(series.Where(pp => (pp.PlantBeatId is { } a && inBook.Contains(a)) || (pp.PayoffBeatId is { } b && inBook.Contains(b))))
+            .DistinctBy(pp => pp.Id).ToList();
+        return pairs.Select(pp => new PlanEdge(pp.Id, pp.PlantDescription, pp.PlantBeatId, pp.PayoffBeatId)).ToList();
     }
 
     private static StationResult EvaluateUnit(string code, FactoryUnit u, BookContext ctx)
@@ -367,9 +404,23 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
             case "F3":
             {
                 var empty = beats.Where(b => !HasText(b)).ToList();
-                return empty.Count == 0
-                    ? new(code, "pass", $"{beats.Count} beats written.")
-                    : new(code, "fail", $"{empty.Count} of {beats.Count} beat(s) have no prose yet (first #{empty[0].Number}).");
+                if (empty.Count > 0)
+                    return new(code, "fail", $"{empty.Count} of {beats.Count} beat(s) have no prose yet (first #{empty[0].Number}).");
+                // Plan-first: a beat is written only when it carries its plan, confirmed against its
+                // prose as it stands (DescriptionState current). Front matter carries no plan.
+                if (ctx.PlanFirst)
+                {
+                    var prose = beats.Where(b => b.Kind == "prose").ToList();
+                    var missing = prose.Where(b => b.DescriptionState == null).ToList();
+                    var unreconciled = prose.Where(b => b.DescriptionState == "unverified").ToList();
+                    var stale = prose.Where(b => b.DescriptionState == "stale").ToList();
+                    var bad = missing.Concat(unreconciled).Concat(stale).OrderBy(b => u.BeatIds.ToList().IndexOf(b.Id)).ToList();
+                    if (bad.Count > 0)
+                        return new(code, "fail", $"plan not reconciled with the prose in {bad.Count} of {prose.Count} beat(s): " +
+                            $"{missing.Count} missing a plan, {unreconciled.Count} unreconciled, {stale.Count} stale (first #{bad[0].Number}). " +
+                            "Restate each beat's Description against its prose: update_beat_metadata.");
+                }
+                return new(code, "pass", $"{beats.Count} beats written.");
             }
             case "F4":
             {
@@ -443,6 +494,10 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
             case "F7":
             {
                 if (units.Count == 0) return new(code, "waiting", "the book has no units (no beats) yet; plan it first.");
+                // A plan promise that points at nothing is known before the line is through.
+                if (ctx.PlanFirst && ctx.Edges.Where(e => e.PlantBeatId == null || e.PayoffBeatId == null).ToList() is { Count: > 0 } unbound)
+                    return new(code, "fail", $"{unbound.Count} plan edge(s) have an unbound end (first: plant/payoff {unbound[0].Id}, \"{Short(unbound[0].Plant)}\"); " +
+                        "bind it (link_plant_beat / link_payoff_beat) or bring it to the author to drop.");
                 var red = units.Where(u => UnitStationOrder.Any(s => !u.Stations[s].Pass)).ToList();
                 if (red.Count > 0)
                 {

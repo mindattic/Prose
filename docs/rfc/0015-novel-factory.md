@@ -273,12 +273,12 @@ The usage check reads tools marked `[FactoryTool(Since = "yyyy-MM-dd")]`: any wi
 | # | Scope | Passes when (computed) | Cleared by |
 |---|---|---|---|
 | F2 Planned | unit | at least 1 beat, and each has text, or both a Title and a Description | `insert_beat(title, description)` |
-| F3 Written | unit | every beat has non-whitespace text and a LastWriteReason | `update_beat_text` / `splice_beats` |
+| F3 Written | unit | every beat has non-whitespace text and a LastWriteReason. **Under the `plan-first` gate:** every prose beat also has a Description whose `DescriptionState` is `current` (its plan, confirmed against its prose as it stands) | `update_beat_text` / `splice_beats`, then `update_beat_metadata(description)` |
 | F4 Captured | unit | CaptureScanner (a) and (b) both = 0 | `create_*` / `add_entity_tags` / `record_ruling(incidental)` |
 | F5 Read | unit | `ReadGateService` shows every beat read as it stands | `read_beats(markRead, readBy)` |
 | F6 Clean | unit | 0 open `defect` notes and 0 `law`-pattern hits in the unit's prose | `splice_beats` → re-read → `resolve_read_note` |
 | F1 Verified | unit | every tagged entity is verified at its current ModifiedAt | `verify_entity_begin` → `verify_entity_commit` |
-| F7 Pressed | book | all units F2–F6 and F1; **MetricsReport** passes (when author metrics exist); docx, epub and pdf `Exports` rows at the current BookFingerprint | `--export-node` |
+| F7 Pressed | book | all units F2–F6 and F1; **MetricsReport** passes (when author metrics exist); docx, epub and pdf `Exports` rows at the current BookFingerprint. **Under the `plan-first` gate:** no plant/payoff the book holds (registered on it, or on a series above it with an end in it) has an unbound end — checked first, before the units are through | `--export-node`; `link_plant_beat` / `link_payoff_beat` |
 | (A) Audio | book | an mp3 `Exports` row at the current fingerprint | `export_audiobook` (only if I0 passes) |
 | (H) Heard | unit | *informational, never gating and not part of GO* [RT#8] | the author's notes, relayed by Claude and marked as a trust point |
 
@@ -362,12 +362,16 @@ Every tool has an MCP name and a CLI twin, and every call goes to the ledger wit
   5. Capture: fix F4 (tags and entities).
   6. After the pass: batch the entity corrections (cost-visible), re-read the listed beats, verify every tagged entity (F1).
   7. Export (F7).
-- **C. Create a book:**
-  1. `create_book` and its chapters.
-  2. `insert_beat(title, description)` (F2).
-  3. `factory_context(priorUnits: all)`, then write in-session through `update_beat_text` (F3).
-  4. Capture (F4: new entities through protocol A, or incidental rulings).
-  5. Then protocol B.
+- **C. Create a book (plan-first: the plan and the book are one row):**
+  1. Canon first: the cast, places, factions and things the book needs exist as entities (protocol A) before a beat names them.
+  2. `create_series` when the book is one of several; `record_ruling(kind: gate, text: plan-first)` on the series (or the book); series-wide laws on the series node.
+  3. `create_book` and its chapters; **every** beat of **every** book of the series as `insert_beat(title, description)` (F2). A Description says who is present, what changes, and what it plants or pays off.
+  4. Every arc as `register_plant_payoff` — on the series node when its ends sit in different books — bound at both ends to planned beats.
+  5. Read the plan whole and in order (Law 6), book by book and across the series; fix by editing the beats.
+  6. Per chapter: `factory_context(priorUnits: all)`, write in-session through `update_beat_text`, then **reconcile** each beat with `update_beat_metadata(description)` restating what the prose now does (F3 under the gate). Where the prose diverged from its plan, edit the downstream planned beats its edges point to, in the same sitting.
+  7. Capture (F4: new entities through protocol A, or incidental rulings).
+  8. Then protocol B.
+  9. At each chapter's end, write what the writing taught about planning into protocol G.
 - **D. Engine change:**
   1. `work_order_add` under an approved root, with paths and checks.
   2. Edit, `dotnet test --logger trx`, commit with `WO:<id>`, deploy if Hub code changed.
@@ -375,6 +379,14 @@ Every tool has an MCP name and a CLI twin, and every call goes to the ledger wit
   4. Real use (the `ledger` check).
 - **E. Press and listen:** F7, then A (if I0 passed). The author listens; their notes are relayed as `heard` or `defect` notes marked relayed.
 - **F. Session end:** `/quicksave` calls `session_end`, which is refused until every decision references an id.
+- **G. Upgrade a book with no formal structure** (bring an existing book into the protocol C format; author order 01a12351). *Grown from what writing the first plan-first series teaches; distilled into `/upgrade-book` before the upgrade campaign begins.*
+  1. Measure: the strict-F3 split (missing / unreconciled / stale) and the unbound edges, per unit.
+  2. Per chapter, read whole and in context (Law 6); restate every prose beat's Description against its prose as it stands with `update_beat_metadata`. Keep the ones already current. By hand, in session — no loop tool, no `write_synopsis`, no LLM service.
+  3. Bind or bring to the author every plant/payoff with an unbound end; register the arcs the read surfaces.
+  4. The prose is not touched. A beat that cannot be described honestly is a Rule #1 defect (`add_read_note`, kind defect) for its own pass.
+  5. When F3 and F7's edge check pass, `record_ruling(kind: gate, text: plan-first)` on the book so it cannot regress.
+  - *Lessons from the plan-first series (appended per chapter):*
+    - (none yet)
 
 ---
 
@@ -500,6 +512,12 @@ Each note below records a decision made while building an increment, with its re
 - **Presses are recorded for every format**: docx, epub, pdf, txt, and mp3 or wav. Station A is book-level: audio of any node of the book at the current fingerprint passes it. Per-node audio coverage would need a `NodeId` on `Exports` (after GO).
 - **The journal reads SQL Server's temporal history for `Beats` and `Entities`.** A record's field-level history stays with `EntityHistoryService`. On SQLite the journal says it could not look. With a book, a ledger call is attributed to it only when its arguments name the book's slug, code or id. A call that named only a chapter is not attributed, and this limit is stated here rather than guessed around.
 - **The usage check.** Each MCP `…Impl` carries `[FactoryTool(name, since, Cli = …)]`. A call through either door counts as use; failed calls and test actors do not. The check runs at every session start. It files "Use or delete: <tool>" under the open RFC 0015 root once per tool, identified by title. The order closes only by a ledger check, or is abandoned with the commit that deleted the tool. A wiring test fails the build if any `Impl` on a factory tool class lacks the attribute.
+
+**Plan-first (author order 01a12351, engine order 01a12351-4159, 2026-10-09)**
+- **The plan is the beat, not a document.** A beat is born planned (Title + Description, no Text), receives its prose in place, and its Description is restated against that prose on the same row (`DescriptionHash` stamped, `DescriptionState` current). With one row there is nothing to drift but that row's own stale Description, which is computed.
+- **A new ruling kind, `gate`,** switches a factory gate on for a book, a series above it, or the universe; its text names the gate (`plan-first`), and it has no pattern. Books without it keep the old F3 and F7, so existing books are not pulled onto the line before their upgrade (protocol G) — the gate is recorded on each as it is finished, then universe-wide.
+- **Rulings are ancestor-scoped.** `RulingService.ListAsync` matches the book and every ancestor, so one ruling on a series node binds each book under it and no other — how the GLMZ secrecy laws are lifted for one series alone.
+- **No dangling check.** A deleted beat clears the plant/payoff ends that pointed at it (`NodeWorkbenchService` clears them; the foreign key is NoAction), so an end is only ever bound or null. F7's unbound-end check covers a planned beat that was deleted or split away.
 
 **I7 (BCODA healed, V73 pressed 2026-09-23 14:39Z)**
 - **Protocol B ran as written.** One in-order read of all 521 beats with its prose fixes spliced as it went; then one entity batch; then the gate's list re-read (328 beats, then 64 more after the last record fixes); then F1 for all 114 tagged entities; then the press. Every unit is green F2–F6 and F1, F7 passes at the current fingerprint, and no station was overridden.

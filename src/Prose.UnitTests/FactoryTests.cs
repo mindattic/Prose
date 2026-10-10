@@ -427,6 +427,110 @@ public class FactoryTests
         Assert.That(s.Units[0].Stations["F5"].Pass, Is.True);
     }
 
+    // ── the plan-first gate ───────────────────────────────────────────────────
+
+    private async Task SetDescriptionAsync(Guid beatId, string? description, bool stamp)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var beat = await db.Beats.FirstAsync(b => b.Id == beatId);
+        beat.Description = description;
+        beat.DescriptionHash = stamp ? Beat.ComputeHash(beat.Text ?? "") : null;
+        if (stamp) beat.TextHash = Beat.ComputeHash(beat.Text ?? "");
+        await db.SaveChangesAsync();
+    }
+
+    private async Task<Guid> SeriesOverAsync(Guid bookId)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var book = await db.Nodes.FirstAsync(n => n.Id == bookId);
+        var series = new SeriesNode { Id = Guid.CreateVersion7(), Slug = "series-" + Guid.NewGuid().ToString("N")[..8], Title = "Series", Status = "draft", SortKey = 100, UniverseId = book.UniverseId };
+        db.Nodes.Add(series);
+        book.ParentNodeId = series.Id;
+        await db.SaveChangesAsync();
+        return series.Id;
+    }
+
+    [Test]
+    public async Task Without_the_gate_F3_asks_only_for_prose()
+    {
+        var (book, _) = await BookWithTwoChaptersAsync();
+        var s = await factory.StatusAsync(book);
+        Assert.That(s.Units[0].Stations["F3"].Pass, Is.True, "an ungated book keeps today's F3: prose without a plan passes");
+    }
+
+    [Test]
+    public async Task Under_the_plan_first_gate_F3_needs_the_plan_reconciled_with_the_prose()
+    {
+        var (book, beats) = await BookWithTwoChaptersAsync();
+        await rulings.RecordAsync(new RulingDraft(RulingKinds.Gate, RulingGates.PlanFirst, book));
+
+        var s = await factory.StatusAsync(book);
+        Assert.That(s.Units[0].Stations["F3"].Pass, Is.False);
+        Assert.That(s.Units[0].Stations["F3"].Detail, Does.Contain("2 missing a plan"));
+
+        // Planned before the prose was written: the plan was never confirmed against it.
+        await SetDescriptionAsync(beats[0], "Opens the book.", stamp: false);
+        await SetDescriptionAsync(beats[1], "Closes the chapter.", stamp: true);
+        s = await factory.StatusAsync(book);
+        Assert.That(s.Units[0].Stations["F3"].Detail, Does.Contain("1 unreconciled"));
+
+        await SetDescriptionAsync(beats[0], "Opens the book.", stamp: true);
+        s = await factory.StatusAsync(book);
+        Assert.That(s.Units[0].Stations["F3"].Pass, Is.True, s.Units[0].Stations["F3"].Detail);
+
+        // The prose moves on; the plan does not.
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            var beat = await db.Beats.FirstAsync(b => b.Id == beats[0]);
+            beat.Text = "A different first beat.";
+            beat.TextHash = Beat.ComputeHash(beat.Text);
+            await db.SaveChangesAsync();
+        }
+        s = await factory.StatusAsync(book);
+        Assert.That(s.Units[0].Stations["F3"].Detail, Does.Contain("1 stale"));
+    }
+
+    [Test]
+    public async Task A_gate_or_law_on_a_series_binds_every_book_under_it_and_no_other()
+    {
+        var (book, _) = await BookWithTwoChaptersAsync();
+        var (other, _) = await BookWithTwoChaptersAsync();
+        var series = await SeriesOverAsync(book);
+        await rulings.RecordAsync(new RulingDraft(RulingKinds.Gate, RulingGates.PlanFirst, series));
+        await rulings.RecordAsync(new RulingDraft(RulingKinds.Law, "In this series the secret may be told.", series));
+
+        Assert.That(await rulings.GateOnAsync(book, RulingGates.PlanFirst), Is.True);
+        Assert.That((await rulings.ListAsync(book)).Select(r => r.Text), Does.Contain("In this series the secret may be told."));
+        Assert.That(await rulings.GateOnAsync(other, RulingGates.PlanFirst), Is.False);
+        Assert.That((await rulings.ListAsync(other)).Select(r => r.Text), Does.Not.Contain("In this series the secret may be told."));
+    }
+
+    [Test]
+    public void A_gate_ruling_names_a_known_gate_and_has_no_pattern()
+    {
+        Assert.Throws<ArgumentException>(() => RulingService.Validate(new RulingDraft(RulingKinds.Gate, "anything")));
+        Assert.Throws<ArgumentException>(() => RulingService.Validate(new RulingDraft(RulingKinds.Gate, RulingGates.PlanFirst, Pattern: "x")));
+        Assert.DoesNotThrow(() => RulingService.Validate(new RulingDraft(RulingKinds.Gate, RulingGates.PlanFirst)));
+    }
+
+    [Test]
+    public async Task Under_the_gate_an_unbound_plan_edge_fails_F7_including_one_on_the_series()
+    {
+        var pp = new PlantPayoffService(dbFactory);
+        var (book, beats) = await BookWithTwoChaptersAsync();
+        var series = await SeriesOverAsync(book);
+        await rulings.RecordAsync(new RulingDraft(RulingKinds.Gate, RulingGates.PlanFirst, series));
+        // Registered on the series: an arc that crosses books, its payoff not yet bound.
+        await pp.RegisterAsync(series, "the drill under the Exchange", "the well opens", plantBeatId: beats[0]);
+        var s = await factory.StatusAsync(book);
+        Assert.That(s.BookStations["F7"].State, Is.EqualTo("fail"));
+        Assert.That(s.BookStations["F7"].Detail, Does.Contain("unbound end"));
+
+        var (ungated, beats2) = await BookWithTwoChaptersAsync();
+        await pp.RegisterAsync(ungated, "a promise", "never bound", plantBeatId: beats2[0]);
+        Assert.That((await factory.StatusAsync(ungated)).BookStations["F7"].State, Is.EqualTo("waiting"), "an ungated book keeps today's F7");
+    }
+
     [Test]
     public async Task A_book_with_no_beats_passes_no_station()
     {

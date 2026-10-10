@@ -49,9 +49,21 @@ public static class RulingKinds
     public const string Metric = "metric";
     /// <summary>A proper name that intentionally has no entity record; its pattern names it.</summary>
     public const string Incidental = "incidental";
-    public static readonly string[] All = [Law, PageLaw, Metric, Incidental];
+    /// <summary>A factory gate switched on for the book, its series or the universe; its text names the
+    /// gate (<see cref="RulingGates.All"/>). No pattern.</summary>
+    public const string Gate = "gate";
+    public static readonly string[] All = [Law, PageLaw, Metric, Incidental, Gate];
     /// <summary>The kinds whose patterns the prose must never match.</summary>
     public static readonly string[] BindThePage = [Law, PageLaw];
+}
+
+/// <summary>The gates a <see cref="RulingKinds.Gate"/> ruling can switch on (its Text).</summary>
+public static class RulingGates
+{
+    /// <summary>The plan and the book are one row: under this gate a prose beat is Written (F3) only
+    /// when it also carries its plan (Description) confirmed against its prose as it stands.</summary>
+    public const string PlanFirst = "plan-first";
+    public static readonly string[] All = [PlanFirst];
 }
 
 /// <summary>"This record was examined against this book, as the record and its mention beats stood."
