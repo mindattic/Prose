@@ -151,8 +151,7 @@ public class DocxExportService
 
             var text = BeatMarkup.StripEntityTags(beat.Text).Trim();
             if (text.Length == 0) continue;
-            foreach (var para in SplitParagraphs(text))
-                current.Blocks.Add(new ParagraphBlock(para));
+            current.Blocks.AddRange(BeatLayout.Blocks(node.Layout, text));
         }
 
         var manuscript = new Manuscript
@@ -164,7 +163,7 @@ public class DocxExportService
             Chapters = chapters,
             Glossary = glossaryTerms.Select(t => new GlossaryEntry(t.Term, t.FullForm, t.Definition)).ToList()
         };
-        var options = ExportOptions.ProseBook with
+        var options = BeatLayout.Options(node.Layout) with
         {
             ChapterCount = chapterCount,
             IncludeToc = settings.DocxIncludeToc
@@ -184,7 +183,4 @@ public class DocxExportService
         log.LogInformation("Exported node {Node} to {Path}", node.Slug, exportPath);
         return exportPath;
     }
-
-    private static IEnumerable<string> SplitParagraphs(string text) =>
-        text.Replace("\r\n", "\n").Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
 }

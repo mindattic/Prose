@@ -1109,6 +1109,14 @@ if (args.Contains("--set-narrative-mode"))
     return;
 }
 
+// prose --set-node-layout --slug <slug> --layout prose|lyrics|screenplay
+// How the book's beats print in every export format — see SetNodeLayoutCli / BeatLayout.
+if (args.Contains("--set-node-layout"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SetNodeLayoutCli", args);
+    return;
+}
+
 // --seed-gospel-cast, --seed-glmz-gap-fill, --seed-gap-fill-round2, --seed-gap-fill-round3,
 // --fix-david-mistag: five one-time, non-repeatable corpus data-migration commands, all
 // completed, removed 2026-08-30 (a holistic-cleanup pass flagged them as permanent CLI surface

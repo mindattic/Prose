@@ -77,9 +77,9 @@ public class ManuscriptExportService
         ModifiedDate = new DateTimeOffset(PreviewTimestamp)
     };
 
-    private static ExportOptions BookOptions(string? previewDir) => previewDir is null
-        ? ExportOptions.ProseBook
-        : ExportOptions.ProseBook with { BookIdentifier = PreviewBookId, FixedTimestamp = PreviewTimestamp };
+    private static ExportOptions BookOptions(string? previewDir, string? layout) => previewDir is null
+        ? BeatLayout.Options(layout)
+        : BeatLayout.Options(layout) with { BookIdentifier = PreviewBookId, FixedTimestamp = PreviewTimestamp };
 
     /// <summary>
     /// Export the node as Markdown to the publish directory; returns the path.
@@ -182,12 +182,12 @@ public class ManuscriptExportService
     public async Task<string> ExportPdfAsync(Guid nodeId, string? author = null, CancellationToken ct = default, string? previewDir = null)
     {
         await readGate.EnsureReadAsync(nodeId, ct);
-        var (manuscript, path) = await LoadAsync(nodeId, "pdf", author, ct, previewDir);
+        var (manuscript, path, layout) = await LoadAsync(nodeId, "pdf", author, ct, previewDir);
         // Back-matter glossary — same subset DocxExportService appends (SS-LAW-20: never
         // interrupt in-voice prose to spell out an acronym); the renderer appends it.
         await AddGlossaryAsync(manuscript, nodeId, ct);
 
-        PdfRenderer.Render(manuscript, path, BookOptions(previewDir));
+        PdfRenderer.Render(manuscript, path, BookOptions(previewDir, layout));
         if (previewDir is null) await recorder.RecordAsync(nodeId, "pdf", path, ct);
 
         log.LogInformation("Exported node {Node} to PDF {Path}", manuscript.Slug, path);
@@ -198,10 +198,10 @@ public class ManuscriptExportService
     public async Task<string> ExportEpubAsync(Guid nodeId, string? author = null, CancellationToken ct = default, string? previewDir = null)
     {
         await readGate.EnsureReadAsync(nodeId, ct);
-        var (manuscript, path) = await LoadAsync(nodeId, "epub", author, ct, previewDir);
+        var (manuscript, path, layout) = await LoadAsync(nodeId, "epub", author, ct, previewDir);
         await AddGlossaryAsync(manuscript, nodeId, ct);
 
-        EpubRenderer.Render(manuscript, path, BookOptions(previewDir));
+        EpubRenderer.Render(manuscript, path, BookOptions(previewDir, layout));
         if (previewDir is null) await recorder.RecordAsync(nodeId, "epub", path, ct);
 
         log.LogInformation("Exported node {Node} to EPUB {Path}", manuscript.Slug, path);
@@ -217,7 +217,7 @@ public class ManuscriptExportService
     public async Task<string> ExportAudioTxtAsync(Guid nodeId, string? author = null, CancellationToken ct = default, string? previewDir = null)
     {
         await readGate.EnsureReadAsync(nodeId, ct);
-        var (manuscript, path) = await LoadAsync(nodeId, "txt", author, ct, previewDir);
+        var (manuscript, path, _) = await LoadAsync(nodeId, "txt", author, ct, previewDir);
 
         await File.WriteAllTextAsync(path, TextRenderer.Render(manuscript), new System.Text.UTF8Encoding(false), ct);
         if (previewDir is null) await recorder.RecordAsync(nodeId, "txt", path, ct);
@@ -237,7 +237,7 @@ public class ManuscriptExportService
 
     /// <summary>Resolve the node, walk its ordered beats into chapters, and
     /// compute the publish-directory path for the given extension.</summary>
-    private async Task<(Manuscript Manuscript, string Path)> LoadAsync(Guid nodeId, string ext, string? author, CancellationToken ct, string? previewDir = null)
+    private async Task<(Manuscript Manuscript, string Path, string Layout)> LoadAsync(Guid nodeId, string ext, string? author, CancellationToken ct, string? previewDir = null)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         // IgnoreQueryFilters(): explicit nodeId, not an ambient scope — a book outside whatever
@@ -273,8 +273,7 @@ public class ManuscriptExportService
 
                 var text = BeatMarkup.StripEntityTags(beat.Text).Trim();
                 if (text.Length == 0) continue;
-                foreach (var para in SplitParagraphs(text))
-                    current.Blocks.Add(new ParagraphBlock(para));
+                current.Blocks.AddRange(BeatLayout.Blocks(node.Layout, text));
             }
         }
 
@@ -315,7 +314,7 @@ public class ManuscriptExportService
             Author = author,
             Chapters = chapters
         };
-        return (manuscript, path);
+        return (manuscript, path, node.Layout);
     }
 
     private string ResolveExportDir(string? universeSlug = null)

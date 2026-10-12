@@ -261,7 +261,7 @@ public class NodeTools
         {
             id = node.Id, slug = node.Slug, title = node.Title, kind = node.Kind,
             status = node.Status, description = node.Description, seed = node.Seed,
-            voice_id = node.VoiceId,
+            voice_id = node.VoiceId, layout = node.Layout,
             parent_node_id = node.ParentNodeId, chars_narrated = node.CharsNarrated,
             beats = beats.Select((b, i) => new
             {
@@ -933,7 +933,7 @@ public class NodeTools
         return JsonSerializer.Serialize(new { count = rows.Count, nodes = rows }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio. Does NOT rename slugs — use the CLI `prose --set-node-slug --slug <current> --to <new> --apply` (SlugRepairService), which pins the slug and moves every slug-carrying reference (beat audio paths, publication paths, on-disk directories) with it.")]
+    [McpServerTool, Description("Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count, layout. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio. Does NOT rename slugs — use the CLI `prose --set-node-slug --slug <current> --to <new> --apply` (SlugRepairService), which pins the slug and moves every slug-carrying reference (beat audio paths, publication paths, on-disk directories) with it.")]
     public Task<string> UpdateBook(
         [Description("Node id (GUID) or slug.")] string idOrSlug,
         [Description("New title. Omit to leave unchanged.")] string? title = null,
@@ -944,8 +944,9 @@ public class NodeTools
         [Description("Generation seed (one-line premise). Omit to leave unchanged; pass empty string to clear.")] string? seed = null,
         [Description("Short author reference code (e.g. 'ATTE'). Uppercased; pass empty string to clear. Omit to leave unchanged.")] string? code = null,
         [Description("ElevenLabs or local TTS voice id. Omit to leave unchanged; pass empty string to clear.")] string? voiceId = null,
-        [Description("KDP print-page count from Word (File → Info → Properties → Pages). Used to calculate the correct inside margin on the next export. Pass 0 to clear.")] int? kdpPageCount = null) =>
-        hub.InvokeAsync(nameof(NodeTools), nameof(UpdateBookImpl), new { idOrSlug, title, subtitle, description, kind, status, seed, code, voiceId, kdpPageCount });
+        [Description("KDP print-page count from Word (File → Info → Properties → Pages). Used to calculate the correct inside margin on the next export. Pass 0 to clear.")] int? kdpPageCount = null,
+        [Description("Export layout: prose | lyrics | screenplay. lyrics prints blank-line-separated stanzas with bracketed section labels ([Verse 1], [Chorus]) dropped; screenplay parses Fountain-style elements (INT./EXT. headings, upper-case cues over dialogue, (parentheticals), TO: transitions) onto US Letter Courier 12. Beats are never changed. Omit to leave unchanged.")] string? layout = null) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(UpdateBookImpl), new { idOrSlug, title, subtitle, description, kind, status, seed, code, voiceId, kdpPageCount, layout });
 
     public async Task<string> UpdateBookImpl(
         string idOrSlug,
@@ -957,10 +958,13 @@ public class NodeTools
         string? seed = null,
         string? code = null,
         string? voiceId = null,
-        int? kdpPageCount = null)
+        int? kdpPageCount = null,
+        string? layout = null)
     {
         try
         {
+            if (layout != null && !BeatLayout.Valid.Contains(layout.Trim().ToLowerInvariant()))
+                return JsonSerializer.Serialize(new { error = "invalid_layout", layout, valid = BeatLayout.Valid }, CanonTools.JsonOpts);
             var node = await ResolveNodeAsync(idOrSlug);
             if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
 
@@ -979,6 +983,7 @@ public class NodeTools
             if (code         != null) row.NodeCode     = string.IsNullOrEmpty(code) ? null : code.Trim().ToUpperInvariant();
             if (voiceId      != null) row.VoiceId      = string.IsNullOrEmpty(voiceId) ? null : voiceId;
             if (kdpPageCount != null) row.KdpPageCount = kdpPageCount == 0 ? null : kdpPageCount;
+            if (layout       != null) row.Layout       = layout.Trim().ToLowerInvariant();
             row.UpdatedAt = DateTime.UtcNow;
 
             await db.SaveChangesAsync();
@@ -991,6 +996,7 @@ public class NodeTools
                 kind   = row.Kind,
                 status = row.Status,
                 code   = row.NodeCode,
+                layout = row.Layout,
             }, CanonTools.JsonOpts);
         }
         catch (Exception ex)

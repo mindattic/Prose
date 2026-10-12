@@ -115,6 +115,12 @@ public abstract class Node
     /// Set via <c>prose --set-narrative-mode --slug &lt;slug&gt; --mode &lt;mode&gt;</c>.</summary>
     public string NarrativeMode { get; set; } = "original";
 
+    /// <summary>How the book's beats print in every export format: "prose" (default),
+    /// "lyrics" (stanzas, section labels dropped) or "screenplay" (Fountain elements, US Letter
+    /// Courier 12). See <c>Services.BeatLayout</c>. Set via
+    /// <c>prose --set-node-layout --slug &lt;slug&gt; --layout &lt;layout&gt;</c> or update_book.</summary>
+    public string Layout { get; set; } = "prose";
+
     /// <summary>When the author marked this node canon (null = never).</summary>
     public DateTime? CanonAt { get; set; }
 

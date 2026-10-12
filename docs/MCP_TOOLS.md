@@ -1564,7 +1564,7 @@ Update one beat's prose. Recomputes the hash, marks the beat stale, and invalida
 
 ### `update_book`
 
-Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio. Does NOT rename slugs — use the CLI `prose --set-node-slug --slug <current> --to <new> --apply` (SlugRepairService), which pins the slug and moves every slug-carrying reference (beat audio paths, publication paths, on-disk directories) with it.
+Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count, layout. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio. Does NOT rename slugs — use the CLI `prose --set-node-slug --slug <current> --to <new> --apply` (SlugRepairService), which pins the slug and moves every slug-carrying reference (beat audio paths, publication paths, on-disk directories) with it.
 
 - `idOrSlug` (string, required) — Node id (GUID) or slug.
 - `title` (string, optional) — New title. Omit to leave unchanged.
@@ -1576,6 +1576,7 @@ Update a node's metadata fields. Pass only the fields you want to change — omi
 - `code` (string, optional) — Short author reference code (e.g. 'ATTE'). Uppercased; pass empty string to clear. Omit to leave unchanged.
 - `voiceId` (string, optional) — ElevenLabs or local TTS voice id. Omit to leave unchanged; pass empty string to clear.
 - `kdpPageCount` (int, optional) — KDP print-page count from Word (File → Info → Properties → Pages). Used to calculate the correct inside margin on the next export. Pass 0 to clear.
+- `layout` (string, optional) — Export layout: prose | lyrics | screenplay. lyrics prints blank-line-separated stanzas with bracketed section labels ([Verse 1], [Chorus]) dropped; screenplay parses Fountain-style elements (INT./EXT. headings, upper-case cues over dialogue, (parentheticals), TO: transitions) onto US Letter Courier 12. Beats are never changed. Omit to leave unchanged.
 
 ## Noun Consistency
 

@@ -1929,6 +1929,73 @@ namespace Prose.Core.Migrations
                     b.ToTable("BookProtagonists");
                 });
 
+            modelBuilder.Entity("Prose.Core.Data.Entities.BookReportRow", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<int>("BeatCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("BookCode")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<bool>("Converged")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ExportFilePath")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<bool>("IsComplete")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Markdown")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("NodeSlug")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<int>("OpenFindings")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("WordCount")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BookCode")
+                        .HasDatabaseName("IX_BookReports_BookCode");
+
+                    b.HasIndex("NodeId")
+                        .IsUnique()
+                        .HasDatabaseName("UX_BookReports_Node");
+
+                    b.ToTable("BookReports", (string)null);
+                });
+
             modelBuilder.Entity("Prose.Core.Data.Entities.BookSequentialRead", b =>
                 {
                     b.Property<long>("Id")
@@ -6915,6 +6982,10 @@ namespace Prose.Core.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("SuppressedBy")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ChapterId")
@@ -6934,6 +7005,49 @@ namespace Prose.Core.Migrations
                         .HasDatabaseName("IX_Findings_Category_SourceRuleVersion");
 
                     b.ToTable("Findings", (string)null);
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.FindingSuppressionRow", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<bool>("Active")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid?>("BeatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("NodeSlug")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("Reason")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NodeSlug", "Active")
+                        .HasDatabaseName("IX_FindingSuppressions_Node");
+
+                    b.ToTable("FindingSuppressions", (string)null);
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.FlyoverEntity", b =>
@@ -8579,6 +8693,10 @@ namespace Prose.Core.Migrations
 
                     b.Property<double?>("LastPlayedSec")
                         .HasColumnType("float");
+
+                    b.Property<string>("Layout")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("NarratedBeatCount")
                         .HasColumnType("int");
