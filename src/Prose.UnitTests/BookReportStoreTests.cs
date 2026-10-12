@@ -2,6 +2,7 @@ using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using NUnit.Framework;
 using Prose.Core.Data;
+using Prose.Core.Data.Entities;
 using Prose.Core.Services;
 
 namespace Prose.UnitTests;
@@ -77,6 +78,24 @@ public class BookReportStoreTests
         Assert.That(db.BookReports.Count(), Is.EqualTo(2));
         Assert.That((await store.GetAsync(b))!.Markdown, Is.EqualTo("# b"));
     }
+
+    [Test]
+    public async Task A_series_report_shares_the_table_under_its_own_category()
+    {
+        var book = Guid.NewGuid(); var series = Guid.NewGuid();
+        await store.SaveAsync(Report(book, "# book"), true);
+        await store.SaveAsync(new BookReportResult(series, "cyberocracy", "CYBR", "Cyberocracy", "# series",
+            312000, 588, 0, false, BookReportCategories.Series), true);
+        Assert.That((await store.GetAsync(book))!.Category, Is.EqualTo(BookReportCategories.Book));
+        Assert.That((await store.GetAsync(series))!.Category, Is.EqualTo(BookReportCategories.Series));
+    }
+
+    [TestCase("series", BookReportCategories.Series)]
+    [TestCase("saga", BookReportCategories.Series)]
+    [TestCase("book", BookReportCategories.Book)]
+    [TestCase(null, BookReportCategories.Book)]
+    public void Category_follows_the_node_kind(string? kind, string expected) =>
+        Assert.That(BookReportCategories.ForNodeKind(kind), Is.EqualTo(expected));
 
     [Test]
     public async Task Export_writes_the_stored_markdown_and_records_the_path()

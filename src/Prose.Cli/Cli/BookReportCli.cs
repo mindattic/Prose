@@ -50,7 +50,7 @@ public static class BookReportCli
             var text = (await File.ReadAllTextAsync(import)).Replace("\r\n", "\n");
             var imported = await services.GetRequiredService<BookReportStore>()
                 .SaveAsync(result with { Markdown = text }, complete);
-            Console.WriteLine($"[book-report] imported {import} -> BookReports row {imported.Id} for {result.NodeCode ?? result.NodeSlug} ({text.Length} chars).");
+            Console.WriteLine($"[book-report] imported {import} -> BookReports row {imported.Id} ({result.Category}) for {result.NodeCode ?? result.NodeSlug} ({text.Length} chars).");
             return 0;
         }
 
@@ -65,7 +65,7 @@ public static class BookReportCli
 
         var store = services.GetRequiredService<BookReportStore>();
         var saved = await store.SaveAsync(result, complete);
-        Console.WriteLine($"[book-report] BookReports row {saved.Id} overwritten for {code}. " +
+        Console.WriteLine($"[book-report] BookReports row {saved.Id} ({result.Category}) overwritten for {code}. " +
             $"Run `prose --export-book-report --slug {code}` to write it to the book's export directory.");
         Console.WriteLine("[book-report] run make_pdfs.py in the Downloads folder to refresh the PDF.");
         return 0;

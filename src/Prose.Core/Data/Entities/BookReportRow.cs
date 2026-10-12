@@ -20,6 +20,10 @@ public class BookReportRow
 
     public string Title { get; set; } = "";
 
+    /// <summary><see cref="BookReportCategories.Book"/> for a book's report,
+    /// <see cref="BookReportCategories.Series"/> for the cumulative report on a series node.</summary>
+    public string Category { get; set; } = BookReportCategories.Book;
+
     /// <summary>True when the pass actually read the backlog through and fixed what was real
     /// (<c>--complete</c>); false for a first-look draft.</summary>
     public bool IsComplete { get; set; }
@@ -44,4 +48,15 @@ public class BookReportRow
 
     /// <summary>When this row was last overwritten by a run.</summary>
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+}
+
+/// <summary>What a <see cref="BookReportRow"/> reports on: one book, or a whole series cumulatively.</summary>
+public static class BookReportCategories
+{
+    public const string Book = "book";
+    public const string Series = "series";
+
+    /// <summary>The category for a report on a node of this kind: a series node gets the series report.</summary>
+    public static string ForNodeKind(string? kind) =>
+        kind is "series" or "saga" or "anthology" ? Series : Book;
 }

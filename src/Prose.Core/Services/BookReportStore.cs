@@ -36,6 +36,7 @@ public class BookReportStore
                     [NodeSlug]       NVARCHAR(200)  NOT NULL,
                     [BookCode]       NVARCHAR(100)  NOT NULL,
                     [Title]          NVARCHAR(500)  NOT NULL,
+                    [Category]       NVARCHAR(20)   NOT NULL DEFAULT N'book',
                     [IsComplete]     BIT            NOT NULL DEFAULT 0,
                     [WordCount]      INT            NOT NULL DEFAULT 0,
                     [BeatCount]      INT            NOT NULL DEFAULT 0,
@@ -55,6 +56,11 @@ public class BookReportStore
         db.Database.ExecuteSqlRaw("""
             IF COL_LENGTH(N'dbo.BookReports', N'UpdatedAt') IS NULL
                 ALTER TABLE [dbo].[BookReports] ADD [UpdatedAt] DATETIME2 NOT NULL DEFAULT SYSUTCDATETIME();
+            """);
+        // A series gets its own cumulative report in the same table; every earlier row is a book's.
+        db.Database.ExecuteSqlRaw("""
+            IF COL_LENGTH(N'dbo.BookReports', N'Category') IS NULL
+                ALTER TABLE [dbo].[BookReports] ADD [Category] NVARCHAR(20) NOT NULL DEFAULT N'book';
             """);
         db.Database.ExecuteSqlRaw("""
             IF NOT EXISTS (SELECT 1 FROM sys.indexes WHERE name = N'UX_BookReports_Node' AND object_id = OBJECT_ID(N'[dbo].[BookReports]'))
@@ -89,6 +95,7 @@ public class BookReportStore
         row.NodeSlug       = report.NodeSlug;
         row.BookCode       = report.NodeCode ?? report.NodeSlug;
         row.Title          = report.Title;
+        row.Category       = report.Category;
         row.IsComplete     = complete;
         row.WordCount      = report.WordCount;
         row.BeatCount      = report.BeatCount;

@@ -2635,6 +2635,7 @@ public class ProseDbContext : DbContext
             e.Property(x => x.NodeSlug).HasMaxLength(200).IsRequired();
             e.Property(x => x.BookCode).HasMaxLength(100).IsRequired();
             e.Property(x => x.Title).HasMaxLength(500).IsRequired();
+            e.Property(x => x.Category).HasMaxLength(20).IsRequired();
             e.Property(x => x.Markdown).IsRequired();
             e.Property(x => x.ExportFilePath).HasMaxLength(500);
             e.HasIndex(x => x.NodeId).IsUnique().HasDatabaseName("UX_BookReports_Node");

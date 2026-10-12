@@ -62,7 +62,9 @@ step 2 with an automated score.** See `docs/LOGIC.md` SS-LAW-17 and `docs/FINDIN
    - overwrites the book's single row in the **`BookReports`** table (BookCode, Title, IsComplete,
      word/beat/open-finding counts, Converged, the full Markdown, the export file path, CreatedAt,
      UpdatedAt). One row per book, enforced by a unique index; a report is moot once the prose pass
-     it drove has landed, so no history is kept.
+     it drove has landed, so no history is kept. `Category` is `book`, or `series` when the node is a
+     series: a series' cumulative report lives in the same table, one row per series node
+     (`prose --book-report --slug <series-code> --import <report.md>`).
    The readable copy in the book's export directory is **not** written here — that is
    `/export-book-report <code>` (`.prose/commands/export-book-report.md`). The command runs inside
    the Hub, so a change to it needs a Hub redeploy before it takes effect.

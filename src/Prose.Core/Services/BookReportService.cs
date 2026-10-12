@@ -8,7 +8,8 @@ namespace Prose.Core.Services;
 
 public sealed record BookReportResult(
     Guid NodeId, string NodeSlug, string? NodeCode, string Title, string Markdown,
-    int WordCount = 0, int BeatCount = 0, int OpenFindings = 0, bool Converged = false);
+    int WordCount = 0, int BeatCount = 0, int OpenFindings = 0, bool Converged = false,
+    string Category = Data.Entities.BookReportCategories.Book);
 
 /// <summary>
 /// Codifies the read-the-backlog-by-hand-then-report pass this engine's QA work has always done
@@ -78,7 +79,7 @@ public class BookReportService
             convergenceState?.TotalRoundsRun ?? 0, decisions);
 
         return new BookReportResult(nodeId.Value, node.Slug, node.NodeCode, node.Title, md,
-            wordCount, beatCount, open.Count, converged);
+            wordCount, beatCount, open.Count, converged, Data.Entities.BookReportCategories.ForNodeKind(node.Kind));
     }
 
     private static string Render(
