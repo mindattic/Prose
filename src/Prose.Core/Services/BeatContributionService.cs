@@ -22,15 +22,23 @@ public sealed record ContributionInput(string Text, IReadOnlyList<ContributionEd
 /// ambiguous name that nobody pinned, so the save path correctly declined to guess and the mention
 /// went untracked with no other signal to catch it on a beat's first-ever tagging pass (a beat that
 /// already has a contribution line for the entity would instead show up in <see cref="ContributionCheck.Extra"/>
-/// once its tag vanishes — this field exists for the beat that never had one yet).</summary>
+/// once its tag vanishes — this field exists for the beat that never had one yet).
+///
+/// <para>Informational, not gating: unlike <see cref="ContributionCheck.Ok"/>'s other four fields,
+/// this one has no deterministic resolution — plenty of entries are a correct non-mention (an
+/// ordinary word that happens to collide with an obscure entity's name, e.g. "CURRENT" matching two
+/// unrelated entities literally named that in an ALL-CAPS system message, found live 2026-10-13
+/// BCODA #20830) with nothing to tag and no way to "clear" it short of rewording prose that is
+/// already correct. Making it block <see cref="ContributionCheck.Ok"/> would trade the original
+/// silent-loss bug for a beat permanently unable to read complete. Surface it, judge it by hand,
+/// move on.</para></summary>
 public sealed record UntaggedName(string Text, IReadOnlyList<Guid> Candidates);
 
 public sealed record ContributionCheck(
     IReadOnlyList<Guid> Missing, IReadOnlyList<Guid> Extra, IReadOnlyList<Guid> Stale,
     IReadOnlyList<(int Offset, string Word)> UntaggedPronouns, IReadOnlyList<UntaggedName> UntaggedNames)
 {
-    public bool Ok => Missing.Count == 0 && Extra.Count == 0 && Stale.Count == 0
-        && UntaggedPronouns.Count == 0 && UntaggedNames.Count == 0;
+    public bool Ok => Missing.Count == 0 && Extra.Count == 0 && Stale.Count == 0 && UntaggedPronouns.Count == 0;
 }
 
 /// <summary>A line of a character's history: one beat, cited.</summary>
