@@ -12,7 +12,7 @@ factory's live state in the Hub.**
 
 1. The SessionStart hook opens a factory session and injects the FACTORY block: the next action
    (computed from the book's state), the books on the line, the last session's summary, the laws.
-   If it says FACTORY UNREACHABLE, start the Hub (`src\tools\deploy-apps.ps1 -Start Hub`) and do no
+   If it says FACTORY UNREACHABLE, start the Hub (`deploy.ps1 -Apps Hub -Start Hub`) and do no
    story work from memory.
 2. Without the hook: `prose --factory next` (MCP `factory_next`) and `prose --order list`.
 3. Do the next action. A bare `do` means exactly that.

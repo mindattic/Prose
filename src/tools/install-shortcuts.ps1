@@ -4,13 +4,14 @@
     Creates or updates the desktop shortcuts for the MindAttic apps.
 
 .DESCRIPTION
-    One icon per app, each pointing at that repo's `deploy-<app>.bat`, so double-clicking always
-    republishes from source into C:\Apps\ and then launches the build it just made. You can never
-    open a stale exe by accident - which is the failure this convention exists to prevent
-    (KdpPublish's own launcher header records a three-day-stale build silently missing a feature).
+    One icon per app, each pointing at the generated `deploy.bat` in that app's deploy folder
+    (C:\Apps\MindAttic\Prose\deploy.bat with the app as its argument; C:\Apps\<App>\deploy.bat for
+    the other repos). deploy.bat runs the repo's deploy.ps1 first - which republishes only when
+    source changed - and then launches the app, so you can never open a stale exe by accident.
+    When the repo is missing or the publish fails, deploy.bat still launches the existing build.
 
-    Shortcuts point at the REPO, never into C:\Apps\. That folder is a build output: it gets wiped
-    and regenerated, and an icon pointing into it breaks the first time that happens.
+    deploy.bat is written by each repo's deploy.ps1, so run that once (deploy.ps1 -Force) before
+    this script on a fresh machine; entries whose deploy.bat does not exist yet are skipped.
 
     Idempotent - safe to re-run. It rewrites the target/icon of a shortcut it already owns and
     reports what it changed. Entries whose .bat or icon is missing are skipped with a reason
@@ -36,19 +37,22 @@ $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 
 $mindAttic = 'D:\Projects\MindAttic'
+$prose     = 'C:\Apps\MindAttic\Prose\deploy.bat'
 
 # Name is the .lnk's filename AND its label, so changing one renames the icon on the desktop.
+# Args is passed to deploy.bat: the Prose deploy.bat takes the app; no argument deploys all of
+# them and opens the Launcher.
 $shortcuts = @(
-    @{ Name = 'Prose Writer'; Bat = "$mindAttic\Prose\deploy-writer.bat";          Icon = "$mindAttic\Prose\assets\writer.ico"
-       Desc = 'Republish and open the Prose book editor' }
-    @{ Name = 'Prose Hub';    Bat = "$mindAttic\Prose\deploy-hub.bat";             Icon = "$mindAttic\Prose\assets\hub.ico"
-       Desc = 'Republish and start the Prose Hub (serves /writer and /repo)' }
-    @{ Name = 'Prose';        Bat = "$mindAttic\Prose\deploy-prose.bat";           Icon = "$mindAttic\Prose\assets\M.ico"
-       Desc = 'Republish all Prose apps and open the launcher' }
-    @{ Name = 'KdpPublish';   Bat = "$mindAttic\Prose\deploy-kdp.bat";             Icon = "$mindAttic\Prose\assets\kdp.ico"
-       Desc = 'Republish and open KdpPublish' }
-    @{ Name = 'IdiotProof';   Bat = "$mindAttic\IdiotProof\deploy-idiotproof.bat"; Icon = "$mindAttic\IdiotProof\idiotproof.ico"
-       Desc = 'Republish and start IdiotProof (Monitor + Blazor)' }
+    @{ Name = 'Prose Writer'; Bat = $prose;                          Args = 'Writer'; Icon = "$mindAttic\Prose\assets\writer.ico"
+       Desc = 'Republish (if changed) and open the Prose book editor' }
+    @{ Name = 'Prose Hub';    Bat = $prose;                          Args = 'Hub';    Icon = "$mindAttic\Prose\assets\hub.ico"
+       Desc = 'Republish (if changed) and start the Prose Hub (serves /writer and /repo)' }
+    @{ Name = 'Deploy Prose'; Bat = $prose;                          Args = '';       Icon = "$mindAttic\Prose\assets\M.ico"
+       Desc = 'Republish every changed Prose app and open the launcher' }
+    @{ Name = 'KdpPublish';   Bat = 'C:\Apps\KdpPublish\deploy.bat'; Args = '';       Icon = "$mindAttic\Prose\assets\kdp.ico"
+       Desc = 'Republish (if changed) and open KdpPublish' }
+    @{ Name = 'IdiotProof';   Bat = 'C:\Apps\IdiotProof\deploy.bat'; Args = '';       Icon = "$mindAttic\IdiotProof\idiotproof.ico"
+       Desc = 'Republish (if changed) and start IdiotProof (Monitor + Blazor)' }
 )
 
 if (-not (Test-Path $Desktop)) {
@@ -84,13 +88,14 @@ foreach ($s in $shortcuts) {
 
     $sc = $shell.CreateShortcut($lnk)
     $sc.TargetPath       = $s.Bat
+    $sc.Arguments        = $s.Args
     $sc.WorkingDirectory = Split-Path $s.Bat
     $sc.IconLocation     = $icon
     $sc.Description      = $s.Desc
     $sc.Save()
 
     $verb = if ($existed) { 'updated' } else { 'created' }
-    Write-Host ("    {0,-14} {1,-8} -> {2}" -f $s.Name, $verb, $s.Bat) -ForegroundColor Gray
+    Write-Host ("    {0,-14} {1,-8} -> {2} {3}" -f $s.Name, $verb, $s.Bat, $s.Args) -ForegroundColor Gray
     $changed++
 }
 

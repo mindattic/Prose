@@ -59,7 +59,7 @@ Restart Claude Desktop after editing.
 dotnet build src/Prose.Mcp/Prose.Mcp.csproj --configuration Release
 ```
 
-The `--no-build` flag in the registration command means the client launches the pre-built binary. Rebuild manually after code changes. Because migrated tool bodies execute inside the Hub, a change to a tool's `{Name}Impl` also needs a Hub redeploy (`src/tools/deploy-apps.ps1 -Apps Hub -Start Hub`); the MCP tool catalog (names, descriptions, parameters) only changes when an MCP client restarts the server.
+The `--no-build` flag in the registration command means the client launches the pre-built binary. Rebuild manually after code changes. Because migrated tool bodies execute inside the Hub, a change to a tool's `{Name}Impl` also needs a Hub redeploy (`deploy.ps1 -Apps Hub -Start Hub`); the MCP tool catalog (names, descriptions, parameters) only changes when an MCP client restarts the server.
 
 ## Logs
 

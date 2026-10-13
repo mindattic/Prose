@@ -689,3 +689,4 @@ updated: 2026-10-03
 | SS-T3 | 2026-10-13 | chore | open | Metadata completeness campaign: pronoun/entity tags, character history, continuity checks across every book (Hub WO:01a1337c) | — |
 | SS-T4 | 2026-10-13 | fix | closed | Contributions gate: surface a bare ambiguous name (e.g. two Sables) sitting untagged instead of silently losing it | WO:01a13278 |
 | SS-T5 | 2026-10-13 | fix | closed | untagged_names must not gate contributions-complete: a harmless word/entity-name collision (CURRENT) would block it forever | WO:01a13278 |
+| SS-T6 | 2026-10-13 | chore | closed | Consolidate Prose deploy into root deploy.ps1 (rebuild only when changed, -Force) writing one C:\Apps\MindAttic\Prose\deploy.bat <App>; drop repo deploy-*.bat | deploy.ps1 |

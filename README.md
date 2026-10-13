@@ -84,7 +84,7 @@ Without the `core.hooksPath` line the repo's `pre-commit` and `post-commit` hook
 Publish and start the Hub. It applies any pending EF Core migrations at startup, then waits for `/api/health`:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File src\tools\deploy-apps.ps1 -Apps Hub -Start Hub
+powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Hub -Start Hub
 ```
 
 Enable temporal versioning on a fresh database and check the CLI can reach the Hub:
@@ -98,7 +98,7 @@ Enable temporal versioning on a fresh database and check the CLI can reach the H
 `agent bootstrap` prints `ready` when the Hub is healthy. Open the editor:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File src\tools\deploy-apps.ps1 -Apps Writer -Start Writer
+powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Writer -Start Writer
 ```
 
 Register the MCP server with Claude Code (one time):
@@ -481,7 +481,8 @@ Run the Hub with `ASPNETCORE_ENVIRONMENT=Development`, or MindAttic authenticati
 ```text
 Prose/
   prose.cmd                 the CLI shim (dotnet run on src/Prose.Cli)
-  deploy-*.bat, writer.bat  shortcuts that call src/tools/deploy-apps.ps1
+  deploy.ps1                publishes Hub, Writer, Launcher to C:\Apps\MindAttic\Prose\ (writes deploy.bat there)
+  writer.bat                dev-only: dotnet run of Prose.Writer
   src/
     Prose.slnx
     Prose.Core/             engine: EF Core context and entities, services, Services/Factory/
@@ -493,10 +494,9 @@ Prose/
     Prose.ObserverUi/       the observability dashboard at /app
     Prose.Writer/           Writer.exe, the WPF + WebView2 window
     Prose.Launcher/         Launcher.exe, opens Writer or KdpPublish
-    Prose.KdpPublish/       drives Amazon KDP in an embedded browser
     Prose.LlmCli/           prose-llm, the standalone provider CLI
     Prose.UnitTests/        NUnit tests with SQLite fixtures
-    tools/                  deploy-apps.ps1, launch-app.ps1, install-shortcuts.ps1
+    tools/                  launch-app.ps1, install-shortcuts.ps1
   docs/                     the Codex: BIBLE.md, USER_STORIES.md, rfc/, agent/, universes/
   tools/                    codex.ps1, build-readme.js, gen-schema.ps1, prose-agent.ps1
   scripts/                  maintenance scripts
@@ -512,16 +512,17 @@ Prose/
 dotnet build src\Prose.slnx
 ```
 
-Publish the desktop apps to `C:\Apps\MindAttic\Prose\` (Hub.exe, Writer.exe, Launcher.exe, KdpPublish):
+Publish the desktop apps to `C:\Apps\MindAttic\Prose\` (Hub.exe, Writer.exe, Launcher.exe; KdpPublish has its own repo and deploys to `C:\Apps\KdpPublish\`):
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File src\tools\deploy-apps.ps1                           # all four
-powershell -ExecutionPolicy Bypass -File src\tools\deploy-apps.ps1 -Apps Hub -Start Hub      # Hub only
-powershell -ExecutionPolicy Bypass -File src\tools\deploy-apps.ps1 -Apps Writer -Start Writer
+powershell -ExecutionPolicy Bypass -File deploy.ps1                           # all three, only what changed
+powershell -ExecutionPolicy Bypass -File deploy.ps1 -Force                    # all three, clean rebuild
+powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Hub -Start Hub      # Hub only
+powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Writer -Start Writer
 powershell -ExecutionPolicy Bypass -File src\tools\launch-app.ps1 -App writer                # start without rebuilding
 ```
 
-`deploy-apps.ps1` stops only the apps it replaces and publishes through `%LOCALAPPDATA%\Prose\build-artifacts`, so it never fights a running MCP server for `bin\`. The repo-root `deploy-hub.bat`, `deploy-writer.bat`, `deploy-kdp.bat` and `deploy-prose.bat` call it. `Directory.Build.props` excludes `obj_*` and `bin_*` folders so isolated builds from parallel sessions do not collide.
+`deploy.ps1` republishes an app only when its exe or `deploy.bat` is missing or one of its source files (its project plus every project it references) is newer than the deployed exe; `-Force` republishes with a clean rebuild. It stops only the apps it replaces and publishes through `%LOCALAPPDATA%\Prose\build-artifacts`, so it never fights a running MCP server for `bin\`. It writes `C:\Apps\MindAttic\Prose\deploy.bat`, which the desktop shortcuts point at: `deploy.bat Hub`, `deploy.bat Writer`, `deploy.bat Launcher`, or no argument to deploy everything and open the Launcher. It redeploys (a fast no-op when nothing changed) and then starts the app, falling back to the existing build if the repo is gone or the publish fails. `Directory.Build.props` excludes `obj_*` and `bin_*` folders so isolated builds from parallel sessions do not collide.
 
 After editing any Codex file under `docs/`:
 
@@ -543,7 +544,7 @@ There are 265 `*Tests.cs` files (NUnit). Most tests run on in-memory SQLite thro
 
 ## Deployment
 
-There is no hosted deployment and there will not be one (author decision, 2026-08-23). The Azure App Service pipeline, the Azure SQL provisioning guide and their docs were deleted. "Deploying" means publishing the desktop apps locally with `src\tools\deploy-apps.ps1`; there is no CI runner.
+There is no hosted deployment and there will not be one (author decision, 2026-08-23). The Azure App Service pipeline, the Azure SQL provisioning guide and their docs were deleted. "Deploying" means publishing the desktop apps locally with `deploy.ps1`; there is no CI runner.
 
 ## History
 

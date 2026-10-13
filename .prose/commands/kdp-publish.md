@@ -6,9 +6,9 @@ Usage: `/kdp-publish [--dry-run] [CODE1,CODE2,... to restrict to specific books]
 state), classifies every tracked book into "new listing ready", "needs republish (stale)", "blocked
 (missing prerequisite)", or "already current", gets explicit human confirmation (this drives a real,
 externally-visible change on the live Amazon KDP dashboard and burns real LLM API usage), then
-launches `Prose.KdpPublish.exe` with exactly the codes that need action.
+launches `KdpPublish.exe` with exactly the codes that need action.
 
-This is **not** a fire-and-forget CLI job — `Prose.KdpPublish.exe` is a WPF/WebView2 app whose
+This is **not** a fire-and-forget CLI job — `KdpPublish.exe` is a WPF/WebView2 app whose
 `KdpOperatorService` drives an LLM tool-use agent loop against a live browser pane per book.
 It is real, it costs real tokens, and a past run (2026-08-16) failed 100% across 19 books in ~4
 seconds each because the account had hit its usage cap — check whether that or any
@@ -99,18 +99,15 @@ If the combined Republish + New-listing set is empty, report that and stop — n
 
 ## Step 3 — redeploy fresh, then launch
 
-Only after confirmation. First redeploy from source to avoid ever running a stale build (this bit a
-past session — a multi-day-stale `Prose.KdpPublish.exe` silently missing a whole feature):
+Only after confirmation. Never run a stale build (this bit a past session — a multi-day-stale
+`Prose.KdpPublish.exe` silently missing a whole feature). KdpPublish is its own repo now, deployed
+to `C:\Apps\KdpPublish\`; its `deploy.bat` redeploys from source when anything changed, then starts
+`KdpPublish.exe` with the arguments it was given. Pass the confirmed comma-separated codes as
+`argv[0]` — this drives the exact same `RunSelectedAsync` automation the app's own "Start" button
+triggers, no separate/lesser code path:
 
 ```
-powershell -ExecutionPolicy Bypass -File src\Prose.KdpPublish\tools\deploy.ps1
-```
-
-Then launch with the confirmed comma-separated codes as `argv[0]` — this drives the exact same
-`RunSelectedAsync` automation the app's own "Start" button triggers, no separate/lesser code path:
-
-```
-Start-Process -FilePath "C:\Apps\KdpPublish\Prose.KdpPublish.exe" -ArgumentList "CODE1,CODE2,CODE3"
+C:\Apps\KdpPublish\deploy.bat "CODE1,CODE2,CODE3"
 ```
 
 This opens a real WPF window + WebView2 pane and does not block the shell — it needs an interactive

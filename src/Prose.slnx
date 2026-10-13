@@ -25,7 +25,7 @@
   <!-- Desktop shells -->
   <Project Path="Prose.Writer/Prose.Writer.csproj" />
   <Project Path="Prose.Launcher/Prose.Launcher.csproj" />
-  <Project Path="Prose.KdpPublish/Prose.KdpPublish.csproj" />
+  <!-- Prose.KdpPublish moved to its own repo 2026-10-04 (github.com/mindattic/KdpPublish). -->
 
   <!-- Standalone escape hatch: deliberately has no Prose.Core reference. -->
   <Project Path="Prose.LlmCli/Prose.LlmCli.csproj" />

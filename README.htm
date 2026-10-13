@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Prose — Engineering Reference</title>
 <meta name="description" content="Full engineering reference for the Prose literary fiction engine.">
-<meta name="generated" content="2026-10-03">
+<meta name="generated" content="2026-10-13">
 <style>
 :root{
   --bg:#0d1117;--bg2:#161b22;--bg3:#21262d;
@@ -194,7 +194,7 @@ dotnet build src\Prose.slnx
 </code></pre>
 <p>Without the <code>core.hooksPath</code> line the repo&#39;s <code>pre-commit</code> and <code>post-commit</code> hooks silently never run.</p>
 <p>Publish and start the Hub. It applies any pending EF Core migrations at startup, then waits for <code>/api/health</code>:</p>
-<pre><code class="language-powershell">powershell -ExecutionPolicy Bypass -File src\tools\deploy-apps.ps1 -Apps Hub -Start Hub
+<pre><code class="language-powershell">powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Hub -Start Hub
 </code></pre>
 <p>Enable temporal versioning on a fresh database and check the CLI can reach the Hub:</p>
 <pre><code class="language-powershell">.\prose.cmd --migrate-sql --schema
@@ -202,7 +202,7 @@ dotnet build src\Prose.slnx
 .\prose.cmd --list-books --universe glmz
 </code></pre>
 <p><code>agent bootstrap</code> prints <code>ready</code> when the Hub is healthy. Open the editor:</p>
-<pre><code class="language-powershell">powershell -ExecutionPolicy Bypass -File src\tools\deploy-apps.ps1 -Apps Writer -Start Writer
+<pre><code class="language-powershell">powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Writer -Start Writer
 </code></pre>
 <p>Register the MCP server with Claude Code (one time):</p>
 <pre><code class="language-bash">claude mcp add prose dotnet run --project &lt;path-to-your-clone&gt;/src/Prose.Mcp/Prose.Mcp.csproj --no-build --configuration Release
@@ -948,7 +948,8 @@ prose --logic-sweep --slug &lt;slug&gt; --until-dry --required-dry 2 --max-round
 <h2 id="project-layout">Project layout</h2>
 <pre><code class="language-text">Prose/
   prose.cmd                 the CLI shim (dotnet run on src/Prose.Cli)
-  deploy-*.bat, writer.bat  shortcuts that call src/tools/deploy-apps.ps1
+  deploy.ps1                publishes Hub, Writer, Launcher to C:\Apps\MindAttic\Prose\ (writes deploy.bat there)
+  writer.bat                dev-only: dotnet run of Prose.Writer
   src/
     Prose.slnx
     Prose.Core/             engine: EF Core context and entities, services, Services/Factory/
@@ -960,10 +961,9 @@ prose --logic-sweep --slug &lt;slug&gt; --until-dry --required-dry 2 --max-round
     Prose.ObserverUi/       the observability dashboard at /app
     Prose.Writer/           Writer.exe, the WPF + WebView2 window
     Prose.Launcher/         Launcher.exe, opens Writer or KdpPublish
-    Prose.KdpPublish/       drives Amazon KDP in an embedded browser
     Prose.LlmCli/           prose-llm, the standalone provider CLI
     Prose.UnitTests/        NUnit tests with SQLite fixtures
-    tools/                  deploy-apps.ps1, launch-app.ps1, install-shortcuts.ps1
+    tools/                  launch-app.ps1, install-shortcuts.ps1
   docs/                     the Codex: BIBLE.md, USER_STORIES.md, rfc/, agent/, universes/
   tools/                    codex.ps1, build-readme.js, gen-schema.ps1, prose-agent.ps1
   scripts/                  maintenance scripts
@@ -974,13 +974,14 @@ prose --logic-sweep --slug &lt;slug&gt; --until-dry --required-dry 2 --max-round
 <h2 id="building">Building</h2>
 <pre><code class="language-powershell">dotnet build src\Prose.slnx
 </code></pre>
-<p>Publish the desktop apps to <code>C:\Apps\MindAttic\Prose\</code> (Hub.exe, Writer.exe, Launcher.exe, KdpPublish):</p>
-<pre><code class="language-powershell">powershell -ExecutionPolicy Bypass -File src\tools\deploy-apps.ps1                           # all four
-powershell -ExecutionPolicy Bypass -File src\tools\deploy-apps.ps1 -Apps Hub -Start Hub      # Hub only
-powershell -ExecutionPolicy Bypass -File src\tools\deploy-apps.ps1 -Apps Writer -Start Writer
+<p>Publish the desktop apps to <code>C:\Apps\MindAttic\Prose\</code> (Hub.exe, Writer.exe, Launcher.exe; KdpPublish has its own repo and deploys to <code>C:\Apps\KdpPublish\</code>):</p>
+<pre><code class="language-powershell">powershell -ExecutionPolicy Bypass -File deploy.ps1                           # all three, only what changed
+powershell -ExecutionPolicy Bypass -File deploy.ps1 -Force                    # all three, clean rebuild
+powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Hub -Start Hub      # Hub only
+powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Writer -Start Writer
 powershell -ExecutionPolicy Bypass -File src\tools\launch-app.ps1 -App writer                # start without rebuilding
 </code></pre>
-<p><code>deploy-apps.ps1</code> stops only the apps it replaces and publishes through <code>%LOCALAPPDATA%\Prose\build-artifacts</code>, so it never fights a running MCP server for <code>bin\</code>. The repo-root <code>deploy-hub.bat</code>, <code>deploy-writer.bat</code>, <code>deploy-kdp.bat</code> and <code>deploy-prose.bat</code> call it. <code>Directory.Build.props</code> excludes <code>obj_*</code> and <code>bin_*</code> folders so isolated builds from parallel sessions do not collide.</p>
+<p><code>deploy.ps1</code> republishes an app only when its exe or <code>deploy.bat</code> is missing or one of its source files (its project plus every project it references) is newer than the deployed exe; <code>-Force</code> republishes with a clean rebuild. It stops only the apps it replaces and publishes through <code>%LOCALAPPDATA%\Prose\build-artifacts</code>, so it never fights a running MCP server for <code>bin\</code>. It writes <code>C:\Apps\MindAttic\Prose\deploy.bat</code>, which the desktop shortcuts point at: <code>deploy.bat Hub</code>, <code>deploy.bat Writer</code>, <code>deploy.bat Launcher</code>, or no argument to deploy everything and open the Launcher. It redeploys (a fast no-op when nothing changed) and then starts the app, falling back to the existing build if the repo is gone or the publish fails. <code>Directory.Build.props</code> excludes <code>obj_*</code> and <code>bin_*</code> folders so isolated builds from parallel sessions do not collide.</p>
 <p>After editing any Codex file under <code>docs/</code>:</p>
 <pre><code class="language-powershell">powershell -File tools/codex.ps1 digest
 powershell -File tools/codex.ps1 doctor
@@ -992,7 +993,7 @@ dotnet test src\Prose.UnitTests\Prose.UnitTests.csproj --filter &quot;Category=L
 </code></pre>
 <p>There are 265 <code>*Tests.cs</code> files (NUnit). Most tests run on in-memory SQLite through <code>TestDbFactory</code>; explicit fixtures that need a live database or live keys are skipped by default. Wiring tests fail the build if an MCP factory tool lacks its usage attribute or a repository save loses its no-op guard.</p>
 <h2 id="deployment">Deployment</h2>
-<p>There is no hosted deployment and there will not be one (author decision, 2026-08-23). The Azure App Service pipeline, the Azure SQL provisioning guide and their docs were deleted. &quot;Deploying&quot; means publishing the desktop apps locally with <code>src\tools\deploy-apps.ps1</code>; there is no CI runner.</p>
+<p>There is no hosted deployment and there will not be one (author decision, 2026-08-23). The Azure App Service pipeline, the Azure SQL provisioning guide and their docs were deleted. &quot;Deploying&quot; means publishing the desktop apps locally with <code>deploy.ps1</code>; there is no CI runner.</p>
 <h2 id="history">History</h2>
 <p>The commit history is the design history: 1,381 commits since 2026-03-25. The reasoning behind each structural decision is in the Architectural Decision Register, <a href="docs/BIBLE.md">docs/BIBLE.md</a> section 14.</p>
 <ol>

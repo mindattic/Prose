@@ -4,7 +4,7 @@
     Starts one already-published Prose app from C:\Apps\MindAttic\Prose\.
 
 .DESCRIPTION
-    The counterpart to deploy-apps.ps1, and deliberately the smaller half: this only STARTS things.
+    The counterpart to the repo-root deploy.ps1, and deliberately the smaller half: this only STARTS things.
     It never publishes.
 
     That separation is the point. Publishing has to stop a running Hub to overwrite a 70 MB
@@ -44,7 +44,7 @@ $v3   = Split-Path $PSScriptRoot
 $catalog = @{
     writer   = @{ Exe = "$root\Writer.exe";                      Name = 'Writer';     Proc = 'Writer' }
     hub      = @{ Exe = "$root\Hub.exe";                         Name = 'Hub';        Proc = 'Hub' }
-    kdp      = @{ Exe = "$root\KdpPublish\Prose.KdpPublish.exe"; Name = 'KdpPublish'; Proc = 'Prose.KdpPublish' }
+    kdp      = @{ Exe = 'C:\Apps\KdpPublish\KdpPublish.exe';     Name = 'KdpPublish'; Proc = 'KdpPublish' }
     launcher = @{ Exe = "$root\Launcher.exe";                    Name = 'Launcher';   Proc = 'Launcher' }
 }
 

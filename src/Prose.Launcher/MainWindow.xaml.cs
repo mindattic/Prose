@@ -59,18 +59,26 @@ public partial class MainWindow : Window
 
     /// <summary>KdpPublish's own absolute deploy location — decoupled into its own repo
     /// (github.com/mindattic/KdpPublish) 2026-10-04, with its own deploy pipeline publishing
-    /// standalone here rather than side by side with this app under <see cref="Here"/>.</summary>
-    private const string KdpPublishExePath = @"C:\Apps\KdpPublish\Prose.KdpPublish.exe";
+    /// standalone here rather than side by side with this app under <see cref="Here"/>.
+    /// Its deploy.bat is preferred: it redeploys from source when changed, then starts
+    /// KdpPublish.exe, so the picker never opens a stale build. The exe is the fallback.</summary>
+    private const string KdpPublishDir = @"C:\Apps\KdpPublish";
+    private static readonly string[] KdpPublishCandidates =
+    [
+        Path.Combine(KdpPublishDir, "deploy.bat"),
+        Path.Combine(KdpPublishDir, "KdpPublish.exe"),
+    ];
 
     private async void OpenKdp(object sender, RoutedEventArgs e)
     {
         if (!await EnsureHubAsync()) return;
-        if (!File.Exists(KdpPublishExePath))
+        var target = KdpPublishCandidates.FirstOrDefault(File.Exists);
+        if (target is null)
         {
-            HubStatus.Text = $"{KdpPublishExePath} not found. Deploy it from the KdpPublish repo (tools\\deploy.ps1).";
+            HubStatus.Text = $"KdpPublish is not deployed in {KdpPublishDir}. Deploy it from the KdpPublish repo (deploy.ps1).";
             return;
         }
-        Process.Start(new ProcessStartInfo(KdpPublishExePath) { WorkingDirectory = Path.GetDirectoryName(KdpPublishExePath)!, UseShellExecute = true });
+        Process.Start(new ProcessStartInfo(target) { WorkingDirectory = KdpPublishDir, UseShellExecute = true });
         Close();
     }
 
@@ -112,7 +120,7 @@ public partial class MainWindow : Window
         var path = Path.Combine(Here, exeName);
         if (!File.Exists(path))
         {
-            HubStatus.Text = $"{exeName} is not in {Here}. Deploy it with tools\\deploy-apps.ps1.";
+            HubStatus.Text = $"{exeName} is not in {Here}. Deploy it with deploy.ps1 in the Prose repository.";
             return false;
         }
 
