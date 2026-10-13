@@ -122,6 +122,11 @@ public class NodeWorkbenchService
     public static async Task ClearEdgeBeatBoundsAsync(ProseDbContext db, IReadOnlyCollection<Guid> beatIds, CancellationToken ct)
     {
         if (beatIds.Count == 0) return;
+        // A contribution edge (WO:01a13278) exists only because its beat says so: it goes with the
+        // beat, as the beat's contribution rows do (cascade), rather than surviving unanchored.
+        await db.Edges.IgnoreQueryFilters()
+            .Where(e => e.Source == BeatContributionService.EdgeSource && e.ValidFromBeatId != null && beatIds.Contains(e.ValidFromBeatId.Value))
+            .ExecuteDeleteAsync(ct);
         // IgnoreQueryFilters: explicit beat ids. A referencing row outside the ambient universe
         // otherwise survives and the delete that follows fails on its FK.
         await db.Edges.IgnoreQueryFilters().Where(e => e.ValidFromBeatId != null && beatIds.Contains(e.ValidFromBeatId.Value))
@@ -413,7 +418,11 @@ public class NodeWorkbenchService
         // one-clause hand edit, against five Marisols in the universe). Pinning is guarded on the
         // guid still resolving to a live entity, so a genuinely stale tag is dropped as before.
         var pinnedMentions = BeatMarkup.ExtractTaggedMentions(newText);
-        var plainText = BeatMarkup.StripEntityTags(TextSanitizerService.Sanitize((newText ?? "").Trim()));
+        var sanitizedTagged = TextSanitizerService.Sanitize((newText ?? "").Trim());
+        // Pronoun tags (WO:01a13278) are positional, not re-derivable from a name scan: lift them
+        // here, validate them, and put them back exactly where the writer placed them.
+        var pronounTags = BeatMarkup.ExtractPronounTags(sanitizedTagged);
+        var plainText = BeatMarkup.StripEntityTags(sanitizedTagged);
         var candidates = universeId != Guid.Empty
             ? await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, bookNodeId, ct)
             : [];
@@ -421,6 +430,9 @@ public class NodeWorkbenchService
             candidates = EntityMentionScanner.WithPinnedMentions(
                 candidates, pinnedMentions, await LoadLiveEntitiesAsync(db, universeId, pinnedMentions, ct));
         var mentionMatches = EntityMentionScanner.Scan(plainText, candidates);
+        if (pronounTags.Count > 0)
+            mentionMatches = EntityMentionScanner.MergePronounTags(mentionMatches, pronounTags,
+                await ResolvePronounTagsAsync(db, universeId, pronounTags, ct));
         var trimmed = EntityMentionScanner.ApplyTags(plainText, mentionMatches);
 
         if (beat.Text == trimmed)
@@ -576,6 +588,52 @@ public class NodeWorkbenchService
     /// keeps the staleness rule — archived/deleted guids are dropped — from drifting between the
     /// per-beat save path and the bulk tagger, which is exactly how the two name indexes in
     /// SceneContextAssembler and EntityRamificationService drifted apart.</para></summary>
+    /// <summary>
+    /// Resolves and checks the pronoun tags of a beat about to be saved. A save is REFUSED
+    /// (<see cref="InvalidOperationException"/>) when a pronoun tag points at an entity that is not
+    /// live in the book's universe, or when a third-person pronoun contradicts the character's
+    /// recorded pronouns ("she" tagged to a he/him character). Unlike a stale name tag, which is
+    /// silently re-derived, a pronoun tag cannot be recovered from its own text, so dropping it
+    /// would quietly erase who acts in the beat. Returns each tagged entity's current name and type.
+    /// </summary>
+    public static async Task<Dictionary<Guid, (string Name, string EntityType)>> ResolvePronounTagsAsync(
+        ProseDbContext db, Guid universeId, IReadOnlyList<BeatMarkup.PronounTag> tags, CancellationToken ct = default)
+    {
+        var ids = tags.Where(t => t.EntityId != Guid.Empty).Select(t => t.EntityId).Distinct().ToList();
+        var problems = new List<string>();
+        foreach (var t in tags.Where(t => t.EntityId == Guid.Empty && t.Repo != BeatMarkup.NotACharacterRepo))
+            problems.Add($"\"{t.Text}\" at {t.PlainStart}: the empty guid is only the \"not a character\" mark (repo=\"{BeatMarkup.NotACharacterRepo}\").");
+        if (ids.Count == 0)
+        {
+            if (problems.Count > 0) throw new InvalidOperationException("Pronoun tags refused: " + string.Join(" ", problems));
+            return [];
+        }
+
+        var live = await db.Set<Entity>().AsNoTracking().IgnoreQueryFilters()
+            .Where(e => ids.Contains(e.Id) && (universeId == Guid.Empty || e.UniverseId == universeId) && e.Status != "archived")
+            .Select(e => new { e.Id, e.Name, e.EntityType })
+            .ToDictionaryAsync(e => e.Id, ct);
+        var pronounsOf = await db.Set<Character>().AsNoTracking().IgnoreQueryFilters()
+            .Where(c => ids.Contains(c.Id))
+            .Select(c => new { c.Id, c.Pronouns })
+            .ToDictionaryAsync(c => c.Id, c => c.Pronouns, ct);
+
+        foreach (var t in tags.Where(t => t.EntityId != Guid.Empty))
+        {
+            if (!live.TryGetValue(t.EntityId, out var e))
+            {
+                problems.Add($"\"{t.Text}\" at {t.PlainStart} points at {t.EntityId}, which is not a live entity in this universe.");
+                continue;
+            }
+            if (BeatMarkup.ThirdPersonForms.Contains(t.Text.Trim())
+                && BeatMarkup.ThirdPersonFormsFor(pronounsOf.GetValueOrDefault(t.EntityId)) is { } allowed
+                && !allowed.Contains(t.Text.Trim()))
+                problems.Add($"\"{t.Text}\" at {t.PlainStart} is tagged to {e.Name}, whose pronouns are {pronounsOf[t.EntityId]}.");
+        }
+        if (problems.Count > 0) throw new InvalidOperationException("Pronoun tags refused: " + string.Join(" ", problems));
+        return live.ToDictionary(kv => kv.Key, kv => (kv.Value.Name, kv.Value.EntityType));
+    }
+
     public static async Task<Dictionary<Guid, (string Name, string EntityType)>> LoadLiveEntitiesAsync(
         ProseDbContext db, Guid universeId, IReadOnlyList<BeatMarkup.TaggedMention> pinned, CancellationToken ct = default)
     {

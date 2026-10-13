@@ -63,7 +63,13 @@ public static class RulingGates
     /// <summary>The plan and the book are one row: under this gate a prose beat is Written (F3) only
     /// when it also carries its plan (Description) confirmed against its prose as it stands.</summary>
     public const string PlanFirst = "plan-first";
-    public static readonly string[] All = [PlanFirst];
+
+    /// <summary>Every pronoun is tagged (an entity or the "not a character" mark) and every
+    /// character the beat tags has a contribution line written against its prose as it stands:
+    /// under this gate a prose beat with an untagged pronoun, a missing or extra line, or a stale
+    /// line is not Written (F3). WO:01a13278.</summary>
+    public const string Contributions = "contributions";
+    public static readonly string[] All = [PlanFirst, Contributions];
 }
 
 /// <summary>"This record was examined against this book, as the record and its mention beats stood."

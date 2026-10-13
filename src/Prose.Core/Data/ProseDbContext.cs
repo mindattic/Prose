@@ -729,6 +729,7 @@ public class ProseDbContext : DbContext
     // moment the prose changes. Without this a blocking gate is a gate you switch off.
     public DbSet<BeatCheckDismissal>     BeatCheckDismissals     => Set<BeatCheckDismissal>();
     public DbSet<BeatReadReceipt>        BeatReadReceipts        => Set<BeatReadReceipt>();
+    public DbSet<BeatContribution>       BeatContributions       => Set<BeatContribution>();
     public DbSet<BeatReadNote>           BeatReadNotes           => Set<BeatReadNote>();
 
     // The Novel Factory (RFC 0015): law, verifications, work orders, sessions, exports.
@@ -1297,6 +1298,19 @@ public class ProseDbContext : DbContext
             e.Property(x => x.TextHash).HasMaxLength(64).IsRequired();
             e.Property(x => x.ReadBy).HasMaxLength(120).IsRequired();
             e.HasOne<Beat>().WithOne().HasForeignKey<BeatReadReceipt>(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        // Beat contributions (WO:01a13278): one line per tagged character, bound to the text hash.
+        b.Entity<BeatContribution>(e =>
+        {
+            e.ToTable("BeatContributions");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Text).IsRequired();
+            e.Property(x => x.EdgesJson).IsRequired();
+            e.Property(x => x.TextHash).HasMaxLength(64).IsRequired();
+            e.HasIndex(x => new { x.BeatId, x.EntityId }).IsUnique();
+            e.HasIndex(x => x.EntityId);
+            e.HasOne<Beat>().WithMany().HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
         });
         // ── The Novel Factory (RFC 0015) ─────────────────────────────────────
         // The author's spelling dictionary. One row per word; uniqueness is case-insensitive under

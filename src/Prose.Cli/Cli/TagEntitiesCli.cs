@@ -197,6 +197,24 @@ public static class TagEntitiesCli
             if (liveEntities.Count > 0 && pinnedByBeat.TryGetValue(beatId, out var pinned))
                 beatCandidates = EntityMentionScanner.WithPinnedMentions([.. candidates], pinned, liveEntities);
             var matches = EntityMentionScanner.Scan(plainText, beatCandidates);
+            // Pronoun tags are positional (WO:01a13278): keep them where they were written. A beat
+            // whose pronoun tags no longer validate is left exactly as it is, and reported.
+            var pronounTags = BeatMarkup.ExtractPronounTags(beat.Text);
+            if (pronounTags.Count > 0)
+            {
+                try
+                {
+                    matches = EntityMentionScanner.MergePronounTags(matches, pronounTags,
+                        await NodeWorkbenchService.ResolvePronounTagsAsync(db, node.UniverseId, pronounTags));
+                }
+                catch (InvalidOperationException ex)
+                {
+                    Console.Error.WriteLine($"  Beat #{beat.Number}: left unchanged; {ex.Message}");
+                    resolvedTextByBeatId[beatId] = beat.Text;
+                    unchanged++;
+                    continue;
+                }
+            }
             var retagged = EntityMentionScanner.ApplyTags(plainText, matches);
             resolvedTextByBeatId[beatId] = retagged;
 

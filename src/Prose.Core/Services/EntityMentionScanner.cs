@@ -99,7 +99,9 @@ public static class EntityMentionScanner
     // in Ch6. The full name "War Dog" still tags normally; only the bare derived token is
     // suppressed.
     private static readonly HashSet<string> Stopwords =
-        new(StringComparer.OrdinalIgnoreCase) { "the", "a", "an", "of", "von", "van", "de", "der", "la", "le", "el", "al", "first", "sunday", "unit", "last", "patient", "can", "gate", "director", "war" };
+        new(new[] { "the", "a", "an", "of", "von", "van", "de", "der", "la", "le", "el", "al", "first", "sunday", "unit", "last", "patient", "can", "gate", "director", "war" }
+            // Pronouns are never a name to scan for; their tags are positional (BeatMarkup.ExtractPronounTags).
+            .Concat(BeatMarkup.Pronouns), StringComparer.OrdinalIgnoreCase);
 
     // Ordinary words that are only ever a stray token of a longer character name (2026-10-09, VIGL
     // book-report pass): multi-word character names derived the bare tokens "Iron", "Wall" and
@@ -667,6 +669,30 @@ public static class EntityMentionScanner
             return false;
         }
         return true; // start of text
+    }
+
+    /// <summary>
+    /// The name matches plus the pronoun tags the writer placed, as one list for
+    /// <see cref="ApplyTags"/>. A pronoun tag is kept exactly where it was written: its surface
+    /// text cannot say who it means, so it is never re-derived. Any name match overlapping a
+    /// pronoun span gives way (pronouns are stopwords, so this only guards odd aliases).
+    /// <paramref name="pronounEntities"/> gives each tagged entity's current name and type; the
+    /// "not a character" mark (empty guid) keeps <see cref="BeatMarkup.NotACharacterRepo"/>.
+    /// </summary>
+    public static List<MentionMatch> MergePronounTags(
+        IReadOnlyList<MentionMatch> nameMatches,
+        IReadOnlyList<BeatMarkup.PronounTag> pronounTags,
+        IReadOnlyDictionary<Guid, (string Name, string EntityType)> pronounEntities)
+    {
+        if (pronounTags.Count == 0) return [.. nameMatches];
+        var fixedMatches = pronounTags.Select(t => t.EntityId == Guid.Empty
+            ? new MentionMatch(t.PlainStart, t.Length, Guid.Empty, BeatMarkup.NotACharacterRepo, BeatMarkup.NotACharacterRepo)
+            : new MentionMatch(t.PlainStart, t.Length, t.EntityId,
+                pronounEntities.TryGetValue(t.EntityId, out var e) ? e.Name : "",
+                pronounEntities.TryGetValue(t.EntityId, out var e2) ? e2.EntityType : (t.Repo.Length > 0 ? t.Repo : "character")))
+            .ToList();
+        var kept = nameMatches.Where(n => !fixedMatches.Any(f => n.Start < f.Start + f.Length && f.Start < n.Start + n.Length));
+        return kept.Concat(fixedMatches).OrderBy(m => m.Start).ToList();
     }
 
     /// <summary>Wraps each accepted match in

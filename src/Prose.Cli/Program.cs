@@ -281,6 +281,8 @@ if (UniverseBootstrap.RequestedSlug == null
         // Entity beat mentions (2026-08-26): resolves an explicit --entity id/slug directly,
         // same shape as --merge-entity/--restore-entity above — no ambient scope needed.
         "--entity-mentions",
+        // StoryCli (WO:01a13278): resolves an explicit --entity id/slug, like --entity-mentions.
+        "--character-history", "--story-edges",
         // EntityHistoryCli (2026-09-12): direct-id (or type+slug) lookup against the entity
         // tables' own _History shadows via IgnoreQueryFilters() — same shape as
         // --restore-entity above, and a historical row's universe comes from the row itself.
@@ -855,6 +857,15 @@ if (args.Contains("--provenance-audit") || args.Contains("--provenance"))
 if (args.Contains("--exclusion-rules"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("ExclusionRulesCli", args);
+    return;
+}
+
+// CLI mode: the story's own answers, from beat contributions (WO:01a13278).
+//   prose --character-history --entity <id|slug> [--in-book <CODE>]
+//   prose --story-edges --entity <id|slug> [--relation <r>]
+if (args.Contains("--character-history") || args.Contains("--story-edges"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("StoryCli", args);
     return;
 }
 

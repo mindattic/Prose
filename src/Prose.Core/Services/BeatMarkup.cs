@@ -62,25 +62,130 @@ public static class BeatMarkup
 
     /// <summary>Every distinct Entity Guid tagged in this text, in first-occurrence order. This is
     /// the derivation path for <c>BeatEntityMentions</c> once a beat is tagged — parse tags, don't
-    /// re-run a name/alias scan.</summary>
+    /// re-run a name/alias scan. The "not a character" mark (<see cref="NotACharacterRepo"/>,
+    /// empty guid) names no entity and is never returned.</summary>
     public static IEnumerable<Guid> ExtractEntityGuids(string? text)
     {
         if (string.IsNullOrEmpty(text)) yield break;
         var seen = new HashSet<Guid>();
         foreach (Match m in EntityGuidPattern.Matches(text))
-            if (Guid.TryParse(m.Groups[1].Value, out var g) && seen.Add(g))
+            if (Guid.TryParse(m.Groups[1].Value, out var g) && g != Guid.Empty && seen.Add(g))
                 yield return g;
     }
 
-    /// <summary>How many tags point at each entity in this text — every occurrence, not distinct.</summary>
-    public static Dictionary<Guid, int> CountTagsByEntity(string? text)
+    /// <summary>How many tags point at each entity in this text — every occurrence, not distinct.
+    /// With <paramref name="namesOnly"/>, pronoun tags are left out, so the count is the number of
+    /// times the entity is NAMED (what an untagged-name check has to compare against).</summary>
+    public static Dictionary<Guid, int> CountTagsByEntity(string? text, bool namesOnly = false)
     {
         var counts = new Dictionary<Guid, int>();
         if (string.IsNullOrEmpty(text)) return counts;
-        foreach (Match m in EntityGuidPattern.Matches(text))
-            if (Guid.TryParse(m.Groups[1].Value, out var g))
+        foreach (Match m in EntityTagWithGuidPattern.Matches(text))
+            if (Guid.TryParse(m.Groups[1].Value, out var g) && g != Guid.Empty
+                && !(namesOnly && IsPronoun(m.Groups[2].Value)))
                 counts[g] = counts.GetValueOrDefault(g) + 1;
         return counts;
+    }
+
+    // ── Pronoun tags (author 2026-10-12, WO:01a13278) ────────────────────────────────────────
+    // Every pronoun in a beat carries the tag of the entity it refers to, or the "not a character"
+    // mark, so the index knows who acts in a beat even where the prose only says "he". A pronoun
+    // tag is positional: unlike a name, its surface text says nothing about who it means, so the
+    // save path keeps it where it was written instead of re-deriving it (see ExtractPronounTags).
+
+    /// <summary>The <c>repo</c> of the "not a character" mark:
+    /// <c>&lt;entity repo="none" guid="00000000-0000-0000-0000-000000000000"&gt;it&lt;/entity&gt;</c>.
+    /// It says a pronoun was read and refers to no entity (a crowd, a machine, the weather).</summary>
+    public const string NotACharacterRepo = "none";
+
+    /// <summary>Every pronoun form that must carry a tag: first, second and third person, plus it
+    /// (author's scope, 2026-10-12: "every pronoun").</summary>
+    public static readonly IReadOnlySet<string> Pronouns = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+    {
+        "I", "me", "my", "mine", "myself",
+        "you", "your", "yours", "yourself", "yourselves",
+        "we", "us", "our", "ours", "ourselves",
+        "he", "him", "his", "himself",
+        "she", "her", "hers", "herself",
+        "they", "them", "their", "theirs", "themselves",
+        "it", "its", "itself",
+    };
+
+    /// <summary>True when <paramref name="inner"/> is exactly one pronoun form.</summary>
+    public static bool IsPronoun(string? inner) => inner is not null && Pronouns.Contains(inner.Trim());
+
+    /// <summary>The third-person forms each recorded pronoun set allows, for checking that a
+    /// pronoun tag fits its character ("she" tagged to a he/him character is refused).</summary>
+    public static IReadOnlySet<string>? ThirdPersonFormsFor(string? recordedPronouns)
+    {
+        var first = (recordedPronouns ?? "").Split('/', ',', ' ').FirstOrDefault(s => s.Length > 0)?.Trim().ToLowerInvariant();
+        return first switch
+        {
+            "he" => new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "he", "him", "his", "himself" },
+            "she" => new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "she", "her", "hers", "herself" },
+            "they" => new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "they", "them", "their", "theirs", "themselves" },
+            _ => null,
+        };
+    }
+
+    /// <summary>The forms whose referent a character's recorded pronouns decide.</summary>
+    public static readonly IReadOnlySet<string> ThirdPersonForms = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+    {
+        "he", "him", "his", "himself", "she", "her", "hers", "herself", "they", "them", "their", "theirs", "themselves",
+    };
+
+    /// <summary>One pronoun tag: where its pronoun sits in the STRIPPED text, and what it points at.</summary>
+    public sealed record PronounTag(int PlainStart, int Length, Guid EntityId, string Repo, string Text);
+
+    private static readonly Regex EntityTagFullPattern =
+        new(@"<entity\b([^>]*)>(.*?)</entity>", RegexOptions.Compiled | RegexOptions.Singleline);
+    private static readonly Regex RepoAttrPattern = new(@"\brepo=""([^""]*)""", RegexOptions.Compiled);
+    private static readonly Regex GuidAttrPattern = new(@"\bguid=""([^""]*)""", RegexOptions.Compiled);
+
+    /// <summary>Every pronoun tag in <paramref name="text"/>, with its position in the text
+    /// <see cref="StripEntityTags"/> produces. Uses the same tag pattern as the stripper, so the
+    /// offsets cannot disagree with it.</summary>
+    public static List<PronounTag> ExtractPronounTags(string? text)
+    {
+        var tags = new List<PronounTag>();
+        if (string.IsNullOrEmpty(text)) return tags;
+        var removed = 0;
+        foreach (Match m in EntityTagFullPattern.Matches(text))
+        {
+            var inner = m.Groups[2];
+            var plainStart = m.Index - removed;
+            removed += m.Length - inner.Length;
+            if (!IsPronoun(inner.Value)) continue;
+            var attrs = m.Groups[1].Value;
+            var repo = RepoAttrPattern.Match(attrs) is { Success: true } r ? r.Groups[1].Value : "";
+            if (GuidAttrPattern.Match(attrs) is not { Success: true } g || !Guid.TryParse(g.Groups[1].Value, out var id)) continue;
+            tags.Add(new PronounTag(plainStart, inner.Length, id, repo, inner.Value));
+        }
+        return tags;
+    }
+
+    private static readonly Regex PronounWordPattern = new(
+        @"(?<![\w'’])(" + string.Join("|", new[] { "I", "me", "my", "mine", "myself", "you", "your", "yours", "yourself", "yourselves",
+            "we", "us", "our", "ours", "ourselves", "he", "him", "his", "himself", "she", "her", "hers", "herself",
+            "they", "them", "their", "theirs", "themselves", "it", "its", "itself" }) + @")(?!\w)",
+        RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
+    /// <summary>The pronouns in <paramref name="text"/> that sit outside every tag, as
+    /// (offset in the stored text, word). A beat under the contributions gate must have none:
+    /// each pronoun carries an entity tag or the "not a character" mark.</summary>
+    public static List<(int Offset, string Word)> UntaggedPronouns(string? text)
+    {
+        var found = new List<(int, string)>();
+        if (string.IsNullOrEmpty(text)) return found;
+        // Blank out every whole tag (same length, so offsets stay true) and scan what is left.
+        var masked = EntityTagPattern.Replace(text, m => new string('\u0001', m.Length));
+        foreach (Match m in PronounWordPattern.Matches(masked))
+        {
+            // "I" only counts capitalised; a lone lowercase "i" is not the pronoun.
+            if (m.Value == "i") continue;
+            found.Add((m.Index, m.Value));
+        }
+        return found;
     }
 
     /// <summary>
@@ -152,9 +257,13 @@ public static class BeatMarkup
         var seen = new HashSet<(string, Guid)>();
         foreach (Match m in EntityTagWithGuidPattern.Matches(text))
         {
-            if (!Guid.TryParse(m.Groups[1].Value, out var id)) continue;
+            if (!Guid.TryParse(m.Groups[1].Value, out var id) || id == Guid.Empty) continue;
             var inner = m.Groups[2].Value;
             if (string.IsNullOrWhiteSpace(inner)) continue;
+            // A pronoun is never a pin: pinning works by surface text, so one pinned "he" would
+            // tag every "he" in the beat as the same person. Pronoun tags are kept by position
+            // (ExtractPronounTags) instead.
+            if (IsPronoun(inner)) continue;
             // A tag wrapping nested markup is not a plain surface name; the scanner's positioning
             // works on plain text, so pinning it would be meaningless.
             if (inner.Contains('<')) continue;
@@ -214,8 +323,12 @@ public static class BeatMarkup
             var guid = EntityGuidPattern.Match(m.Value);
             if (!guid.Success)
                 problems.Add(new MarkupProblem(m.Index, "This <entity> tag has no guid attribute."));
-            else if (!Guid.TryParse(guid.Groups[1].Value, out var parsed) || parsed == Guid.Empty)
+            else if (!Guid.TryParse(guid.Groups[1].Value, out var parsed))
                 problems.Add(new MarkupProblem(m.Index, $"\"{guid.Groups[1].Value}\" is not a valid entity guid."));
+            else if (parsed == Guid.Empty && !(RepoAttrPattern.Match(m.Value) is { Success: true } r
+                                               && r.Groups[1].Value == NotACharacterRepo && IsPronoun(m.Groups[1].Value)))
+                problems.Add(new MarkupProblem(m.Index,
+                    $"The empty guid is only the \"not a character\" mark: repo=\"{NotACharacterRepo}\" on a pronoun."));
 
             var inner = m.Groups[1].Value;
             if (string.IsNullOrWhiteSpace(inner))

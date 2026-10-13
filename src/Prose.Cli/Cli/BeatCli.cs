@@ -53,8 +53,67 @@ public static class BeatCli
             "meta"       => await MetaAsync(rest, services),
             "show"       => await ShowAsync(rest, services),
             "list"       => await ListAsync(rest, services),
+            "contributions" => await ContributionsAsync(rest, services),
             _            => PrintUsage(),
         };
+    }
+
+    // ── contributions (WO:01a13278) ──────────────────────────────────────────
+    //   prose --beat contributions --id <beat>                  show the lines and their state
+    //   prose --beat contributions --id <beat> --file <json>    replace them: {"<character guid>": "line"
+    //       or {"text": "line", "edges": [{"relation": "was_killed_by", "target": "<guid>"}]}, ...}
+    private static async Task<int> ContributionsAsync(string[] args, IServiceProvider services)
+    {
+        string? id = null, file = null;
+        for (int i = 0; i < args.Length; i++)
+        {
+            if (args[i] == "--id" && i + 1 < args.Length) id = args[++i];
+            else if (args[i] == "--file" && i + 1 < args.Length) file = args[++i];
+        }
+        if (!Guid.TryParse(id, out var beatId)) { Console.Error.WriteLine("[beat contributions] --id <beat guid> is required."); return 1; }
+        var svc = services.GetRequiredService<BeatContributionService>();
+
+        if (file != null)
+        {
+            if (!File.Exists(file)) { Console.Error.WriteLine($"[beat contributions] file not found: {file}"); return 1; }
+            string json;
+            try { json = await File.ReadAllTextAsync(file, new System.Text.UTF8Encoding(false, throwOnInvalidBytes: true)); }
+            catch (System.Text.DecoderFallbackException) { Console.Error.WriteLine($"[beat contributions] {file} is not valid UTF-8; nothing written."); return 1; }
+            var lines = new Dictionary<Guid, ContributionInput>();
+            using (var doc = System.Text.Json.JsonDocument.Parse(json))
+            {
+                foreach (var p in doc.RootElement.EnumerateObject())
+                {
+                    if (!Guid.TryParse(p.Name, out var entity)) { Console.Error.WriteLine($"[beat contributions] \"{p.Name}\" is not a guid."); return 1; }
+                    if (p.Value.ValueKind == System.Text.Json.JsonValueKind.String)
+                        lines[entity] = new ContributionInput(p.Value.GetString() ?? "", []);
+                    else
+                    {
+                        var text = p.Value.TryGetProperty("text", out var t) ? t.GetString() ?? "" : "";
+                        var edges = p.Value.TryGetProperty("edges", out var es)
+                            ? es.EnumerateArray().Select(e => new ContributionEdge(
+                                e.GetProperty("relation").GetString() ?? "",
+                                Guid.TryParse(e.GetProperty("target").GetString(), out var g) ? g : Guid.Empty)).ToList()
+                            : [];
+                        lines[entity] = new ContributionInput(text, edges);
+                    }
+                }
+            }
+            try { await svc.SetAsync(beatId, lines); }
+            catch (InvalidOperationException ex) { Console.Error.WriteLine($"[beat contributions] {ex.Message}"); return 1; }
+            Console.WriteLine($"[beat contributions] {lines.Count} line(s) written for beat {beatId}.");
+        }
+
+        var check = await svc.CheckAsync(beatId);
+        foreach (var c in await svc.GetAsync(beatId))
+            Console.WriteLine($"  {c.EntityId}  {(check.Stale.Contains(c.EntityId) ? "[stale] " : "")}{c.Text}" +
+                (c.EdgesJson is "[]" or "" ? "" : $"  edges: {c.EdgesJson}"));
+        Console.WriteLine(check.Ok
+            ? "[beat contributions] complete: every pronoun tagged, one current line per tagged character."
+            : $"[beat contributions] incomplete: {check.UntaggedPronouns.Count} untagged pronoun(s)" +
+              (check.UntaggedPronouns.Count > 0 ? $" (first \"{check.UntaggedPronouns[0].Word}\" at {check.UntaggedPronouns[0].Offset})" : "") +
+              $", {check.Missing.Count} missing line(s), {check.Extra.Count} extra, {check.Stale.Count} stale.");
+        return check.Ok ? 0 : 2;
     }
 
     // ── clear ─────────────────────────────────────────────────────────────────

@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**289 tools** across **52 tool families.**
+**293 tools** across **53 tool families.**
 
 ## Families
 
@@ -29,6 +29,7 @@
 | [Combat](#combat) | 1 |
 | [Config](#config) | 13 |
 | [Context](#context) | 5 |
+| [Contribution](#contribution) | 4 |
 | [Core Entity Crud](#core-entity-crud) | 5 |
 | [Craft Instrument](#craft-instrument) | 3 |
 | [Data Integrity](#data-integrity) | 2 |
@@ -437,6 +438,37 @@ Search the world graph by theme, not by name. TF-IDF cosine similarity across ev
 
 - `query` (string, required) — Free-text query — describe the theme/scene/concept.
 - `topK` (int, optional) — Number of top hits to return. Default 8.
+
+## Contribution
+
+<sub>`ContributionTools`</sub>
+
+### `character_history`
+
+A character's history, read from the beats: every beat that tags them (by name or pronoun), in reading order, cited as book code, chapter and beat number, with the line saying what they did there. A beat with no line reads missing; a line written against other text reads stale. CLI parity: prose --character-history.
+
+- `entity` (string, required) — Character id or slug.
+- `book` (string, optional) — Optional book code to limit to (e.g. VATD).
+
+### `get_beat_contributions`
+
+A beat's contribution lines and where they stand against its prose: characters tagged with no line, lines for characters it does not tag, stale lines, and pronouns with no tag. CLI parity: prose --beat contributions --id <beat>.
+
+- `beatId` (string, required) — Beat Guid.
+
+### `set_beat_contributions`
+
+Replace one beat's contribution lines: one per character the beat tags (by name or pronoun), saying what they do in the beat and what it changes, with optional typed edges (e.g. relation was_killed_by, target the killer's guid). Refused unless the lines name EXACTLY the beat's tagged characters. Each line is stamped with the beat's text hash and goes stale on any edit. CLI parity: prose --beat contributions --id <beat> --file <json>.
+
+- `beatId` (string, required) — Beat Guid.
+- `linesJson` (string, required) — JSON object: {"<character guid>": "line"} or {"<guid>": {"text": "line", "edges": [{"relation": "was_killed_by", "target": "<guid>"}]}}.
+
+### `story_edges`
+
+Relations the story establishes from or to an entity (e.g. who killed Bram Osei: relation was_killed_by), each with the beat that establishes it and its line. Answers a question about the story without reading the book. CLI parity: prose --story-edges.
+
+- `entity` (string, required) — Entity id or slug.
+- `relation` (string, optional) — Optional relation to filter by, e.g. was_killed_by.
 
 ## Core Entity Crud
 

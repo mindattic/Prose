@@ -188,7 +188,8 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
     {
         "F2" => [$"plan every beat of unit {u!.Ordinal}: insert_beat(title, description) / update_beat_metadata"],
         "F3" => [$"write the empty beats of unit {u!.Ordinal} in-session and push them: update_beat_text (one door)",
-                 "plan-first: restate each written beat's Description against its prose as it stands (update_beat_metadata stamps it current)"],
+                 "plan-first: restate each written beat's Description against its prose as it stands (update_beat_metadata stamps it current)",
+                 "contributions gate: tag every pronoun (entity, or repo=\"none\" with the empty guid), then prose --universe <u> --beat contributions --id <beat> --file <lines.json>"],
         "F6" => [$"prose --universe <u> --read-note list --node {s.Slug}  (open defects) and prose --universe <u> --ruling violations --node {s.Slug}  (law hits)",
                  $"fix each by hand: prose --universe <u> --splice-beats --node {s.Slug} --file <docket.json> (dry run, then --apply)",
                  $"re-read what changed: prose --universe <u> --read-beats --slug {s.Slug} --from {u!.FirstPosition} --to {u.LastPosition} --mark-read --read-by claude",
@@ -304,6 +305,9 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
         // strict F3, and the plan edges checked in F7 (an unbound end).
         public bool PlanFirst;
         public List<PlanEdge> Edges = [];
+        // The contributions gate (WO:01a13278): each prose beat's pronouns and contribution lines.
+        public bool Contributions;
+        public Dictionary<Guid, ContributionCheck> ContributionChecks = [];
     }
 
     private async Task<BookContext> LoadAsync(Guid bookId, CancellationToken ct)
@@ -355,6 +359,20 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
         }
         ctx.PlanFirst = await rulings.GateOnAsync(bookId, RulingGates.PlanFirst, ct);
         if (ctx.PlanFirst) ctx.Edges = await LoadEdgesAsync(bookId, ids, ct);
+        ctx.Contributions = await rulings.GateOnAsync(bookId, RulingGates.Contributions, ct);
+        if (ctx.Contributions)
+        {
+            await using var db = await dbFactory.CreateDbContextAsync(ct);
+            var taggedIds = ctx.Tags.Values.SelectMany(t => t).Distinct().ToList();
+            var characters = (await db.Set<Character>().AsNoTracking().IgnoreQueryFilters()
+                .Where(c => taggedIds.Contains(c.Id)).Select(c => c.Id).ToListAsync(ct)).ToHashSet();
+            var rows = (await db.BeatContributions.AsNoTracking().Where(c => ids.Contains(c.BeatId))
+                    .Select(c => new { c.BeatId, c.EntityId, c.TextHash }).ToListAsync(ct))
+                .ToLookup(r => r.BeatId, r => (r.EntityId, r.TextHash));
+            foreach (var b in ctx.Beats.Values.Where(b => b.Kind == "prose" && HasText(b)))
+                ctx.ContributionChecks[b.Id] = BeatContributionService.Check(b.Text, b.TextHash,
+                    ctx.Tags[b.Id].Where(characters.Contains).ToHashSet(), rows[b.Id].ToList());
+        }
         ctx.LawHits = (await rulings.FindLawViolationsAsync(bookId, ct)).ToLookup(h => h.BeatId);
         ctx.Metrics = await metrics.ComputeAsync(bookId, ct);
         ctx.Capture = await capture.ScanAsync(bookId, ct);
@@ -419,6 +437,18 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
                         return new(code, "fail", $"plan not reconciled with the prose in {bad.Count} of {prose.Count} beat(s): " +
                             $"{missing.Count} missing a plan, {unreconciled.Count} unreconciled, {stale.Count} stale (first #{bad[0].Number}). " +
                             "Restate each beat's Description against its prose: update_beat_metadata.");
+                }
+                // Contributions: every pronoun tagged, and one line per tagged character written
+                // against the prose as it stands (WO:01a13278).
+                if (ctx.Contributions)
+                {
+                    var checks = u.BeatIds.Where(ctx.ContributionChecks.ContainsKey)
+                        .Select(id => (Beat: ctx.Beats[id], C: ctx.ContributionChecks[id])).ToList();
+                    var bad = checks.Where(x => !x.C.Ok).ToList();
+                    if (bad.Count > 0)
+                        return new(code, "fail", $"contributions incomplete in {bad.Count} of {checks.Count} beat(s): " +
+                            $"{bad.Sum(x => x.C.UntaggedPronouns.Count)} untagged pronoun(s), {bad.Sum(x => x.C.Missing.Count)} missing line(s), " +
+                            $"{bad.Sum(x => x.C.Extra.Count)} extra, {bad.Sum(x => x.C.Stale.Count)} stale (first #{bad[0].Beat.Number}).");
                 }
                 return new(code, "pass", $"{beats.Count} beats written.");
             }

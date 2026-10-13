@@ -1206,6 +1206,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<EntityContextStack>();
         services.AddSingleton<EntityContextService>();
         services.AddScoped<EntityMentionService>();
+        services.AddScoped<BeatContributionService>();
         services.AddSingleton<EntityLookupService>();
         services.AddSingleton<EntityRenameService>();
         // Reads the FOR SYSTEM_TIME history the entity tables have always written.

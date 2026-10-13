@@ -1324,6 +1324,46 @@ namespace Prose.Core.Migrations
                     b.ToTable("BeatContextTraces");
                 });
 
+            modelBuilder.Entity("Prose.Core.Data.Entities.BeatContribution", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<Guid>("BeatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("EdgesJson")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("EntityId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TextHash")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EntityId");
+
+                    b.HasIndex("BeatId", "EntityId")
+                        .IsUnique();
+
+                    b.ToTable("BeatContributions", (string)null);
+                });
+
             modelBuilder.Entity("Prose.Core.Data.Entities.BeatDuelVerdict", b =>
                 {
                     b.Property<long>("Id")
@@ -12972,6 +13012,15 @@ namespace Prose.Core.Migrations
                         .IsRequired();
 
                     b.Navigation("Beat");
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.BeatContribution", b =>
+                {
+                    b.HasOne("Prose.Core.Data.Entities.Beat", null)
+                        .WithMany()
+                        .HasForeignKey("BeatId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.BeatEntityMention", b =>

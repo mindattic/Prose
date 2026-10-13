@@ -106,7 +106,8 @@ public sealed class CaptureScanner(IDbContextFactory<ProseDbContext> dbFactory, 
             var plain = BeatMarkup.StripEntityTags(b.Text);
             var matches = EntityMentionScanner.Scan(plain, beatCandidates);
 
-            var tagged = BeatMarkup.CountTagsByEntity(b.Text);
+            // Names only: pronoun tags would otherwise cover for a name left untagged.
+            var tagged = BeatMarkup.CountTagsByEntity(b.Text, namesOnly: true);
             foreach (var g in matches.GroupBy(m => m.EntityId).Where(g => inBook.Contains(g.Key)))
             {
                 var missing = g.Count() - tagged.GetValueOrDefault(g.Key);
