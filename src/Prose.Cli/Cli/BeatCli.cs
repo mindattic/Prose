@@ -113,6 +113,9 @@ public static class BeatCli
             : $"[beat contributions] incomplete: {check.UntaggedPronouns.Count} untagged pronoun(s)" +
               (check.UntaggedPronouns.Count > 0 ? $" (first \"{check.UntaggedPronouns[0].Word}\" at {check.UntaggedPronouns[0].Offset})" : "") +
               $", {check.Missing.Count} missing line(s), {check.Extra.Count} extra, {check.Stale.Count} stale.");
+        foreach (var n in check.UntaggedNames)
+            Console.WriteLine($"  [untagged name] \"{n.Text}\" appears bare in the prose and is ambiguous in this universe " +
+                $"({string.Join(", ", n.Candidates)}) — tag one occurrence explicitly to pin it.");
         return check.Ok ? 0 : 2;
     }
 

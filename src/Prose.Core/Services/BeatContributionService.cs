@@ -16,11 +16,21 @@ public sealed record ContributionInput(string Text, IReadOnlyList<ContributionEd
 /// <summary>Where a beat's lines stand against its prose: characters tagged with no line, lines
 /// for characters the beat does not tag, lines written against other text, and pronouns with no
 /// tag at all. <see cref="Ok"/> only when all four are empty.</summary>
+/// <summary>A name the ambiguity guard in <see cref="EntityMentionScanner.BuildCandidateIndexWithDroppedAsync"/>
+/// refuses to anchor a tag to, found sitting bare (no tag at all, by any entity) in this beat's
+/// prose anyway. Author 2026-10-13: the "Sable" class of silent loss — a bare mention of an
+/// ambiguous name that nobody pinned, so the save path correctly declined to guess and the mention
+/// went untracked with no other signal to catch it on a beat's first-ever tagging pass (a beat that
+/// already has a contribution line for the entity would instead show up in <see cref="ContributionCheck.Extra"/>
+/// once its tag vanishes — this field exists for the beat that never had one yet).</summary>
+public sealed record UntaggedName(string Text, IReadOnlyList<Guid> Candidates);
+
 public sealed record ContributionCheck(
     IReadOnlyList<Guid> Missing, IReadOnlyList<Guid> Extra, IReadOnlyList<Guid> Stale,
-    IReadOnlyList<(int Offset, string Word)> UntaggedPronouns)
+    IReadOnlyList<(int Offset, string Word)> UntaggedPronouns, IReadOnlyList<UntaggedName> UntaggedNames)
 {
-    public bool Ok => Missing.Count == 0 && Extra.Count == 0 && Stale.Count == 0 && UntaggedPronouns.Count == 0;
+    public bool Ok => Missing.Count == 0 && Extra.Count == 0 && Stale.Count == 0
+        && UntaggedPronouns.Count == 0 && UntaggedNames.Count == 0;
 }
 
 /// <summary>A line of a character's history: one beat, cited.</summary>
@@ -115,7 +125,9 @@ public class BeatContributionService(IDbContextFactory<ProseDbContext> dbFactory
         var tagged = await TaggedCharactersAsync(db, beat.Text ?? "", ct);
         var rows = await db.BeatContributions.AsNoTracking().Where(c => c.BeatId == beatId)
             .Select(c => new { c.EntityId, c.TextHash }).ToListAsync(ct);
-        return Check(beat.Text ?? "", beat.TextHash, tagged, rows.Select(r => (r.EntityId, r.TextHash)).ToList());
+        var check = Check(beat.Text ?? "", beat.TextHash, tagged, rows.Select(r => (r.EntityId, r.TextHash)).ToList());
+        var untaggedNames = await UntaggedNamesAsync(db, beatId, beat.Text ?? "", ct);
+        return untaggedNames.Count == 0 ? check : check with { UntaggedNames = untaggedNames };
     }
 
     /// <summary>The pure check the gate and <see cref="CheckAsync"/> share.</summary>
@@ -128,7 +140,41 @@ public class BeatContributionService(IDbContextFactory<ProseDbContext> dbFactory
             taggedCharacters.Where(id => !have.Contains(id)).ToList(),
             have.Where(id => !taggedCharacters.Contains(id)).ToList(),
             rows.Where(r => taggedCharacters.Contains(r.EntityId) && r.TextHash != hash).Select(r => r.EntityId).ToList(),
-            BeatMarkup.UntaggedPronouns(text));
+            BeatMarkup.UntaggedPronouns(text), []);
+    }
+
+    /// <summary>Bare mentions of an ambiguous name sitting untagged in <paramref name="text"/> — the
+    /// "Sable" class of silent loss (see <see cref="UntaggedName"/>). Needs the book's universe to
+    /// know which names are ambiguous there, so this is async/DB-backed and kept OUT of the pure
+    /// <see cref="Check"/> the F3 factory gate runs per-beat across whole books: it is a diagnostic
+    /// for the interactive per-beat tools (<c>get_beat_contributions</c>, CLI <c>--beat
+    /// contributions</c>), not a new corpus-wide gate condition.</summary>
+    private static async Task<List<UntaggedName>> UntaggedNamesAsync(
+        ProseDbContext db, Guid beatId, string text, CancellationToken ct)
+    {
+        var bookNodeId = await NodeWorkbenchService.ResolveBookAncestorForBeatAsync(db, beatId, ct);
+        if (bookNodeId is not { } book) return [];
+        var universeId = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+            .Where(n => n.Id == book).Select(n => n.UniverseId).FirstOrDefaultAsync(ct);
+        if (universeId == Guid.Empty) return [];
+        var (_, dropped) = await EntityMentionScanner.BuildCandidateIndexWithDroppedAsync(db, universeId, book, ct);
+        if (dropped.Count == 0) return [];
+
+        // A pinned mention (WithPinnedMentions) resolves EVERY bare occurrence of the same surface
+        // text to the same guid for the whole beat, so if any of this name's claimants is already
+        // tagged anywhere in the beat, no bare occurrence survives the next save — nothing to flag.
+        var taggedGuids = BeatMarkup.ExtractEntityGuids(text).ToHashSet();
+        var plain = BeatMarkup.StripEntityTags(text);
+        var found = new List<UntaggedName>();
+        foreach (var d in dropped)
+        {
+            if (d.Owners.Any(taggedGuids.Contains)) continue;
+            var pattern = $@"\b{Regex.Escape(d.Text)}\b";
+            var opts = RegexOptions.CultureInvariant | (d.RequiresStrictCase ? RegexOptions.None : RegexOptions.IgnoreCase);
+            if (Regex.IsMatch(plain, pattern, opts))
+                found.Add(new UntaggedName(d.Text, d.Owners));
+        }
+        return found;
     }
 
     /// <summary>The characters a beat tags, by name or pronoun: tagged guids that are character records.</summary>

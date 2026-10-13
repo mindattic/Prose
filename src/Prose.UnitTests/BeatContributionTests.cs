@@ -181,4 +181,33 @@ public class BeatContributionTests : WorldFixture
         var found = BeatMarkup.UntaggedPronouns("He's there. Theirs is the hive; mother and themes. I said it.");
         Assert.That(found.Select(f => f.Word), Is.EqualTo(new[] { "He", "Theirs", "I", "it" }));
     }
+
+    [Test]
+    public async Task A_bare_ambiguous_name_is_flagged_untagged_and_clears_once_one_occurrence_is_pinned()
+    {
+        // Two characters share one name, universe-wide, with no book-scoped tiebreaker — the exact
+        // shape that made the save path silently drop a tag on an ambiguous name (author 2026-09-04,
+        // four "Marisol" tags lost against five Marisols; author 2026-10-13, "Sable" the same way
+        // when ALL her tags were stripped instead of one kept to pin the rest).
+        var sableA = NewCharacter("Sable");
+        var sableB = NewCharacter("Sable");
+        var (bA, bB) = (Guid.Parse(sableA.Id), Guid.Parse(sableB.Id));
+        var (book, _) = await BookAsync("Placeholder.");
+        var beat = (await BeatIdsAsync(book))[0];
+
+        // Bare mention, no tag anywhere: the ambiguity guard correctly refuses to guess, and that
+        // refusal is now visible instead of only discoverable by a human noticing a missing line.
+        await workbench.UpdateBeatTextAsync(beat, "Sable routed the job through the Loop.", BeatWriteReason.AuthorEdit);
+        var check = await contributions.CheckAsync(beat);
+        Assert.That(check.UntaggedNames.Select(n => n.Text), Does.Contain("Sable"));
+        var flagged = check.UntaggedNames.Single(n => n.Text == "Sable");
+        Assert.That(flagged.Candidates, Is.EquivalentTo(new[] { bA, bB }));
+
+        // Pinning ONE occurrence resolves every bare occurrence of the same text in the same save
+        // (WithPinnedMentions + EntityMentionScanner.Scan) — nothing left bare to flag.
+        await workbench.UpdateBeatTextAsync(beat, $"{Tag(sableA, "Sable")} routed the job through the Loop.", BeatWriteReason.AuthorEdit);
+        check = await contributions.CheckAsync(beat);
+        Assert.That(check.UntaggedNames, Is.Empty);
+        Assert.That(BeatMarkup.ExtractEntityGuids(await TextAsync(beat)), Does.Contain(bA));
+    }
 }

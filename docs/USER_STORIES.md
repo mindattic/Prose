@@ -676,3 +676,15 @@ updated: 2026-10-03
   SOURCE→NONFICTION and EPIC→FICTION for naming clarity (2026-08-04). *(evidence: verified by
   commit `f74d26f46` "feat(universes): add EROTICA (6th), rename SOURCE→NONFICTION,
   EPIC→FICTION"; CLI `prose --universe list` shows all 6 slugs.)*
+
+## Tickets
+> Permanent log of every change and fix — this repo's ticket system. Rows are append-only: never
+> delete or reword one; only move its Status (open → closed / wont-do) and fill in Ref. Status is
+> a word, not a glyph, so tickets don't count toward the story index. Keep this section last.
+
+| ID | Date | Type | Status | Summary | Ref |
+|---|---|---|---|---|---|
+| SS-T1 | 2026-10-12 | docs | closed | Start the permanent ticket log in USER_STORIES.md | — |
+| SS-T2 | 2026-10-12 | chore | closed | /commit now logs every commit as a ticket in this table | `.prose/commands/commit.md` |
+| SS-T3 | 2026-10-13 | chore | open | Metadata completeness campaign: pronoun/entity tags, character history, continuity checks across every book (Hub WO:01a1337c) | — |
+| SS-T4 | 2026-10-13 | fix | closed | Contributions gate: surface a bare ambiguous name (e.g. two Sables) sitting untagged instead of silently losing it | WO:01a13278 |

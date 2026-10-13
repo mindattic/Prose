@@ -452,7 +452,7 @@ A character's history, read from the beats: every beat that tags them (by name o
 
 ### `get_beat_contributions`
 
-A beat's contribution lines and where they stand against its prose: characters tagged with no line, lines for characters it does not tag, stale lines, and pronouns with no tag. CLI parity: prose --beat contributions --id <beat>.
+A beat's contribution lines and where they stand against its prose: characters tagged with no line, lines for characters it does not tag, stale lines, pronouns with no tag, and bare mentions of an ambiguous name sitting untagged (e.g. a 'Sable' the universe has five of, mentioned by name but never pinned with an explicit tag — tag one occurrence to resolve it). CLI parity: prose --beat contributions --id <beat>.
 
 - `beatId` (string, required) — Beat Guid.
 

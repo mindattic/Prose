@@ -12,7 +12,8 @@ namespace Prose.Mcp;
 // those lines, never stored on their own, so they cannot disagree with the prose.
 //
 //   set_beat_contributions — replace a beat's lines (must name exactly the characters it tags)
-//   get_beat_contributions — the lines and where they stand (missing / extra / stale / untagged pronouns)
+//   get_beat_contributions — the lines and where they stand (missing / extra / stale / untagged
+//                            pronouns / untagged ambiguous names — author 2026-10-13)
 //   character_history      — a character's lines across the books, in reading order, cited
 //   story_edges            — "who killed Bram Osei": typed relations, each with the beat that makes it
 
@@ -48,7 +49,7 @@ public class ContributionTools(BeatContributionService contributions, EntityMent
         return await GetBeatContributionsImpl(beatId);
     }
 
-    [McpServerTool, Description("A beat's contribution lines and where they stand against its prose: characters tagged with no line, lines for characters it does not tag, stale lines, and pronouns with no tag. CLI parity: prose --beat contributions --id <beat>.")]
+    [McpServerTool, Description("A beat's contribution lines and where they stand against its prose: characters tagged with no line, lines for characters it does not tag, stale lines, pronouns with no tag, and bare mentions of an ambiguous name sitting untagged (e.g. a 'Sable' the universe has five of, mentioned by name but never pinned with an explicit tag — tag one occurrence to resolve it). CLI parity: prose --beat contributions --id <beat>.")]
     public Task<string> get_beat_contributions([Description("Beat Guid.")] string beatId) =>
         hub.InvokeAsync(nameof(ContributionTools), nameof(GetBeatContributionsImpl), new { beatId });
 
@@ -63,6 +64,7 @@ public class ContributionTools(BeatContributionService contributions, EntityMent
             lines = rows.Select(r => new { entity = r.EntityId, text = r.Text, edges = BeatContributionService.ParseEdges(r.EdgesJson), stale = check.Stale.Contains(r.EntityId) }),
             missing = check.Missing, extra = check.Extra,
             untagged_pronouns = check.UntaggedPronouns.Select(p => new { offset = p.Offset, word = p.Word }),
+            untagged_names = check.UntaggedNames.Select(n => new { text = n.Text, candidates = n.Candidates }),
         }, JsonOpts);
     }
 

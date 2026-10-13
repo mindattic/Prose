@@ -157,6 +157,28 @@ public static class EntityMentionScanner
     public static async Task<List<MentionCandidate>> BuildCandidateIndexAsync(
         ProseDbContext db, Guid universeId, Guid? bookNodeId, CancellationToken ct = default)
     {
+        var (candidates, _) = await BuildCandidateIndexCoreAsync(db, universeId, bookNodeId, ct);
+        return candidates;
+    }
+
+    /// <summary>A text the ambiguity guard in <see cref="BuildCandidateIndexCoreAsync"/> refused to
+    /// anchor a tag to — claimed by more than one entity with no book-scoped tiebreaker — together
+    /// with every entity that claims it. Used only by the diagnostic in
+    /// <see cref="BeatContributionService"/> that flags a bare mention of one of these names sitting
+    /// untagged in a beat's prose (the "Sable" class of silent loss, author 2026-10-13): the ambiguity
+    /// refusal itself is correct and unchanged, this only makes its casualties visible instead of
+    /// discoverable only by a human noticing a missing contribution line.</summary>
+    public sealed record DroppedMention(string Text, IReadOnlyList<Guid> Owners, bool RequiresStrictCase);
+
+    /// <summary>Same candidate index as <see cref="BuildCandidateIndexAsync"/>, plus every text the
+    /// ambiguity guard dropped along the way. See <see cref="DroppedMention"/>.</summary>
+    public static async Task<(List<MentionCandidate> Candidates, List<DroppedMention> DroppedAmbiguous)> BuildCandidateIndexWithDroppedAsync(
+        ProseDbContext db, Guid universeId, Guid? bookNodeId, CancellationToken ct = default)
+        => await BuildCandidateIndexCoreAsync(db, universeId, bookNodeId, ct);
+
+    private static async Task<(List<MentionCandidate> Candidates, List<DroppedMention> DroppedAmbiguous)> BuildCandidateIndexCoreAsync(
+        ProseDbContext db, Guid universeId, Guid? bookNodeId, CancellationToken ct = default)
+    {
         var entities = await db.Set<Entity>().AsNoTracking().IgnoreQueryFilters()
             .Where(e => e.UniverseId == universeId
                 && e.Status != "archived"
@@ -348,12 +370,7 @@ public static class EntityMentionScanner
                 textOwners[c.Text] = owners = [];
             owners.Add(c.EntityId);
         }
-        // A whole name outranks a fragment (2026-09-23, BCODA read): when some entity's canonical
-        // name or curated alias IS this text, an entity that only derives it from a longer name is
-        // out of the contest before book scope is consulted. "Praxis" is the corporation's whole
-        // name and only the first word of the book-scoped "Praxis Operator Five"; book scope alone
-        // gave every "Praxis soldiers" and "Praxis dissolved the architecture group" to him.
-        candidates.RemoveAll(c =>
+        bool IsAmbiguous(MentionCandidate c)
         {
             if (!textOwners.TryGetValue(c.Text, out var owners) || owners.Count <= 1) return false;
             var contenders = wholeClaims.TryGetValue(c.Text, out var whole) && whole.Count > 0
@@ -364,7 +381,17 @@ public static class EntityMentionScanner
             var bookScopedOwners = contenders.Where(bookScopedIds.Contains).ToList();
             if (bookScopedOwners.Count == 1) return c.EntityId != bookScopedOwners[0];
             return true; // 0 or 2+ book-scoped contenders — genuinely ambiguous, drop all.
-        });
+        }
+        var dropped = candidates.Where(IsAmbiguous)
+            .GroupBy(c => c.Text, StringComparer.OrdinalIgnoreCase).Select(g => g.First())
+            .Select(c => new DroppedMention(c.Text, textOwners[c.Text].ToList(), c.RequiresStrictCase))
+            .ToList();
+        // A whole name outranks a fragment (2026-09-23, BCODA read): when some entity's canonical
+        // name or curated alias IS this text, an entity that only derives it from a longer name is
+        // out of the contest before book scope is consulted. "Praxis" is the corporation's whole
+        // name and only the first word of the book-scoped "Praxis Operator Five"; book scope alone
+        // gave every "Praxis soldiers" and "Praxis dissolved the architecture group" to him.
+        candidates.RemoveAll(IsAmbiguous);
 
         // Final guard, independent of source: a candidate whose entire text is nothing but a bare
         // article/connective can never safely anchor a tag. See the Stopwords doc comment for why
@@ -395,7 +422,7 @@ public static class EntityMentionScanner
             }
         }
 
-        return candidates;
+        return (candidates, dropped);
     }
 
     /// <summary>
