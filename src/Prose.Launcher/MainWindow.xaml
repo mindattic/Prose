@@ -4,107 +4,42 @@
         Title="Prose" Height="500" Width="520"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
-        Background="#1e1e1e">
+        Background="{StaticResource McChrome}">
     <Window.Resources>
-        <!-- The tile needs its own ControlTemplate, and that is the actual fix here.
-             Setting Background on the Style alone does nothing on hover: WPF's default Button
-             template has its own IsMouseOver trigger that paints the system pale blue, and it
-             wins over anything the Style says. That is where the washed-out highlight came
-             from — it was never our colour at all. -->
-        <Style x:Key="Tile" TargetType="Button">
-            <Setter Property="Height" Value="64" />
-            <Setter Property="Margin" Value="0,0,0,10" />
-            <Setter Property="Background" Value="#2a2a2a" />
-            <Setter Property="Foreground" Value="#eeeeee" />
-            <Setter Property="BorderBrush" Value="#6a6a6a" />
-            <Setter Property="BorderThickness" Value="1" />
-            <Setter Property="FontFamily" Value="Segoe UI" />
-            <Setter Property="FontSize" Value="14" />
-            <Setter Property="HorizontalContentAlignment" Value="Left" />
-            <Setter Property="Padding" Value="16,0,0,0" />
-            <Setter Property="Cursor" Value="Hand" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border x:Name="Shell"
-                                Background="{TemplateBinding Background}"
-                                BorderBrush="{TemplateBinding BorderBrush}"
-                                BorderThickness="{TemplateBinding BorderThickness}"
-                                CornerRadius="3"
-                                Padding="{TemplateBinding Padding}"
-                                SnapsToDevicePixels="True">
-                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                              VerticalAlignment="Center" />
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="Shell" Property="Background" Value="#ff0033" />
-                                <Setter TargetName="Shell" Property="BorderBrush" Value="#ff0033" />
-                                <!-- The title inherits this. The subtitle sets its own colour and
-                                     is lifted separately by TileSub below. -->
-                                <Setter Property="Foreground" Value="#ffffff" />
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="True">
-                                <Setter TargetName="Shell" Property="Background" Value="#d10029" />
-                                <Setter TargetName="Shell" Property="BorderBrush" Value="#d10029" />
-                                <Setter Property="Foreground" Value="#ffffff" />
-                            </Trigger>
-                            <!-- Templating away the default also throws away its focus visual, and
-                                 this window is four buttons and nothing else — a keyboard user
-                                 would have had no idea which one was selected. -->
-                            <Trigger Property="IsKeyboardFocused" Value="True">
-                                <Setter TargetName="Shell" Property="BorderBrush" Value="#7ab8ff" />
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <!-- The subtitles hardcoded #999999, which is 1.6:1 on #ff0033 — the same unreadable
-             result as before in a different colour. They follow the hover up to white. -->
-        <Style x:Key="TileSub" TargetType="TextBlock">
-            <Setter Property="Foreground" Value="#999999" />
-            <Setter Property="FontSize" Value="11" />
-            <Style.Triggers>
-                <DataTrigger Binding="{Binding IsMouseOver, RelativeSource={RelativeSource AncestorType=Button}}"
-                             Value="True">
-                    <Setter Property="Foreground" Value="#ffffff" />
-                </DataTrigger>
-            </Style.Triggers>
-        </Style>
+        <!-- Prose's brand red for the tiles' hover fill; the tile itself is the shared McTileButton. -->
+        <SolidColorBrush x:Key="McTileHover" Color="#ff0033" />
     </Window.Resources>
 
     <StackPanel Margin="24">
-        <TextBlock Text="Prose" Foreground="#eeeeee" FontSize="30" FontFamily="Georgia" />
-        <TextBlock x:Name="HubStatus" Text="Checking Prose Hub…" Foreground="#999999"
+        <TextBlock Text="Prose" Foreground="{StaticResource McText}" FontSize="30" FontFamily="Georgia" />
+        <TextBlock x:Name="HubStatus" Text="Checking Prose Hub…" Foreground="{StaticResource McMuted}"
                    FontFamily="Segoe UI" FontSize="12" Margin="0,4,0,20" TextWrapping="Wrap" />
 
-        <Button x:Name="WriterButton" Style="{StaticResource Tile}" Click="OpenWriter">
+        <Button x:Name="WriterButton" Style="{StaticResource McTileButton}" Click="OpenWriter">
             <StackPanel>
                 <TextBlock Text="Writer" FontSize="15" />
-                <TextBlock Text="Read and hand-edit a book, beat by beat" Style="{StaticResource TileSub}" />
+                <TextBlock Text="Read and hand-edit a book, beat by beat" Style="{StaticResource McTileSubtitle}" />
             </StackPanel>
         </Button>
 
-        <Button x:Name="KdpButton" Style="{StaticResource Tile}" Click="OpenKdp">
+        <Button x:Name="KdpButton" Style="{StaticResource McTileButton}" Click="OpenKdp">
             <StackPanel>
                 <TextBlock Text="KDP Publish" FontSize="15" />
-                <TextBlock Text="Publish and update books on Amazon" Style="{StaticResource TileSub}" />
+                <TextBlock Text="Publish and update books on Amazon" Style="{StaticResource McTileSubtitle}" />
             </StackPanel>
         </Button>
 
-        <Button x:Name="CliButton" Style="{StaticResource Tile}" Click="OpenCli">
+        <Button x:Name="CliButton" Style="{StaticResource McTileButton}" Click="OpenCli">
             <StackPanel>
                 <TextBlock Text="CLI" FontSize="15" />
-                <TextBlock Text="Claude Code in D:\Projects\MindAttic\Prose" Style="{StaticResource TileSub}" />
+                <TextBlock Text="Claude Code in D:\Projects\MindAttic\Prose" Style="{StaticResource McTileSubtitle}" />
             </StackPanel>
         </Button>
 
-        <Button x:Name="HubButton" Style="{StaticResource Tile}" Click="OpenHubDashboard">
+        <Button x:Name="HubButton" Style="{StaticResource McTileButton}" Click="OpenHubDashboard">
             <StackPanel>
                 <TextBlock Text="Hub dashboard" FontSize="15" />
-                <TextBlock Text="Logs, DCM, findings — opens in your browser" Style="{StaticResource TileSub}" />
+                <TextBlock Text="Logs, DCM, findings — opens in your browser" Style="{StaticResource McTileSubtitle}" />
             </StackPanel>
         </Button>
     </StackPanel>

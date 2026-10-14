@@ -4,15 +4,15 @@
         xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
         Title="Prose Writer" Height="1000" Width="1500"
         WindowStartupLocation="CenterScreen"
-        Background="#1e1e1e">
+        Background="{StaticResource McChrome}">
     <Grid>
         <!-- Splash. Visible until the Hub answers and the page has been navigated to; the
              WebView2 underneath is transparent until first paint, and a WebView2 showing the
              browser's own error page is a worse first impression than a status line. -->
         <StackPanel x:Name="Splash" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <TextBlock Text="Prose Writer" Foreground="#eeeeee" FontSize="28" FontFamily="Georgia"
+            <TextBlock Text="Prose Writer" Foreground="{StaticResource McText}" FontSize="28" FontFamily="Georgia"
                        HorizontalAlignment="Center" />
-            <TextBlock x:Name="SplashStatus" Text="Starting…" Foreground="#999999" FontSize="13"
+            <TextBlock x:Name="SplashStatus" Text="Starting…" Foreground="{StaticResource McMuted}" FontSize="13"
                        FontFamily="Segoe UI" Margin="0,12,0,0" HorizontalAlignment="Center"
                        TextAlignment="Center" MaxWidth="640" TextWrapping="Wrap" />
 
@@ -24,36 +24,7 @@
                  and no button inside it is running any more. -->
             <Button x:Name="ConnectButton" Content="Connect" Visibility="Collapsed"
                     Margin="0,20,0,0" HorizontalAlignment="Center" Padding="22,7"
-                    FontFamily="Segoe UI" FontSize="13" Cursor="Hand"
-                    Foreground="#eeeeee" Background="#3a3a3a" BorderBrush="#555555"
-                    Click="OnConnectClick">
-                <Button.Style>
-                    <Style TargetType="Button">
-                        <Setter Property="Template">
-                            <Setter.Value>
-                                <ControlTemplate TargetType="Button">
-                                    <Border x:Name="Bd" Background="{TemplateBinding Background}"
-                                            BorderBrush="{TemplateBinding BorderBrush}"
-                                            BorderThickness="1" CornerRadius="4">
-                                        <ContentPresenter HorizontalAlignment="Center"
-                                                          VerticalAlignment="Center"
-                                                          Margin="{TemplateBinding Padding}" />
-                                    </Border>
-                                    <ControlTemplate.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter TargetName="Bd" Property="Background" Value="#4a4a4a" />
-                                        </Trigger>
-                                        <Trigger Property="IsEnabled" Value="False">
-                                            <Setter TargetName="Bd" Property="Background" Value="#2a2a2a" />
-                                            <Setter Property="Foreground" Value="#777777" />
-                                        </Trigger>
-                                    </ControlTemplate.Triggers>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </Button.Style>
-            </Button>
+                    Style="{StaticResource McButton}" Click="OnConnectClick" />
         </StackPanel>
 
         <wv2:WebView2 x:Name="Web" Visibility="Collapsed" />

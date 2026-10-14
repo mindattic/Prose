@@ -22,4 +22,8 @@
     <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3179.45" />
   </ItemGroup>
 
+  <ItemGroup>
+    <!-- Vendored in lib/local-packages: the shared MindAttic dark theme, packed from MindAttic.Components. -->
+    <PackageReference Include="MindAttic.Components.Wpf" Version="3.0.0" />
+  </ItemGroup>
 </Project>
