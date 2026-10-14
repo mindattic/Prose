@@ -109,8 +109,13 @@ public static class EntityMentionScanner
     // character. Unlike <see cref="Stopwords"/> this applies ONLY at token derivation, never in the
     // final candidate guard, so an entity whose canonical Name or curated alias is literally "Iron"
     // or "Wall" (a place, a material) and the full multi-word names still tag normally.
+    //
+    // "ghost" and "big" joined 2026-10-14 (WO:01a13bfc, full-factory pass): the synthetic
+    // character "Ghost Protocol" derived bare "Ghost", so every Ghost in the GLMZ catalog (Pixel's
+    // trade, "Ghost decks", "Ghost-run frame") retagged to it on each save and undid hand fixes; and
+    // "Big Rig" derived bare "Big" the same way.
     private static readonly HashSet<string> DerivedOnlyStopwords =
-        new(StringComparer.OrdinalIgnoreCase) { "iron", "wall", "sergeant" };
+        new(StringComparer.OrdinalIgnoreCase) { "iron", "wall", "sergeant", "ghost", "big" };
 
     // Numerals are a closed class, never a name on their own, so they are excluded as a class
     // rather than one incident at a time (2026-09-23, BCODA read): "Praxis Operator Five" derived
