@@ -164,6 +164,60 @@ public class ContinuityServiceTests
     }
 
     [Test]
+    public void Upsert_AgeAcrossDifferentBooks_DoesNotContradict()
+    {
+        // SS-T17: the catalog carries one `Age` but a series spans years (BCODA ~2226,
+        // CYB1 ~2230) — the same character's age claim is correctly a different number in
+        // a later book. That's a passage of time, not the ledger contradicting itself.
+        var entityId = Guid.NewGuid().ToString("N");
+        var bcoda = MakeClaim(entityId, "age", "24");
+        bcoda.BookSlug = "bushido-coda";
+        svc.Upsert(bcoda);
+
+        var cyb1 = MakeClaim(entityId, "age", "28");
+        cyb1.BookSlug = "cyberocracy-1";
+        var second = svc.Upsert(cyb1);
+
+        Assert.That(second.Outcome, Is.EqualTo("NEW"),
+            "a different book years later must never contradict an earlier book's age claim.");
+    }
+
+    [Test]
+    public void Upsert_AgeWithinSameBook_StillContradicts()
+    {
+        // Regression guard: book-scoping the age comparison must not disable it — two
+        // different ages asserted for one character inside ONE book is still a real defect.
+        var entityId = Guid.NewGuid().ToString("N");
+        var first = MakeClaim(entityId, "age", "24");
+        first.BookSlug = "bushido-coda";
+        svc.Upsert(first);
+
+        var second = MakeClaim(entityId, "age", "27");
+        second.BookSlug = "bushido-coda";
+        var result = svc.Upsert(second);
+
+        Assert.That(result.Outcome, Is.EqualTo("CONTRADICTED"),
+            "two different ages for the same character within the same book must still be flagged.");
+    }
+
+    [Test]
+    public void Upsert_AgeEntityRecordClaimVsBookScopedClaim_DoesNotContradict()
+    {
+        // The catalog record's own Age (an entity-record claim, BookSlug == null per
+        // docs/LEDGER.md §2) is a single reference-point value, not comparable to a
+        // specific book's age claim.
+        var entityId = Guid.NewGuid().ToString("N");
+        svc.Upsert(MakeClaim(entityId, "age", "30")); // no BookSlug — entity-record level
+
+        var bookClaim = MakeClaim(entityId, "age", "24");
+        bookClaim.BookSlug = "bushido-coda";
+        var result = svc.Upsert(bookClaim);
+
+        Assert.That(result.Outcome, Is.EqualTo("NEW"),
+            "the catalog record's reference age must never contradict a book-scoped age claim.");
+    }
+
+    [Test]
     public void Upsert_NonNumericPredicate_StillContradictsOnDifferentText()
     {
         var entityId = Guid.NewGuid().ToString("N");

@@ -14,6 +14,7 @@
     "role": { "type": "string" },
     "status": { "type": "string" },
     "location": { "type": "string" },
+    "age": { "type": "integer", "description": "One reference-point value for the whole series record, not per-book — a series can span years (BCODA ~2226, CYB1 ~2230) and the same character ages across it. A book-specific age belongs in the Story Ledger as an `age` claim scoped to that book (see docs/LEDGER.md), not here and not in `description` free text (SS-T17)." },
     "description": { "type": "string" },
     "psychology": { "type": "object" },
     "speech_patterns": { "type": "object" },

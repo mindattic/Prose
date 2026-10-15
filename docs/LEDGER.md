@@ -75,6 +75,20 @@ each answering a different question about the predicate:
 | **Set-valued** (`IsSetValuedPredicate`, 2026-09-04) | Can this subject have many values *at once*? | `ability`, `action*`, `knowledge*`, `possession*`, `skill`, `relationship*` |
 | **Same assertion** (`IsSameAssertion`) | Is this one fact recorded twice in different words? | "rebuilds bike" vs "rebuilt the bike" |
 
+**Age-by-book convention (SS-T17, 2026-10-15).** A character record carries exactly one `Age` —
+but a series spans years (BCODA ~2226, CYB1 ~2230), so the same person's age is a different,
+equally true number in each book. That isn't a volatile fact (it doesn't reset or get superseded
+the way `location_current` does) and it isn't set-valued (a person has one age, not many at once)
+— it is a fact scoped to **when**, the one axis neither exemption covers. The fix lives in
+`NumericPredicates` (`age`, `tenure_years`, `career_length_years`, `zone_age_years`,
+`duration_years`, `years`): `ContinuityService.FindConflict` compares these specifically within
+the same `BookSlug` (including two entity-record claims, which both carry `BookSlug = NULL`) and
+never across books. A within-book inconsistency — two different ages for one character in one
+book — still contradicts exactly as before; a book written four years later does not. The
+character record's own `Age` column stays a single reference-point value (documented in
+`SCHEMA.md` and `character.schema.json`); a book-specific age belongs here, as an `age` claim
+scoped to that book, not in free-text `Description`.
+
 **Cardinality is not volatility, and conflating them cost real signal.** A volatile predicate has
 one value that changes over time; a set-valued predicate has many values that are all true
 simultaneously. `action` is both; `ability` is only the second, which is why one list could not

@@ -62,6 +62,10 @@ public class ContinuityService
     // vs. a separate catastrophe's age-in-years) must use DISTINCT predicate keys;
     // this normalization only makes "fifty" == "50" for the SAME predicate, it
     // does not and must not relate two different predicates to each other.
+    //
+    // SS-T17: every predicate here is also a book-spanning clock — it is EXPECTED to read
+    // differently in a book set years later. FindConflict scopes these specifically to the
+    // same BookSlug for exactly that reason; see the comment there for the full convention.
     private static readonly HashSet<string> NumericPredicates = new(StringComparer.Ordinal)
     {
         "age", "tenure_years", "career_length_years", "zone_age_years", "duration_years", "years",
@@ -741,17 +745,35 @@ public class ContinuityService
     /// <paramref name="incoming"/> — canon first, then the most recently confirmed. Null for
     /// volatile and set-valued predicates, which never conflict (see the Upsert comments).</summary>
     private ContinuityClaim? FindConflict(ProseDbContext db, ContinuityClaim incoming)
-        => IsVolatilePredicate(incoming.Predicate) || IsSetValuedPredicate(incoming.Predicate)
-            ? null
-            : db.ContinuityClaims
+    {
+        if (IsVolatilePredicate(incoming.Predicate) || IsSetValuedPredicate(incoming.Predicate))
+            return null;
+
+        var candidates = db.ContinuityClaims
             .Where(c => c.EntityId == incoming.EntityId
                      && c.Predicate == incoming.Predicate
                      && c.ClaimUid != incoming.ClaimUid
-                     && c.Status != "REJECTED" && c.Status != "SUPERSEDED")
+                     && c.Status != "REJECTED" && c.Status != "SUPERSEDED");
+
+        // SS-T17 (age-by-book convention): the predicates in NumericPredicates are all
+        // "clocks" (age, tenure_years, career_length_years, zone_age_years, duration_years,
+        // years) that legitimately advance between books because story time passes — BCODA
+        // runs ~2226, CYB1 ~2230, so the same character's `age` is correctly a different
+        // number in each, not a contradiction. Scoping the comparison to the SAME BookSlug
+        // (including the case where both are null — two entity-record-level claims, since a
+        // character record's own scalar Age field, per SCHEMA.md/character.schema.json, is a
+        // single reference-point value) keeps catching a real within-book inconsistency
+        // (two different ages asserted for one character in one book) while no longer
+        // manufacturing a false CONTRADICTED row out of nothing but the calendar.
+        if (NumericPredicates.Contains(Normalize(incoming.Predicate)))
+            candidates = candidates.Where(c => c.BookSlug == incoming.BookSlug);
+
+        return candidates
             .OrderByDescending(c => c.Status == "CANONICAL" ? 1 : 0).ThenByDescending(c => c.LastConfirmedAt)
             .ToList()
             .FirstOrDefault(c => !ObjectsMatch(incoming.Predicate, c.Object, incoming.Object)
                               && !IsSameAssertion(c, incoming));
+    }
 
     private static bool IsActive(string status)
         => status != "REJECTED" && status != "SUPERSEDED";

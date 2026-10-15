@@ -105,8 +105,8 @@ Each row's PK is also FK to `Entity.Id` — TPT (table-per-type) inheritance. Ev
 | `KindOfBeing` | `NVARCHAR(40)` | second taxonomy axis: `human`, `e_l_f`, `iowan_behemoth`, `automaton`, `ai_avatar`, `synthetic` — separate from species so an "android" can also be `e_l_f`-classed |
 | `Gender` | `NVARCHAR(40)` | |
 | `Pronouns` | `NVARCHAR(40)` | |
-| `Age` | `INT` | nullable |
-| `Birthdate` | `DATE NULL` | 23rd century |
+| `Age` | `INT` | nullable. One reference-point value for the whole catalog record, not per-book — a series can span years (BCODA ~2226, CYB1 ~2230) and the same character ages across it. A book-specific age is NOT stored here; it is a Story Ledger `age` claim scoped to that book's `BookSlug` (see `docs/LEDGER.md`), which `ContinuityService.FindConflict` compares only within the same `BookSlug` for exactly this reason (SS-T17) — two ages four book-years apart are not a contradiction, but two different ages asserted within one book still are |
+| `Birthdate` | `DATE NULL` | 23rd century. Vestigial: never set or read by `CharacterMapper` or `CharacterData`. Not the mechanism for age-by-book — no book/universe carries a structured in-world year to subtract it from, only free-text `BookState.InWorldTime` (see `src/Prose.Core/Models/Book.cs`) |
 | `NarrativeFunction` | `NVARCHAR(MAX)` | |
 | `NarrationVoice` | `NVARCHAR(MAX)` | |
 | `MidjourneyPrompt` | `NVARCHAR(MAX)` | |
