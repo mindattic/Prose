@@ -62,7 +62,7 @@ updated: 2026-10-03
 - **SS-US-D4 ✅** As the engine, continuity extraction resolves any entity type via the universal
   `Entities` table (F2). *(verified by `CanonEngineTests.RuleTargets_AllMapToKnownStores`,
   `NormalizeTarget_*`; `WorldConsistencyServiceTests` filtered subset.)*
-- **SS-US-D5 ✅** As the engine, world facts/lore stay consistent. *(verified by `InferenceServiceTests` and the in-code `WorldLoreTests`, re-run 2026-10-15, all pass. 11 `WorldLoreTests` cases (story bible, tone bible, Pulse/GIDS lore, literary-rule prohibitions, retired-flyover check) are skipped by `Assume` because they read canon JSON/markdown files that moved into the database; rewriting them against the Hub or deleting them is ticket SS-T79.)*
+- **SS-US-D5 ✅** As the engine, world facts/lore stay consistent. *(verified by `InferenceServiceTests` and `WorldLoreTests` (30 tests: archetype/repository round-trips, plain-text entity NER), re-run 2026-10-15, 0 skipped. The 17 file-based lore checks (retired-term scans, story/tone bible, Pulse/GIDS lore, JSON validity) were deleted 2026-10-15: `engine/data` holds no canon JSON any more, so they skipped or passed over zero files. Canon is enforced in the database as law rulings and deprecated names, checked by `law_violations` and the factory gates.)*
 
 ## Epic E — Voice harvest (the flywheel)
 
