@@ -55,4 +55,8 @@
     <ProjectReference Include="..\Prose.WriterUi\Prose.WriterUi.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <InternalsVisibleTo Include="Prose.UnitTests" />
+  </ItemGroup>
+
 </Project>

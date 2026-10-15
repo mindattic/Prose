@@ -95,7 +95,7 @@ public static class ToolDispatch
         }
     }
 
-    private static async Task<(IResult Result, bool Success, string? Output, string? Error)> InvokeCoreAsync(InvokeRequest req, IServiceProvider sp)
+    internal static async Task<(IResult Result, bool Success, string? Output, string? Error)> InvokeCoreAsync(InvokeRequest req, IServiceProvider sp)
     {
         // A body that omits ToolClass/Method deserialises them as null: LooksMutating and the
         // type cache's GetOrAdd then threw an unhandled 500 (the CliDispatch 2026-09-12 fix, here).

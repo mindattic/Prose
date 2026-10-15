@@ -40,6 +40,9 @@
          of them passes while the Hub answers unknown_handler_class. Contracts is deliberately
          dependency-free, so this reference costs the test project nothing. -->
     <ProjectReference Include="..\Prose.Hub.Contracts\Prose.Hub.Contracts.csproj" />
+    <!-- Hub is referenced so ToolDispatch, the universe-safety gate in front of every MCP tool,
+         can be tested against the real dispatcher (ToolDispatchTests). -->
+    <ProjectReference Include="..\Prose.Hub\Prose.Hub.csproj" />
   </ItemGroup>
 
 </Project>
