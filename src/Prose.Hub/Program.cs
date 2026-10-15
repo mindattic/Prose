@@ -159,18 +159,19 @@ builder.Services.Configure<Microsoft.AspNetCore.HostFiltering.HostFilteringOptio
 // the same pipeline: one for live-tail, one for durable/searchable history.
 builder.Logging.AddSerilog(hubSerilogLogger, dispose: true);
 
-// MindAttic.Log (ecosystem-wide shared pipeline, see that repo's docs/MIGRATION.md): a THIRD,
-// purely additive provider alongside hubSerilogLogger and RingBufferLoggerProvider above — same
-// connection-string resolution AddProseCoreServices uses for ProseDbContext (env var → appsettings
-// config → LocalDB "Prose" fallback), read from builder.Configuration directly since this must run
-// before builder.Build() to register as a logging provider at all. Writes into MindAttic_Log in the
-// SAME "Prose" database ProseDbContext/LogIssue already use. Nothing about the existing file
-// pipeline, LoggingService's search, or LogIssue triage changes — this is a second durable copy for
-// cross-app querying via MindAttic.Log.Reader, not a replacement.
+// MindAttic.Log (ecosystem-wide shared pipeline): a THIRD, purely additive provider alongside
+// hubSerilogLogger and RingBufferLoggerProvider above. Phase 2 (MindAttic.Log 3.0.0, see its
+// docs/BIBLE.md §1.1): writes into its own standalone MindAttic.Log.db under Vault's shared
+// roaming root, not the SAME "Prose" database ProseDbContext/LogIssue use — Phase 1 wrote
+// MindAttic_Log into that database; that's superseded. Nothing about the existing file pipeline,
+// LoggingService's search, or LogIssue triage changes. mindAtticLogConnectionString is still
+// resolved (env var → appsettings config → LocalDB "Prose" fallback) because the startup block
+// below still needs it to migrate Phase 1's historical rows out of that database.
 var mindAtticLogConnectionString =
     Environment.GetEnvironmentVariable("ConnectionStrings__Prose")
     ?? builder.Configuration.GetConnectionString("Prose")
     ?? @"Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;";
+var mindAtticLogDbPath = MindAttic.Vault.Paths.VaultPaths.LoggingDbPath("Prose.Hub");
 var mindAtticLogger = new LoggerConfiguration()
     .MinimumLevel.Information()
     .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
@@ -178,8 +179,7 @@ var mindAtticLogger = new LoggerConfiguration()
     .WriteToMindAtticLog(new MindAtticLogOptions
     {
         Application = "Prose.Hub",
-        Destination = LogDestination.SqlServer,
-        SqlServerConnectionString = mindAtticLogConnectionString,
+        DbPath = mindAtticLogDbPath,
     })
     .CreateLogger();
 builder.Logging.AddSerilog(mindAtticLogger, dispose: true);
@@ -314,17 +314,12 @@ await using (var migrationScope = app.Services.CreateAsyncScope())
         Console.WriteLine("[hub] Migrations applied.");
     }
 
-    // MindAttic.Log's table is NOT an EF migration (LOG-LAW-1: the sink never auto-creates it,
-    // and it isn't part of ProseDbContext's own model) — created here instead, idempotently
-    // (CREATE TABLE IF NOT EXISTS), reusing this same migrated connection so there is no chance
-    // of it drifting from the database Prose itself just migrated.
-    await using (var connection = new Microsoft.Data.SqlClient.SqlConnection(migrationDb.Database.GetConnectionString()))
-    {
-        await connection.OpenAsync();
-        await using var command = connection.CreateCommand();
-        command.CommandText = MindAttic.Log.Schema.LogSchema.CreateTableSqlServer;
-        await command.ExecuteNonQueryAsync();
-    }
+    // Phase 2 (MindAttic.Log 3.0.0): one-time copy of Phase 1's dbo.MindAttic_Log rows — reusing
+    // this same migrated connection so there is no chance of drifting from the database Prose
+    // itself just migrated — into the new standalone database, then drop that table. Idempotent
+    // and a clean no-op on every later startup.
+    await MindAttic.Log.Migration.MindAtticLogMigrator.MigrateFromSqlServerAsync(
+        migrationDb.Database.GetConnectionString()!, mindAtticLogDbPath, dropSource: true);
 }
 
 // Subscribes ONCE to every Phase-3 event and forwards to ObservabilityHub - see
