@@ -1,6 +1,8 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using MindAttic.Log;
+using MindAttic.Log.Extensions;
 using Serilog;
 using Serilog.Events;
 using Prose.Core.Extensions;
@@ -53,6 +55,12 @@ Log.Logger = new LoggerConfiguration()
         rollingInterval: RollingInterval.Day,
         retainedFileCountLimit: 14,
         shared: true)
+    .WriteToMindAtticLog(new MindAtticLogOptions
+    {
+        Application = "Prose.Mcp",
+        DbPath = MindAttic.Vault.Paths.VaultPaths.LoggingDbPath("Prose.Mcp"),
+        RetainedDays = 7,
+    })
     .CreateLogger();
 
 // Multi-universe: honor a `--universe <slug>` arg (and the PROSE_UNIVERSE env var)
