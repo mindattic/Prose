@@ -180,6 +180,8 @@ var mindAtticLogger = new LoggerConfiguration()
     {
         Application = "Prose.Hub",
         DbPath = mindAtticLogDbPath,
+        // The 365-day default grew this file to 183 MB in 6 days (~30 MB/day at Information).
+        RetainedDays = 7,
     })
     .CreateLogger();
 builder.Logging.AddSerilog(mindAtticLogger, dispose: true);
