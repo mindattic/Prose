@@ -30,6 +30,7 @@
 $ErrorActionPreference = 'Stop'
 
 $TaskName    = 'ProseAutoCorrectNightly'
+$TaskPath    = '\MindAttic\Prose\'
 $TriggerTime = '03:00'
 $RepoRoot    = 'D:\Projects\MindAttic\Prose'
 $CliProject  = Join-Path $RepoRoot 'src\Prose.Cli'
@@ -72,18 +73,26 @@ $settings = New-ScheduledTaskSettingsSet `
     -ExecutionTimeLimit (New-TimeSpan -Hours 4) `
     -RestartCount 1 -RestartInterval (New-TimeSpan -Minutes 15)
 
-$existing = Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue
+$existing = Get-ScheduledTask -TaskName $TaskName -TaskPath $TaskPath -ErrorAction SilentlyContinue
 if ($existing) {
-    Write-Host "[register-autocorrect-task] Task '$TaskName' already exists - updating trigger/action in place."
-    Set-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger -Settings $settings | Out-Null
+    Write-Host "[register-autocorrect-task] Task '$TaskPath$TaskName' already exists - updating trigger/action in place."
+    Set-ScheduledTask -TaskName $TaskName -TaskPath $TaskPath -Action $action -Trigger $trigger -Settings $settings | Out-Null
 }
 else {
-    Write-Host "[register-autocorrect-task] Registering new task '$TaskName' at $TriggerTime local (Central) daily."
-    Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger -Settings $settings `
+    Write-Host "[register-autocorrect-task] Registering new task '$TaskPath$TaskName' at $TriggerTime local (Central) daily."
+    Register-ScheduledTask -TaskName $TaskName -TaskPath $TaskPath -Action $action -Trigger $trigger -Settings $settings `
         -Description 'Nightly AutoCorrect pass for Prose: pure-ML/deterministic detection + a whitelisted set of auto-fixes (duplicate entity merge, dangling-edge cleanup, cross-book continuity majority resolution). Zero LLM calls. Undo via prose --auto-correct-undo. See src/Prose.Core/Services/AutoCorrectOrchestratorService.cs.' `
         | Out-Null
 }
 
-Write-Host "[register-autocorrect-task] Done. Verify with: Get-ScheduledTask -TaskName $TaskName | Get-ScheduledTaskInfo"
+# A stale copy at the old root-level path (pre-dating the \MindAttic\<Project>\ folder
+# convention, see MindAttic.HouseRules.md#HOUSE-LAW-11) would otherwise run alongside this one.
+$stale = Get-ScheduledTask -TaskName $TaskName -TaskPath '\' -ErrorAction SilentlyContinue
+if ($stale) {
+    Unregister-ScheduledTask -TaskName $TaskName -TaskPath '\' -Confirm:$false
+    Write-Host "[register-autocorrect-task] Removed stale root-level copy of '$TaskName'."
+}
+
+Write-Host "[register-autocorrect-task] Done. Verify with: Get-ScheduledTask -TaskName $TaskName -TaskPath '$TaskPath' | Get-ScheduledTaskInfo"
 Write-Host "[register-autocorrect-task] Logs land in: $LogDir"
-Write-Host "[register-autocorrect-task] To run once manually right now: Start-ScheduledTask -TaskName $TaskName"
+Write-Host "[register-autocorrect-task] To run once manually right now: Start-ScheduledTask -TaskName $TaskName -TaskPath '$TaskPath'"

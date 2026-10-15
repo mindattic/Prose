@@ -30,7 +30,7 @@
 
   ROLLBACK — one line per task, also elevated:
     $t = Get-ScheduledTask -TaskName 'MindAttic.Automata.Tick'
-    Set-ScheduledTask -TaskName 'MindAttic.Automata.Tick' -Principal (
+    Set-ScheduledTask -TaskName 'MindAttic.Automata.Tick' -TaskPath $t.TaskPath -Principal (
       New-ScheduledTaskPrincipal -UserId $t.Principal.UserId -LogonType Interactive -RunLevel Limited)
 #>
 [CmdletBinding(SupportsShouldProcess)]
@@ -76,6 +76,12 @@ foreach ($name in $Tasks) {
         continue
     }
 
+    # Get-ScheduledTask -TaskName matches by leaf name across every folder, but
+    # Set-ScheduledTask / Start-ScheduledTask / Get-ScheduledTaskInfo do NOT — they
+    # default to the root (\) and fail with "the system cannot find the file
+    # specified" for a task that lives under \MindAttic\<Project>\ (see
+    # MindAttic.HouseRules.md#HOUSE-LAW-11). Carry the real TaskPath explicitly.
+    $taskPath = $task.TaskPath
     $before = $task.Principal.LogonType
 
     if ($before -eq 'S4U' -and -not $WrapInConhost) {
@@ -100,7 +106,7 @@ foreach ($name in $Tasks) {
                 $actions += New-ScheduledTaskAction -Execute 'conhost.exe' `
                     -Argument ('--headless ' + $inner) -WorkingDirectory $a.WorkingDirectory
             }
-            Set-ScheduledTask -TaskName $name -Action $actions | Out-Null
+            Set-ScheduledTask -TaskName $name -TaskPath $taskPath -Action $actions | Out-Null
             $after = 'Interactive+conhost'
         }
         else {
@@ -108,8 +114,8 @@ foreach ($name in $Tasks) {
                 -UserId $task.Principal.UserId `
                 -LogonType S4U `
                 -RunLevel $task.Principal.RunLevel
-            Set-ScheduledTask -TaskName $name -Principal $principal | Out-Null
-            $after = (Get-ScheduledTask -TaskName $name).Principal.LogonType
+            Set-ScheduledTask -TaskName $name -TaskPath $taskPath -Principal $principal | Out-Null
+            $after = (Get-ScheduledTask -TaskName $name -TaskPath $taskPath).Principal.LogonType
         }
     }
     catch {
@@ -121,12 +127,12 @@ foreach ($name in $Tasks) {
     # and the whole risk of S4U is a credential change that only shows up at run time.
     $verify = 'not run'
     try {
-        Start-ScheduledTask -TaskName $name
+        Start-ScheduledTask -TaskName $name -TaskPath $taskPath
         $deadline = (Get-Date).AddSeconds(90)
         do {
             Start-Sleep -Seconds 2
-            $info = Get-ScheduledTaskInfo -TaskName $name
-            $state = (Get-ScheduledTask -TaskName $name).State
+            $info = Get-ScheduledTaskInfo -TaskName $name -TaskPath $taskPath
+            $state = (Get-ScheduledTask -TaskName $name -TaskPath $taskPath).State
         } while ($state -eq 'Running' -and (Get-Date) -lt $deadline)
 
         $verify = if ($state -eq 'Running') { 'still running after 90s' }
