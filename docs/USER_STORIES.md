@@ -397,15 +397,7 @@ updated: 2026-10-03
 
 - **SS-US-L3 ✅** As an author, a `kind=series` node can be exported as a single ordered docx that stitches all its `kind=collection` and `kind=chapter` children in reading order. *(verified by `NodeWorkbenchService.GetOrderedBeatsAsync` recursive tree walk; `DocxExportService.ExportNodeAsync` exports any node id; `prose --export-node --slug <series-slug>` stitches all children.)*
 
-- **SS-US-L4 ✅** As an author, the `WorldTickService` can be enabled and produces at least one
-  `EntityStateEvent` per tick per active character without manual intervention (SS-US-F9: Living
-  world tick). *Acceptance: enabling `WorldTickService` in settings causes it to fire on schedule;
-  at least one event per active character per tick appears in `EntityStateEvents`; events are
-  universe-scoped. (verified by `WorldTickService.OnTickAsync` reading `SettingsService.WorldTickEnabled`;
-  when enabled, queries active characters in current universe (capped 100), writes one
-  `EntityStateEvent` per character via `WorldStateLedger.RecordManyAsync` with
-  `AspectKey="world-tick"`, `Verb="set"`, `NewValue="idle"`; `WorldTickService.Enabled` proxies
-  to `SettingsService.WorldTickEnabled`.)*
+- **SS-US-L4 ✅** RETIRED 2026-10-15. `WorldTickService` (living-world tick writing a filler "idle" `EntityStateEvent` per active character per tick) was an unused tool: off by default and never enabled (`WorldTickEnabled` false in the live Settings.json); no decay rules, scheduled events or NPC routines were ever built on it. Deleted with its hosted-service registration and setting (SS-T81). Story time is held by `WorldClockService`.
 
 - **SS-US-L5 ✅** As the engine, `Species` is a first-class lookup entity listed by
   `prose --list-species` (SS-US-Fs2). *(verified by `ListSpeciesCli.cs` wired as `--list-species` in
@@ -582,6 +574,6 @@ updated: 2026-10-03
 | SS-T76 | 2026-10-15 | chore | open | Universe anthology: list its books (prose --universe anthology), then open one ticket per book with the same contributions-campaign scope as the GLMZ book tickets (pronoun tags, contribution lines, F3 Descriptions, F5 read, F1 entity verify, F7 export), and close this ticket | SS-T3 |
 | SS-T77 | 2026-10-15 | chore | open | Final honest re-read sweep: every finished book whose beats were un-read by later record edits (BCODA, CYB1, ICFI, SPRW, BTL, VATD, DWIACE, MNEMO, TWD, TWU and any others the factory shows) gets an F5 re-read, F1 recommit, then F7 export at a new version; done when prose --factory status is all green for every pressed book | SS-T3, SS-T14 |
 | SS-T78 | 2026-10-15 | chore | open | Delete the retired LLM contradiction sweep: CanonContradictionService, its ChapterCloseProcessorService step and AutoRunCli wiring (only reachable via deactivated --auto-run; 81 filed, 0 applied; LLM judge forbidden by the factory). Keep any parsing helper another live service still calls; build + full test suite green | SS-US-D3 |
-| SS-T79 | 2026-10-15 | fix | open | WorldLoreTests: 11 cases silently skip via Assume because they read canon files (story_bible.json, tone bible, vocabulary/technology dirs, Pulse doc) that moved into the DB; rewrite each against the Hub-backed canon or delete it, so no test passes by skipping | SS-US-D5 |
+| SS-T79 | 2026-10-15 | fix | closed | WorldLoreTests: 11 cases silently skip via Assume because they read canon files (story_bible.json, tone bible, vocabulary/technology dirs, Pulse doc) that moved into the DB; rewrite each against the Hub-backed canon or delete it, so no test passes by skipping | SS-US-D5 e8b9beac8 |
 | SS-T80 | 2026-10-15 | chore | open | Delete the retired per-save LLM tails and their findings producers: the commented-out SemanticFidelity drift / blast-radius / continuity re-extraction / obligation blocks in NodeWorkbenchService.UpdateBeatTextAsync, the VOICE-HARVEST raise in NodeReviewService, and EstimateCostCli's check-fidelity line. Keep anything a live path still calls (SemanticFidelityService embedding refresh used by --reembed, ContinuityCli). Build + full suite green | SS-US-E2, SS-US-I3, SS-US-I6 |
 | SS-T81 | 2026-10-15 | chore | open | WorldTickService (SS-US-L4) is an unused tool: off by default (WorldTickEnabled=false), and when on it only writes filler 'idle' EntityStateEvents for up to 100 characters. Check the setting has never been on (grep EntityStateEvents for AspectKey='world-tick' via the Hub); if no rows, delete the service, its hosted-service registration and the setting, and mark SS-US-L4 retired; build + full suite green | SS-US-L4 |

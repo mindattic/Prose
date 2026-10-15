@@ -695,9 +695,6 @@ public class SettingsService : IDisposable
     public bool AutoCanonGrounding { get => data.AutoCanonGrounding; set { data.AutoCanonGrounding = value; ScheduleSave(); } }
     /// <summary>When true, SceneContextAssembler.HarvestRevealedDetailsAsync fires post-write to propose XRAY-REVEAL findings. Off by default.</summary>
     public bool AutoHarvestRevealedDetails { get => data.AutoHarvestRevealedDetails; set { data.AutoHarvestRevealedDetails = value; ScheduleSave(); } }
-    /// <summary>When true, WorldTickService advances the story clock and writes EntityStateEvents per active character on each tick.
-    /// Off by default — enable deliberately once the rule layer is ready.</summary>
-    public bool WorldTickEnabled { get => data.WorldTickEnabled; set { data.WorldTickEnabled = value; ScheduleSave(); } }
     // AutoGenerateCoverOnExport removed 2026-09-13 with the cover-generation pipeline it gated.
     // Cover art is a manual step; there is no longer anything for a flag to switch on.
 
@@ -1205,8 +1202,6 @@ public class SettingsService : IDisposable
         public string LocalEmbeddingModel   { get; set; } = "";
         /// <summary>When false, ContinuousQualityService does not fire on beat save. Reviews must be called manually.</summary>
         public bool ReviewAutoRunEnabled { get; set; } = true;
-        /// <summary>When true, WorldTickService is active — advances story clock + writes EntityStateEvents per tick.</summary>
-        public bool WorldTickEnabled { get; set; } = false;
         /// <summary>When true, CanonGroundingService fires after each beat write to flag PROVISIONAL-ENTITY findings. Default OFF — opt in to avoid extra LLM cost per beat.</summary>
         public bool AutoCanonGrounding { get; set; } = false;
         /// <summary>When true, SceneContextAssembler.HarvestRevealedDetailsAsync fires after each beat write to propose XRAY-REVEAL findings. Default OFF.</summary>

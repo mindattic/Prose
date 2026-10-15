@@ -59,8 +59,6 @@ public static class ServiceCollectionExtensions
         // contradiction re-scan: unattended, unmetered LLM spend, zero applied findings
         // in 30,745 rows. The service class is intact — uncomment to restore.
         // services.AddHostedService(sp => sp.GetRequiredService<ContinuityLongSweepService>());
-        // Living-world story-time tick (ships disabled-by-default).
-        services.AddHostedService(sp => sp.GetRequiredService<WorldTickService>());
         // DEACTIVATED 2026-09-22 (RFC 0014, author ruling). Once-a-day corpus-wide
         // sanity-scan: free of API cost, but it manufactured 5,211 findings nobody
         // ever applied. The service class is intact — uncomment to restore.
@@ -363,12 +361,6 @@ public static class ServiceCollectionExtensions
 
         // Global story-time cursor (Settings('story_now') as datetime2(7)).
         services.AddSingleton<WorldClockService>();
-
-        // Living-world tick — advances story-time on a real-time interval.
-        // Foundation for decay rules / scheduled events / NPC routines. Ships
-        // disabled-by-default (see WorldTickService.Enabled) so infrastructure
-        // can land before the rule layer.
-        services.AddSingleton<WorldTickService>();
 
         // Cross-book "character at two places at once" detector.
         services.AddSingleton<LocationContradictionService>();
