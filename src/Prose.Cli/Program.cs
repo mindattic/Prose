@@ -994,6 +994,15 @@ if (args.Contains("--backfill-stubs"))
     return;
 }
 
+// CLI mode: explicit, by-id correction of Entities.Status — the one lifecycle column neither
+// --set-entity-fields nor --backfill-stubs can reach (see SetEntityStatusCli's doc comment).
+//   prose --set-entity-status --id <entity guid> --status canon|archived|stub
+if (args.Contains("--set-entity-status"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SetEntityStatusCli", args);
+    return;
+}
+
 // CLI mode: dump canon JSON to the user's Downloads folder.
 //   prose --export global                every repo, zipped + timestamped
 //   prose --export <repoName>            one repo, zipped (e.g. "people", "weaponry")
