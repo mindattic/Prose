@@ -653,6 +653,41 @@ public class CaptureRetagTests : WorldFixture
         Assert.That(BeatMarkup.CountTagsByEntity(text).GetValueOrDefault(opId), Is.EqualTo(0), "the scan no longer derives a numeral, so the tag stays off");
         Assert.That(BeatMarkup.StripEntityTags(text), Is.EqualTo("Five shells meant five chances."));
     }
+
+    [Test]
+    public async Task A_suppressed_occurrence_of_a_characters_own_name_stays_untagged_while_another_occurrence_still_tags()
+    {
+        // PRS-T16: the save path re-derives every tag from a name scan on every save, so there was
+        // no way to mark ONE occurrence of an otherwise-correct name as not this entity without a
+        // global stopword — which would also block every OTHER, genuinely correct, occurrence of
+        // the same name (sentence-initial "Can" auto-tagged to "Can Zaragoza" in four live beats;
+        // widening the stopword further would stop "Can Zaragoza" from ever tagging again too).
+        var echo = NewCharacter("Echo", "A courier.");
+        var id = Guid.Parse(echo.Id);
+        var (book, _) = await BookAsync("placeholder.");
+        var beat = (await BeatIdsAsync(book))[0];
+        const string NoneMark = "<entity repo=\"none\" guid=\"00000000-0000-0000-0000-000000000000\">";
+
+        await workbench.UpdateBeatTextAsync(beat,
+            $"Echo climbed the stairs. The other courier, also called {NoneMark}Echo</entity>, waved back.", BeatWriteReason.AuthorEdit);
+
+        async Task<string> TextAsync()
+        {
+            await using var db = await dbFactory.CreateDbContextAsync();
+            return await db.Beats.Where(b => b.Id == beat).Select(b => b.Text!).SingleAsync();
+        }
+
+        var text = await TextAsync();
+        Assert.That(BeatMarkup.CountTagsByEntity(text).GetValueOrDefault(id), Is.EqualTo(1), "only the unsuppressed occurrence tags the character");
+        Assert.That(text, Does.Contain(NoneMark + "Echo</entity>, waved back."), "the suppressed occurrence keeps its mark, not a character tag");
+        Assert.That(BeatMarkup.StripEntityTags(text), Is.EqualTo("Echo climbed the stairs. The other courier, also called Echo, waved back."));
+
+        // Resave with an unrelated edit — the suppression must survive, not just the first save.
+        await workbench.UpdateBeatTextAsync(beat, (await TextAsync()).Replace("waved back", "nodded"), BeatWriteReason.AuthorEdit);
+        var again = await TextAsync();
+        Assert.That(BeatMarkup.CountTagsByEntity(again).GetValueOrDefault(id), Is.EqualTo(1));
+        Assert.That(again, Does.Contain(NoneMark + "Echo</entity>, nodded."));
+    }
 }
 
 [TestFixture]

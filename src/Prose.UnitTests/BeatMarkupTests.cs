@@ -63,4 +63,52 @@ public class BeatMarkupTests
     {
         Assert.That(BeatMarkup.ExtractEntityGuids("plain prose, no tags").ToList(), Is.Empty);
     }
+
+    // ── Per-occurrence suppression (PRS-T16) ─────────────────────────────────────────────────
+
+    [Test]
+    public void ExtractSuppressedMentions_NoneMarkOnOrdinaryName_ReturnsItsStrippedPosition()
+    {
+        var text = """Zaragoza left. <entity repo="none" guid="00000000-0000-0000-0000-000000000000">Can</entity> you believe it?""";
+
+        var found = BeatMarkup.ExtractSuppressedMentions(text);
+
+        Assert.That(found, Has.Count.EqualTo(1));
+        var stripped = BeatMarkup.StripEntityTags(text);
+        Assert.That(stripped.Substring(found[0].PlainStart, found[0].Length), Is.EqualTo("Can"));
+        Assert.That(found[0].Text, Is.EqualTo("Can"));
+    }
+
+    [Test]
+    public void ExtractSuppressedMentions_PronounMark_IsLeftToExtractPronounTags()
+    {
+        var text = """<entity repo="none" guid="00000000-0000-0000-0000-000000000000">it</entity> rained.""";
+
+        Assert.That(BeatMarkup.ExtractSuppressedMentions(text), Is.Empty, "a pronoun mark is ExtractPronounTags' job, not this one's");
+    }
+
+    [Test]
+    public void ExtractSuppressedMentions_RealEntityTag_IsNotASuppression()
+    {
+        var id = Guid.NewGuid();
+        var text = $"""<entity repo="character" guid="{id}">Can Zaragoza</entity> left the room.""";
+
+        Assert.That(BeatMarkup.ExtractSuppressedMentions(text), Is.Empty);
+    }
+
+    [Test]
+    public void Validate_NoneMarkOnOrdinaryName_IsWellFormed()
+    {
+        var text = """<entity repo="none" guid="00000000-0000-0000-0000-000000000000">Can</entity> you tell?""";
+
+        Assert.That(BeatMarkup.Validate(text), Is.Empty);
+    }
+
+    [Test]
+    public void Validate_EmptyGuidWithoutNoneRepo_IsReported()
+    {
+        var text = """<entity repo="character" guid="00000000-0000-0000-0000-000000000000">Can</entity> you tell?""";
+
+        Assert.That(BeatMarkup.Validate(text), Is.Not.Empty);
+    }
 }

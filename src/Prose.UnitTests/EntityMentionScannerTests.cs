@@ -325,4 +325,47 @@ public class EntityMentionScannerFindUnresolvedProperNounsTests
 
         Assert.That(result, Is.Empty);
     }
+
+    // ── Per-occurrence suppression (PRS-T16) ─────────────────────────────────────────────────
+
+    [Test]
+    public void MergeSuppressedMentions_OverridesAnOverlappingNameMatch()
+    {
+        var zaragoza = Guid.NewGuid();
+        var nameMatches = new List<EntityMentionScanner.MentionMatch> { new(0, 3, zaragoza, "Can Zaragoza", "character") };
+        var suppressed = new List<BeatMarkup.SuppressedMention> { new(0, 3, "Can") };
+
+        var merged = EntityMentionScanner.MergeSuppressedMentions(nameMatches, suppressed);
+
+        Assert.That(merged, Has.Count.EqualTo(1));
+        Assert.That(merged[0].EntityId, Is.EqualTo(Guid.Empty), "the suppression wins over the name match it overlaps");
+        Assert.That(merged[0].EntityType, Is.EqualTo(BeatMarkup.NotACharacterRepo));
+    }
+
+    [Test]
+    public void MergeSuppressedMentions_LeavesANonOverlappingNameMatchAlone()
+    {
+        var zaragoza = Guid.NewGuid();
+        // "Can" suppressed at 0..3; a genuine "Can Zaragoza" mention elsewhere in the same beat,
+        // at a different position, must still tag normally (true per-occurrence granularity).
+        var nameMatches = new List<EntityMentionScanner.MentionMatch> { new(20, 12, zaragoza, "Can Zaragoza", "character") };
+        var suppressed = new List<BeatMarkup.SuppressedMention> { new(0, 3, "Can") };
+
+        var merged = EntityMentionScanner.MergeSuppressedMentions(nameMatches, suppressed);
+
+        Assert.That(merged, Has.Count.EqualTo(2));
+        Assert.That(merged.Any(m => m.EntityId == zaragoza && m.Start == 20), Is.True);
+        Assert.That(merged.Any(m => m.EntityId == Guid.Empty && m.Start == 0), Is.True);
+    }
+
+    [Test]
+    public void MergeSuppressedMentions_NoSuppressions_ReturnsMatchesUnchanged()
+    {
+        var id = Guid.NewGuid();
+        var nameMatches = new List<EntityMentionScanner.MentionMatch> { new(0, 3, id, "Foo", "character") };
+
+        var merged = EntityMentionScanner.MergeSuppressedMentions(nameMatches, []);
+
+        Assert.That(merged, Is.EqualTo(nameMatches));
+    }
 }

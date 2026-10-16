@@ -95,7 +95,10 @@ public static class BeatMarkup
 
     /// <summary>The <c>repo</c> of the "not a character" mark:
     /// <c>&lt;entity repo="none" guid="00000000-0000-0000-0000-000000000000"&gt;it&lt;/entity&gt;</c>.
-    /// It says a pronoun was read and refers to no entity (a crowd, a machine, the weather).</summary>
+    /// On a pronoun it says the pronoun was read and refers to no entity (a crowd, a machine, the
+    /// weather). On ordinary name text (PRS-T16, author 2026-10-16) it is a per-occurrence
+    /// suppression — see <see cref="SuppressedMention"/> — for the one span it wraps, leaving
+    /// every other occurrence of the same surface text free to tag normally.</summary>
     public const string NotACharacterRepo = "none";
 
     /// <summary>Every pronoun form that must carry a tag: first, second and third person, plus it
@@ -160,6 +163,41 @@ public static class BeatMarkup
             var repo = RepoAttrPattern.Match(attrs) is { Success: true } r ? r.Groups[1].Value : "";
             if (GuidAttrPattern.Match(attrs) is not { Success: true } g || !Guid.TryParse(g.Groups[1].Value, out var id)) continue;
             tags.Add(new PronounTag(plainStart, inner.Length, id, repo, inner.Value));
+        }
+        return tags;
+    }
+
+    /// <summary>One per-occurrence suppression: a specific span of ordinary name text a human
+    /// marked as not an entity AT THIS LOCATION — <c>&lt;entity repo="none" guid="00000000-0000-
+    /// 0000-0000-000000000000"&gt;Can&lt;/entity&gt;</c> wrapped around one bare "Can" that a
+    /// stopword can't reach without also silencing every OTHER occurrence of the same text (PRS-
+    /// T16: sentence-initial "Can" auto-tagged to the character "Can Zaragoza" in four beats — a
+    /// global stopword would also stop a genuine "Can Zaragoza" mention from ever tagging again).
+    /// Positional, like <see cref="PronounTag"/>: the save path keeps it exactly where it was
+    /// written instead of letting the scanner re-claim that span, so the mark survives forever,
+    /// not just until the next unrelated edit re-derives tags from scratch.</summary>
+    public sealed record SuppressedMention(int PlainStart, int Length, string Text);
+
+    /// <summary>Every per-occurrence suppression mark in <paramref name="text"/> — a "not a
+    /// character" mark (<see cref="NotACharacterRepo"/>, empty guid) whose inner text is NOT a
+    /// pronoun (those are <see cref="ExtractPronounTags"/>'s job) — with its position in the text
+    /// <see cref="StripEntityTags"/> produces.</summary>
+    public static List<SuppressedMention> ExtractSuppressedMentions(string? text)
+    {
+        var tags = new List<SuppressedMention>();
+        if (string.IsNullOrEmpty(text)) return tags;
+        var removed = 0;
+        foreach (Match m in EntityTagFullPattern.Matches(text))
+        {
+            var inner = m.Groups[2];
+            var plainStart = m.Index - removed;
+            removed += m.Length - inner.Length;
+            if (IsPronoun(inner.Value)) continue; // pronoun marks are ExtractPronounTags's job
+            var attrs = m.Groups[1].Value;
+            if (RepoAttrPattern.Match(attrs) is not { Success: true } r || r.Groups[1].Value != NotACharacterRepo) continue;
+            if (GuidAttrPattern.Match(attrs) is not { Success: true } g || !Guid.TryParse(g.Groups[1].Value, out var id) || id != Guid.Empty) continue;
+            if (inner.Length == 0) continue;
+            tags.Add(new SuppressedMention(plainStart, inner.Length, inner.Value));
         }
         return tags;
     }
@@ -326,9 +364,9 @@ public static class BeatMarkup
             else if (!Guid.TryParse(guid.Groups[1].Value, out var parsed))
                 problems.Add(new MarkupProblem(m.Index, $"\"{guid.Groups[1].Value}\" is not a valid entity guid."));
             else if (parsed == Guid.Empty && !(RepoAttrPattern.Match(m.Value) is { Success: true } r
-                                               && r.Groups[1].Value == NotACharacterRepo && IsPronoun(m.Groups[1].Value)))
+                                               && r.Groups[1].Value == NotACharacterRepo))
                 problems.Add(new MarkupProblem(m.Index,
-                    $"The empty guid is only the \"not a character\" mark: repo=\"{NotACharacterRepo}\" on a pronoun."));
+                    $"The empty guid is only valid with repo=\"{NotACharacterRepo}\" — the \"not a character\"/per-occurrence-suppression mark."));
 
             var inner = m.Groups[1].Value;
             if (string.IsNullOrWhiteSpace(inner))

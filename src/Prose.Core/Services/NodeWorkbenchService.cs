@@ -422,6 +422,10 @@ public class NodeWorkbenchService
         // Pronoun tags (WO:01a13278) are positional, not re-derivable from a name scan: lift them
         // here, validate them, and put them back exactly where the writer placed them.
         var pronounTags = BeatMarkup.ExtractPronounTags(sanitizedTagged);
+        // Per-occurrence suppressions (PRS-T16) are positional, exactly like pronoun tags: lift
+        // them before stripping, so the mark survives even though the surface text it wraps would
+        // otherwise be free to re-tag.
+        var suppressedMentions = BeatMarkup.ExtractSuppressedMentions(sanitizedTagged);
         var plainText = BeatMarkup.StripEntityTags(sanitizedTagged);
         var candidates = universeId != Guid.Empty
             ? await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, bookNodeId, ct)
@@ -430,6 +434,8 @@ public class NodeWorkbenchService
             candidates = EntityMentionScanner.WithPinnedMentions(
                 candidates, pinnedMentions, await LoadLiveEntitiesAsync(db, universeId, pinnedMentions, ct));
         var mentionMatches = EntityMentionScanner.Scan(plainText, candidates);
+        if (suppressedMentions.Count > 0)
+            mentionMatches = EntityMentionScanner.MergeSuppressedMentions(mentionMatches, suppressedMentions);
         if (pronounTags.Count > 0)
             mentionMatches = EntityMentionScanner.MergePronounTags(mentionMatches, pronounTags,
                 await ResolvePronounTagsAsync(db, universeId, pronounTags, ct));

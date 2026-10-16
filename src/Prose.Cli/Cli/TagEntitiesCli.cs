@@ -197,6 +197,12 @@ public static class TagEntitiesCli
             if (liveEntities.Count > 0 && pinnedByBeat.TryGetValue(beatId, out var pinned))
                 beatCandidates = EntityMentionScanner.WithPinnedMentions([.. candidates], pinned, liveEntities);
             var matches = EntityMentionScanner.Scan(plainText, beatCandidates);
+            // Per-occurrence suppressions (PRS-T16) are positional, exactly like pronoun tags
+            // below: a mark the writer placed around ordinary name text wins over anything this
+            // scan just claimed at the same span, and is written back unchanged.
+            var suppressedMentions = BeatMarkup.ExtractSuppressedMentions(beat.Text);
+            if (suppressedMentions.Count > 0)
+                matches = EntityMentionScanner.MergeSuppressedMentions(matches, suppressedMentions);
             // Pronoun tags are positional (WO:01a13278): keep them where they were written. A beat
             // whose pronoun tags no longer validate is left exactly as it is, and reported.
             var pronounTags = BeatMarkup.ExtractPronounTags(beat.Text);

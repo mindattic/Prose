@@ -727,6 +727,25 @@ public static class EntityMentionScanner
         return kept.Concat(fixedMatches).OrderBy(m => m.Start).ToList();
     }
 
+    /// <summary>The name matches plus any per-occurrence suppressions the writer placed
+    /// (<see cref="BeatMarkup.SuppressedMention"/>, PRS-T16), as one list for <see cref="ApplyTags"/>.
+    /// Exactly like <see cref="MergePronounTags"/>'s "not a character" handling, generalized to
+    /// ordinary name text: a suppression at a position wins over any name match claiming that same
+    /// span, and is written back as the same mark so it survives every future save undisturbed —
+    /// unlike a <see cref="Stopwords"/> entry, it silences only the one occurrence it wraps, not
+    /// every occurrence of that text corpus-wide.</summary>
+    public static List<MentionMatch> MergeSuppressedMentions(
+        IReadOnlyList<MentionMatch> nameMatches,
+        IReadOnlyList<BeatMarkup.SuppressedMention> suppressed)
+    {
+        if (suppressed.Count == 0) return [.. nameMatches];
+        var fixedMatches = suppressed
+            .Select(s => new MentionMatch(s.PlainStart, s.Length, Guid.Empty, BeatMarkup.NotACharacterRepo, BeatMarkup.NotACharacterRepo))
+            .ToList();
+        var kept = nameMatches.Where(n => !fixedMatches.Any(f => n.Start < f.Start + f.Length && f.Start < n.Start + n.Length));
+        return kept.Concat(fixedMatches).OrderBy(m => m.Start).ToList();
+    }
+
     /// <summary>Wraps each accepted match in
     /// <c>&lt;entity repo="..." guid="..."&gt;matchedText&lt;/entity&gt;</c>, working right-to-left
     /// so earlier offsets stay valid as the string grows. <c>repo</c> carries the entity's
