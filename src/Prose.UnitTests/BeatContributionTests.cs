@@ -176,6 +176,33 @@ public class BeatContributionTests : WorldFixture
     }
 
     [Test]
+    public async Task A_place_with_a_stray_character_row_does_not_demand_a_contribution_line()
+    {
+        // PRS-T15: Velvet Tine is an Entity.EntityType=="place" that also picked up a stray row in
+        // the Characters table sharing its Id. The gate must judge "is this a character" by the
+        // entity's own EntityType, not by mere presence in the Characters table — otherwise every
+        // beat that tags the place reads as missing that "character"'s contribution line.
+        var (book, _) = await BookAsync("Placeholder.");
+        var beat = (await BeatIdsAsync(book))[0];
+        var placeId = Guid.CreateVersion7();
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            var universe = await db.Nodes.IgnoreQueryFilters().Where(n => n.Id == book).Select(n => n.UniverseId).SingleAsync();
+            db.Entities.Add(new Entity { Id = placeId, UniverseId = universe, EntityType = "place", Name = "Velvet Tine", Slug = "velvet-tine" });
+            db.Places.Add(new Place { Id = placeId, Name = "Velvet Tine" });
+            db.Set<Character>().Add(new Character { Id = placeId, Name = "Velvet Tine" }); // the stray row
+            await db.SaveChangesAsync();
+        }
+
+        await workbench.UpdateBeatTextAsync(beat,
+            $"The crew gathered at <entity repo=\"place\" guid=\"{placeId}\">Velvet Tine</entity>.", BeatWriteReason.AuthorEdit);
+
+        var check = await contributions.CheckAsync(beat);
+        Assert.That(check.Missing, Does.Not.Contain(placeId));
+        Assert.That(check.Ok, Is.True);
+    }
+
+    [Test]
     public void Untagged_pronouns_count_contractions_and_skip_words_that_only_contain_them()
     {
         var found = BeatMarkup.UntaggedPronouns("He's there. Theirs is the hive; mother and themes. I said it.");

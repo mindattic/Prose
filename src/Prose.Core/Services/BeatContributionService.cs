@@ -185,13 +185,18 @@ public class BeatContributionService(IDbContextFactory<ProseDbContext> dbFactory
         return found;
     }
 
-    /// <summary>The characters a beat tags, by name or pronoun: tagged guids that are character records.</summary>
+    /// <summary>The characters a beat tags, by name or pronoun: tagged guids that are character records.
+    /// Confirmed against <see cref="Entity.EntityType"/>, not just presence in the <see cref="Character"/>
+    /// table — a stray <see cref="Character"/> row sharing a Place's Id (PRS-T15, e.g. Velvet Tine) must
+    /// not force a contribution line for every beat that tags the place.</summary>
     public static async Task<HashSet<Guid>> TaggedCharactersAsync(ProseDbContext db, string text, CancellationToken ct)
     {
         var ids = BeatMarkup.ExtractEntityGuids(text).ToList();
         if (ids.Count == 0) return [];
-        return (await db.Set<Character>().AsNoTracking().IgnoreQueryFilters()
-            .Where(c => ids.Contains(c.Id)).Select(c => c.Id).ToListAsync(ct)).ToHashSet();
+        return (await (from c in db.Set<Character>().AsNoTracking().IgnoreQueryFilters()
+                       join e in db.Set<Entity>().AsNoTracking().IgnoreQueryFilters() on c.Id equals e.Id
+                       where ids.Contains(c.Id) && e.EntityType == "character"
+                       select c.Id).ToListAsync(ct)).ToHashSet();
     }
 
     /// <summary>
