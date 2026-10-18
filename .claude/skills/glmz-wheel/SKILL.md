@@ -32,8 +32,8 @@ Universe GLMZ. Pass `--universe glmz` on every CLI call. One prose.cmd at a time
 ## One cycle
 
 Work dir: a scratch folder (never the repo). `books.txt` there lists the catalog slugs, one per line, in wheel order:
-atte blst btl bcoda cxc crit dwiace ixs icfi mxg mnemo nxr pxl rtr sprw srzr test tlc twd twu undr vatd
-(SCON is excluded: the author's dumping ground, not held to fact).
+atte blst btl bcoda cxc crit dwiace icfi mxg mnemo nxr pxl rtr sprw srzr test tlc twd twu undr vatd
+(SCON and IxS are excluded: both are DRAFT, not held to fact, author 2026-10-18).
 
 1. Open an author work order for the cycle under 01a10a85 and name it in every commit and ruling.
 2. `powershell -File tools/dump.ps1 -Work <work>` (UTF-8; it warns if a dump is garbled).
