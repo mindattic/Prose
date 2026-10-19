@@ -364,8 +364,12 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
             var taggedIds = ctx.Tags.Values.SelectMany(t => t).Distinct().ToList();
-            var characters = (await db.Set<Character>().AsNoTracking().IgnoreQueryFilters()
-                .Where(c => taggedIds.Contains(c.Id)).Select(c => c.Id).ToListAsync(ct)).ToHashSet();
+            // Same rule as BeatContributionService.TaggedCharactersAsync: a stray Character row
+            // under a non-character entity (PRS-T186) must not demand a line.
+            var characters = (await (from c in db.Set<Character>().AsNoTracking().IgnoreQueryFilters()
+                                     join e in db.Set<Entity>().AsNoTracking().IgnoreQueryFilters() on c.Id equals e.Id
+                                     where taggedIds.Contains(c.Id) && e.EntityType == "character"
+                                     select c.Id).ToListAsync(ct)).ToHashSet();
             var rows = (await db.BeatContributions.AsNoTracking().Where(c => ids.Contains(c.BeatId))
                     .Select(c => new { c.BeatId, c.EntityId, c.TextHash }).ToListAsync(ct))
                 .ToLookup(r => r.BeatId, r => (r.EntityId, r.TextHash));
