@@ -1,0 +1,984 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>GLMZ Ruling Ballot Two</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single reading column of decision cards grouped by book, a sticky tally bar, and the answer JSON at the foot. */
+:root {
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --ink: #18212e;
+  --muted: #5a6577;
+  --rule: #dde2ea;
+  --accent: #1f6f78;
+  --accent-soft: #e3f0f1;
+  --rec: #8a5a00;
+  --rec-soft: #fbf0d9;
+  --quote: #eef1f5;
+  --font-display: "Literata", Georgia, "Times New Roman", serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11161e; --surface: #18202b; --ink: #e6eaf0; --muted: #9aa5b6; --rule: #2a3442;
+    --accent: #5fb8c1; --accent-soft: #1b3236; --rec: #e3b35a; --rec-soft: #33291a; --quote: #1f2833;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11161e; --surface: #18202b; --ink: #e6eaf0; --muted: #9aa5b6; --rule: #2a3442;
+  --accent: #5fb8c1; --accent-soft: #1b3236; --rec: #e3b35a; --rec-soft: #33291a; --quote: #1f2833;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-body); font-size: 15px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 48px;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+.wrap { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+header.intro { padding-top: 32px; display: flex; flex-direction: column; gap: 10px; }
+h1 { font-family: var(--font-display); font-weight: 700; font-size: 2rem; line-height: 1.15; margin: 0; text-wrap: balance; }
+.lede { color: var(--muted); margin: 0; max-width: 64ch; }
+.bar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 10px;
+  padding: 10px 14px; display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: space-between;
+}
+.tally { font-family: var(--font-mono); font-size: 0.85rem; font-variant-numeric: tabular-nums; }
+.meter { flex: 1 1 160px; height: 6px; background: var(--rule); border-radius: 3px; overflow: hidden; min-width: 120px; }
+.meter > i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .2s; }
+.btns { display: flex; gap: 8px; flex-wrap: wrap; }
+button {
+  font: 500 0.85rem var(--font-body); color: var(--ink); background: var(--surface);
+  border: 1px solid var(--rule); border-radius: 7px; padding: 7px 12px; cursor: pointer;
+}
+button:hover { border-color: var(--accent); }
+button.primary { background: var(--accent); color: var(--surface); border-color: var(--accent); }
+button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+section.book { display: flex; flex-direction: column; gap: 14px; }
+h2 { font-family: var(--font-display); font-weight: 600; font-size: 1.35rem; margin: 0; padding-bottom: 6px; border-bottom: 1px solid var(--rule); }
+h2 small { font-family: var(--font-mono); font-weight: 400; font-size: 0.75rem; color: var(--muted); margin-left: 8px; letter-spacing: .04em; }
+.q { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.q.done { border-color: var(--accent); }
+.qhead { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.tid { font-family: var(--font-mono); font-size: 0.78rem; font-weight: 500; color: var(--accent); background: var(--accent-soft); padding: 2px 7px; border-radius: 5px; letter-spacing: .03em; }
+h3 { font-family: var(--font-display); font-weight: 600; font-size: 1.1rem; margin: 0; flex: 1 1 300px; text-wrap: balance; }
+.state { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); }
+.q.done .state { color: var(--accent); }
+.ctx { display: flex; flex-direction: column; gap: 8px; }
+.ctx p { margin: 0; max-width: 68ch; }
+.lbl { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+blockquote { margin: 0; background: var(--quote); border-radius: 6px; padding: 8px 12px; font-family: var(--font-display); font-size: 0.95rem; }
+blockquote cite { font-family: var(--font-mono); font-style: normal; font-size: 0.72rem; color: var(--muted); display: block; margin-top: 2px; }
+.prior { background: var(--rec-soft); border-radius: 6px; padding: 8px 12px; font-size: 0.9rem; }
+fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+legend { padding: 0; margin-bottom: 4px; }
+.opt { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; align-items: start; padding: 10px 12px; border: 1px solid var(--rule); border-radius: 8px; cursor: pointer; }
+.opt:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+.opt input { margin-top: 4px; accent-color: var(--accent); }
+.opt b { font-weight: 600; }
+.opt .d { grid-column: 2; color: var(--muted); font-size: 0.88rem; }
+.rec { font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: .07em; color: var(--rec); background: var(--rec-soft); border-radius: 4px; padding: 1px 6px; margin-left: 6px; white-space: nowrap; }
+.why { font-size: 0.88rem; color: var(--muted); border-left: 2px solid var(--rec); padding-left: 10px; }
+textarea, input[type=text] {
+  width: 100%; font: 0.9rem var(--font-body); color: var(--ink); background: var(--bg);
+  border: 1px solid var(--rule); border-radius: 7px; padding: 8px 10px; resize: vertical;
+}
+.opt textarea { grid-column: 2; margin-top: 6px; }
+.note label { display: block; margin-bottom: 4px; }
+.out { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; gap: 12px; }
+.out pre { margin: 0; background: var(--quote); border-radius: 7px; padding: 12px; font: 0.78rem/1.5 var(--font-mono); overflow-x: auto; max-height: 420px; }
+.toast { font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); min-height: 1.2em; }
+@media (prefers-reduced-motion: reduce) { .meter > i { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header class="intro">
+    <h1>GLMZ Ruling Ballot Two</h1>
+    <p class="lede">Round two: the two calls left from ballot 1, plus small continuity and device-law slips that today’s full reads found in Bushido Coda, Crimson &amp; Chrome, Magenta &amp; Gunmetal and four other books. Pick an option on each, or “Write my own”; every card has an “Additional text” box that goes with your choice. Copy the JSON at the bottom and paste it back into Claude Code. Your choices are saved in this browser.</p>
+  </header>
+
+  <div class="bar" role="region" aria-label="Progress">
+    <span class="tally" id="tally">0 answered</span>
+    <div class="meter" aria-hidden="true"><i id="meterFill"></i></div>
+    <div class="btns">
+      <button type="button" id="fillRec">Fill recommended where blank</button>
+      <button type="button" id="jumpOut" class="primary">Go to JSON</button>
+    </div>
+  </div>
+
+  <main id="ballot" class="wrap" style="gap:28px"></main>
+
+  <section class="out" id="out">
+    <h2 style="border:0;padding:0">Your answers</h2>
+    <p class="lede" style="margin:0">This updates as you choose. Copy it and paste it into Claude Code; it holds every choice and every note in one block.</p>
+    <div class="btns">
+      <button type="button" id="copyBtn" class="primary">Copy JSON</button>
+      <button type="button" id="clearBtn">Clear all answers</button>
+      <button type="button" id="clearConfirm" hidden>Yes, clear everything</button>
+    </div>
+    <div class="toast" id="toast" aria-live="polite"></div>
+    <pre id="json" tabindex="0"></pre>
+  </section>
+</div>
+
+<script>
+const Q = [
+ {
+  "book": "Still open from ballot 1",
+  "code": "CXC · TEST",
+  "items": [
+   {
+    "id": "T142",
+    "title": "“Ossuary of Recompense” is already a canon place",
+    "ctx": [
+     [
+      "p",
+      "You chose to rename Crimson & Chrome’s Marrow (Helix’s sealed forty-level body-bank) to “the Ossuary of Recompense”. That name already belongs to a canon place record (62917715-…)."
+     ],
+     [
+      "q",
+      "The Ossuary of Recompense began as a practical solution to an administrative impossibility: in the GLMZ, interment requires a tier classification… The community that built the Ossuary did not intend to build a monument.",
+      "The existing record: a secret community burial vault in a Gray Zone utility block, kept since 2201 by the excluded for their own dead, with a keeper’s ledger of 800+ names"
+     ],
+     [
+      "p",
+      "Helix’s building is the opposite: a corporate facility where people go ‘when Helix stopped calling them people’."
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "Keep the vault; name Helix’s building “the Reliquary”",
+      "Collision-checked: no entity uses it. Five CXC beats change (#6405 #6449 #6474 #6543 #6550) and the building gets its own record, split from the Marrow program.",
+      true
+     ],
+     [
+      "B",
+      "Make it a deliberate counterfeit",
+      "Helix’s body-bank is officially titled ‘the Ossuary of Recompense’, borrowing the vault’s name to launder itself. Both records stay; one line in CXC says so.",
+      false
+     ],
+     [
+      "C",
+      "Repurpose the existing record",
+      "The community vault stops existing; its record becomes Helix’s building.",
+      false
+     ]
+    ],
+    "why": "The vault is a finished piece of canon and A costs nothing. B is the richest if you want the two places to touch."
+   },
+   {
+    "id": "T160.1",
+    "title": "Testament: Thursday committee vs Tuesday panel",
+    "ctx": [
+     [
+      "p",
+      "A full read shows the IRB panel (where Bear testifies, ‘today’, a Tuesday) and Halcyon’s sub-license review committee are two bodies. Brandt: “The sub-license review committee convenes Thursday. Not November. The authorization suspension protocol runs forty-eight hours after the committee sits.” So Thursday may be right."
+     ],
+     [
+      "q",
+      "…a name Bear had spent five years making sure no one still living could connect to him, set down plain, and beneath that a date three days out.",
+      "#22214 — the message lands at 0217 Friday (after the Thursday overnight); three days out is Monday, but the panel is Tuesday"
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "Keep ‘Thursday’; change #22214 to ‘a date four days out’",
+      "One word; everything else already fits.",
+      true
+     ],
+     [
+      "B",
+      "Apply your original choice: committee on Tuesday",
+      "‘Thursday’ becomes ‘Tuesday’; the committee then sits the same day as the panel.",
+      false
+     ],
+     [
+      "C",
+      "Leave both as written",
+      "No change.",
+      false
+     ]
+    ],
+    "why": "The committee and the panel are different bodies; the only real slip is ‘three days’."
+   }
+  ]
+ },
+ {
+  "book": "Bushido Coda",
+  "code": "BCODA",
+  "items": [
+   {
+    "id": "B1",
+    "title": "Kyle ‘types’ his messages",
+    "ctx": [
+     [
+      "p",
+      "Six beats say Kyle typed: #20538 ‘in it he typed a line item’, #20590 ‘closed it without typing’, #20593 ‘Then he typed one word’, #20594 ‘he typed:’, #20699 ‘He typed back: Yes.’, #20784 ‘He typed a question into it.’ The device law has no keyboards, and #20529 already shows him sending sub-vocally."
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "Change to sub-vocal wording",
+      "‘entered’, ‘sent’, ‘sub-vocalized’ or ‘wrote’, as each sentence needs.",
+      true
+     ],
+     [
+      "B",
+      "Leave ‘typed’ as a figure of speech",
+      "No change.",
+      false
+     ]
+    ],
+    "why": "It contradicts the device law the book itself set up."
+   },
+   {
+    "id": "B2",
+    "title": "Kyle’s load indicator moves to his forearm",
+    "ctx": [
+     [
+      "q",
+      "The amber bar in his forearm climbed…",
+      "#20702 — elsewhere it is ‘a small red light… at the corner of his sight’ (#20626)"
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "‘The amber bar at the edge of his sight climbed…’",
+      "One phrase.",
+      true
+     ],
+     [
+      "B",
+      "Leave it",
+      "No change.",
+      false
+     ]
+    ],
+    "why": "The indicator lives in his vision everywhere else."
+   },
+   {
+    "id": "B3",
+    "title": "Cacophony’s round count at Northpoint",
+    "ctx": [
+     [
+      "p",
+      "#20733 has ‘Cacophony, topped back to five’; no rounds are fired at Northpoint, but #20744 and #20746 count four (‘All four rounds gone’)."
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "#20733: ‘Cacophony, still riding at four’",
+      "One phrase.",
+      true
+     ],
+     [
+      "B",
+      "Make #20744 and #20746 say five",
+      "Two beats.",
+      false
+     ],
+     [
+      "C",
+      "Leave it",
+      "No change.",
+      false
+     ]
+    ],
+    "why": "The later beats count by the rounds, so the earlier one should match."
+   },
+   {
+    "id": "B4",
+    "title": "The bike beacon’s time",
+    "ctx": [
+     [
+      "p",
+      "#20847: the beacon went live ‘At 01:47 that night, while he was in a freight corridor on the Ashgrave fringe’, but #20854 has him out of the corridor at 01:03."
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "‘…while he was walking the clerk toward Ferryside’",
+      "Keeps 01:47 and fixes where he was.",
+      true
+     ],
+     [
+      "B",
+      "Move the time before 01:03",
+      "Keeps the corridor.",
+      false
+     ],
+     [
+      "C",
+      "Leave it",
+      "No change.",
+      false
+     ]
+    ],
+    "why": "The smallest change that keeps the time."
+   },
+   {
+    "id": "B5",
+    "title": "Which fight locked the shoulder? (low confidence)",
+    "ctx": [
+     [
+      "p",
+      "#20832 ‘The shoulder the safehouse had locked’. The arm that went dead ‘in pins’ came from the Ferenti stairwell discharge (#20828); the safehouse only gave the left shoulder ‘a new catch’."
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "‘The shoulder the stairwell had locked’",
+      "One word.",
+      false
+     ],
+     [
+      "B",
+      "Leave it",
+      "The safehouse ‘catch’ may be what is meant.",
+      true
+     ]
+    ],
+    "why": "Ambiguous enough that the current wording may be intended."
+   },
+   {
+    "id": "B6",
+    "title": "Boost’s crew hired as if new",
+    "ctx": [
+     [
+      "p",
+      "#20750–#20757 present Boost and her crew as newly hired, but #20605 and #20623 already count ‘Boost and five kids’ in Kyle’s crew of seven."
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "Leave it: an informal crew becomes paid staff",
+      "No change.",
+      true
+     ],
+     [
+      "B",
+      "Add a clause in #20750 that they already ran with him unpaid",
+      "One clause.",
+      false
+     ]
+    ],
+    "why": "It reads as a promotion, not a contradiction."
+   }
+  ]
+ },
+ {
+  "book": "Crimson & Chrome",
+  "code": "CXC",
+  "items": [
+   {
+    "id": "C1",
+    "title": "Vox’s ‘first sound’",
+    "ctx": [
+     [
+      "q",
+      "The knock of the cup on the table was the first sound she’d made since she sat down.",
+      "#6457 — #6453 already has her boot make a sound"
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "‘…the first sound she’d made at the table’",
+      "One phrase.",
+      true
+     ],
+     [
+      "B",
+      "Leave it",
+      "No change.",
+      false
+     ]
+    ],
+    "why": "Removes the contradiction cleanly."
+   },
+   {
+    "id": "C2",
+    "title": "A statement ending in a question mark",
+    "ctx": [
+     [
+      "q",
+      "…and I’d rather it be the one already holding the count?",
+      "#6460"
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "End it with a period",
+      "One character.",
+      true
+     ],
+     [
+      "B",
+      "Leave it (deliberate rising tone)",
+      "No change.",
+      false
+     ]
+    ],
+    "why": "Reads as a typo."
+   },
+   {
+    "id": "C3",
+    "title": "The Reibo is matte, not chrome",
+    "ctx": [
+     [
+      "q",
+      "The Reibo sat in the holster, chrome that swallowed the dawn light…",
+      "#6543 — #6363 makes the gun matte, ‘cut to drink the red light’"
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "‘matte steel that swallowed the dawn light’",
+      "One phrase.",
+      true
+     ],
+     [
+      "B",
+      "Leave it",
+      "No change.",
+      false
+     ]
+    ],
+    "why": "Matches the gun’s first description."
+   },
+   {
+    "id": "C4",
+    "title": "Twenty-one names, or twenty-one rows?",
+    "ctx": [
+     [
+      "p",
+      "#6538: most of the 21 are ‘still just a face and a rack number’; #6539: ‘She wrote until the names ran out at twenty-one’."
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "‘until the rows ran out at twenty-one’",
+      "One word.",
+      true
+     ],
+     [
+      "B",
+      "Leave it",
+      "No change.",
+      false
+     ]
+    ],
+    "why": "She doesn’t have most of the names yet."
+   },
+   {
+    "id": "C5",
+    "title": "Palesa’s ‘four years in a cradle’",
+    "ctx": [
+     [
+      "p",
+      "#6502 calls Palesa ‘light four years in a cradle had made her’, but #6500 says she isn’t one of the twelve and no manifest carried her, so the four years has no source."
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "Drop ‘four years’",
+      "‘light the cradle had made her’.",
+      true
+     ],
+     [
+      "B",
+      "Leave it",
+      "No change.",
+      false
+     ]
+    ],
+    "why": "Removes an unsourced number."
+   },
+   {
+    "id": "C6",
+    "title": "Red light on a sodium-lit floor",
+    "ctx": [
+     [
+      "p",
+      "#6533 and #6517 use ‘red light’ on the working floor, which is lit sodium-warm elsewhere."
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "Make both sodium light",
+      "Two phrases.",
+      false
+     ],
+     [
+      "B",
+      "Leave it (emergency lighting)",
+      "No change.",
+      true
+     ]
+    ],
+    "why": "Red can be alarm lighting; low stakes."
+   }
+  ]
+ },
+ {
+  "book": "Magenta & Gunmetal",
+  "code": "MXG",
+  "items": [
+   {
+    "id": "M1",
+    "title": "Scout’s body is in the cargo hold, not ‘this room’",
+    "ctx": [
+     [
+      "q",
+      "…the softest target on the whole board would be the Ghost lying defenseless in this room",
+      "#7116 — #7125 and #7128 put Scout’s body in the cargo hold (‘stay with the bird. And with her Husk’)"
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "‘…lying defenseless in a cargo hold three miles out’",
+      "One phrase.",
+      true
+     ],
+     [
+      "B",
+      "Leave it",
+      "No change.",
+      false
+     ]
+    ],
+    "why": "Fixes where the body is."
+   },
+   {
+    "id": "M2",
+    "title": "‘Two days before’ vs ‘yesterday’",
+    "ctx": [
+     [
+      "p",
+      "#7149 ‘the same read she’d made two days before’; the Bloom Quarter was the previous morning and #7152 says ‘yesterday’."
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "‘the day before’",
+      "One phrase.",
+      true
+     ],
+     [
+      "B",
+      "Leave it",
+      "No change.",
+      false
+     ]
+    ],
+    "why": "Matches #7152."
+   },
+   {
+    "id": "M3",
+    "title": "‘Four hours in’ minutes after landing",
+    "ctx": [
+     [
+      "p",
+      "#7151 ‘four hours in, nobody was faster than anybody’; they had landed minutes earlier."
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "Cut ‘four hours in’",
+      "One phrase.",
+      true
+     ],
+     [
+      "B",
+      "Say what it’s measured from",
+      "Use Write my own.",
+      false
+     ],
+     [
+      "C",
+      "Leave it",
+      "No change.",
+      false
+     ]
+    ],
+    "why": "The clock has no anchor."
+   },
+   {
+    "id": "M4",
+    "title": "Lace ‘built it from nothing’",
+    "ctx": [
+     [
+      "p",
+      "#7143 ‘Lace had built it from nothing’; #6947 has her build it from three authenticated Adalemo recordings."
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "‘from three recordings and a coffee-cart conversation’",
+      "One phrase.",
+      true
+     ],
+     [
+      "B",
+      "Leave it as a figure of speech",
+      "No change.",
+      false
+     ]
+    ],
+    "why": "The book showed how she built it."
+   },
+   {
+    "id": "M5",
+    "title": "A muddled comparison",
+    "ctx": [
+     [
+      "q",
+      "I’ve burned people for less than what I just did to him",
+      "#7104"
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "‘…for less than what he did’",
+      "Two words.",
+      true
+     ],
+     [
+      "B",
+      "Leave it",
+      "No change.",
+      false
+     ]
+    ],
+    "why": "The speaker means his offence."
+   },
+   {
+    "id": "M6",
+    "title": "Physical interfaces in MXG (device law)",
+    "ctx": [
+     [
+      "p",
+      "Vox’s forearm interface ‘shifted color by two shades’ (#6990, #7050); ‘her array’ is a physical rig folding ‘to transit configuration’ (#7063 #7079 #7081 #7128); an ArcSec driver ‘looked up from his neuretics’ (#17292)."
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "Allow worn hardware (an arm display, a deck rig) as gear, not a handset",
+      "Record a permission ruling; fix only #17292 (‘his eyes came back from the data pull’).",
+      true
+     ],
+     [
+      "B",
+      "Convert all of it to neuretics and overlay",
+      "About seven beats.",
+      false
+     ],
+     [
+      "C",
+      "Leave everything",
+      "No change.",
+      false
+     ]
+    ],
+    "why": "Rigs and arm displays read as equipment; only #17292 is plainly wrong."
+   }
+  ]
+ },
+ {
+  "book": "Other books",
+  "code": "TLC · SPRW · VATD · CYB",
+  "items": [
+   {
+    "id": "O1",
+    "title": "TLC: Renata’s six, two and seven years",
+    "ctx": [
+     [
+      "p",
+      "#10215 ‘Six years carrying it in a hollow cut into her chest’; #10677 ‘kept it warm for six years’; #10289 ‘Seven locations in two years. The device is finished’; #10552 calls the fragments ‘seven years of it’. Probably squarable (six years implanted, two on the move, seven of recordings), but a cold reader may stumble."
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "State the implant date once (in #10215)",
+      "One clause.",
+      false
+     ],
+     [
+      "B",
+      "Leave it",
+      "The three spans describe different things.",
+      true
+     ]
+    ],
+    "why": "Likely deliberate; only fix if you want it explicit."
+   },
+   {
+    "id": "O2",
+    "title": "Sparrow: Elias’s physical ‘plate’",
+    "ctx": [
+     [
+      "p",
+      "Elias’s interface is a physical ‘plate’: ‘set the plate face-down on the rail’, ‘forgotten the charging cable’, ‘he typed’, ‘the cursor sat’, ‘photographed the page’ (#4205, #4226). Elsewhere his messages arrive on his neuretics (#4203)."
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "Elias is an Analog who keeps a physical plate on purpose",
+      "No prose change; one exception ruling.",
+      false
+     ],
+     [
+      "B",
+      "Convert to neuretics",
+      "Replace the plate, cable and typing in #4205 and #4226.",
+      true
+     ],
+     [
+      "C",
+      "Leave it",
+      "No change.",
+      false
+     ]
+    ],
+    "why": "Unless Elias is an Analog by design, it breaks the device law."
+   },
+   {
+    "id": "O3",
+    "title": "VATD: which vehicle after the Wagon?",
+    "ctx": [
+     [
+      "q",
+      "…when they turned the Wagon in at the end of the shift… handed Levin the wheel, and Levin drove them south to Holme’s building",
+      "#21811 — no other vehicle is named"
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "Name it, e.g. ‘handed Levin the keys to the crew cab’",
+      "Put your vehicle in Additional text if you prefer.",
+      true
+     ],
+     [
+      "B",
+      "Leave it",
+      "No change.",
+      false
+     ]
+    ],
+    "why": "A cold reader expects them to be on foot."
+   },
+   {
+    "id": "O4",
+    "title": "The Ur: Wes is ‘a ten-year-old’ in 2231",
+    "ctx": [
+     [
+      "q",
+      "…a small warm shape on a ledge on its flank that was a ten-year-old farm boy…",
+      "The Ur #23705 — It Came From Iowa is now late summer 2226, when Wes was ten"
+     ]
+    ],
+    "opts": [
+     [
+      "A",
+      "Fix it in the Cyberocracy turn (T185)",
+      "‘a fifteen-year-old farm boy’, or ‘the farm boy who had been ten’.",
+      true
+     ],
+     [
+      "B",
+      "Leave it (a remembered image of the boy at ten)",
+      "No change.",
+      false
+     ]
+    ],
+    "why": "Wes is fifteen by The Ur."
+   }
+  ]
+ }
+];
+
+const KEY = "glmz-ballot2-2026-10-18";
+let state = {};
+try { state = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { state = {}; }
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} };
+
+const all = Q.flatMap(b => b.items.map(it => ({ ...it, book: b.book })));
+const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const slug = id => id.replace(/[^A-Za-z0-9]/g, "_");
+
+function render() {
+  const root = document.getElementById("ballot");
+  root.innerHTML = Q.map(b => `
+    <section class="book">
+      <h2>${esc(b.book)}<small>${esc(b.code)}</small></h2>
+      ${b.items.map(it => card(it)).join("")}
+    </section>`).join("");
+  root.addEventListener("change", onInput);
+  root.addEventListener("input", onInput);
+  all.forEach(it => restore(it));
+  update();
+}
+
+function card(it) {
+  const s = slug(it.id);
+  const ctx = it.ctx.map(([k, a, b]) =>
+    k === "q" ? `<blockquote>${esc(a)}${b ? `<cite>${esc(b)}</cite>` : ""}</blockquote>` :
+    k === "prior" ? `<div class="prior">${esc(a)}</div>` : `<p>${esc(a)}</p>`).join("");
+  const opts = it.opts.map(([k, l, d, r]) => `
+    <label class="opt" for="${s}_${k}">
+      <input type="radio" name="${s}" id="${s}_${k}" value="${k}" data-q="${it.id}">
+      <span><b>${k}. ${esc(l)}</b>${r ? '<span class="rec">Recommended</span>' : ""}</span>
+      <span class="d">${esc(d)}</span>
+    </label>`).join("");
+  return `
+  <article class="q" id="q_${s}">
+    <div class="qhead"><span class="tid">${esc(it.id)}</span><h3>${esc(it.title)}</h3><span class="state" id="st_${s}">Unanswered</span></div>
+    <div class="ctx"><span class="lbl">What the books say</span>${ctx}</div>
+    <fieldset>
+      <legend class="lbl">Your call</legend>
+      ${opts}
+      <label class="opt" for="${s}_OWN">
+        <input type="radio" name="${s}" id="${s}_OWN" value="OWN" data-q="${it.id}">
+        <span><b>Write my own</b></span>
+        <span class="d">Describe the ruling you want instead.</span>
+        <textarea id="${s}_owntext" data-q="${it.id}" data-kind="own" rows="2" placeholder="Your ruling"></textarea>
+      </label>
+    </fieldset>
+    <div class="why">Why I recommend it: ${esc(it.why)}</div>
+    <div class="note">
+      <label class="lbl" for="${s}_note">Additional text (optional, goes with your radio choice)</label>
+      <textarea id="${s}_note" data-q="${it.id}" data-kind="note" rows="2" placeholder="Qualify or add to your choice: a name, exact wording, a condition, a question back"></textarea>
+    </div>
+  </article>`;
+}
+
+function restore(it) {
+  const s = slug(it.id), v = state[it.id];
+  if (!v) return;
+  if (v.choice) { const r = document.getElementById(`${s}_${v.choice}`); if (r) r.checked = true; }
+  if (v.own) document.getElementById(`${s}_owntext`).value = v.own;
+  if (v.note) document.getElementById(`${s}_note`).value = v.note;
+}
+
+function onInput(e) {
+  const t = e.target, id = t.dataset.q;
+  if (!id) return;
+  const s = slug(id);
+  state[id] = state[id] || {};
+  if (t.type === "radio") state[id].choice = t.value;
+  else if (t.dataset.kind === "own") {
+    state[id].own = t.value;
+    if (t.value.trim()) { document.getElementById(`${s}_OWN`).checked = true; state[id].choice = "OWN"; }
+  } else if (t.dataset.kind === "note") state[id].note = t.value;
+  save(); update();
+}
+
+function answered(it) {
+  const v = state[it.id];
+  return !!(v && v.choice && (v.choice !== "OWN" || (v.own || "").trim()));
+}
+
+function update() {
+  let n = 0;
+  all.forEach(it => {
+    const s = slug(it.id), ok = answered(it);
+    if (ok) n++;
+    document.getElementById(`q_${s}`).classList.toggle("done", ok);
+    const v = state[it.id];
+    document.getElementById(`st_${s}`).textContent = ok ? (v.choice === "OWN" ? "Own ruling" : `Chose ${v.choice}`) : "Unanswered";
+  });
+  document.getElementById("tally").textContent = `${n} of ${all.length} answered`;
+  document.getElementById("meterFill").style.width = `${Math.round(n / all.length * 100)}%`;
+  document.getElementById("json").textContent = JSON.stringify(build(), null, 2);
+}
+
+function build() {
+  const answers = {};
+  all.forEach(it => {
+    const v = state[it.id] || {};
+    const opt = it.opts.find(o => o[0] === v.choice);
+    const rec = (it.opts.find(o => o[3]) || [])[0] || null;
+    answers[it.id] = {
+      book: it.book,
+      question: it.title,
+      choice: v.choice || null,
+      label: v.choice === "OWN" ? "Write my own" : (opt ? opt[1] : null),
+      own_ruling: v.choice === "OWN" ? (v.own || "").trim() : null,
+      additional_text: (v.note || "").trim() || null,
+      recommended: rec,
+      followed_recommendation: v.choice ? v.choice === rec : null
+    };
+  });
+  const n = all.filter(answered).length;
+  return { ballot: "GLMZ ballot two: leftovers and read-pass slips", prepared: "2026-10-18", answered: `${n}/${all.length}`, answers };
+}
+
+document.getElementById("fillRec").addEventListener("click", () => {
+  let c = 0;
+  all.forEach(it => {
+    if (answered(it)) return;
+    const rec = it.opts.find(o => o[3]); if (!rec) return;
+    state[it.id] = state[it.id] || {}; state[it.id].choice = rec[0];
+    document.getElementById(`${slug(it.id)}_${rec[0]}`).checked = true; c++;
+  });
+  save(); update(); toast(c ? `Filled ${c} blank question${c > 1 ? "s" : ""} with the recommendation.` : "Every question already has an answer.");
+});
+document.getElementById("jumpOut").addEventListener("click", () => document.getElementById("out").scrollIntoView({ behavior: "smooth" }));
+
+function toast(m) { const t = document.getElementById("toast"); t.textContent = m; clearTimeout(toast._t); toast._t = setTimeout(() => t.textContent = "", 4000); }
+
+document.getElementById("copyBtn").addEventListener("click", () => {
+  const txt = document.getElementById("json").textContent;
+  const fallback = () => {
+    const r = document.createRange(); r.selectNodeContents(document.getElementById("json"));
+    const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    toast("Copy was blocked here. The JSON is selected; press Ctrl+C (or Cmd+C).");
+  };
+  try {
+    navigator.clipboard.writeText(txt).then(() => toast("Copied. Paste it into Claude Code."), fallback);
+  } catch (e) { fallback(); }
+});
+
+const clearBtn = document.getElementById("clearBtn"), clearConfirm = document.getElementById("clearConfirm");
+clearBtn.addEventListener("click", () => { clearConfirm.hidden = false; toast("This erases every choice and note on this page."); });
+clearConfirm.addEventListener("click", () => {
+  state = {}; save();
+  document.querySelectorAll("#ballot input[type=radio]").forEach(r => r.checked = false);
+  document.querySelectorAll("#ballot textarea").forEach(t => t.value = "");
+  clearConfirm.hidden = true; update(); toast("All answers cleared.");
+});
+
+render();
+</script>
+
+</body></html>

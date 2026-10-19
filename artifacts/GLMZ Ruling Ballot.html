@@ -1,0 +1,604 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>GLMZ Ruling Ballot</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single reading column of decision cards grouped by book, a sticky tally bar, and the answer JSON at the foot. */
+:root {
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --ink: #18212e;
+  --muted: #5a6577;
+  --rule: #dde2ea;
+  --accent: #1f6f78;
+  --accent-soft: #e3f0f1;
+  --rec: #8a5a00;
+  --rec-soft: #fbf0d9;
+  --quote: #eef1f5;
+  --font-display: "Literata", Georgia, "Times New Roman", serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11161e; --surface: #18202b; --ink: #e6eaf0; --muted: #9aa5b6; --rule: #2a3442;
+    --accent: #5fb8c1; --accent-soft: #1b3236; --rec: #e3b35a; --rec-soft: #33291a; --quote: #1f2833;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11161e; --surface: #18202b; --ink: #e6eaf0; --muted: #9aa5b6; --rule: #2a3442;
+  --accent: #5fb8c1; --accent-soft: #1b3236; --rec: #e3b35a; --rec-soft: #33291a; --quote: #1f2833;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-body); font-size: 15px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 48px;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+.wrap { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+header.intro { padding-top: 32px; display: flex; flex-direction: column; gap: 10px; }
+h1 { font-family: var(--font-display); font-weight: 700; font-size: 2rem; line-height: 1.15; margin: 0; text-wrap: balance; }
+.lede { color: var(--muted); margin: 0; max-width: 64ch; }
+.bar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 10px;
+  padding: 10px 14px; display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: space-between;
+}
+.tally { font-family: var(--font-mono); font-size: 0.85rem; font-variant-numeric: tabular-nums; }
+.meter { flex: 1 1 160px; height: 6px; background: var(--rule); border-radius: 3px; overflow: hidden; min-width: 120px; }
+.meter > i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .2s; }
+.btns { display: flex; gap: 8px; flex-wrap: wrap; }
+button {
+  font: 500 0.85rem var(--font-body); color: var(--ink); background: var(--surface);
+  border: 1px solid var(--rule); border-radius: 7px; padding: 7px 12px; cursor: pointer;
+}
+button:hover { border-color: var(--accent); }
+button.primary { background: var(--accent); color: var(--surface); border-color: var(--accent); }
+button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+section.book { display: flex; flex-direction: column; gap: 14px; }
+h2 { font-family: var(--font-display); font-weight: 600; font-size: 1.35rem; margin: 0; padding-bottom: 6px; border-bottom: 1px solid var(--rule); }
+h2 small { font-family: var(--font-mono); font-weight: 400; font-size: 0.75rem; color: var(--muted); margin-left: 8px; letter-spacing: .04em; }
+.q { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.q.done { border-color: var(--accent); }
+.qhead { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.tid { font-family: var(--font-mono); font-size: 0.78rem; font-weight: 500; color: var(--accent); background: var(--accent-soft); padding: 2px 7px; border-radius: 5px; letter-spacing: .03em; }
+h3 { font-family: var(--font-display); font-weight: 600; font-size: 1.1rem; margin: 0; flex: 1 1 300px; text-wrap: balance; }
+.state { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); }
+.q.done .state { color: var(--accent); }
+.ctx { display: flex; flex-direction: column; gap: 8px; }
+.ctx p { margin: 0; max-width: 68ch; }
+.lbl { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+blockquote { margin: 0; background: var(--quote); border-radius: 6px; padding: 8px 12px; font-family: var(--font-display); font-size: 0.95rem; }
+blockquote cite { font-family: var(--font-mono); font-style: normal; font-size: 0.72rem; color: var(--muted); display: block; margin-top: 2px; }
+.prior { background: var(--rec-soft); border-radius: 6px; padding: 8px 12px; font-size: 0.9rem; }
+fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+legend { padding: 0; margin-bottom: 4px; }
+.opt { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; align-items: start; padding: 10px 12px; border: 1px solid var(--rule); border-radius: 8px; cursor: pointer; }
+.opt:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+.opt input { margin-top: 4px; accent-color: var(--accent); }
+.opt b { font-weight: 600; }
+.opt .d { grid-column: 2; color: var(--muted); font-size: 0.88rem; }
+.rec { font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: .07em; color: var(--rec); background: var(--rec-soft); border-radius: 4px; padding: 1px 6px; margin-left: 6px; white-space: nowrap; }
+.why { font-size: 0.88rem; color: var(--muted); border-left: 2px solid var(--rec); padding-left: 10px; }
+textarea, input[type=text] {
+  width: 100%; font: 0.9rem var(--font-body); color: var(--ink); background: var(--bg);
+  border: 1px solid var(--rule); border-radius: 7px; padding: 8px 10px; resize: vertical;
+}
+.opt textarea { grid-column: 2; margin-top: 6px; }
+.note label { display: block; margin-bottom: 4px; }
+.out { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; gap: 12px; }
+.out pre { margin: 0; background: var(--quote); border-radius: 7px; padding: 12px; font: 0.78rem/1.5 var(--font-mono); overflow-x: auto; max-height: 420px; }
+.toast { font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); min-height: 1.2em; }
+@media (prefers-reduced-motion: reduce) { .meter > i { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header class="intro">
+    <h1>GLMZ Ruling Ballot</h1>
+    <p class="lede">21 decisions from the 19 open author-ruling tickets (T138–T163), ordered by book. Pick an option on each, or choose “Write my own”. Every card also has an “Additional text” box that goes with your radio choice, so you can pick an option and still qualify it (a name, exact wording, a condition). When you’re done, copy the JSON at the bottom and paste it back into Claude Code. Your choices are saved in this browser in case you close the tab.</p>
+  </header>
+
+  <div class="bar" role="region" aria-label="Progress">
+    <span class="tally" id="tally">0 of 21 answered</span>
+    <div class="meter" aria-hidden="true"><i id="meterFill"></i></div>
+    <div class="btns">
+      <button type="button" id="fillRec">Fill recommended where blank</button>
+      <button type="button" id="jumpOut" class="primary">Go to JSON</button>
+    </div>
+  </div>
+
+  <main id="ballot" class="wrap" style="gap:28px"></main>
+
+  <section class="out" id="out">
+    <h2 style="border:0;padding:0">Your answers</h2>
+    <p class="lede" style="margin:0">This updates as you choose. Copy it and paste it into Claude Code; it holds every choice and every note in one block.</p>
+    <div class="btns">
+      <button type="button" id="copyBtn" class="primary">Copy JSON</button>
+      <button type="button" id="clearBtn">Clear all answers</button>
+      <button type="button" id="clearConfirm" hidden>Yes, clear everything</button>
+    </div>
+    <div class="toast" id="toast" aria-live="polite"></div>
+    <pre id="json" tabindex="0"></pre>
+  </section>
+</div>
+
+<script>
+const Q = [
+ { book: "Bushido Coda", code: "BCODA", items: [
+  { id: "T138", title: "How many contracts has Kyle taken from the shell?",
+    ctx: [
+      ["p", "The faceless “shell” client has hired Kyle for eleven years (it turns out to be the book’s hidden entity), and the book counts its jobs as a motif."],
+      ["q", "Forty-six finished contracts; this made forty-seven.", "#20529, the carousel job, numbered 0047-C-WEST"],
+      ["p", "Two more jobs from the same shell follow: Northpoint medical transport (#20582) and a South Michigan courier escort (#20594). That makes 49. After both, the prose still says:"],
+      ["q", "Forty-seven postings in eleven years … / Forty-seven contracts.", "#20624 and #20708"],
+      ["prior", "Your earlier ruling 01a0e653-d642 (2026-09-05) fixed the count at “47 entity contracts / 69 messages”. The book has added two jobs past it since."]
+    ],
+    opts: [
+      ["A", "Change the two later counts to “forty-nine”", "Two words, in #20624 and #20708. Replace the old 47 in ruling 01a0e653-d642. The iconic 0047 job keeps its number.", true],
+      ["B", "Keep 47 as the total", "Renumber the carousel job to 0045, so Northpoint is #46 and South Michigan #47. About six places change, including “cross-reference: contract 0047-C-WEST”; the iconic number is lost."],
+      ["C", "Northpoint and South Michigan don’t count", "Nothing in the text supports this; a reader would just see a miscount."]
+    ],
+    why: "A is two words, and 0047 stays the job the whole book remembers." },
+  { id: "T139", title: "Is “Cinderfall” one company or two?",
+    ctx: [
+      ["q", "Halsted north of the tracks runs straight over the bones of Cinderfall Energy: eleven underground thermal plants whose only face to the world is a grid of steam-vent grates.", "Bushido Coda #20644"],
+      ["p", "In Critical Mass (about 15 beats) Cinderfall Logistics is the freight company that ran Ledger as its dispatch AI and decommissioned him in 2213. Pixel and Testament show its livery and a rusting logo at Ironbend."],
+      ["q", "Cinderfall still exists. Somewhere. As a shell. Companies like that don’t die, they just stop answering.", "Renn, Critical Mass #15553"]
+    ],
+    opts: [
+      ["A", "One parent company with an energy arm and a logistics arm", "No prose change; I record a ruling and link the records. Fits “the bones of Cinderfall Energy” and Renn’s “a shell that stopped answering”.", true],
+      ["B", "Rename Bushido Coda’s Cinderfall Energy", "One beat changes; the two companies stay unrelated."]
+    ],
+    why: "A needs no prose change and adds texture: a dead conglomerate whose leftovers still vent steam under Halsted and run old code under Ironbend." },
+  { id: "T141", title: "The hand-painted signs on the Ashgrave fringe",
+    ctx: [
+      ["q", "Nobody here could afford a connect point, and what signs there were had been painted by hand on plywood and ferrocement, crooked and honest: WATER. OPEN LATE. NO CHROME PAST THIS DOOR.", "Bushido Coda #20850"],
+      ["p", "It was flagged against the device law 01a0da89: “There are no terminals, not even a sign.”"],
+      ["prior", "You already allowed this. Ruling 01a0da96 item 5 (2026-09-25): “Hand-painted Seam signs: the Seams can’t afford connect points, so the only physical signs left in the city are there, hand-painted, crooked and honest (OPEN. WATER. NO CHROME.)”. Death Whispers #21118 uses the same idea with a paper notice board."]
+    ],
+    opts: [
+      ["A", "Close it; the prose already follows ruling 01a0da96", "No change and no new ruling.", true],
+      ["B", "Revisit: convert these signs to AR anyway", "Overrides your own 2026-09-25 ruling."]
+    ],
+    why: "The ticket was raised without your existing ruling in view." }
+ ]},
+ { book: "Crimson & Chrome", code: "CXC", items: [
+  { id: "T142", title: "“Marrow” means two different things",
+    ctx: [
+      ["p", "In Bushido Coda, Marrow is Praxis’s secret NeoCortex program: Kyle was its eleventh recipient, it was built from 64 dead practitioners’ profiles, and Dr. Nadia Park worked on it."],
+      ["prior", "Law 01a0e653-d665: Nadia Park “is the only person left alive, other than Kyle, who can prove the Marrow program existed.”"],
+      ["q", "And the Marrow — Helix’s body-bank, the facility no registry would admit existed — was where people went when Helix stopped calling them people.", "Crimson & Chrome #6405"],
+      ["q", "The Marrow wasn’t the only one. The program ran at three facilities.", "Soraya, Crimson & Chrome #6550"],
+      ["p", "Both are tagged to one technology record. Crimson & Chrome (about 2229) comes after Bushido Coda (2226): a raided building called “the Marrow” breaks Bushido Coda’s central secret."]
+    ],
+    opts: [
+      ["A", "Rename the Crimson & Chrome building", "Five or six beats (#6405, #6449, #6474, #6543, #6550) and a separate record. Name ideas: the Ossuary, the Reliquary, the Larder. Put your pick in the notes, or leave it to me and I’ll propose three that I’ve checked for collisions.", true],
+      ["B", "Make the building a site of the Praxis program", "Links the books with Helix as contractor, but weakens Bushido Coda’s secret and changes what Marrow is."]
+    ],
+    why: "Bushido Coda’s version is load-bearing for the whole universe, and Crimson & Chrome’s building only needs a name." },
+  { id: "T143", title: "“Cinderblock’s tier”",
+    ctx: [
+      ["p", "Cinderblock Ai appears only as the company that made Vox’s face: “Vox, late of Cinderblock Ai, retail-grade, the face you bought” (#6451, #6510, #6513)."],
+      ["q", "The Waterline sat where Cinderblock’s tier met the Gray Zone seam …", "Crimson & Chrome #6537"],
+      ["p", "That one line makes the company the owner of a whole lakefront residential tier, a fact that appears nowhere else."]
+    ],
+    opts: [
+      ["A", "Reword #6537", "For example “where the cheap tier met the Gray Zone seam”. One phrase.", true],
+      ["B", "Rule that Cinderblock Ai holds a tier", "No prose change; adds a new world fact from a single line."]
+    ],
+    why: "A is the smallest change. Choose B if you like a cheap AI-face vendor owning a lakeside tier." }
+ ]},
+ { book: "It Came From Iowa", code: "ICFI", items: [
+  { id: "T140+T151", title: "What year is it, and the ladder line",
+    ctx: [
+      ["q", "The Riordans had sold to AgriCore in 2223, and the elevator hadn’t moved grain in seven years. The ladder hadn’t been touched since. He’d climbed it twice as a kid, both times on a dare.", "It Came From Iowa #6174"],
+      ["p", "The year: 2223 + 7 = 2230. But other books treat the walker as current news in 2225–26: Between the Lines #16963 (“every lane has been passing along all week”), and Bushido Coda #20899 in 2226 (“still trading the one about the farm walker on the 88”). Between the Lines must be underway by January 2226 (Death Whispers #21118). So the book has to be late summer 2225."],
+      ["p", "The ladder: Wes is ten. If nobody touched the ladder in seven years, he was three the last time anyone climbed it, so he can’t have climbed it on a dare."]
+    ],
+    opts: [
+      ["A", "Change only the year: 2223 → 2218", "The book lands in 2225. The ladder problem stays."],
+      ["B", "Rewrite the sentence to fix both", "“The Riordans had sold to AgriCore in 2218, and the elevator hadn’t moved grain since. Nobody but kids on a dare had touched the ladder since. He’d climbed it twice…” I also correct Between the Lines’ year note to late summer or autumn 2225.", true]
+    ],
+    why: "One sentence fixes both problems." },
+  { id: "T149", title: "CJ’s route along the 88",
+    ctx: [
+      ["p", "The book’s order of places along the road, west to east (it matches the real towns): Hillsdale → Erie → Prophetstown → Lyndon → Dixon. In the afternoon CJ drives west from Dixon:"],
+      ["q", "She pulled back before the drone wreckage: three units in the Hillsdale corn … The yellow vest was still at the drainage break … Near Lyndon she saw him.", "#6273, #6274 (Erie), #6275"],
+      ["p", "Going west from Dixon she reaches Lyndon first. As written she would pass the machine, drive on to Erie and Hillsdale, and come back. Linked: #6360 logs the “herding-fault spike near Hillsdale”, but she saw it in front of her at Lyndon."]
+    ],
+    opts: [
+      ["A", "Make #6273/#6274 readings on her overlay, and fix #6360", "She sees the wreckage and the vest marked on the corridor display, not on the road. #6360 becomes: “The one herding-fault spike at Lyndon, the swing toward Hillsdale and its drone wreckage, caught and cancelled before it went anywhere.”", true],
+      ["B", "Move the two beats to an earlier drive", "Doesn’t really work: her earlier run east toward Dixon (#6254) also starts east of Erie."]
+    ],
+    why: "A is two short changes plus the drafted #6360 line." },
+  { id: "T149b", title: "ICFI loose ends: compass and checkpoint",
+    ctx: [
+      ["p", "Wes thinks in south/north while the 88 runs east–west, and the machine has a “280°” heading. #22160 mentions “the checkpoint”, but the only named checkpoint (Zone-12) is in the other direction."]
+    ],
+    opts: [
+      ["A", "Leave both", "Neither will trip a reader the way the route does.", true],
+      ["B", "Fix both", "I make the compass words agree with an east–west road and name or reword the checkpoint in #22160."]
+    ],
+    why: "These are minor next to the route problem." },
+  { id: "T150", title: "The countdown runs about four hours short",
+    ctx: [
+      ["p", "The machine walks a steady 4.9 mph from dawn. Lyndon is 40 miles in and Dixon 50, so it reaches Lyndon about 2 pm and Dixon about 4 pm, matching “late afternoon” and the 1721 stand-down. The clock lines say:"],
+      ["q", "ETA Zone-12 boundary: approx. 6.5 hours (0614) · breach in just under three hours (Hauser, 0951) · ten minutes ahead of her at skimmer speed and just under three hours ahead of the machine · Six hours of data (at Lyndon)", "#6195, #6249, #6253, #6288"],
+      ["q", "“Request more time, sir.” … “Three hours.”", "CJ, #6251: the book’s ticking clock"]
+    ],
+    opts: [
+      ["A", "Change the four numbers to fit the distances", "6.5 h → about 10; “just under three hours” → “just under seven”; “ten minutes” → “twenty”; “Six hours” → “Eight hours”. CJ’s “Three hours” still works as a delay request. The pressure softens a little.", true],
+      ["B", "Shrink the distances instead", "About 25 and 32 miles. Breaks “late afternoon” and the 1721 stand-down, which run through the second half."],
+      ["C", "Leave it", "Few readers will do the arithmetic; keeps the tighter three-hour feel."]
+    ],
+    why: "The book’s whole daylight structure supports A. Choose C if you prefer the tighter clock." }
+ ]},
+ { book: "Mnemosync", code: "MNEMO", items: [
+  { id: "T152", title: "“Kessler” names three unrelated people",
+    ctx: [
+      ["p", "Mnemosync: Amara’s editor S. (Sade) Kessler (#8150, #8152). Between the Lines: Farai Kessler, the Checkpoint 6 clerk who is nearly killed; she matters there and her surname appears several times. Bushido Coda: “Kessler and Sons”, a South Loop impound yard (#20834)."]
+    ],
+    opts: [
+      ["A", "Give Mnemosync’s editor a new surname", "Two beats plus the record. Put a surname in the notes, or leave it to me to propose some.", true],
+      ["B", "Rule all three unrelated", "Kessler is a common name; no change."]
+    ],
+    why: "Farai Kessler matters in her book, and catalog readers will wonder if the editor is related. Bushido Coda’s yard can stay as background." },
+  { id: "T153", title: "“Tasmin” vs “Tamsin”",
+    ctx: [
+      ["q", "A coordinator named Tasmin, Zone 3/4 oversight, whom he knew by routing code and never by voice.", "Mnemosync #8344 (also #8347)"],
+      ["p", "One transposed letter from Tamsin, a lead in Death Whispers and a member of the Cyberocracy team. Most readers will take it for a typo."]
+    ],
+    opts: [
+      ["A", "Rename the coordinator", "Two beats. Put a name in the notes, or leave it to me to propose some.", true],
+      ["B", "Keep “Tasmin”", "No change."]
+    ],
+    why: "It reads as a typo of a major character’s name." },
+  { id: "T154", title: "“Guzman”",
+    ctx: [
+      ["p", "Mnemosync’s staff journalist Guzman (#8059, #8066–8069, #8076) vs Ballast’s Prita and Kaja Guzman. Common surname, the books never cross, nothing else about them is similar."]
+    ],
+    opts: [
+      ["A", "Keep both; rule them unrelated", "No change.", true],
+      ["B", "Rename Mnemosync’s Guzman", "About six beats."]
+    ],
+    why: "Nothing links them and the name is common." }
+ ]},
+ { book: "Neon & Rust", code: "NXR", items: [
+  { id: "T155", title: "Is the book’s neon allowed?",
+    ctx: [
+      ["q", "Neon came off the signage brackets in stripes of pink and cyan … a neon sign rotted on its brackets and threw wet pink down the alley.", "#7315, #7378; about ten beats, through the Z1 transit hub on the lake (#7541)"],
+      ["p", "Your laws say every sign is AR and hard light is never signage (01a0da89, 01a0e653-d670). Page-law 01a11c9b separately says “physical signage [is] unaffected”, and T141 shows physical signs survive only where people can’t afford connect points."]
+    ],
+    opts: [
+      ["A", "Allow it: old physical neon survives in poor or derelict districts", "Recorded as a permission ruling with no enforcement pattern. I check the working transit hub’s neon (#7541) when you rule.", true],
+      ["B", "Convert the neon to AR overlay or dead-panel imagery", "About ten beats, and it changes what the title means."]
+    ],
+    why: "It matches how the book already uses it: rotting, generations old, on dead brackets at the city’s thin edge." },
+  { id: "T156", title: "Which safe house did Lace read the log in?",
+    ctx: [
+      ["p", "Lace is already carrying the secret “since the safe house” at #7233 (position 47) and #7261 (about 75). Vox says “nine days” at the table at #7272 (position 86); they drive into the Gray Zone after that (#7301)."],
+      ["q", "Safe house, this job. The night before we crossed into the Gray Zone … The page I got to read said seven days. When Vox said nine at the table, I let nine stand.", "Lace, #7380"],
+      ["p", "“The night before we crossed” falls after the table scene, but she was carrying it before the table and let Vox’s nine stand there. The night has to come before the table."]
+    ],
+    opts: [
+      ["A", "Keep it this job’s safe house, set before the table", "Change only #7380’s timing phrase, e.g. “The night before the table.”", true],
+      ["B", "Make it Magenta & Gunmetal’s safe house", "Then she couldn’t have read a log about this job’s wall, and the seven-versus-nine point falls apart."]
+    ],
+    why: "One phrase, and everything else already fits." }
+ ]},
+ { book: "Read the Room", code: "RTR", items: [
+  { id: "T157", title: "How high is the floor of “The Low”?",
+    ctx: [
+      ["prior", "Law 01a13be0: “The Low … runs from about 50 m (Arcturus Civil Security’s ceiling) to 320 m.” Pixel agrees (#11961, #12006)."],
+      ["q", "Then Milwaukee. Cold and wet and forty meters up …", "Read the Room #5967; “forty meters” is a refrain in about ten beats"],
+      ["p", "The Long Cut uses 30 m for Austin, from a law Claude set in an earlier session that you never confirmed (01a100fd)."]
+    ],
+    opts: [
+      ["A", "Let the floor vary by city", "About 50 m in Chicago, 40 m in Milwaukee, 30 m in Austin. Amend the law to say “in Chicago” and confirm the other two. No prose change.", true],
+      ["B", "Move Read the Room to fifty meters", "Changes the refrain in about ten beats."]
+    ],
+    why: "Keeps a working refrain, and each city having its own security ceiling makes sense." }
+ ]},
+ { book: "Sparrow and Pixel", code: "SPRW · PXL", items: [
+  { id: "T158", title: "Banned stock images in older text",
+    ctx: [
+      ["p", "In round 6 you banned some overused images for new sentences only: insects bound for a hive, “weeping rust”, wet cardboard, “cold blue-green”, half-lids, a sweet chemical smell, hot metal, “try me / please don’t”."],
+      ["p", "Still present: Sparrow chapter 11, about eight (#4089, #4090, #4099, #4116, #4203, #4205, #4207, #4214); Pixel, about six (#11976, #11990, #11996, #12008, #22115, #12089)."]
+    ],
+    opts: [
+      ["A", "Run a variation pass on those 14 beats", "Each image rewritten by hand."],
+      ["B", "Leave old text as written", "Same treatment Crimson & Chrome, Death Whispers and It Came From Iowa already got.", true]
+    ],
+    why: "The ban was meant to stop the images spreading, not to rewrite old text. Choose A if these bother you on the page." }
+ ]},
+ { book: "Testament", code: "TEST", items: [
+  { id: "T160.1", title: "Which day is the hearing?",
+    ctx: [
+      ["q", "The sub-license review committee convenes Thursday. Not November.", "Brandt, #22220"],
+      ["p", "The hearing scenes then happen “on a Tuesday” (#22468; #22745 “a hundred people starting a Tuesday”). The earlier message gave “a date three days out” (#22214)."]
+    ],
+    opts: [
+      ["A", "Change Brandt’s “Thursday” to “Tuesday”", "One word; the Tuesday detail runs through the ending.", true],
+      ["B", "Make the hearing Thursday", "Change the Tuesday references at the end instead."]
+    ],
+    why: "One word, and the ending already leans on Tuesday." },
+  { id: "T160.2", title: "The frozen account never pays off",
+    ctx: [
+      ["q", "RECIPIENT ACCOUNT FROZEN — COMPLIANCE HOLD.", "#22268, account one, a line Bear has never seen in eight years"],
+      ["p", "Later all sixteen transfers clear (#22418–21) with no mention of it. At the end (#22740) a hidden hold sits on one name, account eleven, the girl: “There’s a flag on that name, Bear. Not ours.”"]
+    ],
+    opts: [
+      ["A", "Tie them together", "One clause: the account-one freeze was the first sign of the same hidden hand that puts the hold on the end.", true],
+      ["B", "Add a half-line at #22418", "Account one cleared once the hold lifted."],
+      ["C", "Leave it", "The freeze stays an unexplained beat."]
+    ],
+    why: "A turns a dropped thread into a planted one." },
+  { id: "T160.3", title: "The 21st and the nineteen-day watch",
+    ctx: [
+      ["p", "Arcturus watched Bear for nineteen days and saw him pay “his sixteen on the twenty-first” (#22425, #22446). On hearing day the transfer is “four days out” (#22417). That works only if the watch began before the previous 21st, about 15 days before day 19, which the prose never says."]
+    ],
+    opts: [
+      ["A", "Leave it", "Internally possible, though tight.", true],
+      ["B", "Make it airtight", "Say “paid … on the twenty-first last month” in one of the two beats."]
+    ],
+    why: "It holds as written; B only if you want it spelled out." },
+  { id: "T160.4", title: "“The woman in the second-floor window”",
+    ctx: [
+      ["q", "This record — the count, the times, the entry on the woman in the second-floor window — I am placing it into evidence under my name.", "Bear’s testimony, #22571"],
+      ["p", "Before this the window only ever has a light, “a shadow behind the curtain” (#22203) and “multiple individuals” (#22550). A woman is never set up."]
+    ],
+    opts: [
+      ["A", "Set her up in #22550’s log line", "A few words, e.g. a figure at the window, a woman’s silhouette.", true],
+      ["B", "Change the testimony", "“the entry on the figure in the second-floor window”."]
+    ],
+    why: "A gives the testimony something to point back to." },
+  { id: "T160.5", title: "“Eleven years of quiet”",
+    ctx: [
+      ["q", "… whatever it cost the eleven years of quiet he had built.", "Brandt, #22642"],
+      ["p", "The Cortland command was eight years ago, and “eight years” runs throughout the book."]
+    ],
+    opts: [
+      ["A", "Change to “eight”", "One word.", true],
+      ["B", "Keep “eleven”", "Brandt’s quiet deliberately started three years before Cortland."]
+    ],
+    why: "Unless the three-year gap is deliberate, it reads as a slip." },
+  { id: "T160.6", title: "A stray quoted line",
+    ctx: [
+      ["q", "“Same code, same form.”", "#22653 opens with this in quotation marks, with no speaker"],
+      ["p", "It looks like an echo of an earlier line, but nothing marks it as one."]
+    ],
+    opts: [
+      ["A", "Italicize it as a remembered phrase", "*Same code, same form.*", true],
+      ["B", "Remove the quotes", "It becomes narration."]
+    ],
+    why: "Either works; italics keeps the echo." },
+  { id: "T160.7", title: "“A dead man’s eyes” while Brandt is alive",
+    ctx: [
+      ["q", "That would be me putting words in a dead man’s eyes, and I will not do it.", "Bear’s testimony, #22592"],
+      ["p", "He’s describing one of two men’s four seconds. If that man died at Cortland, the line is correct; if it’s Brandt, it’s wrong."]
+    ],
+    opts: [
+      ["A", "Let me check whose four seconds they are first", "If it’s Brandt, change it to “another man’s mouth”; if the man died, leave it.", true],
+      ["B", "Leave it as written", "No check."]
+    ],
+    why: "The fix depends on a fact I haven’t confirmed yet." }
+ ]},
+ { book: "The Long Cut", code: "TLC", items: [
+  { id: "T161", title: "Whose story leads the news?",
+    ctx: [
+      ["q", "The cycle leads with something else, twelve arrests in a Cermak mod corridor and the name Cermak Reclamation Crew said three times, before it gets to her.", "The Long Cut #10728"],
+      ["p", "That’s Death Whispers’ ending (Day 7, January 2226). The Long Cut’s broadcast also falls in mid-to-late January 2226, and neither book names the day."]
+    ],
+    opts: [
+      ["A", "Keep it", "The broadcast is then set just after Death Whispers’ Day 7, a cross-book echo.", true],
+      ["B", "Swap in a generic lead story", "One phrase."]
+    ],
+    why: "The dates already fit, and it rewards readers of both books." }
+ ]},
+ { book: "Underclan", code: "UNDR", items: [
+  { id: "T162.1", title: "Knuckle’s scarred palm",
+    ctx: [
+      ["q", "He turned his scarred palm up, then closed it.", "#23786"],
+      ["p", "Nothing else mentions a scar on Knuckle. Sorrel’s left-palm scar is a deliberate kept mystery (#23771 “She had never explained it”; #23834 “He still did not know where she had got it … he never would”)."]
+    ],
+    opts: [
+      ["A", "Remove “scarred” from Knuckle’s line", "The palm scar stays Sorrel’s alone.", true],
+      ["B", "Keep it", "Knuckle also has a scarred palm."]
+    ],
+    why: "It reads like the detail drifted from Sorrel to Knuckle." },
+  { id: "T162.2", title: "Noor “had met twice” a child she lives near",
+    ctx: [
+      ["q", "… her own code at the bottom standing surety for a child she had met twice.", "#23831"],
+      ["p", "Glim has been living in Noor’s rooms on the surface (#23816), so if this is the false record talking, it needs to read as one."]
+    ],
+    opts: [
+      ["A", "Make the lie visible", "“standing surety, on paper, for a child the paper said she had met twice”.", true],
+      ["B", "Drop “twice”", "“a child she had met”."],
+      ["C", "Keep it", "No change."]
+    ],
+    why: "A keeps the irony; B is the simple fix." },
+  { id: "T162.3", title: "Sorrel’s fall on the cistern ledge",
+    ctx: [
+      ["q", "Sorrel’s step, lighter on the left since her fall on the cistern ledge …", "#23825; the fall appears only here"]
+    ],
+    opts: [
+      ["A", "Keep it", "A passing past injury doesn’t need to be set up; Glim knowing her step is the point.", true],
+      ["B", "Plant the fall earlier", "Add a mention in an earlier beat."]
+    ],
+    why: "It works as written." }
+ ]},
+ { book: "Vultures at the Door", code: "VATD", items: [
+  { id: "T163", title: "Two rulings that no longer match the prose",
+    ctx: [
+      ["p", "Ruling 01a0ec12-1ea6 names “Daria Holme”; the prose says Odette Holme. Ruling 01a0ec16-d349 has them drive north at dawn; the prose says evening."]
+    ],
+    opts: [
+      ["A", "Replace both rulings to match the prose", "No prose change.", true],
+      ["B", "Rule the prose wrong", "Change the prose to Daria and dawn."]
+    ],
+    why: "Your standing rule is that the prose is ground truth; these rulings look like they predate a revision." }
+ ]}
+];
+
+const KEY = "glmz-ballot-2026-10-18";
+let state = {};
+try { state = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { state = {}; }
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} };
+
+const all = Q.flatMap(b => b.items.map(it => ({ ...it, book: b.book })));
+const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const slug = id => id.replace(/[^A-Za-z0-9]/g, "_");
+
+function render() {
+  const root = document.getElementById("ballot");
+  root.innerHTML = Q.map(b => `
+    <section class="book">
+      <h2>${esc(b.book)}<small>${esc(b.code)}</small></h2>
+      ${b.items.map(it => card(it)).join("")}
+    </section>`).join("");
+  root.addEventListener("change", onInput);
+  root.addEventListener("input", onInput);
+  all.forEach(it => restore(it));
+  update();
+}
+
+function card(it) {
+  const s = slug(it.id);
+  const ctx = it.ctx.map(([k, a, b]) =>
+    k === "q" ? `<blockquote>${esc(a)}${b ? `<cite>${esc(b)}</cite>` : ""}</blockquote>` :
+    k === "prior" ? `<div class="prior">${esc(a)}</div>` : `<p>${esc(a)}</p>`).join("");
+  const opts = it.opts.map(([k, l, d, r]) => `
+    <label class="opt" for="${s}_${k}">
+      <input type="radio" name="${s}" id="${s}_${k}" value="${k}" data-q="${it.id}">
+      <span><b>${k}. ${esc(l)}</b>${r ? '<span class="rec">Recommended</span>' : ""}</span>
+      <span class="d">${esc(d)}</span>
+    </label>`).join("");
+  return `
+  <article class="q" id="q_${s}">
+    <div class="qhead"><span class="tid">${esc(it.id)}</span><h3>${esc(it.title)}</h3><span class="state" id="st_${s}">Unanswered</span></div>
+    <div class="ctx"><span class="lbl">What the books say</span>${ctx}</div>
+    <fieldset>
+      <legend class="lbl">Your call</legend>
+      ${opts}
+      <label class="opt" for="${s}_OWN">
+        <input type="radio" name="${s}" id="${s}_OWN" value="OWN" data-q="${it.id}">
+        <span><b>Write my own</b></span>
+        <span class="d">Describe the ruling you want instead.</span>
+        <textarea id="${s}_owntext" data-q="${it.id}" data-kind="own" rows="2" placeholder="Your ruling"></textarea>
+      </label>
+    </fieldset>
+    <div class="why">Why I recommend it: ${esc(it.why)}</div>
+    <div class="note">
+      <label class="lbl" for="${s}_note">Additional text (optional, goes with your radio choice)</label>
+      <textarea id="${s}_note" data-q="${it.id}" data-kind="note" rows="2" placeholder="Qualify or add to your choice: a name, exact wording, a condition, a question back"></textarea>
+    </div>
+  </article>`;
+}
+
+function restore(it) {
+  const s = slug(it.id), v = state[it.id];
+  if (!v) return;
+  if (v.choice) { const r = document.getElementById(`${s}_${v.choice}`); if (r) r.checked = true; }
+  if (v.own) document.getElementById(`${s}_owntext`).value = v.own;
+  if (v.note) document.getElementById(`${s}_note`).value = v.note;
+}
+
+function onInput(e) {
+  const t = e.target, id = t.dataset.q;
+  if (!id) return;
+  const s = slug(id);
+  state[id] = state[id] || {};
+  if (t.type === "radio") state[id].choice = t.value;
+  else if (t.dataset.kind === "own") {
+    state[id].own = t.value;
+    if (t.value.trim()) { document.getElementById(`${s}_OWN`).checked = true; state[id].choice = "OWN"; }
+  } else if (t.dataset.kind === "note") state[id].note = t.value;
+  save(); update();
+}
+
+function answered(it) {
+  const v = state[it.id];
+  return !!(v && v.choice && (v.choice !== "OWN" || (v.own || "").trim()));
+}
+
+function update() {
+  let n = 0;
+  all.forEach(it => {
+    const s = slug(it.id), ok = answered(it);
+    if (ok) n++;
+    document.getElementById(`q_${s}`).classList.toggle("done", ok);
+    const v = state[it.id];
+    document.getElementById(`st_${s}`).textContent = ok ? (v.choice === "OWN" ? "Own ruling" : `Chose ${v.choice}`) : "Unanswered";
+  });
+  document.getElementById("tally").textContent = `${n} of ${all.length} answered`;
+  document.getElementById("meterFill").style.width = `${Math.round(n / all.length * 100)}%`;
+  document.getElementById("json").textContent = JSON.stringify(build(), null, 2);
+}
+
+function build() {
+  const answers = {};
+  all.forEach(it => {
+    const v = state[it.id] || {};
+    const opt = it.opts.find(o => o[0] === v.choice);
+    const rec = (it.opts.find(o => o[3]) || [])[0] || null;
+    answers[it.id] = {
+      book: it.book,
+      question: it.title,
+      choice: v.choice || null,
+      label: v.choice === "OWN" ? "Write my own" : (opt ? opt[1] : null),
+      own_ruling: v.choice === "OWN" ? (v.own || "").trim() : null,
+      additional_text: (v.note || "").trim() || null,
+      recommended: rec,
+      followed_recommendation: v.choice ? v.choice === rec : null
+    };
+  });
+  const n = all.filter(answered).length;
+  return { ballot: "GLMZ author rulings, tickets PRS-T138 to PRS-T163", prepared: "2026-10-18", answered: `${n}/${all.length}`, answers };
+}
+
+document.getElementById("fillRec").addEventListener("click", () => {
+  let c = 0;
+  all.forEach(it => {
+    if (answered(it)) return;
+    const rec = it.opts.find(o => o[3]); if (!rec) return;
+    state[it.id] = state[it.id] || {}; state[it.id].choice = rec[0];
+    document.getElementById(`${slug(it.id)}_${rec[0]}`).checked = true; c++;
+  });
+  save(); update(); toast(c ? `Filled ${c} blank question${c > 1 ? "s" : ""} with the recommendation.` : "Every question already has an answer.");
+});
+document.getElementById("jumpOut").addEventListener("click", () => document.getElementById("out").scrollIntoView({ behavior: "smooth" }));
+
+function toast(m) { const t = document.getElementById("toast"); t.textContent = m; clearTimeout(toast._t); toast._t = setTimeout(() => t.textContent = "", 4000); }
+
+document.getElementById("copyBtn").addEventListener("click", () => {
+  const txt = document.getElementById("json").textContent;
+  const fallback = () => {
+    const r = document.createRange(); r.selectNodeContents(document.getElementById("json"));
+    const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    toast("Copy was blocked here. The JSON is selected; press Ctrl+C (or Cmd+C).");
+  };
+  try {
+    navigator.clipboard.writeText(txt).then(() => toast("Copied. Paste it into Claude Code."), fallback);
+  } catch (e) { fallback(); }
+});
+
+const clearBtn = document.getElementById("clearBtn"), clearConfirm = document.getElementById("clearConfirm");
+clearBtn.addEventListener("click", () => { clearConfirm.hidden = false; toast("This erases every choice and note on this page."); });
+clearConfirm.addEventListener("click", () => {
+  state = {}; save();
+  document.querySelectorAll("#ballot input[type=radio]").forEach(r => r.checked = false);
+  document.querySelectorAll("#ballot textarea").forEach(t => t.value = "");
+  clearConfirm.hidden = true; update(); toast("All answers cleared.");
+});
+
+render();
+</script>
+
+</body></html>
