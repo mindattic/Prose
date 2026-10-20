@@ -712,3 +712,4 @@ updated: 2026-10-03
 | PRS-T213 | 2026-10-19 | interview | open | Interview: SPRW #4096 still has a dispatcher rerouting around a farm machine 'walking south' on the 88; the held fix cuts that clause. ICFI is now late summer 2226: keep the walker reference or cut it? | — |
 | PRS-T214 | 2026-10-19 | interview | open | Interview: Wren Singh's record (no mentions in any book now) mixes she and he, a teleporting 'blink' and a House Calyx backstory from another universe. Clean it, archive it, or leave it? | — |
 | PRS-T215 | 2026-10-19 | chore | open | Convert tracked source files to LF line endings via .gitattributes, per HOUSE-LAW-13 (low priority) | — |
+| PRS-T216 | 2026-10-19 | docs | closed | Render USER_STORIES.md from the workflow database (PRS-T189-T215 interview tickets filed, PRS-T136 closed) | d1dd618c2 |
