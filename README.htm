@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Prose — Engineering Reference</title>
 <meta name="description" content="Full engineering reference for the Prose literary fiction engine.">
-<meta name="generated" content="2026-10-13">
+<meta name="generated" content="2026-10-19">
 <style>
 :root{
   --bg:#0d1117;--bg2:#161b22;--bg3:#21262d;
@@ -137,7 +137,7 @@ pre:hover .cpbtn{opacity:1}
   <main id="content">
 <h1 id="prose">Prose</h1>
 <p>A local novel-writing engine: SQL Server canon for whole fictional universes, a desktop Writer, and a CLI and MCP server so Claude can draft, read and repair books against that canon.</p>
-<p><a href="https://dotnet.microsoft.com/"><img src="https://img.shields.io/badge/.NET-10-512BD4" alt=".NET 10"></a> <a href="https://learn.microsoft.com/dotnet/csharp/"><img src="https://img.shields.io/badge/language-C%23-239120" alt="C#"></a> <a href="docs/schema.md"><img src="https://img.shields.io/badge/canon-SQL%20Server-CC2927" alt="SQL Server"></a> <a href="docs/MCP%5FTOOLS.md"><img src="https://img.shields.io/badge/MCP-285%20tools-6E56CF" alt="MCP"></a> <a href="#quick-start"><img src="https://img.shields.io/badge/platform-Windows-0078D4" alt="Platform"></a> <a href="#limitations"><img src="https://img.shields.io/badge/status-active%20development-2EA44F" alt="Status"></a></p>
+<p><a href="https://dotnet.microsoft.com/"><img src="https://img.shields.io/badge/.NET-10-512BD4" alt=".NET 10"></a> <a href="https://learn.microsoft.com/dotnet/csharp/"><img src="https://img.shields.io/badge/language-C%23-239120" alt="C#"></a> <a href="#database"><img src="https://img.shields.io/badge/canon-SQL%20Server-CC2927" alt="SQL Server"></a> <a href="docs/MCP%5FTOOLS.md"><img src="https://img.shields.io/badge/MCP-293%20tools-6E56CF" alt="MCP"></a> <a href="#quick-start"><img src="https://img.shields.io/badge/platform-Windows-0078D4" alt="Platform"></a> <a href="#limitations"><img src="https://img.shields.io/badge/status-active%20development-2EA44F" alt="Status"></a></p>
 <p><img src="docs/images/book-covers.jpg" alt="Covers of five books written and kept in Prose: Between the Lines, Critical Mass, Tournament, 1381 The Peasants&#39; Revolt and M-101"></p>
 <p>Prose runs on your own machine. There is no hosted version: the hosted deployment was retired on 2026-08-23 and the project is local-only by design.</p>
 <h2 id="why">Why</h2>
@@ -177,7 +177,7 @@ pre:hover .cpbtn{opacity:1}
 <h3 id="export-and-audio">Export and audio</h3>
 <p><code>--export-node</code> renders a book to .docx, EPUB, PDF and plain text with metadata files. Audiobook export renders a whole book through ElevenLabs. A separate WPF app, Prose.KdpPublish, drives the Amazon KDP site to publish and republish books.</p>
 <h3 id="mcp-server">MCP server</h3>
-<p>285 tools in 51 families, surfaced to any MCP client as <code>mcp__prose__&lt;name&gt;</code>. Claude can read and write beats, entities, rulings and work orders through the same Hub the CLI uses.</p>
+<p>293 tools in 53 families, surfaced to any MCP client as <code>mcp__prose__&lt;name&gt;</code>. Claude can read and write beats, entities, rulings and work orders through the same Hub the CLI uses.</p>
 <h2 id="quick-start">Quick start</h2>
 <p>Prerequisites:</p>
 <ul>
@@ -192,7 +192,7 @@ cd Prose
 git config core.hooksPath .githooks
 dotnet build src\Prose.slnx
 </code></pre>
-<p>Without the <code>core.hooksPath</code> line the repo&#39;s <code>pre-commit</code> and <code>post-commit</code> hooks silently never run.</p>
+<p>Without the <code>core.hooksPath</code> line the repo&#39;s <code>pre-commit</code>, <code>commit-msg</code> and <code>post-commit</code> hooks silently never run. <code>post-commit</code> mirrors every Markdown file into the <code>MarkdownFiles</code> table; <code>commit-msg</code> runs the shared MindAttic commit-message check.</p>
 <p>Publish and start the Hub. It applies any pending EF Core migrations at startup, then waits for <code>/api/health</code>:</p>
 <pre><code class="language-powershell">powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Hub -Start Hub
 </code></pre>
@@ -467,7 +467,7 @@ prose --logic-sweep --slug &lt;slug&gt; --until-dry --required-dry 2 --max-round
 <p>Relationships that are only true for part of a story are <code>Edges</code> rows with <code>StoryValidFrom</code> and <code>StoryValidUntil</code>. <code>--world-state --beat &lt;id&gt; [--story-time &lt;date&gt;]</code> shows what is true at that point; the reference example is Kyle&#39;s motorcycle, owned until its destruction and owned again when the rebuilt Mk. 2 is revealed.</p>
 <h2 id="commands">Commands</h2>
 <p><code>prose.cmd</code> at the repo root runs <code>dotnet run --project src/Prose.Cli -- &lt;args&gt;</code>. Most commands need a universe: <code>--universe &lt;slug&gt;</code> or <code>PROSE_UNIVERSE</code>.</p>
-<p>The full, generated reference is <a href="docs/CLI%5FCOMMANDS.md">docs/CLI_COMMANDS.md</a>: 277 commands, 30 deactivated, 10 cost-gated. Regenerate it with <code>prose --export-commands</code>, which runs without a Hub. The tables below are a guide to the commands you will use most.</p>
+<p>The full, generated reference is <a href="docs/CLI%5FCOMMANDS.md">docs/CLI_COMMANDS.md</a>: 290 commands, 30 deactivated, 10 cost-gated. Regenerate it with <code>prose --export-commands</code>, which runs without a Hub. The tables below are a guide to the commands you will use most.</p>
 <h3 id="factory-and-reading">Factory and reading</h3>
 <table>
 <thead>
@@ -557,6 +557,10 @@ prose --logic-sweep --slug &lt;slug&gt; --until-dry --required-dry 2 --max-round
 <td><code>--print-book</code>, <code>--grep-beats</code></td>
 <td>print or search a book</td>
 </tr>
+<tr>
+<td><code>--set-node-layout --slug &lt;slug&gt; --layout prose</code></td>
+<td>how a book&#39;s beats print in every export: <code>prose</code>, <code>lyrics</code> or <code>screenplay</code></td>
+</tr>
 </tbody></table>
 <h3 id="quality">Quality</h3>
 <table>
@@ -585,6 +589,10 @@ prose --logic-sweep --slug &lt;slug&gt; --until-dry --required-dry 2 --max-round
 <tr>
 <td><code>--publish-readiness --slug &lt;slug&gt;</code></td>
 <td>the gate report as one read-only readout</td>
+</tr>
+<tr>
+<td><code>--book-report --slug &lt;slug&gt;</code>, <code>--export-book-report</code></td>
+<td>a deterministic findings, convergence and decision-log report for one book, stored as its <code>BookReports</code> row and written to the book&#39;s export folder</td>
 </tr>
 <tr>
 <td><code>--findings</code></td>
@@ -622,6 +630,14 @@ prose --logic-sweep --slug &lt;slug&gt; --until-dry --required-dry 2 --max-round
 <tr>
 <td><code>--rename-entity</code>, <code>--merge-entity</code>, <code>--add-alias</code></td>
 <td>rename, merge and alias entities</td>
+</tr>
+<tr>
+<td><code>--character-history</code>, <code>--story-edges</code></td>
+<td>what the story itself says about an entity, from per-beat contributions</td>
+</tr>
+<tr>
+<td><code>--set-entity-status --id &lt;guid&gt; --status canon</code></td>
+<td>correct an entity&#39;s lifecycle status (<code>canon</code>, <code>archived</code> or <code>stub</code>) by id</td>
 </tr>
 <tr>
 <td><code>--generate-glossary</code>, <code>--generate-book-glossary</code></td>
@@ -686,6 +702,10 @@ prose --logic-sweep --slug &lt;slug&gt; --until-dry --required-dry 2 --max-round
 <td>mirror hand-written Markdown into the <code>MarkdownFiles</code> table</td>
 </tr>
 <tr>
+<td><code>--generate-canon-md --all</code></td>
+<td>regenerate the canon docs (<code>docs/BIBLE.md</code>, <code>WORLD.md</code>, <code>CRAFT.md</code> and the rest) from the database</td>
+</tr>
+<tr>
 <td><code>--provider-status</code></td>
 <td>degraded-provider report</td>
 </tr>
@@ -704,7 +724,7 @@ prose --logic-sweep --slug &lt;slug&gt; --until-dry --required-dry 2 --max-round
 </tbody></table>
 <p>Cost-gated commands spend model money and route through the Hub&#39;s cost gate; everything else is deterministic or read-only.</p>
 <h2 id="mcp-server">MCP server</h2>
-<p><code>Prose.Mcp</code> exposes 285 <code>[McpServerTool]</code> methods in 51 families. The generated reference, with parameters and descriptions, is <a href="docs/MCP%5FTOOLS.md">docs/MCP_TOOLS.md</a>. Regenerate it with:</p>
+<p><code>Prose.Mcp</code> exposes 293 <code>[McpServerTool]</code> methods in 53 families. The generated reference, with parameters and descriptions, is <a href="docs/MCP%5FTOOLS.md">docs/MCP_TOOLS.md</a>. Regenerate it with:</p>
 <pre><code class="language-powershell">dotnet run --project src/Prose.Mcp -- --export-tools docs/MCP_TOOLS.md
 </code></pre>
 <p>The server is a Hub client: each tool forwards to <code>/api/mcp-invoke</code> with the caller&#39;s universe and the Hub key. Many tools write (beat text, entity fields, rulings, work orders). Factory tools include <code>factory_next</code>, <code>factory_context</code>, <code>read_beats</code>, <code>splice_beats</code>, <code>record_ruling</code>, <code>work_order_add</code> and <code>verify_entity_begin</code>. Cross-universe lookups (<code>get_universe_entity</code>, <code>search_universe</code>) do not switch the session&#39;s universe; <code>switch_universe</code> does.</p>
@@ -713,7 +733,7 @@ prose --logic-sweep --slug &lt;slug&gt; --until-dry --required-dry 2 --max-round
 <pre><code class="language-text">Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;
 </code></pre>
 <p>Windows authentication. The connection string resolves from the <code>ConnectionStrings__Prose</code> environment variable, then <code>appsettings.json</code> (<code>ConnectionStrings:Prose</code>), then the LocalDB default. The Hub applies pending EF Core migrations at startup and refuses to start if one fails.</p>
-<p>The schema reference is <a href="docs/schema.md">docs/schema.md</a>, generated by <code>tools/gen-schema.ps1</code> (snapshot 2026-08-14; the factory tables came later). Key tables:</p>
+<p>The schema reference, <code>docs/schema.md</code>, is generated by <code>tools/gen-schema.ps1</code> and is not committed (it is in <code>.gitignore</code>). Key tables:</p>
 <table>
 <thead>
 <tr>
@@ -800,7 +820,7 @@ prose --logic-sweep --slug &lt;slug&gt; --until-dry --required-dry 2 --max-round
 </tbody></table>
 <p>Raw T-SQL under <code>src/Prose.Core/Data/Sql/</code> is mostly historical. If a fresh database lacks rows from one of those scripts, register it in <code>SqlSeedService.Seeds</code> and run it with <code>prose --seed &lt;name&gt;</code>; never apply it by hand.</p>
 <h2 id="universes">Universes</h2>
-<p>Every canon and story row belongs to exactly one universe (<a href="docs/BIBLE.md">docs/BIBLE.md</a>, SS-LAW-15). Each has a folder under <a href="docs/universes">docs/universes</a>.</p>
+<p>Every canon and story row belongs to exactly one universe (bible law SS-LAW-15). Each has a folder under <a href="docs/universes">docs/universes</a> holding its generated glossary.</p>
 <p><img src="docs/images/kyle-glmz.jpg" alt="Kyle, the protagonist of Bushido Coda, walking a rain-soaked neon street with a katana across his back"></p>
 <table>
 <thead>
@@ -815,13 +835,13 @@ prose --logic-sweep --slug &lt;slug&gt; --until-dry --required-dry 2 --max-round
 <td>GLMZ</td>
 <td><code>glmz</code></td>
 <td>cyberpunk, Great Lakes Metropolitan Zone, 2226; the flagship (<em>Bushido Coda</em>)</td>
-<td><a href="docs/GLMZ.md">docs/GLMZ.md</a>, <a href="docs/WORLD.md">docs/WORLD.md</a></td>
+<td><a href="docs/universes/GLMZ.md">docs/universes/GLMZ.md</a>, <a href="docs/universes/GLMZ">docs/universes/GLMZ</a></td>
 </tr>
 <tr>
 <td>SCRY</td>
 <td><code>scry</code></td>
 <td>fantasy and steampunk (the Entos, the Caul)</td>
-<td><a href="docs/SCRY.md">docs/SCRY.md</a>, <a href="docs/universes/ENTOS.md">docs/universes/ENTOS.md</a></td>
+<td><a href="docs/universes/SCRY">docs/universes/SCRY</a>, <a href="docs/universes/ENTOS%5FHISTORY.md">docs/universes/ENTOS_HISTORY.md</a></td>
 </tr>
 <tr>
 <td>NONFICTION</td>
@@ -839,7 +859,7 @@ prose --logic-sweep --slug &lt;slug&gt; --until-dry --required-dry 2 --max-round
 <td>HORROR</td>
 <td><code>horror</code></td>
 <td>ambiguous and analog horror</td>
-<td><a href="docs/HORROR.md">docs/HORROR.md</a></td>
+<td><a href="docs/HORROR.md">docs/HORROR.md</a>, <a href="docs/universes/HORROR">docs/universes/HORROR</a></td>
 </tr>
 <tr>
 <td>FICTION</td>
@@ -964,7 +984,8 @@ prose --logic-sweep --slug &lt;slug&gt; --until-dry --required-dry 2 --max-round
     Prose.LlmCli/           prose-llm, the standalone provider CLI
     Prose.UnitTests/        NUnit tests with SQLite fixtures
     tools/                  launch-app.ps1, install-shortcuts.ps1
-  docs/                     the Codex: BIBLE.md, USER_STORIES.md, rfc/, agent/, universes/
+  docs/                     the Codex: USER_STORIES.md, rfc/, agent/, universes/, generated references
+                            (BIBLE.md, WORLD.md, CRAFT.md, schema.md are generated and gitignored)
   tools/                    codex.ps1, build-readme.js, gen-schema.ps1, prose-agent.ps1
   scripts/                  maintenance scripts
   engine/, engine_data/     seed and export mirrors and media; SQL is the live read path
@@ -991,11 +1012,11 @@ powershell -File tools/codex.ps1 doctor
 <pre><code class="language-powershell">dotnet test src\Prose.UnitTests\Prose.UnitTests.csproj
 dotnet test src\Prose.UnitTests\Prose.UnitTests.csproj --filter &quot;Category=LiveKeysTrusted&quot;   # live provider keys, costs money
 </code></pre>
-<p>There are 265 <code>*Tests.cs</code> files (NUnit). Most tests run on in-memory SQLite through <code>TestDbFactory</code>; explicit fixtures that need a live database or live keys are skipped by default. Wiring tests fail the build if an MCP factory tool lacks its usage attribute or a repository save loses its no-op guard.</p>
+<p>There are 285 <code>*Tests.cs</code> files (NUnit). Most tests run on in-memory SQLite through <code>TestDbFactory</code>; explicit fixtures that need a live database or live keys are skipped by default. Wiring tests fail the build if an MCP factory tool lacks its usage attribute or a repository save loses its no-op guard.</p>
 <h2 id="deployment">Deployment</h2>
 <p>There is no hosted deployment and there will not be one (author decision, 2026-08-23). The Azure App Service pipeline, the Azure SQL provisioning guide and their docs were deleted. &quot;Deploying&quot; means publishing the desktop apps locally with <code>deploy.ps1</code>; there is no CI runner.</p>
 <h2 id="history">History</h2>
-<p>The commit history is the design history: 1,381 commits since 2026-03-25. The reasoning behind each structural decision is in the Architectural Decision Register, <a href="docs/BIBLE.md">docs/BIBLE.md</a> section 14.</p>
+<p>The commit history is the design history: 1,590 commits since 2026-03-25. The reasoning behind each structural decision is in the Architectural Decision Register, section 14 of the generated bible (<code>docs/BIBLE.md</code>).</p>
 <ol>
 <li><strong>StreetSamurai scripts (2026-03 to 2026-05).</strong> Python scripts and Markdown worldbuilding for a cyberpunk city called Meridian City, with a ChromaDB and NetworkX canon engine. Almost all of it was replaced; Meridian City became GLMZ.</li>
 <li><strong>The SQL engine and the Blazor UI (2026-05 to 2026-07).</strong> Canon moved into SQL Server as the only source of truth, a typed node tree replaced ad hoc story formats, a Blazor Server writer and encyclopedia appeared, and the CLI and MCP server were split out.</li>
@@ -1124,23 +1145,23 @@ dotnet test src\Prose.UnitTests\Prose.UnitTests.csproj --filter &quot;Category=L
 <li>Single user and local only, with no hosted version.</li>
 <li>Thirty quality commands are deactivated (RFC 0014). They return only if a measurement shows they help.</li>
 <li>Station F4 cannot see names of three letters or fewer, names used in a single beat, or a mention tagged to the wrong record (RFC 0015 section 13).</li>
-<li><code>docs/schema.md</code> dates from 2026-08-14 and predates the factory tables; regenerate it with <code>tools/gen-schema.ps1</code>.</li>
+<li>The canon docs (<code>docs/BIBLE.md</code>, <code>WORLD.md</code>, <code>CRAFT.md</code>, <code>DELIGHT.md</code>, <code>ENGINE.md</code>, <code>GLMZ.md</code>, <code>SCRY.md</code>) and <code>docs/schema.md</code> are generated from the database and gitignored, so a fresh clone does not have them until you run <code>prose --generate-canon-md --all</code> (through the Hub) and <code>tools/gen-schema.ps1</code> (which reads the LocalDB schema directly).</li>
 <li><code>docs/PROVIDERS.md</code> predates the provider expansion.</li>
 <li>Local TTS needs a hand-built Python or Piper setup; ElevenLabs is the working audio path.</li>
-<li><code>tools/codex.ps1 doctor</code> currently fails: RFCs 0009 to 0015 lack codex front-matter and the digest is out of date.</li>
+<li><code>tools/codex.ps1 doctor</code> fails on a checkout without the generated <code>docs/BIBLE.md</code> (missing required file, and unresolved <code>SS-</code> cross-references in <code>docs/USER_STORIES.md</code>, two RFCs and <code>docs/data/ENTITY_IDENTITY.md</code>). Front-matter and digest checks pass.</li>
 </ul>
 <h2 id="documentation">Documentation</h2>
 <ul>
 <li><a href="AGENTS.md">AGENTS.md</a>: the provider-neutral agent entry point.</li>
 <li><a href="docs/agent/PROSE%5FPROTOCOL.md">docs/agent/PROSE_PROTOCOL.md</a>: how agents work in Prose (the factory, laws, the line, handoff).</li>
 <li><a href="docs/agent/PROMPT%5FCOMMANDS.md">docs/agent/PROMPT_COMMANDS.md</a>: portable prompt aliases such as <code>/do</code>, <code>/quicksave</code> and <code>/show</code>.</li>
-<li><a href="docs/BIBLE.md">docs/BIBLE.md</a>: engine invariants and the Architectural Decision Register.</li>
-<li><a href="docs/USER%5FSTORIES.md">docs/USER_STORIES.md</a>: the goal table.</li>
-<li><a href="docs/ARCHITECTURE.md">docs/ARCHITECTURE.md</a> and <a href="docs/ENGINE.md">docs/ENGINE.md</a>: architecture and engine notes.</li>
+<li><code>docs/BIBLE.md</code> (generated, see Limitations): engine invariants and the Architectural Decision Register.</li>
+<li><a href="docs/USER%5FSTORIES.md">docs/USER_STORIES.md</a>: the stories and tickets, rendered from the MindAttic workflow database by <code>workflow db render</code>; change them with the workflow CLI, never by hand.</li>
+<li><a href="docs/ARCHITECTURE.md">docs/ARCHITECTURE.md</a>: architecture notes.</li>
 <li><a href="docs/LOGIC.md">docs/LOGIC.md</a> and <a href="docs/READER-QA.md">docs/READER-QA.md</a>: the QA methodology.</li>
-<li><a href="docs/CRAFT.md">docs/CRAFT.md</a>, <a href="docs/DELIGHT.md">docs/DELIGHT.md</a> and <a href="docs/CRAFT%5FSCIENCES.md">docs/CRAFT_SCIENCES.md</a>: craft doctrine and its sources.</li>
+<li><a href="docs/CRAFT%5FSCIENCES.md">docs/CRAFT_SCIENCES.md</a>: the sources behind the craft doctrine (the doctrine itself, <code>CRAFT.md</code> and <code>DELIGHT.md</code>, is generated).</li>
+<li><a href="docs/EXPORTS.md">docs/EXPORTS.md</a>, <a href="docs/LEDGER.md">docs/LEDGER.md</a> and <a href="docs/FINDING-CODES.md">docs/FINDING-CODES.md</a>: export retention and rendering, the story ledger, and finding codes and their suppression.</li>
 <li><a href="docs/CLI%5FCOMMANDS.md">docs/CLI_COMMANDS.md</a> and <a href="docs/MCP%5FTOOLS.md">docs/MCP_TOOLS.md</a>: generated command and tool references.</li>
-<li><a href="docs/schema.md">docs/schema.md</a>: the database schema.</li>
 <li><a href="docs/rfc">docs/rfc</a>: open design notes (decided ones are folded into the bible and deleted).</li>
 <li><a href="src/README.md">src/README.md</a>: the solution map.</li>
 </ul>

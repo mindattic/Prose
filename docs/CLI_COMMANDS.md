@@ -19,7 +19,7 @@
 > deliberate: RFC 0014 §2.4 is about a gate documented as seven checks, coded as six
 > and advertised as five, and this reference is not going to repeat that.
 
-**285 commands.** 30 deactivated. 10 cost-gated. 18 have no description in their dispatch comment (12 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**290 commands.** 30 deactivated. 10 cost-gated. 18 have no description in their dispatch comment (12 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -377,6 +377,12 @@ book operations — list / new / show / chapters / absorb / review / apply / exp
 
 <sub>handler `BookCli`</sub>
 
+### `--book-report`
+
+prose --book-report --slug <slug-or-code> [--out <dir>] [--code <CODE>] [--complete] [--no-export] Deterministic findings/convergence/decision-log pull for one book, written to Downloads\GLMZ_Book_Reports\drafts\{CODE}[_complete].md, plus a BookReports DB row and the latest {CODE}_BookReport.md in the book's export directory (see BookReportService/BookReportStore/BookReportCli).
+
+<sub>handler `BookReportCli`</sub>
+
 ### `--booktok`
 
 ```
@@ -456,6 +462,17 @@ prose --character-gear --search "<text>" [--json]
 surgical CRUD over a character's signature-gear / pharmaceuticals list. Added 2026-09-03 — there was no sanctioned way to remove ONE gear entry; create_character round-trips the whole record through the delete-all-and-reinsert mapper, so correcting a single invented item risked every other field. Logic lives in CharacterGearService, shared with the *_character_gear MCP tools. Universe-scoped (--character resolves through db.Characters), so it stays out of UniverseAgnosticCommands.
 
 <sub>handler `CharacterGearCli`</sub>
+
+### `--character-history` / `--story-edges`
+
+```
+prose --character-history --entity <id|slug> [--in-book <CODE>]
+prose --story-edges --entity <id|slug> [--relation <r>]
+```
+
+the story's own answers, from beat contributions (WO:01a13278).
+
+<sub>handler `StoryCli`</sub>
 
 ### `--check-duplicate-beats` — **DEACTIVATED**
 
@@ -918,6 +935,12 @@ prose --export <entityId>            one entity, plain .json
 dump canon JSON to the user's Downloads folder.
 
 <sub>handler `ExportCli`</sub>
+
+### `--export-book-report`
+
+prose --export-book-report --slug <slug-or-code> Writes the stored BookReports row to {book export dir}\{CODE}_BookReport.md (ExportBookReportCli).
+
+<sub>handler `ExportBookReportCli`</sub>
 
 ### `--export-commands`
 
@@ -2175,6 +2198,16 @@ prose --set-entity-slug --id <guid> --to <slug> [--apply] prose --set-entity-nam
 
 <sub>handler `CanonMaintenanceCli`</sub>
 
+### `--set-entity-status`
+
+```
+prose --set-entity-status --id <entity guid> --status canon|archived|stub
+```
+
+explicit, by-id correction of Entities.Status — the one lifecycle column neither --set-entity-fields nor --backfill-stubs can reach (see SetEntityStatusCli's doc comment).
+
+<sub>handler `SetEntityStatusCli`</sub>
+
 ### `--set-narrative-mode`
 
 prose --set-narrative-mode --slug <slug> --mode original|retelling|historical Gates TrinityReconciliationService's book scope — see SetNarrativeModeCli.
@@ -2190,6 +2223,12 @@ prose --set-node-author --slug <slug|code|guid> --author "<Name>"
 set Node.Author — the pen name exports fall through to instead of "MindAttic". See SetNodeAuthorCli class doc.
 
 <sub>handler `SetNodeAuthorCli`</sub>
+
+### `--set-node-layout`
+
+prose --set-node-layout --slug <slug> --layout prose|lyrics|screenplay How the book's beats print in every export format — see SetNodeLayoutCli / BeatLayout.
+
+<sub>handler `SetNodeLayoutCli`</sub>
 
 ### `--set-node-slug`
 

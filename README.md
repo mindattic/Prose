@@ -2,7 +2,7 @@
 
 A local novel-writing engine: SQL Server canon for whole fictional universes, a desktop Writer, and a CLI and MCP server so Claude can draft, read and repair books against that canon.
 
-[![.NET 10](https://img.shields.io/badge/.NET-10-512BD4)](https://dotnet.microsoft.com/) [![C#](https://img.shields.io/badge/language-C%23-239120)](https://learn.microsoft.com/dotnet/csharp/) [![SQL Server](https://img.shields.io/badge/canon-SQL%20Server-CC2927)](docs/schema.md) [![MCP](https://img.shields.io/badge/MCP-285%20tools-6E56CF)](docs/MCP%5FTOOLS.md) [![Platform](https://img.shields.io/badge/platform-Windows-0078D4)](#quick-start) [![Status](https://img.shields.io/badge/status-active%20development-2EA44F)](#limitations)
+[![.NET 10](https://img.shields.io/badge/.NET-10-512BD4)](https://dotnet.microsoft.com/) [![C#](https://img.shields.io/badge/language-C%23-239120)](https://learn.microsoft.com/dotnet/csharp/) [![SQL Server](https://img.shields.io/badge/canon-SQL%20Server-CC2927)](#database) [![MCP](https://img.shields.io/badge/MCP-293%20tools-6E56CF)](docs/MCP%5FTOOLS.md) [![Platform](https://img.shields.io/badge/platform-Windows-0078D4)](#quick-start) [![Status](https://img.shields.io/badge/status-active%20development-2EA44F)](#limitations)
 
 ![Covers of five books written and kept in Prose: Between the Lines, Critical Mass, Tournament, 1381 The Peasants' Revolt and M-101](docs/images/book-covers.jpg)
 
@@ -59,7 +59,7 @@ Every canon row belongs to exactly one universe. Books are a tree of nodes (seri
 
 ### MCP server
 
-285 tools in 51 families, surfaced to any MCP client as `mcp__prose__<name>`. Claude can read and write beats, entities, rulings and work orders through the same Hub the CLI uses.
+293 tools in 53 families, surfaced to any MCP client as `mcp__prose__<name>`. Claude can read and write beats, entities, rulings and work orders through the same Hub the CLI uses.
 
 ## Quick start
 
@@ -79,7 +79,7 @@ git config core.hooksPath .githooks
 dotnet build src\Prose.slnx
 ```
 
-Without the `core.hooksPath` line the repo's `pre-commit` and `post-commit` hooks silently never run.
+Without the `core.hooksPath` line the repo's `pre-commit`, `commit-msg` and `post-commit` hooks silently never run. `post-commit` mirrors every Markdown file into the `MarkdownFiles` table; `commit-msg` runs the shared MindAttic commit-message check.
 
 Publish and start the Hub. It applies any pending EF Core migrations at startup, then waits for `/api/health`:
 
@@ -280,7 +280,7 @@ Relationships that are only true for part of a story are `Edges` rows with `Stor
 
 `prose.cmd` at the repo root runs `dotnet run --project src/Prose.Cli -- <args>`. Most commands need a universe: `--universe <slug>` or `PROSE_UNIVERSE`.
 
-The full, generated reference is [docs/CLI\_COMMANDS.md](docs/CLI%5FCOMMANDS.md): 277 commands, 30 deactivated, 10 cost-gated. Regenerate it with `prose --export-commands`, which runs without a Hub. The tables below are a guide to the commands you will use most.
+The full, generated reference is [docs/CLI\_COMMANDS.md](docs/CLI%5FCOMMANDS.md): 290 commands, 30 deactivated, 10 cost-gated. Regenerate it with `prose --export-commands`, which runs without a Hub. The tables below are a guide to the commands you will use most.
 
 ### Factory and reading
 
@@ -309,6 +309,7 @@ The full, generated reference is [docs/CLI\_COMMANDS.md](docs/CLI%5FCOMMANDS.md)
 | `--clone-book --slug <slug> --draft` | clone a book to rebuild it while the original stays frozen |
 | `--expand-beat`, `--generate-scene` | generate prose through `ProseWriterRouter` |
 | `--print-book`, `--grep-beats` | print or search a book |
+| `--set-node-layout --slug <slug> --layout prose` | how a book's beats print in every export: `prose`, `lyrics` or `screenplay` |
 
 ### Quality
 
@@ -319,6 +320,7 @@ The full, generated reference is [docs/CLI\_COMMANDS.md](docs/CLI%5FCOMMANDS.md)
 | `--lint-prose --slug <slug>` | deterministic prose linter |
 | `--check-text-integrity` | corrupted-character scan and safe fixes |
 | `--publish-readiness --slug <slug>` | the gate report as one read-only readout |
+| `--book-report --slug <slug>`, `--export-book-report` | a deterministic findings, convergence and decision-log report for one book, stored as its `BookReports` row and written to the book's export folder |
 | `--findings` | the findings inbox and per-instrument statistics |
 | `--graph-health --universe <slug>` | world graph integrity |
 | `--world-state --beat <id>` | the state of the world at one beat |
@@ -331,6 +333,8 @@ The full, generated reference is [docs/CLI\_COMMANDS.md](docs/CLI%5FCOMMANDS.md)
 | `--add-character`, `--add-place`, `--add-faction`, `--add-weapon`, `--add-corponation` | seed typed entities from JSON |
 | `--find-entity`, `--show`, `--entity-mentions` | look up an entity and where it appears |
 | `--rename-entity`, `--merge-entity`, `--add-alias` | rename, merge and alias entities |
+| `--character-history`, `--story-edges` | what the story itself says about an entity, from per-beat contributions |
+| `--set-entity-status --id <guid> --status canon` | correct an entity's lifecycle status (`canon`, `archived` or `stub`) by id |
 | `--generate-glossary`, `--generate-book-glossary` | universe and book glossaries |
 | `--rebuild-graph`, `--reembed` | rebuild the graph; re-embed entities |
 | `--universe-import`, `--universe-export`, `--universe-sync` | the Universe Interchange format |
@@ -352,6 +356,7 @@ The full, generated reference is [docs/CLI\_COMMANDS.md](docs/CLI%5FCOMMANDS.md)
 | `--migrate-sql --schema` | apply EF Core migrations and enable temporal versioning; idempotent |
 | `--seed <name>` | apply a registered raw T-SQL seed (`SqlSeedService.Seeds`) |
 | `--sync-markdown` | mirror hand-written Markdown into the `MarkdownFiles` table |
+| `--generate-canon-md --all` | regenerate the canon docs (`docs/BIBLE.md`, `WORLD.md`, `CRAFT.md` and the rest) from the database |
 | `--provider-status` | degraded-provider report |
 | `--estimate-cost`, `--cost` | model-call cost estimates and the running cost ledger |
 | `--command-log`, `--log-search` | the Hub's command ledger and log files |
@@ -361,7 +366,7 @@ Cost-gated commands spend model money and route through the Hub's cost gate; eve
 
 ## MCP server
 
-`Prose.Mcp` exposes 285 `[McpServerTool]` methods in 51 families. The generated reference, with parameters and descriptions, is [docs/MCP\_TOOLS.md](docs/MCP%5FTOOLS.md). Regenerate it with:
+`Prose.Mcp` exposes 293 `[McpServerTool]` methods in 53 families. The generated reference, with parameters and descriptions, is [docs/MCP\_TOOLS.md](docs/MCP%5FTOOLS.md). Regenerate it with:
 
 ```powershell
 dotnet run --project src/Prose.Mcp -- --export-tools docs/MCP_TOOLS.md
@@ -379,7 +384,7 @@ Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServer
 
 Windows authentication. The connection string resolves from the `ConnectionStrings__Prose` environment variable, then `appsettings.json` (`ConnectionStrings:Prose`), then the LocalDB default. The Hub applies pending EF Core migrations at startup and refuses to start if one fails.
 
-The schema reference is [docs/schema.md](docs/schema.md), generated by `tools/gen-schema.ps1` (snapshot 2026-08-14; the factory tables came later). Key tables:
+The schema reference, `docs/schema.md`, is generated by `tools/gen-schema.ps1` and is not committed (it is in `.gitignore`). Key tables:
 
 | Table | Role |
 | --- | --- |
@@ -407,17 +412,17 @@ Raw T-SQL under `src/Prose.Core/Data/Sql/` is mostly historical. If a fresh data
 
 ## Universes
 
-Every canon and story row belongs to exactly one universe ([docs/BIBLE.md](docs/BIBLE.md), SS-LAW-15). Each has a folder under [docs/universes](docs/universes).
+Every canon and story row belongs to exactly one universe (bible law SS-LAW-15). Each has a folder under [docs/universes](docs/universes) holding its generated glossary.
 
 ![Kyle, the protagonist of Bushido Coda, walking a rain-soaked neon street with a katana across his back](docs/images/kyle-glmz.jpg)
 
 | Universe | Slug | Genre | Docs |
 | --- | --- | --- | --- |
-| GLMZ | `glmz` | cyberpunk, Great Lakes Metropolitan Zone, 2226; the flagship (*Bushido Coda*) | [docs/GLMZ.md](docs/GLMZ.md), [docs/WORLD.md](docs/WORLD.md) |
-| SCRY | `scry` | fantasy and steampunk (the Entos, the Caul) | [docs/SCRY.md](docs/SCRY.md), [docs/universes/ENTOS.md](docs/universes/ENTOS.md) |
+| GLMZ | `glmz` | cyberpunk, Great Lakes Metropolitan Zone, 2226; the flagship (*Bushido Coda*) | [docs/universes/GLMZ.md](docs/universes/GLMZ.md), [docs/universes/GLMZ](docs/universes/GLMZ) |
+| SCRY | `scry` | fantasy and steampunk (the Entos, the Caul) | [docs/universes/SCRY](docs/universes/SCRY), [docs/universes/ENTOS\_HISTORY.md](docs/universes/ENTOS%5FHISTORY.md) |
 | NONFICTION | `nonfiction` | citation-grounded nonfiction (formerly GSPL, then SOURCE) | [docs/NONFICTION.md](docs/NONFICTION.md) |
 | GOSPEL | `gospel` | split from NONFICTION; New Testament claims catalogue | [docs/gospel](docs/gospel) |
-| HORROR | `horror` | ambiguous and analog horror | [docs/HORROR.md](docs/HORROR.md) |
+| HORROR | `horror` | ambiguous and analog horror | [docs/HORROR.md](docs/HORROR.md), [docs/universes/HORROR](docs/universes/HORROR) |
 | FICTION | `fiction` | general literary fiction (formerly EPIC) | [docs/universes/FICTION](docs/universes/FICTION) |
 | EROTICA | `erotica` | added 2026-08-04 | [docs/universes/EROTICA](docs/universes/EROTICA) |
 
@@ -497,7 +502,8 @@ Prose/
     Prose.LlmCli/           prose-llm, the standalone provider CLI
     Prose.UnitTests/        NUnit tests with SQLite fixtures
     tools/                  launch-app.ps1, install-shortcuts.ps1
-  docs/                     the Codex: BIBLE.md, USER_STORIES.md, rfc/, agent/, universes/
+  docs/                     the Codex: USER_STORIES.md, rfc/, agent/, universes/, generated references
+                            (BIBLE.md, WORLD.md, CRAFT.md, schema.md are generated and gitignored)
   tools/                    codex.ps1, build-readme.js, gen-schema.ps1, prose-agent.ps1
   scripts/                  maintenance scripts
   engine/, engine_data/     seed and export mirrors and media; SQL is the live read path
@@ -540,7 +546,7 @@ dotnet test src\Prose.UnitTests\Prose.UnitTests.csproj
 dotnet test src\Prose.UnitTests\Prose.UnitTests.csproj --filter "Category=LiveKeysTrusted"   # live provider keys, costs money
 ```
 
-There are 265 `*Tests.cs` files (NUnit). Most tests run on in-memory SQLite through `TestDbFactory`; explicit fixtures that need a live database or live keys are skipped by default. Wiring tests fail the build if an MCP factory tool lacks its usage attribute or a repository save loses its no-op guard.
+There are 285 `*Tests.cs` files (NUnit). Most tests run on in-memory SQLite through `TestDbFactory`; explicit fixtures that need a live database or live keys are skipped by default. Wiring tests fail the build if an MCP factory tool lacks its usage attribute or a repository save loses its no-op guard.
 
 ## Deployment
 
@@ -548,7 +554,7 @@ There is no hosted deployment and there will not be one (author decision, 2026-0
 
 ## History
 
-The commit history is the design history: 1,381 commits since 2026-03-25. The reasoning behind each structural decision is in the Architectural Decision Register, [docs/BIBLE.md](docs/BIBLE.md) section 14.
+The commit history is the design history: 1,590 commits since 2026-03-25. The reasoning behind each structural decision is in the Architectural Decision Register, section 14 of the generated bible (`docs/BIBLE.md`).
 
 1. **StreetSamurai scripts (2026-03 to 2026-05).** Python scripts and Markdown worldbuilding for a cyberpunk city called Meridian City, with a ChromaDB and NetworkX canon engine. Almost all of it was replaced; Meridian City became GLMZ.
 2. **The SQL engine and the Blazor UI (2026-05 to 2026-07).** Canon moved into SQL Server as the only source of truth, a typed node tree replaced ad hoc story formats, a Blazor Server writer and encyclopedia appeared, and the CLI and MCP server were split out.
@@ -603,23 +609,23 @@ Ten invention disclosures describe systems in the engine as designed. They are p
 - Single user and local only, with no hosted version.
 - Thirty quality commands are deactivated (RFC 0014). They return only if a measurement shows they help.
 - Station F4 cannot see names of three letters or fewer, names used in a single beat, or a mention tagged to the wrong record (RFC 0015 section 13).
-- `docs/schema.md` dates from 2026-08-14 and predates the factory tables; regenerate it with `tools/gen-schema.ps1`.
+- The canon docs (`docs/BIBLE.md`, `WORLD.md`, `CRAFT.md`, `DELIGHT.md`, `ENGINE.md`, `GLMZ.md`, `SCRY.md`) and `docs/schema.md` are generated from the database and gitignored, so a fresh clone does not have them until you run `prose --generate-canon-md --all` (through the Hub) and `tools/gen-schema.ps1` (which reads the LocalDB schema directly).
 - `docs/PROVIDERS.md` predates the provider expansion.
 - Local TTS needs a hand-built Python or Piper setup; ElevenLabs is the working audio path.
-- `tools/codex.ps1 doctor` currently fails: RFCs 0009 to 0015 lack codex front-matter and the digest is out of date.
+- `tools/codex.ps1 doctor` fails on a checkout without the generated `docs/BIBLE.md` (missing required file, and unresolved `SS-` cross-references in `docs/USER_STORIES.md`, two RFCs and `docs/data/ENTITY_IDENTITY.md`). Front-matter and digest checks pass.
 
 ## Documentation
 
 - [AGENTS.md](AGENTS.md): the provider-neutral agent entry point.
 - [docs/agent/PROSE\_PROTOCOL.md](docs/agent/PROSE%5FPROTOCOL.md): how agents work in Prose (the factory, laws, the line, handoff).
 - [docs/agent/PROMPT\_COMMANDS.md](docs/agent/PROMPT%5FCOMMANDS.md): portable prompt aliases such as `/do`, `/quicksave` and `/show`.
-- [docs/BIBLE.md](docs/BIBLE.md): engine invariants and the Architectural Decision Register.
-- [docs/USER\_STORIES.md](docs/USER%5FSTORIES.md): the goal table.
-- [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) and [docs/ENGINE.md](docs/ENGINE.md): architecture and engine notes.
+- `docs/BIBLE.md` (generated, see Limitations): engine invariants and the Architectural Decision Register.
+- [docs/USER\_STORIES.md](docs/USER%5FSTORIES.md): the stories and tickets, rendered from the MindAttic workflow database by `workflow db render`; change them with the workflow CLI, never by hand.
+- [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md): architecture notes.
 - [docs/LOGIC.md](docs/LOGIC.md) and [docs/READER-QA.md](docs/READER-QA.md): the QA methodology.
-- [docs/CRAFT.md](docs/CRAFT.md), [docs/DELIGHT.md](docs/DELIGHT.md) and [docs/CRAFT\_SCIENCES.md](docs/CRAFT%5FSCIENCES.md): craft doctrine and its sources.
+- [docs/CRAFT\_SCIENCES.md](docs/CRAFT%5FSCIENCES.md): the sources behind the craft doctrine (the doctrine itself, `CRAFT.md` and `DELIGHT.md`, is generated).
+- [docs/EXPORTS.md](docs/EXPORTS.md), [docs/LEDGER.md](docs/LEDGER.md) and [docs/FINDING-CODES.md](docs/FINDING-CODES.md): export retention and rendering, the story ledger, and finding codes and their suppression.
 - [docs/CLI\_COMMANDS.md](docs/CLI%5FCOMMANDS.md) and [docs/MCP\_TOOLS.md](docs/MCP%5FTOOLS.md): generated command and tool references.
-- [docs/schema.md](docs/schema.md): the database schema.
 - [docs/rfc](docs/rfc): open design notes (decided ones are folded into the bible and deleted).
 - [src/README.md](src/README.md): the solution map.
 
