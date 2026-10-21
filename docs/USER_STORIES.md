@@ -6,7 +6,7 @@ layer: stories
 status: living
 updated: 2026-10-03
 ---
-<!-- GENERATED from MindAttic.Workflow/data/workflow.db by `workflow db render`. Do not edit: this file is rewritten from the database; change stories and tickets with the workflow CLI. -->
+<!-- GENERATED from MindAttic.Tickets/data/Tickets.db by `tickets db render`. Do not edit: this file is rewritten from the database; change stories and tickets with the tickets CLI. -->
 
 # Prose — User Stories
 > ✅ done (shipped & tested) · 🟡 partial · ⬜ planned. Every ✅ cites the test.
@@ -713,3 +713,4 @@ updated: 2026-10-03
 | PRS-T214 | 2026-10-19 | interview | open | Interview: Wren Singh's record (no mentions in any book now) mixes she and he, a teleporting 'blink' and a House Calyx backstory from another universe. Clean it, archive it, or leave it? | — |
 | PRS-T215 | 2026-10-19 | chore | open | Convert tracked source files to LF line endings via .gitattributes, per HOUSE-LAW-13 (low priority) | — |
 | PRS-T216 | 2026-10-19 | docs | closed | Render USER_STORIES.md from the workflow database (PRS-T189-T215 interview tickets filed, PRS-T136 closed) | d1dd618c2 |
+| PRS-T217 | 2026-10-20 | docs | open | Publish Prose docs to GitHub Pages via the shared Toolkit DocFX pipeline: run adopt-docs-site.ps1 (README.md as home page, docs/*.md as articles, API reference only where the code builds in CI), enable Pages with build_type=workflow, set the repo homepage URL, retire tools/build-readme.ps1 and README.htm, confirm the docs Actions run is green and https://mindattic.github.io/Prose/ returns 200. Depends on MAT-T8. Also retire the Node tools/build-readme.js. | — |
