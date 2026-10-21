@@ -4,15 +4,15 @@
         xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
         Title="Prose Writer" Height="1000" Width="1500"
         WindowStartupLocation="CenterScreen"
-        Background="{StaticResource McChrome}">
+        Background="{StaticResource MaChrome}">
     <Grid>
         <!-- Splash. Visible until the Hub answers and the page has been navigated to; the
              WebView2 underneath is transparent until first paint, and a WebView2 showing the
              browser's own error page is a worse first impression than a status line. -->
         <StackPanel x:Name="Splash" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <TextBlock Text="Prose Writer" Foreground="{StaticResource McText}" FontSize="28" FontFamily="Georgia"
+            <TextBlock Text="Prose Writer" Foreground="{StaticResource MaText}" FontSize="28" FontFamily="Georgia"
                        HorizontalAlignment="Center" />
-            <TextBlock x:Name="SplashStatus" Text="Starting…" Foreground="{StaticResource McMuted}" FontSize="13"
+            <TextBlock x:Name="SplashStatus" Text="Starting…" Foreground="{StaticResource MaMuted}" FontSize="13"
                        FontFamily="Segoe UI" Margin="0,12,0,0" HorizontalAlignment="Center"
                        TextAlignment="Center" MaxWidth="640" TextWrapping="Wrap" />
 
@@ -24,7 +24,7 @@
                  and no button inside it is running any more. -->
             <Button x:Name="ConnectButton" Content="Connect" Visibility="Collapsed"
                     Margin="0,20,0,0" HorizontalAlignment="Center" Padding="22,7"
-                    Style="{StaticResource McButton}" Click="OnConnectClick" />
+                    Style="{StaticResource MaButton}" Click="OnConnectClick" />
         </StackPanel>
 
         <wv2:WebView2 x:Name="Web" Visibility="Collapsed" />

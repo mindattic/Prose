@@ -4,42 +4,42 @@
         Title="Prose" Height="500" Width="520"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
-        Background="{StaticResource McChrome}">
+        Background="{StaticResource MaChrome}">
     <Window.Resources>
-        <!-- Prose's brand red for the tiles' hover fill; the tile itself is the shared McTileButton. -->
-        <SolidColorBrush x:Key="McTileHover" Color="#ff0033" />
+        <!-- Prose's brand red for the tiles' hover fill; the tile itself is the shared MaTileButton. -->
+        <SolidColorBrush x:Key="MaTileHover" Color="#ff0033" />
     </Window.Resources>
 
     <StackPanel Margin="24">
-        <TextBlock Text="Prose" Foreground="{StaticResource McText}" FontSize="30" FontFamily="Georgia" />
-        <TextBlock x:Name="HubStatus" Text="Checking Prose Hub…" Foreground="{StaticResource McMuted}"
+        <TextBlock Text="Prose" Foreground="{StaticResource MaText}" FontSize="30" FontFamily="Georgia" />
+        <TextBlock x:Name="HubStatus" Text="Checking Prose Hub…" Foreground="{StaticResource MaMuted}"
                    FontFamily="Segoe UI" FontSize="12" Margin="0,4,0,20" TextWrapping="Wrap" />
 
-        <Button x:Name="WriterButton" Style="{StaticResource McTileButton}" Click="OpenWriter">
+        <Button x:Name="WriterButton" Style="{StaticResource MaTileButton}" Click="OpenWriter">
             <StackPanel>
                 <TextBlock Text="Writer" FontSize="15" />
-                <TextBlock Text="Read and hand-edit a book, beat by beat" Style="{StaticResource McTileSubtitle}" />
+                <TextBlock Text="Read and hand-edit a book, beat by beat" Style="{StaticResource MaTileSubtitle}" />
             </StackPanel>
         </Button>
 
-        <Button x:Name="KdpButton" Style="{StaticResource McTileButton}" Click="OpenKdp">
+        <Button x:Name="KdpButton" Style="{StaticResource MaTileButton}" Click="OpenKdp">
             <StackPanel>
                 <TextBlock Text="KDP Publish" FontSize="15" />
-                <TextBlock Text="Publish and update books on Amazon" Style="{StaticResource McTileSubtitle}" />
+                <TextBlock Text="Publish and update books on Amazon" Style="{StaticResource MaTileSubtitle}" />
             </StackPanel>
         </Button>
 
-        <Button x:Name="CliButton" Style="{StaticResource McTileButton}" Click="OpenCli">
+        <Button x:Name="CliButton" Style="{StaticResource MaTileButton}" Click="OpenCli">
             <StackPanel>
                 <TextBlock Text="CLI" FontSize="15" />
-                <TextBlock Text="Claude Code in D:\Projects\MindAttic\Prose" Style="{StaticResource McTileSubtitle}" />
+                <TextBlock Text="Claude Code in D:\Projects\MindAttic\Prose" Style="{StaticResource MaTileSubtitle}" />
             </StackPanel>
         </Button>
 
-        <Button x:Name="HubButton" Style="{StaticResource McTileButton}" Click="OpenHubDashboard">
+        <Button x:Name="HubButton" Style="{StaticResource MaTileButton}" Click="OpenHubDashboard">
             <StackPanel>
                 <TextBlock Text="Hub dashboard" FontSize="15" />
-                <TextBlock Text="Logs, DCM, findings — opens in your browser" Style="{StaticResource McTileSubtitle}" />
+                <TextBlock Text="Logs, DCM, findings — opens in your browser" Style="{StaticResource MaTileSubtitle}" />
             </StackPanel>
         </Button>
     </StackPanel>
