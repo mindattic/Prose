@@ -53,6 +53,9 @@ Audit every story against all six. Findings cite SortKeys and quote the offendin
    every decision an established motivation; every capability an on-page origin *before* its
    use. (Origin-campaign catches: a dead-man's-send used in a confrontation but never staged;
    a wound described as healed the night before it is inflicted.)
+   This dimension asks whether every event *has* a cause. Whether each scene join *drives* the
+   story (BUT or THEREFORE, never AND THEN) is a separate hand-read lens: the law ruling
+   "BUT / THEREFORE" (2026-10-23, in glmz, fiction and scry).
 2. **Knowledge states.** Per named character: what they know and the beat where they learned
    it. Nobody acts on knowledge they don't have; nobody is ignorant of what they were shown
    learning. Includes NAMES — a name used before its on-page coining/learning beat is a
