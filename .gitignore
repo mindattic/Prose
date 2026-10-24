@@ -124,9 +124,9 @@ tools/kdp/diagnose-*.json
 tools/kdp/bookshelf-scan-*.json
 .prose/quicksave.md
 
-# Portable agent session state (command definitions under .prose/commands are tracked).
-.prose/agent-session.json
-.prose/agent-session.json.*
+# Portable agent session state (command definitions under .agent/commands are tracked).
+.agent/agent-session.json
+.agent/agent-session.json.*
 
 # RFC 0015: retired quicksave transcripts and queue files, kept locally for history only
 .prose/archive/
