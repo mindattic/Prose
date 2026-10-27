@@ -700,8 +700,11 @@ public class SchemaRebuildService
             // script inserted dates 543 years in the future.
             "date"           => "'" + rdr.GetDateTime(i).ToString("yyyy-MM-dd", CultureInfo.InvariantCulture) + "'",
             "time"           => $"'{((TimeSpan)rdr.GetValue(i)):c}'",
-            "datetime" or "datetime2" or "smalldatetime"
-                             => "'" + rdr.GetDateTime(i).ToString("yyyy-MM-ddTHH:mm:ss.fffffff", CultureInfo.InvariantCulture) + "'",
+            // datetime accepts at most 3 fractional digits and smalldatetime none: the 7-digit
+            // literal made a replayed recovery script fail with a conversion error.
+            "datetime"       => "'" + rdr.GetDateTime(i).ToString("yyyy-MM-ddTHH:mm:ss.fff", CultureInfo.InvariantCulture) + "'",
+            "smalldatetime"  => "'" + rdr.GetDateTime(i).ToString("yyyy-MM-ddTHH:mm:ss", CultureInfo.InvariantCulture) + "'",
+            "datetime2"      => "'" + rdr.GetDateTime(i).ToString("yyyy-MM-ddTHH:mm:ss.fffffff", CultureInfo.InvariantCulture) + "'",
             "datetimeoffset" => "'" + ((DateTimeOffset)rdr.GetValue(i)).ToString("yyyy-MM-ddTHH:mm:ss.fffffffzzz", CultureInfo.InvariantCulture) + "'",
             "varbinary" or "binary" or "image"
                              => "0x" + Convert.ToHexString((byte[])rdr.GetValue(i)),
