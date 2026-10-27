@@ -152,10 +152,23 @@ public class ChapterRepository : IChapterRepository
         // Always clear: the old "Count > 0" guard left every ChapterBeats row behind when the
         // last beat was removed. Keep each surviving beat's SortKey (new rows reset it to 0).
         var oldSortKeys = sub.Beats.GroupBy(b => b.BeatGuid).ToDictionary(g => g.Key, g => g.First().SortKey);
+        // The columns Models.ChapterBeat does not carry (tone, pace, in-world date, recording state)
+        // are copied across from the old row: re-adding fresh rows reset them on every save.
+        var oldRows = sub.Beats.GroupBy(b => b.BeatGuid).ToDictionary(g => g.Key, g => g.First());
         sub.Beats.Clear();
         foreach (var beat in chapter.Beats.OrderBy(b => b.Index))
+        {
+            oldRows.TryGetValue(ParseGuid(beat.Id), out var old);
             sub.Beats.Add(new ChapterBeatEntity
             {
+                EmotionalTone  = old?.EmotionalTone,
+                PaceHint       = old?.PaceHint,
+                InWorldDate    = old?.InWorldDate,
+                AudioPath      = old?.AudioPath,
+                DurationSec    = old?.DurationSec,
+                NarratedAt     = old?.NarratedAt,
+                LastRequestId  = old?.LastRequestId,
+                WasCorrected   = old?.WasCorrected ?? false,
                 BeatGuid       = ParseGuid(beat.Id),
                 SortKey        = oldSortKeys.TryGetValue(ParseGuid(beat.Id), out var sk) ? sk : beat.Index,
                 ChapterId      = id,
@@ -167,6 +180,7 @@ public class ChapterRepository : IChapterRepository
                 StructureRole  = beat.StructureRole ?? "",
                 SceneType      = beat.SceneType ?? "scene",
             });
+        }
 
         var rec = db.Records.FirstOrDefault(r => r.EntityId == id);
         var json = JsonSerializer.Serialize(chapter, JsonOpts);
