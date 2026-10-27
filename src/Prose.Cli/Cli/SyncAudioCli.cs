@@ -24,6 +24,15 @@ public static class SyncAudioCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
+        // No flags exist. A --dry-run / --push / --pull / --node used to be ignored, so a preview
+        // request ran a full real two-way copy.
+        var unsupported = args.Where(a => a is "--dry-run" or "--push" or "--pull" or "--node" or "--verbose").ToList();
+        if (unsupported.Count > 0)
+        {
+            Console.Error.WriteLine($"[sync-audio] takes no flags (got {string.Join(' ', unsupported)}); it always runs one real bidirectional newest-wins pass.");
+            return 2;
+        }
+
         var paths = services.GetRequiredService<IPathProvider>();
         var loggerFactory = services.GetRequiredService<ILoggerFactory>();
         var config = services.GetRequiredService<IConfiguration>();
