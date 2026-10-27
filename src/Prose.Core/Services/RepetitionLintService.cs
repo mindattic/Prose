@@ -275,25 +275,30 @@ public class RepetitionLintService
         var metricsById = await db.BeatProseMetrics.AsNoTracking()
             .Where(m => beatIds.Contains(m.BeatId))
             .ToDictionaryAsync(m => m.BeatId, ct);
-        int airlessRun = 0; int airlessStartNumber = 0;
+        int airlessRun = 0; int airlessStartNumber = 0; int airlessLastNumber = 0;
+        void ReportAirlessRun()
+        {
+            if (airlessRun >= AirlessRunFloor)
+            {
+                dialogueCount++;
+                File(FindingSeverity.Low,
+                    $"beats #{airlessStartNumber}–#{airlessLastNumber}: {airlessRun} consecutive beats with almost no dialogue — airless narration run.",
+                    fix: "Let characters speak — break summary/narration with scene.");
+            }
+            airlessRun = 0;
+        }
         foreach (var beat in beats)
         {
-            if (!metricsById.TryGetValue(beat.Id, out var m)) { airlessRun = 0; continue; }
+            if (!metricsById.TryGetValue(beat.Id, out var m)) { ReportAirlessRun(); continue; }
             if (m.DialogueProportion < AirlessDialogueFloor && m.WordCount > 150)
             {
                 if (airlessRun == 0) airlessStartNumber = beat.Number;
+                airlessLastNumber = beat.Number;
                 airlessRun++;
             }
             else
             {
-                if (airlessRun >= AirlessRunFloor)
-                {
-                    dialogueCount++;
-                    File(FindingSeverity.Low,
-                        $"beats #{airlessStartNumber}–#{beat.Number}: {airlessRun} consecutive beats with almost no dialogue — airless narration run.",
-                        fix: "Let characters speak — break summary/narration with scene.");
-                }
-                airlessRun = 0;
+                ReportAirlessRun();
             }
             if (m.DialogueProportion >= FloatingHeadsProportion && m.WordCount >= FloatingHeadsMinWords)
             {
@@ -303,6 +308,7 @@ public class RepetitionLintService
                     fix: "Interleave physical action, setting, and interiority between exchanges.");
             }
         }
+        ReportAirlessRun(); // a run reaching the last beat has no following beat to close it
         if (airlessRun >= AirlessRunFloor)
         {
             dialogueCount++;
