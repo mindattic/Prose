@@ -374,12 +374,9 @@ public class VoiceHarvestService
             if (voiceTarget == null) return false;
         }
 
-        // Commit DB status BEFORE mutating the live rule store so a SaveChanges failure
-        // leaves the store clean and the log entry still at "proposed" (re-apply is safe).
-        entry.Status = "applied";
-        entry.UpdatedAt = DateTime.UtcNow;
-        await db.SaveChangesAsync(ct);
-
+        // Write the live rule FIRST, then mark the entry applied: every mutator is idempotent
+        // (AddDistinct / Contains), so a failure while writing leaves the entry at "proposed" and a
+        // re-apply is safe, where marking it applied first left a rule that was never written.
         switch (entry.RuleTarget)
         {
             case "literary_rules.prohibitions":
@@ -393,6 +390,10 @@ public class VoiceHarvestService
             case string t when t.EndsWith(".narration_voice"):
                 ApplyToCharacterNarrationVoice(voiceTarget!, rule); break;
         }
+
+        entry.Status = "applied";
+        entry.UpdatedAt = DateTime.UtcNow;
+        await db.SaveChangesAsync(ct);
 
         log.LogInformation("Applied voice rule → {Target}: {Rule}", entry.RuleTarget, Clip(rule));
         return true;
