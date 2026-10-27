@@ -101,7 +101,7 @@ If the combined Republish + New-listing set is empty, report that and stop — n
 
 Only after confirmation. Never run a stale build (this bit a past session — a multi-day-stale
 `Prose.KdpPublish.exe` silently missing a whole feature). KdpPublish is its own repo now, deployed
-to `C:\Apps\KdpPublish\`; its `run.bat` first asks 1) Deploy & Run or 2) Run (answer `1` to redeploy from source), then starts
+to `C:\Apps\KdpPublish\`; its `run.bat`, given arguments, skips its Deploy & Run / Run menu, redeploys if the source changed, then starts
 `KdpPublish.exe` with the arguments it was given. Pass the confirmed comma-separated codes as
 `argv[0]` — this drives the exact same `RunSelectedAsync` automation the app's own "Start" button
 triggers, no separate/lesser code path:
