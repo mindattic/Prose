@@ -119,6 +119,7 @@ public class BeatVerificationService
             Evidence   = result.Evidence,
             VerifiedAt = DateTime.UtcNow,
             VerifiedBy = result.VerifiedBy,
+            RuleVersion = CurrentRuleVersion,
         });
         await db.SaveChangesAsync(ct);
 
