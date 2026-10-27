@@ -478,6 +478,15 @@ public class ConfigTools
         if (Guid.TryParse(doc, out var g)) return (g, doc, null);
 
         await using var db = await dbFactory.CreateDbContextAsync();
+        // An exact path wins: "CLAUDE.md" is otherwise always "ambiguous" next to "x/CLAUDE.md",
+        // and the GUID route is no way out because list_markdown_files never shows the id.
+        var exact = await db.MarkdownFiles.AsNoTracking()
+            .Where(m => m.RelativePath == doc)
+            .Select(m => new { m.Id, m.RelativePath })
+            .Take(2)
+            .ToListAsync();
+        if (exact.Count == 1) return (exact[0].Id, exact[0].RelativePath, null);
+
         var hits = await db.MarkdownFiles.AsNoTracking()
             .Where(m => m.RelativePath.Contains(doc))
             .Select(m => new { m.Id, m.RelativePath })
