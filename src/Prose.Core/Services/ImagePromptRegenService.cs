@@ -161,6 +161,14 @@ public class ImagePromptRegenService
         var name = root.TryGetProperty("name", out var n) ? n.GetString() ?? "(unnamed)" : "(unnamed)";
         var midjourney = root.TryGetProperty("image_prompt",  out var mj) ? mj.GetString() ?? "" : "";
         var dalle3     = root.TryGetProperty("dalle3_prompt", out var d3) ? d3.GetString() ?? "" : "";
+        // The live prompts are the Characters columns (what CharacterMapper serves); the blob's
+        // copies can be stale. Prefer the live text when it is there.
+        var live = await db.Characters.IgnoreQueryFilters().FirstOrDefaultAsync(c => c.Id == characterId, ct);
+        if (live != null)
+        {
+            if (!string.IsNullOrWhiteSpace(live.MidjourneyPrompt)) midjourney = live.MidjourneyPrompt;
+            if (!string.IsNullOrWhiteSpace(live.Dalle3Prompt))     dalle3     = live.Dalle3Prompt;
+        }
         if (string.IsNullOrWhiteSpace(midjourney) && string.IsNullOrWhiteSpace(dalle3))
             return new RegenResult(false, "no existing prompts to rewrite");
 
@@ -222,7 +230,16 @@ public class ImagePromptRegenService
 
         rec.Json      = rewritten;
         rec.UpdatedAt = DateTime.UtcNow;
+        // Records.Json alone is a retired relic: the paid rewrite never reached the record the app
+        // serves. Write the Characters columns too, then refresh the read model.
+        if (live != null)
+        {
+            live.MidjourneyPrompt = newMidjourney;
+            live.Dalle3Prompt     = newDalle3;
+        }
         await db.SaveChangesAsync(ct);
+        if (live != null)
+            await CharacterMapper.RefreshReadModelAsync(db, characterId, ct, afterIntentionalWrite: true);
 
         log.LogInformation("Regenerated image prompts for {Char} ({Name})", characterId, name);
         return new RegenResult(true, null);
