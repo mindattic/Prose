@@ -411,6 +411,7 @@ if (args.Contains("--continuity") && !ContinuitySubFlagOwners.Any(args.Contains)
 //   prose --migrate-sql --schema           apply EF migrations
 //   prose --migrate-sql --import people    import character JSON files
 //   prose --migrate-sql --all              schema + import all supported types
+//   prose --migrate-sql --import-continuity-sqlite [--apply]   one-shot copy of legacy continuity.db rows into SQL Server
 if (args.Contains("--migrate-sql"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("MigrateSqlCli", args);

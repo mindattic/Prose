@@ -73,6 +73,10 @@ public static class MigrateSqlCli
         // RFC 0007 "Universe Interchange": create OutboxEvents (Hub → consumer-app queue).
         var outboxEvents = args.Contains("--outbox-events");
 
+        // Legacy SQLite continuity.db -> SQL Server continuity tables (one-shot, insert-only, PRS-T220).
+        if (args.Contains(MigrateContinuitySqliteCli.Flag))
+            return await MigrateContinuitySqliteCli.RunAsync(args, sp);
+
         if (!schema && !charRelational && !charDropLegacy && !BeatNodesoftDelete && !BeatNodeVersion && !entityGrammarNote && !nodeCode && !entityReviews && !markdownFiles && !emotionalExamination && !nodeDraftFlag && !reviewContradictions && !distributedQueue && !beatScoreDimensions && !outboxEvents)
         {
             Console.WriteLine("Usage:");
@@ -89,6 +93,8 @@ public static class MigrateSqlCli
             Console.WriteLine("  prose --migrate-sql --distributed-queue         create DistributedWorkQueue table (multi-machine entity/node/beat review + prose writing)");
             Console.WriteLine("  prose --migrate-sql --beat-score-dimensions     add ScoreBeat/ScoreChapter/ScoreArc/ScoreStory to NodeReviewBeatScores (SS-A47 Swain doctrine)");
             Console.WriteLine("  prose --migrate-sql --outbox-events             create OutboxEvents table (RFC 0007 Hub → consumer-app queue)");
+            Console.WriteLine("  prose --migrate-sql --import-continuity-sqlite [--sqlite PATH] [--apply]");
+            Console.WriteLine("                                                  copy rows missing from SQL Server out of legacy continuity.db (read-only, insert-only)");
             Console.WriteLine();
             Console.WriteLine("  prose --migrate-sql --character-relational    add relational columns + bridges to Characters,");
             Console.WriteLine("                                             then backfill from Records.Json (--no-backfill skips Phase C)");

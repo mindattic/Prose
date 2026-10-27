@@ -248,7 +248,7 @@ public static class ContinuityCli
     static int CmdMigrate(ContinuityService svc)
     {
         Console.WriteLine("[continuity] Legacy JSON migration is retired. Use:");
-        Console.WriteLine("  prose --migrate-sql --import continuity   (SQLite continuity.db → SQL Server)");
+        Console.WriteLine("  prose --migrate-sql --import-continuity-sqlite [--apply]   (SQLite continuity.db → SQL Server)");
         return 0;
     }
 

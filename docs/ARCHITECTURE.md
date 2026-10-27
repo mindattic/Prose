@@ -204,3 +204,13 @@ specific ENGINE.md gap this section used to point at no longer exists.
 | MCP tool reference (auto-generated, current) | `docs/MCP_TOOLS.md` (289 tools, 52 families) |
 | CLI command reference (auto-generated, current) | `docs/CLI_COMMANDS.md` (285 commands) — **gap closed 2026-09-04.** `CommandDocGenerator` parses the dispatch chain in `Program.cs` rather than reflecting over attributes, because CLI handlers carry none; refresh with `dotnet run --project src/Prose.Cli -- --export-commands docs/CLI_COMMANDS.md` |
 | Story/feature status | `docs/USER_STORIES.md` (stale ~1 week as of 2026-08-23 — missing this week's write-gate/architecture work) |
+
+## 9. Where data lives — SQL Server, and the two legacy SQLite files
+
+Owner ruling 2026-10-22: SQLite only for simple needs; corporate-grade data lives in the Prose
+SQL Server database. The two large SQLite files left in `engine/data/` were ruled on 2026-10-27:
+
+| File | Contents | Ruling |
+|---|---|---|
+| `continuity.db` (10.5 MB) | 12,875 continuity claims, 12,792 confirmations, 0 contradictions, 0 extraction runs; last write 2026-04-30 | **Corporate-grade → SQL Server.** Canon facts about entities and chapters. `ContinuityService` has read and written only the SQL Server tables (`ContinuityClaims`, `ClaimConfirmations`, `ClaimContradictions`, `ExtractionRuns`) since the store was folded in. The one-shot `prose --migrate-sql --import-continuity-sqlite [--apply]` copies any row SQL Server is missing (insert-only, SQL Server wins on conflict, imported claims graded `legacy-unknown`) and opens the SQLite file read-only, so it stays readable as an audit artefact. |
+| `embeddings.db` (372 MB) | 62,774 text chunks from 11,426 files with 1024-dim float32 vectors, indexed 2026-05-02/03 | **Left on SQLite, not migrated.** It is a derived cache, not data: every one of its 11,426 source paths is under the retired `D:\Projects\MindAttic\StreetSamurai\` file tree and none exists any more; no code opens the file; its 1024-dim vectors do not fit the SQL Server `VECTOR(1536)` columns; and the live retrieval stores (`EntityEmbeddings`, `ProseEmbeddings`) are already in SQL Server, keyed by database ids and re-embedded from the database (`prose --reembed`). Copying 372 MB of vectors for files that no longer exist would add nothing. The file is inert and can be deleted. |
