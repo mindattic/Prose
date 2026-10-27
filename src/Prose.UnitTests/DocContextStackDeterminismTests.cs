@@ -140,11 +140,18 @@ public class DocContextStackDeterminismTests
         stack.Push(contextId, Entry("docs/pov-register.md", "topic", 999));
         stack.Push(contextId, Entry("docs/ordinary-topic.md", "topic", 50));
 
-        // Advance past TopicEvictAfterActions (4) with no re-touch of either doc.
-        for (var i = 0; i < 6; i++) stack.BeginAction(contextId, "TEST");
+        // Advance past TopicEvictAfterActions (4) with no re-touch of either doc — but re-push the
+        // force-pin every action, the way PrepareContextAsync does: a force-pin (score >= 999)
+        // expires after the single action it was pinned for (PRS-T246, to stop a stale POV register
+        // doc outliving the narrator it belonged to), so staying pinned means staying re-pushed.
+        for (var i = 0; i < 6; i++)
+        {
+            stack.BeginAction(contextId, "TEST");
+            stack.Push(contextId, Entry("docs/pov-register.md", "topic", 999));
+        }
 
         var order = stack.GetActive(contextId).Select(e => e.RelativePath).ToList();
-        Assert.That(order, Does.Contain("docs/pov-register.md"), "pinned doc must never go stale");
+        Assert.That(order, Does.Contain("docs/pov-register.md"), "a pin kept warm by re-pushing every action must never go stale");
         Assert.That(order, Does.Not.Contain("docs/ordinary-topic.md"), "ordinary topic doc should have evicted as stale (sanity check on the test setup)");
     }
 }
