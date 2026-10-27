@@ -200,7 +200,7 @@ public class LogIssueService(LoggingService logs, IDbContextFactory<ProseDbConte
         // re-reading the log files once per issue.
         // Every level: an issue tracked from "--level Information" never matched a Warning-only
         // grouping, so it read as "stopped happening" and could never regress.
-        var faults = GroupFaults(since: DateTime.Now.AddDays(-RetentionDays), minLevel: "Verbose")
+        var faults = GroupFaults(since: DateTime.Now.AddDays(-RetentionDays), minLevel: "Verbose", maxEntries: int.MaxValue)
             .ToDictionary(f => f.Signature);
 
         var views = new List<LogIssueView>();
