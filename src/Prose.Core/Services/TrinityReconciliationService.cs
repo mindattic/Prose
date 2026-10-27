@@ -557,8 +557,18 @@ public class TrinityReconciliationService(
         // recoverable from ContinuityClaims_History (also temporal) if ever needed; NEW is the
         // honest "unresolved again" state rather than silently hiding them.
         var losingUids = JsonSerializer.Deserialize<List<string>>(row.LosingClaimUidsJson) ?? new();
-        var winnerClaim = await db.ContinuityClaims.FirstOrDefaultAsync(c => c.EntityId == row.EntityId && c.Predicate == row.Predicate && c.Object == row.WinningValue
-            && c.BookSlug == row.BookSlug && c.Status == "CANONICAL", ct);
+        // Find the winner by the id MakeCanonical stamped on the losers it rejected. A contradiction
+        // group mixes books and entity records, so matching on the decision's BookSlug missed any
+        // winner from another book or from an entity record (which carries no BookSlug): it stayed
+        // CANONICAL while the revert reported success. No loser was rejected → match without BookSlug.
+        var winnerUid = await db.ContinuityClaims
+            .Where(c => losingUids.Contains(c.ClaimUid) && c.SupersededBy != null)
+            .Select(c => c.SupersededBy)
+            .FirstOrDefaultAsync(ct);
+        var winnerClaim = winnerUid != null
+            ? await db.ContinuityClaims.FirstOrDefaultAsync(c => c.ClaimUid == winnerUid && c.Status == "CANONICAL", ct)
+            : await db.ContinuityClaims.FirstOrDefaultAsync(c => c.EntityId == row.EntityId && c.Predicate == row.Predicate
+                && c.Object == row.WinningValue && c.Status == "CANONICAL", ct);
         if (winnerClaim != null && winnerClaim.Status == "CANONICAL")
         {
             winnerClaim.Status = "NEW";
