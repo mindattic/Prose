@@ -89,7 +89,7 @@ public static class VerifyBeatCli
             Console.WriteLine($"  {qIcon} [{qr.Severity}] QuoteGrounding: {qr.Result}");
             if (!string.IsNullOrEmpty(qr.Evidence))
                 Console.WriteLine($"    {qr.Evidence}");
-            return qr.Result == "Fail" ? 1 : 0;
+            return qr.Result != "Pass" ? 1 : 0;
         }
 
         // ── Batch quote-grounding mode: gate an entire audit report at once ──────
