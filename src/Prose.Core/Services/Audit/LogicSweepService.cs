@@ -133,13 +133,19 @@ public class LogicSweepService(
         // first. ItemsExamined is beats the model actually SAW, not beats it was handed — on a
         // book past the 100k-char clamp those are very different numbers, and recording the
         // larger one is how a sweep of a tenth of a manuscript gets filed as a full-book sweep.
+        // A dimension that errored (LLM outage, cut-off reply) filed nothing and looked at nothing:
+        // record the run as having examined 0 beats, so the gate says COULD NOT LOOK instead of
+        // reading the missing findings as a clean sweep.
         var visibleBeats = VisibleBeatCount(beats);
+        var failedDimensions = verdicts.Count(v => v.Severity == "ERROR");
         if (runLedger != null)
             await runLedger.RecordAsync(nodeId, InstrumentRunLedger.LogicSweep,
-                itemsExamined: visibleBeats, itemsTotal: beats.Count,
+                itemsExamined: failedDimensions > 0 ? 0 : visibleBeats, itemsTotal: beats.Count,
                 bookFingerprint: await ComputeBookFingerprintAsync(db, nodeId, ct),
-                findingsFiled: verdicts.Count(v => v.Severity != "PASS"),
-                detail: visibleBeats < beats.Count
+                findingsFiled: verdicts.Count(v => v.Severity != "PASS" && v.Severity != "ERROR"),
+                detail: failedDimensions > 0
+                    ? $"{failedDimensions} of {rules.Count} dimensions failed to run; sweep void"
+                    : visibleBeats < beats.Count
                     ? $"{rules.Count} dimensions; prose clamped to 100k chars — {beats.Count - visibleBeats} beats never reached the model"
                     : $"{rules.Count} dimensions; whole book fit under the 100k-char clamp", ct: ct);
 
