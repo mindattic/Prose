@@ -101,7 +101,7 @@ public static class MergeBeatsCli
         {
             foreach (var line in await File.ReadAllLinesAsync(reportPath))
             {
-                try { var o = JsonSerializer.Deserialize<BeatOutcome>(line); if (o != null) done.Add(o.BeatId); }
+                try { var o = JsonSerializer.Deserialize<BeatOutcome>(line); if (o != null && o.Status != "error") done.Add(o.BeatId); }
                 catch { /* a truncated last line from a killed run */ }
             }
             targets = targets.Where(x => !done.Contains(x.ob.Beat.Id.ToString())).ToList();
