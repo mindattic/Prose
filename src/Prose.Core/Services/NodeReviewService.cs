@@ -448,7 +448,8 @@ public class NodeReviewService
         if (failed > 0 && !bag.IsEmpty)
         {
             var workingProviders = bag.Select(r => r.ProviderId).Distinct().ToList();
-            var retryPersonas = EditorPanel.GetPanel(failed);
+            // Fresh personas only: GetPanel(failed) returns the same first panel again, so a retry reused personas that had already voted (one review per persona survives scoring).
+            var retryPersonas = EditorPanel.GetPanel(failed, personas.Select(p => p.Id).ToHashSet());
             var retryTasks = new List<Task>(failed);
             var retriesDone = 0;
             int bagSizeBefore = bag.Count;
