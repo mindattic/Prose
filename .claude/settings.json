@@ -12,7 +12,7 @@
                 "hooks": [
                     {
                         "type": "command",
-                        "timeout": 120,
+                        "timeout": 300,
                         "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"D:/Projects/MindAttic/Prose/.prose/hooks/start-prose-hub.ps1\""
                     }
                 ]
@@ -21,7 +21,7 @@
                 "hooks": [
                     {
                         "type": "command",
-                        "timeout": 30,
+                        "timeout": 300,
                         "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"D:/Projects/MindAttic/Prose/.prose/hooks/factory-start.ps1\""
                     }
                 ]
@@ -41,7 +41,7 @@
                 "hooks": [
                     {
                         "type": "command",
-                        "timeout": 60,
+                        "timeout": 300,
                         "statusMessage": "Running WorldValidation...",
                         "command": "node -e \"let d=\u0027\u0027;process.stdin.on(\u0027data\u0027,c=\u003ed+=c);process.stdin.on(\u0027end\u0027,()=\u003e{const i=JSON.parse(d);const fp=i.tool_input?.file_path??\u0027\u0027;if(fp.includes(\u0027engine\u0027) \u0026\u0026 fp.includes(\u0027data\u0027)){require(\u0027child_process\u0027).execSync(\u0027cd \\\"D:/Projects/MindAttic/Prose/src\\\" \u0026\u0026 dotnet test Prose.UnitTests/Prose.UnitTests.csproj --filter \\\"Category=WorldValidation\\\" --logger \\\"console;verbosity=normal\\\" --no-build\u0027,{stdio:\\\"inherit\\\"});}});\""
                     }
@@ -52,7 +52,7 @@
                 "hooks": [
                     {
                         "type": "command",
-                        "timeout": 10,
+                        "timeout": 300,
                         "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"D:/Projects/MindAttic/Prose/.prose/hooks/memory-nudge.ps1\""
                     }
                 ]
@@ -63,7 +63,7 @@
                 "hooks": [
                     {
                         "type": "command",
-                        "timeout": 10,
+                        "timeout": 300,
                         "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"${CLAUDE_PROJECT_DIR}/.prose/hooks/factory-reminder.ps1\""
                     }
                 ]
@@ -74,7 +74,7 @@
                 "hooks": [
                     {
                         "type": "command",
-                        "timeout": 30,
+                        "timeout": 300,
                         "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"D:/Projects/MindAttic/Prose/.prose/hooks/factory-guard.ps1\""
                     }
                 ]
