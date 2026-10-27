@@ -187,7 +187,9 @@ public class BeatStateExtractor
         catch (Exception ex)
         {
             log.LogWarning(ex, "LLM call failed for beat {Index}", beat.Index);
-            return "[]";
+            // Blank, NOT "[]": "[]" reads as a well-formed empty answer and made ExtractAsync delete
+            // the beat's earlier extraction when the LLM was merely unreachable.
+            return "";
         }
     }
 
