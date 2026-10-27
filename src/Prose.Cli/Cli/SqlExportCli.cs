@@ -71,6 +71,14 @@ public static class SqlExportCli
             await w.WriteLineAsync("-- =================================================================");
             await w.WriteLineAsync("-- 1. DROP existing tables (children first via FK order)");
             await w.WriteLineAsync("-- =================================================================");
+            // Drop every FK touching the scripted tables first: a re-run on a populated database
+            // otherwise fails on self-referencing (Nodes.ParentId) or cyclic FKs, where no table
+            // order lets DROP TABLE succeed.
+            var nameList = string.Join(", ", tables.Select(t => "N'" + t.Name.Replace("'", "''") + "'"));
+            await w.WriteLineAsync("DECLARE @dropFks NVARCHAR(MAX) = N'';");
+            await w.WriteLineAsync("SELECT @dropFks += N'ALTER TABLE ' + QUOTENAME(OBJECT_SCHEMA_NAME(fk.parent_object_id)) + N'.' + QUOTENAME(OBJECT_NAME(fk.parent_object_id)) + N' DROP CONSTRAINT ' + QUOTENAME(fk.name) + N';' FROM sys.foreign_keys fk");
+            await w.WriteLineAsync($"WHERE OBJECT_NAME(fk.parent_object_id) IN ({nameList}) OR OBJECT_NAME(fk.referenced_object_id) IN ({nameList});");
+            await w.WriteLineAsync("EXEC sp_executesql @dropFks;");
             foreach (var t in ((IEnumerable<TableInfo>)tables).Reverse())
                 await w.WriteLineAsync($"IF OBJECT_ID('[dbo].{Q(t.Name)}','U') IS NOT NULL DROP TABLE [dbo].{Q(t.Name)};");
             await w.WriteLineAsync("GO");
@@ -100,6 +108,12 @@ public static class SqlExportCli
                 await w.WriteLineAsync("-- =================================================================");
                 await w.WriteLineAsync("-- 5. DATA");
                 await w.WriteLineAsync("-- =================================================================");
+                // Rows go in table by table, so self-referencing FKs (Nodes.ParentId) and any FK
+                // cycle would reject a child inserted before its parent. Suspend the checks for the
+                // load and re-validate every constraint once all rows are in.
+                foreach (var t in tables)
+                    await w.WriteLineAsync($"ALTER TABLE [dbo].{Q(t.Name)} NOCHECK CONSTRAINT ALL;");
+                await w.WriteLineAsync("GO");
                 int totalRows = 0;
                 foreach (var t in tables)
                 {
@@ -107,6 +121,9 @@ public static class SqlExportCli
                     if (rows > 0) Console.WriteLine($"  {t.Name,-40} {rows,8:N0} rows");
                     totalRows += rows;
                 }
+                foreach (var t in tables)
+                    await w.WriteLineAsync($"ALTER TABLE [dbo].{Q(t.Name)} WITH CHECK CHECK CONSTRAINT ALL;");
+                await w.WriteLineAsync("GO");
                 Console.WriteLine($"[sql-export] total rows: {totalRows:N0}");
             }
 
