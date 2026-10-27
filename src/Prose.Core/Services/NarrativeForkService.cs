@@ -211,7 +211,7 @@ public class NarrativeForkService(
                 SCORE: <integer 0-100>
                 REASON: <one sentence — main strength or weakness>
                 """,
-            user: $"STORY SO FAR:\n{contextSoFar[..Math.Min(1500, contextSoFar.Length)]}\n\nPROPOSED ARC:\n{arcText}",
+            user: $"STORY SO FAR:\n{contextSoFar[^Math.Min(1500, contextSoFar.Length)..]}\n\nPROPOSED ARC:\n{arcText}",
             temperature: 0.2,
             maxTokens: 100,
             ct: ct);
