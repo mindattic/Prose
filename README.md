@@ -504,7 +504,7 @@ Prose/
     tools/                  launch-app.ps1, install-shortcuts.ps1
   docs/                     the Codex: USER_STORIES.md, rfc/, agent/, universes/, generated references
                             (BIBLE.md, WORLD.md, CRAFT.md, schema.md are generated and gitignored)
-  tools/                    codex.ps1, build-readme.js, gen-schema.ps1, prose-agent.ps1
+  tools/                    codex.ps1, gen-schema.ps1, prose-agent.ps1
   scripts/                  maintenance scripts
   engine/, engine_data/     seed and export mirrors and media; SQL is the live read path
   html/                     patent-disclosures.htm
@@ -537,7 +537,7 @@ powershell -File tools/codex.ps1 digest
 powershell -File tools/codex.ps1 doctor
 ```
 
-This README is rendered to a standalone `README.htm` with `npm run docs` (`node --use-system-ca tools/build-readme.js`, needs `npm install` once for `marked`).
+Docs (this README as the home page, `docs/*.md` as articles) are published to https://mindattic.github.io/Prose/ by the shared DocFX workflow in `.github/workflows/docs.yml` on every push to main.
 
 ## Testing
 

@@ -2,11 +2,5 @@
   "name": "prose-tools",
   "version": "1.0.0",
   "private": true,
-  "description": "Node-based repo tooling for Prose (README.htm build). The Cypress E2E suite was removed 2026-08-27 — it only ever tested the Blazor Server app deleted in ed22bd4f6 (2026-08-13, 'Command-line only') and could no longer run against anything real.",
-  "scripts": {
-    "docs": "node --use-system-ca tools/build-readme.js"
-  },
-  "dependencies": {
-    "marked": "^14.0.0"
-  }
+  "description": "Node-based repo tooling for Prose. Docs are published to GitHub Pages by the shared DocFX workflow (.github/workflows/docs.yml). The Cypress E2E suite was removed 2026-08-27."
 }
