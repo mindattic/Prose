@@ -45,9 +45,11 @@ public class CharacterRepository : EfRepository<CharacterData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     public override List<CharacterData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             // Invalidate on SwitchUniverse so a GLMZ roster isn't served under Fantasy (SS-LAW-15).
@@ -58,13 +60,14 @@ public class CharacterRepository : EfRepository<CharacterData>
             // interchange verification, docs/rfc/0007-universe-interchange.md bug #3).
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         // Read off the materialized projection (single column read + cheap
         // tag/location overlay) instead of the 25-Include fan-out. Missing or
         // stale-version rows self-heal via backfill inside this call.
         var loaded = CharacterMapper.LoadAllFromReadModel(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
@@ -76,17 +79,20 @@ public class CharacterRepository : EfRepository<CharacterData>
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public List<CharacterData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = CharacterMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -166,8 +172,8 @@ public class CharacterRepository : EfRepository<CharacterData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(CharacterData item)
@@ -361,37 +367,43 @@ public class CorponationRepository : EfRepository<CorponationData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<CorponationData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<CorponationData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             // See CharacterRepository.GetAll for why epoch alone is not enough
             // (docs/rfc/0007-universe-interchange.md bug #3).
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = CorponationMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<CorponationData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = CorponationMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -425,8 +437,8 @@ public class CorponationRepository : EfRepository<CorponationData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(CorponationData item)
@@ -541,37 +553,43 @@ public class DistrictRepository : EfRepository<DistrictData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<DistrictData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<DistrictData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             // See CharacterRepository.GetAll for why epoch alone is not enough
             // (docs/rfc/0007-universe-interchange.md bug #3).
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = PlaceMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<DistrictData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = PlaceMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -605,8 +623,8 @@ public class DistrictRepository : EfRepository<DistrictData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(DistrictData item)
@@ -728,37 +746,43 @@ public class FactionRepository : EfRepository<FactionData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<FactionData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<FactionData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             // See CharacterRepository.GetAll for why epoch alone is not enough
             // (docs/rfc/0007-universe-interchange.md bug #3).
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = FactionMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<FactionData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = FactionMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -795,8 +819,8 @@ public class FactionRepository : EfRepository<FactionData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(FactionData item)
@@ -914,35 +938,41 @@ public class WorldbuildingDocRepository : EfRepository<WorldbuildingDocument>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<WorldbuildingDocument>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<WorldbuildingDocument> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = DocumentMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<WorldbuildingDocument> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = DocumentMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -976,8 +1006,8 @@ public class WorldbuildingDocRepository : EfRepository<WorldbuildingDocument>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(WorldbuildingDocument item)
@@ -1102,35 +1132,41 @@ public class MotifRepository : EfRepository<MotifData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<MotifData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<MotifData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = MotifMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<MotifData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = MotifMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -1164,8 +1200,8 @@ public class MotifRepository : EfRepository<MotifData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(MotifData item)
@@ -1280,37 +1316,43 @@ public class WeaponryRepository : EfRepository<WeaponryData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<WeaponryData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<WeaponryData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             // See CharacterRepository.GetAll for why epoch alone is not enough
             // (docs/rfc/0007-universe-interchange.md bug #3).
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = WeaponMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<WeaponryData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = WeaponMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -1344,8 +1386,8 @@ public class WeaponryRepository : EfRepository<WeaponryData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(WeaponryData item)
@@ -1461,35 +1503,41 @@ public class AmmunitionRepository : EfRepository<AmmunitionData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<AmmunitionData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<AmmunitionData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = AmmunitionMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<AmmunitionData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = AmmunitionMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -1523,8 +1571,8 @@ public class AmmunitionRepository : EfRepository<AmmunitionData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(AmmunitionData item)
@@ -1639,37 +1687,43 @@ public class EquipmentRepository : EfRepository<EquipmentData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<EquipmentData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<EquipmentData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             // See CharacterRepository.GetAll for why epoch alone is not enough
             // (docs/rfc/0007-universe-interchange.md bug #3).
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = EquipmentMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<EquipmentData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = EquipmentMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -1703,8 +1757,8 @@ public class EquipmentRepository : EfRepository<EquipmentData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(EquipmentData item)
@@ -1819,37 +1873,43 @@ public class TechnologyRepository : EfRepository<TechnologyData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<TechnologyData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<TechnologyData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             // See CharacterRepository.GetAll for why epoch alone is not enough
             // (docs/rfc/0007-universe-interchange.md bug #3).
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = TechnologyMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<TechnologyData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = TechnologyMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -1883,8 +1943,8 @@ public class TechnologyRepository : EfRepository<TechnologyData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(TechnologyData item)
@@ -1999,35 +2059,41 @@ public class CyberwareRepository : EfRepository<CyberwareData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<CyberwareData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<CyberwareData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = CyberwareMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<CyberwareData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = CyberwareMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -2061,8 +2127,8 @@ public class CyberwareRepository : EfRepository<CyberwareData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(CyberwareData item)
@@ -2178,35 +2244,41 @@ public class VocabularyRepository : EfRepository<VocabularyData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<VocabularyData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<VocabularyData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = VocabularyMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<VocabularyData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = VocabularyMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -2240,8 +2312,8 @@ public class VocabularyRepository : EfRepository<VocabularyData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(VocabularyData item)
@@ -2357,35 +2429,41 @@ public class GenemodRepository : EfRepository<GenemodData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<GenemodData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<GenemodData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = GenemodMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<GenemodData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = GenemodMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -2419,8 +2497,8 @@ public class GenemodRepository : EfRepository<GenemodData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(GenemodData item)
@@ -2538,35 +2616,41 @@ public class TransportationRepository : EfRepository<TransportationData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<TransportationData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<TransportationData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = TransportationMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<TransportationData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = TransportationMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -2600,8 +2684,8 @@ public class TransportationRepository : EfRepository<TransportationData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(TransportationData item)
@@ -2718,35 +2802,41 @@ public class ContractRepository : EfRepository<ContractData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<ContractData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<ContractData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = ContractMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<ContractData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = ContractMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -2780,8 +2870,8 @@ public class ContractRepository : EfRepository<ContractData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(ContractData item)
@@ -2899,35 +2989,41 @@ public class AutomatonRepository : EfRepository<AutomatonData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<AutomatonData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<AutomatonData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = AutomatonMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<AutomatonData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = AutomatonMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -2961,8 +3057,8 @@ public class AutomatonRepository : EfRepository<AutomatonData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(AutomatonData item)
@@ -3077,35 +3173,41 @@ public class SubsidiaryRepository : EfRepository<SubsidiaryData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<SubsidiaryData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<SubsidiaryData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = SubsidiaryMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<SubsidiaryData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = SubsidiaryMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -3139,8 +3241,8 @@ public class SubsidiaryRepository : EfRepository<SubsidiaryData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(SubsidiaryData item)
@@ -3256,35 +3358,41 @@ public class EntertainmentRepository : EfRepository<EntertainmentData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<EntertainmentData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<EntertainmentData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = EntertainmentMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<EntertainmentData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = EntertainmentMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -3318,8 +3426,8 @@ public class EntertainmentRepository : EfRepository<EntertainmentData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(EntertainmentData item)
@@ -3435,35 +3543,41 @@ public class ApparelRepository : EfRepository<ApparelData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<ApparelData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<ApparelData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = ApparelMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<ApparelData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = ApparelMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -3497,8 +3611,8 @@ public class ApparelRepository : EfRepository<ApparelData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(ApparelData item)
@@ -3614,35 +3728,41 @@ public class NewsRepository : EfRepository<NewsData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<NewsData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<NewsData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = NewsMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<NewsData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = NewsMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -3676,8 +3796,8 @@ public class NewsRepository : EfRepository<NewsData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(NewsData item)
@@ -3793,35 +3913,41 @@ public class ArchetypeRepository : EfRepository<ArchetypeData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<ArchetypeData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<ArchetypeData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = ArchetypeMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<ArchetypeData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = ArchetypeMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -3855,8 +3981,8 @@ public class ArchetypeRepository : EfRepository<ArchetypeData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(ArchetypeData item)
@@ -3972,35 +4098,41 @@ public class MaterialRepository : EfRepository<MaterialData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<MaterialData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<MaterialData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = MaterialMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<MaterialData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = MaterialMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -4034,8 +4166,8 @@ public class MaterialRepository : EfRepository<MaterialData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(MaterialData item)
@@ -4152,35 +4284,41 @@ public class PharmaceuticalRepository : EfRepository<PharmaceuticalData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<PharmaceuticalData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<PharmaceuticalData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = PharmaceuticalMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<PharmaceuticalData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = PharmaceuticalMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -4214,8 +4352,8 @@ public class PharmaceuticalRepository : EfRepository<PharmaceuticalData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(PharmaceuticalData item)
@@ -4330,35 +4468,41 @@ public class ConsumerGoodRepository : EfRepository<ConsumerGoodData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<ConsumerGoodData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<ConsumerGoodData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = ConsumerGoodMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<ConsumerGoodData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = ConsumerGoodMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -4392,8 +4536,8 @@ public class ConsumerGoodRepository : EfRepository<ConsumerGoodData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(ConsumerGoodData item)
@@ -4509,35 +4653,41 @@ public class QuoteRepository : EfRepository<QuoteData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<QuoteData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<QuoteData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = QuoteMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<QuoteData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = QuoteMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -4571,8 +4721,8 @@ public class QuoteRepository : EfRepository<QuoteData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(QuoteData item)
@@ -4740,35 +4890,41 @@ public class LabSpecimenRepository : EfRepository<LabSpecimenData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<LabSpecimenData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<LabSpecimenData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = LabSpecimenMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<LabSpecimenData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = LabSpecimenMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -4802,8 +4958,8 @@ public class LabSpecimenRepository : EfRepository<LabSpecimenData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(LabSpecimenData item)
@@ -4917,35 +5073,41 @@ public class FlyoverEntityRepository : EfRepository<FlyoverEntityData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<FlyoverEntityData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<FlyoverEntityData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = FlyoverEntityMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<FlyoverEntityData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = FlyoverEntityMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -4979,8 +5141,8 @@ public class FlyoverEntityRepository : EfRepository<FlyoverEntityData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(FlyoverEntityData item)
@@ -5094,35 +5256,41 @@ public class PsionicRepository : EfRepository<PsionicData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<PsionicData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<PsionicData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = PsionicMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<PsionicData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = PsionicMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -5156,8 +5324,8 @@ public class PsionicRepository : EfRepository<PsionicData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(PsionicData item)
@@ -5317,35 +5485,41 @@ public class SyntheticLifeRepository : EfRepository<SyntheticLifeData>
     private int mappedCacheEpoch = -1;
     private Guid mappedCacheUniverseId = Guid.Empty;
     private readonly object mappedCacheLock = new();
+    private int mappedCacheGen;
 
     private List<SyntheticLifeData>? mappedCacheLite;
     private int mappedCacheLiteEpoch = -1;
     private Guid mappedCacheLiteUniverseId = Guid.Empty;
     private readonly object mappedCacheLiteLock = new();
+    private int mappedCacheLiteGen;
 
     public override List<SyntheticLifeData> GetAll()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLock)
         {
             if (mappedCache != null && mappedCacheEpoch == UniverseScope.Epoch
                 && mappedCacheUniverseId == UniverseScope.EffectiveId) return mappedCache;
+            gen = mappedCacheGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = SyntheticMapper.LoadAll(db, includeArchived: false);
-        lock (mappedCacheLock) { mappedCache = loaded; mappedCacheEpoch = UniverseScope.Epoch; mappedCacheUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLock) { if (gen == mappedCacheGen) { mappedCache = loaded; mappedCacheEpoch = ep; mappedCacheUniverseId = uid; } }
         return loaded;
     }
 
     public List<SyntheticLifeData> GetAllLite()
     {
+        int gen; int ep; Guid uid;
         lock (mappedCacheLiteLock)
         {
             if (mappedCacheLite != null && mappedCacheLiteEpoch == UniverseScope.Epoch
                 && mappedCacheLiteUniverseId == UniverseScope.EffectiveId) return mappedCacheLite;
+            gen = mappedCacheLiteGen; ep = UniverseScope.Epoch; uid = UniverseScope.EffectiveId;
         }
         using var db = dbFactory.CreateDbContext();
         var loaded = SyntheticMapper.LoadAllLite(db);
-        lock (mappedCacheLiteLock) { mappedCacheLite = loaded; mappedCacheLiteEpoch = UniverseScope.Epoch; mappedCacheLiteUniverseId = UniverseScope.EffectiveId; }
+        lock (mappedCacheLiteLock) { if (gen == mappedCacheLiteGen) { mappedCacheLite = loaded; mappedCacheLiteEpoch = ep; mappedCacheLiteUniverseId = uid; } }
         return loaded;
     }
 
@@ -5379,8 +5553,8 @@ public class SyntheticLifeRepository : EfRepository<SyntheticLifeData>
 
     private void InvalidateMappedCache()
     {
-        lock (mappedCacheLock) mappedCache = null;
-        lock (mappedCacheLiteLock) mappedCacheLite = null;
+        lock (mappedCacheLock) { mappedCache = null; mappedCacheGen++; }
+        lock (mappedCacheLiteLock) { mappedCacheLite = null; mappedCacheLiteGen++; }
     }
 
     public override void Save(SyntheticLifeData item)
