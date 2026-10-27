@@ -764,26 +764,39 @@ public class MarkdownFileService
 
     // ── Get (with optional point-in-time) ─────────────────────────────────
 
-    public async Task<MarkdownFile?> GetAsync(string relativePath, DateTime? asOf = null, CancellationToken ct = default)
+    /// <param name="fileRoot">Which root the path belongs to. The project and global CLAUDE.md
+    /// share the relative path "CLAUDE.md", so a path-only lookup can return the other root's
+    /// file; callers that know the row's root pass it.</param>
+    public async Task<MarkdownFile?> GetAsync(string relativePath, DateTime? asOf = null, CancellationToken ct = default,
+        string? fileRoot = null)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         if (asOf.HasValue && db.Database.IsSqlServer())
         {
             var ts = asOf.Value.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffffff", System.Globalization.CultureInfo.InvariantCulture);
-            return await db.MarkdownFiles
-                .FromSqlRaw(
-                    $"SELECT {TemporalColumns} " +
-                    $"FROM MarkdownFiles FOR SYSTEM_TIME AS OF '{ts}' " +
-                    $"WHERE RelativePath = {{0}}",
-                    relativePath)
-                .IgnoreQueryFilters()
-                .FirstOrDefaultAsync(ct);
+            return fileRoot == null
+                ? await db.MarkdownFiles
+                    .FromSqlRaw(
+                        $"SELECT {TemporalColumns} " +
+                        $"FROM MarkdownFiles FOR SYSTEM_TIME AS OF '{ts}' " +
+                        $"WHERE RelativePath = {{0}}",
+                        relativePath)
+                    .IgnoreQueryFilters()
+                    .FirstOrDefaultAsync(ct)
+                : await db.MarkdownFiles
+                    .FromSqlRaw(
+                        $"SELECT {TemporalColumns} " +
+                        $"FROM MarkdownFiles FOR SYSTEM_TIME AS OF '{ts}' " +
+                        $"WHERE RelativePath = {{0}} AND FileRoot = {{1}}",
+                        relativePath, fileRoot)
+                    .IgnoreQueryFilters()
+                    .FirstOrDefaultAsync(ct);
         }
 
         // IgnoreQueryFilters — point lookup by path, used by restore/inspection tooling.
         return await db.MarkdownFiles.IgnoreQueryFilters()
-            .FirstOrDefaultAsync(x => x.RelativePath == relativePath, ct);
+            .FirstOrDefaultAsync(x => x.RelativePath == relativePath && (fileRoot == null || x.FileRoot == fileRoot), ct);
     }
 
     // ── Restore: DB → disk ────────────────────────────────────────────────
@@ -792,14 +805,15 @@ public class MarkdownFileService
         string?  relativePath = null,
         DateTime? asOf        = null,
         bool     dryRun       = false,
-        CancellationToken ct  = default)
+        CancellationToken ct  = default,
+        string?  fileRoot     = null)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         List<MarkdownFile> rows;
         if (relativePath != null)
         {
-            var row = await GetAsync(relativePath, asOf, ct);
+            var row = await GetAsync(relativePath, asOf, ct, fileRoot);
             rows = row != null ? new List<MarkdownFile> { row } : new List<MarkdownFile>();
         }
         else if (asOf.HasValue && db.Database.IsSqlServer())

@@ -65,7 +65,9 @@ public static class RecallMarkdownCli
             int written = 0;
             foreach (var m in matches)
             {
-                var result = await svc.RestoreAsync(m.RelativePath, asOf, dryRun: false);
+                // FileRoot too: the project and global CLAUDE.md share a relative path, and a
+                // path-only restore wrote the same row twice and never restored the other one.
+                var result = await svc.RestoreAsync(m.RelativePath, asOf, dryRun: false, fileRoot: m.FileRoot);
                 written += result.Written;
                 foreach (var err in result.Errors) Console.Error.WriteLine($"  ✘ {err}");
             }
@@ -76,7 +78,7 @@ public static class RecallMarkdownCli
         // Print mode — dump each match's body so it can be read in-place.
         foreach (var m in matches)
         {
-            var row = asOf.HasValue ? await svc.GetAsync(m.RelativePath, asOf) : m;
+            var row = asOf.HasValue ? await svc.GetAsync(m.RelativePath, asOf, fileRoot: m.FileRoot) : m;
             Console.WriteLine($"===== {m.FileRoot}/{m.RelativePath} =====");
             Console.WriteLine(row?.Content?.TrimEnd() ?? "");
             Console.WriteLine();
