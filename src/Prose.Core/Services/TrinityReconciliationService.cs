@@ -557,7 +557,8 @@ public class TrinityReconciliationService(
         // recoverable from ContinuityClaims_History (also temporal) if ever needed; NEW is the
         // honest "unresolved again" state rather than silently hiding them.
         var losingUids = JsonSerializer.Deserialize<List<string>>(row.LosingClaimUidsJson) ?? new();
-        var winnerClaim = await db.ContinuityClaims.FirstOrDefaultAsync(c => c.EntityId == row.EntityId && c.Predicate == row.Predicate && c.Object == row.WinningValue, ct);
+        var winnerClaim = await db.ContinuityClaims.FirstOrDefaultAsync(c => c.EntityId == row.EntityId && c.Predicate == row.Predicate && c.Object == row.WinningValue
+            && c.BookSlug == row.BookSlug && c.Status == "CANONICAL", ct);
         if (winnerClaim != null && winnerClaim.Status == "CANONICAL")
         {
             winnerClaim.Status = "NEW";
@@ -589,7 +590,7 @@ public class TrinityReconciliationService(
         {
             if (!t.TryGetValue("beatId", out var beatIdRaw) || !Guid.TryParse(beatIdRaw?.ToString(), out var beatId)) continue;
             var priorText = db.Database.SqlQueryRaw<string>(
-                $"SELECT [Text] FROM [dbo].[Beats] FOR SYSTEM_TIME AS OF '{asOf}' WHERE [Id] = @p0", beatId.ToString())
+                $"SELECT [Text] AS [Value] FROM [dbo].[Beats] FOR SYSTEM_TIME AS OF '{asOf}' WHERE [Id] = @p0", beatId.ToString())
                 .AsEnumerable().FirstOrDefault();
             if (priorText == null)
             {
@@ -612,7 +613,7 @@ public class TrinityReconciliationService(
             if (record == null) continue;
 
             var priorJson = db.Database.SqlQueryRaw<string>(
-                $"SELECT [Json] FROM [dbo].[Records] FOR SYSTEM_TIME AS OF '{asOf}' WHERE [EntityId] = @p0", record.EntityId.ToString())
+                $"SELECT [Json] AS [Value] FROM [dbo].[Records] FOR SYSTEM_TIME AS OF '{asOf}' WHERE [EntityId] = @p0", record.EntityId.ToString())
                 .AsEnumerable().FirstOrDefault();
             if (priorJson == null)
             {

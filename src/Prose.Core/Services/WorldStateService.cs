@@ -119,13 +119,13 @@ public class WorldStateService
             var formatted = sysTime.ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss.fffffff", System.Globalization.CultureInfo.InvariantCulture);
             // FOR SYSTEM_TIME AS OF requires a literal datetime — EF cannot parameterize it.
             // EntityId is parameterized to follow the safe-query contract.
-            var sql = $"SELECT [Json] FROM [dbo].[Records] FOR SYSTEM_TIME AS OF '{formatted}' WHERE [EntityId] = @p0";
+            var sql = $"SELECT [Json] AS [Value] FROM [dbo].[Records] FOR SYSTEM_TIME AS OF '{formatted}' WHERE [EntityId] = @p0";
             var json = db.Database.SqlQueryRaw<string>(sql, id.ToString()).AsEnumerable().FirstOrDefault();
             return json;
         }
         catch (Exception ex)
         {
-            log.LogDebug(ex, "Temporal recall failed for {Id} as of {When}", id, sysTime);
+            log.LogWarning(ex, "Temporal recall failed for {Id} as of {When}", id, sysTime);
             return null;
         }
     }
