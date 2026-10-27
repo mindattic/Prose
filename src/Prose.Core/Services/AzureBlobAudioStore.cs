@@ -190,8 +190,9 @@ public class AzureBlobAudioStore : IAudioStore
             var props = await blob.GetPropertiesAsync(cancellationToken: ct);
             return props.Value.LastModified;
         }
+        // Only a 404 means "absent". Any other failure (throttle, timeout, auth) propagates:
+        // the reconciler reads null as "missing" and would copy the other side over a newer blob.
         catch (Azure.RequestFailedException ex) when (ex.Status == 404) { return null; }
-        catch (Exception ex) { log.LogDebug(ex, "Blob LastModified lookup failed for {Rel}", relativePath); return null; }
     }
 
     /// <summary>Mint a short-lived read SAS URL for direct browser streaming.
