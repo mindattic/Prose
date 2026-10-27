@@ -1465,8 +1465,7 @@ if (args.Contains("--migrate-nodes"))
 
 // CLI mode: reconcile audio bytes between local disk and Azure Blob storage.
 // Companion to DualWriteAudioStore — repairs drift from offline recordings
-// and failed background uploads. Default (no --push/--pull args) is full
-// bidirectional repair. See SyncAudioCli class doc for the full arg list.
+// and failed background uploads: one full bidirectional newest-wins pass. See SyncAudioCli class doc.
 //   prose --sync-audio   (no flags: one bidirectional newest-wins pass; --dry-run/--push/--pull/--node are refused)
 if (args.Contains("--sync-audio"))
 {
