@@ -314,7 +314,11 @@ public static class EntityMentionScanner
             var tokens = words
                 .Where(t => t.Length >= 3 && !Stopwords.Contains(t) && !ConnectiveWords.Contains(t)
                             && !DerivedOnlyStopwords.Contains(t)
-                            && char.IsLetterOrDigit(t[0]) && char.IsLetterOrDigit(t[^1]))
+                            && char.IsLetterOrDigit(t[0]) && char.IsLetterOrDigit(t[^1])
+                            // A lowercase word inside a name ("Royal official (Capernaum)", "Zechariah son of
+                            // Barachiah") is a common noun, not a proper-name fragment: deriving it bare
+                            // bound every ordinary "official"/"son" in prose to that character (PRS-T105).
+                            && !char.IsLower(t[0]))
                 .ToList();
             if (tokens.Count < (titled ? 1 : 2)) continue;
             // A titled name derived the title plus the surname before; it now derives the surname
