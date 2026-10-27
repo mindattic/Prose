@@ -75,7 +75,9 @@ public class ProseReflowService
         // fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
         var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
-        var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
+        // A beat filed under two nodes appears twice in the reading order; its second write carried
+        // the first pass's stale expectedUpdatedAt, threw, and aborted the rest of the reflow.
+        var ordered = (await workbench.GetOrderedBeatsAsync(nodeId, ct)).DistinctBy(o => o.Beat.Id).ToList();
 
         var results = new List<BeatReflowResult>();
         int changed = 0, unchanged = 0, rejected = 0, errors = 0, pos = 0;
