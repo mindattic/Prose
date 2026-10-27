@@ -614,6 +614,13 @@ public class ContinuityService
     internal static bool IsNumericClockPredicate(string? predicate)
         => predicate != null && NumericPredicates.Contains(Normalize(predicate));
 
+    /// <summary>The claim sets a (entity, predicate) group is judged in: all claims together, except
+    /// for a numeric clock predicate, which is judged per BookSlug (see FindConflict).</summary>
+    private static IEnumerable<List<ContinuityClaim>> PartitionClockClaims(string predicate, List<ContinuityClaim> claims)
+        => IsNumericClockPredicate(predicate)
+            ? claims.GroupBy(c => c.BookSlug ?? "").Select(g => g.ToList()).ToList()
+            : new List<List<ContinuityClaim>> { claims };
+
     internal static bool ObjectsMatch(string predicate, string a, string b)
     {
         if (NumericPredicates.Contains(Normalize(predicate))
@@ -1240,7 +1247,12 @@ public class ContinuityService
         var groups = new List<ContradictionGroup>();
         foreach (var k in keys)
         {
-            if (!claimsByKey.TryGetValue(KeyOf(k.EntityId, k.Predicate), out var claims)) continue;
+            if (!claimsByKey.TryGetValue(KeyOf(k.EntityId, k.Predicate), out var allClaims)) continue;
+            // The numeric clock predicates (age, tenure_years...) advance between books, so they are
+            // compared within ONE book only, exactly as FindConflict does on upsert; a character aged 24
+            // in one book and 28 in the next was filed as a contradiction group.
+            foreach (var claims in PartitionClockClaims(k.Predicate, allClaims))
+            {
             // The SQL Distinct() above counts variants by exact string, so a key whose only
             // "disagreement" is rewording still reached here (2026-09-04). Collapse the members
             // into genuinely distinct assertions before deciding this is a group at all —
@@ -1261,6 +1273,7 @@ public class ContinuityService
                     Predicate  = k.Predicate,
                     Claims     = claims,
                 });
+            }
         }
         return groups;
     }
@@ -1319,7 +1332,12 @@ public class ContinuityService
         var groups = new List<ContradictionGroup>();
         foreach (var k in touchedKeys)
         {
-            if (!claimsByKey.TryGetValue(KeyOf(k.EntityId, k.Predicate), out var claims)) continue;
+            if (!claimsByKey.TryGetValue(KeyOf(k.EntityId, k.Predicate), out var allClaims)) continue;
+            // The numeric clock predicates (age, tenure_years...) advance between books, so they are
+            // compared within ONE book only, exactly as FindConflict does on upsert; a character aged 24
+            // in one book and 28 in the next was filed as a contradiction group.
+            foreach (var claims in PartitionClockClaims(k.Predicate, allClaims))
+            {
             // The same paraphrase/numeric collapse the full sweep uses: exact-string variants
             // reported "fifty" vs "50" and rewordings the full sweep deliberately suppresses.
             var distinct = new List<ContinuityClaim>();
@@ -1336,6 +1354,7 @@ public class ContinuityService
                     Predicate  = k.Predicate,
                     Claims     = claims,
                 });
+            }
         }
         return groups;
     }
