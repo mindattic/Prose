@@ -103,6 +103,9 @@ foreach ($s in $shortcuts) {
     $sc.Arguments        = $s.Args
     $sc.WorkingDirectory = Split-Path $s.Bat
     $sc.IconLocation     = $icon
+    # Normal window (1), never minimized (7): run.bat opens a 1) Deploy & Run / 2) Run menu, and a
+    # minimized console would hide it while it waits for a key.
+    $sc.WindowStyle      = 1
     $sc.Description      = $s.Desc
     $sc.Save()
 
