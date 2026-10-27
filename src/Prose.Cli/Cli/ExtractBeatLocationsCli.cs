@@ -21,7 +21,11 @@ public static class ExtractBeatLocationsCli
         for (int i = 0; i < args.Length - 1; i++)
         {
             if (args[i] == "--slug") { slug = args[i + 1]; i++; }
-            if (args[i] == "--limit" && int.TryParse(args[i + 1], out var l)) { limit = l; i++; }
+            if (args[i] == "--limit")
+            {
+                if (!int.TryParse(args[i + 1], out var l)) { Console.Error.WriteLine($"--limit needs a whole number, got '{args[i + 1]}'."); return 2; }
+                limit = l; i++;
+            }
         }
         if (slug == null)
         {
