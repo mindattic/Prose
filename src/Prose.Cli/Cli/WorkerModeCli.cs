@@ -228,6 +228,11 @@ public static class WorkerModeCli
             finally { sem.Release(); }
         }));
 
+        // Every ballot failing (LLM dropped, nothing parseable) is a failed item, not an empty success:
+        // returning here would submit zero data and consume the coordinator's queue item.
+        if (ballotResults.Count == 0)
+            throw new InvalidOperationException($"all {ballots} ballots failed for entity {entityName}");
+
         // One relationship-extraction call.
         try
         {
@@ -303,6 +308,9 @@ public static class WorkerModeCli
             catch (Exception ex) { Console.Error.WriteLine($"[worker] node vote error: {ex.Message}"); }
         }));
 
+        if (votes.Count == 0)
+            throw new InvalidOperationException($"all {personas.Count} persona votes failed for node {nodeId}");
+
         return new WorkerResult
         {
             WorkType = "node-review", QueueId = item.QueueId,
@@ -348,6 +356,8 @@ public static class WorkerModeCli
         }
 
         var prose = await legion.CallAsync("local", localKey, localModel, sysPrompt, userMsg, localUrl, maxTokens: 1500);
+        if (string.IsNullOrWhiteSpace(prose))
+            throw new InvalidOperationException($"empty LLM response for beat {beatId}");
 
         return new WorkerResult
         {
