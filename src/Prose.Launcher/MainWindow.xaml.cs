@@ -60,12 +60,12 @@ public partial class MainWindow : Window
     /// <summary>KdpPublish's own absolute deploy location — decoupled into its own repo
     /// (github.com/mindattic/KdpPublish) 2026-10-04, with its own deploy pipeline publishing
     /// standalone here rather than side by side with this app under <see cref="Here"/>.
-    /// Its deploy.bat is preferred: it redeploys from source when changed, then starts
-    /// KdpPublish.exe, so the picker never opens a stale build. The exe is the fallback.</summary>
+    /// Its run.bat is preferred: it offers 1) Deploy &amp; Run (redeploy from source, then start)
+    /// or 2) Run (start the deployed KdpPublish.exe). The exe is the fallback.</summary>
     private const string KdpPublishDir = @"C:\Apps\KdpPublish";
     private static readonly string[] KdpPublishCandidates =
     [
-        Path.Combine(KdpPublishDir, "deploy.bat"),
+        Path.Combine(KdpPublishDir, "run.bat"),
         Path.Combine(KdpPublishDir, "KdpPublish.exe"),
     ];
 
@@ -75,7 +75,7 @@ public partial class MainWindow : Window
         var target = KdpPublishCandidates.FirstOrDefault(File.Exists);
         if (target is null)
         {
-            HubStatus.Text = $"KdpPublish is not deployed in {KdpPublishDir}. Deploy it from the KdpPublish repo (deploy.ps1).";
+            HubStatus.Text = $"KdpPublish is not deployed in {KdpPublishDir}. Deploy it from the KdpPublish repo (run.ps1).";
             return;
         }
         Process.Start(new ProcessStartInfo(target) { WorkingDirectory = KdpPublishDir, UseShellExecute = true });
@@ -120,7 +120,7 @@ public partial class MainWindow : Window
         var path = Path.Combine(Here, exeName);
         if (!File.Exists(path))
         {
-            HubStatus.Text = $"{exeName} is not in {Here}. Deploy it with deploy.ps1 in the Prose repository.";
+            HubStatus.Text = $"{exeName} is not in {Here}. Deploy it with run.ps1 in the Prose repository.";
             return false;
         }
 

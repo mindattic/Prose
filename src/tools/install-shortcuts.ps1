@@ -4,16 +4,16 @@
     Creates or updates the desktop shortcuts for the MindAttic apps.
 
 .DESCRIPTION
-    One icon per app, each pointing at the generated `deploy.bat` in that app's deploy folder
-    (C:\Apps\MindAttic\Prose\deploy.bat with the app as its argument; C:\Apps\<App>\deploy.bat for
-    the other repos). deploy.bat opens a menu first: 1) Deploy & Run republishes from source (the
-    repo's deploy.ps1 -Force) and then launches the app; 2) Run launches the deployed build as it
-    is. When the repo is missing or the publish fails, deploy.bat still launches the existing build.
+    One icon per app, each pointing at the generated `run.bat` in that app's deploy folder
+    (C:\Apps\MindAttic\Prose\run.bat with the app as its argument; C:\Apps\<App>\run.bat for
+    the other repos). run.bat opens a menu first: 1) Deploy & Run republishes from source (the
+    repo's run.ps1 -Force) and then launches the app; 2) Run launches the deployed build as it
+    is. When the repo is missing or the publish fails, run.bat still launches the existing build.
 
-    deploy.bat is written by each repo's deploy.ps1. This script regenerates the Prose one first
-    with `deploy.ps1 -LauncherOnly` (writes the launcher only - nothing is built or stopped), so
+    run.bat is written by each repo's run.ps1. This script regenerates the Prose one first
+    with `run.ps1 -LauncherOnly` (writes the launcher only - nothing is built or stopped), so
     the shortcuts always open the current launcher. On a fresh machine run the other repos'
-    deploy.ps1 once before this script; entries whose deploy.bat does not exist yet are skipped.
+    run.ps1 once before this script; entries whose run.bat does not exist yet are skipped.
 
     Idempotent - safe to re-run. It rewrites the target/icon of a shortcut it already owns and
     reports what it changed. Entries whose .bat or icon is missing are skipped with a reason
@@ -39,11 +39,11 @@ $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 
 $mindAttic = 'D:\Projects\MindAttic'
-$prose     = 'C:\Apps\MindAttic\Prose\deploy.bat'
-$proseDeploy = Join-Path $mindAttic 'Prose\deploy.ps1'
+$prose     = 'C:\Apps\MindAttic\Prose\run.bat'
+$proseDeploy = Join-Path $mindAttic 'Prose\run.ps1'
 
 # Name is the .lnk's filename AND its label, so changing one renames the icon on the desktop.
-# Args is passed to deploy.bat: the Prose deploy.bat takes the app; no argument offers to deploy
+# Args is passed to run.bat: the Prose run.bat takes the app; no argument offers to deploy
 # all of them, then opens the Launcher.
 $shortcuts = @(
     @{ Name = 'Prose Writer'; Bat = $prose;                          Args = 'Writer'; Icon = "$mindAttic\Prose\assets\writer.ico"
@@ -52,9 +52,9 @@ $shortcuts = @(
        Desc = 'Deploy & Run, or Run, the Prose Hub (serves /writer and /repo)' }
     @{ Name = 'Deploy Prose'; Bat = $prose;                          Args = '';       Icon = "$mindAttic\Prose\assets\M.ico"
        Desc = 'Deploy & Run every Prose app, or Run the launcher' }
-    @{ Name = 'KdpPublish';   Bat = 'C:\Apps\KdpPublish\deploy.bat'; Args = '';       Icon = "$mindAttic\Prose\assets\kdp.ico"
+    @{ Name = 'KdpPublish';   Bat = 'C:\Apps\KdpPublish\run.bat'; Args = '';       Icon = "$mindAttic\Prose\assets\kdp.ico"
        Desc = 'Deploy & Run, or Run, KdpPublish' }
-    @{ Name = 'IdiotProof';   Bat = 'C:\Apps\IdiotProof\deploy.bat'; Args = '';       Icon = "$mindAttic\IdiotProof\idiotproof.ico"
+    @{ Name = 'IdiotProof';   Bat = 'C:\Apps\IdiotProof\run.bat'; Args = '';       Icon = "$mindAttic\IdiotProof\idiotproof.ico"
        Desc = 'Deploy & Run, or Run, IdiotProof (Monitor + Blazor)' }
 )
 

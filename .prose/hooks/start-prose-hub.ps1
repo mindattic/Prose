@@ -12,7 +12,7 @@
   Staleness must be automatic, not a manual step (explicit user requirement - "you must
   make deployment seamless and easy"): Prose.Hub bundles Prose.Cli + Prose.Mcp +
   Prose.Core into ONE deployed exe (C:\Apps\MindAttic\Prose\Hub.exe, written by
-  the repo-root deploy.ps1). Any source change to any of those four projects means the
+  the repo-root run.ps1). Any source change to any of those four projects means the
   deployed exe no longer reflects reality until redeployed. This hook compares the
   deployed exe's timestamp against the newest .cs file across all four project trees and
   redeploys automatically when it's behind - the fast path (nothing changed) just
@@ -36,7 +36,7 @@ $healthUrl  = 'http://127.0.0.1:5900/api/health'
 $deployedExe = 'C:\Apps\MindAttic\Prose\Hub.exe'
 $legacyExe   = 'C:\Apps\Prose\Prose.Hub\Prose.Hub.exe'
 if (-not (Test-Path $deployedExe) -and (Test-Path $legacyExe)) { $deployedExe = $legacyExe }
-$deployPs1  = Join-Path $repoRoot 'deploy.ps1'
+$deployPs1  = Join-Path $repoRoot 'run.ps1'
 $proj       = Join-Path $repoRoot 'src\Prose.Hub\Prose.Hub.csproj'
 
 function Test-HubHealthy {
@@ -91,7 +91,7 @@ try {
             Start-Process -FilePath $deployedExe -WorkingDirectory (Split-Path $deployedExe) -WindowStyle Normal
             $startedSomething = $true
         } elseif (Test-Path $proj) {
-            # Deployed copy doesn't exist and deploy.ps1 isn't available/failed - fall back to
+            # Deployed copy doesn't exist and run.ps1 isn't available/failed - fall back to
             # an ad-hoc source build so the Hub is at least running somehow.
             & dotnet build $proj --configuration Release *> $null
             $exeDir = Join-Path $repoRoot 'src\Prose.Hub\bin\Release\net10.0'

@@ -4,7 +4,7 @@
     Starts one already-published Prose app from C:\Apps\MindAttic\Prose\.
 
 .DESCRIPTION
-    The counterpart to the repo-root deploy.ps1, and deliberately the smaller half: this only STARTS things.
+    The counterpart to the repo-root run.ps1, and deliberately the smaller half: this only STARTS things.
     It never publishes.
 
     That separation is the point. Publishing has to stop a running Hub to overwrite a 70 MB

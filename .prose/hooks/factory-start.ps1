@@ -16,8 +16,8 @@ for ($i = 0; $i -lt 8 -and -not $ready; $i++) {
 }
 if (-not $ready) {
     Write-Output "FACTORY UNREACHABLE - the Prose Hub is not answering at $hub."
-    Write-Output "Start it: powershell -NoProfile -File D:\Projects\MindAttic\Prose\deploy.ps1 -Apps Hub -Start Hub"
-    Write-Output "  (or run C:\Apps\MindAttic\Prose\deploy.bat Hub)"
+    Write-Output "Start it: powershell -NoProfile -File D:\Projects\MindAttic\Prose\run.ps1 -Apps Hub -Start Hub"
+    Write-Output "  (or run C:\Apps\MindAttic\Prose\run.bat Hub)"
     Write-Output "Do no story work from memory until the factory answers."
     exit 0
 }

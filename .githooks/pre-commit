@@ -61,7 +61,7 @@ fi
 # Prose.Mcp.exe runs out of the repo's src/Prose.Mcp/bin/Release for an entire Claude Code
 # session, so any in-repo build of Prose.Mcp dies on MSB3021/MSB3027 (2026-08-24, and again
 # 2026-09-05 when this gate blocked a code commit for exactly that). Same fix as
-# src/Prose.Hub/tools/deploy.ps1. Killing the MCP server to commit is not acceptable.
+# src/Prose.Hub/tools/run.ps1. Killing the MCP server to commit is not acceptable.
 ART="${LOCALAPPDATA:-$HOME/.prose}/Prose/build-artifacts"
 echo "pre-commit: building Prose.UnitTests… (artifacts: $ART)"
 build_log=$(dotnet build src/Prose.UnitTests -c Release --artifacts-path "$ART" --nologo --verbosity quiet 2>&1) || {

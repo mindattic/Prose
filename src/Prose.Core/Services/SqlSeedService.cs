@@ -168,7 +168,7 @@ public class SqlSeedService
         // ends in (…/Prose.Core), to which we append Data/Sql/X.
         // AppContext.BaseDirectory, not Assembly.Location (2026-08-30 fix, IL3000): Location
         // always returns "" for an assembly embedded in a single-file publish (the Hub's actual
-        // deployed form via deploy.ps1), which silently made this whole candidate-root strategy
+        // deployed form via run.ps1), which silently made this whole candidate-root strategy
         // dead weight in production while still emitting a trim-analyzer warning on every
         // publish. BaseDirectory is the single-file-safe equivalent and works in every other
         // host (dotnet run, unit tests) too.

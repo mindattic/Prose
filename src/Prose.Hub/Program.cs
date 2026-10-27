@@ -133,7 +133,7 @@ var hubSerilogLogger = new LoggerConfiguration()
     .CreateLogger();
 
 // ContentRootPath is pinned to the executable's own folder rather than left to default to
-// Directory.GetCurrentDirectory(). The Hub is started detached — by deploy.ps1 -Launch, by the
+// Directory.GetCurrentDirectory(). The Hub is started detached — by run.ps1 -Launch, by the
 // SessionStart hook, by launch.bat's `start ""` (which inherits the shell's cwd, not the script's
 // folder) — so the working directory is almost never the install folder, and the default made
 // ContentRoot point somewhere with no wwwroot. Everything served from disk then 404s: the
@@ -298,7 +298,7 @@ builder.Services.AddProseWriterUi();
 var app = builder.Build();
 
 // Migration guardrail (2026-08-30 fix): nothing previously called Database.Migrate/MigrateAsync
-// anywhere in the Hub, and deploy.ps1 never runs `dotnet ef database update` either — whether a
+// anywhere in the Hub, and run.ps1 never runs `dotnet ef database update` either — whether a
 // shipped EF migration was actually applied to the live DB depended entirely on someone
 // remembering to do it by hand. Runs first, before anything else touches the DB, so the Hub
 // never serves requests against a schema its own code doesn't match. A migration failure is

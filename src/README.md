@@ -64,25 +64,25 @@ dotnet test src\Prose.UnitTests\Prose.UnitTests.csproj
 dotnet test src\Prose.UnitTests\Prose.UnitTests.csproj --filter "Category=LiveKeysTrusted"   # live provider keys (costs money)
 
 # Publish desktop apps to C:\Apps\MindAttic\Prose\ (Hub.exe, Writer.exe, Launcher.exe)
-powershell -ExecutionPolicy Bypass -File deploy.ps1                          # all three, only what changed
-powershell -ExecutionPolicy Bypass -File deploy.ps1 -Force                   # all three, clean rebuild
-powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Hub -Start Hub     # Hub only; waits for /api/health
-powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Writer -Start Writer
+powershell -ExecutionPolicy Bypass -File run.ps1                          # all three, only what changed
+powershell -ExecutionPolicy Bypass -File run.ps1 -Force                   # all three, clean rebuild
+powershell -ExecutionPolicy Bypass -File run.ps1 -Apps Hub -Start Hub     # Hub only; waits for /api/health
+powershell -ExecutionPolicy Bypass -File run.ps1 -Apps Writer -Start Writer
 
 # Start an already-published app without rebuilding (warns if the build is stale)
 powershell -ExecutionPolicy Bypass -File src\tools\launch-app.ps1 -App writer   # writer | hub | kdp | launcher | wiki
 ```
 
-- The repo-root `deploy.ps1` republishes an app only when its exe is missing or its
+- The repo-root `run.ps1` republishes an app only when its exe is missing or its
   source (project plus referenced projects) is newer than the deployed exe (`-Force`: clean rebuild
   regardless). It stops only the apps it replaces, publishes framework-dependent single-file
   through `%LOCALAPPDATA%\Prose\build-artifacts` (so it never fights a running `Prose.Mcp` for
-  `bin\`), and on every run (or alone, with `-LauncherOnly`) writes `C:\Apps\MindAttic\Prose\deploy.bat`
-  (`deploy.bat Hub` / `Writer` / `Launcher`; no argument = all, then open the Launcher), which
-  opens a menu: 1) Deploy & Run (`deploy.ps1 -Force`, then start) or 2) Run (start the deployed exe).
-- `src/tools/install-shortcuts.ps1` points the desktop icons at that `deploy.bat` (and at
-  `C:\Apps\KdpPublish\deploy.bat`, `C:\Apps\IdiotProof\deploy.bat` for the other repos).
-- `src/Prose.Hub/tools/deploy.ps1` is a legacy forwarder to `deploy.ps1 -Apps Hub`.
+  `bin\`), and on every run (or alone, with `-LauncherOnly`) writes `C:\Apps\MindAttic\Prose\run.bat`
+  (`run.bat Hub` / `Writer` / `Launcher`; no argument = all, then open the Launcher), which
+  opens a menu: 1) Deploy & Run (`run.ps1 -Force`, then start) or 2) Run (start the deployed exe).
+- `src/tools/install-shortcuts.ps1` points the desktop icons at that `run.bat` (and at
+  `C:\Apps\KdpPublish\run.bat`, `C:\Apps\IdiotProof\run.bat` for the other repos).
+- `src/Prose.Hub/tools/run.ps1` is a legacy forwarder to `run.ps1 -Apps Hub`.
 - `Directory.Build.props` excludes `obj_*`/`bin_*` folders so isolated builds from concurrent
   sessions (`-p:BaseIntermediateOutputPath=obj_<tag>\`) do not collide.
 

@@ -8,8 +8,8 @@
     Layout:
 
         C:\Apps\MindAttic\Prose\
-            deploy.bat            the desktop shortcuts point here: `deploy.bat Hub`,
-                                  `deploy.bat Writer`, `deploy.bat Launcher`, or no argument for
+            run.bat            the desktop shortcuts point here: `run.bat Hub`,
+                                  `run.bat Writer`, `run.bat Launcher`, or no argument for
                                   every app and the Launcher. It opens a menu first:
                                     1) Deploy & Run - runs this script with -Force (a clean
                                        republish even when nothing changed), then starts the app.
@@ -28,16 +28,16 @@
     For an app that does need publishing: stop it (matched by path), wait for the file locks to
     actually release, then publish framework-dependent single-file.
 
-    deploy.bat is (re)written on EVERY run, before anything is built or stopped, so an
+    run.bat is (re)written on EVERY run, before anything is built or stopped, so an
     already-deployed install picks up a new launcher without a republish. -LauncherOnly does
     just that and exits.
 
     This script never prompts: agents and /deploy run it non-interactively. The menu lives only
-    in the generated deploy.bat.
+    in the generated run.bat.
 
     KdpPublish is NOT built here. It was decoupled into its own repo 2026-10-04
     (github.com/mindattic/KdpPublish) with its own deploy pipeline, publishing standalone to
-    C:\Apps\KdpPublish\ (C:\Apps\KdpPublish\deploy.bat). The Launcher still opens it from there
+    C:\Apps\KdpPublish\ (C:\Apps\KdpPublish\run.bat). The Launcher still opens it from there
     (Prose.Launcher\MainWindow.xaml.cs's OpenKdp).
 
 .PARAMETER Apps
@@ -46,39 +46,39 @@
 .PARAMETER Force
     Republish unconditionally, with a clean rebuild: the apps' build output (bin/obj under the
     artifacts path below, for the app's project and everything it references) is deleted first.
-    Only build caches are removed, never user data. deploy.bat's "1) Deploy & Run" passes it.
+    Only build caches are removed, never user data. run.bat's "1) Deploy & Run" passes it.
 
 .PARAMETER LauncherOnly
-    (Re)write C:\Apps\MindAttic\Prose\deploy.bat and exit, without building, stopping or starting
+    (Re)write C:\Apps\MindAttic\Prose\run.bat and exit, without building, stopping or starting
     anything. This is how the desktop-shortcut step (src\tools\install-shortcuts.ps1)
     regenerates the launcher safely.
 
 .PARAMETER Launch
     Start Launcher.exe when the deploy finishes. Equivalent to -Start Launcher, kept because
-    src\Prose.Hub\tools\deploy.ps1 forwards it as a bare switch.
+    src\Prose.Hub\tools\run.ps1 forwards it as a bare switch.
 
 .PARAMETER Start
-    Start THIS app when the deploy finishes. This is what deploy.bat's "1) Deploy & Run" uses:
+    Start THIS app when the deploy finishes. This is what run.bat's "1) Deploy & Run" uses:
     one desktop icon per app, each of which can republish from source and then open that app.
 
     Only the apps in -Apps are stopped and replaced. Starting Writer or the Launcher never touches
     the Hub: they connect to the running one, or start the deployed Hub.exe when none is up.
 
 .NOTES
-    Exit codes: 0 ok, 1 deploy failed (deploy.bat falls back to launching the existing build),
-    2 deployed but the started Hub never became healthy (deploy.bat does NOT start another).
+    Exit codes: 0 ok, 1 deploy failed (run.bat falls back to launching the existing build),
+    2 deployed but the started Hub never became healthy (run.bat does NOT start another).
 
 .EXAMPLE
-    powershell -ExecutionPolicy Bypass -File deploy.ps1
-    powershell -ExecutionPolicy Bypass -File deploy.ps1 -Force
-    powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Hub -Start Hub
-    powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Writer -Start Writer
-    powershell -ExecutionPolicy Bypass -File deploy.ps1 -LauncherOnly
+    powershell -ExecutionPolicy Bypass -File run.ps1
+    powershell -ExecutionPolicy Bypass -File run.ps1 -Force
+    powershell -ExecutionPolicy Bypass -File run.ps1 -Apps Hub -Start Hub
+    powershell -ExecutionPolicy Bypass -File run.ps1 -Apps Writer -Start Writer
+    powershell -ExecutionPolicy Bypass -File run.ps1 -LauncherOnly
 #>
 param(
     # Deliberately NOT [ValidateSet]: `powershell -File script.ps1 -Apps Hub,Writer` hands this
     # parameter the single STRING "Hub,Writer" (and `-Apps Hub Writer` silently binds only "Hub"
-    # and drops the rest). ValidateSet rejects the first and misses the second. Since deploy.bat
+    # and drops the rest). ValidateSet rejects the first and misses the second. Since run.bat
     # invokes this through -File, the argument is normalised and checked below instead, so all
     # three spellings work and a typo gets a real error rather than a silent no-op.
     [string[]]$Apps = @('Hub', 'Writer', 'Launcher'),
@@ -103,7 +103,7 @@ if (-not $Apps) { $Apps = $known }
 $Apps = @($known | Where-Object { $Apps -contains $_ })
 
 # -Launch is the older spelling of "-Start Launcher" and is still forwarded as a bare switch by
-# src\Prose.Hub\tools\deploy.ps1, so it has to keep working.
+# src\Prose.Hub\tools\run.ps1, so it has to keep working.
 if ($Launch -and -not $Start) { $Start = 'Launcher' }
 if ($Start) {
     $match = @($known | Where-Object { $_ -eq $Start })
@@ -120,7 +120,7 @@ if ($Start) {
 $repo    = $PSScriptRoot
 $srcRoot = Join-Path $repo 'src'
 $root    = 'C:\Apps\MindAttic\Prose'
-$deployBatPath = Join-Path $root 'deploy.bat'
+$runBatPath = Join-Path $root 'run.bat'
 
 # Publishing every project through one artifacts path keeps the build graph out of the repo's
 # bin/obj entirely, which is what lets this run while Prose.Mcp.exe holds its own DLLs open for
@@ -256,7 +256,7 @@ function Clear-BuildOutput {
 
 New-Item -ItemType Directory -Force -Path $root | Out-Null
 
-# ── deploy.bat ────────────────────────────────────────────────────────────────
+# ── run.bat ────────────────────────────────────────────────────────────────
 # The single entry point in the deploy folder; every desktop shortcut points at it with the app as
 # its argument. It opens a menu first: 1) Deploy & Run calls this script with -Force (so it really
 # republishes, even when nothing changed) and then starts the app; 2) Run starts the deployed exe
@@ -264,15 +264,15 @@ New-Item -ItemType Directory -Force -Path $root | Out-Null
 # whatever is already in the folder, so a missing source tree leaves a working icon. Written on
 # every run, before any build (only when its content differs), so it cannot drift from this script.
 $exeLines = $known | ForEach-Object { "if /i `"%APP%`"==`"$_`" set `"EXE=$($catalog[$_].Exe)`"" }
-$deployBat = @(
+$runBat = @(
     '@echo off',
-    "rem Generated by $repo\deploy.ps1 - edits here are overwritten.",
-    'rem Usage: deploy.bat [Hub | Writer | Launcher]',
+    "rem Generated by $repo\run.ps1 - edits here are overwritten.",
+    'rem Usage: run.bat [Hub | Writer | Launcher]',
     'rem   Opens a menu: 1) Deploy & Run republishes (clean, -Force) that app - or every app when',
     'rem   no argument is given - then starts it; 2) Run starts the deployed build as it is.',
     'rem   No argument starts the Launcher (the app picker).',
     'setlocal',
-    "set `"DEPLOY_PS1=$repo\deploy.ps1`"",
+    "set `"RUN_PS1=$repo\run.ps1`"",
     'set "APP=%~1"',
     'set "APPS=%~1"',
     'if "%APP%"=="" set "APP=Launcher"',
@@ -293,8 +293,8 @@ $deployBat = @(
     'choice /c 12 /n /m "  Choose 1 or 2: "',
     'if errorlevel 2 goto run',
     ':deploy',
-    'if not exist "%DEPLOY_PS1%" goto norepo',
-    'powershell -NoProfile -ExecutionPolicy Bypass -File "%DEPLOY_PS1%" -Apps %APPS% -Start %APP% -Force',
+    'if not exist "%RUN_PS1%" goto norepo',
+    'powershell -NoProfile -ExecutionPolicy Bypass -File "%RUN_PS1%" -Apps %APPS% -Start %APP% -Force',
     'if not errorlevel 1 exit /b 0',
     'rem Exit 2: deployed and started, but the Hub never answered /api/health. Starting another',
     'rem would only fight the first one for port 5900.',
@@ -302,12 +302,12 @@ $deployBat = @(
     'echo Redeploy failed - launching whatever is already in this folder instead.',
     'goto launch',
     ':norepo',
-    'echo Source repo not found at "%DEPLOY_PS1%" - launching existing build without redeploying.',
+    'echo Source repo not found at "%RUN_PS1%" - launching existing build without redeploying.',
     'goto launch',
     ':run',
     'if exist "%~dp0%EXE%" goto launch',
     'echo %EXE% is not deployed yet in %~dp0 - deploying it first.',
-    'if exist "%DEPLOY_PS1%" goto deploy',
+    'if exist "%RUN_PS1%" goto deploy',
     ':launch',
     'if not exist "%~dp0%EXE%" (',
     '    echo %EXE% is not in %~dp0 - nothing to launch.',
@@ -325,16 +325,17 @@ $deployBat = @(
     'pause',
     'exit /b 1'
 )
-$batText = ($deployBat -join "`r`n") + "`r`n"
-$current = if (Test-Path $deployBatPath) { [System.IO.File]::ReadAllText($deployBatPath) } else { '' }
+$batText = ($runBat -join "`r`n") + "`r`n"
+$current = if (Test-Path $runBatPath) { [System.IO.File]::ReadAllText($runBatPath) } else { '' }
 if ($current -ne $batText) {
-    [System.IO.File]::WriteAllText($deployBatPath, $batText, [System.Text.Encoding]::ASCII)
+    [System.IO.File]::WriteAllText($runBatPath, $batText, [System.Text.Encoding]::ASCII)
     Write-Host ''
-    Write-Host "  Wrote $deployBatPath" -ForegroundColor Gray
+    Write-Host "  Wrote $runBatPath" -ForegroundColor Gray
 }
 
-# The per-app launchers deploy.bat replaced. Nothing calls them any more.
-foreach ($old in 'launch.bat', 'Hub.bat', 'Writer.bat') {
+# The launchers run.bat replaced (the per-app ones, and deploy.bat before the rename to run.bat).
+# Nothing calls them any more; the desktop shortcuts point at run.bat.
+foreach ($old in 'deploy.bat', 'launch.bat', 'Hub.bat', 'Writer.bat') {
     $p = Join-Path $root $old
     if (Test-Path $p) {
         Remove-Item $p -Force
@@ -343,7 +344,7 @@ foreach ($old in 'launch.bat', 'Hub.bat', 'Writer.bat') {
 }
 
 if ($LauncherOnly) {
-    Write-Host "  Launcher is current at $deployBatPath (-LauncherOnly: nothing built or stopped)." -ForegroundColor Green
+    Write-Host "  Launcher is current at $runBatPath (-LauncherOnly: nothing built or stopped)." -ForegroundColor Green
     exit 0
 }
 
@@ -477,7 +478,7 @@ function Show-HubState {
     else {
         if (-not (Test-Path $hubExe)) {
             Write-Host "  No Hub is running and none is deployed at $hubExe." -ForegroundColor Red
-            Write-Host "  $AppName will open but cannot reach one - run deploy.bat Hub." -ForegroundColor Red
+            Write-Host "  $AppName will open but cannot reach one - run run.bat Hub." -ForegroundColor Red
             return
         }
         Write-Host "  No Hub is answering - $AppName will start $hubExe." -ForegroundColor Cyan
@@ -496,7 +497,7 @@ function Show-HubState {
         Write-Host "  ! That Hub was built $($built.ToLocalTime()), before the latest change to what it serves:" -ForegroundColor Yellow
         Write-Host "      $($newest.FullName.Substring($srcRoot.Length + 1)) ($($newest.LastWriteTime))" -ForegroundColor DarkYellow
         Write-Host "    The editor inside $AppName comes from the Hub, so that change is not in it yet." -ForegroundColor DarkYellow
-        Write-Host "    Run deploy.bat Hub to pick it up." -ForegroundColor DarkYellow
+        Write-Host "    Run run.bat Hub to pick it up." -ForegroundColor DarkYellow
     }
 }
 
@@ -515,7 +516,7 @@ if ($Start) {
         # one that outlived the file-lock wait, may still own port 5900. Never start a second one
         # to fight it - connect to what is there. And do not report success until the new Hub
         # actually answers: a launched exe that never becomes healthy is a failed deploy, not a
-        # started one, and deploy.bat's "DEPLOY FAILED" branch is what should fire (exit 2).
+        # started one, and run.bat's "DEPLOY FAILED" branch is what should fire (exit 2).
         if (Test-HubHealthy) {
             Write-Host "  Prose Hub is already running and healthy at $HubBaseUrl - connecting to it, not starting a second." -ForegroundColor Green
             if ($published -contains 'Hub') {

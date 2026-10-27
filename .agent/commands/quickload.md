@@ -11,7 +11,7 @@ session's summary, and the laws. Resume from that.
 
 If the block is missing (the hook did not run, or the Hub was down):
 
-1. Make sure the Hub is up: `powershell -NoProfile -File D:\Projects\MindAttic\Prose\deploy.ps1 -Apps Hub -Start Hub`.
+1. Make sure the Hub is up: `powershell -NoProfile -File D:\Projects\MindAttic\Prose\run.ps1 -Apps Hub -Start Hub`.
 2. Run `prose --factory next` (or MCP `factory_next`) and `prose --order list`.
 3. Do exactly the next action it names. Do not work from memory or from an old transcript.
 

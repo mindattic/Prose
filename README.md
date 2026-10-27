@@ -84,7 +84,7 @@ Without the `core.hooksPath` line the repo's `pre-commit`, `commit-msg` and `pos
 Publish and start the Hub. It applies any pending EF Core migrations at startup, then waits for `/api/health`:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Hub -Start Hub
+powershell -ExecutionPolicy Bypass -File run.ps1 -Apps Hub -Start Hub
 ```
 
 Enable temporal versioning on a fresh database and check the CLI can reach the Hub:
@@ -98,7 +98,7 @@ Enable temporal versioning on a fresh database and check the CLI can reach the H
 `agent bootstrap` prints `ready` when the Hub is healthy. Open the editor:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Writer -Start Writer
+powershell -ExecutionPolicy Bypass -File run.ps1 -Apps Writer -Start Writer
 ```
 
 Register the MCP server with Claude Code (one time):
@@ -486,7 +486,7 @@ Run the Hub with `ASPNETCORE_ENVIRONMENT=Development`, or MindAttic authenticati
 ```text
 Prose/
   prose.cmd                 the CLI shim (dotnet run on src/Prose.Cli)
-  deploy.ps1                publishes Hub, Writer, Launcher to C:\Apps\MindAttic\Prose\ (writes deploy.bat there)
+  run.ps1                publishes Hub, Writer, Launcher to C:\Apps\MindAttic\Prose\ (writes run.bat there)
   writer.bat                dev-only: dotnet run of Prose.Writer
   src/
     Prose.slnx
@@ -521,14 +521,14 @@ dotnet build src\Prose.slnx
 Publish the desktop apps to `C:\Apps\MindAttic\Prose\` (Hub.exe, Writer.exe, Launcher.exe; KdpPublish has its own repo and deploys to `C:\Apps\KdpPublish\`):
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File deploy.ps1                           # all three, only what changed
-powershell -ExecutionPolicy Bypass -File deploy.ps1 -Force                    # all three, clean rebuild
-powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Hub -Start Hub      # Hub only
-powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Writer -Start Writer
+powershell -ExecutionPolicy Bypass -File run.ps1                           # all three, only what changed
+powershell -ExecutionPolicy Bypass -File run.ps1 -Force                    # all three, clean rebuild
+powershell -ExecutionPolicy Bypass -File run.ps1 -Apps Hub -Start Hub      # Hub only
+powershell -ExecutionPolicy Bypass -File run.ps1 -Apps Writer -Start Writer
 powershell -ExecutionPolicy Bypass -File src\tools\launch-app.ps1 -App writer                # start without rebuilding
 ```
 
-`deploy.ps1` republishes an app only when its exe is missing or one of its source files (its project plus every project it references) is newer than the deployed exe; `-Force` republishes with a clean rebuild. It stops only the apps it replaces and publishes through `%LOCALAPPDATA%\Prose\build-artifacts`, so it never fights a running MCP server for `bin\`. It writes `C:\Apps\MindAttic\Prose\deploy.bat`, which the desktop shortcuts point at: `deploy.bat Hub`, `deploy.bat Writer`, `deploy.bat Launcher`, or no argument for every app and the Launcher. It opens a menu: 1) Deploy & Run republishes (`deploy.ps1 -Force`) and then starts the app; 2) Run starts the deployed build without redeploying. Deploy & Run falls back to the existing build if the repo is gone or the publish fails. `Directory.Build.props` excludes `obj_*` and `bin_*` folders so isolated builds from parallel sessions do not collide.
+`run.ps1` republishes an app only when its exe is missing or one of its source files (its project plus every project it references) is newer than the deployed exe; `-Force` republishes with a clean rebuild. It stops only the apps it replaces and publishes through `%LOCALAPPDATA%\Prose\build-artifacts`, so it never fights a running MCP server for `bin\`. It writes `C:\Apps\MindAttic\Prose\run.bat`, which the desktop shortcuts point at: `run.bat Hub`, `run.bat Writer`, `run.bat Launcher`, or no argument for every app and the Launcher. It opens a menu: 1) Deploy & Run republishes (`run.ps1 -Force`) and then starts the app; 2) Run starts the deployed build without redeploying. Deploy & Run falls back to the existing build if the repo is gone or the publish fails. `Directory.Build.props` excludes `obj_*` and `bin_*` folders so isolated builds from parallel sessions do not collide.
 
 After editing any Codex file under `docs/`:
 
@@ -550,7 +550,7 @@ There are 285 `*Tests.cs` files (NUnit). Most tests run on in-memory SQLite thro
 
 ## Deployment
 
-There is no hosted deployment and there will not be one (author decision, 2026-08-23). The Azure App Service pipeline, the Azure SQL provisioning guide and their docs were deleted. "Deploying" means publishing the desktop apps locally with `deploy.ps1`; the only CI is the docs workflow that publishes to GitHub Pages.
+There is no hosted deployment and there will not be one (author decision, 2026-08-23). The Azure App Service pipeline, the Azure SQL provisioning guide and their docs were deleted. "Deploying" means publishing the desktop apps locally with `run.ps1`; the only CI is the docs workflow that publishes to GitHub Pages.
 
 ## History
 

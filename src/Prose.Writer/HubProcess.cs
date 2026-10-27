@@ -17,7 +17,7 @@ public static class HubProcess
     public const string BaseUrl = "http://127.0.0.1:5900";
     private const string HealthUrl = BaseUrl + "/api/health";
 
-    /// <summary>Install locations tried in order. The first is where deploy.ps1 puts the Hub
+    /// <summary>Install locations tried in order. The first is where run.ps1 puts the Hub
     /// today; the second is the pre-2026-09 layout, still present on machines that have not been
     /// redeployed since.</summary>
     private static readonly string[] CandidateHubPaths =
@@ -52,7 +52,7 @@ public static class HubProcess
     /// Every running Hub process, by PID — the "search" behind the Connect button.
     ///
     /// <para>Matched by executable path, not by process name alone: "Hub" is generic enough to
-    /// collide with something unrelated, which is the same reason <c>deploy.ps1</c> stops its
+    /// collide with something unrelated, which is the same reason <c>run.ps1</c> stops its
     /// targets by path. A process whose path cannot be read is still reported, because a Hub we
     /// can see but cannot identify is exactly the situation the author needs told about rather
     /// than silently filtered away.</para>
@@ -139,7 +139,7 @@ public static class HubProcess
             ?? throw new InvalidOperationException(
                 "Prose Hub is not running and Hub.exe could not be found. Looked in:\n  " +
                 string.Join("\n  ", CandidateHubPaths) +
-                "\n\nDeploy it with C:\\Apps\\MindAttic\\Prose\\deploy.bat Hub (or deploy.ps1 in the Prose repository).");
+                "\n\nDeploy it with C:\\Apps\\MindAttic\\Prose\\run.bat Hub (or run.ps1 in the Prose repository).");
 
         progress?.Report("Starting Prose Hub…");
         // The Hub binds 127.0.0.1 only and is never the Azure deployment. With no environment set
