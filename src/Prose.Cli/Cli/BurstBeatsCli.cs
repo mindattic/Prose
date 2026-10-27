@@ -41,7 +41,11 @@ public static class BurstBeatsCli
             switch (args[i])
             {
                 case "--min-chars":
-                    if (i + 1 < args.Length && int.TryParse(args[++i], out var m)) minChars = m;
+                    if (i + 1 < args.Length)
+                    {
+                        if (!int.TryParse(args[++i], out var m)) { Console.Error.WriteLine($"--min-chars needs a whole number, got '{args[i]}'."); return 2; }
+                        minChars = m;
+                    }
                     break;
                 case "--node":
                     if (i + 1 < args.Length) nodeFilters.Add(args[++i]);
