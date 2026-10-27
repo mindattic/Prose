@@ -351,8 +351,13 @@ public sealed class KdpJsonTransfer
         var existing = book.LastPublish;
         var keepExisting = existing?.PublishedAt is { } had
             && (snapshot.PublishedAt is null || snapshot.PublishedAt < had);
-        if (!keepExisting) book.LastPublish = snapshot;
-        book.PublishingDetectedAt = ParseUtc(marker?.PublishingDetectedAtUtc);
+        // The in-progress publish window belongs to the same marker: an older bundle must not
+        // clear (or replace) the "Live – Updates publishing" mark either.
+        if (!keepExisting)
+        {
+            book.LastPublish = snapshot;
+            book.PublishingDetectedAt = ParseUtc(marker?.PublishingDetectedAtUtc);
+        }
         book.UpdatedAt = now;
         counts.Books++;
 
