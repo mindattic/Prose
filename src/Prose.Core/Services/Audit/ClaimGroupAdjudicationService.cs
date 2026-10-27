@@ -185,6 +185,8 @@ NO is a correct and common answer. Most of what you are shown will be complement
         int adjudicated = 0, cacheHits = 0, conflicts = 0, compatible = 0, rejected = 0,
             unanchored = 0, cleared = 0;
         var conflicting = new List<GroupVerdict>();
+        var decidedGroups = groups.Take(0).ToList();
+        var anyUndecided = false;
 
         foreach (var g in groups)
         {
@@ -197,7 +199,7 @@ NO is a correct and common answer. Most of what you are shown will be complement
                 if (!distinct.Any(d => ContinuityService.ObjectsSayTheSameThing(d.Object, c.Object)))
                     distinct.Add(c);
             distinct = distinct.Take(MaxValuesPerGroup).ToList();
-            if (distinct.Count < 2) continue;
+            if (distinct.Count < 2) { decidedGroups.Add(g); continue; }
 
             var anchors = distinct
                 .Select(c => c.SourceBeatId.HasValue ? beatById.GetValueOrDefault(c.SourceBeatId.Value) : null)
@@ -208,6 +210,7 @@ NO is a correct and common answer. Most of what you are shown will be complement
                 // No prose to judge against. Ruling anyway would be ruling on two summaries —
                 // the paraphrase-only reasoning that produced the defect this system exists for.
                 unanchored++;
+                anyUndecided = true;
                 continue;
             }
 
@@ -240,6 +243,9 @@ NO is a correct and common answer. Most of what you are shown will be complement
 
             if (!string.IsNullOrEmpty(verdict.RejectedReason)) rejected++;
 
+            if (verdict.IsContradiction || string.IsNullOrEmpty(verdict.RejectedReason)) decidedGroups.Add(g);
+            else anyUndecided = true;
+
             if (verdict.IsContradiction)
             {
                 conflicts++;
@@ -263,13 +269,13 @@ NO is a correct and common answer. Most of what you are shown will be complement
         if (opts.Apply)
         {
             // A capped run, like a filtered one, has only looked at some of the book.
-            if (opts.IsFiltered || capped)
+            if (opts.IsFiltered || capped || anyUndecided)
             {
                 // A filtered run has only looked at some of the book, so the usual wipe-and-refile
                 // would silently delete every finding outside the filter. Clear each ADJUDICATED
                 // group's own finding by its exact "[Entity] predicate: " prefix instead — so a
                 // group that flipped to compatible loses its stale finding and nothing else moves.
-                foreach (var g in groups)
+                foreach (var g in decidedGroups)
                     findings.DeleteBySummaryPrefix($"node:{book.Slug}", GroupSummaryPrefix(g.EntityName, g.Predicate));
             }
             else

@@ -220,6 +220,8 @@ public sealed class TunedReadService(
 
         int adjudicated = 0, cacheHits = 0, confirmed = 0, cleared = 0, rejected = 0;
         var results = new List<TunedReadFinding>();
+        var decidedCandidates = ontologyCandidates.Take(0).ToList();
+        var anyUndecided = false;
 
         foreach (var cand in ontologyCandidates)
         {
@@ -269,7 +271,8 @@ public sealed class TunedReadService(
             }
 
             if (!string.IsNullOrEmpty(verdict.RejectedReason)) rejected++;
-            if (IsTransientFailure(verdict)) continue; // undecided, not cleared
+            if (IsTransientFailure(verdict)) { anyUndecided = true; continue; } // undecided, not cleared
+            decidedCandidates.Add(cand);
 
             if (!verdict.IsContradiction) { cleared++; continue; }
 
@@ -298,8 +301,10 @@ public sealed class TunedReadService(
         // its finding even though nothing re-emits for it this run. A CAPPED run only looked at
         // the first MaxCandidates, so it clears just those candidates' own findings — a book-wide
         // wipe deleted findings for candidates past the cap that it never re-checked.
-        if (capped)
-            foreach (var cand in ontologyCandidates)
+        // Likewise a run where some candidate could not be judged (LLM outage) must not wipe that
+        // candidate's existing finding: only the candidates that reached a verdict are cleared.
+        if (capped || anyUndecided)
+            foreach (var cand in decidedCandidates)
                 findings.DeleteBySummaryPrefix($"node:{book.Slug}", CandidateSummaryPrefix(
                     cand.A.EntityName, cand.A.Predicate, cand.A.Object, cand.B.Predicate, cand.B.Object));
         else
