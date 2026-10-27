@@ -870,7 +870,7 @@ public class ContinuityService
             || EF.Functions.Like(c.Predicate, pattern)
             || EF.Functions.Like(c.Object, pattern));
 
-        if (!string.IsNullOrWhiteSpace(entityId)) q = q.Where(c => c.EntityId == entityId);
+        if (!string.IsNullOrWhiteSpace(entityId)) { var idForms = EntityIdForms(entityId); q = q.Where(c => idForms.Contains(c.EntityId)); }
         if (!string.IsNullOrWhiteSpace(predicatePrefix)) q = q.Where(c => c.Predicate.StartsWith(predicatePrefix));
         if (liveOnly) q = q.Where(c => c.Status != "REJECTED" && c.Status != "SUPERSEDED");
 
@@ -1643,8 +1643,10 @@ public class ContinuityService
     public int RelabelEntityName(string entityId, string newName, string note = "")
     {
         using var db = dbFactory.CreateDbContext();
+        // Claims store the "N" form while callers hold a Guid ("D" form): an exact match relabelled 0 rows.
+        var forms = EntityIdForms(entityId);
         var rows = db.ContinuityClaims
-            .Where(c => c.EntityId == entityId && c.EntityName != newName)
+            .Where(c => forms.Contains(c.EntityId) && c.EntityName != newName)
             .ToList();
         foreach (var c in rows) c.EntityName = newName;
         db.SaveChanges();
