@@ -23,6 +23,7 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
 
     private List<T>? cache;
     private int cacheEpoch = -1;
+    private long cacheGeneration; // bumped by InvalidateCache so a read racing a save never stores a stale list
     private Guid cacheUniverseId;
     private readonly object cacheLock = new();
 
@@ -127,6 +128,8 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
             if (cache != null && cacheEpoch == UniverseScope.Epoch && cacheUniverseId == UniverseScope.EffectiveId) return cache;
         }
 
+        long builtGeneration;
+        lock (cacheLock) builtGeneration = cacheGeneration;
         // Stamped with the scope it was queried under, captured before the query runs.
         var builtEpoch = UniverseScope.Epoch;
         var builtUniverse = UniverseScope.EffectiveId;
@@ -152,7 +155,12 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
             }
         }
 
-        lock (cacheLock) { cache = list; cacheEpoch = builtEpoch; cacheUniverseId = builtUniverse; }
+        lock (cacheLock)
+        {
+            // A save/delete that landed while the query ran invalidated the cache; storing this
+            // list would pin pre-save rows until the next write.
+            if (cacheGeneration == builtGeneration) { cache = list; cacheEpoch = builtEpoch; cacheUniverseId = builtUniverse; }
+        }
         return list;
     }
 
@@ -416,7 +424,7 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
 
     private void InvalidateCache()
     {
-        lock (cacheLock) cache = null;
+        lock (cacheLock) { cache = null; cacheGeneration++; }
     }
 
     /// <summary>
