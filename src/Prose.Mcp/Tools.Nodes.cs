@@ -213,6 +213,32 @@ public class NodeTools
     private Task<Guid?> ResolveNodeIdAsync(string? slugOrId) =>
         NodeRefResolver.ResolveAsync(dbFactory, slugOrId);
 
+    /// <summary>parent id -> child ids for every node (query filters ignored, like the descendant walk).</summary>
+    private static async Task<Dictionary<Guid, List<Guid>>> BuildChildMapAsync(ProseDbContext db)
+    {
+        var pairs = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+            .Where(n => n.ParentNodeId != null)
+            .Select(n => new { n.Id, Parent = n.ParentNodeId!.Value })
+            .ToListAsync();
+        return pairs.GroupBy(p => p.Parent).ToDictionary(g => g.Key, g => g.Select(p => p.Id).ToList());
+    }
+
+    private static List<Guid> SelfAndDescendants(Dictionary<Guid, List<Guid>> children, Guid root)
+    {
+        var result = new List<Guid>();
+        var seen = new HashSet<Guid>();
+        var stack = new Stack<Guid>();
+        stack.Push(root);
+        while (stack.Count > 0)
+        {
+            var id = stack.Pop();
+            if (!seen.Add(id)) continue; // cycle guard
+            result.Add(id);
+            if (children.TryGetValue(id, out var kids)) foreach (var k in kids) stack.Push(k);
+        }
+        return result;
+    }
+
     [McpServerTool, Description("List nodes. Use kind='book' to list all root narratives; kind='chapter' for all sub-nodes (contain beats). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.")]
     public Task<string> ListBooks(
         [Description("Optional Kind filter — 'book' (root nodes) or 'chapter' (sub-nodes with beats). Case-insensitive equality match.")] string kind = "",
@@ -227,12 +253,18 @@ public class NodeTools
             q = q.Where(s => s.Kind == kind.ToLowerInvariant());
         var rows = await q.OrderBy(s => s.Kind).ThenBy(s => s.Title).Take(limit).ToListAsync();
 
-        var ids = rows.Select(r => r.Id).ToList();
-        var beatCounts = await db.BeatNodes
-            .Where(sb => ids.Contains(sb.NodeId))
+        // Beats hang off chapter nodes, so a book (or series) row's own BeatNodes count is 0:
+        // roll each row up over every descendant node, as GetLeafDescendantIdsAsync walks it.
+        var children = await BuildChildMapAsync(db);
+        var rowDescendants = rows.ToDictionary(r => r.Id, r => SelfAndDescendants(children, r.Id));
+        var allIds = rowDescendants.Values.SelectMany(v => v).Distinct().ToList();
+        var perNodeCounts = (await db.BeatNodes.AsNoTracking()
+            .Where(sb => allIds.Contains(sb.NodeId))
             .GroupBy(sb => sb.NodeId)
             .Select(g => new { NodeId = g.Key, Count = g.Count() })
-            .ToDictionaryAsync(x => x.NodeId, x => x.Count);
+            .ToListAsync()).ToDictionary(x => x.NodeId, x => x.Count);
+        var beatCounts = rowDescendants.ToDictionary(
+            kv => kv.Key, kv => kv.Value.Sum(id => perNodeCounts.GetValueOrDefault(id, 0)));
 
         var result = rows.Select(s => new
         {
@@ -895,22 +927,28 @@ public class NodeTools
             })
             .ToDictionaryAsync(x => x.NodeId);
 
-        // Word counts from beats
-        var wordCounts = await db.BeatNodes
+        // Word counts from beats. Beats hang off chapter nodes, so a book's own BeatNodes are empty
+        // (it listed 0 words): roll every row up over its descendant nodes.
+        var children = await BuildChildMapAsync(db);
+        var rowDescendants = nodes.ToDictionary(n => n.Id, n => SelfAndDescendants(children, n.Id));
+        var allIds = rowDescendants.Values.SelectMany(v => v).Distinct().ToList();
+        var perNodeChars = (await db.BeatNodes
             .AsNoTracking()
-            .Where(sb => ids.Contains(sb.NodeId))
+            .Where(sb => allIds.Contains(sb.NodeId))
             .Join(db.Beats.AsNoTracking().Where(b => b.Text != null && b.Text != ""),
                   sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.NodeId, b.Text })
             .GroupBy(x => x.NodeId)
             .Select(g => new { NodeId = g.Key, Chars = g.Sum(x => (long)x.Text!.Length) })
-            .ToDictionaryAsync(x => x.NodeId);
+            .ToListAsync()).ToDictionary(x => x.NodeId, x => x.Chars);
+        var wordCounts = rowDescendants.ToDictionary(
+            kv => kv.Key, kv => kv.Value.Sum(id => perNodeChars.GetValueOrDefault(id, 0L)));
 
         var rows = nodes.Select(s =>
         {
             scores.TryGetValue(s.Id, out var sc);
-            wordCounts.TryGetValue(s.Id, out var wc);
+            var chars = wordCounts.GetValueOrDefault(s.Id, 0L);
             // Rough word count from char count (avg English word ≈ 5 chars + 1 space)
-            var words = wc != null ? (int)(wc.Chars / 5.2) : 0;
+            var words = (int)(chars / 5.2);
             return new
             {
                 id        = s.Id,
