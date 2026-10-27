@@ -550,7 +550,7 @@ There are 285 `*Tests.cs` files (NUnit). Most tests run on in-memory SQLite thro
 
 ## Deployment
 
-There is no hosted deployment and there will not be one (author decision, 2026-08-23). The Azure App Service pipeline, the Azure SQL provisioning guide and their docs were deleted. "Deploying" means publishing the desktop apps locally with `deploy.ps1`; there is no CI runner.
+There is no hosted deployment and there will not be one (author decision, 2026-08-23). The Azure App Service pipeline, the Azure SQL provisioning guide and their docs were deleted. "Deploying" means publishing the desktop apps locally with `deploy.ps1`; the only CI is the docs workflow that publishes to GitHub Pages.
 
 ## History
 
