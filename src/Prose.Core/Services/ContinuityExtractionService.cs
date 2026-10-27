@@ -864,10 +864,10 @@ public class ContinuityExtractionService
 
     private static RawCandidate? ParseCandidate(JsonElement el, string voterProviderId)
     {
-        var entityName = el.TryGetProperty("entity_name", out var n) ? n.GetString() ?? "" : "";
-        var predicate  = el.TryGetProperty("predicate",   out var p) ? p.GetString() ?? "" : "";
-        var obj        = el.TryGetProperty("object",      out var o) ? o.GetString() ?? "" : "";
-        var snippet    = el.TryGetProperty("snippet",     out var s) ? s.GetString() ?? "" : "";
+        var entityName = el.TryGetProperty("entity_name", out var n) ? JsonText(n) : "";
+        var predicate  = el.TryGetProperty("predicate",   out var p) ? JsonText(p) : "";
+        var obj        = el.TryGetProperty("object",      out var o) ? JsonText(o) : "";
+        var snippet    = el.TryGetProperty("snippet",     out var s) ? JsonText(s) : "";
         if (string.IsNullOrEmpty(entityName) || string.IsNullOrEmpty(predicate)
          || string.IsNullOrEmpty(obj) || string.IsNullOrEmpty(snippet)) return null;
 
@@ -877,11 +877,20 @@ public class ContinuityExtractionService
             Predicate  = Truncate(predicate, 80),
             Object     = Truncate(obj, 300),
             Snippet    = Truncate(snippet, 300),
-            Voice      = el.TryGetProperty("voice",      out var v)  ? Truncate(v.GetString() ?? "narrator", 32) : "narrator",
-            Confidence = el.TryGetProperty("confidence", out var cf) ? Truncate(cf.GetString() ?? "medium", 16) : "medium",
+            Voice      = el.TryGetProperty("voice",      out var v)  ? Truncate(JsonText(v) is { Length: > 0 } vt ? vt : "narrator", 32) : "narrator",
+            Confidence = el.TryGetProperty("confidence", out var cf) ? Truncate(JsonText(cf) is { Length: > 0 } cft ? cft : "medium", 16) : "medium",
             Voter      = voterProviderId ?? "unknown",
         };
     }
+
+    // A model may return a bare number or boolean for "object" (an age, a flag); GetString() throws
+    // on anything but a string and would abort the whole extraction.
+    private static string JsonText(JsonElement e) => e.ValueKind switch
+    {
+        JsonValueKind.String => e.GetString() ?? "",
+        JsonValueKind.Number or JsonValueKind.True or JsonValueKind.False => e.GetRawText(),
+        _ => "",
+    };
 
     private static string Truncate(string s, int max) => s.Length <= max ? s : s[..max];
 
