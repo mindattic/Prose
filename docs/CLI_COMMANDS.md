@@ -1050,7 +1050,7 @@ prose --fix-cross-universe-contamination [--dry-run] Deletes BeatEntities/BeatEn
 
 ### `--fix-location-aspect`
 
-prose --fix-location-aspect --character <name> --find <text> --replace <text> [--apply] Corrects a character's current 'location' EntityStateEvent.NewValue via an exact, single-occurrence substring replace. Dry-run by default. See FixLocationAspectCli's doc comment for why this exists.
+prose --fix-location-aspect --character <name> (--find <text> --replace <text> | --set <whole new value>) [--apply] Corrects a character's current 'location' EntityStateEvent.NewValue via an exact, single-occurrence substring replace, or replaces the whole value with --set; reads the value back after --apply. Dry-run by default. See FixLocationAspectCli's doc comment for why this exists.
 
 <sub>handler `FixLocationAspectCli`</sub>
 

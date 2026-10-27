@@ -28,7 +28,7 @@ public static class FixLocationAspectCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
-        string? character = null, find = null, replace = null;
+        string? character = null, find = null, replace = null, set = null;
         var apply = args.Contains("--apply");
         for (int i = 0; i < args.Length; i++)
         {
@@ -37,12 +37,14 @@ public static class FixLocationAspectCli
                 case "--character": if (i + 1 < args.Length) character = args[++i]; break;
                 case "--find":      if (i + 1 < args.Length) find = args[++i]; break;
                 case "--replace":   if (i + 1 < args.Length) replace = args[++i]; break;
+                case "--set":       if (i + 1 < args.Length) set = args[++i]; break;
             }
         }
 
-        if (string.IsNullOrWhiteSpace(character) || string.IsNullOrWhiteSpace(find) || replace == null)
+        var setMode = !string.IsNullOrWhiteSpace(set);
+        if (string.IsNullOrWhiteSpace(character) || (!setMode && (string.IsNullOrWhiteSpace(find) || replace == null)) || (setMode && find != null))
         {
-            Console.Error.WriteLine("Usage: prose --fix-location-aspect --character <name> --find <text> --replace <text> [--apply] [--universe <slug>]");
+            Console.Error.WriteLine("Usage: prose --fix-location-aspect --character <name> (--find <text> --replace <text> | --set <whole new value>) [--apply] [--universe <slug>]");
             return 1;
         }
 
@@ -65,17 +67,25 @@ public static class FixLocationAspectCli
         if (ev == null) { Console.Error.WriteLine($"[fix-location-aspect] '{character}' has no 'location' state event."); return 1; }
 
         var current = ev.NewValue ?? "";
-        var count = 0;
-        var idx = 0;
-        while ((idx = current.IndexOf(find, idx, StringComparison.Ordinal)) >= 0) { count++; idx += find.Length; }
-        if (count != 1)
+        string updated;
+        if (setMode)
         {
-            Console.Error.WriteLine($"[fix-location-aspect] REFUSED: '{find}' appears {count} time(s) in current value (expected exactly 1).");
-            Console.Error.WriteLine($"  Current value: \"{current}\"");
-            return 1;
+            // Whole-value write (RFC 0015 s11): needed when the stored value is wrong end to end.
+            updated = set!.Trim();
         }
-
-        var updated = current.Replace(find, replace, StringComparison.Ordinal);
+        else
+        {
+            var count = 0;
+            var idx = 0;
+            while ((idx = current.IndexOf(find!, idx, StringComparison.Ordinal)) >= 0) { count++; idx += find!.Length; }
+            if (count != 1)
+            {
+                Console.Error.WriteLine($"[fix-location-aspect] REFUSED: '{find}' appears {count} time(s) in current value (expected exactly 1).");
+                Console.Error.WriteLine($"  Current value: \"{current}\"");
+                return 1;
+            }
+            updated = current.Replace(find!, replace!, StringComparison.Ordinal);
+        }
 
         Console.WriteLine($"[fix-location-aspect] {(apply ? "APPLIED" : "Dry run — nothing written")}");
         Console.WriteLine($"  {character} (event id {ev.Id}, story time {ev.AtStoryTime:o})");
@@ -86,6 +96,10 @@ public static class FixLocationAspectCli
         {
             ev.NewValue = updated;
             await db.SaveChangesAsync();
+            db.ChangeTracker.Clear();
+            var back = await db.EntityStateEvents.IgnoreQueryFilters().Where(e => e.Id == ev.Id).Select(e => e.NewValue).FirstOrDefaultAsync();
+            Console.WriteLine($"  Read-back: \"{back}\"{(back == updated ? "" : "  MISMATCH")}");
+            if (back != updated) return 1;
         }
         else
         {
