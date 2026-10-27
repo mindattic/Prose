@@ -35,7 +35,7 @@ public static partial class DraftPostProcessor
     // Bare words ("Notes", "Summary", "Author", "End of", "Beat", "The beat") also open real prose
     // ("Beat cops lined the street.", "The beat of her boots…", "End of the line, he thought."), so
     // each needs a label marker or a meta verb after it before it counts as commentary.
-    [GeneratedRegex(@"^(\(|\[|\*+\s*(note|word|approx|author|end|summary)\b|notes?\s*[:—–-]|word count|words?\s*:|approx(?:\.|imately)?\s*[\d~]|author'?s?\s+notes?\b|end of (?:the )?(?:beat|scene|draft|chapter|brief)\b|beat\s*[\d#:—–-]|summary\s*[:—–-]|(?:this|the) beat (?:is|was|has|runs|ends|stays|keeps|lands|follows|opens|closes|covers|delivers|uses|stays)\b|i (kept|used|chose|wrote) (this|the) (beat|brief|scene|draft)\b)", RegexOptions.IgnoreCase)]
+    [GeneratedRegex(@"^(\(|\[|\*+\s*(note|word|approx|author|end|summary)\b|notes?\s*(?:[:—–]|-\s)|word count|words?\s*:|approx(?:\.|imately)?\s*[\d~]|author'?s?\s+notes?\b|end of (?:the )?(?:beat|scene|draft|chapter|brief)\b|beat\s*(?:#?\d|[:—–]|-\s)|summary\s*(?:[:—–]|-\s)|this beat (?:is|was|has|runs|ends|stays|keeps|lands|follows|opens|closes|covers|delivers|uses|stays)\b|i (kept|used|chose|wrote) (this|the) (beat|brief|scene|draft)\b)", RegexOptions.IgnoreCase)]
     private static partial Regex MetaOpener();
 
     // Trailing bracketed/parenthesised note on its own final line.
