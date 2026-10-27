@@ -37,13 +37,20 @@ public class FamilyGeneticsTests
         fixture.Dispose();
     }
 
-    private Guid Character(string name, string? ancestryJson = null)
+    /// <summary>Genetics now lives in CharacterGeneticAncestries (what CharacterMapper loads), not
+    /// the legacy Records.Json blob — see GeneticsInheritanceService's class doc. withCharacterRow
+    /// false simulates a character the mapper has never run for, which PropagateForAsync must skip
+    /// rather than write (FK target for CharacterGeneticAncestries doesn't exist yet).</summary>
+    private Guid Character(string name, string? ancestryJson = null, bool withCharacterRow = true)
     {
         using var db = fixture.Factory.CreateDbContext();
         var e = new Entity { UniverseId = CanonFixture.UniverseA, EntityType = "character", Name = name, Slug = name.ToLowerInvariant() };
         db.Entities.Add(e);
+        if (withCharacterRow)
+            db.Characters.Add(new Character { Id = e.Id, Name = name });
         if (ancestryJson != null)
-            db.Records.Add(new Record { EntityId = e.Id, Json = $$"""{"name":"{{name}}","genetic_ancestry":{{ancestryJson}}}""" });
+            foreach (var p in JsonDocument.Parse(ancestryJson).RootElement.EnumerateObject())
+                db.CharacterGeneticAncestries.Add(new CharacterGeneticAncestry { CharacterId = e.Id, Region = p.Name, Percent = p.Value.GetDouble() });
         db.SaveChanges();
         return e.Id;
     }
@@ -57,9 +64,8 @@ public class FamilyGeneticsTests
     private Dictionary<string, double> Ancestry(Guid id)
     {
         using var db = fixture.Factory.CreateDbContext();
-        var json = db.Records.AsNoTracking().Single(r => r.EntityId == id).Json;
-        return JsonDocument.Parse(json).RootElement.GetProperty("genetic_ancestry").EnumerateObject()
-            .ToDictionary(p => p.Name, p => p.Value.GetDouble());
+        return db.CharacterGeneticAncestries.AsNoTracking().Where(a => a.CharacterId == id)
+            .ToDictionary(a => a.Region, a => a.Percent);
     }
 
     // ── FamilyTieService ────────────────────────────────────────────────────
@@ -200,7 +206,7 @@ public class FamilyGeneticsTests
         var mother = Character("Mother", """{"Irish":100}""");
         var father = Character("Father", """{"Korean":100}""");
         var child = Character("Child", """{"Unknown":100}""");
-        var noRecord = Character("NoRecord");
+        var noRecord = Character("NoRecord", withCharacterRow: false);
         await family.AddParentAsync(grand, mother);
         await family.AddParentAsync(mother, child);
         await family.AddParentAsync(father, child);

@@ -39,9 +39,9 @@ namespace Prose.Core.Services;
 /// sub-region splits. The detail tree should be regenerated from the new
 /// top-level map by a separate LLM-driven service when needed.</para>
 ///
-/// <para><b>Storage.</b> Writes back to <c>Records.Json</c> only. The
-/// Characters table doesn't have typed columns for genetic_ancestry — it's a
-/// JSON-only field on the canonical record blob.</para>
+/// <para><b>Storage.</b> Reads and writes <c>CharacterGeneticAncestries</c>, the
+/// relational table characters are loaded from; the legacy <c>Records.Json</c>
+/// blob is kept in step where one exists.</para>
 /// </summary>
 public class GeneticsInheritanceService
 {
@@ -78,16 +78,25 @@ public class GeneticsInheritanceService
         var parents = await family.GetParentsAsync(childId, ct);
         if (parents.Count == 0) return null;
 
+        // From CharacterGeneticAncestries, the relational table characters are loaded from — not
+        // Records.Json, a retired relic that canon characters no longer carry (a generated child
+        // was blended from the spouse alone).
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var parentJsons = await db.Records.AsNoTracking()
-            .Where(r => parents.Select(p => p.Id).Contains(r.EntityId))
-            .Select(r => r.Json)
+        var parentIds = parents.Select(p => p.Id).ToList();
+        var rows = await db.CharacterGeneticAncestries.AsNoTracking()
+            .Where(a => parentIds.Contains(a.CharacterId))
+            .Select(a => new { a.CharacterId, a.Region, a.Percent })
             .ToListAsync(ct);
 
-        var maps = parentJsons
-            .Select(ExtractGeneticAncestry)
-            .Where(m => m != null && m!.Count > 0)
-            .Cast<Dictionary<string, double>>()
+        var maps = rows
+            .GroupBy(r => r.CharacterId)
+            .Select(g =>
+            {
+                var m = new Dictionary<string, double>(StringComparer.OrdinalIgnoreCase);
+                foreach (var r in g) m[r.Region] = r.Percent;
+                return m;
+            })
+            .Where(m => m.Count > 0)
             .ToList();
         if (maps.Count == 0) return null;
 
@@ -120,14 +129,31 @@ public class GeneticsInheritanceService
         if (blend == null) return false;
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var rec = await db.Records.FirstOrDefaultAsync(r => r.EntityId == characterId, ct);
-        if (rec == null) return false;
+        if (!await db.Characters.IgnoreQueryFilters().AnyAsync(c => c.Id == characterId, ct)) return false;
 
-        var rewritten = ReplaceGeneticAncestry(rec.Json, blend);
-        if (rewritten == null) return false;
-        rec.Json      = rewritten;
-        rec.UpdatedAt = DateTime.UtcNow;
-        await db.SaveChangesAsync(ct);
+        // The canonical ancestry is CharacterGeneticAncestries (what CharacterMapper loads); writing
+        // only Records.Json left it unchanged while the CLI reported "updated". Replace the rows
+        // (delete-then-insert, as CharacterMapper does) in one transaction, then refresh the read
+        // model so by-name reads see the new ancestry.
+        await using (var tx = await db.Database.BeginTransactionAsync(ct))
+        {
+            await db.CharacterGeneticAncestries.Where(a => a.CharacterId == characterId).ExecuteDeleteAsync(ct);
+            foreach (var kv in blend)
+                db.CharacterGeneticAncestries.Add(new Data.Entities.CharacterGeneticAncestry
+                {
+                    CharacterId = characterId, Region = kv.Key, Percent = kv.Value,
+                });
+            // Keep the legacy blob in step where one exists, so the two never disagree.
+            var rec = await db.Records.FirstOrDefaultAsync(r => r.EntityId == characterId, ct);
+            if (rec != null && ReplaceGeneticAncestry(rec.Json, blend) is { } rewritten)
+            {
+                rec.Json      = rewritten;
+                rec.UpdatedAt = DateTime.UtcNow;
+            }
+            await db.SaveChangesAsync(ct);
+            await tx.CommitAsync(ct);
+        }
+        await Data.CharacterMapper.RefreshReadModelAsync(db, characterId, ct, afterIntentionalWrite: true);
 
         log.LogInformation("Propagated genetics for {Char}: {N} ancestry components",
             characterId, blend.Count);
@@ -190,22 +216,6 @@ public class GeneticsInheritanceService
     }
 
     // ── helpers ──────────────────────────────────────────────────────────
-
-    private static Dictionary<string, double>? ExtractGeneticAncestry(string json)
-    {
-        try
-        {
-            using var doc = JsonDocument.Parse(json);
-            if (!doc.RootElement.TryGetProperty("genetic_ancestry", out var ga)
-             || ga.ValueKind != JsonValueKind.Object) return null;
-            var map = new Dictionary<string, double>(StringComparer.OrdinalIgnoreCase);
-            foreach (var p in ga.EnumerateObject())
-                if (p.Value.ValueKind == JsonValueKind.Number)
-                    map[p.Name] = p.Value.GetDouble();
-            return map;
-        }
-        catch { return null; }
-    }
 
     private static void ApplyNoiseAndRenormalize(Dictionary<string, double> map, Random rng)
     {
