@@ -86,7 +86,8 @@ leaves the reader wanting more. Rule of Cool is the only steer.
 - Strays: lumen mice, Sentinel Strays, Silver Pigeons, koi-colored pigeons. Never "turret cats" or "Null Crows".
 - NO NEW NAMED PEOPLE. No new brand or place where an existing one fits.
 - Never spoil any SECRET, including a book's ending: e.g. Candelaria's sale to Ashgrave and its touchdown are BLST's
-  secret ending; another book may not say the bloc is gone. Never hint that BCODA's entity is Kyle. Standing Contract (SCON) is not a source.
+  secret ending; another book may not say the bloc is gone. Never hint that BCODA's entity is Kyle. Standing Contract
+  (SCON), Iron & Silk (IxS), Ballast (BLST) and It Came From Iowa (ICFI) are DRAFT and are not sources.
 - Chronology: a book knows only what exists by its own year and what its POV could see or hear.
 - Do not change plot, dialogue meaning or character facts.
 - Spent sources this cycle (already drawn into several books; do not draw again): ICFI's farm Behemoth / walker on the 88

@@ -32,9 +32,10 @@ Universe GLMZ. Pass `--universe glmz` on every CLI call. One prose.cmd at a time
 ## One cycle
 
 Work dir: a scratch folder (never the repo). `books.txt` there lists the catalog slugs, one per line, in wheel order:
-atte blst btl bcoda cxc crit dwiace icfi mxg mnemo nxr pxl rtr sprw srzr test tlc twd twu undr vatd
+atte btl bcoda cxc crit dwiace mxg mnemo nxr pxl rtr sprw srzr test tlc twd twu undr vatd
 pieces-01a123de wells-01a123de the-ur-01a123de
-(SCON and IxS are excluded: both are DRAFT, not held to fact, author 2026-10-18).
+(SCON, IxS, Ballast (BLST) and It Came From Iowa (ICFI) are excluded: all four are DRAFT, not canon, not held to
+fact, author 2026-10-18 / 2026-10-26).
 The Cyberocracy books (Pieces, Wells, The Ur) always turn last, in that order, and only once every other book
 is in shape (factory F1-F6 green, law-clean): every other GLMZ book happens before them (author 2026-10-18).
 
