@@ -455,8 +455,23 @@ public class DistributedWorkerCoordinator
 
     private static async Task TryAddEdgeAsync(ProseDbContext db, EdgeResult edge, CancellationToken ct)
     {
-        if (!Guid.TryParse(edge.SourceEntityId, out var srcId)
-            || !Guid.TryParse(edge.TargetEntityId, out var tgtId)) return;
+        if (!Guid.TryParse(edge.SourceEntityId, out var srcId)) return;
+        Guid tgtId;
+        if (!Guid.TryParse(edge.TargetEntityId, out tgtId))
+        {
+            // Workers only know the target's name (the model returns names, not ids): resolve it
+            // within the source's universe, and skip when it matches no entity or is ambiguous.
+            if (string.IsNullOrWhiteSpace(edge.TargetName)) return;
+            var srcUni = await db.Entities.IgnoreQueryFilters().Where(e => e.Id == srcId)
+                .Select(e => (Guid?)e.UniverseId).FirstOrDefaultAsync(ct);
+            if (srcUni == null) return;
+            var tname = edge.TargetName.Trim();
+            var matches = await db.Entities.IgnoreQueryFilters()
+                .Where(e => e.UniverseId == srcUni && e.Name == tname && e.Id != srcId)
+                .Select(e => e.Id).Take(2).ToListAsync(ct);
+            if (matches.Count != 1) return;
+            tgtId = matches[0];
+        }
         // Explicit ids from a worker result, not a browse: resolve both ends across universes and
         // stamp the edge with theirs. Under the ambient filter an out-of-scope source stamped
         // Guid.Empty (then the ambient universe), and the duplicate check missed its existing edges.
@@ -557,6 +572,8 @@ public class EdgeResult
 {
     public string SourceEntityId { get; set; } = "";
     public string TargetEntityId { get; set; } = "";
+    /// <summary>Name the worker's model gave for the target; resolved to an entity id on submit when <see cref="TargetEntityId"/> is empty.</summary>
+    public string? TargetName    { get; set; }
     public string RelationType   { get; set; } = "";
     public string? Description   { get; set; }
     public string? Sentiment     { get; set; }

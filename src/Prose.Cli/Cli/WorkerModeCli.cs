@@ -239,7 +239,7 @@ public static class WorkerModeCli
             foreach (var r in parsed)
                 edges.Add(new EdgeResult
                 {
-                    SourceEntityId = entityId, TargetEntityId = r.TargetId ?? "",
+                    SourceEntityId = entityId, TargetEntityId = r.TargetId ?? "", TargetName = r.TargetName,
                     RelationType = r.RelationType, Description = r.Description,
                     Sentiment = r.Sentiment, Confidence = r.Confidence,
                 });
