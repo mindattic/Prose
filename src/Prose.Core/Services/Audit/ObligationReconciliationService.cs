@@ -48,10 +48,10 @@ public class ObligationReconciliationService(
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters().Where(n => n.Id == bookNodeId)
-            .Select(n => new { n.Slug, n.Title, n.Status, n.KdpPublishedAt, n.PublicationStatus, n.UniverseId }).FirstOrDefaultAsync(ct)
+            .Select(n => new { n.Slug, n.Title, n.IsAtEnd, n.KdpPublishedAt, n.PublicationStatus, n.UniverseId }).FirstOrDefaultAsync(ct)
             ?? throw new InvalidOperationException($"Node {bookNodeId} not found.");
         var slug = node.Slug ?? bookNodeId.ToString("N");
-        var atEnd = IsBookAtEnd(node.Status, node.PublicationStatus, node.KdpPublishedAt);
+        var atEnd = IsBookAtEnd(node.IsAtEnd, node.PublicationStatus, node.KdpPublishedAt);
 
         var balance = await obligations.TrialBalanceAsync(bookNodeId, null, ct);
         var rows = await db.NarrativeObligations.AsNoTracking().Where(o => o.NodeId == bookNodeId).ToListAsync(ct);
@@ -94,10 +94,9 @@ public class ObligationReconciliationService(
         return new Report(bookNodeId, slug, node.Title ?? slug, examined, balance.TotalBeats, balance.ScannedBeats, false, atEnd, balance, counts, verdicts, deepResult, snapshot);
     }
 
-    public static bool IsBookAtEnd(string? status, string? publicationStatus, DateTime? kdpPublishedAt) =>
+    public static bool IsBookAtEnd(bool isAtEnd, string? publicationStatus, DateTime? kdpPublishedAt) =>
         kdpPublishedAt != null
-        || (status?.Contains("complete", StringComparison.OrdinalIgnoreCase) ?? false)
-        || (status?.Contains("publish", StringComparison.OrdinalIgnoreCase) ?? false)
+        || isAtEnd
         || (publicationStatus?.Contains("publish", StringComparison.OrdinalIgnoreCase) ?? false);
 
     // ── snapshot ──────────────────────────────────────────────────────────────

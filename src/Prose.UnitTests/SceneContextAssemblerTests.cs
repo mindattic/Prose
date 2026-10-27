@@ -119,7 +119,7 @@ public class SceneContextAssemblerUniverseGuardTests
 
         var node = NodeFactory.Create("book");
         node.Slug = "b-" + Guid.NewGuid().ToString("N")[..8];
-        node.Title = "T"; node.Status = "draft"; node.SortKey = 100; node.UniverseId = beatUniverse;
+        node.Title = "T"; node.SortKey = 100; node.UniverseId = beatUniverse;
         db.Nodes.Add(node);
 
         var beat = new Beat { Id = Guid.CreateVersion7(), Number = 1, Text = "Some prose." };

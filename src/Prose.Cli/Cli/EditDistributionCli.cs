@@ -52,7 +52,7 @@ public static class EditDistributionCli
 
         var booksQ = db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .OfType<BookNode>()
-            .Where(n => n.Status != "archived");
+            .Where(n => !n.IsArchived);
         if (slug != null)
         {
             // NodeRefResolver: across universes, refused when ambiguous.

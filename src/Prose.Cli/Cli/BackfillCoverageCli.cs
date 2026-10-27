@@ -51,8 +51,7 @@ public static class BackfillCoverageCli
         // NarrativeForkService/DcmVizCli for BeatNodes.SortKey; applies equally to Nodes here).
         var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, root.Id);
         var byId = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-            .Where(s => leafIds.Contains(s.Id)
-                     && s.Status != "archived" && s.Status != "unincorporated")
+            .Where(s => leafIds.Contains(s.Id) && !s.IsArchived)
             .Select(s => new { s.Id, s.Title, s.Slug, s.UniverseId })
             .ToDictionaryAsync(s => s.Id);
         var children = leafIds.Where(byId.ContainsKey).Select(id => byId[id]).ToList();

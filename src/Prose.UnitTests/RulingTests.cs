@@ -57,8 +57,8 @@ public abstract class RulingFixture
                 db.Universes.Add(new Universe { Id = universe, Slug = "u-" + universe.ToString("N")[..6], Name = "U" });
                 await db.SaveChangesAsync();
             }
-            var book = new BookNode { Id = Guid.CreateVersion7(), UniverseId = universe, Slug = "rb-" + Guid.NewGuid().ToString("N")[..8], Title = "R", Kind = "book", Status = "draft", SortKey = 100 };
-            var ch = new ChapterNode { Id = Guid.CreateVersion7(), UniverseId = universe, Slug = "rc-" + Guid.NewGuid().ToString("N")[..8], Title = "Chapter 1 — One", Kind = "chapter", Status = "draft", SortKey = 1, ParentNodeId = book.Id };
+            var book = new BookNode { Id = Guid.CreateVersion7(), UniverseId = universe, Slug = "rb-" + Guid.NewGuid().ToString("N")[..8], Title = "R", Kind = "book", SortKey = 100 };
+            var ch = new ChapterNode { Id = Guid.CreateVersion7(), UniverseId = universe, Slug = "rc-" + Guid.NewGuid().ToString("N")[..8], Title = "Chapter 1 — One", Kind = "chapter", SortKey = 1, ParentNodeId = book.Id };
             db.Nodes.AddRange(book, ch);
             await db.SaveChangesAsync();
             (bookId, chId) = (book.Id, ch.Id);

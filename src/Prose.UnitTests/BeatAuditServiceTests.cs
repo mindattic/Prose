@@ -53,7 +53,6 @@ public class BeatAuditServiceTests
         node.Id = id;
         node.Slug = "s-" + Guid.NewGuid().ToString("N")[..8];
         node.Title = "T";
-        node.Status = "draft";
         node.SortKey = 100;
         db.Nodes.Add(node);
         var beat = new Beat { Id = Guid.CreateVersion7(), Number = ++beatNumber, Text = "Some prose to audit." };

@@ -164,7 +164,6 @@ public static class ImportNodeCli
         node.Id           = nodeId;
         node.Slug         = slug;
         node.Title        = title!;
-        node.Status       = "draft";
         node.Description  = parsed.Description;
         node.VoiceId      = parsed.VoiceId;
         node.ParentNodeId = parentNodeId;

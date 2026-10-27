@@ -56,7 +56,6 @@ public class SanityScanServiceGlossaryTests
         node.Id = id;
         node.Slug = "s-" + Guid.NewGuid().ToString("N")[..8];
         node.Title = "T";
-        node.Status = "draft";
         node.SortKey = 100;
         node.UniverseId = universeId;
         db.Nodes.Add(node);

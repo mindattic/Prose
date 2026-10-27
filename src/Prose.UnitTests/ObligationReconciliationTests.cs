@@ -41,7 +41,7 @@ public class ObligationReconciliationTests
 
         bookId = Guid.CreateVersion7();
         beatIds.Clear();
-        db.Nodes.Add(new BookNode { Id = bookId, Slug = "recon-book", NodeCode = "RCN", Title = "Recon Book", Kind = "book", UniverseId = Universe.GlmzId, Status = "draft" });
+        db.Nodes.Add(new BookNode { Id = bookId, Slug = "recon-book", NodeCode = "RCN", Title = "Recon Book", Kind = "book", UniverseId = Universe.GlmzId });
         var number = 0;
         for (var c = 1; c <= 4; c++)
         {
@@ -150,7 +150,7 @@ public class ObligationReconciliationTests
         await using (var db = dbFactory.CreateDbContext())
         {
             var n = await db.Nodes.SingleAsync(x => x.Id == bookId);
-            n.Status = "Complete - publication ready";
+            n.IsAtEnd = true;
             await db.SaveChangesAsync();
         }
         var complete = await recon.RunAsync(bookId);
@@ -192,10 +192,10 @@ public class ObligationReconciliationTests
     [Test]
     public void IsBookAtEnd_Cases()
     {
-        Assert.That(ObligationReconciliationService.IsBookAtEnd("draft", null, null), Is.False);
-        Assert.That(ObligationReconciliationService.IsBookAtEnd("Complete - publication ready", null, null), Is.True);
-        Assert.That(ObligationReconciliationService.IsBookAtEnd("draft", null, DateTime.UtcNow), Is.True);
-        Assert.That(ObligationReconciliationService.IsBookAtEnd("narrating", "published", null), Is.True);
+        Assert.That(ObligationReconciliationService.IsBookAtEnd(false, null, null), Is.False);
+        Assert.That(ObligationReconciliationService.IsBookAtEnd(true, null, null), Is.True);
+        Assert.That(ObligationReconciliationService.IsBookAtEnd(false, null, DateTime.UtcNow), Is.True);
+        Assert.That(ObligationReconciliationService.IsBookAtEnd(false, "published", null), Is.True);
     }
 
     [Test]

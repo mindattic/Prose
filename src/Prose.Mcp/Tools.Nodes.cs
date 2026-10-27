@@ -239,7 +239,7 @@ public class NodeTools
         return result;
     }
 
-    [McpServerTool, Description("List nodes. Use kind='book' to list all root narratives; kind='chapter' for all sub-nodes (contain beats). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.")]
+    [McpServerTool, Description("List nodes. Use kind='book' to list all root narratives; kind='chapter' for all sub-nodes (contain beats). Returns a flat list of id, slug, title, kind, is_archived, timeline, beat-count, stale-count.")]
     public Task<string> ListBooks(
         [Description("Optional Kind filter — 'book' (root nodes) or 'chapter' (sub-nodes with beats). Case-insensitive equality match.")] string kind = "",
         [Description("Maximum rows to return. Default 100.")] int limit = 100) =>
@@ -272,7 +272,8 @@ public class NodeTools
             slug = s.Slug,
             title = s.Title,
             kind = s.Kind,
-            status = s.Status,
+            is_archived = s.IsArchived,
+            timeline = s.Timeline,
             beats = beatCounts.GetValueOrDefault(s.Id, 0),
             parent_node_id = s.ParentNodeId,
         });
@@ -292,7 +293,8 @@ public class NodeTools
         return JsonSerializer.Serialize(new
         {
             id = node.Id, slug = node.Slug, title = node.Title, kind = node.Kind,
-            status = node.Status, description = node.Description, seed = node.Seed,
+            is_archived = node.IsArchived, timeline = node.Timeline,
+            description = node.Description, seed = node.Seed,
             voice_id = node.VoiceId, layout = node.Layout,
             parent_node_id = node.ParentNodeId, chars_narrated = node.CharsNarrated,
             beats = beats.Select((b, i) => new
@@ -360,7 +362,6 @@ public class NodeTools
         node.Slug = slug;
         node.Title = title ?? "";
         node.Description = string.IsNullOrEmpty(description) ? null : description;
-        node.Status = "draft";
         node.ParentNodeId = parentId;
         node.PreviousNodeId = previousId;
         node.SortKey = maxSort + 100.0;
@@ -390,20 +391,19 @@ public class NodeTools
         return JsonSerializer.Serialize(new { ok = true, id, slug, title = newTitle, url = $"/node/{slug}", source_id = source.Id }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Clone a node into a fully independent copy: new Node row + new Beat rows, same prose. Audio, scores, and review history are NOT copied — clone starts fresh. Supports nodeCode for per-experiment isolation. Use this instead of DuplicateBook when you need nodeCode or per-experiment isolation. Returns new id, slug, beat count.")]
+    [McpServerTool, Description("Clone a node into a fully independent copy: new Node row + new Beat rows, same prose. Audio, scores, and review history are NOT copied — clone starts fresh (not archived, not at its end). Supports nodeCode for per-experiment isolation. Use this instead of DuplicateBook when you need nodeCode or per-experiment isolation. Returns new id, slug, beat count.")]
     public Task<string> CloneBook(
         [Description("Source node Guid id or slug.")] string idOrSlug,
         [Description("Title for the clone. Defaults to 'Source Title (Clone)'.")] string title = "",
-        [Description("Optional short reference code for the clone (e.g. 'SM1'). Rejected if already in use.")] string nodeCode = "",
-        [Description("Status value to stamp on the clone: 'ready', 'draft', etc. Default 'ready'.")] string status = "ready") =>
-        hub.InvokeAsync(nameof(NodeTools), nameof(CloneBookImpl), new { idOrSlug, title, nodeCode, status });
+        [Description("Optional short reference code for the clone (e.g. 'SM1'). Rejected if already in use.")] string nodeCode = "") =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(CloneBookImpl), new { idOrSlug, title, nodeCode });
 
     // Write-gate Phase 1 (2026-08-22): this used to hand-roll the same raw write as
     // CloneNodeCli.cs — cloning ONLY the beats directly attached to the source node itself, a
     // silent no-op for any book with chapters (per Book→Chapter→Beat, a real book's beats live on
     // its ChapterNode children). Now a thin wrapper around
     // NodeWorkbenchService.DuplicateNodeAsync, which recurses the whole subtree.
-    public async Task<string> CloneBookImpl(string idOrSlug, string title = "", string nodeCode = "", string status = "ready")
+    public async Task<string> CloneBookImpl(string idOrSlug, string title = "", string nodeCode = "")
     {
         var source = await ResolveNodeAsync(idOrSlug);
         if (source == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
@@ -411,7 +411,7 @@ public class NodeTools
         var newTitle = string.IsNullOrWhiteSpace(title) ? $"{source.Title} (Clone)" : title.Trim();
         try
         {
-            var (newId, newSlug) = await workbench.DuplicateNodeAsync(source.Id, newTitle, nodeCode, status);
+            var (newId, newSlug) = await workbench.DuplicateNodeAsync(source.Id, newTitle, nodeCode);
             return JsonSerializer.Serialize(new
             {
                 ok        = true,
@@ -893,22 +893,20 @@ public class NodeTools
         return JsonSerializer.Serialize(new { ok = true, path }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("List nodes with their latest review score, word count, and estimated page count (250 words/page). Optionally filter by kind ('book', 'chapter', 'episode', etc.) and/or status ('draft', 'canon', 'ready', 'archived'). Returns code, title, kind, status, score (null if unreviewed), words, pages, scored_on. Sorted by score descending (unscored nodes last). Use this for a quick quality dashboard without running new reviews.")]
+    [McpServerTool, Description("List nodes with their latest review score, word count, and estimated page count (250 words/page). Optionally filter by kind ('book', 'chapter', 'episode', etc.). Returns code, title, kind, is_archived, timeline, score (null if unreviewed), words, pages, scored_on. Sorted by score descending (unscored nodes last). Use this for a quick quality dashboard without running new reviews.")]
     public Task<string> ListScores(
         [Description("Optional kind filter (case-insensitive). E.g. 'book', 'chapter', 'novella'. Empty = all kinds.")] string kind = "",
-        [Description("Optional status filter (case-insensitive). E.g. 'draft', 'canon', 'ready'. Empty = all statuses except archived.")] string status = "",
         [Description("Include archived nodes. Default false.")] bool includeArchived = false,
         [Description("Maximum rows to return. Default 200.")] int limit = 200) =>
-        hub.InvokeAsync(nameof(NodeTools), nameof(ListScoresImpl), new { kind, status, includeArchived, limit });
+        hub.InvokeAsync(nameof(NodeTools), nameof(ListScoresImpl), new { kind, includeArchived, limit });
 
-    public async Task<string> ListScoresImpl(string kind = "", string status = "", bool includeArchived = false, int limit = 200)
+    public async Task<string> ListScoresImpl(string kind = "", bool includeArchived = false, int limit = 200)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
 
         var q = db.Nodes.AsNoTracking().AsQueryable();
         if (!string.IsNullOrWhiteSpace(kind))   q = q.Where(s => s.Kind == kind);
-        if (!string.IsNullOrWhiteSpace(status)) q = q.Where(s => s.Status == status);
-        else if (!includeArchived)               q = q.Where(s => s.Status != "archived");
+        if (!includeArchived)                   q = q.Where(s => !s.IsArchived);
 
         var nodes = await q.OrderBy(s => s.Kind).ThenBy(s => s.Title).Take(limit).ToListAsync();
         var ids = nodes.Select(s => s.Id).ToList();
@@ -956,7 +954,8 @@ public class NodeTools
                 slug      = s.Slug,
                 title     = s.Title,
                 kind      = s.Kind,
-                status    = s.Status,
+                is_archived = s.IsArchived,
+                timeline  = s.Timeline,
                 score     = sc?.Score.HasValue == true ? (double?)Math.Round(sc.Score.Value, 1) : null,
                 scored_on = sc?.ScoredAt.HasValue == true ? sc.ScoredAt.Value.ToString("yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture) : null,
                 review_count = sc?.Reviews,
@@ -978,13 +977,15 @@ public class NodeTools
         [Description("Subtitle (e.g. 'A GLMZ Novella'). Omit to leave unchanged; pass empty string to clear.")] string? subtitle = null,
         [Description("Back-of-book description. Omit to leave unchanged; pass empty string to clear.")] string? description = null,
         [Description("Kind label: book | chapter | episode | novella | novel | node | scene | saga | anthology. Omit to leave unchanged.")] string? kind = null,
-        [Description("Status: draft | ready | canon | archived. Omit to leave unchanged.")] string? status = null,
+        [Description("Archive (true) or restore (false) this node — excludes it from the progress dashboard, edit-distribution and the default obligation-reconciliation scan. Omit to leave unchanged.")] bool? isArchived = null,
+        [Description("Has the text reached its own end (vs. still being written)? Distinct from structural completeness. Omit to leave unchanged.")] bool? isAtEnd = null,
+        [Description("Where this book sits on its universe's chronology: integer part = series/era, fractional part orders books within it (1.0 < 1.1 < 2.0). Equal values mean the prose doesn't establish an order between them. Omit to leave unchanged.")] decimal? timeline = null,
         [Description("Generation seed (one-line premise). Omit to leave unchanged; pass empty string to clear.")] string? seed = null,
         [Description("Short author reference code (e.g. 'ATTE'). Uppercased; pass empty string to clear. Omit to leave unchanged.")] string? code = null,
         [Description("ElevenLabs or local TTS voice id. Omit to leave unchanged; pass empty string to clear.")] string? voiceId = null,
         [Description("KDP print-page count from Word (File → Info → Properties → Pages). Used to calculate the correct inside margin on the next export. Pass 0 to clear.")] int? kdpPageCount = null,
         [Description("Export layout: prose | lyrics | screenplay. lyrics prints blank-line-separated stanzas with bracketed section labels ([Verse 1], [Chorus]) dropped; screenplay parses Fountain-style elements (INT./EXT. headings, upper-case cues over dialogue, (parentheticals), TO: transitions) onto US Letter Courier 12. Beats are never changed. Omit to leave unchanged.")] string? layout = null) =>
-        hub.InvokeAsync(nameof(NodeTools), nameof(UpdateBookImpl), new { idOrSlug, title, subtitle, description, kind, status, seed, code, voiceId, kdpPageCount, layout });
+        hub.InvokeAsync(nameof(NodeTools), nameof(UpdateBookImpl), new { idOrSlug, title, subtitle, description, kind, isArchived, isAtEnd, timeline, seed, code, voiceId, kdpPageCount, layout });
 
     public async Task<string> UpdateBookImpl(
         string idOrSlug,
@@ -992,7 +993,9 @@ public class NodeTools
         string? subtitle = null,
         string? description = null,
         string? kind = null,
-        string? status = null,
+        bool? isArchived = null,
+        bool? isAtEnd = null,
+        decimal? timeline = null,
         string? seed = null,
         string? code = null,
         string? voiceId = null,
@@ -1016,7 +1019,9 @@ public class NodeTools
             if (subtitle     != null) row.Subtitle     = string.IsNullOrEmpty(subtitle) ? null : subtitle;
             if (description  != null) row.Description  = string.IsNullOrEmpty(description) ? null : description;
             if (kind         != null) row.Kind         = kind;
-            if (status       != null) row.Status       = status;
+            if (isArchived   != null) row.IsArchived   = isArchived.Value;
+            if (isAtEnd      != null) row.IsAtEnd       = isAtEnd.Value;
+            if (timeline     != null) row.Timeline      = timeline;
             if (seed         != null) row.Seed         = string.IsNullOrEmpty(seed) ? null : seed;
             if (code         != null) row.NodeCode     = string.IsNullOrEmpty(code) ? null : code.Trim().ToUpperInvariant();
             if (voiceId      != null) row.VoiceId      = string.IsNullOrEmpty(voiceId) ? null : voiceId;
@@ -1032,7 +1037,9 @@ public class NodeTools
                 slug   = row.Slug,
                 title  = row.Title,
                 kind   = row.Kind,
-                status = row.Status,
+                is_archived = row.IsArchived,
+                is_at_end = row.IsAtEnd,
+                timeline = row.Timeline,
                 code   = row.NodeCode,
                 layout = row.Layout,
             }, CanonTools.JsonOpts);

@@ -59,7 +59,6 @@ public class BackfillEntityPresenceUniverseScopingTests
             Slug = slug,
             Title = slug,
             Kind = "book",
-            Status = "draft",
             SortKey = 100,
         };
         db.Nodes.Add(node);

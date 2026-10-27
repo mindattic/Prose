@@ -49,7 +49,7 @@ public class ReadGateTests
         var n = new BookNode
         {
             Id = Guid.CreateVersion7(), Slug = "rg-" + Guid.NewGuid().ToString("N")[..8],
-            Title = "Gate", Kind = "book", Status = "draft", SortKey = 100,
+            Title = "Gate", Kind = "book", SortKey = 100,
         };
         db.Nodes.Add(n);
         await db.SaveChangesAsync();

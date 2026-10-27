@@ -33,7 +33,7 @@ public abstract class PressFixture : WorldFixture
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
             var universe = await db.Nodes.Where(n => n.Id == book).Select(n => n.UniverseId).SingleAsync();
-            var ch = new ChapterNode { Id = Guid.CreateVersion7(), UniverseId = universe, Slug = "pc-" + Guid.NewGuid().ToString("N")[..8], Title = title, Kind = "chapter", Status = "draft", SortKey = sort, ParentNodeId = book };
+            var ch = new ChapterNode { Id = Guid.CreateVersion7(), UniverseId = universe, Slug = "pc-" + Guid.NewGuid().ToString("N")[..8], Title = title, Kind = "chapter", SortKey = sort, ParentNodeId = book };
             db.Nodes.Add(ch);
             await db.SaveChangesAsync();
             chId = ch.Id;

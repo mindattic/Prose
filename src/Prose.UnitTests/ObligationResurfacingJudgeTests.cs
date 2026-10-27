@@ -47,7 +47,7 @@ public class ObligationResurfacingJudgeTests
         await db.Database.EnsureCreatedAsync();
 
         bookId = Guid.CreateVersion7(); chapterId = Guid.CreateVersion7();
-        db.Nodes.Add(new BookNode { Id = bookId, Slug = "judge-book", NodeCode = "JDG", Title = "Judge Book", Kind = "book", UniverseId = Universe.GlmzId, Status = "Complete - publication ready" });
+        db.Nodes.Add(new BookNode { Id = bookId, Slug = "judge-book", NodeCode = "JDG", Title = "Judge Book", Kind = "book", UniverseId = Universe.GlmzId });
         db.Nodes.Add(new ChapterNode { Id = chapterId, Slug = "judge-ch1", Title = "Chapter 1", Kind = "chapter", ParentNodeId = bookId, UniverseId = Universe.GlmzId, SortKey = 100 });
         beatIds.Clear();
         var texts = new[]

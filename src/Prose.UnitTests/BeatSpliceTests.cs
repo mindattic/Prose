@@ -134,7 +134,7 @@ public class BeatSpliceTests
         var n = new BookNode
         {
             Id = Guid.CreateVersion7(), Slug = "splice-" + Guid.NewGuid().ToString("N")[..8],
-            Title = "Splice", Kind = "book", Status = "draft", SortKey = 100,
+            Title = "Splice", Kind = "book", SortKey = 100,
         };
         db.Nodes.Add(n);
         await db.SaveChangesAsync();

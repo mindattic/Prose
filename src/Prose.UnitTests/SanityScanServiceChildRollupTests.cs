@@ -72,12 +72,12 @@ public class SanityScanServiceChildRollupTests
 
             var book = NodeFactory.Create("book");
             book.Id = bookId; book.Slug = "b-" + Guid.NewGuid().ToString("N")[..8];
-            book.Title = "Testament"; book.Status = "draft"; book.SortKey = 100; book.UniverseId = universeId;
+            book.Title = "Testament"; book.SortKey = 100; book.UniverseId = universeId;
             db.Nodes.Add(book);
 
             var chapter = NodeFactory.Create("chapter");
             chapter.Id = chapterId; chapter.Slug = "c-" + Guid.NewGuid().ToString("N")[..8];
-            chapter.Title = "Part One"; chapter.Status = "draft"; chapter.SortKey = 100;
+            chapter.Title = "Part One"; chapter.SortKey = 100;
             chapter.UniverseId = universeId; chapter.ParentNodeId = bookId;
             db.Nodes.Add(chapter);
 
@@ -116,7 +116,7 @@ public class SanityScanServiceChildRollupTests
 
             var book = NodeFactory.Create("book");
             book.Id = bookId; book.Slug = "b-" + Guid.NewGuid().ToString("N")[..8];
-            book.Title = "Standalone"; book.Status = "draft"; book.SortKey = 100; book.UniverseId = universeId;
+            book.Title = "Standalone"; book.SortKey = 100; book.UniverseId = universeId;
             db.Nodes.Add(book);
 
             await AddBeatAsync(db, bookId, "A short standalone beat with a handful of words in it.", sortKey: 100);
@@ -144,12 +144,12 @@ public class SanityScanServiceChildRollupTests
 
             var book = NodeFactory.Create("book");
             book.Id = bookId; book.Slug = "b-" + Guid.NewGuid().ToString("N")[..8];
-            book.Title = "Mixed"; book.Status = "draft"; book.SortKey = 100; book.UniverseId = universeId;
+            book.Title = "Mixed"; book.SortKey = 100; book.UniverseId = universeId;
             db.Nodes.Add(book);
 
             var chapter = NodeFactory.Create("chapter");
             chapter.Id = chapterId; chapter.Slug = "c-" + Guid.NewGuid().ToString("N")[..8];
-            chapter.Title = "Ch1"; chapter.Status = "draft"; chapter.SortKey = 100;
+            chapter.Title = "Ch1"; chapter.SortKey = 100;
             chapter.UniverseId = universeId; chapter.ParentNodeId = bookId;
             db.Nodes.Add(chapter);
 

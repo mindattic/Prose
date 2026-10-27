@@ -1366,12 +1366,11 @@ Clear an explicit gap-after-beat override. The audio engine falls back to the au
 
 ### `clone_book`
 
-Clone a node into a fully independent copy: new Node row + new Beat rows, same prose. Audio, scores, and review history are NOT copied — clone starts fresh. Supports nodeCode for per-experiment isolation. Use this instead of DuplicateBook when you need nodeCode or per-experiment isolation. Returns new id, slug, beat count.
+Clone a node into a fully independent copy: new Node row + new Beat rows, same prose. Audio, scores, and review history are NOT copied — clone starts fresh (not archived, not at its end). Supports nodeCode for per-experiment isolation. Use this instead of DuplicateBook when you need nodeCode or per-experiment isolation. Returns new id, slug, beat count.
 
 - `idOrSlug` (string, required) — Source node Guid id or slug.
 - `title` (string, optional) — Title for the clone. Defaults to 'Source Title (Clone)'.
 - `nodeCode` (string, optional) — Optional short reference code for the clone (e.g. 'SM1'). Rejected if already in use.
-- `status` (string, optional) — Status value to stamp on the clone: 'ready', 'draft', etc. Default 'ready'.
 
 ### `create_book`
 
@@ -1466,17 +1465,16 @@ Merge one beat into the previous one in the node. Audio on the survivor is inval
 
 ### `list_books`
 
-List nodes. Use kind='book' to list all root narratives; kind='chapter' for all sub-nodes (contain beats). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.
+List nodes. Use kind='book' to list all root narratives; kind='chapter' for all sub-nodes (contain beats). Returns a flat list of id, slug, title, kind, is_archived, timeline, beat-count, stale-count.
 
 - `kind` (string, optional) — Optional Kind filter — 'book' (root nodes) or 'chapter' (sub-nodes with beats). Case-insensitive equality match.
 - `limit` (int, optional) — Maximum rows to return. Default 100.
 
 ### `list_scores`
 
-List nodes with their latest review score, word count, and estimated page count (250 words/page). Optionally filter by kind ('book', 'chapter', 'episode', etc.) and/or status ('draft', 'canon', 'ready', 'archived'). Returns code, title, kind, status, score (null if unreviewed), words, pages, scored_on. Sorted by score descending (unscored nodes last). Use this for a quick quality dashboard without running new reviews.
+List nodes with their latest review score, word count, and estimated page count (250 words/page). Optionally filter by kind ('book', 'chapter', 'episode', etc.). Returns code, title, kind, is_archived, timeline, score (null if unreviewed), words, pages, scored_on. Sorted by score descending (unscored nodes last). Use this for a quick quality dashboard without running new reviews.
 
 - `kind` (string, optional) — Optional kind filter (case-insensitive). E.g. 'book', 'chapter', 'novella'. Empty = all kinds.
-- `status` (string, optional) — Optional status filter (case-insensitive). E.g. 'draft', 'canon', 'ready'. Empty = all statuses except archived.
 - `includeArchived` (bool, optional) — Include archived nodes. Default false.
 - `limit` (int, optional) — Maximum rows to return. Default 200.
 
@@ -1603,7 +1601,9 @@ Update a node's metadata fields. Pass only the fields you want to change — omi
 - `subtitle` (string, optional) — Subtitle (e.g. 'A GLMZ Novella'). Omit to leave unchanged; pass empty string to clear.
 - `description` (string, optional) — Back-of-book description. Omit to leave unchanged; pass empty string to clear.
 - `kind` (string, optional) — Kind label: book | chapter | episode | novella | novel | node | scene | saga | anthology. Omit to leave unchanged.
-- `status` (string, optional) — Status: draft | ready | canon | archived. Omit to leave unchanged.
+- `isArchived` (bool, optional) — Archive (true) or restore (false) this node — excludes it from the progress dashboard, edit-distribution and the default obligation-reconciliation scan. Omit to leave unchanged.
+- `isAtEnd` (bool, optional) — Has the text reached its own end (vs. still being written)? Distinct from structural completeness. Omit to leave unchanged.
+- `timeline` (Decimal, optional) — Where this book sits on its universe's chronology: integer part = series/era, fractional part orders books within it (1.0 < 1.1 < 2.0). Equal values mean the prose doesn't establish an order between them. Omit to leave unchanged.
 - `seed` (string, optional) — Generation seed (one-line premise). Omit to leave unchanged; pass empty string to clear.
 - `code` (string, optional) — Short author reference code (e.g. 'ATTE'). Uppercased; pass empty string to clear. Omit to leave unchanged.
 - `voiceId` (string, optional) — ElevenLabs or local TTS voice id. Omit to leave unchanged; pass empty string to clear.

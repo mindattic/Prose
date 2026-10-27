@@ -42,7 +42,7 @@ public class ObligationCalibrationServiceTests
         db.Universes.Add(new Universe { Id = OtherUniverseId, Slug = "glmz", Name = "GLMZ" });
 
         bookId = Guid.CreateVersion7(); chapterId = Guid.CreateVersion7();
-        db.Nodes.Add(new BookNode { Id = bookId, Slug = "gcsh-test", NodeCode = "GCSHT", Title = "Calibration Book", Kind = "book", UniverseId = GutenbergId, Status = "Complete - publication ready" });
+        db.Nodes.Add(new BookNode { Id = bookId, Slug = "gcsh-test", NodeCode = "GCSHT", Title = "Calibration Book", Kind = "book", UniverseId = GutenbergId });
         db.Nodes.Add(new ChapterNode { Id = chapterId, Slug = "gcsh-ch1", Title = "Chapter 1", Kind = "chapter", ParentNodeId = bookId, UniverseId = GutenbergId, SortKey = 100 });
 
         var texts = new[]
@@ -140,7 +140,7 @@ public class ObligationCalibrationServiceTests
         var authorBookId = Guid.CreateVersion7();
         using (var db = dbFactory.CreateDbContext())
         {
-            db.Nodes.Add(new BookNode { Id = authorBookId, Slug = "author-book", NodeCode = "REAL", Title = "An Author's Book", Kind = "book", UniverseId = OtherUniverseId, Status = "Complete - publication ready" });
+            db.Nodes.Add(new BookNode { Id = authorBookId, Slug = "author-book", NodeCode = "REAL", Title = "An Author's Book", Kind = "book", UniverseId = OtherUniverseId });
             db.SaveChanges();
         }
 

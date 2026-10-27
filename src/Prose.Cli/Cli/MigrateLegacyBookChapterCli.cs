@@ -332,7 +332,6 @@ public static class MigrateLegacyBookChapterCli
         node.Slug       = slug;
         node.Title      = title;
         node.Description = synopsis;
-        node.Status     = "draft";
         node.SortKey    = 9999.0;
         db.Nodes.Add(node);
 

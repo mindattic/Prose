@@ -49,8 +49,7 @@ public class BookSpineServiceTests
             Slug = "book-" + Guid.NewGuid().ToString("N")[..8],
             Title = title,
             Kind = "book",
-            Status = "draft",
-            SortKey = 100,
+                        SortKey = 100,
         };
         db.Nodes.Add(book);
         await db.SaveChangesAsync();
@@ -65,8 +64,7 @@ public class BookSpineServiceTests
             Id = Guid.CreateVersion7(),
             Slug = "ch-" + Guid.NewGuid().ToString("N")[..8],
             Title = title,
-            Status = "draft",
-            ParentNodeId = bookId,
+                        ParentNodeId = bookId,
             SortKey = sortKey,
         };
         db.Nodes.Add(chapter);
@@ -82,7 +80,6 @@ public class BookSpineServiceTests
         scene.Id = Guid.CreateVersion7();
         scene.Slug = "sc-" + Guid.NewGuid().ToString("N")[..8];
         scene.Title = title;
-        scene.Status = "draft";
         scene.ParentNodeId = parentId;
         scene.SortKey = sortKey;
         db.Nodes.Add(scene);
@@ -98,8 +95,7 @@ public class BookSpineServiceTests
             Id = Guid.CreateVersion7(),
             Slug = "sq-" + Guid.NewGuid().ToString("N")[..8],
             Title = title,
-            Status = "draft",
-            ParentNodeId = parentId,
+                        ParentNodeId = parentId,
             SortKey = sortKey,
         };
         db.Nodes.Add(sequence);

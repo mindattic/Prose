@@ -192,7 +192,6 @@ public class SceneDerivationService(
                     // exactly rather than renumbered.
                     SortKey = proposed.Beats[0].SortKey,
                     Slug = await UniqueSlugAsync(db, chapter.UniverseId, proposed.Title, ct),
-                    Status = chapter.Status,
                 };
                 db.Nodes.Add(scene);
                 await db.SaveChangesAsync(ct);

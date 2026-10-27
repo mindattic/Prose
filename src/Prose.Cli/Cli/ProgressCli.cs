@@ -27,8 +27,8 @@ public static class ProgressCli
 
         var books = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .OfType<BookNode>()
-            .Where(n => n.Status != "archived")
-            .Select(n => new { n.Id, n.NodeCode, n.Title, n.Kind, n.Status, n.Score, n.ScoredAt })
+            .Where(n => !n.IsArchived)
+            .Select(n => new { n.Id, n.NodeCode, n.Title, n.Kind, n.Timeline, n.Score, n.ScoredAt })
             .ToListAsync();
 
         var rows = new List<Row>();
@@ -44,7 +44,7 @@ public static class ProgressCli
             var words = texts.Sum(t => BeatMarkup.StripEntityTags(t)
                 .Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries).Length);
 
-            rows.Add(new Row(b.NodeCode ?? "", b.Title, b.Kind, b.Status,
+            rows.Add(new Row(b.NodeCode ?? "", b.Title, b.Kind, b.Timeline,
                 b.Score, words, words / 250, b.ScoredAt));
         }
 
@@ -64,14 +64,14 @@ public static class ProgressCli
             return 0;
         }
 
-        Console.WriteLine($"{"Code",-8} {"Title",-40} {"Kind",-8} {"Status",-28} {"Score",6} {"Pages",6}");
+        Console.WriteLine($"{"Code",-8} {"Title",-40} {"Kind",-8} {"Timeline",-10} {"Score",6} {"Pages",6}");
         Console.WriteLine(new string('-', 100));
         foreach (var r in display)
         {
             var scoreStr = r.Score.HasValue ? r.Score.Value.ToString("F1") : "-";
             var title = r.Title.Length > 40 ? r.Title[..37] + "..." : r.Title;
-            var status = r.Status.Length > 28 ? r.Status[..25] + "..." : r.Status;
-            Console.WriteLine($"{r.Code,-8} {title,-40} {r.Kind,-8} {status,-28} {scoreStr,6} {r.Pages,6}");
+            var timeline = r.Timeline.HasValue ? r.Timeline.Value.ToString("0.######") : "-";
+            Console.WriteLine($"{r.Code,-8} {title,-40} {r.Kind,-8} {timeline,-10} {scoreStr,6} {r.Pages,6}");
         }
 
         var scored = display.Where(r => r.Score.HasValue).ToList();
@@ -82,6 +82,6 @@ public static class ProgressCli
         return 0;
     }
 
-    private sealed record Row(string Code, string Title, string Kind, string Status,
+    private sealed record Row(string Code, string Title, string Kind, decimal? Timeline,
         double? Score, int Words, int Pages, DateTime? ScoredAt);
 }

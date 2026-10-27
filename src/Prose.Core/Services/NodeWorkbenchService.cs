@@ -1017,7 +1017,7 @@ public class NodeWorkbenchService
     /// <c>DuplicateBook</c>) are unaffected.
     /// </summary>
     public async Task<(Guid Id, string Slug)> DuplicateNodeAsync(
-        Guid sourceId, string newTitle, string? nodeCode = null, string status = "draft", CancellationToken ct = default)
+        Guid sourceId, string newTitle, string? nodeCode = null, CancellationToken ct = default)
     {
         if (string.IsNullOrWhiteSpace(newTitle))
             throw new ArgumentException("A title for the duplicate is required.", nameof(newTitle));
@@ -1058,7 +1058,7 @@ public class NodeWorkbenchService
         var nextNumber = new[] { (await db.Beats.MaxAsync(b => (int?)b.Number, ct) ?? 0) + 1 };
 
         var (rootId, rootSlug) = await CloneNodeSubtreeAsync(
-            db, sourceId, newTitle, source.ParentNodeId, siblingMaxSort + 100.0, nextNumber, code, status, isRoot: true, ct);
+            db, sourceId, newTitle, source.ParentNodeId, siblingMaxSort + 100.0, nextNumber, code, isRoot: true, ct);
 
         await db.SaveChangesAsync(ct);
         await tx.CommitAsync(ct);
@@ -1070,7 +1070,7 @@ public class NodeWorkbenchService
     /// entities on <paramref name="db"/>. The caller owns the transaction + save.</summary>
     private async Task<(Guid Id, string Slug)> CloneNodeSubtreeAsync(
         ProseDbContext db, Guid srcNodeId, string? titleOverride,
-        Guid? newParentId, double sortKey, int[] nextNumber, string? rootNodeCode, string status, bool isRoot,
+        Guid? newParentId, double sortKey, int[] nextNumber, string? rootNodeCode, bool isRoot,
         CancellationToken ct)
     {
         // IgnoreQueryFilters(): explicit srcNodeId, not an ambient scope (same bug class found
@@ -1085,7 +1085,6 @@ public class NodeWorkbenchService
         clone.Slug            = slug;
         clone.Title           = title;
         clone.Kind            = src.Kind;
-        clone.Status          = status;
         clone.Description     = src.Description;
         clone.Seed            = src.Seed;
         clone.NodeCode        = isRoot ? rootNodeCode : null;
@@ -1182,7 +1181,7 @@ public class NodeWorkbenchService
             .Select(s => new { s.Id, s.SortKey })
             .ToListAsync(ct);
         foreach (var child in children)
-            await CloneNodeSubtreeAsync(db, child.Id, null, newId, child.SortKey, nextNumber, rootNodeCode, status, isRoot: false, ct);
+            await CloneNodeSubtreeAsync(db, child.Id, null, newId, child.SortKey, nextNumber, rootNodeCode, isRoot: false, ct);
 
         return (newId, slug);
     }
@@ -1222,7 +1221,7 @@ public class NodeWorkbenchService
         var maxSort = await db.Nodes.Where(s => s.ParentNodeId == null)
             .Select(s => (double?)s.SortKey).MaxAsync(ct) ?? 0;
         var node = NodeFactory.Create(kind);
-        node.Id = nodeId; node.Slug = slug; node.Title = title; node.Status = "draft";
+        node.Id = nodeId; node.Slug = slug; node.Title = title;
         node.Description = description; node.Seed = seed; node.SortKey = maxSort + 100.0;
         db.Nodes.Add(node);
 
@@ -1329,7 +1328,6 @@ public class NodeWorkbenchService
         node.Slug           = slug;
         node.Title          = title;
         node.NodeCode       = code;
-        node.Status         = "draft";
         node.Description    = description;
         node.Seed           = seed;
         node.ParentNodeId   = parentNodeId;
@@ -1422,7 +1420,7 @@ public class NodeWorkbenchService
             var slug = $"{Slugify(title)}-{childId.ToString("N")[..8]}";
             db.Nodes.Add(new ChapterNode
             {
-                Id = childId, Slug = slug, Title = title, Status = "draft",
+                Id = childId, Slug = slug, Title = title,
                 // The parent's universe, as WrapInSingleChapterAsync sets it: left to the ambient
                 // stamp, splitting a SCRY book under --universe glmz made GLMZ chapters.
                 UniverseId = parent.UniverseId,
@@ -1494,7 +1492,7 @@ public class NodeWorkbenchService
         var slug = $"{Slugify(story.Title)}-{childId.ToString("N")[..8]}";
         db.Nodes.Add(new ChapterNode
         {
-            Id = childId, Slug = slug, Title = story.Title, Status = "draft",
+            Id = childId, Slug = slug, Title = story.Title,
             UniverseId = story.UniverseId, ParentNodeId = storyId, SortKey = 100.0,
         });
 
@@ -2613,7 +2611,7 @@ public class NodeWorkbenchService
             // and fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
             var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
                 ?? throw new InvalidOperationException($"Node {nodeId} not found.");
-            node.Status = "narrating";
+            node.NarrationState = "narrating";
             await db.SaveChangesAsync(ct);
 
             var ordered = await GetOrderedBeatsAsync(nodeId, ct);
@@ -2741,7 +2739,7 @@ public class NodeWorkbenchService
             //   all beats rendered → "ready"
             //   some beats failed  → "failed" (Error already populated above)
             // Either way AudioCompletedAt stamps so callers can see the run finished.
-            node.Status = failedCount == 0 ? "ready" : "failed";
+            node.NarrationState = failedCount == 0 ? "ready" : "failed";
             if (failedCount == 0) node.Error = null; // clear stale failure note on a clean run
             node.AudioCompletedAt = DateTime.UtcNow;
             await db.SaveChangesAsync(ct);
@@ -2757,7 +2755,7 @@ public class NodeWorkbenchService
             if (cancelTokens.TryGetValue(nodeId, out var owner) && !ReferenceEquals(owner, cancelCts)) return;
             await using var db2 = await dbFactory.CreateDbContextAsync(CancellationToken.None);
             var st = await db2.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == nodeId, CancellationToken.None);
-            if (st != null) { st.Status = "stopped"; await db2.SaveChangesAsync(CancellationToken.None); }
+            if (st != null) { st.NarrationState = "stopped"; await db2.SaveChangesAsync(CancellationToken.None); }
         }
         catch (Exception ex)
         {
@@ -2775,7 +2773,7 @@ public class NodeWorkbenchService
                 var st = await db2.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == nodeId, CancellationToken.None);
                 if (st != null)
                 {
-                    st.Status = "failed";
+                    st.NarrationState = "failed";
                     st.Error = ex.Message;
                     st.AudioCompletedAt = DateTime.UtcNow;
                     await db2.SaveChangesAsync(CancellationToken.None);

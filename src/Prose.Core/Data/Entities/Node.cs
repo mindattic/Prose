@@ -53,9 +53,23 @@ public abstract class Node
     /// type (NodeType discriminator). Defaulted per subclass.</summary>
     public string Kind { get; set; } = "book";
 
-    /// <summary>"draft" | "generating" | "narrating" | "ready" | "failed" |
-    /// "stopped". Mirrors the old Episode.Status semantics.</summary>
-    public string Status { get; set; } = "draft";
+    /// <summary>True once this book is no longer part of active consideration — excluded from
+    /// the progress dashboard, edit-distribution and the "which books to reconcile" scan. One of
+    /// two real signals carved out of the old free-text <c>Status</c> column when it was dropped
+    /// (PRS-T320); see also <see cref="IsAtEnd"/>. Everything else Status ever held ("draft",
+    /// "narrating", …) was display noise nothing read.</summary>
+    public bool IsArchived { get; set; }
+
+    /// <summary>Have we reached the end of the text we hold — not the same question as <see
+    /// cref="StructurallyComplete"/> ("does it finish its own story?"). The other real signal
+    /// carved out of the old free-text <c>Status</c> column (PRS-T320), which used to answer this
+    /// via <c>Status.Contains("complete"/"publish")</c>. <see
+    /// cref="Services.Audit.ObligationReconciliationService.IsBookAtEnd"/> ORs this with the
+    /// structured <see cref="PublicationStatus"/>/<see cref="KdpPublishedAt"/> signals — a book
+    /// can be at its end (author says so, here) before KDP's own pipeline has published it. GCTOC
+    /// is at its end AND structurally incomplete: act one of three, deliberately left with open
+    /// obligations Dickens carries into Books Two and Three.</summary>
+    public bool IsAtEnd { get; set; }
 
     /// <summary>This node's slug was chosen by hand, not derived from its Title.
     ///
@@ -145,6 +159,26 @@ public abstract class Node
     /// 100, 200, 300… so inserts between siblings find midpoints without
     /// renumbering.</summary>
     public double SortKey { get; set; }
+
+    /// <summary>Where this book sits on its universe's story chronology — flat across the whole
+    /// universe, independent of <see cref="SortKey"/>/tree position. Integer part = series/era
+    /// number (1.0 = the first series' timeframe, 2.0 = the second, …); fractional part orders
+    /// books within that bracket (1.0 &lt; 1.1 &lt; 1.2 &lt; … &lt; 2.0). Two books may legitimately share
+    /// the exact same value — that means nothing in the prose establishes which one comes first,
+    /// not that the data is wrong. Null = not yet placed. Set via <c>prose --set-timeline</c> /
+    /// <c>prose --insert-timeline</c> (TimelineCli), which bisects the fractional midpoint between
+    /// neighbors and restripes a bracket when bisection has collapsed near decimal precision —
+    /// bisection never crosses an integer boundary. (PRS-T320)</summary>
+    public decimal? Timeline { get; set; }
+
+    /// <summary>TTS narration run state: null (never narrated) | "narrating" (run in progress) |
+    /// "ready" (every beat rendered) | "failed" (some beat failed — see <see cref="Error"/>) |
+    /// "stopped" (superseded by a newer run). The narrow, single-purpose survivor of the old
+    /// free-text <c>Status</c> column (PRS-T320) — Status used to double as this AND as a reader
+    /// of book-list noise; splitting it out stops a book's reading/editing lifecycle from being
+    /// clobbered by an unrelated audio-pipeline write mid-run. Written only by
+    /// <see cref="Services.NodeWorkbenchService.NarrateAsync"/>; read by <c>--narrate-book</c>.</summary>
+    public string? NarrationState { get; set; }
 
     // ── Audio / artefact paths ───────────────────────────────────────────
 

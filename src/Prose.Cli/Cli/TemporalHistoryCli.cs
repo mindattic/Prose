@@ -229,7 +229,6 @@ public static class TemporalHistoryCli
             var baseSlug = System.Text.RegularExpressions.Regex.Replace(newTitle.ToLowerInvariant(), @"[^a-z0-9]+", "-").Trim('-');
             bookNode.Slug = $"{baseSlug}-{bookNode.Id.ToString("N")[..8]}";
             bookNode.Title = newTitle;
-            bookNode.Status = "draft";
             bookNode.ParentNodeId = null;
             bookNode.NodeCode = string.IsNullOrWhiteSpace(code) ? null : code.Trim().ToUpperInvariant();
             var maxSort = await writeDb.Nodes.Where(n => n.ParentNodeId == null).Select(n => (double?)n.SortKey).MaxAsync() ?? 0;
@@ -248,7 +247,6 @@ public static class TemporalHistoryCli
                 var chBaseSlug = System.Text.RegularExpressions.Regex.Replace((chapterTitle ?? "chapter").ToLowerInvariant(), @"[^a-z0-9]+", "-").Trim('-');
                 chNode.Slug = $"{chBaseSlug}-{chNode.Id.ToString("N")[..8]}";
                 chNode.Title = chapterTitle ?? "";
-                chNode.Status = "draft";
                 chNode.ParentNodeId = bookNode.Id;
                 chNode.SortKey = chapterSort;
                 writeDb.Nodes.Add(chNode);

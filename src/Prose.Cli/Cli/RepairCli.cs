@@ -105,7 +105,6 @@ public static class RepairCli
                             Slug = $"drafts-{Guid.CreateVersion7().ToString("N")[..8]}",
                             Title = "Drafts",
                             Kind = "book",
-                            Status = "draft",
                             SortKey = maxSort + 100.0,
                             UniverseId = uid,
                         };

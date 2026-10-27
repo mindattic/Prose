@@ -970,7 +970,8 @@ public class ProseDbContext : DbContext
             e.Property(x => x.Slug).HasMaxLength(200).IsRequired();
             e.Property(x => x.Title).HasMaxLength(400).IsRequired();
             e.Property(x => x.Kind).HasMaxLength(40).IsRequired();
-            e.Property(x => x.Status).HasMaxLength(40).IsRequired();
+            e.Property(x => x.Timeline).HasPrecision(18, 6);
+            e.Property(x => x.NarrationState).HasMaxLength(20);
             e.Property(x => x.VoiceId).HasMaxLength(80);
             e.Property(x => x.CombinedAudioPath).HasMaxLength(400);
             // Slug unique per universe (the same node slug may recur in another universe).

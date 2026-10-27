@@ -70,7 +70,6 @@ public class NodeMigrationService
                 Title    = b.Title ?? "Untitled book",
                 Description = b.Tagline,
                 Kind     = "book",
-                Status   = "draft",
                 SortKey  = (i + 1) * 100.0,
             });
             added++;
@@ -99,7 +98,6 @@ public class NodeMigrationService
                 Title          = c.Title ?? "Untitled chapter",
                 Description    = c.Synopsis,
                 Kind           = "chapter",
-                Status         = string.IsNullOrEmpty(c.Status) ? "draft" : c.Status,
                 ParentNodeId = c.BookId,
                 SortKey        = c.Number * 100.0,
             });
@@ -217,7 +215,6 @@ public class NodeMigrationService
                 Title                 = e.Title ?? "Untitled episode",
                 Description           = null,
                 Kind                  = "episode",
-                Status                = string.IsNullOrEmpty(e.Status) ? "draft" : e.Status,
                 VoiceId               = e.VoiceId,
                 ParentNodeId        = parentNode,
                 SortKey               = 100.0,

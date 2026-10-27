@@ -83,10 +83,10 @@ public static class NarrateNodeCli
         {
             // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
             var done = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstAsync(s => s.Id == nodeId);
-            Console.WriteLine($"[narrate-book] Status: {done.Status}  ({done.NarratedBeatCount}/{done.TotalBeatsToNarrate} beats narrated)");
+            Console.WriteLine($"[narrate-book] Status: {done.NarrationState}  ({done.NarratedBeatCount}/{done.TotalBeatsToNarrate} beats narrated)");
             if (!string.IsNullOrEmpty(done.Error))
                 Console.WriteLine($"[narrate-book] Error: {done.Error}");
-            return done.Status == "ready" ? 0 : 1;
+            return done.NarrationState == "ready" ? 0 : 1;
         }
     }
 }

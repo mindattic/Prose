@@ -6,7 +6,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>prose --clone-book (--id &lt;guid&gt; | --slug &lt;slug&gt;) [--title "New Title"] [--book-code "SM1"] [--draft] [--status &lt;status&gt;]</c>
+/// <c>prose --clone-book (--id &lt;guid&gt; | --slug &lt;slug&gt;) [--title "New Title"] [--book-code "SM1"]</c>
 /// — deep-clone a node: creates a new Node row plus independent copies of every
 /// beat in its full subtree (new IDs, new Numbers). Audio, scores, and review history are NOT
 /// cloned — the clone starts fresh so review scores are independent.
@@ -23,8 +23,6 @@ public static class CloneNodeCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         string? id = null, slug = null, title = null, nodeCode = null;
-        string status = "ready";
-        bool isDraft = false, statusExplicit = false;
 
         for (int i = 0; i < args.Length; i++)
         {
@@ -34,12 +32,8 @@ public static class CloneNodeCli
                 case "--slug":         if (i + 1 < args.Length) slug     = args[++i]; break;
                 case "--title":        if (i + 1 < args.Length) title    = args[++i]; break;
                 case "--book-code":    if (i + 1 < args.Length) nodeCode = args[++i]; break;
-                case "--status":       if (i + 1 < args.Length) { status = args[++i]; statusExplicit = true; } break;
-                case "--draft":        isDraft = true; break;
             }
         }
-
-        if (isDraft && !statusExplicit) status = "draft";
 
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
         {
@@ -70,7 +64,7 @@ public static class CloneNodeCli
 
         try
         {
-            var (newId, newSlug) = await workbench.DuplicateNodeAsync(source.Id, newTitle, nodeCode, status);
+            var (newId, newSlug) = await workbench.DuplicateNodeAsync(source.Id, newTitle, nodeCode);
             Console.WriteLine($"[clone-book] Created '{newTitle}'");
             Console.WriteLine($"[clone-book] id:   {newId}");
             Console.WriteLine($"[clone-book] slug: {newSlug}");

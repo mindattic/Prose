@@ -101,7 +101,7 @@ public class NodeCliRoundTripTests
         Assert.That(node, Is.Not.Null);
         Assert.That(node!.Kind,   Is.EqualTo("episode"));
         Assert.That(node.Title,   Is.EqualTo("The Folded Note"));
-        Assert.That(node.Status,  Is.EqualTo("ready_for_audio"), "User can hit Record immediately");
+        Assert.That(node.NarrationState, Is.Null, "never narrated — user can hit Record immediately");
         Assert.That(node.Slug,    Is.Not.Empty.And.Contains("folded-note"), "Slug must reflect title for /node/{slug} URL");
 
         // Beats land in correct order and ready to modify.

@@ -162,9 +162,9 @@ public static class ObligationCli
             case "completeness":
             {
                 // Does this text finish its own story? It is the one fact the calibration bar needs
-                // and could not ask for (RFC 0013 §6a). Deliberately NOT derived from Status: that
+                // and could not ask for (RFC 0013 §6a). Deliberately NOT derived from IsAtEnd: that
                 // answers "have we reached the end of the text we hold", which is a different
-                // question — GCTOC is "Complete - publication ready" AND is act one of three.
+                // question — GCTOC is at its end AND is act one of three.
                 await using var db = await dbFactory.CreateDbContextAsync();
                 var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == nodeId);
                 if (node == null) { Console.Error.WriteLine("[obligations] node not found."); return 1; }
@@ -190,7 +190,7 @@ public static class ObligationCli
                 }
 
                 Console.WriteLine($"[obligations] COMPLETENESS — {title}");
-                Console.WriteLine($"  Status (is the text at its end?):      {node.Status}");
+                Console.WriteLine($"  IsAtEnd (is the text at its end?):      {node.IsAtEnd}");
                 Console.WriteLine($"  StructurallyComplete (does it finish its own story?): {Describe(node.StructurallyComplete)}");
                 if (node.StructurallyComplete == null)
                 {

@@ -8713,6 +8713,12 @@ namespace Prose.Core.Migrations
                     b.Property<string>("Error")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsArchived")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsAtEnd")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("IsCanon")
                         .HasColumnType("bit");
 
@@ -8745,6 +8751,10 @@ namespace Prose.Core.Migrations
 
                     b.Property<int>("NarratedBeatCount")
                         .HasColumnType("int");
+
+                    b.Property<string>("NarrationState")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("NarrativeMode")
                         .IsRequired()
@@ -8808,11 +8818,6 @@ namespace Prose.Core.Migrations
                     b.Property<DateTime>("StartedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasMaxLength(40)
-                        .HasColumnType("nvarchar(40)");
-
                     b.Property<bool?>("StructurallyComplete")
                         .HasColumnType("bit");
 
@@ -8821,6 +8826,10 @@ namespace Prose.Core.Migrations
 
                     b.Property<string>("Summary")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("Timeline")
+                        .HasPrecision(18, 6)
+                        .HasColumnType("decimal(18,6)");
 
                     b.Property<string>("Title")
                         .IsRequired()

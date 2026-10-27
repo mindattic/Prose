@@ -53,12 +53,12 @@ public static class ReconcileObligationsCli
             if (all)
             {
                 var books = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-                    .Where(n => n.Kind == "book" && n.Status != "archived") // books under a Series have a parent
-                    .Select(n => new { n.Id, n.Slug, n.Title, n.Status, n.KdpPublishedAt })
+                    .Where(n => n.Kind == "book" && !n.IsArchived) // books under a Series have a parent
+                    .Select(n => new { n.Id, n.Slug, n.Title, n.IsAtEnd, n.KdpPublishedAt })
                     .ToListAsync();
                 foreach (var b in books)
                 {
-                    var atEnd = ObligationReconciliationService.IsBookAtEnd(b.Status, null, b.KdpPublishedAt);
+                    var atEnd = ObligationReconciliationService.IsBookAtEnd(b.IsAtEnd, null, b.KdpPublishedAt);
                     var ok = statusFilter switch
                     {
                         "published" => b.KdpPublishedAt != null,
@@ -70,7 +70,7 @@ public static class ReconcileObligationsCli
                 }
                 // KDP-live first, then complete, then drafts — a reader can find the defect today.
                 targets = targets.OrderByDescending(t => books.First(b => b.Id == t.Id).KdpPublishedAt != null)
-                                 .ThenByDescending(t => ObligationReconciliationService.IsBookAtEnd(books.First(b => b.Id == t.Id).Status, null, null))
+                                 .ThenByDescending(t => ObligationReconciliationService.IsBookAtEnd(books.First(b => b.Id == t.Id).IsAtEnd, null, null))
                                  .ToList();
             }
             else

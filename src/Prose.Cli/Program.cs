@@ -3052,10 +3052,18 @@ if (args.Contains("--list-plants") || args.Contains("--add-plant") || args.Conta
     return;
 }
 
-// prose --clone-book (--id <guid> | --slug <slug>) [--title "New Title"] [--book-code SM1] [--draft] [--status ready]
+// prose --clone-book (--id <guid> | --slug <slug>) [--title "New Title"] [--book-code SM1]
 if (args.Contains("--clone-book"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("CloneNodeCli", args);
+    return;
+}
+
+// Book chronology within its universe (Node.Timeline, PRS-T320). No mode flag = print it.
+// prose --set-timeline --slug <slug> [--value <decimal> | --before <ref-slug> | --after <ref-slug> | --same-as <ref-slug> | --clear]
+if (args.Contains("--set-timeline"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BookTimelineCli", args);
     return;
 }
 

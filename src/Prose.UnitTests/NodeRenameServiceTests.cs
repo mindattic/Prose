@@ -37,8 +37,8 @@ public class NodeRenameServiceTests
     private async Task<(Guid Book, Guid Chapter)> SeedAsync()
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        var book = new BookNode { Id = Guid.CreateVersion7(), Slug = "old-book", Title = "Old Book", Kind = "book", Status = "draft", SortKey = 100 };
-        var ch = new ChapterNode { Id = Guid.CreateVersion7(), Slug = "old-chapter", Title = "Old Chapter", Kind = "chapter", Status = "draft", SortKey = 100, ParentNodeId = book.Id };
+        var book = new BookNode { Id = Guid.CreateVersion7(), Slug = "old-book", Title = "Old Book", Kind = "book", SortKey = 100 };
+        var ch = new ChapterNode { Id = Guid.CreateVersion7(), Slug = "old-chapter", Title = "Old Chapter", Kind = "chapter", SortKey = 100, ParentNodeId = book.Id };
         db.Nodes.AddRange(book, ch);
         await db.SaveChangesAsync();
         return (book.Id, ch.Id);

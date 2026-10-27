@@ -45,7 +45,6 @@ public class BeatVerificationServiceStalenessTests
         node.Id = nodeId;
         node.Slug = "s-" + Guid.NewGuid().ToString("N")[..8];
         node.Title = "Staleness Test Book";
-        node.Status = "draft";
         node.SortKey = 100;
         db.Nodes.Add(node);
 

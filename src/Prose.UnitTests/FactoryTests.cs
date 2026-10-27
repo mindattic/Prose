@@ -387,7 +387,7 @@ public class FactoryTests
         Guid bookId, ch1, ch2;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var book = new BookNode { Id = Guid.CreateVersion7(), Slug = "fx-" + Guid.NewGuid().ToString("N")[..8], Title = "FX", Kind = "book", Status = "draft", SortKey = 100 };
+            var book = new BookNode { Id = Guid.CreateVersion7(), Slug = "fx-" + Guid.NewGuid().ToString("N")[..8], Title = "FX", Kind = "book", SortKey = 100 };
             db.Nodes.Add(book);
             await db.SaveChangesAsync();
             bookId = book.Id;
@@ -403,7 +403,7 @@ public class FactoryTests
     private async Task<Guid> AddChapterAsync(Guid bookId, string title, int sort)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        var ch = new ChapterNode { Id = Guid.CreateVersion7(), Slug = "ch-" + Guid.NewGuid().ToString("N")[..8], Title = title, Kind = "chapter", Status = "draft", SortKey = sort, ParentNodeId = bookId };
+        var ch = new ChapterNode { Id = Guid.CreateVersion7(), Slug = "ch-" + Guid.NewGuid().ToString("N")[..8], Title = title, Kind = "chapter", SortKey = sort, ParentNodeId = bookId };
         db.Nodes.Add(ch);
         await db.SaveChangesAsync();
         return ch.Id;
@@ -443,7 +443,7 @@ public class FactoryTests
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var book = await db.Nodes.FirstAsync(n => n.Id == bookId);
-        var series = new SeriesNode { Id = Guid.CreateVersion7(), Slug = "series-" + Guid.NewGuid().ToString("N")[..8], Title = "Series", Status = "draft", SortKey = 100, UniverseId = book.UniverseId };
+        var series = new SeriesNode { Id = Guid.CreateVersion7(), Slug = "series-" + Guid.NewGuid().ToString("N")[..8], Title = "Series", SortKey = 100, UniverseId = book.UniverseId };
         db.Nodes.Add(series);
         book.ParentNodeId = series.Id;
         await db.SaveChangesAsync();
@@ -537,7 +537,7 @@ public class FactoryTests
         Guid bookId;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var book = new BookNode { Id = Guid.CreateVersion7(), Slug = "empty-" + Guid.NewGuid().ToString("N")[..8], Title = "Empty", Kind = "book", Status = "draft", SortKey = 100 };
+            var book = new BookNode { Id = Guid.CreateVersion7(), Slug = "empty-" + Guid.NewGuid().ToString("N")[..8], Title = "Empty", Kind = "book", SortKey = 100 };
             db.Nodes.Add(book);
             await db.SaveChangesAsync();
             bookId = book.Id;

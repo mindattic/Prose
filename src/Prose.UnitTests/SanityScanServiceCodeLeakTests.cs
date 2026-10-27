@@ -53,15 +53,14 @@ public class SanityScanServiceCodeLeakTests
         foreach (var (slug, code) in otherNodes)
         {
             var other = NodeFactory.Create("book");
-            other.Id = Guid.CreateVersion7(); other.Slug = slug; other.Title = slug;
-            other.Status = "draft"; other.SortKey = 200; other.UniverseId = universeId; other.NodeCode = code;
+            other.Id = Guid.CreateVersion7(); other.Slug = slug; other.Title = slug; other.SortKey = 200; other.UniverseId = universeId; other.NodeCode = code;
             db.Nodes.Add(other);
         }
 
         var id = Guid.CreateVersion7();
         var node = NodeFactory.Create("book");
         node.Id = id; node.Slug = "s-" + Guid.NewGuid().ToString("N")[..8];
-        node.Title = "T"; node.Status = "draft"; node.SortKey = 100;
+        node.Title = "T"; node.SortKey = 100;
         node.UniverseId = universeId; node.NodeCode = nodeCode;
         db.Nodes.Add(node);
 

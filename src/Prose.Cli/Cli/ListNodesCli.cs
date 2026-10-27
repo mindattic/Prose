@@ -9,7 +9,8 @@ namespace Prose.Cli;
 /// equivalent of the <c>/nodes</c> page. Sorted most-recently-updated first.
 ///
 /// Args (all optional):
-///   --status &lt;status&gt;  Filter by status (draft|generating|narrating|ready|failed|stopped).
+///   --archived          Show only archived nodes (default: only non-archived).
+///   --all-archived       Show both archived and non-archived nodes.
 ///   --kind &lt;kind&gt;      Filter by kind (book|chapter|episode|scene|…).
 ///   --search &lt;text&gt;    Filter by case-insensitive substring of title or slug.
 ///   --limit &lt;n&gt;        Show at most N rows.
@@ -22,22 +23,23 @@ public static class ListNodesCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
-        string? status = null, kind = null, search = null;
+        string? kind = null, search = null;
         int? limit = null;
-        bool json = false, scores = false;
+        bool json = false, scores = false, archivedOnly = false, allArchived = false;
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
             {
-                case "--status": if (i + 1 < args.Length) status = args[++i]; break;
                 case "--kind":   if (i + 1 < args.Length) kind = args[++i]; break;
                 case "--search": if (i + 1 < args.Length) search = args[++i]; break;
                 case "--limit":
                     if (i + 1 < args.Length && int.TryParse(args[++i], out var n) && n > 0) limit = n;
                     else { Console.Error.WriteLine("[list-books] --limit needs a positive integer."); return 1; }
                     break;
-                case "--scores": scores = true; break;
-                case "--json":   json = true; break;
+                case "--scores":       scores = true; break;
+                case "--json":         json = true; break;
+                case "--archived":     archivedOnly = true; break;
+                case "--all-archived": allArchived = true; break;
             }
         }
 
@@ -45,8 +47,10 @@ public static class ListNodesCli
         await using var db = await dbFactory.CreateDbContextAsync();
 
         var query = db.Nodes.AsNoTracking();
-        if (!string.IsNullOrWhiteSpace(status))
-            query = query.Where(s => s.Status == status);
+        if (archivedOnly)
+            query = query.Where(s => s.IsArchived);
+        else if (!allArchived)
+            query = query.Where(s => !s.IsArchived);
         if (!string.IsNullOrWhiteSpace(kind))
             query = query.Where(s => s.Kind == kind);
         if (!string.IsNullOrWhiteSpace(search))
@@ -61,7 +65,7 @@ public static class ListNodesCli
         if (limit is int lim) query = query.Take(lim);
 
         var nodes = await query
-            .Select(s => new { s.Id, s.Title, s.Slug, s.Kind, s.Status, s.NodeCode, s.Score, s.UpdatedAt, BeatCount = s.BeatNodes.Count(nb => true) })
+            .Select(s => new { s.Id, s.Title, s.Slug, s.Kind, s.UniverseId, s.Timeline, s.IsArchived, s.NodeCode, s.Score, s.UpdatedAt, BeatCount = s.BeatNodes.Count(nb => true) })
             .ToListAsync();
 
         // Word / page count — one join instead of N queries
@@ -79,7 +83,7 @@ public static class ListNodesCli
         {
             charCounts.TryGetValue(s.Id, out var cc);
             var words = cc != null ? (int)(cc.Chars / 5.2) : 0;
-            return new Row(s.Id, s.Title, s.Slug, s.Kind, s.Status, s.NodeCode, s.BeatCount, s.Score, words / 250, s.UpdatedAt);
+            return new Row(s.Id, s.Title, s.Slug, s.Kind, s.UniverseId, s.Timeline, s.IsArchived, s.NodeCode, s.BeatCount, s.Score, words / 250, s.UpdatedAt);
         }).ToList();
 
         if (json)
@@ -95,14 +99,16 @@ public static class ListNodesCli
         }
 
         // ── table ──
-        Console.WriteLine($"{"CODE",-6}  {"STATUS",-8}  {"KIND",-10}  {"PG",4}  {"SCORE",6}  TITLE");
+        Console.WriteLine($"{"CODE",-6}  {"TIMELINE",-9}  {"KIND",-10}  {"PG",4}  {"SCORE",6}  TITLE");
         Console.WriteLine(new string('-', 110));
         foreach (var r in rows)
         {
             var code  = Trunc(r.Code ?? "—", 6);
             var score = r.Score is double sc ? $"{sc,5:F0}%" : "     —";
+            var timeline = r.Timeline is decimal tl ? tl.ToString("0.######") : "—";
+            var title = r.IsArchived ? $"{r.Title} [archived]" : r.Title;
             Console.WriteLine(
-                $"{code,-6}  {Trunc(r.Status, 8),-8}  {Trunc(r.Kind, 10),-10}  {r.Pages,4}  {score,6}  {r.Title}");
+                $"{code,-6}  {Trunc(timeline, 9),-9}  {Trunc(r.Kind, 10),-10}  {r.Pages,4}  {score,6}  {title}");
         }
         Console.WriteLine(new string('-', 110));
         Console.WriteLine($"[list-books] {rows.Count} node(s).");
@@ -112,6 +118,6 @@ public static class ListNodesCli
     private static string Trunc(string s, int max) => s.Length <= max ? s : s[..(max - 1)] + "…";
 
     private record Row(
-        Guid Id, string Title, string Slug, string Kind, string Status,
+        Guid Id, string Title, string Slug, string Kind, Guid UniverseId, decimal? Timeline, bool IsArchived,
         string? Code, int BeatCount, double? Score, int Pages, DateTime UpdatedAt);
 }
