@@ -1096,10 +1096,13 @@ public class NodeTools
 
         // Merge and deduplicate by content_hash (prefer SSH when present)
         var sshHashes = new HashSet<string>(history.Select(h => h.content_hash));
+        // Sorted by date after the merge: a plain concat put older summary rows after newer ones
+        // (or cut them at the limit), breaking "most recent first".
         var merged = history
-            .Cast<object>()
-            .Concat(srsHistory.Where(r => !sshHashes.Contains(r.content_hash ?? "")).Cast<object>())
+            .Concat(srsHistory.Where(r => !sshHashes.Contains(r.content_hash ?? "")))
+            .OrderByDescending(x => x.recorded_at)
             .Take(limit)
+            .Cast<object>()
             .ToList();
 
         return JsonSerializer.Serialize(new
