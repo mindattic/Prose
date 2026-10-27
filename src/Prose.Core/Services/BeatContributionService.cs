@@ -217,17 +217,16 @@ public class BeatContributionService(IDbContextFactory<ProseDbContext> dbFactory
             .ToDictionaryAsync(c => c.BeatId, ct);
         var places = await PlacesAsync(db, ids, ct);
 
-        var entries = new List<(HistoryEntry E, (double, double, double) Order)>();
+        var entries = new List<(HistoryEntry E, Place Order)>();
         foreach (var b in beats)
         {
             if (!places.TryGetValue(b.Id, out var p)) continue;
             if (bookCode != null && !string.Equals(p.BookCode, bookCode, StringComparison.OrdinalIgnoreCase)) continue;
             lines.TryGetValue(b.Id, out var line);
             var state = line == null ? "missing" : line.TextHash == (b.TextHash ?? Beat.ComputeHash(b.Text ?? "")) ? "current" : "stale";
-            entries.Add((new HistoryEntry(p.BookCode, p.Chapter, b.Number, b.Id, line?.Text, state, ParseEdges(line?.EdgesJson)),
-                (p.BookSort, p.ChapterSort, p.BeatSort)));
+            entries.Add((new HistoryEntry(p.BookCode, p.Chapter, b.Number, b.Id, line?.Text, state, ParseEdges(line?.EdgesJson)), p));
         }
-        return entries.OrderBy(x => x.Order.Item1).ThenBy(x => x.Order.Item2).ThenBy(x => x.Order.Item3).Select(x => x.E).ToList();
+        return entries.OrderBy(x => x.Order, PlaceOrder.Instance).Select(x => x.E).ToList();
     }
 
     /// <summary>The relations the story establishes from or to an entity, each with its beat.</summary>
@@ -251,16 +250,37 @@ public class BeatContributionService(IDbContextFactory<ProseDbContext> dbFactory
         return edges.Select(e =>
         {
             var b = beats.GetValueOrDefault(e.ValidFromBeatId!.Value);
-            var p = places.GetValueOrDefault(e.ValidFromBeatId!.Value) ?? new Place("?", 0, 0, 0, 0);
+            var p = places.GetValueOrDefault(e.ValidFromBeatId!.Value) ?? new Place("?", 0, 0, [], 0);
             var h = lineHashes.FirstOrDefault(l => l.BeatId == e.ValidFromBeatId && l.EntityId == e.SourceId)?.TextHash;
             var state = b == null ? "missing" : h == (b.TextHash ?? Beat.ComputeHash(b.Text ?? "")) ? "current" : "stale";
             return (Edge: new StoryEdge(e.SourceId, names.GetValueOrDefault(e.SourceId, "?"), e.RelationType, e.TargetId,
                 names.GetValueOrDefault(e.TargetId, "?"), p.BookCode ?? "?", p.Chapter, b?.Number ?? 0, e.Description ?? "", state),
-                Order: (p.BookSort, p.ChapterSort, p.BeatSort));
-        }).OrderBy(x => x.Order.Item1).ThenBy(x => x.Order.Item2).ThenBy(x => x.Order.Item3).Select(x => x.Edge).ToList();
+                Order: p);
+        }).OrderBy(x => x.Order, PlaceOrder.Instance).Select(x => x.Edge).ToList();
     }
 
-    private sealed record Place(string BookCode, int Chapter, double BookSort, double ChapterSort, double BeatSort);
+    /// <summary>ChapterPath: the sort keys from the book's child down to the beat's own node. A
+    /// chapter's SortKey only orders it among its siblings, so in a Book → part → chapters layout
+    /// one key per chapter tied or interleaved chapters of different parts.</summary>
+    private sealed record Place(string BookCode, int Chapter, double BookSort, double[] ChapterPath, double BeatSort);
+
+    /// <summary>Reading order: book, then the node path lexicographically, then the beat.</summary>
+    private sealed class PlaceOrder : IComparer<Place>
+    {
+        public static readonly PlaceOrder Instance = new();
+        public int Compare(Place? x, Place? y)
+        {
+            if (ReferenceEquals(x, y)) return 0;
+            if (x is null) return -1;
+            if (y is null) return 1;
+            var c = x.BookSort.CompareTo(y.BookSort);
+            if (c != 0) return c;
+            for (int i = 0; i < Math.Min(x.ChapterPath.Length, y.ChapterPath.Length); i++)
+                if ((c = x.ChapterPath[i].CompareTo(y.ChapterPath[i])) != 0) return c;
+            if ((c = x.ChapterPath.Length.CompareTo(y.ChapterPath.Length)) != 0) return c;
+            return x.BeatSort.CompareTo(y.BeatSort);
+        }
+    }
 
     /// <summary>For each beat: its book's code, its chapter's ordinal in the book, and the sort keys
     /// that give reading order.</summary>
@@ -290,8 +310,14 @@ public class BeatContributionService(IDbContextFactory<ProseDbContext> dbFactory
         {
             if (result.ContainsKey(l.BeatId) || !nodes.TryGetValue(l.NodeId, out var chapter)) continue;
             var book = chapter;
-            while (book.Kind != "book" && book.ParentNodeId != null && nodes.TryGetValue(book.ParentNodeId.Value, out var up)) book = up;
-            result[l.BeatId] = new Place(book.NodeCode ?? book.Slug, ordinal.GetValueOrDefault(chapter.Id), book.SortKey, chapter.SortKey, l.SortKey);
+            var path = new List<double>();
+            while (book.Kind != "book" && book.ParentNodeId != null && nodes.TryGetValue(book.ParentNodeId.Value, out var up))
+            {
+                path.Add(book.SortKey);
+                book = up;
+            }
+            path.Reverse();
+            result[l.BeatId] = new Place(book.NodeCode ?? book.Slug, ordinal.GetValueOrDefault(chapter.Id), book.SortKey, path.ToArray(), l.SortKey);
         }
         return result;
     }
