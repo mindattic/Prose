@@ -89,10 +89,14 @@ public class UniverseInterchangeService
 
     private const string UniverseSourceSettingKey = "interchange.universe_source";
 
-    public UniverseInterchangeService(IDbContextFactory<ProseDbContext> dbFactory, OutboxService? outbox = null)
+    private readonly IUniverseContext? universeContext;
+
+    public UniverseInterchangeService(IDbContextFactory<ProseDbContext> dbFactory, OutboxService? outbox = null,
+        IUniverseContext? universeContext = null)
     {
         this.dbFactory = dbFactory;
         this.outbox = outbox;
+        this.universeContext = universeContext;
     }
 
     public class ImportResult
@@ -215,6 +219,11 @@ public class UniverseInterchangeService
             }
             catch { /* best-effort notification only */ }
         }
+
+        // A universe created here is unknown to the process-lifetime universe catalog until it is
+        // refreshed: /api/universes/{slug}/..., the graph and `--universe use` answered
+        // unknown_universe until the Hub restarted (SqlSeedService refreshes for the same reason).
+        if (result.UniverseCreated) universeContext?.Refresh();
 
         return result;
     }
