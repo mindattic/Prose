@@ -182,7 +182,7 @@ their state as their respective conflict opens — see §10 for the full entity 
 |---|---|---|
 | <entity repo="character" guid="019fc925-8808-7dcc-b440-c3813c9d1935">Oliver Cromwell</entity> | Cromwellian | Lands at Dublin, August 1649, as Lord Lieutenant and Commander-in-Chief; departs Ireland May 1650, leaving the campaign to subordinates |
 | <entity repo="character" guid="019fc925-8bc0-7913-86eb-a3a1f014f241">Michael Jones</entity> | Cromwellian | Parliamentarian commander holding Dublin; wins the decisive field battle at <entity repo="place" guid="019fc925-c261-7468-9fb9-2bff9c859455">Rathmines</entity>, August 1649, before <entity repo="character" guid="019fc925-8808-7dcc-b440-c3813c9d1935">Cromwell</entity> even lands |
-| <entity repo="character" guid="019fc925-8bdc-7126-a2d9-6c4e64011599">Henry Ireton</entity> | Cromwellian | <entity repo="character" guid="019fc925-8808-7dcc-b440-c3813c9d1935">Cromwell</entity>'s <entity repo="character" guid="019fa1c7-0043-79ae-8e05-22e2182431fe">son</entity>-in-law; succeeds him as Lord Deputy/Commander-in-Chief in Ireland, 1650; dies of plague at the siege of Limerick, November 1651 |
+| <entity repo="character" guid="019fc925-8bdc-7126-a2d9-6c4e64011599">Henry Ireton</entity> | Cromwellian | <entity repo="character" guid="019fc925-8808-7dcc-b440-c3813c9d1935">Cromwell</entity>'s son-in-law; succeeds him as Lord Deputy/Commander-in-Chief in Ireland, 1650; dies of plague at the siege of Limerick, November 1651 |
 | <entity repo="character" guid="019fc925-8bf5-7e48-ba3d-a018546e9a64">Charles Fleetwood</entity> | Cromwellian | Succeeds <entity repo="character" guid="019fc925-8bdc-7126-a2d9-6c4e64011599">Ireton</entity> as Commander-in-Chief, 1652; oversees the settlement/transplantation phase and the anti-tory sweeps |
 | <entity repo="character" guid="019fc925-8c08-788b-a38b-27adcff82535">Owen Roe O'Neill</entity> | Cromwellian | Confederate Ulster army's ablest commander; dies (illness, not battle) November 1649, before <entity repo="character" guid="019fc925-8808-7dcc-b440-c3813c9d1935">Cromwell</entity>'s campaign is decided |
 | <entity repo="character" guid="019fc925-8c25-79b1-9722-c07edb23a1bd">Heber MacMahon</entity> | Cromwellian | Catholic Bishop of Clogher; assumes command of the leaderless Ulster army after <entity repo="character" guid="019fc925-8c08-788b-a38b-27adcff82535">O'Neill</entity>'s death, against the advice of his own officers |
@@ -197,7 +197,7 @@ their state as their respective conflict opens — see §10 for the full entity 
 | <entity repo="character" guid="019fc925-8cea-7c58-bfe3-24b123cd6a6a">Cathal Brugha</entity> | War of Independence | Dáil Minister for Defence |
 | Éamon de <entity repo="character" guid="019fc925-8d04-78ea-8445-a7066c7eb1d5">Valera</entity> | War of Independence | Dáil Éireann President; largely in the United States on a fundraising/diplomatic mission for much of 1919–20 |
 | <entity repo="character" guid="019fc925-8d18-7c30-9204-5376c544524f">William "Rick" Joyce</entity> | War of Independence | Rank-and-file Volunteer, West Mayo Brigade Flying Column under <entity repo="character" guid="0de09e19-557e-40ff-a974-05c00665c49a">Michael</entity> Kilroy — named ("<entity repo="character" guid="019fc925-8d18-7c30-9204-5376c544524f">R. Joyce</entity>") in the Military Archives' 1920-21 roster/photograph, the same column that fought Tourmakeady, Kilmeena, and Carrowkennedy; individual actions beyond column membership not yet found in available sources — an openly stated gap, not smoothed over |
-| <entity repo="character" guid="019fc925-8d36-7b33-b806-2101afe9fd86">William Brooke Joyce</entity> | War of Independence | Teenage <entity repo="character" guid="019fa1c7-0043-79ae-8e05-22e2182431fe">son</entity> of a strongly pro-Unionist <entity repo="place" guid="019fc925-c2b2-70db-a239-a16ab7c194ad">Galway</entity> family; scouts/informs for British forces against the local IRA — the counterinsurgent-side informer case this book uses (later "<entity repo="character" guid="019fc925-8d36-7b33-b806-2101afe9fd86">Lord Haw-Haw</entity>"; his post-1921 career is explicitly out of scope) |
+| <entity repo="character" guid="019fc925-8d36-7b33-b806-2101afe9fd86">William Brooke Joyce</entity> | War of Independence | Teenage son of a strongly pro-Unionist <entity repo="place" guid="019fc925-c2b2-70db-a239-a16ab7c194ad">Galway</entity> family; scouts/informs for British forces against the local IRA — the counterinsurgent-side informer case this book uses (later "<entity repo="character" guid="019fc925-8d36-7b33-b806-2101afe9fd86">Lord Haw-Haw</entity>"; his post-1921 career is explicitly out of scope) |
 
 ---
 
@@ -407,7 +407,7 @@ body prose (see Checklist); the content plan below already reflects the widened 
     County Mayo; <entity repo="place" guid="019fc925-c299-725f-a89d-e5d8a61ec5a4">Soloheadbeg</entity>, <entity repo="place" guid="019fc925-c29f-7369-b923-ae9cc36cb5eb">Kilmichael</entity>, <entity repo="place" guid="019fc925-c2a5-7872-a4b2-dd8fe3848397">Crossbarry</entity>, <entity repo="place" guid="019fc925-c2ab-7e17-9c18-7035f5cbdf57">Dublin Castle</entity> — with coordinates
 13. (trailing) What Survives — Dunlop, O Siochru, Pakenham, <entity repo="character" guid="019fc94a-d2c7-79c6-9cf9-5dc9901c3494">O'Donnell</entity> (x2), Elliott, Comerford,
     <entity repo="character" guid="019fc93e-aa6e-7e0a-a8e9-bbef62010ef9">Davitt</entity>'s own memoir, the Bureau of Military History Witness Statements, <entity repo="character" guid="019fc925-8c7d-7d78-b704-489c65087149">Barry</entity>'s *Guerilla
-    Days in Ireland*, <entity repo="character" guid="019fc925-8c94-742c-9212-c512aad1250c">Breen</entity>'s *My Fight for Irish Freedom*, O'Malley's *On Another <entity repo="character" guid="019f9ff0-7965-74e9-a099-383dd10a6230">Man</entity>'s Wound*,
+    Days in Ireland*, <entity repo="character" guid="019fc925-8c94-742c-9212-c512aad1250c">Breen</entity>'s *My Fight for Irish Freedom*, O'Malley's *On Another Man's Wound*,
     *An t-Óglach*
 14. (trailing) The Theoretical Frame — Kalyvas's *The Logic of Violence in Civil War* and
     Townshend's *The British Campaign in Ireland 1919–1921*, the two secondary works whose
@@ -476,7 +476,7 @@ case) then REMOVED alongside <entity repo="character" guid="019fc925-8d36-7b33-b
 ### Documents / Sources (17 Notes as of 2026-08-03)
 Robert Dunlop's *Ireland Under the Commonwealth* [1]; the Bureau of Military History Witness
 Statements [2]; <entity repo="character" guid="019fc925-8c7d-7d78-b704-489c65087149">Tom Barry</entity>'s *Guerilla Days in Ireland* [3]; <entity repo="character" guid="019fc925-8c94-742c-9212-c512aad1250c">Dan Breen</entity>'s *My Fight for Irish
-Freedom* [4]; <entity repo="character" guid="019fc925-8cb7-7702-83a8-7cef922c0100">Ernie O'Malley</entity>'s *On Another <entity repo="character" guid="019f9ff0-7965-74e9-a099-383dd10a6230">Man</entity>'s Wound* [5]; *An t-Óglach* [6]; Charles
+Freedom* [4]; <entity repo="character" guid="019fc925-8cb7-7702-83a8-7cef922c0100">Ernie O'Malley</entity>'s *On Another Man's Wound* [5]; *An t-Óglach* [6]; Charles
 Townshend's *The British Campaign in Ireland 1919–1921* [7]; Stathis Kalyvas's *The Logic of
 Violence in Civil War* [8]; Micheál Ó Siochrú's *God's Executioner* [9]; the Military Archives'
 West Mayo Flying Column photograph [10]; <entity repo="character" guid="019f9ff0-75ad-7e78-bed0-99d6e73bbec3">Thomas</entity> Pakenham's *The Year of Liberty* (1798) [12];
@@ -488,7 +488,7 @@ inserted then deleted alongside his removal — the numbering has a deliberate g
 
 ### Terms
 Tory (*tóraí*), rapparee (*rapaire* — Restoration-era overlap with "tory," not a clean
-Williamite-only split), flying column, collective/<entity repo="character" guid="019f9ff0-7948-73d3-a399-ae6022b5f621">official</entity> reprisal, boycott (coined 1880, Land
+Williamite-only split), flying column, collective/official reprisal, boycott (coined 1880, Land
 War), the Act for the Settlement of Ireland (1652) and the <entity repo="place" guid="019fc925-c28d-7277-85f1-121b2f9d2b05">Connacht</entity> transplantation (background
 driver only).
 

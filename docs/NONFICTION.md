@@ -67,7 +67,7 @@ source is not evocative prose, it's an error, full stop.
   prose, not just the research doc.
 - When the grounding research doesn't know something (the Gap Table's "Open Questions"), the
   prose should render that as genuine, interesting uncertainty — not paper over it with an
-  invented specific to make the scene feel more complete. Uncertainty, written <entity repo="character" guid="019f9ff0-7938-72f1-b82e-e7009f2184d5">well</entity>, is itself
+  invented specific to make the scene feel more complete. Uncertainty, written well, is itself
   a source of narrative tension ("no one knows what happened to <entity repo="character" guid="019f9ff0-7723-746c-b941-8a1a9308ea1e">Pilate</entity> after Rome recalled him
   — and two different churches invented two opposite endings for him, centuries apart, for two
   entirely different reasons") — use it, don't hide it.
@@ -214,11 +214,11 @@ this via the book node's own `Author` field; a brand-new book node needs the sam
 ## 3b. Levity — the dry-wit register {#SS-NONFICTION-3b}
 
 **This material would be a dry report by default, and a dry report is a failed book.** The
-antidote is not jokes; it's *dryness deployed on purpose* — the register of a very <entity repo="character" guid="019f9ff0-7938-72f1-b82e-e7009f2184d5">well</entity>-read
+antidote is not jokes; it's *dryness deployed on purpose* — the register of a very well-read
 friend who finds a fact funny because it is genuinely funny, and trusts you to catch it without
 being nudged. Mark chapter 4's "Thirtyfold was already exceptional; sixty- and a hundredfold
 were the stuff of stories, not spreadsheets" is the standard: the wit is carried entirely by an
-accurate fact and a <entity repo="character" guid="019f9ff0-7938-72f1-b82e-e7009f2184d5">well</entity>-chosen noun.
+accurate fact and a well-chosen noun.
 
 **The four moves that work:**
 
@@ -326,7 +326,7 @@ Notes chapter is a sibling of Mark's own chapters, never a sibling of <entity re
 mistake most likely to recur: `prose --create-book` assigns default SortKeys that can tie with an
 already-created chapter (e.g., Notes created at the same SortKey as Chapter 2), which makes the
 exported order interleave Notes/Glossary into the middle of the book instead of appending them
-at the end. **Always explicitly set SortKey after creating Notes/Glossary**, <entity repo="character" guid="019f9ff0-7938-72f1-b82e-e7009f2184d5">well</entity> above the
+at the end. **Always explicitly set SortKey after creating Notes/Glossary**, well above the
 highest chapter (chapters run 100, 200, 300... one per chapter number; put Notes at chapter-count
 +2 rounded up, e.g. `3000` for a 28-chapter book, Glossary at `3100`):
 
@@ -395,7 +395,7 @@ appropriately unweighed.
 
 ### 5d. Research-then-write, every claim WebSearch-verified before citing
 
-Do not write a Note or a prose claim from memory alone, even for <entity repo="character" guid="019f9ff0-7938-72f1-b82e-e7009f2184d5">well</entity>-known facts — verify via
+Do not write a Note or a prose claim from memory alone, even for well-known facts — verify via
 WebSearch first (site, date range, specific figures) and only then draft the Note and the prose
 paragraph together. This caught real errors during <entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity> (e.g., confirming the Field of Blood
 citation is misattributed to <entity repo="character" guid="019fa1c7-0000-7fe8-8031-5a76f39822c2">Jeremiah</entity> rather than assuming it) and surfaced genuinely richer

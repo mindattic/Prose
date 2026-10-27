@@ -79,8 +79,8 @@ their state as the book opens (pre-1381 baseline) — see §10 for the full enti
 | <entity repo="character" guid="019fc3ba-ab59-7523-bd4b-e98bfd97ebdf">Wat Tyler</entity> | Obscure before 7 June 1381; likely served as an archer in <entity repo="character" guid="019fc3c0-cf72-7f06-9c14-d3a7f34e65bd">France</entity>; elected leader of the Kentish rebels at <entity repo="place" guid="019fc3ba-cd48-74e1-b7a6-037ad32784ca">Maidstone</entity> |
 | <entity repo="character" guid="019fc3ba-aa19-7e32-9242-f7e3fec0dcd4">John Ball</entity> | "<entity repo="vocabulary" guid="57c1e374-2cb2-43c2-8bae-247d24eab383">Hedge-priest</entity>" of Kent, excommunicated and repeatedly imprisoned since the 1360s for radical egalitarian preaching, active more than a decade before Wycliffe |
 | <entity repo="character" guid="019fc3ba-a9e1-7611-b92b-1785add2d195">Jack Straw</entity> | Named by several chroniclers as an Essex/Kentish leader; identity contested — possibly a real figure, possibly a chronicler's alias for <entity repo="character" guid="019fc3ba-ab59-7523-bd4b-e98bfd97ebdf">Tyler</entity> or <entity repo="character" guid="019fc3ba-aa6e-7730-8b14-f07da32e98af">Wrawe</entity> |
-| <entity repo="character" guid="019fc3ba-aafe-71b8-bac6-b7a7c6aa08ab">Simon Sudbury</entity> | Archbishop of <entity repo="place" guid="019fc3ba-cd27-7f6d-95d3-239edc9e5974">Canterbury</entity> and Lord Chancellor; author, in that office, of the unpopular <entity repo="character" guid="019fc3ba-a58c-7bef-b745-9e31526437a4">tax</entity> policy the rebels blame him for |
-| <entity repo="character" guid="019fc3ba-aad1-7b74-88b9-e7134608ea85">Robert Hales</entity> | Prior of the Knights Hospitaller of England and Lord Treasurer; the <entity repo="character" guid="019fc3ba-a58c-7bef-b745-9e31526437a4">tax</entity>'s chief administrator |
+| <entity repo="character" guid="019fc3ba-aafe-71b8-bac6-b7a7c6aa08ab">Simon Sudbury</entity> | Archbishop of <entity repo="place" guid="019fc3ba-cd27-7f6d-95d3-239edc9e5974">Canterbury</entity> and Lord Chancellor; author, in that office, of the unpopular tax policy the rebels blame him for |
+| <entity repo="character" guid="019fc3ba-aad1-7b74-88b9-e7134608ea85">Robert Hales</entity> | Prior of the Knights Hospitaller of England and Lord Treasurer; the tax's chief administrator |
 | <entity repo="character" guid="019fc3ba-aba5-7695-96b2-00e5f495792f">William Walworth</entity> | Lord Mayor of London |
 | <entity repo="character" guid="019fc3ba-aa6e-7730-8b14-f07da32e98af">John Wrawe</entity> | Chaplain; leads the Suffolk rising north from Essex |
 | <entity repo="character" guid="019fc3ba-a976-7ee6-89aa-9fa74b476b43">Geoffrey Litster</entity> | Norfolk dyer/weaver; leads the East Anglian rising |
@@ -116,7 +116,7 @@ Not applicable in the fiction sense. The one long-range thread this book must pa
 
 ## 8. Thematic Complement {#SS-BRIEF-1381-§8}
 
-**Theme:** A <entity repo="character" guid="019fc3ba-a58c-7bef-b745-9e31526437a4">tax</entity> collector gets run out of an Essex town, and six weeks later the Archbishop of
+**Theme:** A tax collector gets run out of an Essex town, and six weeks later the Archbishop of
 <entity repo="place" guid="019fc3ba-cd27-7f6d-95d3-239edc9e5974">Canterbury</entity> is dead on Tower Hill and a fourteen-year-old king is negotiating, on horseback, with
 the largest crowd London has ever seen — and within a month the whole thing is over and almost
 nothing the rebels won survives on paper. The book's spine is the gap between how fast it moved
@@ -125,7 +125,7 @@ and how little of it lasted in law, set against how much it actually changed und
 **Register:** Same as the rest of NONFICTION — curious, not adversarial; dry wit per `docs/NONFICTION.md`
 §3b (rate-limited, never at the crown's, the rebels', or the dead's expense); "Then and Now"
 closer per chapter (§3c); no invented specifics; genuine open questions (<entity repo="character" guid="019fc3ba-a9e1-7611-b92b-1785add2d195">Jack Straw</entity>'s identity,
-the <entity repo="character" guid="019fc3ba-a58c-7bef-b745-9e31526437a4">Bampton</entity> first-name confusion, whether <entity repo="character" guid="019fc3ba-aa19-7e32-9242-f7e3fec0dcd4">Ball</entity>'s <entity repo="place" guid="019fc3ba-cb69-7530-aacb-38e8b9742e72">Blackheath</entity> sermon text is contemporary or later
+the Bampton first-name confusion, whether <entity repo="character" guid="019fc3ba-aa19-7e32-9242-f7e3fec0dcd4">Ball</entity>'s <entity repo="place" guid="019fc3ba-cb69-7530-aacb-38e8b9742e72">Blackheath</entity> sermon text is contemporary or later
 literary reconstruction) rendered as real uncertainty, not smoothed over.
 
 **No dramatization — the one explicit departure from the Gospel/NEPH prose model.** Per the
@@ -202,7 +202,7 @@ trial — following the real event sequence, not an invented dramatic palette.
 <entity repo="character" guid="019fc3ba-aba5-7695-96b2-00e5f495792f">Walworth</entity>, <entity repo="character" guid="019fc3ba-aa80-759a-b94f-5614e3c3d5f9">Ralph Standish</entity>, <entity repo="character" guid="019fc3ba-aa6e-7730-8b14-f07da32e98af">John Wrawe</entity>, <entity repo="character" guid="019fc3ba-a976-7ee6-89aa-9fa74b476b43">Geoffrey Litster</entity>, <entity repo="character" guid="019fc3ba-a997-7a69-8b78-c162ac5ccbc6">Henry Despenser</entity>, <entity repo="character" guid="019fc3ba-ab8b-7c44-8e2a-abfc6d9653f6">William Grindecobbe</entity>,
 <entity repo="character" guid="019fc3ba-ab3f-7876-b1c5-420fbff32e05">Thomas of Woodstock</entity>, <entity repo="character" guid="019fc3ba-aae9-7edf-b36b-9bef59ed6887">Robert Tresilian</entity>, <entity repo="character" guid="019fc3ba-ab28-7df2-ac91-268688de2c61">Thomas Baker</entity> (<entity repo="place" guid="019fc3ba-cd3b-7dac-b378-7bf05f84d0c6">Fobbing</entity>), John/<entity repo="character" guid="019fc3ba-a58c-7bef-b745-9e31526437a4">Thomas Bampton</entity> (name disputed
 — flag in entity), <entity repo="character" guid="019fc3ba-aabc-7997-bbf7-ef795c1ca487">Richard Lyons</entity>, <entity repo="character" guid="019fc3ba-aa3a-7c8a-a18d-ed768e88db86">John Legge</entity>, <entity repo="character" guid="019fc3ba-ab71-727c-9a5a-8c3fd933d70b">William Appleton</entity>, <entity repo="character" guid="019fc3ba-a9c1-7cd3-a80d-69a5acdb8c54">Henry of Bolingbroke</entity> (future Henry
-IV, as a <entity repo="character" guid="03add951-92f7-4ac5-8007-384a60f76a9c">boy</entity> at <entity repo="place" guid="019fc3ba-cd94-702b-b51e-4851f7a1157b">the Tower</entity>), <entity repo="character" guid="019fc3ba-a9fd-76bc-9bd4-48c5cdb2de02">Johanna Ferrour</entity>.
+IV, as a boy at <entity repo="place" guid="019fc3ba-cd94-702b-b51e-4851f7a1157b">the Tower</entity>), <entity repo="character" guid="019fc3ba-a9fd-76bc-9bd4-48c5cdb2de02">Johanna Ferrour</entity>.
 
 ### Places
 <entity repo="place" guid="019fc3ba-cd3b-7dac-b378-7bf05f84d0c6">Fobbing</entity>, <entity repo="place" guid="019fc3ba-ccfc-7ebe-8eff-2b073bc36cb5">Brentwood</entity>, <entity repo="place" guid="019fc3ba-cd48-74e1-b7a6-037ad32784ca">Maidstone</entity>, <entity repo="place" guid="019fc3ba-cd6f-7cfc-b939-aac358c1386e">Rochester</entity>, <entity repo="place" guid="019fc3ba-cd27-7f6d-95d3-239edc9e5974">Canterbury</entity>, <entity repo="place" guid="019fc3ba-cb69-7530-aacb-38e8b9742e72">Blackheath</entity>, the <entity repo="place" guid="019fc3ba-cd7c-72ac-8f6a-0439e5682b35">Savoy Palace</entity>, <entity repo="place" guid="019fc3ba-cd94-702b-b51e-4851f7a1157b">the Tower</entity> of
