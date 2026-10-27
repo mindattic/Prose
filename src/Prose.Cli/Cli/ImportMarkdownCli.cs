@@ -113,7 +113,9 @@ public static class ImportMarkdownCli
                 var current = candidates[0];
                 beatId = current.Id;
 
-                if (current.Text?.Trim() == newText)
+                // The export strips entity tags, so compare against the stripped stored text: a tagged beat
+                // was never "unchanged", and rewriting it from tagless text dropped its hand-placed tags.
+                if (BeatMarkup.StripEntityTags(current.Text ?? "").Trim() == newText)
                 {
                     Console.WriteLine($"  Beat #{beatNo} ({id7}): unchanged.");
                     skipped++;
