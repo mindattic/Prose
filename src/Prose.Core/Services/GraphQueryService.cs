@@ -33,7 +33,7 @@ public class GraphQueryService(IDbContextFactory<ProseDbContext> dbFactory)
         {
             var ordered = new List<NodeWorkbenchService.OrderedBeat>();
             await NodeWorkbenchService.WalkAsync(db, book, ordered, [], includeDisabled: false, ct);
-            var hits = ordered.Select((ob, i) => (ob, i)).Where(x => shared.Contains(x.ob.Beat.Id)).Take(limit).ToList();
+            var hits = ordered.Select((ob, i) => (ob, i)).Where(x => shared.Contains(x.ob.Beat.Id)).DistinctBy(x => x.ob.Beat.Id).Take(limit).ToList();
             var titles = await ChapterTitlesAsync(db, hits.Select(h => h.ob.NodeId), ct);
             return hits.Select(h => new CoOccurrence(h.ob.Beat.Id, h.ob.NodeId, titles.GetValueOrDefault(h.ob.NodeId, "?"),
                 h.i + 1, Excerpt(h.ob.Beat.Text))).ToList();
@@ -44,9 +44,10 @@ public class GraphQueryService(IDbContextFactory<ProseDbContext> dbFactory)
             .Join(db.Nodes, bn => bn.NodeId, n => n.Id, (bn, n) => new { bn.BeatId, bn.SortKey, NodeId = n.Id, n.Title, NodeSort = n.SortKey })
             .Join(db.Beats, x => x.BeatId, bt => bt.Id, (x, bt) => new { x.BeatId, x.SortKey, x.NodeId, x.Title, x.NodeSort, bt.Text })
             .OrderBy(x => x.NodeSort).ThenBy(x => x.NodeId).ThenBy(x => x.SortKey)
-            .Take(limit)
             .ToListAsync(ct);
-        return rows.DistinctBy(r => r.BeatId)
+        // De-duplicate before the limit: a beat linked to two nodes used up two slots and fewer
+        // than `limit` distinct beats came back.
+        return rows.DistinctBy(r => r.BeatId).Take(limit)
             .Select((r, i) => new CoOccurrence(r.BeatId, r.NodeId, r.Title, i + 1, Excerpt(r.Text))).ToList();
     }
 
