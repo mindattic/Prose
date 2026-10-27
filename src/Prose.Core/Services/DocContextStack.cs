@@ -138,6 +138,14 @@ public sealed class DocContextStack
     {
         foreach (var e in state.Entries.Values.ToList())
         {
+            // A force-pin (score 999) lasts one action: PrepareContextAsync re-pushes the current
+            // pins right after BeginAction. Keeping it forever left every earlier POV's register
+            // doc pinned and sorted first once the narrator changed.
+            if (e.Score >= 999 && e.Tier is not ("always" or "node"))
+            {
+                state.Entries.TryRemove(e.DocId, out _);
+                continue;
+            }
             if (IsPinned(e)) continue;
             var threshold = e.Tier == "series" ? SeriesEvictAfterActions : TopicEvictAfterActions;
             if (state.ActionCounter - e.LastTouchedAction >= threshold)
