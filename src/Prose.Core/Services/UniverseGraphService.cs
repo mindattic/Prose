@@ -1099,6 +1099,13 @@ public class UniverseGraphService : IUniverseGraphService
         lock (state.RebuildLock)
         {
           state.Rebuilding = true;
+          // The builders read back through query methods (InferCorpRelationships →
+          // GetNodesByType → EnsureLoaded). On a universe never loaded in this process that
+          // re-entered Load, which cleared the half-built graph, loaded the old on-disk cache and
+          // marked it loaded; this method then saved that old content as fresh. Loading=true
+          // makes EnsureLoaded a no-op for the duration, and a finished rebuild IS loaded.
+          var wasLoading = state.Loading;
+          state.Loading = true;
           try
           {
             state.Graph.Clear();
@@ -1116,8 +1123,9 @@ public class UniverseGraphService : IUniverseGraphService
             System.Diagnostics.Debug.WriteLine($"[WorldGraph] Rebuild complete: {state.Nodes.Count} nodes, {state.Graph.EdgeCount} edges, {deduped} duplicates removed, {state.TypeIndex.Count} type indexes, {state.TerritoryIndex.Count} territory indexes");
 
             Save(state);
+            state.Loaded = true;
           }
-          finally { state.Rebuilding = false; }
+          finally { state.Rebuilding = false; state.Loading = wasLoading; }
         }
     }
 
