@@ -46,6 +46,13 @@ public class CrossBookConsistencyService
             claims = claims.Where(c => touched.Contains((c.EntityId, c.Predicate))).ToList();
         }
 
+        // Volatile (location_current...), set-valued (many values correct) and numeric-clock (age
+        // advances between books) predicates legitimately differ across books; the per-book
+        // continuity system already exempts them, so they are never cross-book conflicts either.
+        claims = claims.Where(c => !ContinuityService.IsVolatilePredicate(c.Predicate)
+                                && !ContinuityService.IsSetValuedPredicate(c.Predicate)
+                                && !ContinuityService.IsNumericClockPredicate(c.Predicate)).ToList();
+
         var conflicts = claims
             .GroupBy(c => new { c.EntityId, c.Predicate })
             .Where(g =>

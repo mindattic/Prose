@@ -609,6 +609,11 @@ public class ContinuityService
     /// otherwise — non-numeric predicates and unparseable numeric-predicate values behave
     /// exactly as before this change.
     /// </summary>
+    /// <summary>True for the book-spanning clock predicates (age, tenure_years...) that are expected to read
+    /// differently in books set years apart; cross-book comparison must skip them.</summary>
+    internal static bool IsNumericClockPredicate(string? predicate)
+        => predicate != null && NumericPredicates.Contains(Normalize(predicate));
+
     internal static bool ObjectsMatch(string predicate, string a, string b)
     {
         if (NumericPredicates.Contains(Normalize(predicate))
