@@ -906,7 +906,10 @@ public class UniverseGraphService : IUniverseGraphService
 
         foreach (var edge in allEdges)
         {
-            var key = $"{edge.Source}|{edge.Target}|{edge.RelationType}";
+            // An invalidated or ended edge is history, not a duplicate of the current one: without
+            // the validity in the key, a superseded edge listed first (or heavier) deleted the live
+            // edge between the same pair.
+            var key = $"{edge.Source}|{edge.Target}|{edge.RelationType}|{(edge.IsCurrent ? "current" : $"{edge.InvalidatedAt:O}|{edge.ValidFrom}|{edge.ValidUntil}")}";
             if (seen.TryGetValue(key, out var existing))
             {
                 // Keep the one with higher weight
