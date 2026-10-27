@@ -32,7 +32,10 @@ public static partial class DraftPostProcessor
     // What commentary after a rule opens with: a bracket, a label, a count, a sign-off. Not a bare
     // "*" or "I kept …": a final scene that opens in italics ("*Three days later.*") or in first
     // person ("I kept the gun.") is prose and was being deleted.
-    [GeneratedRegex(@"^(\(|\[|\*+\s*(note|word|approx|author|end|summary)\b|note\b|notes\b|word count|words?:|approx|author|end of|beat\b|summary|this beat|i (kept|used|chose|wrote) (this|the) (beat|brief|scene|draft)\b|the beat\b)", RegexOptions.IgnoreCase)]
+    // Bare words ("Notes", "Summary", "Author", "End of", "Beat", "The beat") also open real prose
+    // ("Beat cops lined the street.", "The beat of her boots…", "End of the line, he thought."), so
+    // each needs a label marker or a meta verb after it before it counts as commentary.
+    [GeneratedRegex(@"^(\(|\[|\*+\s*(note|word|approx|author|end|summary)\b|notes?\s*[:—–-]|word count|words?\s*:|approx(?:\.|imately)?\s*[\d~]|author'?s?\s+notes?\b|end of (?:the )?(?:beat|scene|draft|chapter|brief)\b|beat\s*[\d#:—–-]|summary\s*[:—–-]|(?:this|the) beat (?:is|was|has|runs|ends|stays|keeps|lands|follows|opens|closes|covers|delivers|uses|stays)\b|i (kept|used|chose|wrote) (this|the) (beat|brief|scene|draft)\b)", RegexOptions.IgnoreCase)]
     private static partial Regex MetaOpener();
 
     // Trailing bracketed/parenthesised note on its own final line.
