@@ -169,7 +169,11 @@ public static class AddAliasCli
             return 0;
         }
 
-        var existingCount = (await QueryAllForOwnerAsync(db, clr, ownerProperty, owner.Id)).Count;
+        // Next free position = max + 1, not the row count: a deleted middle row leaves a gap, and
+        // count would then tie with an existing row's position.
+        var posProp = clr.GetProperty("Position")!;
+        var existingRows = await QueryAllForOwnerAsync(db, clr, ownerProperty, owner.Id);
+        var existingCount = existingRows.Count == 0 ? 0 : existingRows.Max(r => Convert.ToInt32(posProp.GetValue(r))) + 1;
         var newRow = Activator.CreateInstance(clr)!;
         ownerProp.Prop.SetValue(newRow, owner.Id);
         clr.GetProperty("Position")!.SetValue(newRow, existingCount);
