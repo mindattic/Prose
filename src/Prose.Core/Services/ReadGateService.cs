@@ -186,7 +186,9 @@ public sealed class ReadGateService(IDbContextFactory<ProseDbContext> dbFactory,
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var marked = 0;
         var now = DateTime.UtcNow;
-        foreach (var (beatId, hash) in delivered)
+        // A beat filed under two nodes is delivered twice; one receipt per beat (BeatId is the key),
+        // or the second pass adds a duplicate row and the whole save throws.
+        foreach (var (beatId, hash) in delivered.DistinctBy(d => d.BeatId))
         {
             if (!index.TryGetValue(beatId, out var i)) continue;
             if (!string.Equals(HashOf(order[i].Beat), hash, StringComparison.Ordinal)) continue;
