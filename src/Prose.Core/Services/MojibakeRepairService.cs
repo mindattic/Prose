@@ -420,22 +420,28 @@ public class MojibakeRepairService
                 i++;
             }
 
-            // Decode the longest prefix of the run that is strict UTF-8 and actually shrinks.
-            // A run often ends in a character that is legitimately cp1252-range — an ellipsis
-            // or an em dash that was already correct — and the old whole-run decode threw on
-            // it, leaving the entire run (mojibake included) untouched.
+            // Walk the run: at every possible lead byte decode the longest strict-UTF-8 prefix that
+            // actually shrinks. A run often begins with a character that is legitimately cp1252-range
+            // (a correct "é", an em dash) and ends in one; decoding only from the run start left every
+            // mojibake sequence that followed such a character untouched.
             var original = s.Substring(runStart, i - runStart);
             var bytes    = run.ToArray();
-            var decodedPrefix = DecodeLongestValidPrefix(bytes, out var consumedChars);
-            if (decodedPrefix != null && consumedChars > 0 && decodedPrefix.Length < consumedChars)
+            int p = 0;
+            while (p < bytes.Length)
             {
-                sb.Append(decodedPrefix);
-                sb.Append(original, consumedChars, original.Length - consumedChars);
-                changed = true;
-            }
-            else
-            {
-                sb.Append(original);
+                if (bytes[p] >= 0xC2 && bytes[p] != 0xD7)
+                {
+                    var decodedPrefix = DecodeLongestValidPrefix(bytes, p, out var consumedBytes);
+                    if (decodedPrefix != null && consumedBytes > 0 && decodedPrefix.Length < consumedBytes)
+                    {
+                        sb.Append(decodedPrefix);
+                        p += consumedBytes;
+                        changed = true;
+                        continue;
+                    }
+                }
+                sb.Append(original[p]);
+                p++;
             }
         }
 
@@ -443,25 +449,29 @@ public class MojibakeRepairService
     }
 
     /// <summary>
-    /// Strict-UTF-8-decode the longest prefix of <paramref name="bytes"/> that decodes cleanly
-    /// AND ends on a complete sequence, trying the full run first and trimming one byte at a time.
-    /// One char per byte in this run (each char came from one cp1252 byte), so the byte count
-    /// consumed equals the char count consumed.
+    /// Strict-UTF-8-decode the longest prefix of <paramref name="bytes"/> (from <paramref name="start"/>)
+    /// that decodes cleanly AND ends on a complete sequence. One char per byte in this run (each char
+    /// came from one cp1252 byte), so the byte count consumed equals the char count consumed.
+    /// Scans sequence by sequence, so the cost is linear in the bytes consumed.
     /// </summary>
-    private static string? DecodeLongestValidPrefix(byte[] bytes, out int consumed)
+    private static string? DecodeLongestValidPrefix(byte[] bytes, int start, out int consumed)
     {
-        for (var len = bytes.Length; len >= 2; len--)
+        var pos = start;
+        while (pos < bytes.Length)
         {
-            try
+            var b = bytes[pos];
+            int n = b < 0x80 ? 1 : b >= 0xC2 && b <= 0xDF ? 2 : b >= 0xE0 && b <= 0xEF ? 3 : b >= 0xF0 && b <= 0xF4 ? 4 : 0;
+            if (n == 0 || pos + n > bytes.Length) break;
+            if (n > 1)
             {
-                var decoded = Utf8.GetString(bytes, 0, len);
-                consumed = len;
-                return decoded;
+                try { Utf8.GetString(bytes, pos, n); }
+                catch { break; }
             }
-            catch { /* trim and retry */ }
+            pos += n;
         }
-        consumed = 0;
-        return null;
+        consumed = pos - start;
+        if (consumed < 2) { consumed = 0; return null; }
+        return Utf8.GetString(bytes, start, consumed);
     }
 
     /// <summary>Returns the CP1252 byte for <paramref name="ch"/>, or <c>null</c> if the
