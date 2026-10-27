@@ -1661,6 +1661,8 @@ public class ContinuityService
     /// </summary>
     public int RelabelEntityName(string entityId, string newName, string note = "")
     {
+        // Claims store a GUID id in its "N" form; callers holding a Guid pass "D" — match both.
+        var forms = EntityIdForms(entityId);
         using var db = dbFactory.CreateDbContext();
         // Claims store the "N" form while callers hold a Guid ("D" form): an exact match relabelled 0 rows.
         var forms = EntityIdForms(entityId);
