@@ -1275,6 +1275,8 @@ public class ProseWriterRouter(
         if (string.IsNullOrEmpty(slug)) return "";
 
         var fp = $"node:{slug}";
+        var fpSlash = fp + "/";
+        var fpHash  = fp + "#";
         var catKey    = category.ToString();
         var statusKey = FindingStatus.New.ToString();
 
@@ -1285,7 +1287,9 @@ public class ProseWriterRouter(
         // findings existed (2026-08-22 fix). Safe for the categories that DO use the bare path
         // (EMOTIONAL-DEPTH, READABILITY, STORYSCOPE) since StartsWith is a strict superset of ==.
         var findings = await db.Findings.AsNoTracking()
-            .Where(f => f.FilePath.StartsWith(fp)
+            // Bare prefix would also match a sibling slug ("node:pixel" ⊂ "node:pixel-origins");
+            // sub-paths are separated by "/" or "#".
+            .Where(f => (f.FilePath == fp || f.FilePath.StartsWith(fpSlash) || f.FilePath.StartsWith(fpHash))
                         && f.Category == catKey
                         && f.Status == statusKey
                         && f.Summary.StartsWith(summaryPrefix))
