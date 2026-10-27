@@ -345,7 +345,7 @@ sourcing category (biblical / apocryphal / classical / Miltonic-invention) once
       questions flagged)
 - [x] Entity seeding complete — 21 characters + 5 places seeded via `prose --add-character --dir` /
       `prose --add-place --dir`, universe `gspl` (seed JSON in `tools/seeds/tfah/`)
-- [x] BookNode `TFAH` created in DB (slug `the-first-anti-hero-019fc13f`, universe `gspl`,
+- [x] BookNode `TFAH` created in DB (slug `the-first-anti-hero`, universe `gspl`,
       `Author` = "Pulpit Press" per GSPL §3a, `NodeCode` = `TFAH` set at creation)
 - [x] ChapterNodes created (12 numbered chapters, SortKey 100-1200, each seeded with its <entity repo="character" guid="019fc13e-bb8e-705d-b9e7-94f4caa1ebf0">Milton</entity>
       book's content inventory) + trailing Notes (1300) + Glossary (1400), per `docs/GSPL.md` §5a

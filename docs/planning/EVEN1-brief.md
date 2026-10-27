@@ -233,7 +233,7 @@ prose drafting, per standard practice.
 - [x] World-Revelation Sequencing: this book does not spoil anything — <entity repo="place" guid="01a03d2c-a964-7988-8c33-59385120531a">Providence</entity>/the ending
       remain explicitly unreached, matching the built slice
 - [x] BookNode `EVEN1` created in DB (universe `eve`, slug
-      `experiment-eve-night-one-game-script-01a03fa5`)
+      `experiment-eve-night-one-game-script`)
 - [x] ChapterNodes created (7 chapters per §9's clock-driven spine)
 - [x] Node bible authored (`set_book_bible`) — arc/mission, chapter spine, Locks
 - [x] Structural blueprint committed via `--set-structural-blueprint` (beat-granularity, 30

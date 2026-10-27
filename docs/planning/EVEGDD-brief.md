@@ -265,7 +265,7 @@ link a scene to "the battle system" the way it might link to a character or plac
 - [x] `docs/series/EVE.md` — new coordination board created (mirrors `docs/series/GLMZ.md`'s
       shape; EVE has no prior roster to update in place)
 - [x] BookNode `EVEGDD` created in DB (universe `eve`, slug
-      `experiment-eve-game-design-document-01a03d5e`)
+      `experiment-eve-game-design-document`)
 - [x] ChapterNodes created (11 chapters per §9, SortKey 100–1100)
 - [x] Node bible authored (`set_book_bible`) — arc/mission per §2, chapter spine per §9, the
       "Design Law" callout device locked (§3 of the bible)
