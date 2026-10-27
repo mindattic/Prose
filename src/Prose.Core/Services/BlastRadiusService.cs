@@ -57,7 +57,7 @@ public class BlastRadiusService(IDbContextFactory<ProseDbContext> dbFactory)
         // Positional {0} (not a provider-specific SqlParameter) so this stays provider-agnostic —
         // SQL Server in production, SQLite under TestDbFactory.
         var shared = await db.Database.SqlQueryRaw<Guid>(
-            "SELECT DISTINCT bep2.BeatId FROM BeatEntityPresence bep1 " +
+            "SELECT DISTINCT bep2.BeatId AS [Value] FROM BeatEntityPresence bep1 " +
             "JOIN BeatEntityPresence bep2 ON bep2.EntityId = bep1.EntityId AND bep2.BeatId <> bep1.BeatId " +
             "WHERE bep1.BeatId = {0}",
             beatId).ToListAsync(ct);

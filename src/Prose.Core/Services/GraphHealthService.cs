@@ -115,7 +115,7 @@ public class GraphHealthService
         using var db = dbFactory!.CreateDbContext();
 
         var referencedIds = db.Database
-            .SqlQueryRaw<Guid>("SELECT DISTINCT EntityId FROM BeatEntityPresence")
+            .SqlQueryRaw<Guid>("SELECT DISTINCT EntityId AS [Value] FROM BeatEntityPresence")
             .ToHashSet();
 
         var entities = db.Entities
