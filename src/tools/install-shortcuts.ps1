@@ -6,12 +6,14 @@
 .DESCRIPTION
     One icon per app, each pointing at the generated `deploy.bat` in that app's deploy folder
     (C:\Apps\MindAttic\Prose\deploy.bat with the app as its argument; C:\Apps\<App>\deploy.bat for
-    the other repos). deploy.bat runs the repo's deploy.ps1 first - which republishes only when
-    source changed - and then launches the app, so you can never open a stale exe by accident.
-    When the repo is missing or the publish fails, deploy.bat still launches the existing build.
+    the other repos). deploy.bat opens a menu first: 1) Deploy & Run republishes from source (the
+    repo's deploy.ps1 -Force) and then launches the app; 2) Run launches the deployed build as it
+    is. When the repo is missing or the publish fails, deploy.bat still launches the existing build.
 
-    deploy.bat is written by each repo's deploy.ps1, so run that once (deploy.ps1 -Force) before
-    this script on a fresh machine; entries whose deploy.bat does not exist yet are skipped.
+    deploy.bat is written by each repo's deploy.ps1. This script regenerates the Prose one first
+    with `deploy.ps1 -LauncherOnly` (writes the launcher only - nothing is built or stopped), so
+    the shortcuts always open the current launcher. On a fresh machine run the other repos'
+    deploy.ps1 once before this script; entries whose deploy.bat does not exist yet are skipped.
 
     Idempotent - safe to re-run. It rewrites the target/icon of a shortcut it already owns and
     reports what it changed. Entries whose .bat or icon is missing are skipped with a reason
@@ -38,26 +40,36 @@ Set-StrictMode -Version Latest
 
 $mindAttic = 'D:\Projects\MindAttic'
 $prose     = 'C:\Apps\MindAttic\Prose\deploy.bat'
+$proseDeploy = Join-Path $mindAttic 'Prose\deploy.ps1'
 
 # Name is the .lnk's filename AND its label, so changing one renames the icon on the desktop.
-# Args is passed to deploy.bat: the Prose deploy.bat takes the app; no argument deploys all of
-# them and opens the Launcher.
+# Args is passed to deploy.bat: the Prose deploy.bat takes the app; no argument offers to deploy
+# all of them, then opens the Launcher.
 $shortcuts = @(
     @{ Name = 'Prose Writer'; Bat = $prose;                          Args = 'Writer'; Icon = "$mindAttic\Prose\assets\writer.ico"
-       Desc = 'Republish (if changed) and open the Prose book editor' }
+       Desc = 'Deploy & Run, or Run, the Prose book editor' }
     @{ Name = 'Prose Hub';    Bat = $prose;                          Args = 'Hub';    Icon = "$mindAttic\Prose\assets\hub.ico"
-       Desc = 'Republish (if changed) and start the Prose Hub (serves /writer and /repo)' }
+       Desc = 'Deploy & Run, or Run, the Prose Hub (serves /writer and /repo)' }
     @{ Name = 'Deploy Prose'; Bat = $prose;                          Args = '';       Icon = "$mindAttic\Prose\assets\M.ico"
-       Desc = 'Republish every changed Prose app and open the launcher' }
+       Desc = 'Deploy & Run every Prose app, or Run the launcher' }
     @{ Name = 'KdpPublish';   Bat = 'C:\Apps\KdpPublish\deploy.bat'; Args = '';       Icon = "$mindAttic\Prose\assets\kdp.ico"
-       Desc = 'Republish (if changed) and open KdpPublish' }
+       Desc = 'Deploy & Run, or Run, KdpPublish' }
     @{ Name = 'IdiotProof';   Bat = 'C:\Apps\IdiotProof\deploy.bat'; Args = '';       Icon = "$mindAttic\IdiotProof\idiotproof.ico"
-       Desc = 'Republish (if changed) and start IdiotProof (Monitor + Blazor)' }
+       Desc = 'Deploy & Run, or Run, IdiotProof (Monitor + Blazor)' }
 )
 
 if (-not (Test-Path $Desktop)) {
     Write-Host "  Desktop not found at $Desktop" -ForegroundColor Red
     exit 1
+}
+
+# Regenerate the Prose launcher so the shortcuts open the current one. -LauncherOnly writes the
+# .bat and exits: no build, no process stopped.
+if ((Test-Path $proseDeploy) -and $PSCmdlet.ShouldProcess($prose, 'Regenerate launcher')) {
+    & powershell -NoProfile -ExecutionPolicy Bypass -File $proseDeploy -LauncherOnly | Out-Host
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host "  Could not regenerate $prose (exit $LASTEXITCODE) - keeping the existing one." -ForegroundColor DarkYellow
+    }
 }
 
 Write-Host ''

@@ -73,12 +73,13 @@ powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Writer -Start Writer
 powershell -ExecutionPolicy Bypass -File src\tools\launch-app.ps1 -App writer   # writer | hub | kdp | launcher | wiki
 ```
 
-- The repo-root `deploy.ps1` republishes an app only when its exe or `deploy.bat` is missing or its
+- The repo-root `deploy.ps1` republishes an app only when its exe is missing or its
   source (project plus referenced projects) is newer than the deployed exe (`-Force`: clean rebuild
   regardless). It stops only the apps it replaces, publishes framework-dependent single-file
   through `%LOCALAPPDATA%\Prose\build-artifacts` (so it never fights a running `Prose.Mcp` for
-  `bin\`), and writes the self-redeploying `C:\Apps\MindAttic\Prose\deploy.bat`
-  (`deploy.bat Hub` / `Writer` / `Launcher`; no argument = all, then open the Launcher).
+  `bin\`), and on every run (or alone, with `-LauncherOnly`) writes `C:\Apps\MindAttic\Prose\deploy.bat`
+  (`deploy.bat Hub` / `Writer` / `Launcher`; no argument = all, then open the Launcher), which
+  opens a menu: 1) Deploy & Run (`deploy.ps1 -Force`, then start) or 2) Run (start the deployed exe).
 - `src/tools/install-shortcuts.ps1` points the desktop icons at that `deploy.bat` (and at
   `C:\Apps\KdpPublish\deploy.bat`, `C:\Apps\IdiotProof\deploy.bat` for the other repos).
 - `src/Prose.Hub/tools/deploy.ps1` is a legacy forwarder to `deploy.ps1 -Apps Hub`.

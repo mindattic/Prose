@@ -9,22 +9,31 @@
 
         C:\Apps\MindAttic\Prose\
             deploy.bat            the desktop shortcuts point here: `deploy.bat Hub`,
-                                  `deploy.bat Writer`, `deploy.bat Launcher`, or no argument to
-                                  deploy everything and open the Launcher. Redeploys from source
-                                  (via this script), then starts the app.
+                                  `deploy.bat Writer`, `deploy.bat Launcher`, or no argument for
+                                  every app and the Launcher. It opens a menu first:
+                                    1) Deploy & Run - runs this script with -Force (a clean
+                                       republish even when nothing changed), then starts the app.
+                                    2) Run          - starts the deployed exe without calling this
+                                       script at all (deploys first if it is not deployed yet).
             Launcher.exe          picks an app; starts the Hub if it isn't up
             Writer.exe            the book editor (a WebView2 window onto the Hub)
             Hub.exe               the resident server - owns wwwroot\ in this folder
             wwwroot\              Hub's static assets, _content\ and _framework\
 
     Rebuild only when changed: without -Force an app is republished only when its deployed exe
-    is missing, deploy.bat is missing, or a source file of that app (its project directory plus
-    every project it references, transitively, plus linked files and the repo's Directory.*
-    files) is newer than the deployed exe. Otherwise the stop + publish is skipped, so the call
-    deploy.bat makes on every launch is a fast no-op.
+    is missing or a source file of that app (its project directory plus every project it
+    references, transitively, plus linked files and the repo's Directory.* files) is newer than
+    the deployed exe. Otherwise the stop + publish is skipped.
 
     For an app that does need publishing: stop it (matched by path), wait for the file locks to
-    actually release, publish framework-dependent single-file, then (re)write deploy.bat.
+    actually release, then publish framework-dependent single-file.
+
+    deploy.bat is (re)written on EVERY run, before anything is built or stopped, so an
+    already-deployed install picks up a new launcher without a republish. -LauncherOnly does
+    just that and exits.
+
+    This script never prompts: agents and /deploy run it non-interactively. The menu lives only
+    in the generated deploy.bat.
 
     KdpPublish is NOT built here. It was decoupled into its own repo 2026-10-04
     (github.com/mindattic/KdpPublish) with its own deploy pipeline, publishing standalone to
@@ -37,15 +46,20 @@
 .PARAMETER Force
     Republish unconditionally, with a clean rebuild: the apps' build output (bin/obj under the
     artifacts path below, for the app's project and everything it references) is deleted first.
+    Only build caches are removed, never user data. deploy.bat's "1) Deploy & Run" passes it.
+
+.PARAMETER LauncherOnly
+    (Re)write C:\Apps\MindAttic\Prose\deploy.bat and exit, without building, stopping or starting
+    anything. This is how the desktop-shortcut step (src\tools\install-shortcuts.ps1)
+    regenerates the launcher safely.
 
 .PARAMETER Launch
     Start Launcher.exe when the deploy finishes. Equivalent to -Start Launcher, kept because
     src\Prose.Hub\tools\deploy.ps1 forwards it as a bare switch.
 
 .PARAMETER Start
-    Start THIS app when the deploy finishes. This is what deploy.bat uses: one desktop icon per
-    app, each of which republishes from source (when changed) and then opens that app, so you can
-    never be looking at a stale build.
+    Start THIS app when the deploy finishes. This is what deploy.bat's "1) Deploy & Run" uses:
+    one desktop icon per app, each of which can republish from source and then open that app.
 
     Only the apps in -Apps are stopped and replaced. Starting Writer or the Launcher never touches
     the Hub: they connect to the running one, or start the deployed Hub.exe when none is up.
@@ -59,6 +73,7 @@
     powershell -ExecutionPolicy Bypass -File deploy.ps1 -Force
     powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Hub -Start Hub
     powershell -ExecutionPolicy Bypass -File deploy.ps1 -Apps Writer -Start Writer
+    powershell -ExecutionPolicy Bypass -File deploy.ps1 -LauncherOnly
 #>
 param(
     # Deliberately NOT [ValidateSet]: `powershell -File script.ps1 -Apps Hub,Writer` hands this
@@ -69,7 +84,8 @@ param(
     [string[]]$Apps = @('Hub', 'Writer', 'Launcher'),
     [switch]$Force,
     [switch]$Launch,
-    [string]$Start = ''
+    [string]$Start = '',
+    [switch]$LauncherOnly
 )
 
 $ErrorActionPreference = 'Stop'
@@ -189,7 +205,6 @@ function Get-PublishReason {
     $exe = Join-Path $catalog[$Name].Out $catalog[$Name].Exe
     if ($Force)                         { return '-Force' }
     if (-not (Test-Path $exe))          { return "$($catalog[$Name].Exe) is not deployed" }
-    if (-not (Test-Path $deployBatPath)) { return 'deploy.bat is missing' }
 
     $exeTime = (Get-Item $exe).LastWriteTimeUtc
     $dirs    = @($Sources.Projects | ForEach-Object { Split-Path $_ })
@@ -239,9 +254,101 @@ function Clear-BuildOutput {
     }
 }
 
+New-Item -ItemType Directory -Force -Path $root | Out-Null
+
+# ── deploy.bat ────────────────────────────────────────────────────────────────
+# The single entry point in the deploy folder; every desktop shortcut points at it with the app as
+# its argument. It opens a menu first: 1) Deploy & Run calls this script with -Force (so it really
+# republishes, even when nothing changed) and then starts the app; 2) Run starts the deployed exe
+# without touching this script. When the repo is gone or the publish failed it still launches
+# whatever is already in the folder, so a missing source tree leaves a working icon. Written on
+# every run, before any build (only when its content differs), so it cannot drift from this script.
+$exeLines = $known | ForEach-Object { "if /i `"%APP%`"==`"$_`" set `"EXE=$($catalog[$_].Exe)`"" }
+$deployBat = @(
+    '@echo off',
+    "rem Generated by $repo\deploy.ps1 - edits here are overwritten.",
+    'rem Usage: deploy.bat [Hub | Writer | Launcher]',
+    'rem   Opens a menu: 1) Deploy & Run republishes (clean, -Force) that app - or every app when',
+    'rem   no argument is given - then starts it; 2) Run starts the deployed build as it is.',
+    'rem   No argument starts the Launcher (the app picker).',
+    'setlocal',
+    "set `"DEPLOY_PS1=$repo\deploy.ps1`"",
+    'set "APP=%~1"',
+    'set "APPS=%~1"',
+    'if "%APP%"=="" set "APP=Launcher"',
+    "if `"%APPS%`"==`"`" set `"APPS=$($known -join ',')`"",
+    'set "EXE="'
+) + $exeLines + @(
+    'if not defined EXE (',
+    "    echo Unknown app `"%~1`". Valid: $($known -join ', '), or no argument for all of them.",
+    '    pause',
+    '    exit /b 1',
+    ')',
+    'title Prose %APP%',
+    'echo.',
+    'echo   Prose %APP%',
+    'echo     1^) Deploy ^& Run',
+    'echo     2^) Run',
+    'echo.',
+    'choice /c 12 /n /m "  Choose 1 or 2: "',
+    'if errorlevel 2 goto run',
+    ':deploy',
+    'if not exist "%DEPLOY_PS1%" goto norepo',
+    'powershell -NoProfile -ExecutionPolicy Bypass -File "%DEPLOY_PS1%" -Apps %APPS% -Start %APP% -Force',
+    'if not errorlevel 1 exit /b 0',
+    'rem Exit 2: deployed and started, but the Hub never answered /api/health. Starting another',
+    'rem would only fight the first one for port 5900.',
+    'if errorlevel 2 goto startfailed',
+    'echo Redeploy failed - launching whatever is already in this folder instead.',
+    'goto launch',
+    ':norepo',
+    'echo Source repo not found at "%DEPLOY_PS1%" - launching existing build without redeploying.',
+    'goto launch',
+    ':run',
+    'if exist "%~dp0%EXE%" goto launch',
+    'echo %EXE% is not deployed yet in %~dp0 - deploying it first.',
+    'if exist "%DEPLOY_PS1%" goto deploy',
+    ':launch',
+    'if not exist "%~dp0%EXE%" (',
+    '    echo %EXE% is not in %~dp0 - nothing to launch.',
+    '    pause',
+    '    exit /b 1',
+    ')',
+    'rem The Hub binds 127.0.0.1 only and is never the Azure deployment. Without an explicit',
+    'rem environment it defaults to Production, which makes AddMindAtticAuthentication fail closed.',
+    'set "ASPNETCORE_ENVIRONMENT=Development"',
+    'start "" "%~dp0%EXE%"',
+    'exit /b 0',
+    ':startfailed',
+    'echo.',
+    'echo   DEPLOY FAILED -- %APP% did not come up. See the output above.',
+    'pause',
+    'exit /b 1'
+)
+$batText = ($deployBat -join "`r`n") + "`r`n"
+$current = if (Test-Path $deployBatPath) { [System.IO.File]::ReadAllText($deployBatPath) } else { '' }
+if ($current -ne $batText) {
+    [System.IO.File]::WriteAllText($deployBatPath, $batText, [System.Text.Encoding]::ASCII)
+    Write-Host ''
+    Write-Host "  Wrote $deployBatPath" -ForegroundColor Gray
+}
+
+# The per-app launchers deploy.bat replaced. Nothing calls them any more.
+foreach ($old in 'launch.bat', 'Hub.bat', 'Writer.bat') {
+    $p = Join-Path $root $old
+    if (Test-Path $p) {
+        Remove-Item $p -Force
+        Write-Host "  Removed legacy $p" -ForegroundColor DarkGray
+    }
+}
+
+if ($LauncherOnly) {
+    Write-Host "  Launcher is current at $deployBatPath (-LauncherOnly: nothing built or stopped)." -ForegroundColor Green
+    exit 0
+}
+
 Write-Host ''
 Write-Host "  Deploying to $root$(if ($Force) { ' (-Force: clean rebuild)' })" -ForegroundColor Cyan
-New-Item -ItemType Directory -Force -Path $root | Out-Null
 
 $cleaned = @{}
 $published = @()
@@ -298,77 +405,6 @@ foreach ($name in $Apps) {
 
     $published += $name
     Write-Host "    -> $exe ($([math]::Round(((Get-Item $exe).Length / 1MB), 1)) MB)" -ForegroundColor Gray
-}
-
-# ── deploy.bat ────────────────────────────────────────────────────────────────
-# The single entry point in the deploy folder; every desktop shortcut points at it with the app as
-# its argument. It redeploys FIRST (this script, which is a fast no-op when nothing changed), then
-# starts, so you can never be looking at a stale exe. When the repo is gone or the publish failed
-# it still launches whatever is already in the folder, so a missing source tree leaves a working
-# icon. Rewritten every run (only when its content differs) so it cannot drift from this script.
-$exeLines = $known | ForEach-Object { "if /i `"%APP%`"==`"$_`" set `"EXE=$($catalog[$_].Exe)`"" }
-$deployBat = @(
-    '@echo off',
-    "rem Generated by $repo\deploy.ps1 - edits here are overwritten.",
-    'rem Usage: deploy.bat [Hub | Writer | Launcher]',
-    'rem   With an app: redeploy that app if its source changed, then start it.',
-    'rem   No argument: redeploy every Prose app that changed, then open the Launcher (the app picker).',
-    'setlocal',
-    "set `"DEPLOY_PS1=$repo\deploy.ps1`"",
-    'set "APP=%~1"',
-    'set "APPS=%~1"',
-    'if "%APP%"=="" set "APP=Launcher"',
-    "if `"%APPS%`"==`"`" set `"APPS=$($known -join ',')`"",
-    'set "EXE="'
-) + $exeLines + @(
-    'if not defined EXE (',
-    "    echo Unknown app `"%~1`". Valid: $($known -join ', '), or no argument for all of them.",
-    '    pause',
-    '    exit /b 1',
-    ')',
-    'title Prose %APP%',
-    'if not exist "%DEPLOY_PS1%" goto norepo',
-    'powershell -NoProfile -ExecutionPolicy Bypass -File "%DEPLOY_PS1%" -Apps %APPS% -Start %APP%',
-    'if not errorlevel 1 exit /b 0',
-    'rem Exit 2: deployed and started, but the Hub never answered /api/health. Starting another',
-    'rem would only fight the first one for port 5900.',
-    'if errorlevel 2 goto startfailed',
-    'echo Redeploy failed - launching whatever is already in this folder instead.',
-    'goto fallback',
-    ':norepo',
-    'echo Source repo not found at "%DEPLOY_PS1%" - launching existing build without redeploying.',
-    ':fallback',
-    'if not exist "%~dp0%EXE%" (',
-    '    echo %EXE% is not in %~dp0 - nothing to launch.',
-    '    pause',
-    '    exit /b 1',
-    ')',
-    'rem The Hub binds 127.0.0.1 only and is never the Azure deployment. Without an explicit',
-    'rem environment it defaults to Production, which makes AddMindAtticAuthentication fail closed.',
-    'set "ASPNETCORE_ENVIRONMENT=Development"',
-    'start "" "%~dp0%EXE%"',
-    'exit /b 0',
-    ':startfailed',
-    'echo.',
-    'echo   DEPLOY FAILED -- %APP% did not come up. See the output above.',
-    'pause',
-    'exit /b 1'
-)
-$batText = ($deployBat -join "`r`n") + "`r`n"
-$current = if (Test-Path $deployBatPath) { [System.IO.File]::ReadAllText($deployBatPath) } else { '' }
-if ($current -ne $batText) {
-    [System.IO.File]::WriteAllText($deployBatPath, $batText, [System.Text.Encoding]::ASCII)
-    Write-Host ''
-    Write-Host "  Wrote $deployBatPath" -ForegroundColor Gray
-}
-
-# The per-app launchers deploy.bat replaced. Nothing calls them any more.
-foreach ($old in 'launch.bat', 'Hub.bat', 'Writer.bat') {
-    $p = Join-Path $root $old
-    if (Test-Path $p) {
-        Remove-Item $p -Force
-        Write-Host "  Removed legacy $p" -ForegroundColor DarkGray
-    }
 }
 
 Write-Host ''
