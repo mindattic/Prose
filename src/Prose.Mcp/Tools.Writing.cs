@@ -57,15 +57,21 @@ public class WritingTools
         string status = "drafting",
         string id = "")
     {
-        var book = string.IsNullOrEmpty(id) ? new Book() : (books.LoadBook(id) ?? new Book { Id = id });
+        var existing = string.IsNullOrEmpty(id) ? null : books.LoadBook(id);
+        var book = existing ?? (string.IsNullOrEmpty(id) ? new Book() : new Book { Id = id });
+        // Updating a known book: an omitted (empty) optional argument leaves the stored value alone.
+        // The defaults used to overwrite it, so renaming a book wiped its arc target, tagline,
+        // protagonists and reset its status to "drafting".
+        var update = existing != null;
         book.Title      = title;
         book.Premise    = premise ?? "";
-        book.ArcTarget  = arcTarget ?? "";
-        book.Tagline    = string.IsNullOrEmpty(tagline) ? null : tagline;
-        book.Status     = string.IsNullOrEmpty(status) ? "drafting" : status;
-        book.Protagonists = string.IsNullOrWhiteSpace(protagonists)
-            ? []
-            : protagonists.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).ToList();
+        if (!update || !string.IsNullOrEmpty(arcTarget)) book.ArcTarget = arcTarget ?? "";
+        if (!update || !string.IsNullOrEmpty(tagline))   book.Tagline   = string.IsNullOrEmpty(tagline) ? null : tagline;
+        if (!update || !string.IsNullOrEmpty(status))    book.Status    = string.IsNullOrEmpty(status) ? "drafting" : status;
+        if (!update || !string.IsNullOrWhiteSpace(protagonists))
+            book.Protagonists = string.IsNullOrWhiteSpace(protagonists)
+                ? []
+                : protagonists.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).ToList();
 
         books.SaveBook(book);
         return JsonSerializer.Serialize(new { ok = true, id = book.Id, title = book.Title }, CanonTools.JsonOpts);
