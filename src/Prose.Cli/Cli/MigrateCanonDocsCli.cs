@@ -178,6 +178,8 @@ public static class MigrateCanonDocsCli
     // Pre-heading content becomes section "preamble" / sort 0.
     private static List<(string Key, string? Title, string Content)> ParseMarkdownSections(string markdown)
     {
+        // A CRLF file: `$` stops before \n but not before \r, so the {#anchor} group never matched.
+        markdown = markdown.Replace("\r\n", "\n");
         var results = new List<(string, string?, string)>();
         var headingPattern = new Regex(@"^(#{1,3})\s+(.+?)(?:\s+\{#([^\}]+)\})?$", RegexOptions.Multiline);
         var matches = headingPattern.Matches(markdown);
