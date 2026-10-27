@@ -118,17 +118,13 @@ public class EntityHarvestService(
                 continue;
             }
 
-            var entity = new Entity
-            {
-                UniverseId = universeId,
-                EntityType = string.IsNullOrWhiteSpace(c.EntityType) ? "vocabulary" : c.EntityType.Trim().ToLowerInvariant(),
-                Name = name,
-                Slug = Slugify(name),
-                Status = "stub",
-                Description = c.Description.Trim(),
-            };
-            db.Add(entity);
-            resolutions[name] = new(name, entity.EntityType, entity.Id, "created", null);
+            // Through the stub factory: it disambiguates the slug against the (universe, type, slug)
+            // unique index — an archived same-name entity, or "Red Queen" next to "Red-Queen", made
+            // the single save at the end throw and lose every stub of the run — and it adds the
+            // subtype row (a character stub with no Characters row).
+            var entityType = string.IsNullOrWhiteSpace(c.EntityType) ? "vocabulary" : c.EntityType.Trim().ToLowerInvariant();
+            var newId = await EntityStubFactory.CreateStubAsync(db, universeId, name, entityType, c.Description.Trim(), ct: ct);
+            resolutions[name] = new(name, entityType, newId, "created", null);
         }
 
         if (!dryRun) await db.SaveChangesAsync(ct);
@@ -241,15 +237,6 @@ public class EntityHarvestService(
         // and wired every edge to an unrelated entity.
         if (lastSpace > 2 && lastSpace < name.Length - 1 && char.IsLower(name[lastSpace + 1]))
             yield return name[..lastSpace];
-    }
-
-    static string Slugify(string name)
-    {
-        var slug = new string(name.Trim().ToLowerInvariant()
-            .Select(ch => char.IsLetterOrDigit(ch) ? ch : '-')
-            .ToArray());
-        while (slug.Contains("--")) slug = slug.Replace("--", "-");
-        return slug.Trim('-');
     }
 
     sealed class RawCandidate
