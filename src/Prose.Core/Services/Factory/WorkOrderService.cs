@@ -206,7 +206,19 @@ public sealed class WorkOrderService(
 
     // ── checks ────────────────────────────────────────────────────────────────
 
+    /// <summary>A check whose fields have the wrong JSON type ("minCalls":1.5, a numeric handler, a
+    /// non-string test name) passed ParseChecks at add time, then threw out of CloseAsync on every
+    /// close attempt, so the order could never be closed. It now fails as a check instead.</summary>
     private async Task<CheckResult> EvaluateAsync(ProseDbContext db, WorkOrder order, JsonObject check, CloseInputs inputs, CancellationToken ct)
+    {
+        try { return await EvaluateCoreAsync(db, order, check, inputs, ct); }
+        catch (Exception ex) when (ex is InvalidOperationException or FormatException)
+        {
+            return new(Type(check), false, $"the check is malformed ({ex.Message}).");
+        }
+    }
+
+    private async Task<CheckResult> EvaluateCoreAsync(ProseDbContext db, WorkOrder order, JsonObject check, CloseInputs inputs, CancellationToken ct)
     {
         var type = Type(check);
         switch (type)
