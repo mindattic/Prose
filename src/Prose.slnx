@@ -1,13 +1,7 @@
 <Solution>
   <!-- Every project in the tree, so "build the solution" means what it says. Until 2026-09-20 this
        listed only 6 of 12: Hub, Hub.Contracts, KdpPublish, Launcher, ObserverUi, Writer and
-       WriterUi were absent, so a clean solution build could pass while an app was broken.
-
-       Dev-only: the first entry lets Visual Studio resolve the Debug-conditional source
-       ProjectReference in Prose.Core (the MA_DEV_AUTH bypass). Release/CI build the .csproj
-       directly and never read this .slnx, so isolation is preserved — Release still binds the
-       NuGet package. Command-line entry points remain Prose.Cli + Prose.Mcp. -->
-  <Project Path="../../MindAttic.Authentication/src/MindAttic.Authentication/MindAttic.Authentication.csproj" />
+       WriterUi were absent, so a clean solution build could pass while an app was broken. -->
 
   <!-- Engine -->
   <Project Path="Prose.Core/Prose.Core.csproj" />
