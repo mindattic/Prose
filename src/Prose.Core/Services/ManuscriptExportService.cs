@@ -120,7 +120,7 @@ public class ManuscriptExportService
         // marker per non-empty beat. A heading opens a chapter; a sub-heading is its own line.
         var chapters = new List<Chapter> { new((string?)null) };
         int beatNo = 0;
-        foreach (var ob in ordered)
+        foreach (var ob in ordered.DistinctBy(o => o.Beat.Id)) // a beat linked to two nodes walks twice
         {
             var beat = ob.Beat;
             if (headingAt.TryGetValue(beat.Id, out var heading))
