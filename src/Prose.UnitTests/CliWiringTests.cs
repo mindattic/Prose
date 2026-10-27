@@ -26,14 +26,17 @@ public class CliWiringTests
 {
     /// <summary>
     /// Handlers invoked in-process by Program.cs instead of being forwarded to the Hub, so they
-    /// never appear as a dispatch string. Both are deliberate: <c>--worker-mode</c> is explicitly
-    /// exempt from the Hub-reachable gate (it IS the worker the Hub talks to), and
-    /// <c>--estimate-cost</c> runs without a service provider at all.
+    /// never appear as a dispatch string. <c>--worker-mode</c> is explicitly exempt from the
+    /// Hub-reachable gate (it IS the worker the Hub talks to); <c>--estimate-cost</c> runs without
+    /// a service provider at all; <c>MigrateContinuitySqliteCli</c> is reached by a plain static
+    /// call from inside <c>MigrateSqlCli.RunAsync</c> (its own <c>--import-continuity-sqlite</c>
+    /// sub-flag under the forwarded <c>--migrate-sql</c>), never by its own forwarded literal.
     /// </summary>
     private static readonly HashSet<string> InProcessHandlers =
     [
         "WorkerModeCli",
         "EstimateCostCli",
+        "MigrateContinuitySqliteCli",
     ];
 
     /// <summary>Any string literal in Program.cs that names a CLI handler class.</summary>
