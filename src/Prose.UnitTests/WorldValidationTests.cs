@@ -81,6 +81,9 @@ public class WorldValidationTests
     //   ("place", "the circuit") — unmarked-clinic stub discarded, Meridian bazaar row kept.
     //   ("place", "the narrows") — resolved 2026-10-03 by author decision: the name is retired; the
     //   Lotus district is The Clybourn Corridor, the Mackinac record the Straits of Mackinac Checkpoint.
+    //   ("character", "dross") — resolved 2026-10-27 (PRS-T227): two different people (the Underclan
+    //   Cogs Chief Fitter "Dross" vs a Dead Realm lord with zero mentions); the latter was renamed
+    //   "Dross of the Dead Realm" in the live DB, no merge.
     // Kept as an empty, live tripwire — add an entry here only for a genuinely new
     // author-pending case, never to silence an unreviewed collision.
     private static readonly (string EntityType, string Name)[] KnownUnresolvedDuplicates = [];
