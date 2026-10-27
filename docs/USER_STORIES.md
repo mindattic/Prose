@@ -725,3 +725,4 @@ updated: 2026-10-03
 | PRS-T226 | 2026-10-23 | docs | closed | many billions of tokens | — |
 | PRS-T227 | 2026-10-24 | fix | open | WorldValidationTests.NoSameTypeNameCollisions fails on origin/main 54eca97a2 (src/Prose.UnitTests): two character entities named 'dross' in universe 0197e9c9-0001-7000-8000-000000000001. Merge or rename the duplicate (the companion NoSelfAliases failure is already PRS-T83) (found by MAT-T26 sweep) | — |
 | PRS-T228 | 2026-10-24 | docs | closed | Update USER_STORIES.md | — |
+| PRS-T229 | 2026-10-26 | chore | closed | Ballast and It Came From Iowa are DRAFT, not canon: drop blst and icfi from the GLMZ wheel catalog and mark them not-a-source, like SCON and IxS (author 2026-10-26) | a07073eb2 |
