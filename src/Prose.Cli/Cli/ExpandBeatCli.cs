@@ -207,7 +207,11 @@ public static class ExpandBeatCli
                 continue;
             }
 
-            var goal = beat.Description ?? beat.Title ?? $"Beat #{beat.Number}";
+            // ?? only falls through on null: a whitespace Description hid a perfectly good Title, and
+            // a beat with neither got the placeholder "Beat #N" as its goal so the guard below never fired.
+            var goal = !string.IsNullOrWhiteSpace(beat.Description) ? beat.Description
+                     : !string.IsNullOrWhiteSpace(beat.Title) ? beat.Title
+                     : null;
             if (string.IsNullOrWhiteSpace(goal))
             {
                 Console.WriteLine($"[expand-beat]   Beat #{beat.Number}: no description — skipped.");
