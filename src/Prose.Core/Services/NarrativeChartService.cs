@@ -363,7 +363,9 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
             {
                 var nameLower = c.ToLowerInvariant();
                 var firstNameLower = nameLower.Split(' ')[0];
-                return goalLower.Contains(nameLower) || goalLower.Contains(firstNameLower);
+                static bool HasWord(string text, string word) =>
+                    word.Length > 0 && System.Text.RegularExpressions.Regex.IsMatch(text, $@"(?<!\w){System.Text.RegularExpressions.Regex.Escape(word)}(?!\w)");
+                return HasWord(goalLower, nameLower) || HasWord(goalLower, firstNameLower);
             })
             .ToHashSet(StringComparer.OrdinalIgnoreCase);
     }
