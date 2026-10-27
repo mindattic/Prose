@@ -304,14 +304,15 @@ public class CoreEntityCrudTools
             catch (Exception ex) { warnings.Add($"physicalDescriptionJson ignored — parse error: {ex.Message}"); }
         }
 
-        var isNewCharacter = string.IsNullOrEmpty(id);
         characters.Save(c);
         // Tags REPLACE: the repository save only ever adds tags, so tags passed here could
         // never remove one (and "[]" cleared nothing) while the tool answered ok. Same
         // sanctioned path as set_entity_fields, in every create_* below.
         if (!string.IsNullOrEmpty(tags)) { await FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(c.Id), c.Tags); characters.Reload(); }
 
-        if (isNewCharacter && resolvedOrigin.HasValue && Guid.TryParse(c.Id, out var newId))
+        // On an update too: the slug was validated above and the tool answered ok:true, so dropping
+        // it for an existing character was a silent no-op.
+        if (resolvedOrigin.HasValue && Guid.TryParse(c.Id, out var newId))
         {
             // Write-gate Phase 2 (2026-08-22): was a raw OriginNodeId write, one of 4 independent
             // sites setting this column with no shared validation — now the one sanctioned path.
