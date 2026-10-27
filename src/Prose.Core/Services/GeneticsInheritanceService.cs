@@ -103,7 +103,9 @@ public class GeneticsInheritanceService
 
         rng ??= Random.Shared;
         ApplyNoiseAndRenormalize(blend, rng);
-        return blend;
+        // Every component dropped as dust leaves an empty blend; writing it would wipe the child's
+        // stored ancestry, so report "nothing to inherit" instead.
+        return blend.Count == 0 ? null : blend;
     }
 
     /// <summary>
