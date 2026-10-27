@@ -51,23 +51,31 @@ public class EventLogService
     /// <see cref="AddEvent"/> / <see cref="Clear"/>).</summary>
     public List<StoryEvent> GetEvents(string projectId)
     {
-        EnsureLoaded(projectId);
+        if (!EnsureLoaded(projectId)) return [];
         lock (gate) return [.. logs[projectId]];
     }
 
     /// <summary>Loads the project's log into the cache once. The DB read runs outside the lock;
     /// if two threads race, the first to publish wins and the other's load is discarded.</summary>
-    private void EnsureLoaded(string projectId)
+    private bool EnsureLoaded(string projectId)
     {
-        lock (gate) { if (logs.ContainsKey(projectId)) return; }
+        lock (gate) { if (logs.ContainsKey(projectId)) return true; }
         var loaded = LoadFromDb(projectId);
+        // A failed load is not cached as an empty log: the next Append would persist that empty
+        // list over the real stored history.
+        if (loaded == null) return false;
         lock (gate) logs.TryAdd(projectId, loaded);
+        return true;
     }
 
     /// <summary>Appends under the lock, then persists.</summary>
     private void Append(string projectId, IEnumerable<StoryEvent> events)
     {
-        EnsureLoaded(projectId);
+        if (!EnsureLoaded(projectId))
+        {
+            log.LogWarning("EventLog: could not load {ProjectId}; not persisting new events over the unread log", projectId);
+            return;
+        }
         lock (gate) logs[projectId].AddRange(events);
         SaveToDb(projectId);
     }
@@ -221,7 +229,7 @@ public class EventLogService
     /// <c>events.json</c> still exists on disk, migrates the file content into
     /// the DB and deletes the source file in the same call.
     /// </summary>
-    private List<StoryEvent> LoadFromDb(string projectId)
+    private List<StoryEvent>? LoadFromDb(string projectId)
     {
         if (!Guid.TryParse(projectId, out var chapterId)
             && !Guid.TryParseExact(projectId, "N", out chapterId))
@@ -245,12 +253,14 @@ public class EventLogService
             // → import file then delete it.
             if (string.IsNullOrEmpty(row.EventsJson))
             {
-                var fromDisk = TryReadLegacyDiskFile(projectId, deleteAfterRead: true);
+                var fromDisk = TryReadLegacyDiskFile(projectId);
                 if (fromDisk.Count > 0)
                 {
                     row.EventsJson = JsonSerializer.Serialize(fromDisk, JsonDefaults.Indented);
                     row.ModifiedAt = DateTime.UtcNow;
                     db.SaveChanges();
+                    // Delete the legacy file only once the DB holds its content.
+                    TryReadLegacyDiskFile(projectId, deleteAfterRead: true);
                     return fromDisk;
                 }
                 return [];
@@ -262,7 +272,7 @@ public class EventLogService
         catch (Exception ex)
         {
             log.LogWarning(ex, "EventLog: load failed for {ProjectId}", projectId);
-            return [];
+            return null;
         }
     }
 
