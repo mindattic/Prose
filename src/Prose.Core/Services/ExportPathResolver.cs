@@ -65,7 +65,9 @@ public static class ExportPathResolver
         // no extra UniverseId filter is needed here, unlike a new-root-node creation (same bug
         // class found and fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
         var siblings = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
-            .Where(s => s.Id != node.Id && s.ParentNodeId == node.ParentNodeId)
+            // UniverseId too: a root node's ParentNodeId is null, which would otherwise match
+            // every root node in every universe (each universe exports to its own directory).
+            .Where(s => s.Id != node.Id && s.ParentNodeId == node.ParentNodeId && s.UniverseId == node.UniverseId)
             .Select(s => new { s.Title, s.NodeCode })
             .ToListAsync(ct);
         if (siblings.Any(s => SanitizeTitle(s.Title) == safeTitle))
