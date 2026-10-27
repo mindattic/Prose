@@ -142,6 +142,7 @@ public class NounConsistencyService(IDbContextFactory<ProseDbContext> dbFactory,
             .ToList();
 
         var violations = new List<NounViolation>();
+        var violationRules = new List<DeprecatedEntityName>();
 
         foreach (var beat in beats)
         {
@@ -183,6 +184,7 @@ public class NounConsistencyService(IDbContextFactory<ProseDbContext> dbFactory,
                         DeprecatedName: rule.DeprecatedName,
                         CanonicalName:  rule.CanonicalName,
                         Snippet:        Snippet(beat.Text, idx, 80)));
+                    violationRules.Add(rule);
                     break; // one violation per rule per beat is sufficient
                 }
             }
@@ -192,8 +194,10 @@ public class NounConsistencyService(IDbContextFactory<ProseDbContext> dbFactory,
         // (kept as the direct, already-correct computation rather than re-run through
         // AuditRunner's rule dispatch — there's no LLM step here for the dispatcher to add
         // value to, only the delete-then-recreate persistence pattern is worth sharing).
-        var verdicts = violations.Select(v => new AuditVerdict(
-            RuleKey:  RuleKeyFor(rules.First(r => r.DeprecatedName == v.DeprecatedName)),
+        // The rule that produced each violation, not a lookup by name: two rules sharing a deprecated
+        // name filed both violations under the first rule's key and left the second's findings unwritten.
+        var verdicts = violations.Select((v, vi) => new AuditVerdict(
+            RuleKey:  RuleKeyFor(violationRules[vi]),
             Title:    $"No references to deprecated name '{v.DeprecatedName}'",
             Severity: "MODERATE",
             Evidence: $"Beat {v.BeatNumber}: uses '{v.DeprecatedName}' (should be '{v.CanonicalName}') — {v.Snippet}",
