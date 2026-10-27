@@ -341,7 +341,8 @@ public class NodeReviewService
                     nodeId, probe.Markdown.Length, useLocal ? "local" : "cloud", threshold);
                 var perSeg = Math.Max(6, (int)Math.Ceiling(ballotCount / 3.0));
                 return await RunSegmentedReviewAsync(nodeId, perSeg, proseCount, segTarget,
-                    progress, ct, allowedProvidersOverride, useLocal, localModelOverride, allowVotes: allowVotes);
+                    progress, ct, allowedProvidersOverride, useLocal, localModelOverride, allowVotes: allowVotes,
+                    cheapModels: cheapModels, cloudModelOverride: cloudModelOverride, modelMap: modelMap);
             }
         }
 
@@ -584,14 +585,15 @@ public class NodeReviewService
         Guid nodeId, int ballotsPerSegment, int proseCount, int targetChars,
         IProgress<int>? progress = null, CancellationToken ct = default,
         string? allowedProvidersOverride = null,
-        bool useLocal = false, string? localModelOverride = null, bool allowVotes = false)
+        bool useLocal = false, string? localModelOverride = null, bool allowVotes = false,
+        bool cheapModels = false, string? cloudModelOverride = null, IReadOnlyDictionary<string, string>? modelMap = null)
     {
         votingGate.EnsureAllowed("review-node (segmented)", allowVotes);
         if (ballotsPerSegment <= 0) ballotsPerSegment = 8;
         // Local segments must fit the box's context window; cloud can take the big default.
         if (targetChars <= 0) targetChars = useLocal ? LocalUsableChars : SegmentTargetChars;
         else if (useLocal) targetChars = Math.Min(targetChars, LocalUsableChars);
-        var route = BuildRoute(useLocal, allowedProvidersOverride, localModelOverride);
+        var route = BuildRoute(useLocal, allowedProvidersOverride, localModelOverride, cloudModelOverride, modelMap);
         long rawOutputChars = 0L;
         void TrackOutput(int chars) => Interlocked.Add(ref rawOutputChars, chars);
         var providers = route.Providers;
@@ -637,7 +639,7 @@ public class NodeReviewService
                     await sem.WaitAsync(ct);
                     try
                     {
-                        var r = await SegmentBallotOnceAsync(nodeId, seg.Title, s, totalBeatCount, persona, provider, route, ct, lessonsBlock, beatHashes, TrackOutput);
+                        var r = await SegmentBallotOnceAsync(nodeId, seg.Title, s, totalBeatCount, persona, provider, route, ct, lessonsBlock, beatHashes, TrackOutput, cheapModels);
                         if (r != null) { r.FocusGroupName = groupName; r.ContentHash = seg.ContentHash; localBag.Add(r); }
                         else Interlocked.Increment(ref failed);
                     }
@@ -672,7 +674,7 @@ public class NodeReviewService
                 {
                     var persona = PersonasByIds(new[] { rv.PersonaId }).FirstOrDefault();
                     if (persona == null || !segOf.TryGetValue(rv.Id, out var sg)) return;
-                    var prose = await SegmentProseOnceAsync(seg.Title, sg, persona, rv.ProviderId, route, ct, TrackOutput);
+                    var prose = await SegmentProseOnceAsync(seg.Title, sg, persona, rv.ProviderId, route, ct, TrackOutput, cheapModels);
                     if (prose != null)
                     {
                         rv.ReviewText = prose.Value.review.Trim();
@@ -774,11 +776,11 @@ public class NodeReviewService
     /// segment so the prompt fits the local context window.</summary>
     private async Task<(string review, List<string> improvements)?> SegmentProseOnceAsync(
         string title, NodeMarkdownExporter.NodeSegment segment, Persona persona, string provider, ReviewLlmTransport.Route route, CancellationToken ct,
-        Action<int>? trackOutput = null)
+        Action<int>? trackOutput = null, bool cheapModels = false)
     {
         var key = route.KeyFor(provider);
         if (string.IsNullOrWhiteSpace(key)) return null;
-        var model = route.ModelFor(provider, false);
+        var model = route.ModelFor(provider, cheapModels);
         var system = BuildSegmentProsePrompt(persona, title, segment);
         var raw = await route.Llm.CallAsync(provider, key!, model, system, segment.Markdown, maxTokens: 1400, temperature: 0.85, ct);
         trackOutput?.Invoke(raw?.Length ?? 0);
@@ -804,11 +806,11 @@ Return ONLY a JSON object and nothing else:
     private async Task<NodeReview?> SegmentBallotOnceAsync(
         Guid nodeId, string title, NodeMarkdownExporter.NodeSegment segment, int totalBeatCount,
         Persona persona, string provider, ReviewLlmTransport.Route route, CancellationToken ct, string? lessonsBlock,
-        IReadOnlyDictionary<int, string>? beatHashes = null, Action<int>? trackOutput = null)
+        IReadOnlyDictionary<int, string>? beatHashes = null, Action<int>? trackOutput = null, bool cheapModels = false)
     {
         var key = route.KeyFor(provider);
         if (string.IsNullOrWhiteSpace(key)) { log.LogWarning("No API key for provider {Provider}", provider); return null; }
-        var model = route.ModelFor(provider, false);
+        var model = route.ModelFor(provider, cheapModels);
         var system = BuildSegmentBallotSystemPrompt(persona, title, segment, lessonsBlock);
         var segBeats = segment.LastBeat - segment.FirstBeat + 1;
         var maxTok = segBeats <= 150
