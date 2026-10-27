@@ -92,6 +92,9 @@ public static class ImportCoverImageCli
             }
 
             Console.WriteLine($"Node:  {node.Title} ({node.Id})");
+            // The media row has no node column, so the association lives in the notes: --book-code was
+            // validated and printed but never recorded anywhere.
+            notes = $"book-code:{nodeCode} node:{node.Id}" + (string.IsNullOrWhiteSpace(notes) ? "" : " | " + notes);
         }
 
         await using var scope = sp.CreateAsyncScope();
