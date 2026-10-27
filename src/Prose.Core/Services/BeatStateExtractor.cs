@@ -105,7 +105,15 @@ public class BeatStateExtractor
 
                 var raw = await CallExtractionLlmAsync(chapter, beat, ct);
                 var parsed = ParseEventArray(raw);
-                if (parsed.Count == 0) { result.Skipped++; continue; }
+                if (parsed.Count == 0)
+                {
+                    // The model answered with a well-formed empty array: the edit left no state
+                    // changes, so the beat's earlier extraction is stale and must go. An
+                    // unparseable/blank answer proves nothing, so that keeps the old events.
+                    if (IsExplicitEmptyArray(raw) && beatGuid is Guid emptyBeat)
+                        await ledger.ClearExtractedForBeatAsync(emptyBeat, ct);
+                    result.Skipped++; continue;
+                }
 
                 var rows = new List<EntityStateEvent>(parsed.Count);
                 foreach (var p in parsed)
@@ -187,6 +195,20 @@ public class BeatStateExtractor
         string EntityName, string Aspect, string Verb,
         string? OldValue, string? NewValue, double? Delta,
         string? Snippet, string? Confidence);
+
+    private static bool IsExplicitEmptyArray(string raw)
+    {
+        if (string.IsNullOrWhiteSpace(raw)) return false;
+        var start = raw.IndexOf('[');
+        var end = raw.LastIndexOf(']');
+        if (start < 0 || end <= start) return false;
+        try
+        {
+            using var doc = JsonDocument.Parse(raw[start..(end + 1)]);
+            return doc.RootElement.ValueKind == JsonValueKind.Array && doc.RootElement.GetArrayLength() == 0;
+        }
+        catch { return false; }
+    }
 
     private static List<ParsedEvent> ParseEventArray(string raw)
     {
