@@ -1001,8 +1001,11 @@ public class SettingsService : IDisposable
                     ? (JsonNode.Parse(File.ReadAllText(settingsPath)) as JsonObject) ?? new JsonObject()
                     : new JsonObject();
             }
-            catch (JsonException) { disk = new JsonObject(); }   // corrupt/partial read — rebuild from ours
-            catch (IOException)   { disk = new JsonObject(); }
+            // A failed read must not be treated as an empty file: overlaying only our changed keys on
+            // {} and writing it back would erase every key this process never touched. Keep the
+            // file as it is; the in-memory changes stay queued and the next flush retries.
+            catch (JsonException ex) { Serilog.Log.Warning(ex, "SettingsService: could not read Settings.json; save skipped"); return; }
+            catch (IOException ex)   { Serilog.Log.Warning(ex, "SettingsService: could not read Settings.json; save skipped"); return; }
 
             // Overlay only the keys THIS process changed since it loaded / last flushed.
             foreach (var (key, node) in current)
