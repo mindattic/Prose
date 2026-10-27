@@ -1953,7 +1953,7 @@ if (args.Contains("--harvest-voice"))
 }
 
 // CLI mode: list every node as a table (or JSON). Headless twin of /nodes.
-//   prose --list-books [--status <s>] [--kind <k>] [--search <text>] [--limit <n>] [--json]
+//   prose --list-books [--archived | --all-archived] [--kind <k>] [--search <text>] [--limit <n>] [--scores] [--json]
 if (args.Contains("--list-books"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("ListNodesCli", args);

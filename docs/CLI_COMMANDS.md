@@ -19,7 +19,7 @@
 > deliberate: RFC 0014 §2.4 is about a gate documented as seven checks, coded as six
 > and advertised as five, and this reference is not going to repeat that.
 
-**290 commands.** 30 deactivated. 10 cost-gated. 18 have no description in their dispatch comment (12 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**291 commands.** 30 deactivated. 10 cost-gated. 18 have no description in their dispatch comment (12 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -494,7 +494,7 @@ prose --check-text-integrity [--fix] [--json]
 
 ### `--clone-book`
 
-prose --clone-book (--id <guid> | --slug <slug>) [--title "New Title"] [--book-code SM1] [--draft] [--status ready]
+prose --clone-book (--id <guid> | --slug <slug>) [--title "New Title"] [--book-code SM1]
 
 <sub>handler `CloneNodeCli`</sub>
 
@@ -1050,7 +1050,7 @@ prose --fix-cross-universe-contamination [--dry-run] Deletes BeatEntities/BeatEn
 
 ### `--fix-location-aspect`
 
-prose --fix-location-aspect --character <name> (--find <text> --replace <text> | --set <whole new value>) [--apply] Corrects a character's current 'location' EntityStateEvent.NewValue via an exact, single-occurrence substring replace, or replaces the whole value with --set; reads the value back after --apply. Dry-run by default. See FixLocationAspectCli's doc comment for why this exists.
+prose --fix-location-aspect --character <name> --find <text> --replace <text> [--apply] Corrects a character's current 'location' EntityStateEvent.NewValue via an exact, single-occurrence substring replace. Dry-run by default. See FixLocationAspectCli's doc comment for why this exists.
 
 <sub>handler `FixLocationAspectCli`</sub>
 
@@ -1437,7 +1437,7 @@ list every ArchivedBook snapshot for a node, newest first — read-only, use to 
 ### `--list-books`
 
 ```
-prose --list-books [--status <s>] [--kind <k>] [--search <text>] [--limit <n>] [--json]
+prose --list-books [--archived | --all-archived] [--kind <k>] [--search <text>] [--limit <n>] [--scores] [--json]
 ```
 
 list every node as a table (or JSON). Headless twin of /nodes.
@@ -1599,6 +1599,7 @@ migrate legacy Books/Chapters/ChapterBeats/Episodes/EpisodeBeats data into the u
 prose --migrate-sql --schema           apply EF migrations
 prose --migrate-sql --import people    import character JSON files
 prose --migrate-sql --all              schema + import all supported types
+prose --migrate-sql --import-continuity-sqlite [--apply]   one-shot copy of legacy continuity.db rows into SQL Server
 ```
 
 SQL Server migration — apply EF migrations and import JSON entities.
@@ -2257,6 +2258,12 @@ Unblocks deleting/renaming a book another book's PreviousNodeId points at (FK_No
 
 <sub>handler `SetPreviousNodeCli`</sub>
 
+### `--set-timeline`
+
+Book chronology within its universe (Node.Timeline, PRS-T320). No mode flag = print it. prose --set-timeline --slug <slug> [--value <decimal> | --before <ref-slug> | --after <ref-slug> | --same-as <ref-slug> | --clear]
+
+<sub>handler `BookTimelineCli`</sub>
+
 ### `--show`
 
 /show lookup: resolve a subject (name/slug/alias) to one Entity or Node and return a structured profile. See .claude/commands/show.md.
@@ -2320,10 +2327,10 @@ one-off cleanup of a generation-artifact heading/marker leaking into Beats.Text 
 ### `--sync-audio`
 
 ```
-prose --sync-audio [--push] [--pull] [--node SLUG] [--dry-run] [--verbose]
+prose --sync-audio   (no flags: one bidirectional newest-wins pass; --dry-run/--push/--pull/--node are refused)
 ```
 
-reconcile audio bytes between local disk and Azure Blob storage. Companion to DualWriteAudioStore — repairs drift from offline recordings and failed background uploads. Default (no --push/--pull args) is full bidirectional repair. See SyncAudioCli class doc for the full arg list.
+reconcile audio bytes between local disk and Azure Blob storage. Companion to DualWriteAudioStore — repairs drift from offline recordings and failed background uploads: one full bidirectional newest-wins pass. See SyncAudioCli class doc.
 
 <sub>handler `SyncAudioCli`</sub>
 
