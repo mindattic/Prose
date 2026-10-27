@@ -111,6 +111,12 @@ public class BeatRebuildService
             var s = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(x => x.Id == nodeId, ct);
             if (s == null) return new(nodeId, "", "", false, 0, 0, 0, false, null, "Node not found.");
             slug = s.Slug; title = s.Title;
+            // GetOrderedBeatsAsync walks every descendant, but ReplaceBeatsAsync replaces only this
+            // node's own BeatNodes: on a node with child nodes (a split-collection container
+            // chapter) the children's prose was re-inserted onto the parent, duplicating it.
+            if (await db.Nodes.IgnoreQueryFilters().AnyAsync(x => x.ParentNodeId == nodeId, ct))
+                return new(nodeId, slug, title, false, 0, 0, 0, false, null,
+                    "Node has child nodes — rebuild each leaf chapter instead.");
         }
 
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
