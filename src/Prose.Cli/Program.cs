@@ -326,6 +326,9 @@ if (UniverseBootstrap.RequestedSlug == null
         "--factory", "--order", "--session", "--ruling",
         // The spelling dictionary (SpellingWords) is one engine-wide list, not a universe's.
         "--dictionary",
+        // A remote GPU pod's worker loop talks to the coordinator and its own LLM; it reads no
+        // universe-scoped data, and the documented invocation carries no --universe.
+        "--worker-mode",
     ];
     // These allowlisted flags are ALSO sub-flags of universe-scoped commands (`--create-book
     // --seed`, `--family-gen --seed N`, `--narrative-health --history`, `--expand-beat … --cost`,
@@ -1464,7 +1467,7 @@ if (args.Contains("--migrate-nodes"))
 // Companion to DualWriteAudioStore — repairs drift from offline recordings
 // and failed background uploads. Default (no --push/--pull args) is full
 // bidirectional repair. See SyncAudioCli class doc for the full arg list.
-//   prose --sync-audio [--push] [--pull] [--node SLUG] [--dry-run] [--verbose]
+//   prose --sync-audio   (no flags: one bidirectional newest-wins pass; --dry-run/--push/--pull/--node are refused)
 if (args.Contains("--sync-audio"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("SyncAudioCli", args);
