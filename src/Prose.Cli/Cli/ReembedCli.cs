@@ -77,7 +77,13 @@ public static class ReembedCli
                 var dbf = scope.ServiceProvider
                     .GetRequiredService<Microsoft.EntityFrameworkCore.IDbContextFactory<Prose.Core.Data.ProseDbContext>>();
                 await using var ctx = await dbf.CreateDbContextAsync();
-                var n = await ctx.Database.ExecuteSqlRawAsync("DELETE FROM dbo.ProseEmbeddings WHERE ScopeKind = 'markdown';");
+                // Only the markdown the rebuild will re-embed: it reads the scoped MarkdownFiles set (the
+                // current universe plus the shared one), so deleting every universe's rows left the
+                // others with no Doc Context embeddings.
+                var n = await ctx.Database.ExecuteSqlRawAsync(
+                    "DELETE pe FROM dbo.ProseEmbeddings pe JOIN dbo.MarkdownFiles m ON m.Id = pe.ScopeId " +
+                    "WHERE pe.ScopeKind = 'markdown' AND ({0} = '00000000-0000-0000-0000-000000000000' OR m.UniverseId IN ({0}, {1}));",
+                    Prose.Core.Services.UniverseScope.EffectiveId, Prose.Core.Data.ProseDbContext.SharedUniverseId);
                 Console.WriteLine($"[reembed] cleared {n} existing markdown rows");
             }
             var lastMd = -1;
