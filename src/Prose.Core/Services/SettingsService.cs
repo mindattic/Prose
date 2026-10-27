@@ -1027,9 +1027,16 @@ public class SettingsService : IDisposable
             // Setters change `data` without this lock. If one ran after the snapshot, swapping in the
             // merged object would discard its change; keep ours instead — its own ScheduleSave has
             // already queued the next flush, which diffs it against this baseline and writes it.
+            // In that case the baseline must be our own snapshot, not the disk: `data` still holds the
+            // old values of keys other processes wrote, and against a disk baseline every one of them
+            // read as a local change on the next flush and was written back over the newer value.
             if (Volatile.Read(ref changeVersion) == versionAtSnapshot)
+            {
                 data = disk.Deserialize<SettingsData>() ?? data;
-            baseline = disk;
+                baseline = disk;
+            }
+            else
+                baseline = current;
         }
     }
 
