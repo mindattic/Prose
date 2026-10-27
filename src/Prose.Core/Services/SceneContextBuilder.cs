@@ -22,7 +22,10 @@ public class SceneContextBuilder
     // Cached per (universe, epoch). A Lazy built once served the FIRST universe's anomaly docs to
     // every later universe (GLMZ strangeness in a Fantasy prompt, the SS-LAW-15 leak), never saw
     // docs added later, and cached a first-use failure forever.
-    private sealed record AnomalyCache(Guid Universe, int Epoch, List<(string title, string snippet, List<string> tags)> Items);
+    // Source is the list the repository handed back: its own cache is replaced on every save, so a
+    // different reference means a document was added or retagged since (universe and epoch alone
+    // never change on a save, so new anomaly docs were ignored until the universe switched).
+    private sealed record AnomalyCache(Guid Universe, int Epoch, object Source, List<(string title, string snippet, List<string> tags)> Items);
     private volatile AnomalyCache? anomalyCache;
 
     public SceneContextBuilder(WorldbuildingDocRepository docRepo, DistrictRepository districtRepo)
@@ -35,10 +38,11 @@ public class SceneContextBuilder
     {
         var universe = UniverseScope.EffectiveId;
         var epoch = UniverseScope.Epoch;
+        var docs = docRepo.GetAll();
         var c = anomalyCache;
-        if (c != null && c.Universe == universe && c.Epoch == epoch) return c.Items;
-        var items = BuildAnomalyCache();
-        anomalyCache = new AnomalyCache(universe, epoch, items);
+        if (c != null && c.Universe == universe && c.Epoch == epoch && ReferenceEquals(c.Source, docs)) return c.Items;
+        var items = BuildAnomalyCache(docs);
+        anomalyCache = new AnomalyCache(universe, epoch, docs, items);
         return items;
     }
 
@@ -115,9 +119,9 @@ public class SceneContextBuilder
     /// <summary>60% chance any anomaly texture appears in a scene. Virtual for test override.</summary>
     protected virtual bool RandomGatePasses() => Random.Shared.NextDouble() <= 0.6;
 
-    private List<(string title, string snippet, List<string> tags)> BuildAnomalyCache()
+    private static List<(string title, string snippet, List<string> tags)> BuildAnomalyCache(List<WorldbuildingDocument> docs)
     {
-        return docRepo.GetAll()
+        return docs
             .Where(d => d.Tags.Any(t =>
                 t.Contains("anomaly") || t.Contains("inexplicable") || t.Contains("new_weird") ||
                 t.Contains("ghost_building") || t.Contains("lost_block")))
