@@ -104,7 +104,7 @@ public static class ToolDispatch
                 false, null, "missing_tool");
 
         var universe = sp.GetRequiredService<Prose.Core.Services.IUniverseContext>();
-        var requiresScope = LooksMutating(req.Method);
+        var requiresScope = LooksMutating(req.Method, req.Args);
         if (requiresScope && !req.ScopeExplicit)
         {
             return (Results.Json(new
@@ -177,6 +177,26 @@ public static class ToolDispatch
         "AddDictionaryWord", "RemoveDictionaryWord",
         "AddOperatorByoKey", "RemoveOperatorByoKey", "SetOperatorByoKeys", "ClearOperatorByoKeys",
     };
+
+    /// <summary>
+    /// <see cref="LooksMutating(string)"/> refined by the call's arguments: ReadBeats writes read
+    /// receipts only when <c>markRead</c> is true; a plain read (the Observer's Beats tab, which
+    /// sends no universe) must not be refused as a write.
+    /// </summary>
+    internal static bool LooksMutating(string method, JsonElement? args)
+    {
+        var name = method.EndsWith("Impl", StringComparison.Ordinal) ? method[..^4] : method;
+        if (string.Equals(name, "ReadBeats", StringComparison.OrdinalIgnoreCase))
+        {
+            if (args is not { ValueKind: JsonValueKind.Object } a) return false;
+            foreach (var p in a.EnumerateObject())
+                if (string.Equals(p.Name, "markRead", StringComparison.OrdinalIgnoreCase))
+                    return p.Value.ValueKind == JsonValueKind.True
+                        || (p.Value.ValueKind == JsonValueKind.String && bool.TryParse(p.Value.GetString(), out var b) && b);
+            return false;
+        }
+        return LooksMutating(method);
+    }
 
     /// <summary>True when a tool can change universe-scoped state and so needs an explicit universe.</summary>
     internal static bool LooksMutating(string method)
