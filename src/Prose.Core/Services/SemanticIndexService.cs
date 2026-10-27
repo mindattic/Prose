@@ -94,7 +94,7 @@ public class SemanticIndexService
         }
 
         docCount = documents.Count;
-        if (docCount == 0) { built = true; return; }
+        if (docCount == 0) { built = true; builtEpoch = UniverseScope.Epoch; builtUniverse = UniverseScope.EffectiveId; return; }
 
         // Compute document frequency per term
         var df = new Dictionary<string, int>();
