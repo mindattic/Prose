@@ -540,16 +540,27 @@ public class EmbeddingService
         if (pairs.Count == 0) return Array.Empty<double>();
         await EnsureSchemaOnceAsync(ct);
 
-        // Flatten to [a0, b0, a1, b1, ...] so one batch call covers all pairs.
-        var texts = pairs
-            .SelectMany(p => new[] { TruncateForEmbed(p.A), TruncateForEmbed(p.B) })
-            .ToList();
-        var vectors = await EmbedBatchAsync(texts, ct);
-        if (vectors.Length != texts.Count) return Enumerable.Repeat(0.0, pairs.Count).ToArray();
-
+        // Flatten to [a0, b0, a1, b1, ...], 32 pairs (64 texts) per call. One call for every pair
+        // overran the provider's per-request input cap (OpenAI 2,048 inputs / ~300k tokens, the
+        // Gemini-compatible endpoint 100) on any large book, so the whole batch failed and every
+        // caller saw all zeros. A failed chunk still returns all zeros: callers read exact zeros
+        // across the board as "the query failed", and a partial result would read as real 0% scores.
+        const int PairsPerCall = 32;
         var results = new double[pairs.Count];
-        for (int i = 0; i < pairs.Count; i++)
-            results[i] = CosineSimilarity(vectors[i * 2], vectors[i * 2 + 1]);
+        for (int start = 0; start < pairs.Count; start += PairsPerCall)
+        {
+            var count = Math.Min(PairsPerCall, pairs.Count - start);
+            var texts = new List<string>(count * 2);
+            for (int i = start; i < start + count; i++)
+            {
+                texts.Add(TruncateForEmbed(pairs[i].A));
+                texts.Add(TruncateForEmbed(pairs[i].B));
+            }
+            var vectors = await EmbedBatchAsync(texts, ct);
+            if (vectors.Length != texts.Count) return Enumerable.Repeat(0.0, pairs.Count).ToArray();
+            for (int i = 0; i < count; i++)
+                results[start + i] = CosineSimilarity(vectors[i * 2], vectors[i * 2 + 1]);
+        }
         return results;
     }
 
