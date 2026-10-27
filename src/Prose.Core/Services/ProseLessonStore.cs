@@ -56,7 +56,11 @@ public class ProseLessonStore
     /// <summary>Add a new lesson and persist it. The Id is generated automatically.</summary>
     public void Add(string scope, string kind, string text)
     {
-        var doc = kv.Get<ProseLessonCollection>(KvKey) ?? new ProseLessonCollection();
+        var existing = kv.Get<ProseLessonCollection>(KvKey);
+        // An unreadable stored row is not an empty one: Set would replace every stored lesson.
+        if (existing == null && kv.Exists(KvKey))
+            throw new InvalidOperationException("Stored prose lessons could not be read; refusing to overwrite them.");
+        var doc = existing ?? new ProseLessonCollection();
         doc.Lessons.Add(new ProseLesson
         {
             Id      = Guid.CreateVersion7().ToString(),

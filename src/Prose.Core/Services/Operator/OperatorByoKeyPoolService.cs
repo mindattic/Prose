@@ -43,7 +43,11 @@ public class OperatorByoKeyPoolService
     {
         ValidateProvider(provider);
         var cleaned = keys.Where(k => !string.IsNullOrWhiteSpace(k)).Select(k => k.Trim()).ToList();
-        var current = kv.Get<OperatorByoKeys>(KvKey) ?? new OperatorByoKeys();
+        var stored = kv.Get<OperatorByoKeys>(KvKey);
+        // An unreadable stored row is not an empty one: writing back would drop the other provider's keys.
+        if (stored == null && kv.Exists(KvKey))
+            throw new InvalidOperationException("Stored operator keys could not be read; refusing to overwrite them.");
+        var current = stored ?? new OperatorByoKeys();
         var updated = provider.Equals("claude", StringComparison.OrdinalIgnoreCase)
             // Clear the legacy singular field too so a pool write is never shadowed by a stale
             // pre-pool value on the next read (ResolvedAnthropicKeys/ResolvedOpenAiKeys prefer the
