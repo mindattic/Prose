@@ -44,7 +44,7 @@ public class WritingTools
         [Description("Comma-separated protagonist names — first name is the lead. Resolved against character canon.")] string protagonists,
         [Description("What this book is *about* and where it lands. Used as the extension target. Optional.")] string arcTarget = "",
         [Description("Optional tagline shown beneath the title on the bookshelf card.")] string tagline = "",
-        [Description("Book status: drafting | preserved | published | archived. Defaults to 'drafting'.")] string status = "drafting",
+        [Description("Book status: drafting | preserved | published | archived. Empty keeps the current status of an existing book and means 'drafting' for a new one.")] string status = "",
         [Description("Optional book id to update an existing record. Empty creates a new book.")] string id = "") =>
         hub.InvokeAsync(nameof(WritingTools), nameof(CreateLegacyBookImpl), new { title, premise, protagonists, arcTarget, tagline, status, id });
 
@@ -54,7 +54,7 @@ public class WritingTools
         string protagonists,
         string arcTarget = "",
         string tagline = "",
-        string status = "drafting",
+        string status = "",
         string id = "")
     {
         var existing = string.IsNullOrEmpty(id) ? null : books.LoadBook(id);

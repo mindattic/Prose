@@ -2517,7 +2517,7 @@ LEGACY Book/Chapter schema — new work should use create_series / create_book i
 - `protagonists` (string, required) — Comma-separated protagonist names — first name is the lead. Resolved against character canon.
 - `arcTarget` (string, optional) — What this book is *about* and where it lands. Used as the extension target. Optional.
 - `tagline` (string, optional) — Optional tagline shown beneath the title on the bookshelf card.
-- `status` (string, optional) — Book status: drafting | preserved | published | archived. Defaults to 'drafting'.
+- `status` (string, optional) — Book status: drafting | preserved | published | archived. Empty keeps the current status of an existing book and means 'drafting' for a new one.
 - `id` (string, optional) — Optional book id to update an existing record. Empty creates a new book.
 
 ### `create_legacy_chapter`
