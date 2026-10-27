@@ -46,7 +46,13 @@ public class EditSessionTools(
             nodeId = node.Id;
         }
 
-        Guid? sid = sessionId != null && Guid.TryParse(sessionId, out var g) ? g : null;
+        Guid? sid = null;
+        if (!string.IsNullOrWhiteSpace(sessionId))
+        {
+            // A mistyped id must not fall through to "close whatever session is open".
+            if (!Guid.TryParse(sessionId, out var g)) return $"bad_session_id: '{sessionId}' is not a session id (GUID).";
+            sid = g;
+        }
         var session = await sessionSvc.CloseSessionAsync(nodeId, sid);
         var duration = session.ClosedAt.HasValue
             ? $"{(session.ClosedAt.Value - session.StartedAt).TotalMinutes:F0}m"
