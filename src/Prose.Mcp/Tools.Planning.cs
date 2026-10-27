@@ -94,7 +94,9 @@ public class PlanningTools
         string nodeId,
         string relationType)
     {
-        graph.EnsureLoaded();
+        // EnsureFresh, not EnsureLoaded: the on-disk cache is trusted forever by EnsureLoaded, so
+        // retired or merged entities kept appearing as neighbours (same fix as GetNeighborsImpl).
+        graph.EnsureFresh();
         var edges = graph.GetAllEdges(nodeId)
             .Where(e => e.RelationType.Contains(relationType, StringComparison.OrdinalIgnoreCase))
             .ToList();
