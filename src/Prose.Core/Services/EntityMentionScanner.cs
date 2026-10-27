@@ -801,11 +801,15 @@ public static class EntityMentionScanner
             CreatedAt  = DateTime.UtcNow,
         }).ToList();
 
+        // ExecuteDelete commits on its own: without the transaction a failed insert left the beat
+        // with no mention rows at all (the same fix as EntityRamificationService.IndexBeatMentionsAsync).
+        await using var tx = await db.Database.BeginTransactionAsync(ct);
         await db.BeatEntityMentions.Where(m => m.BeatId == beatId).ExecuteDeleteAsync(ct);
         if (mentions.Count > 0)
         {
             db.BeatEntityMentions.AddRange(mentions);
             await db.SaveChangesAsync(ct);
         }
+        await tx.CommitAsync(ct);
     }
 }
