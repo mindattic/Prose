@@ -408,7 +408,7 @@ public class KdpOperatorService
         - KDP Select enrollment: {(plan.KdpSelect ? "Yes, enroll" : "No, do not enroll")}
         - Territories: all territories (worldwide rights)
         - Adult content: No
-        - AI-generated content disclosure: {(plan.AiTextOption != "None" || plan.AiImagesOption != "None" ? "Yes" : "No")}
+        - AI-generated content disclosure: {(plan.AiTextOption != "None" || plan.AiImagesOption != "None" || plan.AiTranslationsOption != "None" ? "Yes" : "No")}
           (pass these exact option texts to set_ai_disclosure)
           - Text option: "{plan.AiTextOption}"{(plan.AiTextTool is { Length: > 0 } tTool ? $", tool: \"{tTool}\"" : "")}
           - Images option: "{plan.AiImagesOption}"{(plan.AiImagesTool is { Length: > 0 } iTool ? $", tool: \"{iTool}\"" : "")}
