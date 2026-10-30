@@ -102,8 +102,15 @@ public class BeatBriefBuilder
             // the roster heuristic's guess (highest-scoring character in the room) and are wrong
             // often enough to be dangerous as a brief line: on BCODA2 beat #17448 the heuristic
             // row said Mrs. Chen for a Kyle scene and the gate refused a correct draft for it.
+            // Portable SQL (PRS-T357): "TOP 1" and the bracket-qualified "[dbo].[BeatEntityPresence]"
+            // are SQL-Server-only syntax. BeatEntityPresence has no EF mapping and is queried with
+            // provider-agnostic raw SQL everywhere else it's touched (see BlastRadiusService's own
+            // comment: "SQL Server in production, SQLite under TestDbFactory") — this query was the
+            // one place that didn't, so it threw on SQLite and was silently swallowed by the catch
+            // below, always returning Pov = null there. The C# FirstOrDefault already takes the
+            // first non-blank row, so dropping TOP 1 changes nothing about the result.
             var povMap = await db.Database
-                .SqlQuery<string>($"SELECT TOP 1 EntityName AS [Value] FROM [dbo].[BeatEntityPresence] WHERE BeatId = {beatId} AND PresenceType = 'pov' AND Source = 'pov-map'")
+                .SqlQuery<string>($"SELECT EntityName AS [Value] FROM BeatEntityPresence WHERE BeatId = {beatId} AND PresenceType = 'pov' AND Source = 'pov-map'")
                 .ToListAsync(ct);
             pov = povMap.FirstOrDefault(s => !string.IsNullOrWhiteSpace(s));
         }

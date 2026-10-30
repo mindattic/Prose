@@ -1046,20 +1046,33 @@ public class EmbeddingService
             req.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", key);
         var sw = System.Diagnostics.Stopwatch.StartNew();
         var inputChars = texts.Sum(t => t.Length);
-        using var resp = await http.SendAsync(req, ct);
-        if (!resp.IsSuccessStatusCode)
+        try
         {
-            var body = await resp.Content.ReadAsStringAsync(ct);
-            log.LogWarning("Local batch embedding {Code}: {Body}", (int)resp.StatusCode, Truncate(body, 400));
-            await RecordCallAsync(LocalProviderId, model, inputChars, null, (int)sw.ElapsedMilliseconds, success: false, $"HTTP {(int)resp.StatusCode}", ct);
+            using var resp = await http.SendAsync(req, ct);
+            if (!resp.IsSuccessStatusCode)
+            {
+                var body = await resp.Content.ReadAsStringAsync(ct);
+                log.LogWarning("Local batch embedding {Code}: {Body}", (int)resp.StatusCode, Truncate(body, 400));
+                await RecordCallAsync(LocalProviderId, model, inputChars, null, (int)sw.ElapsedMilliseconds, success: false, $"HTTP {(int)resp.StatusCode}", ct);
+                return Array.Empty<float[]>();
+            }
+            var payload = await resp.Content.ReadFromJsonAsync<EmbeddingResponse>(cancellationToken: ct);
+            await RecordCallAsync(LocalProviderId, model, inputChars, payload?.Usage?.PromptTokens, (int)sw.ElapsedMilliseconds, success: true, null, ct);
+            if (payload?.Data == null) return Array.Empty<float[]>();
+            // Normalized to the column's width, as the single-text path does: a 768/3072-dim local
+            // model otherwise failed CAST(... AS VECTOR(1536)) and aborted the whole reindex.
+            return payload.Data.OrderBy(d => d.Index).Select(d => NormalizeVector(d.Embedding)).ToArray();
+        }
+        // Same degrade-not-throw contract as the single-text EmbedLocalAsync (PRS-T350): a
+        // transport failure (timeout, DNS, connection reset) used to propagate out of here and
+        // out of ComputeSimilaritiesBatchAsync, contradicting its own "returns 0.0 on failure"
+        // doc comment. A caller's cancellation still propagates.
+        catch (Exception ex) when (!(ex is OperationCanceledException && ct.IsCancellationRequested))
+        {
+            log.LogWarning(ex, "Local batch embedding call failed");
+            await RecordCallAsync(LocalProviderId, model, inputChars, null, (int)sw.ElapsedMilliseconds, success: false, ex.Message, CancellationToken.None);
             return Array.Empty<float[]>();
         }
-        var payload = await resp.Content.ReadFromJsonAsync<EmbeddingResponse>(cancellationToken: ct);
-        await RecordCallAsync(LocalProviderId, model, inputChars, payload?.Usage?.PromptTokens, (int)sw.ElapsedMilliseconds, success: true, null, ct);
-        if (payload?.Data == null) return Array.Empty<float[]>();
-        // Normalized to the column's width, as the single-text path does: a 768/3072-dim local
-        // model otherwise failed CAST(... AS VECTOR(1536)) and aborted the whole reindex.
-        return payload.Data.OrderBy(d => d.Index).Select(d => NormalizeVector(d.Embedding)).ToArray();
     }
 
     private async Task<float[][]> EmbedBatchAsync(IReadOnlyList<string> texts, CancellationToken ct)

@@ -55,10 +55,15 @@ public static partial class SpineCheck
     [GeneratedRegex(@"\b[A-Z][a-z]+\.?(?:\s[A-Z][a-z]+)+\b")]
     private static partial Regex ProperName();
 
+    // "Kyle" was listed here too, on the theory that a pair starting with it is always a sentence
+    // artefact like a pronoun — but "Kyle" is the universe's protagonist's real first name, and
+    // "Kyle Corbin"/"Kyle Ellen Corbin" are genuine two/three-word proper names, not sentence
+    // boundaries. Excluding it meant this check could never catch a merge that dropped Kyle's own
+    // full name — defeating the data-loss check for its most central character (PRS-T358).
     private static readonly HashSet<string> NameNoise = new(StringComparer.Ordinal)
     {
         "The", "He", "She", "They", "It", "His", "Her", "Their", "And", "But", "Then", "When",
-        "There", "That", "This", "Not", "You", "Kyle", // Kyle alone is one word; pairs starting with a pronoun are sentence artefacts
+        "There", "That", "This", "Not", "You",
     };
 
     public static string Strip(string? s) => EntityTag().Replace(s ?? "", "");

@@ -266,6 +266,13 @@ public sealed class BeatWriteOrchestrator
             var retryVerdict = await gate.CheckAsync(facts.EntityStateFacts.Concat(facts.ContinuityFacts).ToList(), retryPreview.GeneratedText, ct);
             if (retryVerdict.Contradicts)
                 throw new NarrativeContradictionRejectedException(verdict, preview.GeneratedText, retryVerdict, retryPreview.GeneratedText);
+            // verdict must stay in step with preview (PRS-T356): a later contradiction on the
+            // draft-gate fix-retry below throws (verdict, preview.GeneratedText, ...) as "the
+            // first attempt" — leaving verdict pointed at the ORIGINAL (pre-correction) draft
+            // while preview had already moved on to this corrected one paired them as if they
+            // were the same generation, when the reported "first attempt text" no longer matched
+            // the contradiction "first verdict" described.
+            verdict = retryVerdict;
             preview = retryPreview;
         }
 

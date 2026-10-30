@@ -46,10 +46,14 @@ public class EntityMentionService(IDbContextFactory<ProseDbContext> dbFactory)
                 BeatId      = x.Beat.Id,
                 Text        = x.Beat.Text,
             })
-            .Take(limit)
             .ToListAsync(ct);
 
-        return rows.DistinctBy(r => r.BeatId).Select(r => new EntityBeatMention(
+        // Distinct BEFORE Take: a beat linked through more than one BeatNodes row (the dual-
+        // beatset shape) produced duplicate rows here, and taking the limit in SQL before
+        // dedup let duplicates of one beat consume slots in the window — silently returning
+        // fewer than `limit` distinct beats and dropping later, legitimately-mentioned ones
+        // (PRS-T351).
+        return rows.DistinctBy(r => r.BeatId).Take(limit).Select(r => new EntityBeatMention(
             NodeTitle: r.NodeTitle,
             NodeSlug:  r.NodeSlug,
             NodeId:    r.NodeId,

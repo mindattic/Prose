@@ -31,7 +31,13 @@ public class BriefVerifier
         IReadOnlyList<string> Contradictions,
         IReadOnlyList<string> MissingFromGoal)
     {
-        public bool Passed => !CrossesStop && AddedEvents.Count == 0 && Contradictions.Count == 0;
+        // MissingFromGoal was missing from this list (PRS-T359): AsConstraints() below already
+        // treats a non-empty MissingFromGoal as a real failure requiring a retry, so a verdict
+        // with an empty crosses_stop/added_events/contradictions but a non-empty missing_from_goal
+        // reported Passed == true while still being a genuine gate failure by this record's own
+        // AsConstraints() contract.
+        public bool Passed => !CrossesStop && AddedEvents.Count == 0 && Contradictions.Count == 0
+            && MissingFromGoal.Count == 0;
 
         /// <summary>The failures phrased as constraints for a retry.</summary>
         public IReadOnlyList<string> AsConstraints()

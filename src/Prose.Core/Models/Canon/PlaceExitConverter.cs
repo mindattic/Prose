@@ -25,19 +25,24 @@ public class PlaceExitConverter : JsonConverter<PlaceExit>
 
         return new PlaceExit
         {
-            Direction   = obj["direction"]?.GetValue<string>() ?? "",
-            Destination = obj["destination"]?.GetValue<string>() ?? "",
-            Type        = obj["type"]?.GetValue<string>() ?? "road",
-            Description = obj["description"]?.GetValue<string>() ?? "",
+            Direction   = ReadString(obj["direction"]),
+            Destination = ReadString(obj["destination"]),
+            Type        = ReadString(obj["type"]) is { Length: > 0 } ts ? ts : "road",
+            Description = ReadString(obj["description"]),
             Restricted  = ReadBool(obj["restricted"]),
             DangerLevel = ReadInt(obj["danger_level"]),
             Tags        = obj["tags"]?.Deserialize<List<string>>() ?? [],
         };
     }
 
-    // GetValue<bool>/GetValue<int> throw on "restricted": "true" or "danger_level": "3" / 2.5, and
-    // one such exit failed the whole place's deserialization. Anything unreadable falls back to the
-    // default instead.
+    // GetValue<bool>/GetValue<int>/GetValue<string> throw on a mismatched JSON kind — e.g.
+    // "restricted": "true" or "danger_level": "3" / 2.5, or a numeric/bool "direction" some
+    // generator emitted where a string was expected — and one such exit failed the whole place's
+    // deserialization (PRS-T355 for the string fields; the bool/int fields were fixed earlier).
+    // Anything unreadable falls back to the default instead.
+    private static string ReadString(JsonNode? n) =>
+        n is JsonValue v && v.TryGetValue<string>(out var s) ? s : "";
+
     private static bool ReadBool(JsonNode? n) => n is JsonValue v
         && (v.TryGetValue<bool>(out var b) ? b
             : v.TryGetValue<string>(out var s) && bool.TryParse(s, out var parsed) && parsed);

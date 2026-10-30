@@ -28,10 +28,16 @@ public class AtmosphereDataConverter : JsonConverter<AtmosphereData>
             Sights = obj["sights"]?.Deserialize<List<string>>() ?? [],
             Sounds = obj["sounds"]?.Deserialize<List<string>>() ?? [],
             Smells = obj["smells"]?.Deserialize<List<string>>() ?? [],
-            Feel   = obj["feel"]?.GetValue<string>() ?? "",
+            Feel   = ReadString(obj["feel"]),
             Tags   = obj["tags"]?.Deserialize<List<string>>() ?? [],
         };
     }
+
+    // GetValue<string>() throws when "feel" is a non-string scalar (a number or nested value some
+    // generator emitted), and one such entry failed deserialization of the whole record
+    // (PRS-T355). Anything unreadable falls back to empty instead.
+    private static string ReadString(JsonNode? n) =>
+        n is JsonValue v && v.TryGetValue<string>(out var s) ? s : "";
 
     public override void Write(Utf8JsonWriter writer, AtmosphereData value, JsonSerializerOptions options)
     {

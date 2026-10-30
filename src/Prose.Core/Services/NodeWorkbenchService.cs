@@ -2662,7 +2662,23 @@ public class NodeWorkbenchService
                 }
 
                 var (prevText, nextText) = BuildTextWindow(ordered, idx, contextChars: 1500);
-                var tracked = await db.Beats.FirstAsync(b => b.Id == beat.Id, ct);
+                // FirstOrDefaultAsync, not FirstAsync (PRS-T352): a beat deleted by a concurrent
+                // edit while this run was in progress made FirstAsync throw OUTSIDE the per-beat
+                // try/catch below, escaping to the top-level handler and marking the WHOLE node
+                // "failed" instead of skipping this one beat and continuing — the exact outcome
+                // the per-beat catch exists to avoid. Mirrors NarrateBeatAsync's own lookup.
+                var tracked = await db.Beats.FirstOrDefaultAsync(b => b.Id == beat.Id, ct);
+                if (tracked == null)
+                {
+                    failedCount++;
+                    failedBeatIds.Add(beat.Id);
+                    log.LogWarning("Node {S} beat {B} no longer exists — skipping and continuing", nodeId, beat.Id);
+                    node.Error = failedCount == 1
+                        ? $"Beat {beat.Id}: beat no longer exists"
+                        : $"{failedCount} beats failed (latest {beat.Id}): beat no longer exists";
+                    await db.SaveChangesAsync(ct);
+                    continue;
+                }
 
                 // Pick the voice: beat override → node lock → tts default
                 // (resolved inside the TTS service). Lock takes precedence

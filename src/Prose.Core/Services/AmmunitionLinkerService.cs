@@ -296,7 +296,12 @@ public class AmmunitionLinkerService
     {
         if (string.IsNullOrEmpty(s)) return false;
         var l = s.ToLowerInvariant();
-        return FirearmHints.Any(h => l.Contains(h));
+        // Word-boundary match, not plain substring: a bare Contains("auto") also matched
+        // "Automaton", "Autoloader", "Auto-Strop", etc. — non-firearm weapons misclassified as
+        // firearms, which ran a paid LLM ammo-extraction pass on them and could mint spurious
+        // Ammunition canon entities for a weapon that fires nothing (PRS-T349).
+        return FirearmHints.Any(h => System.Text.RegularExpressions.Regex.IsMatch(
+            l, $@"\b{System.Text.RegularExpressions.Regex.Escape(h)}\b"));
     }
 
     private async Task<List<string>> ExtractAmmoForWeaponAsync(

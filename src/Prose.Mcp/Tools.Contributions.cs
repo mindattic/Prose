@@ -32,7 +32,13 @@ public class ContributionTools(BeatContributionService contributions, EntityMent
     {
         if (!Guid.TryParse(beatId, out var id)) return JsonSerializer.Serialize(new { error = "bad_beat_id", beatId }, JsonOpts);
         var lines = new Dictionary<Guid, ContributionInput>();
-        using (var doc = JsonDocument.Parse(linesJson))
+        // linesJson not an object, or an edge entry missing "relation"/"target", used to throw an
+        // unguarded InvalidOperationException/KeyNotFoundException out of this tool instead of the
+        // structured bad-request error every other malformed-input path in this method returns
+        // (bad_entity_id, "refused") — same convention as Tools.Combat.cs's ParseSides/ParseResources.
+        try
+        {
+            using var doc = JsonDocument.Parse(linesJson);
             foreach (var p in doc.RootElement.EnumerateObject())
             {
                 if (!Guid.TryParse(p.Name, out var entity)) return JsonSerializer.Serialize(new { error = "bad_entity_id", p.Name }, JsonOpts);
@@ -44,6 +50,11 @@ public class ContributionTools(BeatContributionService contributions, EntityMent
                                 Guid.TryParse(e.GetProperty("target").GetString(), out var g) ? g : Guid.Empty)).ToList()
                             : []);
             }
+        }
+        catch (Exception ex) when (ex is JsonException or InvalidOperationException or KeyNotFoundException)
+        {
+            return JsonSerializer.Serialize(new { error = "bad_lines_json", detail = ex.Message }, JsonOpts);
+        }
         try { await contributions.SetAsync(id, lines); }
         catch (InvalidOperationException ex) { return JsonSerializer.Serialize(new { error = "refused", message = ex.Message }, JsonOpts); }
         return await GetBeatContributionsImpl(beatId);

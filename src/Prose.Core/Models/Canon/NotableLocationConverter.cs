@@ -28,11 +28,17 @@ public class NotableLocationConverter : JsonConverter<NotableLocation>
 
         return new NotableLocation
         {
-            Name        = obj["name"]?.GetValue<string>() ?? "",
-            Description = obj["description"]?.GetValue<string>() ?? "",
+            Name        = ReadString(obj["name"]),
+            Description = ReadString(obj["description"]),
             Tags        = obj["tags"]?.Deserialize<List<string>>() ?? [],
         };
     }
+
+    // GetValue<string>() throws when the JSON field is a non-string scalar (a number or bool some
+    // generator emitted), and one such entry failed deserialization of the whole District
+    // (PRS-T355). Anything unreadable falls back to empty instead.
+    private static string ReadString(JsonNode? n) =>
+        n is JsonValue v && v.TryGetValue<string>(out var s) ? s : "";
 
     public override void Write(Utf8JsonWriter writer, NotableLocation value, JsonSerializerOptions options)
     {

@@ -183,9 +183,16 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
                          && (e.EntityType == "character" || e.EntityType == "person"))
                 .Select(e => e.Name)
                 .ToListAsync(ct);
+            // Word-boundary match, not plain substring (PRS-T354) — the same bug class
+            // InferOnscreenFromBeatGoal below already guards against (its own comment: "a raw
+            // substring test made 'Ash' primary in every scene with 'wash' in it"). A short first
+            // name is otherwise falsely "mentioned" whenever it sits inside an unrelated word.
+            static bool HasWord(string text, string word) =>
+                word.Length > 0 && System.Text.RegularExpressions.Regex.IsMatch(
+                    text, $@"(?<!\w){System.Text.RegularExpressions.Regex.Escape(word)}(?!\w)");
             var mentioned = entityChars
                 .Where(n => !string.IsNullOrEmpty(n)
-                         && allGoalsLower.Contains(n.Split(' ')[0].ToLowerInvariant()))
+                         && HasWord(allGoalsLower, n.Split(' ')[0].ToLowerInvariant()))
                 .Take(15)
                 .ToList();
             allCharacters = allCharacters.Union(mentioned, StringComparer.OrdinalIgnoreCase).ToList();

@@ -482,13 +482,22 @@ public sealed class GripePassService(
         if (idx < 0 || idx >= orderedBeats.Count) return null;
         var beat = orderedBeats[idx];
         var normalizedQuote = Normalize(quote);
-        if (normalizedQuote.Length >= 12 && !Normalize(beat.Text).Contains(normalizedQuote, StringComparison.OrdinalIgnoreCase))
-        {
-            var actualIdx = orderedBeats.FindIndex(b => Normalize(b.Text).Contains(normalizedQuote, StringComparison.OrdinalIgnoreCase));
-            if (actualIdx < 0) return null;
-            return (orderedBeats[actualIdx].Id, orderedBeats[actualIdx].Text, actualIdx + 1);
-        }
-        return (beat.Id, beat.Text, citedBeatNumber);
+        // Empty/blank quote grounds nothing (PRS-T353): callers only filter complaints on a
+        // non-blank Complaint, never on Quote, so an omitted quote used to fall through to the
+        // unconditional "accept the cited beat" return below with no containment check at all.
+        if (normalizedQuote.Length == 0) return null;
+        if (Normalize(beat.Text).Contains(normalizedQuote, StringComparison.OrdinalIgnoreCase))
+            return (beat.Id, beat.Text, citedBeatNumber);
+        // A quote under 12 normalized characters used to skip this whole containment check and
+        // be accepted as grounded in the cited beat sight unseen (PRS-T353) — defeating "a
+        // complaint whose quote does not appear in the manuscript is discarded before any
+        // arbiter spend" for any short citation. Short quotes still don't get the search-the-
+        // whole-book fallback below (too likely to coincidentally match unrelated text), but one
+        // that isn't even in its own cited beat is ungrounded, not free-passed.
+        if (normalizedQuote.Length < 12) return null;
+        var actualIdx = orderedBeats.FindIndex(b => Normalize(b.Text).Contains(normalizedQuote, StringComparison.OrdinalIgnoreCase));
+        if (actualIdx < 0) return null;
+        return (orderedBeats[actualIdx].Id, orderedBeats[actualIdx].Text, actualIdx + 1);
     }
 
     private static string Normalize(string s) => Regex.Replace(s, @"\s+", " ").Trim();

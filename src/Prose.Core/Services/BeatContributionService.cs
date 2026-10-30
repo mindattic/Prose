@@ -129,7 +129,8 @@ public class BeatContributionService(IDbContextFactory<ProseDbContext> dbFactory
     public async Task<ContributionCheck> CheckAsync(Guid beatId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var beat = await db.Beats.AsNoTracking().FirstAsync(b => b.Id == beatId, ct);
+        var beat = await db.Beats.AsNoTracking().FirstOrDefaultAsync(b => b.Id == beatId, ct)
+                   ?? throw new InvalidOperationException($"Beat {beatId} not found.");
         var tagged = await TaggedCharactersAsync(db, beat.Text ?? "", ct);
         var rows = await db.BeatContributions.AsNoTracking().Where(c => c.BeatId == beatId)
             .Select(c => new { c.EntityId, c.TextHash }).ToListAsync(ct);

@@ -66,6 +66,13 @@ public class HubTools(IHttpClientFactory httpFactory)
         {
             return JsonSerializer.Serialize(new { error = "hub_unreachable", detail = ex.Message, hint = "Is Prose.Hub running on port 5900?" }, JsonOpts);
         }
+        catch (TaskCanceledException ex)
+        {
+            // HttpClient.Timeout surfaces as TaskCanceledException, not HttpRequestException (same
+            // fix as HubInvoker.InvokeAsync, PRS-T360) — unguarded here it escaped as an unhandled
+            // exception instead of this server's usual clean hub_timeout/hub_unreachable JSON.
+            return JsonSerializer.Serialize(new { error = "hub_timeout", detail = ex.Message, hint = $"The Hub did not answer within {http.Timeout}." }, JsonOpts);
+        }
     }
 
     [McpServerTool, Description(
@@ -90,6 +97,10 @@ public class HubTools(IHttpClientFactory httpFactory)
         {
             return JsonSerializer.Serialize(new { error = "hub_unreachable", detail = ex.Message, hint = "Is Prose.Hub running on port 5900?" }, JsonOpts);
         }
+        catch (TaskCanceledException ex)
+        {
+            return JsonSerializer.Serialize(new { error = "hub_timeout", detail = ex.Message, hint = $"The Hub did not answer within {http.Timeout}." }, JsonOpts);
+        }
     }
 
     [McpServerTool, Description(
@@ -107,6 +118,10 @@ public class HubTools(IHttpClientFactory httpFactory)
         catch (HttpRequestException ex)
         {
             return JsonSerializer.Serialize(new { error = "hub_unreachable", detail = ex.Message, hint = "Is Prose.Hub running on port 5900?" }, JsonOpts);
+        }
+        catch (TaskCanceledException ex)
+        {
+            return JsonSerializer.Serialize(new { error = "hub_timeout", detail = ex.Message, hint = $"The Hub did not answer within {http.Timeout}." }, JsonOpts);
         }
     }
 }
