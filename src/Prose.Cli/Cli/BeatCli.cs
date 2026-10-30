@@ -380,6 +380,8 @@ public static class BeatCli
         Console.WriteLine($"Title:        {beat.Title ?? "(none)"}");
         Console.WriteLine($"Kind:         {beat.Kind ?? "(none)"}");
         Console.WriteLine($"UpdatedAt:    {beat.UpdatedAt:u}");
+        Console.WriteLine($"Description:  {beat.Description ?? "(none)"}");
+        Console.WriteLine($"Summary:      {Beat.SummaryTrustState(beat.Description, beat.DescriptionHash, beat.TextHash) ?? "(none)"}");
         Console.WriteLine();
         Console.WriteLine(beat.Text ?? "(empty)");
         return 0;
