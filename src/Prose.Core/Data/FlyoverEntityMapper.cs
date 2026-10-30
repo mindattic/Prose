@@ -72,7 +72,7 @@ public static class FlyoverEntityMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "flyover_entity")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "flyover_entity"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "flyover_entity" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

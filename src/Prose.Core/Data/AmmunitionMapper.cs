@@ -73,7 +73,7 @@ public static class AmmunitionMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "ammunition")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "ammunition"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "ammunition" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

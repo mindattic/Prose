@@ -69,7 +69,7 @@ public static class DocumentMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "document")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "document"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "document" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

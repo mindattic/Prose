@@ -62,7 +62,7 @@ public static class QuoteMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "quote")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "quote"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "quote" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

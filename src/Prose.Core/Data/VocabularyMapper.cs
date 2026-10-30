@@ -61,7 +61,7 @@ public static class VocabularyMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "vocabulary")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "vocabulary"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "vocabulary" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

@@ -51,7 +51,7 @@ public static class MotifMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "motif")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "motif"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "motif" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

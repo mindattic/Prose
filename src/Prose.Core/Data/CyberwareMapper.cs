@@ -71,7 +71,7 @@ public static class CyberwareMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "cyberware")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "cyberware"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "cyberware" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

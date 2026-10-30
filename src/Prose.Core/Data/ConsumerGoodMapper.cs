@@ -69,7 +69,7 @@ public static class ConsumerGoodMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "consumer_good")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "consumer_good"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "consumer_good" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

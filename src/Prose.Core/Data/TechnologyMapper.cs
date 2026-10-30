@@ -69,7 +69,7 @@ public static class TechnologyMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "technology")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "technology"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "technology" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

@@ -76,7 +76,7 @@ public static class MaterialMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "material")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "material"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "material" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

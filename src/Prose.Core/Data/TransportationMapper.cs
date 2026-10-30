@@ -76,7 +76,7 @@ public static class TransportationMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "transportation")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "transportation"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "transportation" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

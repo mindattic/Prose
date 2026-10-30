@@ -73,7 +73,7 @@ public static class SyntheticMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "synthetic")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "synthetic"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "synthetic" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

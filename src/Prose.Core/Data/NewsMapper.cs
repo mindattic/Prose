@@ -68,7 +68,7 @@ public static class NewsMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "news")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "news"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "news" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

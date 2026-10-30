@@ -75,7 +75,7 @@ public static class GenemodMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "genemod")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "genemod"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "genemod" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

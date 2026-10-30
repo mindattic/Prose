@@ -79,7 +79,7 @@ public static class PlaceMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "place")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "place"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "place" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

@@ -72,7 +72,7 @@ public static class ArchetypeMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "archetype")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "archetype"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "archetype" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

@@ -72,7 +72,7 @@ public static class LabSpecimenMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "lab_specimen")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "lab_specimen"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "lab_specimen" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

@@ -72,7 +72,7 @@ public static class PsionicMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "psionic")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "psionic"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "psionic" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

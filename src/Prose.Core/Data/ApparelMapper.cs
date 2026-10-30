@@ -69,7 +69,7 @@ public static class ApparelMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "apparel")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "apparel"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "apparel" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

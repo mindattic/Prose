@@ -68,7 +68,7 @@ public static class ContractMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "contract")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "contract"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "contract" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

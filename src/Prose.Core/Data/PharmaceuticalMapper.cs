@@ -71,7 +71,7 @@ public static class PharmaceuticalMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "pharmaceutical")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "pharmaceutical"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "pharmaceutical" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

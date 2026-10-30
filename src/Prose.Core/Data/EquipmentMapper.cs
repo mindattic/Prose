@@ -70,7 +70,7 @@ public static class EquipmentMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "equipment")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "equipment"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "equipment" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

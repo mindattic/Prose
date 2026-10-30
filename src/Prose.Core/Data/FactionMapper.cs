@@ -77,7 +77,7 @@ public static class FactionMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "faction")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "faction"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "faction" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

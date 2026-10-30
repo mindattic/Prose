@@ -69,7 +69,7 @@ public static class CorponationMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "corponation")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "corponation"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "corponation" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

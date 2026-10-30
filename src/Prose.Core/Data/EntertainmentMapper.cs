@@ -69,7 +69,7 @@ public static class EntertainmentMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "entertainment")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "entertainment"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "entertainment" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

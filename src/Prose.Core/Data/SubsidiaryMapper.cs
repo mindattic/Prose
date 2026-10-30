@@ -73,7 +73,7 @@ public static class SubsidiaryMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "subsidiary")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "subsidiary"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "subsidiary" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 

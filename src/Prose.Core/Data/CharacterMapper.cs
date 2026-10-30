@@ -80,7 +80,7 @@ public static class CharacterMapper
 
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "character")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "character"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "character" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -167,7 +167,7 @@ public static class CharacterMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "character")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "character"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "character" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
         if (ids.Count == 0) return new();

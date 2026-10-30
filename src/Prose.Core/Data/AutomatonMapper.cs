@@ -73,7 +73,7 @@ public static class AutomatonMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "automaton")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "automaton"))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "automaton" && e.Status != "archived"))
             .Select(e => e.Id)
             .ToHashSet();
 
