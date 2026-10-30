@@ -89,13 +89,22 @@ public class ClaudeCliService
         // Drain stderr from the start. Read only after exit, a CLI that wrote more than the pipe
         // buffer to stderr blocked on the write, stdout never closed, and the read below hung.
         var errTask = proc.StandardError.ReadToEndAsync(CancellationToken.None);
-        try
+
+        // Write the prompt on its own task so stdout draining (below) starts immediately,
+        // concurrently with it, instead of after: writing the whole prompt to stdin before
+        // reading any stdout deadlocked both sides whenever the child began emitting output (or
+        // needed its own stdout pipe drained to keep consuming stdin) before this method got
+        // around to reading it — a prompt bigger than the pipe buffer, or a CLI that echoes
+        // early progress, both trigger it. Same bidirectional-pipe class CodexCliService.RunAsync
+        // documents and avoids by starting its reads before writing stdin.
+        var writeTask = Task.Run(async () =>
         {
-            // Pipe the prompt in via stdin so we don't fight Windows command-line escaping.
             await proc.StandardInput.WriteAsync(prompt.AsMemory(), ct);
             await proc.StandardInput.FlushAsync(ct);
             proc.StandardInput.Close();
-
+        }, ct);
+        try
+        {
             string? line;
             while ((line = await proc.StandardOutput.ReadLineAsync(ct)) != null)
             {
@@ -103,6 +112,7 @@ public class ClaudeCliService
                 yield return line;
             }
 
+            await writeTask; // surface a stdin-write failure instead of swallowing it
             await proc.WaitForExitAsync(ct);
 
             if (proc.ExitCode != 0)

@@ -74,6 +74,12 @@ public sealed class LocalReviewLlm : IReviewLlm
 
                 using var res = await http.SendAsync(req, ct);
                 var json = await res.Content.ReadAsStringAsync(ct);
+                // Defaults to the first response; the context-overflow retry below overwrites
+                // these with the retry's own status/reason before falling through to the throw,
+                // so a retry that fails differently (429/5xx/401) isn't misreported as the
+                // original 400 — which also fed the caller's 4xx-is-permanent classification below.
+                var reportStatusCode = res.StatusCode;
+                var reportReasonPhrase = res.ReasonPhrase;
                 if (!res.IsSuccessStatusCode)
                 {
                     // Context-overflow (400): the API reports the exact input token count.
@@ -103,14 +109,17 @@ public sealed class LocalReviewLlm : IReviewLlm
                                     return StripThinkBlocks(cv2.GetString() ?? "");
                                 return "";
                             }
-                            // retry also failed — fall through to throw with the retry error body
+                            // retry also failed — fall through to throw with the retry's own
+                            // error body AND its own status/reason, not the original 400's.
+                            reportStatusCode = rs2.StatusCode;
+                            reportReasonPhrase = rs2.ReasonPhrase;
                         }
                     }
 
                     var snippet = json.Length > 1024 ? json[..1024] : json;
                     throw new HttpRequestException(
-                        $"Local LLM at {endpoint} returned {(int)res.StatusCode} {res.ReasonPhrase}: {snippet}",
-                        inner: null, statusCode: res.StatusCode);
+                        $"Local LLM at {endpoint} returned {(int)reportStatusCode} {reportReasonPhrase}: {snippet}",
+                        inner: null, statusCode: reportStatusCode);
                 }
 
                 using var doc = JsonDocument.Parse(json);

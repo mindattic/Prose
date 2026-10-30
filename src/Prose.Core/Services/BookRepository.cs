@@ -213,10 +213,16 @@ public class BookRepository : IBookRepository
     {
         if (string.IsNullOrWhiteSpace(name)) return null;
         var slug = UniverseGraphService.Slugify(name);
-        return db.Entities
+        // Two+ characters sharing this name/slug -> unresolved, not an arbitrary pick (same rule
+        // as CanonExportService.ResolveEntityIdAsync / CharacterGearService.ResolveCharacterAsync):
+        // a bare FirstOrDefault() here silently linked the book's protagonist to whichever row the
+        // DB happened to return first when the name was ambiguous.
+        var hits = db.Entities
             .Where(e => e.EntityType == "character"
                 && (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)
-            .FirstOrDefault();
+            .Take(2)
+            .ToList();
+        return hits.Count == 1 ? hits[0] : null;
     }
 }

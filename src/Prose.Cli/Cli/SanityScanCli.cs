@@ -78,26 +78,28 @@ public static class SanityScanCli
         // than a whole book. Scanning at the book level instead fixes the floor check for free
         // and is strictly more informative for the other checks too — Check A/B/D findings still
         // cite the (globally-unique) Beat.Number, so nothing about locating a finding is lost.
-        var directCounts = await db.BeatNodes.AsNoTracking()
-            .Where(sb => true)
-            .GroupBy(sb => sb.NodeId)
-            .Select(g => new { NodeId = g.Key, Count = g.Count() })
-            .ToDictionaryAsync(x => x.NodeId, x => x.Count);
-
-        var childCounts = await (
-            from child in db.Nodes.AsNoTracking()
-            where child.ParentNodeId != null
-            join sb in db.BeatNodes.AsNoTracking().Where(x => true) on child.Id equals sb.NodeId
-            group sb by child.ParentNodeId!.Value into g
-            select new { ParentId = g.Key, Count = g.Count() }
-        ).ToDictionaryAsync(x => x.ParentId, x => x.Count);
-
+        //
+        // The count must recurse to full depth, not just one level of children: a book with a
+        // split mega-chapter (a nested Collection node between the book and its chapters) has
+        // zero direct beats AND zero beats on its immediate children, so a one-level rollup here
+        // silently dropped it from `eligible` even though ScanAsync's own rollup (via
+        // NodeWorkbenchService.GetLeafDescendantIdsAsync, which recurses past any nesting depth)
+        // finds and scans its beats fine under --slug. Mirror that same leaf-walk here so --all
+        // can't silently skip a book that --slug scans correctly.
         var books = await db.Nodes.AsNoTracking().OfType<BookNode>().ToListAsync();
 
-        var eligible = books
-            .Where(b => directCounts.GetValueOrDefault(b.Id, 0) + childCounts.GetValueOrDefault(b.Id, 0) > 2)
-            .OrderBy(b => b.Title)
-            .ToList();
+        var eligible = new List<BookNode>();
+        foreach (var b in books)
+        {
+            var directCount = await db.BeatNodes.AsNoTracking().CountAsync(sb => sb.NodeId == b.Id);
+            var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, b.Id);
+            var childIds = leafIds.Count == 1 && leafIds[0] == b.Id ? [] : leafIds;
+            var childCount = childIds.Count > 0
+                ? await db.BeatNodes.AsNoTracking().CountAsync(sb => childIds.Contains(sb.NodeId))
+                : 0;
+            if (directCount + childCount > 2) eligible.Add(b);
+        }
+        eligible = eligible.OrderBy(b => b.Title).ToList();
 
         if (!jsonMode)
             Console.WriteLine($"Scanning {eligible.Count} node(s)…\n");

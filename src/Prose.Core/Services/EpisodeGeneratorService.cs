@@ -304,7 +304,10 @@ public class EpisodeGeneratorService
     {
         // Roman numerals I-X, on their own line, possibly with a closing period.
         var s = p.TrimEnd('.').Trim();
-        return s.Length <= 4 && s.All(c => "IVXivx".Contains(c));
+        // s.All(...) is vacuously true on an empty sequence, so an ellipsis-only paragraph
+        // ("...") trimmed down to "" was misclassified as a roman-numeral marker and silently
+        // dropped from the episode's beats instead of being kept as narration.
+        return s.Length is > 0 and <= 4 && s.All(c => "IVXivx".Contains(c));
     }
 
     // ── Slug ────────────────────────────────────────────────────────────
