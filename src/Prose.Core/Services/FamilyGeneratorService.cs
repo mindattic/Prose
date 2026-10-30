@@ -161,7 +161,7 @@ public class FamilyGeneratorService
         // Spouse heritage source: a canon character whose ancestry is
         // *different* from subject's, to keep blended kids interesting per
         // the project's Ubiquitous-Diaspora rule.
-        var spouseDonor = await PickSpouseDonorAsync(db, subjectId, subjectAncestries, ct);
+        var spouseDonor = await PickSpouseDonorAsync(db, subjectId, subjectAncestries, rng, ct);
 
         var parents = BuildParents(subject, lastChunks, pool, rng);
 
@@ -204,7 +204,7 @@ public class FamilyGeneratorService
                             au.GeneticAncestry.Where(kv => kv.Value >= 5.0)
                                 .Select(kv => kv.Key)
                                 .ToHashSet(StringComparer.OrdinalIgnoreCase),
-                            ct);
+                            rng, ct);
                         var spouse = new ProposedCharacter(
                             Id: Guid.CreateVersion7(),
                             FirstName: pool.PickFirstName(spGender, rng) ?? "Spouse",
@@ -492,7 +492,7 @@ public class FamilyGeneratorService
     /// exists, returns null and the spouse stays heritage-blank.
     /// </summary>
     private async Task<SpouseDonor?> PickSpouseDonorAsync(ProseDbContext db,
-        Guid subjectId, HashSet<string> subjectAncestries, CancellationToken ct)
+        Guid subjectId, HashSet<string> subjectAncestries, Random rng, CancellationToken ct)
     {
         // The relational Character/GeneticAncestry tables, as ProposeAsync reads the subject: the
         // Records JSON blob this used to parse is retired, so no donor was ever found and every
@@ -520,7 +520,11 @@ public class FamilyGeneratorService
             candidates.Add(new SpouseDonor(row.Heritage ?? "", anc));
         }
         if (candidates.Count == 0) return null;
-        return candidates[Random.Shared.Next(candidates.Count)];
+        // rng, not Random.Shared: ProposeAsync's doc comment promises "pass a seeded Random for
+        // reproducible proposals," and every other draw in this file threads rng through — this
+        // one silently didn't, so spouse/aunt-uncle-spouse heritage was non-deterministic even
+        // under a fixed seed.
+        return candidates[rng.Next(candidates.Count)];
     }
 
     // ── name pool ────────────────────────────────────────────────────────

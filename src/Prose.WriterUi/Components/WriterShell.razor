@@ -1207,11 +1207,22 @@
         }, "Beat inserted.");
     }
 
-    private Task JoinPreviousAsync()
+    private async Task JoinPreviousAsync()
     {
-        if (book is null || beat is null) return Task.CompletedTask;
+        if (book is null || beat is null) return;
+
+        // Unsaved text first: the join is a database operation on the STORED beat, and merging
+        // stored text the author has already edited past would silently discard the edit — same
+        // guard as SplitAtCaretAsync, which this operation shares the risk with but had not
+        // carried the fix to.
+        if (Dirty)
+        {
+            await SaveAsync(finishing: false);
+            if (problems.Count > 0 || conflict is not null) return;
+        }
+
         var target = beat;
-        return StructuralAsync(async () =>
+        await StructuralAsync(async () =>
         {
             await Writer.JoinWithPreviousAsync(book.Id, target.ChapterNodeId, target.Id);
             // The merged text lives in the PREVIOUS beat now, which is where the author is
@@ -1396,7 +1407,12 @@
 
     private async Task JsVoidAsync(string identifier, params object?[] args)
     {
-        try { await JS.InvokeVoidAsync(identifier, args); }
+        // A successful call proves the circuit answered: nothing ever set `connected` back to
+        // true after a JSDisconnectedException, so a transient disconnect that Blazor Server's own
+        // automatic reconnect resumed (the same circuit, same field values) left the status bar
+        // stuck on "Disconnected" forever even though every interop call works again. This is the
+        // most frequently-called JS entry point in the shell, so it doubles as the recovery signal.
+        try { await JS.InvokeVoidAsync(identifier, args); connected = true; }
         catch (JSDisconnectedException) { connected = false; }
         // Not jsError: that banner says the Display editor failed and the mode was switched to
         // Markdown, which only OnEditorJsError actually does. A failed spell replace or playback

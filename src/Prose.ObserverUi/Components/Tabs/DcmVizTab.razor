@@ -93,8 +93,16 @@
     {
         var idStr = e.Value as string;
         if (string.IsNullOrWhiteSpace(idStr) || !Guid.TryParse(idStr, out var runId)) return;
-        var payload = await api.GetDcmRunPayloadAsync(runId);
-        if (payload != null) await js.InvokeVoidAsync("dcmVizInterop.render", rootId, payload);
+        try
+        {
+            var payload = await api.GetDcmRunPayloadAsync(runId);
+            if (payload != null) await js.InvokeVoidAsync("dcmVizInterop.render", rootId, payload);
+        }
+        // Same guard as OnPayload's identical render call just above, which this one was missing —
+        // a Hub transport failure or a disconnected circuit must not escape a change handler.
+        catch (HttpRequestException) { }
+        catch (JSDisconnectedException) { }
+        catch (JSException) { }
     }
 
     public ValueTask DisposeAsync()

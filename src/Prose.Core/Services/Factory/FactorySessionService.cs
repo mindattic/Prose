@@ -18,6 +18,13 @@ public sealed record SessionStartResult(Guid SessionId, string? LastSummaryJson,
 /// </summary>
 public sealed class FactorySessionService(IDbContextFactory<ProseDbContext> dbFactory)
 {
+    // This service is a singleton (ServiceCollectionExtensions), so concurrent Hub requests (an
+    // MCP call and a CLI command, or two concurrent MCP calls) can read/write currentCache at the
+    // same time. A bare tuple field has no atomicity guarantee across its two members, so an
+    // unguarded reader could observe a torn (At, Id) pair — a timestamp paired with the wrong id —
+    // and stamp a ledger row's Actor with a stale/inconsistent session id. Guarded with a lock
+    // rather than Interlocked/volatile since the value is a two-field tuple, not a single word.
+    private readonly object currentCacheLock = new();
     private (DateTime At, Guid? Id) currentCache = (DateTime.MinValue, null);
 
     public async Task<SessionStartResult> StartAsync(string? claudeSessionId, string? gitHead, string? startActionJson, CancellationToken ct = default)
@@ -34,7 +41,7 @@ public sealed class FactorySessionService(IDbContextFactory<ProseDbContext> dbFa
         // this session continuing, not a second one: resume its row, and never report it as "other".
         var mine = claudeId == null ? [] : open.Where(s => s.ClaudeSessionId == claudeId).ToList();
         var others = open.Where(s => claudeId == null || s.ClaudeSessionId != claudeId).ToList();
-        currentCache = (DateTime.MinValue, null);
+        lock (currentCacheLock) currentCache = (DateTime.MinValue, null);
         if (mine.Count > 0)
             return new SessionStartResult(mine[0].Id, last?.EndSummaryJson, last?.EndedAt,
                 others.Select(o => (o.Id, o.StartedAt)).ToList());
@@ -120,7 +127,7 @@ public sealed class FactorySessionService(IDbContextFactory<ProseDbContext> dbFa
         session.EndSummaryJson = summary.ToJsonString();
         session.GitHeadEnd = Trunc(gitHead, 40);
         await db.SaveChangesAsync(ct);
-        currentCache = (DateTime.MinValue, null);
+        lock (currentCacheLock) currentCache = (DateTime.MinValue, null);
         return (true, [], session.Id);
     }
 
@@ -128,13 +135,15 @@ public sealed class FactorySessionService(IDbContextFactory<ProseDbContext> dbFa
     /// as its Actor. Cached for ten seconds so ledger writes stay cheap.</summary>
     public async Task<Guid?> CurrentSessionIdAsync(CancellationToken ct = default)
     {
-        if (DateTime.UtcNow - currentCache.At < TimeSpan.FromSeconds(10)) return currentCache.Id;
+        (DateTime At, Guid? Id) snapshot;
+        lock (currentCacheLock) snapshot = currentCache;
+        if (DateTime.UtcNow - snapshot.At < TimeSpan.FromSeconds(10)) return snapshot.Id;
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var since = DateTime.UtcNow.AddHours(-24);
         var id = await db.FactorySessions.AsNoTracking()
             .Where(s => s.EndedAt == null && s.StartedAt >= since)
             .OrderByDescending(s => s.StartedAt).Select(s => (Guid?)s.Id).FirstOrDefaultAsync(ct);
-        currentCache = (DateTime.UtcNow, id);
+        lock (currentCacheLock) currentCache = (DateTime.UtcNow, id);
         return id;
     }
 

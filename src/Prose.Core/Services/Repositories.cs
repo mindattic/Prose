@@ -4757,7 +4757,14 @@ public class QuoteRepository : EfRepository<QuoteData>
         }
         else
         {
-            existingEntity.Name       = item.Quote;
+            // Same name-changed guard as every other repo's Save (e.g. CharacterRepository) — a
+            // quote whose text changed kept its original Slug forever, so GetBySlug for it went
+            // stale and ResolveQuoteSlug's own collision check never re-ran for edited quotes.
+            if (!string.Equals(existingEntity.Name, item.Quote, StringComparison.Ordinal))
+            {
+                existingEntity.Name = item.Quote;
+                existingEntity.Slug = ResolveQuoteSlug(db, name, id, existingEntity.Slug);
+            }
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 

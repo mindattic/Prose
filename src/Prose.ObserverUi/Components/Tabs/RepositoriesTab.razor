@@ -5,7 +5,11 @@
         <code>browse_repository</code>.
     </p>
 
-    @if (selectedType == null)
+    @if (error != null)
+    {
+        <p class="err">@error</p>
+    }
+    else if (selectedType == null)
     {
         @if (loadingTypes)
         {
@@ -64,11 +68,15 @@
     private string? selectedType;
     private string search = "";
     private bool loadingRows;
+    private string? error;
     private BrowseRepositoryResultDto? browseResult;
 
     protected override async Task OnInitializedAsync()
     {
-        types = await api.ListRepositoryTypesAsync();
+        // The Hub call throws on a transport failure (bad/missing key, Hub restarting, a 500) by
+        // design — say so here rather than let it escape OnInitializedAsync and take the circuit down.
+        try { types = await api.ListRepositoryTypesAsync(); }
+        catch (HttpRequestException ex) { error = ex.Message; }
         loadingTypes = false;
     }
 
@@ -89,8 +97,10 @@
     {
         if (selectedType == null) return;
         loadingRows = true;
+        error = null;
         StateHasChanged();
-        browseResult = await api.BrowseRepositoryAsync(selectedType, search, page, 25);
+        try { browseResult = await api.BrowseRepositoryAsync(selectedType, search, page, 25); }
+        catch (HttpRequestException ex) { error = ex.Message; }
         loadingRows = false;
         StateHasChanged();
     }

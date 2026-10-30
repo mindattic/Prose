@@ -375,7 +375,14 @@ public static class WorkerModeCli
            "Return ONLY JSON: {\"score\":NN,\"review\":\"...\",\"improvements\":\"...\",\"contradictions\":\"...\"}";
 
     private static string BuildEntityBallotUserMsg(string name, string type, string desc, bool includeProse)
-        => $"Name: {name}\nType: {type}\n\nDescription:\n{desc[..Math.Min(1000, desc.Length)]}";
+        => $"Name: {name}\nType: {type}\n\nDescription:\n{desc[..Math.Min(1000, desc.Length)]}"
+         + (includeProse
+                // includeProse was accepted but never used, so the caller's "first proseCount
+                // ballots get a fuller prose-upgrade review" intent (mirrors ReviewEntityCli's
+                // --prose N) silently did nothing when work ran through --worker-mode.
+                ? "\n\nThis is one of the most informative ballots for this entity — write a full " +
+                  "prose review: 3-5 specific, detailed sentences in the \"review\" field, not a one-liner."
+                : "");
 
     // ── Parsers ───────────────────────────────────────────────────────────────
 

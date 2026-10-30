@@ -12,7 +12,11 @@
         <button class="btn" @onclick="LoadAsync" disabled="@loading">@(loading ? "Loading…" : "Load")</button>
     </div>
 
-    @if (notFound)
+    @if (error != null)
+    {
+        <p class="err">@error</p>
+    }
+    else if (notFound)
     {
         <p class="err">Not found: "@idOrSlug"</p>
     }
@@ -37,6 +41,7 @@
     private int? to;
     private bool loading;
     private bool notFound;
+    private string? error;
     private ReadBeatsResultDto? result;
 
     private async Task LoadAsync()
@@ -44,12 +49,19 @@
         if (string.IsNullOrWhiteSpace(idOrSlug)) return;
         loading = true;
         notFound = false;
+        error = null;
         result = null;
         StateHasChanged();
 
-        var r = await api.ReadBeatsAsync(idOrSlug, from, to);
-        if (r == null) notFound = true;
-        else result = r;
+        try
+        {
+            var r = await api.ReadBeatsAsync(idOrSlug, from, to);
+            if (r == null) notFound = true;
+            else result = r;
+        }
+        // The Hub call throws on a transport failure (bad/missing key, Hub restarting, a 500) by
+        // design — say so here rather than let it escape this handler and take the circuit down.
+        catch (HttpRequestException ex) { error = ex.Message; }
 
         loading = false;
         StateHasChanged();

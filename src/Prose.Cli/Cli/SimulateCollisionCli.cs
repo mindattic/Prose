@@ -54,6 +54,17 @@ public static class SimulateCollisionCli
             return 2;
         }
 
+        // Beat.Number is only unique within its own book, but the lookup above matched it
+        // globally — a beat number that also exists in a different book silently ran the
+        // collision computation on the wrong book's beat while printing THIS node's title.
+        var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id);
+        var inScope = await db.BeatNodes.AsNoTracking().AnyAsync(bn => bn.BeatId == beat.Id && leafIds.Contains(bn.NodeId));
+        if (!inScope)
+        {
+            Console.Error.WriteLine($"Beat #{beatNumber} exists but is not part of node '{slug}' ('{node.Title}') — it belongs to a different book.");
+            return 2;
+        }
+
         var assembler = services.GetRequiredService<SceneContextAssembler>();
         var collisionSvc = services.GetRequiredService<SceneCollisionService>();
 

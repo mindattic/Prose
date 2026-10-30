@@ -136,6 +136,16 @@ public class WritingTools
                 if (pos > book.ChapterIds.Count) pos = book.ChapterIds.Count;
                 book.ChapterIds.Insert(pos, chapter.Id);
                 books.SaveBook(book);
+
+                // Backfill the chapter's own ordinal to match the position it was just spliced
+                // into — otherwise an appended chapter (number omitted) lands correctly in the
+                // book's ChapterIds but its own Number stays null, unlike AddChapterToBookImpl's
+                // equivalent "number > 0 ? number : pos + 1" for the identical case.
+                if (number <= 0)
+                {
+                    chapter.Number = pos + 1;
+                    chapters.SaveChapter(chapter);
+                }
             }
         }
 

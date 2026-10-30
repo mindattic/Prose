@@ -70,8 +70,13 @@ public class SyncSubtitleTool : IKdpTool
 
         try
         {
-            await ctx.Browser.EvalAsync(
-                $"window.location.href = 'https://kdp.amazon.com/en_US/title-setup/kindle/{titleId}/details'; ''", ct);
+            // The id comes from a regex match of the live URL: escaped and serialized, never
+            // spliced raw into script, same technique as FindAndOpenBookTool.TryDirectTitleIdAsync —
+            // a titleId containing a literal apostrophe (a valid, unencoded RFC 3986 path
+            // sub-delimiter) would otherwise break out of the single-quoted literal below.
+            var url = JsonSerializer.Serialize(
+                $"https://kdp.amazon.com/en_US/title-setup/kindle/{Uri.EscapeDataString(titleId.Trim())}/details");
+            await ctx.Browser.EvalAsync($"window.location.href = {url}; ''", ct);
         }
         catch { /* navigation tears down the script context; a thrown eval is expected here */ }
         await Task.Delay(2500, ct);

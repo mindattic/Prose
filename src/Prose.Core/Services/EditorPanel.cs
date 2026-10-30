@@ -46,6 +46,11 @@ public static class EditorPanel
         var pool = SortedPool.Value
             .Where(p => !excludeIds.Contains(p.Id))
             .ToList();
+        // Math.Clamp(count, 1, 0) throws ArgumentException ("min cannot be greater than max") once
+        // excludeIds covers the whole pool — reachable via CreateDisjointGroupAsync, which calls
+        // this before its own "no personas left" check ever gets a chance to run. An empty pool
+        // means an empty panel, not a crash; the caller's friendly error fires on that instead.
+        if (pool.Count == 0) return [];
         count = Math.Clamp(count, 1, pool.Count);
         var step = Math.Max(1, pool.Count / count);
         return Enumerable.Range(0, count)

@@ -3,6 +3,11 @@
 <div class="p-4 dashboard-tab">
     <h4>Dashboard</h4>
 
+    @if (error != null)
+    {
+        <p class="err">@error</p>
+    }
+
     <div class="dash-card">
         <h6>Live Write Status</h6>
         @if (currentRun != null)
@@ -78,6 +83,7 @@
 
     private List<CommandLedgerDto> commands = [];
     private List<DecisionLedgerDto> decisions = [];
+    private string? error;
 
     protected override async Task OnInitializedAsync()
     {
@@ -90,8 +96,15 @@
 
     private async Task RefreshAsync()
     {
-        commands = await api.GetCommandLogAsync(20);
-        decisions = await api.GetDecisionLogAsync(20);
+        // The Hub call throws on a transport failure (bad/missing key, Hub restarting, a 500) by
+        // design — say so here rather than let it escape this handler and take the circuit down.
+        try
+        {
+            commands = await api.GetCommandLogAsync(20);
+            decisions = await api.GetDecisionLogAsync(20);
+            error = null;
+        }
+        catch (HttpRequestException ex) { error = ex.Message; }
         await InvokeAsync(StateHasChanged);
     }
 

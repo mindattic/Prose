@@ -17,7 +17,6 @@ public class EpisodeSeedService
 {
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly ILogger<EpisodeSeedService> log;
-    private readonly Random rng = new();
 
     public EpisodeSeedService(
         IDbContextFactory<ProseDbContext> dbFactory,
@@ -59,7 +58,11 @@ public class EpisodeSeedService
     /// downstream.</summary>
     public async Task<DrawnSeed> DrawAsync(CancellationToken ct = default)
     {
-        var template = Templates[rng.Next(Templates.Length)];
+        // Random.Shared, not a private instance: this service is a singleton (ServiceCollection
+        // Extensions), and System.Random is not thread-safe — concurrent DrawAsync calls sharing
+        // one instance field could corrupt its internal state and skew the draw. Random.Shared is
+        // the thread-safe shared instance designed for exactly this.
+        var template = Templates[Random.Shared.Next(Templates.Length)];
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
@@ -99,7 +102,7 @@ public class EpisodeSeedService
         var count = await query.CountAsync(ct);
         if (count == 0) return null;
 
-        var skip = rng.Next(count);
+        var skip = Random.Shared.Next(count);
         var picked = await query.OrderBy(e => e.Id).Skip(skip).Take(1).Select(e => e.Id).FirstOrDefaultAsync(ct);
         return picked == Guid.Empty ? null : picked;
     }
