@@ -518,6 +518,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<Prose.Core.Services.Factory.FactoryUsageCheck>();          // use-or-delete, run at session start
         services.AddSingleton<CharacterFieldWriter>();                                   // set_character_fields
         services.AddSingleton<EntityFieldWriter>();                                      // set_entity_fields (every repository type)
+        services.AddSingleton<CorporateHierarchyService>();                              // prose --corp / get_corp_* (PRS-T819): ownership, forces, Tier ladder
         services.AddSingleton<CanonMaintenanceService>();                                // entity slug, edge, orphan tag, obligation corrections
         services.AddSingleton<Prose.Core.Services.Factory.WorkOrderService>(sp => new Prose.Core.Services.Factory.WorkOrderService(
             sp.GetRequiredService<IDbContextFactory<ProseDbContext>>(),

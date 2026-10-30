@@ -4458,9 +4458,8 @@ namespace Prose.Core.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Tier")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("Tier")
+                        .HasColumnType("int");
 
                     b.Property<string>("Valuation")
                         .IsRequired()
@@ -4502,6 +4501,106 @@ namespace Prose.Core.Migrations
                     b.HasIndex("CorponationId", "Position");
 
                     b.ToTable("CorponationCommonNames");
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.CorporateForce", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CorponationEntityId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("ForceEntityId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Kind")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<DateTime>("ModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(450)
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Notes")
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.Property<string>("Strength")
+                        .HasMaxLength(450)
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<Guid>("UniverseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ForceEntityId");
+
+                    b.HasIndex("UniverseId");
+
+                    b.HasIndex("CorponationEntityId", "Name")
+                        .IsUnique();
+
+                    b.ToTable("CorporateForces", (string)null);
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.CorporateOwnership", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Kind")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<DateTime>("ModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Notes")
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.Property<Guid>("OwnedEntityId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("OwnerEntityId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int?>("SinceYear")
+                        .HasColumnType("int");
+
+                    b.Property<decimal?>("StakePercent")
+                        .HasPrecision(5, 2)
+                        .HasColumnType("decimal(5,2)");
+
+                    b.Property<Guid>("UniverseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OwnedEntityId");
+
+                    b.HasIndex("UniverseId");
+
+                    b.HasIndex("OwnerEntityId", "OwnedEntityId")
+                        .IsUnique();
+
+                    b.ToTable("CorporateOwnerships", (string)null);
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Cyberware", b =>
@@ -11144,9 +11243,8 @@ namespace Prose.Core.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Tier")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("Tier")
+                        .HasColumnType("int");
 
                     b.Property<int>("VoteCount")
                         .HasColumnType("int");
@@ -13690,6 +13788,43 @@ namespace Prose.Core.Migrations
                         .IsRequired();
 
                     b.Navigation("Corponation");
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.CorporateForce", b =>
+                {
+                    b.HasOne("Prose.Core.Data.Entities.Entity", "Corponation")
+                        .WithMany()
+                        .HasForeignKey("CorponationEntityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Prose.Core.Data.Entities.Entity", "ForceEntity")
+                        .WithMany()
+                        .HasForeignKey("ForceEntityId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("Corponation");
+
+                    b.Navigation("ForceEntity");
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.CorporateOwnership", b =>
+                {
+                    b.HasOne("Prose.Core.Data.Entities.Entity", "Owned")
+                        .WithMany()
+                        .HasForeignKey("OwnedEntityId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Prose.Core.Data.Entities.Entity", "Owner")
+                        .WithMany()
+                        .HasForeignKey("OwnerEntityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Owned");
+
+                    b.Navigation("Owner");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Cyberware", b =>

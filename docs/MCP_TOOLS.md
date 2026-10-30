@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**293 tools** across **53 tool families.**
+**300 tools** across **54 tool families.**
 
 ## Families
 
@@ -31,6 +31,7 @@
 | [Context](#context) | 5 |
 | [Contribution](#contribution) | 4 |
 | [Core Entity Crud](#core-entity-crud) | 5 |
+| [Corporate](#corporate) | 7 |
 | [Craft Instrument](#craft-instrument) | 3 |
 | [Data Integrity](#data-integrity) | 2 |
 | [Edit Session](#edit-session) | 4 |
@@ -209,7 +210,7 @@ List every character in canon. Returns name + role + status for each. Cheap — 
 
 ### `list_corponations`
 
-List every CorpoNation (corporate sovereign entity).
+List every CorpoNation (corporate sovereign entity) with its Tier (1 = ground-level work … 4 = royalty; absent = not yet ruled).
 
 - _(no parameters)_
 
@@ -554,6 +555,63 @@ Set which book/series node an existing entity belongs to (Entity.OriginNodeId), 
 
 - `id` (string, required) — Existing entity id (32-char hex or full UUID).
 - `originNodeSlug` (string, optional) — Book/series node slug to scope this entity to. Empty clears it (universe-wide/shared).
+
+## Corporate
+
+<sub>`CorporateTools`</sub>
+
+### `add_corp_force`
+
+Record a force a corponation or subsidiary keeps (its private military, civil security, strike teams, navy, drones, orbital assets), or update the one it already has by that name. entity optionally names the faction/subsidiary that IS the force.
+
+- `corponation` (string, required) — Keeper: corponation or subsidiary id, slug or exact name.
+- `name` (string, required) — The force's name.
+- `kind` (string, required) — private-military | civil-security | strike | naval | drone | orbital | other
+- `entity` (string, optional) — Optional: the entity (faction, subsidiary, …) that is this force.
+- `strength` (string, optional) — Free text, e.g. "two divisions".
+- `notes` (string, optional) — Notes (empty string clears).
+
+### `corp_hierarchy_audit`
+
+Audit the current universe's CorpoNation hierarchy: owners not on a higher Tier than what they own (tier-order), ownership loops (cycle), corponations with no Tier (untiered-corponation), and subsidiaries whose parent has no Tier (untiered-parent).
+
+- _(no parameters)_
+
+### `get_corp_chain`
+
+Who owns this entity, up to its ultimate parent: every owner edge above it, nearest first, with depth (1 = direct owner), kind, stake and each end's Tier. An entity is its id, slug or exact name.
+
+- `entity` (string, required) — Entity id, slug or exact name.
+
+### `get_corp_forces`
+
+Every force a CorpoNation can call up: its own private military plus the forces of every subsidiary beneath it through wholly-owned or controlling edges (a minority stake, lease or licence buys no troops). Each force lists the entity that keeps it and how far down that keeper sits (0 = its own).
+
+- `entity` (string, required) — Corponation or subsidiary id, slug or exact name.
+
+### `get_corp_tree`
+
+Everything a corponation or subsidiary owns, recursively, down to ground level (subsidiaries, factions, places, transit — any entity), with depth (1 = owned directly), kind, stake and Tier.
+
+- `entity` (string, required) — Corponation or subsidiary id, slug or exact name.
+
+### `remove_corp_ownership`
+
+Remove the ownership edge owner → owned. removed is false when there was none.
+
+- `owner` (string, required) — Owner id, slug or exact name.
+- `owned` (string, required) — Owned id, slug or exact name.
+
+### `set_corp_ownership`
+
+Record that a corponation or subsidiary owns an entity (any type), or update the edge if it exists (omitted fields keep their values). Refused: an owner that is not a corponation/subsidiary, self-ownership, different universes, an ownership loop, and an owner not on a higher Tier than the owned when both have one. Returns the edge as stored.
+
+- `owner` (string, required) — Owner: corponation or subsidiary id, slug or exact name.
+- `owned` (string, required) — Owned: any entity's id, slug or exact name.
+- `kind` (string, optional) — wholly-owned (default for a new edge) | controlling | minority | leased | licensed
+- `stakePercent` (Decimal, optional) — Percent held, 0-100.
+- `sinceYear` (int, optional) — In-world year the ownership began.
+- `notes` (string, optional) — Notes (empty string clears).
 
 ## Craft Instrument
 

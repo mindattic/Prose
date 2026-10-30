@@ -136,6 +136,56 @@ Sub-tables:
 
 Each gets a typed table with the structured fields the JSON model has today. Same pattern as `Character`.
 
+`Corponations.Tier` and `Subsidiaries.Tier` are `INT NULL` (PRS-T819): the 1-4 rank. 1 is ground-level
+work (policing, sanitation, the street), 4 is royalty and dynasties; the higher the Tier, the more
+untouchable. Tier 5 is a rumor nobody holds and is refused on save, as is anything outside 1-4. Null
+means not yet ruled. Written through `set_entity_fields {"tier": N}` or `prose --corp tier --set N`.
+
+### CorpoNation hierarchies (PRS-T819)
+
+Who owns what, all the way back down to ground level, and the forces each CorpoNation can call up.
+The rules live in `CorporateHierarchyService`, not in constraints: an owner always sits on a higher
+Tier than what it owns (refused when both ends are tiered; reported by the audit when one is not),
+nothing owns itself, ownership never loops, and owner and owned share a universe. Both tables carry
+the universe query filter.
+
+`CorporateOwnerships` — one ownership edge.
+
+| column | type | notes |
+|---|---|---|
+| `Id` | `UNIQUEIDENTIFIER` | PK, guid v7 |
+| `UniverseId` | `UNIQUEIDENTIFIER` | the owner's universe |
+| `OwnerEntityId` | `UNIQUEIDENTIFIER` | FK `Entities.Id`, cascade. A `corponation` or `subsidiary` |
+| `OwnedEntityId` | `UNIQUEIDENTIFIER` | FK `Entities.Id`, restrict. Any entity type: subsidiary, faction, place, transportation, … |
+| `Kind` | `NVARCHAR(20)` | `wholly-owned` · `controlling` · `minority` · `leased` · `licensed` |
+| `StakePercent` | `DECIMAL(5,2) NULL` | 0-100 |
+| `SinceYear` | `INT NULL` | in-world year |
+| `Notes` | `NVARCHAR(2000) NULL` | |
+| `CreatedAt`, `ModifiedAt` | `DATETIME2` | |
+
+Unique `(OwnerEntityId, OwnedEntityId)`. `prose --corp backfill-ownership` writes one `wholly-owned` edge per
+`Subsidiaries.ParentCorponationId` that has none (idempotent).
+
+`CorporateForces` — a force a corponation or subsidiary keeps. A CorpoNation can call up its own forces
+plus those of everything beneath it through `wholly-owned` or `controlling` edges; a minority stake, a
+lease or a licence buys no troops.
+
+| column | type | notes |
+|---|---|---|
+| `Id` | `UNIQUEIDENTIFIER` | PK, guid v7 |
+| `UniverseId` | `UNIQUEIDENTIFIER` | the keeper's universe |
+| `CorponationEntityId` | `UNIQUEIDENTIFIER` | FK `Entities.Id`, cascade. The keeper (corponation or subsidiary) |
+| `Name` | `NVARCHAR(450)` | unique per keeper |
+| `Kind` | `NVARCHAR(20)` | `private-military` · `civil-security` · `strike` · `naval` · `drone` · `orbital` · `other` |
+| `ForceEntityId` | `UNIQUEIDENTIFIER NULL` | FK `Entities.Id`, restrict. The entity that IS the force (a faction, a subsidiary) |
+| `Strength` | `NVARCHAR(450) NULL` | free text |
+| `Notes` | `NVARCHAR(2000) NULL` | |
+| `CreatedAt`, `ModifiedAt` | `DATETIME2` | |
+
+Read them with `prose --corp chain|tree|forces|audit` or the MCP tools `get_corp_chain`, `get_corp_tree`,
+`get_corp_forces`, `corp_hierarchy_audit`; write with `prose --corp own|force` or `set_corp_ownership`,
+`remove_corp_ownership`, `add_corp_force`.
+
 ### Gear (`Weapon`, `Equipment`, `Cyberware`, `Apparel`, `Ammunition`, `Pharmaceutical`, `Genemod`, `Material`, `Transportation`, `ConsumerGood`)
 
 | `Manufacturer` | `Tier` | `Legality` | `Sector` | `Category` | type-specific stats columns |

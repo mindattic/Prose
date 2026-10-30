@@ -17,6 +17,8 @@ public class SubsidiaryData : ICanonEntity
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("type")] public string Type { get; set; } = "subsidiary";
     [JsonPropertyName("parent_corponation")] public string ParentCorponation { get; set; } = "";
+    /// <summary>Tier 1-4, the same ladder as a CorpoNation's; its owner sits higher. Null = not yet ruled (PRS-T819).</summary>
+    [JsonPropertyName("tier")] public int? Tier { get; set; }
     [JsonPropertyName("line_of_business")] public string LineOfBusiness { get; set; } = "";
     [JsonPropertyName("description")] public string Description { get; set; } = "";
     [JsonPropertyName("public_facing")] public bool PublicFacing { get; set; }

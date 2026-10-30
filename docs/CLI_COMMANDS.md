@@ -19,7 +19,7 @@
 > deliberate: RFC 0014 §2.4 is about a gate documented as seven checks, coded as six
 > and advertised as five, and this reference is not going to repeat that.
 
-**291 commands.** 30 deactivated. 10 cost-gated. 18 have no description in their dispatch comment (12 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**292 commands.** 30 deactivated. 10 cost-gated. 18 have no description in their dispatch comment (12 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -559,6 +559,25 @@ Doc Context Stack dry-run — print the rotating cast of .md docs that WOULD loa
 unified continuity store — migrate / stats / contradictions / resolve / entity. Run `prose --continuity` (no subcommand) to see full usage.
 
 <sub>handler `ContinuityCli` · **deactivated 2026-09-22 (RFC 0014)** — handler intact; remove its line from `DeactivatedInstruments.cs` to restore</sub>
+
+### `--corp`
+
+```
+prose --universe <u> --corp tier --entity X [--set N | --clear] [--confirm-unread]
+prose --universe <u> --corp own add --owner X --owned Y [--kind wholly-owned|controlling|minority|leased|licensed] [--stake P] [--since YYYY] [--notes "..."]
+prose --universe <u> --corp own remove --owner X --owned Y
+prose --universe <u> --corp own list --entity X
+prose --universe <u> --corp force add --corp X --name "..." --kind private-military|civil-security|strike|naval|drone|orbital|other [--entity Y] [--strength "..."] [--notes "..."]
+prose --universe <u> --corp force remove --id <force id>
+prose --universe <u> --corp force list --corp X
+prose --universe <u> --corp chain|tree|forces --entity X
+prose --universe <u> --corp audit
+prose --universe <u> --corp backfill-ownership
+```
+
+CorpoNation hierarchies (PRS-T819): Tier 1-4, who owns what down to ground level, and the forces each CorpoNation can call up. An entity is its id, slug or exact name.
+
+<sub>handler `CorporateHierarchyCli`</sub>
 
 ### `--cost` / `--history`
 

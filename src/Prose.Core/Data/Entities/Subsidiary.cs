@@ -19,7 +19,10 @@ public class Subsidiary
 
     // Indexed classification (kept from prior schema).
     public string Sector { get; set; } = "";
-    public string Tier   { get; set; } = "";
+
+    /// <summary>The subsidiary's own Tier, 1-4, on the same ladder as <see cref="Corponation.Tier"/>
+    /// (PRS-T819). Whatever owns it sits on a higher Tier. Null = not yet ruled.</summary>
+    public int? Tier { get; set; }
 
     /// <summary>FK to Entities.Id of the parent Corponation. Null when unresolved.</summary>
     public Guid? ParentCorponationId { get; set; }

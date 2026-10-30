@@ -443,10 +443,16 @@ public class CorponationRepository : EfRepository<CorponationData>
 
     public override void Save(CorponationData item)
     {
+        // Tier 1-4 or none; 5 is a rumor (PRS-T819). Thrown before any write, so set_entity_fields reports it as refused.
+        CorporateTier.Validate(item.Tier);
         var id = ParseGuid(item.Id);
         if (string.IsNullOrEmpty(item.Id)) item.Id = id.ToString("N");
 
         using var db = dbFactory.CreateDbContext();
+        // A changed Tier must still sit below every owner and above everything it owns.
+        if (item.Tier != null && item.Tier != db.Corponations.AsNoTracking().Where(x => x.Id == id).Select(x => x.Tier).FirstOrDefault()
+            && CorporateHierarchyService.TierConflicts(db, id, item.Tier) is { Count: > 0 } clash)
+            throw new InvalidOperationException(string.Join(" ", clash));
 
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
@@ -3247,10 +3253,16 @@ public class SubsidiaryRepository : EfRepository<SubsidiaryData>
 
     public override void Save(SubsidiaryData item)
     {
+        // Tier 1-4 or none; 5 is a rumor (PRS-T819). Thrown before any write, so set_entity_fields reports it as refused.
+        CorporateTier.Validate(item.Tier);
         var id = ParseGuid(item.Id);
         if (string.IsNullOrEmpty(item.Id)) item.Id = id.ToString("N");
 
         using var db = dbFactory.CreateDbContext();
+        // A changed Tier must still sit below every owner and above everything it owns.
+        if (item.Tier != null && item.Tier != db.Subsidiaries.AsNoTracking().Where(x => x.Id == id).Select(x => x.Tier).FirstOrDefault()
+            && CorporateHierarchyService.TierConflicts(db, id, item.Tier) is { Count: > 0 } clash)
+            throw new InvalidOperationException(string.Join(" ", clash));
 
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).

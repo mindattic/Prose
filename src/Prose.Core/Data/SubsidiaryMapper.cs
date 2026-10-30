@@ -15,8 +15,8 @@ namespace Prose.Core.Data;
 ///     + Subsidiaries.ParentCorponationId (FK, nullable, resolved from name).
 ///   - SubsidiaryData.KnownProducts (List&lt;string&gt;) → SubsidiaryProducts bridge
 ///     (ProductEntityId nullable FK + Alias string).
-///   - SubsidiaryData has no TierAvailability; Subsidiary.Tier/Sector not in domain
-///     model — kept blank on write.
+///   - Subsidiary.Tier ↔ SubsidiaryData.Tier, the 1-4 rank (PRS-T819).
+///   - Subsidiary.Sector is not in the domain model — kept blank on write.
 ///
 /// ADDITIVE CONTRACT: Records.Json is never touched or deleted here.
 /// </summary>
@@ -27,7 +27,7 @@ public static class SubsidiaryMapper
     // ─────────────────────────────────────────────────────────────────────
 
     /// <summary>
-    /// Lightweight list-view projection. Returns Id, Name, Rating, VoteCount,
+    /// Lightweight list-view projection. Returns Id, Name, Tier, Rating, VoteCount,
     /// Tags only. No bridge materialization.
     /// </summary>
     public static List<SubsidiaryData> LoadAllLite(ProseDbContext db)
@@ -35,7 +35,7 @@ public static class SubsidiaryMapper
         var rows = db.Subsidiaries.AsNoTracking()
             .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "subsidiary"),
                 s => s.Id, e => e.Id,
-                (s, e) => new { s.Id, Name = e.Name, s.Rating, s.VoteCount })
+                (s, e) => new { s.Id, Name = e.Name, s.Tier, s.Rating, s.VoteCount })
             .ToList();
 
         if (rows.Count == 0) return new();
@@ -57,6 +57,7 @@ public static class SubsidiaryMapper
                 Id        = r.Id.ToString("N"),
                 Type      = "subsidiary",
                 Name      = r.Name ?? "",
+                Tier      = r.Tier,
                 Rating    = r.Rating,
                 VoteCount = r.VoteCount,
                 Tags      = tags ?? new List<string>(),
@@ -134,6 +135,7 @@ public static class SubsidiaryMapper
             Type             = "subsidiary",
             Name             = entity?.Name ?? s.Name,
             ParentCorponation = s.ParentCorponationAlias,
+            Tier             = s.Tier,
             LineOfBusiness   = s.LineOfBusiness,
             Description      = s.Description,
             PublicFacing     = s.PublicFacing,
@@ -183,7 +185,7 @@ public static class SubsidiaryMapper
     {
         s.Name                    = src.Name ?? "";
         s.Sector                  = "";                          // not in SubsidiaryData
-        s.Tier                    = "";                          // not in SubsidiaryData
+        s.Tier                    = src.Tier;
         s.ParentCorponationAlias  = src.ParentCorponation ?? "";
         s.ParentCorponationId     = ResolveEntityId(db, "corponation", src.ParentCorponation ?? "");
         s.LineOfBusiness          = src.LineOfBusiness ?? "";

@@ -131,15 +131,15 @@ public class CanonTools
         return JsonSerializer.Serialize(f, JsonOpts);
     }
 
-    /// <summary>List every CorpoNation (corporate sovereign entity).</summary>
-    [McpServerTool, Description("List every CorpoNation (corporate sovereign entity).")]
+    /// <summary>List every CorpoNation (corporate sovereign entity), with its Tier.</summary>
+    [McpServerTool, Description("List every CorpoNation (corporate sovereign entity) with its Tier (1 = ground-level work … 4 = royalty; absent = not yet ruled).")]
     public Task<string> ListCorponations() => hub.InvokeAsync(nameof(CanonTools), nameof(ListCorponationsImpl));
 
     public string ListCorponationsImpl()
     {
         corponations.Reload();
         var list = corponations.GetAll()
-            .Select(c => new { name = c.Name, sector = c.Sector, sovereign_territory = c.SovereignTerritory })
+            .Select(c => new { name = c.Name, tier = c.Tier, sector = c.Sector, sovereign_territory = c.SovereignTerritory })
             .OrderBy(x => x.name)
             .ToList();
         return JsonSerializer.Serialize(list, JsonOpts);

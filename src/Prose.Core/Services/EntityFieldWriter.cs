@@ -298,7 +298,8 @@ public static class FieldPatch
     }
 
     public static string Describe(Type t) =>
-        t == typeof(string) ? "a string"
+        Nullable.GetUnderlyingType(t) is { } inner ? Describe(inner) + " (or null)"
+        : t == typeof(string) ? "a string"
         : t == typeof(int) || t == typeof(double) || t == typeof(decimal) || t == typeof(long) ? "a number"
         : t == typeof(bool) ? "true or false"
         : t.IsGenericType && t.GetGenericTypeDefinition() == typeof(List<>) ? "a JSON array"

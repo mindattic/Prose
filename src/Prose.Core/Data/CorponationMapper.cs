@@ -10,9 +10,8 @@ namespace Prose.Core.Data;
 /// Bidirectional mapper between the column/bridge schema (Corponations +
 /// CorponationCommonNames bridge) and the domain model (CorponationData).
 ///
-/// Column note: domain TierAvailability does not exist — Corponation uses Tier
-/// directly for the classification tier. Headquarters/Sector are extra scalars
-/// with no domain equivalent — they are populated from Name+blob fallbacks.
+/// Column note: Tier is the CorpoNation's 1-4 rank (PRS-T819), read and written
+/// as-is. Headquarters is an extra scalar with no domain equivalent — kept blank.
 ///
 /// ADDITIVE CONTRACT: Records.Json is never touched or deleted here.
 /// </summary>
@@ -53,6 +52,7 @@ public static class CorponationMapper
                 Id        = r.Id.ToString("N"),
                 Name      = r.Name ?? "",
                 Sector    = r.Sector ?? "",
+                Tier      = r.Tier,
                 Rating    = r.Rating,
                 VoteCount = r.VoteCount,
                 Tags      = tags ?? new List<string>(),
@@ -132,6 +132,7 @@ public static class CorponationMapper
             FullLegalName       = c.FullLegalName,
             StockDesignation    = c.StockDesignation,
             Sector              = c.Sector,
+            Tier                = c.Tier,
             Valuation           = c.Valuation,
             Revenue             = c.Revenue,
             Employees           = c.Employees,
@@ -186,7 +187,7 @@ public static class CorponationMapper
     {
         c.Name                = src.Name ?? "";
         c.Sector              = src.Sector ?? "";
-        c.Tier                = "";               // not in CorponationData; keep blank
+        c.Tier                = src.Tier;
         c.Headquarters        = "";               // not in CorponationData; keep blank
         c.Number              = src.Number;
         c.Rating              = src.Rating;

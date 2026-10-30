@@ -162,6 +162,9 @@ public class CorponationData : ICanonEntity
     [JsonPropertyName("common_names")] public List<string> CommonNames { get; set; } = [];
     [JsonPropertyName("stock_designation")] public string StockDesignation { get; set; } = "";
     [JsonPropertyName("sector")] public string Sector { get; set; } = "";
+    /// <summary>Tier 1-4 (1 = ground-level work, 4 = royalty/dynasties); null = not yet ruled. Tier 5 is
+    /// a rumor no CorpoNation holds and is refused on save (PRS-T819).</summary>
+    [JsonPropertyName("tier")] public int? Tier { get; set; }
     [JsonPropertyName("valuation")] public string Valuation { get; set; } = "";
     [JsonPropertyName("revenue")] public string Revenue { get; set; } = "";
     [JsonPropertyName("employees")] public string Employees { get; set; } = "";

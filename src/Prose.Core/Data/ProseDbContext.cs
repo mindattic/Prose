@@ -84,6 +84,8 @@ public class ProseDbContext : DbContext
                 case BeatServiceLog bsl when bsl.UniverseId == Guid.Empty: bsl.UniverseId = target; break;
                 case BeatModeLog bml when bml.UniverseId == Guid.Empty:    bml.UniverseId = target; break;
                 case DiscussionThread dt when dt.UniverseId == Guid.Empty: dt.UniverseId = target; break;
+                case CorporateOwnership co when co.UniverseId == Guid.Empty: co.UniverseId = target; break;
+                case CorporateForce cf when cf.UniverseId == Guid.Empty:     cf.UniverseId = target; break;
                 // Config rows: operational/shared keys are tagged with the SHARED sentinel so every
                 // universe sees the one copy; all other keys are scoped to the current universe.
                 case Setting st when st.UniverseId == Guid.Empty:
@@ -609,6 +611,9 @@ public class ProseDbContext : DbContext
     public DbSet<ChapterCharacter>         ChapterCharacters       => Set<ChapterCharacter>();
     public DbSet<Corponation>    Corponations    => Set<Corponation>();
     public DbSet<Subsidiary>     Subsidiaries    => Set<Subsidiary>();
+    // CorpoNation hierarchies (PRS-T819): who owns what down to ground level, and each one's forces.
+    public DbSet<CorporateOwnership> CorporateOwnerships => Set<CorporateOwnership>();
+    public DbSet<CorporateForce>     CorporateForces     => Set<CorporateForce>();
     public DbSet<Automaton>      Automata        => Set<Automaton>();
     public DbSet<Weapon>         Weapons         => Set<Weapon>();
     public DbSet<Equipment>      EquipmentItems  => Set<Equipment>();
@@ -2220,6 +2225,44 @@ public class ProseDbContext : DbContext
             e.HasIndex(x => new { x.SubsidiaryId, x.Position });
             e.HasIndex(x => x.ProductEntityId);
             e.HasIndex(x => x.Alias);
+        });
+
+        // CorpoNation hierarchies (PRS-T819). The owner side cascades with its entity; the owned
+        // side and a force's own entity are Restrict, because SQL Server refuses two cascade paths
+        // from Entities into one table — and deleting something a CorpoNation owns should be loud.
+        b.Entity<CorporateOwnership>(e =>
+        {
+            e.ToTable("CorporateOwnerships");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Kind).HasMaxLength(20).IsRequired();
+            e.Property(x => x.StakePercent).HasPrecision(5, 2);
+            e.Property(x => x.Notes).HasMaxLength(2000);
+            e.HasOne(x => x.Owner).WithMany()
+                .HasForeignKey(x => x.OwnerEntityId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.Owned).WithMany()
+                .HasForeignKey(x => x.OwnedEntityId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.OwnerEntityId, x.OwnedEntityId }).IsUnique();
+            e.HasIndex(x => x.OwnedEntityId);
+            e.HasIndex(x => x.UniverseId);
+            // Universe scoping (SS-LAW-15). No-op when unscoped.
+            e.HasQueryFilter(x => ScopedUniverseId == Guid.Empty || x.UniverseId == ScopedUniverseId);
+        });
+        b.Entity<CorporateForce>(e =>
+        {
+            e.ToTable("CorporateForces");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(450).IsRequired();
+            e.Property(x => x.Kind).HasMaxLength(20).IsRequired();
+            e.Property(x => x.Strength).HasMaxLength(450);
+            e.Property(x => x.Notes).HasMaxLength(2000);
+            e.HasOne(x => x.Corponation).WithMany()
+                .HasForeignKey(x => x.CorponationEntityId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.ForceEntity).WithMany()
+                .HasForeignKey(x => x.ForceEntityId).OnDelete(DeleteBehavior.Restrict);
+            e.HasIndex(x => new { x.CorponationEntityId, x.Name }).IsUnique();
+            e.HasIndex(x => x.ForceEntityId);
+            e.HasIndex(x => x.UniverseId);
+            e.HasQueryFilter(x => ScopedUniverseId == Guid.Empty || x.UniverseId == ScopedUniverseId);
         });
 
         // Automaton — fully relational. Armament resolves to Weapon FK,

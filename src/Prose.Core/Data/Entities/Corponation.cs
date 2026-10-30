@@ -18,8 +18,12 @@ public class Corponation
 
     // Indexed classification (kept from prior schema for filtering).
     public string Sector       { get; set; } = "";
-    public string Tier         { get; set; } = "";
     public string Headquarters { get; set; } = "";
+
+    /// <summary>The CorpoNation's Tier, 1-4 (PRS-T819): 1 is ground-level work (policing, sanitation),
+    /// 4 is royalty and dynasties; the higher the Tier, the more untouchable. Tier 5 is a rumor nobody
+    /// holds, so it is refused (<see cref="Services.CorporateTier"/>). Null = not yet ruled.</summary>
+    public int? Tier { get; set; }
 
     // Top-level scalars from CorponationData.
     public int    Number { get; set; }

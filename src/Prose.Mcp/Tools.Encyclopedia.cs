@@ -517,7 +517,7 @@ public class EncyclopediaTools
     public string ListSubsidiariesImpl()
     {
         subsidiaries.Reload();
-        var list = subsidiaries.GetAll().Select(s => new { name = s.Name }).OrderBy(x => x.name).ToList();
+        var list = subsidiaries.GetAll().Select(s => new { name = s.Name, tier = s.Tier, parent_corponation = s.ParentCorponation }).OrderBy(x => x.name).ToList();
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 

@@ -3067,6 +3067,24 @@ if (args.Contains("--set-timeline"))
     return;
 }
 
+// CorpoNation hierarchies (PRS-T819): Tier 1-4, who owns what down to ground level, and the
+// forces each CorpoNation can call up. An entity is its id, slug or exact name.
+//   prose --universe <u> --corp tier --entity X [--set N | --clear] [--confirm-unread]
+//   prose --universe <u> --corp own add --owner X --owned Y [--kind wholly-owned|controlling|minority|leased|licensed] [--stake P] [--since YYYY] [--notes "..."]
+//   prose --universe <u> --corp own remove --owner X --owned Y
+//   prose --universe <u> --corp own list --entity X
+//   prose --universe <u> --corp force add --corp X --name "..." --kind private-military|civil-security|strike|naval|drone|orbital|other [--entity Y] [--strength "..."] [--notes "..."]
+//   prose --universe <u> --corp force remove --id <force id>
+//   prose --universe <u> --corp force list --corp X
+//   prose --universe <u> --corp chain|tree|forces --entity X
+//   prose --universe <u> --corp audit
+//   prose --universe <u> --corp backfill-ownership
+if (args.Contains("--corp"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CorporateHierarchyCli", args);
+    return;
+}
+
 // ── Edit Sessions ─────────────────────────────────────────────────────────────
 // prose --start-session --slug <slug> --label "prose-pass-1" [--type prose-pass|gripes-cleanup|logic-sweep|custom]
 if (args.Contains("--start-session"))
