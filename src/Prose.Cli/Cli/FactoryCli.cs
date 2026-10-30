@@ -29,7 +29,7 @@ namespace Prose.Cli;
 ///   prose --order seed --file tree.json        (a root plus nested children, one call)
 ///   prose --session end --file summary.json [--id &lt;session&gt;]
 ///   prose --ruling add --kind law|metric|incidental --text "…" --node X [--pattern "…"] [--max-per-1k N] [--source author]
-///   prose --ruling seed --node X --file rulings.json · list --node X [--kind k] · supersede --id … · violations --node X · metrics --node X
+///   prose --ruling seed --node X --file rulings.json · list [--node X] [--kind k] (no --node: the universe-wide ones) · supersede --id … · violations --node X · metrics --node X
 ///   prose --universe glmz --ruling violations --node X --records [--entity &lt;id&gt;] [--pattern "regex"]
 ///     (the tagged entities' records against the laws; --pattern searches them for one ad-hoc pattern instead, recording nothing)
 ///   (kinds: law = never true in page or record · page-law = true in the world, never said on the page · metric · incidental)
@@ -110,8 +110,11 @@ public static class FactoryCli
                     }
                     case "list":
                     {
-                        if (await Node(Flag("--node")) is not { } book) { Console.Error.WriteLine("[ruling] --node is required."); return 1; }
-                        var rows = await rulings.ListAsync(book, Flag("--kind"));
+                        // No --node lists the universe-wide rulings of the universe named with --universe.
+                        List<Ruling> rows;
+                        if (await Node(Flag("--node")) is { } book) rows = await rulings.ListAsync(book, Flag("--kind"));
+                        else if (UniverseScope.IsExplicitlyScoped && UniverseScope.EffectiveId != Guid.Empty) rows = await rulings.ListUniverseAsync(UniverseScope.EffectiveId, Flag("--kind"));
+                        else { Console.Error.WriteLine("[ruling] list needs --node, or --universe for the universe-wide rulings."); return 1; }
                         foreach (var r in rows)
                             Console.WriteLine($"{r.Id} {r.Kind,-10} {(r.Pattern is null ? "" : $"/{r.Pattern}/ ")}{(r.MaxPer1kWords is { } m ? $"≤{m}/1k " : "")}{r.Text}");
                         Console.WriteLine($"[ruling] {rows.Count} active ruling(s).");

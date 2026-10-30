@@ -116,6 +116,15 @@ public sealed class RulingService(IDbContextFactory<ProseDbContext> dbFactory, B
         return await q.OrderBy(r => r.Kind).ThenBy(r => r.At).ToListAsync(ct);
     }
 
+    /// <summary>Active universe-wide rulings only (no book): what binds every book in the universe.</summary>
+    public async Task<List<Ruling>> ListUniverseAsync(Guid universeId, string? kind = null, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var q = db.Rulings.AsNoTracking().Where(r => r.SupersededById == null && r.BookId == null && r.UniverseId == universeId);
+        if (!string.IsNullOrWhiteSpace(kind)) q = q.Where(r => r.Kind == kind);
+        return await q.OrderBy(r => r.Kind).ThenBy(r => r.At).ToListAsync(ct);
+    }
+
     /// <summary>The node and every ancestor up to the root: a ruling recorded on a series binds each
     /// book under it.</summary>
     private static async Task<List<Guid>> SelfAndAncestorsAsync(ProseDbContext db, Guid nodeId, CancellationToken ct)
