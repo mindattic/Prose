@@ -7,7 +7,7 @@ Set-Location D:\Projects\MindAttic\Prose
 function P { .\prose.cmd --universe glmz @args 2>&1 }
 if ($All) { $raw = P --read-beats --slug $Slug --from 1 --to 4000 | Out-String; $Ids = [regex]::Matches($raw,'guid="([0-9a-f-]{36})"') | % { $_.Groups[1].Value } | Sort-Object -Unique }
 $bad = 0
-$Ids = @($Ids | ? { $_ -notmatch '^0{8}-' })   # the empty guid marks an untagged surface, not an entity
+$Ids = @($Ids | ? { $_ -and $_ -notmatch '^0{8}-' })   # the empty guid marks an untagged surface, not an entity; a beat with no tags passes $null
 foreach ($g in $Ids) {
   $o = P --verify-entity begin --entity $g --node $Slug | Out-String
   $o = $o.Substring([Math]::Max(0, $o.IndexOf("`n{")))   # prose.cmd's build warnings (NU1902/NU1903) precede the JSON
