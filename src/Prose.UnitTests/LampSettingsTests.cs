@@ -154,6 +154,18 @@ public sealed class LampSettingsTests
     }
 
     // ── One test per setting ─────────────────────────────────────────────────
+    [Test]
+    public void DefaultStorageDirectory_FollowsTheVaultLocalRoot_SoTestsNeverTouchTheRealSettingsJson()
+    {
+        // PRS-T832: the DI singleton (new SettingsService()) reads and rewrites Settings.json in this folder; it must
+        // move with MINDATTIC_VAULT_LOCAL_ROOT like Vault does, or the isolated suite rewrites the user's real file.
+        var localRoot = Environment.GetEnvironmentVariable(MindAttic.Vault.Paths.VaultPaths.LocalRootEnvVar);
+        Assert.That(localRoot, Is.Not.Null.And.Not.Empty, "ProseVaultIsolation sets the local root");
+        Assert.That(SettingsService.DefaultStorageDirectory, Is.EqualTo(Path.Combine(localRoot!, "Prose")));
+        Assert.That(SettingsService.DefaultStorageDirectory, Is.Not.EqualTo(Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "MindAttic", "Prose")).IgnoreCase);
+    }
+
     [Test] public void ActiveLlmProvider_ImportsRoundTripsAndIsRead() => Prove(nameof(ProseSettings.ActiveLlmProvider));
     [Test] public void ActiveLlmProviderChain_ImportsRoundTripsAndIsRead() => Prove(nameof(ProseSettings.ActiveLlmProviderChain));
     [Test] public void Model_ImportsRoundTripsAndIsRead() => Prove(nameof(ProseSettings.Model));

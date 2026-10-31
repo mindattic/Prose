@@ -84,9 +84,13 @@ public class SettingsService : IDisposable
     internal static readonly HashSet<string> VaultOwnedFields =
         typeof(ProseSettings).GetProperties().Select(p => p.Name).ToHashSet(StringComparer.Ordinal);
 
-    /// <summary>Default location of the pre-LAMP settings (and the remaining non-Vault fields).</summary>
-    public static string DefaultStorageDirectory { get; } = Path.Combine(
-        Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "MindAttic", "Prose");
+    /// <summary>
+    /// Default location of the pre-LAMP settings (and the remaining non-Vault fields):
+    /// <c>%LOCALAPPDATA%\MindAttic\Prose</c>, resolved through <see cref="VaultPaths.LocalApp"/> on every read so
+    /// <c>MINDATTIC_VAULT_LOCAL_ROOT</c> moves it too — a test run that isolates the Vault roots can then never
+    /// rewrite the user's real Settings.json through the DI singleton (PRS-T832, M.VALT-LAW-6).
+    /// </summary>
+    public static string DefaultStorageDirectory => VaultPaths.LocalApp("Prose");
 
     /// <summary>The real install: Settings.json in %LOCALAPPDATA%, Vault in %APPDATA%\MindAttic\Prose; watches Vault.</summary>
     public SettingsService() : this(DefaultStorageDirectory, ProseSettings.ForCurrentUser())
