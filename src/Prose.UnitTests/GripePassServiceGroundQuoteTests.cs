@@ -88,15 +88,25 @@ public class GripePassServiceGroundQuoteTests
     }
 
     [Test]
-    public void ShortQuote_SkipsGroundingCheck_TrustsCitedBeat()
+    public void ShortQuote_InCitedBeat_IsGroundedThere()
     {
-        // Quotes under 12 chars are too short to reliably ground (per the >= 12 length check) —
-        // the cited beat is trusted as-is rather than risking a false "not found" kill.
+        // A quote under 12 chars is still accepted when it is in its own cited beat.
         var beats = Beats("Short beat.", "Different beat entirely.");
 
-        var result = GripePassService.GroundQuote(beats, citedBeatNumber: 1, quote: "not here");
+        var result = GripePassService.GroundQuote(beats, citedBeatNumber: 1, quote: "Short beat");
 
         Assert.That(result, Is.Not.Null);
         Assert.That(result!.Value.CorrectedBeatNumber, Is.EqualTo(1));
+    }
+
+    [Test]
+    public void ShortQuote_NotInCitedBeat_IsUngrounded_NoWholeBookSearch()
+    {
+        // PRS-T353: a short quote missing from its cited beat is no longer free-passed, and it doesn't get the
+        // whole-manuscript fallback either (too likely to match unrelated text) — even when it appears in another beat.
+        var beats = Beats("Short beat.", "Different beat entirely.");
+
+        Assert.That(GripePassService.GroundQuote(beats, citedBeatNumber: 1, quote: "not here"), Is.Null);
+        Assert.That(GripePassService.GroundQuote(beats, citedBeatNumber: 1, quote: "Different"), Is.Null);
     }
 }
