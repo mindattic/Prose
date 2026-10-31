@@ -25,6 +25,10 @@ internal static class Program
 {
     private static async Task<int> Main(string[] args)
     {
+        // LAMP (PRS-T829): keys come from MindAttic Vault as app "Prose" (its assignment, else the shared order).
+        // A literal, not ProseSettings.AppId: this CLI deliberately doesn't reference Prose.Core.
+        MindAtticCredentialStore.AppId = "Prose";
+
         if (args.Length == 0 || args.Contains("--help") || args.Contains("-h"))
         {
             PrintUsage();

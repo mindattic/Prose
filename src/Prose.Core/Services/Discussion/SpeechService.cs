@@ -68,7 +68,7 @@ public sealed class SpeechService(
             return new SpeechAvailability(true, $"openai/{OpenAiModel}", null);
 
         return new SpeechAvailability(false, "none",
-            "No transcription key. Add a Groq key in Settings — it is the fastest and costs about "
+            "No transcription key. Add a Groq key in MindAttic Vault — it is the fastest and costs about "
             + "four cents an hour of audio. An OpenAI key also works.");
     }
 

@@ -35,6 +35,13 @@ using Serilog.Events;
 // own per-universe GraphState dictionary for the matching fix on the graph
 // side.
 
+// LAMP (PRS-T829): Prose's app settings live in MindAttic Vault. `Hub.exe --write-settings-manifest`
+// (run.ps1's install step) imports today's Settings.json into Vault once, writes the manifest
+// Vault.Desktop reads, and exits before anything else starts. Legion resolves keys as app "Prose"
+// (its key assignment on the Vault tab, else the shared order).
+MindAttic.Legion.MindAtticCredentialStore.AppId = ProseSettings.AppId;
+if (SettingsService.TryRunManifestCommand(args)) return;
+
 // Explicit user requirement (2026-08-27): yellow-background console so the Hub's own window is
 // instantly recognizable among other open terminals. Clear() repaints the existing buffer with
 // the new background — setting BackgroundColor alone only colors text written after this point.

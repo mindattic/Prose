@@ -8,6 +8,7 @@
 @inject WikiService Wiki
 @inject Prose.Core.Services.Spelling.SpellingService Spelling
 @inject ReadAloudUiService ReadAloud
+@inject SettingsUiService SettingsUi
 @inject IJSRuntime JS
 @implements IAsyncDisposable
 
@@ -35,7 +36,8 @@
              OnSave="ManualSaveAsync"
              OnExport="ExportAsync"
              OnToggleTheme="ToggleThemeAsync"
-             OnOpenSettings="() => settingsOpen = true"
+             OnOpenSettings="OpenVaultSettings"
+             OnOpenDictionary="() => settingsOpen = true"
              OnFormat="FormatAsync"
              OnInsertEmDash="InsertEmDashAsync"
              OnAddEntity="AddEntityAsync"
@@ -194,7 +196,7 @@
                           BookNodeId="book.Id"
                           BeatId="beat.Id"
                           OnJumpToBeat="OpenBeatAsync"
-                          OnOpenSettings="() => settingsOpen = true"
+                          OnOpenSettings="OpenVaultSettings"
                           OnBeatWritten="ReloadAfterProposalAsync" />
         }
     </div>
@@ -1422,6 +1424,16 @@
 
     private static string WindowScriptFailed(JSException ex)
         => $"A window script failed: {ex.Message} — reload the window (Ctrl+R) to pick up the current build.";
+
+    /// <summary>
+    /// The cog (and "no key" in discussion) opens MindAttic Vault at Prose's tab — Prose's app settings
+    /// and keys are edited there since LAMP (PRS-T829). Runs on the Hub, the user's own PC. When Vault
+    /// isn't installed, the dictionary-and-voice panel opens instead; it carries the Vault link.
+    /// </summary>
+    private void OpenVaultSettings()
+    {
+        if (!SettingsUi.OpenVault()) settingsOpen = true;
+    }
 
     private async Task ToggleThemeAsync()
     {

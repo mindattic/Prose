@@ -780,9 +780,13 @@ public static class ServiceCollectionExtensions
 
         // One resolver factory shared by every provider below so a fix to the empty-pool check or
         // fallback order can't land in only one of them (mirrors Automata.Core's KeyPoolResolver).
+        // LAMP (PRS-T829): keys assigned to Prose on its MindAttic Vault tab are the explicit opt-in now and
+        // win (healthy ones, in the assigned order); the BYO pool still works behind them, then the fallback.
         static Func<IReadOnlyList<string>> ByoKeyPoolResolver(IServiceProvider sp, string provider, Func<IReadOnlyList<string>> fallback) =>
             () =>
             {
+                var assigned = SettingsService.AssignedVaultKeys(provider);
+                if (assigned.Count > 0) return assigned;
                 var pool = sp.GetRequiredService<Services.Operator.OperatorByoKeyPoolService>().GetPool(provider);
                 return pool.Count > 0 ? pool : fallback();
             };

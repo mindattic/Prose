@@ -1,7 +1,9 @@
-@* Credentials.
+@* Dictionary and voice.
 
-   Keys are write-only from here: the service hands back a mask, never the key, so nothing on this
-   screen — or in the circuit's payload, or in a screenshot — carries a usable secret. *@
+   LAMP (PRS-T829): Prose's app settings and every API key are edited in MindAttic Vault
+   (Vault.Desktop, Prose tab), not here. This panel keeps what belongs to the books themselves —
+   the spelling dictionary — plus read-only status for discussion, read-aloud and dictation, and a
+   button that opens Vault. Nothing here reads a key back out: only whether one is set. *@
 
 @inject SettingsUiService Settings
 @inject ReadAloudUiService ReadAloud
@@ -13,83 +15,40 @@
 <div class="scrim" aria-hidden="true" @onclick="() => OnClose.InvokeAsync()"></div>
 <div class="modal settings" role="dialog" aria-modal="true" aria-labelledby="settings-title"
      tabindex="-1" @ref="dialog" @onkeydown="OnKeyDown">
-    <h2 id="settings-title">Settings</h2>
+    <h2 id="settings-title">Dictionary and voice</h2>
+
+    <section class="set-block">
+        <h3>App settings and API keys</h3>
+        <p class="set-note">
+            Models, review defaults, narration, export folders and every API key are edited in
+            MindAttic Vault, on its Prose tab. A change there reaches the running Hub without a restart.
+        </p>
+        <div class="set-add">
+            <button class="mini" @onclick="OpenVault">Open in MindAttic Vault</button>
+        </div>
+        @if (vaultMissing)
+        {
+            <p class="set-note">
+                <span class="set-warn">MindAttic Vault isn't installed on the machine running the Hub.</span>
+                <a href="@Settings.VaultLink">Open it from this link</a> on a PC that has it.
+            </p>
+        }
+    </section>
 
     <section class="set-block">
         <h3>Discussion</h3>
         <p class="set-note">
-            Claude is tried first, then OpenAI. A key set here works immediately — the pool is read
-            on every call, so there is nothing to restart.
+            Claude is tried first, then OpenAI. Keys assigned to Prose in MindAttic Vault are used
+            first, then any <span class="mono">prose --set-byo-key</span> pool.
             @if (Settings.ActiveProvider is { } active)
             {
-                <span class="set-ok">Currently using <strong>@active</strong>.</span>
+                <span class="set-ok">Currently using <strong>@active</strong> (@Settings.KeySource(active)).</span>
             }
             else
             {
                 <span class="set-warn">No key set, so discussion is unavailable and nothing can be spent.</span>
             }
         </p>
-
-        @foreach (var provider in Settings.Providers)
-        {
-            <div class="set-provider">
-                <div class="set-provider-head">
-                    <strong>@provider</strong>
-                    @if (provider == "claude")
-                    {
-                        <span class="muted">no fallback — a key is required</span>
-                    }
-                </div>
-
-                @{ var keys = Settings.KeysFor(provider); }
-                @if (keys.Count == 0)
-                {
-                    <div class="menu-note">No key.</div>
-                }
-                else
-                {
-                    <ul class="set-keys">
-                        @foreach (var row in keys)
-                        {
-                            <li>
-                                <span class="mono">@row.Masked</span>
-                                @if (row.Index == 0 && keys.Count > 1)
-                                {
-                                    <span class="muted">first</span>
-                                }
-                                <div class="spacer"></div>
-                                @* Every one of these is named "Remove"; which key it removes was
-                                   adjacent text, not part of the name. *@
-                                <button class="mini danger-btn"
-                                        aria-label="Remove @provider key ending @row.Masked"
-                                        @onclick="() => Remove(row.Provider, row.Index)">Remove</button>
-                            </li>
-                        }
-                    </ul>
-                    @if (keys.Count > 1)
-                    {
-                        <div class="set-note muted">
-                            Extra keys are failover: one that hits a rate limit or an auth error
-                            hands off to the next.
-                        </div>
-                    }
-                }
-
-                @* Both the field and the button are rendered once per provider. Named only by an
-                   identical placeholder, they were indistinguishable: a screen reader announced
-                   "Paste a key, edit, password" two or three times with nothing to tell the
-                   Claude field from the OpenAI one. *@
-                <div class="set-add">
-                    <label class="visually-hidden" for="key-@provider">@provider API key</label>
-                    <input type="password" id="key-@provider" placeholder="Paste a key…"
-                           autocomplete="off" value="@Draft(provider)"
-                           @oninput="e => drafts[provider] = e.Value?.ToString() ?? string.Empty" />
-                    <button class="mini" disabled="@(string.IsNullOrWhiteSpace(Draft(provider)))"
-                            aria-label="Add a @provider key"
-                            @onclick="() => Add(provider)">Add</button>
-                </div>
-            </div>
-        }
     </section>
 
     <section class="set-block">
@@ -121,21 +80,11 @@
                 <span class="muted">@voice.LocalBlocker</span>
             }
         </p>
-        @* "A key is already set" was communicated only by a placeholder, which disappears on the
-           first keystroke and is never a label. It is real text now. *@
         <p class="set-note">
             @(Settings.HasElevenLabsKey
-              ? "A key is set. Entering one here replaces it."
-              : "No ElevenLabs key is set.")
+              ? "An ElevenLabs key is set."
+              : "No ElevenLabs key is set. Add one in MindAttic Vault's Keys tab.")
         </p>
-        <div class="set-add">
-            <label class="visually-hidden" for="key-elevenlabs">ElevenLabs API key</label>
-            <input type="password" id="key-elevenlabs" autocomplete="off"
-                   placeholder="ElevenLabs key…" value="@elevenDraft"
-                   @oninput="e => elevenDraft = e.Value?.ToString() ?? string.Empty" />
-            <button class="mini" disabled="@(string.IsNullOrWhiteSpace(elevenDraft))"
-                    @onclick="SaveElevenLabs">Save</button>
-        </div>
     </section>
 
     <section class="set-block">
@@ -208,7 +157,7 @@
         </div>
     </section>
 
-    @* Adding or removing a key destroys the button that was just pressed, so focus drops to the
+    @* Adding or removing a word destroys the button that was just pressed, so focus drops to the
        body — the confirmation was silent AND the focus was gone. *@
     <div class="banner info" role="status" style="@(note is null ? "display:none" : null)">@note</div>
 
@@ -264,30 +213,14 @@
     private Task OnWordKeyDown(KeyboardEventArgs e) =>
         e.Key == "Enter" && !string.IsNullOrWhiteSpace(wordDraft) ? AddWordAsync() : Task.CompletedTask;
 
-    private readonly Dictionary<string, string> drafts = new();
-    private string elevenDraft = "";
     private string? note;
+    private bool vaultMissing;
 
-    private string Draft(string provider) => drafts.TryGetValue(provider, out var v) ? v : "";
-
-    private void Add(string provider)
+    // Runs on the Hub (the user's own PC), so it reaches Vault.Desktop's local pipe.
+    private void OpenVault()
     {
-        Settings.AddKey(provider, Draft(provider));
-        drafts[provider] = "";
-        note = $"Added a {provider} key. It is in use from the next question — no restart needed.";
-    }
-
-    private void Remove(string provider, int index)
-    {
-        Settings.RemoveAt(provider, index);
-        note = $"Removed a {provider} key.";
-    }
-
-    private void SaveElevenLabs()
-    {
-        Settings.SetElevenLabsKey(elevenDraft);
-        elevenDraft = "";
-        note = "Saved the ElevenLabs key.";
+        vaultMissing = !Settings.OpenVault();
+        note = vaultMissing ? null : "Opened MindAttic Vault at Prose's tab.";
     }
 
     private ElementReference dialog;

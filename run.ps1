@@ -408,6 +408,19 @@ foreach ($name in $Apps) {
     Write-Host "    -> $exe ($([math]::Round(((Get-Item $exe).Length / 1MB), 1)) MB)" -ForegroundColor Gray
 }
 
+# -- MindAttic Vault settings (LAMP, PRS-T829) -------------------------------
+# Prose's app settings live in %APPDATA%\MindAttic\Prose\settings.json and are edited in
+# MindAttic.Vault.Desktop. The Hub's --write-settings-manifest imports today's Settings.json into it
+# (once; never overwrites) and writes settings.manifest.json so Vault.Desktop shows Prose's tab. It
+# exits before touching SQL Server or the port, so it is safe while another Hub is running.
+$hubExeForManifest = Join-Path $catalog.Hub.Out $catalog.Hub.Exe
+if (Test-Path $hubExeForManifest) {
+    & $hubExeForManifest --write-settings-manifest | Out-Null
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host "  (Hub --write-settings-manifest exited $LASTEXITCODE; Prose writes it on its next start)" -ForegroundColor DarkYellow
+    }
+}
+
 Write-Host ''
 Write-Host '  Deploy complete.' -ForegroundColor Green
 Write-Host ''

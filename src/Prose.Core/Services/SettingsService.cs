@@ -4,35 +4,47 @@ using Microsoft.Extensions.Configuration;
 using MindAttic.Legion;
 using MindAttic.Vault.Credentials;
 using MindAttic.Vault.Paths;
+using MindAttic.Vault.Settings;
 using Prose.Core.Interfaces;
 
 namespace Prose.Core.Services;
 
 /// <summary>
-/// Per-machine application settings (models, voices, export folders, review defaults, feature
-/// flags) persisted to <c>%LOCALAPPDATA%\MindAttic\Prose\Settings.json</c>, shared by every Prose
-/// process on the machine. Setters debounce a save; <see cref="Flush"/> merges only the keys this
-/// process changed onto the file. API-key properties resolve through the credential chain in
-/// <see cref="ResolveApiKey"/> rather than the file alone.
+/// Prose's settings, shared by every Prose process on the machine. Since LAMP (PRS-T829) the
+/// app-level settings (models, review defaults, local LLM, TTS, editor, export, maps, SMTP host,
+/// feature flags) live in MindAttic Vault as <see cref="ProseSettings"/>
+/// (<c>%APPDATA%\MindAttic\Prose\settings.json</c>, edited in MindAttic.Vault.Desktop); the first load
+/// imports them from the old <c>%LOCALAPPDATA%\MindAttic\Prose\Settings.json</c>. That file keeps
+/// what isn't an app setting: per-universe export folders, voice profiles, and the legacy secret
+/// fields (SMTP password, Hub key, local-endpoint bearer tokens, pre-Vault API keys). Its copies of
+/// the Vault-owned fields are no longer written (they stay as the rollback).
+/// Setters debounce a save; <see cref="Flush"/> merges only the keys this process changed onto
+/// both files. A save made in Vault.Desktop reaches a running process through <see cref="Watch"/>.
+/// API-key properties resolve through the credential chain in <see cref="ResolveApiKey"/>.
 /// </summary>
 public class SettingsService : IDisposable
 {
-    private const string AppId = "prose";
+    /// <summary>The <c>{prefix}-{provider}</c> prefix of Prose's pre-LAMP own key copies in the LLM bucket.</summary>
+    private const string LegacyKeyPrefix = "prose";
 
     /// <summary>
-    /// Fresh <see cref="AppScopedCredentialStore"/> over the shared LLM keyring, namespaced
-    /// under <c>"prose-"</c> (mirrors <c>ThinkTank.Core.Services.SettingsService.OwnProviderStore</c>).
-    /// Constructed per call (not cached) so it re-resolves <c>MINDATTIC_LLM_CREDENTIALS</c> on
-    /// every access — matters for tests that redirect that env var to a per-run sandbox.
-    /// Gives Prose its own key tier for every provider, tried before the shared/unscoped id
-    /// every other MindAttic app falls back to, without ever colliding with another app's key
-    /// or the shared default.
+    /// Pre-LAMP <see cref="AppScopedCredentialStore"/> over the LLM keyring (<c>prose-{provider}</c>).
+    /// Only used when <c>MINDATTIC_LLM_CREDENTIALS</c> points at a bare key folder (tests and
+    /// explicit redirects); everywhere else Prose's own keys are its Vault key assignment, and any
+    /// leftover <c>prose-*</c> copy is moved into the shared named list on first start
+    /// (<see cref="KeyImporter.ImportAppScopedFor"/>).
     /// </summary>
     private static AppScopedCredentialStore OwnProviderStore() => new(
-        AppId,
+        LegacyKeyPrefix,
         new LlmCredentialStore(
             Environment.GetEnvironmentVariable(LlmCredentialStore.DirectoryEnvVar)
             ?? VaultPaths.RoamingBucket(LlmCredentialStore.Bucket)));
+
+    /// <summary>True when <c>MINDATTIC_LLM_CREDENTIALS</c> redirects keys to a bare folder (the pre-LAMP path).</summary>
+    private static bool UsesKeyOverrideFolder =>
+        !string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable(LlmCredentialStore.DirectoryEnvVar));
+
+    private static int importedOwnKeys;
 
     /// <summary>
     /// Optional cloud-native configuration source. When set (typically once at host
@@ -55,17 +67,47 @@ public class SettingsService : IDisposable
     // process changed — so a stale copy can't clobber fields other processes wrote. See Flush().
     private JsonObject? baseline;
 
-    public SettingsService() : this(Path.Combine(
-        Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-        "MindAttic", "Prose")) { }
+    // ── MindAttic Vault (LAMP, PRS-T829) ─────────────────────────────────────
+    private readonly JsonSettingsStore<ProseSettings> vaultStore;
+    // The Vault values this process uses; every app-level property reads and writes it.
+    private ProseSettings vault = new();
+    // The Vault values as last read from / written to settings.json; FlushVault writes only the
+    // properties this process changed since, so two processes can't clobber each other there either.
+    private JsonObject vaultBaseline = new();
+    private FileSystemWatcher? vaultWatcher;
+    private Timer? vaultDebounce;
 
-    /// <summary>Constructor with explicit storage directory (for tests).</summary>
-    public SettingsService(string storageDir)
+    // Same names as the old Settings.json fields (PascalCase) — used to import and to diff.
+    private static readonly JsonSerializerOptions VaultDiffOptions = new();
+
+    /// <summary>The Settings.json fields MindAttic Vault owns since LAMP (every <see cref="ProseSettings"/> property).</summary>
+    internal static readonly HashSet<string> VaultOwnedFields =
+        typeof(ProseSettings).GetProperties().Select(p => p.Name).ToHashSet(StringComparer.Ordinal);
+
+    /// <summary>Default location of the pre-LAMP settings (and the remaining non-Vault fields).</summary>
+    public static string DefaultStorageDirectory { get; } = Path.Combine(
+        Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "MindAttic", "Prose");
+
+    /// <summary>The real install: Settings.json in %LOCALAPPDATA%, Vault in %APPDATA%\MindAttic\Prose; watches Vault.</summary>
+    public SettingsService() : this(DefaultStorageDirectory, ProseSettings.ForCurrentUser())
+    {
+        Watch();
+    }
+
+    /// <summary>
+    /// Explicit storage directory (tests, scratch hosts). With no <paramref name="vaultStore"/>, the
+    /// default directory gets the real Vault file and any other directory gets a private one in
+    /// <c>&lt;storageDir&gt;\vault</c>, so a scratch instance can never read or change the user's settings.
+    /// </summary>
+    public SettingsService(string storageDir, JsonSettingsStore<ProseSettings>? vaultStore = null)
     {
         Directory.CreateDirectory(storageDir);
         settingsPath = Path.Combine(storageDir, "Settings.json");
         defaultsPath = Path.Combine(storageDir, "Defaults.json");
+        this.vaultStore = vaultStore ?? VaultStoreFor(storageDir);
         Load();
+        LoadVault();
+        ImportOwnKeyCopiesOnce();
         MigrateLegacyCredentialsToSharedStore();
         NormalizeLegacyClaudeProviderIds();
 
@@ -73,9 +115,9 @@ public class SettingsService : IDisposable
         // Post-archival, "valid canon" means the engine dir exists and has the
         // standard subfolders — entity content lives in SQL now, not on disk,
         // so the old "≥ 10 .json files" heuristic no longer applies.
-        var engineDir = string.IsNullOrWhiteSpace(data.CanonRootPath)
+        var engineDir = string.IsNullOrWhiteSpace(vault.CanonRootPath)
             ? ""
-            : Path.Combine(data.CanonRootPath, Constants.Folders.Engine);
+            : Path.Combine(vault.CanonRootPath, Constants.Folders.Engine);
         var hasData = !string.IsNullOrWhiteSpace(engineDir)
             && Directory.Exists(engineDir)
             && Directory.Exists(Path.Combine(engineDir, "data"));
@@ -85,9 +127,181 @@ public class SettingsService : IDisposable
             var detected = AutoDetectCanonRoot();
             if (detected != null)
             {
-                data.CanonRootPath = detected;
+                vault.CanonRootPath = detected;
                 Flush();
             }
+        }
+    }
+
+    /// <summary>The Vault store this instance reads and writes.</summary>
+    public JsonSettingsStore<ProseSettings> VaultStore => vaultStore;
+
+    /// <summary>
+    /// The Vault store for a storage directory: the real one for <see cref="DefaultStorageDirectory"/>,
+    /// a private <c>&lt;storageDir&gt;\vault</c> for anything else.
+    /// </summary>
+    public static JsonSettingsStore<ProseSettings> VaultStoreFor(string storageDir) =>
+        string.Equals(Path.GetFullPath(storageDir).TrimEnd('\\', '/'),
+                      Path.GetFullPath(DefaultStorageDirectory).TrimEnd('\\', '/'), StringComparison.OrdinalIgnoreCase)
+            ? ProseSettings.ForCurrentUser()
+            : new JsonSettingsStore<ProseSettings>(Path.Combine(storageDir, "vault"));
+
+    /// <summary>
+    /// <c>--write-settings-manifest</c> (run.ps1's install step): imports today's Settings.json into
+    /// MindAttic Vault if it isn't there yet, writes <c>settings.manifest.json</c> for Vault.Desktop,
+    /// moves any own key copies into the shared named lists, prints the Vault folder and returns true.
+    /// Returns false (doing nothing) when the switch is absent.
+    /// </summary>
+    public static bool TryRunManifestCommand(string[] args, TextWriter? output = null,
+        string? storageDir = null, JsonSettingsStore<ProseSettings>? vaultStore = null)
+    {
+        if (args is null || !args.Any(a => string.Equals(a, MindAttic.Vault.Settings.Manifest.SettingsManifestCommand.Switch, StringComparison.OrdinalIgnoreCase)))
+            return false;
+        using var settings = new SettingsService(storageDir ?? DefaultStorageDirectory, vaultStore ?? ProseSettings.ForCurrentUser());
+        settings.Flush();
+        (output ?? Console.Out).WriteLine(settings.vaultStore.Directory);
+        return true;
+    }
+
+    /// <summary>
+    /// Loads the Vault values. The first time (no Vault file yet) imports today's values from
+    /// Settings.json by name and saves them; <see cref="JsonSettingsStore{T}.LoadOrSeed"/> then writes
+    /// the manifest. A read-only profile still starts, on the imported values.
+    /// </summary>
+    private void LoadVault()
+    {
+        var imported = ImportFromLegacy(data);
+        try
+        {
+            if (!vaultStore.Exists()) vaultStore.Save(imported);
+            vault = vaultStore.LoadOrSeed();
+        }
+        catch (Exception ex) when (ex is IOException or UnauthorizedAccessException)
+        {
+            Serilog.Log.Warning(ex, "SettingsService: MindAttic Vault settings could not be read or written; using Settings.json values");
+            vault = imported;
+        }
+        vaultBaseline = ToNode(vault);
+    }
+
+    /// <summary>The Vault values held by an old Settings.json snapshot (same property names).</summary>
+    private static ProseSettings ImportFromLegacy(SettingsData legacy) =>
+        JsonSerializer.Deserialize<ProseSettings>(JsonSerializer.Serialize(legacy, VaultDiffOptions), VaultDiffOptions) ?? new ProseSettings();
+
+    private static JsonObject ToNode(ProseSettings s) =>
+        JsonSerializer.SerializeToNode(s, VaultDiffOptions)?.AsObject() ?? new JsonObject();
+
+    /// <summary>
+    /// Prose's pre-LAMP own key copies (<c>prose-{provider}</c>) move into the shared named lists once per
+    /// process and become Prose's assigned keys, so the same key stays in use (never throws).
+    /// </summary>
+    private static void ImportOwnKeyCopiesOnce()
+    {
+        if (UsesKeyOverrideFolder) return;
+        if (Interlocked.Exchange(ref importedOwnKeys, 1) == 0) KeyImporter.ImportAppScopedFor(ProseSettings.AppId);
+    }
+
+    /// <summary>Raised after a Vault save from another process (e.g. Vault.Desktop) was applied here.</summary>
+    public event Action? Changed;
+
+    /// <summary>
+    /// Watches the Vault settings file and applies changes made elsewhere (Vault.Desktop, another Prose
+    /// process) to this instance, raising <see cref="ThemeChanged"/> and <see cref="Changed"/>.
+    /// Idempotent; the default constructor calls it.
+    /// </summary>
+    public void Watch()
+    {
+        if (vaultWatcher is not null) return;
+        try
+        {
+            Directory.CreateDirectory(vaultStore.Directory);
+            var watcher = new FileSystemWatcher(vaultStore.Directory, vaultStore.FileName)
+            {
+                NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.CreationTime,
+            };
+            FileSystemEventHandler changed = (_, _) =>
+                (vaultDebounce ??= new Timer(_ =>
+                {
+                    try { ReloadVault(); }
+                    catch (Exception ex) { Serilog.Log.Warning(ex, "SettingsService: applying a MindAttic Vault change failed"); }
+                })).Change(300, Timeout.Infinite);
+            watcher.Changed += changed;
+            watcher.Created += changed;
+            watcher.Renamed += (s, e) => changed(s, e);
+            watcher.EnableRaisingEvents = true;
+            vaultWatcher = watcher;
+        }
+        catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or ArgumentException)
+        {
+            Serilog.Log.Warning(ex, "SettingsService: cannot watch MindAttic Vault settings; changes apply on restart");
+        }
+    }
+
+    /// <summary>
+    /// Applies the Vault file's current values to this instance: first writes this process's own
+    /// pending changes (so they aren't lost), then adopts the file. Raises <see cref="ThemeChanged"/>
+    /// when the theme changed and <see cref="Changed"/> when anything did. Public for tests and for
+    /// hosts that want to re-read on demand.
+    /// </summary>
+    public void ReloadVault()
+    {
+        string oldTheme, newTheme;
+        bool any;
+        lock (saveLock)
+        {
+            FlushVault();
+            if (!vaultStore.Exists()) return;
+            var fromDisk = vaultStore.Load();
+            var diskNode = ToNode(fromDisk);
+            any = !JsonNode.DeepEquals(diskNode, ToNode(vault));
+            oldTheme = vault.Theme;
+            if (any) vault = fromDisk;
+            vaultBaseline = diskNode;
+            newTheme = vault.Theme;
+        }
+        if (!any) return;
+        if (!string.Equals(oldTheme, newTheme, StringComparison.Ordinal)) RaiseThemeChanged(newTheme);
+        foreach (var h in Changed?.GetInvocationList() ?? []) try { ((Action)h)(); } catch { }
+    }
+
+    private void RaiseThemeChanged(string theme)
+    {
+        foreach (var h in ThemeChanged?.GetInvocationList() ?? []) try { ((Action<string>)h)(theme); } catch { }
+    }
+
+    /// <summary>
+    /// Writes the Vault properties this process changed since it last read or wrote the Vault file,
+    /// merged onto the file's current content (same merge rule as Settings.json). Caller holds <see cref="saveLock"/>.
+    /// </summary>
+    private void FlushVault()
+    {
+        var versionAtSnapshot = Volatile.Read(ref changeVersion);
+        var current = ToNode(vault);
+        var changed = current.Where(kv => !vaultBaseline.TryGetPropertyValue(kv.Key, out var b) || !JsonNode.DeepEquals(kv.Value, b))
+                             .Select(kv => kv.Key).ToList();
+        if (changed.Count == 0) return;
+
+        using var guard = new CrossProcessLock(vaultStore.FilePath);
+        guard.Acquire(TimeSpan.FromSeconds(5));
+        try
+        {
+            var disk = vaultStore.Exists() ? ToNode(vaultStore.Load()) : ToNode(new ProseSettings());
+            foreach (var key in changed) disk[key] = current[key]?.DeepClone();
+            var merged = disk.Deserialize<ProseSettings>(VaultDiffOptions) ?? vault;
+            vaultStore.Save(merged);
+            // Adopt the merge (picks up values other processes wrote) unless a setter ran meanwhile:
+            // then keep ours, and baseline on our snapshot so its own queued flush writes it.
+            if (Volatile.Read(ref changeVersion) == versionAtSnapshot)
+            {
+                vault = merged;
+                vaultBaseline = ToNode(merged);
+            }
+            else
+                vaultBaseline = current;
+        }
+        catch (Exception ex) when (ex is IOException or UnauthorizedAccessException)
+        {
+            Serilog.Log.Warning(ex, "SettingsService: could not write MindAttic Vault settings; the next save retries");
         }
     }
 
@@ -134,52 +348,127 @@ public class SettingsService : IDisposable
     private static string Env(string key, string fallback) =>
         Environment.GetEnvironmentVariable(key) is { Length: > 0 } v ? v : fallback;
 
-    // Credential resolution: VaultConfiguration → Prose's own app-scoped key → env var →
-    // shared %APPDATA%/MindAttic/LLM/ store → legacy Settings.json. VaultConfiguration is the
-    // cloud-native primary and always wins (an admin-pushed override should never be shadowed
-    // by a per-app key); when unset (e.g. in unit tests that construct SettingsService
-    // directly), the chain falls back to the prior env-var-first behaviour with no observable
-    // difference for installs that never set a Prose-scoped key. Existing installs with a key
-    // already saved under the shared/unscoped id keep resolving it via the shared-store fallback
-    // below, unchanged. Override the store location with the MINDATTIC_LLM_CREDENTIALS env var.
+    // Credential resolution, same order as before LAMP, with Prose's own tier now being its key
+    // assignment in MindAttic Vault rather than a private "prose-*" copy:
+    //   VaultConfiguration (cloud) → Prose's assigned keys (Vault.Desktop, app "Prose") →
+    //   PROSE_* env var → the shared named list in its default order → legacy Settings.json field.
+    // VaultConfiguration always wins (an admin-pushed override is never shadowed by a per-app key),
+    // the env var still beats the shared list, and every Vault tier goes through KeySelector, so a
+    // key another app (or Legion) found broken (401/403/quota) is skipped for the next healthy one.
+    // MINDATTIC_LLM_CREDENTIALS pointing at a bare folder keeps the pre-LAMP chain (tests).
     private static string ResolveApiKey(string envVar, string providerId, string legacyValue)
     {
         var fromConfig = VaultConfiguration?[$"MindAttic:Vault:LLM:{providerId}:apiKey"];
         if (!string.IsNullOrWhiteSpace(fromConfig)) return fromConfig.Trim();
 
-        var ownKey = OwnProviderStore().GetKey(providerId);
-        if (!string.IsNullOrWhiteSpace(ownKey)) return ownKey;
+        if (UsesKeyOverrideFolder)
+        {
+            var ownKey = OwnProviderStore().GetKey(providerId);
+            if (!string.IsNullOrWhiteSpace(ownKey)) return ownKey;
+            if (Environment.GetEnvironmentVariable(envVar) is { Length: > 0 } env) return env;
+            var fromStore = MindAtticCredentialStore.GetKey(providerId);
+            return !string.IsNullOrEmpty(fromStore) ? fromStore : legacyValue;
+        }
 
+        var assigned = AssignedVaultKey(providerId);
+        if (!string.IsNullOrWhiteSpace(assigned)) return assigned;
         if (Environment.GetEnvironmentVariable(envVar) is { Length: > 0 } v) return v;
-        var fromStore = MindAtticCredentialStore.GetKey(providerId);
-        return !string.IsNullOrEmpty(fromStore) ? fromStore : legacyValue;
+        var shared = SharedVaultKey(providerId);
+        return !string.IsNullOrEmpty(shared) ? shared : legacyValue;
     }
 
-    // API keys route through MindAtticCredentialStore (LLMVoting library) at %APPDATA%/MindAttic/LLM/.
-    // Resolution: env var → shared store → legacy Settings.json field.
-    // Models, voice prefs, and other non-credential settings stay in Settings.json (per-app).
+    /// <summary>The Vault key selector over the current user's named keys and shared key health.</summary>
+    private static KeySelector VaultKeys(out NamedKeyStore keys)
+    {
+        keys = NamedKeyStore.ForRoamingRoot();
+        return new KeySelector(new FileKeySource(keys), KeyHealthStore.ForLocalRoot());
+    }
+
+    /// <summary>
+    /// Prose's usable assigned keys for the provider, in its Vault order (disabled, failed and cooling-down
+    /// keys skipped); empty when Prose has no assignment or keys are redirected to a bare folder. For call
+    /// paths that fail over through a key list themselves (the operator tool-calling loop).
+    /// </summary>
+    public static IReadOnlyList<string> AssignedVaultKeys(string providerId)
+    {
+        if (UsesKeyOverrideFolder) return Array.Empty<string>();
+        try
+        {
+            var selector = VaultKeys(out var keys);
+            if (keys.Assignments.Get(ProseSettings.AppId, providerId).Count == 0) return Array.Empty<string>();
+            return selector.Plan(providerId, ProseSettings.AppId).Usable.Select(k => k.Value).ToList();
+        }
+        catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or System.Text.Json.JsonException) { return Array.Empty<string>(); }
+    }
+
+    /// <summary>Prose's first usable assigned key for the provider, or null when Prose has no assignment.</summary>
+    private static string? AssignedVaultKey(string providerId)
+    {
+        try
+        {
+            var selector = VaultKeys(out var keys);
+            if (keys.Assignments.Get(ProseSettings.AppId, providerId).Count == 0) return null;
+            return selector.GetActiveKey(providerId, ProseSettings.AppId)?.Value;
+        }
+        catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or System.Text.Json.JsonException) { return null; }
+    }
+
+    /// <summary>
+    /// The first healthy key in the provider's shared named list (aliases merged, e.g. xai/grok), or —
+    /// when every key is flagged failed or cooling down — the first enabled one, as before LAMP.
+    /// </summary>
+    private static string? SharedVaultKey(string providerId)
+    {
+        try
+        {
+            var selector = VaultKeys(out var keys);
+            return selector.GetActiveKey(providerId, appId: null)?.Value
+                ?? keys.GetKeys(providerId).FirstOrDefault(k => !k.Disabled)?.Value;
+        }
+        catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or System.Text.Json.JsonException) { return null; }
+    }
+
+    /// <summary>
+    /// A key set through a SettingsService property (scripts, tests). Under Vault it goes into the shared
+    /// named list as <c>Prose</c> and becomes Prose's active key (an identical value already there is
+    /// reused, never duplicated), the LAMP equivalent of the old private copy. Keys are normally
+    /// managed in MindAttic.Vault.Desktop. An empty value only clears the legacy field.
+    /// </summary>
+    private static void SetOwnKey(string providerId, string? value)
+    {
+        if (UsesKeyOverrideFolder) { OwnProviderStore().SetKey(providerId, value ?? ""); return; }
+        if (string.IsNullOrWhiteSpace(value)) return;
+        try { new KeyImporter(NamedKeyStore.ForRoamingRoot()).ImportValue(providerId, ProseSettings.AppId, value, ProseSettings.AppId); }
+        catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or ArgumentException or InvalidOperationException)
+        {
+            Serilog.Log.Warning("SettingsService: could not store a {Provider} key in MindAttic Vault: {Error}", providerId, ex.Message);
+        }
+    }
+
+    // API keys resolve through MindAttic Vault's named key lists (see ResolveApiKey); the
+    // non-credential app settings below read and write the Vault ProseSettings values.
     public string ApiKey
     {
         get => ResolveApiKey("PROSE_CLAUDE_API_KEY", "claude", data.ApiKey);
-        set { OwnProviderStore().SetKey("claude", value); data.ApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("claude", value); data.ApiKey = value; ScheduleSave(); }
     }
-    public string Model { get => data.Model; set { data.Model = value; ScheduleSave(); } }
+    public string Model { get => vault.Model; set { vault.Model = value; ScheduleSave(); } }
     /// <summary>Raised when the theme changes so layout components can update without a full reload.</summary>
     public event Action<string>? ThemeChanged;
-    public string Theme { get => data.Theme; set { data.Theme = value; ScheduleSave(); foreach (var h in ThemeChanged?.GetInvocationList() ?? []) try { ((Action<string>)h)(value); } catch { } } }
-    public string CanonRootPath { get => data.CanonRootPath; set { data.CanonRootPath = value; ScheduleSave(); } }
-    public int MaxTokens { get => data.MaxTokens; set { data.MaxTokens = value; ScheduleSave(); } }
+    public string Theme { get => vault.Theme; set { vault.Theme = value; ScheduleSave(); RaiseThemeChanged(value); } }
+    public string CanonRootPath { get => vault.CanonRootPath; set { vault.CanonRootPath = value; ScheduleSave(); } }
+    public int MaxTokens { get => vault.MaxTokens; set { vault.MaxTokens = value; ScheduleSave(); } }
     public string ElevenLabsApiKey
     {
         get => ResolveApiKey("PROSE_ELEVENLABS_API_KEY", "elevenlabs", data.ElevenLabsApiKey);
-        set { OwnProviderStore().SetKey("elevenlabs", value); data.ElevenLabsApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("elevenlabs", value); data.ElevenLabsApiKey = value; ScheduleSave(); }
     }
-    public string ElevenLabsVoiceId { get => data.ElevenLabsVoiceId; set { data.ElevenLabsVoiceId = value; ScheduleSave(); } }
-    public string NarratorVoiceName { get => data.NarratorVoiceName; set { data.NarratorVoiceName = value; ScheduleSave(); } }
-    public string TtsModel { get => data.TtsModel; set { data.TtsModel = value; ScheduleSave(); } }
-    public double TtsStability { get => data.TtsStability; set { data.TtsStability = value; ScheduleSave(); } }
-    public double TtsSimilarityBoost { get => data.TtsSimilarityBoost; set { data.TtsSimilarityBoost = value; ScheduleSave(); } }
-    public double TtsStyle { get => data.TtsStyle; set { data.TtsStyle = value; ScheduleSave(); } }
+    public string ElevenLabsVoiceId { get => vault.ElevenLabsVoiceId; set { vault.ElevenLabsVoiceId = value; ScheduleSave(); } }
+    public string NarratorVoiceName { get => vault.NarratorVoiceName; set { vault.NarratorVoiceName = value; ScheduleSave(); } }
+    public string TtsModel { get => vault.TtsModel; set { vault.TtsModel = value; ScheduleSave(); } }
+    public double TtsStability { get => vault.TtsStability; set { vault.TtsStability = value; ScheduleSave(); } }
+    public double TtsSimilarityBoost { get => vault.TtsSimilarityBoost; set { vault.TtsSimilarityBoost = value; ScheduleSave(); } }
+    public double TtsStyle { get => vault.TtsStyle; set { vault.TtsStyle = value; ScheduleSave(); } }
 
     /// <summary>Final delivery format/quality for a published audiobook. The
     /// source is always fetched at the highest fidelity the ElevenLabs tier
@@ -188,8 +477,8 @@ public class SettingsService : IDisposable
     /// keys in <see cref="AudiobookFormats"/>. Default: 320 kbps MP3.</summary>
     public string AudiobookFormat
     {
-        get => string.IsNullOrWhiteSpace(data.AudiobookFormat) ? "mp3_320" : data.AudiobookFormat;
-        set { data.AudiobookFormat = value; ScheduleSave(); }
+        get => string.IsNullOrWhiteSpace(vault.AudiobookFormat) ? "mp3_320" : vault.AudiobookFormat;
+        set { vault.AudiobookFormat = value; ScheduleSave(); }
     }
 
     /// <summary>Where Publish drops the combined audio file so it's easy to
@@ -197,8 +486,8 @@ public class SettingsService : IDisposable
     /// this is the user-facing export.</summary>
     public string PublishOutputDirectory
     {
-        get => data.PublishOutputDirectory;
-        set { data.PublishOutputDirectory = value ?? ""; ScheduleSave(); }
+        get => vault.PublishOutputDirectory;
+        set { vault.PublishOutputDirectory = value ?? ""; ScheduleSave(); }
     }
 
     /// <summary>Resolve the effective publish output directory: the configured
@@ -206,7 +495,7 @@ public class SettingsService : IDisposable
     /// directory (creates it if needed).</summary>
     public string ResolvePublishOutputDirectory()
     {
-        var dir = data.PublishOutputDirectory;
+        var dir = vault.PublishOutputDirectory;
         if (string.IsNullOrWhiteSpace(dir))
             dir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
         try { Directory.CreateDirectory(dir); } catch { /* fall through; caller handles write failure */ }
@@ -220,8 +509,8 @@ public class SettingsService : IDisposable
     /// Stray wrapping quotes/whitespace are tolerated by the exporter.</summary>
     public string PublishExportDirectory
     {
-        get => data.PublishExportDirectory;
-        set { data.PublishExportDirectory = value ?? ""; ScheduleSave(); }
+        get => vault.PublishExportDirectory;
+        set { vault.PublishExportDirectory = value ?? ""; ScheduleSave(); }
     }
 
     /// <summary>Returns the export base directory for the given universe slug.
@@ -232,7 +521,7 @@ public class SettingsService : IDisposable
     /// back-compat. With no entry, the bare root is returned.</summary>
     public string GetExportDirectory(string? universeSlug)
     {
-        var global = (data.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
+        var global = (vault.PublishExportDirectory ?? string.Empty).Trim().Trim('"', '\'').Trim();
         var root = string.IsNullOrWhiteSpace(global)
             ? Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
             : global;
@@ -265,19 +554,19 @@ public class SettingsService : IDisposable
     /// <summary>Silence (ms) inserted after a beat whose SceneType is
     /// <c>section-end</c> — the last paragraph before a <c>##</c> section
     /// header. Long pause; "new chapter section starts here." Default 1800.</summary>
-    public int TtsPauseSectionMs { get => data.TtsPauseSectionMs; set { data.TtsPauseSectionMs = value; ScheduleSave(); } }
+    public int TtsPauseSectionMs { get => vault.TtsPauseSectionMs; set { vault.TtsPauseSectionMs = value; ScheduleSave(); } }
     /// <summary>Silence (ms) inserted after a beat whose SceneType is
     /// <c>scene-end</c> — the last paragraph before a <c>---</c> divider.
     /// Medium pause; "scene changes." Default 1000.</summary>
-    public int TtsPauseSceneMs { get => data.TtsPauseSceneMs; set { data.TtsPauseSceneMs = value; ScheduleSave(); } }
+    public int TtsPauseSceneMs { get => vault.TtsPauseSceneMs; set { vault.TtsPauseSceneMs = value; ScheduleSave(); } }
     /// <summary>Silence (ms) inserted between paragraph beats that end in a
     /// hard sentence terminator (<c>.</c>, <c>!</c>, <c>?</c>). The "breath
     /// between paragraphs" budget. Default 400.</summary>
-    public int TtsPauseParagraphMs { get => data.TtsPauseParagraphMs; set { data.TtsPauseParagraphMs = value; ScheduleSave(); } }
+    public int TtsPauseParagraphMs { get => vault.TtsPauseParagraphMs; set { vault.TtsPauseParagraphMs = value; ScheduleSave(); } }
     /// <summary>Silence (ms) inserted between paragraph beats whose prose
     /// ends mid-sentence (comma, em-dash, colon, no terminator). Short pause
     /// that keeps reading momentum across a paragraph break. Default 200.</summary>
-    public int TtsPauseContinuationMs { get => data.TtsPauseContinuationMs; set { data.TtsPauseContinuationMs = value; ScheduleSave(); } }
+    public int TtsPauseContinuationMs { get => vault.TtsPauseContinuationMs; set { vault.TtsPauseContinuationMs = value; ScheduleSave(); } }
 
     // ── Voice profile registry ─────────────────────────────────────────────
     // Named bundles of (voice_id + model + stability + similarity_boost +
@@ -317,12 +606,12 @@ public class SettingsService : IDisposable
         return new Models.VoiceProfile
         {
             Id              = "narrator-default",
-            Label           = string.IsNullOrEmpty(data.NarratorVoiceName) ? "Narrator" : data.NarratorVoiceName,
-            VoiceId         = data.ElevenLabsVoiceId,
-            Model           = data.TtsModel,
-            Stability       = data.TtsStability,
-            SimilarityBoost = data.TtsSimilarityBoost,
-            Style           = data.TtsStyle,
+            Label           = string.IsNullOrEmpty(vault.NarratorVoiceName) ? "Narrator" : vault.NarratorVoiceName,
+            VoiceId         = vault.ElevenLabsVoiceId,
+            Model           = vault.TtsModel,
+            Stability       = vault.TtsStability,
+            SimilarityBoost = vault.TtsSimilarityBoost,
+            Style           = vault.TtsStyle,
             UseSpeakerBoost = true,
         };
     }
@@ -402,89 +691,89 @@ public class SettingsService : IDisposable
     /// inject inline tags like <c>[whispering]</c> / <c>[softly]</c> based
     /// on each beat's EmotionalTone / FacetTag. Off to fall back to plain
     /// voice_settings tuning only.</summary>
-    public bool TtsUseAudioTags { get => data.TtsUseAudioTags; set { data.TtsUseAudioTags = value; ScheduleSave(); } }
+    public bool TtsUseAudioTags { get => vault.TtsUseAudioTags; set { vault.TtsUseAudioTags = value; ScheduleSave(); } }
     public string OpenAiApiKey
     {
         get => ResolveApiKey("PROSE_OPENAI_API_KEY", "openai", data.OpenAiApiKey);
-        set { OwnProviderStore().SetKey("openai", value); data.OpenAiApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("openai", value); data.OpenAiApiKey = value; ScheduleSave(); }
     }
-    public string OpenAiModel { get => data.OpenAiModel; set { data.OpenAiModel = value; ScheduleSave(); } }
-    public string ActiveLlmProvider { get => data.ActiveLlmProvider; set { data.ActiveLlmProvider = value; ScheduleSave(); } }
+    public string OpenAiModel { get => vault.OpenAiModel; set { vault.OpenAiModel = value; ScheduleSave(); } }
+    public string ActiveLlmProvider { get => vault.ActiveLlmProvider; set { vault.ActiveLlmProvider = value; ScheduleSave(); } }
     /// <summary>
     /// CSV, priority order. When the active provider (<see cref="ActiveLlmProvider"/> or a
     /// per-call override) fails, <see cref="LlmRouter"/> walks this list and tries the next
     /// entry instead of throwing — so a Claude outage degrades to another backend
     /// automatically. Ids not present in LlmRouter's provider map are skipped.
     /// </summary>
-    public string ActiveLlmProviderChain { get => data.ActiveLlmProviderChain; set { data.ActiveLlmProviderChain = value; ScheduleSave(); } }
-    public int EditorFontSize { get => data.EditorFontSize; set { data.EditorFontSize = value; ScheduleSave(); } }
-    public int AutoSaveIntervalMs { get => data.AutoSaveIntervalMs; set { data.AutoSaveIntervalMs = value; ScheduleSave(); } }
+    public string ActiveLlmProviderChain { get => vault.ActiveLlmProviderChain; set { vault.ActiveLlmProviderChain = value; ScheduleSave(); } }
+    public int EditorFontSize { get => vault.EditorFontSize; set { vault.EditorFontSize = value; ScheduleSave(); } }
+    public int AutoSaveIntervalMs { get => vault.AutoSaveIntervalMs; set { vault.AutoSaveIntervalMs = value; ScheduleSave(); } }
     public string GeminiApiKey
     {
         get => ResolveApiKey("PROSE_GEMINI_API_KEY", "gemini", data.GeminiApiKey);
-        set { OwnProviderStore().SetKey("gemini", value); data.GeminiApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("gemini", value); data.GeminiApiKey = value; ScheduleSave(); }
     }
     public string DeepSeekApiKey
     {
         get => ResolveApiKey("PROSE_DEEPSEEK_API_KEY", "deepseek", data.DeepSeekApiKey);
-        set { OwnProviderStore().SetKey("deepseek", value); data.DeepSeekApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("deepseek", value); data.DeepSeekApiKey = value; ScheduleSave(); }
     }
     public string MistralApiKey
     {
         get => ResolveApiKey("PROSE_MISTRAL_API_KEY", "mistral", data.MistralApiKey);
-        set { OwnProviderStore().SetKey("mistral", value); data.MistralApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("mistral", value); data.MistralApiKey = value; ScheduleSave(); }
     }
     public string KimiApiKey
     {
         get => ResolveApiKey("PROSE_KIMI_API_KEY", "kimi", data.KimiApiKey);
-        set { OwnProviderStore().SetKey("kimi", value); data.KimiApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("kimi", value); data.KimiApiKey = value; ScheduleSave(); }
     }
-    public string KimiModel { get => data.KimiModel; set { data.KimiModel = value; ScheduleSave(); } }
+    public string KimiModel { get => vault.KimiModel; set { vault.KimiModel = value; ScheduleSave(); } }
     public string PerplexityApiKey
     {
         get => ResolveApiKey("PROSE_PERPLEXITY_API_KEY", "perplexity", data.PerplexityApiKey);
-        set { OwnProviderStore().SetKey("perplexity", value); data.PerplexityApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("perplexity", value); data.PerplexityApiKey = value; ScheduleSave(); }
     }
-    public string PerplexityModel { get => data.PerplexityModel; set { data.PerplexityModel = value; ScheduleSave(); } }
+    public string PerplexityModel { get => vault.PerplexityModel; set { vault.PerplexityModel = value; ScheduleSave(); } }
     public string GrokApiKey
     {
         get => ResolveApiKey("PROSE_GROK_API_KEY", "xai", data.GrokApiKey);
-        set { OwnProviderStore().SetKey("xai", value); data.GrokApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("xai", value); data.GrokApiKey = value; ScheduleSave(); }
     }
     public string GroqApiKey
     {
         get => ResolveApiKey("PROSE_GROQ_API_KEY", "groq", data.GroqApiKey);
-        set { OwnProviderStore().SetKey("groq", value); data.GroqApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("groq", value); data.GroqApiKey = value; ScheduleSave(); }
     }
     public string TogetherApiKey
     {
         get => ResolveApiKey("PROSE_TOGETHER_API_KEY", "together", data.TogetherApiKey);
-        set { OwnProviderStore().SetKey("together", value); data.TogetherApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("together", value); data.TogetherApiKey = value; ScheduleSave(); }
     }
     public string OpenRouterApiKey
     {
         get => ResolveApiKey("PROSE_OPENROUTER_API_KEY", "openrouter", data.OpenRouterApiKey);
-        set { OwnProviderStore().SetKey("openrouter", value); data.OpenRouterApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("openrouter", value); data.OpenRouterApiKey = value; ScheduleSave(); }
     }
     public string FireworksApiKey
     {
         get => ResolveApiKey("PROSE_FIREWORKS_API_KEY", "fireworks", data.FireworksApiKey);
-        set { OwnProviderStore().SetKey("fireworks", value); data.FireworksApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("fireworks", value); data.FireworksApiKey = value; ScheduleSave(); }
     }
     public string CohereApiKey
     {
         get => ResolveApiKey("PROSE_COHERE_API_KEY", "cohere", data.CohereApiKey);
-        set { OwnProviderStore().SetKey("cohere", value); data.CohereApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("cohere", value); data.CohereApiKey = value; ScheduleSave(); }
     }
     public string IdeogramApiKey
     {
         get => ResolveApiKey("PROSE_IDEOGRAM_API_KEY", "ideogram", data.IdeogramApiKey);
-        set { OwnProviderStore().SetKey("ideogram", value); data.IdeogramApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("ideogram", value); data.IdeogramApiKey = value; ScheduleSave(); }
     }
     public string FalApiKey
     {
         get => ResolveApiKey("PROSE_FAL_API_KEY", "fal", data.FalApiKey);
-        set { OwnProviderStore().SetKey("fal", value); data.FalApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("fal", value); data.FalApiKey = value; ScheduleSave(); }
     }
     /// <summary>Stability AI API key — https://api.stability.ai.
     ///
@@ -496,7 +785,7 @@ public class SettingsService : IDisposable
     public string StabilityApiKey
     {
         get => ResolveApiKey("PROSE_STABILITY_API_KEY", "stability", data.StabilityApiKey);
-        set { OwnProviderStore().SetKey("stability", value); data.StabilityApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("stability", value); data.StabilityApiKey = value; ScheduleSave(); }
     }
     /// <summary>Kling AI (image2video) API key, stored as "{accessKey}:{secretKey}" — Kling
     /// authenticates with a short-lived JWT minted from that pair, not a plain bearer token.
@@ -504,106 +793,106 @@ public class SettingsService : IDisposable
     public string KlingApiKey
     {
         get => ResolveApiKey("PROSE_KLING_API_KEY", "kling", data.KlingApiKey);
-        set { OwnProviderStore().SetKey("kling", value); data.KlingApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("kling", value); data.KlingApiKey = value; ScheduleSave(); }
     }
     /// <summary>Runway (Gen-4 image_to_video) API key. Used by BookTokVideoService's
     /// "runway" provider.</summary>
     public string RunwayApiKey
     {
         get => ResolveApiKey("PROSE_RUNWAY_API_KEY", "runway", data.RunwayApiKey);
-        set { OwnProviderStore().SetKey("runway", value); data.RunwayApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("runway", value); data.RunwayApiKey = value; ScheduleSave(); }
     }
-    public string GeminiModel { get => data.GeminiModel; set { data.GeminiModel = value; ScheduleSave(); } }
-    public string DeepSeekModel { get => data.DeepSeekModel; set { data.DeepSeekModel = value; ScheduleSave(); } }
-    public string MistralModel { get => data.MistralModel; set { data.MistralModel = value; ScheduleSave(); } }
-    public string GrokModel { get => data.GrokModel; set { data.GrokModel = value; ScheduleSave(); } }
-    public string GroqModel { get => data.GroqModel; set { data.GroqModel = value; ScheduleSave(); } }
-    public string TogetherModel { get => data.TogetherModel; set { data.TogetherModel = value; ScheduleSave(); } }
-    public string OpenRouterModel { get => data.OpenRouterModel; set { data.OpenRouterModel = value; ScheduleSave(); } }
-    public string FireworksModel { get => data.FireworksModel; set { data.FireworksModel = value; ScheduleSave(); } }
-    public string CohereModel { get => data.CohereModel; set { data.CohereModel = value; ScheduleSave(); } }
-    public string MapService { get => data.MapService; set { data.MapService = value; ScheduleSave(); } }
-    public string MapAppId { get => Env("PROSE_MAP_APP_ID", data.MapAppId); set { data.MapAppId = value; ScheduleSave(); } }
+    public string GeminiModel { get => vault.GeminiModel; set { vault.GeminiModel = value; ScheduleSave(); } }
+    public string DeepSeekModel { get => vault.DeepSeekModel; set { vault.DeepSeekModel = value; ScheduleSave(); } }
+    public string MistralModel { get => vault.MistralModel; set { vault.MistralModel = value; ScheduleSave(); } }
+    public string GrokModel { get => vault.GrokModel; set { vault.GrokModel = value; ScheduleSave(); } }
+    public string GroqModel { get => vault.GroqModel; set { vault.GroqModel = value; ScheduleSave(); } }
+    public string TogetherModel { get => vault.TogetherModel; set { vault.TogetherModel = value; ScheduleSave(); } }
+    public string OpenRouterModel { get => vault.OpenRouterModel; set { vault.OpenRouterModel = value; ScheduleSave(); } }
+    public string FireworksModel { get => vault.FireworksModel; set { vault.FireworksModel = value; ScheduleSave(); } }
+    public string CohereModel { get => vault.CohereModel; set { vault.CohereModel = value; ScheduleSave(); } }
+    public string MapService { get => vault.MapService; set { vault.MapService = value; ScheduleSave(); } }
+    public string MapAppId { get => Env("PROSE_MAP_APP_ID", vault.MapAppId); set { vault.MapAppId = value; ScheduleSave(); } }
     public string MapApiKey
     {
         get => ResolveApiKey("PROSE_MAP_API_KEY", "here-maps", data.MapApiKey);
-        set { OwnProviderStore().SetKey("here-maps", value); data.MapApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("here-maps", value); data.MapApiKey = value; ScheduleSave(); }
     }
     public string GoogleMapsApiKey
     {
         get => ResolveApiKey("PROSE_GOOGLE_MAPS_API_KEY", "google-maps", data.GoogleMapsApiKey);
-        set { OwnProviderStore().SetKey("google-maps", value); data.GoogleMapsApiKey = value; ScheduleSave(); }
+        set { SetOwnKey("google-maps", value); data.GoogleMapsApiKey = value; ScheduleSave(); }
     }
-    public string MapMode { get => data.MapMode; set { data.MapMode = value; ScheduleSave(); } }
-    public string TimestampFormat { get => data.TimestampFormat; set { data.TimestampFormat = value; ScheduleSave(); } }
-    public string TimezoneId { get => data.TimezoneId; set { data.TimezoneId = value; ScheduleSave(); } }
-    public string FontFamily { get => data.FontFamily; set { data.FontFamily = value; ScheduleSave(); } }
-    public bool RepoListOnRight { get => data.RepoListOnRight; set { data.RepoListOnRight = value; ScheduleSave(); } }
-    public bool EnablePlainTextNer { get => data.EnablePlainTextNer; set { data.EnablePlainTextNer = value; ScheduleSave(); } }
-    public bool SaveStoriesAsMarkdown { get => data.SaveStoriesAsMarkdown; set { data.SaveStoriesAsMarkdown = value; ScheduleSave(); } }
-    public bool DocxIncludeToc { get => data.DocxIncludeToc; set { data.DocxIncludeToc = value; ScheduleSave(); } }
+    public string MapMode { get => vault.MapMode; set { vault.MapMode = value; ScheduleSave(); } }
+    public string TimestampFormat { get => vault.TimestampFormat; set { vault.TimestampFormat = value; ScheduleSave(); } }
+    public string TimezoneId { get => vault.TimezoneId; set { vault.TimezoneId = value; ScheduleSave(); } }
+    public string FontFamily { get => vault.FontFamily; set { vault.FontFamily = value; ScheduleSave(); } }
+    public bool RepoListOnRight { get => vault.RepoListOnRight; set { vault.RepoListOnRight = value; ScheduleSave(); } }
+    public bool EnablePlainTextNer { get => vault.EnablePlainTextNer; set { vault.EnablePlainTextNer = value; ScheduleSave(); } }
+    public bool SaveStoriesAsMarkdown { get => vault.SaveStoriesAsMarkdown; set { vault.SaveStoriesAsMarkdown = value; ScheduleSave(); } }
+    public bool DocxIncludeToc { get => vault.DocxIncludeToc; set { vault.DocxIncludeToc = value; ScheduleSave(); } }
 
     /// <summary>Master switch for the Doc Context Stack injection into prose-generation prompts.
     /// Default ON — injects the node bible, voice register, and topic docs into every beat prompt.
     /// Dry-run (`--doc-context`) + MCP tools work regardless of this flag.</summary>
-    public bool DocContextEnabled { get => data.DocContextEnabled; set { data.DocContextEnabled = value; ScheduleSave(); } }
+    public bool DocContextEnabled { get => vault.DocContextEnabled; set { vault.DocContextEnabled = value; ScheduleSave(); } }
 
     /// <summary>When ON, ProseWriterRouter captures the FULL DCM working-set (not budget-clipped)
     /// per beat into ContextTelemetryService for Gantt visualization export. Default OFF (zero
     /// overhead until you opt in). Use <c>prose --dcm-viz</c> to generate the .htm without a full prose run.</summary>
-    public bool DcmLoggingEnabled { get => data.DcmLoggingEnabled; set { data.DcmLoggingEnabled = value; ScheduleSave(); } }
+    public bool DcmLoggingEnabled { get => vault.DcmLoggingEnabled; set { vault.DcmLoggingEnabled = value; ScheduleSave(); } }
 
     /// <summary>When ON, CommandNarrator (Prose.Hub) follows every command's existing log line with
     /// a Haiku-generated plain-English gloss of what it did. Default OFF. Toggle with
     /// <c>prose --hub-narration on|off</c> — takes effect on the running Hub immediately, no restart.</summary>
-    public bool HubNarrationEnabled { get => data.HubNarrationEnabled; set { data.HubNarrationEnabled = value; ScheduleSave(); } }
+    public bool HubNarrationEnabled { get => vault.HubNarrationEnabled; set { vault.HubNarrationEnabled = value; ScheduleSave(); } }
 
     // ── Review voting ──────────────────────────────────────────────────────────
     /// <summary>Default number of cheap score-only ballots per sampled node review (--ballots).</summary>
-    public int ReviewBallots { get => data.ReviewBallots; set { data.ReviewBallots = Math.Max(1, value); ScheduleSave(); } }
+    public int ReviewBallots { get => Math.Max(1, vault.ReviewBallots); set { vault.ReviewBallots = Math.Max(1, value); ScheduleSave(); } }
     /// <summary>Default number of full prose upgrades per sampled run (--prose).</summary>
-    public int ReviewProse { get => data.ReviewProse; set { data.ReviewProse = Math.Max(0, value); ScheduleSave(); } }
+    public int ReviewProse { get => Math.Max(0, vault.ReviewProse); set { vault.ReviewProse = Math.Max(0, value); ScheduleSave(); } }
     /// <summary>Default segment-study panel size (--panel / --study).</summary>
-    public int ReviewPanel { get => data.ReviewPanel; set { data.ReviewPanel = Math.Max(1, value); ScheduleSave(); } }
+    public int ReviewPanel { get => Math.Max(1, vault.ReviewPanel); set { vault.ReviewPanel = Math.Max(1, value); ScheduleSave(); } }
     /// <summary>Default reader count for full / census runs (--readers).</summary>
-    public int ReviewReaders { get => data.ReviewReaders; set { data.ReviewReaders = Math.Max(1, value); ScheduleSave(); } }
+    public int ReviewReaders { get => Math.Max(1, vault.ReviewReaders); set { vault.ReviewReaders = Math.Max(1, value); ScheduleSave(); } }
     /// <summary>Provider that synthesises the reader-synopsis after a review run.</summary>
-    public string ReviewJudgeProvider { get => data.ReviewJudgeProvider; set { data.ReviewJudgeProvider = value; ScheduleSave(); } }
+    public string ReviewJudgeProvider { get => vault.ReviewJudgeProvider; set { vault.ReviewJudgeProvider = value; ScheduleSave(); } }
     /// <summary>Comma-separated provider IDs allowed to cast ballots (e.g. "claude,openai,gemini,deepseek").</summary>
-    public string ReviewAllowedProviders { get => data.ReviewAllowedProviders; set { data.ReviewAllowedProviders = value; ScheduleSave(); } }
+    public string ReviewAllowedProviders { get => vault.ReviewAllowedProviders; set { vault.ReviewAllowedProviders = value; ScheduleSave(); } }
     /// <summary>Maximum simultaneous LLM calls during a review run.</summary>
-    public int ReviewMaxConcurrency { get => data.ReviewMaxConcurrency; set { data.ReviewMaxConcurrency = Math.Max(1, Math.Min(50, value)); ScheduleSave(); } }
+    public int ReviewMaxConcurrency { get => Math.Max(1, Math.Min(50, vault.ReviewMaxConcurrency)); set { vault.ReviewMaxConcurrency = Math.Max(1, Math.Min(50, value)); ScheduleSave(); } }
 
     // ── Reader-Proxy QA (docs/READER-QA.md) ──────────────────────────────────────
     /// <summary>Comma-separated provider IDs Reader-Proxy QA juries draw from — cross-FAMILY
     /// diversity is the point (correlated-error research: same-family voters ≈ one vote).
     /// Providers without keys or failing their liveness ping are skipped automatically;
     /// juries degrade gracefully to whatever is alive.</summary>
-    public string ReaderQaJuryProviders { get => data.ReaderQaJuryProviders; set { data.ReaderQaJuryProviders = value; ScheduleSave(); } }
+    public string ReaderQaJuryProviders { get => vault.ReaderQaJuryProviders; set { vault.ReaderQaJuryProviders = value; ScheduleSave(); } }
     /// <summary>JSON array declaring OpenAI-compatible jury providers OUTSIDE the Legion
     /// catalog (Kimi, Grok, Mistral, …): [{"id","baseUrl","cheapModel","model?","label?",
     /// "inPerMtok?","cacheWritePerMtok?","cacheReadPerMtok?","outPerMtok?"}]. Keys resolve
     /// from MindAtticCredentialStore by id. Adding a family is a settings edit, not code.</summary>
-    public string ExtraJuryProvidersJson { get => data.ExtraJuryProvidersJson; set { data.ExtraJuryProvidersJson = value; ScheduleSave(); } }
+    public string ExtraJuryProvidersJson { get => vault.ExtraJuryProvidersJson; set { vault.ExtraJuryProvidersJson = value; ScheduleSave(); } }
     /// <summary>The cheap "median reader" instrument for comprehension probes. Its GENUINE
     /// misreadings are the signal — do not upgrade this to a strong model, that defeats
     /// the instrument (a strong model reads too well to proxy a casual reader).</summary>
-    public string ComprehensionProbeModel { get => data.ComprehensionProbeModel; set { data.ComprehensionProbeModel = value; ScheduleSave(); } }
+    public string ComprehensionProbeModel { get => vault.ComprehensionProbeModel; set { vault.ComprehensionProbeModel = value; ScheduleSave(); } }
     /// <summary>Arbiter that checks each candidate misreading against the chapter text
     /// (separates reader-plausible confusion from probe hallucination).</summary>
-    public string ComprehensionArbiterModel { get => data.ComprehensionArbiterModel; set { data.ComprehensionArbiterModel = value; ScheduleSave(); } }
+    public string ComprehensionArbiterModel { get => vault.ComprehensionArbiterModel; set { vault.ComprehensionArbiterModel = value; ScheduleSave(); } }
 
     // ── Local-LLM review (--local) ───────────────────────────────────────────────
     /// <summary>OpenAI-compatible chat-completions endpoint of the local inference server
     /// (Ollama default). Only used by <c>--local</c> node reviews; cloud reviews never touch it.</summary>
-    public string LocalReviewBaseUrl { get => data.LocalReviewBaseUrl; set { data.LocalReviewBaseUrl = value; ScheduleSave(); } }
+    public string LocalReviewBaseUrl { get => vault.LocalReviewBaseUrl; set { vault.LocalReviewBaseUrl = value; ScheduleSave(); } }
     /// <summary>Local model tag used by <c>--local</c> reviews (e.g. an Ollama tag with a baked-in num_ctx).</summary>
-    public string LocalReviewModel { get => data.LocalReviewModel; set { data.LocalReviewModel = value; ScheduleSave(); } }
+    public string LocalReviewModel { get => vault.LocalReviewModel; set { vault.LocalReviewModel = value; ScheduleSave(); } }
     /// <summary>Human label for WHICH local backend a <c>--local</c> run used (e.g. "vast", "runpod").
     /// Stamped as the report "brain" so vast.ai / RunPod / Ollama runs write SEPARATE report files
     /// (<c>… reviews (vast).htm</c> vs <c>(runpod).htm</c>) instead of all colliding under "(local)".
     /// Empty = auto-derive from <see cref="LocalReviewBaseUrl"/> host, falling back to "local".</summary>
-    public string LocalReviewLabel { get => data.LocalReviewLabel; set { data.LocalReviewLabel = value; ScheduleSave(); } }
+    public string LocalReviewLabel { get => vault.LocalReviewLabel; set { vault.LocalReviewLabel = value; ScheduleSave(); } }
     /// <summary>Bearer token for the local/self-hosted review endpoint. Empty for a bare
     /// localhost Ollama (which ignores auth); set it to the API key when
     /// <see cref="LocalReviewBaseUrl"/> points at a SECURED remote GPU (RunPod/vLLM/etc.),
@@ -611,13 +900,13 @@ public class SettingsService : IDisposable
     public string LocalReviewApiKey { get => data.LocalReviewApiKey; set { data.LocalReviewApiKey = value; ScheduleSave(); } }
     /// <summary>Max simultaneous local generations — kept low because a single GPU can only
     /// run a few large-model generations at once before spilling / OOM.</summary>
-    public int LocalReviewMaxConcurrency { get => data.LocalReviewMaxConcurrency; set { data.LocalReviewMaxConcurrency = Math.Max(1, Math.Min(16, value)); ScheduleSave(); } }
+    public int LocalReviewMaxConcurrency { get => Math.Max(1, Math.Min(16, vault.LocalReviewMaxConcurrency)); set { vault.LocalReviewMaxConcurrency = Math.Max(1, Math.Min(16, value)); ScheduleSave(); } }
     /// <summary>The local model's context window in TOKENS (the Ollama tag's num_ctx). The review
     /// engine uses this to size segments so an oversized node is chunked to FIT the local window
     /// instead of being silently truncated (which drops the system prompt and fails every ballot).
     /// Cloud reviews ignore this. Default 16384 — raise it to match a model rebuilt with a larger
     /// num_ctx, and big nodes will segment into fewer, larger chunks.</summary>
-    public int LocalReviewContextTokens { get => data.LocalReviewContextTokens; set { data.LocalReviewContextTokens = Math.Max(4096, value); ScheduleSave(); } }
+    public int LocalReviewContextTokens { get => Math.Max(4096, vault.LocalReviewContextTokens); set { vault.LocalReviewContextTokens = Math.Max(4096, value); ScheduleSave(); } }
 
     // ── Hub HTTP auth (portable-writing-service plan, Phase 1) ───────────────────
     /// <summary>Shared secret checked on the Hub's sensitive HTTP endpoints (generic CLI/MCP
@@ -630,22 +919,22 @@ public class SettingsService : IDisposable
     /// <summary>OpenAI-compatible chat-completions endpoint for local prose generation
     /// (Ollama, vLLM, RunPod, etc.). Used by <c>--local</c> beat/node generation;
     /// cloud generation never reads it. Empty = local prose generation disabled.</summary>
-    public string LocalLlmBaseUrl { get => data.LocalLlmBaseUrl; set { data.LocalLlmBaseUrl = value; ScheduleSave(); } }
+    public string LocalLlmBaseUrl { get => vault.LocalLlmBaseUrl; set { vault.LocalLlmBaseUrl = value; ScheduleSave(); } }
     /// <summary>Bearer token for the local generation endpoint. Empty for bare localhost Ollama
     /// (which ignores auth); set to the pod token when pointing at a secured remote GPU (RunPod/vLLM).</summary>
     public string LocalLlmApiKey { get => data.LocalLlmApiKey; set { data.LocalLlmApiKey = value; ScheduleSave(); } }
     /// <summary>Model tag used for local prose generation (e.g. "qwen2.5-32b").</summary>
-    public string LocalLlmModel { get => data.LocalLlmModel; set { data.LocalLlmModel = value; ScheduleSave(); } }
+    public string LocalLlmModel { get => vault.LocalLlmModel; set { vault.LocalLlmModel = value; ScheduleSave(); } }
 
     // ── Local-LLM embeddings ─────────────────────────────────────────────────────
     /// <summary>Full URL to an OpenAI-compatible /v1/embeddings endpoint on the local/remote GPU
     /// (e.g. <c>https://&lt;runpod&gt;/v1/embeddings</c>). When set, EmbeddingService routes ALL
     /// embed calls here instead of OpenAI — no OpenAI key needed for local review runs.</summary>
-    public string LocalEmbeddingBaseUrl { get => data.LocalEmbeddingBaseUrl; set { data.LocalEmbeddingBaseUrl = value; ScheduleSave(); } }
+    public string LocalEmbeddingBaseUrl { get => vault.LocalEmbeddingBaseUrl; set { vault.LocalEmbeddingBaseUrl = value; ScheduleSave(); } }
     /// <summary>Bearer token for the local embedding endpoint. Empty = no auth header sent (bare Ollama).</summary>
     public string LocalEmbeddingApiKey  { get => data.LocalEmbeddingApiKey;  set { data.LocalEmbeddingApiKey  = value; ScheduleSave(); } }
     /// <summary>Model tag for the local embedding endpoint (e.g. "Qwen/Qwen3-Embedding-0.6B").</summary>
-    public string LocalEmbeddingModel   { get => data.LocalEmbeddingModel;   set { data.LocalEmbeddingModel   = value; ScheduleSave(); } }
+    public string LocalEmbeddingModel   { get => vault.LocalEmbeddingModel;   set { vault.LocalEmbeddingModel   = value; ScheduleSave(); } }
 
     /// <summary>vast.ai REST API key for <c>prose --gpu</c> (start/stop/destroy the rented review box).
     /// Read straight from the shared MindAttic credential vault — <c>VAST_API_KEY</c> env, then
@@ -690,21 +979,21 @@ public class SettingsService : IDisposable
         return VaultConfiguration?[$"MindAttic:Vault:{providerId}:apiKey"]?.Trim() ?? "";
     }
     /// <summary>When false, ContinuousQualityService does not fire automatically on beat save. Reviews must be called manually.</summary>
-    public bool ReviewAutoRunEnabled { get => data.ReviewAutoRunEnabled; set { data.ReviewAutoRunEnabled = value; ScheduleSave(); } }
+    public bool ReviewAutoRunEnabled { get => vault.ReviewAutoRunEnabled; set { vault.ReviewAutoRunEnabled = value; ScheduleSave(); } }
     /// <summary>When true, CanonGroundingService fires post-write on every beat to flag PROVISIONAL-ENTITY findings. Off by default — opt in to avoid extra LLM cost.</summary>
-    public bool AutoCanonGrounding { get => data.AutoCanonGrounding; set { data.AutoCanonGrounding = value; ScheduleSave(); } }
+    public bool AutoCanonGrounding { get => vault.AutoCanonGrounding; set { vault.AutoCanonGrounding = value; ScheduleSave(); } }
     /// <summary>When true, SceneContextAssembler.HarvestRevealedDetailsAsync fires post-write to propose XRAY-REVEAL findings. Off by default.</summary>
-    public bool AutoHarvestRevealedDetails { get => data.AutoHarvestRevealedDetails; set { data.AutoHarvestRevealedDetails = value; ScheduleSave(); } }
+    public bool AutoHarvestRevealedDetails { get => vault.AutoHarvestRevealedDetails; set { vault.AutoHarvestRevealedDetails = value; ScheduleSave(); } }
     // AutoGenerateCoverOnExport removed 2026-09-13 with the cover-generation pipeline it gated.
     // Cover art is a manual step; there is no longer anything for a flag to switch on.
 
     // SMTP — outbound email for password reset codes
-    public string SmtpHost { get => Env("PROSE_SMTP_HOST", data.SmtpHost); set { data.SmtpHost = value; ScheduleSave(); } }
-    public int SmtpPort { get => int.TryParse(Env("PROSE_SMTP_PORT", ""), out var p) ? p : data.SmtpPort; set { data.SmtpPort = value; ScheduleSave(); } }
-    public string SmtpUsername { get => Env("PROSE_SMTP_USERNAME", data.SmtpUsername); set { data.SmtpUsername = value; ScheduleSave(); } }
+    public string SmtpHost { get => Env("PROSE_SMTP_HOST", vault.SmtpHost); set { vault.SmtpHost = value; ScheduleSave(); } }
+    public int SmtpPort { get => int.TryParse(Env("PROSE_SMTP_PORT", ""), out var p) ? p : vault.SmtpPort; set { vault.SmtpPort = value; ScheduleSave(); } }
+    public string SmtpUsername { get => Env("PROSE_SMTP_USERNAME", vault.SmtpUsername); set { vault.SmtpUsername = value; ScheduleSave(); } }
     public string SmtpPassword { get => Env("PROSE_SMTP_PASSWORD", data.SmtpPassword); set { data.SmtpPassword = value; ScheduleSave(); } }
-    public string SmtpFrom { get => Env("PROSE_SMTP_FROM", data.SmtpFrom); set { data.SmtpFrom = value; ScheduleSave(); } }
-    public bool SmtpEnableSsl { get => data.SmtpEnableSsl; set { data.SmtpEnableSsl = value; ScheduleSave(); } }
+    public string SmtpFrom { get => Env("PROSE_SMTP_FROM", vault.SmtpFrom); set { vault.SmtpFrom = value; ScheduleSave(); } }
+    public bool SmtpEnableSsl { get => vault.SmtpEnableSsl; set { vault.SmtpEnableSsl = value; ScheduleSave(); } }
 
     // FTP Publishing — disabled, deploying via Azure CI/CD
     // public string FtpHost { get => data.FtpHost; set { data.FtpHost = value; ScheduleSave(); } }
@@ -775,13 +1064,15 @@ public class SettingsService : IDisposable
     /// <summary>Snapshot current settings as the default baseline for future resets.</summary>
     public void SaveAsDefaults()
     {
-        var json = JsonSerializer.Serialize(data, JsonDefaults.Indented);
-        File.WriteAllText(defaultsPath, json);
+        // The snapshot carries the Vault values too (same field names), so a reset restores them.
+        var node = JsonSerializer.SerializeToNode(data, JsonDefaults.Indented)?.AsObject() ?? new JsonObject();
+        foreach (var (key, value) in ToNode(vault)) node[key] = value?.DeepClone();
+        File.WriteAllText(defaultsPath, node.ToJsonString(JsonDefaults.Indented));
     }
 
     /// <summary>Reset all settings to the saved defaults snapshot (includes secrets).
     /// Also overwrites the shared MindAttic credential store <em>and</em> this app's own
-    /// scoped tier (<see cref="OwnProviderStore"/>) with the reset values, so the next read
+    /// scoped tier (Prose's Vault key assignment) with the reset values, so the next read
     /// doesn't pick up a stale "first-stop" key from either tier — <see cref="ResolveApiKey"/>
     /// checks the own-scoped key before the shared store, so leaving it behind would make a
     /// reset silently no-op for any provider with a Prose-scoped override on file. The shared
@@ -798,8 +1089,18 @@ public class SettingsService : IDisposable
         {
             data = new SettingsData();
         }
+        vault = ImportFromLegacy(data);
+        Interlocked.Increment(ref changeVersion);
         Flush();
         SyncCredentialStoreFromData();
+    }
+
+    /// <summary>Reset's version of <see cref="SetOwnKey"/>: an empty value also drops Prose's Vault assignment.</summary>
+    private static void ResetOwnKey(string providerId, string value)
+    {
+        if (UsesKeyOverrideFolder || !string.IsNullOrWhiteSpace(value)) { SetOwnKey(providerId, value); return; }
+        try { NamedKeyStore.ForRoamingRoot().Assignments.Set(ProseSettings.AppId, providerId, Array.Empty<string>()); }
+        catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or ArgumentException) { }
     }
 
     private void SyncCredentialStoreFromData()
@@ -826,28 +1127,27 @@ public class SettingsService : IDisposable
         MindAtticCredentialStore.SetKey("here-maps",   data.MapApiKey);
         MindAtticCredentialStore.SetKey("google-maps", data.GoogleMapsApiKey);
 
-        var own = OwnProviderStore();
-        own.SetKey("claude",       data.ApiKey);
-        own.SetKey("openai",       data.OpenAiApiKey);
-        own.SetKey("gemini",       data.GeminiApiKey);
-        own.SetKey("ideogram",     data.IdeogramApiKey);
-        own.SetKey("fal",          data.FalApiKey);
-        own.SetKey("stability",    data.StabilityApiKey);
-        own.SetKey("kling",        data.KlingApiKey);
-        own.SetKey("runway",       data.RunwayApiKey);
-        own.SetKey("deepseek",     data.DeepSeekApiKey);
-        own.SetKey("mistral",      data.MistralApiKey);
-        own.SetKey("kimi",         data.KimiApiKey);
-        own.SetKey("perplexity",   data.PerplexityApiKey);
-        own.SetKey("xai",          data.GrokApiKey);
-        own.SetKey("groq",         data.GroqApiKey);
-        own.SetKey("together",     data.TogetherApiKey);
-        own.SetKey("openrouter",   data.OpenRouterApiKey);
-        own.SetKey("fireworks",    data.FireworksApiKey);
-        own.SetKey("cohere",       data.CohereApiKey);
-        own.SetKey("elevenlabs",   data.ElevenLabsApiKey);
-        own.SetKey("here-maps",    data.MapApiKey);
-        own.SetKey("google-maps",  data.GoogleMapsApiKey);
+        ResetOwnKey("claude",       data.ApiKey);
+        ResetOwnKey("openai",       data.OpenAiApiKey);
+        ResetOwnKey("gemini",       data.GeminiApiKey);
+        ResetOwnKey("ideogram",     data.IdeogramApiKey);
+        ResetOwnKey("fal",          data.FalApiKey);
+        ResetOwnKey("stability",    data.StabilityApiKey);
+        ResetOwnKey("kling",        data.KlingApiKey);
+        ResetOwnKey("runway",       data.RunwayApiKey);
+        ResetOwnKey("deepseek",     data.DeepSeekApiKey);
+        ResetOwnKey("mistral",      data.MistralApiKey);
+        ResetOwnKey("kimi",         data.KimiApiKey);
+        ResetOwnKey("perplexity",   data.PerplexityApiKey);
+        ResetOwnKey("xai",          data.GrokApiKey);
+        ResetOwnKey("groq",         data.GroqApiKey);
+        ResetOwnKey("together",     data.TogetherApiKey);
+        ResetOwnKey("openrouter",   data.OpenRouterApiKey);
+        ResetOwnKey("fireworks",    data.FireworksApiKey);
+        ResetOwnKey("cohere",       data.CohereApiKey);
+        ResetOwnKey("elevenlabs",   data.ElevenLabsApiKey);
+        ResetOwnKey("here-maps",    data.MapApiKey);
+        ResetOwnKey("google-maps",  data.GoogleMapsApiKey);
     }
 
     private void Load()
@@ -930,17 +1230,17 @@ public class SettingsService : IDisposable
 
         var changed = false;
 
-        var normalizedActive = NormalizeSingle(data.ActiveLlmProvider);
-        if (normalizedActive != data.ActiveLlmProvider) { data.ActiveLlmProvider = normalizedActive; changed = true; }
+        var normalizedActive = NormalizeSingle(vault.ActiveLlmProvider);
+        if (normalizedActive != vault.ActiveLlmProvider) { vault.ActiveLlmProvider = normalizedActive; changed = true; }
 
-        var normalizedChain = NormalizeList(data.ActiveLlmProviderChain);
-        if (normalizedChain != data.ActiveLlmProviderChain) { data.ActiveLlmProviderChain = normalizedChain; changed = true; }
+        var normalizedChain = NormalizeList(vault.ActiveLlmProviderChain);
+        if (normalizedChain != vault.ActiveLlmProviderChain) { vault.ActiveLlmProviderChain = normalizedChain; changed = true; }
 
-        var normalizedAllowed = NormalizeList(data.ReviewAllowedProviders);
-        if (normalizedAllowed != data.ReviewAllowedProviders) { data.ReviewAllowedProviders = normalizedAllowed; changed = true; }
+        var normalizedAllowed = NormalizeList(vault.ReviewAllowedProviders);
+        if (normalizedAllowed != vault.ReviewAllowedProviders) { vault.ReviewAllowedProviders = normalizedAllowed; changed = true; }
 
-        var normalizedJury = NormalizeList(data.ReaderQaJuryProviders);
-        if (normalizedJury != data.ReaderQaJuryProviders) { data.ReaderQaJuryProviders = normalizedJury; changed = true; }
+        var normalizedJury = NormalizeList(vault.ReaderQaJuryProviders);
+        if (normalizedJury != vault.ReaderQaJuryProviders) { vault.ReaderQaJuryProviders = normalizedJury; changed = true; }
 
         if (changed) Flush();
     }
@@ -981,6 +1281,7 @@ public class SettingsService : IDisposable
         {
             saveTimer?.Dispose();
             saveTimer = null;
+            FlushVault();
             var dir = Path.GetDirectoryName(settingsPath);
             if (string.IsNullOrEmpty(dir) || !Directory.Exists(dir)) return;
 
@@ -1010,6 +1311,8 @@ public class SettingsService : IDisposable
             // Overlay only the keys THIS process changed since it loaded / last flushed.
             foreach (var (key, node) in current)
             {
+                // Vault owns these now; Settings.json keeps its pre-LAMP copies untouched (the rollback).
+                if (VaultOwnedFields.Contains(key)) continue;
                 var changedHere = baseline is null
                     || !baseline.TryGetPropertyValue(key, out var baseNode)
                     || !JsonNode.DeepEquals(node, baseNode);
@@ -1076,6 +1379,9 @@ public class SettingsService : IDisposable
 
     public void Dispose()
     {
+        vaultWatcher?.Dispose();
+        vaultWatcher = null;
+        vaultDebounce?.Dispose();
         Flush();
         GC.SuppressFinalize(this);
     }

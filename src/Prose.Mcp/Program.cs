@@ -28,6 +28,10 @@ using Prose.Mcp;
 // stays the single author; tools just give it better context.
 // ────────────────────────────────────────────────────────────────────────────
 
+// LAMP (PRS-T829): Legion resolves keys as app "Prose" in MindAttic Vault.
+MindAttic.Legion.MindAtticCredentialStore.AppId = ProseSettings.AppId;
+if (SettingsService.TryRunManifestCommand(args)) return;
+
 // ── Doc export mode ──────────────────────────────────────────────────────────
 // `--export-tools [path]` reflects over this assembly's [McpServerTool] methods
 // and writes the generated tool reference (default docs/MCP_TOOLS.md), then exits

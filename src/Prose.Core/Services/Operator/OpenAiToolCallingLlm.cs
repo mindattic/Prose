@@ -76,7 +76,7 @@ public class OpenAiToolCallingLlm : IToolCallingLlm
     {
         var keys = resolveApiKeys();
         if (keys.Count == 0)
-            throw new InvalidOperationException("No OpenAI API key configured ('openai' provider key in Settings).");
+            throw new InvalidOperationException("No OpenAI API key configured ('openai' key in MindAttic Vault).");
 
         var messages = ToOpenAiMessages(systemPrompt, history);
         var toolsArray = ToOpenAiTools(tools);

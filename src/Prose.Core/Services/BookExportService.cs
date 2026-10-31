@@ -284,7 +284,7 @@ public class BookExportService
         if (tts is null)
             throw new InvalidOperationException("TTS service not registered — audiobook export unavailable.");
         if (!await tts.IsConfiguredAsync())
-            throw new InvalidOperationException("TTS service is not configured (missing API key). Set ElevenLabs API key in Settings.");
+            throw new InvalidOperationException("TTS service is not configured (missing API key). Add an ElevenLabs key in MindAttic Vault (Keys tab).");
 
         var book = books.LoadBook(bookId)
             ?? throw new InvalidOperationException($"Book {bookId} not found");

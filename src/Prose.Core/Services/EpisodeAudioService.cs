@@ -395,7 +395,7 @@ public class EpisodeAudioService
     public async Task NarrateAsync(Guid episodeId, CancellationToken ct = default)
     {
         if (!await tts.IsConfiguredAsync())
-            throw new InvalidOperationException("TTS is not configured. Set ElevenLabs API key in Settings.");
+            throw new InvalidOperationException("TTS is not configured. Add an ElevenLabs key in MindAttic Vault (Keys tab).");
 
         // Register a per-episode CTS so the /listen Stop button can cancel us.
         // The link combines the caller's ct with the cancel-button's source.

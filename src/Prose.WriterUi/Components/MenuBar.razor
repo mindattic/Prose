@@ -71,8 +71,12 @@
         @(Theme == "light" ? "☾" : "☀")
     </button>
 
+    <button class="mini" @onclick="() => OnOpenDictionary.InvokeAsync()"
+            title="Dictionary, read-aloud and dictation" aria-label="Dictionary and voice">Aa</button>
+
+    @* LAMP (PRS-T829): Prose's settings and API keys are edited in MindAttic Vault; the cog opens it. *@
     <button class="mini" @onclick="() => OnOpenSettings.InvokeAsync()"
-            title="Settings — API keys" aria-label="Settings">⚙</button>
+            title="Settings and API keys — opens MindAttic Vault" aria-label="Settings (MindAttic Vault)">⚙</button>
 </header>
 
 @if (HasBeat)
@@ -166,7 +170,10 @@
     [Parameter] public EventCallback OnSave { get; set; }
     [Parameter] public EventCallback OnExport { get; set; }
     [Parameter] public EventCallback OnToggleTheme { get; set; }
+    /// <summary>Opens MindAttic Vault at Prose's tab (the shell decides how).</summary>
     [Parameter] public EventCallback OnOpenSettings { get; set; }
+    /// <summary>Opens the dictionary-and-voice panel.</summary>
+    [Parameter] public EventCallback OnOpenDictionary { get; set; }
     [Parameter] public EventCallback<string> OnFormat { get; set; }
     [Parameter] public EventCallback OnInsertEmDash { get; set; }
     [Parameter] public EventCallback OnAddEntity { get; set; }

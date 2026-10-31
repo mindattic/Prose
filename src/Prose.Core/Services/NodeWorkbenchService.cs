@@ -2588,7 +2588,7 @@ public class NodeWorkbenchService
         // 1. Validate config BEFORE mutating node state — a misconfigured
         //    account shouldn't leave the node stuck in narrating.
         if (!await tts.IsConfiguredAsync())
-            throw new InvalidOperationException("TTS is not configured. Set ElevenLabs API key in Settings.");
+            throw new InvalidOperationException("TTS is not configured. Add an ElevenLabs key in MindAttic Vault (Keys tab).");
 
         // 2. If a prior narration is already running for this node, cancel
         //    it before starting a new one. Otherwise the old loop keeps
@@ -2959,7 +2959,7 @@ public class NodeWorkbenchService
 
         // ── ElevenLabs path ────────────────────────────────────────────────
         if (!await tts.IsConfiguredAsync())
-            throw new InvalidOperationException("TTS is not configured. Set ElevenLabs API key in Settings.");
+            throw new InvalidOperationException("TTS is not configured. Add an ElevenLabs key in MindAttic Vault (Keys tab).");
 
         // Reuse the node's LOCKED voice snapshot — this is the key to a
         // single-beat re-record sounding like the rest of the node: same

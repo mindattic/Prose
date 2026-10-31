@@ -17,6 +17,11 @@ using MindAttic.Vault.Configuration;
 Console.InputEncoding  = System.Text.Encoding.UTF8;
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
+// LAMP (PRS-T829): Legion resolves keys as app "Prose" in MindAttic Vault; `--write-settings-manifest`
+// imports today's Settings.json into Vault once, writes the manifest for Vault.Desktop, and exits.
+MindAttic.Legion.MindAtticCredentialStore.AppId = ProseSettings.AppId;
+if (SettingsService.TryRunManifestCommand(args)) return;
+
 // Provider-neutral agent bootstrap. This intentionally runs before the normal universe guard
 // and command dispatch: its job is to tell a new client how to become ready, including when the
 // Hub is unavailable. It is the CLI fallback for MCP clients and contains no database access.

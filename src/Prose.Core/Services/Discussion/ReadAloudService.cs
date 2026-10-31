@@ -99,7 +99,7 @@ public sealed class ReadAloudService(
         if (!availability.CloudReady)
             throw new InvalidOperationException(
                 availability.LocalBlocker
-                ?? "No voice is configured. Add an ElevenLabs key in Settings, or install Piper "
+                ?? "No voice is configured. Add an ElevenLabs key in MindAttic Vault, or install Piper "
                  + "for a free local voice.");
 
         var mp3 = await cloud.SynthesizeAsync(spoken, voiceId: null, ct);
