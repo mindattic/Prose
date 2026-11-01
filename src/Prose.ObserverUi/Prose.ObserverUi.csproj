@@ -12,8 +12,9 @@
     <!-- Plain Microsoft.AspNetCore.Components.Web (not a FrameworkReference to the full
          ASP.NET Core server framework) - this library is referenced by Prose.Hub (Blazor
          Server) AND, later, Prose.Maui (MAUI Blazor Hybrid), so it must stay portable. -->
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.0-*" />
-    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="10.0.0-*" />
+    <!-- 10.0.14, not 10.0.0-*: that pin held SignalR.Common at 10.0.0, flagged high severity (GHSA-334f-vvp4-7g6p, PRS-T836). -->
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.14" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="10.0.14" />
   </ItemGroup>
 
   <ItemGroup>

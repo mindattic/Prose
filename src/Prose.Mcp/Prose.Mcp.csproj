@@ -19,7 +19,7 @@
          core package; the package version intentionally floats so security updates
          flow without touching this csproj. -->
     <PackageReference Include="ModelContextProtocol" Version="*" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.14" />
     <PackageReference Include="MindAttic.Log" Version="3.0.0" />
   </ItemGroup>
 
