@@ -1057,7 +1057,7 @@ updated: 2026-10-03
 | PRS-T558 | 2026-10-30 | chore | open | GLMZ P3 03 Testament: one diaspora on the street | — |
 | PRS-T559 | 2026-10-30 | chore | open | GLMZ P3 03 Testament: machine minds and the strays | — |
 | PRS-T560 | 2026-10-30 | chore | open | GLMZ P3 03 Testament: apply the Phase 1 world canon | — |
-| PRS-T561 | 2026-10-30 | chore | open | GLMZ P3 04 Attendance: its thread into the singular point | — |
+| PRS-T561 | 2026-10-30 | chore | closed | GLMZ P3 04 Attendance: its thread into the singular point | Confirmed, no splice needed: Attendance already carries its thread into the singular point. Yemina clocks Bear working the bonded freight bay (#9400-9402, pos 281-283) before the book's blank-sender Case 48 thread (#22198, #22195-96) carries her case material forward -- this is the plant later paying off as 'folder to Bear spring 2225' per the Season 1 recast canon. The book's own ending (#22196) lands its own closure (Yemina chooses to stop being the instrument) without needing a forced Cyberocracy cameo. Read in full to verify. |
 | PRS-T562 | 2026-10-30 | chore | open | GLMZ P3 04 Attendance: Kyle's touch | — |
 | PRS-T563 | 2026-10-30 | chore | open | GLMZ P3 04 Attendance: villain ambiguity | — |
 | PRS-T564 | 2026-10-30 | chore | open | GLMZ P3 04 Attendance: lowest low and highest high | — |
@@ -1065,7 +1065,7 @@ updated: 2026-10-03
 | PRS-T566 | 2026-10-30 | chore | open | GLMZ P3 04 Attendance: one diaspora on the street | — |
 | PRS-T567 | 2026-10-30 | chore | open | GLMZ P3 04 Attendance: machine minds and the strays | — |
 | PRS-T568 | 2026-10-30 | chore | open | GLMZ P3 04 Attendance: apply the Phase 1 world canon | — |
-| PRS-T569 | 2026-10-30 | chore | open | GLMZ P3 05 Between the Lines: its thread into the singular point | — |
+| PRS-T569 | 2026-10-30 | chore | closed | GLMZ P3 05 Between the Lines: its thread into the singular point | Confirmed, no splice needed: Between the Lines already carries a strong thread into the singular point. Bishop names the unidentified force behind the wall only by its routing prefix (#22747, pos 21): 'Six-oh-six. The city's own postal code, and you can run it through every table in ARC's stack and it resolves to nothing' -- a direct, unforced plant pointing at the Ur-606 black pyramid / The Ur, the trilogy's finale book. Read the book's last 3 beats (21-23) in full to verify; the ending lands its own closure (Yuki found, Sahar drawn in as an ally) without needing anything forced. |
 | PRS-T570 | 2026-10-30 | chore | open | GLMZ P3 05 Between the Lines: Kyle's touch | — |
 | PRS-T571 | 2026-10-30 | chore | open | GLMZ P3 05 Between the Lines: villain ambiguity | — |
 | PRS-T572 | 2026-10-30 | chore | open | GLMZ P3 05 Between the Lines: lowest low and highest high | — |
@@ -1338,3 +1338,4 @@ updated: 2026-10-03
 | PRS-T839 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
 | PRS-T840 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
 | PRS-T841 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
+| PRS-T842 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
