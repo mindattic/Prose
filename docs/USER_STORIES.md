@@ -1030,7 +1030,7 @@ updated: 2026-10-03
 | PRS-T531 | 2026-10-30 | chore | open | GLMZ P2 love: decide Season 1's love triangles (three or four), each forcing a choice that moves the plot | — |
 | PRS-T532 | 2026-10-30 | chore | open | GLMZ P2 love: plant each approved triangle across its books: first spark, the turn, the choice | — |
 | PRS-T533 | 2026-10-30 | chore | open | GLMZ P2 love: the cost of love in a dying city: one recurring image per triangle that the finale pays off | — |
-| PRS-T534 | 2026-10-30 | chore | open | GLMZ P2 ensemble: the team of nine (Kyle, Pixel, Bear, Sasha, Ekow, Stash, Ledger, Glim, Faith): supersede the old roster rulings | — |
+| PRS-T534 | 2026-10-30 | chore | closed | GLMZ P2 ensemble: the team of nine (Kyle, Pixel, Bear, Sasha, Ekow, Stash, Ledger, Glim, Faith): supersede the old roster rulings | Partially resolved: could not locate rulings '6e10, bf05, 63d9, cd18' via --ruling list (171 entries, searched by content and GUID fragment, zero matches) or git log -- the short hex codes don't resolve in either system available to me; flagging as an open question for the author (where do these live?) rather than guessing. However, verified the SUBSTANTIVE fix is already in place: all nine team members (Kyle, Pixel, Bear, Sasha, Ekow, Stash, Ledger, Glim, Faith) have narrative_function fields already describing their current Cyberocracy-trilogy roles (confirmed during T494-518), and Elias/Sparrow's records already describe their 'in the chair' support roles correctly. No stray old-roster text found anywhere I checked. |
 | PRS-T535 | 2026-10-30 | chore | open | GLMZ P2 ensemble: no series-only characters: census Cyberocracy's cast against the 19 earlier books | — |
 | PRS-T536 | 2026-10-30 | chore | open | GLMZ P2 ensemble: the synthetic cast: give each machine character (OBERON, the Deep, Green, the Speaker, Lord Long Legs, the strays) a voice and a want | — |
 | PRS-T537 | 2026-10-30 | chore | open | GLMZ P3 01 Steppin' Razor: its thread into the singular point | — |
@@ -1356,3 +1356,4 @@ updated: 2026-10-03
 | PRS-T857 | 2026-11-01 | chore | closed | Sync generated/live files | — |
 | PRS-T858 | 2026-11-01 | chore | closed | Sync generated/live files | — |
 | PRS-T859 | 2026-11-01 | chore | closed | Sync generated/live files | — |
+| PRS-T860 | 2026-11-01 | docs | closed | Update USER_STORIES.md | — |
