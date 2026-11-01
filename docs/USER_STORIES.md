@@ -1091,7 +1091,7 @@ updated: 2026-10-03
 | PRS-T592 | 2026-10-30 | chore | open | GLMZ P3 07 Critical Mass: apply the Phase 1 world canon | — |
 | PRS-T593 | 2026-10-30 | chore | open | GLMZ P3 08 The Long Cut: its thread into the singular point | — |
 | PRS-T594 | 2026-10-30 | chore | open | GLMZ P3 08 The Long Cut: Kyle's touch | — |
-| PRS-T595 | 2026-10-30 | chore | open | GLMZ P3 08 The Long Cut: villain ambiguity | — |
+| PRS-T595 | 2026-10-30 | chore | closed | GLMZ P3 08 The Long Cut: villain ambiguity | Confirmed, no splice needed: The Long Cut already dramatizes the sincere case vs. line crossed in scene, explicitly and repeatedly -- beat #10203 ('If the governor protocol gets suspended, the twelve hundred people whose neuretics need it--'), and beat #10440 states Lydia's math outright: '1,200 alive because of the governor protocol, 428 experimented on in the trial that made it.' Matches and predates the Phase 2 Remedios MedTech record (T525, closed today) -- the record formalized what the prose already established. Already complete. |
 | PRS-T596 | 2026-10-30 | chore | open | GLMZ P3 08 The Long Cut: lowest low and highest high | — |
 | PRS-T597 | 2026-10-30 | chore | open | GLMZ P3 08 The Long Cut: neon action is earned | — |
 | PRS-T598 | 2026-10-30 | chore | open | GLMZ P3 08 The Long Cut: one diaspora on the street | — |
