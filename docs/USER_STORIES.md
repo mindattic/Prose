@@ -629,7 +629,7 @@ updated: 2026-10-03
 | PRS-T130 | 2026-10-16 | chore | closed | Tracked .githooks/commit-msg runs the shared MindAttic commit rule: every commit names an existing workflow ticket | M.FLOW agent-standard commit hook |
 | PRS-T131 | 2026-10-16 | chore | closed | install.ps1 adds this repo's 7 .prose/commands stubs for the shared global commands, so any LLM client finds them | mindattic-agent-standard/install.ps1 run 2026-10-16 |
 | PRS-T132 | 2026-10-16 | fix | closed | glmz-wheel f1.ps1 fails every entity: prose.cmd now prints NuGet audit warnings (NU1902/NU1903) before the verify-entity JSON, so ConvertFrom-Json throws and every entity reports F1 ERR; it also tries to verify the empty guid 00000000-... Fix: parse from the first '{' line and skip the empty guid. | PRS-US-Q13, /glmz-wheel |
-| PRS-T133 | 2026-10-16 | chore | closed | Bug hunt: run an exhaustive /bughunt over the whole repo and fix every real bug found (each fix under its own fix ticket), then hunt again; close this only when a full pass finds nothing | exhaustive pass at 2d27b7976aff62c75a22f788a985f0ef907fc3b3 found no real bugs: build clean (0 warnings/errors besides pre-existing System.Security.Cryptography.Pkcs 10.0.0 transitive NuGet advisory, an infra/SDK decision, not a code defect, left unfixed and flagged); grep+read sweep across Prose.Core/Cli/Mcp/Hub/Writer*/ObserverUi for SQL injection, hardcoded secrets, swallowed exceptions, infinite loops, div-by-zero, resource leaks, async/await misuse, event-subscription leaks, EF Core gotchas, and the newest/most complex code (BookTimelineCli bisection+restripe, Node.Status split migration) turned up nothing actionable; no open fix tickets from a prior pass |
+| PRS-T133 | 2026-10-16 | chore | closed | Bug hunt: run an exhaustive /bughunt over the whole repo and fix every real bug found (each fix under its own fix ticket), then hunt again; close this only when a full pass finds nothing | 311165ff483b2b06a6c42bb3a1921021ebc0a20d - landed 14 more bugs (PRS-T348..T360, all now closed): BeatContributionService.CheckAsync FirstAsync crash, AmmunitionLinkerService auto substring misclassification, EmbeddingService batch exception swallow, EntityMentionService take-before-distinct truncation, NodeWorkbenchService.NarrateAsync abort-on-deleted-beat, GripePassService short-quote grounding bypass, NarrativeChartService substring name match, three Canon JSON converters crashing on non-string scalars, BeatWriteOrchestrator stale-verdict exception pairing, BeatBriefBuilder SQL-Server-only syntax on SQLite, SpineCheck Kyle NameNoise exclusion, BriefVerifier.Passed missing MissingFromGoal, Tools.Contributions.cs/Tools.Hub.cs unhandled exceptions. Covered via 9 parallel subagent passes (all of Prose.Core/Services, Prose.Core/Data, Prose.Core misc dirs, Prose.Mcp) plus direct hand review of Prose.Hub/Writer/WriterUi/ObserverUi/Launcher/LlmCli and a large sample of Prose.Cli (300+ files). Still not a verified-clean full pass: two other concurrent sessions also landed fixes under this same ticket (0eb269319, 568ed7d6a, PRS-T347/T359-T377) in this same window, and ~290 of Prose.Cli's 309 files plus all of Prose.UnitTests were not individually re-verified clean in this pass. Next session should re-run /bughunt focused on remaining Prose.Cli coverage and treat this as still needing one more clean pass before PRS-T133's own closing condition is truly met. |
 | PRS-T134 | 2026-10-16 | chore | wont-do | Run the full unit test suite and fix every failure (each under its own fix ticket) until it passes; put the passing run in --ref. No test project: close this wont-do saying so | superseded: the orchestrator runs Prose's full suite on main after every landing and files a fix ticket per failure |
 | PRS-T135 | 2026-10-16 | chore | closed | Clean up code and docs: remove dead code, stale comments and outdated or duplicated docs, and simplify where behaviour doesn't change (/simplify); tests stay green | d9ce82afa |
 | PRS-T136 | 2026-10-16 | docs | closed | Bring README.md up to date with the code as it is now (what it is, setup, usage, commands, current state), following codex-standard/README-STYLE.md; README.htm regenerated if the repo has one | commit 2bace1246a9c173b3f58d686e222a7af292837b0 |
@@ -843,12 +843,494 @@ updated: 2026-10-03
 | PRS-T344 | 2026-10-28 | feature | closed | GLMZ lore (author 2026-10-28): the Deep is the Underclan's God, the SuperMind arising from the city's machinery and forgotten autonomous systems; if it stops both worlds go dark for good and can never restart. Audit Underclan and the trilogy so the Deep is never what stops (the lakeward beat is the Ur's tap, not the Deep) | Deep never stops: lake-beat (the Ur's pull) is what goes quiet, Second Word retold, Vesh teaches what the Deep is (24 beats + Descriptions); DEEP CURRENT merged/renamed The Deep (record, Acolytes faction, legend + 17 docs, engine), rogue vs Free distinction, deprecated-name rule 118; Deep Current Killer case renamed Undertow Killer |
 | PRS-T345 | 2026-10-28 | docs | closed | GLMZ Underclan research (author 2026-10-28): study real underground communities (NYC mole people, Las Vegas flood tunnels, Bucharest sewer children, Beijing rat tribe, Paris cataphiles, Derinkuyu, Coober Pedy) and Metro 2033 to ground the clan's daily life, then apply to Underclan and the trilogy | Research brief (real underground communities + Metro 2033) applied: 45 hand edits in 24 Underclan beats (rain rule, raised beds, second-man rule, H2S, tapped power, leptospirosis, immersion foot, penned rats, trash-truck bins, copper trade, air-map layout, sealed first Hollow, the Deep writes them out of surveys); last Candle/Glass slips fixed |
 | PRS-T346 | 2026-10-28 | fix | closed | GLMZ lore (author 2026-10-28): the Deep has no affiliation with the Ur, the Consensus or the Cabal, and no evidence of contact between them; the Consensus is the official ruling body, the Cabal pulls the strings. Remove any implied link | Law recorded; the Deep's record no longer ties it to the Ur or the 2193 Word, states no affiliation or contact with the Ur, Consensus or Cabal; prose checked: only lines keeping the Deep and the lake-beat separate |
-| PRS-T347 | 2026-10-29 | fix | open | Fix includeArchived=false no-op in entity LoadAll mappers (archived entities always included) | — |
-| PRS-T348 | 2026-10-29 | fix | open | BeatContributionService.CheckAsync throws an opaque error for a missing beat instead of a clear one | — |
-| PRS-T349 | 2026-10-29 | fix | open | AmmunitionLinkerService.IsFirearm misclassifies any weapon whose name/category merely contains 'auto' | — |
-| PRS-T350 | 2026-10-29 | fix | open | EmbeddingService batch calls throw instead of degrading to empty/zero on a transport failure | — |
-| PRS-T351 | 2026-10-29 | fix | open | EntityMentionService.GetBeatsForEntityAsync can silently return fewer than 'limit' distinct beats | — |
-| PRS-T352 | 2026-10-29 | fix | open | NodeWorkbenchService.NarrateAsync aborts a whole node's narration on one concurrently-deleted beat | — |
-| PRS-T353 | 2026-10-29 | fix | open | GripePassService.GroundQuote accepts a short or empty quote as grounded with no containment check | PRS-T133 |
-| PRS-T354 | 2026-10-29 | fix | open | NarrativeChartService character-mention fallback uses a raw substring test, misclassifying short names | — |
-| PRS-T355 | 2026-10-29 | fix | open | Three Canon JSON converters crash on a non-string scalar instead of degrading, unlike their own bool/int siblings | PRS-T133 |
+| PRS-T347 | 2026-10-29 | fix | closed | Fix includeArchived=false no-op in entity LoadAll mappers (archived entities always included) | 0ee83c61e0a6da1277de9909ffb45eae9d6221e5 |
+| PRS-T348 | 2026-10-29 | fix | closed | BeatContributionService.CheckAsync throws an opaque error for a missing beat instead of a clear one | 311165ff483b2b06a6c42bb3a1921021ebc0a20d |
+| PRS-T349 | 2026-10-29 | fix | closed | AmmunitionLinkerService.IsFirearm misclassifies any weapon whose name/category merely contains 'auto' | 311165ff483b2b06a6c42bb3a1921021ebc0a20d |
+| PRS-T350 | 2026-10-29 | fix | closed | EmbeddingService batch calls throw instead of degrading to empty/zero on a transport failure | 311165ff483b2b06a6c42bb3a1921021ebc0a20d |
+| PRS-T351 | 2026-10-29 | fix | closed | EntityMentionService.GetBeatsForEntityAsync can silently return fewer than 'limit' distinct beats | 311165ff483b2b06a6c42bb3a1921021ebc0a20d |
+| PRS-T352 | 2026-10-29 | fix | closed | NodeWorkbenchService.NarrateAsync aborts a whole node's narration on one concurrently-deleted beat | 311165ff483b2b06a6c42bb3a1921021ebc0a20d |
+| PRS-T353 | 2026-10-29 | fix | closed | GripePassService.GroundQuote accepts a short or empty quote as grounded with no containment check | 311165ff483b2b06a6c42bb3a1921021ebc0a20d |
+| PRS-T354 | 2026-10-29 | fix | closed | NarrativeChartService character-mention fallback uses a raw substring test, misclassifying short names | 311165ff483b2b06a6c42bb3a1921021ebc0a20d |
+| PRS-T355 | 2026-10-29 | fix | closed | Three Canon JSON converters crash on a non-string scalar instead of degrading, unlike their own bool/int siblings | 311165ff483b2b06a6c42bb3a1921021ebc0a20d |
+| PRS-T356 | 2026-10-29 | fix | closed | BeatWriteOrchestrator's double-contradiction exception pairs a stale verdict with the wrong attempt's text | 311165ff483b2b06a6c42bb3a1921021ebc0a20d |
+| PRS-T357 | 2026-10-29 | fix | closed | set_beat_contributions throws unguarded exceptions on malformed linesJson instead of a structured error | 311165ff483b2b06a6c42bb3a1921021ebc0a20d |
+| PRS-T358 | 2026-10-29 | fix | closed | Three Hub-forwarding MCP tools throw an unhandled TaskCanceledException on a Hub timeout | 311165ff483b2b06a6c42bb3a1921021ebc0a20d |
+| PRS-T359 | 2026-10-29 | fix | closed | create_legacy_chapter leaves Chapter.Number null when appended to a book with no explicit number | 311165ff483b2b06a6c42bb3a1921021ebc0a20d |
+| PRS-T360 | 2026-10-29 | fix | closed | FactorySessionService's 10-second session-id cache has an unguarded race (singleton tuple field) | 311165ff483b2b06a6c42bb3a1921021ebc0a20d |
+| PRS-T361 | 2026-10-29 | fix | closed | QuoteRepository.Save never resyncs a quote's Slug when its text changes | 0eb269319 |
+| PRS-T362 | 2026-10-29 | fix | closed | EditorPanel.GetPanel crashes instead of returning an empty panel when every persona is excluded | 0eb269319 |
+| PRS-T363 | 2026-10-29 | fix | closed | FamilyGeneratorService.PickSpouseDonorAsync ignores the seeded Random, breaking reproducible proposals | 0eb269319 |
+| PRS-T364 | 2026-10-29 | fix | closed | EpisodeSeedService (singleton) shares one non-thread-safe Random instance across concurrent draws | 0eb269319 |
+| PRS-T365 | 2026-10-29 | fix | closed | SyncSubtitleTool splices an unescaped titleId into a JS string literal (code-injection class) | 0eb269319 |
+| PRS-T366 | 2026-10-29 | fix | closed | prose --simulate-collision never checks the beat it found actually belongs to the named book | 0eb269319 |
+| PRS-T367 | 2026-10-29 | fix | closed | WorkerModeCli's entity-ballot prompt silently ignores the includeProse/proseCount flag | 0eb269319 |
+| PRS-T368 | 2026-10-29 | fix | closed | WriterShell's 'Merge into the beat before' discards unsaved edits instead of saving first | 0eb269319 |
+| PRS-T369 | 2026-10-29 | fix | closed | WriterShell's Disconnected status never clears after a successful Blazor Server reconnect | 0eb269319 |
+| PRS-T370 | 2026-10-29 | fix | closed | Four ObserverUi tabs crash the Blazor circuit on a Hub transport failure instead of showing it | 0eb269319 |
+| PRS-T371 | 2026-10-29 | fix | closed | DcmVizTab's history-run selector can crash the circuit on a dropped connection or Hub failure | 0eb269319 |
+| PRS-T372 | 2026-10-29 | fix | closed | SanityScanCli --all silently skips a 3+-level-deep chaptered book (one-level beat rollup, not recursive) | 568ed7d6a |
+| PRS-T373 | 2026-10-29 | fix | closed | ClaudeCliService.SendAsync can deadlock: writes the whole prompt to stdin before draining stdout, with no timeout | 568ed7d6a |
+| PRS-T374 | 2026-10-29 | fix | closed | CrossReferenceService.Process reports a positive change count even when related_entities didn't actually change | 568ed7d6a |
+| PRS-T375 | 2026-10-29 | fix | closed | EpisodeGeneratorService.IsSectionNumeral misclassifies an ellipsis-only paragraph as a roman-numeral marker and drops it | 568ed7d6a |
+| PRS-T376 | 2026-10-29 | fix | closed | BookRepository/ChapterRepository.ResolveCharacterIdByName silently picks an arbitrary character on an ambiguous name | 568ed7d6a |
+| PRS-T377 | 2026-10-29 | fix | closed | LocalReviewLlm.CallAsync reports the original response's status/reason after its context-overflow retry fails differently | 568ed7d6a |
+| PRS-T378 | 2026-10-30 | docs | closed | Log the Eat the Rich round (core tenet, 5 laws, 156 splices across 22 GLMZ books) in GLMZ_CONSOLIDATION.md | — |
+| PRS-T379 | 2026-10-30 | fix | closed | Fix old GLMZ defects flagged by the Eat the Rich readers (cop words, lawyer, wrong year, doubled word, banned images) | — |
+| PRS-T380 | 2026-10-30 | fix | closed | Make the entity check report 0 entities instead of a blank failure when a beat has no tags | — |
+| PRS-T381 | 2026-10-30 | fix | closed | Show a beat Description and whether it is current in prose --beat show | — |
+| PRS-T382 | 2026-10-30 | fix | closed | Let prose --ruling list show universe-wide laws without --node | — |
+| PRS-T383 | 2026-10-30 | fix | closed | Pin the patched System.Security.Cryptography.Pkcs to clear the high-severity warning | — |
+| PRS-T384 | 2026-10-30 | chore | closed | Record the GLMZ law-sweep allowances as rulings so readers stop flagging them | — |
+| PRS-T385 | 2026-10-30 | chore | closed | Testament: re-read the 90 beats changed since their last read | — |
+| PRS-T386 | 2026-10-30 | chore | closed | Tag untagged names in Testament (Hana, Payday) and The Long Cut (Halcyon) | — |
+| PRS-T387 | 2026-10-30 | chore | closed | The Long Cut: read the 2 never-read beats | — |
+| PRS-T388 | 2026-10-30 | chore | closed | The Long Cut: settle the read note on the departure beat order (#10568) | — |
+| PRS-T389 | 2026-10-30 | chore | closed | Bushido Coda chapter 1: clear the factory capture | — |
+| PRS-T390 | 2026-10-30 | chore | closed | Halcyon: Combine is the CorpoNation, Civil Security is its paramilitary outfit (author ruling); fix records and tags | — |
+| PRS-T391 | 2026-10-30 | fix | closed | Testament #22214: Brandt's message reads as a testament with a hidden name the book never pays off; make it the summons it is | — |
+| PRS-T392 | 2026-10-30 | chore | closed | GLMZ vision: turn all remaining GLMZ work into ordered, labeled tickets (writing first, reading last) toward one original cyberpunk universe | — |
+| PRS-T393 | 2026-10-30 | docs | open | GLMZ P0 rule 01: Writing before reading: confirm, then record as a universe law | — |
+| PRS-T394 | 2026-10-30 | docs | open | GLMZ P0 rule 02: One change, one ticket: confirm, then record as a universe law | — |
+| PRS-T395 | 2026-10-30 | docs | open | GLMZ P0 rule 03: Canon before prose: confirm, then record as a universe law | — |
+| PRS-T396 | 2026-10-30 | docs | open | GLMZ P0 rule 04: The singular point: confirm, then record as a universe law | — |
+| PRS-T397 | 2026-10-30 | docs | open | GLMZ P0 rule 05: Kyle is the spine: confirm, then record as a universe law | — |
+| PRS-T398 | 2026-10-30 | docs | open | GLMZ P0 rule 06: Every lead is a new window: confirm, then record as a universe law | — |
+| PRS-T399 | 2026-10-30 | docs | open | GLMZ P0 rule 07: The coasts fell; nobody says why: confirm, then record as a universe law | — |
+| PRS-T400 | 2026-10-30 | docs | open | GLMZ P0 rule 08: Elsewhere stays offstage: confirm, then record as a universe law | — |
+| PRS-T401 | 2026-10-30 | docs | open | GLMZ P0 rule 09: One diaspora, no quarters: confirm, then record as a universe law | — |
+| PRS-T402 | 2026-10-30 | docs | open | GLMZ P0 rule 10: Villains believe: confirm, then record as a universe law | — |
+| PRS-T403 | 2026-10-30 | docs | open | GLMZ P0 rule 11: Minds on a spectrum: confirm, then record as a universe law | — |
+| PRS-T404 | 2026-10-30 | docs | open | GLMZ P0 rule 12: Lowest lows, highest highs: confirm, then record as a universe law | — |
+| PRS-T405 | 2026-10-30 | docs | open | GLMZ P0 rule 13: Neon action is earned: confirm, then record as a universe law | — |
+| PRS-T406 | 2026-10-30 | docs | open | GLMZ P0 rule 14: Love triangles are structural: confirm, then record as a universe law | — |
+| PRS-T407 | 2026-10-30 | docs | open | GLMZ P0 rule 15: Wholly original: confirm, then record as a universe law | — |
+| PRS-T408 | 2026-10-30 | docs | open | GLMZ P0 rule 16: Records follow prose: confirm, then record as a universe law | — |
+| PRS-T409 | 2026-10-30 | docs | open | GLMZ P0 rule 17: Laugh or you'd cry: confirm, then record as a universe law | — |
+| PRS-T410 | 2026-10-30 | chore | closed | GLMZ P0: label the already-open GLMZ tickets into this plan (book, phase) so nothing runs outside it | — |
+| PRS-T411 | 2026-10-30 | chore | closed | GLMZ P1 machine-mind: define the spectrum of minds as one canon ladder and record it | mind-ladder stated on Supermind vocab record 019d6143-aafd-77d4-8ade-cb6d2bc81986 |
+| PRS-T412 | 2026-10-30 | chore | open | GLMZ P1 machine-mind: build the emergence timeline: when and where each machine mind woke | — |
+| PRS-T413 | 2026-10-30 | chore | closed | GLMZ P1 machine-mind: The Deep: place it on the ladder, give it a want, and record it | ladder placement + want stated on The Deep entity 019e9e4f-1f2e-7b03-8efb-80104e18d902 |
+| PRS-T414 | 2026-10-30 | chore | closed | GLMZ P1 machine-mind: OBERON: place it on the ladder, give it a want, and record it | ladder placement + want stated on OBERON entity 019f0f3f-22a5-744f-8102-2b5970135e2d |
+| PRS-T415 | 2026-10-30 | chore | closed | GLMZ P1 machine-mind: Green: place it on the ladder, give it a want, and record it | ladder placement + want stated on Green entity 019fc103-0d07-78a5-b08c-5e3c61ed0963 |
+| PRS-T416 | 2026-10-30 | chore | open | GLMZ P1 machine-mind: the Ur: place it on the ladder, give it a want, and record it | — |
+| PRS-T417 | 2026-10-30 | chore | open | GLMZ P1 machine-mind: the Consensus: place it on the ladder, give it a want, and record it | — |
+| PRS-T418 | 2026-10-30 | chore | open | GLMZ P1 machine-mind: the Cabal: place it on the ladder, give it a want, and record it | — |
+| PRS-T419 | 2026-10-30 | chore | closed | GLMZ P1 machine-mind: Cinderblock Ai and Oracle Drift: place it on the ladder, give it a want, and record it | ladder placement + want stated on Cinderblock Ai (GRAY-7) and Oracle Drift Systems (DRIFT) corponation records |
+| PRS-T420 | 2026-10-30 | chore | closed | GLMZ P1 machine-mind: sweep 'rogue AI' vs 'Free' vocabulary across all 22 books | grep-beats swept 'rogue AI' / 'Rogue AI' / 'rogue ai' corpus-wide (12905 beats, all universes): 0 hits in prose; the corporate-persecution-term-vs-Free distinction lives only in canon records, never leaked into beat text |
+| PRS-T421 | 2026-10-30 | chore | open | GLMZ P1 machine-mind: Synthetic Personhood law: confirm what a Tier-3 Synthetic Person can own, vote, be and lose | — |
+| PRS-T422 | 2026-10-30 | chore | open | GLMZ P1 machine-mind: the strays: canon for gene-modded and machine strays (lumen mice, glow-rats, Silver Pigeons, sentinel cats) | — |
+| PRS-T423 | 2026-10-30 | chore | open | GLMZ P1 nano: one canonical nanotech rules record: what swarms can do, what they cannot, who owns them | — |
+| PRS-T424 | 2026-10-30 | chore | open | GLMZ P1 nano: the Substrate: coverage map (core vs Seams), who runs it, what a lapse looks like | — |
+| PRS-T425 | 2026-10-30 | chore | open | GLMZ P1 nano: consolidate the nano CorpoNation records (Axiom BioNanics, Cascadia BioNano, Cauldron x2, Fractum, Glyph, Meridian Nano-Defense, Null Dynamics, Oma, Threadline, Vexor, Pale Substrate, Chengdu Institute) | — |
+| PRS-T426 | 2026-10-30 | chore | open | GLMZ P1 nano: counter-nano and the Bloom Quarter: decide the canon of nano disasters the street remembers | — |
+| PRS-T427 | 2026-10-30 | chore | open | GLMZ P1 cyberware: neuretics canon: everyone has them; what tiers, what they do, what they cost to keep | — |
+| PRS-T428 | 2026-10-30 | chore | open | GLMZ P1 cyberware: chassis and augmentation tiers (Tier 1-5, Caryatid-class, reinforced bone) as one table on a record | — |
+| PRS-T429 | 2026-10-30 | chore | open | GLMZ P1 cyberware: licensing and compliance locks: how a CorpoNation leashes an augmented body | — |
+| PRS-T430 | 2026-10-30 | chore | open | GLMZ P1 cyberware: NeoCortex: the Access Initiative, the hardware, and Kyle's 2215 install as canon | — |
+| PRS-T431 | 2026-10-30 | chore | open | GLMZ P1 cyberware: Kyle's array and the low harmonic: what the reader may know by each book | — |
+| PRS-T432 | 2026-10-30 | chore | open | GLMZ P1 genemods: genemod canon: who can buy what, what it costs, what it marks you as | — |
+| PRS-T433 | 2026-10-30 | chore | open | GLMZ P1 genemods: Crucible Genomics and the Phenotype District: make it a place the books can stand in | — |
+| PRS-T434 | 2026-10-30 | chore | open | GLMZ P1 genemods: Lacuna, Helix, Hansei: consolidate the genetics houses and give each a creed | — |
+| PRS-T435 | 2026-10-30 | chore | open | GLMZ P1 genemods: the 2197 children: what was done to them, as canon every book agrees on | — |
+| PRS-T436 | 2026-10-30 | chore | open | GLMZ P1 hyperreality: hyperreality canon: overlays, signs hanging in the air, ad tiers, the Volume, Simspace | — |
+| PRS-T437 | 2026-10-30 | chore | open | GLMZ P1 hyperreality: the Volume: the broadcast sky, who owns it, what the heirs say on it | — |
+| PRS-T438 | 2026-10-30 | chore | open | GLMZ P1 hyperreality: ad and product canon: a short list of recurring absurd products and slogans | — |
+| PRS-T439 | 2026-10-30 | chore | open | GLMZ P1 hyperreality: the unmeshed and the dead zones: who lives outside the overlay and how it looks | — |
+| PRS-T440 | 2026-10-30 | chore | open | GLMZ P1 diaspora: language: the street creole: which words from which tongues (Mandarin 'xie xie', Spanish, Yoruba, Japanese, Tagalog, Arabic...) and who uses them; a small lexicon on vocabulary records | — |
+| PRS-T441 | 2026-10-30 | chore | open | GLMZ P1 diaspora: food: the noodle stall, rat meat in the Warm, cultured protein, Koji Press; a recurring menu that mixes everything | — |
+| PRS-T442 | 2026-10-30 | chore | open | GLMZ P1 diaspora: faith: shrines, saints, the Deep's acolytes, temple and storefront church side by side; what people pray to in a dying city | — |
+| PRS-T443 | 2026-10-30 | chore | open | GLMZ P1 diaspora: crews and gangs: Lotus Syndicate, Vultures, Underbelly, the Orvenne House; each blends East and West in structure and code; none is a lift of yakuza/triad/cartel tropes | — |
+| PRS-T444 | 2026-10-30 | chore | open | GLMZ P1 diaspora: names: a naming census of every character: does the cast read as one diaspora? Flag clusters and stereotypes | — |
+| PRS-T445 | 2026-10-30 | chore | open | GLMZ P1 diaspora: music: Pulse Rock, Seam radio, Fenris; the soundscape of the street | — |
+| PRS-T446 | 2026-10-30 | chore | open | GLMZ P1 diaspora: script and signage: what languages the hyperreality signs and graffiti use, and in what mix | — |
+| PRS-T447 | 2026-10-30 | chore | open | GLMZ P1 diaspora: honour and debt: the shared code of the street (favours, debts, face, the second-man rule) that every crew understands | — |
+| PRS-T448 | 2026-10-30 | chore | open | GLMZ P1 geography: the extent: the GLMZ as the sprawl that swallowed the Midwest: Milwaukee to Cleveland (~500 km), the lakes, its edges | — |
+| PRS-T449 | 2026-10-30 | chore | open | GLMZ P1 geography: the Seams map: where the Gray Zones run between CorpoNations; a short canonical list of named Seams districts | — |
+| PRS-T450 | 2026-10-30 | chore | open | GLMZ P1 geography: Chicago core: the Loop, the Struts, the arcology legs, the underlevels | — |
+| PRS-T451 | 2026-10-30 | chore | open | GLMZ P1 geography: the lakes and the Ur-606 black pyramid: what is seen from every shore | — |
+| PRS-T452 | 2026-10-30 | chore | open | GLMZ P1 geography: Gary and the Ashgrave/Slagworks belt: the most polluted sovereign ground; who lives there | — |
+| PRS-T453 | 2026-10-30 | chore | open | GLMZ P1 geography: the Detroit corridor: Rictus, Cinderblock, Nightshade, Pale Lantern; Detroit is inside the GLMZ (ruling) | — |
+| PRS-T454 | 2026-10-30 | chore | open | GLMZ P1 geography: Milwaukee: Halcyon Garrison Complex, the Velvet Tine, Fenris's city | — |
+| PRS-T455 | 2026-10-30 | chore | open | GLMZ P1 geography: the Iowa Exclusion Zone: Ironclad Agrisystems and the 340 Behemoths that feed a third of the continent; seen only from the edge | — |
+| PRS-T456 | 2026-10-30 | chore | open | GLMZ P1 geography: below: the Warm, the Old Deep, the bore: the underground as its own country (Underclan) | — |
+| PRS-T457 | 2026-10-30 | chore | wont-do | GLMZ P1 geography: The Long Cut is set in Austin (a relocation camp and its north grid), outside the GLMZ: move it inside, or rule it a sanctioned exception | Wrong premise: Austin is a Chicago West Side district inside the GLMZ (book pairs it with Garfield) |
+| PRS-T458 | 2026-10-30 | chore | wont-do | GLMZ P1 geography: audit every scene set outside the GLMZ in all 22 books (Austin, Tunis platform, Rotterdam lane, others) | Replaced by PRS-T793 (dropped Austin, which is inside the GLMZ) |
+| PRS-T459 | 2026-10-30 | chore | open | GLMZ P1 coasts: the coasts fell, never explained: sweep every book for any line that explains or investigates it | — |
+| PRS-T460 | 2026-10-30 | chore | open | GLMZ P1 coasts: record the coast-fall as history fact (what is known, what is not) on the timeline record | — |
+| PRS-T461 | 2026-10-30 | chore | open | GLMZ P1 corponations: Halcyon Combine: give it a king, a court, a tithe and a sincere creed; consolidate its records | — |
+| PRS-T462 | 2026-10-30 | chore | open | GLMZ P1 corponations: Arcturus Defense Solutions: give it a king, a court, a tithe and a sincere creed; consolidate its records | — |
+| PRS-T463 | 2026-10-30 | chore | open | GLMZ P1 corponations: Axiom: give it a king, a court, a tithe and a sincere creed; consolidate its records | — |
+| PRS-T464 | 2026-10-30 | chore | open | GLMZ P1 corponations: Meridian: give it a king, a court, a tithe and a sincere creed; consolidate its records | — |
+| PRS-T465 | 2026-10-30 | chore | open | GLMZ P1 corponations: Tessera: give it a king, a court, a tithe and a sincere creed; consolidate its records | — |
+| PRS-T466 | 2026-10-30 | chore | open | GLMZ P1 corponations: Ringo Corponation: give it a king, a court, a tithe and a sincere creed; consolidate its records | — |
+| PRS-T467 | 2026-10-30 | chore | open | GLMZ P1 corponations: Zheng-dao Bioelectric: give it a king, a court, a tithe and a sincere creed; consolidate its records | — |
+| PRS-T468 | 2026-10-30 | chore | open | GLMZ P1 corponations: Helix Biosystems: give it a king, a court, a tithe and a sincere creed; consolidate its records | — |
+| PRS-T469 | 2026-10-30 | chore | open | GLMZ P1 corponations: Lazarus Pharmaceuticals: give it a king, a court, a tithe and a sincere creed; consolidate its records | — |
+| PRS-T470 | 2026-10-30 | chore | open | GLMZ P1 corponations: Remedios MedTech and MidNorth Medical: give it a king, a court, a tithe and a sincere creed; consolidate its records | — |
+| PRS-T471 | 2026-10-30 | chore | open | GLMZ P1 corponations: Ouroboros Energy: give it a king, a court, a tithe and a sincere creed; consolidate its records | — |
+| PRS-T472 | 2026-10-30 | chore | open | GLMZ P1 corponations: Carrion (Defense Works and the Vultures): give it a king, a court, a tithe and a sincere creed; consolidate its records | — |
+| PRS-T473 | 2026-10-30 | chore | open | GLMZ P1 corponations: record hygiene: the CorpoNation with a blank name, empty stubs (AgriCore, Cellvault, DataEast...), and duplicates | — |
+| PRS-T474 | 2026-10-30 | chore | open | GLMZ P1 corponations: fashion and product brands filed as CorpoNations (Ironmoth, Thornback, Hexline, Thornfield, Mekong Form, Velasca, Greymark, Casque & Veil...) become brands or subsidiaries | — |
+| PRS-T475 | 2026-10-30 | chore | open | GLMZ P1 corponations: the Alaska Native corporations and other far charters: confirm they are elsewhere-only (mentioned in passing, never visited) | — |
+| PRS-T476 | 2026-10-30 | chore | open | GLMZ P1 corponations: the feudal map: which CorpoNations border which Seams, and who is at war with whom | — |
+| PRS-T477 | 2026-10-30 | chore | open | GLMZ P1 economy: money: Φ credits, credsticks, UBC as scrip, the quanta allotment sold forward | — |
+| PRS-T478 | 2026-10-30 | chore | open | GLMZ P1 economy: the Tier system: Tier 1-5 citizenship and what each buys | — |
+| PRS-T479 | 2026-10-30 | chore | open | GLMZ P1 economy: sponsorship and the citizenship lottery: how anyone climbs; how rarely | — |
+| PRS-T480 | 2026-10-30 | chore | open | GLMZ P1 economy: taxes: the Air Tax and the tithe; who pays what to whom | — |
+| PRS-T481 | 2026-10-30 | chore | open | GLMZ P1 timeline: one master history record: 2096 transfer and Blue Massacre, Schism era 2090s-2140s, Corridor Consolidation 2190s, 2197 children, through 2231 | — |
+| PRS-T482 | 2026-10-30 | chore | open | GLMZ P1 timeline: verify every book's Node.Timeline value and in-book dates against the master record | — |
+| PRS-T483 | 2026-10-30 | chore | open | GLMZ P1 timeline: character ages across the season: one pass over every lead's birth year vs each book | — |
+| PRS-T484 | 2026-10-30 | chore | open | GLMZ P1 dimensional: Schisms, apertures and the live-well drilling: the rules every book obeys, never the explanation | — |
+| PRS-T485 | 2026-10-30 | chore | open | GLMZ P1 dimensional: Season 2 hook: the fifth ascending object (Sparrow logs it, Elias 'NOT RELAYED') | — |
+| PRS-T486 | 2026-10-30 | chore | open | GLMZ P2 kyle: Kyle Ellen Corbin's season spine: his arc from Bushido Coda to the Cyberocracy finale on one page | — |
+| PRS-T487 | 2026-10-30 | chore | open | GLMZ P2 kyle: Kyle's touchpoint in every book he is not in: a person, place, object or rumour per book | — |
+| PRS-T488 | 2026-10-30 | chore | open | GLMZ P2 kyle: Kyle's record audit: ages, NeoCortex 2215 at 16, Silence, the bike, apartment 2D, Mrs. Chen, no family | — |
+| PRS-T489 | 2026-10-30 | chore | open | GLMZ P2 kyle: Silence: the blade's canon (forty inches, hung on a field, the name he will not dig for) | — |
+| PRS-T490 | 2026-10-30 | chore | open | GLMZ P2 kyle: Kyle's lowest low and highest high across the season: name the two scenes | — |
+| PRS-T491 | 2026-10-30 | chore | open | GLMZ P2 kyle: Kyle's voice: what makes his close-third different from every other lead | — |
+| PRS-T492 | 2026-10-30 | chore | open | GLMZ P2 kyle: Kyle's crew and circle (Sable, Pixel, Mrs. Chen, Vey, Boost and the kids, Sift): who they are to him by each book | — |
+| PRS-T493 | 2026-10-30 | chore | open | GLMZ P2 kyle: the retrocausal secret: what each book may show of the entity without revealing it is Kyle | — |
+| PRS-T494 | 2026-10-30 | chore | open | GLMZ P2 perspective: Pixel: what new window on the world this character opens, and is it unique | — |
+| PRS-T495 | 2026-10-30 | chore | open | GLMZ P2 perspective: Bear (Boris): what new window on the world this character opens, and is it unique | — |
+| PRS-T496 | 2026-10-30 | chore | open | GLMZ P2 perspective: Sasha Vo: what new window on the world this character opens, and is it unique | — |
+| PRS-T497 | 2026-10-30 | chore | open | GLMZ P2 perspective: Ekow: what new window on the world this character opens, and is it unique | — |
+| PRS-T498 | 2026-10-30 | chore | open | GLMZ P2 perspective: Doc Stash: what new window on the world this character opens, and is it unique | — |
+| PRS-T499 | 2026-10-30 | chore | open | GLMZ P2 perspective: Ledger: what new window on the world this character opens, and is it unique | — |
+| PRS-T500 | 2026-10-30 | chore | open | GLMZ P2 perspective: Glim: what new window on the world this character opens, and is it unique | — |
+| PRS-T501 | 2026-10-30 | chore | open | GLMZ P2 perspective: Faith Larson: what new window on the world this character opens, and is it unique | — |
+| PRS-T502 | 2026-10-30 | chore | open | GLMZ P2 perspective: Yemina Fola: what new window on the world this character opens, and is it unique | — |
+| PRS-T503 | 2026-10-30 | chore | open | GLMZ P2 perspective: Rennick: what new window on the world this character opens, and is it unique | — |
+| PRS-T504 | 2026-10-30 | chore | open | GLMZ P2 perspective: Idris: what new window on the world this character opens, and is it unique | — |
+| PRS-T505 | 2026-10-30 | chore | open | GLMZ P2 perspective: Elias: what new window on the world this character opens, and is it unique | — |
+| PRS-T506 | 2026-10-30 | chore | open | GLMZ P2 perspective: Sparrow: what new window on the world this character opens, and is it unique | — |
+| PRS-T507 | 2026-10-30 | chore | open | GLMZ P2 perspective: Vox: what new window on the world this character opens, and is it unique | — |
+| PRS-T508 | 2026-10-30 | chore | open | GLMZ P2 perspective: Rook: what new window on the world this character opens, and is it unique | — |
+| PRS-T509 | 2026-10-30 | chore | open | GLMZ P2 perspective: Palesa: what new window on the world this character opens, and is it unique | — |
+| PRS-T510 | 2026-10-30 | chore | open | GLMZ P2 perspective: Rampart (Reza Solano): what new window on the world this character opens, and is it unique | — |
+| PRS-T511 | 2026-10-30 | chore | open | GLMZ P2 perspective: Cutout (Tavi Jeong): what new window on the world this character opens, and is it unique | — |
+| PRS-T512 | 2026-10-30 | chore | open | GLMZ P2 perspective: Rafi Sarkissian: what new window on the world this character opens, and is it unique | — |
+| PRS-T513 | 2026-10-30 | chore | open | GLMZ P2 perspective: Ethan (Fenris): what new window on the world this character opens, and is it unique | — |
+| PRS-T514 | 2026-10-30 | chore | open | GLMZ P2 perspective: Sable: what new window on the world this character opens, and is it unique | — |
+| PRS-T515 | 2026-10-30 | chore | open | GLMZ P2 perspective: Mrs. Chen: what new window on the world this character opens, and is it unique | — |
+| PRS-T516 | 2026-10-30 | chore | open | GLMZ P2 perspective: Lydia Roth: what new window on the world this character opens, and is it unique | — |
+| PRS-T517 | 2026-10-30 | chore | open | GLMZ P2 perspective: Hana Morimoto: what new window on the world this character opens, and is it unique | — |
+| PRS-T518 | 2026-10-30 | chore | open | GLMZ P2 perspective: Nine, Seven and One: what new window on the world this character opens, and is it unique | — |
+| PRS-T519 | 2026-10-30 | chore | open | GLMZ P2 villains: Mr. Able: make the villainy morally ambiguous: the reason a reader could hold | — |
+| PRS-T520 | 2026-10-30 | chore | open | GLMZ P2 villains: the Assessor: make the villainy morally ambiguous: the reason a reader could hold | — |
+| PRS-T521 | 2026-10-30 | chore | open | GLMZ P2 villains: Colonel Brandt: make the villainy morally ambiguous: the reason a reader could hold | — |
+| PRS-T522 | 2026-10-30 | chore | open | GLMZ P2 villains: OBERON: make the villainy morally ambiguous: the reason a reader could hold | — |
+| PRS-T523 | 2026-10-30 | chore | open | GLMZ P2 villains: Declan Iyengar: make the villainy morally ambiguous: the reason a reader could hold | — |
+| PRS-T524 | 2026-10-30 | chore | open | GLMZ P2 villains: Kline and the Office: make the villainy morally ambiguous: the reason a reader could hold | — |
+| PRS-T525 | 2026-10-30 | chore | open | GLMZ P2 villains: Remedios MedTech: make the villainy morally ambiguous: the reason a reader could hold | — |
+| PRS-T526 | 2026-10-30 | chore | open | GLMZ P2 villains: the Vultures and Carrion: make the villainy morally ambiguous: the reason a reader could hold | — |
+| PRS-T527 | 2026-10-30 | chore | open | GLMZ P2 villains: the Cabal: make the villainy morally ambiguous: the reason a reader could hold | — |
+| PRS-T528 | 2026-10-30 | chore | open | GLMZ P2 villains: Halcyon Civil Security: make the villainy morally ambiguous: the reason a reader could hold | — |
+| PRS-T529 | 2026-10-30 | chore | open | GLMZ P2 villains: Axiom: make the villainy morally ambiguous: the reason a reader could hold | — |
+| PRS-T530 | 2026-10-30 | chore | open | GLMZ P2 love: audit every romantic thread in the 22 books: who, where, and whether it resolves | — |
+| PRS-T531 | 2026-10-30 | chore | open | GLMZ P2 love: decide Season 1's love triangles (three or four), each forcing a choice that moves the plot | — |
+| PRS-T532 | 2026-10-30 | chore | open | GLMZ P2 love: plant each approved triangle across its books: first spark, the turn, the choice | — |
+| PRS-T533 | 2026-10-30 | chore | open | GLMZ P2 love: the cost of love in a dying city: one recurring image per triangle that the finale pays off | — |
+| PRS-T534 | 2026-10-30 | chore | open | GLMZ P2 ensemble: the team of nine (Kyle, Pixel, Bear, Sasha, Ekow, Stash, Ledger, Glim, Faith): supersede the old roster rulings | — |
+| PRS-T535 | 2026-10-30 | chore | open | GLMZ P2 ensemble: no series-only characters: census Cyberocracy's cast against the 19 earlier books | — |
+| PRS-T536 | 2026-10-30 | chore | open | GLMZ P2 ensemble: the synthetic cast: give each machine character (OBERON, the Deep, Green, the Speaker, Lord Long Legs, the strays) a voice and a want | — |
+| PRS-T537 | 2026-10-30 | chore | open | GLMZ P3 01 Steppin' Razor: its thread into the singular point | — |
+| PRS-T538 | 2026-10-30 | chore | open | GLMZ P3 01 Steppin' Razor: Kyle's touch | — |
+| PRS-T539 | 2026-10-30 | chore | open | GLMZ P3 01 Steppin' Razor: villain ambiguity | — |
+| PRS-T540 | 2026-10-30 | chore | open | GLMZ P3 01 Steppin' Razor: lowest low and highest high | — |
+| PRS-T541 | 2026-10-30 | chore | open | GLMZ P3 01 Steppin' Razor: neon action is earned | — |
+| PRS-T542 | 2026-10-30 | chore | open | GLMZ P3 01 Steppin' Razor: one diaspora on the street | — |
+| PRS-T543 | 2026-10-30 | chore | open | GLMZ P3 01 Steppin' Razor: machine minds and the strays | — |
+| PRS-T544 | 2026-10-30 | chore | open | GLMZ P3 01 Steppin' Razor: apply the Phase 1 world canon | — |
+| PRS-T545 | 2026-10-30 | chore | open | GLMZ P3 02 Pixel: its thread into the singular point | — |
+| PRS-T546 | 2026-10-30 | chore | open | GLMZ P3 02 Pixel: Kyle's touch | — |
+| PRS-T547 | 2026-10-30 | chore | open | GLMZ P3 02 Pixel: villain ambiguity | — |
+| PRS-T548 | 2026-10-30 | chore | open | GLMZ P3 02 Pixel: lowest low and highest high | — |
+| PRS-T549 | 2026-10-30 | chore | open | GLMZ P3 02 Pixel: neon action is earned | — |
+| PRS-T550 | 2026-10-30 | chore | open | GLMZ P3 02 Pixel: one diaspora on the street | — |
+| PRS-T551 | 2026-10-30 | chore | open | GLMZ P3 02 Pixel: machine minds and the strays | — |
+| PRS-T552 | 2026-10-30 | chore | open | GLMZ P3 02 Pixel: apply the Phase 1 world canon | — |
+| PRS-T553 | 2026-10-30 | chore | open | GLMZ P3 03 Testament: its thread into the singular point | — |
+| PRS-T554 | 2026-10-30 | chore | open | GLMZ P3 03 Testament: Kyle's touch | — |
+| PRS-T555 | 2026-10-30 | chore | open | GLMZ P3 03 Testament: villain ambiguity | — |
+| PRS-T556 | 2026-10-30 | chore | open | GLMZ P3 03 Testament: lowest low and highest high | — |
+| PRS-T557 | 2026-10-30 | chore | open | GLMZ P3 03 Testament: neon action is earned | — |
+| PRS-T558 | 2026-10-30 | chore | open | GLMZ P3 03 Testament: one diaspora on the street | — |
+| PRS-T559 | 2026-10-30 | chore | open | GLMZ P3 03 Testament: machine minds and the strays | — |
+| PRS-T560 | 2026-10-30 | chore | open | GLMZ P3 03 Testament: apply the Phase 1 world canon | — |
+| PRS-T561 | 2026-10-30 | chore | open | GLMZ P3 04 Attendance: its thread into the singular point | — |
+| PRS-T562 | 2026-10-30 | chore | open | GLMZ P3 04 Attendance: Kyle's touch | — |
+| PRS-T563 | 2026-10-30 | chore | open | GLMZ P3 04 Attendance: villain ambiguity | — |
+| PRS-T564 | 2026-10-30 | chore | open | GLMZ P3 04 Attendance: lowest low and highest high | — |
+| PRS-T565 | 2026-10-30 | chore | open | GLMZ P3 04 Attendance: neon action is earned | — |
+| PRS-T566 | 2026-10-30 | chore | open | GLMZ P3 04 Attendance: one diaspora on the street | — |
+| PRS-T567 | 2026-10-30 | chore | open | GLMZ P3 04 Attendance: machine minds and the strays | — |
+| PRS-T568 | 2026-10-30 | chore | open | GLMZ P3 04 Attendance: apply the Phase 1 world canon | — |
+| PRS-T569 | 2026-10-30 | chore | open | GLMZ P3 05 Between the Lines: its thread into the singular point | — |
+| PRS-T570 | 2026-10-30 | chore | open | GLMZ P3 05 Between the Lines: Kyle's touch | — |
+| PRS-T571 | 2026-10-30 | chore | open | GLMZ P3 05 Between the Lines: villain ambiguity | — |
+| PRS-T572 | 2026-10-30 | chore | open | GLMZ P3 05 Between the Lines: lowest low and highest high | — |
+| PRS-T573 | 2026-10-30 | chore | open | GLMZ P3 05 Between the Lines: neon action is earned | — |
+| PRS-T574 | 2026-10-30 | chore | open | GLMZ P3 05 Between the Lines: one diaspora on the street | — |
+| PRS-T575 | 2026-10-30 | chore | open | GLMZ P3 05 Between the Lines: machine minds and the strays | — |
+| PRS-T576 | 2026-10-30 | chore | open | GLMZ P3 05 Between the Lines: apply the Phase 1 world canon | — |
+| PRS-T577 | 2026-10-30 | chore | open | GLMZ P3 06 Death Whispers in a Cat's Ear: its thread into the singular point | — |
+| PRS-T578 | 2026-10-30 | chore | open | GLMZ P3 06 Death Whispers in a Cat's Ear: Kyle's touch | — |
+| PRS-T579 | 2026-10-30 | chore | open | GLMZ P3 06 Death Whispers in a Cat's Ear: villain ambiguity | — |
+| PRS-T580 | 2026-10-30 | chore | open | GLMZ P3 06 Death Whispers in a Cat's Ear: lowest low and highest high | — |
+| PRS-T581 | 2026-10-30 | chore | open | GLMZ P3 06 Death Whispers in a Cat's Ear: neon action is earned | — |
+| PRS-T582 | 2026-10-30 | chore | open | GLMZ P3 06 Death Whispers in a Cat's Ear: one diaspora on the street | — |
+| PRS-T583 | 2026-10-30 | chore | open | GLMZ P3 06 Death Whispers in a Cat's Ear: machine minds and the strays | — |
+| PRS-T584 | 2026-10-30 | chore | open | GLMZ P3 06 Death Whispers in a Cat's Ear: apply the Phase 1 world canon | — |
+| PRS-T585 | 2026-10-30 | chore | open | GLMZ P3 07 Critical Mass: its thread into the singular point | — |
+| PRS-T586 | 2026-10-30 | chore | open | GLMZ P3 07 Critical Mass: Kyle's touch | — |
+| PRS-T587 | 2026-10-30 | chore | open | GLMZ P3 07 Critical Mass: villain ambiguity | — |
+| PRS-T588 | 2026-10-30 | chore | open | GLMZ P3 07 Critical Mass: lowest low and highest high | — |
+| PRS-T589 | 2026-10-30 | chore | open | GLMZ P3 07 Critical Mass: neon action is earned | — |
+| PRS-T590 | 2026-10-30 | chore | open | GLMZ P3 07 Critical Mass: one diaspora on the street | — |
+| PRS-T591 | 2026-10-30 | chore | open | GLMZ P3 07 Critical Mass: machine minds and the strays | — |
+| PRS-T592 | 2026-10-30 | chore | open | GLMZ P3 07 Critical Mass: apply the Phase 1 world canon | — |
+| PRS-T593 | 2026-10-30 | chore | open | GLMZ P3 08 The Long Cut: its thread into the singular point | — |
+| PRS-T594 | 2026-10-30 | chore | open | GLMZ P3 08 The Long Cut: Kyle's touch | — |
+| PRS-T595 | 2026-10-30 | chore | open | GLMZ P3 08 The Long Cut: villain ambiguity | — |
+| PRS-T596 | 2026-10-30 | chore | open | GLMZ P3 08 The Long Cut: lowest low and highest high | — |
+| PRS-T597 | 2026-10-30 | chore | open | GLMZ P3 08 The Long Cut: neon action is earned | — |
+| PRS-T598 | 2026-10-30 | chore | open | GLMZ P3 08 The Long Cut: one diaspora on the street | — |
+| PRS-T599 | 2026-10-30 | chore | open | GLMZ P3 08 The Long Cut: machine minds and the strays | — |
+| PRS-T600 | 2026-10-30 | chore | open | GLMZ P3 08 The Long Cut: apply the Phase 1 world canon | — |
+| PRS-T601 | 2026-10-30 | chore | open | GLMZ P3 09 Sparrow: its thread into the singular point | — |
+| PRS-T602 | 2026-10-30 | chore | open | GLMZ P3 09 Sparrow: Kyle's touch | — |
+| PRS-T603 | 2026-10-30 | chore | open | GLMZ P3 09 Sparrow: villain ambiguity | — |
+| PRS-T604 | 2026-10-30 | chore | open | GLMZ P3 09 Sparrow: lowest low and highest high | — |
+| PRS-T605 | 2026-10-30 | chore | open | GLMZ P3 09 Sparrow: neon action is earned | — |
+| PRS-T606 | 2026-10-30 | chore | open | GLMZ P3 09 Sparrow: one diaspora on the street | — |
+| PRS-T607 | 2026-10-30 | chore | open | GLMZ P3 09 Sparrow: machine minds and the strays | — |
+| PRS-T608 | 2026-10-30 | chore | open | GLMZ P3 09 Sparrow: apply the Phase 1 world canon | — |
+| PRS-T609 | 2026-10-30 | chore | open | GLMZ P3 10 Magenta & Gunmetal: its thread into the singular point | — |
+| PRS-T610 | 2026-10-30 | chore | open | GLMZ P3 10 Magenta & Gunmetal: Kyle's touch | — |
+| PRS-T611 | 2026-10-30 | chore | open | GLMZ P3 10 Magenta & Gunmetal: villain ambiguity | — |
+| PRS-T612 | 2026-10-30 | chore | open | GLMZ P3 10 Magenta & Gunmetal: lowest low and highest high | — |
+| PRS-T613 | 2026-10-30 | chore | open | GLMZ P3 10 Magenta & Gunmetal: neon action is earned | — |
+| PRS-T614 | 2026-10-30 | chore | open | GLMZ P3 10 Magenta & Gunmetal: one diaspora on the street | — |
+| PRS-T615 | 2026-10-30 | chore | open | GLMZ P3 10 Magenta & Gunmetal: machine minds and the strays | — |
+| PRS-T616 | 2026-10-30 | chore | open | GLMZ P3 10 Magenta & Gunmetal: apply the Phase 1 world canon | — |
+| PRS-T617 | 2026-10-30 | chore | open | GLMZ P3 11 Vultures at the Door: its thread into the singular point | — |
+| PRS-T618 | 2026-10-30 | chore | open | GLMZ P3 11 Vultures at the Door: Kyle's touch | — |
+| PRS-T619 | 2026-10-30 | chore | open | GLMZ P3 11 Vultures at the Door: villain ambiguity | — |
+| PRS-T620 | 2026-10-30 | chore | open | GLMZ P3 11 Vultures at the Door: lowest low and highest high | — |
+| PRS-T621 | 2026-10-30 | chore | open | GLMZ P3 11 Vultures at the Door: neon action is earned | — |
+| PRS-T622 | 2026-10-30 | chore | open | GLMZ P3 11 Vultures at the Door: one diaspora on the street | — |
+| PRS-T623 | 2026-10-30 | chore | open | GLMZ P3 11 Vultures at the Door: machine minds and the strays | — |
+| PRS-T624 | 2026-10-30 | chore | open | GLMZ P3 11 Vultures at the Door: apply the Phase 1 world canon | — |
+| PRS-T625 | 2026-10-30 | chore | open | GLMZ P3 12 Bushido Coda: its thread into the singular point | — |
+| PRS-T626 | 2026-10-30 | chore | open | GLMZ P3 12 Bushido Coda: Kyle's touch | — |
+| PRS-T627 | 2026-10-30 | chore | open | GLMZ P3 12 Bushido Coda: villain ambiguity | — |
+| PRS-T628 | 2026-10-30 | chore | open | GLMZ P3 12 Bushido Coda: lowest low and highest high | — |
+| PRS-T629 | 2026-10-30 | chore | open | GLMZ P3 12 Bushido Coda: neon action is earned | — |
+| PRS-T630 | 2026-10-30 | chore | open | GLMZ P3 12 Bushido Coda: one diaspora on the street | — |
+| PRS-T631 | 2026-10-30 | chore | open | GLMZ P3 12 Bushido Coda: machine minds and the strays | — |
+| PRS-T632 | 2026-10-30 | chore | open | GLMZ P3 12 Bushido Coda: apply the Phase 1 world canon | — |
+| PRS-T633 | 2026-10-30 | chore | open | GLMZ P3 13 Underclan: its thread into the singular point | — |
+| PRS-T634 | 2026-10-30 | chore | open | GLMZ P3 13 Underclan: Kyle's touch | — |
+| PRS-T635 | 2026-10-30 | chore | open | GLMZ P3 13 Underclan: villain ambiguity | — |
+| PRS-T636 | 2026-10-30 | chore | open | GLMZ P3 13 Underclan: lowest low and highest high | — |
+| PRS-T637 | 2026-10-30 | chore | open | GLMZ P3 13 Underclan: neon action is earned | — |
+| PRS-T638 | 2026-10-30 | chore | open | GLMZ P3 13 Underclan: one diaspora on the street | — |
+| PRS-T639 | 2026-10-30 | chore | open | GLMZ P3 13 Underclan: machine minds and the strays | — |
+| PRS-T640 | 2026-10-30 | chore | open | GLMZ P3 13 Underclan: apply the Phase 1 world canon | — |
+| PRS-T641 | 2026-10-30 | chore | open | GLMZ P3 14 The Way Up: its thread into the singular point | — |
+| PRS-T642 | 2026-10-30 | chore | open | GLMZ P3 14 The Way Up: Kyle's touch | — |
+| PRS-T643 | 2026-10-30 | chore | open | GLMZ P3 14 The Way Up: villain ambiguity | — |
+| PRS-T644 | 2026-10-30 | chore | open | GLMZ P3 14 The Way Up: lowest low and highest high | — |
+| PRS-T645 | 2026-10-30 | chore | open | GLMZ P3 14 The Way Up: neon action is earned | — |
+| PRS-T646 | 2026-10-30 | chore | open | GLMZ P3 14 The Way Up: one diaspora on the street | — |
+| PRS-T647 | 2026-10-30 | chore | open | GLMZ P3 14 The Way Up: machine minds and the strays | — |
+| PRS-T648 | 2026-10-30 | chore | open | GLMZ P3 14 The Way Up: apply the Phase 1 world canon | — |
+| PRS-T649 | 2026-10-30 | chore | open | GLMZ P3 15 Neon & Rust: its thread into the singular point | — |
+| PRS-T650 | 2026-10-30 | chore | open | GLMZ P3 15 Neon & Rust: Kyle's touch | — |
+| PRS-T651 | 2026-10-30 | chore | open | GLMZ P3 15 Neon & Rust: villain ambiguity | — |
+| PRS-T652 | 2026-10-30 | chore | open | GLMZ P3 15 Neon & Rust: lowest low and highest high | — |
+| PRS-T653 | 2026-10-30 | chore | open | GLMZ P3 15 Neon & Rust: neon action is earned | — |
+| PRS-T654 | 2026-10-30 | chore | open | GLMZ P3 15 Neon & Rust: one diaspora on the street | — |
+| PRS-T655 | 2026-10-30 | chore | open | GLMZ P3 15 Neon & Rust: machine minds and the strays | — |
+| PRS-T656 | 2026-10-30 | chore | open | GLMZ P3 15 Neon & Rust: apply the Phase 1 world canon | — |
+| PRS-T657 | 2026-10-30 | chore | open | GLMZ P3 16 Crimson & Chrome: its thread into the singular point | — |
+| PRS-T658 | 2026-10-30 | chore | open | GLMZ P3 16 Crimson & Chrome: Kyle's touch | — |
+| PRS-T659 | 2026-10-30 | chore | open | GLMZ P3 16 Crimson & Chrome: villain ambiguity | — |
+| PRS-T660 | 2026-10-30 | chore | open | GLMZ P3 16 Crimson & Chrome: lowest low and highest high | — |
+| PRS-T661 | 2026-10-30 | chore | open | GLMZ P3 16 Crimson & Chrome: neon action is earned | — |
+| PRS-T662 | 2026-10-30 | chore | open | GLMZ P3 16 Crimson & Chrome: one diaspora on the street | — |
+| PRS-T663 | 2026-10-30 | chore | open | GLMZ P3 16 Crimson & Chrome: machine minds and the strays | — |
+| PRS-T664 | 2026-10-30 | chore | open | GLMZ P3 16 Crimson & Chrome: apply the Phase 1 world canon | — |
+| PRS-T665 | 2026-10-30 | chore | open | GLMZ P3 17 The Way Down: its thread into the singular point | — |
+| PRS-T666 | 2026-10-30 | chore | open | GLMZ P3 17 The Way Down: Kyle's touch | — |
+| PRS-T667 | 2026-10-30 | chore | open | GLMZ P3 17 The Way Down: villain ambiguity | — |
+| PRS-T668 | 2026-10-30 | chore | open | GLMZ P3 17 The Way Down: lowest low and highest high | — |
+| PRS-T669 | 2026-10-30 | chore | open | GLMZ P3 17 The Way Down: neon action is earned | — |
+| PRS-T670 | 2026-10-30 | chore | open | GLMZ P3 17 The Way Down: one diaspora on the street | — |
+| PRS-T671 | 2026-10-30 | chore | open | GLMZ P3 17 The Way Down: machine minds and the strays | — |
+| PRS-T672 | 2026-10-30 | chore | open | GLMZ P3 17 The Way Down: apply the Phase 1 world canon | — |
+| PRS-T673 | 2026-10-30 | chore | open | GLMZ P3 18 Mnemosync: its thread into the singular point | — |
+| PRS-T674 | 2026-10-30 | chore | open | GLMZ P3 18 Mnemosync: Kyle's touch | — |
+| PRS-T675 | 2026-10-30 | chore | open | GLMZ P3 18 Mnemosync: villain ambiguity | — |
+| PRS-T676 | 2026-10-30 | chore | open | GLMZ P3 18 Mnemosync: lowest low and highest high | — |
+| PRS-T677 | 2026-10-30 | chore | open | GLMZ P3 18 Mnemosync: neon action is earned | — |
+| PRS-T678 | 2026-10-30 | chore | open | GLMZ P3 18 Mnemosync: one diaspora on the street | — |
+| PRS-T679 | 2026-10-30 | chore | open | GLMZ P3 18 Mnemosync: machine minds and the strays | — |
+| PRS-T680 | 2026-10-30 | chore | open | GLMZ P3 18 Mnemosync: apply the Phase 1 world canon | — |
+| PRS-T681 | 2026-10-30 | chore | open | GLMZ P3 19 Read the Room: its thread into the singular point | — |
+| PRS-T682 | 2026-10-30 | chore | open | GLMZ P3 19 Read the Room: Kyle's touch | — |
+| PRS-T683 | 2026-10-30 | chore | open | GLMZ P3 19 Read the Room: villain ambiguity | — |
+| PRS-T684 | 2026-10-30 | chore | open | GLMZ P3 19 Read the Room: lowest low and highest high | — |
+| PRS-T685 | 2026-10-30 | chore | open | GLMZ P3 19 Read the Room: neon action is earned | — |
+| PRS-T686 | 2026-10-30 | chore | open | GLMZ P3 19 Read the Room: one diaspora on the street | — |
+| PRS-T687 | 2026-10-30 | chore | open | GLMZ P3 19 Read the Room: machine minds and the strays | — |
+| PRS-T688 | 2026-10-30 | chore | open | GLMZ P3 19 Read the Room: apply the Phase 1 world canon | — |
+| PRS-T689 | 2026-10-30 | chore | open | GLMZ P3 20 Pieces: its thread into the singular point | — |
+| PRS-T690 | 2026-10-30 | chore | open | GLMZ P3 20 Pieces: Kyle's touch | — |
+| PRS-T691 | 2026-10-30 | chore | open | GLMZ P3 20 Pieces: villain ambiguity | — |
+| PRS-T692 | 2026-10-30 | chore | open | GLMZ P3 20 Pieces: lowest low and highest high | — |
+| PRS-T693 | 2026-10-30 | chore | open | GLMZ P3 20 Pieces: neon action is earned | — |
+| PRS-T694 | 2026-10-30 | chore | open | GLMZ P3 20 Pieces: one diaspora on the street | — |
+| PRS-T695 | 2026-10-30 | chore | open | GLMZ P3 20 Pieces: machine minds and the strays | — |
+| PRS-T696 | 2026-10-30 | chore | open | GLMZ P3 20 Pieces: apply the Phase 1 world canon | — |
+| PRS-T697 | 2026-10-30 | chore | open | GLMZ P3 21 Wells: its thread into the singular point | — |
+| PRS-T698 | 2026-10-30 | chore | open | GLMZ P3 21 Wells: Kyle's touch | — |
+| PRS-T699 | 2026-10-30 | chore | open | GLMZ P3 21 Wells: villain ambiguity | — |
+| PRS-T700 | 2026-10-30 | chore | open | GLMZ P3 21 Wells: lowest low and highest high | — |
+| PRS-T701 | 2026-10-30 | chore | open | GLMZ P3 21 Wells: neon action is earned | — |
+| PRS-T702 | 2026-10-30 | chore | open | GLMZ P3 21 Wells: one diaspora on the street | — |
+| PRS-T703 | 2026-10-30 | chore | open | GLMZ P3 21 Wells: machine minds and the strays | — |
+| PRS-T704 | 2026-10-30 | chore | open | GLMZ P3 21 Wells: apply the Phase 1 world canon | — |
+| PRS-T705 | 2026-10-30 | chore | open | GLMZ P3 22 The Ur: its thread into the singular point | — |
+| PRS-T706 | 2026-10-30 | chore | open | GLMZ P3 22 The Ur: Kyle's touch | — |
+| PRS-T707 | 2026-10-30 | chore | open | GLMZ P3 22 The Ur: villain ambiguity | — |
+| PRS-T708 | 2026-10-30 | chore | open | GLMZ P3 22 The Ur: lowest low and highest high | — |
+| PRS-T709 | 2026-10-30 | chore | open | GLMZ P3 22 The Ur: neon action is earned | — |
+| PRS-T710 | 2026-10-30 | chore | open | GLMZ P3 22 The Ur: one diaspora on the street | — |
+| PRS-T711 | 2026-10-30 | chore | open | GLMZ P3 22 The Ur: machine minds and the strays | — |
+| PRS-T712 | 2026-10-30 | chore | open | GLMZ P3 22 The Ur: apply the Phase 1 world canon | — |
+| PRS-T713 | 2026-10-30 | fix | open | GLMZ P3 Testament: Brandt is 'a retired man, no division behind him' yet commands operators all hearing day | — |
+| PRS-T714 | 2026-10-30 | fix | open | GLMZ P3 Testament: Declan sits at a side table the whole testimony but the room is described empty (pos 318-324) until pos 409 | — |
+| PRS-T715 | 2026-10-30 | fix | open | GLMZ P3 Testament: Bear owes 'nothing' on the augmentation (pos 202) vs fourteen months of interface debt (pos 139) | — |
+| PRS-T716 | 2026-10-30 | fix | open | GLMZ P3 Testament: stray question marks on statements at pos 20 ('what Tuesday is?') and pos 543 | — |
+| PRS-T717 | 2026-10-30 | fix | open | GLMZ P3 The Long Cut: Femi's 'your first of your own' (#10478) vs the clinic Stash only worked days at (#10038) | — |
+| PRS-T718 | 2026-10-30 | fix | open | GLMZ P3 The Long Cut: Chit's coordinates 'wrong by four blocks' yet Scalpel goes straight there; Stash 'knows at once' what is past the junction (#10493/#10507) | — |
+| PRS-T719 | 2026-10-30 | fix | open | GLMZ P3 The Long Cut: 'borrowed room... guest overlay Femi borrowed' repeats borrowed (#10728) | — |
+| PRS-T720 | 2026-10-30 | fix | open | GLMZ P3 Read the Room: the upgrade the author asked for: Faith pulls Ethan into the bathroom, the psionic link, he goes back for the band, and why the attackers came that night | — |
+| PRS-T721 | 2026-10-30 | fix | open | GLMZ P3 Pieces: place the Fenris album interludes (prophetic lyric beats) between scenes | — |
+| PRS-T722 | 2026-10-30 | fix | open | GLMZ P3 Wells: place the Fenris album 2 interludes, and write the owed canon splices (Wes ~10, Elias 17 years indoors, Lord Long Legs three-legged brass-gold, Teo 34) | — |
+| PRS-T723 | 2026-10-30 | fix | open | GLMZ P3 The Ur: place the Fenris album 3 interludes between scenes | — |
+| PRS-T724 | 2026-10-30 | fix | open | GLMZ P3 Pieces: Cutout's twin pistols: the record says he left one in The Way Down, Cyberocracy gives him both | — |
+| PRS-T725 | 2026-10-30 | fix | open | GLMZ P3 The Ur: the Manowar record (collar acoustic weapon, 'Borys') does not match Bear's worn shielded frame | — |
+| PRS-T726 | 2026-10-30 | feature | open | GLMZ P3 Fenris: cut 'Fenris - Self Titled' to 11 tracks and write albums 2 and 3, prophetic of Wells and The Ur | — |
+| PRS-T727 | 2026-10-30 | fix | open | GLMZ P3 Sparrow: the Tunis platform scene: confirm it is passing, or bring it home to the GLMZ | — |
+| PRS-T728 | 2026-10-30 | fix | open | GLMZ P3 Magenta & Gunmetal: #7152 'City police intelligence, dissolved 2208' vs the 2096 transfer | — |
+| PRS-T729 | 2026-10-30 | chore | open | GLMZ P4 weave: bind Attendance's season plant (#9324 red line through a circle) to its Cyberocracy payoff with a plant/payoff edge | — |
+| PRS-T730 | 2026-10-30 | chore | open | GLMZ P4 weave: bind Mnemosync's season plant (#8100 Continuity Office) to its Cyberocracy payoff with a plant/payoff edge | — |
+| PRS-T731 | 2026-10-30 | chore | open | GLMZ P4 weave: bind Steppin' Razor's season plant (#8668 606/NET) to its Cyberocracy payoff with a plant/payoff edge | — |
+| PRS-T732 | 2026-10-30 | chore | open | GLMZ P4 weave: bind Critical Mass's season plant (#15605) to its Cyberocracy payoff with a plant/payoff edge | — |
+| PRS-T733 | 2026-10-30 | chore | open | GLMZ P4 weave: bind Testament's season plant (#9915) to its Cyberocracy payoff with a plant/payoff edge | — |
+| PRS-T734 | 2026-10-30 | chore | open | GLMZ P4 weave: bind The Way Down's season plant (#6740) to its Cyberocracy payoff with a plant/payoff edge | — |
+| PRS-T735 | 2026-10-30 | chore | open | GLMZ P4 weave: bind Vultures at the Door's season plant (#21810) to its Cyberocracy payoff with a plant/payoff edge | — |
+| PRS-T736 | 2026-10-30 | chore | open | GLMZ P4 weave: bind Between the Lines's season plant (#22747) to its Cyberocracy payoff with a plant/payoff edge | — |
+| PRS-T737 | 2026-10-30 | chore | open | GLMZ P4 weave: bind Sparrow's season plant (#4223) to its Cyberocracy payoff with a plant/payoff edge | — |
+| PRS-T738 | 2026-10-30 | chore | open | GLMZ P4 weave: bind Read the Room's season plant (#6053) to its Cyberocracy payoff with a plant/payoff edge | — |
+| PRS-T739 | 2026-10-30 | chore | open | GLMZ P4 weave: bind Underclan's season plant (#23774 the Long Fall) to its Cyberocracy payoff with a plant/payoff edge | — |
+| PRS-T740 | 2026-10-30 | chore | open | GLMZ P4 weave: recurring objects | — |
+| PRS-T741 | 2026-10-30 | chore | open | GLMZ P4 weave: recurring places | — |
+| PRS-T742 | 2026-10-30 | chore | open | GLMZ P4 weave: cross-book character appearances | — |
+| PRS-T743 | 2026-10-30 | chore | open | GLMZ P4 weave: the season timeline end-to-end | — |
+| PRS-T744 | 2026-10-30 | chore | open | GLMZ P4 weave: every book's last beat points forward | — |
+| PRS-T745 | 2026-10-30 | chore | open | GLMZ P4 weave: Eat the Rich across the season | — |
+| PRS-T746 | 2026-10-30 | chore | open | GLMZ P4 weave: the machine emergence across the season | — |
+| PRS-T747 | 2026-10-30 | chore | open | GLMZ P4 weave: love triangles across the season | — |
+| PRS-T748 | 2026-10-30 | chore | open | GLMZ P5 01 Steppin' Razor: final full read (F5), every beat, fixes by hand | — |
+| PRS-T749 | 2026-10-30 | chore | open | GLMZ P5 01 Steppin' Razor: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T750 | 2026-10-30 | chore | open | GLMZ P5 02 Pixel: final full read (F5), every beat, fixes by hand | — |
+| PRS-T751 | 2026-10-30 | chore | open | GLMZ P5 02 Pixel: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T752 | 2026-10-30 | chore | open | GLMZ P5 03 Testament: final full read (F5), every beat, fixes by hand | — |
+| PRS-T753 | 2026-10-30 | chore | open | GLMZ P5 03 Testament: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T754 | 2026-10-30 | chore | open | GLMZ P5 04 Attendance: final full read (F5), every beat, fixes by hand | — |
+| PRS-T755 | 2026-10-30 | chore | open | GLMZ P5 04 Attendance: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T756 | 2026-10-30 | chore | open | GLMZ P5 05 Between the Lines: final full read (F5), every beat, fixes by hand | — |
+| PRS-T757 | 2026-10-30 | chore | open | GLMZ P5 05 Between the Lines: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T758 | 2026-10-30 | chore | open | GLMZ P5 06 Death Whispers in a Cat's Ear: final full read (F5), every beat, fixes by hand | — |
+| PRS-T759 | 2026-10-30 | chore | open | GLMZ P5 06 Death Whispers in a Cat's Ear: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T760 | 2026-10-30 | chore | open | GLMZ P5 07 Critical Mass: final full read (F5), every beat, fixes by hand | — |
+| PRS-T761 | 2026-10-30 | chore | open | GLMZ P5 07 Critical Mass: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T762 | 2026-10-30 | chore | open | GLMZ P5 08 The Long Cut: final full read (F5), every beat, fixes by hand | — |
+| PRS-T763 | 2026-10-30 | chore | open | GLMZ P5 08 The Long Cut: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T764 | 2026-10-30 | chore | open | GLMZ P5 09 Sparrow: final full read (F5), every beat, fixes by hand | — |
+| PRS-T765 | 2026-10-30 | chore | open | GLMZ P5 09 Sparrow: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T766 | 2026-10-30 | chore | open | GLMZ P5 10 Magenta & Gunmetal: final full read (F5), every beat, fixes by hand | — |
+| PRS-T767 | 2026-10-30 | chore | open | GLMZ P5 10 Magenta & Gunmetal: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T768 | 2026-10-30 | chore | open | GLMZ P5 11 Vultures at the Door: final full read (F5), every beat, fixes by hand | — |
+| PRS-T769 | 2026-10-30 | chore | open | GLMZ P5 11 Vultures at the Door: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T770 | 2026-10-30 | chore | open | GLMZ P5 12 Bushido Coda: final full read (F5), every beat, fixes by hand | — |
+| PRS-T771 | 2026-10-30 | chore | open | GLMZ P5 12 Bushido Coda: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T772 | 2026-10-30 | chore | open | GLMZ P5 13 Underclan: final full read (F5), every beat, fixes by hand | — |
+| PRS-T773 | 2026-10-30 | chore | open | GLMZ P5 13 Underclan: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T774 | 2026-10-30 | chore | open | GLMZ P5 14 The Way Up: final full read (F5), every beat, fixes by hand | — |
+| PRS-T775 | 2026-10-30 | chore | open | GLMZ P5 14 The Way Up: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T776 | 2026-10-30 | chore | open | GLMZ P5 15 Neon & Rust: final full read (F5), every beat, fixes by hand | — |
+| PRS-T777 | 2026-10-30 | chore | open | GLMZ P5 15 Neon & Rust: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T778 | 2026-10-30 | chore | open | GLMZ P5 16 Crimson & Chrome: final full read (F5), every beat, fixes by hand | — |
+| PRS-T779 | 2026-10-30 | chore | open | GLMZ P5 16 Crimson & Chrome: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T780 | 2026-10-30 | chore | open | GLMZ P5 17 The Way Down: final full read (F5), every beat, fixes by hand | — |
+| PRS-T781 | 2026-10-30 | chore | open | GLMZ P5 17 The Way Down: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T782 | 2026-10-30 | chore | open | GLMZ P5 18 Mnemosync: final full read (F5), every beat, fixes by hand | — |
+| PRS-T783 | 2026-10-30 | chore | open | GLMZ P5 18 Mnemosync: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T784 | 2026-10-30 | chore | open | GLMZ P5 19 Read the Room: final full read (F5), every beat, fixes by hand | — |
+| PRS-T785 | 2026-10-30 | chore | open | GLMZ P5 19 Read the Room: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T786 | 2026-10-30 | chore | open | GLMZ P5 20 Pieces: final full read (F5), every beat, fixes by hand | — |
+| PRS-T787 | 2026-10-30 | chore | open | GLMZ P5 20 Pieces: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T788 | 2026-10-30 | chore | open | GLMZ P5 21 Wells: final full read (F5), every beat, fixes by hand | — |
+| PRS-T789 | 2026-10-30 | chore | open | GLMZ P5 21 Wells: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T790 | 2026-10-30 | chore | open | GLMZ P5 22 The Ur: final full read (F5), every beat, fixes by hand | — |
+| PRS-T791 | 2026-10-30 | chore | open | GLMZ P5 22 The Ur: records batch (F1), summaries current (F3), names resolved (F4) | — |
+| PRS-T792 | 2026-10-30 | chore | open | GLMZ P5: Season 1 close: every book through Phase 5, then the author decides exports | — |
+| PRS-T793 | 2026-10-30 | chore | open | GLMZ P1 geography: audit every scene set outside the GLMZ in all 22 books (Tunis platform, Rotterdam lane, others) | — |
+| PRS-T794 | 2026-10-30 | chore | closed | GLMZ: rename the Austin district to Cicero in every book and record (author 2026-10-30) | 26e41bcd3 |
+| PRS-T795 | 2026-10-30 | chore | closed | GLMZ P1 world: the vertical city (The Deep, skyless Seams under the decks, Tiers 1-5 all rich, aeroblocs) as law and world facts | laws 01a18e63, 01a18e63-cae7; world facts rewritten; book tickets PRS-T796..T817 |
+| PRS-T796 | 2026-10-30 | chore | open | GLMZ P3 Steppin' Razor: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T797 | 2026-10-30 | chore | open | GLMZ P3 Pixel: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T798 | 2026-10-30 | chore | open | GLMZ P3 Testament: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T799 | 2026-10-30 | chore | open | GLMZ P3 Attendance: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T800 | 2026-10-30 | chore | open | GLMZ P3 Between the Lines: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T801 | 2026-10-30 | chore | open | GLMZ P3 Death Whispers in a Cat's Ear: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T802 | 2026-10-30 | chore | open | GLMZ P3 Critical Mass: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T803 | 2026-10-30 | chore | open | GLMZ P3 The Long Cut: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T804 | 2026-10-30 | chore | open | GLMZ P3 Sparrow: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T805 | 2026-10-30 | chore | open | GLMZ P3 Magenta & Gunmetal: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T806 | 2026-10-30 | chore | open | GLMZ P3 Vultures at the Door: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T807 | 2026-10-30 | chore | open | GLMZ P3 Bushido Coda: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T808 | 2026-10-30 | chore | open | GLMZ P3 Underclan: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T809 | 2026-10-30 | chore | open | GLMZ P3 The Way Up: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T810 | 2026-10-30 | chore | open | GLMZ P3 Neon & Rust: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T811 | 2026-10-30 | chore | open | GLMZ P3 Crimson & Chrome: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T812 | 2026-10-30 | chore | open | GLMZ P3 The Way Down: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T813 | 2026-10-30 | chore | open | GLMZ P3 Mnemosync: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T814 | 2026-10-30 | chore | open | GLMZ P3 Read the Room: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T815 | 2026-10-30 | chore | open | GLMZ P3 Pieces: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T816 | 2026-10-30 | chore | open | GLMZ P3 Wells: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T817 | 2026-10-30 | chore | open | GLMZ P3 The Ur: the vertical city (Tiers as class and level, skyless streets under the tiers, footprint patrols) | — |
+| PRS-T818 | 2026-10-30 | chore | open | GLMZ P1 world: give every CorpoNation a Tier (ground work low; parent one Tier above its subsidiaries) | — |
+| PRS-T819 | 2026-10-30 | feature | closed | CorpoNation hierarchy schema: a real Tier field, ownership tables down to ground level, private forces, and the chain/tree/forces queries | 490b6a5ab |
+| PRS-T820 | 2026-10-30 | chore | open | GLMZ P1 world: clear the old Tier and Zone usages out of the CorpoNation records | — |
+| PRS-T821 | 2026-10-30 | feature | closed | GLMZ: no two unrelated characters share a surname; rename every duplicate, unseen characters first | 1c8204c73 |
+| PRS-T822 | 2026-10-30 | feature | closed | GLMZ surnames, part 2: synthetic twins, performers, document names, and the draft-book clashes | 145fc8408 |
+| PRS-T823 | 2026-10-30 | feature | wont-do | Extract Prose's settings into a Vault Dashboard settings-tab package | superseded by Epic E redesign: target MindAttic.Vault.Desktop, not Vault Dashboard |
+| PRS-T824 | 2026-10-30 | chore | wont-do | Remove Prose's own settings page and wire its cog to open Vault Dashboard instead | superseded by Epic E redesign: target MindAttic.Vault.Desktop, not Vault Dashboard |
+| PRS-T825 | 2026-10-30 | feature | wont-do | Adapt Prose's settings component to the Components settings-tab contract | withdrawn: plan rejected by owner 2026-10-31, see M.VALT-T26 |
+| PRS-T826 | 2026-10-30 | chore | wont-do | Remove Prose's standalone settings route, wire its cog to MindAttic.Vault.Desktop | withdrawn: plan rejected by owner 2026-10-31, see M.VALT-T26 |
+| PRS-T827 | 2026-10-30 | fix | open | Fenris drummer record shows 'Brennan Drum' in the character list but 'Brennan Dunnit' on the entity, with the android Felix Drum's description | — |
+| PRS-T828 | 2026-10-30 | feature | closed | Fenris's drummer is Felix Drum, a synthetic person: one record, prose in Read the Room and the Cyberocracy books | 2456303e1 |
+| PRS-T829 | 2026-10-31 | feature | closed | LAMP: move Prose's app-level settings and keys to MindAttic.Vault.Desktop (manifest, LoadOrSeed, shared named keys, cog opens Vault) | d50cdb715 LampSettingsTests |
+| PRS-T830 | 2026-10-31 | fix | closed | GripePassServiceGroundQuoteTests.ShortQuote_SkipsGroundingCheck_TrustsCitedBeat fails on main (seen in the PRS-T829 full run; not in files LAMP touched) | 9979f9a35 GripePassServiceGroundQuoteTests (7/7) |
+| PRS-T831 | 2026-10-31 | fix | closed | NoSameTypeNameCollisions fails: two characters named 'emile amoako' in the world data | PRS-T829 |
+| PRS-T832 | 2026-10-31 | fix | closed | Prose tests rewrite the real %LOCALAPPDATA%\MindAttic\Prose\Settings.json: SettingsService.DefaultStorageDirectory (the DI singleton's folder) ignores MINDATTIC_VAULT_LOCAL_ROOT, so the suite's Vault isolation doesn't cover it; resolve it through VaultPaths.LocalApp (found by M.VALT-T67) | 9c1233d67 |
+| PRS-T833 | 2026-10-31 | chore | open | Redeploy Prose Hub (run.ps1) so the running Hub carries PRS-T829 LAMP (Writer cog opens Vault) and PRS-T832 | PRS-T829 |
+| PRS-T834 | 2026-10-31 | fix | closed | Entity merge (DuplicateEntityScanService.MergeAsync) leaves CharacterRelationships.TargetEntityId pointing at the deleted loser and keeps the loser's CharacterReadModels row: soft references with no FK | 3677eb509 |
+| PRS-T835 | 2026-10-31 | chore | closed | Redeploy Prose Hub so the running Hub carries PRS-T834 (merge moves relationship links and drops the read-model copy) | Hub redeployed with 3677eb509 (PRS-T834); up on 127.0.0.1:5900 |
+| PRS-T836 | 2026-10-31 | fix | closed | NU1903: Prose.ObserverUi pulls Microsoft.AspNetCore.SignalR.Common 10.0.0, which has a known high-severity vulnerability (GHSA-334f-vvp4-7g6p); move to the patched version | 7408fc853; restore clean (no NU1903/NU1605), full Prose suite 3295 passed/18 skipped, Hub redeployed and reachable on 5900 |
+| PRS-T837 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
