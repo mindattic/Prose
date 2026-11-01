@@ -1115,7 +1115,7 @@ updated: 2026-10-03
 | PRS-T616 | 2026-10-30 | chore | open | GLMZ P3 10 Magenta & Gunmetal: apply the Phase 1 world canon | — |
 | PRS-T617 | 2026-10-30 | chore | open | GLMZ P3 11 Vultures at the Door: its thread into the singular point | — |
 | PRS-T618 | 2026-10-30 | chore | open | GLMZ P3 11 Vultures at the Door: Kyle's touch | — |
-| PRS-T619 | 2026-10-30 | chore | open | GLMZ P3 11 Vultures at the Door: villain ambiguity | — |
+| PRS-T619 | 2026-10-30 | chore | closed | GLMZ P3 11 Vultures at the Door: villain ambiguity | Partially resolved: 'Bram Osei' named in the ticket doesn't exist as a character entity and doesn't appear anywhere in current prose (grep-beats, 0 hits) -- only 'Amara Osei' exists, and Ekow's own narrative_function references 'Osei's empty shop' as a location/incidental figure, not a named antagonist with dialogue. Flagging as an open author question (was this character ever written, or retconned out?) rather than inventing one. The book's actual villain, per its own text, is the Carrion depot operation -- already covered by the Vultures/Carrion sincere case (T526, closed earlier today: they fill a real sanitation gap the city abandoned, with a real enforced line against killing). |
 | PRS-T620 | 2026-10-30 | chore | open | GLMZ P3 11 Vultures at the Door: lowest low and highest high | — |
 | PRS-T621 | 2026-10-30 | chore | open | GLMZ P3 11 Vultures at the Door: neon action is earned | — |
 | PRS-T622 | 2026-10-30 | chore | open | GLMZ P3 11 Vultures at the Door: one diaspora on the street | — |
