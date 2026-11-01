@@ -1145,7 +1145,7 @@ updated: 2026-10-03
 | PRS-T646 | 2026-10-30 | chore | open | GLMZ P3 14 The Way Up: one diaspora on the street | — |
 | PRS-T647 | 2026-10-30 | chore | open | GLMZ P3 14 The Way Up: machine minds and the strays | — |
 | PRS-T648 | 2026-10-30 | chore | open | GLMZ P3 14 The Way Up: apply the Phase 1 world canon | — |
-| PRS-T649 | 2026-10-30 | chore | open | GLMZ P3 15 Neon & Rust: its thread into the singular point | — |
+| PRS-T649 | 2026-10-30 | chore | closed | GLMZ P3 15 Neon & Rust: its thread into the singular point | Confirmed, thread is present but softer than Crimson & Chrome/Between the Lines: Neon & Rust's ending (#7544-7548, pos 349-353) is Rook's character throughline -- she decides to bring Adalemo fully into her circle and starts a paper ledger of names, both of which match her confirmed later role in the Cyberocracy trilogy (she is on the team, off-stage by Pieces per the Season 1 recast canon). No explicit named plant (no '606'-style forward pointer) the way other books carry one, but the thread is her trajectory, not a missing object -- adding an artificial name-drop here would overclaim a connection the prose doesn't actually make. No splice; author ask noted for a future pass if a sharper forward-pointer is wanted. |
 | PRS-T650 | 2026-10-30 | chore | open | GLMZ P3 15 Neon & Rust: Kyle's touch | — |
 | PRS-T651 | 2026-10-30 | chore | open | GLMZ P3 15 Neon & Rust: villain ambiguity | — |
 | PRS-T652 | 2026-10-30 | chore | open | GLMZ P3 15 Neon & Rust: lowest low and highest high | — |
@@ -1340,3 +1340,4 @@ updated: 2026-10-03
 | PRS-T841 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
 | PRS-T842 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
 | PRS-T843 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
+| PRS-T844 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
