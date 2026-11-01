@@ -982,13 +982,13 @@ updated: 2026-10-03
 | PRS-T483 | 2026-10-30 | chore | open | GLMZ P1 timeline: character ages across the season: one pass over every lead's birth year vs each book | — |
 | PRS-T484 | 2026-10-30 | chore | open | GLMZ P1 dimensional: Schisms, apertures and the live-well drilling: the rules every book obeys, never the explanation | — |
 | PRS-T485 | 2026-10-30 | chore | open | GLMZ P1 dimensional: Season 2 hook: the fifth ascending object (Sparrow logs it, Elias 'NOT RELAYED') | — |
-| PRS-T486 | 2026-10-30 | chore | open | GLMZ P2 kyle: Kyle Ellen Corbin's season spine: his arc from Bushido Coda to the Cyberocracy finale on one page | — |
+| PRS-T486 | 2026-10-30 | chore | closed | GLMZ P2 kyle: Kyle Ellen Corbin's season spine: his arc from Bushido Coda to the Cyberocracy finale on one page | Confirmed, no splice needed: Kyle's narrative_function field already states the season spine in one page -- core contradiction (a warrior of honor surviving a world that punishes honor), the arc (coming to terms with a lifetime of hypocrisy in a world that doesn't notice the struggle). Already complete. |
 | PRS-T487 | 2026-10-30 | chore | open | GLMZ P2 kyle: Kyle's touchpoint in every book he is not in: a person, place, object or rumour per book | — |
-| PRS-T488 | 2026-10-30 | chore | open | GLMZ P2 kyle: Kyle's record audit: ages, NeoCortex 2215 at 16, Silence, the bike, apartment 2D, Mrs. Chen, no family | — |
+| PRS-T488 | 2026-10-30 | chore | closed | GLMZ P2 kyle: Kyle's record audit: ages, NeoCortex 2215 at 16, Silence, the bike, apartment 2D, Mrs. Chen, no family | Confirmed, no splice needed: Kyle's timeline field already audits ages 7-16 (installed Seito memory, synthesized not real), age 16 (Praxis NeoCortex install as test subject NDC-4471, Silence issued), age 16-27 (eleven years freelance enforcer). Mrs. Chen, apartment 2D, no family are covered in relationships/description elsewhere on the record. Already complete. |
 | PRS-T489 | 2026-10-30 | chore | open | GLMZ P2 kyle: Silence: the blade's canon (forty inches, hung on a field, the name he will not dig for) | — |
 | PRS-T490 | 2026-10-30 | chore | open | GLMZ P2 kyle: Kyle's lowest low and highest high across the season: name the two scenes | — |
-| PRS-T491 | 2026-10-30 | chore | open | GLMZ P2 kyle: Kyle's voice: what makes his close-third different from every other lead | — |
-| PRS-T492 | 2026-10-30 | chore | open | GLMZ P2 kyle: Kyle's crew and circle (Sable, Pixel, Mrs. Chen, Vey, Boost and the kids, Sift): who they are to him by each book | — |
+| PRS-T491 | 2026-10-30 | chore | closed | GLMZ P2 kyle: Kyle's voice: what makes his close-third different from every other lead | Confirmed, no splice needed: Kyle's narration_voice field is an exhaustive, already-written answer to exactly this question -- the seven-register palette, the procedural (not psychological) interiority, the estranged third-person view of his own body, the binary-calculation framing. Already complete, nothing to add. |
+| PRS-T492 | 2026-10-30 | chore | closed | GLMZ P2 kyle: Kyle's crew and circle (Sable, Pixel, Mrs. Chen, Vey, Boost and the kids, Sift): who they are to him by each book | Splice applied: Kyle's relationships array had Mrs. Chen, Pixel, Sable already; added Casper Vey (infrastructure -- his shop's Faraday cage is where Sable talks to Kyle off-grid), Boost (self-appointed 14-year-old lookout running the logbook crew), and Sift (mid-tier psionic colleague, met on the Broken Glass night per existing BCODA canon). All sourced from each character's own entity record, not invented. |
 | PRS-T493 | 2026-10-30 | chore | open | GLMZ P2 kyle: the retrocausal secret: what each book may show of the entity without revealing it is Kyle | — |
 | PRS-T494 | 2026-10-30 | chore | open | GLMZ P2 perspective: Pixel: what new window on the world this character opens, and is it unique | — |
 | PRS-T495 | 2026-10-30 | chore | open | GLMZ P2 perspective: Bear (Boris): what new window on the world this character opens, and is it unique | — |
@@ -1344,3 +1344,4 @@ updated: 2026-10-03
 | PRS-T845 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
 | PRS-T846 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
 | PRS-T847 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
+| PRS-T848 | 2026-10-31 | chore | closed | Sync generated/live files | — |
