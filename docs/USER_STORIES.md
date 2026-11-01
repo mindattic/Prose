@@ -1153,7 +1153,7 @@ updated: 2026-10-03
 | PRS-T654 | 2026-10-30 | chore | open | GLMZ P3 15 Neon & Rust: one diaspora on the street | — |
 | PRS-T655 | 2026-10-30 | chore | open | GLMZ P3 15 Neon & Rust: machine minds and the strays | — |
 | PRS-T656 | 2026-10-30 | chore | open | GLMZ P3 15 Neon & Rust: apply the Phase 1 world canon | — |
-| PRS-T657 | 2026-10-30 | chore | open | GLMZ P3 16 Crimson & Chrome: its thread into the singular point | — |
+| PRS-T657 | 2026-10-30 | chore | closed | GLMZ P3 16 Crimson & Chrome: its thread into the singular point | Confirmed, no splice needed: Crimson & Chrome's ending (#6550, pos 189) explicitly plants the thread into the singular point -- Soraya tells Rook the Marrow ran at three facilities, only one (the Reliquary) resolved this book, 'the other two are further along.' grep-beats confirms Marrow is picked up and paid off across Pieces, Wells and The Ur. Thread is already there and earned. |
 | PRS-T658 | 2026-10-30 | chore | open | GLMZ P3 16 Crimson & Chrome: Kyle's touch | — |
 | PRS-T659 | 2026-10-30 | chore | open | GLMZ P3 16 Crimson & Chrome: villain ambiguity | — |
 | PRS-T660 | 2026-10-30 | chore | open | GLMZ P3 16 Crimson & Chrome: lowest low and highest high | — |
@@ -1339,3 +1339,4 @@ updated: 2026-10-03
 | PRS-T840 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
 | PRS-T841 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
 | PRS-T842 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
+| PRS-T843 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
