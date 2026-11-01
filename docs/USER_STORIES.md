@@ -1210,8 +1210,8 @@ updated: 2026-10-03
 | PRS-T711 | 2026-10-30 | chore | open | GLMZ P3 22 The Ur: machine minds and the strays | — |
 | PRS-T712 | 2026-10-30 | chore | open | GLMZ P3 22 The Ur: apply the Phase 1 world canon | — |
 | PRS-T713 | 2026-10-30 | fix | open | GLMZ P3 Testament: Brandt is 'a retired man, no division behind him' yet commands operators all hearing day | — |
-| PRS-T714 | 2026-10-30 | fix | open | GLMZ P3 Testament: Declan sits at a side table the whole testimony but the room is described empty (pos 318-324) until pos 409 | — |
-| PRS-T715 | 2026-10-30 | fix | open | GLMZ P3 Testament: Bear owes 'nothing' on the augmentation (pos 202) vs fourteen months of interface debt (pos 139) | — |
+| PRS-T714 | 2026-10-30 | fix | closed | GLMZ P3 Testament: Declan sits at a side table the whole testimony but the room is described empty (pos 318-324) until pos 409 | Testament beats 318 (#22518) and 320 (#22520): planted the side table and Declan's unnoticed side-door entrance a minute after the seal, so his objection at 409 pays off instead of ambushing an empty room |
+| PRS-T715 | 2026-10-30 | fix | closed | GLMZ P3 Testament: Bear owes 'nothing' on the augmentation (pos 202) vs fourteen months of interface debt (pos 139) | Testament beat 202 (#22402): added the ownership-vs-license bridge (hardware owned free and clear THEREFORE the later operational-license tithe at #22339/pos139 is a separate, earned cost, not a contradiction) |
 | PRS-T716 | 2026-10-30 | fix | open | GLMZ P3 Testament: stray question marks on statements at pos 20 ('what Tuesday is?') and pos 543 | — |
 | PRS-T717 | 2026-10-30 | fix | open | GLMZ P3 The Long Cut: Femi's 'your first of your own' (#10478) vs the clinic Stash only worked days at (#10038) | — |
 | PRS-T718 | 2026-10-30 | fix | open | GLMZ P3 The Long Cut: Chit's coordinates 'wrong by four blocks' yet Scalpel goes straight there; Stash 'knows at once' what is past the junction (#10493/#10507) | — |
@@ -1334,3 +1334,4 @@ updated: 2026-10-03
 | PRS-T835 | 2026-10-31 | chore | closed | Redeploy Prose Hub so the running Hub carries PRS-T834 (merge moves relationship links and drops the read-model copy) | Hub redeployed with 3677eb509 (PRS-T834); up on 127.0.0.1:5900 |
 | PRS-T836 | 2026-10-31 | fix | closed | NU1903: Prose.ObserverUi pulls Microsoft.AspNetCore.SignalR.Common 10.0.0, which has a known high-severity vulnerability (GHSA-334f-vvp4-7g6p); move to the patched version | 7408fc853; restore clean (no NU1903/NU1605), full Prose suite 3295 passed/18 skipped, Hub redeployed and reachable on 5900 |
 | PRS-T837 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
+| PRS-T838 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
