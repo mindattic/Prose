@@ -237,4 +237,58 @@ public class DuplicateEntityScanServiceTests
     {
         Assert.That(DuplicateEntityScanService.SharesDisambiguationScope([Guid.CreateVersion7(), Guid.CreateVersion7()]), Is.False);
     }
+
+    // PRS-T834: a merge must carry the references that have no foreign key, which the
+    // sys.foreign_keys walk cannot see — another character's relationship TO the loser, and the
+    // loser's cached read-model row.
+    [Test]
+    public async Task RelinkSoftEntityReferences_MovesRelationshipTargetsAndDropsLoserReadModel()
+    {
+        var winner = await SeedCharacterAsync("Emile Amoako");
+        var loser  = await SeedCharacterAsync("Emile Amoako");
+        var friend = await SeedCharacterAsync("The Bread Baker");
+
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            db.Characters.Add(new Character { Id = winner, Name = "Emile Amoako" });
+            db.Characters.Add(new Character { Id = loser, Name = "Emile Amoako" });
+            db.Characters.Add(new Character { Id = friend, Name = "The Bread Baker" });
+            db.CharacterRelationships.Add(new CharacterRelationshipRow
+            {
+                CharacterId = friend, TargetName = "Emile Amoako", TargetEntityId = loser,
+                Type = "friend", Description = "He eats her bread and nods.",
+            });
+            db.CharacterRelationships.Add(new CharacterRelationshipRow
+            {
+                CharacterId = friend, TargetName = "Someone Else", TargetEntityId = friend,
+                Type = "self", Description = "Untouched control row.",
+            });
+            db.CharacterReadModels.Add(new CharacterReadModel { CharacterId = loser, UniverseId = universeId, Json = "{}", Version = 1, RefreshedAt = DateTime.UtcNow });
+            db.CharacterReadModels.Add(new CharacterReadModel { CharacterId = winner, UniverseId = universeId, Json = "{}", Version = 1, RefreshedAt = DateTime.UtcNow });
+            await db.SaveChangesAsync();
+        }
+
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            var (relinked, undo) = await DuplicateEntityScanService.RelinkSoftEntityReferencesAsync(db, winner, loser);
+
+            Assert.That(relinked, Is.EqualTo(1));
+            Assert.That(undo.Count(u => u.Op == "update" && u.Table == "CharacterRelationships"), Is.EqualTo(1));
+            Assert.That(undo.Count(u => u.Op == "delete" && u.Table == "CharacterReadModels"), Is.EqualTo(1));
+        }
+
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            var targets = await db.CharacterRelationships.AsNoTracking().IgnoreQueryFilters()
+                .Where(r => r.CharacterId == friend).Select(r => r.TargetEntityId).ToListAsync();
+            Assert.That(targets, Does.Not.Contain((Guid?)loser));
+            Assert.That(targets, Does.Contain((Guid?)winner));
+            Assert.That(targets, Does.Contain((Guid?)friend));
+
+            var readModels = await db.CharacterReadModels.AsNoTracking().IgnoreQueryFilters()
+                .Select(r => r.CharacterId).ToListAsync();
+            Assert.That(readModels, Does.Not.Contain(loser));
+            Assert.That(readModels, Does.Contain(winner));
+        }
+    }
 }

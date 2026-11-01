@@ -610,6 +610,10 @@ public class DuplicateEntityScanService(IDbContextFactory<ProseDbContext> dbFact
                 new Dictionary<string, string?> { ["PlaceEntityId"] = loserId.ToString() }));
         relinked += placeRelinked.Count;
 
+        var (softRelinked, softUndo) = await RelinkSoftEntityReferencesAsync(db, winnerId, loserId, ct);
+        undoLog.AddRange(softUndo);
+        relinked += softRelinked;
+
         // Delete the loser's own Entities row last — every real FK pointing at it was relinked
         // above, so this is now safe. Reuses DeleteAndCaptureAsync exactly as-is (same
         // capture-as-JSON-then-delete shape already used for the 1:1-collision case) rather than
@@ -623,6 +627,56 @@ public class DuplicateEntityScanService(IDbContextFactory<ProseDbContext> dbFact
 
         await tx.CommitAsync(ct);
         return new EntityMergeResult(winnerId, loserId, relinked, deletedForCollision, undoLog, beatsRetagged);
+    }
+
+    /// <summary>
+    /// The soft references the FK catalog walk in <see cref="MergeAsync"/> cannot see, done through
+    /// EF so they run on any provider (PRS-T834, found merging the duplicate "Emile Amoako" for
+    /// PRS-T831): <c>CharacterRelationships.TargetEntityId</c> has an index but no foreign key, so
+    /// every relationship another character held TO the loser was left pointing at a deleted row;
+    /// and the loser's <c>CharacterReadModels</c> row (keyed by the loser's id, no FK) outlived it as
+    /// a cached projection of a character that no longer exists. Relationships are relinked to the
+    /// winner; the loser's read-model row is deleted (it is a disposable cache, rebuilt from the
+    /// relational rows on read). Both are captured in the undo log.
+    /// </summary>
+    internal static async Task<(int Relinked, List<RowMutationUndo> Undo)> RelinkSoftEntityReferencesAsync(
+        ProseDbContext db, Guid winnerId, Guid loserId, CancellationToken ct = default)
+    {
+        var undo = new List<RowMutationUndo>();
+
+        var relationshipIds = await db.CharacterRelationships.IgnoreQueryFilters()
+            .Where(r => r.TargetEntityId == loserId)
+            .Select(r => r.Id)
+            .ToListAsync(ct);
+        if (relationshipIds.Count > 0)
+        {
+            await db.CharacterRelationships.IgnoreQueryFilters()
+                .Where(r => r.TargetEntityId == loserId)
+                .ExecuteUpdateAsync(s => s.SetProperty(r => r.TargetEntityId, winnerId), ct);
+            foreach (var id in relationshipIds)
+                undo.Add(new RowMutationUndo("update", "CharacterRelationships", "Id", id.ToString(),
+                    new Dictionary<string, string?> { ["TargetEntityId"] = loserId.ToString() }));
+        }
+
+        var readModel = await db.CharacterReadModels.IgnoreQueryFilters().AsNoTracking()
+            .FirstOrDefaultAsync(r => r.CharacterId == loserId, ct);
+        if (readModel is not null)
+        {
+            await db.CharacterReadModels.IgnoreQueryFilters()
+                .Where(r => r.CharacterId == loserId)
+                .ExecuteDeleteAsync(ct);
+            undo.Add(new RowMutationUndo("delete", "CharacterReadModels", "CharacterId", loserId.ToString(),
+                new Dictionary<string, string?>
+                {
+                    ["CharacterId"] = readModel.CharacterId.ToString(),
+                    ["UniverseId"]  = readModel.UniverseId.ToString(),
+                    ["Json"]        = readModel.Json,
+                    ["Version"]     = readModel.Version.ToString(),
+                    ["RefreshedAt"] = readModel.RefreshedAt.ToString("o"),
+                }));
+        }
+
+        return (relationshipIds.Count, undo);
     }
 
     private static bool IsUniqueConstraintViolation(SqlException ex) =>
