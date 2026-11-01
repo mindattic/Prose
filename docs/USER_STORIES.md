@@ -1075,7 +1075,7 @@ updated: 2026-10-03
 | PRS-T576 | 2026-10-30 | chore | open | GLMZ P3 05 Between the Lines: apply the Phase 1 world canon | — |
 | PRS-T577 | 2026-10-30 | chore | open | GLMZ P3 06 Death Whispers in a Cat's Ear: its thread into the singular point | — |
 | PRS-T578 | 2026-10-30 | chore | open | GLMZ P3 06 Death Whispers in a Cat's Ear: Kyle's touch | — |
-| PRS-T579 | 2026-10-30 | chore | open | GLMZ P3 06 Death Whispers in a Cat's Ear: villain ambiguity | — |
+| PRS-T579 | 2026-10-30 | chore | closed | GLMZ P3 06 Death Whispers in a Cat's Ear: villain ambiguity | Confirmed, no splice needed: Death Whispers in a Cat's Ear already handles its antagonist (the TRIBUTARY compute-pool operation, run through Carrion Logistics shells) with real craft -- not a sincere-case redemption, but a deliberate banality-of-evil treatment, explicit in Rennick's own narration at #21281: 'His was the one that took the horror and made it ordinary, and ordinary was worse... Nobody in that chain loses anything they can see.' That IS the reason a reader could hold: realistic institutional diffusion of responsibility, not cartoon villainy. Forcing a redemptive sincere case onto this specific operation (distinct from the Vultures' legitimate body-pickup trade, already covered in T526) would cheapen an already well-executed critique. Already complete. |
 | PRS-T580 | 2026-10-30 | chore | open | GLMZ P3 06 Death Whispers in a Cat's Ear: lowest low and highest high | — |
 | PRS-T581 | 2026-10-30 | chore | open | GLMZ P3 06 Death Whispers in a Cat's Ear: neon action is earned | — |
 | PRS-T582 | 2026-10-30 | chore | open | GLMZ P3 06 Death Whispers in a Cat's Ear: one diaspora on the street | — |
