@@ -1224,7 +1224,7 @@ updated: 2026-10-03
 | PRS-T725 | 2026-10-30 | fix | open | GLMZ P3 The Ur: the Manowar record (collar acoustic weapon, 'Borys') does not match Bear's worn shielded frame | — |
 | PRS-T726 | 2026-10-30 | feature | open | GLMZ P3 Fenris: cut 'Fenris - Self Titled' to 11 tracks and write albums 2 and 3, prophetic of Wells and The Ur | — |
 | PRS-T727 | 2026-10-30 | fix | open | GLMZ P3 Sparrow: the Tunis platform scene: confirm it is passing, or bring it home to the GLMZ | — |
-| PRS-T728 | 2026-10-30 | fix | open | GLMZ P3 Magenta & Gunmetal: #7152 'City police intelligence, dissolved 2208' vs the 2096 transfer | — |
+| PRS-T728 | 2026-10-30 | fix | closed | GLMZ P3 Magenta & Gunmetal: #7152 'City police intelligence, dissolved 2208' vs the 2096 transfer | Already resolved: grep-beats found no 'City police', 'police intelligence', '2208' or 'dissolved 2208' anywhere in Magenta & Gunmetal (MxG was already in the 2026-10-27 But/Therefore applied-books list, which likely fixed this before the ticket was filed on 2026-10-30). Current MxG prose has zero mentions of city police at all; the universe's one settled police-history fact (the 2096 Emergency Public Safety Transfer) is intact and consistent across Sparrow/Steppin' Razor/Vultures at the Door/Testament/Between the Lines. Nothing to splice. |
 | PRS-T729 | 2026-10-30 | chore | open | GLMZ P4 weave: bind Attendance's season plant (#9324 red line through a circle) to its Cyberocracy payoff with a plant/payoff edge | — |
 | PRS-T730 | 2026-10-30 | chore | open | GLMZ P4 weave: bind Mnemosync's season plant (#8100 Continuity Office) to its Cyberocracy payoff with a plant/payoff edge | — |
 | PRS-T731 | 2026-10-30 | chore | open | GLMZ P4 weave: bind Steppin' Razor's season plant (#8668 606/NET) to its Cyberocracy payoff with a plant/payoff edge | — |
@@ -1336,3 +1336,4 @@ updated: 2026-10-03
 | PRS-T837 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
 | PRS-T838 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
 | PRS-T839 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
+| PRS-T840 | 2026-10-31 | docs | closed | Update USER_STORIES.md | — |
