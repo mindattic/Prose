@@ -1359,3 +1359,7 @@ updated: 2026-10-03
 | PRS-T860 | 2026-11-01 | docs | closed | Update USER_STORIES.md | — |
 | PRS-T861 | 2026-11-01 | fix | closed | BCODA: Cacophony magazine capacity inconsistent (5 vs 4 rounds) across chapters | Resolved: fixed all three 'four' instances (beats #20733, #20744, #20746) to 'five', matching the canonical weapon record (Torii TSS-3 'Cacophony' is explicitly a five-chamber revolver) and the dominant usage across Ch.17/20/26/31/41/42. Beat #20746's safehouse gunfight was rewritten to add a genuine fifth shot (an insurance round on the downed point man) rather than just swapping a number, so the shot-by-shot count now totals five. Descriptions resynced on all three beats. |
 | PRS-T862 | 2026-11-01 | docs | closed | Update USER_STORIES.md | — |
+| PRS-T863 | 2026-11-01 | feature | open | COROBS: persistent parallel Correlithm-Object entity geometry for GLMZ (RFC 0016, /corobs on\|off, two hand passes first) | — |
+| PRS-T864 | 2026-11-01 | feature | open | Living world: event entities (create_entity, repo-less field writes, dated state events) and hand-written interstitial vignettes in GLMZ books | — |
+| PRS-T865 | 2026-11-01 | feature | open | COROBS bench: old way (Edge graph) vs new way (Corobs proximity) on interconnectivity, results as InstrumentRun rows | — |
+| PRS-T866 | 2026-11-01 | feature | open | Version grader: compare two versions of a book, series or universe on a deterministic storytelling battery plus a labeled advisory reader tier | — |
