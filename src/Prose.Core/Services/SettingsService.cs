@@ -251,12 +251,18 @@ public class SettingsService : IDisposable
     {
         string oldTheme, newTheme;
         bool any;
+        var versionAtStart = Volatile.Read(ref changeVersion);
         lock (saveLock)
         {
             FlushVault();
             if (!vaultStore.Exists()) return;
             var fromDisk = vaultStore.Load();
             var diskNode = ToNode(fromDisk);
+            // Setters change `vault` without this lock. One that ran since the flush above began
+            // (it can wait up to 5s on the cross-process lock) would be discarded by adopting the
+            // file here, and its queued save would then find nothing to write. Keep ours instead:
+            // that save merges it onto the file and adopts the merge, other writers' values included.
+            if (Volatile.Read(ref changeVersion) != versionAtStart) return;
             any = !JsonNode.DeepEquals(diskNode, ToNode(vault));
             oldTheme = vault.Theme;
             if (any) vault = fromDisk;
