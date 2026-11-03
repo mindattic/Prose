@@ -262,21 +262,56 @@ public class SettingsService : IDisposable
             // (it can wait up to 5s on the cross-process lock) would be discarded by adopting the
             // file here, and its queued save would then find nothing to write. Keep ours instead:
             // that save merges it onto the file and adopts the merge, other writers' values included.
-            if (Volatile.Read(ref changeVersion) != versionAtStart) return;
-            any = !JsonNode.DeepEquals(diskNode, ToNode(vault));
-            oldTheme = vault.Theme;
-            if (any) vault = fromDisk;
-            vaultBaseline = diskNode;
-            newTheme = vault.Theme;
+            // (That save raises ThemeChanged/Changed for the external values it adopts: see FlushVault.)
+            if (Volatile.Read(ref changeVersion) != versionAtStart)
+            {
+                any = false;
+                oldTheme = newTheme = vault.Theme;
+            }
+            else
+            {
+                any = !JsonNode.DeepEquals(diskNode, ToNode(vault));
+                oldTheme = vault.Theme;
+                if (any) vault = fromDisk;
+                vaultBaseline = diskNode;
+                newTheme = vault.Theme;
+            }
         }
+        RaiseExternalChanges();
         if (!any) return;
         if (!string.Equals(oldTheme, newTheme, StringComparison.Ordinal)) RaiseThemeChanged(newTheme);
-        foreach (var h in Changed?.GetInvocationList() ?? []) try { ((Action)h)(); } catch { }
+        RaiseChanged();
     }
 
     private void RaiseThemeChanged(string theme)
     {
         foreach (var h in ThemeChanged?.GetInvocationList() ?? []) try { ((Action<string>)h)(theme); } catch { }
+    }
+
+    private void RaiseChanged()
+    {
+        foreach (var h in Changed?.GetInvocationList() ?? []) try { ((Action)h)(); } catch { }
+    }
+
+    // Set by FlushVault (under saveLock) when it adopts values another writer put in the Vault file;
+    // raised by the caller once the lock is released, so handlers never run inside it.
+    private bool pendingExternalChange;
+    private string? pendingExternalTheme;
+
+    private void RaiseExternalChanges()
+    {
+        bool change;
+        string? theme;
+        lock (saveLock)
+        {
+            change = pendingExternalChange;
+            theme = pendingExternalTheme;
+            pendingExternalChange = false;
+            pendingExternalTheme = null;
+        }
+        if (!change) return;
+        if (theme is not null) RaiseThemeChanged(theme);
+        RaiseChanged();
     }
 
     /// <summary>
@@ -303,8 +338,17 @@ public class SettingsService : IDisposable
             // then keep ours, and baseline on our snapshot so its own queued flush writes it.
             if (Volatile.Read(ref changeVersion) == versionAtSnapshot)
             {
+                // The merge overlays every key we changed, so anything else that differs from ours came from
+                // another writer (Vault.Desktop, another process) - typically a change ReloadVault deferred to
+                // this save because a setter raced it. Note it so the caller raises the events after the lock.
+                var mergedNode = ToNode(merged);
+                if (!JsonNode.DeepEquals(mergedNode, current))
+                {
+                    pendingExternalChange = true;
+                    if (!string.Equals(vault.Theme, merged.Theme, StringComparison.Ordinal)) pendingExternalTheme = merged.Theme;
+                }
                 vault = merged;
-                vaultBaseline = ToNode(merged);
+                vaultBaseline = mergedNode;
             }
             else
                 vaultBaseline = current;
@@ -1286,6 +1330,13 @@ public class SettingsService : IDisposable
     /// writers can no longer stomp each other.
     /// </summary>
     public void Flush()
+    {
+        // finally: the early returns below still raise what FlushVault adopted from other writers.
+        try { FlushCore(); }
+        finally { RaiseExternalChanges(); }
+    }
+
+    private void FlushCore()
     {
         lock (saveLock)
         {
