@@ -1,6 +1,8 @@
 <Window x:Class="Prose.Launcher.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ma="clr-namespace:MindAttic.Components.Wpf.Controls;assembly=MindAttic.Components.Wpf"
+        ma:MaWindow.DarkTitleBar="True"
         Title="Prose" Height="500" Width="520"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
