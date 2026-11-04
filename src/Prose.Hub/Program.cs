@@ -290,6 +290,12 @@ builder.Services.AddSingleton<Prose.Hub.ObservabilityBridge>();
 // `prose --hub-narration on|off` (CommandNarrator.cs / SettingsService.HubNarrationEnabled).
 builder.Services.AddSingleton<Prose.Hub.CommandNarrator>();
 
+// Idle self-shutdown (PRS-T129): with no Prose session open for Hub:IdleShutdownMinutes (default 5,
+// 0 = off) the Hub stops itself instead of staying resident; the SessionStart hook restarts it.
+// See HubIdleShutdown for what counts as a session.
+builder.Services.AddSingleton<Prose.Hub.HubIdleShutdown>();
+builder.Services.AddHostedService(sp => sp.GetRequiredService<Prose.Hub.HubIdleShutdown>());
+
 // Observability plan, Phase 5: the Hub hosts the shared observability UI directly as an
 // interactive Blazor Server web head, at /app - no separate process, since the Hub already
 // holds every resident singleton the UI needs to observe. AddProseObserverUi is called with
@@ -376,6 +382,9 @@ app.Lifetime.ApplicationStopping.Register(() =>
 // log/DCM feed. Registered ahead of MapHub's own inner UseWebSockets, so this instance owns the
 // handshake. A browser always sends Origin; the .NET SignalR clients (ObserverUi, Maui) send none
 // and are unaffected.
+// First in the pipeline so every request (Writer pages, SignalR streams, commands) counts as activity.
+var idleShutdown = app.Services.GetRequiredService<Prose.Hub.HubIdleShutdown>();
+app.Use((context, next) => idleShutdown.TrackAsync(context, next));
 app.UseWebSockets(new WebSocketOptions { AllowedOrigins = { "http://127.0.0.1:5900", "http://localhost:5900" } });
 app.UseDefaultFiles();
 app.UseStaticFiles();

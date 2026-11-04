@@ -4,6 +4,9 @@
   "Trinity" + the migrated MCP-tool/CLI-command dispatch) is running AND current,
   redeploying automatically when source has changed since the last deploy.
 
+  The Hub stops itself after Hub:IdleShutdownMinutes (default 5) with no Prose session open
+  (PRS-T129, src/Prose.Hub/HubIdleShutdown.cs), so this hook is also what brings it back.
+
   Phase 2 (explicit user decision): "the hub is running, Prose is working; hub goes
   down, Prose is down." Prose.Cli and Prose.Mcp both hard-gate on the Hub being healthy
   at startup (see Prose.Core.Services.HubGate) - this hook exists so that gate almost
