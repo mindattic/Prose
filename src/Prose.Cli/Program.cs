@@ -856,6 +856,16 @@ if (args.Contains("--provenance-audit") || args.Contains("--provenance"))
     return;
 }
 
+// CLI mode: version grader (PRS-T866) — two versions of a book, series or universe on the
+// deterministic battery; per-metric A-vs-B table + weighted win count (Grade:Weights). No LLM.
+// After --provenance, whose own `--grade <grade>` flag must keep dispatching there.
+//   prose --grade --slug <book> | --series <series> | --universe <slug> --a <V|date|working> --b <V|date|working>
+if (args.Contains("--grade"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("GradeCli", args);
+    return;
+}
+
 // CLI mode: manage the PredicateExclusion ontology the Tuned Read runs on — list, propose,
 // approve/reject, and --test a rule against a hypothetical claim pair before approving it.
 // Deterministic and free; no LLM call anywhere in this command.

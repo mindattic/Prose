@@ -25,6 +25,7 @@ public class InstrumentRunLedger(IDbContextFactory<ProseDbContext> dbFactory)
     public const string ContinuityExtract = "continuity-extract";
     public const string TunedRead         = "tuned-read";
     public const string ObligationScan    = "obligation-scan";
+    public const string VersionGrade      = "version-grade";
 
     /// <summary>
     /// Record a completed run. Call this on the way out of the instrument, whatever it found —
