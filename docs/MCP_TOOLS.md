@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**300 tools** across **54 tool families.**
+**301 tools** across **54 tool families.**
 
 ## Families
 
@@ -41,7 +41,7 @@
 | [Factory](#factory) | 12 |
 | [Findings](#findings) | 5 |
 | [Gear Entity Crud](#gear-entity-crud) | 8 |
-| [Glossary](#glossary) | 4 |
+| [Glossary](#glossary) | 5 |
 | [Graph Query](#graph-query) | 4 |
 | [Hub](#hub) | 3 |
 | [Ledger](#ledger) | 4 |
@@ -1246,6 +1246,12 @@ Create or update a weapon in canon. Pass empty id to create new; pass an existin
 ## Glossary
 
 <sub>`GlossaryTools`</sub>
+
+### `delete_glossary_term`
+
+Delete one Master Glossary entry from the current universe. term is matched exactly (case-sensitive), the same key upsert_glossary_term uses. Removes at most one row; refuses when the term is ambiguous. Run generate_glossary afterwards to refresh the rendered files.
+
+- `term` (string, required) — The exact term to delete, as stored (case-sensitive).
 
 ### `generate_book_glossary`
 

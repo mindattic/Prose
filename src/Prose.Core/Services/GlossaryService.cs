@@ -59,6 +59,29 @@ public class GlossaryService(
         return existing;
     }
 
+    /// <summary>
+    /// Hard-deletes the one GlossaryTerms row whose Term equals <paramref name="term"/> exactly
+    /// (ordinal, case-sensitive — the database collation may match case-insensitively, so the
+    /// candidates are re-checked in memory). Returns the deleted row's id, null when no row
+    /// matches; throws <see cref="InvalidOperationException"/> when more than one row matches,
+    /// so it never deletes more than one row (PRS-T874).
+    /// </summary>
+    public async Task<Guid?> DeleteAsync(Guid universeId, string term, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var candidates = await db.GlossaryTerms.IgnoreQueryFilters()
+            .Where(g => g.UniverseId == universeId && g.Term == term)
+            .ToListAsync(ct);
+        var matches = candidates.Where(g => string.Equals(g.Term, term, StringComparison.Ordinal)).ToList();
+        if (matches.Count == 0) return null;
+        if (matches.Count > 1)
+            throw new InvalidOperationException($"{matches.Count} glossary rows match '{term}' exactly; refusing to delete.");
+
+        db.GlossaryTerms.Remove(matches[0]);
+        await db.SaveChangesAsync(ct);
+        return matches[0].Id;
+    }
+
     public async Task<IReadOnlyList<GlossaryTerm>> ListAsync(Guid universeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);

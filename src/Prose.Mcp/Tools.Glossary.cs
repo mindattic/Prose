@@ -61,6 +61,38 @@ public class GlossaryTools
     }
 
     [McpServerTool, Description(
+        "Delete one Master Glossary entry from the current universe. term is matched exactly " +
+        "(case-sensitive), the same key upsert_glossary_term uses. Removes at most one row; refuses " +
+        "when the term is ambiguous. Run generate_glossary afterwards to refresh the rendered files.")]
+    public Task<string> DeleteGlossaryTerm(
+        [Description("The exact term to delete, as stored (case-sensitive).")] string term) =>
+        hub.InvokeAsync(nameof(GlossaryTools), nameof(DeleteGlossaryTermImpl), new { term });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> DeleteGlossaryTermImpl(
+        string term)
+    {
+        var universeId = Prose.Core.Services.UniverseScope.EffectiveId;
+        if (universeId == Guid.Empty)
+            return JsonSerializer.Serialize(new { error = "no_universe_scope" }, CanonTools.JsonOpts);
+        if (string.IsNullOrEmpty(term))
+            return JsonSerializer.Serialize(new { ok = false, error = "term_required" }, CanonTools.JsonOpts);
+
+        Guid? id;
+        try
+        {
+            id = await glossary.DeleteAsync(universeId, term);
+        }
+        catch (InvalidOperationException ex)
+        {
+            return JsonSerializer.Serialize(new { ok = false, error = "ambiguous", term, detail = ex.Message }, CanonTools.JsonOpts);
+        }
+        return id is { } deletedId
+            ? JsonSerializer.Serialize(new { ok = true, deleted = true, term, id = deletedId }, CanonTools.JsonOpts)
+            : JsonSerializer.Serialize(new { ok = false, error = "not_found", term }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description(
         "List every Master Glossary entry for the current universe, grouped by category.")]
     public Task<string> ListGlossaryTerms() =>
         hub.InvokeAsync(nameof(GlossaryTools), nameof(ListGlossaryTermsImpl));
