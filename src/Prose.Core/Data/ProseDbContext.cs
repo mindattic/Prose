@@ -740,6 +740,13 @@ public class ProseDbContext : DbContext
     // The Novel Factory (RFC 0015): law, verifications, work orders, sessions, exports.
     public DbSet<Ruling>                 Rulings                 => Set<Ruling>();
     public DbSet<SpellingWord>           SpellingWords           => Set<SpellingWord>();
+    // COROBS (RFC 0016): entity geometry beside the Edge graph — the world, never the story.
+    public DbSet<CorobsSpace>            CorobsSpaces            => Set<CorobsSpace>();
+    public DbSet<CorobsPly>              CorobsPlies             => Set<CorobsPly>();
+    public DbSet<CorobsPoint>            CorobsPoints            => Set<CorobsPoint>();
+    public DbSet<CorobsPattern>          CorobsPatterns          => Set<CorobsPattern>();
+    public DbSet<CorobsRule>             CorobsRules             => Set<CorobsRule>();
+    public DbSet<CorobsHit>              CorobsHits              => Set<CorobsHit>();
     public DbSet<EntityVerification>     EntityVerifications     => Set<EntityVerification>();
     public DbSet<WorkOrder>              WorkOrders              => Set<WorkOrder>();
     public DbSet<FactorySession>         FactorySessions         => Set<FactorySession>();
@@ -1328,6 +1335,64 @@ public class ProseDbContext : DbContext
             e.HasIndex(x => x.Word).IsUnique();
             e.Property(x => x.Word).HasMaxLength(SpellingWord.MaxLength).IsRequired();
             e.Property(x => x.AddedBy).HasMaxLength(64).IsRequired();
+        });
+        // ── COROBS (RFC 0016) ───────────────────────────────────────────────
+        // Additive and parallel: no foreign key to any existing table (invariant 1 — never a Beat,
+        // Node, Finding or ContinuityClaim; entities are referenced by id only, so a merged or
+        // deleted entity's points are dropped by the next build). The only free text is
+        // CorobsPattern.Label (≤120, written by hand at confirmation; invariant 2).
+        b.Entity<CorobsSpace>(e =>
+        {
+            e.ToTable("CorobsSpaces");
+            e.HasKey(x => x.Id);
+            e.HasIndex(x => x.UniverseId).IsUnique();
+            e.Property(x => x.Status).HasMaxLength(16).IsRequired();
+        });
+        b.Entity<CorobsPly>(e =>
+        {
+            e.ToTable("CorobsPlies");
+            e.HasKey(x => x.Id);
+            e.HasIndex(x => new { x.SpaceId, x.Key }).IsUnique();
+            e.Property(x => x.Key).HasMaxLength(32).IsRequired();
+            e.Property(x => x.ConverterKind).HasMaxLength(16).IsRequired();
+            e.Property(x => x.SourceFieldsJson).HasMaxLength(1000).IsRequired();
+            e.HasOne<CorobsSpace>().WithMany().HasForeignKey(x => x.SpaceId).OnDelete(DeleteBehavior.Cascade);
+        });
+        b.Entity<CorobsPoint>(e =>
+        {
+            e.ToTable("CorobsPoints");
+            e.HasKey(x => x.Id);
+            e.HasIndex(x => new { x.PlyId, x.EntityId, x.AtStoryTime });
+            e.HasIndex(x => x.EntityId);
+            e.Property(x => x.Coords).HasMaxLength(4096).IsRequired();
+            e.Property(x => x.EdgesFingerprint).HasMaxLength(64).IsRequired();
+            e.HasOne<CorobsPly>().WithMany().HasForeignKey(x => x.PlyId).OnDelete(DeleteBehavior.Cascade);
+        });
+        b.Entity<CorobsPattern>(e =>
+        {
+            e.ToTable("CorobsPatterns");
+            e.HasKey(x => x.Id);
+            e.HasIndex(x => new { x.PlyId, x.Status });
+            e.Property(x => x.Centroid).HasMaxLength(4096).IsRequired();
+            e.Property(x => x.Label).HasMaxLength(CorobsPattern.LabelMaxLength);
+            e.Property(x => x.Status).HasMaxLength(16).IsRequired();
+            e.HasOne<CorobsPly>().WithMany().HasForeignKey(x => x.PlyId).OnDelete(DeleteBehavior.Cascade);
+        });
+        b.Entity<CorobsRule>(e =>
+        {
+            e.ToTable("CorobsRules");
+            e.HasKey(x => x.Id);
+            e.HasIndex(x => new { x.SourcePatternId, x.TargetPatternId }).IsUnique();
+            e.HasIndex(x => x.Status);
+            e.Property(x => x.Status).HasMaxLength(16).IsRequired();
+        });
+        b.Entity<CorobsHit>(e =>
+        {
+            e.ToTable("CorobsHits");
+            e.HasKey(x => x.Id);
+            e.HasIndex(x => new { x.RuleId, x.EntityId, x.Status });
+            e.HasIndex(x => new { x.Status, x.Rank });
+            e.Property(x => x.Status).HasMaxLength(16).IsRequired();
         });
         b.Entity<Ruling>(e =>
         {

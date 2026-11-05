@@ -901,6 +901,11 @@ public class SettingsService : IDisposable
     /// <c>prose --hub-narration on|off</c> — takes effect on the running Hub immediately, no restart.</summary>
     public bool HubNarrationEnabled { get => vault.HubNarrationEnabled; set { vault.HubNarrationEnabled = value; ScheduleSave(); } }
 
+    /// <summary>COROBS master switch (RFC 0016, <c>prose --corobs enable|disable</c>, <c>/corobs on|off</c>).
+    /// Default OFF. When off every COROBS entry point answers <c>disabled</c> and writes nothing, the
+    /// wiki's Corobs panel is hidden, and nothing is deleted — turning it back on needs no rebuild.</summary>
+    public bool CorobsEnabled { get => vault.CorobsEnabled; set { vault.CorobsEnabled = value; ScheduleSave(); } }
+
     // ── Review voting ──────────────────────────────────────────────────────────
     /// <summary>Default number of cheap score-only ballots per sampled node review (--ballots).</summary>
     public int ReviewBallots { get => Math.Max(1, vault.ReviewBallots); set { vault.ReviewBallots = Math.Max(1, value); ScheduleSave(); } }
@@ -1527,6 +1532,7 @@ public class SettingsService : IDisposable
         public bool DocContextEnabled { get; set; } = true;
         public bool DcmLoggingEnabled { get; set; } = false;
         public bool HubNarrationEnabled { get; set; } = false;
+        public bool CorobsEnabled { get; set; } = false;
         public string SmtpHost { get; set; } = "";
         public int SmtpPort { get; set; } = 587;
         public string SmtpUsername { get; set; } = "";

@@ -241,6 +241,7 @@ public sealed class LampSettingsTests
     [Test] public void SmtpFrom_ImportsRoundTripsAndIsRead() => Prove(nameof(ProseSettings.SmtpFrom));
     [Test] public void SmtpEnableSsl_ImportsRoundTripsAndIsRead() => Prove(nameof(ProseSettings.SmtpEnableSsl));
     [Test] public void HubNarrationEnabled_ImportsRoundTripsAndIsRead() => Prove(nameof(ProseSettings.HubNarrationEnabled));
+    [Test] public void CorobsEnabled_ImportsRoundTripsAndIsRead() => Prove(nameof(ProseSettings.CorobsEnabled));
 
     [Test]
     public void EverySettingHasItsOwnTest()
@@ -251,7 +252,7 @@ public sealed class LampSettingsTests
             .Where(p => p.GetCustomAttribute<SettingAttribute>() is not null).Select(p => p.Name).ToList();
         Assert.Multiple(() =>
         {
-            Assert.That(settings, Has.Count.EqualTo(75));
+            Assert.That(settings, Has.Count.EqualTo(76));
             Assert.That(typeof(ProseSettings).GetProperties().Where(p => p.GetCustomAttribute<SettingAttribute>() is null), Is.Empty,
                 "every public property is a labeled [Setting]");
             Assert.That(settings.Where(s => !tests.Contains(s + "_ImportsRoundTripsAndIsRead")), Is.Empty);
@@ -546,7 +547,7 @@ public sealed class LampSettingsTests
         {
             Assert.That(manifest.AppId, Is.EqualTo("Prose"));
             Assert.That(manifest.ConfigurationPrefix, Is.EqualTo("MindAttic:Settings:Prose"));
-            Assert.That(fields, Has.Count.EqualTo(75));
+            Assert.That(fields, Has.Count.EqualTo(76));
             Assert.That(fields, Has.All.Matches<SettingField>(f => !string.IsNullOrWhiteSpace(f.Label) && f.Group != SettingsManifest.DefaultGroup));
             Assert.That(fields.Select(f => f.Group).Distinct(), Is.EquivalentTo(new[]
             {

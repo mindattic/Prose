@@ -6,6 +6,8 @@
    at routing rather than at the name. *@
 @using Prose.Core.Services
 @inject WikiService Wiki
+@inject Prose.Core.Services.Corobs.CorobsSwitch CorobsSwitch
+@inject Prose.Core.Services.Corobs.CorobsService Corobs
 @inject IJSRuntime JS
 
 <div class="wiki">
@@ -246,6 +248,40 @@
                     </ul>
                 }
 
+                @* COROBS (RFC 0016, PRS-T863): additive, beside Related (which stays exactly as it was);
+                   absent entirely while the switch is off. *@
+                @if (corobs is not null)
+                {
+                    <h2>Corobs</h2>
+                    <ul class="related">
+                        @foreach (var p in corobs.Plies)
+                        {
+                            <li>
+                                <span>@p.Ply</span>
+                                <span class="muted small">
+                                    @if (!p.HasPoint) { <text>no point</text> }
+                                    else if (p.NearestPatternId is null) { <text>no pattern</text> }
+                                    else { <text>@(p.Inside ? "in" : "near") @(p.PatternLabel ?? "pattern " + p.NearestPatternId.ToString()![..8]) · @p.PatternStatus · @p.PatternMembers members · @(p.Bits?.ToString("F0")) bits</text> }
+                                </span>
+                            </li>
+                        }
+                    </ul>
+                    @if (corobs.Trajectory.Count > 0)
+                    {
+                        <p class="muted small">Trajectory: @corobs.Trajectory.Count dated states, @corobs.Trajectory[0].ToString("yyyy-MM-dd") … @corobs.Trajectory[^1].ToString("yyyy-MM-dd").</p>
+                    }
+                    @if (corobs.OpenHits.Count > 0)
+                    {
+                        <p class="muted small">Open hits:</p>
+                        <ul class="mentions">
+                            @foreach (var h in corobs.OpenHits)
+                            {
+                                <li><span class="m-where">#@h.Rank · @h.Bits.ToString("F1") bits</span> <span class="m-text">@h.Rule</span></li>
+                            }
+                        </ul>
+                    }
+                }
+
                 <h2>Appears in</h2>
                 <p class="muted">@entity.MentionCount.ToString("N0") beat@(entity.MentionCount == 1 ? "" : "s") mention this entity.</p>
                 @if (entity.Appearances.Count > 0)
@@ -448,6 +484,7 @@
             diff = null;
             editing = false;
             scanResult = null;
+            corobs = null;
             loading = true;
         }
 
@@ -524,6 +561,19 @@
             editGrammarNote = entity.Header.GrammarNote ?? "";
             versions = entity.Versions;
         }
+        await LoadCorobsAsync();
+    }
+
+    /// <summary>The Corobs panel's data; null (panel hidden) while the switch is off, or on any
+    /// failure — the geometry is optional and must never take the entity page down.</summary>
+    private Prose.Core.Services.Corobs.CorobsExplain? corobs;
+
+    private async Task LoadCorobsAsync()
+    {
+        corobs = null;
+        if (entity is null || !CorobsSwitch.IsOn) return;
+        try { corobs = await Corobs.ExplainAsync(entity.Header.Id.ToString(), universeId: entity.Header.UniverseId); }
+        catch (Exception) { corobs = null; }
     }
 
     private Task GoPageAsync(int n) => GuardedAsync(async () =>

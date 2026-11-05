@@ -369,6 +369,17 @@ string?[] HistoryLeadingOwners = ["--cost"];
 string[] FamilySubFlagOwners = ["--repair-slugs"];
 string[] BeatSubFlagOwners = ["--wound", "--liberty-report"];
 
+// CLI mode: COROBS geometry (RFC 0016, PRS-T863) — the master switch and the store: enable,
+// disable, status, build, patterns, rules, cue, confirm, reject, resolve, dismiss, explain. Ahead
+// of every other block because its own --ruling/--order/--entity/--pattern/--rule flags belong to
+// it; the bench verb (PRS-T865) falls through to its own handler below.
+//   prose --universe <u> --corobs enable|disable|status|build|patterns|rules|cue|confirm|reject|resolve|dismiss|explain
+if (args.Contains("--corobs") && Prose.Cli.CorobsGeometryCli.Verbs.Contains(args.SkipWhile(a => a != "--corobs").Skip(1).FirstOrDefault()))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CorobsGeometryCli", args);
+    return;
+}
+
 // CLI mode: COROBS bench (RFC 0016 §6.7, PRS-T865): old way (Edge graph) vs new way (Corobs
 // proximity) on interconnectivity, two InstrumentRun rows (corobs-bench). Read-only on the world,
 // no LLM. First in the chain because its own --seed/--k/--node flags belong to it.

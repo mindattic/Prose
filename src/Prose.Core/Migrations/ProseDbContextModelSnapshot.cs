@@ -17,7 +17,7 @@ namespace Prose.Core.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "10.0.9")
+                .HasAnnotation("ProductVersion", "10.0.14")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -4383,6 +4383,269 @@ namespace Prose.Core.Migrations
                     b.HasIndex("ContractId", "Position");
 
                     b.ToTable("ContractComplications");
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.CorobsHit", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<double>("Bits")
+                        .HasColumnType("float");
+
+                    b.Property<DateTime?>("ClosedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("ClosedByCascade")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid>("EntityId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("OpenedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Rank")
+                        .HasColumnType("int");
+
+                    b.Property<Guid?>("ResolvedByOrderId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("ResolvedByRulingId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("RuleId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<double>("SourceDist")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("nvarchar(16)");
+
+                    b.Property<double>("TargetDist")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Status", "Rank");
+
+                    b.HasIndex("RuleId", "EntityId", "Status");
+
+                    b.ToTable("CorobsHits", (string)null);
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.CorobsPattern", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("AtStoryTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("Bits")
+                        .HasColumnType("float");
+
+                    b.Property<byte[]>("Centroid")
+                        .IsRequired()
+                        .HasMaxLength(4096)
+                        .HasColumnType("varbinary(4096)");
+
+                    b.Property<Guid?>("ConfirmedRulingId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("EventEntityId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Label")
+                        .HasMaxLength(120)
+                        .HasColumnType("nvarchar(120)");
+
+                    b.Property<int>("MemberCount")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("PlyId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<double>("Radius")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("nvarchar(16)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PlyId", "Status");
+
+                    b.ToTable("CorobsPatterns", (string)null);
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.CorobsPly", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Cells")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ConverterKind")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("nvarchar(16)");
+
+                    b.Property<string>("Key")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.Property<string>("SourceFieldsJson")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<Guid>("SpaceId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SpaceId", "Key")
+                        .IsUnique();
+
+                    b.ToTable("CorobsPlies", (string)null);
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.CorobsPoint", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<DateTime?>("AtStoryTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("BuiltAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<byte[]>("Coords")
+                        .IsRequired()
+                        .HasMaxLength(4096)
+                        .HasColumnType("varbinary(4096)");
+
+                    b.Property<string>("EdgesFingerprint")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<Guid>("EntityId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("PlyId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("RecordModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("SpaceId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EntityId");
+
+                    b.HasIndex("PlyId", "EntityId", "AtStoryTime");
+
+                    b.ToTable("CorobsPoints", (string)null);
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.CorobsRule", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<double>("Bits")
+                        .HasColumnType("float");
+
+                    b.Property<Guid?>("ConfirmedRulingId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("SourcePatternId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("nvarchar(16)");
+
+                    b.Property<double>("Support")
+                        .HasColumnType("float");
+
+                    b.Property<Guid>("TargetPatternId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Status");
+
+                    b.HasIndex("SourcePatternId", "TargetPatternId")
+                        .IsUnique();
+
+                    b.ToTable("CorobsRules", (string)null);
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.CorobsSpace", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("BuiltAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("N")
+                        .HasColumnType("int");
+
+                    b.Property<long>("Seed")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("nvarchar(16)");
+
+                    b.Property<Guid>("UniverseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UniverseId")
+                        .IsUnique();
+
+                    b.ToTable("CorobsSpaces", (string)null);
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Corponation", b =>
@@ -13766,6 +14029,33 @@ namespace Prose.Core.Migrations
                         .IsRequired();
 
                     b.Navigation("Contract");
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.CorobsPattern", b =>
+                {
+                    b.HasOne("Prose.Core.Data.Entities.CorobsPly", null)
+                        .WithMany()
+                        .HasForeignKey("PlyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.CorobsPly", b =>
+                {
+                    b.HasOne("Prose.Core.Data.Entities.CorobsSpace", null)
+                        .WithMany()
+                        .HasForeignKey("SpaceId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.CorobsPoint", b =>
+                {
+                    b.HasOne("Prose.Core.Data.Entities.CorobsPly", null)
+                        .WithMany()
+                        .HasForeignKey("PlyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Corponation", b =>

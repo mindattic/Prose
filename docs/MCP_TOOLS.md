@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**303 tools** across **54 tool families.**
+**313 tools** across **55 tool families.**
 
 ## Families
 
@@ -31,6 +31,7 @@
 | [Context](#context) | 5 |
 | [Contribution](#contribution) | 4 |
 | [Core Entity Crud](#core-entity-crud) | 5 |
+| [Corobs](#corobs) | 10 |
 | [Corporate](#corporate) | 7 |
 | [Craft Instrument](#craft-instrument) | 3 |
 | [Data Integrity](#data-integrity) | 2 |
@@ -555,6 +556,83 @@ Set which book/series node an existing entity belongs to (Entity.OriginNodeId), 
 
 - `id` (string, required) — Existing entity id (32-char hex or full UUID).
 - `originNodeSlug` (string, optional) — Book/series node slug to scope this entity to. Empty clears it (universe-wide/shared).
+
+## Corobs
+
+<sub>`CorobsTools`</sub>
+
+### `corobs_build`
+
+Rebuild the current universe's COROBS geometry from the records, live edges and state events: writes only points that moved or went stale, re-mines proposed patterns and rules, re-cues every confirmed rule and closes the hits a fix healed (closed by cascade). Writes only Corobs rows.
+
+- `full` (bool, optional) — Rewrite every point, not just the moved/stale ones.
+
+### `corobs_confirm`
+
+Confirm a COROBS pattern or rule by hand. Needs the id of the ruling that records the truth (record_ruling first); a pattern also needs a hand-written label of at most 120 characters. Ids may be unambiguous prefixes.
+
+- `rulingId` (string, required) — The ruling id (or unambiguous prefix) recording this truth.
+- `patternId` (string, optional) — Pattern id to confirm (or give ruleId).
+- `ruleId` (string, optional) — Rule id to confirm (or give patternId).
+- `label` (string, optional) — Pattern only: the truth it shows, ≤120 characters.
+
+### `corobs_cue`
+
+COROBS cue: the open hits, ranked — entities inside a confirmed rule's source pattern but far from its target, i.e. contradiction candidates for a hand to check (read the record and its beats, fix by the normal protocol, then corobs_resolve).
+
+- `entity` (string, optional) — Only hits on this entity (id, slug or exact name).
+- `top` (int, optional) — How many, by rank (default 25).
+
+### `corobs_explain`
+
+Explain one entity in COROBS: its position on every ply (inside or near which pattern, distance, bits; 'no point' where the field is missing), its trajectory through story-time, and its open hits.
+
+- `entity` (string, required) — Entity id, slug or exact name.
+- `at` (string, optional) — Story-time (ISO date) to locate on the trajectory.
+
+### `corobs_patterns`
+
+COROBS patterns — emergent truths: clusters on one ply (type, faction, turf, range, status, species, geo, era, graph) far tighter than chance, with bits and a sample of members. Proposed ones wait for a hand decision (corobs_confirm with a ruling id, or corobs_reject).
+
+- `ply` (string, optional) — Only this ply (type, faction, turf, range, status, species, geo, era, graph).
+- `at` (string, optional) — Only patterns in force at this story-time (ISO date).
+- `status` (string, optional) — proposed | confirmed | rejected | superseded (default: all but superseded).
+- `top` (int, optional) — How many, by bits (default 50).
+
+### `corobs_reject`
+
+Reject a proposed COROBS pattern or rule by hand (it stays rejected when the miner finds it again).
+
+- `patternId` (string, optional) — Pattern id (or give ruleId).
+- `ruleId` (string, optional) — Rule id (or give patternId).
+
+### `corobs_resolve`
+
+Close an open COROBS hit by hand: resolved (the contradiction was fixed) or dismissed (no contradiction). Needs the work order or ruling id that records why.
+
+- `hitId` (string, required) — Hit id (or unambiguous prefix).
+- `orderId` (string, optional) — Work order id that did the fix.
+- `rulingId` (string, optional) — Ruling id that decided it.
+- `dismiss` (bool, optional) — true = dismissed (false positive), false = resolved (fixed).
+
+### `corobs_rules`
+
+COROBS rules s.p >: t.q — members of pattern p on ply s land in pattern q on ply t (support ≥ 0.8). Only a confirmed rule (corobs_confirm with a ruling id) produces hits.
+
+- `status` (string, optional) — proposed | confirmed | rejected | superseded (default: all but superseded).
+- `top` (int, optional) — How many, by bits (default 50).
+
+### `corobs_status`
+
+COROBS status for the current universe: the switch, the space (seed, N, last build), points per ply, and patterns/rules/hits by status. Says only 'enabled: false' while the switch is off.
+
+- _(no parameters)_
+
+### `corobs_switch`
+
+Turn COROBS (RFC 0016's whole new way of relating entities) on or off — the /corobs on|off switch. Off hides it everywhere and deletes nothing; on restores it with no rebuild.
+
+- `on` (bool, required) — true = on, false = off.
 
 ## Corporate
 

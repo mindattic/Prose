@@ -311,6 +311,9 @@ public sealed class ProseSettings
     [Setting("Narrate commands in the Hub", Group = "Hub", Order = 1, Help = "Follow each command's log line with a plain-English gloss (prose --hub-narration on|off).")]
     public bool HubNarrationEnabled { get; set; } = false;
 
+    [Setting("COROBS entity geometry", Group = "Hub", Order = 2, Help = "RFC 0016's whole new way (prose --corobs enable|disable, /corobs on|off). Off hides it everywhere and deletes nothing.")]
+    public bool CorobsEnabled { get; set; } = false;
+
     /// <summary>The real Vault store. Tests and scratch storage pass their own store to <see cref="SettingsService"/>.</summary>
     public static JsonSettingsStore<ProseSettings> ForCurrentUser() => JsonSettingsStore<ProseSettings>.ForSettingsApp();
 }
