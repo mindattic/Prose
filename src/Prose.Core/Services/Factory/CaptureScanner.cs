@@ -104,7 +104,14 @@ public sealed class CaptureScanner(IDbContextFactory<ProseDbContext> dbFactory, 
                 if (live.Count > 0) beatCandidates = EntityMentionScanner.WithPinnedMentions([.. candidates], pinned, live);
             }
             var plain = BeatMarkup.StripEntityTags(b.Text);
-            var matches = EntityMentionScanner.Scan(plain, beatCandidates);
+            // A span the author marked "not an entity" at this spot (the none mark) is settled: it is neither
+            // an untagged mention of a known name nor an unresolved name. Without this, un-marking a common
+            // word could never pass F4 (PRS-T906); the only way out was to create a real record.
+            var suppressed = BeatMarkup.ExtractSuppressedMentions(b.Text);
+            var matches = EntityMentionScanner.Scan(plain, beatCandidates)
+                .Where(m => !suppressed.Any(x => m.Start < x.PlainStart + x.Length && m.Start + m.Length > x.PlainStart)).ToList();
+            var claimedForResidue = suppressed.Count == 0 ? matches
+                : [.. matches, .. suppressed.Select(x => new EntityMentionScanner.MentionMatch(x.PlainStart, x.Length, Guid.Empty, x.Text, "none"))];
 
             // Names only: pronoun tags would otherwise cover for a name left untagged.
             var tagged = BeatMarkup.CountTagsByEntity(b.Text, namesOnly: true);
@@ -114,7 +121,7 @@ public sealed class CaptureScanner(IDbContextFactory<ProseDbContext> dbFactory, 
                 if (missing > 0) untagged.Add(new UntaggedMention(b.Id, b.Number, g.Key, names.GetValueOrDefault(g.Key, g.First().Name), missing));
             }
 
-            foreach (var name in EntityMentionScanner.FindUnresolvedProperNouns(plain, matches))
+            foreach (var name in EntityMentionScanner.FindUnresolvedProperNouns(plain, claimedForResidue))
             {
                 if (ignore.Contains(name) || CaptureStopWords.Contains(name)) continue;
                 if (!beatsByName.TryGetValue(name, out var list)) beatsByName[name] = list = [];
