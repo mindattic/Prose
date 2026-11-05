@@ -26,6 +26,8 @@ public class InstrumentRunLedger(IDbContextFactory<ProseDbContext> dbFactory)
     public const string TunedRead         = "tuned-read";
     public const string ObligationScan    = "obligation-scan";
     public const string VersionGrade      = "version-grade";
+    /// <summary>RFC 0016 §6.7 (PRS-T865): one row per way (OLD Edge graph, NEW Corobs) per bench run.</summary>
+    public const string CorobsBench       = "corobs-bench";
 
     /// <summary>
     /// Record a completed run. Call this on the way out of the instrument, whatever it found —

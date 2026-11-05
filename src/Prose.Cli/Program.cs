@@ -369,6 +369,16 @@ string?[] HistoryLeadingOwners = ["--cost"];
 string[] FamilySubFlagOwners = ["--repair-slugs"];
 string[] BeatSubFlagOwners = ["--wound", "--liberty-report"];
 
+// CLI mode: COROBS bench (RFC 0016 §6.7, PRS-T865): old way (Edge graph) vs new way (Corobs
+// proximity) on interconnectivity, two InstrumentRun rows (corobs-bench). Read-only on the world,
+// no LLM. First in the chain because its own --seed/--k/--node flags belong to it.
+//   prose --universe <u> --corobs bench [--holdout 0.2] [--seed N] [--k 10] [--dry-run] [--baseline-* N]
+if (args.Contains("--corobs") && Array.IndexOf(args, "--corobs") + 1 < args.Length && args[Array.IndexOf(args, "--corobs") + 1] == "bench")
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CorobsBenchCli", args);
+    return;
+}
+
 // CLI mode: dotnet run --project ... -- --rebuild-graph [--universe <slug>]
 // Rebuilds the scoped universe's <slug>_universe_graph.json cache from source data
 // without starting the web server. One universe per invocation (scope is pinned below).
