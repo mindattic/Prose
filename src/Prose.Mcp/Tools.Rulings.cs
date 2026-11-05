@@ -35,8 +35,9 @@ public class RulingTools(RulingService rulings, MetricsReport metrics, IDbContex
         [Description("Book or series id, slug or NodeCode (omit only for a universe-wide ruling).")] string? nodeIdOrSlug = null,
         [Description(".NET regex (law/metric) or the name (incidental).")] string? pattern = null,
         [Description("Metric only: the ceiling per 1,000 words of the whole book.")] decimal? maxPer1kWords = null,
-        [Description("author (default) or session:<id>.")] string source = "author") =>
-        hub.InvokeAsync(nameof(RulingTools), nameof(RecordRulingImpl), new { kind, text, nodeIdOrSlug, pattern, maxPer1kWords, source });
+        [Description("author (default) or session:<id>.")] string source = "author",
+        [Description("Universe slug this write targets (e.g. 'gospel', 'glmz'). ALWAYS pass it: switch_universe is shared by every agent on this MCP server, so omitting it lands the write in whichever universe another caller last switched to.")] string universe = "") =>
+        hub.InvokeAsync(nameof(RulingTools), nameof(RecordRulingImpl), new { kind, text, nodeIdOrSlug, pattern, maxPer1kWords, source }, universe);
 
     [FactoryTool("record_ruling", "2026-09-23", Cli = "FactoryCli --ruling add")]
     public async Task<string> RecordRulingImpl(string kind, string text, string? nodeIdOrSlug = null, string? pattern = null, decimal? maxPer1kWords = null, string source = "author")

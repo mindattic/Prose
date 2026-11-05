@@ -82,13 +82,14 @@ public class CoreEntityCrudTools
         [Description("Optional JSON for physical_description: {heritage, height_cm, weight_kg, build, hair_color, eye_color, distinguishing_marks}.")] string physicalDescriptionJson = "",
         [Description("Optional existing character id (32-char hex or full UUID) to update.")] string id = "",
         [Description("Optional book/series node slug this character belongs to (Entity.OriginNodeId). Pass this when seeding a book's cast — it lets a genuinely different character elsewhere reuse a common name (e.g. two unrelated books each with a 'Marcus') instead of being refused as a duplicate.")] string originNodeSlug = "",
-        [Description("Optional JSON array of relationships: [{name (target, required), type, description, emotional_core, story_tension, status, since_chapter, until_chapter}]. REPLACES the whole list (the mapper rewrites the bridge table on every save) — pass '[]' to CLEAR all relationships, omit to leave unchanged. An entry with an empty 'name' is rejected.")] string relationshipsJson = "") =>
+        [Description("Optional JSON array of relationships: [{name (target, required), type, description, emotional_core, story_tension, status, since_chapter, until_chapter}]. REPLACES the whole list (the mapper rewrites the bridge table on every save) — pass '[]' to CLEAR all relationships, omit to leave unchanged. An entry with an empty 'name' is rejected.")] string relationshipsJson = "",
+        [Description("Universe slug this write targets (e.g. 'gospel', 'glmz'). ALWAYS pass it: switch_universe is shared by every agent on this MCP server, so omitting it lands the write in whichever universe another caller last switched to.")] string universe = "") =>
         hub.InvokeAsync(nameof(CoreEntityCrudTools), nameof(CreateCharacterImpl), new
         {
             name, role, description, species, gender, pronouns, age, status, location, affiliation,
             augmentations, narrativeFunction, tags, storyHooks, aliases, psychologyJson, speechPatternsJson,
             physicalDescriptionJson, id, originNodeSlug, relationshipsJson,
-        });
+        }, universe);
 
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
     public async Task<string> CreateCharacterImpl(
@@ -377,11 +378,12 @@ public class CoreEntityCrudTools
         [Description("Comma-separated dangers present in this place.")] string dangers = "",
         [Description("Comma-separated story hooks.")] string storyHooks = "",
         [Description("Comma-separated tags.")] string tags = "",
-        [Description("Optional existing place id to update.")] string id = "") =>
+        [Description("Optional existing place id to update.")] string id = "",
+        [Description("Universe slug this write targets (e.g. 'gospel', 'glmz'). ALWAYS pass it: switch_universe is shared by every agent on this MCP server, so omitting it lands the write in whichever universe another caller last switched to.")] string universe = "") =>
         hub.InvokeAsync(nameof(CoreEntityCrudTools), nameof(CreatePlaceImpl), new
         {
             name, type, description, demographics, economy, powerStructure, dangers, storyHooks, tags, id,
-        });
+        }, universe);
 
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
     public string CreatePlaceImpl(
@@ -432,12 +434,13 @@ public class CoreEntityCrudTools
         [Description("Comma-separated goals.")] string goals = "",
         [Description("Comma-separated story hooks.")] string storyHooks = "",
         [Description("Comma-separated tags.")] string tags = "",
-        [Description("Optional existing faction id to update.")] string id = "") =>
+        [Description("Optional existing faction id to update.")] string id = "",
+        [Description("Universe slug this write targets (e.g. 'gospel', 'glmz'). ALWAYS pass it: switch_universe is shared by every agent on this MCP server, so omitting it lands the write in whichever universe another caller last switched to.")] string universe = "") =>
         hub.InvokeAsync(nameof(CoreEntityCrudTools), nameof(CreateFactionImpl), new
         {
             name, motto, description, ideology, territory, leadership, narrativeFunction, methods, goals,
             storyHooks, tags, id,
-        });
+        }, universe);
 
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
     public string CreateFactionImpl(

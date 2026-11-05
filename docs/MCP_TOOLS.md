@@ -501,6 +501,7 @@ Create or update a character in canon. Pass empty id to create new; pass an exis
 - `id` (string, optional) — Optional existing character id (32-char hex or full UUID) to update.
 - `originNodeSlug` (string, optional) — Optional book/series node slug this character belongs to (Entity.OriginNodeId). Pass this when seeding a book's cast — it lets a genuinely different character elsewhere reuse a common name (e.g. two unrelated books each with a 'Marcus') instead of being refused as a duplicate.
 - `relationshipsJson` (string, optional) — Optional JSON array of relationships: [{name (target, required), type, description, emotional_core, story_tension, status, since_chapter, until_chapter}]. REPLACES the whole list (the mapper rewrites the bridge table on every save) — pass '[]' to CLEAR all relationships, omit to leave unchanged. An entry with an empty 'name' is rejected.
+- `universe` (string, optional) — Universe slug this write targets (e.g. 'gospel', 'glmz'). ALWAYS pass it: switch_universe is shared by every agent on this MCP server, so omitting it lands the write in whichever universe another caller last switched to.
 
 ### `create_corponation`
 
@@ -534,6 +535,7 @@ Create or update a faction (street gang, syndicate, cell, advocacy group, etc.) 
 - `storyHooks` (string, optional) — Comma-separated story hooks.
 - `tags` (string, optional) — Comma-separated tags.
 - `id` (string, optional) — Optional existing faction id to update.
+- `universe` (string, optional) — Universe slug this write targets (e.g. 'gospel', 'glmz'). ALWAYS pass it: switch_universe is shared by every agent on this MCP server, so omitting it lands the write in whichever universe another caller last switched to.
 
 ### `create_place`
 
@@ -549,6 +551,7 @@ Create or update a place / district in canon. Pass empty id to create new; pass 
 - `storyHooks` (string, optional) — Comma-separated story hooks.
 - `tags` (string, optional) — Comma-separated tags.
 - `id` (string, optional) — Optional existing place id to update.
+- `universe` (string, optional) — Universe slug this write targets (e.g. 'gospel', 'glmz'). ALWAYS pass it: switch_universe is shared by every agent on this MCP server, so omitting it lands the write in whichever universe another caller last switched to.
 
 ### `set_entity_origin`
 
@@ -2133,6 +2136,7 @@ Record one of the author's rulings the moment it is made. kind law = a constrain
 - `pattern` (string, optional) — .NET regex (law/metric) or the name (incidental).
 - `maxPer1kWords` (Decimal, optional) — Metric only: the ceiling per 1,000 words of the whole book.
 - `source` (string, optional) — author (default) or session:<id>.
+- `universe` (string, optional) — Universe slug this write targets (e.g. 'gospel', 'glmz'). ALWAYS pass it: switch_universe is shared by every agent on this MCP server, so omitting it lands the write in whichever universe another caller last switched to.
 
 ### `supersede_ruling`
 

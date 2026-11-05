@@ -18,14 +18,18 @@ public sealed class HubInvoker(IHttpClientFactory httpFactory, IUniverseContext 
 {
     private readonly HttpClient http = httpFactory.CreateClient("ProseHub");
 
-    public async Task<string> InvokeAsync(string toolClass, string method, object? args = null)
+    public async Task<string> InvokeAsync(string toolClass, string method, object? args = null, string? universeOverride = null)
     {
         try
         {
             // Carry the caller's explicit scope across the process boundary. The Hub owns the
             // resident services; a process-local switch otherwise leaves the Hub on its default
             // universe and can make a valid MCP call mutate the wrong corpus.
-            var universe = universeContext.IsExplicitlyScoped ? universeContext.CurrentSlug : null;
+            // A per-call universe (the write tools' optional `universe` argument) wins over the process-wide
+            // session scope: several subagents/clients can share this one MCP process, so another
+            // caller's switch_universe must not be able to redirect this caller's write (PRS-T909).
+            var universe = !string.IsNullOrWhiteSpace(universeOverride) ? universeOverride.Trim()
+                : universeContext.IsExplicitlyScoped ? universeContext.CurrentSlug : null;
             using var resp = await http.PostAsJsonAsync("api/mcp-invoke", new
             {
                 toolClass,
