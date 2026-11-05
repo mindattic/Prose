@@ -2458,7 +2458,7 @@ Get global prose workflow coverage across all nodes. Returns per-service utiliza
 
 ### `create_entity`
 
-Create an entity of a type no create_* tool serves — an "event" (a crossfire, a roundup, a berserk machine, a building turned inside out) or any custom repository type — as its entity row plus its JSON record. Refused for typed kinds (character, place, faction, weapon, …: use their create_* tool) and for a slug that type already has in this universe. Registers the type's repository tile on first use. Edit it afterwards with set_entity_fields (merge patch on the JSON record). Event record keys by convention: kind (crossfire | roundup | malfunction | schism | …), place (place entity id), at_story_time (ISO date-time), summary (one line). Returns the id and the record as read back.
+Create an entity of a type no create_* tool serves — an "event" (a crossfire, a roundup, a berserk machine, a building turned inside out) or any custom repository type — as its entity row plus its JSON record. Refused for typed kinds (character, place, faction, weapon, …: use their create_* tool) and for a slug that type already has in this universe. Registers the type's repository tile on first use. Edit it afterwards with set_entity_fields (merge patch on the JSON record). Event record keys by convention: kind (crossfire | roundup | malfunction | schism | …), place (place entity id), at_story_time (ISO date-time); the one-paragraph summary goes in the summary argument, never as a record key (the key "summary" is reserved for Entities.Description). Returns the id and the record as read back.
 
 - `type` (string, required) — Entity type, lower_snake_case, e.g. "event".
 - `name` (string, required) — The entity's name, e.g. "Hollow Street crossfire".

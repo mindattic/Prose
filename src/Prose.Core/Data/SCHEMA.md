@@ -87,7 +87,8 @@ An `event` is an ordinary `Entity` (`EntityType = 'event'`) with no subtype tabl
 entity (`<entity guid>`), so `BeatEntityMentions`, F1 and the wiki see it with no special case.
 
 Record keys by convention: `kind` (`crossfire` | `roundup` | `malfunction` | `schism` | …), `place`
-(the place's entity id), `at_story_time` (ISO date-time), `summary` (one line).
+(the place's entity id), `at_story_time` (ISO date-time). The summary is `create_entity`'s own argument
+(`Entities.Description`); `summary` is refused as a record key because `set_entity_fields` reserves it.
 
 Edges (free-text `RelationType`, normalised by `RelationTypeAlias` at `POST /api/edges`):
 
