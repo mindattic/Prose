@@ -18,6 +18,14 @@ public sealed class HubInvoker(IHttpClientFactory httpFactory, IUniverseContext 
 {
     private readonly HttpClient http = httpFactory.CreateClient("ProseHub");
 
+    /// <summary>
+    /// The per-call `universe` argument of the MCP request currently being served, captured by the
+    /// call-tool filter in Program.cs so EVERY forwarded tool honours it, not only the ones that declare
+    /// a `universe` parameter. AsyncLocal flows from the filter into the tool method it invokes.
+    /// An explicit universeOverride passed to <see cref="InvokeAsync"/> still wins over it (PRS-T914).
+    /// </summary>
+    public static readonly AsyncLocal<string?> CallUniverse = new();
+
     public async Task<string> InvokeAsync(string toolClass, string method, object? args = null, string? universeOverride = null)
     {
         try
@@ -29,6 +37,7 @@ public sealed class HubInvoker(IHttpClientFactory httpFactory, IUniverseContext 
             // session scope: several subagents/clients can share this one MCP process, so another
             // caller's switch_universe must not be able to redirect this caller's write (PRS-T909).
             var universe = !string.IsNullOrWhiteSpace(universeOverride) ? universeOverride.Trim()
+                : !string.IsNullOrWhiteSpace(CallUniverse.Value) ? CallUniverse.Value!.Trim()
                 : universeContext.IsExplicitlyScoped ? universeContext.CurrentSlug : null;
             using var resp = await http.PostAsJsonAsync("api/mcp-invoke", new
             {

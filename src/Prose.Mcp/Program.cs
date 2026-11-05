@@ -111,7 +111,47 @@ builder.Services.AddSingleton<HubInvoker>();
 builder.Services
     .AddMcpServer()
     .WithStdioServerTransport()
-    .WithToolsFromAssembly();
+    .WithToolsFromAssembly()
+    // PRS-T914: one per-call `universe` argument for every tool, so a write never depends on the
+    // process-wide switch_universe that concurrent subagents flip. The list filter advertises the
+    // argument on each tool that does not already declare it; the call filter captures it into
+    // HubInvoker.CallUniverse, which HubInvoker.InvokeAsync forwards to the Hub as the explicit scope.
+    .WithRequestFilters(f =>
+    {
+        f.AddListToolsFilter(next => async (ctx, ct) =>
+        {
+            var result = await next(ctx, ct);
+            foreach (var tool in result.Tools)
+            {
+                try
+                {
+                    var node = System.Text.Json.Nodes.JsonNode.Parse(tool.InputSchema.GetRawText()) as System.Text.Json.Nodes.JsonObject;
+                    if (node is null) continue;
+                    var props = node["properties"] as System.Text.Json.Nodes.JsonObject;
+                    if (props is null) { props = new(); node["properties"] = props; }
+                    if (props.ContainsKey("universe")) continue;
+                    props["universe"] = new System.Text.Json.Nodes.JsonObject
+                    {
+                        ["type"] = "string",
+                        ["description"] = "Universe slug this call targets (e.g. 'gospel', 'glmz'). ALWAYS pass it on writes: switch_universe is shared by every agent on this MCP server, so omitting it uses whichever universe another caller last switched to.",
+                    };
+                    tool.InputSchema = System.Text.Json.JsonSerializer.SerializeToElement(node);
+                }
+                catch { /* leave this tool's schema as declared */ }
+            }
+            return result;
+        });
+        f.AddCallToolFilter(next => async (ctx, ct) =>
+        {
+            string? slug = null;
+            if (ctx.Params?.Arguments is { } a && a.TryGetValue("universe", out var u)
+                && u.ValueKind == System.Text.Json.JsonValueKind.String)
+                slug = u.GetString();
+            HubInvoker.CallUniverse.Value = string.IsNullOrWhiteSpace(slug) ? null : slug;
+            try { return await next(ctx, ct); }
+            finally { HubInvoker.CallUniverse.Value = null; }
+        });
+    });
 
 var mcpHost = builder.Build();
 // Construct the universe context up front so canon reads are scoped to the
