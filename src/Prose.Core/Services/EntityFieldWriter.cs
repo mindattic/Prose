@@ -171,13 +171,16 @@ public sealed class EntityFieldWriter(
         if (entityUniverse != Guid.Empty && UniverseScope.EffectiveId != entityUniverse)
             UniverseScope.Current?.SetFlowUniverse(entityUniverse);
         if (entityType == "character") return await characterWriter.SetFieldsAsync(id, fieldsJson, confirmUnread, ct);
-        if (!Repositories.TryGetValue(entityType, out var repoType))
-            return FieldWriteResult.Fail($"entity type '{entityType}' has no repository-backed record, so it has no field writer.");
-
         JsonObject fields;
         try { fields = JsonNode.Parse(fieldsJson ?? "") as JsonObject ?? throw new JsonException(); }
         catch (JsonException) { return FieldWriteResult.Fail("fields must be one JSON object: {\"field\": value, …}."); }
         if (fields.Count == 0) return FieldWriteResult.Fail("no fields given.");
+        if (!Repositories.TryGetValue(entityType, out var repoType))
+        {
+            if (CanonRecordLoader.MappedTypes.Contains(entityType))
+                return FieldWriteResult.Fail($"entity type '{entityType}' has a typed record but no repository writer here; use its own write path.");
+            return await SetRecordJsonAsync(entityId, entityType, fields, confirmUnread, ct);
+        }
 
         var repo = services.GetRequiredService(repoType);
         var dataType = repoType.BaseType!.GetGenericArguments()[0];
@@ -248,6 +251,69 @@ public sealed class EntityFieldWriter(
         var fresh = getById.Invoke(repo, [id]);
         var saved = fresh == null ? null : (JsonObject)JsonSerializer.SerializeToNode(fresh, dataType, Opts)!;
         var notLanded = saved == null ? changed : changed.Where(k => !FieldPatch.Same(k, intended[k], saved[k])).ToList();
+        return new FieldWriteResult(notLanded.Count == 0,
+            notLanded.Count == 0 ? null : $"saved, but {notLanded.Count} field(s) read back different from what was written: {string.Join(", ", notLanded)}.",
+            changed, notLanded, [], cost.Count, costRuns, CanonRecordLoader.Prune(saved));
+    }
+
+    /// <summary>
+    /// The write path for a type no repository serves — an <c>event</c> from <see cref="EntityCreator"/>,
+    /// or any custom type — whose whole record is its <c>Records.Json</c> (PRS-T864). Same rules as the
+    /// repository path: JSON Merge Patch by the record's own keys (a key present sets it, null removes it,
+    /// objects merge, lists replace whole), refused keys refused, an unchanged write writes nothing, a
+    /// change that un-reads read beats needs <paramref name="confirmUnread"/>, and the record is read
+    /// back. There is no schema to check keys against, so any key is writable. A changed "name" renames
+    /// the entity row too (its slug stays: slugs are loose keys and tags are by id).
+    /// </summary>
+    private async Task<FieldWriteResult> SetRecordJsonAsync(Guid entityId, string entityType, JsonObject fields, bool confirmUnread, CancellationToken ct)
+    {
+        var refused = fields.Select(f => f.Key).Where(Refused.ContainsKey).ToList();
+        if (refused.Count > 0)
+            return FieldWriteResult.Fail(string.Join(" ", refused.Select(k => $"'{k}' is not written here: {Refused[k]}")));
+        if (fields.ContainsKey("name") && string.IsNullOrWhiteSpace(fields["name"] is JsonValue nv && nv.TryGetValue<string>(out var ns) ? ns : null))
+            return FieldWriteResult.Fail("'name' is the record's name and must be a non-blank string.");
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var row = await db.Entities.IgnoreQueryFilters().FirstOrDefaultAsync(e => e.Id == entityId, ct);
+        if (row == null) return FieldWriteResult.Fail($"no entity with id {entityId:N}.");
+        var stored = await db.Records.IgnoreQueryFilters().FirstOrDefaultAsync(r => r.EntityId == entityId, ct);
+        JsonObject before;
+        try { before = (stored == null ? null : JsonNode.Parse(stored.Json) as JsonObject) ?? new JsonObject(); }
+        catch (JsonException) { return FieldWriteResult.Fail($"the stored record of this {entityType} is not a JSON object; it cannot be patched."); }
+        if (!before.ContainsKey("name")) before["name"] = row.Name;
+        if (!before.ContainsKey("type")) before["type"] = entityType;
+
+        var after = (JsonObject)before.DeepClone();
+        foreach (var (key, value) in fields)
+        {
+            var next = CharacterFieldWriter.MergePatch(after[key], value, null);
+            if (next == null) after.Remove(key); else after[key] = next;
+        }
+        var changed = fields.Select(f => f.Key).Where(k => !FieldPatch.Same(k, before[k], after[k])).ToList();
+        if (changed.Count == 0)
+            return new FieldWriteResult(true, null, [], [], ["nothing changed; nothing was written."], 0, null, CanonRecordLoader.Prune(before.DeepClone()));
+
+        var cost = await gate.ReadBeatsMentioningAsync(entityId, ct);
+        var costRuns = cost.Count == 0 ? null : ReadGateService.Runs(cost.Select(c => c.Number));
+        if (cost.Count > 0 && !confirmUnread)
+            return FieldWriteResult.Fail($"this edit un-reads {cost.Count} beat(s) that mention {row.Name} (#{costRuns}). " +
+                                         "Pass confirmUnread to make it, then re-read them.", cost.Count, costRuns);
+
+        var json = after.ToJsonString(Opts);
+        if (stored == null) db.Records.Add(new Data.Entities.Record { EntityId = entityId, Json = json, UpdatedAt = DateTime.UtcNow });
+        else { stored.Json = json; stored.UpdatedAt = DateTime.UtcNow; }
+        if (changed.Contains("name")) row.Name = after["name"]!.GetValue<string>().Trim();
+        row.ModifiedAt = DateTime.UtcNow;
+        try { await db.SaveChangesAsync(ct); }
+        catch (Exception ex) when (ex is DbUpdateException or WriteGate.WriteGateRejectedException)
+        {
+            return FieldWriteResult.Fail($"the save was refused: {ex.InnerException?.Message ?? ex.Message}", cost.Count, costRuns);
+        }
+
+        await using var check = await dbFactory.CreateDbContextAsync(ct);
+        var backJson = await check.Records.IgnoreQueryFilters().AsNoTracking().Where(r => r.EntityId == entityId).Select(r => r.Json).FirstOrDefaultAsync(ct);
+        var saved = backJson == null ? null : JsonNode.Parse(backJson) as JsonObject;
+        var notLanded = saved == null ? changed : changed.Where(k => !FieldPatch.Same(k, after[k], saved[k])).ToList();
         return new FieldWriteResult(notLanded.Count == 0,
             notLanded.Count == 0 ? null : $"saved, but {notLanded.Count} field(s) read back different from what was written: {string.Join(", ", notLanded)}.",
             changed, notLanded, [], cost.Count, costRuns, CanonRecordLoader.Prune(saved));

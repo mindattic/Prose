@@ -520,6 +520,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<CharacterFieldWriter>();                                   // set_character_fields
         services.AddSingleton<EntityFieldWriter>();                                      // set_entity_fields (every repository type)
         services.AddSingleton<CorporateHierarchyService>();                              // prose --corp / get_corp_* (PRS-T819): ownership, forces, Tier ladder
+        services.AddSingleton<EntityCreator>();                                          // create_entity (repo-less types: event, …) (PRS-T864)
         services.AddSingleton<CanonMaintenanceService>();                                // entity slug, edge, orphan tag, obligation corrections
         services.AddSingleton<Prose.Core.Services.Factory.WorkOrderService>(sp => new Prose.Core.Services.Factory.WorkOrderService(
             sp.GetRequiredService<IDbContextFactory<ProseDbContext>>(),

@@ -15,6 +15,8 @@ namespace Prose.Cli;
 ///   prose --universe glmz --set-entity-fields --id &lt;any entity id&gt; --file fields.json [--confirm-unread]
 ///   prose --universe glmz --verify-entity begin --entity &lt;id&gt; --node &lt;book&gt; [--text-budget N] [--out packet.json]
 ///   prose --universe glmz --verify-entity commit --nonce &lt;nonce&gt; [--by claude]
+///   prose --universe glmz --create-entity --type event --name "…" [--summary "…"] [--file record.json]
+///   prose --universe glmz --record-state-event --entity &lt;id&gt; --aspect &lt;key&gt; --verb set [--value V] [--at &lt;ISO&gt;] [--beat &lt;id&gt;]
 ///
 /// fields.json is one JSON object keyed by get_character's snake_case names; null clears a field.
 /// The key "summary" writes the entity's own one-paragraph summary (Entities.Description) on any type.
@@ -58,6 +60,58 @@ public static class WorldCli
             Console.WriteLine(JsonSerializer.Serialize(r, Json));
             if (r.Ok) Console.Error.WriteLine($"[world] {(r.Changed.Count == 0 ? "nothing changed" : "changed: " + string.Join(", ", r.Changed))}" +
                                               (r.UnreadCost > 0 ? $" · un-read {r.UnreadCost} beat(s): #{r.UnreadBeats}" : ""));
+            else Console.Error.WriteLine($"[world] refused: {r.Error}");
+            return r.Ok ? 0 : 2;
+        }
+
+        if (args.Contains("--create-entity"))
+        {
+            var type = Flag("--type");
+            var name = Flag("--name");
+            var file = Flag("--file");
+            if (string.IsNullOrWhiteSpace(type) || string.IsNullOrWhiteSpace(name) || (file != null && !File.Exists(file)))
+            {
+                Console.Error.WriteLine("[world] usage: --create-entity --type <type> --name \"…\" [--summary \"…\"] [--file record.json]");
+                return 1;
+            }
+            string? record = null;
+            if (file != null)
+            {
+                try { record = await File.ReadAllTextAsync(file, new System.Text.UTF8Encoding(false, throwOnInvalidBytes: true)); }
+                catch (System.Text.DecoderFallbackException) { Console.Error.WriteLine($"[world] {file} is not valid UTF-8 — save it as UTF-8."); return 1; }
+            }
+            var r = await services.GetRequiredService<EntityCreator>().CreateAsync(type, name, Flag("--summary"), record);
+            Console.WriteLine(JsonSerializer.Serialize(r, Json));
+            if (r.Ok) Console.Error.WriteLine($"[world] created {r.EntityType} {r.Name} ({r.Id:N}, slug {r.Slug})");
+            else Console.Error.WriteLine($"[world] refused: {r.Error}");
+            return r.Ok ? 0 : 2;
+        }
+
+        if (args.Contains("--record-state-event"))
+        {
+            var aspect = Flag("--aspect");
+            var verb = Flag("--verb");
+            if (!Guid.TryParse(Flag("--entity"), out var entity) || string.IsNullOrWhiteSpace(aspect) || string.IsNullOrWhiteSpace(verb))
+            {
+                Console.Error.WriteLine("[world] usage: --record-state-event --entity <id> --aspect <key> --verb set|inc|dec|enter|leave|add|remove [--value V] [--at <ISO>] [--beat <id>] [--snippet \"…\"]");
+                return 1;
+            }
+            DateTime? at = null;
+            if (Flag("--at") is { } atText)
+            {
+                if (!DateTime.TryParse(atText, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.RoundtripKind, out var t))
+                { Console.Error.WriteLine($"[world] --at '{atText}' is not an ISO date-time."); return 1; }
+                at = t;
+            }
+            Guid? beat = null;
+            if (Flag("--beat") is { } beatText)
+            {
+                if (!Guid.TryParse(beatText, out var b)) { Console.Error.WriteLine($"[world] --beat '{beatText}' is not a beat id."); return 1; }
+                beat = b;
+            }
+            var r = await services.GetRequiredService<WorldStateLedger>().RecordByHandAsync(entity, aspect, verb, Flag("--value"), at, beat, Flag("--snippet"));
+            Console.WriteLine(JsonSerializer.Serialize(r, Json));
+            if (r.Ok) Console.Error.WriteLine($"[world] {r.Entity} {r.Aspect} {r.Verb} {r.NewValue} at {r.AtStoryTime:O} (was {r.OldValue ?? "unset"})");
             else Console.Error.WriteLine($"[world] refused: {r.Error}");
             return r.Ok ? 0 : 2;
         }

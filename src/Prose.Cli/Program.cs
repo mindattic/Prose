@@ -1266,7 +1266,10 @@ if (args.Contains("--set-entity-slug") || args.Contains("--set-entity-name") || 
 //   prose --universe glmz --set-character-fields | --set-entity-fields --id <id> --file fields.json [--confirm-unread]
 //     (the key "summary" writes the entity's one-paragraph summary, Entities.Description)
 //   prose --universe glmz --verify-entity begin --entity <id> --node <book> | commit --nonce <nonce>
-if (args.Contains("--get-entity-fields") || args.Contains("--set-character-fields") || args.Contains("--set-entity-fields") || args.Contains("--verify-entity"))
+//   prose --universe glmz --create-entity --type event --name "…" [--summary "…"] [--file record.json]   (PRS-T864)
+//   prose --universe glmz --record-state-event --entity <id> --aspect <key> --verb set|… [--value V] [--at <ISO>] [--beat <id>] [--snippet "…"]
+if (args.Contains("--get-entity-fields") || args.Contains("--set-character-fields") || args.Contains("--set-entity-fields") || args.Contains("--verify-entity")
+    || args.Contains("--create-entity") || args.Contains("--record-state-event"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("WorldCli", args);
     return;

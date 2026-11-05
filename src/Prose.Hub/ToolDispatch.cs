@@ -158,7 +158,7 @@ public static class ToolDispatch
         "PlantMotif", "PrepareAudible", "ReadBeats", "RecordLawViolations", "RecordRuling",
         "RejectVoiceProposal", "ResolveContinuityContradiction", "ResolveReadNote", "ReviewBook",
         "SanityScanNode", "SpliceBeats", "SupersedeRuling", "UpsertGlossaryTerm", "ValidateNouns",
-        "VerifyEntityCommit", "CheckGearCarry",
+        "VerifyEntityCommit", "CheckGearCarry", "RecordStateEvent",
         "accept_obligation", "defer_obligation", "drop_obligation", "reopen_obligation", "open_obligation",
         "link_obligation_entity", "link_payoff_beat", "link_plant_beat", "register_plant_payoff",
         "reconcile_obligations", "clear_entity_context", "scan_entity_context", "extract_beat_locations",

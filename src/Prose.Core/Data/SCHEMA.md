@@ -78,6 +78,30 @@ Anything that doesn't deserve its own column or that varies per entity-type inst
 - `IX_Edge_Target` on `(TargetId, RelationType, StoryValidFrom)` — inbound traversal.
 - `IX_Edge_Active` on `(SourceId, TargetId)` filtered `WHERE StoryValidUntil IS NULL` — the in-game "current" snapshot.
 
+### Events — things that happened (PRS-T864)
+
+An `event` is an ordinary `Entity` (`EntityType = 'event'`) with no subtype table: its whole record is
+`Records.Json`. It is made with `create_entity` / `prose --create-entity --type event` and edited with
+`set_entity_fields`, whose repo-less fallback merge-patches the JSON (any key; `id`, `type`, `rating`,
+`vote_count` refused; a changed `name` renames the entity row, the slug stays). Beats tag it like any
+entity (`<entity guid>`), so `BeatEntityMentions`, F1 and the wiki see it with no special case.
+
+Record keys by convention: `kind` (`crossfire` | `roundup` | `malfunction` | `schism` | …), `place`
+(the place's entity id), `at_story_time` (ISO date-time), `summary` (one line).
+
+Edges (free-text `RelationType`, normalised by `RelationTypeAlias` at `POST /api/edges`):
+
+| relation | from → to | meaning |
+|---|---|---|
+| `located_at` | event → place | where it happened |
+| `present_at` | person/thing → event | was there, in it |
+| `witnessed` | person → event | saw it, from outside it (alias: `saw`) |
+| `caused` | person/faction/thing → event | made it happen |
+
+Set the edge's valid-from to the beat that shows it. Time goes in the state ledger, not the record
+alone: `record_state_event` / `prose --record-state-event` writes `occurs` on the event and `location`
+on each witness at that story time (`Source = 'manual'`, never cleared by re-extraction).
+
 ### `Taxonomy` + `EntityTaxonomy` — extensible classification
 
 Cross-cutting facets that don't belong inline (because they may be many-valued and vocabularies grow).

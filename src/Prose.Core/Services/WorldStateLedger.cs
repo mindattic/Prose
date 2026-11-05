@@ -6,6 +6,13 @@ using Prose.Core.Data.Entities;
 
 namespace Prose.Core.Services;
 
+/// <summary>What <see cref="WorldStateLedger.RecordByHandAsync"/> wrote, as read back.</summary>
+public sealed record HandStateEventResult(bool Ok, string? Error, long? Id, string? Entity, string? Aspect, string? Verb,
+    string? OldValue, string? NewValue, DateTime? AtStoryTime, Guid? BeatGuid)
+{
+    public static HandStateEventResult Fail(string error) => new(false, error, null, null, null, null, null, null, null, null);
+}
+
 /// <summary>
 /// Read/write API over the <see cref="EntityStateEvent"/> append-only ledger.
 /// Every state change a chapter induces — Kyle fires a shell, Sasha enters
@@ -47,6 +54,85 @@ public class WorldStateLedger
         await db.SaveChangesAsync(ct);
         try { OnEventsRecorded?.Invoke(1); } catch { }
         return ev.Id;
+    }
+
+    /// <summary>The verbs a state event may carry (see <see cref="EntityStateEvent.Verb"/>).</summary>
+    public static readonly IReadOnlySet<string> Verbs = new HashSet<string>(StringComparer.Ordinal)
+        { "set", "inc", "dec", "enter", "leave", "add", "remove" };
+
+    /// <summary>The <see cref="EntityStateEvent.Source"/> of a state event recorded by hand.</summary>
+    public const string HandSource = "manual";
+
+    /// <summary>
+    /// Records one dated state change by hand (PRS-T864, <c>record_state_event</c>): an event's
+    /// <c>occurs</c> time, a witness's <c>location</c> at that time — any (entity, aspect) at any story
+    /// time, not only the current value. Validates the entity, the verb and the beat; the story time
+    /// defaults to the beat's <c>InWorldDate</c>; the old value is the ledger's value just before.
+    /// Hand rows are never cleared by re-extraction (<see cref="ClearExtractedForBeatAsync"/>).
+    /// </summary>
+    public async Task<HandStateEventResult> RecordByHandAsync(Guid entityId, string aspect, string verb, string? value,
+        DateTime? atStoryTime, Guid? beatGuid, string? snippet = null, CancellationToken ct = default)
+    {
+        aspect = (aspect ?? "").Trim();
+        verb = (verb ?? "").Trim().ToLowerInvariant();
+        if (aspect.Length == 0 || aspect.Length > 200) return HandStateEventResult.Fail("aspect is required (at most 200 characters), e.g. \"location\" or \"occurs\".");
+        if (!Verbs.Contains(verb)) return HandStateEventResult.Fail($"verb '{verb}' is not one of {string.Join(", ", Verbs)}.");
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var entity = await db.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => e.Id == entityId)
+            .Select(e => new { e.Name, e.UniverseId }).FirstOrDefaultAsync(ct);
+        if (entity == null) return HandStateEventResult.Fail($"no entity with id {entityId:N}.");
+
+        DateTime? beatDate = null;
+        if (beatGuid is Guid b)
+        {
+            var beat = await db.Beats.IgnoreQueryFilters().AsNoTracking().Where(x => x.Id == b)
+                .Select(x => new { x.InWorldDate }).FirstOrDefaultAsync(ct);
+            if (beat == null) return HandStateEventResult.Fail($"no beat with id {b:N}.");
+            beatDate = beat.InWorldDate;
+        }
+        var at = atStoryTime ?? beatDate;
+        if (at == null) return HandStateEventResult.Fail("atStoryTime is required (the beat given has no InWorldDate, or no beat was given).");
+
+        double? delta = null;
+        if (verb is "inc" or "dec")
+        {
+            if (!double.TryParse(value, System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out var d))
+                return HandStateEventResult.Fail($"verb '{verb}' needs a number as its value.");
+            delta = verb == "dec" ? -Math.Abs(d) : Math.Abs(d);
+        }
+
+        var prior = await StateAtAsync(entityId, aspect, at.Value, ct);
+        string? newValue = value;
+        if (delta is double dd)
+        {
+            var baseValue = double.TryParse(prior?.NewValue, System.Globalization.NumberStyles.Float,
+                System.Globalization.CultureInfo.InvariantCulture, out var pv) ? pv : 0;
+            newValue = (baseValue + dd).ToString(System.Globalization.CultureInfo.InvariantCulture);
+        }
+
+        var ev = new EntityStateEvent
+        {
+            EntityId = entityId,
+            UniverseId = entity.UniverseId,
+            AspectKey = aspect,
+            Verb = verb,
+            OldValue = prior?.NewValue,
+            NewValue = newValue,
+            Delta = delta,
+            AtStoryTime = at.Value,
+            BeatGuid = beatGuid,
+            Source = HandSource,
+            Snippet = string.IsNullOrWhiteSpace(snippet) ? null : snippet.Trim()[..Math.Min(500, snippet.Trim().Length)],
+        };
+        var id = await RecordAsync(ev, ct);
+
+        await using var check = await dbFactory.CreateDbContextAsync(ct);
+        var back = await check.EntityStateEvents.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(e => e.Id == id, ct);
+        if (back == null) return HandStateEventResult.Fail("saved, but the event did not read back.");
+        log.LogInformation("Hand state event {Id}: {Entity} {Aspect} {Verb} {Value} at {At}", id, entity.Name, aspect, verb, newValue, at);
+        return new HandStateEventResult(true, null, back.Id, entity.Name, back.AspectKey, back.Verb, back.OldValue, back.NewValue,
+            back.AtStoryTime, back.BeatGuid);
     }
 
     /// <summary>Remove a beat's previously EXTRACTED events (hand-recorded ones stay), so a

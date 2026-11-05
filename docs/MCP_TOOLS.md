@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**301 tools** across **54 tool families.**
+**303 tools** across **54 tool families.**
 
 ## Families
 
@@ -67,7 +67,7 @@
 | [Verification](#verification) | 2 |
 | [Voice](#voice) | 6 |
 | [Workflow Monitor](#workflow-monitor) | 3 |
-| [World](#world) | 4 |
+| [World](#world) | 6 |
 | [World Entity Crud](#world-entity-crud) | 6 |
 | [World Modelling](#world-modelling) | 11 |
 | [Writing](#writing) | 3 |
@@ -2378,6 +2378,27 @@ Get global prose workflow coverage across all nodes. Returns per-service utiliza
 
 <sub>`WorldTools`</sub>
 
+### `create_entity`
+
+Create an entity of a type no create_* tool serves — an "event" (a crossfire, a roundup, a berserk machine, a building turned inside out) or any custom repository type — as its entity row plus its JSON record. Refused for typed kinds (character, place, faction, weapon, …: use their create_* tool) and for a slug that type already has in this universe. Registers the type's repository tile on first use. Edit it afterwards with set_entity_fields (merge patch on the JSON record). Event record keys by convention: kind (crossfire | roundup | malfunction | schism | …), place (place entity id), at_story_time (ISO date-time), summary (one line). Returns the id and the record as read back.
+
+- `type` (string, required) — Entity type, lower_snake_case, e.g. "event".
+- `name` (string, required) — The entity's name, e.g. "Hollow Street crossfire".
+- `summary` (string, optional) — One-paragraph summary (Entities.Description). Optional.
+- `recordJson` (string, optional) — JSON object for the record, e.g. {"kind":"crossfire","place":"<place id>","at_story_time":"2230-04-11T22:40:00"}. Optional.
+
+### `record_state_event`
+
+Record one dated state change by hand in the world-state ledger: an event's "occurs" time, a witness's "location" at that moment, any (entity, aspect) at any story time — not only the current value. Verbs: set, inc, dec, enter, leave, add, remove (inc/dec take a number). The story time defaults to the beat's InWorldDate when a beat is given. Returns the row as read back, with the prior value.
+
+- `entityId` (string, required) — Entity id (32-char hex or UUID).
+- `aspect` (string, required) — Aspect key, e.g. "location", "occurs", "condition.leg.severity".
+- `verb` (string, required) — set | inc | dec | enter | leave | add | remove.
+- `value` (string, optional) — The new value (a place id or name for location; a number for inc/dec).
+- `atStoryTime` (string, optional) — Story time, ISO 8601 (e.g. 2230-04-11T22:40:00). Optional when beatId has an InWorldDate.
+- `beatId` (string, optional) — The beat that shows it (id). Optional.
+- `snippet` (string, optional) — Supporting prose snippet, at most 500 characters. Optional.
+
 ### `set_character_fields`
 
 Set any fields of a character's record, by the same snake_case keys get_character returns (behavioral, timeline, cyberware_inventory, neural_abilities, genetic_ancestry, knowledge, psychology, relationships, story_hooks, aliases, …). JSON Merge Patch (RFC 7396): a key present sets that field; null clears it; a key absent is untouched; objects merge one level down the same way (so {"behavioral":{"habits":[…]}} leaves decision_rules alone); lists replace whole and are JSON arrays, so nothing is split on commas. Refused: id, type, location, rating, vote_count. Cost-visible: if the change would un-read beats that were read, it is refused with the count unless confirmUnread is true. Returns what changed and the record as read back from the database.
@@ -2388,7 +2409,7 @@ Set any fields of a character's record, by the same snake_case keys get_characte
 
 ### `set_entity_fields`
 
-Set any fields of ANY entity's record — faction, place, weapon, corponation, cyberware, and every other repository type (characters are routed to set_character_fields' rules) — by the same snake_case keys its get_* tool returns. JSON Merge Patch (RFC 7396): a key present sets it, null clears it, a key absent is untouched, objects merge, lists replace whole (JSON arrays; nothing is split on commas). Refused: id, type, rating, vote_count. Cost-visible: refused with the count if it would un-read read beats, unless confirmUnread. Returns what changed and the record as read back.
+Set any fields of ANY entity's record — faction, place, weapon, corponation, cyberware, and every other repository type (characters are routed to set_character_fields' rules) — by the same snake_case keys its get_* tool returns. JSON Merge Patch (RFC 7396): a key present sets it, null clears it, a key absent is untouched, objects merge, lists replace whole (JSON arrays; nothing is split on commas). Refused: id, type, rating, vote_count. A type no repository serves (an event from create_entity, a custom type) is patched on its JSON record, any key. Cost-visible: refused with the count if it would un-read read beats, unless confirmUnread. Returns what changed and the record as read back.
 
 - `id` (string, required) — Entity id (32-char hex or UUID).
 - `fieldsJson` (string, required) — JSON object of field → value.
