@@ -56,6 +56,10 @@ $shortcuts = @(
        Desc = 'Deploy & Run, or Run, KdpPublish' }
     @{ Name = 'IdiotProof';   Bat = 'C:\Apps\IdiotProof\run.bat'; Args = '';       Icon = "$mindAttic\IdiotProof\idiotproof.ico"
        Desc = 'Deploy & Run, or Run, IdiotProof (Monitor + Blazor)' }
+    # The game builds and plays from its repo (no C:\Apps deploy); the icon is the packaged
+    # build's exe, falling back to run.bat's own icon until tools\package.ps1 has made one.
+    @{ Name = 'Soulslike';    Bat = "$mindAttic\Unreal.Soulslike\run.bat"; Args = ''; Icon = "$mindAttic\Unreal.Soulslike\Builds\Cpp\Windows\Unreal.Soulslike.Cpp.exe"
+       Desc = 'Build & Run, or Run, Unreal.Soulslike (filmed by MindAttic.Capture)' }
 )
 
 if (-not (Test-Path $Desktop)) {
