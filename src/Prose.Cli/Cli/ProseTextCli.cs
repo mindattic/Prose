@@ -16,13 +16,19 @@ namespace Prose.Cli;
 ///   prose --texts-approve &lt;slug&gt; &lt;id&gt;... --by &lt;name&gt; [--version n]      (the author's call; RFC 0009)
 ///   prose --texts-publish &lt;slug&gt; --by &lt;name&gt; [id...]                    (one texts.published notice)
 ///   prose --texts-retire &lt;slug&gt; &lt;id&gt;... --by &lt;name&gt;
+///   prose --texts-approve-all &lt;slug&gt; --kind &lt;k&gt; --by &lt;name&gt; [--prefix p] [--about id] [--publish] [--dry-run] [--json]
+///       PRS-T918 bulk approval: every pending draft of one kind (optionally keys starting with p and/or texts about
+///       an entity). Each draft is re-checked; one that fails is reported and left a draft, the rest are approved
+///       (exit 1 when any was refused). --publish also publishes them as one batch (one texts.published notice).
+///   prose --texts-publish-all &lt;slug&gt; --kind &lt;k&gt; --by &lt;name&gt; [--prefix p] [--about id] [--dry-run] [--json]
+///       PRS-T918 bulk publish: every approved, unpublished text of one kind, as one batch.
 /// </summary>
 public static class ProseTextCli
 {
     private static readonly JsonSerializerOptions Pretty = new(ProseTextService.JsonOptsPublic) { WriteIndented = true };
 
     private static readonly HashSet<string> ValueFlags =
-        ["--kind", "--status", "--since", "--key", "--version", "--out", "--by"];
+        ["--kind", "--status", "--since", "--key", "--version", "--out", "--by", "--prefix", "--about"];
 
     public static async Task<int> RunListAsync(string[] args, IServiceProvider services)
     {
@@ -150,6 +156,49 @@ public static class ProseTextCli
         if (pos.Count < 2 || string.IsNullOrWhiteSpace(by)) return Usage("prose --texts-retire <slug> <id>... --by <name>");
         var r = await services.GetRequiredService<ProseTextService>().RetireAsync(pos[0], pos.Skip(1).ToList(), by);
         return Report("texts-retire", "retired", r);
+    }
+
+    public static async Task<int> RunApproveAllAsync(string[] args, IServiceProvider services)
+    {
+        var pos = Positionals(args);
+        var by = Flag(args, "--by");
+        var kind = Flag(args, "--kind");
+        if (pos.Count < 1 || string.IsNullOrWhiteSpace(by) || string.IsNullOrWhiteSpace(kind))
+            return Usage("prose --texts-approve-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--publish] [--dry-run] [--json]");
+        var r = await services.GetRequiredService<ProseTextService>().BulkApproveAsync(pos[0], kind, by,
+            Flag(args, "--prefix"), Flag(args, "--about"), args.Contains("--dry-run"), args.Contains("--publish"));
+        return ReportBulk("texts-approve-all", pos[0], r, args.Contains("--json"));
+    }
+
+    public static async Task<int> RunPublishAllAsync(string[] args, IServiceProvider services)
+    {
+        var pos = Positionals(args);
+        var by = Flag(args, "--by");
+        var kind = Flag(args, "--kind");
+        if (pos.Count < 1 || string.IsNullOrWhiteSpace(by) || string.IsNullOrWhiteSpace(kind))
+            return Usage("prose --texts-publish-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--dry-run] [--json]");
+        var r = await services.GetRequiredService<ProseTextService>().BulkPublishAsync(pos[0], kind, by,
+            Flag(args, "--prefix"), Flag(args, "--about"), args.Contains("--dry-run"));
+        return ReportBulk("texts-publish-all", pos[0], r, args.Contains("--json"));
+    }
+
+    private static int ReportBulk(string verb, string slug, ProseTextService.BulkResult r, bool json)
+    {
+        if (json) Console.WriteLine(JsonSerializer.Serialize(r, Pretty));
+        foreach (var e in r.Errors) Console.Error.WriteLine($"[{verb}] ✘ {e}");
+        if (r.Errors.Count > 0) return 1;
+        if (!json)
+        {
+            var would = r.DryRun ? "would be " : "";
+            var filter = r.Kind + (r.KeyPrefix != null ? $", key prefix '{r.KeyPrefix}'" : "") + (r.About != null ? $", about '{r.About}'" : "");
+            Console.WriteLine($"[{verb}] '{slug}' ({filter}){(r.DryRun ? " — dry run, nothing changed" : "")}");
+            foreach (var i in r.Approved) Console.WriteLine($"  {would}approved  {i.Id,-44} v{i.Version} {i.Key}");
+            foreach (var i in r.Published) Console.WriteLine($"  {would}published {i.Id,-44} v{i.Version} {i.Key}");
+            foreach (var x in r.Refused)
+                foreach (var e in x.Errors) Console.Error.WriteLine($"[{verb}] ✘ refused {x.Id} v{x.Version}: {e}");
+            Console.WriteLine($"[{verb}] {r.Approved.Count} {would}approved, {r.Published.Count} {would}published, {r.Refused.Count} refused");
+        }
+        return r.Refused.Count == 0 ? 0 : 1;
     }
 
     private static int Report(string verb, string done, ProseTextService.ActionResult r)

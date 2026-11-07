@@ -1104,10 +1104,33 @@ app.MapPost("/api/universes/{slug}/texts", async (string slug, string? by, HttpR
 })
     .AddEndpointFilter<HubApiKeyFilter>();
 
-app.MapPost("/api/universes/{slug}/texts/publish", async (string slug, TextActionRequest req, ProseTextService texts) =>
+// Publish: by ids (or every approved text) as before, or in bulk when the body names a kind (PRS-T918):
+// {"by", "kind", "keyPrefix"?, "about"?} with ?dryRun=true to list what would be published. One
+// texts.published notice per batch.
+app.MapPost("/api/universes/{slug}/texts/publish", async (string slug, bool? dryRun, TextActionRequest req, ProseTextService texts) =>
 {
+    if (!string.IsNullOrWhiteSpace(req.Kind))
+    {
+        if (req.Ids is { Length: > 0 })
+            return Results.BadRequest(new { error = "texts_publish_failed", detail = "give ids or a kind filter, not both" });
+        var bulk = await texts.BulkPublishAsync(slug, req.Kind, req.By ?? "", req.KeyPrefix, req.About, dryRun == true);
+        return bulk.Errors.Count == 0 ? Results.Ok(bulk) : Results.BadRequest(bulk);
+    }
     var result = await texts.PublishAsync(slug, req.By ?? "", req.Ids);
     return result.Success ? Results.Ok(result) : Results.BadRequest(result);
+})
+    .AddEndpointFilter<HubApiKeyFilter>();
+
+// Bulk approval (PRS-T918, the owner's "approve everything of this type"): every pending draft of
+// {"kind"}, optionally narrowed by "keyPrefix" and/or "about" (an entity id), approved by the named author
+// ("by", required). "publish": true also publishes them as one batch. ?dryRun=true lists what would change.
+// Each draft is re-checked; one that fails is reported under "refused" and the rest are approved, so the
+// call answers 200 with the refusals listed (400 only for a request-level error). No MCP door (RFC 0009).
+app.MapPost("/api/universes/{slug}/texts/approve", async (string slug, bool? dryRun, TextActionRequest req, ProseTextService texts) =>
+{
+    var bulk = await texts.BulkApproveAsync(slug, req.Kind ?? "", req.By ?? "", req.KeyPrefix, req.About,
+        dryRun == true, req.Publish == true);
+    return bulk.Errors.Count == 0 ? Results.Ok(bulk) : Results.BadRequest(bulk);
 })
     .AddEndpointFilter<HubApiKeyFilter>();
 
@@ -1198,7 +1221,8 @@ sealed record EdgeRequest(Guid Source, Guid Target, string RelationType, string?
 
 sealed record OutboxEnqueueRequest(string Kind, string Summary, object? Data);
 
-sealed record TextActionRequest(string? By, int? Version, string[]? Ids);
+sealed record TextActionRequest(string? By, int? Version, string[]? Ids,
+    string? Kind = null, string? KeyPrefix = null, string? About = null, bool? Publish = null);
 
 sealed record GenerateSceneRequest(
     string BeatGoal, string[]? Characters, string? Location, string? Subtext,

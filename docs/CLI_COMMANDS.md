@@ -19,7 +19,7 @@
 > deliberate: RFC 0014 §2.4 is about a gate documented as seven checks, coded as six
 > and advertised as five, and this reference is not going to repeat that.
 
-**301 commands.** 30 deactivated. 10 cost-gated. 18 have no description in their dispatch comment (12 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**303 commands.** 30 deactivated. 10 cost-gated. 18 have no description in their dispatch comment (12 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -2401,6 +2401,12 @@ prose --texts-approve <slug> <id>... --by <name> [--version n] RFC 0017 conduit:
 
 <sub>handler `ProseTextCli`</sub>
 
+### `--texts-approve-all`
+
+prose --texts-approve-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--publish] [--dry-run] [--json] PRS-T918 bulk approval: every pending draft of one kind (author-only, no MCP door); refused drafts are reported, the rest approved.
+
+<sub>handler `ProseTextCli`</sub>
+
 ### `--texts-draft`
 
 prose --texts-draft <slug> <file.json|dir> [--by name] RFC 0017 conduit: draft one text, a JSON array of texts, or every *.json in a folder; identical content changes nothing.
@@ -2422,6 +2428,12 @@ prose --texts-list <slug> [--kind k] [--status pullable|approved|published|draft
 ### `--texts-publish`
 
 prose --texts-publish <slug> --by <name> [id...] RFC 0017 conduit: mark approved texts published and send one texts.published Outbox notice for the batch.
+
+<sub>handler `ProseTextCli`</sub>
+
+### `--texts-publish-all`
+
+prose --texts-publish-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--dry-run] [--json] PRS-T918 bulk publish: every approved, unpublished text of one kind as one batch (one texts.published notice).
 
 <sub>handler `ProseTextCli`</sub>
 

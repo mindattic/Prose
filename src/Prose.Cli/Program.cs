@@ -283,6 +283,7 @@ if (UniverseBootstrap.RequestedSlug == null
         // RFC 0017 conduit: every --texts-* verb takes its universe as the first positional
         // argument (ProseTextService is explicit about the universe), like --universe-export.
         "--texts-list", "--texts-get", "--texts-pull", "--texts-draft", "--texts-approve", "--texts-publish", "--texts-retire",
+        "--texts-approve-all", "--texts-publish-all",
         // BannedNames (2026-08-26): genuinely global, no UniverseId column at all — the whole
         // point of a Prose-wide ban is that it has no per-universe scope to resolve.
         "--banned-names",
@@ -2685,6 +2686,22 @@ if (args.Contains("--texts-publish"))
 {
     var rest = args.SkipWhile(a => a != "--texts-publish").Skip(1).ToArray();
     Environment.ExitCode = await HubCliClient.ForwardAsync("ProseTextCli", rest, method: "RunPublishAsync");
+    return;
+}
+// prose --texts-approve-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--publish] [--dry-run] [--json]
+// PRS-T918 bulk approval: every pending draft of one kind (author-only, no MCP door); refused drafts are reported, the rest approved.
+if (args.Contains("--texts-approve-all"))
+{
+    var rest = args.SkipWhile(a => a != "--texts-approve-all").Skip(1).ToArray();
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ProseTextCli", rest, method: "RunApproveAllAsync");
+    return;
+}
+// prose --texts-publish-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--dry-run] [--json]
+// PRS-T918 bulk publish: every approved, unpublished text of one kind as one batch (one texts.published notice).
+if (args.Contains("--texts-publish-all"))
+{
+    var rest = args.SkipWhile(a => a != "--texts-publish-all").Skip(1).ToArray();
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ProseTextCli", rest, method: "RunPublishAllAsync");
     return;
 }
 // prose --texts-retire <slug> <id>... --by <name>

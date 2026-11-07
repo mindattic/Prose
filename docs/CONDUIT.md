@@ -71,7 +71,9 @@ see [CONSUMER_ONBOARDING.md](CONSUMER_ONBOARDING.md).
    through MCP (`draft_text`); it never writes story into the game repo.
 3. **Approve.** The author approves texts (`prose --texts-approve`, or `POST .../approve`). MCP has no approve tool
    (RFC 0009). `prose --texts-publish` then marks a batch of approved texts published and sends one
-   `texts.published` Outbox notice.
+   `texts.published` Outbox notice. To approve everything of one kind at once, the author runs a bulk approval
+   (`prose --texts-approve-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--publish]`; see
+   [Bulk approval](#bulk-approval)), with `--dry-run` first to see the batch.
 4. **Pull.** `kit pull` fetches approved and published texts whose live version is newer than `applied.jsonl` into
    `pending/`.
 5. **Apply.** `kit apply` runs the game's applier over `pending/`. The kit records each applied text in
@@ -127,6 +129,27 @@ Prose checks every text deterministically before it is stored:
 - Every version is kept. `version` is the version's number, `hash` the SHA-256 of its payload.
 - Only approved and published versions leave Prose. Retiring a text takes it out of every pull; the game's applier
   deletes it from the game's files when it sees `status: "retired"` (pull with `--status retired`).
+
+### Bulk approval
+
+PRS-T918 (the owner, 2026-11-07: yes to "approve everything of this type"). Two author-only calls act on every text of
+one **kind** in a universe, optionally narrowed by **key prefix** (`--prefix class:`) and/or an **about** entity id
+(`--about faction-ember`); both filters match the version being acted on. Like single approval they need the author's
+name (`--by`, or `by` in the HTTP body) and have **no MCP tool** (RFC 0009: agents only draft).
+
+- **Bulk approve** takes each matched text's pending draft. Each one gets single approval's checks (it is the newest
+  draft and still a draft) and, because the author has not read each one, the draft-time checks again: payload shape
+  for its kind, every entity it references still exists and is not archived, and its key is not used by another live
+  text. **A draft that fails is refused and left a draft; the rest are approved.** The result lists the refusals with
+  their reasons (the CLI exits 1 when any was refused, HTTP still answers 200 with a `refused` list; 400 is only for a
+  request-level error such as no `by` or an unknown kind, which changes nothing). `--publish` also publishes every text
+  the call approved, as one batch.
+- **Bulk publish** marks every matched approved, not yet published live version published, as one batch.
+- **Retired texts are skipped** by both: bringing one back stays a single, explicit `--texts-approve`.
+- **Dry run** (`--dry-run`, `?dryRun=true`) computes the same lists and refusals and changes nothing: no save, no notice.
+- **Notices:** each publish batch (a bulk publish, or a bulk approve with `--publish`) sends exactly one
+  `texts.published` Outbox notice listing `{id, kind, key, version, hash}` for every text in it. Approval alone sends
+  none.
 
 **In the graph**, a text is an entity of type `prose-text` (its JSON record holds every version) with an `about` edge
 to each entity it is about and a `spoken-by` edge to each entity speaker. Texts never appear in a universe export, and
@@ -212,6 +235,8 @@ reads need no key.
 | Draft a text | `POST /api/universes/{slug}/texts` | `prose --texts-draft <slug> <file.json>` | `draft_text(universe, json)` |
 | Approve | `POST /api/universes/{slug}/texts/{id}/approve {by, version?}` | `prose --texts-approve <slug> <id>... --by <name>` | none (RFC 0009) |
 | Publish | `POST /api/universes/{slug}/texts/publish {by, ids?}` | `prose --texts-publish <slug> --by <name> [ids...]` | none |
+| Bulk approve | `POST /api/universes/{slug}/texts/approve[?dryRun=true] {by, kind, keyPrefix?, about?, publish?}` | `prose --texts-approve-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--publish] [--dry-run] [--json]` | none (RFC 0009) |
+| Bulk publish | `POST /api/universes/{slug}/texts/publish[?dryRun=true] {by, kind, keyPrefix?, about?}` | `prose --texts-publish-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--dry-run] [--json]` | none |
 | Retire | `POST /api/universes/{slug}/texts/{id}/retire {by}` | `prose --texts-retire <slug> <id> --by <name>` | none |
 | Outbox | `GET /api/outbox/{consumer}[?peek=true]` | — | — |
 

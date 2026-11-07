@@ -448,7 +448,8 @@ The first consumer is [ExperimentEve](https://github.com/mindattic/ExperimentEve
 gameplay and entity ids, Prose owns the words. Player-facing text (conversations, crawls, descriptions, quest text,
 books, barks, glossary) is authored in Prose as `prose-text/1` texts against the universe's entities
 (`--texts-draft/-list/-get/-pull`, MCP `draft_text`/`list_texts`/`get_text`, `GET /api/universes/{slug}/texts`),
-approved by the author only (`--texts-approve/-publish/-retire`), and pulled into the game by the shared
+approved by the author only (`--texts-approve/-publish/-retire`, or in bulk by kind with
+`--texts-approve-all/--texts-publish-all`, `--dry-run` first), and pulled into the game by the shared
 [consumer kit](consumer-kit/kit.py) (`validate`, `push`, `pull`, `apply`, `status`, `outbox`), which every game runs
 by path from this repo.
 

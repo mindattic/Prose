@@ -293,11 +293,17 @@ The working spec is `docs/CONDUIT.md`; where it differs from sections 5 to 8 abo
 6. **Not done here, left on PRS-T916:** graph nodes keyed by entity id rather than name (`UniverseGraphService`, a
    shared service with a large blast radius), and per-edge consumer provenance. The file-level `source` block is
    kept with the universe and returned on export.
+7. **Bulk approval (PRS-T918, answers open question 11.1).** The owner said yes to "approve everything of this
+   type" on 2026-11-07. Bulk approve and bulk publish act on one kind, optionally narrowed by key prefix and/or an
+   about-entity id, with a dry run; author-only (`--by` / HTTP `by`), no MCP tool. Each draft is re-checked as at
+   drafting (payload, entity references, key); one that fails is reported and left a draft and the rest are approved,
+   so one stale draft never holds up a batch. Retired texts are skipped. Each publish batch is one `texts.published`
+   notice. Details in `docs/CONDUIT.md`, "Bulk approval".
 
 ## 11. Risks and open questions
 
 1. **Author workload.** Prose drafts and the author approves (RFC 0009). Bulk approval, e.g. "approve all crawls in
-   this universe", is needed or the queue stalls. Open: is bulk approval allowed?
+   this universe", is needed or the queue stalls. Answered 2026-11-07: yes, built in PRS-T918 (section 10a, item 7).
 2. **Game-specific text logic** (wanderer right answers, quest conditions) must stay gameplay. Prose only carries
    tags, and the game interprets them. The tag vocabulary per game lives in the game's config.
 3. **Localization** is out of scope now. `prose-text/1` leaves room for a `lang` field later.
