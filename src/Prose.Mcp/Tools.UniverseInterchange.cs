@@ -33,16 +33,18 @@ public class UniverseInterchangeTools
     [McpServerTool, Description("Import a Universe Interchange JSON file (RFC 0007, docs/schemas/universe.schema.json) into Prose's Entity spine. Universe slug defaults to the file's own universe.id. Idempotent — re-importing the same file is a no-op diff.")]
     public Task<string> ImportUniverseFile(
         [Description("Absolute path to the <slug>.universe.json file.")] string path,
-        [Description("Optional universe slug override; defaults to the file's own universe.id.")] string? slug = null) =>
-        hub.InvokeAsync(nameof(UniverseInterchangeTools), nameof(ImportUniverseFileImpl), new { path, slug });
+        [Description("Optional universe slug override; defaults to the file's own universe.id.")] string? slug = null,
+        [Description("Replace mode: retire the entities earlier imports brought in that this file no longer has (never deletes; Prose-authored entities and texts are untouched).")] bool replace = false) =>
+        hub.InvokeAsync(nameof(UniverseInterchangeTools), nameof(ImportUniverseFileImpl), new { path, slug, replace });
 
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public async Task<string> ImportUniverseFileImpl(string path, string? slug)
+    public async Task<string> ImportUniverseFileImpl(string path, string? slug, bool replace = false)
     {
         if (!File.Exists(path))
             return JsonSerializer.Serialize(new { error = "file_not_found", path }, JsonOpts);
         var json = await File.ReadAllTextAsync(path);
-        var result = await interchange.ImportAsync(json, slug);
+        var result = await interchange.ImportAsync(json, slug, new UniverseInterchangeService.ImportOptions(
+            Mode: replace ? UniverseInterchangeService.ImportModes.Replace : UniverseInterchangeService.ImportModes.Merge));
         return JsonSerializer.Serialize(result, JsonOpts);
     }
 

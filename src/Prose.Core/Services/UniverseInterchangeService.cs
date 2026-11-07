@@ -39,6 +39,9 @@ public class InterchangeEntity
 public class InterchangeFile
 {
     public InterchangeUniverse Universe { get; set; } = new();
+    /// <summary>Optional provenance block (generator, build, seed, generatedAt, consumer), kept verbatim with the
+    /// universe and returned on export (PRS-T916).</summary>
+    public JsonElement? Source { get; set; }
     public List<InterchangeEntity> Entities { get; set; } = new();
 }
 
@@ -104,25 +107,91 @@ public class UniverseInterchangeService
         public string UniverseSlug { get; set; } = "";
         public bool UniverseCreated { get; set; }
         public int EntitiesCreated { get; set; }
+        /// <summary>Entities of the file that already existed (changed or not; see <see cref="EntitiesUnchanged"/>).</summary>
         public int EntitiesUpdated { get; set; }
+        /// <summary>Of <see cref="EntitiesUpdated"/>, those whose stored state already matched the file: nothing was
+        /// written for them, so their ModifiedAt (and every read receipt keyed on it) is untouched.</summary>
+        public int EntitiesUnchanged { get; set; }
+        /// <summary>Entities a replace import retired (Status = archived) because the file no longer has them.</summary>
+        public int EntitiesRetired { get; set; }
+        /// <summary>Previously retired entities this file brought back.</summary>
+        public int EntitiesRevived { get; set; }
         public int StubsCreated { get; set; }
         public int StubsPromoted { get; set; }
         public int EdgesCreated { get; set; }
+        /// <summary>Imported relations a replace import invalidated because their entity no longer lists them.</summary>
+        public int EdgesInvalidated { get; set; }
+        public string Mode { get; set; } = ImportModes.Merge;
+        public string? Session { get; set; }
+        public bool Final { get; set; } = true;
+        /// <summary>What a replace import pruned against: <c>manifest</c> (the entities earlier imports brought in) or
+        /// <c>records</c> (no manifest yet: every non-authored canon entity with a record). Null when nothing was pruned.</summary>
+        public string? PruneBasis { get; set; }
+        public List<string> Retired { get; set; } = new();
         public List<string> Errors { get; set; } = new();
         public bool Success => Errors.Count == 0;
     }
 
+    public static class ImportModes
+    {
+        /// <summary>Upsert only; nothing is ever retired (RFC 0007's original behaviour, the default).</summary>
+        public const string Merge = "merge";
+        /// <summary>The file (or the union of a session's batches) is the complete set of the consumer's entities.</summary>
+        public const string Replace = "replace";
+    }
+
+    /// <summary>How one import call behaves. A batched push passes the same <see cref="Session"/> on every batch and
+    /// <see cref="Final"/> = true only on the last: the prune, the manifest update and the single Outbox notice happen
+    /// there, over the union of every batch (PRS-T916).</summary>
+    public record ImportOptions(string Mode = ImportModes.Merge, string? Session = null, bool Final = true, bool Notify = true);
+
+    private const string ManifestSettingKey = "interchange.manifest";
+    private const string SourceSettingKey = "interchange.source";
+    private const string SessionSettingPrefix = "interchange.session.";
+    private const int SaveBatchSize = 500;
+
+    private class SessionState
+    {
+        public List<string> Keys { get; set; } = new();
+        public int Created { get; set; }
+        public int Updated { get; set; }
+        public int Unchanged { get; set; }
+        public int Edges { get; set; }
+        public int Stubs { get; set; }
+        public int Batches { get; set; }
+    }
+
+    public Task<ImportResult> ImportAsync(string json, string? universeSlugOverride = null, CancellationToken ct = default) =>
+        ImportAsync(json, universeSlugOverride, new ImportOptions(), ct);
+
     /// <summary>
-    /// Idempotent upsert-by-(UniverseId, Slug) import. Re-running with the same file is a
-    /// no-op diff (only ModifiedAt/UpdatedAt timestamps move).
+    /// Idempotent upsert-by-(UniverseId, Type, Slug) import. Re-running with the same file is a no-op: an entity whose
+    /// stored record, name, summary, tags and status already match is not written at all.
+    ///
+    /// <para>PRS-T916: the universe's entities, records, tags and imported edges are read once and the writes are
+    /// saved in batches of <see cref="SaveBatchSize"/>, instead of two or three round trips per entity and one per edge.
+    /// <see cref="ImportOptions.Mode"/> <c>replace</c> retires (never deletes) entities earlier imports brought in that
+    /// the file no longer has, and invalidates imported relations an entity no longer lists. Entities Prose authored
+    /// itself and texts (RFC 0017) are never retired by an import.</para>
     /// </summary>
     /// <param name="universeSlugOverride">Explicit target universe slug (from <c>--universe</c>).
     /// Defaults to the file's own <c>universe.id</c> (already lowercase per the schema's
     /// <c>^[a-z0-9-]+$</c> pattern) — NOT uppercased, matching every existing universe row's
     /// lowercase Slug convention (glmz/scry/gospel/eve/...); see the RFC deviations note.</param>
-    public async Task<ImportResult> ImportAsync(string json, string? universeSlugOverride = null, CancellationToken ct = default)
+    public async Task<ImportResult> ImportAsync(string json, string? universeSlugOverride, ImportOptions options, CancellationToken ct = default)
     {
-        var result = new ImportResult();
+        var mode = (options.Mode ?? ImportModes.Merge).Trim().ToLowerInvariant();
+        var result = new ImportResult { Mode = mode, Session = options.Session, Final = options.Final };
+        if (mode is not (ImportModes.Merge or ImportModes.Replace))
+        {
+            result.Errors.Add($"unknown import mode '{options.Mode}' (merge or replace)");
+            return result;
+        }
+        if (options.Session != null && !System.Text.RegularExpressions.Regex.IsMatch(options.Session, "^[A-Za-z0-9_-]{1,64}$"))
+        {
+            result.Errors.Add("session must be 1-64 letters, digits, '-' or '_'");
+            return result;
+        }
 
         InterchangeFile file;
         try
@@ -163,64 +232,273 @@ public class UniverseInterchangeService
         var universeId = universe.row.Id;
 
         await UpsertUniverseSourceAsync(db, universeId, file.Universe, ct);
+        if (file.Source is { ValueKind: JsonValueKind.Object } source)
+            await UpsertSettingAsync(db, universeId, SourceSettingKey, source.GetRawText(), ct);
 
-        // Pass 1: upsert every entity's Entity/Record/Tag state, building a slug→id map for
-        // pass 2. Must complete in full before edges are wired — a relation can point at an
-        // entity defined later in the file.
+        foreach (var type in file.Entities.Select(e => MapEntityType(e.Type)).Distinct())
+            await EnsureRepositoryDefinitionAsync(db, type, ct);
+
+        // One read of everything this import can touch (texts excluded: they are Prose's, RFC 0017).
+        var all = await db.Entities.IgnoreQueryFilters()
+            .Where(e => e.UniverseId == universeId && e.EntityType != ProseTextService.EntityType)
+            .ToListAsync(ct);
+        var byTypeSlug = new Dictionary<(string, string), Entity>();
+        foreach (var e in all) byTypeSlug.TryAdd((e.EntityType, e.Slug), e);
+        var stubsBySlug = all.Where(e => e.Status == "stub").GroupBy(e => e.Slug).ToDictionary(g => g.Key, g => g.First());
+        var records = await db.Records.IgnoreQueryFilters()
+            .Where(r => db.Entities.IgnoreQueryFilters().Any(e => e.Id == r.EntityId && e.UniverseId == universeId
+                                                                   && e.EntityType != ProseTextService.EntityType))
+            .ToDictionaryAsync(r => r.EntityId, ct);
+        var tagsByEntity = (await db.EntityTags.IgnoreQueryFilters()
+                .Where(t => db.Entities.IgnoreQueryFilters().Any(e => e.Id == t.EntityId && e.UniverseId == universeId))
+                .Select(t => new { t.EntityId, Name = t.Tag!.Name })
+                .ToListAsync(ct))
+            .GroupBy(t => t.EntityId)
+            .ToDictionary(g => g.Key, g => g.Select(x => x.Name).ToHashSet(StringComparer.OrdinalIgnoreCase));
+        var wantedTagNames = file.Entities.SelectMany(e => e.Tags ?? new()).Where(t => !string.IsNullOrWhiteSpace(t))
+            .Select(t => t.Trim()).Distinct(StringComparer.OrdinalIgnoreCase).ToList();
+        var tagsByName = (await db.Tags.Where(t => wantedTagNames.Contains(t.Name)).ToListAsync(ct))
+            .GroupBy(t => t.Name, StringComparer.OrdinalIgnoreCase)
+            .ToDictionary(g => g.Key, g => g.First(), StringComparer.OrdinalIgnoreCase);
+
+        // slug → id for relation targets: every entity of the universe (a stub an EARLIER run made resolves even
+        // if this file no longer mentions it). A same-slug pair of different types resolves to the first found.
         var slugToId = new Dictionary<string, Guid>(StringComparer.OrdinalIgnoreCase);
+        foreach (var e in all) slugToId.TryAdd(e.Slug, e.Id);
 
-        // Seed the map with every entity already in this universe (so a stub created by an
-        // EARLIER import run resolves correctly even if this file no longer mentions it).
-        foreach (var existing in await db.Entities.IgnoreQueryFilters()
-                     .Where(e => e.UniverseId == universeId).Select(e => new { e.Id, e.Slug }).ToListAsync(ct))
-            slugToId[existing.Slug] = existing.Id;
+        var now = DateTime.UtcNow;
+        var pending = 0;
+        async Task Tick()
+        {
+            if (++pending < SaveBatchSize) return;
+            await db.SaveChangesAsync(ct);
+            pending = 0;
+        }
 
+        // Pass 1: entities, records, tags.
+        var fileKeys = new List<string>();
+        var fileEntityIds = new Dictionary<string, Guid>(StringComparer.OrdinalIgnoreCase);
         foreach (var src in file.Entities)
         {
             var entityType = MapEntityType(src.Type);
-            await EnsureRepositoryDefinitionAsync(db, entityType, ct);
-
+            var entitySlug = Slugify(src.Id);
             var rawJson = JsonSerializer.Serialize(src, JsonOpts);
-            var (id, created, wasStub) = await UpsertEntityAsync(db, universeId, entityType, src, rawJson, ct);
-            slugToId[Slugify(src.Id)] = id;
+            fileKeys.Add(ManifestKey(entityType, entitySlug));
 
-            if (created) result.EntitiesCreated++;
-            else result.EntitiesUpdated++;
-            if (wasStub) result.StubsPromoted++;
+            byTypeSlug.TryGetValue((entityType, entitySlug), out var entity);
+            // Same slug AND type first; a slug alone may only claim a stub (whose placeholder type is promoted).
+            // Matching on slug alone overwrote the type, name and status of a different entity sharing it.
+            if (entity == null && stubsBySlug.TryGetValue(entitySlug, out var stub))
+            {
+                entity = stub;
+                stubsBySlug.Remove(entitySlug);
+                byTypeSlug.Remove((stub.EntityType, stub.Slug));
+                byTypeSlug[(entityType, entitySlug)] = stub;
+            }
+
+            if (entity == null)
+            {
+                entity = new Entity { UniverseId = universeId, Slug = entitySlug, CreatedAt = now };
+                db.Entities.Add(entity);
+                byTypeSlug[(entityType, entitySlug)] = entity;
+                result.EntitiesCreated++;
+            }
+            else
+            {
+                result.EntitiesUpdated++;
+                if (entity.Status == "stub") result.StubsPromoted++;
+                if (entity.Status == "archived") result.EntitiesRevived++;
+            }
+            slugToId[entitySlug] = entity.Id;
+            fileEntityIds[entitySlug] = entity.Id;
+
+            var summary = string.IsNullOrWhiteSpace(src.Summary) ? entity.Description : src.Summary;
+            records.TryGetValue(entity.Id, out var record);
+            var wantTags = (src.Tags ?? new()).Where(t => !string.IsNullOrWhiteSpace(t)).Select(t => t.Trim())
+                .Distinct(StringComparer.OrdinalIgnoreCase).ToList();
+            var haveTags = tagsByEntity.TryGetValue(entity.Id, out var ht) ? ht : new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+            var missingTags = wantTags.Where(t => !haveTags.Contains(t)).ToList();
+
+            var unchanged = entity.EntityType == entityType && entity.Name == src.Name && entity.Description == summary
+                            && entity.Status == "canon" && record?.Json == rawJson && missingTags.Count == 0;
+            if (unchanged) { result.EntitiesUnchanged++; continue; }
+
+            entity.EntityType = entityType;
+            entity.Name = src.Name;
+            entity.Description = summary;
+            entity.Status = "canon";
+            entity.ModifiedAt = now;
+
+            if (record == null)
+            {
+                record = new Record { EntityId = entity.Id };
+                db.Records.Add(record);
+                records[entity.Id] = record;
+            }
+            if (record.Json != rawJson) { record.Json = rawJson; record.UpdatedAt = now; }
+
+            foreach (var name in missingTags)
+            {
+                if (!tagsByName.TryGetValue(name, out var tag))
+                {
+                    tag = new Tag { Name = name };
+                    db.Tags.Add(tag);
+                    tagsByName[name] = tag;
+                }
+                db.EntityTags.Add(new EntityTag { EntityId = entity.Id, Tag = tag });
+                haveTags.Add(name);
+            }
+            tagsByEntity[entity.Id] = haveTags;
+            await Tick();
         }
+        await db.SaveChangesAsync(ct);
+        pending = 0;
 
-        // Pass 2: relations → edges (creating stub entities for dangling targets).
+        // Pass 2: relations → edges (stubs for dangling targets). The imported edges were read once.
+        var liveEdges = await db.Edges.IgnoreQueryFilters()
+            .Where(e => e.UniverseId == universeId && e.InvalidatedAt == null && e.Source == "interchange")
+            .ToListAsync(ct);
+        var edgeSet = liveEdges.Select(e => (e.SourceId, e.TargetId, e.RelationType)).ToHashSet();
+        var edgesBySource = liveEdges.GroupBy(e => e.SourceId).ToDictionary(g => g.Key, g => g.ToList());
+
         foreach (var src in file.Entities)
         {
-            if (!slugToId.TryGetValue(Slugify(src.Id), out var sourceId)) continue;
-            foreach (var rel in src.Relations)
+            var sourceId = fileEntityIds[Slugify(src.Id)];
+            var wanted = new HashSet<(Guid, string)>();
+            foreach (var rel in src.Relations ?? new())
             {
                 if (string.IsNullOrWhiteSpace(rel.To) || string.IsNullOrWhiteSpace(rel.Kind)) continue;
                 var targetSlug = Slugify(rel.To);
                 if (!slugToId.TryGetValue(targetSlug, out var targetId))
                 {
-                    targetId = await EnsureStubEntityAsync(db, universeId, targetSlug, rel.To, ct);
+                    var stub = new Entity
+                    {
+                        UniverseId = universeId, EntityType = "stub", Name = Humanize(rel.To), Slug = targetSlug,
+                        Status = "stub", CreatedAt = now, ModifiedAt = now,
+                    };
+                    db.Entities.Add(stub);
+                    targetId = stub.Id;
                     slugToId[targetSlug] = targetId;
                     result.StubsCreated++;
+                    await Tick();
                 }
 
-                var edgeCreated = await EnsureEdgeAsync(db, universeId, sourceId, targetId, rel.Kind.Trim(), ct);
-                if (edgeCreated) result.EdgesCreated++;
+                var kind = rel.Kind.Trim();
+                wanted.Add((targetId, kind));
+                if (!edgeSet.Add((sourceId, targetId, kind))) continue;
+                db.Edges.Add(new Edge
+                {
+                    UniverseId = universeId, SourceId = sourceId, TargetId = targetId, RelationType = kind,
+                    Source = "interchange", Sentiment = "neutral", Weight = 1.0,
+                });
+                result.EdgesCreated++;
+                await Tick();
             }
+
+            if (mode == ImportModes.Replace && edgesBySource.TryGetValue(sourceId, out var have))
+                foreach (var old in have.Where(e => e.InvalidatedAt == null && !wanted.Contains((e.TargetId, e.RelationType))))
+                {
+                    old.InvalidatedAt = now;
+                    edgeSet.Remove((old.SourceId, old.TargetId, old.RelationType));
+                    result.EdgesInvalidated++;
+                    await Tick();
+                }
+        }
+        await db.SaveChangesAsync(ct);
+
+        // Session bookkeeping: a non-final batch only records what it saw.
+        var session = new SessionState();
+        if (options.Session != null)
+        {
+            var key = SessionSettingPrefix + options.Session;
+            var stored = await db.Settings.IgnoreQueryFilters()
+                .Where(s => s.Key == key && s.UniverseId == universeId).Select(s => s.Json).FirstOrDefaultAsync(ct);
+            if (!string.IsNullOrWhiteSpace(stored))
+                try { session = JsonSerializer.Deserialize<SessionState>(stored, JsonOpts) ?? new(); } catch { session = new(); }
+        }
+        session.Keys.AddRange(fileKeys);
+        session.Created += result.EntitiesCreated;
+        session.Updated += result.EntitiesUpdated;
+        session.Unchanged += result.EntitiesUnchanged;
+        session.Edges += result.EdgesCreated;
+        session.Stubs += result.StubsCreated;
+        session.Batches++;
+
+        if (!options.Final && options.Session != null)
+        {
+            await UpsertSettingAsync(db, universeId, SessionSettingPrefix + options.Session, JsonSerializer.Serialize(session, JsonOpts), ct);
+            if (result.UniverseCreated) universeContext?.Refresh();
+            return result;
         }
 
-        // RFC 0007 §5 outbox — tell the consumer app's Claude Code session (drained via its
-        // UserPromptSubmit hook) that fresh universe data landed, without either side having to
-        // remember to say so manually. Best-effort: a notification failure must never fail an
-        // otherwise-successful import.
-        if (result.Success && outbox != null)
+        // Final: prune (replace), manifest, one notice.
+        var seen = session.Keys.ToHashSet(StringComparer.OrdinalIgnoreCase);
+        var manifestJson = await db.Settings.IgnoreQueryFilters()
+            .Where(s => s.Key == ManifestSettingKey && s.UniverseId == universeId).Select(s => s.Json).FirstOrDefaultAsync(ct);
+        HashSet<string>? manifest = null;
+        if (!string.IsNullOrWhiteSpace(manifestJson))
+            try { manifest = JsonSerializer.Deserialize<List<string>>(manifestJson, JsonOpts)?.ToHashSet(StringComparer.OrdinalIgnoreCase); }
+            catch { /* unreadable manifest: treated as absent */ }
+
+        if (mode == ImportModes.Replace)
+        {
+            HashSet<string> prior;
+            if (manifest != null) { prior = manifest; result.PruneBasis = "manifest"; }
+            else
+            {
+                // No manifest yet (universes imported before PRS-T916): every canon entity with a record that a
+                // human did not author. Prose-authored entities carry Provenance = authored and are never retired.
+                prior = all.Where(e => e.Status == "canon" && e.Provenance != ClaimProvenance.Authored && records.ContainsKey(e.Id))
+                    .Select(e => ManifestKey(e.EntityType, e.Slug)).ToHashSet(StringComparer.OrdinalIgnoreCase);
+                result.PruneBasis = "records";
+            }
+
+            var retireIds = new HashSet<Guid>();
+            foreach (var e in all)
+            {
+                if (e.Status != "canon" || e.Provenance == ClaimProvenance.Authored) continue;
+                var k = ManifestKey(e.EntityType, e.Slug);
+                if (!prior.Contains(k) || seen.Contains(k)) continue;
+                e.Status = "archived";
+                e.ModifiedAt = now;
+                retireIds.Add(e.Id);
+                result.Retired.Add(e.Slug);
+                result.EntitiesRetired++;
+            }
+            foreach (var edge in liveEdges.Where(ed => ed.InvalidatedAt == null && retireIds.Contains(ed.SourceId)))
+            {
+                edge.InvalidatedAt = now;
+                result.EdgesInvalidated++;
+            }
+            manifest = seen;
+        }
+        else
+        {
+            manifest ??= new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+            manifest.UnionWith(seen);
+        }
+        await db.SaveChangesAsync(ct);
+        await UpsertSettingAsync(db, universeId, ManifestSettingKey,
+            JsonSerializer.Serialize(manifest.OrderBy(k => k, StringComparer.Ordinal).ToList(), JsonOpts), ct);
+        if (options.Session != null)
+        {
+            var key = SessionSettingPrefix + options.Session;
+            var row = await db.Settings.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Key == key && s.UniverseId == universeId, ct);
+            if (row != null) { db.Settings.Remove(row); await db.SaveChangesAsync(ct); }
+        }
+
+        // RFC 0007 §5 outbox, once per import (once per session for a batched push, PRS-T916). Best-effort: a
+        // notification failure must never fail an otherwise-successful import.
+        if (outbox != null && options.Notify)
         {
             try
             {
+                var batches = session.Batches > 1 ? $" in {session.Batches} batches" : "";
                 await outbox.EnqueueAsync(slug, "interchange-import",
-                    $"Universe '{slug}' import complete: {result.EntitiesCreated} created, "
-                    + $"{result.EntitiesUpdated} updated, {result.EdgesCreated} edges, {result.StubsCreated} stubs "
-                    + $"({result.StubsPromoted} promoted). Pull the snapshot to sync.",
+                    $"Universe '{slug}' {mode} import complete{batches}: {session.Created} created, "
+                    + $"{session.Updated} updated ({session.Unchanged} unchanged), {session.Edges} edges, {session.Stubs} stubs"
+                    + (mode == ImportModes.Replace ? $", {result.EntitiesRetired} retired, {result.EdgesInvalidated} relations invalidated" : "")
+                    + ". Pull the snapshot to sync.",
                     ct: ct);
             }
             catch { /* best-effort notification only */ }
@@ -232,6 +510,16 @@ public class UniverseInterchangeService
         if (result.UniverseCreated) universeContext?.Refresh();
 
         return result;
+    }
+
+    private static string ManifestKey(string entityType, string slug) => entityType + "/" + slug;
+
+    private static async Task UpsertSettingAsync(ProseDbContext db, Guid universeId, string key, string json, CancellationToken ct)
+    {
+        var row = await db.Settings.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Key == key && s.UniverseId == universeId, ct);
+        if (row == null) db.Settings.Add(new Setting { Key = key, UniverseId = universeId, Json = json, UpdatedAt = DateTime.UtcNow });
+        else if (row.Json != json) { row.Json = json; row.UpdatedAt = DateTime.UtcNow; }
+        await db.SaveChangesAsync(ct);
     }
 
     /// <summary>Export the universe back to interchange-file JSON. Prefers each entity's stored
@@ -270,7 +558,6 @@ public class UniverseInterchangeService
             .Where(r => entityIds.Contains(r.EntityId))
             .ToDictionaryAsync(r => r.EntityId, r => r.Json, ct);
 
-        var slugById = entities.ToDictionary(e => e.Id, e => e.Slug);
         var edgesBySource = (await db.Edges.IgnoreQueryFilters()
                 .Where(ed => ed.UniverseId == universe.Id && ed.InvalidatedAt == null)
                 .ToListAsync(ct))
@@ -283,6 +570,11 @@ public class UniverseInterchangeService
             .GroupBy(t => t.EntityId)
             .ToDictionary(g => g.Key, g => g.Select(x => x.Name).ToList());
 
+        // Relation targets may be stubs or retired rows, which are not exported themselves.
+        var targetSlugs = await db.Entities.IgnoreQueryFilters()
+            .Where(e => e.UniverseId == universe.Id && e.EntityType != ProseTextService.EntityType)
+            .Select(e => new { e.Id, e.Slug }).ToDictionaryAsync(e => e.Id, e => e.Slug, ct);
+
         var outEntities = new List<InterchangeEntity>();
         foreach (var e in entities)
         {
@@ -292,7 +584,10 @@ public class UniverseInterchangeService
                 try { fromRecord = JsonSerializer.Deserialize<InterchangeEntity>(recJson, JsonOpts); }
                 catch { /* fall through to column reconstruction below */ }
             }
-            outEntities.Add(fromRecord ?? ReconstructEntity(e, slugById, edgesBySource, tagsByEntity));
+            if (fromRecord != null)
+                fromRecord.Relations = RelationsFromEdges(fromRecord.Relations ?? new(),
+                    edgesBySource.TryGetValue(e.Id, out var own) ? own : new List<Edge>(), targetSlugs);
+            outEntities.Add(fromRecord ?? ReconstructEntity(e, targetSlugs, edgesBySource, tagsByEntity));
         }
 
         var universeSourceJson = await db.Settings.IgnoreQueryFilters()
@@ -312,7 +607,15 @@ public class UniverseInterchangeService
             Rules = ParseWorldFactsAsRules(universe.WorldFacts),
         };
 
-        var file = new InterchangeFile { Universe = universeBlock, Entities = outEntities };
+        var sourceJson = await db.Settings.IgnoreQueryFilters()
+            .Where(s => s.Key == SourceSettingKey && s.UniverseId == universe.Id)
+            .Select(s => s.Json).FirstOrDefaultAsync(ct);
+        JsonElement? sourceBlock = null;
+        if (!string.IsNullOrWhiteSpace(sourceJson))
+            try { using var doc = JsonDocument.Parse(sourceJson); sourceBlock = doc.RootElement.Clone(); }
+            catch { /* unreadable provenance block: left out */ }
+
+        var file = new InterchangeFile { Universe = universeBlock, Source = sourceBlock, Entities = outEntities };
 
         return (file, JsonSerializer.Serialize(file, JsonOpts));
     }
@@ -444,117 +747,30 @@ public class UniverseInterchangeService
         catch (DbUpdateException) { /* concurrent creation of the same definition — harmless */ }
     }
 
-    // ── Entity upsert ───────────────────────────────────────────────────────
-
-    private static async Task<(Guid id, bool created, bool wasStub)> UpsertEntityAsync(
-        ProseDbContext db, Guid universeId, string entityType, InterchangeEntity src, string rawJson, CancellationToken ct)
-    {
-        var slug = Slugify(src.Id);
-        // Same slug AND type first; a slug alone may only claim a stub (whose placeholder type is
-        // promoted below). Matching on slug alone overwrote the type, name and status of a
-        // different entity that happened to share it — a place and a character both "silence".
-        var existing = await db.Entities.IgnoreQueryFilters()
-                           .FirstOrDefaultAsync(e => e.UniverseId == universeId && e.Slug == slug && e.EntityType == entityType, ct)
-                       ?? await db.Entities.IgnoreQueryFilters()
-                           .FirstOrDefaultAsync(e => e.UniverseId == universeId && e.Slug == slug && e.Status == "stub", ct);
-
-        var created = existing == null;
-        var wasStub = existing?.Status == "stub";
-        var entity = existing ?? new Entity { UniverseId = universeId, Slug = slug, CreatedAt = DateTime.UtcNow };
-
-        // Promotes a prior stub's placeholder type/status to the real content that just arrived.
-        entity.EntityType = entityType;
-        entity.Name = src.Name;
-        entity.Description = string.IsNullOrWhiteSpace(src.Summary) ? entity.Description : src.Summary;
-        entity.Status = "canon";
-        entity.ModifiedAt = DateTime.UtcNow;
-
-        if (created) db.Entities.Add(entity);
-        await db.SaveChangesAsync(ct);
-
-        var record = await db.Records.FirstOrDefaultAsync(r => r.EntityId == entity.Id, ct);
-        if (record == null) { record = new Record { EntityId = entity.Id }; db.Records.Add(record); }
-        record.Json = rawJson;
-        record.UpdatedAt = DateTime.UtcNow;
-
-        await SyncTagsAsync(db, entity.Id, src.Tags, ct);
-        await db.SaveChangesAsync(ct);
-
-        return (entity.Id, created, wasStub);
-    }
-
-    private static async Task<Guid> EnsureStubEntityAsync(ProseDbContext db, Guid universeId, string slug, string rawId, CancellationToken ct)
-    {
-        var existing = await db.Entities.IgnoreQueryFilters()
-            .FirstOrDefaultAsync(e => e.UniverseId == universeId && e.Slug == slug, ct);
-        if (existing != null) return existing.Id;
-
-        var stub = new Entity
-        {
-            UniverseId = universeId,
-            EntityType = "stub",
-            Name = Humanize(rawId),
-            Slug = slug,
-            Status = "stub",
-            CreatedAt = DateTime.UtcNow,
-            ModifiedAt = DateTime.UtcNow,
-        };
-        db.Entities.Add(stub);
-        await db.SaveChangesAsync(ct);
-        return stub.Id;
-    }
-
-    private static async Task<bool> EnsureEdgeAsync(ProseDbContext db, Guid universeId, Guid sourceId, Guid targetId, string relationType, CancellationToken ct)
-    {
-        var exists = await db.Edges.IgnoreQueryFilters().AnyAsync(e =>
-            e.UniverseId == universeId && e.SourceId == sourceId && e.TargetId == targetId
-            && e.RelationType == relationType && e.InvalidatedAt == null, ct);
-        if (exists) return false;
-
-        db.Edges.Add(new Edge
-        {
-            UniverseId = universeId,
-            SourceId = sourceId,
-            TargetId = targetId,
-            RelationType = relationType,
-            Source = "interchange",
-            Sentiment = "neutral",
-            Weight = 1.0,
-        });
-        await db.SaveChangesAsync(ct);
-        return true;
-    }
-
-    private static async Task SyncTagsAsync(ProseDbContext db, Guid entityId, IReadOnlyList<string>? tags, CancellationToken ct)
-    {
-        if (tags == null || tags.Count == 0) return;
-        var existing = (await db.EntityTags.Where(t => t.EntityId == entityId)
-                .Select(t => t.Tag!.Name).ToListAsync(ct))
-            .ToHashSet(StringComparer.OrdinalIgnoreCase);
-
-        var wanted = tags.Where(t => !string.IsNullOrWhiteSpace(t))
-            .Select(t => t.Trim())
-            .Distinct(StringComparer.OrdinalIgnoreCase)
-            .Where(t => !existing.Contains(t))
-            .ToList();
-        if (wanted.Count == 0) return;
-
-        var byName = (await db.Tags.Where(t => wanted.Contains(t.Name)).ToListAsync(ct))
-            .ToDictionary(t => t.Name, t => t, StringComparer.OrdinalIgnoreCase);
-
-        foreach (var name in wanted)
-        {
-            if (!byName.TryGetValue(name, out var tag))
-            {
-                tag = new Tag { Name = name };
-                db.Tags.Add(tag);
-                byName[name] = tag;
-            }
-            db.EntityTags.Add(new EntityTag { EntityId = entityId, Tag = tag });
-        }
-    }
-
     // ── Export reconstruction fallback ──────────────────────────────────────
+
+    /// <summary>PRS-T916: an entity's exported relations come from the live imported Edges rows, not from the JSON
+    /// record alone, so an import cut short during its edge pass (or an edge invalidated since) shows up in the
+    /// round-trip diff instead of exporting identical to the file. The record supplies the order and the original
+    /// spelling of each relation that still has its edge; an imported edge the record does not list is appended.</summary>
+    private static List<InterchangeRelation> RelationsFromEdges(List<InterchangeRelation> recorded, List<Edge> edges,
+        Dictionary<Guid, string> slugById)
+    {
+        var live = edges.Where(ed => ed.Source == "interchange" && slugById.ContainsKey(ed.TargetId))
+            .Select(ed => (To: slugById[ed.TargetId], Kind: ed.RelationType)).ToList();
+        var remaining = live.ToHashSet();
+        var output = new List<InterchangeRelation>();
+        foreach (var r in recorded)
+        {
+            var k = (Slugify(r.To), (r.Kind ?? "").Trim());
+            if (!live.Contains(k)) continue;
+            output.Add(r);
+            remaining.Remove(k);
+        }
+        foreach (var (to, kind) in live.Where(remaining.Contains).Distinct())
+            output.Add(new InterchangeRelation { To = to, Kind = kind });
+        return output;
+    }
 
     private static InterchangeEntity ReconstructEntity(
         Entity e, Dictionary<Guid, string> slugById, Dictionary<Guid, List<Edge>> edgesBySource, Dictionary<Guid, List<string>> tagsByEntity)

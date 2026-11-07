@@ -2398,6 +2398,7 @@ Import a Universe Interchange JSON file (RFC 0007, docs/schemas/universe.schema.
 
 - `path` (string, required) — Absolute path to the <slug>.universe.json file.
 - `slug` (string, optional) — Optional universe slug override; defaults to the file's own universe.id.
+- `replace` (bool, optional) — Replace mode: retire the entities earlier imports brought in that this file no longer has (never deletes; Prose-authored entities and texts are untouched).
 
 ### `search_universe`
 

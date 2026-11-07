@@ -7,8 +7,9 @@ namespace Prose.Cli;
 /// <c>&lt;app&gt;/universe/&lt;slug&gt;.universe.json</c> contract file
 /// (<c>docs/schemas/universe.schema.json</c>) and Prose's Entity spine.
 ///
-///   prose --universe-import &lt;path&gt; [--universe &lt;slug&gt;]
-///       Import an interchange file. Universe slug defaults to the file's own universe.id.
+///   prose --universe-import &lt;path&gt; [--universe &lt;slug&gt;] [--replace]
+///       Import an interchange file. Universe slug defaults to the file's own universe.id. --replace retires the
+///       entities earlier imports brought in that the file no longer has (PRS-T916, docs/CONDUIT.md §7).
 ///   prose --universe-export &lt;slug&gt; &lt;path&gt;
 ///       Export a universe to interchange-file JSON at &lt;path&gt;.
 ///   prose --universe-sync &lt;path&gt;
@@ -25,7 +26,7 @@ public static class UniverseInterchangeCli
     {
         if (args.Length < 1 || args[0].StartsWith("--", StringComparison.Ordinal))
         {
-            Console.Error.WriteLine("Usage: prose --universe-import <path> [--universe <slug>]");
+            Console.Error.WriteLine("Usage: prose --universe-import <path> [--universe <slug>] [--replace]");
             return 1;
         }
         var path = args[0];
@@ -39,7 +40,8 @@ public static class UniverseInterchangeCli
 
         var json = await File.ReadAllTextAsync(path);
         var svc = services.GetRequiredService<UniverseInterchangeService>();
-        var result = await svc.ImportAsync(json, slug);
+        var mode = args.Contains("--replace") ? UniverseInterchangeService.ImportModes.Replace : UniverseInterchangeService.ImportModes.Merge;
+        var result = await svc.ImportAsync(json, slug, new UniverseInterchangeService.ImportOptions(Mode: mode));
         PrintImportResult(result);
         return result.Success ? 0 : 1;
     }
@@ -115,6 +117,15 @@ public static class UniverseInterchangeCli
         Console.WriteLine($"  stubs created    : {r.StubsCreated}");
         Console.WriteLine($"  stubs promoted   : {r.StubsPromoted}");
         Console.WriteLine($"  edges created    : {r.EdgesCreated}");
+        Console.WriteLine($"  unchanged        : {r.EntitiesUnchanged}");
+        if (r.Mode == UniverseInterchangeService.ImportModes.Replace)
+        {
+            Console.WriteLine($"  retired          : {r.EntitiesRetired} (pruned against {r.PruneBasis ?? "nothing"})");
+            Console.WriteLine($"  edges invalidated: {r.EdgesInvalidated}");
+            foreach (var s in r.Retired.Take(20)) Console.WriteLine($"    - {s}");
+            if (r.Retired.Count > 20) Console.WriteLine($"    … and {r.Retired.Count - 20} more");
+        }
+        if (r.EntitiesRevived > 0) Console.WriteLine($"  revived          : {r.EntitiesRevived}");
     }
 
     private static string? Flag(string[] args, string name)

@@ -1035,11 +1035,19 @@ app.MapPost("/api/edges", async (EdgeRequest req, UniverseGraphService graph, ID
 // push` posts its interchange JSON body here. Mirrors the read endpoints' {slug}-in-route
 // style; UniverseInterchangeService is self-contained (explicit UniverseId everywhere, no
 // ambient-scope dependency) so no uc.SetFlowUniverse dance is needed here.
-app.MapPost("/api/universes/{slug}/import", async (string slug, HttpRequest http, UniverseInterchangeService interchange) =>
+// PRS-T916 / RFC 0017: ?mode=replace retires the consumer's entities the file no longer has; a batched push passes
+// one ?session=<id> on every batch and ?final=true on the last, so the prune and the single Outbox notice run once
+// over the union of the batches. ?notify=false suppresses the notice.
+app.MapPost("/api/universes/{slug}/import", async (string slug, string? mode, string? session, bool? final, bool? notify,
+    HttpRequest http, UniverseInterchangeService interchange) =>
 {
     using var reader = new StreamReader(http.Body);
     var json = await reader.ReadToEndAsync();
-    var result = await interchange.ImportAsync(json, slug);
+    var result = await interchange.ImportAsync(json, slug, new UniverseInterchangeService.ImportOptions(
+        Mode: string.IsNullOrWhiteSpace(mode) ? UniverseInterchangeService.ImportModes.Merge : mode,
+        Session: string.IsNullOrWhiteSpace(session) ? null : session,
+        Final: final ?? true,
+        Notify: notify ?? true));
     return result.Success ? Results.Ok(result) : Results.BadRequest(result);
 })
     .AddEndpointFilter<HubApiKeyFilter>();
