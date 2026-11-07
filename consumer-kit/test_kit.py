@@ -160,6 +160,45 @@ class KitTests(unittest.TestCase):
         kit.write_json(snap, {"nodes": [{"id": "x", "nodeType": "character"}, {"id": "intruder", "nodeType": "weapon"}], "edges": []})
         self.assertEqual(kit.leak(a, snap, out=sink.append), 1)
 
+    def test_leak_passes_a_live_entity_named_like_a_retired_one(self):
+        """PRS-T921: after a prune a live entity shares its name with the one the push retired. The snapshot holds
+        its edges, so leak() passes whether the Hub keys nodes per entity or (older Hub) merged them into one."""
+        a = os.path.join(self.root, "a.json")
+        kit.write_json(a, universe(ent("pilot-2", rel=["ship"], name="Bertrand Esposito"),
+                                   ent("ship", t="ship", name="MV Swiftsure"),
+                                   ent("swift", t="pilot", rel=["ship"], name="Swiftsure"),
+                                   ent("swift-ship", t="ship", name="Swiftsure")))
+        snap = os.path.join(self.root, "snap.json")
+        sink = []
+        # Per-entity nodes (PRS-T916): the retired twin is its own archived node, and the second live "Swiftsure"
+        # is keyed "<name-slug>~<entity id>".
+        kit.write_json(snap, {"nodes": [
+            {"id": "bertrand-esposito", "name": "Bertrand Esposito", "nodeType": "character", "status": "canon"},
+            {"id": "bertrand-esposito~0a1b", "name": "Bertrand Esposito", "nodeType": "character", "status": "archived"},
+            {"id": "mv-swiftsure", "name": "MV Swiftsure", "nodeType": "ship"},
+            {"id": "swiftsure", "name": "Swiftsure", "nodeType": "pilot"},
+            {"id": "swiftsure~9f8e", "name": "Swiftsure", "nodeType": "ship"}],
+            "edges": [{"source": "bertrand-esposito", "target": "mv-swiftsure", "relationType": "knows"},
+                      {"source": "bertrand-esposito~0a1b", "target": "mv-swiftsure", "relationType": "flies"},
+                      {"source": "swiftsure", "target": "mv-swiftsure", "relationType": "knows"}]})
+        self.assertEqual(kit.leak(a, snap, out=sink.append), 0, "\n".join(sink))
+        # An older Hub merged the two into one name-keyed node that reads archived; it still carries the live edges.
+        kit.write_json(snap, {"nodes": [
+            {"id": "bertrand-esposito", "name": "Bertrand Esposito", "nodeType": "character", "status": "archived"},
+            {"id": "mv-swiftsure", "name": "MV Swiftsure", "nodeType": "ship"},
+            {"id": "swiftsure", "name": "Swiftsure", "nodeType": "pilot"}],
+            "edges": [{"source": "bertrand-esposito", "target": "mv-swiftsure", "relationType": "knows"},
+                      {"source": "swiftsure", "target": "mv-swiftsure", "relationType": "knows"}]})
+        sink.clear()
+        self.assertEqual(kit.leak(a, snap, out=sink.append), 0, "\n".join(sink))
+        # A live entity's edge really absent is still reported.
+        kit.write_json(snap, {"nodes": [
+            {"id": "bertrand-esposito", "name": "Bertrand Esposito", "nodeType": "character"},
+            {"id": "mv-swiftsure", "name": "MV Swiftsure", "nodeType": "ship"},
+            {"id": "swiftsure", "name": "Swiftsure", "nodeType": "pilot"}],
+            "edges": [{"source": "swiftsure", "target": "mv-swiftsure", "relationType": "knows"}]})
+        self.assertEqual(kit.leak(a, snap, out=sink.append), 1)
+
     # -- push
 
     def test_push_is_one_replace_session_with_final_on_the_last_batch(self):

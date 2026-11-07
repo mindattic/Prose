@@ -509,7 +509,7 @@ def diff(a_path: str, b_path: str, allow_stale=False, out=print) -> int:
 
 
 def name_slug(name: str) -> str:
-    """Prose's graph node id (UniverseGraphService.Slugify of the entity's NAME, not its id; PRS-T916 keeps that)."""
+    """UniverseGraphService.Slugify of an entity's NAME: the graph node id of a name only one entity has (PRS-T916)."""
     folded = "".join(c for c in unicodedata.normalize("NFD", name or "") if unicodedata.category(c) != "Mn")
     for x, y in (("ß", "ss"), ("æ", "ae"), ("Æ", "ae"), ("ø", "o"), ("Ø", "o"), ("œ", "oe"), ("Œ", "oe"), ("ł", "l"), ("Ł", "l")):
         folded = folded.replace(x, y)
@@ -524,15 +524,30 @@ def leak(file_path: str, snap_path: str, out=print) -> int:
     by_id = {e["id"]: e for e in ents}
     names = {name_slug(e["name"]) for e in ents} | set(by_id)
     types = {e["type"] for e in ents} | {"place", "stub"}
-    ignored = {n.get("id") for n in snap.get("nodes") or []
-               if n.get("nodeType") == TEXT_TYPE or str(n.get("status", "")).lower() in ("archived", "retired")}
-    nodes = [n for n in snap.get("nodes") or [] if n.get("id") not in ignored]
+    all_nodes = snap.get("nodes") or []
+    # Compare by the node's NAME slug, not its id (PRS-T921): a Hub keying nodes per entity (PRS-T916) gives every
+    # same-named entity but the primary the id "<name-slug>~<entity id>", and the file's relations are by name too.
+    key = {n.get("id"): (name_slug(n["name"]) if n.get("name") else n.get("id")) for n in all_nodes}
+
+    def retired(n):
+        return str(n.get("status", "")).lower() in ("archived", "retired")
+
+    live_keys = {key[n.get("id")] for n in all_nodes if not retired(n) and n.get("nodeType") != TEXT_TYPE}
+    live_names = {name_slug(e["name"]) for e in ents}
+    # A retired node is Prose's own and ignored, with its edges, unless it is the only node of a name a live file
+    # entity has: an older Hub merged same-named entities into one node that reads archived after a prune while it
+    # carries the live entity's edges (SpaceGod: 161 false MISSING edges from 55 live/retired same-name pairs).
+    ignored = {n.get("id") for n in all_nodes
+               if n.get("nodeType") == TEXT_TYPE
+               or (retired(n) and not (key[n.get("id")] in live_names and key[n.get("id")] not in live_keys))}
+    nodes = [n for n in all_nodes if n.get("id") not in ignored]
     edges = [x for x in snap.get("edges") or [] if x.get("source") not in ignored and x.get("target") not in ignored]
-    foreign = [n.get("id") for n in nodes if str(n.get("id")) not in names]
+    foreign = [n.get("id") for n in nodes if str(key[n.get("id")]) not in names and str(n.get("id")) not in names]
     foreign_types = collections.Counter(n.get("nodeType") for n in nodes if n.get("nodeType") not in types)
     ours = {(name_slug(e["name"]), name_slug(by_id[r["to"]]["name"]), r["kind"])
             for e in ents for r in e.get("relations", []) or [] if r.get("to") in by_id}
-    theirs = {(x.get("source"), x.get("target"), x.get("relationType")) for x in edges}
+    theirs = {(key.get(x.get("source"), x.get("source")), key.get(x.get("target"), x.get("target")), x.get("relationType"))
+              for x in edges}
     extra, missing = theirs - ours, ours - theirs
     out(f"snapshot: {len(nodes)} nodes, {len(edges)} edges ({len(ignored)} text/retired nodes ignored); "
         f"file: {len(ents)} entities, {len(ours)} distinct relations by name")

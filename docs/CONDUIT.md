@@ -173,7 +173,7 @@ The kit finds `Data/Prose/prose.config.json` by walking up from the current dire
 | `map` | runs the game's mapper to (re)write the universe file |
 | `push [--map] [--prune] [--no-check] [--batch-size n]` | validates, imports in batches as one import session (one Outbox notice), with `--prune` retires entities the game no longer has, then exports back, diffs, and runs the leak check |
 | `diff <ours> <theirs>` | semantic diff of two interchange files |
-| `leak <ours> <snapshot>` | every node and edge in a Hub `/snapshot?scope=all` must be one of the file's (texts and retired entities are ignored) |
+| `leak <ours> <snapshot>` | every node and edge in a Hub `/snapshot?scope=all` must be one of the file's, compared by entity name (texts and retired entities are ignored; a retired node that is the only node of a live entity's name is kept, since an older Hub merged the two) |
 | `pull [--kind k] [--since v] [--status s] [--all]` | approved and published texts newer than `applied.jsonl` into `pending/` |
 | `apply [--dry-run]` | runs the applier, records applied texts in `applied.jsonl`, clears them from `pending/` |
 | `status` | the universe on the Hub, entity and text counts by kind and status, pending, last applied |
