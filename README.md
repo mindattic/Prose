@@ -434,8 +434,8 @@ Scoping fails closed: an unset or unknown universe blocks the command instead of
 
 Prose is also a store other MindAttic apps read and write (RFC 0007). The contract is one JSON file per universe, `<app>/universe/<slug>.universe.json`, described by [docs/schemas/universe.schema.json](docs/schemas/universe.schema.json): a universe header plus entities with type, summary, details, relations and tags.
 
-- **Import and export.** `UniverseInterchangeService` maps entities onto the entity spine. Import is an idempotent upsert by universe and slug; a relation to an unknown entity creates a stub that is promoted when its own row arrives.
-- **CLI:** `--universe-import <path>`, `--universe-export <slug> <path>`, `--universe-sync <path>`.
+- **Import and export.** `UniverseInterchangeService` maps entities onto the entity spine. Import is an idempotent upsert by universe and slug; a relation to an unknown entity creates a stub that is promoted when its own row arrives. Replace mode (`--replace`, `?mode=replace`) retires the entities the consumer dropped, and a batched push is one session with one Outbox notice.
+- **CLI:** `--universe-import <path> [--replace]`, `--universe-export <slug> <path>`, `--universe-sync <path>`.
 - **MCP:** `import_universe_file`, `export_universe_file`, `get_universe_entity`, `search_universe`.
 - **Hub HTTP:** `POST /api/universes/{slug}/import` plus reads of entities, neighbours, search, snapshot and stats.
 - **The Outbox:** `GET` and `POST /api/outbox/{consumer}` queue one-line messages for another app's Claude session; `?peek=true` reads without marking delivered.
@@ -443,6 +443,14 @@ Prose is also a store other MindAttic apps read and write (RFC 0007). The contra
 - **Barks:** `--barks-export <universe> <path>` emits every single-speaker beat as `{barkId, speakerEntitySlug, text, context}`.
 
 The first consumer is [ExperimentEve](https://github.com/mindattic/ExperimentEve). The runbook for the next one is [docs/CONSUMER\_ONBOARDING.md](docs/CONSUMER%5FONBOARDING.md).
+
+**Games keep their story in Prose through the conduit** ([docs/CONDUIT.md](docs/CONDUIT.md), RFC 0017): the game owns
+gameplay and entity ids, Prose owns the words. Player-facing text (conversations, crawls, descriptions, quest text,
+books, barks, glossary) is authored in Prose as `prose-text/1` texts against the universe's entities
+(`--texts-draft/-list/-get/-pull`, MCP `draft_text`/`list_texts`/`get_text`, `GET /api/universes/{slug}/texts`),
+approved by the author only (`--texts-approve/-publish/-retire`), and pulled into the game by the shared
+[consumer kit](consumer-kit/kit.py) (`validate`, `push`, `pull`, `apply`, `status`, `outbox`), which every game runs
+by path from this repo.
 
 ## LLM providers
 
