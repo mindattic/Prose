@@ -19,6 +19,19 @@
         "rules": { "type": "array", "items": { "type": "string" } }
       }
     },
+    "source": {
+      "type": "object",
+      "description": "Optional provenance of this file (RFC 0017, PRS-T916): who generated it and from what. Kept with the universe and returned on export.",
+      "properties": {
+        "consumer": { "type": "string" },
+        "generator": { "type": "string" },
+        "version": { "type": "string" },
+        "build": { "type": "string" },
+        "seed": {},
+        "generatedAt": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
     "entities": {
       "type": "array",
       "items": {
@@ -28,7 +41,7 @@
           "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
           "type": {
             "type": "string",
-            "description": "Open set; core types below.",
+            "description": "Open set; core types below. 'prose-text' is reserved for Prose's own texts (docs/CONDUIT.md) and is refused on import.",
             "examples": ["character", "faction", "creature", "location", "artifact", "event", "rule", "organization", "concept"]
           },
           "name": { "type": "string" },

@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mindattic:prose-text.schema.json",
+  "title": "MindAttic prose-text/1",
+  "description": "One unit of player-facing story text authored in Prose against a universe's entities, and pulled by a game through the conduit (docs/CONDUIT.md, RFC 0017). The same document is the text as Prose stores it, as the pull API returns it, and as the consumer kit writes it to a game's Data/Prose/pending/ folder.",
+  "type": "object",
+  "required": ["schema", "id", "universe", "kind", "key", "version", "status", "payload"],
+  "properties": {
+    "schema": { "const": "prose-text/1" },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Stable, kind-prefixed text id, e.g. conversation-wanderer-ember. Never changes."
+    },
+    "universe": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "kind": { "enum": ["conversation", "crawl", "description", "quest", "book", "bark", "glossary"] },
+    "key": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:/-]*$",
+      "description": "The game's own lookup key, e.g. dialogue:wanderer_ember or class:lich. Unique among a universe's live texts. The game owns the key vocabulary."
+    },
+    "about": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+      "description": "Entity ids (universe interchange ids) the text is about. Each must exist in the universe."
+    },
+    "speakers": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^(\\$[A-Za-z0-9_]+|[a-z0-9]+(-[a-z0-9]+)*)$" },
+      "description": "Entity ids, or $placeholders the game resolves at runtime ($hero, $companion). Entity ids must exist in the universe."
+    },
+    "version": { "type": "integer", "minimum": 1 },
+    "status": { "enum": ["draft", "approved", "published", "retired"] },
+    "hash": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" },
+    "approvedBy": { "type": "string" },
+    "approvedAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "payload": { "type": "object" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "kind": { "const": "conversation" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/conversation" } } }
+    },
+    {
+      "if": { "properties": { "kind": { "const": "crawl" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/crawl" } } }
+    },
+    {
+      "if": { "properties": { "kind": { "const": "description" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/description" } } }
+    },
+    {
+      "if": { "properties": { "kind": { "const": "quest" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/quest" } } }
+    },
+    {
+      "if": { "properties": { "kind": { "const": "book" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/book" } } }
+    },
+    {
+      "if": { "properties": { "kind": { "const": "bark" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/bark" } } }
+    },
+    {
+      "if": { "properties": { "kind": { "const": "glossary" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/glossary" } } }
+    }
+  ],
+  "$defs": {
+    "line": { "type": "string", "minLength": 1 },
+    "conversation": {
+      "type": "object",
+      "required": ["start", "nodes"],
+      "properties": {
+        "title": { "type": "string" },
+        "start": { "type": "string" },
+        "nodes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["id", "speaker", "line"],
+            "properties": {
+              "id": { "type": "string", "minLength": 1 },
+              "speaker": { "type": "string", "description": "One of the text's speakers." },
+              "line": { "$ref": "#/$defs/line" },
+              "next": { "type": "string", "description": "A node id, or a $token the game resolves (e.g. $outcome). Absent = the conversation ends here." },
+              "choices": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["text", "next"],
+                  "properties": {
+                    "text": { "$ref": "#/$defs/line" },
+                    "next": { "type": "string" },
+                    "tags": { "type": "array", "items": { "type": "string" }, "description": "Game meaning (e.g. right-answer) without game logic." }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "crawl": {
+      "type": "object",
+      "required": ["title", "paragraphs"],
+      "properties": {
+        "title": { "type": "string" },
+        "paragraphs": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/line" } }
+      }
+    },
+    "description": {
+      "type": "object",
+      "anyOf": [{ "required": ["short"] }, { "required": ["long"] }],
+      "properties": {
+        "short": { "type": "string" },
+        "long": { "type": "string" }
+      }
+    },
+    "quest": {
+      "type": "object",
+      "required": ["title", "brief"],
+      "properties": {
+        "title": { "type": "string" },
+        "giver": { "type": "string" },
+        "brief": { "$ref": "#/$defs/line" },
+        "complete": { "type": "string" },
+        "fail": { "type": "string" }
+      }
+    },
+    "book": {
+      "type": "object",
+      "required": ["title", "pages"],
+      "properties": {
+        "title": { "type": "string" },
+        "author": { "type": "string" },
+        "pages": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/line" } }
+      }
+    },
+    "bark": {
+      "type": "object",
+      "required": ["speaker", "lines"],
+      "properties": {
+        "speaker": { "type": "string" },
+        "context": { "type": "string" },
+        "lines": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/line" } }
+      }
+    },
+    "glossary": {
+      "type": "object",
+      "required": ["term", "definition"],
+      "properties": {
+        "term": { "type": "string", "minLength": 1 },
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "definition": { "$ref": "#/$defs/line" }
+      }
+    }
+  }
+}

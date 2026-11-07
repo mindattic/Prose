@@ -10,6 +10,12 @@ step below; every mechanism here is already generic (verified against source, no
 If you're onboarding ExperimentEve specifically, its own integration already exists — this doc is
 for the *next* consumer.
 
+**Games use the conduit.** A game that keeps its story in Prose (GridGame, SpaceGod and every later
+one) follows **[CONDUIT.md](CONDUIT.md)** (RFC 0017): the ownership split, id conventions, the
+`Data/Prose/` folder layout, the `prose-text/1` text kinds and the shared consumer kit
+(`consumer-kit/`) that does validate, push, pull, apply and the round-trip checks. This page stays
+the reference for the Hub basics underneath it (API key, Outbox hook, `generate_scene`).
+
 ## 0. Prerequisites
 
 - **Prose Hub must be running** on `http://127.0.0.1:5900` (loopback only). In this repo it's kept
