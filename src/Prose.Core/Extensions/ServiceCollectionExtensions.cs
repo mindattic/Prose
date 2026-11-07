@@ -399,6 +399,8 @@ public static class ServiceCollectionExtensions
         // queue (ExperimentEve first). CLI: `prose --universe-import/-export/-sync`.
         services.AddSingleton<UniverseInterchangeService>();
         services.AddSingleton<OutboxService>();
+        // RFC 0017 conduit: game texts (prose-text/1) authored against a universe's entities.
+        services.AddSingleton<ProseTextService>();
 
         // SchemaGraphService removed 2026-08-30 (confirmed dead code — the /schema visualization
         // route it served was orphaned by the Blazor UI deletion, 2026-08-13 commit ed22bd4f6;

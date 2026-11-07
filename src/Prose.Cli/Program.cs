@@ -280,6 +280,9 @@ if (UniverseBootstrap.RequestedSlug == null
         // Portable-writing-service plan, Phase 4: takes an explicit positional universe slug
         // (BarksExportService.ExportAsync), same shape as --universe-export above.
         "--barks-export",
+        // RFC 0017 conduit: every --texts-* verb takes its universe as the first positional
+        // argument (ProseTextService is explicit about the universe), like --universe-export.
+        "--texts-list", "--texts-get", "--texts-pull", "--texts-draft", "--texts-approve", "--texts-publish", "--texts-retire",
         // BannedNames (2026-08-26): genuinely global, no UniverseId column at all — the whole
         // point of a Prose-wide ban is that it has no per-universe scope to resolve.
         "--banned-names",
@@ -365,7 +368,7 @@ string[] BookSubFlagOwners = ["--continuity", "--burst-beats"];
 string[] ContinuitySubFlagOwners = ["--repair"];
 string[] SchemaSubFlagOwners = ["--sql-export"];
 string[] HistorySubFlagOwners = ["--narrative-health"];
-string?[] HistoryLeadingOwners = ["--cost"];
+string?[] HistoryLeadingOwners = ["--cost", "--texts-get"];
 string[] FamilySubFlagOwners = ["--repair-slugs"];
 string[] BeatSubFlagOwners = ["--wound", "--liberty-report"];
 
@@ -2633,6 +2636,63 @@ if (args.Contains("--barks-export"))
 {
     var rest = args.SkipWhile(a => a != "--barks-export").Skip(1).ToArray();
     Environment.ExitCode = await HubCliClient.ForwardAsync("BarksExportCli", rest);
+    return;
+}
+
+// prose --texts-list <slug> [--kind k] [--status pullable|approved|published|draft|retired|all] [--since v|date] [--key key] [--json]
+// RFC 0017 conduit: list a game universe's texts (prose-text/1, docs/CONDUIT.md).
+if (args.Contains("--texts-list"))
+{
+    var rest = args.SkipWhile(a => a != "--texts-list").Skip(1).ToArray();
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ProseTextCli", rest, method: "RunListAsync");
+    return;
+}
+// prose --texts-get <slug> <id> [--version n] [--history]
+// RFC 0017 conduit: one text as a prose-text/1 document, or every version with --history.
+if (args.Contains("--texts-get"))
+{
+    var rest = args.SkipWhile(a => a != "--texts-get").Skip(1).ToArray();
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ProseTextCli", rest, method: "RunGetAsync");
+    return;
+}
+// prose --texts-pull <slug> --out <dir> [--kind k] [--status s] [--since v|date]
+// RFC 0017 conduit: write each pullable (approved/published) text to <dir>/<id>.v<version>.json.
+if (args.Contains("--texts-pull"))
+{
+    var rest = args.SkipWhile(a => a != "--texts-pull").Skip(1).ToArray();
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ProseTextCli", rest, method: "RunPullAsync");
+    return;
+}
+// prose --texts-draft <slug> <file.json|dir> [--by name]
+// RFC 0017 conduit: draft one text, a JSON array of texts, or every *.json in a folder; identical content changes nothing.
+if (args.Contains("--texts-draft"))
+{
+    var rest = args.SkipWhile(a => a != "--texts-draft").Skip(1).ToArray();
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ProseTextCli", rest, method: "RunDraftAsync");
+    return;
+}
+// prose --texts-approve <slug> <id>... --by <name> [--version n]
+// RFC 0017 conduit: the author approves drafts (RFC 0009: no MCP door). The old live version stays live until this runs.
+if (args.Contains("--texts-approve"))
+{
+    var rest = args.SkipWhile(a => a != "--texts-approve").Skip(1).ToArray();
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ProseTextCli", rest, method: "RunApproveAsync");
+    return;
+}
+// prose --texts-publish <slug> --by <name> [id...]
+// RFC 0017 conduit: mark approved texts published and send one texts.published Outbox notice for the batch.
+if (args.Contains("--texts-publish"))
+{
+    var rest = args.SkipWhile(a => a != "--texts-publish").Skip(1).ToArray();
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ProseTextCli", rest, method: "RunPublishAsync");
+    return;
+}
+// prose --texts-retire <slug> <id>... --by <name>
+// RFC 0017 conduit: retire texts; they leave every pull and the game deletes them.
+if (args.Contains("--texts-retire"))
+{
+    var rest = args.SkipWhile(a => a != "--texts-retire").Skip(1).ToArray();
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ProseTextCli", rest, method: "RunRetireAsync");
     return;
 }
 

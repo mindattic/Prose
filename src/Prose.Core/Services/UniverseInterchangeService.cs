@@ -144,6 +144,12 @@ public class UniverseInterchangeService
         }
         result.UniverseSlug = slug;
 
+        if (file.Entities.FirstOrDefault(e => string.Equals((e.Type ?? "").Trim(), ProseTextService.EntityType, StringComparison.OrdinalIgnoreCase)) is { } reserved)
+        {
+            result.Errors.Add($"entity '{reserved.Id}' uses the reserved type '{ProseTextService.EntityType}' (Prose's own texts, docs/CONDUIT.md)");
+            return result;
+        }
+
         if (file.Entities.Select(e => Slugify(e.Id)).GroupBy(s => s).FirstOrDefault(g => g.Count() > 1) is { } dupe)
         {
             result.Errors.Add($"duplicate entity id '{dupe.Key}' in source file — entity ids must be unique per file");
@@ -252,7 +258,10 @@ public class UniverseInterchangeService
             ?? throw new InvalidOperationException($"Unknown universe slug '{universeSlug}'.");
 
         var entities = await db.Entities.IgnoreQueryFilters()
-            .Where(e => e.UniverseId == universe.Id && e.Status != "stub")
+            // Stubs are bookkeeping, archived rows were retired by a replace import, and texts are
+            // Prose's own (RFC 0017): none of them is the game's file content.
+            .Where(e => e.UniverseId == universe.Id && e.Status != "stub" && e.Status != "archived"
+                        && e.EntityType != ProseTextService.EntityType)
             .OrderBy(e => e.CreatedAt)
             .ToListAsync(ct);
         var entityIds = entities.Select(e => e.Id).ToHashSet();

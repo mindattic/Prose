@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**313 tools** across **55 tool families.**
+**316 tools** across **56 tool families.**
 
 ## Families
 
@@ -54,6 +54,7 @@
 | [Operator Key](#operator-key) | 5 |
 | [Planning](#planning) | 2 |
 | [Plant Payoff](#plant-payoff) | 6 |
+| [Prose Text](#prose-text) | 3 |
 | [Quality](#quality) | 5 |
 | [Reading](#reading) | 4 |
 | [Repository](#repository) | 3 |
@@ -1986,6 +1987,37 @@ Correct a registered plant/payoff pair's descriptions in place when the register
 - `plantPayoffId` (string, required) — PlantPayoff id (GUID).
 - `plantDescription` (string, optional) — New plant description (omit to keep).
 - `payoffDescription` (string, optional) — New payoff description (omit to keep).
+
+## Prose Text
+
+<sub>`ProseTextTools`</sub>
+
+### `draft_text`
+
+Draft a game text (prose-text/1, docs/CONDUIT.md) in a universe. json is one document: {id, kind, key, about[], speakers[], payload}. Payload per kind: conversation {title?, start, nodes[{id, speaker, line, next?, choices?[{text, next, tags[]}]}]}; crawl {title, paragraphs[]}; description {short?, long?}; quest {title, giver?, brief, complete?, fail?}; book {title, author?, pages[]}; bark {speaker, context?, lines[]}; glossary {term, aliases?[], definition}. about/speakers are entity ids of the universe ($placeholders allowed as speakers); {entity:<id>} in a line must name an entity. New content becomes a new draft version; identical content changes nothing. Only the author approves (not available here).
+
+- `universe` (string, required) — Universe slug.
+- `json` (string, required) — The prose-text/1 document as JSON.
+- `by` (string, optional) — Who drafted it (an agent or session name).
+
+### `get_text`
+
+Get one text (prose-text/1) of a game universe: the given version, else its live version, else its newest. history=true returns every version.
+
+- `universe` (string, required) — Universe slug.
+- `id` (string, required) — Text id, e.g. 'conversation-wanderer-ember'.
+- `version` (int, optional) — A specific version number.
+- `history` (bool, optional) — Return every version instead of one document.
+
+### `list_texts`
+
+List a game universe's texts (prose-text/1, docs/CONDUIT.md) as whole documents. status: pullable (default: each text's live approved or published version), approved, published, draft (pending drafts), retired, all (newest version of every text). since: a version number, or an ISO date (approved/published after it). kind: conversation, crawl, description, quest, book, bark, glossary.
+
+- `universe` (string, required) — Universe slug, e.g. 'gridgame' or 'spacegod'.
+- `kind` (string, optional) — Text kind filter.
+- `status` (string, optional) — pullable | approved | published | draft | retired | all.
+- `since` (string, optional) — Version number or ISO date.
+- `key` (string, optional) — Only the text with this game key.
 
 ## Quality
 

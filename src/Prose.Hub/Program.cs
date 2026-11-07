@@ -1064,6 +1064,59 @@ app.MapPost("/api/outbox/{consumer}", async (string consumer, OutboxEnqueueReque
 })
     .AddEndpointFilter<HubApiKeyFilter>();
 
+// RFC 0017 conduit (docs/CONDUIT.md §7): game texts, prose-text/1. Reads are open like the other
+// universe reads; draft needs the key; approve/publish/retire need the key AND a named author (RFC 0009:
+// there is no MCP door to them). ProseTextService is explicit about the universe, like the interchange.
+app.MapGet("/api/universes/{slug}/texts", async (string slug, string? kind, string? status, string? since, string? key, ProseTextService texts) =>
+{
+    try { return Results.Ok(await texts.ListAsync(slug, kind, status, since, key)); }
+    catch (InvalidOperationException ex) { return Results.BadRequest(new { error = "texts_list_failed", detail = ex.Message }); }
+});
+
+app.MapGet("/api/universes/{slug}/texts/{id}", async (string slug, string id, int? version, bool? history, ProseTextService texts) =>
+{
+    try
+    {
+        if (history == true)
+        {
+            var record = await texts.GetRecordAsync(slug, id);
+            return record == null ? Results.NotFound(new { error = "not_found", id }) : Results.Ok(record);
+        }
+        var doc = await texts.GetAsync(slug, id, version);
+        return doc == null ? Results.NotFound(new { error = "not_found", id, version }) : Results.Ok(doc);
+    }
+    catch (InvalidOperationException ex) { return Results.BadRequest(new { error = "texts_get_failed", detail = ex.Message }); }
+});
+
+app.MapPost("/api/universes/{slug}/texts", async (string slug, string? by, HttpRequest http, ProseTextService texts) =>
+{
+    using var reader = new StreamReader(http.Body);
+    var result = await texts.DraftAsync(slug, await reader.ReadToEndAsync(), by);
+    return result.Success ? Results.Ok(result) : Results.BadRequest(result);
+})
+    .AddEndpointFilter<HubApiKeyFilter>();
+
+app.MapPost("/api/universes/{slug}/texts/publish", async (string slug, TextActionRequest req, ProseTextService texts) =>
+{
+    var result = await texts.PublishAsync(slug, req.By ?? "", req.Ids);
+    return result.Success ? Results.Ok(result) : Results.BadRequest(result);
+})
+    .AddEndpointFilter<HubApiKeyFilter>();
+
+app.MapPost("/api/universes/{slug}/texts/{id}/approve", async (string slug, string id, TextActionRequest req, ProseTextService texts) =>
+{
+    var result = await texts.ApproveAsync(slug, [id], req.By ?? "", req.Version);
+    return result.Success ? Results.Ok(result) : Results.BadRequest(result);
+})
+    .AddEndpointFilter<HubApiKeyFilter>();
+
+app.MapPost("/api/universes/{slug}/texts/{id}/retire", async (string slug, string id, TextActionRequest req, ProseTextService texts) =>
+{
+    var result = await texts.RetireAsync(slug, [id], req.By ?? "");
+    return result.Success ? Results.Ok(result) : Results.BadRequest(result);
+})
+    .AddEndpointFilter<HubApiKeyFilter>();
+
 // Portable-writing-service plan, Phase 3: write a scene/line of dialog without a pre-existing
 // Book/Chapter/Beat row, over plain HTTP (same OneShotGenerationService the CLI/MCP entry points
 // call — see OneShotGenerateCli/generate_scene's doc comments for the ephemeral-vs-attached
@@ -1136,6 +1189,8 @@ app.Run();
 sealed record EdgeRequest(Guid Source, Guid Target, string RelationType, string? Sentiment, double? Weight, string? Description, string? Universe, Guid? ValidFromBeatId = null, Guid? ValidUntilBeatId = null);
 
 sealed record OutboxEnqueueRequest(string Kind, string Summary, object? Data);
+
+sealed record TextActionRequest(string? By, int? Version, string[]? Ids);
 
 sealed record GenerateSceneRequest(
     string BeatGoal, string[]? Characters, string? Location, string? Subtext,

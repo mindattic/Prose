@@ -19,7 +19,7 @@
 > deliberate: RFC 0014 §2.4 is about a gate documented as seven checks, coded as six
 > and advertised as five, and this reference is not going to repeat that.
 
-**292 commands.** 30 deactivated. 10 cost-gated. 18 have no description in their dispatch comment (12 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**301 commands.** 30 deactivated. 10 cost-gated. 18 have no description in their dispatch comment (12 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -559,6 +559,16 @@ Doc Context Stack dry-run — print the rotating cast of .md docs that WOULD loa
 unified continuity store — migrate / stats / contradictions / resolve / entity. Run `prose --continuity` (no subcommand) to see full usage.
 
 <sub>handler `ContinuityCli` · **deactivated 2026-09-22 (RFC 0014)** — handler intact; remove its line from `DeactivatedInstruments.cs` to restore</sub>
+
+### `--corobs`
+
+```
+prose --universe <u> --corobs enable|disable|status|build|patterns|rules|cue|confirm|reject|resolve|dismiss|explain
+```
+
+COROBS geometry (RFC 0016, PRS-T863) — the master switch and the store: enable, disable, status, build, patterns, rules, cue, confirm, reject, resolve, dismiss, explain. Ahead of every other block because its own --ruling/--order/--entity/--pattern/--rule flags belong to it; the bench verb (PRS-T865) falls through to its own handler below.
+
+<sub>handler `CorobsGeometryCli`</sub>
 
 ### `--corp`
 
@@ -1159,6 +1169,8 @@ _(no description in the dispatch comment — add one above the guard in `Program
 prose --universe glmz --get-entity-fields --id <id>   (read only; never writes)
 prose --universe glmz --set-character-fields | --set-entity-fields --id <id> --file fields.json [--confirm-unread]
 prose --universe glmz --verify-entity begin --entity <id> --node <book> | commit --nonce <nonce>
+prose --universe glmz --create-entity --type event --name "…" [--summary "…"] [--file record.json]   (PRS-T864)
+prose --universe glmz --record-state-event --entity <id> --aspect <key> --verb set|… [--value V] [--at <ISO>] [--beat <id>] [--snippet "…"]
 ```
 
 the world's read and write path and station F1 (RFC 0015 §3.3–3.4). (the key "summary" writes the entity's one-paragraph summary, Entities.Description)
@@ -1184,6 +1196,16 @@ prose --gpu <status|stop|start|destroy> [--instance <id>]
 manage the rented vast.ai review box (key from the MindAttic vault, provider 'vast').
 
 <sub>handler `VastGpuCli`</sub>
+
+### `--grade`
+
+```
+prose --grade --slug <book> | --series <series> | --universe <slug> --a <V|date|working> --b <V|date|working>
+```
+
+version grader (PRS-T866) — two versions of a book, series or universe on the deterministic battery; per-metric A-vs-B table + weighted win count (Grade:Weights). No LLM. After --provenance, whose own `--grade <grade>` flag must keep dispatching there.
+
+<sub>handler `GradeCli`</sub>
 
 ### `--graph-health`
 
@@ -2372,6 +2394,48 @@ prose --tag-entities (--id <guid> | --slug <slug> | --all) [--dry-run]
 retroactive inline entity-GUID tagging backfill (corpus-trust-recovery Phase 1a/1b).
 
 <sub>handler `TagEntitiesCli`</sub>
+
+### `--texts-approve`
+
+prose --texts-approve <slug> <id>... --by <name> [--version n] RFC 0017 conduit: the author approves drafts (RFC 0009: no MCP door). The old live version stays live until this runs.
+
+<sub>handler `ProseTextCli`</sub>
+
+### `--texts-draft`
+
+prose --texts-draft <slug> <file.json|dir> [--by name] RFC 0017 conduit: draft one text, a JSON array of texts, or every *.json in a folder; identical content changes nothing.
+
+<sub>handler `ProseTextCli`</sub>
+
+### `--texts-get`
+
+prose --texts-get <slug> <id> [--version n] [--history] RFC 0017 conduit: one text as a prose-text/1 document, or every version with --history.
+
+<sub>handler `ProseTextCli`</sub>
+
+### `--texts-list`
+
+prose --texts-list <slug> [--kind k] [--status pullable|approved|published|draft|retired|all] [--since v|date] [--key key] [--json] RFC 0017 conduit: list a game universe's texts (prose-text/1, docs/CONDUIT.md).
+
+<sub>handler `ProseTextCli`</sub>
+
+### `--texts-publish`
+
+prose --texts-publish <slug> --by <name> [id...] RFC 0017 conduit: mark approved texts published and send one texts.published Outbox notice for the batch.
+
+<sub>handler `ProseTextCli`</sub>
+
+### `--texts-pull`
+
+prose --texts-pull <slug> --out <dir> [--kind k] [--status s] [--since v|date] RFC 0017 conduit: write each pullable (approved/published) text to <dir>/<id>.v<version>.json.
+
+<sub>handler `ProseTextCli`</sub>
+
+### `--texts-retire`
+
+prose --texts-retire <slug> <id>... --by <name> RFC 0017 conduit: retire texts; they leave every pull and the game deletes them.
+
+<sub>handler `ProseTextCli`</sub>
 
 ### `--timeline`
 
