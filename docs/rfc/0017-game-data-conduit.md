@@ -3,13 +3,13 @@ codex: 1
 project: Prose
 code: SS
 layer: rfc
-status: proposed
+status: accepted
 updated: 2026-11-07
 ---
 
 # RFC 0017: The Game Data Conduit (Prose as the story store for every game) {#SS-RFC-0017-CONDUIT}
 
-**Status:** proposed · **Ticket:** PRS-T917 (Prose), GG-T355 (GridGame), US-T236 (SpaceGod) · **Builds on:**
+**Status:** accepted 2026-11-07 (owner) · **Ticket:** PRS-T917 (Prose), GG-T355 (GridGame), US-T236 (SpaceGod) · **Builds on:**
 RFC 0007 (Universe Interchange), RFC 0009 (No Autonomous Prose Writes)
 
 > "Separate the gameplay from the story, and let Prose handle the story of both SpaceGod and GridGame."
