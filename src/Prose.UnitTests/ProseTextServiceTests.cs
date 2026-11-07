@@ -239,6 +239,26 @@ public class ProseTextServiceTests
     }
 
     [Test]
+    public async Task Status_all_lists_a_retired_text_as_retired_not_at_its_last_status()
+    {
+        // PRS-T919: a published-then-retired text showed as published under status=all, so the kit's status
+        // counted it as published.
+        await svc.DraftAsync("gridgame", Conversation());
+        await svc.ApproveAsync("gridgame", ["conversation-recruit-ronin"], "ryan");
+        await svc.PublishAsync("gridgame", "ryan");
+        await svc.RetireAsync("gridgame", ["conversation-recruit-ronin"], "ryan");
+        await svc.DraftAsync("gridgame", Conversation(id: "conversation-other"));
+
+        var all = await svc.ListAsync("gridgame", status: "all");
+        Assert.That(all.Select(d => (d.Id, d.Status)), Is.EquivalentTo(new[]
+        {
+            ("conversation-recruit-ronin", "retired"),
+            ("conversation-other", "draft"),
+        }));
+        Assert.That(all.Single(d => d.Id == "conversation-recruit-ronin").Version, Is.EqualTo(1), "at its last version");
+    }
+
+    [Test]
     public async Task Texts_link_to_their_entities_and_stay_out_of_the_universe_export()
     {
         await svc.DraftAsync("gridgame", Conversation());

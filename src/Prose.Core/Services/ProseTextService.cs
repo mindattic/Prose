@@ -612,7 +612,8 @@ public class ProseTextService
     /// <item><c>approved</c> / <c>published</c>: live versions in exactly that status.</item>
     /// <item><c>draft</c>: each text's pending draft.</item>
     /// <item><c>retired</c>: retired texts, at their last version, with status retired.</item>
-    /// <item><c>all</c>: every text at its newest version, whatever its status.</item>
+    /// <item><c>all</c>: every text at its newest version, whatever its status; a retired text at its last version
+    /// with status retired, as <c>retired</c> lists it (PRS-T919: it showed its last version's status, e.g. published).</item>
     /// </list>
     /// <c>since</c>: an integer keeps versions newer than it; an ISO date keeps those approved or published after it.</summary>
     public async Task<List<TextDoc>> ListAsync(string universeSlug, string? kind = null, string? status = null,
@@ -641,7 +642,7 @@ public class ProseTextService
             {
                 "draft" => record.Retired ? null : record.Draft,
                 "retired" => record.Retired ? record.Live ?? record.Head : null,
-                "all" => record.Head,
+                "all" => record.Retired ? record.Live ?? record.Head : record.Head,
                 _ => record.Retired ? null : record.Live,
             };
             if (v == null) continue;
@@ -649,7 +650,7 @@ public class ProseTextService
             if (!string.IsNullOrWhiteSpace(key) && v.Key != key.Trim()) continue;
             if (sinceVersion != null && v.Version <= sinceVersion) continue;
             if (sinceDate != null && (v.PublishedAt ?? v.ApprovedAt ?? DateTime.MinValue) <= sinceDate) continue;
-            docs.Add(ToDoc(record, v, updatedAt, mode == "retired"));
+            docs.Add(ToDoc(record, v, updatedAt, record.Retired && mode is "retired" or "all"));
         }
         return docs;
     }
