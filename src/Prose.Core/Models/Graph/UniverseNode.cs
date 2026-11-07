@@ -7,7 +7,15 @@ namespace Prose.Core.Models.Graph;
 /// </summary>
 public record UniverseNode
 {
+    /// <summary>
+    /// The graph key. For an entity-backed node this is <c>Slugify(Name)</c> when the entity is the only
+    /// (or the primary) one with that name, and <c>{nameSlug}~{entityId:N}</c> for every other entity
+    /// sharing the name, so two same-named entities are always two nodes (PRS-T916). Display by
+    /// <see cref="Name"/>; resolve an entity's node by <see cref="EntityId"/>.
+    /// </summary>
     public string Id { get; init; } = "";
+    /// <summary>The Entities row this node is, when it is one (null for free-text-derived nodes).</summary>
+    public Guid? EntityId { get; init; }
     public string Name { get; init; } = "";
     public string NodeType { get; init; } = "";
     public string Status { get; init; } = "canon";

@@ -458,6 +458,7 @@ static Guid DocSessionKey(string? s) =>
 static object NodeDto(UniverseNode n, int edgeCount) => new
 {
     id = n.Id,
+    entityId = n.EntityId,
     name = n.Name,
     nodeType = n.NodeType,
     status = n.Status,
@@ -696,14 +697,17 @@ app.MapGet("/api/universes/{slug}/snapshot", async (
             .Where(m => docIds.Contains(m.Id) && m.EntityId != null)
             .Select(m => m.EntityId!.Value)
             .ToListAsync();
-        var names = await db.Set<Entity>().AsNoTracking().IgnoreQueryFilters()
+        // By entity id first (PRS-T916: a same-named entity has its own node), by name for an entity
+        // the graph never mapped.
+        var rows = await db.Set<Entity>().AsNoTracking().IgnoreQueryFilters()
             .Where(e => entityIds.Contains(e.Id))
-            .Select(e => e.Name)
+            .Select(e => new { e.Id, e.Name })
             .ToListAsync();
-        nodes = names
-            .Select(n => graph.GetNode(UniverseGraphService.Slugify(n)))
+        nodes = rows
+            .Select(r => graph.GetNodeForEntity(r.Id) ?? graph.GetNode(UniverseGraphService.Slugify(r.Name)))
             .Where(n => n != null)
             .Select(n => n!)
+            .DistinctBy(n => n.Id)
             .ToList();
     }
 

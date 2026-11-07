@@ -290,9 +290,13 @@ The working spec is `docs/CONDUIT.md`; where it differs from sections 5 to 8 abo
    applier never writes the log itself), `diff` and `leak`. The applier reports per text on stdout as JSON lines.
 5. **Import sessions.** A batched push passes one `session` id on every batch and `final=true` on the last; the prune
    and the one Outbox notice happen at the final batch, over the union of every batch.
-6. **Not done here, left on PRS-T916:** graph nodes keyed by entity id rather than name (`UniverseGraphService`, a
-   shared service with a large blast radius), and per-edge consumer provenance. The file-level `source` block is
-   kept with the universe and returned on export.
+6. **Graph nodes per entity (PRS-T916, done after the PRS-T917 build).** `UniverseGraphService` makes one node per
+   entity: a name only one entity has keeps its plain name-slug node id (every name lookup is unchanged), and when
+   several entities share a name the primary one (live over retired, canon over stub, universe-wide over
+   book-scoped, then the oldest) keeps the name slug and each other is `{nameSlug}~{entityId:N}`. Edges rows resolve
+   by entity id; `/snapshot` nodes carry `entityId`; a graph cache from before this is rebuilt, not served. Per-edge
+   consumer provenance is still not done. The file-level `source` block is kept with the universe and returned on
+   export.
 7. **Bulk approval (PRS-T918, answers open question 11.1).** The owner said yes to "approve everything of this
    type" on 2026-11-07. Bulk approve and bulk publish act on one kind, optionally narrowed by key prefix and/or an
    about-entity id, with a dry run; author-only (`--by` / HTTP `by`), no MCP tool. Each draft is re-checked as at

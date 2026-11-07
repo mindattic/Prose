@@ -41,6 +41,9 @@ public class UniverseGraphService : IUniverseGraphService
         // Populated by RebuildIndexes; lets /dashboard's "top connected" widget
         // skip the O(N×E) GetAllEdges loop and do a hash lookup instead.
         public readonly Dictionary<string, int> EdgeCountIndex = new(StringComparer.OrdinalIgnoreCase);
+        // Index: Entities.Id -> node id. The node is keyed by entity, not by name (PRS-T916): two
+        // same-named entities are two nodes, and an Edges row resolves its endpoints through this map.
+        public readonly Dictionary<Guid, string> EntityNodes = new();
         public readonly object RebuildLock = new();
         public bool Loaded;
         public bool Loading;
@@ -275,6 +278,21 @@ public class UniverseGraphService : IUniverseGraphService
         var state = GetState();
         EnsureLoaded(state);
         return state.Nodes.GetValueOrDefault(id);
+    }
+
+    /// <summary>The node id of an Entities row, or null when the graph has no node for it.</summary>
+    public string? GetNodeIdForEntity(Guid entityId)
+    {
+        var state = GetState();
+        EnsureLoaded(state);
+        return state.EntityNodes.GetValueOrDefault(entityId);
+    }
+
+    /// <summary>The node of an Entities row (keyed by entity, so a same-named entity is never confused).</summary>
+    public UniverseNode? GetNodeForEntity(Guid entityId)
+    {
+        var id = GetNodeIdForEntity(entityId);
+        return id == null ? null : GetNode(id);
     }
 
     public List<UniverseNode> GetNodesByType(string nodeType)
@@ -680,6 +698,7 @@ public class UniverseGraphService : IUniverseGraphService
     {
         if (string.IsNullOrWhiteSpace(node.Id) || string.IsNullOrWhiteSpace(node.Name)) return;
         state.Nodes[node.Id] = node;
+        if (node.EntityId is Guid entityId) state.EntityNodes[entityId] = node.Id;
         if (!state.Graph.ContainsVertex(node.Id))
             state.Graph.AddVertex(node.Id);
 
@@ -752,6 +771,7 @@ public class UniverseGraphService : IUniverseGraphService
         {
             if (state.TypeIndex.TryGetValue(node.NodeType, out var typeSet)) typeSet.Remove(id);
             foreach (var terrSet in state.TerritoryIndex.Values) terrSet.Remove(id);
+            if (node.EntityId is Guid entityId) state.EntityNodes.Remove(entityId);
         }
 
         state.Nodes.Remove(id);
@@ -1020,6 +1040,7 @@ public class UniverseGraphService : IUniverseGraphService
     {
         var snapshot = new GraphSnapshot
         {
+            Format = GraphSnapshot.CurrentFormat,
             Nodes = state.Nodes.Values.ToList(),
             Edges = state.Graph.Edges.ToList(),
             LastSaved = DateTime.UtcNow,
@@ -1082,9 +1103,18 @@ public class UniverseGraphService : IUniverseGraphService
             return;
         }
         if (snapshot == null) return;
+        // A cache from before per-entity nodes (PRS-T916) holds same-named entities merged into one
+        // node; serving it would keep the merge until the next canon write. Ignore it: the empty graph
+        // makes EnsureLoaded rebuild from SQL.
+        if (snapshot.Format < GraphSnapshot.CurrentFormat)
+        {
+            Serilog.Log.Information("Graph cache {Path} predates per-entity nodes (format {Format}), rebuilding", path, snapshot.Format);
+            return;
+        }
 
         state.Graph.Clear();
         state.Nodes.Clear();
+        state.EntityNodes.Clear();
 
         foreach (var node in snapshot.Nodes)
             AddNode(state, node);
@@ -1110,6 +1140,7 @@ public class UniverseGraphService : IUniverseGraphService
           {
             state.Graph.Clear();
             state.Nodes.Clear();
+            state.EntityNodes.Clear();
             state.TypeIndex.Clear();
             state.TerritoryIndex.Clear();
 
@@ -1179,19 +1210,24 @@ public class UniverseGraphService : IUniverseGraphService
             .ToList();
         if (edges.Count == 0) return;
 
-        // One batched lookup for every entity referenced as a Source or Target, instead of
-        // resolving each edge's name via an N+1 query.
-        var idsNeeded = edges.Select(e => e.SourceId).Concat(edges.Select(e => e.TargetId)).Distinct().ToList();
-        var idToSlug = ctx.Entities.AsNoTracking()
+        // Endpoints resolve by entity id to the entity's own node (PRS-T916): BuildRemainingEntities
+        // mapped every Entities row in this universe. Keying by name sent a live entity's edges to
+        // whichever same-named node won (an archived one, after a prune) and merged the two entities.
+        // An endpoint the map lacks (an entity outside the universe scope) falls back to its name.
+        var idsNeeded = edges.Select(e => e.SourceId).Concat(edges.Select(e => e.TargetId))
+            .Distinct().Where(id => !state.EntityNodes.ContainsKey(id)).ToList();
+        var idToSlug = idsNeeded.Count == 0 ? new Dictionary<Guid, string>() : ctx.Entities.AsNoTracking()
             .Where(en => idsNeeded.Contains(en.Id))
             .Select(en => new { en.Id, en.Name })
             .ToList()
             .ToDictionary(en => en.Id, en => Slugify(en.Name));
+        string? NodeOf(Guid entityId) =>
+            state.EntityNodes.TryGetValue(entityId, out var nodeId) ? nodeId : idToSlug.GetValueOrDefault(entityId);
 
         foreach (var edge in edges)
         {
-            var sourceSlug = idToSlug.GetValueOrDefault(edge.SourceId);
-            var targetSlug = idToSlug.GetValueOrDefault(edge.TargetId);
+            var sourceSlug = NodeOf(edge.SourceId);
+            var targetSlug = NodeOf(edge.TargetId);
             // Skip edges whose endpoint entity has no resolvable name, or whose endpoint
             // isn't already a node the graph knows about (only wire edges between nodes the
             // graph actually has — AddEdge would silently auto-vertex an unknown slug, which
@@ -1213,13 +1249,15 @@ public class UniverseGraphService : IUniverseGraphService
     }
 
     /// <summary>
-    /// Node every remaining active entity the bespoke builders above didn't cover
-    /// — cyberware, ammunition, materials, pharmaceuticals, transport, synthetics,
+    /// Node every entity the bespoke builders above didn't cover, one node per entity (see
+    /// <see cref="AddEntityNodes"/>), and map every entity to its node for the Edges pass:
+    /// cyberware, ammunition, materials, pharmaceuticals, transport, synthetics,
     /// automatons, subsidiaries, consumer goods, genemods, apparel, psionics,
     /// documents, etc. They get a basic node (name + type + description) so they
     /// are reachable by neighbor-traversal and the type index, ending the
-    /// "graph only sees 7 types" gap. Rich types already added above win (we skip
-    /// any id already present), so this never clobbers a character/place node.
+    /// "graph only sees 7 types" gap. Rich types already added above win (the
+    /// node already holding the name slug is stamped with its entity, never
+    /// replaced), so this never clobbers a character/place node.
     ///
     /// No longer filters out stub-status rows: a stub-status entity of one of these
     /// types (e.g. a Transportation entity like "Kyle's motorcycle") used to be
@@ -1239,24 +1277,87 @@ public class UniverseGraphService : IUniverseGraphService
         if (state.UniverseId != Guid.Empty)
             entitiesQuery = entitiesQuery.Where(e => e.UniverseId == state.UniverseId);
         var rows = entitiesQuery
-            .Select(e => new { e.Name, e.EntityType, e.Description, e.Status })
+            .Select(e => new GraphEntityRow(e.Id, e.Name, e.EntityType, e.Description, e.Status, e.OriginNodeId, e.CreatedAt))
             .ToList();
-        foreach (var e in rows)
+        AddEntityNodes(state, rows);
+    }
+
+    /// <summary>An Entities row as the graph needs it.</summary>
+    internal sealed record GraphEntityRow(
+        Guid Id, string Name, string EntityType, string? Description, string Status, Guid? OriginNodeId, DateTime CreatedAt);
+
+    /// <summary>
+    /// One node per entity (PRS-T916). The node id stays <c>Slugify(Name)</c> for a name only one entity
+    /// has, exactly as before, so every name lookup (ResolveId, GetNode(Slugify(name)), the Writer, the
+    /// books) is unchanged. When several entities share a name, the primary one keeps the name slug and
+    /// each other gets <c>{nameSlug}~{entityId:N}</c>. The primary is the one a bespoke builder already
+    /// modeled (same type first), else a live entity over a retired one, canon over stub, universe-wide
+    /// over book-scoped, then the oldest. Previously the rest were skipped, so same-named entities merged
+    /// into one node (SpaceGod: 4,823 entities, 3,549 nodes) and a pruned entity's archived twin could
+    /// hide a live entity's edges.
+    /// </summary>
+    private void AddEntityNodes(GraphState state, IEnumerable<GraphEntityRow> rows)
+    {
+        static bool Retired(GraphEntityRow e) => e.Status is "archived" or "retired";
+        foreach (var group in rows.Where(e => !string.IsNullOrWhiteSpace(e.Name))
+                     .GroupBy(e => Slugify(e.Name))
+                     .Where(g => g.Key.Length > 0)
+                     .OrderBy(g => g.Key, StringComparer.Ordinal))
         {
-            if (string.IsNullOrWhiteSpace(e.Name)) continue;
-            var id = Slugify(e.Name);
-            if (state.Nodes.ContainsKey(id)) continue;   // a bespoke builder already modeled it
-            var props = new Dictionary<string, string>();
-            if (!string.IsNullOrWhiteSpace(e.Description)) props["description"] = e.Description!;
-            AddNode(state, new UniverseNode
+            var nameSlug = group.Key;
+            var ordered = group
+                .OrderBy(e => Retired(e) ? 1 : 0)
+                .ThenBy(e => e.Status == "stub" ? 1 : 0)
+                .ThenBy(e => e.OriginNodeId == null ? 0 : 1)
+                .ThenBy(e => e.CreatedAt)
+                .ThenBy(e => e.Id)
+                .ToList();
+
+            List<GraphEntityRow> rest;
+            if (state.Nodes.TryGetValue(nameSlug, out var existing))
             {
-                Id = id,
-                Name = e.Name,
-                NodeType = string.IsNullOrWhiteSpace(e.EntityType) ? EntityTypes.Unknown : e.EntityType,
-                Properties = props,
-                Status = string.IsNullOrWhiteSpace(e.Status) ? "canon" : e.Status,
-            });
+                // A bespoke builder (or a free-text placeholder) already holds the name slug: it IS the
+                // entity of that name, or the best match of several. Stamp the entity on it and give
+                // every other same-named entity its own node.
+                var claimed = ordered.FirstOrDefault(e => string.Equals(e.EntityType, existing.NodeType, StringComparison.OrdinalIgnoreCase))
+                              ?? ordered[0];
+                if (existing.EntityId == null)
+                    AddNodeQuiet(state, existing with { EntityId = claimed.Id });
+                else
+                    state.EntityNodes.TryAdd(claimed.Id, nameSlug);
+                rest = ordered.Where(e => e.Id != claimed.Id).ToList();
+            }
+            else
+            {
+                AddNode(state, EntityNode(ordered[0], nameSlug));
+                rest = ordered.Skip(1).ToList();
+            }
+
+            foreach (var e in rest)
+                AddNode(state, EntityNode(e, $"{nameSlug}~{e.Id:N}"));
         }
+    }
+
+    private static UniverseNode EntityNode(GraphEntityRow e, string id)
+    {
+        var props = new Dictionary<string, string>();
+        if (!string.IsNullOrWhiteSpace(e.Description)) props["description"] = e.Description!;
+        return new UniverseNode
+        {
+            Id = id,
+            EntityId = e.Id,
+            Name = e.Name,
+            NodeType = string.IsNullOrWhiteSpace(e.EntityType) ? EntityTypes.Unknown : e.EntityType,
+            Properties = props,
+            Status = string.IsNullOrWhiteSpace(e.Status) ? "canon" : e.Status,
+        };
+    }
+
+    /// <summary>Replace a node in place (the same id) without re-firing NodeAdded.</summary>
+    private static void AddNodeQuiet(GraphState state, UniverseNode node)
+    {
+        state.Nodes[node.Id] = node;
+        if (node.EntityId is Guid entityId) state.EntityNodes[entityId] = node.Id;
     }
 
     private void BuildCharacters(GraphState state)
