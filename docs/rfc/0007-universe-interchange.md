@@ -17,7 +17,9 @@ updated: 2026-10-03
 > without renaming anything else.
 
 Status: **PHASE 1 IMPLEMENTED (2026-08-26)** — execution keyword: `/eve` in the Prose CLI.
-Phase 2 (game-writing deliverables as Books) remains design-approved, not yet built.
+Phase 2 (game-writing deliverables as Books) is **superseded** by RFC 0018 (game writing as a first-class
+mode, PRS-T922, 2026-11-07): game texts are `prose-text/1` rows verified on their own, not books. Only
+`--barks-export` from it was ever built, and it stays.
 Author: handoff from the ExperimentEve session (Claude, D:\Projects\MindAttic\ExperimentEve)
 Depends on: BIBLE §4.4 (canon-as-data) and §4.2 / SS-LAW-15 (universe segregation)
 
@@ -194,6 +196,10 @@ Expected: 75 entities (7 character, 2 faction, 20 creature/species,
   (works as soon as step 3 lands).
 
 ## Phase 2 — Prose writes for the game (design now, build after Phase 1)
+
+> **Superseded 2026-11-07 by [RFC 0018](0018-game-writing-first-class.md)** (PRS-T922). A game has no single
+> reading order, so its script is not a book: game texts are first-class `prose-text/1` rows (RFC 0017) with
+> their own verifiers, context and Writer view. Kept below as history.
 
 The insight: **game-writing deliverables are Books.** The existing
 Book→Chapter→Beat spine, generation pipeline, continuity ledger, and
