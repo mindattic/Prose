@@ -1152,6 +1152,33 @@ app.MapPost("/api/universes/{slug}/texts/{id}/retire", async (string slug, strin
 })
     .AddEndpointFilter<HubApiKeyFilter>();
 
+// RFC 0018 (PRS-T922): the game-mode verifiers. Verify writes findings only (never a text), so it needs the key like a
+// draft but no author; reading findings is open like every other read. {"ids"?, "kind"?}: no ids = every text.
+app.MapPost("/api/universes/{slug}/texts/verify", async (string slug, TextActionRequest? req, ProseTextVerifier verifier) =>
+{
+    var result = await verifier.VerifyAsync(slug, req?.Ids, req?.Kind);
+    return result.Success ? Results.Ok(result) : Results.BadRequest(result);
+})
+    .AddEndpointFilter<HubApiKeyFilter>();
+
+app.MapGet("/api/universes/{slug}/texts/findings", (string slug, string? status, int? limit, ProseTextVerifier verifier) =>
+    TextFindings(slug, null, status, limit, verifier));
+
+app.MapGet("/api/universes/{slug}/texts/{id}/findings", (string slug, string id, string? status, int? limit, ProseTextVerifier verifier) =>
+    TextFindings(slug, id, status, limit, verifier));
+
+static IResult TextFindings(string slug, string? id, string? status, int? limit, ProseTextVerifier verifier)
+{
+    FindingStatus? st = null;
+    if (!string.IsNullOrWhiteSpace(status))
+    {
+        if (!Enum.TryParse<FindingStatus>(status, ignoreCase: true, out var parsed))
+            return Results.BadRequest(new { error = "texts_findings_failed", detail = $"unknown status '{status}' (new, triaged, applied, dismissed)" });
+        st = parsed;
+    }
+    return Results.Ok(verifier.ListFindingRows(slug, id, st, Math.Clamp(limit ?? 500, 1, 5000)));
+}
+
 // Portable-writing-service plan, Phase 3: write a scene/line of dialog without a pre-existing
 // Book/Chapter/Beat row, over plain HTTP (same OneShotGenerationService the CLI/MCP entry points
 // call — see OneShotGenerateCli/generate_scene's doc comments for the ephemeral-vs-attached

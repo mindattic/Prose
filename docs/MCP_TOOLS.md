@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**316 tools** across **56 tool families.**
+**318 tools** across **56 tool families.**
 
 ## Families
 
@@ -54,7 +54,7 @@
 | [Operator Key](#operator-key) | 5 |
 | [Planning](#planning) | 2 |
 | [Plant Payoff](#plant-payoff) | 6 |
-| [Prose Text](#prose-text) | 3 |
+| [Prose Text](#prose-text) | 5 |
 | [Quality](#quality) | 5 |
 | [Reading](#reading) | 4 |
 | [Repository](#repository) | 3 |
@@ -1994,7 +1994,7 @@ Correct a registered plant/payoff pair's descriptions in place when the register
 
 ### `draft_text`
 
-Draft a game text (prose-text/1, docs/CONDUIT.md) in a universe. json is one document: {id, kind, key, about[], speakers[], payload}. Payload per kind: conversation {title?, start, nodes[{id, speaker, line, next?, choices?[{text, next, tags[]}]}]}; crawl {title, paragraphs[]}; description {short?, long?}; quest {title, giver?, brief, complete?, fail?}; book {title, author?, pages[]}; bark {speaker, context?, lines[]}; glossary {term, aliases?[], definition}. about/speakers are entity ids of the universe ($placeholders allowed as speakers); {entity:<id>} in a line must name an entity. New content becomes a new draft version; identical content changes nothing. Only the author approves (not available here).
+Draft a game text (prose-text/1, docs/CONDUIT.md) in a universe. json is one document: {id, kind, key, about[], speakers[], payload}. Payload per kind: conversation {title?, start, nodes[{id, speaker, line, next?, choices?[{text, next, tags[]}]}]}; crawl {title, paragraphs[]}; description {short?, long?}; quest {title, giver?, brief, complete?, fail?}; book {title, author?, pages[]}; bark {speaker, context?, lines[]}; glossary {term, aliases?[], definition}. Optional context (RFC 0018), where and when the text appears: {place?: entity id, chapter?: label, order?: number (earliest story point the player can see it), trigger?: the game's handle, after?: [text ids seen first]}. about/speakers are entity ids of the universe ($placeholders allowed as speakers); {entity:<id>} in a line must name an entity. New content becomes a new draft version; identical content changes nothing. The result lists what the verifiers found on the new version (findings describe; they never refuse a draft). Only the author approves (not available here).
 
 - `universe` (string, required) — Universe slug.
 - `json` (string, required) — The prose-text/1 document as JSON.
@@ -2018,6 +2018,22 @@ List a game universe's texts (prose-text/1, docs/CONDUIT.md) as whole documents.
 - `status` (string, optional) — pullable | approved | published | draft | retired | all.
 - `since` (string, optional) — Version number or ISO date.
 - `key` (string, optional) — Only the text with this game key.
+
+### `text_findings`
+
+The findings the game-mode verifiers (RFC 0018) filed on a universe's texts, or on one text (every version). status: new, triaged, applied, dismissed (default: all). Findings describe; the author decides.
+
+- `universe` (string, required) — Universe slug.
+- `id` (string, optional) — One text id; omit for every text of the universe.
+- `status` (string, optional) — new | triaged | applied | dismissed.
+
+### `verify_texts`
+
+Run the game-mode verifiers (RFC 0018) over a game universe's texts and file their findings: canon (retired or missing entities, glossary conflicts), continuity (a name the player meets before its introduction, judged by each text's context.order/after; bad after links; a context.place that is not a place), obligations (a quest with no complete text, entities with no description), voice drift per entity speaker, conversation branches (unreachable nodes, no ending, duplicate choices) and bark pools (duplicate, repeated, long lines). Writes findings only, never a text. ids: the texts to check (default: every text); kind narrows to one kind.
+
+- `universe` (string, required) — Universe slug.
+- `ids` (String[], optional) — Text ids to check; omit for every text.
+- `kind` (string, optional) — Only texts of this kind.
 
 ## Quality
 

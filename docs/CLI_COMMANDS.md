@@ -19,7 +19,7 @@
 > deliberate: RFC 0014 §2.4 is about a gate documented as seven checks, coded as six
 > and advertised as five, and this reference is not going to repeat that.
 
-**303 commands.** 30 deactivated. 10 cost-gated. 18 have no description in their dispatch comment (12 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**305 commands.** 30 deactivated. 10 cost-gated. 18 have no description in their dispatch comment (12 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -2413,6 +2413,12 @@ prose --texts-draft <slug> <file.json|dir> [--by name] RFC 0017 conduit: draft o
 
 <sub>handler `ProseTextCli`</sub>
 
+### `--texts-findings`
+
+prose --texts-findings <slug> [id] [--status s] [--json] RFC 0018 (PRS-T922): the findings filed on a universe's texts, or one text's (every version).
+
+<sub>handler `ProseTextCli`</sub>
+
 ### `--texts-get`
 
 prose --texts-get <slug> <id> [--version n] [--history] RFC 0017 conduit: one text as a prose-text/1 document, or every version with --history.
@@ -2446,6 +2452,12 @@ prose --texts-pull <slug> --out <dir> [--kind k] [--status s] [--since v|date] R
 ### `--texts-retire`
 
 prose --texts-retire <slug> <id>... --by <name> RFC 0017 conduit: retire texts; they leave every pull and the game deletes them.
+
+<sub>handler `ProseTextCli`</sub>
+
+### `--texts-verify`
+
+prose --texts-verify <slug> [id...] [--kind k] [--json] RFC 0018 (PRS-T922): the game-mode verifiers over a universe's texts; files findings, never changes a text.
 
 <sub>handler `ProseTextCli`</sub>
 

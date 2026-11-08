@@ -35,6 +35,7 @@
     "approvedBy": { "type": "string" },
     "approvedAt": { "type": "string", "format": "date-time" },
     "updatedAt": { "type": "string", "format": "date-time" },
+    "context": { "$ref": "#/$defs/context" },
     "payload": { "type": "object" }
   },
   "allOf": [
@@ -69,6 +70,18 @@
   ],
   "$defs": {
     "line": { "type": "string", "minLength": 1 },
+    "context": {
+      "type": "object",
+      "description": "Optional (RFC 0018, PRS-T922): where and when the text appears in the game, so Prose can judge continuity in a game with no single reading order. A text without it is unplaced and valid. Unknown fields are refused.",
+      "additionalProperties": false,
+      "properties": {
+        "place": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "description": "An entity id (a place) of the universe: where the player meets this text." },
+        "chapter": { "type": "string", "minLength": 1, "description": "The game's own chapter / act / region label. Not interpreted by Prose." },
+        "order": { "type": "number", "description": "The earliest story point the player can see this text, on the game's own monotone scale (stage index, chapter*100+step, ...)." },
+        "trigger": { "type": "string", "minLength": 1, "description": "The game's own trigger handle. Not interpreted by Prose." },
+        "after": { "type": "array", "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }, "description": "Text ids the player is guaranteed to have seen before this one." }
+      }
+    },
     "conversation": {
       "type": "object",
       "required": ["start", "nodes"],

@@ -2,7 +2,8 @@
 
 This is the one standard every MindAttic game uses to keep its story in Prose. Today that is **GridGame**
 (universe slug `gridgame`) and **SpaceGod** (`spacegod`). The design and its reasons are in
-[RFC 0017](rfc/0017-game-data-conduit.md); this page is the working spec. The entity file format is
+[RFC 0017](rfc/0017-game-data-conduit.md), and game writing as a first-class mode of Prose (verifiers, context, the
+Writer view) in [RFC 0018](rfc/0018-game-writing-first-class.md); this page is the working spec. The entity file format is
 [RFC 0007](rfc/0007-universe-interchange.md) (`schemas/universe.schema.json`), and the text format is
 `prose-text/1` (`schemas/prose-text.schema.json`). For a first connection to the Hub (the API key, the Outbox hook),
 see [CONSUMER_ONBOARDING.md](CONSUMER_ONBOARDING.md).
@@ -99,6 +100,7 @@ The same document is the text as Prose stores it, as the API returns it, and as 
   "hash": "sha256:…",
   "approvedBy": "ryan",
   "approvedAt": "2026-11-07T22:00:00Z",
+  "context": { "place": "place-arkgrave", "chapter": "act-2", "order": 20, "trigger": "stage:arkgrave-3/victory" },
   "payload": { "start": "meet", "nodes": [ { "id": "meet", "speaker": "$hero", "line": "You fought well." } ] }
 }
 ```
@@ -113,14 +115,55 @@ The same document is the text as Prose stores it, as the API returns it, and as 
 | `bark` | `speaker`, `context?`, `lines[]` | a battle cry | a pilot's comms chatter |
 | `glossary` | `term`, `aliases?[]`, `definition` | a keyword tooltip | a codex term |
 
+### Context: where and when a text appears
+
+`context` is optional (PRS-T922, RFC 0018 §4). A text without it is valid, "unplaced", and behaves exactly as before;
+games and kits that ignore the field are unaffected, and the payload `hash` never covers it.
+
+| Field | Meaning |
+|---|---|
+| `place` | an entity id of the universe: where the player meets the text. Checked like `about`; becomes an `appears-at` edge |
+| `chapter` | the game's own chapter / act / region label (not interpreted by Prose) |
+| `order` | a number: the earliest story point the player can see the text, on the game's own monotone scale |
+| `trigger` | the game's own trigger handle (not interpreted by Prose) |
+| `after` | text ids the player is guaranteed to have seen first (a partial order for a non-linear game) |
+
+Unknown fields in `context` are refused. A change of context alone is a new version. Continuity is judged on placed
+texts (an `order` or an `after`): what the player can know at a text is every text placed at or before its order plus
+its `after` chain (RFC 0018 §4.2).
+
+### Checks
+
 Prose checks every text deterministically before it is stored:
 
 - the payload has its kind's required fields, with no empty lines;
-- every `about` id and every entity speaker exists in the universe (a `$placeholder` speaker is the game's to resolve);
+- every `about` id, every entity speaker and the `context.place` exists in the universe (a `$placeholder` speaker is
+  the game's to resolve);
 - a conversation's `start`, every `next` and every choice `next` name a node of the text, or a `$token` the game
   resolves (`$outcome`); every node's `speaker` is one of the text's `speakers`;
 - every `{entity:<id>}` reference in any line names an entity of the universe;
-- the `key` is not used by another live text of the universe.
+- the `key` is not used by another live text of the universe;
+- a `context`, when present, has only the fields above, in their types.
+
+A text that fails these is refused. Then the **verifiers** run (RFC 0018 §5), and what they find is filed as
+findings, never as a refusal:
+
+| Family | Codes | Finds |
+|---|---|---|
+| `TEXT-CANON` | `retired-entity`, `missing-entity`, `glossary-conflict`, `unknown-giver` | a reference to, or a line naming, an entity retired in canon; two glossary texts defining one term; a quest giver id that names no entity |
+| `TEXT-CONTINUITY` | `before-introduction`, `unknown-after`, `after-order`, `place-type` | a placed text naming an entity the player only meets at a later order; a bad `after`; a `place` that is not a place |
+| `TEXT-OBLIGATION` | `quest-unresolved`, `undescribed` | a quest with no `complete`; a story text naming entities that have no `description` text |
+| `TEXT-VOICE` | `drift` | an entity speaker whose lines read closer to another speaker's established voice (`$placeholders` skipped; thin samples give no signal) |
+| `TEXT-BRANCH` | `unreachable`, `no-ending`, `duplicate-choice` | conversation nodes no path reaches; a talk with no way out; one choice offered twice |
+| `TEXT-BARK` | `duplicate`, `repeated`, `long` | a line twice in a pool; a line in two pools of one speaker; a line over 140 characters |
+
+- **When:** on every draft (the draft result lists them), on every approval (single and bulk, the result lists them),
+  and on demand (`prose --texts-verify <slug> [id...] [--kind k]`, `POST .../texts/verify`, MCP `verify_texts`). A draft re-checks its own text; a sweep re-checks every text against the others.
+- **Where:** the shared `Findings` table, at `text:{universe}/{id}#v{version}`, category per family, `SuggestedFix`
+  always empty, `SourceRuleVersion = prose-text-verify/1`. Each run replaces the version's open `TEXT-` findings;
+  a finding the author triaged or dismissed stays so when found again.
+- **Never blocking** (RFC 0009): no finding refuses a draft or an approval, demotes an approved text or holds it back
+  from a pull, and no verifier writes a text. The author decides.
 
 **Lifecycle** (RFC 0009): `draft → approved → published → retired`.
 
@@ -238,6 +281,8 @@ reads need no key.
 | Bulk approve | `POST /api/universes/{slug}/texts/approve[?dryRun=true] {by, kind, keyPrefix?, about?, publish?}` | `prose --texts-approve-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--publish] [--dry-run] [--json]` | none (RFC 0009) |
 | Bulk publish | `POST /api/universes/{slug}/texts/publish[?dryRun=true] {by, kind, keyPrefix?, about?}` | `prose --texts-publish-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--dry-run] [--json]` | none |
 | Retire | `POST /api/universes/{slug}/texts/{id}/retire {by}` | `prose --texts-retire <slug> <id> --by <name>` | none |
+| Verify (RFC 0018) | `POST /api/universes/{slug}/texts/verify {ids?, kind?}` | `prose --texts-verify <slug> [id...] [--kind k] [--json]` | `verify_texts(universe, ids?, kind?)` |
+| Findings (RFC 0018) | `GET /api/universes/{slug}/texts/findings[?status=]`, `GET .../texts/{id}/findings` | `prose --texts-findings <slug> [id] [--status s] [--json]` | `text_findings(universe, id?, status?)` |
 | Outbox | `GET /api/outbox/{consumer}[?peek=true]` | — | — |
 
 `since` is a version number (the live version is greater) or an ISO date (approved or published after it).

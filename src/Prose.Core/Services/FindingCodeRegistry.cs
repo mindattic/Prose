@@ -53,6 +53,26 @@ public static class FindingCodeRegistry
 
         // Category-wide, no numbered sub-doc to cite.
         new CodeEntry("ENTITY-DRIFT", FindingCategory.EntityDrift, null, "a name the Bible/outline knows has no matching live entity."),
+
+        // RFC 0018 (PRS-T922): game texts (prose-text/1), ProseTextVerifier. Summary carries "TEXT-<FAMILY> [<code>]"
+        // verbatim; filed at text:{universe}/{id}#v{version}.
+        new CodeEntry("TEXT-CANON-RETIRED",      FindingCategory.Contradiction,       "TEXT-CANON [retired-entity]",        "a game text refers to or names an entity that is retired in canon."),
+        new CodeEntry("TEXT-CANON-MISSING",      FindingCategory.Contradiction,       "TEXT-CANON [missing-entity]",        "a game text refers to an entity id that is not a live entity of its universe."),
+        new CodeEntry("TEXT-CANON-GLOSSARY",     FindingCategory.Contradiction,       "TEXT-CANON [glossary-conflict]",     "two glossary texts define the same term or alias."),
+        new CodeEntry("TEXT-CANON-GIVER",        FindingCategory.Contradiction,       "TEXT-CANON [unknown-giver]",         "a quest giver written as an entity id names no entity."),
+        new CodeEntry("TEXT-CONT-INTRO",         FindingCategory.Contradiction,       "TEXT-CONTINUITY [before-introduction]", "a placed text names an entity the player meets only at a later order."),
+        new CodeEntry("TEXT-CONT-AFTER",         FindingCategory.Contradiction,       "TEXT-CONTINUITY [unknown-after]",    "context.after names a text that does not exist."),
+        new CodeEntry("TEXT-CONT-AFTER-ORDER",   FindingCategory.Contradiction,       "TEXT-CONTINUITY [after-order]",      "context.after names a text placed later than this one."),
+        new CodeEntry("TEXT-CONT-PLACE",         FindingCategory.Contradiction,       "TEXT-CONTINUITY [place-type]",       "context.place is an entity that is not a place."),
+        new CodeEntry("TEXT-OBL-QUEST",          FindingCategory.NarrativeObligation, "TEXT-OBLIGATION [quest-unresolved]", "a quest has a brief and no complete text."),
+        new CodeEntry("TEXT-OBL-UNDESCRIBED",    FindingCategory.NarrativeObligation, "TEXT-OBLIGATION [undescribed]",      "a story text names entities that have no description text."),
+        new CodeEntry("TEXT-VOICE",              FindingCategory.Voice,               "TEXT-VOICE [drift]",                 "a speaker's lines read closer to another speaker's established voice."),
+        new CodeEntry("TEXT-BRANCH-UNREACHABLE", FindingCategory.StructuralFailure,   "TEXT-BRANCH [unreachable]",          "conversation nodes no path from start reaches."),
+        new CodeEntry("TEXT-BRANCH-NO-ENDING",   FindingCategory.StructuralFailure,   "TEXT-BRANCH [no-ending]",            "a conversation with no path that ends or hands back to the game."),
+        new CodeEntry("TEXT-BRANCH-DUP-CHOICE",  FindingCategory.StructuralFailure,   "TEXT-BRANCH [duplicate-choice]",     "one node offers the same choice twice."),
+        new CodeEntry("TEXT-BARK-DUPLICATE",     FindingCategory.NearDuplicate,       "TEXT-BARK [duplicate]",              "a bark pool has the same line twice."),
+        new CodeEntry("TEXT-BARK-REPEATED",      FindingCategory.NearDuplicate,       "TEXT-BARK [repeated]",               "a bark line is also in another pool of the same speaker."),
+        new CodeEntry("TEXT-BARK-LONG",          FindingCategory.NearDuplicate,       "TEXT-BARK [long]",                   "a bark line is too long to hear mid-action."),
     };
 
     /// <summary>True if <paramref name="code"/> suppresses a finding filed under

@@ -112,8 +112,11 @@ the other: no book command, table or law changes in this RFC.
 
 ### 4.2 What the player can know at a text
 
-For a text T with a context, **known-before(T)** is every live or drafted text X of the universe with
-`X.order < T.order`, plus every text in T's `after` list and, transitively, theirs. That is the set of texts the
+For a text T with a context, T's **effective order** is the larger of its own `order` and the orders of the texts
+in its `after` chain (a text cannot play before the texts it comes after). **known-before(T)** is every live or
+drafted text X of the universe with `X.order ≤` T's effective order, plus every text in T's `after` list and,
+transitively, theirs. (Equal orders count as known: two texts at the same story point are not judged against each
+other.) That is the set of texts the
 player is guaranteed to be able to have seen when T plays. It is a lower bound on knowledge, which is exactly what a
 continuity check needs: if the player *might* not know something, a text that relies on it is a finding.
 
@@ -166,8 +169,9 @@ findings. Obligations that cross texts (a talk that promises a quest) need an ex
   `text:gridgame/crawl-prologue` lists every version's findings and `…#v3` does not reach `…#v30`.
 - **Summary.** `TEXT-<FAMILY> [<code>]: <what was observed>`, e.g.
   `TEXT-CONTINUITY [before-introduction]: names "Ember" (faction-ember) at order 10; the first text about it is
-  crawl-act-3 at order 30`. `FindingCodeRegistry` gets one entry per code so the author can suppress a class of
-  finding exactly.
+  crawl-act-3 at order 30`. `FindingCodeRegistry` gets one entry per code, so every code is documented where the
+  book codes are. (Suppression rules are node-scoped today, so a text finding is dismissed per row; a dismissed row
+  stays dismissed when found again.)
 - **Category.** canon and continuity → `Contradiction`; voice → `Voice`; obligation → `NarrativeObligation`;
   branch → `StructuralFailure`; bark → `NearDuplicate`.
 - **No fix line.** `SuggestedFix` is always null (RFC 0009 §2, corollary 1: a finding describes; it never instructs).

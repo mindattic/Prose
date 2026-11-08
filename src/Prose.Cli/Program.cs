@@ -283,7 +283,7 @@ if (UniverseBootstrap.RequestedSlug == null
         // RFC 0017 conduit: every --texts-* verb takes its universe as the first positional
         // argument (ProseTextService is explicit about the universe), like --universe-export.
         "--texts-list", "--texts-get", "--texts-pull", "--texts-draft", "--texts-approve", "--texts-publish", "--texts-retire",
-        "--texts-approve-all", "--texts-publish-all",
+        "--texts-approve-all", "--texts-publish-all", "--texts-verify", "--texts-findings",
         // BannedNames (2026-08-26): genuinely global, no UniverseId column at all — the whole
         // point of a Prose-wide ban is that it has no per-universe scope to resolve.
         "--banned-names",
@@ -2710,6 +2710,23 @@ if (args.Contains("--texts-retire"))
 {
     var rest = args.SkipWhile(a => a != "--texts-retire").Skip(1).ToArray();
     Environment.ExitCode = await HubCliClient.ForwardAsync("ProseTextCli", rest, method: "RunRetireAsync");
+    return;
+}
+
+// prose --texts-verify <slug> [id...] [--kind k] [--json]
+// RFC 0018 (PRS-T922): the game-mode verifiers over a universe's texts; files findings, never changes a text.
+if (args.Contains("--texts-verify"))
+{
+    var rest = args.SkipWhile(a => a != "--texts-verify").Skip(1).ToArray();
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ProseTextCli", rest, method: "RunVerifyAsync");
+    return;
+}
+// prose --texts-findings <slug> [id] [--status s] [--json]
+// RFC 0018 (PRS-T922): the findings filed on a universe's texts, or one text's (every version).
+if (args.Contains("--texts-findings"))
+{
+    var rest = args.SkipWhile(a => a != "--texts-findings").Skip(1).ToArray();
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ProseTextCli", rest, method: "RunFindingsAsync");
     return;
 }
 

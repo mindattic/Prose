@@ -401,6 +401,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<OutboxService>();
         // RFC 0017 conduit: game texts (prose-text/1) authored against a universe's entities.
         services.AddSingleton<ProseTextService>();
+        // RFC 0018 (PRS-T922): the narrative instruments on game texts. Deterministic; files findings only.
+        services.AddSingleton<ProseTextVerifier>();
 
         // SchemaGraphService removed 2026-08-30 (confirmed dead code — the /schema visualization
         // route it served was orphaned by the Blazor UI deletion, 2026-08-13 commit ed22bd4f6;

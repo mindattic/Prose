@@ -314,6 +314,34 @@ def _lines(p, name) -> list:
     return [f"payload.{name}[{i}] is empty or not a string" for i, l in enumerate(arr) if not isinstance(l, str) or not l.strip()]
 
 
+CONTEXT_FIELDS = ("place", "chapter", "order", "trigger", "after")
+
+
+def validate_context(ctx) -> list:
+    """Errors for the optional prose-text/1 context block (RFC 0018): where and when a text appears in the game."""
+    if not isinstance(ctx, dict):
+        return ["context must be an object"]
+    errs = [f"context.{k} is not a context field ({', '.join(CONTEXT_FIELDS)})" for k in ctx if k not in CONTEXT_FIELDS]
+    place = ctx.get("place")
+    if place is not None and not (isinstance(place, str) and STABLE_ID.match(place)):
+        errs.append("context.place must be an entity id")
+    for k in ("chapter", "trigger"):
+        v = ctx.get(k)
+        if v is not None and not (isinstance(v, str) and v.strip()):
+            errs.append(f"context.{k} must be a non-empty string")
+    order = ctx.get("order")
+    if order is not None and (isinstance(order, bool) or not isinstance(order, (int, float))):
+        errs.append("context.order must be a number")
+    after = ctx.get("after")
+    if after is not None:
+        if not isinstance(after, list):
+            errs.append("context.after must be an array of text ids")
+        else:
+            errs += [f"context.after item '{a}' is not a text id" for a in after
+                     if not isinstance(a, str) or not STABLE_ID.match(a)]
+    return errs
+
+
 def validate_payload(kind: str, p, speakers: list) -> list:
     """The same checks Prose makes on draft (ProseTextService.ValidatePayload), so a pending file is known good."""
     if not isinstance(p, dict):
@@ -426,6 +454,8 @@ def validate_text(doc, universe: str | None = None, kinds=None, tags=None) -> tu
              if not isinstance(s, str) or not (STABLE_ID.match(s) or PLACEHOLDER.match(s))]
     if kind in KINDS and doc.get("status") != "retired":
         errs += validate_payload(kind, doc.get("payload"), speakers)
+    if doc.get("context") is not None:
+        errs += validate_context(doc["context"])
     if tags is not None:
         unknown = sorted(choice_tags(doc) - set(tags))
         if unknown:

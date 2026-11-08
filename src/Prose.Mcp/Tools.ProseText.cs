@@ -11,16 +11,20 @@ namespace Prose.Mcp;
 ///
 /// Agents may list, read and DRAFT. There is deliberately no approve, publish or retire tool: under RFC 0009
 /// an agent drafts and only the author approves (CLI <c>prose --texts-approve … --by</c> or the HTTP call).
+/// RFC 0018 (PRS-T922) adds <c>verify_texts</c> and <c>text_findings</c>: the verifiers write findings only, never a
+/// text, so an agent may run them and read what they found; acting on a finding stays the author's decision.
 /// </summary>
 [McpServerToolType]
 public class ProseTextTools
 {
     private readonly ProseTextService texts;
+    private readonly ProseTextVerifier verifier;
     private readonly HubInvoker hub;
 
-    public ProseTextTools(ProseTextService texts, HubInvoker hub)
+    public ProseTextTools(ProseTextService texts, ProseTextVerifier verifier, HubInvoker hub)
     {
         this.texts = texts;
+        this.verifier = verifier;
         this.hub = hub;
     }
 
@@ -71,7 +75,7 @@ public class ProseTextTools
         }
     }
 
-    [McpServerTool, Description("Draft a game text (prose-text/1, docs/CONDUIT.md) in a universe. json is one document: {id, kind, key, about[], speakers[], payload}. Payload per kind: conversation {title?, start, nodes[{id, speaker, line, next?, choices?[{text, next, tags[]}]}]}; crawl {title, paragraphs[]}; description {short?, long?}; quest {title, giver?, brief, complete?, fail?}; book {title, author?, pages[]}; bark {speaker, context?, lines[]}; glossary {term, aliases?[], definition}. about/speakers are entity ids of the universe ($placeholders allowed as speakers); {entity:<id>} in a line must name an entity. New content becomes a new draft version; identical content changes nothing. Only the author approves (not available here).")]
+    [McpServerTool, Description("Draft a game text (prose-text/1, docs/CONDUIT.md) in a universe. json is one document: {id, kind, key, about[], speakers[], payload}. Payload per kind: conversation {title?, start, nodes[{id, speaker, line, next?, choices?[{text, next, tags[]}]}]}; crawl {title, paragraphs[]}; description {short?, long?}; quest {title, giver?, brief, complete?, fail?}; book {title, author?, pages[]}; bark {speaker, context?, lines[]}; glossary {term, aliases?[], definition}. Optional context (RFC 0018), where and when the text appears: {place?: entity id, chapter?: label, order?: number (earliest story point the player can see it), trigger?: the game's handle, after?: [text ids seen first]}. about/speakers are entity ids of the universe ($placeholders allowed as speakers); {entity:<id>} in a line must name an entity. New content becomes a new draft version; identical content changes nothing. The result lists what the verifiers found on the new version (findings describe; they never refuse a draft). Only the author approves (not available here).")]
     public Task<string> DraftText(
         [Description("Universe slug.")] string universe,
         [Description("The prose-text/1 document as JSON.")] string json,
@@ -83,5 +87,40 @@ public class ProseTextTools
     {
         var result = await texts.DraftAsync(universe, json, by);
         return JsonSerializer.Serialize(result, ProseTextService.JsonOptsPublic);
+    }
+
+    [McpServerTool, Description("Run the game-mode verifiers (RFC 0018) over a game universe's texts and file their findings: canon (retired or missing entities, glossary conflicts), continuity (a name the player meets before its introduction, judged by each text's context.order/after; bad after links; a context.place that is not a place), obligations (a quest with no complete text, entities with no description), voice drift per entity speaker, conversation branches (unreachable nodes, no ending, duplicate choices) and bark pools (duplicate, repeated, long lines). Writes findings only, never a text. ids: the texts to check (default: every text); kind narrows to one kind.")]
+    public Task<string> VerifyTexts(
+        [Description("Universe slug.")] string universe,
+        [Description("Text ids to check; omit for every text.")] string[]? ids = null,
+        [Description("Only texts of this kind.")] string? kind = null) =>
+        hub.InvokeAsync(nameof(ProseTextTools), nameof(VerifyTextsImpl), new { universe, ids, kind }, universe);
+
+    /// <summary>Runs inside the Hub via ToolDispatch reflection.</summary>
+    public async Task<string> VerifyTextsImpl(string universe, string[]? ids = null, string? kind = null)
+    {
+        var result = await verifier.VerifyAsync(universe, ids, kind);
+        return JsonSerializer.Serialize(result, ProseTextService.JsonOptsPublic);
+    }
+
+    [McpServerTool, Description("The findings the game-mode verifiers (RFC 0018) filed on a universe's texts, or on one text (every version). status: new, triaged, applied, dismissed (default: all). Findings describe; the author decides.")]
+    public Task<string> TextFindings(
+        [Description("Universe slug.")] string universe,
+        [Description("One text id; omit for every text of the universe.")] string? id = null,
+        [Description("new | triaged | applied | dismissed.")] string? status = null) =>
+        hub.InvokeAsync(nameof(ProseTextTools), nameof(TextFindingsImpl), new { universe, id, status }, universe);
+
+    /// <summary>Runs inside the Hub via ToolDispatch reflection.</summary>
+    public Task<string> TextFindingsImpl(string universe, string? id = null, string? status = null)
+    {
+        FindingStatus? st = null;
+        if (!string.IsNullOrWhiteSpace(status))
+        {
+            if (!Enum.TryParse<FindingStatus>(status, ignoreCase: true, out var parsed))
+                return Task.FromResult(JsonSerializer.Serialize(new { error = "unknown_status", status }, ProseTextService.JsonOptsPublic));
+            st = parsed;
+        }
+        var rows = verifier.ListFindingRows(universe, id, st);
+        return Task.FromResult(JsonSerializer.Serialize(new { count = rows.Count, findings = rows }, ProseTextService.JsonOptsPublic));
     }
 }

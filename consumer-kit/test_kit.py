@@ -137,6 +137,18 @@ class KitTests(unittest.TestCase):
         errs, _ = kit.validate_text(text(kind="crawl", payload={"title": "T", "paragraphs": [""]}), "game")
         self.assertTrue(any("paragraphs[0]" in e for e in errs))
 
+    def test_text_context_is_optional_and_checked_like_prose(self):
+        # RFC 0018 (PRS-T922): no context is valid (backward compatible); a malformed one is refused.
+        crawl = text(kind="crawl", payload={"title": "T", "paragraphs": ["Once."]})
+        self.assertEqual(kit.validate_text(crawl, "game")[0], [])
+        crawl["context"] = {"place": "place-arkgrave", "chapter": "act-1", "order": 10, "trigger": "stage:1/start",
+                            "after": ["crawl-prologue"]}
+        self.assertEqual(kit.validate_text(crawl, "game")[0], [])
+        crawl["context"] = {"place": "Arkgrave", "order": "ten", "after": "crawl-prologue", "when": "now"}
+        joined = "\n".join(kit.validate_text(crawl, "game")[0])
+        for expected in ("context.place", "context.order", "context.after", "context.when is not a context field"):
+            self.assertIn(expected, joined)
+
     # -- diff and leak
 
     def test_diff_and_leak(self):

@@ -22,13 +22,18 @@ namespace Prose.Cli;
 ///       (exit 1 when any was refused). --publish also publishes them as one batch (one texts.published notice).
 ///   prose --texts-publish-all &lt;slug&gt; --kind &lt;k&gt; --by &lt;name&gt; [--prefix p] [--about id] [--dry-run] [--json]
 ///       PRS-T918 bulk publish: every approved, unpublished text of one kind, as one batch.
+///   prose --texts-verify &lt;slug&gt; [id...] [--kind k] [--json]
+///       RFC 0018 (PRS-T922): run the game-mode verifiers (canon, continuity, obligations, voice, branches, barks) over
+///       the given texts, else every text of the universe, and file their findings. Writes findings only, never a text.
+///   prose --texts-findings &lt;slug&gt; [id] [--status new|triaged|applied|dismissed] [--json]
+///       RFC 0018: the findings filed on a universe's texts, or on one text (every version).
 /// </summary>
 public static class ProseTextCli
 {
     private static readonly JsonSerializerOptions Pretty = new(ProseTextService.JsonOptsPublic) { WriteIndented = true };
 
     private static readonly HashSet<string> ValueFlags =
-        ["--kind", "--status", "--since", "--key", "--version", "--out", "--by", "--prefix", "--about"];
+        ["--kind", "--status", "--since", "--key", "--version", "--out", "--by", "--prefix", "--about", "--limit"];
 
     public static async Task<int> RunListAsync(string[] args, IServiceProvider services)
     {
@@ -124,6 +129,7 @@ public static class ProseTextCli
                 }
                 if (r.Unchanged) unchanged++; else if (r.Created) created++; else revised++;
                 if (!r.Unchanged) Console.WriteLine($"[texts-draft] {r.Id} v{r.Version} draft{(r.Created ? " (new)" : "")}");
+                PrintFindings(r.Findings);
             }
         }
         Console.WriteLine($"[texts-draft] '{pos[0]}': {created} new, {revised} revised, {unchanged} unchanged, {failed} refused");
@@ -205,7 +211,49 @@ public static class ProseTextCli
     {
         foreach (var e in r.Errors) Console.Error.WriteLine($"[{verb}] ✘ {e}");
         Console.WriteLine($"[{verb}] {r.Ids.Count} text(s) {done}{(r.Ids.Count > 0 ? ": " + string.Join(", ", r.Ids) : "")}");
+        PrintFindings(r.Findings);
         return r.Success ? 0 : 1;
+    }
+
+    /// <summary>RFC 0018: findings describe; they never block. Printed after the write they were found on.</summary>
+    private static void PrintFindings(IReadOnlyCollection<ProseTextVerifier.TextFinding> found)
+    {
+        foreach (var f in found.OrderBy(f => f.Severity == FindingSeverity.High ? 0 : f.Severity == FindingSeverity.Medium ? 1 : 2))
+            Console.WriteLine($"    ! {f.Severity,-6} {f.TextId} v{f.Version} {f.Summary}");
+    }
+
+    public static async Task<int> RunVerifyAsync(string[] args, IServiceProvider services)
+    {
+        var pos = Positionals(args);
+        if (pos.Count < 1) return Usage("prose --texts-verify <slug> [id...] [--kind k] [--json]");
+        var r = await services.GetRequiredService<ProseTextVerifier>().VerifyAsync(pos[0], pos.Skip(1).ToList(), Flag(args, "--kind"));
+        if (args.Contains("--json")) { Console.WriteLine(JsonSerializer.Serialize(r, Pretty)); return r.Success ? 0 : 1; }
+        foreach (var e in r.Errors) Console.Error.WriteLine($"[texts-verify] ✘ {e}");
+        PrintFindings(r.Findings);
+        var bySeverity = string.Join(", ", r.Findings.GroupBy(f => f.Severity).OrderByDescending(g => g.Key).Select(g => $"{g.Count()} {g.Key}"));
+        Console.WriteLine($"[texts-verify] '{r.Universe}': {r.TextsChecked} text(s), {r.VersionsChecked} version(s) checked, " +
+                          $"{r.Findings.Count} finding(s){(r.Findings.Count > 0 ? $" ({bySeverity})" : "")}. Findings describe; nothing was changed.");
+        return r.Success ? 0 : 1;
+    }
+
+    public static Task<int> RunFindingsAsync(string[] args, IServiceProvider services)
+    {
+        var pos = Positionals(args);
+        if (pos.Count < 1) return Task.FromResult(Usage("prose --texts-findings <slug> [id] [--status new|triaged|applied|dismissed] [--json]"));
+        FindingStatus? status = null;
+        if (Flag(args, "--status") is { } st)
+        {
+            if (!Enum.TryParse<FindingStatus>(st, ignoreCase: true, out var parsed))
+                return Task.FromResult(Fail("texts-findings", $"unknown status '{st}' (new, triaged, applied, dismissed)"));
+            status = parsed;
+        }
+        var rows = services.GetRequiredService<ProseTextVerifier>()
+            .ListFindingRows(pos[0], pos.Count > 1 ? pos[1] : null, status, IntFlag(args, "--limit") ?? 500);
+        if (args.Contains("--json")) { Console.WriteLine(JsonSerializer.Serialize(rows, Pretty)); return Task.FromResult(0); }
+        foreach (var f in rows)
+            Console.WriteLine($"  #{f.Id,-7} {f.Status,-9} {f.Severity,-6} {f.TextId} v{f.Version?.ToString() ?? "?"} {f.Summary}");
+        Console.WriteLine($"[texts-findings] {rows.Count} finding(s)");
+        return Task.FromResult(0);
     }
 
     private static List<string> Positionals(string[] args)

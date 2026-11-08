@@ -64,14 +64,43 @@ public class ProseTextService
 
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly OutboxService? outbox;
+    private readonly ProseTextVerifier? verifier;
 
-    public ProseTextService(IDbContextFactory<ProseDbContext> dbFactory, OutboxService? outbox = null)
+    /// <param name="verifier">RFC 0018 (PRS-T922): when given, every draft and approval runs the game-mode verifiers
+    /// over the texts it touched and files their findings. Never blocking: a finding never refuses a draft or an
+    /// approval (RFC 0009, the author decides).</param>
+    public ProseTextService(IDbContextFactory<ProseDbContext> dbFactory, OutboxService? outbox = null,
+        ProseTextVerifier? verifier = null)
     {
         this.dbFactory = dbFactory;
         this.outbox = outbox;
+        this.verifier = verifier;
     }
 
     // ── Stored shape ───────────────────────────────────────────────────────
+
+    /// <summary>RFC 0018 §4: where and when a text appears in the game, so continuity can be judged in a game with
+    /// no single reading order. Every field is optional; a text without a context is "unplaced".</summary>
+    public class TextContext
+    {
+        /// <summary>An entity id (a place): where the player meets this text. Must exist and not be archived.</summary>
+        public string? Place { get; set; }
+        /// <summary>The game's own chapter / act / region label. Not interpreted by Prose.</summary>
+        public string? Chapter { get; set; }
+        /// <summary>The earliest story point the player can see this text, on the game's own monotone scale.</summary>
+        public double? Order { get; set; }
+        /// <summary>The game's own trigger handle. Not interpreted by Prose.</summary>
+        public string? Trigger { get; set; }
+        /// <summary>Text ids the player is guaranteed to have seen first.</summary>
+        public List<string>? After { get; set; }
+
+        public static readonly string[] Fields = ["place", "chapter", "order", "trigger", "after"];
+
+        /// <summary>True when the text has a position continuity can judge against (an order or an after list).</summary>
+        [JsonIgnore] public bool IsPlaced => Order != null || After is { Count: > 0 };
+
+        internal string Canonical() => JsonSerializer.Serialize(this, JsonOpts);
+    }
 
     public class TextVersion
     {
@@ -80,6 +109,8 @@ public class ProseTextService
         public string Key { get; set; } = "";
         public List<string> About { get; set; } = new();
         public List<string> Speakers { get; set; } = new();
+        /// <summary>RFC 0018 §4. Null on every version drafted before PRS-T922 and on texts drafted without one.</summary>
+        public TextContext? Context { get; set; }
         public JsonElement Payload { get; set; }
         public string Hash { get; set; } = "";
         public DateTime CreatedAt { get; set; }
@@ -131,6 +162,8 @@ public class ProseTextService
         public int? LiveVersion { get; set; }
         /// <summary>The pending draft's version number when this document shows the live one, else null.</summary>
         public int? DraftVersion { get; set; }
+        /// <summary>RFC 0018 §4: where and when the text appears. Omitted when the version has none.</summary>
+        public TextContext? Context { get; set; }
         public JsonElement Payload { get; set; }
     }
 
@@ -144,6 +177,8 @@ public class ProseTextService
         public string Key { get; set; } = "";
         public List<string>? About { get; set; }
         public List<string>? Speakers { get; set; }
+        /// <summary>Raw, so unknown fields can be refused (RFC 0018 §4.1) instead of silently dropped.</summary>
+        public JsonElement? Context { get; set; }
         public JsonElement Payload { get; set; }
     }
 
@@ -154,6 +189,8 @@ public class ProseTextService
         public bool Created { get; set; }
         public bool Unchanged { get; set; }
         public List<string> Errors { get; set; } = new();
+        /// <summary>RFC 0018: what the verifiers found on the new version. Findings never refuse a draft.</summary>
+        public List<ProseTextVerifier.TextFinding> Findings { get; set; } = new();
         public bool Success => Errors.Count == 0;
     }
 
@@ -161,6 +198,8 @@ public class ProseTextService
     {
         public List<string> Ids { get; set; } = new();
         public List<string> Errors { get; set; } = new();
+        /// <summary>RFC 0018: what the verifiers found on the approved versions (approval only). Never blocking.</summary>
+        public List<ProseTextVerifier.TextFinding> Findings { get; set; } = new();
         public bool Success => Errors.Count == 0;
     }
 
@@ -193,11 +232,14 @@ public class ProseTextService
         var key = (input.Key ?? "").Trim();
 
         result.Errors.AddRange(ValidateShape(input, slug, kind, key, about, speakers));
+        var context = ParseContext(input.Context, result.Errors);
         if (result.Errors.Count > 0) return result;
 
-        // Entity references: about ids, entity speakers, {entity:id} in any line.
+        // Entity references: about ids, entity speakers, {entity:id} in any line, and the context's place.
         var refs = about.Concat(speakers.Where(s => !Placeholder.IsMatch(s)))
-            .Concat(CollectEntityRefs(input.Payload)).Distinct().ToList();
+            .Concat(CollectEntityRefs(input.Payload))
+            .Concat(context?.Place is { } place ? new[] { place } : Array.Empty<string>())
+            .Distinct().ToList();
         var known = refs.Count == 0 ? new Dictionary<string, Guid>() : (await db.Entities.IgnoreQueryFilters()
                 .Where(e => e.UniverseId == universe.Id && refs.Contains(e.Slug) && e.EntityType != EntityType
                             && e.Status != "stub" && e.Status != "archived")
@@ -239,7 +281,8 @@ public class ProseTextService
             entity = await db.Entities.IgnoreQueryFilters().FirstAsync(e => e.Id == existing.EntityId, ct);
             var head = record.Head;
             if (head != null && head.Hash == hash && head.Key == key
-                && head.About.SequenceEqual(about) && head.Speakers.SequenceEqual(speakers))
+                && head.About.SequenceEqual(about) && head.Speakers.SequenceEqual(speakers)
+                && (head.Context?.Canonical() ?? "") == (context?.Canonical() ?? ""))
             {
                 result.Version = head.Version;
                 result.Unchanged = true;
@@ -252,7 +295,7 @@ public class ProseTextService
         {
             Version = (record.Head?.Version ?? 0) + 1,
             Status = Status.Draft,
-            Key = key, About = about, Speakers = speakers,
+            Key = key, About = about, Speakers = speakers, Context = context,
             Payload = payload, Hash = hash, CreatedAt = now, CreatedBy = by,
         };
         record.Versions.Add(version);
@@ -263,11 +306,21 @@ public class ProseTextService
         await db.SaveChangesAsync(ct);
 
         await SaveRecordAsync(db, entity.Id, record, ct);
-        await SyncEdgesAsync(db, universe.Id, entity.Id, about, speakers, known, ct);
+        await SyncEdgesAsync(db, universe.Id, entity.Id, about, speakers, context?.Place, known, ct);
         await db.SaveChangesAsync(ct);
 
         result.Version = version.Version;
+        result.Findings = await VerifySafelyAsync(slug, [input.Id], ct);
         return result;
+    }
+
+    /// <summary>RFC 0018: run the verifiers over the texts a write touched. A verifier failure comes back as nothing
+    /// found, never thrown: verification must not undo or refuse a write that already succeeded.</summary>
+    private async Task<List<ProseTextVerifier.TextFinding>> VerifySafelyAsync(string slug, IReadOnlyCollection<string> ids, CancellationToken ct)
+    {
+        if (verifier == null || ids.Count == 0) return new();
+        try { return (await verifier.VerifyAsync(slug, ids, ct: ct)).Findings; }
+        catch (Exception) { return new(); }
     }
 
     // ── Approve / publish / retire (the author's calls) ─────────────────────
@@ -299,6 +352,7 @@ public class ProseTextService
             result.Ids.Add(id);
         }
         await db.SaveChangesAsync(ct);
+        result.Findings = await VerifySafelyAsync(universe.Slug, result.Ids, ct);
         return result;
     }
 
@@ -363,6 +417,8 @@ public class ProseTextService
         public List<BulkItem> Published { get; set; } = new();
         public List<BulkRefusal> Refused { get; set; } = new();
         public List<string> Errors { get; set; } = new();
+        /// <summary>RFC 0018: what the verifiers found on the texts this call approved (not on a dry run). Never blocking.</summary>
+        public List<ProseTextVerifier.TextFinding> Findings { get; set; } = new();
         public bool Success => Errors.Count == 0 && Refused.Count == 0;
     }
 
@@ -455,6 +511,7 @@ public class ProseTextService
         }
         await db.SaveChangesAsync(ct);
         if (result.Published.Count > 0) await NotifyPublishedAsync(universe.Slug, result.Published, ct);
+        result.Findings = await VerifySafelyAsync(universe.Slug, result.Approved.Select(a => a.Id).ToList(), ct);
         return result;
     }
 
@@ -522,10 +579,14 @@ public class ProseTextService
         (filter.KeyPrefix == null || v.Key.StartsWith(filter.KeyPrefix, StringComparison.Ordinal))
         && (filter.About == null || v.About.Contains(filter.About));
 
-    private static List<string> ReferencesOf(TextVersion v) =>
+    internal static List<string> ReferencesOf(TextVersion v) =>
         v.About.Concat(v.Speakers.Where(s => !Placeholder.IsMatch(s)))
             .Concat(v.Payload.ValueKind == JsonValueKind.Undefined ? [] : CollectEntityRefs(v.Payload))
+            .Concat(v.Context?.Place is { } place ? new[] { place } : Array.Empty<string>())
             .Distinct().ToList();
+
+    internal static bool IsPlaceholder(string speaker) => Placeholder.IsMatch(speaker);
+    internal static bool IsStableId(string s) => StableId.IsMatch(s);
 
     private Task NotifyPublishedAsync(string universeSlug, IReadOnlyCollection<BulkItem> items, CancellationToken ct) =>
         NotifyAsync(universeSlug, "texts.published",
@@ -698,6 +759,58 @@ public class ProseTextService
         foreach (var e in ValidatePayload(kind, input.Payload, speakers)) yield return e;
     }
 
+    /// <summary>RFC 0018 §4.1: the optional context block. Null when absent; errors for a malformed one (unknown
+    /// fields are refused so a typo cannot silently drop a placement). <c>after</c> ids that name no text are not
+    /// refused here (texts may be drafted in any order); the verifier reports them.</summary>
+    internal static TextContext? ParseContext(JsonElement? raw, List<string> errors)
+    {
+        if (raw is not { } c || c.ValueKind is JsonValueKind.Undefined or JsonValueKind.Null) return null;
+        if (c.ValueKind != JsonValueKind.Object) { errors.Add("context must be an object"); return null; }
+        var ctx = new TextContext();
+        foreach (var prop in c.EnumerateObject())
+        {
+            var value = prop.Value;
+            if (value.ValueKind == JsonValueKind.Null) continue;
+            switch (prop.Name)
+            {
+                case "place":
+                    if (value.ValueKind != JsonValueKind.String || !StableId.IsMatch(value.GetString()!.Trim()))
+                        errors.Add("context.place must be an entity id");
+                    else ctx.Place = value.GetString()!.Trim();
+                    break;
+                case "chapter":
+                case "trigger":
+                    if (value.ValueKind != JsonValueKind.String || string.IsNullOrWhiteSpace(value.GetString()))
+                        errors.Add($"context.{prop.Name} must be a non-empty string");
+                    else if (prop.Name == "chapter") ctx.Chapter = value.GetString()!.Trim();
+                    else ctx.Trigger = value.GetString()!.Trim();
+                    break;
+                case "order":
+                    if (value.ValueKind != JsonValueKind.Number || !value.TryGetDouble(out var order)
+                        || double.IsNaN(order) || double.IsInfinity(order))
+                        errors.Add("context.order must be a number");
+                    else ctx.Order = order;
+                    break;
+                case "after":
+                    if (value.ValueKind != JsonValueKind.Array) { errors.Add("context.after must be an array of text ids"); break; }
+                    var after = new List<string>();
+                    foreach (var a in value.EnumerateArray())
+                    {
+                        if (a.ValueKind != JsonValueKind.String || !StableId.IsMatch(a.GetString()!.Trim()))
+                            errors.Add($"context.after item '{a}' is not a text id");
+                        else after.Add(a.GetString()!.Trim());
+                    }
+                    ctx.After = after.Count == 0 ? null : after.Distinct().ToList();
+                    break;
+                default:
+                    errors.Add($"context.{prop.Name} is not a context field ({string.Join(", ", TextContext.Fields)})");
+                    break;
+            }
+        }
+        return ctx.Place == null && ctx.Chapter == null && ctx.Order == null && ctx.Trigger == null && ctx.After == null
+            ? null : ctx;
+    }
+
     internal static IEnumerable<string> ValidatePayload(string kind, JsonElement p, IReadOnlyCollection<string> speakers)
     {
         switch (kind)
@@ -853,6 +966,7 @@ public class ProseTextService
             UpdatedAt = updatedAt,
             LiveVersion = live != null && live.Version != v.Version ? live.Version : null,
             DraftVersion = draft != null && draft.Version != v.Version ? draft.Version : null,
+            Context = v.Context,
             Payload = v.Payload,
         };
     }
@@ -865,7 +979,7 @@ public class ProseTextService
         return u;
     }
 
-    private static async Task<List<(TextRecord Record, DateTime UpdatedAt, Guid EntityId)>> LoadAllAsync(
+    internal static async Task<List<(TextRecord Record, DateTime UpdatedAt, Guid EntityId)>> LoadAllAsync(
         ProseDbContext db, Guid universeId, CancellationToken ct, string? onlyId = null)
     {
         var q = db.Entities.IgnoreQueryFilters().Where(e => e.UniverseId == universeId && e.EntityType == EntityType);
@@ -894,10 +1008,13 @@ public class ProseTextService
     }
 
     private static async Task SyncEdgesAsync(ProseDbContext db, Guid universeId, Guid textId,
-        List<string> about, List<string> speakers, Dictionary<string, Guid> known, CancellationToken ct)
+        List<string> about, List<string> speakers, string? place, Dictionary<string, Guid> known, CancellationToken ct)
     {
+        // RFC 0018 §4.1: the context's place is an appears-at edge, so the graph shows what is said where.
         var wanted = about.Where(known.ContainsKey).Select(a => (Target: known[a], Kind: "about"))
             .Concat(speakers.Where(known.ContainsKey).Select(s => (Target: known[s], Kind: "spoken-by")))
+            .Concat(place != null && known.TryGetValue(place, out var placeId)
+                ? new[] { (Target: placeId, Kind: "appears-at") } : Array.Empty<(Guid Target, string Kind)>())
             .Distinct().ToHashSet();
         var existing = await db.Edges.IgnoreQueryFilters()
             .Where(e => e.UniverseId == universeId && e.SourceId == textId && e.Source == EdgeSource && e.InvalidatedAt == null)
