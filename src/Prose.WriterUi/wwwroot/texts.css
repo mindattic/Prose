@@ -1,0 +1,90 @@
+/* The game texts view, at /texts (RFC 0018 §9, PRS-T922).
+   Layered on writer.css and wiki.css: the root carries both .wiki and .texts, so the menubar, crumbs, panes,
+   headings, banners, .searchbar and .entity-list are the wiki's own. Only what is specific to game texts lives here. */
+
+.texts .pane { max-width: 74rem; }
+
+.texts .tabs { display: flex; gap: .4rem; margin: .5rem 0 1rem; flex-wrap: wrap; align-items: center; }
+
+.texts .filters { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; margin-bottom: .75rem; }
+.texts .filters select,
+.texts .filters input,
+.texts .author input {
+    background: var(--color-bg-1);
+    color: var(--color-fg);
+    border: 1px solid var(--color-border-input);
+    border-radius: 4px;
+    padding: .3rem .5rem;
+    font: inherit;
+}
+.texts .filters input { min-width: 14rem; }
+
+.texts .author { display: flex; gap: .5rem; align-items: center; margin: .25rem 0 1rem; flex-wrap: wrap; }
+
+.texts table.list { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.texts table.list th {
+    text-align: left;
+    color: var(--color-fg-muted);
+    font-weight: 600;
+    border-bottom: 1px solid var(--color-border-strong);
+    padding: .35rem .5rem;
+}
+.texts table.list td { border-bottom: 1px solid var(--color-border); padding: .35rem .5rem; vertical-align: top; }
+.texts table.list tr:hover td { background: var(--color-bg-3); }
+.texts table.list a { color: var(--color-fg-link); text-decoration: none; }
+
+.texts .kind { font-family: var(--font-mono, monospace); font-size: .8rem; color: var(--color-fg-muted); }
+
+.texts .st { display: inline-block; padding: 0 .4rem; border-radius: 3px; font-size: .78rem; border: 1px solid var(--color-border-strong); }
+.texts .st-draft { border-color: var(--color-warning); }
+.texts .st-approved { border-color: var(--color-info); }
+.texts .st-published { border-color: var(--color-success); }
+.texts .st-retired,
+.texts .st-superseded { color: var(--color-fg-muted); }
+
+.texts .sev { display: inline-block; min-width: 4.2rem; font-size: .78rem; font-weight: 600; }
+.texts .sev-High { color: var(--color-danger); }
+.texts .sev-Medium { color: var(--color-warning); }
+.texts .sev-Low { color: var(--color-fg-muted); }
+
+.texts .queue-kind { border: 1px solid var(--color-border); border-radius: 6px; padding: .75rem 1rem; margin-bottom: 1rem; background: var(--color-bg-1); }
+.texts .queue-kind header { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+.texts .queue-kind h3 { margin: 0; font-size: 1rem; }
+.texts .preview { margin-top: .75rem; border-top: 1px dashed var(--color-border-strong); padding-top: .5rem; }
+
+.texts .text-page { display: grid; grid-template-columns: minmax(0, 1fr) 19rem; gap: 1.5rem; align-items: start; }
+.texts .text-page > aside { border-left: 1px solid var(--color-border); padding-left: 1rem; }
+.texts .versions { list-style: none; margin: 0; padding: 0; }
+.texts .versions li { padding: .35rem .4rem; border-radius: 4px; cursor: pointer; }
+.texts .versions li.sel { background: var(--color-bg-sel); }
+.texts .versions li:hover { background: var(--color-bg-3); }
+.texts .versions .who { display: block; font-size: .78rem; color: var(--color-fg-muted); }
+
+.texts dl.meta { display: grid; grid-template-columns: max-content 1fr; gap: .2rem .75rem; margin: 0 0 1rem; font-size: .9rem; }
+.texts dl.meta dt { color: var(--color-fg-muted); }
+.texts dl.meta dd { margin: 0; }
+
+.texts .payload { background: var(--color-bg-1); border: 1px solid var(--color-border); border-radius: 6px; padding: .9rem 1.1rem; margin-bottom: 1rem; }
+.texts .payload p { margin: 0 0 .6rem; line-height: 1.5; }
+.texts .payload .label { color: var(--color-fg-muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; }
+
+/* A conversation as a tree from its start node: indentation is depth, a choice is a branch. */
+.texts .convo { list-style: none; margin: 0; padding-left: 0; }
+.texts .convo .convo { padding-left: 1.25rem; border-left: 1px solid var(--color-border); margin-left: .35rem; }
+.texts .convo li { margin: .3rem 0; }
+.texts .convo .speaker { font-weight: 600; margin-right: .4rem; }
+.texts .convo .nid { font-family: var(--font-mono, monospace); font-size: .75rem; color: var(--color-fg-muted); margin-right: .4rem; }
+.texts .convo .choice { color: var(--color-fg-link); }
+.texts .convo .exit,
+.texts .convo .back { font-style: italic; color: var(--color-fg-muted); }
+.texts .tag { font-size: .72rem; border: 1px solid var(--color-border-strong); border-radius: 3px; padding: 0 .3rem; margin-left: .3rem; }
+
+.texts ul.findings { list-style: none; margin: 0; padding: 0; }
+.texts ul.findings li { border-bottom: 1px solid var(--color-border); padding: .45rem 0; }
+.texts ul.findings .snippet { display: block; color: var(--color-fg-muted); font-size: .85rem; margin-top: .15rem; }
+.texts ul.findings .resolved { opacity: .6; }
+
+@media (max-width: 900px) {
+    .texts .text-page { grid-template-columns: 1fr; }
+    .texts .text-page > aside { border-left: 0; padding-left: 0; border-top: 1px solid var(--color-border); padding-top: 1rem; }
+}

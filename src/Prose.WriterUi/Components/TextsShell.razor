@@ -1,0 +1,732 @@
+@* RFC 0018 §9 (PRS-T922): the game texts of a universe, at /texts. The render mode is set by the host page
+   (Prose.Hub/Components/Texts.razor), like WikiShell. Approval here is always the author's click, with the author's
+   name, through the same ProseTextService calls the CLI and HTTP use; a bulk approval is previewed first. *@
+@using System.Text.Json
+@using Prose.Core.Services
+@inject TextsUiService Texts
+@inject IJSRuntime JS
+
+<div class="wiki texts">
+
+    <header class="menubar">
+        <a class="menu-title" href="/texts">Game texts</a>
+        @if (Universe is not null)
+        {
+            <span class="crumb-sep">›</span>
+            <a class="crumb" href="/texts/@Universe">@Universe</a>
+        }
+        @if (Id is not null)
+        {
+            <span class="crumb-sep">›</span>
+            <span class="book-title">@Id</span>
+        }
+        <div class="spacer"></div>
+        <a class="mini" href="/repo" title="The canon repositories">Repositories</a>
+        <a class="mini" href="/writer" title="Back to the editor">Writer</a>
+        <button class="mini" @onclick="ToggleThemeAsync" title="Light / dark"
+                aria-label="Dark theme" aria-pressed="@((theme == "dark") ? "true" : "false")">@(theme == "light" ? "☾" : "☀")</button>
+    </header>
+
+    @if (error is not null)
+    {
+        <div class="banner error" role="alert"><strong>Error:</strong> @error</div>
+    }
+    @if (notice is not null)
+    {
+        <div class="banner ok" role="status">@notice</div>
+    }
+
+    @* ── Every universe with game texts ─────────────────────────────────── *@
+    @if (Universe is null)
+    {
+        <section class="pane">
+            <h1>Game texts</h1>
+            <p class="muted">
+                Conversations, crawls, descriptions, quest text, in-game books, barks and glossary terms, kept in Prose
+                for each game (docs/CONDUIT.md) and checked by the game-mode verifiers (RFC 0018).
+            </p>
+            @if (universes is null)
+            {
+                <p class="muted">Loading…</p>
+            }
+            else if (universes.Count == 0)
+            {
+                <p class="muted">No universe has game texts yet.</p>
+            }
+            else
+            {
+                <div class="repo-grid">
+                    @foreach (var u in universes)
+                    {
+                        <a class="repo-card" href="/texts/@u.Slug">
+                            <span class="repo-name">@u.Name</span>
+                            <span class="repo-count">@u.Total.ToString("N0")</span>
+                            <span class="muted small">
+                                @string.Join(" · ", u.ByStatus.OrderBy(kv => kv.Key).Select(kv => $"{kv.Value} {kv.Key}"))
+                                @(u.Pending > 0 ? $" · {u.Pending} awaiting approval" : "")
+                            </span>
+                        </a>
+                    }
+                </div>
+            }
+        </section>
+    }
+
+    @* ── One universe: browse and the approval queue ──────────────────────── *@
+    else if (Id is null)
+    {
+        <section class="pane">
+            <h1>@Universe</h1>
+            <div class="tabs">
+                <button class="@TabClass("browse")" @onclick="@(() => ShowTabAsync("browse"))">Browse</button>
+                <button class="@TabClass("queue")" @onclick="@(() => ShowTabAsync("queue"))">
+                    Approval queue @(queue is null ? "" : $"({queue.Sum(g => g.Drafts.Count)})")
+                </button>
+                <div class="spacer"></div>
+                <button class="mini" disabled="@busy" @onclick="VerifyAllAsync"
+                        title="Run the game-mode verifiers over every text of this universe. Writes findings only.">
+                    Verify all
+                </button>
+            </div>
+
+            @if (tab == "browse")
+            {
+                <div class="filters">
+                    <select aria-label="Kind" value="@kindFilter" @onchange="OnKindChangedAsync">
+                        <option value="">All kinds</option>
+                        @foreach (var k in ProseTextService.Kinds)
+                        {
+                            <option value="@k">@k</option>
+                        }
+                    </select>
+                    <select aria-label="Status" value="@statusFilter" @onchange="OnStatusChangedAsync">
+                        <option value="all">Any status</option>
+                        <option value="draft">Has a pending draft</option>
+                        <option value="approved">Approved</option>
+                        <option value="published">Published</option>
+                        <option value="retired">Retired</option>
+                    </select>
+                    <input aria-label="Key, id or title" placeholder="Key, id or title…" value="@keyFilter"
+                           @onchange="OnKeyChangedAsync" />
+                    <input aria-label="Entity" placeholder="Entity (about, speaker, place)…" value="@entityFilter"
+                           @onchange="OnEntityChangedAsync" />
+                    <span class="muted">@(rows?.Count.ToString("N0") ?? "…") text(s)</span>
+                </div>
+
+                @if (rows is null)
+                {
+                    <p class="muted">Loading…</p>
+                }
+                else if (rows.Count == 0)
+                {
+                    <p class="muted">No text matches.</p>
+                }
+                else
+                {
+                    <table class="list">
+                        <thead>
+                            <tr><th>Kind</th><th>Text</th><th>Key</th><th>Status</th><th>Where / when</th><th>Findings</th></tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var r in rows)
+                            {
+                                <tr>
+                                    <td class="kind">@r.Kind</td>
+                                    <td><a href="/texts/@Universe/@r.Id">@r.Title</a><br /><span class="muted small">@r.Id</span></td>
+                                    <td class="kind">@r.Key</td>
+                                    <td>
+                                        <span class="st st-@r.Status">@r.Status v@(r.Version)</span>
+                                        @if (r.DraftVersion is not null)
+                                        {
+                                            <br /><span class="st st-draft">draft v@(r.DraftVersion)</span>
+                                        }
+                                        @if (r.LiveVersion is not null)
+                                        {
+                                            <br /><span class="muted small">live v@(r.LiveVersion)</span>
+                                        }
+                                    </td>
+                                    <td class="small">@WhereWhen(r.Place, r.Chapter, r.Order)</td>
+                                    <td>
+                                        @if (r.OpenFindings > 0)
+                                        {
+                                            <span class="sev sev-@r.WorstSeverity">@r.OpenFindings open</span>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+            }
+            else
+            {
+                <p class="muted">
+                    Approving is your decision: findings describe what the verifiers saw and never approve or refuse
+                    anything on their own. "Approve all" shows what it would do first and approves only when you confirm.
+                </p>
+                <div class="author">
+                    <label for="texts-author">Approve as</label>
+                    <input id="texts-author" placeholder="Your name" value="@author" @onchange="OnAuthorChangedAsync" />
+                    @if (string.IsNullOrWhiteSpace(author))
+                    {
+                        <span class="muted small">Approval records your name; enter it to approve.</span>
+                    }
+                </div>
+
+                @if (queue is null)
+                {
+                    <p class="muted">Loading…</p>
+                }
+                else if (queue.Count == 0)
+                {
+                    <p class="muted">Nothing awaits approval.</p>
+                }
+                else
+                {
+                    @foreach (var g in queue)
+                    {
+                        <div class="queue-kind">
+                            <header>
+                                <h3>@g.Kind</h3>
+                                <span class="muted">@g.Drafts.Count draft(s)@(g.WithFindings > 0 ? $", {g.WithFindings} with open findings" : "")</span>
+                                <div class="spacer"></div>
+                                <button class="mini" disabled="@(busy || string.IsNullOrWhiteSpace(author))"
+                                        @onclick="@(() => PreviewBulkAsync(g.Kind))">Approve all @g.Kind…</button>
+                            </header>
+
+                            @if (preview is not null && preview.Kind == g.Kind)
+                            {
+                                <div class="preview">
+                                    <p>
+                                        <strong>@preview.Approved.Count</strong> would be approved as <strong>@author</strong>@(preview.Refused.Count > 0 ? $", {preview.Refused.Count} refused and left drafts" : "").
+                                        Nothing has changed yet.
+                                    </p>
+                                    @if (preview.Refused.Count > 0)
+                                    {
+                                        <ul>
+                                            @foreach (var x in preview.Refused)
+                                            {
+                                                <li><span class="kind">@x.Id</span> v@(x.Version): @string.Join("; ", x.Errors)</li>
+                                            }
+                                        </ul>
+                                    }
+                                    <button class="primary" disabled="@(busy || preview.Approved.Count == 0)"
+                                            @onclick="@(() => ConfirmBulkAsync(g.Kind))">Approve @preview.Approved.Count</button>
+                                    <button class="mini" @onclick="@(() => preview = null)">Cancel</button>
+                                </div>
+                            }
+
+                            <table class="list">
+                                <tbody>
+                                    @foreach (var r in g.Drafts)
+                                    {
+                                        <tr>
+                                            <td><a href="/texts/@Universe/@r.Id">@r.Title</a><br /><span class="muted small">@r.Id · v@(r.Version)</span></td>
+                                            <td class="kind">@r.Key</td>
+                                            <td class="small">@WhereWhen(r.Place, r.Chapter, r.Order)</td>
+                                            <td>
+                                                @if (r.OpenFindings > 0)
+                                                {
+                                                    <span class="sev sev-@r.WorstSeverity">@r.OpenFindings open</span>
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                }
+            }
+        </section>
+    }
+
+    @* ── One text: its versions, the selected version rendered, its findings ── *@
+    else if (record is null)
+    {
+        <section class="pane"><p class="muted">@(loading ? "Loading…" : "No such text.")</p></section>
+    }
+    else
+    {
+        <section class="pane">
+            <h1>@Id</h1>
+            <p class="muted">
+                <span class="kind">@record.Kind</span>
+                @if (record.Retired)
+                {
+                    <span class="st st-retired">retired</span>
+                }
+            </p>
+
+            <div class="text-page">
+                <main>
+                    @if (selected is not null)
+                    {
+                        <dl class="meta">
+                            <dt>Version</dt><dd>v@(selected.Version) <span class="st st-@selected.Status">@selected.Status</span></dd>
+                            <dt>Key</dt><dd class="kind">@selected.Key</dd>
+                            @if (selected.About.Count > 0)
+                            {
+                                <dt>About</dt><dd>@EntityLinks(selected.About)</dd>
+                            }
+                            @if (selected.Speakers.Count > 0)
+                            {
+                                <dt>Speakers</dt><dd>@EntityLinks(selected.Speakers)</dd>
+                            }
+                            @if (selected.Context is { } c)
+                            {
+                                @if (c.Place is not null)
+                                {
+                                    <dt>Place</dt><dd>@EntityLinks([c.Place])</dd>
+                                }
+                                @if (c.Chapter is not null)
+                                {
+                                    <dt>Chapter</dt><dd>@c.Chapter</dd>
+                                }
+                                @if (c.Order is not null)
+                                {
+                                    <dt>Order</dt><dd>@c.Order</dd>
+                                }
+                                @if (c.Trigger is not null)
+                                {
+                                    <dt>Trigger</dt><dd class="kind">@c.Trigger</dd>
+                                }
+                                @if (c.After is { Count: > 0 })
+                                {
+                                    <dt>After</dt>
+                                    <dd>
+                                        @foreach (var a in c.After)
+                                        {
+                                            <a href="/texts/@Universe/@a">@a</a><span> </span>
+                                        }
+                                    </dd>
+                                }
+                            }
+                            else
+                            {
+                                <dt>Context</dt><dd class="muted">unplaced (no order or after: continuity is not judged)</dd>
+                            }
+                        </dl>
+
+                        <div class="payload">@RenderPayload(record.Kind, selected.Payload)</div>
+
+                        <h2>Findings on v@(selected.Version)</h2>
+                        var mine = OnVersion(selected.Version);
+                        if (mine.Count == 0)
+                        {
+                            <p class="muted">None filed. @(selected.Status is "superseded" ? "" : "Verify runs the checks again.")</p>
+                        }
+                        else
+                        {
+                            <ul class="findings">
+                                @foreach (var f in mine)
+                                {
+                                    var open = IsOpen(f);
+                                    <li class="@(open ? "" : "resolved")">
+                                        <span class="sev sev-@f.Severity">@f.Severity</span>
+                                        @f.Summary
+                                        <span class="muted small"> · @f.Status</span>
+                                        @if (!string.IsNullOrWhiteSpace(f.Snippet))
+                                        {
+                                            <span class="snippet">“@f.Snippet”</span>
+                                        }
+                                        @if (open)
+                                        {
+                                            @if (f.Status == "New")
+                                            {
+                                                <button class="mini" @onclick="@(() => TriageAsync(f.Id))" title="Seen; leave it open">Triage</button>
+                                            }
+                                            <button class="mini" @onclick="@(() => DismissAsync(f.Id))" title="Not a problem; stays dismissed if found again">Dismiss</button>
+                                        }
+                                    </li>
+                                }
+                            </ul>
+                        }
+                    }
+                </main>
+
+                <aside>
+                    <h2>Versions</h2>
+                    <ul class="versions">
+                        @foreach (var v in record.Versions.OrderByDescending(v => v.Version))
+                        {
+                            var openCount = OpenOn(v.Version);
+                            <li class="@(selected?.Version == v.Version ? "sel" : "")" @onclick="@(() => selected = v)">
+                                v@(v.Version) <span class="st st-@v.Status">@v.Status</span>
+                                @if (openCount > 0)
+                                {
+                                    <span class="sev sev-Medium">@openCount open</span>
+                                }
+                                <span class="who">
+                                    drafted @v.CreatedAt.ToString("yyyy-MM-dd HH:mm")@(v.CreatedBy is null ? "" : $" by {v.CreatedBy}")
+                                    @if (v.ApprovedAt is not null)
+                                    {
+                                        <br />@($"approved {v.ApprovedAt:yyyy-MM-dd HH:mm} by {v.ApprovedBy}")
+                                    }
+                                    @if (v.PublishedAt is not null)
+                                    {
+                                        <br />@($"published {v.PublishedAt:yyyy-MM-dd HH:mm}")
+                                    }
+                                </span>
+                            </li>
+                        }
+                    </ul>
+
+                    <h2>Actions</h2>
+                    <button class="mini" disabled="@busy" @onclick="VerifyTextAsync"
+                            title="Run the game-mode verifiers on this text. Writes findings only.">Verify</button>
+
+                    @if (selected is { Status: "draft" })
+                    {
+                        <div class="author">
+                            <label for="text-author">Approve as</label>
+                            <input id="text-author" placeholder="Your name" value="@author" @onchange="OnAuthorChangedAsync" />
+                        </div>
+                        var openOnDraft = OpenOn(selected.Version);
+                        if (openOnDraft > 0)
+                        {
+                            <p class="muted small">This draft has @openOnDraft open finding(s). They do not block approval; the decision is yours.</p>
+                        }
+                        <button class="primary" disabled="@(busy || string.IsNullOrWhiteSpace(author))"
+                                @onclick="ApproveSelectedAsync">Approve v@(selected.Version)</button>
+                    }
+                </aside>
+            </div>
+        </section>
+    }
+</div>
+
+@code {
+    [Parameter] public string? Universe { get; set; }
+    [Parameter] public string? Id { get; set; }
+    /// <summary>?entity= on the universe page: the browse list filtered to texts about, spoken by or set at it.</summary>
+    [Parameter] public string? Entity { get; set; }
+
+    private const string AuthorKey = "prose.texts.author";
+
+    private IReadOnlyList<TextsUiService.UniverseSummary>? universes;
+    private IReadOnlyList<TextsUiService.TextRow>? rows;
+    private IReadOnlyList<TextsUiService.QueueGroup>? queue;
+    private ProseTextService.BulkResult? preview;
+    private ProseTextService.TextRecord? record;
+    private ProseTextService.TextVersion? selected;
+    private IReadOnlyList<ProseTextVerifier.FindingRow>? textFindings;
+
+    private string tab = "browse";
+    private string kindFilter = "", statusFilter = "all", keyFilter = "", entityFilter = "";
+    private string author = "";
+    private string theme = "dark";
+    private bool loading = true, busy;
+    private string? error, notice;
+    private (string? Universe, string? Id) shownFor;
+    private string? entityApplied;
+
+    // Route values arrive as parameters (no <Router>), so a navigation re-runs this rather than OnInitialized.
+    protected override async Task OnParametersSetAsync()
+    {
+        error = null;
+        if (shownFor != (Universe, Id))
+        {
+            if (shownFor.Universe != Universe) { rows = null; queue = null; preview = null; kindFilter = ""; statusFilter = "all"; keyFilter = ""; entityFilter = ""; }
+            shownFor = (Universe, Id);
+            record = null;
+            selected = null;
+            textFindings = null;
+            notice = null;
+            loading = true;
+        }
+        if (Entity != entityApplied)
+        {
+            entityApplied = Entity;
+            entityFilter = Entity ?? "";
+            tab = "browse";
+        }
+        await GuardedAsync(LoadAsync);
+        loading = false;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender) return;
+        try
+        {
+            theme = await JS.InvokeAsync<string>("proseWriter.getTheme");
+            author = await JS.InvokeAsync<string?>("localStorage.getItem", AuthorKey) ?? "";
+            StateHasChanged();
+        }
+        catch (JSException) { /* theme.js missing or storage blocked: the defaults stand */ }
+        catch (JSDisconnectedException) { }
+    }
+
+    private async Task LoadAsync()
+    {
+        if (Universe is null) { universes = await Texts.ListUniversesAsync(); return; }
+        if (Id is null)
+        {
+            if (tab == "browse") await LoadRowsAsync();
+            queue = await Texts.QueueAsync(Universe);
+            return;
+        }
+        await LoadTextAsync();
+    }
+
+    private async Task LoadRowsAsync() =>
+        rows = await Texts.ListTextsAsync(Universe!, kindFilter, keyFilter, entityFilter, statusFilter);
+
+    private async Task LoadTextAsync()
+    {
+        var keep = selected?.Version;
+        record = await Texts.GetRecordAsync(Universe!, Id!);
+        textFindings = record is null ? null : Texts.Findings(Universe!, Id!);
+        selected = record?.Versions.FirstOrDefault(v => v.Version == keep)
+                   ?? record?.Draft ?? record?.Live ?? record?.Head;
+    }
+
+    /// <summary>A handler that reaches the database: a failure is the error banner, never a dead circuit.</summary>
+    private async Task GuardedAsync(Func<Task> act)
+    {
+        error = null;
+        try { await act(); }
+        catch (Exception ex) { error = ex.Message; }
+    }
+
+    private async Task ShowTabAsync(string t)
+    {
+        tab = t;
+        preview = null;
+        await GuardedAsync(LoadAsync);
+    }
+
+    private async Task OnKindChangedAsync(ChangeEventArgs e) { kindFilter = e.Value?.ToString() ?? ""; await GuardedAsync(LoadRowsAsync); }
+    private async Task OnStatusChangedAsync(ChangeEventArgs e) { statusFilter = e.Value?.ToString() ?? "all"; await GuardedAsync(LoadRowsAsync); }
+    private async Task OnKeyChangedAsync(ChangeEventArgs e) { keyFilter = e.Value?.ToString() ?? ""; await GuardedAsync(LoadRowsAsync); }
+    private async Task OnEntityChangedAsync(ChangeEventArgs e) { entityFilter = e.Value?.ToString() ?? ""; await GuardedAsync(LoadRowsAsync); }
+
+    private async Task OnAuthorChangedAsync(ChangeEventArgs e)
+    {
+        author = (e.Value?.ToString() ?? "").Trim();
+        preview = null;
+        try { await JS.InvokeVoidAsync("localStorage.setItem", AuthorKey, author); }
+        catch (JSException) { /* storage blocked: the name lasts for this page only */ }
+        catch (JSDisconnectedException) { }
+    }
+
+    private Task PreviewBulkAsync(string kind) => RunAsync(async () =>
+    {
+        notice = null;
+        preview = await Texts.PreviewBulkApproveAsync(Universe!, kind, author);
+        if (preview.Errors.Count > 0) { error = string.Join("; ", preview.Errors); preview = null; }
+    });
+
+    private Task ConfirmBulkAsync(string kind) => RunAsync(async () =>
+    {
+        var result = await Texts.BulkApproveAsync(Universe!, kind, author);
+        preview = null;
+        if (result.Errors.Count > 0) { error = string.Join("; ", result.Errors); return; }
+        notice = $"{result.Approved.Count} {kind} text(s) approved by {author}" +
+                 (result.Refused.Count > 0 ? $"; {result.Refused.Count} refused and left drafts" : "") +
+                 (result.Findings.Count > 0 ? $"; the verifiers filed {result.Findings.Count} finding(s) on them" : "") + ".";
+        await LoadAsync();
+    });
+
+    private Task ApproveSelectedAsync() => RunAsync(async () =>
+    {
+        if (selected is null) return;
+        var result = await Texts.ApproveAsync(Universe!, Id!, selected.Version, author);
+        if (!result.Success) { error = string.Join("; ", result.Errors); return; }
+        notice = $"v{selected.Version} approved by {author}.";
+        await LoadTextAsync();
+    });
+
+    private Task VerifyTextAsync() => RunAsync(async () =>
+    {
+        var r = await Texts.VerifyAsync(Universe!, Id!);
+        notice = r.Success ? $"Verified: {r.Findings.Count} finding(s). Nothing was changed but the findings." : null;
+        if (!r.Success) error = string.Join("; ", r.Errors);
+        await LoadTextAsync();
+    });
+
+    private Task VerifyAllAsync() => RunAsync(async () =>
+    {
+        var r = await Texts.VerifyAsync(Universe!);
+        notice = $"Verified {r.TextsChecked} text(s): {r.Findings.Count} finding(s). Nothing was changed but the findings.";
+        if (!r.Success) error = string.Join("; ", r.Errors);
+        await LoadAsync();
+    });
+
+    private Task TriageAsync(long id) => RunAsync(async () => { Texts.Triage(id); await LoadTextAsync(); });
+    private Task DismissAsync(long id) => RunAsync(async () => { Texts.Dismiss(id); await LoadTextAsync(); });
+
+    private async Task RunAsync(Func<Task> act)
+    {
+        if (busy) return;
+        busy = true;
+        try { await GuardedAsync(act); }
+        finally { busy = false; }
+    }
+
+    private async Task ToggleThemeAsync()
+    {
+        var next = theme == "light" ? "dark" : "light";
+        try { theme = await JS.InvokeAsync<string>("proseWriter.setTheme", next); }
+        catch (JSException) { theme = next; }
+        catch (JSDisconnectedException) { }
+    }
+
+    private string TabClass(string t) => tab == t ? "mini on" : "mini";
+
+    /// <summary>The selected version's findings: open ones first, then by severity.</summary>
+    private List<ProseTextVerifier.FindingRow> OnVersion(int version) =>
+        (textFindings ?? Array.Empty<ProseTextVerifier.FindingRow>()).Where(f => f.Version == version)
+            .OrderBy(f => IsOpen(f) ? 0 : 1).ThenBy(f => TextsUiService.SeverityRank(f.Severity)).ToList();
+
+    private int OpenOn(int version) =>
+        (textFindings ?? Array.Empty<ProseTextVerifier.FindingRow>()).Count(f => f.Version == version && IsOpen(f));
+
+    private static bool IsOpen(ProseTextVerifier.FindingRow f) => f.Status is "New" or "Triaged";
+
+    private static string WhereWhen(string? place, string? chapter, double? order) =>
+        string.Join(" · ", new[] { place, chapter, order is null ? null : $"order {order}" }.Where(x => !string.IsNullOrWhiteSpace(x)));
+
+    // ── Rendering a payload by kind ─────────────────────────────────────────
+
+    private static string? S(JsonElement o, string name) =>
+        o.ValueKind == JsonValueKind.Object && o.TryGetProperty(name, out var v) && v.ValueKind == JsonValueKind.String ? v.GetString() : null;
+
+    private static IEnumerable<string> A(JsonElement o, string name) =>
+        o.ValueKind == JsonValueKind.Object && o.TryGetProperty(name, out var v) && v.ValueKind == JsonValueKind.Array
+            ? v.EnumerateArray().Where(x => x.ValueKind == JsonValueKind.String).Select(x => x.GetString()!)
+            : [];
+
+    private RenderFragment EntityLinks(IEnumerable<string> ids) => __builder =>
+    {
+        foreach (var e in ids)
+        {
+            if (e.StartsWith('$'))
+            {
+                <span class="kind">@e </span>
+            }
+            else
+            {
+                <a href="@($"/texts/{Universe}?entity={Uri.EscapeDataString(e)}")" title="Every text about, spoken by or set at @e">@e</a><span> </span>
+            }
+        }
+    };
+
+    private RenderFragment RenderPayload(string kind, JsonElement p) => __builder =>
+    {
+        switch (kind)
+        {
+            case "conversation":
+                if (S(p, "title") is { } title) { <p class="label">@title</p> }
+                var nodes = new Dictionary<string, JsonElement>(StringComparer.Ordinal);
+                if (p.TryGetProperty("nodes", out var arr) && arr.ValueKind == JsonValueKind.Array)
+                    foreach (var n in arr.EnumerateArray())
+                        if (S(n, "id") is { } nid) nodes.TryAdd(nid, n);
+                var shown = new HashSet<string>(StringComparer.Ordinal);
+                if (S(p, "start") is { } start)
+                {
+                    <ul class="convo">@ConvoNode(start, nodes, shown)</ul>
+                }
+                var orphans = nodes.Keys.Where(k => !shown.Contains(k)).ToList();
+                if (orphans.Count > 0)
+                {
+                    <p class="label">Not reachable from the start</p>
+                    <ul class="convo">
+                        @foreach (var o in orphans)
+                        {
+                            @ConvoNode(o, nodes, shown)
+                        }
+                    </ul>
+                }
+                break;
+            case "bark":
+                <p class="label">@(S(p, "speaker") ?? "?") · @(S(p, "context") ?? "any situation") · drawn at random</p>
+                <ul>
+                    @foreach (var l in A(p, "lines"))
+                    {
+                        <li>@l</li>
+                    }
+                </ul>
+                break;
+            case "glossary":
+                <p><strong>@S(p, "term")</strong>@(A(p, "aliases").Any() ? $" (also {string.Join(", ", A(p, "aliases"))})" : "")</p>
+                <p>@S(p, "definition")</p>
+                break;
+            default:
+                foreach (var (field, label) in new[] { ("title", "Title"), ("author", "Author"), ("giver", "Giver"), ("short", "Short"), ("long", "Long"), ("brief", "Brief"), ("complete", "Complete"), ("fail", "Fail") })
+                {
+                    if (S(p, field) is { } value)
+                    {
+                        <p class="label">@label</p>
+                        <p>@value</p>
+                    }
+                }
+                foreach (var field in new[] { "paragraphs", "pages" })
+                {
+                    var i = 0;
+                    foreach (var para in A(p, field))
+                    {
+                        if (field == "pages") { <p class="label">Page @(++i)</p> }
+                        <p>@para</p>
+                    }
+                }
+                break;
+        }
+    };
+
+    /// <summary>One conversation node and everything below it. A node already shown is a link back, not repeated,
+    /// so a loop renders once; a $token is an exit to the game.</summary>
+    private RenderFragment ConvoNode(string id, Dictionary<string, JsonElement> nodes, HashSet<string> shown) => __builder =>
+    {
+        if (id.StartsWith('$'))
+        {
+            <li class="exit">→ @id (the game takes over)</li>
+            return;
+        }
+        if (!nodes.TryGetValue(id, out var n))
+        {
+            <li class="exit">→ '@id' (no such node)</li>
+            return;
+        }
+        if (!shown.Add(id))
+        {
+            <li class="back">↩ back to '@id'</li>
+            return;
+        }
+        <li>
+            <span class="nid">@id</span><span class="speaker">@S(n, "speaker")</span>@S(n, "line")
+            @{
+                var choices = n.TryGetProperty("choices", out var ch) && ch.ValueKind == JsonValueKind.Array ? ch.EnumerateArray().ToList() : new List<JsonElement>();
+                var next = S(n, "next");
+            }
+            @if (choices.Count > 0)
+            {
+                <ul class="convo">
+                    @foreach (var c in choices)
+                    {
+                        <li>
+                            <span class="choice">▸ @S(c, "text")</span>
+                            @foreach (var tag in A(c, "tags"))
+                            {
+                                <span class="tag">@tag</span>
+                            }
+                            @if (S(c, "next") is { } cn)
+                            {
+                                <ul class="convo">@ConvoNode(cn, nodes, shown)</ul>
+                            }
+                        </li>
+                    }
+                </ul>
+            }
+            @if (next is not null)
+            {
+                <ul class="convo">@ConvoNode(next, nodes, shown)</ul>
+            }
+            @if (choices.Count == 0 && next is null)
+            {
+                <ul class="convo"><li class="exit">(ends)</li></ul>
+            }
+        </li>
+    };
+}

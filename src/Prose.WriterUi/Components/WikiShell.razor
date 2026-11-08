@@ -39,6 +39,7 @@
                 @(editing ? "Cancel" : "Edit")
             </button>
         }
+        <a class="mini" href="/texts" title="Game texts: conversations, crawls, barks… and their approval queue">Game texts</a>
         <a class="mini" href="/writer" title="Back to the editor">Writer</a>
         <button class="mini" @onclick="ToggleThemeAsync" title="Light / dark"
                 aria-label="Dark theme" aria-pressed="@((theme == "dark") ? "true" : "false")">@(theme == "light" ? "☾" : "☀")</button>

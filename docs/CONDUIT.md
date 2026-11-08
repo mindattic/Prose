@@ -158,7 +158,8 @@ findings, never as a refusal:
 | `TEXT-BARK` | `duplicate`, `repeated`, `long` | a line twice in a pool; a line in two pools of one speaker; a line over 140 characters |
 
 - **When:** on every draft (the draft result lists them), on every approval (single and bulk, the result lists them),
-  and on demand (`prose --texts-verify <slug> [id...] [--kind k]`, `POST .../texts/verify`, MCP `verify_texts`). A draft re-checks its own text; a sweep re-checks every text against the others.
+  and on demand (`prose --texts-verify <slug> [id...] [--kind k]`, `POST .../texts/verify`, MCP `verify_texts`, the
+  Writer's `/texts` view). A draft re-checks its own text; a sweep re-checks every text against the others.
 - **Where:** the shared `Findings` table, at `text:{universe}/{id}#v{version}`, category per family, `SuggestedFix`
   always empty, `SourceRuleVersion = prose-text-verify/1`. Each run replaces the version's open `TEXT-` findings;
   a finding the author triaged or dismissed stays so when found again.
@@ -283,6 +284,7 @@ reads need no key.
 | Retire | `POST /api/universes/{slug}/texts/{id}/retire {by}` | `prose --texts-retire <slug> <id> --by <name>` | none |
 | Verify (RFC 0018) | `POST /api/universes/{slug}/texts/verify {ids?, kind?}` | `prose --texts-verify <slug> [id...] [--kind k] [--json]` | `verify_texts(universe, ids?, kind?)` |
 | Findings (RFC 0018) | `GET /api/universes/{slug}/texts/findings[?status=]`, `GET .../texts/{id}/findings` | `prose --texts-findings <slug> [id] [--status s] [--json]` | `text_findings(universe, id?, status?)` |
+| Writer view (RFC 0018) | `/texts`, `/texts/{slug}[?entity=id]`, `/texts/{slug}/{id}`: browse by kind, key or entity; each text's versions and findings; the approval queue with bulk approve by kind (previewed, the author's name and click) | — | — |
 | Outbox | `GET /api/outbox/{consumer}[?peek=true]` | — | — |
 
 `since` is a version number (the live version is greater) or an ISO date (approved or published after it).

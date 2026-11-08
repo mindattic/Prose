@@ -424,6 +424,18 @@ app.MapGet("/repo/{type}/{slug}", (string type, string slug, string? at) =>
     new Microsoft.AspNetCore.Http.HttpResults.RazorComponentResult<Prose.Hub.Components.Wiki>(
         new { Type = type, Slug = slug, At = at }));
 
+// Game texts (RFC 0018 §9, PRS-T922), at /texts. Same explicit-endpoint reasoning as /writer and /repo. Browse a
+// universe's prose-text/1 texts by kind, key or entity, see each text's versions and findings, and work the approval
+// queue (bulk approve by kind through the PRS-T918 service, previewed first, always the author's click and name).
+app.MapGet("/texts", () =>
+    new Microsoft.AspNetCore.Http.HttpResults.RazorComponentResult<Prose.Hub.Components.Texts>());
+app.MapGet("/texts/{universe}", (string universe, string? entity) =>
+    new Microsoft.AspNetCore.Http.HttpResults.RazorComponentResult<Prose.Hub.Components.Texts>(
+        new { Universe = universe, Entity = entity }));
+app.MapGet("/texts/{universe}/{id}", (string universe, string id) =>
+    new Microsoft.AspNetCore.Http.HttpResults.RazorComponentResult<Prose.Hub.Components.Texts>(
+        new { Universe = universe, Id = id }));
+
 var uc = app.Services.GetRequiredService<IUniverseContext>();
 
 // Write-gate (2026-08-22): eagerly resolve so WriteGateBootstrap's constructor actually runs and

@@ -1,0 +1,52 @@
+@* No @page here — same reason as Writer.razor and Wiki.razor: App.razor carries no <Router>, so every discovered
+   page route renders App.razor. Program.cs gives this component its own endpoints (/texts, /texts/{universe},
+   /texts/{universe}/{id}). RFC 0018 §9, PRS-T922. *@
+@using Microsoft.AspNetCore.Components.Web
+@using Prose.WriterUi.Components
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <title>@PageTitle</title>
+    @* Stamped before the stylesheets so a light-theme user never sees a frame of dark (same key as the editor). *@
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('prose.writer.theme');
+                document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+            } catch (e) { /* blocked site data — the dark default in the markup stands */ }
+        })();
+    </script>
+    <link rel="stylesheet" href="_content/Prose.WriterUi/tokens.css?v=@AssetVersion" />
+    <link rel="stylesheet" href="_content/Prose.WriterUi/writer.css?v=@AssetVersion" />
+    <link rel="stylesheet" href="_content/Prose.WriterUi/wiki.css?v=@AssetVersion" />
+    <link rel="stylesheet" href="_content/Prose.WriterUi/texts.css?v=@AssetVersion" />
+    <script src="_content/Prose.WriterUi/js/theme.js?v=@AssetVersion"></script>
+    <HeadOutlet @rendermode="RenderMode.InteractiveServer" />
+</head>
+<body>
+    @* Route values reach this component on the static prerender pass only; with no <Router> they are handed down. *@
+    <TextsShell @rendermode="RenderMode.InteractiveServer" Universe="@Universe" Id="@Id" Entity="@Entity" />
+    <script src="_framework/blazor.web.js"></script>
+</body>
+</html>
+
+@code {
+    /// <summary>Universe slug, e.g. <c>gridgame</c>. Null renders the list of universes with game texts.</summary>
+    [Parameter] public string? Universe { get; set; }
+
+    /// <summary>Text id within <see cref="Universe"/>. Null renders the universe's texts and approval queue.</summary>
+    [Parameter] public string? Id { get; set; }
+
+    /// <summary>Optional entity id to filter the universe's texts by (?entity=).</summary>
+    [Parameter] public string? Entity { get; set; }
+
+    private static string AssetVersion => HubAssets.Version;
+
+    private string PageTitle =>
+        Id != null ? $"{Id} — Prose" :
+        Universe != null ? $"{Universe} texts — Prose" :
+                           "Game texts — Prose";
+}
