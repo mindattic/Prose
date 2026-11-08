@@ -27,8 +27,8 @@ public static class OneShotGenerateCli
         if (args.Length < 1 || args[0].StartsWith("--", StringComparison.Ordinal))
         {
             Console.Error.WriteLine("Usage: prose --generate-scene \"<beat goal>\" [--characters \"A,B\"] " +
-                "[--location \"...\"] [--subtext \"...\"] [--node <slug>] [--universe <slug>] " +
-                "[--beat-index N] [--total-beats N]");
+                "[--location \"...\"] [--about \"id,id\"] [--subtext \"...\"] [--node <slug>] [--universe <slug>] " +
+                "[--beat-index N] [--total-beats N] [--no-retry] [--json]");
             return 1;
         }
 
@@ -40,10 +40,16 @@ public static class OneShotGenerateCli
         var universe = Flag(args, "--universe");
         var beatIndex = int.TryParse(Flag(args, "--beat-index"), out var bi) ? bi : 0;
         var totalBeats = int.TryParse(Flag(args, "--total-beats"), out var tb) ? tb : 0;
+        var aboutArg = Flag(args, "--about");
+        var retry = !args.Contains("--no-retry");
+        var json = args.Contains("--json");
 
         var characters = string.IsNullOrWhiteSpace(charactersArg)
             ? Array.Empty<string>()
             : charactersArg.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries);
+        var about = string.IsNullOrWhiteSpace(aboutArg)
+            ? Array.Empty<string>()
+            : aboutArg.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries);
 
         var svc = services.GetRequiredService<OneShotGenerationService>();
         try
@@ -56,7 +62,9 @@ public static class OneShotGenerateCli
                 Node: node,
                 Universe: universe,
                 BeatIndex: beatIndex,
-                TotalBeats: totalBeats));
+                TotalBeats: totalBeats,
+                About: about,
+                RetryOnUnknown: retry));
 
             if (string.IsNullOrWhiteSpace(result.Text))
             {
@@ -64,10 +72,24 @@ public static class OneShotGenerateCli
                 return 1;
             }
 
+            if (json)
+            {
+                Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(result.ToResponse(),
+                    new System.Text.Json.JsonSerializerOptions { WriteIndented = true }));
+                return 0;
+            }
+
             Console.WriteLine(result.Text);
             Console.Error.WriteLine();
             Console.Error.WriteLine($"[generate-scene] universe={result.UniverseSlug} " +
-                $"{(result.AttachedNodeSlug != null ? $"node={result.AttachedNodeSlug} " : "")}words={result.WordCount}");
+                $"{(result.AttachedNodeSlug != null ? $"node={result.AttachedNodeSlug} " : "")}words={result.WordCount} " +
+                $"calls={result.LlmCalls} cost=${result.CostUsd:0.0000}{(result.Retried ? " retried" : "")}");
+            if (result.GroundedOn.Count > 0)
+                Console.Error.WriteLine($"[generate-scene] grounded on: {string.Join(", ", result.GroundedOn)}");
+            if (result.Unresolved.Count > 0)
+                Console.Error.WriteLine($"[generate-scene] not in canon (request): {string.Join(", ", result.Unresolved)}");
+            if (result.UnknownNames.Count > 0)
+                Console.Error.WriteLine($"[generate-scene] names not in canon: {string.Join(", ", result.UnknownNames)}");
             return 0;
         }
         catch (InvalidOperationException ex)

@@ -1183,15 +1183,27 @@ app.MapGet("/api/universes/{slug}/texts/{id}/findings", (string slug, string id,
 
 static IResult TextFindings(string slug, string? id, string? status, int? limit, ProseTextVerifier verifier)
 {
-    FindingStatus? st = null;
-    if (!string.IsNullOrWhiteSpace(status))
-    {
-        if (!Enum.TryParse<FindingStatus>(status, ignoreCase: true, out var parsed))
-            return Results.BadRequest(new { error = "texts_findings_failed", detail = $"unknown status '{status}' (new, triaged, applied, dismissed)" });
-        st = parsed;
-    }
-    return Results.Ok(verifier.ListFindingRows(slug, id, st, Math.Clamp(limit ?? 500, 1, 5000)));
+    // PRS-T926: ?status=open (new + triaged) was a 400; the filter is parsed in one place for every surface.
+    if (!ProseTextVerifier.TryParseStatusFilter(status, out var statuses, out var error))
+        return Results.BadRequest(new { error = "texts_findings_failed", detail = error });
+    return Results.Ok(verifier.ListFindingRows(slug, id, statuses, Math.Clamp(limit ?? 500, 1, 5000)));
 }
+
+// PRS-T926: the conversation nodes a game re-enters after a $outcome exit (SpaceGod's talked/fought/…, GridGame's
+// join/part). The branch verifier treats them as reachable from any $outcome exit, instead of filing
+// TEXT-BRANCH [unreachable]. The consumer kit's push keeps it in step with prose.config's outcomeNodes.
+app.MapGet("/api/universes/{slug}/texts/outcome-nodes", async (string slug, ProseTextVerifier verifier) =>
+{
+    try { return Results.Ok(new { universe = slug, outcomeNodes = await verifier.GetOutcomeNodesAsync(slug) }); }
+    catch (InvalidOperationException ex) { return Results.BadRequest(new { error = "texts_outcome_nodes_failed", detail = ex.Message }); }
+});
+
+app.MapPut("/api/universes/{slug}/texts/outcome-nodes", async (string slug, OutcomeNodesRequest req, ProseTextVerifier verifier) =>
+{
+    try { return Results.Ok(new { universe = slug, outcomeNodes = await verifier.SetOutcomeNodesAsync(slug, req.OutcomeNodes) }); }
+    catch (InvalidOperationException ex) { return Results.BadRequest(new { error = "texts_outcome_nodes_failed", detail = ex.Message }); }
+})
+    .AddEndpointFilter<HubApiKeyFilter>();
 
 // Portable-writing-service plan, Phase 3: write a scene/line of dialog without a pre-existing
 // Book/Chapter/Beat row, over plain HTTP (same OneShotGenerationService the CLI/MCP entry points
@@ -1210,14 +1222,10 @@ app.MapPost("/api/generate-scene", async (GenerateSceneRequest req, OneShotGener
             Node: req.Node,
             Universe: req.Universe,
             BeatIndex: req.BeatIndex ?? 0,
-            TotalBeats: req.TotalBeats ?? 0));
-        return Results.Ok(new
-        {
-            text = result.Text,
-            wordCount = result.WordCount,
-            universe = result.UniverseSlug,
-            attachedNode = result.AttachedNodeSlug,
-        });
+            TotalBeats: req.TotalBeats ?? 0,
+            About: req.About,
+            RetryOnUnknown: req.RetryOnUnknown ?? true));
+        return Results.Ok(result.ToResponse());
     }
     catch (Exception ex) when (ex is InvalidOperationException or ArgumentException)
     {
@@ -1278,7 +1286,10 @@ sealed record TextActionRequest(string? By, int? Version, string[]? Ids,
 
 sealed record GenerateSceneRequest(
     string BeatGoal, string[]? Characters, string? Location, string? Subtext,
-    string? Node, string? Universe, int? BeatIndex, int? TotalBeats);
+    string? Node, string? Universe, int? BeatIndex, int? TotalBeats,
+    string[]? About = null, bool? RetryOnUnknown = null);
+
+sealed record OutcomeNodesRequest(string[]? OutcomeNodes);
 
 // RFC 0015 session hook bodies.
 sealed record FactorySessionStartBody(string? ClaudeSessionId, string? GitHead);

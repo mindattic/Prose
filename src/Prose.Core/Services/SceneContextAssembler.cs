@@ -283,7 +283,11 @@ public class SceneContextAssembler(
     // one character) and could win the name as the scene's "character"; "War Dog" resolved to the
     // archetype.
     private static readonly HashSet<string> ExcludedTypes =
-        new(StringComparer.OrdinalIgnoreCase) { "chapter", "book", "node", "series", "beat", "quote", "archetype" };
+        new(StringComparer.OrdinalIgnoreCase) { "chapter", "book", "node", "series", "beat", "quote", "archetype",
+            // PRS-T926: a game text (RFC 0018) is an Entities row named after its key or title ("The Choir's
+            // Cathedral" is both a place and its crawl). It is writing about the world, not a thing on screen; its
+            // name collided with the place it is about and its JSON record is no scene context.
+            ProseTextService.EntityType };
 
     // name → all entities sharing that Name (usually exactly one). Built once, refreshed lazily,
     // universe-wide (not per-book) — same-name collisions across different books' entities (see
@@ -387,13 +391,31 @@ public class SceneContextAssembler(
     /// CancellationToken slot unchanged — only callers that want disambiguation need to pass
     /// this one by name.
     /// </param>
-    public async Task<SceneContext> AssembleAsync(string proseText, int tokenBudget = 2000, CancellationToken ct = default, Guid? contextNodeId = null)
+    /// <param name="pinnedEntityIds">PRS-T926: entities the caller already resolved as on screen (a one-shot scene's
+    /// characters, location and <c>about</c> ids). They lead the roster ahead of any name hit and seed the graph
+    /// expansion, so a scene with no beat text and a loosely worded goal ("the Hierarch at the cathedral") is still
+    /// written from its own entities and their relations.</param>
+    public async Task<SceneContext> AssembleAsync(string proseText, int tokenBudget = 2000, CancellationToken ct = default, Guid? contextNodeId = null,
+        IReadOnlyCollection<Guid>? pinnedEntityIds = null)
     {
         var rawIndex = await GetNameIndexAsync(ct);
         var index = await ResolveIndexForContextAsync(rawIndex, contextNodeId, ct);
 
-        // 1 — name/alias scan (the lorebook trigger).
+        // 0 — pinned entities (resolved by the caller), ranked above every name hit.
         var matched = new Dictionary<Guid, SceneEntityRef>();
+        if (pinnedEntityIds is { Count: > 0 })
+        {
+            await using var pdb = await dbFactory.CreateDbContextAsync(ct);
+            var ids = pinnedEntityIds.Distinct().ToList();
+            var pinned = await pdb.Set<Entity>().AsNoTracking()
+                .Where(en => ids.Contains(en.Id) && en.Status != "archived")
+                .Select(en => new { en.Id, en.Name, en.EntityType })
+                .ToListAsync(ct);
+            foreach (var p in pinned.Where(p => !ExcludedTypes.Contains(p.EntityType)))
+                matched.TryAdd(p.Id, new SceneEntityRef(p.Id, p.Name, p.EntityType, "pinned", 4.0));
+        }
+
+        // 1 — name/alias scan (the lorebook trigger).
         foreach (var hit in ScanNames(proseText, index))
             matched.TryAdd(hit.EntityId, hit);
 

@@ -24,11 +24,26 @@ namespace Prose.Core.Services;
 /// fire-and-forget log-row upserts (WorkflowMonitorService, BeatModeDetector) — both already keyed
 /// by beatId/NodeId and harmless when those are Guid.Empty.
 /// </summary>
+///
+/// <para><b>Canon grounding (PRS-T926).</b> The router's X-Ray, entity working memory and doc stack key off a beat
+/// id or a node id, so a call with neither (every game universe, and any draft text) used to be written from the
+/// goal alone and invented its names. Every call is now grounded by <see cref="SceneCanonGroundingService"/>
+/// whenever the router would not assemble an X-Ray itself (always: this service never passes a beat id): the
+/// scene's characters, location and <see cref="OneShotGenerationRequest.About"/> entities are resolved, the X-Ray is
+/// assembled with them pinned, and a canon block carries their records, relations, surroundings and approved
+/// descriptions under a use-only-canon-names rule. The draft is then name-checked: names the canon lacks are
+/// returned in <see cref="OneShotGenerationResult.UnknownNames"/>, and (unless
+/// <see cref="OneShotGenerationRequest.RetryOnUnknown"/> is false) the scene is written once more with them as a
+/// correction, keeping the draft with fewer. The call's own LLM spend is reported (a cost scope, so concurrent
+/// Hub work is not charged to it).</para>
+/// </summary>
 public class OneShotGenerationService(
     ProseWriterRouter router,
     IDbContextFactory<ProseDbContext> dbFactory,
     IUniverseContext universeContext,
-    IDatabaseService canonDb)
+    IDatabaseService canonDb,
+    SceneCanonGroundingService? grounding = null,
+    TokenLedger? ledger = null)
 {
     public record OneShotGenerationRequest(
         string BeatGoal,
@@ -41,19 +56,73 @@ public class OneShotGenerationService(
         /// <summary>Optional universe slug override. Null = the ambient current universe.</summary>
         string? Universe = null,
         int BeatIndex = 0,
-        int TotalBeats = 0);
+        int TotalBeats = 0,
+        /// <summary>Entity ids/names the scene is about (a game text's <c>about</c>), grounded like the characters
+        /// and location.</summary>
+        IReadOnlyList<string>? About = null,
+        /// <summary>False: report invented names without the one corrective rewrite.</summary>
+        bool RetryOnUnknown = true);
 
     public record OneShotGenerationResult(
         string Text,
         int WordCount,
         string UniverseSlug,
-        string? AttachedNodeSlug);
+        string? AttachedNodeSlug)
+    {
+        /// <summary>The entities the scene was grounded on (resolved from characters, location, about).</summary>
+        public IReadOnlyList<string> GroundedOn { get; init; } = [];
+        /// <summary>The requested characters/location/about words that resolved to no entity.</summary>
+        public IReadOnlyList<string> Unresolved { get; init; } = [];
+        /// <summary>The X-Ray roster the scene was written with.</summary>
+        public IReadOnlyList<string> CanonRoster { get; init; } = [];
+        /// <summary>Capitalised names in the returned text that the universe's canon does not have.</summary>
+        public IReadOnlyList<string> UnknownNames { get; init; } = [];
+        /// <summary>The names the first draft invented, when a corrective rewrite ran.</summary>
+        public IReadOnlyList<string> FirstDraftUnknownNames { get; init; } = [];
+        public bool Retried { get; init; }
+        public int LlmCalls { get; init; }
+        public int InputTokens { get; init; }
+        public int OutputTokens { get; init; }
+        /// <summary>This call's LLM spend in USD (estimated from tokens at the model's rate; 0 for subscription CLIs).</summary>
+        public double CostUsd { get; init; }
+
+        /// <summary>The one response shape the HTTP, MCP and CLI (--json) surfaces return.</summary>
+        public object ToResponse() => new
+        {
+            text = Text,
+            wordCount = WordCount,
+            universe = UniverseSlug,
+            attachedNode = AttachedNodeSlug,
+            groundedOn = GroundedOn,
+            unresolved = Unresolved,
+            canonRoster = CanonRoster,
+            unknownNames = UnknownNames,
+            firstDraftUnknownNames = FirstDraftUnknownNames,
+            retried = Retried,
+            cost = new { llmCalls = LlmCalls, inputTokens = InputTokens, outputTokens = OutputTokens, usd = CostUsd },
+        };
+    }
 
     public async Task<OneShotGenerationResult> GenerateAsync(OneShotGenerationRequest req, CancellationToken ct = default)
     {
         if (string.IsNullOrWhiteSpace(req.BeatGoal))
             throw new ArgumentException("BeatGoal is required.", nameof(req));
 
+        using var costScope = LlmActionContext.BeginCostScope();
+        var result = await GenerateCoreAsync(req, ct);
+        if (ledger == null) return result;
+        var mine = ledger.GetEntries().Where(e => e.CostScopes.Contains(costScope.Id)).ToList();
+        return result with
+        {
+            LlmCalls = mine.Count,
+            InputTokens = mine.Sum(e => e.InputTokens),
+            OutputTokens = mine.Sum(e => e.OutputTokens),
+            CostUsd = Math.Round(mine.Sum(e => e.TotalCost), 6),
+        };
+    }
+
+    private async Task<OneShotGenerationResult> GenerateCoreAsync(OneShotGenerationRequest req, CancellationToken ct)
+    {
         Guid? universeId = null;
         string universeSlug = universeContext.CurrentSlug;
         if (!string.IsNullOrWhiteSpace(req.Universe))
@@ -120,22 +189,72 @@ public class OneShotGenerationService(
                 CharactersInScene = characters,
             };
 
-            var prose = await router.WriteAsync(
-                context,
-                beatId: Guid.Empty,
-                beatIndex: req.BeatIndex,
-                totalBeats: req.TotalBeats,
-                universeId: universeId ?? Guid.Empty,
-                ct: ct);
-            prose = (prose ?? "").Trim();
+            // PRS-T926: ground the scene in the universe's canon. The router assembles an X-Ray only for a real
+            // beat id, and its entity/doc stacks only for a node, so without this a game universe (no book node)
+            // and any draft text got no canon at all.
+            SceneCanonGroundingService.Grounding? g = null;
+            var groundingUniverseId = universeId ?? universeContext.CurrentId;
+            if (grounding != null && groundingUniverseId != Guid.Empty)
+            {
+                g = await grounding.BuildAsync(groundingUniverseId, universeSlug, context.BeatGoal, req.Subtext,
+                    characters, req.Location, req.About ?? [], ct);
+                context = context with
+                {
+                    XRayContext = g.XRayBlock,
+                    RelationshipContext = g.CanonBlock,
+                };
+            }
+
+            var prose = await WriteOnceAsync(context, req, universeId, ct);
+            IReadOnlyList<string> unknown = g == null ? [] : SceneCanonGroundingService.FindUnknownNames(prose, g);
+            IReadOnlyList<string> firstUnknown = [];
+            var retried = false;
+
+            if (g != null && unknown.Count > 0 && req.RetryOnUnknown)
+            {
+                // One corrective rewrite, never a loop: the names it invented become a repair constraint.
+                var correction =
+                    $"- The previous draft of this scene invented names the {universeSlug} canon does not have: " +
+                    string.Join(", ", unknown.Select(n => $"\"{n}\"")) + ". Do not use them. Use only names given in the " +
+                    "canon grounding and scene x-ray; describe any other person, ship or place by role or look.";
+                var second = await WriteOnceAsync(context with { RepairConstraintContext = correction }, req, universeId, ct);
+                var secondUnknown = SceneCanonGroundingService.FindUnknownNames(second, g);
+                retried = true;
+                firstUnknown = unknown;
+                if (second.Length > 0 && secondUnknown.Count <= unknown.Count)
+                {
+                    prose = second;
+                    unknown = secondUnknown;
+                }
+            }
 
             var wordCount = prose.Length == 0 ? 0 : prose.Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries).Length;
-            return new OneShotGenerationResult(prose, wordCount, universeSlug, attachedNodeSlug);
+            return new OneShotGenerationResult(prose, wordCount, universeSlug, attachedNodeSlug)
+            {
+                GroundedOn = g?.Pinned.Select(p => $"{p.Name} ({p.EntityType})").ToList() ?? [],
+                Unresolved = g?.Unresolved ?? [],
+                CanonRoster = g?.RosterNames ?? [],
+                UnknownNames = unknown,
+                FirstDraftUnknownNames = firstUnknown,
+                Retried = retried,
+            };
         }
         finally
         {
             if (universeId != null) universeContext.SetFlowUniverse(null);
         }
+    }
+
+    private async Task<string> WriteOnceAsync(BeatContext context, OneShotGenerationRequest req, Guid? universeId, CancellationToken ct)
+    {
+        var prose = await router.WriteAsync(
+            context,
+            beatId: Guid.Empty,
+            beatIndex: req.BeatIndex,
+            totalBeats: req.TotalBeats,
+            universeId: universeId ?? Guid.Empty,
+            ct: ct);
+        return (prose ?? "").Trim();
     }
 
     /// <summary>Best-effort: resolve each raw token to its canonical character Name (exact Name

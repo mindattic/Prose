@@ -26,53 +26,55 @@ public class OneShotGenerationTools
     }
 
     [McpServerTool, Description("Write a scene or line of dialog without a pre-existing Book/Chapter/Beat row. " +
-        "Ephemeral by default: pacing, dialogue voice profiles, canon-fact grounding, consequence/gear constraints, " +
-        "ambient sensory grounding, and entity pre-check warnings all still apply. Pass node to borrow an existing " +
-        "book's canon/continuity ('attached mode') without writing a Beat row to it.")]
+        "Grounded in the universe's canon (PRS-T926; works for game universes and draft texts with no book node): the " +
+        "characters, location and about entities are resolved and the scene is written from their records, relations " +
+        "(gate links, roads, faction ties), surroundings and approved descriptions, under a use-only-canon-names rule. " +
+        "The result lists groundedOn, unresolved request words, unknownNames (names in the text the canon lacks; one " +
+        "corrective rewrite runs first unless retryOnUnknown=false) and the call's cost. Pass node to borrow an existing " +
+        "book's canon/continuity ('attached mode') without writing a Beat row to it. Writes nothing.")]
     public Task<string> GenerateScene(
         [Description("What should happen in this scene/line — the beat goal.")] string beatGoal,
-        [Description("Comma-separated character names on screen (activates dialogue voice profiles and continuity/consequence grounding).")] string? characters = null,
-        [Description("Raw location hint for ambient sensory grounding, e.g. 'The Spine, Zone 3'.")] string? location = null,
+        [Description("Comma-separated character names, aliases or entity ids on screen.")] string? characters = null,
+        [Description("Where it happens: an entity name, alias or id of the universe (e.g. 'Earth Orbital'), or a loose hint ('the cathedral').")] string? location = null,
         [Description("What's happening beneath the surface — foreshadowing, unspoken motivation, dramatic irony.")] string? subtext = null,
         [Description("Optional slug/NodeCode/GUID of an existing Book or Chapter to borrow canon and continuity from. Omit for pure ephemeral.")] string? node = null,
         [Description("Optional universe slug override; defaults to the session's current universe.")] string? universe = null,
         [Description("Zero-based position in an imagined beat sequence, for pacing guidance. 0 if unknown.")] int beatIndex = 0,
-        [Description("Total beats in that imagined sequence, for pacing guidance. 0 disables positional pacing.")] int totalBeats = 0) =>
+        [Description("Total beats in that imagined sequence, for pacing guidance. 0 disables positional pacing.")] int totalBeats = 0,
+        [Description("Comma-separated entity ids/names the scene is about (a game text's about), grounded like the characters.")] string? about = null,
+        [Description("False: report invented names without the one corrective rewrite.")] bool retryOnUnknown = true) =>
         hub.InvokeAsync(nameof(OneShotGenerationTools), nameof(GenerateSceneImpl),
-            new { beatGoal, characters, location, subtext, node, universe, beatIndex, totalBeats });
+            new { beatGoal, characters, location, subtext, node, universe, beatIndex, totalBeats, about, retryOnUnknown });
 
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
     public async Task<string> GenerateSceneImpl(
         string beatGoal, string? characters, string? location, string? subtext,
-        string? node, string? universe, int beatIndex, int totalBeats)
+        string? node, string? universe, int beatIndex, int totalBeats, string? about = null, bool retryOnUnknown = true)
     {
-        var characterList = string.IsNullOrWhiteSpace(characters)
-            ? Array.Empty<string>()
-            : characters.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries);
-
         try
         {
             var result = await generation.GenerateAsync(new OneShotGenerationService.OneShotGenerationRequest(
                 BeatGoal: beatGoal,
-                Characters: characterList,
+                Characters: SplitList(characters),
                 Location: location,
                 Subtext: subtext,
                 Node: node,
                 Universe: universe,
                 BeatIndex: beatIndex,
-                TotalBeats: totalBeats));
+                TotalBeats: totalBeats,
+                About: SplitList(about),
+                RetryOnUnknown: retryOnUnknown));
 
-            return JsonSerializer.Serialize(new
-            {
-                text = result.Text,
-                wordCount = result.WordCount,
-                universe = result.UniverseSlug,
-                attachedNode = result.AttachedNodeSlug,
-            }, JsonOpts);
+            return JsonSerializer.Serialize(result.ToResponse(), JsonOpts);
         }
         catch (Exception ex) when (ex is InvalidOperationException or ArgumentException)
         {
             return JsonSerializer.Serialize(new { error = "generate_scene_failed", detail = ex.Message }, JsonOpts);
         }
     }
+
+    private static string[] SplitList(string? csv) =>
+        string.IsNullOrWhiteSpace(csv)
+            ? Array.Empty<string>()
+            : csv.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries);
 }

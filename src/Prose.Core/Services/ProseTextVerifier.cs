@@ -166,6 +166,42 @@ public class ProseTextVerifier
     public IReadOnlyList<FindingRow> ListFindingRows(string universeSlug, string? id = null, FindingStatus? status = null, int limit = 500) =>
         ListFindings(universeSlug, id, status, limit).Select(ToRow).ToList();
 
+    /// <summary>The findings in any of <paramref name="statuses"/> (null: every status), most severe and newest first.</summary>
+    public IReadOnlyList<FindingRow> ListFindingRows(string universeSlug, string? id, IReadOnlyCollection<FindingStatus>? statuses, int limit = 500)
+    {
+        if (statuses == null) return ListFindingRows(universeSlug, id, (FindingStatus?)null, limit);
+        if (statuses.Count == 1) return ListFindingRows(universeSlug, id, statuses.First(), limit);
+        return statuses.Distinct()
+            .SelectMany(s => ListFindings(universeSlug, id, s, limit))
+            .OrderByDescending(f => f.Severity).ThenByDescending(f => f.DetectedAt)
+            .Take(limit)
+            .Select(ToRow).ToList();
+    }
+
+    /// <summary>The statuses a findings filter names, for the HTTP, MCP and CLI surfaces (PRS-T926: <c>open</c> was
+    /// refused with a 400). <c>new</c>, <c>triaged</c>, <c>applied</c>, <c>dismissed</c> are one status each;
+    /// <c>open</c> is the ones still to rule on (new and triaged); <c>all</c> or none is every status (null).
+    /// False, with the error, for any other word.</summary>
+    public static bool TryParseStatusFilter(string? status, out IReadOnlyCollection<FindingStatus>? statuses, out string? error)
+    {
+        statuses = null;
+        error = null;
+        var s = (status ?? "").Trim();
+        if (s.Length == 0 || s.Equals("all", StringComparison.OrdinalIgnoreCase)) return true;
+        if (s.Equals("open", StringComparison.OrdinalIgnoreCase))
+        {
+            statuses = [FindingStatus.New, FindingStatus.Triaged];
+            return true;
+        }
+        if (Enum.TryParse<FindingStatus>(s, ignoreCase: true, out var parsed) && Enum.IsDefined(parsed))
+        {
+            statuses = [parsed];
+            return true;
+        }
+        error = $"unknown status '{status}' (open, new, triaged, applied, dismissed, all)";
+        return false;
+    }
+
     public static FindingRow ToRow(Finding f)
     {
         var at = ParsePath(f.FilePath);
@@ -200,6 +236,8 @@ public class ProseTextVerifier
         public Dictionary<string, TextRecord> TextById = new(StringComparer.Ordinal);
         /// <summary>Each live (not retired) text's current version: its pending draft, else its live version.</summary>
         public Dictionary<string, TextVersion> Current = new(StringComparer.Ordinal);
+        /// <summary>The universe's declared <c>$outcome</c> node names (PRS-T926); empty when none are declared.</summary>
+        public HashSet<string> OutcomeNodes = new(StringComparer.Ordinal);
 
         public static Corpus Build(string universe, IEnumerable<EntityInfo> entities, IEnumerable<TextRecord> texts)
         {
@@ -252,10 +290,82 @@ public class ProseTextVerifier
             .Select(e => new { e.Id, e.Slug, e.Name, e.EntityType, e.Status })
             .ToListAsync(ct);
         var texts = await LoadAllAsync(db, universe.Id, ct);
-        return Corpus.Build(universe.Slug,
+        var corpus = Corpus.Build(universe.Slug,
             entities.Where(e => !string.IsNullOrEmpty(e.Slug))
                 .Select(e => new EntityInfo(e.Id, e.Slug!, e.Name ?? "", e.EntityType ?? "", e.Status ?? "")),
             texts.Select(t => t.Record));
+        corpus.OutcomeNodes = await ReadOutcomeNodesAsync(db, universe.Id, ct);
+        return corpus;
+    }
+
+    // ── Declared $outcome node names (PRS-T926) ────────────────────────────
+
+    /// <summary>The per-universe Settings row holding the names of the conversation nodes a game re-enters after a
+    /// <c>$outcome</c> exit, as a JSON array of strings. Written by <see cref="SetOutcomeNodesAsync"/> (the HTTP
+    /// <c>PUT /api/universes/{slug}/texts/outcome-nodes</c>, and the consumer kit's <c>push</c> from the config's
+    /// <c>outcomeNodes</c>).</summary>
+    public const string OutcomeNodesSettingKey = "texts.outcome-nodes";
+
+    private static async Task<HashSet<string>> ReadOutcomeNodesAsync(ProseDbContext db, Guid universeId, CancellationToken ct)
+    {
+        var json = await db.Settings.IgnoreQueryFilters().AsNoTracking()
+            .Where(s => s.Key == OutcomeNodesSettingKey && s.UniverseId == universeId)
+            .Select(s => s.Json).FirstOrDefaultAsync(ct);
+        return ParseOutcomeNodes(json);
+    }
+
+    internal static HashSet<string> ParseOutcomeNodes(string? json)
+    {
+        var set = new HashSet<string>(StringComparer.Ordinal);
+        if (string.IsNullOrWhiteSpace(json)) return set;
+        try
+        {
+            foreach (var n in JsonSerializer.Deserialize<List<string>>(json) ?? [])
+                if (!string.IsNullOrWhiteSpace(n)) set.Add(n.Trim());
+        }
+        catch (JsonException) { /* an unreadable row declares nothing */ }
+        return set;
+    }
+
+    /// <summary>The universe's declared outcome node names, sorted.</summary>
+    public async Task<List<string>> GetOutcomeNodesAsync(string universeSlug, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var slug = (universeSlug ?? "").Trim().ToLowerInvariant();
+        var universe = await db.Universes.FirstOrDefaultAsync(u => u.Slug == slug, ct)
+            ?? throw new InvalidOperationException($"unknown universe '{slug}'");
+        return (await ReadOutcomeNodesAsync(db, universe.Id, ct)).OrderBy(n => n, StringComparer.Ordinal).ToList();
+    }
+
+    /// <summary>Replace the universe's declared outcome node names (an empty list clears them). Names are node ids:
+    /// no <c>$</c>, no whitespace. Returns the stored, sorted list. Re-verify the texts to refresh their findings.</summary>
+    public async Task<List<string>> SetOutcomeNodesAsync(string universeSlug, IEnumerable<string>? names, CancellationToken ct = default)
+    {
+        var clean = (names ?? []).Select(n => (n ?? "").Trim()).Where(n => n.Length > 0)
+            .Distinct(StringComparer.Ordinal).OrderBy(n => n, StringComparer.Ordinal).ToList();
+        var bad = clean.Where(n => n.StartsWith('$') || n.Any(char.IsWhiteSpace)).ToList();
+        if (bad.Count > 0)
+            throw new InvalidOperationException($"not a node name: {string.Join(", ", bad.Select(b => $"'{b}'"))}");
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var slug = (universeSlug ?? "").Trim().ToLowerInvariant();
+        var universe = await db.Universes.FirstOrDefaultAsync(u => u.Slug == slug, ct)
+            ?? throw new InvalidOperationException($"unknown universe '{slug}'");
+        var row = await db.Settings.IgnoreQueryFilters()
+            .FirstOrDefaultAsync(s => s.Key == OutcomeNodesSettingKey && s.UniverseId == universe.Id, ct);
+        if (clean.Count == 0)
+        {
+            if (row != null) db.Settings.Remove(row);
+        }
+        else
+        {
+            var json = JsonSerializer.Serialize(clean);
+            if (row == null)
+                db.Settings.Add(new Data.Entities.Setting { Key = OutcomeNodesSettingKey, Json = json, UniverseId = universe.Id, UpdatedAt = DateTime.UtcNow });
+            else { row.Json = json; row.UpdatedAt = DateTime.UtcNow; }
+        }
+        await db.SaveChangesAsync(ct);
+        return clean;
     }
 
     // ── The analysis (pure: corpus in, findings out) ───────────────────────
@@ -269,7 +379,7 @@ public class ProseTextVerifier
         CheckContinuity(record, v, corpus, strings, sink);
         CheckObligations(record, v, corpus, sink);
         CheckVoice(record, v, corpus, sink);
-        if (record.Kind == "conversation") CheckBranches(v, sink);
+        if (record.Kind == "conversation") CheckBranches(v, sink, corpus.OutcomeNodes);
         if (record.Kind == "bark") CheckBarks(record, v, corpus, sink);
         return sink.Found;
     }
@@ -470,7 +580,15 @@ public class ProseTextVerifier
 
     // ── Branching conversations ────────────────────────────────────────────
 
-    internal static void CheckBranches(TextVersion v, Sink sink)
+    /// <summary>The token a choice or node <c>next</c> uses to hand the talk to the game, which comes back into the
+    /// conversation at the node named after what the action came to (SpaceGod: <c>talked</c>, <c>fought</c>, …;
+    /// GridGame: <c>join</c>, <c>part</c>). See <see cref="OutcomeNodesSettingKey"/>.</summary>
+    public const string OutcomeToken = "$outcome";
+
+    /// <param name="outcomeNodes">The universe's declared outcome node names (PRS-T926). When a reachable node exits
+    /// to <see cref="OutcomeToken"/>, every node of the text with one of these names is reachable too: the game
+    /// re-enters the talk there. Null or empty: <c>$outcome</c> only ends the talk, as before.</param>
+    internal static void CheckBranches(TextVersion v, Sink sink, IReadOnlySet<string>? outcomeNodes = null)
     {
         var p = v.Payload;
         if (p.ValueKind != JsonValueKind.Object || !p.TryGetProperty("nodes", out var nodes) || nodes.ValueKind != JsonValueKind.Array) return;
@@ -509,6 +627,9 @@ public class ProseTextVerifier
             if (targets.Count == 0) exits = true; // an ending
             foreach (var t in targets)
             {
+                if (t == OutcomeToken && outcomeNodes is { Count: > 0 })
+                    foreach (var o in outcomeNodes)
+                        if (graph.ContainsKey(o)) queue.Enqueue(o); // the game comes back at the outcome's node
                 if (t.StartsWith('$')) { exits = true; continue; } // the game takes over
                 if (graph.ContainsKey(t)) queue.Enqueue(t);
             }

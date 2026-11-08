@@ -162,7 +162,7 @@ findings, never as a refusal:
 | `TEXT-CONTINUITY` | `before-introduction`, `unknown-after`, `after-order`, `place-type` | a placed text naming an entity the player only meets at a later order; a bad `after`; a `place` that is not a place |
 | `TEXT-OBLIGATION` | `quest-unresolved`, `undescribed` | a quest with no `complete`; a story text naming entities that have no `description` text |
 | `TEXT-VOICE` | `drift` | an entity speaker whose lines read closer to another speaker's established voice (`$placeholders` skipped; thin samples give no signal) |
-| `TEXT-BRANCH` | `unreachable`, `no-ending`, `duplicate-choice` | conversation nodes no path reaches; a talk with no way out; one choice offered twice |
+| `TEXT-BRANCH` | `unreachable`, `no-ending`, `duplicate-choice` | conversation nodes no path reaches (a node named in the universe's `outcomeNodes` is reached by any `$outcome` exit); a talk with no way out; one choice offered twice |
 | `TEXT-BARK` | `duplicate`, `repeated`, `long` | a line twice in a pool; a line in two pools of one speaker; a line over 140 characters |
 
 - **When:** on every draft (the draft result lists them), on every approval (single and bulk, the result lists them),
@@ -276,6 +276,7 @@ If the Hub is down, `push`, `pull`, `status` and `outbox` start the deployed `C:
   "applier": "python tools/prose_apply.py Data/Prose/pending",
   "kinds": ["conversation", "crawl", "description", "quest", "bark", "glossary"],
   "tags": ["right-answer"],
+  "outcomeNodes": ["join", "part"],
   "universeFile": "gridgame.universe.json",
   "pending": "pending",
   "applied": "applied.jsonl",
@@ -286,7 +287,12 @@ If the Hub is down, `push`, `pull`, `status` and `outbox` start the deployed `C:
 
 `root` is the game repo's root (the mapper and applier run there). `kit` is the kit contract version the game was
 built against; the kit refuses a config whose `kit` is newer than itself. `tags` is the game's own vocabulary of
-choice tags; `validate` warns on a pending text that uses a tag outside it.
+choice tags; `validate` warns on a pending text that uses a tag outside it. `outcomeNodes` (PRS-T926) names the
+conversation nodes the game re-enters after a `$outcome` exit (SpaceGod: `talked`, `complied`, `ran`, `fought`,
+`refused`, `traded`, `surrender-taken`, `no-quarter`, `plundered`, `let-go`; GridGame: `join`, `part`); `push` sends
+it to the Hub (`PUT /api/universes/{slug}/texts/outcome-nodes`), where the branch verifier counts a node of that name
+reachable from any `$outcome` exit instead of filing `TEXT-BRANCH [unreachable]`. Leave the key out to keep the
+Hub's setting as it is; `[]` clears it.
 
 ### The game's two pieces (contracts)
 
@@ -320,7 +326,9 @@ reads need no key.
 | Bulk publish | `POST /api/universes/{slug}/texts/publish[?dryRun=true] {by, kind, keyPrefix?, about?, batch?, draftedBy?, minVersion?, since?}` | `prose --texts-publish-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--batch tag] [--drafted-by name] [--min-version n] [--since date] [--dry-run] [--json]` | none |
 | Retire | `POST /api/universes/{slug}/texts/{id}/retire {by}` | `prose --texts-retire <slug> <id> --by <name>` | none |
 | Verify (RFC 0018) | `POST /api/universes/{slug}/texts/verify {ids?, kind?}` | `prose --texts-verify <slug> [id...] [--kind k] [--json]` | `verify_texts(universe, ids?, kind?)` |
-| Findings (RFC 0018) | `GET /api/universes/{slug}/texts/findings[?status=]`, `GET .../texts/{id}/findings` | `prose --texts-findings <slug> [id] [--status s] [--json]` | `text_findings(universe, id?, status?)` |
+| Findings (RFC 0018) | `GET /api/universes/{slug}/texts/findings[?status=open\|new\|triaged\|applied\|dismissed\|all]`, `GET .../texts/{id}/findings` (`open` is new and triaged) | `prose --texts-findings <slug> [id] [--status s] [--json]` | `text_findings(universe, id?, status?)` |
+| Outcome nodes (PRS-T926) | `GET /api/universes/{slug}/texts/outcome-nodes`, `PUT ... {outcomeNodes: [...]}` | the kit's `push`, from `outcomeNodes` | — |
+| Generate a scene (PRS-T926) | `POST /api/generate-scene {beatGoal, universe, characters?, location?, about?, subtext?, retryOnUnknown?}` | `prose --generate-scene "<goal>" --universe s [--characters a,b] [--location x] [--about id,id] [--no-retry] [--json]` | `generate_scene(beatGoal, universe?, characters?, location?, about?, ...)` |
 | Writer view (RFC 0018) | `/texts`, `/texts/{slug}[?entity=id]`, `/texts/{slug}/{id}`: browse by kind, key or entity; each text's versions and findings; the approval queue with bulk approve by kind (previewed, the author's name and click) | — | — |
 | Outbox | `GET /api/outbox/{consumer}[?peek=true]` | — | — |
 

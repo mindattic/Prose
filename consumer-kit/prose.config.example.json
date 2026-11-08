@@ -8,6 +8,7 @@
   "applier": "python tools/prose_apply.py Data/Prose/pending",
   "kinds": ["conversation", "crawl", "description", "quest", "bark", "glossary"],
   "tags": ["right-answer"],
+  "outcomeNodes": ["join", "part"],
   "universeFile": "gridgame.universe.json",
   "pending": "pending",
   "applied": "applied.jsonl",

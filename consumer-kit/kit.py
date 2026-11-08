@@ -102,6 +102,12 @@ class Config:
         self.batch_size = int(data.get("batchSize", 400))
         self.prune = bool(data.get("prune", True))
         self.hub = data.get("hub", DEFAULT_HUB)
+        # PRS-T926: the conversation nodes the game re-enters after a "$outcome" exit; push keeps the Hub's copy in
+        # step so the branch verifier counts them reachable. None (key absent) leaves the Hub's setting alone.
+        outcome = data.get("outcomeNodes")
+        if outcome is not None and (not isinstance(outcome, list) or not all(isinstance(n, str) and n.strip() for n in outcome)):
+            raise KitError(f"{path}: outcomeNodes must be a list of node names")
+        self.outcome_nodes = [n.strip() for n in outcome] if outcome is not None else None
 
     def _p(self, rel: str) -> str:
         return os.path.normpath(os.path.join(self.dir, rel))
@@ -224,6 +230,9 @@ class Hub:
 
     def post(self, path, body, params=None, timeout=3600):
         return self._request("POST", path, params, body, timeout, keyed=True)
+
+    def put(self, path, body, params=None, timeout=120):
+        return self._request("PUT", path, params, body, timeout, keyed=True)
 
     def up(self) -> bool:
         try:
@@ -778,9 +787,24 @@ def cmd_push(cfg: Config, args, hub: Hub) -> int:
           + (f", retired {last.get('entitiesRetired', 0)} ({last.get('pruneBasis')}), relations invalidated "
              f"{last.get('edgesInvalidated', 0)}" if mode == "replace" else "")
           + f" in {len(batches)} batch(es), {time.time() - started:.0f} s")
+    if sync_outcome_nodes(cfg, hub) != 0:
+        return 1
     if args.no_check:
         return 0
     return round_trip(cfg, hub, allow_stale=(mode == "merge"))
+
+
+def sync_outcome_nodes(cfg: Config, hub: Hub, out=print) -> int:
+    """PUT the config's outcomeNodes to the Hub (PRS-T926). Skipped when the config has no outcomeNodes key."""
+    if cfg.outcome_nodes is None:
+        return 0
+    try:
+        res = hub.put(f"/api/universes/{cfg.universe}/texts/outcome-nodes", {"outcomeNodes": cfg.outcome_nodes}) or {}
+    except HubError as e:
+        out(f"Prose refused outcomeNodes: {e}")
+        return 1
+    out(f"outcome  {cfg.universe}: {', '.join(res.get('outcomeNodes') or []) or '(none)'}")
+    return 0
 
 
 def fetch_export(cfg: Config, hub: Hub) -> str | None:

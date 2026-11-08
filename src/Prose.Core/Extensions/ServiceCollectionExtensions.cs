@@ -1317,6 +1317,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<BeatMergeService>();
         // Portable-writing-service plan, Phase 2: standalone "write me a scene" entry point that
         // doesn't require a pre-existing Book/Chapter/Beat row — see prose --generate-scene.
+        services.AddSingleton<SceneCanonGroundingService>(); // PRS-T926: canon for scenes with no beat or node
         services.AddSingleton<OneShotGenerationService>();
         // Portable-writing-service plan, Phase 4: narrow dialog-beat filter/export — see
         // prose --barks-export.

@@ -104,24 +104,19 @@ public class ProseTextTools
         return JsonSerializer.Serialize(result, ProseTextService.JsonOptsPublic);
     }
 
-    [McpServerTool, Description("The findings the game-mode verifiers (RFC 0018) filed on a universe's texts, or on one text (every version). status: new, triaged, applied, dismissed (default: all). Findings describe; the author decides.")]
+    [McpServerTool, Description("The findings the game-mode verifiers (RFC 0018) filed on a universe's texts, or on one text (every version). status: open (new and triaged), new, triaged, applied, dismissed, all (default: all). Findings describe; the author decides.")]
     public Task<string> TextFindings(
         [Description("Universe slug.")] string universe,
         [Description("One text id; omit for every text of the universe.")] string? id = null,
-        [Description("new | triaged | applied | dismissed.")] string? status = null) =>
+        [Description("open | new | triaged | applied | dismissed | all.")] string? status = null) =>
         hub.InvokeAsync(nameof(ProseTextTools), nameof(TextFindingsImpl), new { universe, id, status }, universe);
 
     /// <summary>Runs inside the Hub via ToolDispatch reflection.</summary>
     public Task<string> TextFindingsImpl(string universe, string? id = null, string? status = null)
     {
-        FindingStatus? st = null;
-        if (!string.IsNullOrWhiteSpace(status))
-        {
-            if (!Enum.TryParse<FindingStatus>(status, ignoreCase: true, out var parsed))
-                return Task.FromResult(JsonSerializer.Serialize(new { error = "unknown_status", status }, ProseTextService.JsonOptsPublic));
-            st = parsed;
-        }
-        var rows = verifier.ListFindingRows(universe, id, st);
+        if (!ProseTextVerifier.TryParseStatusFilter(status, out var statuses, out var error))
+            return Task.FromResult(JsonSerializer.Serialize(new { error = "unknown_status", status, detail = error }, ProseTextService.JsonOptsPublic));
+        var rows = verifier.ListFindingRows(universe, id, statuses);
         return Task.FromResult(JsonSerializer.Serialize(new { count = rows.Count, findings = rows }, ProseTextService.JsonOptsPublic));
     }
 }

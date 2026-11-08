@@ -62,8 +62,12 @@ public class BeatGeneratorService
     private string UniverseLine()
     {
         var u = universe?.CurrentUniverse;
-        if (u == null || u.Id == Prose.Core.Data.Entities.Universe.GlmzId || string.IsNullOrWhiteSpace(u.UniversePrimer))
+        if (u == null || u.Id == Prose.Core.Data.Entities.Universe.GlmzId)
             return "You are writing a beat in a literary cyberpunk scene set in GLMZ (Great Lakes Metropolitan Zone, 2226).";
+        // PRS-T926: another universe without a primer was told it was writing GLMZ cyberpunk — a game universe
+        // imported with no primer had its scenes framed in the wrong world. Name the universe instead.
+        if (string.IsNullOrWhiteSpace(u.UniversePrimer))
+            return $"You are writing a beat set in the {u.Name} universe. Its world is given by the canon below; do not import any other setting.";
         return $"You are writing a beat set in this universe — {u.Name}:\n{u.UniversePrimer}";
     }
 
