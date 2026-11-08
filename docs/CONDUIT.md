@@ -1,7 +1,8 @@
 # The Prose Conduit: how a game keeps its story in Prose
 
 This is the one standard every MindAttic game uses to keep its story in Prose. Today that is **GridGame**
-(universe slug `gridgame`) and **SpaceGod** (`spacegod`). The design and its reasons are in
+(universe slug `gridgame`), **SpaceGod** (`spacegod`) and **Unreal Eve** (`eve`, the Unreal Engine successor to
+ExperimentEve, which no longer consumes it). The design and its reasons are in
 [RFC 0017](rfc/0017-game-data-conduit.md), and game writing as a first-class mode of Prose (verifiers, context, the
 Writer view) in [RFC 0018](rfc/0018-game-writing-first-class.md); this page is the working spec. The entity file format is
 [RFC 0007](rfc/0007-universe-interchange.md) (`schemas/universe.schema.json`), and the text format is

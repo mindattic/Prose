@@ -8,7 +8,7 @@ A local narrative engine for books and games: SQL Server canon for whole fiction
 
 Prose runs on your own machine. There is no hosted version: the hosted deployment was retired on 2026-08-23 and the project is local-only by design.
 
-Prose writes in two modes over one engine. **Book mode** is the classical one: a book is a tree of chapters over beats, read and written whole. **Game mode** (RFC 0018) serves video games: a game's player-facing words are `prose-text/1` texts (branching conversations, opening crawls, descriptions, quest text, in-game books, bark pools, glossary terms) authored against the same canon, checked by the same kinds of instruments, approved by the author and pulled into the game through [the conduit](docs/CONDUIT.md). Today that is GridGame and SpaceGod.
+Prose writes in two modes over one engine. **Book mode** is the classical one: a book is a tree of chapters over beats, read and written whole. **Game mode** (RFC 0018) serves video games: a game's player-facing words are `prose-text/1` texts (branching conversations, opening crawls, descriptions, quest text, in-game books, bark pools, glossary terms) authored against the same canon, checked by the same kinds of instruments, approved by the author and pulled into the game through [the conduit](docs/CONDUIT.md). Today that is GridGame, SpaceGod and Unreal Eve.
 
 ## Why
 
@@ -449,7 +449,7 @@ Prose is also a store other MindAttic apps read and write (RFC 0007). The contra
 - **Scenes on demand:** `generate_scene`, `prose --generate-scene` or `POST /api/generate-scene` writes a scene or a line of dialogue without a book row, with canon grounding intact.
 - **Barks:** `--barks-export <universe> <path>` emits every single-speaker beat as `{barkId, speakerEntitySlug, text, context}`.
 
-The first consumer is [ExperimentEve](https://github.com/mindattic/ExperimentEve). The runbook for the next one is [docs/CONSUMER\_ONBOARDING.md](docs/CONSUMER%5FONBOARDING.md).
+The first consumer was [ExperimentEve](https://github.com/mindattic/ExperimentEve); its `eve` universe is now consumed by Unreal Eve through [the conduit](docs/CONDUIT.md). The runbook for the next one is [docs/CONSUMER\_ONBOARDING.md](docs/CONSUMER%5FONBOARDING.md).
 
 **Games keep their story in Prose through the conduit** ([docs/CONDUIT.md](docs/CONDUIT.md), RFC 0017): the game owns
 gameplay and entity ids, Prose owns the words. Player-facing text (conversations, crawls, descriptions, quest text,
