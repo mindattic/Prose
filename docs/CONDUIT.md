@@ -36,6 +36,11 @@ see [CONSUMER_ONBOARDING.md](CONSUMER_ONBOARDING.md).
 - **Keys:** a text's `key` is the game's own lookup handle (`^[A-Za-z0-9][A-Za-z0-9_.:/-]*$`), unique among a
   universe's live texts. The game's gameplay data refers to text by key only; a missing key fails the game's tests.
 - **Reserved:** the entity type `prose-text` is Prose's own. An interchange file that uses it is refused.
+- **GUIDs** (PRS-T923): every entity and every text also has a GUID, its Prose database id, fixed for its life (a
+  rename or a new version keeps it). Prose returns it as `guid` in every text pull (list and get) and on every entity
+  of a universe export, and the kit records a text's `guid` in `applied.jsonl` and keeps it in `pending/`, so a game
+  can key its text by GUID end to end, resolved at build time. The slug ids stay the handles every call takes. The
+  field is additive: a reader that does not know it ignores it, and an import or a draft ignores one sent to it.
 
 ## 3. The folder layout in a game repo
 
@@ -45,7 +50,7 @@ see [CONSUMER_ONBOARDING.md](CONSUMER_ONBOARDING.md).
     prose.config.json          the one config file (section 6); committed
     <slug>.universe.json       the mapper's output (gitignored: regenerated from gameplay data)
     pending/                   pulled texts waiting to be applied, one <id>.v<version>.json each (gitignored)
-    applied.jsonl              one line per applied text {id, version, hash, key, kind, appliedAt}; committed
+    applied.jsonl              one line per applied text {id, guid, version, hash, key, kind, appliedAt}; committed
     outbox.jsonl               the drained Outbox journal (gitignored)
     .kit/                      kit scratch: import batches, exports, snapshots (gitignored)
   <game text files>            written only by the game's applier; committed
@@ -90,6 +95,7 @@ The same document is the text as Prose stores it, as the API returns it, and as 
 {
   "schema": "prose-text/1",
   "id": "conversation-wanderer-ember",
+  "guid": "01a1b974-aa06-7616-b23f-2e353c489a55",
   "universe": "gridgame",
   "kind": "conversation",
   "key": "dialogue:wanderer_ember",
@@ -216,8 +222,8 @@ The kit finds `Data/Prose/prose.config.json` by walking up from the current dire
 | `validate` | checks the universe file (schema plus contract: stable ids, no duplicates, no dangling relations, no reserved type) and every `pending/*.json` text |
 | `map` | runs the game's mapper to (re)write the universe file |
 | `push [--map] [--prune] [--no-check] [--batch-size n]` | validates, imports in batches as one import session (one Outbox notice), with `--prune` retires entities the game no longer has, then exports back, diffs, and runs the leak check |
-| `diff <ours> <theirs>` | semantic diff of two interchange files |
-| `leak <ours> <snapshot>` | every node and edge in a Hub `/snapshot?scope=all` must be one of the file's, compared by entity name (texts and retired entities are ignored; a retired node that is the only node of a live entity's name is kept, since an older Hub merged the two) |
+| `diff [<ours> <theirs>]` | semantic diff of two interchange files; with none, the universe file against a fresh export from the Hub. Entities Prose authored itself (export `origin: "prose"`) and their relations are set aside |
+| `leak [<ours> <snapshot> [--export f]]` | every node and edge in a Hub `/snapshot?scope=all` must be one of the file's, compared by entity name (texts and retired entities are ignored; a retired node that is the only node of a live entity's name is kept, since an older Hub merged the two); with no files, live against the Hub. Prose-authored entities named by the export (matched by `entityId` = `guid`) are set aside with every edge that touches them; any other node still leaks |
 | `pull [--kind k] [--since v] [--status s] [--all]` | approved and published texts newer than `applied.jsonl` into `pending/` |
 | `apply [--dry-run]` | runs the applier, records applied texts in `applied.jsonl`, clears them from `pending/` |
 | `status` | the universe on the Hub, entity and text counts by kind and status, pending, last applied |
@@ -293,6 +299,12 @@ reads need no key.
 complete set of the game's entities: an entity a previous import brought in that the file no longer has is retired
 (`Status = archived`, kept, never deleted; a later import of the same id revives it), and an imported relation an
 entity no longer lists is invalidated. Entities Prose authored itself and texts are never retired by an import.
+
+**Export provenance** (PRS-T923). Every exported entity carries `guid` (its database id) and `origin`: `import` for an
+entity an interchange import brought in (it is in the universe's import manifest), `prose` for canon Prose authored
+itself (graded authored, or made with Prose's own tools). The kit's round trip compares only the game's entities:
+`diff` and `leak` set the `prose` ones aside, with their relations to the game's entities, so a universe the author
+has enriched in Prose still round-trips clean. Both fields are ignored on import and never stored.
 A batched push passes the same `session` on every batch and `final=true` on the last: the prune runs once, over the
 union of every batch, and the Outbox gets one notice for the whole push.
 

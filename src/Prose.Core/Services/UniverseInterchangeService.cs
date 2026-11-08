@@ -34,6 +34,18 @@ public class InterchangeEntity
     public Dictionary<string, JsonElement>? Details { get; set; }
     public List<InterchangeRelation> Relations { get; set; } = new();
     public List<string> Tags { get; set; } = new();
+    /// <summary>Export only (PRS-T923): the entity's database id. Ignored on import, never stored in the record.</summary>
+    public string? Guid { get; set; }
+    /// <summary>Export only (PRS-T923): <c>import</c> for an entity an interchange import brought in (the consumer's),
+    /// <c>prose</c> for one Prose authored itself, which a replace import never retires and a consumer's round-trip
+    /// check sets aside. Ignored on import, never stored in the record.</summary>
+    public string? Origin { get; set; }
+}
+
+public static class InterchangeOrigins
+{
+    public const string Import = "import";
+    public const string Prose = "prose";
 }
 
 public class InterchangeFile
@@ -282,6 +294,8 @@ public class UniverseInterchangeService
         {
             var entityType = MapEntityType(src.Type);
             var entitySlug = Slugify(src.Id);
+            src.Guid = null; // export-only fields (PRS-T923): a re-imported export must store the same record
+            src.Origin = null;
             var rawJson = JsonSerializer.Serialize(src, JsonOpts);
             fileKeys.Add(ManifestKey(entityType, entitySlug));
 
@@ -575,6 +589,16 @@ public class UniverseInterchangeService
             .Where(e => e.UniverseId == universe.Id && e.EntityType != ProseTextService.EntityType)
             .Select(e => new { e.Id, e.Slug }).ToDictionaryAsync(e => e.Id, e => e.Slug, ct);
 
+        // PRS-T923: which entities are the consumer's. The manifest lists every (type/slug) an interchange import
+        // brought in; without one (universes imported before PRS-T916) an entity with a record is taken as imported.
+        // Prose-authored entities (Provenance = authored, or made by Prose's own tools) export with origin "prose".
+        var manifestJson = await db.Settings.IgnoreQueryFilters()
+            .Where(s => s.Key == ManifestSettingKey && s.UniverseId == universe.Id).Select(s => s.Json).FirstOrDefaultAsync(ct);
+        HashSet<string>? manifest = null;
+        if (!string.IsNullOrWhiteSpace(manifestJson))
+            try { manifest = JsonSerializer.Deserialize<List<string>>(manifestJson, JsonOpts)?.ToHashSet(StringComparer.OrdinalIgnoreCase); }
+            catch { /* unreadable manifest: treated as absent */ }
+
         var outEntities = new List<InterchangeEntity>();
         foreach (var e in entities)
         {
@@ -587,7 +611,14 @@ public class UniverseInterchangeService
             if (fromRecord != null)
                 fromRecord.Relations = RelationsFromEdges(fromRecord.Relations ?? new(),
                     edgesBySource.TryGetValue(e.Id, out var own) ? own : new List<Edge>(), targetSlugs);
-            outEntities.Add(fromRecord ?? ReconstructEntity(e, targetSlugs, edgesBySource, tagsByEntity));
+            var outEntity = fromRecord ?? ReconstructEntity(e, targetSlugs, edgesBySource, tagsByEntity);
+            // A record a Prose tool wrote may carry no interchange id; the entity's slug is its id.
+            if (string.IsNullOrWhiteSpace(outEntity.Id)) outEntity.Id = e.Slug;
+            outEntity.Guid = e.Id.ToString("D");
+            var imported = e.Provenance != ClaimProvenance.Authored
+                && (manifest != null ? manifest.Contains(ManifestKey(e.EntityType, e.Slug)) : fromRecord != null);
+            outEntity.Origin = imported ? InterchangeOrigins.Import : InterchangeOrigins.Prose;
+            outEntities.Add(outEntity);
         }
 
         var universeSourceJson = await db.Settings.IgnoreQueryFilters()

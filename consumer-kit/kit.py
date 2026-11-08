@@ -10,9 +10,12 @@ Commands:
     push [--map] [--prune] [--merge] [--no-check] [--batch-size N]
                                 validate, import in batches as one session (one Outbox notice), then export back,
                                 diff and leak-check
-    diff <ours> <theirs> [--allow-stale]
-                                semantic diff of two interchange files
-    leak <ours> <snapshot>      every node and edge of a Hub /snapshot?scope=all must be the file's
+    diff [<ours> <theirs>] [--allow-stale]
+                                semantic diff of two interchange files (none: the universe file against the Hub),
+                                Prose-authored entities (export origin "prose") set aside
+    leak [<ours> <snapshot> [--export <file>]]
+                                every node and edge of a Hub /snapshot?scope=all must be the file's (none: live),
+                                Prose-authored entities named by the export set aside
     pull [--kind K] [--since V] [--status S] [--all]
                                 approved/published texts newer than applied.jsonl into pending/
     apply [--dry-run]           run the game's applier over pending/, record applied texts, clear them
@@ -55,6 +58,7 @@ CONFIG_RELATIVE = os.path.join("Data", "Prose", "prose.config.json")
 STABLE_ID = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 KEY_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.:/-]*$")
 PLACEHOLDER = re.compile(r"^\$[A-Za-z0-9_]+$")
+GUID_RE = re.compile(r"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$")
 TEXT_TYPE = "prose-text"
 KINDS = ("conversation", "crawl", "description", "quest", "book", "bark", "glossary")
 TEXT_STATUSES = ("draft", "approved", "published", "retired")
@@ -434,6 +438,8 @@ def validate_text(doc, universe: str | None = None, kinds=None, tags=None) -> tu
         errs.append("schema must be 'prose-text/1'")
     if not isinstance(doc.get("id"), str) or not STABLE_ID.match(doc["id"]):
         errs.append(f"id '{doc.get('id')}' is not a stable slug")
+    if doc.get("guid") is not None and not (isinstance(doc["guid"], str) and GUID_RE.match(doc["guid"])):
+        errs.append(f"guid '{doc.get('guid')}' is not a GUID")
     if universe and doc.get("universe") != universe:
         errs.append(f"universe '{doc.get('universe')}' is not '{universe}'")
     kind = doc.get("kind")
@@ -495,8 +501,28 @@ def canon(e) -> dict:
             "tags": e.get("tags", []) or []}
 
 
+def prose_authored(doc) -> list:
+    """The entities of an export Prose authored itself (origin "prose", PRS-T923): not the game's, so the round trip
+    sets them aside. A file without origins (an older Hub, or the game's own file) has none."""
+    return [e for e in doc.get("entities") or [] if isinstance(e, dict) and e.get("origin") == "prose"]
+
+
+def without_prose_authored(doc) -> tuple:
+    """(doc without its Prose-authored entities and every relation to one, how many were set aside)."""
+    authored = prose_authored(doc)
+    if not authored:
+        return doc, 0
+    gone = {e.get("id") for e in authored}
+    ents = [dict(e, relations=[r for r in e.get("relations", []) or [] if r.get("to") not in gone])
+            for e in doc["entities"] if e.get("origin") != "prose"]
+    return dict(doc, entities=ents), len(authored)
+
+
 def diff(a_path: str, b_path: str, allow_stale=False, out=print) -> int:
     a, b = load(a_path), load(b_path)
+    # Prose-authored canon (origin "prose") and its relations to the game's entities are Prose's, not the game's:
+    # compared, they would read as entities "only in theirs" and fail every push (GridGame's first push: 33).
+    b, set_aside = without_prose_authored(b)
     problems = []
     ua, ub = a.get("universe", {}), b.get("universe", {})
     for k in sorted(set(ua) | set(ub)):
@@ -510,7 +536,8 @@ def diff(a_path: str, b_path: str, allow_stale=False, out=print) -> int:
         b = dict(b, entities=[e for e in b["entities"] if e["id"] in ea])
     sa, sb = stats_of(a), stats_of(b)
     out(f"ours:   {sa['entities']} entities, {sa['edges']} edges  ({a_path})")
-    out(f"theirs: {sb['entities']} entities, {sb['edges']} edges  ({b_path})")
+    out(f"theirs: {sb['entities']} entities, {sb['edges']} edges  ({b_path})"
+        + (f"; {set_aside} Prose-authored entities set aside" if set_aside else ""))
     for t in sorted(set(sa["entitiesByType"]) | set(sb["entitiesByType"])):
         x, y = sa["entitiesByType"].get(t, 0), sb["entitiesByType"].get(t, 0)
         if x != y:
@@ -546,10 +573,13 @@ def name_slug(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", folded.lower().strip()).strip("-")
 
 
-def leak(file_path: str, snap_path: str, out=print) -> int:
+def leak(file_path: str, snap_path: str, out=print, export_path: str | None = None) -> int:
     """The Hub's graph view of the universe against the file. Texts (nodeType prose-text) and retired entities
-    (status archived) are Prose's own and are ignored, with every edge that touches them."""
+    (status archived) are Prose's own and are ignored, with every edge that touches them. With the universe's export
+    (export_path), so are the entities Prose authored itself (origin "prose", matched to nodes by entityId = guid,
+    PRS-T923) and their edges to the game's entities; any other node, from another universe or nowhere, still leaks."""
     doc, snap = load(file_path), load(snap_path)
+    authored = {str(e.get("guid")).lower() for e in prose_authored(load(export_path)) if e.get("guid")} if export_path else set()
     ents = doc["entities"]
     by_id = {e["id"]: e for e in ents}
     names = {name_slug(e["name"]) for e in ents} | set(by_id)
@@ -570,6 +600,8 @@ def leak(file_path: str, snap_path: str, out=print) -> int:
     ignored = {n.get("id") for n in all_nodes
                if n.get("nodeType") == TEXT_TYPE
                or (retired(n) and not (key[n.get("id")] in live_names and key[n.get("id")] not in live_keys))}
+    prose_nodes = {n.get("id") for n in all_nodes if str(n.get("entityId") or "").lower() in authored} - ignored
+    ignored |= prose_nodes
     nodes = [n for n in all_nodes if n.get("id") not in ignored]
     edges = [x for x in snap.get("edges") or [] if x.get("source") not in ignored and x.get("target") not in ignored]
     foreign = [n.get("id") for n in nodes if str(key[n.get("id")]) not in names and str(n.get("id")) not in names]
@@ -579,7 +611,8 @@ def leak(file_path: str, snap_path: str, out=print) -> int:
     theirs = {(key.get(x.get("source"), x.get("source")), key.get(x.get("target"), x.get("target")), x.get("relationType"))
               for x in edges}
     extra, missing = theirs - ours, ours - theirs
-    out(f"snapshot: {len(nodes)} nodes, {len(edges)} edges ({len(ignored)} text/retired nodes ignored); "
+    out(f"snapshot: {len(nodes)} nodes, {len(edges)} edges ({len(ignored) - len(prose_nodes)} text/retired nodes ignored"
+        + (f", {len(prose_nodes)} Prose-authored set aside" if prose_nodes else "") + "); "
         f"file: {len(ents)} entities, {len(ours)} distinct relations by name")
     bad = False
     if foreign or foreign_types:
@@ -740,10 +773,10 @@ def cmd_push(cfg: Config, args, hub: Hub) -> int:
     return round_trip(cfg, hub, allow_stale=(mode == "merge"))
 
 
-def round_trip(cfg: Config, hub: Hub, allow_stale: bool) -> int:
+def fetch_export(cfg: Config, hub: Hub) -> str | None:
+    """Export the universe from the Hub into the kit's scratch folder; the path, or None when Prose wrote nothing."""
     os.makedirs(cfg.scratch, exist_ok=True)
     back = os.path.join(cfg.scratch, f"{cfg.universe}.prose-export.json")
-    snap = os.path.join(cfg.scratch, f"{cfg.universe}.prose-snapshot.json")
     if os.path.isfile(back):
         os.remove(back)
     req = {"toolClass": "UniverseInterchangeTools", "method": "ExportUniverseFileImpl", "universe": cfg.universe,
@@ -751,13 +784,40 @@ def round_trip(cfg: Config, hub: Hub, allow_stale: bool) -> int:
     hub.post("/api/mcp-invoke", req, timeout=1800)
     if not os.path.isfile(back):
         print(f"Prose wrote no export at {back}")
+        return None
+    return back
+
+
+def fetch_snapshot(cfg: Config, hub: Hub) -> str:
+    os.makedirs(cfg.scratch, exist_ok=True)
+    snap = os.path.join(cfg.scratch, f"{cfg.universe}.prose-snapshot.json")
+    write_json(snap, hub.get(f"/api/universes/{cfg.universe}/snapshot", {"scope": "all"}, timeout=600))
+    return snap
+
+
+def round_trip(cfg: Config, hub: Hub, allow_stale: bool) -> int:
+    back = fetch_export(cfg, hub)
+    if back is None:
         return 1
     failed = diff(cfg.universe_file, back, allow_stale=allow_stale) != 0
-    snapshot = hub.get(f"/api/universes/{cfg.universe}/snapshot", {"scope": "all"}, timeout=600)
-    write_json(snap, snapshot)
-    failed = leak(cfg.universe_file, snap) != 0 or failed
+    snap = fetch_snapshot(cfg, hub)
+    failed = leak(cfg.universe_file, snap, export_path=back) != 0 or failed
     print("round trip " + ("FAILED" if failed else f"clean: the file and Prose's '{cfg.universe}' universe hold the same entities and edges"))
     return 1 if failed else 0
+
+
+def cmd_live_check(cfg: Config, args, hub: Hub) -> int:
+    """`diff` / `leak` with no files: the config's universe file against what the Hub holds now. Changes nothing in
+    Prose (an export and a snapshot into the kit's scratch folder)."""
+    if not os.path.isfile(cfg.universe_file):
+        raise KitError(f"no universe file at {cfg.universe_file} (run kit map)")
+    hub.ensure_up()
+    back = fetch_export(cfg, hub)
+    if back is None:
+        return 1
+    if args.cmd == "diff":
+        return diff(cfg.universe_file, back, allow_stale=args.allow_stale)
+    return leak(cfg.universe_file, fetch_snapshot(cfg, hub), export_path=back)
 
 
 def pending_files(cfg: Config) -> list:
@@ -847,8 +907,11 @@ def cmd_apply(cfg: Config, args) -> int:
             continue
         print(f"  applied  {doc['id']} v{doc['version']}  {doc['key']}{note}")
         if not args.dry_run:
-            rows.append({"id": doc["id"], "version": doc["version"], "hash": doc.get("hash"), "key": doc.get("key"),
-                         "kind": doc.get("kind"), "status": doc.get("status"), "appliedAt": now_iso()})
+            row = {"id": doc["id"], "version": doc["version"], "hash": doc.get("hash"), "key": doc.get("key"),
+                   "kind": doc.get("kind"), "status": doc.get("status"), "appliedAt": now_iso()}
+            if doc.get("guid"):
+                row["guid"] = doc["guid"]  # PRS-T923: the text's Prose GUID, passed through from the pull
+            rows.append(row)
             os.remove(path)
     append_jsonl(cfg.applied, rows)
     print(f"apply   {cfg.universe}: {counts['applied']} applied, {counts['orphan']} orphan, {counts['skipped']} skipped"
@@ -907,13 +970,14 @@ def main(argv=None) -> int:
     p.add_argument("--merge", action="store_true", help="merge mode: never retire, whatever the config says")
     p.add_argument("--no-check", action="store_true")
     p.add_argument("--batch-size", type=int)
-    d = sub.add_parser("diff")
-    d.add_argument("ours")
-    d.add_argument("theirs")
+    d = sub.add_parser("diff", help="with no files: the config's universe file against a fresh Hub export")
+    d.add_argument("ours", nargs="?")
+    d.add_argument("theirs", nargs="?")
     d.add_argument("--allow-stale", action="store_true")
-    lk = sub.add_parser("leak")
-    lk.add_argument("ours")
-    lk.add_argument("snapshot")
+    lk = sub.add_parser("leak", help="with no files: the config's universe file against a fresh Hub snapshot")
+    lk.add_argument("ours", nargs="?")
+    lk.add_argument("snapshot", nargs="?")
+    lk.add_argument("--export", help="the universe's export, so Prose-authored entities (origin prose) are set aside")
     pl = sub.add_parser("pull")
     pl.add_argument("--kind")
     pl.add_argument("--since")
@@ -933,12 +997,16 @@ def main(argv=None) -> int:
         if args.cmd == "version":
             print(f"prose consumer kit {KIT_VERSION} ({KIT_DIR})")
             return 0
-        if args.cmd == "diff":
+        if args.cmd == "diff" and args.theirs:
             return diff(args.ours, args.theirs, args.allow_stale)
-        if args.cmd == "leak":
-            return leak(args.ours, args.snapshot)
+        if args.cmd == "leak" and args.snapshot:
+            return leak(args.ours, args.snapshot, export_path=args.export)
+        if args.cmd in ("diff", "leak") and args.ours:
+            raise KitError(f"{args.cmd} takes two files, or none (live: the config's universe file against the Hub)")
         cfg = find_config(args.config)
         hub = Hub(args.hub or cfg.hub)
+        if args.cmd in ("diff", "leak"):
+            return cmd_live_check(cfg, args, hub)
         if args.cmd == "validate":
             return cmd_validate(cfg, args)
         if args.cmd == "map":

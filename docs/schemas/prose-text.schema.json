@@ -12,6 +12,11 @@
       "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
       "description": "Stable, kind-prefixed text id, e.g. conversation-wanderer-ember. Never changes."
     },
+    "guid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "PRS-T923: the text's Prose database id, stable for the text's life; every pull (list and get) returns it, and the consumer kit records it in applied.jsonl. Optional on input (a draft ignores it)."
+    },
     "universe": { "type": "string", "pattern": "^[a-z0-9-]+$" },
     "kind": { "enum": ["conversation", "crawl", "description", "quest", "book", "bark", "glossary"] },
     "key": {

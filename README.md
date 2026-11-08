@@ -1,12 +1,14 @@
 # Prose
 
-A local novel-writing engine: SQL Server canon for whole fictional universes, a desktop Writer, and a CLI and MCP server so Claude can draft, read and repair books against that canon.
+A local narrative engine for books and games: SQL Server canon for whole fictional universes, a desktop Writer, and a CLI and MCP server so Claude can draft, read and repair novels, and draft and check a game's conversations, crawls, barks and lore, against that canon.
 
-[![.NET 10](https://img.shields.io/badge/.NET-10-512BD4)](https://dotnet.microsoft.com/) [![C#](https://img.shields.io/badge/language-C%23-239120)](https://learn.microsoft.com/dotnet/csharp/) [![SQL Server](https://img.shields.io/badge/canon-SQL%20Server-CC2927)](#database) [![MCP](https://img.shields.io/badge/MCP-293%20tools-6E56CF)](docs/MCP%5FTOOLS.md) [![Platform](https://img.shields.io/badge/platform-Windows-0078D4)](#quick-start) [![Status](https://img.shields.io/badge/status-active%20development-2EA44F)](#limitations)
+[![.NET 10](https://img.shields.io/badge/.NET-10-512BD4)](https://dotnet.microsoft.com/) [![C#](https://img.shields.io/badge/language-C%23-239120)](https://learn.microsoft.com/dotnet/csharp/) [![SQL Server](https://img.shields.io/badge/canon-SQL%20Server-CC2927)](#database) [![MCP](https://img.shields.io/badge/MCP-318%20tools-6E56CF)](docs/MCP%5FTOOLS.md) [![Platform](https://img.shields.io/badge/platform-Windows-0078D4)](#quick-start) [![Status](https://img.shields.io/badge/status-active%20development-2EA44F)](#limitations)
 
 ![Covers of five books written and kept in Prose: Between the Lines, Critical Mass, Tournament, 1381 The Peasants' Revolt and M-101](docs/images/book-covers.jpg)
 
 Prose runs on your own machine. There is no hosted version: the hosted deployment was retired on 2026-08-23 and the project is local-only by design.
+
+Prose writes in two modes over one engine. **Book mode** is the classical one: a book is a tree of chapters over beats, read and written whole. **Game mode** (RFC 0018) serves video games: a game's player-facing words are `prose-text/1` texts (branching conversations, opening crawls, descriptions, quest text, in-game books, bark pools, glossary terms) authored against the same canon, checked by the same kinds of instruments, approved by the author and pulled into the game through [the conduit](docs/CONDUIT.md). Today that is GridGame and SpaceGod.
 
 ## Why
 
@@ -16,6 +18,7 @@ Prose runs on your own machine. There is no hosted version: the hosted deploymen
 - Edit prose by hand in a real editor. The Writer is a desktop window over the same database the CLI and MCP tools use.
 - Know which checks earn their keep. Every quality instrument is measured by how many of its findings were ever applied; the ones that never helped are switched off, not left burning tokens.
 - Run several universes side by side (cyberpunk, fantasy, horror, nonfiction and more) with scoping that fails closed instead of leaking one universe into another.
+- Keep a game's story out of the game repo. The game owns gameplay and entity ids; Prose owns the words, checks them against canon and hands the game only what the author approved.
 
 ## Features
 
@@ -25,7 +28,7 @@ Prose.Hub is an ASP.NET Core process bound to `127.0.0.1:5900`. It is the only p
 
 ### The Writer
 
-`Writer.exe` is a WPF + WebView2 window that finds or starts the Hub and opens its `/writer` page. The editor itself (`Prose.WriterUi`) is compiled into the Hub, with a book editor, a reader view (`/read`) and a canon browser (`/repo`). `Launcher.exe` is a small picker that opens the Writer or the KDP publishing app, starting the Hub first when needed.
+`Writer.exe` is a WPF + WebView2 window that finds or starts the Hub and opens its `/writer` page. The editor itself (`Prose.WriterUi`) is compiled into the Hub, with a book editor, a reader view (`/read`), a canon browser (`/repo`) and the game texts view (`/texts`). `Launcher.exe` is a small picker that opens the Writer or the KDP publishing app, starting the Hub first when needed.
 
 ### The observability dashboard
 
@@ -34,6 +37,10 @@ Prose.Hub is an ASP.NET Core process bound to `127.0.0.1:5900`. It is the only p
 ### The Novel Factory
 
 The current way of working (RFC 0015, approved 2026-09-23). Every book moves through computed stations: planned, written, captured, read, clean, verified, pressed. Work is driven by work orders, decisions are recorded as rulings, and each Claude session is a row in the database. No LLM judges, votes or scores. See [The Novel Factory](#the-novel-factory) below.
+
+### Game writing
+
+A game universe's texts are first-class rows, versioned (`draft → approved → published → retired`), each optionally placed in the game with a `context` (place, chapter, order, trigger, the texts it comes after) so continuity can be judged in a game with no single reading order. Every draft and approval runs deterministic game-mode verifiers and files findings: canon (a retired entity used as current, a glossary term defined twice), continuity (a name the player meets before its introduction), obligations (a quest with no payoff), voice per speaker, conversation branches (unreachable nodes, loops with no way out) and bark pools (repeats, overlong lines). Findings describe; the author approves, one text or a whole kind at a time, in the `/texts` view or the CLI; agents can only draft. See [RFC 0018](docs/rfc/0018-game-writing-first-class.md) and [docs/CONDUIT.md](docs/CONDUIT.md).
 
 ### Canon as a database
 
@@ -59,7 +66,7 @@ Every canon row belongs to exactly one universe. Books are a tree of nodes (seri
 
 ### MCP server
 
-293 tools in 53 families, surfaced to any MCP client as `mcp__prose__<name>`. Claude can read and write beats, entities, rulings and work orders through the same Hub the CLI uses.
+318 tools in 56 families, surfaced to any MCP client as `mcp__prose__<name>`. Claude can read and write beats, entities, rulings and work orders, and draft and verify game texts, through the same Hub the CLI uses.
 
 ## Quick start
 
@@ -116,7 +123,7 @@ Build `src/Prose.Mcp` in Release first. The tools appear as `mcp__prose__*`. For
  Prose.Mcp (stdio MCP) ----POST /api/mcp-invoke----+
  Prose.Writer.exe (WebView2) ----GET /writer-------+--> Prose.Hub (Hub.exe, 127.0.0.1:5900) --> SQL Server
  Prose.Launcher.exe ----starts the Hub if down-----+      hosts the Prose.Core services,
-                                                          Prose.WriterUi (/writer, /read, /repo)
+                                                          Prose.WriterUi (/writer, /read, /repo, /texts)
                                                           and Prose.ObserverUi (/app)
 ```
 
@@ -366,7 +373,7 @@ Cost-gated commands spend model money and route through the Hub's cost gate; eve
 
 ## MCP server
 
-`Prose.Mcp` exposes 293 `[McpServerTool]` methods in 53 families. The generated reference, with parameters and descriptions, is [docs/MCP\_TOOLS.md](docs/MCP%5FTOOLS.md). Regenerate it with:
+`Prose.Mcp` exposes 318 `[McpServerTool]` methods in 56 families. The generated reference, with parameters and descriptions, is [docs/MCP\_TOOLS.md](docs/MCP%5FTOOLS.md). Regenerate it with:
 
 ```powershell
 dotnet run --project src/Prose.Mcp -- --export-tools docs/MCP_TOOLS.md
@@ -451,7 +458,9 @@ books, barks, glossary) is authored in Prose as `prose-text/1` texts against the
 approved by the author only (`--texts-approve/-publish/-retire`, or in bulk by kind with
 `--texts-approve-all/--texts-publish-all`, `--dry-run` first), and pulled into the game by the shared
 [consumer kit](consumer-kit/kit.py) (`validate`, `push`, `pull`, `apply`, `status`, `outbox`), which every game runs
-by path from this repo.
+by path from this repo. Each text is checked by the game-mode verifiers on draft and approval (`--texts-verify`,
+`--texts-findings`, MCP `verify_texts`/`text_findings`), and the author works the approval queue in the Writer at
+`/texts` (RFC 0018).
 
 ## LLM providers
 
@@ -635,6 +644,7 @@ Ten invention disclosures describe systems in the engine as designed. They are p
 - [docs/CRAFT\_SCIENCES.md](docs/CRAFT%5FSCIENCES.md): the sources behind the craft doctrine (the doctrine itself, `CRAFT.md` and `DELIGHT.md`, is generated).
 - [docs/EXPORTS.md](docs/EXPORTS.md), [docs/LEDGER.md](docs/LEDGER.md) and [docs/FINDING-CODES.md](docs/FINDING-CODES.md): export retention and rendering, the story ledger, and finding codes and their suppression.
 - [docs/CLI\_COMMANDS.md](docs/CLI%5FCOMMANDS.md) and [docs/MCP\_TOOLS.md](docs/MCP%5FTOOLS.md): generated command and tool references.
+- [docs/CONDUIT.md](docs/CONDUIT.md) and [RFC 0018](docs/rfc/0018-game-writing-first-class.md): how games keep their story in Prose, and game writing as a first-class mode.
 - [docs/rfc](docs/rfc): open design notes (decided ones are folded into the bible and deleted).
 - [src/README.md](src/README.md): the solution map.
 

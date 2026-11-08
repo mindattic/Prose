@@ -146,6 +146,9 @@ public class ProseTextService
     {
         public string Schema { get; set; } = ProseTextService.Schema;
         public string Id { get; set; } = "";
+        /// <summary>PRS-T923: the text's database id (its Entities row), stable for the text's life, so a game can key
+        /// its text by GUID end to end. Additive: older readers ignore it.</summary>
+        public string? Guid { get; set; }
         public string Universe { get; set; } = "";
         public string Kind { get; set; } = "";
         public string Key { get; set; } = "";
@@ -696,7 +699,7 @@ public class ProseTextService
             throw new InvalidOperationException($"since '{since}' is neither a version number nor a date");
 
         var docs = new List<TextDoc>();
-        foreach (var (record, updatedAt, _) in rows.OrderBy(r => r.Record.Kind).ThenBy(r => r.Record.Id))
+        foreach (var (record, updatedAt, entityId) in rows.OrderBy(r => r.Record.Kind).ThenBy(r => r.Record.Id))
         {
             if (!string.IsNullOrWhiteSpace(kind) && !string.Equals(record.Kind, kind.Trim(), StringComparison.OrdinalIgnoreCase)) continue;
             TextVersion? v = mode switch
@@ -711,7 +714,7 @@ public class ProseTextService
             if (!string.IsNullOrWhiteSpace(key) && v.Key != key.Trim()) continue;
             if (sinceVersion != null && v.Version <= sinceVersion) continue;
             if (sinceDate != null && (v.PublishedAt ?? v.ApprovedAt ?? DateTime.MinValue) <= sinceDate) continue;
-            docs.Add(ToDoc(record, v, updatedAt, record.Retired && mode is "retired" or "all"));
+            docs.Add(ToDoc(record, v, updatedAt, record.Retired && mode is "retired" or "all", entityId));
         }
         return docs;
     }
@@ -727,7 +730,7 @@ public class ProseTextService
         if (row.Record == null) return null;
         var v = version != null ? row.Record.Versions.FirstOrDefault(x => x.Version == version)
             : row.Record.Live ?? row.Record.Head;
-        return v == null ? null : ToDoc(row.Record, v, row.UpdatedAt, row.Record.Retired && version == null);
+        return v == null ? null : ToDoc(row.Record, v, row.UpdatedAt, row.Record.Retired && version == null, row.EntityId);
     }
 
     /// <summary>Every version of one text, oldest first (the history view).</summary>
@@ -952,13 +955,13 @@ public class ProseTextService
 
     private static string NormSlug(string s) => (s ?? "").Trim().ToLowerInvariant();
 
-    private static TextDoc ToDoc(TextRecord r, TextVersion v, DateTime updatedAt, bool asRetired)
+    private static TextDoc ToDoc(TextRecord r, TextVersion v, DateTime updatedAt, bool asRetired, Guid entityId)
     {
         var live = r.Live;
         var draft = r.Draft;
         return new TextDoc
         {
-            Id = r.Id, Universe = r.Universe, Kind = r.Kind,
+            Id = r.Id, Guid = entityId == System.Guid.Empty ? null : entityId.ToString("D"), Universe = r.Universe, Kind = r.Kind,
             Key = v.Key, About = v.About, Speakers = v.Speakers,
             Version = v.Version,
             Status = asRetired ? Status.Retired : v.Status,

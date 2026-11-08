@@ -172,6 +172,32 @@ public class ProseTextServiceTests
         Assert.That(clash.Errors, Has.Some.Contains("already used by text 'conversation-recruit-ronin'"));
     }
 
+    /// <summary>PRS-T923: list and get both return the text's database id as <c>guid</c>, the same on every version and
+    /// every status, so a game can key its text by GUID end to end.</summary>
+    [Test]
+    public async Task List_and_get_return_the_texts_guid_on_every_version()
+    {
+        await svc.DraftAsync("gridgame", Conversation(), "agent");
+        Guid entityId;
+        await using (var db = await dbFactory.CreateDbContextAsync())
+            entityId = await db.Entities.IgnoreQueryFilters()
+                .Where(e => e.EntityType == ProseTextService.EntityType && e.Slug == "conversation-recruit-ronin")
+                .Select(e => e.Id).SingleAsync();
+        var guid = entityId.ToString("D");
+
+        Assert.That((await svc.GetAsync("gridgame", "conversation-recruit-ronin"))!.Guid, Is.EqualTo(guid));
+        Assert.That((await svc.ListAsync("gridgame", status: "draft")).Single().Guid, Is.EqualTo(guid));
+        await svc.ApproveAsync("gridgame", ["conversation-recruit-ronin"], "ryan");
+        await svc.DraftAsync("gridgame", Conversation(line: "Keep driving, I said."), "agent");
+        Assert.That((await svc.ListAsync("gridgame")).Single().Guid, Is.EqualTo(guid), "the live v1");
+        Assert.That((await svc.GetAsync("gridgame", "conversation-recruit-ronin", version: 2))!.Guid, Is.EqualTo(guid));
+        Assert.That((await svc.ListAsync("gridgame", status: "all")).Single().Guid, Is.EqualTo(guid));
+
+        var json = JsonSerializer.Serialize(await svc.GetAsync("gridgame", "conversation-recruit-ronin"),
+            new JsonSerializerOptions(JsonSerializerDefaults.Web));
+        Assert.That(json, Does.Contain($"\"guid\":\"{guid}\""), "serialized as prose-text/1's guid");
+    }
+
     [Test]
     public async Task Only_approved_versions_are_pullable_and_the_old_one_stays_live_until_the_new_is_approved()
     {

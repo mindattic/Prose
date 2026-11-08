@@ -58,7 +58,16 @@
               }
             }
           },
-          "tags": { "type": "array", "items": { "type": "string" } }
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "guid": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Export only (PRS-T923): the entity's Prose database id, stable for its life. Ignored on import."
+          },
+          "origin": {
+            "enum": ["import", "prose"],
+            "description": "Export only (PRS-T923): 'import' for an entity an interchange import brought in (the consumer's), 'prose' for one Prose authored itself (never retired by a replace import; set aside by the consumer kit's round-trip check). Ignored on import."
+          }
         }
       }
     }

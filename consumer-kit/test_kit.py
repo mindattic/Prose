@@ -211,6 +211,58 @@ class KitTests(unittest.TestCase):
             "edges": [{"source": "swiftsure", "target": "mv-swiftsure", "relationType": "knows"}]})
         self.assertEqual(kit.leak(a, snap, out=sink.append), 1)
 
+    def test_prose_authored_entities_are_set_aside_but_a_foreign_node_still_leaks(self):
+        """PRS-T923: canon Prose authored itself (export origin "prose") and its relations to the game's entities are
+        not differences or leaks (GridGame's first push: 33 of them failed it); any other node still leaks."""
+        a = os.path.join(self.root, "a.json")
+        b = os.path.join(self.root, "b.json")
+        kit.write_json(a, universe(ent("x", rel=["y"]), ent("y")))
+        g = {"x": "00000000-0000-0000-0000-00000000000a", "y": "00000000-0000-0000-0000-00000000000b",
+             "lore": "00000000-0000-0000-0000-00000000000c"}
+        theirs = universe(dict(ent("x", rel=["y"]), guid=g["x"], origin="import"), dict(ent("y"), guid=g["y"], origin="import"),
+                          dict(ent("lore", t="concept", rel=["x"], name="The Lore"), guid=g["lore"], origin="prose"))
+        kit.write_json(b, theirs)
+        sink = []
+        self.assertEqual(kit.diff(a, b, out=sink.append), 0, "\n".join(sink))
+        self.assertTrue(any("1 Prose-authored entities set aside" in s for s in sink))
+        # The same entity without origin "prose" (an older Hub) is still a difference.
+        theirs["entities"][2]["origin"] = "import"
+        kit.write_json(b, theirs)
+        self.assertEqual(kit.diff(a, b, out=sink.append), 1)
+        theirs["entities"][2]["origin"] = "prose"
+        kit.write_json(b, theirs)
+
+        snap = os.path.join(self.root, "snap.json")
+        nodes = [{"id": "x", "name": "X", "entityId": g["x"], "nodeType": "character"},
+                 {"id": "y", "name": "Y", "entityId": g["y"], "nodeType": "character"},
+                 {"id": "the-lore", "name": "The Lore", "entityId": g["lore"].upper(), "nodeType": "concept"}]
+        edges = [{"source": "x", "target": "y", "relationType": "knows"},
+                 {"source": "the-lore", "target": "x", "relationType": "knows"},
+                 {"source": "x", "target": "the-lore", "relationType": "studies"}]
+        kit.write_json(snap, {"nodes": nodes, "edges": edges})
+        sink.clear()
+        self.assertEqual(kit.leak(a, snap, out=sink.append, export_path=b), 0, "\n".join(sink))
+        self.assertEqual(kit.leak(a, snap, out=sink.append), 1, "without the export the authored node is not known")
+        # A node from elsewhere (not this universe's export) leaks even with the export.
+        kit.write_json(snap, {"nodes": nodes + [{"id": "intruder", "name": "Intruder", "entityId": "00000000-0000-0000-0000-0000000000ff",
+                                                 "nodeType": "concept"}], "edges": edges})
+        self.assertEqual(kit.leak(a, snap, out=sink.append, export_path=b), 1)
+
+    def test_text_guid_is_checked_and_recorded_in_the_applied_log(self):
+        """PRS-T923: a pulled text's guid passes through pending/ into applied.jsonl; a malformed one is refused."""
+        t = text("description-a")
+        t["guid"] = "01a1b974-aa06-7616-b23f-2e353c489a55"
+        self.assertEqual(kit.validate_text(t, "game")[0], [])
+        self.assertEqual(kit.validate_text(text("description-a"), "game")[0], [], "guid is optional")
+        bad = dict(t, guid="not-a-guid")
+        self.assertTrue(any("is not a GUID" in e for e in kit.validate_text(bad, "game")[0]))
+        self.hub.texts = [t]
+        self.assertEqual(self.run_kit("pull")[0], 0)
+        self.assertEqual(kit.load(os.path.join(self.cfg.pending, "description-a.v1.json"))["guid"], t["guid"])
+        code, out = self.run_kit("apply")
+        self.assertEqual(code, 0, out)
+        self.assertEqual(kit.applied_index(self.cfg.applied)["description-a"]["guid"], t["guid"])
+
     # -- push
 
     def test_push_is_one_replace_session_with_final_on_the_last_batch(self):

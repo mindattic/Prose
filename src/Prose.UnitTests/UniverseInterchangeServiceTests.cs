@@ -242,6 +242,59 @@ public class UniverseInterchangeServiceTests
         Assert.ThrowsAsync<InvalidOperationException>(async () => await svc.ExportAsync("nonexistent"));
     }
 
+    /// <summary>PRS-T923: every exported entity carries its database id as <c>guid</c> and an <c>origin</c>: <c>import</c>
+    /// for the consumer's (in the import manifest), <c>prose</c> for canon Prose authored itself, whether graded
+    /// authored or made by a Prose tool without a record. A record with no interchange id exports the entity's slug.
+    /// Neither field is stored when an export is imported again.</summary>
+    [Test]
+    public async Task ExportAsync_CarriesGuidAndOrigin_AndImportNeverStoresThem()
+    {
+        var import = await svc.ImportAsync(MakeFile("testu",
+            ("a", "character", "A", "Alpha.", new[] { ("b", "knows") }, null),
+            ("b", "location", "B", "Beta.", null, null)));
+        Assert.That(import.Success, Is.True);
+
+        Guid authoredId, toolMadeId;
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            var u = await db.Universes.FirstAsync(x => x.Slug == "testu");
+            var authored = new Entity { UniverseId = u.Id, EntityType = "concept", Slug = "the-tithe", Name = "The Tithe",
+                Provenance = ClaimProvenance.Authored };
+            var toolMade = new Entity { UniverseId = u.Id, EntityType = "faction", Slug = "the-crew", Name = "The Crew" };
+            db.Entities.AddRange(authored, toolMade);
+            db.Records.Add(new Record { EntityId = authored.Id, Json = "{\"type\":\"concept\",\"name\":\"The Tithe\",\"summary\":\"\"}" });
+            await db.SaveChangesAsync();
+            (authoredId, toolMadeId) = (authored.Id, toolMade.Id);
+        }
+
+        var exported = await svc.ExportAsync("testu");
+        using var doc = JsonDocument.Parse(exported);
+        var byId = doc.RootElement.GetProperty("entities").EnumerateArray()
+            .ToDictionary(e => e.GetProperty("id").GetString()!, e => e);
+        Assert.That(byId.Keys, Is.EquivalentTo(new[] { "a", "b", "the-tithe", "the-crew" }));
+        Assert.That(byId["a"].GetProperty("origin").GetString(), Is.EqualTo("import"));
+        Assert.That(byId["b"].GetProperty("origin").GetString(), Is.EqualTo("import"));
+        Assert.That(byId["the-tithe"].GetProperty("origin").GetString(), Is.EqualTo("prose"));
+        Assert.That(byId["the-crew"].GetProperty("origin").GetString(), Is.EqualTo("prose"));
+        Assert.That(byId["the-tithe"].GetProperty("guid").GetString(), Is.EqualTo(authoredId.ToString("D")));
+        Assert.That(byId["the-crew"].GetProperty("guid").GetString(), Is.EqualTo(toolMadeId.ToString("D")));
+
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            var a = await db.Entities.IgnoreQueryFilters().FirstAsync(e => e.Slug == "a");
+            Assert.That(byId["a"].GetProperty("guid").GetString(), Is.EqualTo(a.Id.ToString("D")));
+        }
+
+        var again = await svc.ImportAsync(exported, "testu");
+        Assert.That(again.Success, Is.True);
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            var a = await db.Entities.IgnoreQueryFilters().FirstAsync(e => e.Slug == "a");
+            var rec = await db.Records.IgnoreQueryFilters().FirstAsync(r => r.EntityId == a.Id);
+            Assert.That(rec.Json, Does.Not.Contain("\"guid\"").And.Not.Contain("\"origin\""));
+        }
+    }
+
     /// <summary>
     /// Regression test for a real bug found live: the service must be correct regardless of the
     /// AMBIENT UniverseScope (a Hub process is almost always scoped to some other universe, e.g.
