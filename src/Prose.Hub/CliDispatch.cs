@@ -201,14 +201,10 @@ public static class CliDispatch
         }
 
         Guid? universeId = null;
-        if (!string.IsNullOrWhiteSpace(req.Universe))
-        {
-            var uc = sp.GetRequiredService<IUniverseContext>();
-            foreach (var u in uc.ListUniverses())
-                if (string.Equals(u.Slug, req.Universe, StringComparison.OrdinalIgnoreCase)) { universeId = u.Id; break; }
-            if (universeId == null)
-                return new ExecuteOutcome("unknown_universe", new { error = "unknown_universe", req.Universe }, null);
-        }
+        if (!string.IsNullOrWhiteSpace(req.Universe)
+            && !TryResolveUniverse(req.Universe, req.HandlerClass, req.Method,
+                sp.GetRequiredService<IUniverseContext>().ListUniverses(), out universeId))
+            return new ExecuteOutcome("unknown_universe", new { error = "unknown_universe", req.Universe }, null);
 
         var universeContext = sp.GetRequiredService<IUniverseContext>();
 
@@ -276,6 +272,29 @@ public static class CliDispatch
         }
 
         return new ExecuteOutcome(null, null, new InvokeResponse(exitCode, outWriter.ToString(), errWriter.ToString()));
+    }
+
+    /// <summary>
+    /// Commands that create the universe they are given. <c>prose --universe-import &lt;file&gt; --universe &lt;new-slug&gt;</c>
+    /// forwards the slug as the request's universe; resolving it before the import ran answered unknown_universe
+    /// for a universe the import was about to create (PRS-T920), while the HTTP import creates it. The handler
+    /// reads the slug from its own arguments, so it runs unscoped when the universe does not exist yet.
+    /// </summary>
+    private static readonly HashSet<(string Handler, string Method)> CreatesItsUniverse = new()
+    {
+        ("UniverseInterchangeCli", "RunImportAsync"),
+    };
+
+    /// <summary>
+    /// The request universe's id. False (unknown_universe) when no universe has that slug, unless the command
+    /// creates its universe (<see cref="CreatesItsUniverse"/>): then true with a null id, and the command runs
+    /// unscoped. An existing universe always scopes the call.
+    /// </summary>
+    public static bool TryResolveUniverse(string slug, string handlerClass, string? method,
+        IEnumerable<UniverseInfo> universes, out Guid? universeId)
+    {
+        universeId = universes.FirstOrDefault(u => string.Equals(u.Slug, slug, StringComparison.OrdinalIgnoreCase))?.Id;
+        return universeId != null || CreatesItsUniverse.Contains((handlerClass ?? "", method ?? ""));
     }
 
     private static async Task<int> AwaitVoidTask(Task t)
