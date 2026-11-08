@@ -67,6 +67,15 @@
           "origin": {
             "enum": ["import", "prose"],
             "description": "Export only (PRS-T923): 'import' for an entity an interchange import brought in (the consumer's), 'prose' for one Prose authored itself (never retired by a replace import; set aside by the consumer kit's round-trip check). Ignored on import."
+          },
+          "proseRelations": {
+            "type": "array",
+            "description": "Export only (PRS-T923): live relations Prose authored from this entity (not written by an interchange import), kept out of 'relations' because they are not the consumer's file; the consumer kit's leak check excuses exactly these. Omitted when none. Ignored on import.",
+            "items": {
+              "type": "object",
+              "required": ["to", "kind"],
+              "properties": { "to": { "type": "string" }, "kind": { "type": "string" } }
+            }
           }
         }
       }

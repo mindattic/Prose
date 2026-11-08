@@ -577,9 +577,16 @@ def leak(file_path: str, snap_path: str, out=print, export_path: str | None = No
     """The Hub's graph view of the universe against the file. Texts (nodeType prose-text) and retired entities
     (status archived) are Prose's own and are ignored, with every edge that touches them. With the universe's export
     (export_path), so are the entities Prose authored itself (origin "prose", matched to nodes by entityId = guid,
-    PRS-T923) and their edges to the game's entities; any other node, from another universe or nowhere, still leaks."""
+    PRS-T923) and their edges to the game's entities, and the relations Prose authored between the game's own entities
+    (export proseRelations); any other node or edge, from another universe or nowhere, still leaks."""
     doc, snap = load(file_path), load(snap_path)
-    authored = {str(e.get("guid")).lower() for e in prose_authored(load(export_path)) if e.get("guid")} if export_path else set()
+    export = load(export_path) if export_path else {"entities": []}
+    authored = {str(e.get("guid")).lower() for e in prose_authored(export) if e.get("guid")}
+    # Relations Prose authored between the game's own entities (export proseRelations), by name like every edge here.
+    x_names = {e.get("id"): name_slug(e.get("name", "")) for e in export["entities"] if isinstance(e, dict)}
+    authored_edges = {(x_names[e.get("id")], x_names[r.get("to")], r.get("kind"))
+                      for e in export["entities"] if isinstance(e, dict)
+                      for r in e.get("proseRelations") or [] if r.get("to") in x_names}
     ents = doc["entities"]
     by_id = {e["id"]: e for e in ents}
     names = {name_slug(e["name"]) for e in ents} | set(by_id)
@@ -611,9 +618,12 @@ def leak(file_path: str, snap_path: str, out=print, export_path: str | None = No
     theirs = {(key.get(x.get("source"), x.get("source")), key.get(x.get("target"), x.get("target")), x.get("relationType"))
               for x in edges}
     extra, missing = theirs - ours, ours - theirs
+    excused = extra & authored_edges
+    extra -= excused
     out(f"snapshot: {len(nodes)} nodes, {len(edges)} edges ({len(ignored) - len(prose_nodes)} text/retired nodes ignored"
         + (f", {len(prose_nodes)} Prose-authored set aside" if prose_nodes else "") + "); "
-        f"file: {len(ents)} entities, {len(ours)} distinct relations by name")
+        f"file: {len(ents)} entities, {len(ours)} distinct relations by name"
+        + (f"; {len(excused)} Prose-authored relations between the file's entities set aside" if excused else ""))
     bad = False
     if foreign or foreign_types:
         out(f"LEAK    {len(foreign)} nodes are not entities of the file, e.g. {foreign[:8]}; foreign types {dict(foreign_types)}")

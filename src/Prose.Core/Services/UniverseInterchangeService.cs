@@ -40,6 +40,11 @@ public class InterchangeEntity
     /// <c>prose</c> for one Prose authored itself, which a replace import never retires and a consumer's round-trip
     /// check sets aside. Ignored on import, never stored in the record.</summary>
     public string? Origin { get; set; }
+    /// <summary>Export only (PRS-T923): the live relations Prose authored from this entity (its Edges rows not written by
+    /// an interchange import, e.g. an author linking the game's NPC to a faction in the Hub). Not part of the game's
+    /// file, so not in <see cref="Relations"/>; listed so a consumer's leak check can tell them from a real leak.
+    /// Omitted when there are none. Ignored on import, never stored in the record.</summary>
+    public List<InterchangeRelation>? ProseRelations { get; set; }
 }
 
 public static class InterchangeOrigins
@@ -296,6 +301,7 @@ public class UniverseInterchangeService
             var entitySlug = Slugify(src.Id);
             src.Guid = null; // export-only fields (PRS-T923): a re-imported export must store the same record
             src.Origin = null;
+            src.ProseRelations = null;
             var rawJson = JsonSerializer.Serialize(src, JsonOpts);
             fileKeys.Add(ManifestKey(entityType, entitySlug));
 
@@ -618,6 +624,12 @@ public class UniverseInterchangeService
             var imported = e.Provenance != ClaimProvenance.Authored
                 && (manifest != null ? manifest.Contains(ManifestKey(e.EntityType, e.Slug)) : fromRecord != null);
             outEntity.Origin = imported ? InterchangeOrigins.Import : InterchangeOrigins.Prose;
+            var authoredEdges = edgesBySource.TryGetValue(e.Id, out var mine)
+                ? mine.Where(ed => ed.Source != "interchange" && targetSlugs.ContainsKey(ed.TargetId))
+                    .Select(ed => (To: targetSlugs[ed.TargetId], Kind: ed.RelationType)).Distinct()
+                    .Select(r => new InterchangeRelation { To = r.To, Kind = r.Kind }).ToList()
+                : null;
+            outEntity.ProseRelations = authoredEdges is { Count: > 0 } ? authoredEdges : null;
             outEntities.Add(outEntity);
         }
 

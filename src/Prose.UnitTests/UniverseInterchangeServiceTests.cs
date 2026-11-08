@@ -263,6 +263,10 @@ public class UniverseInterchangeServiceTests
             var toolMade = new Entity { UniverseId = u.Id, EntityType = "faction", Slug = "the-crew", Name = "The Crew" };
             db.Entities.AddRange(authored, toolMade);
             db.Records.Add(new Record { EntityId = authored.Id, Json = "{\"type\":\"concept\",\"name\":\"The Tithe\",\"summary\":\"\"}" });
+            // An author links the game's own entities in the Hub: a relation Prose authored, not the file's.
+            var aRow = await db.Entities.IgnoreQueryFilters().FirstAsync(e => e.UniverseId == u.Id && e.Slug == "a");
+            var bRow = await db.Entities.IgnoreQueryFilters().FirstAsync(e => e.UniverseId == u.Id && e.Slug == "b");
+            db.Edges.Add(new Edge { UniverseId = u.Id, SourceId = aRow.Id, TargetId = bRow.Id, RelationType = "rules", Source = "hub-api" });
             await db.SaveChangesAsync();
             (authoredId, toolMadeId) = (authored.Id, toolMade.Id);
         }
@@ -278,6 +282,12 @@ public class UniverseInterchangeServiceTests
         Assert.That(byId["the-crew"].GetProperty("origin").GetString(), Is.EqualTo("prose"));
         Assert.That(byId["the-tithe"].GetProperty("guid").GetString(), Is.EqualTo(authoredId.ToString("D")));
         Assert.That(byId["the-crew"].GetProperty("guid").GetString(), Is.EqualTo(toolMadeId.ToString("D")));
+        var aRelations = byId["a"].GetProperty("relations").EnumerateArray().Select(r => r.GetProperty("kind").GetString()).ToList();
+        Assert.That(aRelations, Is.EqualTo(new[] { "knows" }), "the authored relation is not the file's");
+        var proseRelations = byId["a"].GetProperty("proseRelations").EnumerateArray()
+            .Select(r => (r.GetProperty("to").GetString(), r.GetProperty("kind").GetString())).ToList();
+        Assert.That(proseRelations, Is.EqualTo(new[] { ("b", "rules") }));
+        Assert.That(byId["b"].TryGetProperty("proseRelations", out _), Is.False, "omitted when there are none");
 
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
@@ -291,7 +301,7 @@ public class UniverseInterchangeServiceTests
         {
             var a = await db.Entities.IgnoreQueryFilters().FirstAsync(e => e.Slug == "a");
             var rec = await db.Records.IgnoreQueryFilters().FirstAsync(r => r.EntityId == a.Id);
-            Assert.That(rec.Json, Does.Not.Contain("\"guid\"").And.Not.Contain("\"origin\""));
+            Assert.That(rec.Json, Does.Not.Contain("\"guid\"").And.Not.Contain("\"origin\"").And.Not.Contain("proseRelations"));
         }
     }
 

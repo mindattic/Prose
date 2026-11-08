@@ -243,6 +243,15 @@ class KitTests(unittest.TestCase):
         sink.clear()
         self.assertEqual(kit.leak(a, snap, out=sink.append, export_path=b), 0, "\n".join(sink))
         self.assertEqual(kit.leak(a, snap, out=sink.append), 1, "without the export the authored node is not known")
+        # A relation Prose authored between two of the game's entities: excused only when the export lists it.
+        authored_edge = {"source": "y", "target": "x", "relationType": "rules"}
+        kit.write_json(snap, {"nodes": nodes, "edges": edges + [authored_edge]})
+        self.assertEqual(kit.leak(a, snap, out=sink.append, export_path=b), 1, "an unlisted extra edge still leaks")
+        theirs["entities"][1]["proseRelations"] = [{"to": "x", "kind": "rules"}]
+        kit.write_json(b, theirs)
+        sink.clear()
+        self.assertEqual(kit.leak(a, snap, out=sink.append, export_path=b), 0, "\n".join(sink))
+        self.assertEqual(kit.diff(a, b, out=sink.append), 0, "proseRelations are not the file's relations")
         # A node from elsewhere (not this universe's export) leaks even with the export.
         kit.write_json(snap, {"nodes": nodes + [{"id": "intruder", "name": "Intruder", "entityId": "00000000-0000-0000-0000-0000000000ff",
                                                  "nodeType": "concept"}], "edges": edges})

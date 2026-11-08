@@ -223,7 +223,7 @@ The kit finds `Data/Prose/prose.config.json` by walking up from the current dire
 | `map` | runs the game's mapper to (re)write the universe file |
 | `push [--map] [--prune] [--no-check] [--batch-size n]` | validates, imports in batches as one import session (one Outbox notice), with `--prune` retires entities the game no longer has, then exports back, diffs, and runs the leak check |
 | `diff [<ours> <theirs>]` | semantic diff of two interchange files; with none, the universe file against a fresh export from the Hub. Entities Prose authored itself (export `origin: "prose"`) and their relations are set aside |
-| `leak [<ours> <snapshot> [--export f]]` | every node and edge in a Hub `/snapshot?scope=all` must be one of the file's, compared by entity name (texts and retired entities are ignored; a retired node that is the only node of a live entity's name is kept, since an older Hub merged the two); with no files, live against the Hub. Prose-authored entities named by the export (matched by `entityId` = `guid`) are set aside with every edge that touches them; any other node still leaks |
+| `leak [<ours> <snapshot> [--export f]]` | every node and edge in a Hub `/snapshot?scope=all` must be one of the file's, compared by entity name (texts and retired entities are ignored; a retired node that is the only node of a live entity's name is kept, since an older Hub merged the two); with no files, live against the Hub. Prose-authored entities named by the export (matched by `entityId` = `guid`) are set aside with every edge that touches them, and so are the export's `proseRelations`; any other node or edge still leaks |
 | `pull [--kind k] [--since v] [--status s] [--all]` | approved and published texts newer than `applied.jsonl` into `pending/` |
 | `apply [--dry-run]` | runs the applier, records applied texts in `applied.jsonl`, clears them from `pending/` |
 | `status` | the universe on the Hub, entity and text counts by kind and status, pending, last applied |
@@ -304,7 +304,10 @@ entity no longer lists is invalidated. Entities Prose authored itself and texts 
 entity an interchange import brought in (it is in the universe's import manifest), `prose` for canon Prose authored
 itself (graded authored, or made with Prose's own tools). The kit's round trip compares only the game's entities:
 `diff` and `leak` set the `prose` ones aside, with their relations to the game's entities, so a universe the author
-has enriched in Prose still round-trips clean. Both fields are ignored on import and never stored.
+has enriched in Prose still round-trips clean. A relation the author adds in Prose between two of the game's own
+entities (say, an NPC joined to a faction in the Hub) is not the game's either: it stays out of `relations` and is
+listed in the entity's `proseRelations`, which `leak` excuses edge for edge; any other extra edge still leaks. These
+fields are ignored on import and never stored.
 A batched push passes the same `session` on every batch and `final=true` on the last: the prune runs once, over the
 union of every batch, and the Outbox gets one notice for the whole push.
 
