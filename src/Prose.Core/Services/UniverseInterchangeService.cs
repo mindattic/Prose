@@ -624,6 +624,16 @@ public class UniverseInterchangeService
             var imported = e.Provenance != ClaimProvenance.Authored
                 && (manifest != null ? manifest.Contains(ManifestKey(e.EntityType, e.Slug)) : fromRecord != null);
             outEntity.Origin = imported ? InterchangeOrigins.Import : InterchangeOrigins.Prose;
+            // PRS-T925: a record a Prose authoring tool wrote ({"name", "type"}) carries no summary or tags; the entity's
+            // own description and tags are its canon, so a Prose-authored entity exported with an empty summary (the
+            // gridgame canon "essence"). An imported entity's record is the consumer's file and stays verbatim.
+            if (!imported && fromRecord != null)
+            {
+                if (string.IsNullOrWhiteSpace(outEntity.Summary) && !string.IsNullOrWhiteSpace(e.Description))
+                    outEntity.Summary = e.Description!;
+                if ((outEntity.Tags == null || outEntity.Tags.Count == 0) && tagsByEntity.TryGetValue(e.Id, out var ownTags))
+                    outEntity.Tags = ownTags;
+            }
             var authoredEdges = edgesBySource.TryGetValue(e.Id, out var mine)
                 ? mine.Where(ed => ed.Source != "interchange" && targetSlugs.ContainsKey(ed.TargetId))
                     .Select(ed => (To: targetSlugs[ed.TargetId], Kind: ed.RelationType)).Distinct()

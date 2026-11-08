@@ -53,6 +53,11 @@ public class ProseTextService
     private static readonly Regex Placeholder = new(@"^\$[A-Za-z0-9_]+$", RegexOptions.Compiled);
     private static readonly Regex EntityRef = new(@"\{entity:([^}]*)\}", RegexOptions.Compiled);
 
+    /// <summary>PRS-T925: the longest drafting-pass tag (<c>--batch</c>). A tag uses the key alphabet.</summary>
+    public const int MaxBatchLength = 64;
+
+    public static bool IsValidBatch(string batch) => batch.Length <= MaxBatchLength && KeyPattern.IsMatch(batch);
+
     internal static readonly JsonSerializerOptions JsonOpts = new(JsonSerializerDefaults.Web)
     {
         WriteIndented = false,
@@ -115,6 +120,10 @@ public class ProseTextService
         public string Hash { get; set; } = "";
         public DateTime CreatedAt { get; set; }
         public string? CreatedBy { get; set; }
+        /// <summary>PRS-T925: the drafting pass this version came from, a tag the drafter chose (<c>--batch v4</c>), so the
+        /// author can bulk-approve one pass and nothing else. Additive metadata: not part of the hash, null on every
+        /// version drafted without one.</summary>
+        public string? Batch { get; set; }
         public string? ApprovedBy { get; set; }
         public DateTime? ApprovedAt { get; set; }
         public string? PublishedBy { get; set; }
@@ -167,6 +176,10 @@ public class ProseTextService
         public int? DraftVersion { get; set; }
         /// <summary>RFC 0018 §4: where and when the text appears. Omitted when the version has none.</summary>
         public TextContext? Context { get; set; }
+        /// <summary>PRS-T925: who drafted this version (the draft's <c>by</c>). Omitted when not recorded.</summary>
+        public string? DraftedBy { get; set; }
+        /// <summary>PRS-T925: the drafting pass tag this version was drafted with. Omitted when none.</summary>
+        public string? Batch { get; set; }
         public JsonElement Payload { get; set; }
     }
 
@@ -210,17 +223,22 @@ public class ProseTextService
 
     /// <summary>Draft a text from its prose-text/1 JSON. Validates deterministically (payload shape, entity
     /// references, conversation graph, key uniqueness); stores a new draft version only when the content
-    /// differs from the newest version.</summary>
-    public async Task<DraftResult> DraftAsync(string universeSlug, string json, string? by = null, CancellationToken ct = default)
+    /// differs from the newest version.
+    /// <para><paramref name="batch"/> (PRS-T925) tags the new version with the drafting pass it came from, so the author
+    /// can bulk-approve that pass alone (<see cref="BulkFilter.Batch"/>). It is metadata, not content: a draft whose
+    /// content is unchanged stores nothing and keeps its old batch, so a pass never sweeps in texts it did not touch.</para></summary>
+    public async Task<DraftResult> DraftAsync(string universeSlug, string json, string? by = null, string? batch = null,
+        CancellationToken ct = default)
     {
         TextInput? input;
         try { input = JsonSerializer.Deserialize<TextInput>(json, JsonOpts); }
         catch (Exception ex) { return new DraftResult { Errors = { $"parse failed: {ex.Message}" } }; }
         if (input == null) return new DraftResult { Errors = { "empty document" } };
-        return await DraftAsync(universeSlug, input, by, ct);
+        return await DraftAsync(universeSlug, input, by, batch, ct);
     }
 
-    public async Task<DraftResult> DraftAsync(string universeSlug, TextInput input, string? by = null, CancellationToken ct = default)
+    public async Task<DraftResult> DraftAsync(string universeSlug, TextInput input, string? by = null, string? batch = null,
+        CancellationToken ct = default)
     {
         var result = new DraftResult { Id = input.Id ?? "" };
         var slug = NormSlug(universeSlug);
@@ -233,6 +251,9 @@ public class ProseTextService
         var speakers = (input.Speakers ?? new()).Select(s => s.Trim()).Where(s => s.Length > 0).Distinct().ToList();
         var kind = (input.Kind ?? "").Trim().ToLowerInvariant();
         var key = (input.Key ?? "").Trim();
+        batch = string.IsNullOrWhiteSpace(batch) ? null : batch.Trim();
+        if (batch != null && !IsValidBatch(batch))
+            result.Errors.Add($"batch '{batch}' is not a valid batch tag (^[A-Za-z0-9][A-Za-z0-9_.:/-]*$, at most {MaxBatchLength} characters)");
 
         result.Errors.AddRange(ValidateShape(input, slug, kind, key, about, speakers));
         var context = ParseContext(input.Context, result.Errors);
@@ -299,7 +320,8 @@ public class ProseTextService
             Version = (record.Head?.Version ?? 0) + 1,
             Status = Status.Draft,
             Key = key, About = about, Speakers = speakers, Context = context,
-            Payload = payload, Hash = hash, CreatedAt = now, CreatedBy = by,
+            Payload = payload, Hash = hash, CreatedAt = now, CreatedBy = string.IsNullOrWhiteSpace(by) ? null : by.Trim(),
+            Batch = batch,
         };
         record.Versions.Add(version);
 
@@ -414,6 +436,11 @@ public class ProseTextService
         public string Kind { get; set; } = "";
         public string? KeyPrefix { get; set; }
         public string? About { get; set; }
+        /// <summary>PRS-T925 filters, echoed as applied (null = not filtered). See <see cref="BulkFilter"/>.</summary>
+        public DateTime? DraftedSince { get; set; }
+        public int? MinVersion { get; set; }
+        public string? DraftedBy { get; set; }
+        public string? Batch { get; set; }
         /// <summary>Texts approved by the call (or that would be).</summary>
         public List<BulkItem> Approved { get; set; } = new();
         /// <summary>Texts published by the call (or that would be).</summary>
@@ -423,6 +450,20 @@ public class ProseTextService
         /// <summary>RFC 0018: what the verifiers found on the texts this call approved (not on a dry run). Never blocking.</summary>
         public List<ProseTextVerifier.TextFinding> Findings { get; set; } = new();
         public bool Success => Errors.Count == 0 && Refused.Count == 0;
+    }
+
+    /// <summary>PRS-T925: narrows a bulk call to one drafting pass. Every filter is optional and they combine (AND);
+    /// each matches the version being acted on (the draft for approval, the live version for publishing).</summary>
+    public class BulkFilter
+    {
+        /// <summary>Only versions drafted at or after this time: an ISO 8601 date or date-time, UTC unless it says otherwise.</summary>
+        public string? Since { get; set; }
+        /// <summary>Only versions numbered at least this (e.g. 2 leaves out every untouched v1 seed).</summary>
+        public int? MinVersion { get; set; }
+        /// <summary>Only versions drafted by this name (the draft's <c>by</c>; case-insensitive).</summary>
+        public string? DraftedBy { get; set; }
+        /// <summary>Only versions drafted with this batch tag (<c>--batch</c>; case-insensitive).</summary>
+        public string? Batch { get; set; }
     }
 
     /// <summary>
@@ -439,11 +480,15 @@ public class ProseTextService
     /// <para><paramref name="publish"/> also publishes everything this call approved, as one batch with one
     /// <c>texts.published</c> Outbox notice. <paramref name="dryRun"/> computes the same lists and refusals
     /// and changes nothing (no save, no notice).</para>
+    ///
+    /// <para><paramref name="filter"/> (PRS-T925) narrows the batch to one drafting pass: drafted since a time, a
+    /// minimum version, drafted by a name, and/or a batch tag.</para>
     /// </summary>
     public async Task<BulkResult> BulkApproveAsync(string universeSlug, string kind, string by,
-        string? keyPrefix = null, string? about = null, bool dryRun = false, bool publish = false, CancellationToken ct = default)
+        string? keyPrefix = null, string? about = null, bool dryRun = false, bool publish = false,
+        BulkFilter? filter = null, CancellationToken ct = default)
     {
-        var result = NewBulk(kind, keyPrefix, about, dryRun);
+        var result = NewBulk(kind, keyPrefix, about, dryRun, filter);
         if (string.IsNullOrWhiteSpace(by)) result.Errors.Add("approval needs the approver's name (by)");
         ValidateBulkKind(result);
         if (result.Errors.Count > 0) return result;
@@ -526,9 +571,10 @@ public class ProseTextService
     /// <paramref name="dryRun"/> lists what would be published and changes nothing.
     /// </summary>
     public async Task<BulkResult> BulkPublishAsync(string universeSlug, string kind, string by,
-        string? keyPrefix = null, string? about = null, bool dryRun = false, CancellationToken ct = default)
+        string? keyPrefix = null, string? about = null, bool dryRun = false,
+        BulkFilter? filter = null, CancellationToken ct = default)
     {
-        var result = NewBulk(kind, keyPrefix, about, dryRun);
+        var result = NewBulk(kind, keyPrefix, about, dryRun, filter);
         if (string.IsNullOrWhiteSpace(by)) result.Errors.Add("publishing needs the publisher's name (by)");
         ValidateBulkKind(result);
         if (result.Errors.Count > 0) return result;
@@ -564,13 +610,29 @@ public class ProseTextService
         return result;
     }
 
-    private static BulkResult NewBulk(string kind, string? keyPrefix, string? about, bool dryRun) => new()
+    private static BulkResult NewBulk(string kind, string? keyPrefix, string? about, bool dryRun, BulkFilter? filter)
     {
-        DryRun = dryRun,
-        Kind = (kind ?? "").Trim().ToLowerInvariant(),
-        KeyPrefix = string.IsNullOrWhiteSpace(keyPrefix) ? null : keyPrefix.Trim(),
-        About = string.IsNullOrWhiteSpace(about) ? null : about.Trim(),
-    };
+        var result = new BulkResult
+        {
+            DryRun = dryRun,
+            Kind = (kind ?? "").Trim().ToLowerInvariant(),
+            KeyPrefix = string.IsNullOrWhiteSpace(keyPrefix) ? null : keyPrefix.Trim(),
+            About = string.IsNullOrWhiteSpace(about) ? null : about.Trim(),
+            DraftedBy = string.IsNullOrWhiteSpace(filter?.DraftedBy) ? null : filter.DraftedBy.Trim(),
+            Batch = string.IsNullOrWhiteSpace(filter?.Batch) ? null : filter.Batch.Trim(),
+            MinVersion = filter?.MinVersion,
+        };
+        if (result.MinVersion is < 1) result.Errors.Add($"minVersion must be 1 or more, not {result.MinVersion}");
+        if (!string.IsNullOrWhiteSpace(filter?.Since))
+        {
+            if (DateTime.TryParse(filter.Since.Trim(), System.Globalization.CultureInfo.InvariantCulture,
+                    System.Globalization.DateTimeStyles.AdjustToUniversal | System.Globalization.DateTimeStyles.AssumeUniversal,
+                    out var since))
+                result.DraftedSince = since;
+            else result.Errors.Add($"since '{filter.Since}' is not a date or date-time (ISO 8601, e.g. 2026-11-08 or 2026-11-08T06:00Z)");
+        }
+        return result;
+    }
 
     private static void ValidateBulkKind(BulkResult result)
     {
@@ -580,7 +642,11 @@ public class ProseTextService
 
     private static bool MatchesBulk(TextVersion v, BulkResult filter) =>
         (filter.KeyPrefix == null || v.Key.StartsWith(filter.KeyPrefix, StringComparison.Ordinal))
-        && (filter.About == null || v.About.Contains(filter.About));
+        && (filter.About == null || v.About.Contains(filter.About))
+        && (filter.MinVersion == null || v.Version >= filter.MinVersion)
+        && (filter.DraftedSince == null || DateTime.SpecifyKind(v.CreatedAt, DateTimeKind.Utc) >= filter.DraftedSince)
+        && (filter.DraftedBy == null || string.Equals(v.CreatedBy?.Trim(), filter.DraftedBy, StringComparison.OrdinalIgnoreCase))
+        && (filter.Batch == null || string.Equals(v.Batch, filter.Batch, StringComparison.OrdinalIgnoreCase));
 
     internal static List<string> ReferencesOf(TextVersion v) =>
         v.About.Concat(v.Speakers.Where(s => !Placeholder.IsMatch(s)))
@@ -970,6 +1036,8 @@ public class ProseTextService
             LiveVersion = live != null && live.Version != v.Version ? live.Version : null,
             DraftVersion = draft != null && draft.Version != v.Version ? draft.Version : null,
             Context = v.Context,
+            DraftedBy = v.CreatedBy,
+            Batch = v.Batch,
             Payload = v.Payload,
         };
     }

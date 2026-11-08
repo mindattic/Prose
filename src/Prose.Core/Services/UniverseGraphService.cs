@@ -1277,14 +1277,15 @@ public class UniverseGraphService : IUniverseGraphService
         if (state.UniverseId != Guid.Empty)
             entitiesQuery = entitiesQuery.Where(e => e.UniverseId == state.UniverseId);
         var rows = entitiesQuery
-            .Select(e => new GraphEntityRow(e.Id, e.Name, e.EntityType, e.Description, e.Status, e.OriginNodeId, e.CreatedAt))
+            .Select(e => new GraphEntityRow(e.Id, e.Name, e.EntityType, e.Description, e.Status, e.OriginNodeId, e.CreatedAt, e.Slug))
             .ToList();
         AddEntityNodes(state, rows);
     }
 
     /// <summary>An Entities row as the graph needs it.</summary>
     internal sealed record GraphEntityRow(
-        Guid Id, string Name, string EntityType, string? Description, string Status, Guid? OriginNodeId, DateTime CreatedAt);
+        Guid Id, string Name, string EntityType, string? Description, string Status, Guid? OriginNodeId, DateTime CreatedAt,
+        string? Slug = null);
 
     /// <summary>
     /// One node per entity (PRS-T916). The node id stays <c>Slugify(Name)</c> for a name only one entity
@@ -1295,6 +1296,14 @@ public class UniverseGraphService : IUniverseGraphService
     /// over book-scoped, then the oldest. Previously the rest were skipped, so same-named entities merged
     /// into one node (SpaceGod: 4,823 entities, 3,549 nodes) and a pruned entity's archived twin could
     /// hide a live entity's edges.
+    ///
+    /// <para>PRS-T925: among live entities, a game text (type <c>prose-text</c>, named after its glossary term or
+    /// title) never takes the name slug, and an entity whose own slug IS the name slug wins it over an older
+    /// namesake. Before, GridGame's imported glossary concept <c>concept-essence</c> ("Essence", the Herald's
+    /// healing mechanic) was older than the Prose-authored canon concept <c>essence</c> ("Essence", the living
+    /// light), so node <c>essence</c> was the glossary term and the canon entity was <c>essence~{id}</c>: looking
+    /// up <c>essence</c> showed the glossary definition. A glossary term and a canon concept of one name now
+    /// coexist, each on its own node, and the slug a caller asks for is the entity it gets.</para>
     /// </summary>
     private void AddEntityNodes(GraphState state, IEnumerable<GraphEntityRow> rows)
     {
@@ -1308,6 +1317,8 @@ public class UniverseGraphService : IUniverseGraphService
             var ordered = group
                 .OrderBy(e => Retired(e) ? 1 : 0)
                 .ThenBy(e => e.Status == "stub" ? 1 : 0)
+                .ThenBy(e => e.EntityType == ProseTextService.EntityType ? 1 : 0)
+                .ThenBy(e => string.Equals(e.Slug, nameSlug, StringComparison.OrdinalIgnoreCase) ? 0 : 1)
                 .ThenBy(e => e.OriginNodeId == null ? 0 : 1)
                 .ThenBy(e => e.CreatedAt)
                 .ThenBy(e => e.Id)

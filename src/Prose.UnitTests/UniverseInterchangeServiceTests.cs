@@ -305,6 +305,36 @@ public class UniverseInterchangeServiceTests
         }
     }
 
+    /// <summary>PRS-T925 (gridgame "essence"): a Prose-authored canon concept and the game's imported glossary concept
+    /// of the same name export each with its own summary. The authored one's record, written by a Prose tool, holds
+    /// only name and type, so its summary and tags come from the entity itself; the imported one stays verbatim.</summary>
+    [Test]
+    public async Task ExportAsync_ProseAuthoredEntity_TakesItsOwnDescriptionAndTags_BesideAnImportedNamesake()
+    {
+        var import = await svc.ImportAsync(MakeFile("testu",
+            ("concept-essence", "concept", "Essence", "Healing paid for in the healer's own HP.", null, null)));
+        Assert.That(import.Success, Is.True);
+
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            var u = await db.Universes.FirstAsync(x => x.Slug == "testu");
+            var canon = new Entity { UniverseId = u.Id, EntityType = "concept", Slug = "essence", Name = "Essence",
+                Description = "The living light in people and places.", Provenance = ClaimProvenance.Authored };
+            db.Entities.Add(canon);
+            db.Records.Add(new Record { EntityId = canon.Id, Json = "{\"name\":\"Essence\",\"type\":\"concept\"}" });
+            db.EntityTags.Add(new EntityTag { EntityId = canon.Id, Tag = new Tag { Name = "DECIDED" } });
+            await db.SaveChangesAsync();
+        }
+
+        using var doc = JsonDocument.Parse(await svc.ExportAsync("testu"));
+        var byId = doc.RootElement.GetProperty("entities").EnumerateArray()
+            .ToDictionary(e => e.GetProperty("id").GetString()!, e => e);
+        Assert.That(byId["essence"].GetProperty("summary").GetString(), Is.EqualTo("The living light in people and places."));
+        Assert.That(byId["essence"].GetProperty("tags").EnumerateArray().Select(t => t.GetString()), Is.EqualTo(new[] { "DECIDED" }));
+        Assert.That(byId["concept-essence"].GetProperty("summary").GetString(), Is.EqualTo("Healing paid for in the healer's own HP."));
+        Assert.That(byId["concept-essence"].GetProperty("origin").GetString(), Is.EqualTo("import"));
+    }
+
     /// <summary>
     /// Regression test for a real bug found live: the service must be correct regardless of the
     /// AMBIENT UniverseScope (a Hub process is almost always scoped to some other universe, e.g.

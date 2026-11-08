@@ -40,6 +40,16 @@
     "approvedBy": { "type": "string" },
     "approvedAt": { "type": "string", "format": "date-time" },
     "updatedAt": { "type": "string", "format": "date-time" },
+    "draftedBy": {
+      "type": "string",
+      "description": "PRS-T925: who drafted this version (the draft's by). Output only; omitted when not recorded."
+    },
+    "batch": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:/-]*$",
+      "maxLength": 64,
+      "description": "PRS-T925: the drafting pass this version came from, the tag the drafter set (--batch on --texts-draft, batch on MCP draft_text, ?batch= on the HTTP draft). Output only (a draft takes it as a parameter, not in the document); not covered by hash."
+    },
     "context": { "$ref": "#/$defs/context" },
     "payload": { "type": "object" }
   },

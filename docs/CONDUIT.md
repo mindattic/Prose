@@ -79,8 +79,9 @@ see [CONSUMER_ONBOARDING.md](CONSUMER_ONBOARDING.md).
 3. **Approve.** The author approves texts (`prose --texts-approve`, or `POST .../approve`). MCP has no approve tool
    (RFC 0009). `prose --texts-publish` then marks a batch of approved texts published and sends one
    `texts.published` Outbox notice. To approve everything of one kind at once, the author runs a bulk approval
-   (`prose --texts-approve-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--publish]`; see
-   [Bulk approval](#bulk-approval)), with `--dry-run` first to see the batch.
+   (`prose --texts-approve-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--batch tag] [--publish]`;
+   see [Bulk approval](#bulk-approval)), with `--dry-run` first to see the batch. A drafting pass tagged with
+   `--batch` can be approved alone.
 4. **Pull.** `kit pull` fetches approved and published texts whose live version is newer than `applied.jsonl` into
    `pending/`.
 5. **Apply.** `kit apply` runs the game's applier over `pending/`. The kit records each applied text in
@@ -176,6 +177,11 @@ findings, never as a refusal:
 **Lifecycle** (RFC 0009): `draft → approved → published → retired`.
 
 - Drafting new content adds a new **version** as a draft. Drafting the same content again changes nothing.
+- Each version records who drafted it (the draft's `by`, returned as `draftedBy`) and, when the drafter gave one, the
+  **batch** of the drafting pass it came from (PRS-T925: `--batch v4` on `--texts-draft`, `batch` on MCP `draft_text`,
+  `?batch=` on the HTTP draft; returned as `batch`). A batch is a tag of letters, digits and `_ . : / -`, up to 64
+  characters. It is metadata, not content: it is not in the `hash`, and a draft whose content is unchanged stores
+  nothing and keeps its old batch, so a pass never tags a text it did not change.
 - The previous approved or published version stays live (pullable) until the new version is approved.
 - Every version is kept. `version` is the version's number, `hash` the SHA-256 of its payload.
 - Only approved and published versions leave Prose. Retiring a text takes it out of every pull; the game's applier
@@ -196,6 +202,26 @@ name (`--by`, or `by` in the HTTP body) and have **no MCP tool** (RFC 0009: agen
   request-level error such as no `by` or an unknown kind, which changes nothing). `--publish` also publishes every text
   the call approved, as one batch.
 - **Bulk publish** marks every matched approved, not yet published live version published, as one batch.
+- **One drafting pass** (PRS-T925): four more filters narrow either call, combine with each other and with kind,
+  prefix and about, and match the version acted on:
+
+  | Filter | CLI | HTTP body | Matches |
+  |---|---|---|---|
+  | batch | `--batch v4` | `batch` | versions drafted with that batch tag (case-insensitive) |
+  | drafter | `--drafted-by claude` | `draftedBy` | versions whose draft `by` is that name (case-insensitive) |
+  | minimum version | `--min-version 2` | `minVersion` | versions numbered at least that (2 leaves out every untouched v1 seed) |
+  | drafted since | `--since 2026-11-08T06:00Z` | `since` | versions drafted at or after that ISO date or date-time (UTC unless it says otherwise) |
+
+  The result echoes the filters it applied (`batch`, `draftedBy`, `minVersion`, `draftedSince`). A malformed one (a
+  `since` that is not a date, a `minVersion` below 1) is a request-level error that changes nothing. To approve only the
+  v4 rewrite of the conversations:
+
+  ```powershell
+  prose --texts-approve-all gridgame --kind conversation --batch v4 --by ryan --dry-run   # see the batch
+  prose --texts-approve-all gridgame --kind conversation --batch v4 --by ryan             # approve it
+  ```
+
+  `--by` stays the approver; the drafter filter is `--drafted-by`.
 - **Retired texts are skipped** by both: bringing one back stays a single, explicit `--texts-approve`.
 - **Dry run** (`--dry-run`, `?dryRun=true`) computes the same lists and refusals and changes nothing: no save, no notice.
 - **Notices:** each publish batch (a bulk publish, or a bulk approve with `--publish`) sends exactly one
@@ -204,7 +230,11 @@ name (`--by`, or `by` in the HTTP body) and have **no MCP tool** (RFC 0009: agen
 
 **In the graph**, a text is an entity of type `prose-text` (its JSON record holds every version) with an `about` edge
 to each entity it is about and a `spoken-by` edge to each entity speaker. Texts never appear in a universe export, and
-an import never prunes them.
+an import never prunes them. A glossary text is named after its term, so it often shares a name with a canon entity
+(the game's `concept-essence` glossary concept, the text `glossary-essence` and Prose's own canon concept `essence` are
+all "Essence"). The graph keys a node by its name, so when several entities share one the name's node goes to the
+entity whose own id is that name, never to a text (PRS-T925); each of the others gets its own `{name}~{guid}` node, and
+looking up `essence` returns the canon concept, not the glossary definition.
 
 ## 6. The consumer kit
 
@@ -283,18 +313,19 @@ reads need no key.
 | List texts | `GET /api/universes/{slug}/texts?kind=&status=&since=&key=` | `prose --texts-list <slug> [--kind k] [--status s]` | `list_texts(universe, kind?, status?)` |
 | Get a text | `GET /api/universes/{slug}/texts/{id}?version=` | `prose --texts-get <slug> <id>` | `get_text(universe, id)` |
 | Pull texts | (the list call, which returns whole documents) | `prose --texts-pull <slug> --out <dir> [--kind k] [--since v]` | — |
-| Draft a text | `POST /api/universes/{slug}/texts` | `prose --texts-draft <slug> <file.json>` | `draft_text(universe, json)` |
+| Draft a text | `POST /api/universes/{slug}/texts[?by=&batch=]` | `prose --texts-draft <slug> <file.json> [--by name] [--batch tag]` | `draft_text(universe, json, by?, batch?)` |
 | Approve | `POST /api/universes/{slug}/texts/{id}/approve {by, version?}` | `prose --texts-approve <slug> <id>... --by <name>` | none (RFC 0009) |
 | Publish | `POST /api/universes/{slug}/texts/publish {by, ids?}` | `prose --texts-publish <slug> --by <name> [ids...]` | none |
-| Bulk approve | `POST /api/universes/{slug}/texts/approve[?dryRun=true] {by, kind, keyPrefix?, about?, publish?}` | `prose --texts-approve-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--publish] [--dry-run] [--json]` | none (RFC 0009) |
-| Bulk publish | `POST /api/universes/{slug}/texts/publish[?dryRun=true] {by, kind, keyPrefix?, about?}` | `prose --texts-publish-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--dry-run] [--json]` | none |
+| Bulk approve | `POST /api/universes/{slug}/texts/approve[?dryRun=true] {by, kind, keyPrefix?, about?, batch?, draftedBy?, minVersion?, since?, publish?}` | `prose --texts-approve-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--batch tag] [--drafted-by name] [--min-version n] [--since date] [--publish] [--dry-run] [--json]` | none (RFC 0009) |
+| Bulk publish | `POST /api/universes/{slug}/texts/publish[?dryRun=true] {by, kind, keyPrefix?, about?, batch?, draftedBy?, minVersion?, since?}` | `prose --texts-publish-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--batch tag] [--drafted-by name] [--min-version n] [--since date] [--dry-run] [--json]` | none |
 | Retire | `POST /api/universes/{slug}/texts/{id}/retire {by}` | `prose --texts-retire <slug> <id> --by <name>` | none |
 | Verify (RFC 0018) | `POST /api/universes/{slug}/texts/verify {ids?, kind?}` | `prose --texts-verify <slug> [id...] [--kind k] [--json]` | `verify_texts(universe, ids?, kind?)` |
 | Findings (RFC 0018) | `GET /api/universes/{slug}/texts/findings[?status=]`, `GET .../texts/{id}/findings` | `prose --texts-findings <slug> [id] [--status s] [--json]` | `text_findings(universe, id?, status?)` |
 | Writer view (RFC 0018) | `/texts`, `/texts/{slug}[?entity=id]`, `/texts/{slug}/{id}`: browse by kind, key or entity; each text's versions and findings; the approval queue with bulk approve by kind (previewed, the author's name and click) | — | — |
 | Outbox | `GET /api/outbox/{consumer}[?peek=true]` | — | — |
 
-`since` is a version number (the live version is greater) or an ISO date (approved or published after it).
+`since` is a version number (the live version is greater) or an ISO date (approved or published after it). On the bulk
+calls `since` is only a date, and means drafted at or after it.
 
 **Import modes.** `merge` (the default) upserts and never deletes, as before. `replace` treats the file as the
 complete set of the game's entities: an entity a previous import brought in that the file no longer has is retired

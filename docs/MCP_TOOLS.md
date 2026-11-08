@@ -1872,16 +1872,18 @@ Change an obligation's due point without changing its state. due: chapter:N | be
 
 ### `generate_scene`
 
-Write a scene or line of dialog without a pre-existing Book/Chapter/Beat row. Ephemeral by default: pacing, dialogue voice profiles, canon-fact grounding, consequence/gear constraints, ambient sensory grounding, and entity pre-check warnings all still apply. Pass node to borrow an existing book's canon/continuity ('attached mode') without writing a Beat row to it.
+Write a scene or line of dialog without a pre-existing Book/Chapter/Beat row. Grounded in the universe's canon (PRS-T926; works for game universes and draft texts with no book node): the characters, location and about entities are resolved and the scene is written from their records, relations (gate links, roads, faction ties), surroundings and approved descriptions, under a use-only-canon-names rule. The result lists groundedOn, unresolved request words, unknownNames (names in the text the canon lacks; one corrective rewrite runs first unless retryOnUnknown=false) and the call's cost. Pass node to borrow an existing book's canon/continuity ('attached mode') without writing a Beat row to it. Writes nothing.
 
 - `beatGoal` (string, required) — What should happen in this scene/line — the beat goal.
-- `characters` (string, optional) — Comma-separated character names on screen (activates dialogue voice profiles and continuity/consequence grounding).
-- `location` (string, optional) — Raw location hint for ambient sensory grounding, e.g. 'The Spine, Zone 3'.
+- `characters` (string, optional) — Comma-separated character names, aliases or entity ids on screen.
+- `location` (string, optional) — Where it happens: an entity name, alias or id of the universe (e.g. 'Earth Orbital'), or a loose hint ('the cathedral').
 - `subtext` (string, optional) — What's happening beneath the surface — foreshadowing, unspoken motivation, dramatic irony.
 - `node` (string, optional) — Optional slug/NodeCode/GUID of an existing Book or Chapter to borrow canon and continuity from. Omit for pure ephemeral.
 - `universe` (string, optional) — Optional universe slug override; defaults to the session's current universe.
 - `beatIndex` (int, optional) — Zero-based position in an imagined beat sequence, for pacing guidance. 0 if unknown.
 - `totalBeats` (int, optional) — Total beats in that imagined sequence, for pacing guidance. 0 disables positional pacing.
+- `about` (string, optional) — Comma-separated entity ids/names the scene is about (a game text's about), grounded like the characters.
+- `retryOnUnknown` (bool, optional) — False: report invented names without the one corrective rewrite.
 
 ## Operator Key
 
@@ -1994,11 +1996,12 @@ Correct a registered plant/payoff pair's descriptions in place when the register
 
 ### `draft_text`
 
-Draft a game text (prose-text/1, docs/CONDUIT.md) in a universe. json is one document: {id, kind, key, about[], speakers[], payload}. Payload per kind: conversation {title?, start, nodes[{id, speaker, line, next?, choices?[{text, next, tags[]}]}]}; crawl {title, paragraphs[]}; description {short?, long?}; quest {title, giver?, brief, complete?, fail?}; book {title, author?, pages[]}; bark {speaker, context?, lines[]}; glossary {term, aliases?[], definition}. Optional context (RFC 0018), where and when the text appears: {place?: entity id, chapter?: label, order?: number (earliest story point the player can see it), trigger?: the game's handle, after?: [text ids seen first]}. about/speakers are entity ids of the universe ($placeholders allowed as speakers); {entity:<id>} in a line must name an entity. New content becomes a new draft version; identical content changes nothing. The result lists what the verifiers found on the new version (findings describe; they never refuse a draft). Only the author approves (not available here).
+Draft a game text (prose-text/1, docs/CONDUIT.md) in a universe. json is one document: {id, kind, key, about[], speakers[], payload}. Payload per kind: conversation {title?, start, nodes[{id, speaker, line, next?, choices?[{text, next, tags[]}]}]}; crawl {title, paragraphs[]}; description {short?, long?}; quest {title, giver?, brief, complete?, fail?}; book {title, author?, pages[]}; bark {speaker, context?, lines[]}; glossary {term, aliases?[], definition}. Optional context (RFC 0018), where and when the text appears: {place?: entity id, chapter?: label, order?: number (earliest story point the player can see it), trigger?: the game's handle, after?: [text ids seen first]}. about/speakers are entity ids of the universe ($placeholders allowed as speakers); {entity:<id>} in a line must name an entity. New content becomes a new draft version; identical content changes nothing. batch tags the new version with its drafting pass (e.g. 'v4'), so the author can bulk-approve that pass alone. The result lists what the verifiers found on the new version (findings describe; they never refuse a draft). Only the author approves (not available here).
 
 - `universe` (string, required) — Universe slug.
 - `json` (string, required) — The prose-text/1 document as JSON.
 - `by` (string, optional) — Who drafted it (an agent or session name).
+- `batch` (string, optional) — Optional drafting-pass tag (letters, digits, _ . : / -; up to 64), e.g. 'v4'. Use the same tag for every text of one pass.
 
 ### `get_text`
 
@@ -2021,11 +2024,11 @@ List a game universe's texts (prose-text/1, docs/CONDUIT.md) as whole documents.
 
 ### `text_findings`
 
-The findings the game-mode verifiers (RFC 0018) filed on a universe's texts, or on one text (every version). status: new, triaged, applied, dismissed (default: all). Findings describe; the author decides.
+The findings the game-mode verifiers (RFC 0018) filed on a universe's texts, or on one text (every version). status: open (new and triaged), new, triaged, applied, dismissed, all (default: all). Findings describe; the author decides.
 
 - `universe` (string, required) — Universe slug.
 - `id` (string, optional) — One text id; omit for every text of the universe.
-- `status` (string, optional) — new | triaged | applied | dismissed.
+- `status` (string, optional) — open | new | triaged | applied | dismissed | all.
 
 ### `verify_texts`
 

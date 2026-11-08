@@ -2664,8 +2664,8 @@ if (args.Contains("--texts-pull"))
     Environment.ExitCode = await HubCliClient.ForwardAsync("ProseTextCli", rest, method: "RunPullAsync");
     return;
 }
-// prose --texts-draft <slug> <file.json|dir> [--by name]
-// RFC 0017 conduit: draft one text, a JSON array of texts, or every *.json in a folder; identical content changes nothing.
+// prose --texts-draft <slug> <file.json|dir> [--by name] [--batch tag]
+// RFC 0017 conduit: draft one text, a JSON array of texts, or every *.json in a folder; identical content changes nothing. --batch (PRS-T925) tags each new version with its drafting pass.
 if (args.Contains("--texts-draft"))
 {
     var rest = args.SkipWhile(a => a != "--texts-draft").Skip(1).ToArray();
@@ -2688,16 +2688,16 @@ if (args.Contains("--texts-publish"))
     Environment.ExitCode = await HubCliClient.ForwardAsync("ProseTextCli", rest, method: "RunPublishAsync");
     return;
 }
-// prose --texts-approve-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--publish] [--dry-run] [--json]
-// PRS-T918 bulk approval: every pending draft of one kind (author-only, no MCP door); refused drafts are reported, the rest approved.
+// prose --texts-approve-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--since date] [--min-version n] [--drafted-by name] [--batch tag] [--publish] [--dry-run] [--json]
+// PRS-T918 bulk approval: every pending draft of one kind (author-only, no MCP door); refused drafts are reported, the rest approved. PRS-T925: --since/--min-version/--drafted-by/--batch narrow it to one drafting pass.
 if (args.Contains("--texts-approve-all"))
 {
     var rest = args.SkipWhile(a => a != "--texts-approve-all").Skip(1).ToArray();
     Environment.ExitCode = await HubCliClient.ForwardAsync("ProseTextCli", rest, method: "RunApproveAllAsync");
     return;
 }
-// prose --texts-publish-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--dry-run] [--json]
-// PRS-T918 bulk publish: every approved, unpublished text of one kind as one batch (one texts.published notice).
+// prose --texts-publish-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--since date] [--min-version n] [--drafted-by name] [--batch tag] [--dry-run] [--json]
+// PRS-T918 bulk publish: every approved, unpublished text of one kind as one batch (one texts.published notice). PRS-T925: the same drafting-pass filters.
 if (args.Contains("--texts-publish-all"))
 {
     var rest = args.SkipWhile(a => a != "--texts-publish-all").Skip(1).ToArray();

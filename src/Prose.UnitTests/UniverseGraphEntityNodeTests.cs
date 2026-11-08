@@ -141,6 +141,35 @@ public class UniverseGraphEntityNodeTests
     }
 
     [Test]
+    public void A_canon_concept_keeps_its_own_slug_over_an_older_glossary_namesake_and_a_glossary_text()
+    {
+        // PRS-T925, GridGame: the imported glossary concept and the glossary text are both older than the
+        // Prose-authored canon concept, and all three are named "Essence".
+        var glossaryConcept = Add("concept", "Essence", "concept-essence", ageMinutes: 90);
+        var glossaryText = Add(ProseTextService.EntityType, "Essence", "glossary-essence", ageMinutes: 60);
+        var canon = Add("concept", "Essence", "essence");
+
+        var graph = Graph();
+
+        Assert.That(graph.GetNode("essence")!.EntityId, Is.EqualTo(canon.Id), "the slug asked for is the entity returned");
+        Assert.That(graph.GetNodeIdForEntity(glossaryConcept.Id), Is.EqualTo($"essence~{glossaryConcept.Id:N}"));
+        Assert.That(graph.GetNodeIdForEntity(glossaryText.Id), Is.EqualTo($"essence~{glossaryText.Id:N}"));
+        Assert.That(graph.NodeCount, Is.EqualTo(3), "the term and the concept coexist, each on its own node");
+    }
+
+    [Test]
+    public void A_glossary_text_never_takes_the_name_slug_from_an_entity()
+    {
+        var text = Add(ProseTextService.EntityType, "Burning", "glossary-burning", ageMinutes: 60);
+        var concept = Add("concept", "Burning", "concept-burning");
+
+        var graph = Graph();
+
+        Assert.That(graph.GetNodeIdForEntity(concept.Id), Is.EqualTo("burning"));
+        Assert.That(graph.GetNodeIdForEntity(text.Id), Is.EqualTo($"burning~{text.Id:N}"));
+    }
+
+    [Test]
     public void Unique_names_keep_their_name_slug_ids_and_edges_as_before()
     {
         var kyle = Add("character", "Kyle Marsh", "kyle");

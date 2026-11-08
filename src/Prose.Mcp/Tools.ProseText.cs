@@ -75,17 +75,18 @@ public class ProseTextTools
         }
     }
 
-    [McpServerTool, Description("Draft a game text (prose-text/1, docs/CONDUIT.md) in a universe. json is one document: {id, kind, key, about[], speakers[], payload}. Payload per kind: conversation {title?, start, nodes[{id, speaker, line, next?, choices?[{text, next, tags[]}]}]}; crawl {title, paragraphs[]}; description {short?, long?}; quest {title, giver?, brief, complete?, fail?}; book {title, author?, pages[]}; bark {speaker, context?, lines[]}; glossary {term, aliases?[], definition}. Optional context (RFC 0018), where and when the text appears: {place?: entity id, chapter?: label, order?: number (earliest story point the player can see it), trigger?: the game's handle, after?: [text ids seen first]}. about/speakers are entity ids of the universe ($placeholders allowed as speakers); {entity:<id>} in a line must name an entity. New content becomes a new draft version; identical content changes nothing. The result lists what the verifiers found on the new version (findings describe; they never refuse a draft). Only the author approves (not available here).")]
+    [McpServerTool, Description("Draft a game text (prose-text/1, docs/CONDUIT.md) in a universe. json is one document: {id, kind, key, about[], speakers[], payload}. Payload per kind: conversation {title?, start, nodes[{id, speaker, line, next?, choices?[{text, next, tags[]}]}]}; crawl {title, paragraphs[]}; description {short?, long?}; quest {title, giver?, brief, complete?, fail?}; book {title, author?, pages[]}; bark {speaker, context?, lines[]}; glossary {term, aliases?[], definition}. Optional context (RFC 0018), where and when the text appears: {place?: entity id, chapter?: label, order?: number (earliest story point the player can see it), trigger?: the game's handle, after?: [text ids seen first]}. about/speakers are entity ids of the universe ($placeholders allowed as speakers); {entity:<id>} in a line must name an entity. New content becomes a new draft version; identical content changes nothing. batch tags the new version with its drafting pass (e.g. 'v4'), so the author can bulk-approve that pass alone. The result lists what the verifiers found on the new version (findings describe; they never refuse a draft). Only the author approves (not available here).")]
     public Task<string> DraftText(
         [Description("Universe slug.")] string universe,
         [Description("The prose-text/1 document as JSON.")] string json,
-        [Description("Who drafted it (an agent or session name).")] string? by = null) =>
-        hub.InvokeAsync(nameof(ProseTextTools), nameof(DraftTextImpl), new { universe, json, by }, universe);
+        [Description("Who drafted it (an agent or session name).")] string? by = null,
+        [Description("Optional drafting-pass tag (letters, digits, _ . : / -; up to 64), e.g. 'v4'. Use the same tag for every text of one pass.")] string? batch = null) =>
+        hub.InvokeAsync(nameof(ProseTextTools), nameof(DraftTextImpl), new { universe, json, by, batch }, universe);
 
     /// <summary>Runs inside the Hub via ToolDispatch reflection.</summary>
-    public async Task<string> DraftTextImpl(string universe, string json, string? by = null)
+    public async Task<string> DraftTextImpl(string universe, string json, string? by = null, string? batch = null)
     {
-        var result = await texts.DraftAsync(universe, json, by);
+        var result = await texts.DraftAsync(universe, json, by, batch);
         return JsonSerializer.Serialize(result, ProseTextService.JsonOptsPublic);
     }
 

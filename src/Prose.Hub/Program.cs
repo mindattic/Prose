@@ -1112,10 +1112,11 @@ app.MapGet("/api/universes/{slug}/texts/{id}", async (string slug, string id, in
     catch (InvalidOperationException ex) { return Results.BadRequest(new { error = "texts_get_failed", detail = ex.Message }); }
 });
 
-app.MapPost("/api/universes/{slug}/texts", async (string slug, string? by, HttpRequest http, ProseTextService texts) =>
+// ?by= names the drafter; ?batch= (PRS-T925) tags the new version with its drafting pass, for bulk approval by batch.
+app.MapPost("/api/universes/{slug}/texts", async (string slug, string? by, string? batch, HttpRequest http, ProseTextService texts) =>
 {
     using var reader = new StreamReader(http.Body);
-    var result = await texts.DraftAsync(slug, await reader.ReadToEndAsync(), by);
+    var result = await texts.DraftAsync(slug, await reader.ReadToEndAsync(), by, batch);
     return result.Success ? Results.Ok(result) : Results.BadRequest(result);
 })
     .AddEndpointFilter<HubApiKeyFilter>();
@@ -1129,7 +1130,7 @@ app.MapPost("/api/universes/{slug}/texts/publish", async (string slug, bool? dry
     {
         if (req.Ids is { Length: > 0 })
             return Results.BadRequest(new { error = "texts_publish_failed", detail = "give ids or a kind filter, not both" });
-        var bulk = await texts.BulkPublishAsync(slug, req.Kind, req.By ?? "", req.KeyPrefix, req.About, dryRun == true);
+        var bulk = await texts.BulkPublishAsync(slug, req.Kind, req.By ?? "", req.KeyPrefix, req.About, dryRun == true, req.Filter);
         return bulk.Errors.Count == 0 ? Results.Ok(bulk) : Results.BadRequest(bulk);
     }
     var result = await texts.PublishAsync(slug, req.By ?? "", req.Ids);
@@ -1142,10 +1143,11 @@ app.MapPost("/api/universes/{slug}/texts/publish", async (string slug, bool? dry
 // ("by", required). "publish": true also publishes them as one batch. ?dryRun=true lists what would change.
 // Each draft is re-checked; one that fails is reported under "refused" and the rest are approved, so the
 // call answers 200 with the refusals listed (400 only for a request-level error). No MCP door (RFC 0009).
+// PRS-T925: "since" (ISO date: drafted at or after), "minVersion", "draftedBy" and "batch" narrow it to one drafting pass.
 app.MapPost("/api/universes/{slug}/texts/approve", async (string slug, bool? dryRun, TextActionRequest req, ProseTextService texts) =>
 {
     var bulk = await texts.BulkApproveAsync(slug, req.Kind ?? "", req.By ?? "", req.KeyPrefix, req.About,
-        dryRun == true, req.Publish == true);
+        dryRun == true, req.Publish == true, req.Filter);
     return bulk.Errors.Count == 0 ? Results.Ok(bulk) : Results.BadRequest(bulk);
 })
     .AddEndpointFilter<HubApiKeyFilter>();
@@ -1265,7 +1267,14 @@ sealed record EdgeRequest(Guid Source, Guid Target, string RelationType, string?
 sealed record OutboxEnqueueRequest(string Kind, string Summary, object? Data);
 
 sealed record TextActionRequest(string? By, int? Version, string[]? Ids,
-    string? Kind = null, string? KeyPrefix = null, string? About = null, bool? Publish = null);
+    string? Kind = null, string? KeyPrefix = null, string? About = null, bool? Publish = null,
+    // PRS-T925 drafting-pass filters for the bulk calls: drafted since (ISO date), minimum version, drafter, batch tag.
+    string? Since = null, int? MinVersion = null, string? DraftedBy = null, string? Batch = null)
+{
+    public ProseTextService.BulkFilter? Filter =>
+        Since == null && MinVersion == null && DraftedBy == null && Batch == null ? null
+            : new ProseTextService.BulkFilter { Since = Since, MinVersion = MinVersion, DraftedBy = DraftedBy, Batch = Batch };
+}
 
 sealed record GenerateSceneRequest(
     string BeatGoal, string[]? Characters, string? Location, string? Subtext,

@@ -11,8 +11,9 @@ namespace Prose.Cli;
 ///   prose --texts-get &lt;slug&gt; &lt;id&gt; [--version n] [--history]
 ///   prose --texts-pull &lt;slug&gt; --out &lt;dir&gt; [--kind k] [--status s] [--since v|date]
 ///       Writes each text as &lt;dir&gt;/&lt;id&gt;.v&lt;version&gt;.json (default status: pullable = approved + published).
-///   prose --texts-draft &lt;slug&gt; &lt;file.json|dir&gt; [--by name]
+///   prose --texts-draft &lt;slug&gt; &lt;file.json|dir&gt; [--by name] [--batch tag]
 ///       Drafts one text, a JSON array of texts, or every *.json in a folder. Identical content changes nothing.
+///       --batch (PRS-T925) tags each new version with its drafting pass, for --texts-approve-all --batch.
 ///   prose --texts-approve &lt;slug&gt; &lt;id&gt;... --by &lt;name&gt; [--version n]      (the author's call; RFC 0009)
 ///   prose --texts-publish &lt;slug&gt; --by &lt;name&gt; [id...]                    (one texts.published notice)
 ///   prose --texts-retire &lt;slug&gt; &lt;id&gt;... --by &lt;name&gt;
@@ -20,6 +21,7 @@ namespace Prose.Cli;
 ///       PRS-T918 bulk approval: every pending draft of one kind (optionally keys starting with p and/or texts about
 ///       an entity). Each draft is re-checked; one that fails is reported and left a draft, the rest are approved
 ///       (exit 1 when any was refused). --publish also publishes them as one batch (one texts.published notice).
+///       PRS-T925 drafting-pass filters (both bulk verbs): [--since date] [--min-version n] [--drafted-by name] [--batch tag].
 ///   prose --texts-publish-all &lt;slug&gt; --kind &lt;k&gt; --by &lt;name&gt; [--prefix p] [--about id] [--dry-run] [--json]
 ///       PRS-T918 bulk publish: every approved, unpublished text of one kind, as one batch.
 ///   prose --texts-verify &lt;slug&gt; [id...] [--kind k] [--json]
@@ -33,7 +35,24 @@ public static class ProseTextCli
     private static readonly JsonSerializerOptions Pretty = new(ProseTextService.JsonOptsPublic) { WriteIndented = true };
 
     private static readonly HashSet<string> ValueFlags =
-        ["--kind", "--status", "--since", "--key", "--version", "--out", "--by", "--prefix", "--about", "--limit"];
+        ["--kind", "--status", "--since", "--key", "--version", "--out", "--by", "--prefix", "--about", "--limit",
+         "--batch", "--min-version", "--drafted-by"];
+
+    /// <summary>PRS-T925: the drafting-pass filters every bulk verb takes.</summary>
+    private static ProseTextService.BulkFilter? BulkFilterOf(string[] args)
+    {
+        var f = new ProseTextService.BulkFilter
+        {
+            Since = Flag(args, "--since"),
+            // A --min-version that is not a number becomes 0, which the service refuses (it never silently drops a filter).
+            MinVersion = Flag(args, "--min-version") is { } mv ? (int.TryParse(mv, out var n) ? n : 0) : null,
+            DraftedBy = Flag(args, "--drafted-by"),
+            Batch = Flag(args, "--batch"),
+        };
+        return f.Since == null && f.MinVersion == null && f.DraftedBy == null && f.Batch == null ? null : f;
+    }
+
+    private const string BulkFilterUsage = "[--since <date>] [--min-version n] [--drafted-by name] [--batch tag]";
 
     public static async Task<int> RunListAsync(string[] args, IServiceProvider services)
     {
@@ -95,7 +114,7 @@ public static class ProseTextCli
     public static async Task<int> RunDraftAsync(string[] args, IServiceProvider services)
     {
         var pos = Positionals(args);
-        if (pos.Count < 2) return Usage("prose --texts-draft <slug> <file.json|dir> [--by name]");
+        if (pos.Count < 2) return Usage("prose --texts-draft <slug> <file.json|dir> [--by name] [--batch tag]");
         var source = pos[1];
         var files = Directory.Exists(source)
             ? Directory.GetFiles(source, "*.json").OrderBy(f => f, StringComparer.Ordinal).ToArray()
@@ -104,6 +123,7 @@ public static class ProseTextCli
 
         var svc = services.GetRequiredService<ProseTextService>();
         var by = Flag(args, "--by");
+        var batch = Flag(args, "--batch");
         int created = 0, revised = 0, unchanged = 0, failed = 0;
         foreach (var file in files)
         {
@@ -120,7 +140,7 @@ public static class ProseTextCli
 
             foreach (var doc in docs)
             {
-                var r = await svc.DraftAsync(pos[0], doc, by);
+                var r = await svc.DraftAsync(pos[0], doc, by, batch);
                 if (!r.Success)
                 {
                     failed++;
@@ -170,9 +190,9 @@ public static class ProseTextCli
         var by = Flag(args, "--by");
         var kind = Flag(args, "--kind");
         if (pos.Count < 1 || string.IsNullOrWhiteSpace(by) || string.IsNullOrWhiteSpace(kind))
-            return Usage("prose --texts-approve-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--publish] [--dry-run] [--json]");
+            return Usage($"prose --texts-approve-all <slug> --kind <k> --by <name> [--prefix p] [--about id] {BulkFilterUsage} [--publish] [--dry-run] [--json]");
         var r = await services.GetRequiredService<ProseTextService>().BulkApproveAsync(pos[0], kind, by,
-            Flag(args, "--prefix"), Flag(args, "--about"), args.Contains("--dry-run"), args.Contains("--publish"));
+            Flag(args, "--prefix"), Flag(args, "--about"), args.Contains("--dry-run"), args.Contains("--publish"), BulkFilterOf(args));
         return ReportBulk("texts-approve-all", pos[0], r, args.Contains("--json"));
     }
 
@@ -182,9 +202,9 @@ public static class ProseTextCli
         var by = Flag(args, "--by");
         var kind = Flag(args, "--kind");
         if (pos.Count < 1 || string.IsNullOrWhiteSpace(by) || string.IsNullOrWhiteSpace(kind))
-            return Usage("prose --texts-publish-all <slug> --kind <k> --by <name> [--prefix p] [--about id] [--dry-run] [--json]");
+            return Usage($"prose --texts-publish-all <slug> --kind <k> --by <name> [--prefix p] [--about id] {BulkFilterUsage} [--dry-run] [--json]");
         var r = await services.GetRequiredService<ProseTextService>().BulkPublishAsync(pos[0], kind, by,
-            Flag(args, "--prefix"), Flag(args, "--about"), args.Contains("--dry-run"));
+            Flag(args, "--prefix"), Flag(args, "--about"), args.Contains("--dry-run"), BulkFilterOf(args));
         return ReportBulk("texts-publish-all", pos[0], r, args.Contains("--json"));
     }
 
@@ -196,7 +216,10 @@ public static class ProseTextCli
         if (!json)
         {
             var would = r.DryRun ? "would be " : "";
-            var filter = r.Kind + (r.KeyPrefix != null ? $", key prefix '{r.KeyPrefix}'" : "") + (r.About != null ? $", about '{r.About}'" : "");
+            var filter = r.Kind + (r.KeyPrefix != null ? $", key prefix '{r.KeyPrefix}'" : "") + (r.About != null ? $", about '{r.About}'" : "")
+                         + (r.Batch != null ? $", batch '{r.Batch}'" : "") + (r.DraftedBy != null ? $", drafted by '{r.DraftedBy}'" : "")
+                         + (r.MinVersion != null ? $", v{r.MinVersion}+" : "")
+                         + (r.DraftedSince != null ? $", drafted since {r.DraftedSince:yyyy-MM-ddTHH:mm:ssZ}" : "");
             Console.WriteLine($"[{verb}] '{slug}' ({filter}){(r.DryRun ? " — dry run, nothing changed" : "")}");
             foreach (var i in r.Approved) Console.WriteLine($"  {would}approved  {i.Id,-44} v{i.Version} {i.Key}");
             foreach (var i in r.Published) Console.WriteLine($"  {would}published {i.Id,-44} v{i.Version} {i.Key}");
