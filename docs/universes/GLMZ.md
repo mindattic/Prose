@@ -19,7 +19,7 @@ updated: 2026-07-04
 
 ## Setting
 
-**Year:** 2226 is the catalog's baseline present; the books run from 2217 (Steppin' Razor) to 2231 (The Ur), and each book states its own year (Mnemosync, Read the Room, Pieces and Wells in 2230). **Location:** <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> — Great Lakes Metropolitan Zone (also: *<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">The Glooms</entity>*, street
+**Year:** 2226 is the catalog's baseline present; the books run from 2217 (Steppin' Razor) to 2231 (The Cabal), and each book states its own year (Mnemosync, Read the Room, Pieces and Wells in 2230). **Location:** <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> — Great Lakes Metropolitan Zone (also: *<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">The Glooms</entity>*, street
 vernacular). Formerly the U.S. Midwest. Population: ~58 million.
 <entity repo="place" guid="6a5b2384-072c-f6a9-b228-107570089917">Chicago</entity> is the transit and commercial hub; the Lake itself is the geographic axis.
 
@@ -567,7 +567,7 @@ cannot be *inside* one.
 are fed by them; they are the Great Lakes family. Kentucky (lost in the 2150s), Rome (Class 4–5) and Tequenica
 (Tierra del Fuego) are separate: whatever happens to the lake taps does not reach them, and they stay open. The Lure
 and the Counter are the two intelligences at 35th & Halsted; Tequenica is the third, far away (series read
-2026-11-08; The Ur closes only the lakes).
+2026-11-08; The Cabal, the series' last book, closes only the lakes).
 
 **Micro-schisms** — floating pebble clusters (~2 inches) on street corners; treated like
 weather by residents; dangerous to neuretics-sensitive individuals.
