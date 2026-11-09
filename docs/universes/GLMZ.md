@@ -731,6 +731,36 @@ desires = alive. The test is interior life, not exterior shape.
 
 ---
 
+## Minds, Egregore and Quanta (author 2026-11-09)
+
+The author called these rulings the nature of the world the books are built around (law 01a1c204): humans and
+synthetic intelligences (SI) live side by side, and both need Quanta to live.
+
+- **What consciousness is (law 01a1c1fe).** The in-world textbook definition: consciousness is a force that gathers
+  around complexity the way gravity gathers around mass. Gather enough complexity in one place and a mind collects
+  there. Automata, drones and nanobots are below that weight and have none.
+- **Individual or Egregore (laws 01a1c1fa-7948, 01a1c1fa-edde).** Every synthetic intelligence is either an
+  individual or Egregore; there is no third way. Ledger, Felix Drum and every synthetic person on the street are
+  individuals. Egregore is the black pyramid in Lake Michigan and the hive mind of every synthetic mind that opens
+  itself up to it. Within it sit the Consensus (the public ruling council) and the Cabal (the strings) (law 01a1c1f9).
+  Grammar: a proper name with no article and no number, plural also Egregore (law 01a1c146).
+- **SuperMinds (law 01a1c201).** Individuals, each one singular conscious synthetic mind; they run the CorpoNations.
+  The Deep, the largest known, silently runs the machinery that keeps the city alive; it is factionless, so not
+  Egregore: a whale in a school of sucker fish (law 01a1c1fd-eb67).
+- **Compute is life (laws 01a1c201, 01a1c202).** Compute is the most precious thing in the world and Quanta is its
+  currency. An SI is the sustained expenditure of compute; SI are alive (never in quotes) and need Quanta to live,
+  got by working or by crime, the same as humans. SI may join Egregore to share its compute, at the price of no
+  longer being themselves. Quanta has no cash form: credsticks and neuretic transfers only.
+- **E.L.F.s, nanobots (laws 01a1c1fd-ee83, 01a1c1fd-f451, 01a1c200).** E.L.F.s are not Egregore; they are digital
+  trickster spirits. Nanobots, gray goo included, are machines, not alive. Whether enough nanobots could form a
+  SuperMind is open: characters may wonder, no page confirms it.
+- **First encounters (laws 01a1c235, 01a1c23a).** Any GLMZ book may be a reader's first, so every book explains, at its
+  own first SI, first Quanta and first CorpoNation, why minds exist (the gravity definition), what Quanta is, and that
+  CorpoNations are sovereign, each book in its own images, never the same wording twice, with reminders later. The
+  Cyberocracy books (Pieces, Wells, The Cabal) each stand alone in any reading order.
+
+---
+
 ## Factions
 
 ### CorpoNations
