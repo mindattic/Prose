@@ -19,7 +19,7 @@ updated: 2026-07-04
 
 ## Setting
 
-**Year:** 2226. **Location:** <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> — Great Lakes Metropolitan Zone (also: *<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">The Glooms</entity>*, street
+**Year:** 2226 is the catalog's baseline present; the books run from 2217 (Steppin' Razor) to 2231 (The Ur), and each book states its own year (Mnemosync, Read the Room, Pieces and Wells in 2230). **Location:** <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> — Great Lakes Metropolitan Zone (also: *<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">The Glooms</entity>*, street
 vernacular). Formerly the U.S. Midwest. Population: ~58 million.
 <entity repo="place" guid="6a5b2384-072c-f6a9-b228-107570089917">Chicago</entity> is the transit and commercial hub; the Lake itself is the geographic axis.
 
@@ -428,7 +428,7 @@ When she appears in a scene, describe what she's wearing.
 - **<entity repo="corponation" guid="019f5281-549a-7858-8b6f-7cbf1b838376">Velasca</entity>** — gray zone artisan; hand-finished; reputation-only; no storefront; found at Border Markets
 
 *Weapons:*
-- **<entity repo="corponation" guid="019d6143-a7a7-795b-b681-24c111525c79">Carrion Defense Works</entity> (CDW)** — brutal, functional, no corpo polish; CDW-RS5 '<entity repo="character" guid="019e9e4f-1a6a-78c4-9ea8-e90a391045df">Chorus</entity>' is <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s revolver shotgun
+- **<entity repo="corponation" guid="019d6143-a7a7-795b-b681-24c111525c79">Carrion Defense Works</entity> (CDW)** — brutal, functional, no corpo polish. (<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s revolver is Cacophony, the Torii five-shot, as every book names it; it is not a CDW piece.)
 - **<entity repo="corponation" guid="019f5282-d770-7073-8851-5b7fadbd5218">Wyvern Arms</entity>** — the XS combat shotgun everyone knows; licensed street; civilian working weapons
 - **<entity repo="corponation" guid="019f5282-fa45-7680-804d-a763c7d2564e">Crucible Armaments</entity>** — institutional service weapons; NCID V-7 sidearm; <entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">ArcSec</entity> secondary arms; telemetry built in
 
@@ -563,6 +563,12 @@ cannot be *inside* one.
 - **<entity repo="schism-entity" guid="d0068627-05ff-40d8-97ee-d7eba460a57b">The Lure</entity>** — a collector; draws things toward Schism boundaries; motives unknown; resonates near the 19 Hz hyperdimensional base (documented: 19.415 Hz and 19.771 Hz)
 - **<entity repo="schism-entity" guid="fed0faf3-4d66-4ed2-8fab-e407c585ebb2">The Counter</entity>** — a limiter; "this far and no further"; documented resisting Schism expansion; 72–74 Hz signature
 
+**Scope (what the Great Lakes Schisms are and are not).** The GLMZ's Schisms sit over the lake-floor taps and
+are fed by them; they are the Great Lakes family. Kentucky (lost in the 2150s), Rome (Class 4–5) and Tequenica
+(Tierra del Fuego) are separate: whatever happens to the lake taps does not reach them, and they stay open. The Lure
+and the Counter are the two intelligences at 35th & Halsted; Tequenica is the third, far away (series read
+2026-11-08; The Ur closes only the lakes).
+
 **Micro-schisms** — floating pebble clusters (~2 inches) on street corners; treated like
 weather by residents; dangerous to neuretics-sensitive individuals.
 
@@ -606,14 +612,14 @@ decohered mass-state, suppressing — not eliminating — its coupling to the lo
 field. Rest mass, inertia, and structural integrity are unchanged; only the gravitational
 coupling is reduced. This is *not* <entity repo="technology" guid="abe4f0eb-b85d-cf80-832e-69a967bb4f29">Graviton Manipulation Theory</entity> (detection without
 control, permanently dead-ended) — it doesn't touch the field, it changes how strongly the
-object's own mass-state answers to it. There is no other lift technology in <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> — no vacuum
-cells, no antigrav, no balloons. (Historical note: an earlier, cruder "vacuum-cell buoyancy"
-generation — branded ANGEL — has been fully superseded and is retired from canon; see
-[[../surveys/canon-sync-2026-07-04]] Q-008 and [[../../memory/project_eigenlift_canon]].)
+object's own mass-state answers to it. Eigenlift is the elite lift; ANGEL vacuum cells (real
+Archimedean buoyancy) are the common, working-class lift behind most of the float layer, and
+civic frames carry a district at a few percent with ANGEL cells or tethers carrying the rest (law
+01a19c7c, author 2026-11-02, which superseded the older note that retired ANGEL).
 
 **Hardware:** the visible unit is an **<entity repo="technology" guid="9ec244e7-32b7-449f-a998-c55d44247c6a">Eigenlift node</entity>** — a small, solid-state emitter, no
 moving parts, no interior to fail catastrophically. Nodes cluster at a structure's tensegrity
-attachment points (see TGP, below) the way ANGEL cells once did, so the "constellation of small
+attachment points (see TGP, below) the way ANGEL cells do on cheaper blocs, so the "constellation of small
 glowing components" silhouette survives even though the mechanism underneath changed
 completely. A **<entity repo="technology" guid="019f1b2e-e05a-7ead-800d-029ecd463893">coherence driver</entity>** (palm-sized control unit) tunes and re-tunes each node
 continuously; this is the part that actually strains under load, not the node itself.
@@ -717,7 +723,9 @@ personhood, not E.L.F.s. Always write with periods: *<entity repo="vocabulary" g
 mention in any story. Emerged primarily 2210s onward.
 
 **Tier 3 synthetic persons** — fewer than a dozen recognized since 2201. Require server-
-cluster-scale compute (Bekenstein/Bremermann constraints). No current story character qualifies.
+cluster-scale compute (Bekenstein/Bremermann constraints). This server-scale class is distinct
+from everyday synthetic people (law 01a1903e-141c), who are legal persons living in bodies of their
+own: Ledger, Felix Drum and Green are synthetic persons in that everyday sense.
 Form has no bearing on personhood: a humanoid android = machine; a box on wheels with genuine
 desires = alive. The test is interior life, not exterior shape.
 
@@ -750,6 +758,8 @@ carry pure East Asian names. You are BORN <entity repo="faction" guid="019d6143-
 **Structure:** <entity repo="faction" guid="01a101f8-53bd-7bc9-84cd-ad1b68368f4a">Stems</entity> (council) + Root (half-mythical senior leadership) + <entity repo="faction" guid="01a101f8-48af-7a55-bcb0-93e27980095c">Thorns</entity> (enforcers).
 
 **Territory:** Centered in <entity repo="place" guid="01a018a4-086e-73c5-b9ca-65a52a73f25c">Pilsen</entity>, Bridgeport, Back of the Yards (<entity repo="place" guid="6a5b2384-072c-f6a9-b228-107570089917">Chicago</entity> Gray Zone).
+Its money reaches north as well: Lotus holds pharmacies, clinics and runner routes in Bucktown and along Clybourn,
+run from the south (Bushido Coda; series read 2026-11-08).
 
 **Character:** Long-view organization — "geology, not weather" vs. Gray Zone warlord churn.
 Honor code invoked only when convenient.
@@ -813,13 +823,15 @@ neglected curbs and walls. Clean curbs = corpo-adjacent class signal.
 
 **No graviton manipulation. No zero-point energy extraction.** <entity repo="technology" guid="abe4f0eb-b85d-cf80-832e-69a967bb4f29">Graviton Manipulation Theory</entity>
 is a confirmed dead end (detection without control) and ZPE extraction remains
-thermodynamically impossible. Any reference to "anti-grav" or "ANGEL"/"vacuum-cell" in prose or
-entity descriptions is an error — <entity repo="technology" guid="019f3a83-1416-7959-856a-e2a11812359e">Eigenlift</entity> (coherent mass-state suspension, see Aerostatic
-Architecture) is the only altitude technology. <entity repo="technology" guid="019f3a83-1416-7959-856a-e2a11812359e">Eigenlift</entity> is not anti-gravity in the graviton
+thermodynamically impossible. ANGEL vacuum cells (buoyancy) are the common lift and
+<entity repo="technology" guid="019f3a83-1416-7959-856a-e2a11812359e">Eigenlift</entity> (coherent mass-state suspension, see Aerostatic Architecture) is the elite one,
+"anti-gravity in a sense" (law 01a19c7c). <entity repo="technology" guid="019f3a83-1416-7959-856a-e2a11812359e">Eigenlift</entity> is not anti-gravity in the graviton
 sense — it suppresses an object's gravitational *coupling* via CEP-derived coherence, it does
 not touch the field — but it is <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>'s one deliberate exception to "nothing defies weight":
 exactly one deep discovery (externally imposed coherent eigenstates), two commercial branches
 (NSB for minds, <entity repo="technology" guid="019f3a83-1416-7959-856a-e2a11812359e">Eigenlift</entity> for mass).
+An **Eigenrig** is a personal eigenlift harness: a coherence frame worn on the body that lightens the wearer
+for climbs, drops and long carries (Sparrow, Wells). The word is intended and canon (series read 2026-11-08).
 
 ---
 
