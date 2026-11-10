@@ -19,7 +19,7 @@ updated: 2026-07-04
 
 ## Setting
 
-**Year:** 2226 is the catalog's baseline present; the books run from 2217 (Steppin' Razor) to 2231 (The Cabal), and each book states its own year (Mnemosync, Read the Room, Pieces and Wells in 2230). **Location:** <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> — Great Lakes Metropolitan Zone (also: *<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">The Glooms</entity>*, street
+**Year:** 2226 is the catalog's baseline present; the books run from 2217 (Steppin' Razor) to 2231 (<entity repo="faction" guid="01a10f60-918b-7f54-aed5-96ab777414e8">The Cabal</entity>), and each book states its own year (Mnemosync, Read the Room, Pieces and Wells in 2230). **Location:** <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> — Great Lakes Metropolitan Zone (also: *<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">The Glooms</entity>*, street
 vernacular). Formerly the U.S. Midwest. Population: ~58 million.
 <entity repo="place" guid="6a5b2384-072c-f6a9-b228-107570089917">Chicago</entity> is the transit and commercial hub; the Lake itself is the geographic axis.
 
@@ -140,7 +140,7 @@ lock after ~age twelve. Rare adult-open cases exist but are exceptional.
 
 **Cognitive divide:** ~18% global population remains unaugmented. The gap between
 unaugmented → Tier 1 → Tier 4 is qualitative, not gradient. Tier 1 subsidized in core
-districts via NeoCortex Access Initiative.
+districts via <entity repo="faction" guid="01a1a4fa-77ec-744a-98ed-51ac2e220e83">NeoCortex Access Initiative</entity>.
 
 **<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> penetration:** In <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> specifically, neuretics penetration exceeds 92% of the resident
 population. The 18% global figure reflects regions without access infrastructure; <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> is not
@@ -201,7 +201,7 @@ cannot afford the float layer. Do not conflate them.
 - **<entity repo="place" guid="019f1b3c-3b28-759b-9806-ff5fcc3f5560">The Low</entity>** (30–320m) — ungoverned gap: <entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">ArcSec</entity> patrol ceiling ~50m, MATA radar floor 320m; neither covers this band → gray-market vertical transit, industrial haze, building-wake turbulence
 - **Street level** — where most stories happen
 
-**<entity repo="place" guid="01a101d4-5b69-70c9-9f2c-cf8161569ec8">The Spine</entity>** — the western lakeshore corridor specifically: <entity repo="place" guid="6a5b2384-072c-f6a9-b228-107570089917">Chicago</entity> → Milwaukee → Green Bay.
+**<entity repo="place" guid="01a101d4-5b69-70c9-9f2c-cf8161569ec8">The Spine</entity>** — the western lakeshore corridor specifically: <entity repo="place" guid="6a5b2384-072c-f6a9-b228-107570089917">Chicago</entity> → <entity repo="place" guid="01a1a4f5-4e6e-77d0-acdf-57f21c564819">Milwaukee</entity> → Green Bay.
 
 **Green Bay** — full metropolis, low millions population. Not a frontier town.
 
@@ -210,10 +210,10 @@ are common in the inner districts — made possible by ferrocrete composites. Co
 arcologies are the tallest structures, clearing even supertall residential towers.
 
 **Space elevator** — visible over the southern horizon from <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>; operational; most residents
-stop noticing after a year. Street names: **the <entity repo="vocabulary" guid="01a1016d-9a65-7f7d-9273-3680683cde1f">Thread</entity>**, **the Stitch**. Corporate designation:
+stop noticing after a year. Street names: **<entity repo="place" guid="ea28fdd3-7bdc-439b-962c-42cfe5d996ac">the Thread</entity>**, **the Stitch**. Corporate designation:
 Apex Tether Authority (ATA), private concessional operator.
 
-At night, the <entity repo="vocabulary" guid="01a1016d-9a65-7f7d-9273-3680683cde1f">Thread</entity> is the most striking object in the southern sky: a near-invisible filament
+At night, <entity repo="place" guid="ea28fdd3-7bdc-439b-962c-42cfe5d996ac">the Thread</entity> is the most striking object in the southern sky: a near-invisible filament
 rising from the horizon to a point that vanishes into the upper atmosphere, and along it the
 cargo and transit pods rise and descend like a gossamer string of water droplets — lit against
 the dark, widely spaced, moving so slowly they seem still until you track one for a few seconds
@@ -222,7 +222,7 @@ visual. <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</e
 a very good or very bad night always do.
 
 **Prose ground rule:** Any night scene with a clear view of the southern sky — outdoor,
-rooftop, elevated, wide open — must include at least one reference to the <entity repo="vocabulary" guid="01a1016d-9a65-7f7d-9273-3680683cde1f">Thread</entity>. It does
+rooftop, elevated, wide open — must include at least one reference to <entity repo="place" guid="ea28fdd3-7bdc-439b-962c-42cfe5d996ac">the Thread</entity>. It does
 not need to be foregrounded; a single clause is enough. The character's relationship to it
 (noticing it / not noticing it / watching a pod for a moment) is a register detail.
 
@@ -424,11 +424,11 @@ When she appears in a scene, describe what she's wearing.
 
 *Fashion — gray zone:*
 - **<entity repo="corponation" guid="019f524f-d1ca-7ddd-9420-70fdd25ace0f">Greymark Unseen</entity>** — anti-surveillance design; no advertising; operators' first choice; logs nothing
-- **<entity repo="corponation" guid="019f5281-3433-7fdb-aa60-1c47d1e264ff">Thornback</entity>** — music scene; distressed; hand-screen-printed; Zone 4 Milwaukee origin; no two pieces identical
+- **<entity repo="corponation" guid="019f5281-3433-7fdb-aa60-1c47d1e264ff">Thornback</entity>** — music scene; distressed; hand-screen-printed; Zone 4 <entity repo="place" guid="01a1a4f5-4e6e-77d0-acdf-57f21c564819">Milwaukee</entity> origin; no two pieces identical
 - **<entity repo="corponation" guid="019f5281-549a-7858-8b6f-7cbf1b838376">Velasca</entity>** — gray zone artisan; hand-finished; reputation-only; no storefront; found at Border Markets
 
 *Weapons:*
-- **<entity repo="corponation" guid="019d6143-a7a7-795b-b681-24c111525c79">Carrion Defense Works</entity> (CDW)** — brutal, functional, no corpo polish. (<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s revolver is Cacophony, the Torii five-shot, as every book names it; it is not a CDW piece.)
+- **<entity repo="corponation" guid="019d6143-a7a7-795b-b681-24c111525c79">Carrion Defense Works</entity> (CDW)** — brutal, functional, no corpo polish. (<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s revolver is <entity repo="weapon" guid="4ab24f74-61d4-4f45-b326-7c6b98c96279">Cacophony</entity>, the Torii five-shot, as every book names it; it is not a CDW piece.)
 - **<entity repo="corponation" guid="019f5282-d770-7073-8851-5b7fadbd5218">Wyvern Arms</entity>** — the XS combat shotgun everyone knows; licensed street; civilian working weapons
 - **<entity repo="corponation" guid="019f5282-fa45-7680-804d-a763c7d2564e">Crucible Armaments</entity>** — institutional service weapons; NCID V-7 sidearm; <entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">ArcSec</entity> secondary arms; telemetry built in
 
@@ -563,11 +563,11 @@ cannot be *inside* one.
 - **<entity repo="schism-entity" guid="d0068627-05ff-40d8-97ee-d7eba460a57b">The Lure</entity>** — a collector; draws things toward Schism boundaries; motives unknown; resonates near the 19 Hz hyperdimensional base (documented: 19.415 Hz and 19.771 Hz)
 - **<entity repo="schism-entity" guid="fed0faf3-4d66-4ed2-8fab-e407c585ebb2">The Counter</entity>** — a limiter; "this far and no further"; documented resisting Schism expansion; 72–74 Hz signature
 
-**Scope (what the Great Lakes Schisms are and are not).** The GLMZ's Schisms sit over the lake-floor taps and
-are fed by them; they are the Great Lakes family. Kentucky (lost in the 2150s), Rome (Class 4–5) and Tequenica
-(Tierra del Fuego) are separate: whatever happens to the lake taps does not reach them, and they stay open. The Lure
+**Scope (what the Great Lakes Schisms are and are not).** The <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>'s Schisms sit over the lake-floor taps and
+are fed by them; they are the Great Lakes family. <entity repo="place" guid="a820b7da-b623-896f-3578-756f5d566663">Kentucky</entity> (lost in the 2150s), Rome (Class 4–5) and Tequenica
+(Tierra del Fuego) are separate: whatever happens to the lake taps does not reach them, and they stay open. <entity repo="schism-entity" guid="d0068627-05ff-40d8-97ee-d7eba460a57b">The Lure</entity>
 and the Counter are the two intelligences at 35th & Halsted; Tequenica is the third, far away (series read
-2026-11-08; The Cabal, the series' last book, closes only the lakes).
+2026-11-08; <entity repo="faction" guid="01a10f60-918b-7f54-aed5-96ab777414e8">The Cabal</entity>, the series' last book, closes only the lakes).
 
 **Micro-schisms** — floating pebble clusters (~2 inches) on street corners; treated like
 weather by residents; dangerous to neuretics-sensitive individuals.
@@ -612,7 +612,7 @@ decohered mass-state, suppressing — not eliminating — its coupling to the lo
 field. Rest mass, inertia, and structural integrity are unchanged; only the gravitational
 coupling is reduced. This is *not* <entity repo="technology" guid="abe4f0eb-b85d-cf80-832e-69a967bb4f29">Graviton Manipulation Theory</entity> (detection without
 control, permanently dead-ended) — it doesn't touch the field, it changes how strongly the
-object's own mass-state answers to it. Eigenlift is the elite lift; ANGEL vacuum cells (real
+object's own mass-state answers to it. <entity repo="technology" guid="019f3a83-1416-7959-856a-e2a11812359e">Eigenlift</entity> is the elite lift; ANGEL vacuum cells (real
 Archimedean buoyancy) are the common, working-class lift behind most of the float layer, and
 civic frames carry a district at a few percent with ANGEL cells or tethers carrying the rest (law
 01a19c7c, author 2026-11-02, which superseded the older note that retired ANGEL).
@@ -725,39 +725,39 @@ mention in any story. Emerged primarily 2210s onward.
 **Tier 3 synthetic persons** — fewer than a dozen recognized since 2201. Require server-
 cluster-scale compute (Bekenstein/Bremermann constraints). This server-scale class is distinct
 from everyday synthetic people (law 01a1903e-141c), who are legal persons living in bodies of their
-own: Ledger, Felix Drum and Green are synthetic persons in that everyday sense.
+own: <entity repo="character" guid="019eafb5-3337-764f-8fb0-75dc82170edf">Ledger</entity>, <entity repo="synthetic" guid="019d6143-a9fe-736c-a3a7-2d6d026342c7">Felix Drum</entity> and Green are synthetic persons in that everyday sense.
 Form has no bearing on personhood: a humanoid android = machine; a box on wheels with genuine
 desires = alive. The test is interior life, not exterior shape.
 
 ---
 
-## Minds, Egregore and Quanta (author 2026-11-09)
+## Minds, <entity repo="place" guid="01a10f60-4159-770f-af38-bda00ff349c7">Egregore</entity> and <entity repo="vocabulary" guid="019d6143-aad7-79ad-b18b-52c47f01c4a2">Quanta</entity> (author 2026-11-09)
 
 The author called these rulings the nature of the world the books are built around (law 01a1c204): humans and
-synthetic intelligences (SI) live side by side, and both need Quanta to live.
+synthetic intelligences (SI) live side by side, and both need <entity repo="vocabulary" guid="019d6143-aad7-79ad-b18b-52c47f01c4a2">Quanta</entity> to live.
 
 - **What consciousness is (law 01a1c1fe).** The in-world textbook definition: consciousness is a force that gathers
   around complexity the way gravity gathers around mass. Gather enough complexity in one place and a mind collects
   there. Automata, drones and nanobots are below that weight and have none.
-- **Individual or Egregore (laws 01a1c1fa-7948, 01a1c1fa-edde).** Every synthetic intelligence is either an
-  individual or Egregore; there is no third way. Ledger, Felix Drum and every synthetic person on the street are
-  individuals. Egregore is the black pyramid in Lake Michigan and the hive mind of every synthetic mind that opens
+- **Individual or <entity repo="place" guid="01a10f60-4159-770f-af38-bda00ff349c7">Egregore</entity> (laws 01a1c1fa-7948, 01a1c1fa-edde).** Every synthetic intelligence is either an
+  individual or <entity repo="place" guid="01a10f60-4159-770f-af38-bda00ff349c7">Egregore</entity>; there is no third way. <entity repo="character" guid="019eafb5-3337-764f-8fb0-75dc82170edf">Ledger</entity>, <entity repo="synthetic" guid="019d6143-a9fe-736c-a3a7-2d6d026342c7">Felix Drum</entity> and every synthetic person on the street are
+  individuals. <entity repo="place" guid="01a10f60-4159-770f-af38-bda00ff349c7">Egregore</entity> is the black pyramid in <entity repo="place" guid="01a1a4ee-1e55-7cb1-acab-28ac4ab362bb">Lake Michigan</entity> and the <entity repo="vocabulary" guid="019d6143-aab8-7450-8dc1-53cfaea739e7">hive mind</entity> of every synthetic mind that opens
   itself up to it. Within it sit the Consensus (the public ruling council) and the Cabal (the strings) (law 01a1c1f9).
-  Grammar: a proper name with no article and no number, plural also Egregore (law 01a1c146).
+  Grammar: a proper name with no article and no number, plural also <entity repo="place" guid="01a10f60-4159-770f-af38-bda00ff349c7">Egregore</entity> (law 01a1c146).
 - **SuperMinds (law 01a1c201).** Individuals, each one singular conscious synthetic mind; they run the CorpoNations.
-  The Deep, the largest known, silently runs the machinery that keeps the city alive; it is factionless, so not
-  Egregore: a whale in a school of sucker fish (law 01a1c1fd-eb67).
-- **Compute is life (laws 01a1c201, 01a1c202).** Compute is the most precious thing in the world and Quanta is its
-  currency. An SI is the sustained expenditure of compute; SI are alive (never in quotes) and need Quanta to live,
-  got by working or by crime, the same as humans. SI may join Egregore to share its compute, at the price of no
-  longer being themselves. Quanta has no cash form: credsticks and neuretic transfers only.
-- **E.L.F.s, nanobots (laws 01a1c1fd-ee83, 01a1c1fd-f451, 01a1c200).** E.L.F.s are not Egregore; they are digital
+  <entity repo="character" guid="019e9e4f-1f2e-7b03-8efb-80104e18d902">The Deep</entity>, the largest known, silently runs the machinery that keeps the city alive; it is factionless, so not
+  <entity repo="place" guid="01a10f60-4159-770f-af38-bda00ff349c7">Egregore</entity>: a whale in a school of sucker fish (law 01a1c1fd-eb67).
+- **Compute is life (laws 01a1c201, 01a1c202).** Compute is the most precious thing in the world and <entity repo="vocabulary" guid="019d6143-aad7-79ad-b18b-52c47f01c4a2">Quanta</entity> is its
+  currency. An SI is the sustained expenditure of compute; SI are alive (never in quotes) and need <entity repo="vocabulary" guid="019d6143-aad7-79ad-b18b-52c47f01c4a2">Quanta</entity> to live,
+  got by working or by crime, the same as humans. SI may join <entity repo="place" guid="01a10f60-4159-770f-af38-bda00ff349c7">Egregore</entity> to share its compute, at the price of no
+  longer being themselves. <entity repo="vocabulary" guid="019d6143-aad7-79ad-b18b-52c47f01c4a2">Quanta</entity> has no cash form: credsticks and neuretic transfers only.
+- **E.L.F.s, nanobots (laws 01a1c1fd-ee83, 01a1c1fd-f451, 01a1c200).** E.L.F.s are not <entity repo="place" guid="01a10f60-4159-770f-af38-bda00ff349c7">Egregore</entity>; they are digital
   trickster spirits. Nanobots, gray goo included, are machines, not alive. Whether enough nanobots could form a
   SuperMind is open: characters may wonder, no page confirms it.
-- **First encounters (laws 01a1c235, 01a1c23a).** Any GLMZ book may be a reader's first, so every book explains, at its
-  own first SI, first Quanta and first CorpoNation, why minds exist (the gravity definition), what Quanta is, and that
+- **First encounters (laws 01a1c235, 01a1c23a).** Any <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> book may be a reader's first, so every book explains, at its
+  own first SI, first <entity repo="vocabulary" guid="019d6143-aad7-79ad-b18b-52c47f01c4a2">Quanta</entity> and first CorpoNation, why minds exist (the gravity definition), what <entity repo="vocabulary" guid="019d6143-aad7-79ad-b18b-52c47f01c4a2">Quanta</entity> is, and that
   CorpoNations are sovereign, each book in its own images, never the same wording twice, with reminders later. The
-  Cyberocracy books (Pieces, Wells, The Cabal) each stand alone in any reading order.
+  Cyberocracy books (Pieces, Wells, <entity repo="faction" guid="01a10f60-918b-7f54-aed5-96ab777414e8">The Cabal</entity>) each stand alone in any reading order.
 
 ---
 
@@ -785,10 +785,10 @@ Taiwanese, Vietnamese, Cambodian, Lao, Thai, Burmese, Mongolian, maritime SE Asi
 carry pure East Asian names. You are BORN <entity repo="faction" guid="019d6143-a893-7801-860b-0eda6a216393">Lotus</entity> or never belong. Non-bloodline operators
 ("dogs") are used for dirty work and never seated at council.
 
-**Structure:** <entity repo="faction" guid="01a101f8-53bd-7bc9-84cd-ad1b68368f4a">Stems</entity> (council) + Root (half-mythical senior leadership) + <entity repo="faction" guid="01a101f8-48af-7a55-bcb0-93e27980095c">Thorns</entity> (enforcers).
+**Structure:** <entity repo="faction" guid="01a101f8-53bd-7bc9-84cd-ad1b68368f4a">Stems</entity> (council) + <entity repo="character" guid="01a19ed6-235d-7b1f-ab87-bd233a86c8cc">Root</entity> (half-mythical senior leadership) + <entity repo="faction" guid="01a101f8-48af-7a55-bcb0-93e27980095c">Thorns</entity> (enforcers).
 
 **Territory:** Centered in <entity repo="place" guid="01a018a4-086e-73c5-b9ca-65a52a73f25c">Pilsen</entity>, Bridgeport, Back of the Yards (<entity repo="place" guid="6a5b2384-072c-f6a9-b228-107570089917">Chicago</entity> Gray Zone).
-Its money reaches north as well: Lotus holds pharmacies, clinics and runner routes in Bucktown and along Clybourn,
+Its money reaches north as well: <entity repo="faction" guid="019d6143-a893-7801-860b-0eda6a216393">Lotus</entity> holds pharmacies, clinics and runner routes in <entity repo="place" guid="01a06ee1-95c2-7084-bc60-1d8cb35562ed">Bucktown</entity> and along Clybourn,
 run from the south (Bushido Coda; series read 2026-11-08).
 
 **Character:** Long-view organization — "geology, not weather" vs. Gray Zone warlord churn.
@@ -860,8 +860,8 @@ sense — it suppresses an object's gravitational *coupling* via CEP-derived coh
 not touch the field — but it is <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>'s one deliberate exception to "nothing defies weight":
 exactly one deep discovery (externally imposed coherent eigenstates), two commercial branches
 (NSB for minds, <entity repo="technology" guid="019f3a83-1416-7959-856a-e2a11812359e">Eigenlift</entity> for mass).
-An **Eigenrig** is a personal eigenlift harness: a coherence frame worn on the body that lightens the wearer
-for climbs, drops and long carries (Sparrow, Wells). The word is intended and canon (series read 2026-11-08).
+An **<entity repo="vocabulary" guid="01a1144d-94e5-7540-aed1-97186ae24398">Eigenrig</entity>** is a personal eigenlift harness: a <entity repo="technology" guid="fd62cd04-f001-4771-826f-94ae9a8c9a94">coherence frame</entity> worn on the body that lightens the wearer
+for climbs, drops and long carries (<entity repo="character" guid="8556c863-afa0-4c23-8140-9ce70642bea8">Sparrow</entity>, Wells). The word is intended and canon (series read 2026-11-08).
 
 ---
 

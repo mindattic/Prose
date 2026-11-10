@@ -34,7 +34,7 @@ scoped to religious or historical subject matter specifically — that has simpl
 produced here so far. **Gospel: History vs. Heritage** (<entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity>/Mark/Luke/John) was the first
 production line; **Sons of God, Daughters of Men: A Cultural History of the <entity repo="vocabulary" guid="c9514d5a-667d-40db-bfdc-bc786a6252f7">Nephilim</entity>** (NEPH) is
 the second; further Old Testament and cross-cutting topics (the Exodus, <entity repo="character" guid="019fa1c6-ffcf-78a5-b222-af7d1e5cf94d">David</entity> and <entity repo="character" guid="019fa1c6-ffdf-757d-8978-9e104468af3c">Solomon</entity>'s
-kingdom, the Dead Sea Scrolls, the Council of Nicaea) are queued — but a future NONFICTION book could
+kingdom, the <entity repo="vocabulary" guid="01a1a721-e28b-7b66-93eb-d6a79b004658">Dead Sea Scrolls</entity>, the Council of Nicaea) are queued — but a future NONFICTION book could
 just as easily be about science, true crime, biography, or any other nonfiction subject. The one
 requirement is the discipline below: every claim cited, every gap in the record stated honestly.
 Every book in this universe shares that same method regardless of subject.
