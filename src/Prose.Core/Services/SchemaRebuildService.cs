@@ -719,7 +719,7 @@ public class SchemaRebuildService
             ?? throw new InvalidOperationException("No connection string configured.");
         var builder = new SqlConnectionStringBuilder(cs) { MultipleActiveResultSets = true };
         var conn = new SqlConnection(builder.ToString());
-        await conn.OpenAsync(ct);
+        await conn.OpenWithRetryAsync(ct);
         return conn;
     }
 

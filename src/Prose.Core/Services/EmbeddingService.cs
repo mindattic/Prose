@@ -136,7 +136,8 @@ public class EmbeddingService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         const string ddl = """
-            ALTER DATABASE SCOPED CONFIGURATION SET PREVIEW_FEATURES = ON;
+            IF CAST(SERVERPROPERTY('EngineEdition') AS INT) <> 5
+                EXEC(N'ALTER DATABASE SCOPED CONFIGURATION SET PREVIEW_FEATURES = ON;');
             IF OBJECT_ID('dbo.EntityEmbeddings','U') IS NULL
             BEGIN
                 CREATE TABLE [dbo].[EntityEmbeddings] (

@@ -54,7 +54,7 @@ public static class SqlExportCli
         Console.WriteLine($"[sql-export] out:  {outPath}");
 
         await using var conn = new SqlConnection(connStr);
-        await conn.OpenAsync();
+        await conn.OpenWithRetryAsync();
 
         // Streamed through the shared ArtifactWriter: written to a temp file beside the target and
         // moved into place (overwriting, as File.Create did) once the script is complete.

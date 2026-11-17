@@ -35,7 +35,15 @@ $script:SSIdentityCache = @{}
 
 function Open-SS {
     param([string]$Server = '(localdb)\MSSQLLocalDB', [string]$Database = 'Prose')
-    $c = New-Object System.Data.SqlClient.SqlConnection("Server=$Server;Database=$Database;Trusted_Connection=True;TrustServerCertificate=True;")
+    # Same source the app uses: the env var ConnectionStrings__Prose wins when it is set and the
+    # caller named no server or database; otherwise the LocalDB string below (PRS-T998).
+    # LIMIT: this is Windows PowerShell's System.Data.SqlClient, which does not understand
+    # "Authentication=Active Directory Default". An Entra-only Azure SQL connection string in
+    # that variable fails here with "Keyword not supported: 'authentication'" - these scripts
+    # cannot reach that database until they move to Microsoft.Data.SqlClient.
+    $cs = "Server=$Server;Database=$Database;Trusted_Connection=True;TrustServerCertificate=True;"
+    if ($env:ConnectionStrings__Prose -and $PSBoundParameters.Count -eq 0) { $cs = $env:ConnectionStrings__Prose }
+    $c = New-Object System.Data.SqlClient.SqlConnection($cs)
     $c.Open()
     return $c
 }

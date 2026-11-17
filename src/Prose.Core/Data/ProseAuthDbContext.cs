@@ -35,9 +35,8 @@ public sealed class ProseAuthDbContextFactory : IDesignTimeDbContextFactory<Pros
 {
     public ProseAuthDbContext CreateDbContext(string[] args)
     {
-        var conn = Environment.GetEnvironmentVariable("ConnectionStrings__Prose")
-                   ?? "Server=(localdb)\\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;";
-        var options = new DbContextOptionsBuilder<ProseAuthDbContext>().UseSqlServer(conn).Options;
-        return new ProseAuthDbContext(options);
+        var builder = new DbContextOptionsBuilder<ProseAuthDbContext>();
+        builder.UseProseSqlServer(ProseSqlResilience.ResolveConnectionString());
+        return new ProseAuthDbContext(builder.Options);
     }
 }

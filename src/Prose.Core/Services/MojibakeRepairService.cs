@@ -70,7 +70,7 @@ public class MojibakeRepairService
         // unless the factory's connection string had it, so we open our own.
         var builder = new SqlConnectionStringBuilder(connStr) { MultipleActiveResultSets = true };
         await using var conn = new SqlConnection(builder.ToString());
-        await conn.OpenAsync(ct);
+        await conn.OpenWithRetryAsync(ct);
 
         var tables = await LoadTextColumnsAsync(conn, ct);
         result.TablesScanned = tables.Count;

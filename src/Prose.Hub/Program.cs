@@ -174,10 +174,7 @@ builder.Logging.AddSerilog(hubSerilogLogger, dispose: true);
 // LoggingService's search, or LogIssue triage changes. mindAtticLogConnectionString is still
 // resolved (env var → appsettings config → LocalDB "Prose" fallback) because the startup block
 // below still needs it to migrate Phase 1's historical rows out of that database.
-var mindAtticLogConnectionString =
-    Environment.GetEnvironmentVariable("ConnectionStrings__Prose")
-    ?? builder.Configuration.GetConnectionString("Prose")
-    ?? @"Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;";
+var mindAtticLogConnectionString = ProseSqlResilience.ResolveConnectionString(builder.Configuration);
 var mindAtticLogDbPath = MindAttic.Vault.Paths.VaultPaths.LoggingDbPath("Prose.Hub");
 var mindAtticLogger = new LoggerConfiguration()
     .MinimumLevel.Information()
@@ -317,6 +314,13 @@ var app = builder.Build();
 // never serves requests against a schema its own code doesn't match. A migration failure is
 // fatal (not caught/swallowed) — starting up against a half-migrated or stale schema is worse
 // than refusing to start, and this must stay loud, not silently logged and ignored.
+// Wake the database first (PRS-T998). An Azure SQL serverless database pauses when idle and
+// refuses logins for up to about a minute while it resumes; this waits that out (with a console
+// line per retry) before anything is served. Against LocalDB it is one ordinary connection.
+// The same resume-tolerant open backs every later connection too - see ProseSqlResilience.
+ProseSqlResilience.OnRetry = message => Console.WriteLine($"[hub] {message}");
+await ProseSqlResilience.WakeAsync(mindAtticLogConnectionString);
+
 await using (var migrationScope = app.Services.CreateAsyncScope())
 {
     await using var migrationDb = await migrationScope.ServiceProvider

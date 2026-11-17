@@ -78,7 +78,7 @@ public sealed class FactoryJournal(IDbContextFactory<ProseDbContext> dbFactory, 
         if (db.Database.ProviderName?.Contains("SqlServer", StringComparison.OrdinalIgnoreCase) != true)
             return (false, $"temporal history is SQL Server's; this provider ({db.Database.ProviderName}) has none");
         var conn = db.Database.GetDbConnection();
-        if (conn.State != System.Data.ConnectionState.Open) await conn.OpenAsync(ct);
+        if (conn.State != System.Data.ConnectionState.Open) await conn.OpenWithRetryAsync(ct);
         await using (var cmd = conn.CreateCommand())
         {
             cmd.CommandText = """

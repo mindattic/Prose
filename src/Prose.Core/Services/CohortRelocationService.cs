@@ -80,7 +80,7 @@ public class CohortRelocationService
         var connStr = db.Database.GetConnectionString()
             ?? throw new InvalidOperationException("No connection string.");
         await using var conn = new SqlConnection(connStr);
-        await conn.OpenAsync(ct);
+        await conn.OpenWithRetryAsync(ct);
 
         // Build the WHERE clause from the criterion's LIKE patterns. Patterns
         // come from configuration so callers can express their intent in

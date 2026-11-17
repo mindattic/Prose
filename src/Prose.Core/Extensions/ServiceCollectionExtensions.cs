@@ -86,11 +86,9 @@ public static class ServiceCollectionExtensions
         services.AddDbContextFactory<ProseDbContext>((sp, opts) =>
         {
             var cfg = sp.GetService<IConfiguration>();
-            var connStr =
-                Environment.GetEnvironmentVariable("ConnectionStrings__Prose")
-                ?? cfg?.GetConnectionString("Prose")
-                ?? @"Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;";
-            opts.UseSqlServer(connStr);
+            // UseProseSqlServer = UseSqlServer + an open that waits out an Azure SQL serverless
+            // resume (PRS-T998). Not EnableRetryOnFailure: see ProseSqlResilience.
+            opts.UseProseSqlServer(ProseSqlResilience.ResolveConnectionString(cfg));
             // The multi-universe global query filters live on the Entity/Node/Book PRINCIPALS;
             // their dependents inherit the universe and intentionally carry no filter. EF logs a
             // "required end of a relationship" warning for each such navigation — expected and
@@ -110,11 +108,9 @@ public static class ServiceCollectionExtensions
         services.AddDbContext<ProseAuthDbContext>((sp, opts) =>
         {
             var cfg = sp.GetService<IConfiguration>();
-            var connStr =
-                Environment.GetEnvironmentVariable("ConnectionStrings__Prose")
-                ?? cfg?.GetConnectionString("Prose")
-                ?? @"Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;";
-            opts.UseSqlServer(connStr);
+            // UseProseSqlServer = UseSqlServer + an open that waits out an Azure SQL serverless
+            // resume (PRS-T998). Not EnableRetryOnFailure: see ProseSqlResilience.
+            opts.UseProseSqlServer(ProseSqlResilience.ResolveConnectionString(cfg));
         });
         // Idempotent legacy UserAccount → AuthUser migration (bcrypt carry +
         // upgrade-on-login). Scoped: depends on the scoped auth context.

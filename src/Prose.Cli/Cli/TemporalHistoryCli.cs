@@ -46,7 +46,7 @@ public static class TemporalHistoryCli
 
         await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
         var conn = db0.Database.GetDbConnection();
-        await conn.OpenAsync();
+        await conn.OpenWithRetryAsync();
 
         await using (var checkCmd = conn.CreateCommand())
         {
@@ -100,7 +100,7 @@ public static class TemporalHistoryCli
         Console.WriteLine($"[edit-timeline] {beatIds.Count} beats — scanning Beats_History for every edit timestamp.");
 
         var conn = db0.Database.GetDbConnection();
-        await conn.OpenAsync();
+        await conn.OpenWithRetryAsync();
         var byDay = new SortedDictionary<DateOnly, HashSet<Guid>>();
 
         // Batch in chunks to keep the IN(...) list reasonable.
@@ -145,7 +145,7 @@ public static class TemporalHistoryCli
 
         await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
         var conn = db0.Database.GetDbConnection();
-        await conn.OpenAsync();
+        await conn.OpenWithRetryAsync();
 
         async Task<List<(Guid Id, string Title, double SortKey)>> GetChildrenAsOfAsync(Guid parentId)
         {
@@ -271,7 +271,7 @@ public static class TemporalHistoryCli
 
         await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
         var conn = db0.Database.GetDbConnection();
-        await conn.OpenAsync();
+        await conn.OpenWithRetryAsync();
 
         // Every node that was EVER a descendant of rootId, at any point in time (deleted or not).
         var nodeIds = new HashSet<Guid> { rootId };
@@ -335,7 +335,7 @@ public static class TemporalHistoryCli
         if (string.IsNullOrWhiteSpace(slugLike)) { Console.Error.WriteLine("--slug-like <text> is required."); Environment.ExitCode = 1; return; }
         await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
         var conn = db0.Database.GetDbConnection();
-        await conn.OpenAsync();
+        await conn.OpenWithRetryAsync();
         await using var cmd = conn.CreateCommand();
         cmd.CommandText = """
             SELECT Id, Title, Slug, Kind, ParentNodeId, MIN(SysStart) AS FirstSeen, MAX(SysEnd) AS LastSeen
@@ -360,7 +360,7 @@ public static class TemporalHistoryCli
     {
         await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
         var conn = db0.Database.GetDbConnection();
-        await conn.OpenAsync();
+        await conn.OpenWithRetryAsync();
         await using var cmd = conn.CreateCommand();
         cmd.CommandText = "SELECT name FROM sys.tables WHERE name LIKE '%History%' ORDER BY name";
         await using var reader = await cmd.ExecuteReaderAsync();
@@ -374,7 +374,7 @@ public static class TemporalHistoryCli
 
         await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
         var conn = db0.Database.GetDbConnection();
-        await conn.OpenAsync();
+        await conn.OpenWithRetryAsync();
 
         await using var cmd = conn.CreateCommand();
         cmd.CommandText = """

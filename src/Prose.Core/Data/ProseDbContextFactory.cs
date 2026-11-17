@@ -13,13 +13,8 @@ public class ProseDbContextFactory : IDesignTimeDbContextFactory<ProseDbContext>
 {
     public ProseDbContext CreateDbContext(string[] args)
     {
-        var connStr =
-            Environment.GetEnvironmentVariable("ConnectionStrings__Prose")
-            ?? @"Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;";
-
-        var opts = new DbContextOptionsBuilder<ProseDbContext>()
-            .UseSqlServer(connStr)
-            .Options;
-        return new ProseDbContext(opts);
+        var builder = new DbContextOptionsBuilder<ProseDbContext>();
+        builder.UseProseSqlServer(ProseSqlResilience.ResolveConnectionString());
+        return new ProseDbContext(builder.Options);
     }
 }

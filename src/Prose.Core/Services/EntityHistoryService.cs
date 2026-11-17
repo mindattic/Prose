@@ -150,7 +150,7 @@ public class EntityHistoryService(
         var opened = false;
         if (conn.State != System.Data.ConnectionState.Open)
         {
-            await conn.OpenAsync(ct);
+            await conn.OpenWithRetryAsync(ct);
             opened = true;
         }
 
@@ -250,7 +250,7 @@ public class EntityHistoryService(
         var opened = false;
         if (conn.State != System.Data.ConnectionState.Open)
         {
-            await conn.OpenAsync(ct);
+            await conn.OpenWithRetryAsync(ct);
             opened = true;
         }
 
