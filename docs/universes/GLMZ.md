@@ -176,6 +176,23 @@ mass instead of mind.
 
 ## <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> Geography
 
+**The sprawl (author 2026-11-16, law 01a1e7cc-9402).** The GLMZ is one uninterrupted built mass with no
+countryside between its cities. It runs north up the Spine past Milwaukee and Green Bay to Rhinelander in the
+northern woods, east around the lakes to the shore of Lake Erie, and south through northern Indiana. It grows like
+slime mold: tendrils along every transit line, Pulse spur, pipeline and power corridor, thick where they cross,
+thinning to single lit strips in between, and reaching out at the edges into the Territories and the dark.
+**Nobody names a state** (page-law 01a1e7cc-a1a4). A place is its district, city or corridor. A state survives only
+in passing, as a name that outlived its government: Iowa and its behemoths, Kentucky (lost), an old sign, a
+grandmother's word. (Lake Michigan, Michigan Avenue and the like are place names, not states, and stay.)
+
+**Secret labs (author 2026-11-16, law 01a1e7cc-baa4).** The number of secret labs and experiments across the sprawl
+is staggering: one every few blocks. They include CorpoNation research arms, deniable subcontractors, Lotus
+cook-labs, university annexes nobody funds openly, Bloom Quarter gene shops, independent chasers with stolen
+permits, and untraceable fronts (some of them the Cabal's hands). Most now chase incursions: tissue, thin-spot
+ground, fit numbers, a way to open a rift on purpose or hold one open. They make the collapse worse, and nobody is
+ever held to account. Labs are a condition of the world, not a plot device: an incursion is dangerous because of
+its own biology, never only because "it escaped from a lab".
+
 **No official zone numbering.** <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> has no official Z1–Z12 designation system. Districts and
 neighborhoods use their own names. Do not number them.
 
@@ -606,14 +623,14 @@ cope the way people cope with a war, and still call it weather. The narration do
 
 The escalation, which every book pitches to its own year:
 
-| Years | In GLMZ |
+| Years | In <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> |
 |---|---|
-| 2090s-2150s | Rare and far away. Kentucky goes. Incursions are classified rumors. |
-| 2190s-2210s | A handful of egress events a year in GLMZ. Most incursions are dead on the pavement by the time anyone comes. AAMA files fit in one office. |
+| 2090s-2150s | Rare and far away. <entity repo="place" guid="a820b7da-b623-896f-3578-756f5d566663">Kentucky</entity> goes. Incursions are classified rumors. |
+| 2190s-2210s | A handful of egress events a year in <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>. Most incursions are dead on the pavement by the time anyone comes. <entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity> files fit in one office. |
 | ~2217 (Steppin' Razor) | About one egress event a month somewhere in the zone. Scavenger crews exist. Thin-spot survivors are news. |
-| ~2225-2226 | Weekly. Thin-spot survivors are ordinary; the first plunderers work the Seams; stranding crews are a job. Insurers start writing schism exclusions into everything. |
-| ~2230 | Several a week. People taken (E5) every month somewhere. Constants slip city-wide for hours at a time: stairs that change count, clocks that disagree, weight that is wrong, sound that carries too far or not at all. AAMA is overwhelmed; ArcSec charges by the egress rating; whole blocks are written off. The word "weather" starts to sound like a lie. |
-| 2231 (The Cabal) | The lake taps close and GLMZ's rate falls, but never back to what it was; the thin spots stay, and Kentucky, Rome and Tequenica keep going. It is the end of one front, not of the collapse. |
+| ~2225-2226 | Weekly. Thin-spot survivors are ordinary; the first plunderers work <entity repo="place" guid="019d6143-a94e-7740-8aa9-4b82bbd9a223">the Seams</entity>; stranding crews are a job. Insurers start writing schism exclusions into everything. |
+| ~2230 | Several a week. People taken (E5) every month somewhere. Constants slip city-wide for hours at a time: stairs that change count, clocks that disagree, weight that is wrong, sound that carries too far or not at all. <entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity> is overwhelmed; <entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">ArcSec</entity> charges by the egress rating; whole blocks are written off. The word "weather" starts to sound like a lie. |
+| 2231 (<entity repo="faction" guid="01a10f60-918b-7f54-aed5-96ab777414e8">The Cabal</entity>) | The lake taps close and <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>'s rate falls, but never back to what it was; the thin spots stay, and <entity repo="place" guid="a820b7da-b623-896f-3578-756f5d566663">Kentucky</entity>, Rome and Tequenica keep going. It is the end of one front, not of the collapse. |
 
 **Not a copy (author 2026-11-16).** This is not Lovecraftian lore and copies nothing that came before. Every incursion was
 checked against a survey of ~170 existing otherworldly creatures and gate fictions (Quake's slipgates, Half-Life, Doom,
@@ -698,6 +715,9 @@ The Interstice is what lies between universes; a Schism is where ours is thin to
 - **The <entity repo="faction" guid="019d6143-a893-7801-860b-0eda6a216393">Lotus Syndicate</entity>** sells humtide recordings, launders miscounted ledgers and buys exotic tissue for the chrome clinics.
 - **<entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">ArcSec</entity>** runs containment when the egress rating is high and the client pays.
 - **Exotic tissue** feeds the cyberware and gene-mod trades: brickleg muscle fiber for myomer labs, stiltgrazer bone for armor.
+- **The labs** buy everything that comes through and cause a good share of what does: a lab drilling its own
+  little tap, a contained incursion that gets out, a thin spot widened by an experiment are among the commonest
+  causes of an egress event in the Seams (law 01a1e7cc-baa4).
 - **Stranding crews.** Most incursions die where they land, and the city has learned to treat that as work: <entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity>
   stranding crews triage what comes down, put the suffering ones out of it, and log the dead; some volunteers in
   <entity repo="place" guid="019d6143-a94e-7740-8aa9-4b82bbd9a223">the Seams</entity> run hospice for the ones that take days to go.
