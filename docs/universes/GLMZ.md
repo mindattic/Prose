@@ -632,23 +632,24 @@ The escalation, which every book pitches to its own year:
 | ~2230 | Several a week. People taken (E5) every month somewhere. Constants slip city-wide for hours at a time: stairs that change count, clocks that disagree, weight that is wrong, sound that carries too far or not at all. <entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity> is overwhelmed; <entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">ArcSec</entity> charges by the egress rating; whole blocks are written off. The word "weather" starts to sound like a lie. |
 | 2231 (<entity repo="faction" guid="01a10f60-918b-7f54-aed5-96ab777414e8">The Cabal</entity>) | The lake taps close and <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>'s rate falls, but never back to what it was; the thin spots stay, and <entity repo="place" guid="a820b7da-b623-896f-3578-756f5d566663">Kentucky</entity>, Rome and Tequenica keep going. It is the end of one front, not of the collapse. |
 
-**Why the GLMZ has monsters (author 2026-11-17, law 01a1e889-a71f).** Incursions are the piece of the puzzle that lets
+**Why the <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> has monsters (author 2026-11-17, law 01a1e889-a71f).** Incursions are the piece of the puzzle that lets
 monsters and alien flora and fauna exist in this cyberpunk world naturally. Any strange creature, growth or unexplained
-living thing in any GLMZ book came through a rift, or descends from something that did. No magic. A lab escape or gene-mod
+living thing in any <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> book came through a rift, or descends from something that did. No magic. A lab escape or gene-mod
 experiment is never the default explanation: labs buy, hold and breed incursions, they do not conjure them.
 
 **Many names (law 01a1e887-f116).** People call the openings Schisms, ruptures, rifts, tears, doors and thin spots, and
-say things seep in, come through, fall out or land. "Incursion" is the AAMA's paperwork word. Vary it by speaker.
+say things seep in, come through, fall out or land. "Incursion" is the <entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity>'s paperwork word. Vary it by speaker.
 
-**The expert: Renoir "Ren" Babineaux (laws 01a1e88f-1369, 01a1e88f-1372).** The AAMA's contract exterminator since 2211
+**The expert: Renoir "<entity repo="character" guid="019ebf4b-d21b-70a8-9193-4ee705e3f80e">Ren</entity>" Babineaux (laws 01a1e88f-1369, 01a1e88f-1372).** The <entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity>'s contract exterminator since 2211
 (first kill 2209, a brickleg in the Bridgeport interceptor), and perhaps the only person in the world who can truly be
 called an expert on things that come through. He is the exterminator of *Arachnophobia* and the specialist of
-*Ghostbusters*, with a Cajun/Creole sense of humor from Leone's Louisiana line, and his question is always what it ate at
-home. He lives in Orland Park with Ramona, Ariel and Miranda and a basement menagerie, and comes from the Babineaux, a
-**minor** criminal family of Canaryville (law 01a1e88f-1345): fences, chop shops, the waste skim, card games, never
-violence for hire, many members semi-legitimate. His book, *Babineaux's Guide to Killing Otherworldly Things* (2231), is
+*Ghostbusters*, with a Cajun/Creole sense of humor from <entity repo="character" guid="1eaf0dde-adbe-ef00-cafe-babeface1234">Leone</entity>'s Louisiana line, and his question is always what it ate at
+home. He lives in <entity repo="place" guid="01a1e891-7de4-7f6a-9bef-d8c8e595d8b4">Orland Park</entity> with Ramona, Ariel and <entity repo="character" guid="01a1e815-ff5e-7870-95b3-ede3fa323a1c">Miranda</entity> and a basement menagerie, and comes from the Babineaux of
+<entity repo="place" guid="ca1aface-abba-0bad-f00d-1234567890ab">Canaryville</entity> (law 01a1e89e-cb3c; the family records are canon): about four thousand people, most working two jobs or
+small-time, some taking contract violence, running dogs, moving product or collecting debts, held together by the
+matriarch Valentina's weekly Sunday supper. Ren is the most legitimate of them. Why the family left Louisiana stays a mystery. His book, *Babineaux's Guide to Killing Otherworldly Things* (2231), is
 the series' last. In the Cyberocracy trilogy his twenty-two years of ledgers map the arrivals into a ring tightening on the
-lake rim: his expertise is part of how the cadre finds that the Cabal within Egregore opened the doors.
+lake rim: his expertise is part of how the cadre finds that the Cabal within <entity repo="place" guid="01a10f60-4159-770f-af38-bda00ff349c7">Egregore</entity> opened the doors.
 
 **Not a copy (author 2026-11-16).** This is not Lovecraftian lore and copies nothing that came before. Every incursion was
 checked against a survey of ~170 existing otherworldly creatures and gate fictions (Quake's slipgates, Half-Life, Doom,
