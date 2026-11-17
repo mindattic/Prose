@@ -41,10 +41,10 @@ out how to live, and some of them are even happy. The tragedy is structural, not
 |---|---|
 | ~2045 | Silicon Wall — transistor miniaturization hits a hard physical limit; Moore's Law ends |
 | 2071 | Quantum computing matures (Lagos consortium); architecture shift fractures the tech industry |
-| 2090s | First Schism zones documented; government classifies the data; corporate contractors begin managing them |
+| 2090s | First Schism zones documented; government classifies the data; corporate contractors begin managing them. The first documented arrival (something that came *through* and died on the pavement) is classified with them |
 | 2100s–2140s | Schism zones multiply; federal jurisdiction becomes theoretical in affected regions; corporations fill the void |
 | 2130s | Missouri flood years accumulate; federal disaster response never arrives at scale |
-| 2150s | <entity repo="place" guid="a820b7da-b623-896f-3578-756f5d566663">Kentucky</entity> lost to Schism zone expansion; called a "disaster zone" — still is |
+| 2150s | <entity repo="place" guid="a820b7da-b623-896f-3578-756f5d566663">Kentucky</entity> lost to Schism zone expansion; called a "disaster zone" — still is. What makes it unlivable is less the geometry than what keeps coming through: sower engines, stiltgrazer herds in the river bottoms, and the nights nobody talks about |
 | 2153 | Korea unifies under an isolationist compact |
 | 2158 | Last meaningful federal enforcement action in the <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> region |
 | 2160s | <entity repo="technology" guid="019f0464-2fee-725a-a5e0-00628447b431">Neuretics</entity> emerge — neuro-lace polymer mesh grown into living brain tissue |
@@ -574,6 +574,101 @@ weather by residents; dangerous to neuretics-sensitive individuals.
 
 **Word rule:** "bleed" is RESERVED for neuretics data leakage. Never use "bleed" for schism
 phenomena. Use "rift," "seep," "intrusion," etc.
+
+### Passages: what comes through (author 2026-11-16, PRS-T943; laws 01a1e75b-7492, -8598, -0738, -20e6, -57db)
+
+A Schism is a storm **and** a passage. Any rift, any class, can pass things through from anywhere in
+the Nth dimension, and the Nth dimension is infinite: not one parallel world of demons but every reach
+of reality. Arrivals come mid-anything: a quiet street, a lab, a firefight between operators, gangers
+and <entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">ArcSec</entity>. This is a pillar of the world beside CorpoNations, nanotech, cyberware and gene mods: just
+another thing <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> residents live with.
+
+- **Words.** Street: *throughfall*, *a fall*, "something came through." <entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity>: *egress*, *<entity repo="place" guid="019d6143-a955-72ac-9d2d-78751976f2cb">Threshold</entity> Biota*.
+  Academic: *interstitial biota*.
+- **Most die.** Within seconds or minutes: wrong pressure, gravity, temperature, chemistry, molecular
+  handedness, or base frequency. A sky full of drop-kites, all coming down.
+- **The thin spot keeps some alive.** The ground around a rift holds a little of their home physics.
+  They live there and die when they leave it or it closes.
+- **A few find <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> bearable**, and some of those plunder it: tenders pulling power cells out of chrome,
+  pickers emptying sealed things.
+- **Some are docile and stay**: driftbells over the dumps, hush reeds in hospital courts, shellsleepers as pets.
+  This is the city's New Weird.
+- **It runs both ways.** Arrivals, and the rift itself, take people and things back through. <entity repo="schism-entity" guid="d0068627-05ff-40d8-97ee-d7eba460a57b">The Lure</entity>
+  gathers; the <entity repo="schism_arrival" guid="01a1e7a7-37df-7faa-a343-7b449226ccdd">Welcomers</entity> keep. Nobody who comes back explains the other side.
+- **The schism keeps no will** (01a116b0-a188). The arrivals have the wants.
+
+**The biology test (01a1e75b-0738).** Every named arrival answers four questions, on its record if not on
+the page:
+- What was its home niche?
+- What did it eat or run on there?
+- Why does it die here, or how does it survive, and how far from the rift?
+- What do people harvest from it, or fear?
+
+No apex super-predator, and no tentacles, eye-clusters, fish-folk or New England. Danger comes from being
+in the wrong place, not from perfection: a brickleg kills for ten minutes, then its heavy-world heart fails.
+
+**The eight kinds (01a1e75b-20e6), <entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity> file prefixes TB-B/M/P/G/E/I/C/D:**
+
+| Kind | What it is | Examples (records: type `schism_arrival`) |
+|---|---|---|
+| Biological | Life from other chemistry; the commonest, the quickest to die | <entity repo="schism_arrival" guid="01a1e7a7-0087-7d8e-a6d8-b171369b75aa">Pressure Kite</entity>, <entity repo="schism_arrival" guid="01a1e7a7-33b5-700f-835d-3a9b99e4a518">Saint's Mold</entity>, <entity repo="schism_arrival" guid="01a1e7a7-33f2-71fd-96b4-e5ebfa9bcd25">Stiltgrazer</entity>, <entity repo="schism_arrival" guid="01a1e7a7-3420-7f61-80bf-1671f6bd9e1d">Coldcrust</entity>, <entity repo="schism_arrival" guid="01a1e7a7-3455-707a-8ad3-e7b50ac0dad5">Brine Lantern</entity>, <entity repo="schism_arrival" guid="01a1e7a7-3476-758a-87e2-63726e54d250">Brickleg</entity>, <entity repo="schism_arrival" guid="01a1e7a7-34a4-70b2-9c3a-9182c11d2361">Tablecloth</entity> |
+| Mechanical | Built things still running their last task; machines, never alive | <entity repo="schism_arrival" guid="01a1e7a7-3559-7ecb-b567-03d92d30bc47">Gradewalker</entity>, <entity repo="schism_arrival" guid="01a1e7a7-35ac-74e2-982b-457073cb2eba">Surveyor Clock</entity>, <entity repo="schism_arrival" guid="01a1e7a7-35e5-7947-9c8c-0f02868e5f31">Sower Engine</entity>, <entity repo="schism_arrival" guid="01a1e7a7-361f-7ba1-bdf6-3a3b83c400bd">Orphan Hull</entity> |
+| Post-technological | Leavings of makers past machinery | <entity repo="schism_arrival" guid="01a1e7a7-362f-7c3b-8000-e4bc7b5bf5f4">Foldroom</entity>, <entity repo="schism_arrival" guid="01a1e7a7-367c-73f5-b5e9-b96c5fca602c">Tellstone</entity>, <entity repo="schism_arrival" guid="01a1e7a7-369b-7638-bab8-52c2fff2e200">Archive Coral</entity>, <entity repo="schism_arrival" guid="01a1e7a7-36be-7c33-81b6-00a6f949f477">Accretor</entity> |
+| Geometric | A shape too large in direction for our space, seen as the slice that crosses it; touches the inside of sealed things (never a dimension number) | <entity repo="schism_arrival" guid="01a1e7a7-36ec-756e-af4d-7e387556e9f3">Pulsebloom</entity>, <entity repo="schism_arrival" guid="01a1e7a7-36fe-7b2b-b6aa-659528b30968">Ringlock</entity>, <entity repo="schism_arrival" guid="01a1e7a7-370f-71a6-a7fe-a1b1aa08e825">Inside Picker</entity>, <entity repo="schism_arrival" guid="01a1e7a7-371f-73c8-93ed-e20eb9d8a9a4">Incomplete</entity> |
+| Energy / field | Patterns in charge, heat, light or vibration, living where infrastructure hums in their range | <entity repo="schism_arrival" guid="01a1e7a7-3731-7b02-93a4-6776cbe8d4cc">Gridcalf</entity>, <entity repo="schism_arrival" guid="01a1e7a7-3742-7cf0-836a-0478e489e056">Humtide</entity>, <entity repo="schism_arrival" guid="01a1e7a7-3752-7b9e-8a27-9146deffbff2">Heatghost</entity> |
+| Informational | A pattern that lives by being copied, remembered or forgotten | <entity repo="schism_arrival" guid="01a1e7a7-3763-7aa3-b281-9b94c4e33fc7">Catchsong</entity>, <entity repo="schism_arrival" guid="01a1e7a7-3775-7861-b372-9cdc7f4595cb">Unremembered</entity>, <entity repo="schism_arrival" guid="01a1e7a7-37a2-76d8-8b8e-2bad49be5c9e">Wallscript</entity> |
+| Colonial | Organized takers, parts of something larger that stayed home; alien in motive, never cartoon-evil | <entity repo="schism_arrival" guid="01a1e7a7-37b1-750b-857d-ce2382f4d235">Lithium Tender</entity>, <entity repo="schism_arrival" guid="01a1e7a7-37df-7faa-a343-7b449226ccdd">Welcomers</entity>, <entity repo="schism_arrival" guid="01a1e7a7-37fe-7711-8346-26ff1c9d2fd4">Nightgleaner</entity>, <entity repo="schism_arrival" guid="01a1e7a7-3829-749b-a821-5defaf333832">Salt Callers</entity> |
+| Docile | The ones that stay and do no harm | <entity repo="schism_arrival" guid="01a1e7a7-3868-77e2-8a5f-b6f93109b2ea">Driftbell</entity>, <entity repo="schism_arrival" guid="01a1e7a7-38c3-7692-bea1-547f8d164094">Hush Reed</entity>, <entity repo="schism_arrival" guid="01a1e7a7-38f2-7a8b-9391-49168fcf2d3e">Shellsleeper</entity>, <entity repo="schism_arrival" guid="01a1e7a7-3905-7380-8b23-3acadb980a8e">Rustmoss</entity> |
+
+**Survival grades on every file:**
+- S1: dies on arrival.
+- S2: thin spot only.
+- S3: hours to months outside.
+- S4: stays.
+
+**Rift science: forecast, rate, decide.**
+- **Precursors.** A rupture can be seen coming, minutes to hours ahead, by:
+  - the 19 Hz ring climbing into harmonics;
+  - micro-schism pebbles <entity repo="vocabulary" guid="019d6143-aaa1-7cec-8b36-549dcfb312fe">drifting</entity> toward a point;
+  - pressure and temperature differentials with no weather to explain them;
+  - Substrate nano behaving wrong (Class I swarms balling up);
+  - instruments tuned to somewhere else twitching. Scavengers wear surveyor clocks on cords for this.
+  - Sensitives feel it seconds early (<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>: 4-8 s).
+- **The limit.** Inside a live boundary, instruments go blind (Field Hazard Card 9). Forecasting works from outside.
+- **Rating.** <entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity> rates each event twice: **Class** 1-5 for the geometry, and **Egress** for what came through:
+  - E0: nothing came through.
+  - E1: arrivals dead on arrival.
+  - E2: thin-spot survivors.
+  - E3: survivors outside the thin spot.
+  - E4: plunderers or takers present.
+  - E5: people taken.
+- **The call on the ground** is *flee or leverage*. Most people run. Crews with a clock, a permit and
+  nerve wait for the falling to stop and go in for what's worth money.
+
+**The rift economy.**
+- **<entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity>** sells entry permits (Permit-7 is shared with Class III nano), keeps the files and holds the exhibits.
+- **The corps buy the catalogue.**
+  - <entity repo="corponation" guid="019ef728-3e8a-7d69-9543-777e7c718174">Tessera Industries</entity>: filter lattice, tellstone, cooling.
+  - <entity repo="corponation" guid="019ef728-47f6-72c0-b8b9-2e5978e3f9ea">Axiom BioNanics</entity>: mirror-handed stock, never-rot tissue, growth-zone exudate.
+  - <entity repo="corponation" guid="019ef728-54fc-7845-99e5-71e126e1669b">Null Dynamics</entity>: hulls, momentum.
+  - <entity repo="corponation" guid="9aa2545c-d7d5-400c-a3da-b25e2f188dab">DataEast</entity> suppresses the catchy ones.
+- **The street.** Scavenger crews scrape coldcrust at night and cut drop-kite lattice into masks.
+- **The <entity repo="faction" guid="019d6143-a893-7801-860b-0eda6a216393">Lotus Syndicate</entity>** farms gleam, sells humtide recordings and rents foldrooms.
+- **<entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">ArcSec</entity>** runs containment when the egress rating is high and the client pays.
+- **Exotic tissue** feeds the cyberware and gene-mod trades: brickleg muscle fiber for myomer labs, stiltgrazer bone for armor.
+- **Rift tourism** is a gray industry: the glowing lake, the Joliet ringlock.
+- **Folk archives** of photos and binders get passed down in families who live near a rift.
+- **<entity repo="faction" guid="01a10f60-918b-7f54-aed5-96ab777414e8">The Cabal</entity> knows the whole catalogue.** The CorpoNations are fascinated, and their research arms buy everything
+  that comes through. <entity repo="schism_arrival" guid="01a1e7a7-369b-7638-bab8-52c2fff2e200">Archive coral</entity> is worth more <entity repo="vocabulary" guid="019d6143-aad7-79ad-b18b-52c47f01c4a2">Quanta</entity> per gram than anything else that falls, and every
+  scrape ends part of whatever is running inside it.
+
+**What the street cannot say: the shortcut universe** (page-law 01a1e7a1-a269, **documented only, never on a Season 1 page**).
+- **What it is.** A stunted universe beside ours, mapped point for point onto it but far smaller, so crossing it by way of a rift
+  shortens distance.
+- **Its life.** Its native life is small, starved and adapted to closeness. Some arrivals are its backwash.
+- **Crossing.** Rare, ruinous and prone to the misroute: coming out somewhere unmeant, or being held, kept comfortable and never let go.
+- **Who knows.** The CorpoNations and the Cabal.
+- **Name.** The author's working names (Dragon Space, Weyr/Wyrm Space) are never used. The <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> name is held for the author.
 
 ---
 

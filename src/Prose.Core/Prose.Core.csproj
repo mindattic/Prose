@@ -27,7 +27,9 @@
          Confirmed 2026-08-09 via dotnet's package vulnerability check. -->
     <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="3.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.14" />
-    <PackageReference Include="MindAttic.Export" Version="5.1.0" />
+    <PackageReference Include="MindAttic.Export" Version="6.0.0" />
+    <!-- FTPS client for WebPublishService (PRS-T942: newest export mirrored to mindattic.com). -->
+    <PackageReference Include="FluentFTP" Version="55.1.0" />
     <!-- COROBS library (RFC 0016 §3.1, mindattic/Corobs): geometry, seeding, converters, bench. Packed to lib/local-packages. -->
     <PackageReference Include="Corobs" Version="0.1.0" />
     <PackageReference Include="MindAttic.Media" Version="1.0.0" />

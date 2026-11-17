@@ -1016,6 +1016,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<NodeMarkdownExporter>();
         services.AddSingleton<ReviewReportExporter>();
         services.AddSingleton<SynopsisExportService>();
+        services.AddSingleton<WebPublishService>();
         services.AddSingleton<ExportCleanupService>();
         services.AddSingleton<DocxExportService>();
         services.AddSingleton<ManuscriptExportService>();

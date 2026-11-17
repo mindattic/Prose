@@ -140,7 +140,7 @@ public class NodeFullExportService
         {
             var version = await dbArchive.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == nodeId)
                 .Select(n => n.Version).FirstOrDefaultAsync(ct);
-            cleanup.ArchiveCurrent(outDir, version);
+            await cleanup.ArchiveCurrentAsync(nodeId, outDir, version, ct);
         }
 
         return new Result(docxPath, epubPath, pdfPath, txtPath, mdPath, docxMojibakeHits,
