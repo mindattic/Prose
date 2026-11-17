@@ -176,18 +176,18 @@ mass instead of mind.
 
 ## <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> Geography
 
-**The sprawl (author 2026-11-16, law 01a1e7cc-9402).** The GLMZ is one uninterrupted built mass with no
-countryside between its cities. It runs north up the Spine past Milwaukee and Green Bay to Rhinelander in the
-northern woods, east around the lakes to the shore of Lake Erie, and south through northern Indiana. It grows like
-slime mold: tendrils along every transit line, Pulse spur, pipeline and power corridor, thick where they cross,
+**The sprawl (author 2026-11-16, law 01a1e7cc-9402).** The <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> is one uninterrupted built mass with no
+countryside between its cities. It runs north up the <entity repo="place" guid="01a101d4-5b69-70c9-9f2c-cf8161569ec8">Spine</entity> past <entity repo="place" guid="01a1a4f5-4e6e-77d0-acdf-57f21c564819">Milwaukee</entity> and Green Bay to Rhinelander in the
+northern woods, east around the lakes to the shore of <entity repo="place" guid="01a1a4ee-6cd7-7745-9564-0b46c6541ad5">Lake Erie</entity>, and south through northern Indiana. It grows like
+slime mold: tendrils along every transit line, <entity repo="corponation" guid="0d831459-182f-4efc-9920-bdf9e032c61d">Pulse</entity> spur, pipeline and power corridor, thick where they cross,
 thinning to single lit strips in between, and reaching out at the edges into the Territories and the dark.
 **Nobody names a state** (page-law 01a1e7cc-a1a4). A place is its district, city or corridor. A state survives only
-in passing, as a name that outlived its government: Iowa and its behemoths, Kentucky (lost), an old sign, a
-grandmother's word. (Lake Michigan, Michigan Avenue and the like are place names, not states, and stay.)
+in passing, as a name that outlived its government: <entity repo="vocabulary" guid="019d6143-aabb-7370-8444-839d7f7bc429">Iowa</entity> and its behemoths, <entity repo="place" guid="a820b7da-b623-896f-3578-756f5d566663">Kentucky</entity> (lost), an old sign, a
+grandmother's word. (<entity repo="place" guid="01a1a4ee-1e55-7cb1-acab-28ac4ab362bb">Lake Michigan</entity>, Michigan Avenue and the like are place names, not states, and stay.)
 
 **Secret labs (author 2026-11-16, law 01a1e7cc-baa4).** The number of secret labs and experiments across the sprawl
-is staggering: one every few blocks. They include CorpoNation research arms, deniable subcontractors, Lotus
-cook-labs, university annexes nobody funds openly, Bloom Quarter gene shops, independent chasers with stolen
+is staggering: one every few blocks. They include CorpoNation research arms, deniable subcontractors, <entity repo="faction" guid="019d6143-a893-7801-860b-0eda6a216393">Lotus</entity>
+cook-labs, university annexes nobody funds openly, <entity repo="place" guid="019ef735-1581-7998-9cfa-2c6411898545">Bloom Quarter</entity> gene shops, independent chasers with stolen
 permits, and untraceable fronts (some of them the Cabal's hands). Most now chase incursions: tissue, thin-spot
 ground, fit numbers, a way to open a rift on purpose or hold one open. They make the collapse worse, and nobody is
 ever held to account. Labs are a condition of the world, not a plot device: an incursion is dangerous because of
@@ -632,6 +632,24 @@ The escalation, which every book pitches to its own year:
 | ~2230 | Several a week. People taken (E5) every month somewhere. Constants slip city-wide for hours at a time: stairs that change count, clocks that disagree, weight that is wrong, sound that carries too far or not at all. <entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity> is overwhelmed; <entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">ArcSec</entity> charges by the egress rating; whole blocks are written off. The word "weather" starts to sound like a lie. |
 | 2231 (<entity repo="faction" guid="01a10f60-918b-7f54-aed5-96ab777414e8">The Cabal</entity>) | The lake taps close and <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>'s rate falls, but never back to what it was; the thin spots stay, and <entity repo="place" guid="a820b7da-b623-896f-3578-756f5d566663">Kentucky</entity>, Rome and Tequenica keep going. It is the end of one front, not of the collapse. |
 
+**Why the GLMZ has monsters (author 2026-11-17, law 01a1e889-a71f).** Incursions are the piece of the puzzle that lets
+monsters and alien flora and fauna exist in this cyberpunk world naturally. Any strange creature, growth or unexplained
+living thing in any GLMZ book came through a rift, or descends from something that did. No magic. A lab escape or gene-mod
+experiment is never the default explanation: labs buy, hold and breed incursions, they do not conjure them.
+
+**Many names (law 01a1e887-f116).** People call the openings Schisms, ruptures, rifts, tears, doors and thin spots, and
+say things seep in, come through, fall out or land. "Incursion" is the AAMA's paperwork word. Vary it by speaker.
+
+**The expert: Renoir "Ren" Babineaux (laws 01a1e88f-1369, 01a1e88f-1372).** The AAMA's contract exterminator since 2211
+(first kill 2209, a brickleg in the Bridgeport interceptor), and perhaps the only person in the world who can truly be
+called an expert on things that come through. He is the exterminator of *Arachnophobia* and the specialist of
+*Ghostbusters*, with a Cajun/Creole sense of humor from Leone's Louisiana line, and his question is always what it ate at
+home. He lives in Orland Park with Ramona, Ariel and Miranda and a basement menagerie, and comes from the Babineaux, a
+**minor** criminal family of Canaryville (law 01a1e88f-1345): fences, chop shops, the waste skim, card games, never
+violence for hire, many members semi-legitimate. His book, *Babineaux's Guide to Killing Otherworldly Things* (2231), is
+the series' last. In the Cyberocracy trilogy his twenty-two years of ledgers map the arrivals into a ring tightening on the
+lake rim: his expertise is part of how the cadre finds that the Cabal within Egregore opened the doors.
+
 **Not a copy (author 2026-11-16).** This is not Lovecraftian lore and copies nothing that came before. Every incursion was
 checked against a survey of ~170 existing otherworldly creatures and gate fictions (Quake's slipgates, Half-Life, Doom,
 Shadowrun, Pacific Rim, Bloodborne, Doctor Who, Miéville, qntm and more; list in the Schism Passages bible). Entries too
@@ -717,7 +735,7 @@ The Interstice is what lies between universes; a Schism is where ours is thin to
 - **Exotic tissue** feeds the cyberware and gene-mod trades: brickleg muscle fiber for myomer labs, stiltgrazer bone for armor.
 - **The labs** buy everything that comes through and cause a good share of what does: a lab drilling its own
   little tap, a contained incursion that gets out, a thin spot widened by an experiment are among the commonest
-  causes of an egress event in the Seams (law 01a1e7cc-baa4).
+  causes of an egress event in <entity repo="place" guid="019d6143-a94e-7740-8aa9-4b82bbd9a223">the Seams</entity> (law 01a1e7cc-baa4).
 - **Stranding crews.** Most incursions die where they land, and the city has learned to treat that as work: <entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity>
   stranding crews triage what comes down, put the suffering ones out of it, and log the dead; some volunteers in
   <entity repo="place" guid="019d6143-a94e-7740-8aa9-4b82bbd9a223">the Seams</entity> run hospice for the ones that take days to go.
