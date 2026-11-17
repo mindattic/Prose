@@ -60,6 +60,16 @@ public sealed class EntityRetypeService(IDbContextFactory<ProseDbContext> dbFact
         return new EntityRetypePlan(true, null, entityId, entity.Name, entity.EntityType, toType, changes);
     }
 
+    // Some legacy side tables are still in the model but were dropped from the live database.
+    private static async Task<bool> TableExistsAsync(ProseDbContext db, string table, CancellationToken ct)
+    {
+        if (db.Database.ProviderName?.Contains("SqlServer") != true) return true;
+        var found = await db.Database
+            .SqlQueryRaw<int>("SELECT CASE WHEN OBJECT_ID({0}, 'U') IS NULL THEN 0 ELSE 1 END AS [Value]", "dbo." + table)
+            .ToListAsync(ct);
+        return found.FirstOrDefault() == 1;
+    }
+
     public async Task<EntityRetypeResult> ApplyAsync(Guid universeId, Guid entityId, string toType, CancellationToken ct = default)
     {
         var plan = await PlanAsync(universeId, entityId, toType, ct);
@@ -94,16 +104,21 @@ public sealed class EntityRetypeService(IDbContextFactory<ProseDbContext> dbFact
 
             foreach (var m in await db.BeatEntityMentions.Where(m => m.EntityId == entityId).ToListAsync(ct))
                 m.EntityType = toType;
-            foreach (var c in await db.ContinuityClaims.Where(c => (c.EntityId == n || c.EntityId == d) && c.EntityKind == from).ToListAsync(ct))
-                c.EntityKind = toType;
-            foreach (var r in await db.EntityReviews.Where(r => (r.EntityId == n || r.EntityId == d) && r.EntityType == from).ToListAsync(ct))
-                r.EntityType = toType;
-            foreach (var s in await db.EntityReviewSummaries.Where(s => (s.EntityId == n || s.EntityId == d) && s.EntityType == from).ToListAsync(ct))
-                s.EntityType = toType;
-            foreach (var q in await db.EntityReviewQueue.Where(q => (q.EntityId == n || q.EntityId == d) && q.EntityType == from).ToListAsync(ct))
-                q.EntityType = toType;
-            foreach (var w in await db.DistributedWorkQueue.Where(w => (w.TargetId == n || w.TargetId == d) && w.TargetType == from).ToListAsync(ct))
-                w.TargetType = toType;
+            if (await TableExistsAsync(db, "ContinuityClaims", ct))
+                foreach (var c in await db.ContinuityClaims.Where(c => (c.EntityId == n || c.EntityId == d) && c.EntityKind == from).ToListAsync(ct))
+                    c.EntityKind = toType;
+            if (await TableExistsAsync(db, "EntityReviews", ct))
+                foreach (var r in await db.EntityReviews.Where(r => (r.EntityId == n || r.EntityId == d) && r.EntityType == from).ToListAsync(ct))
+                    r.EntityType = toType;
+            if (await TableExistsAsync(db, "EntityReviewSummaries", ct))
+                foreach (var s in await db.EntityReviewSummaries.Where(s => (s.EntityId == n || s.EntityId == d) && s.EntityType == from).ToListAsync(ct))
+                    s.EntityType = toType;
+            if (await TableExistsAsync(db, "EntityReviewQueue", ct))
+                foreach (var q in await db.EntityReviewQueue.Where(q => (q.EntityId == n || q.EntityId == d) && q.EntityType == from).ToListAsync(ct))
+                    q.EntityType = toType;
+            if (await TableExistsAsync(db, "DistributedWorkQueue", ct))
+                foreach (var w in await db.DistributedWorkQueue.Where(w => (w.TargetId == n || w.TargetId == d) && w.TargetType == from).ToListAsync(ct))
+                    w.TargetType = toType;
 
             await db.SaveChangesAsync(ct);
             await tx.CommitAsync(ct);
