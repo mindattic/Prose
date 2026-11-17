@@ -19,7 +19,7 @@ updated: 2026-07-04
 
 ## Setting
 
-**Year:** 2226 is the catalog's baseline present; the books run from 2217 (Steppin' Razor) to 2231 (<entity repo="faction" guid="01a10f60-918b-7f54-aed5-96ab777414e8">The Cabal</entity>), and each book states its own year (Mnemosync, Read the Room, Pieces and Wells in 2230). **Location:** <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> — Great Lakes Metropolitan Zone (also: *<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">The Glooms</entity>*, street
+**Year:** 2226 is the catalog's baseline present; the books run from 2217 (Steppin' Razor) to 2231 (<entity repo="faction" guid="01a10f60-918b-7f54-aed5-96ab777414e8">The Cabal</entity>), and each book states its own year (Mnemosync, Read the Room, Pieces and Wells in 2230). **Location:** <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> — Great Lakes Metropolitan Zone (also: *<entity repo="place" guid="01a1e8c3-8904-7e33-879f-61fc5d680d9c">The Glooms</entity>*, street
 vernacular). Formerly the U.S. Midwest. Population: ~58 million.
 <entity repo="place" guid="6a5b2384-072c-f6a9-b228-107570089917">Chicago</entity> is the transit and commercial hub; the Lake itself is the geographic axis.
 
@@ -641,13 +641,13 @@ experiment is never the default explanation: labs buy, hold and breed incursions
 say things seep in, come through, fall out or land. "Incursion" is the <entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity>'s paperwork word. Vary it by speaker.
 
 **The expert: Renoir "<entity repo="character" guid="019ebf4b-d21b-70a8-9193-4ee705e3f80e">Ren</entity>" Babineaux (laws 01a1e88f-1369, 01a1e88f-1372).** The <entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity>'s contract exterminator since 2211
-(first kill 2209, a brickleg in the Bridgeport interceptor), and perhaps the only person in the world who can truly be
+(first kill 2209, a brickleg in the <entity repo="place" guid="01a1e8aa-95f9-70ef-8dd5-0dd7de811a61">Bridgeport</entity> interceptor), and perhaps the only person in the world who can truly be
 called an expert on things that come through. He is the exterminator of *Arachnophobia* and the specialist of
 *Ghostbusters*, with a Cajun/Creole sense of humor from <entity repo="character" guid="1eaf0dde-adbe-ef00-cafe-babeface1234">Leone</entity>'s Louisiana line, and his question is always what it ate at
-home. He lives in <entity repo="place" guid="01a1e891-7de4-7f6a-9bef-d8c8e595d8b4">Orland Park</entity> with Ramona, Ariel and <entity repo="character" guid="01a1e815-ff5e-7870-95b3-ede3fa323a1c">Miranda</entity> and a basement menagerie, and comes from the Babineaux of
+home. He lives in <entity repo="place" guid="01a1e891-7de4-7f6a-9bef-d8c8e595d8b4">Orland Park</entity> with Ramona, Ariel and <entity repo="character" guid="019d6143-a5a8-780c-99a5-e6dbf3babfba">Miranda</entity> and a basement menagerie, and comes from the Babineaux of
 <entity repo="place" guid="ca1aface-abba-0bad-f00d-1234567890ab">Canaryville</entity> (law 01a1e89e-cb3c; the family records are canon): about four thousand people, most working two jobs or
 small-time, some taking contract violence, running dogs, moving product or collecting debts, held together by the
-matriarch Valentina's weekly Sunday supper. Ren is the most legitimate of them. Why the family left Louisiana stays a mystery. His book, *Babineaux's Guide to Killing Otherworldly Things* (2231), is
+matriarch Valentina's weekly Sunday supper. <entity repo="character" guid="019ebf4b-d21b-70a8-9193-4ee705e3f80e">Ren</entity> is the most legitimate of them. Why the family left Louisiana stays a mystery. His book, *Babineaux's Guide to Killing Otherworldly Things* (2231), is
 the series' last. In the Cyberocracy trilogy his twenty-two years of ledgers map the arrivals into a ring tightening on the
 lake rim: his expertise is part of how the cadre finds that the Cabal within <entity repo="place" guid="01a10f60-4159-770f-af38-bda00ff349c7">Egregore</entity> opened the doors.
 
@@ -963,7 +963,7 @@ carry pure East Asian names. You are BORN <entity repo="faction" guid="019d6143-
 
 **Structure:** <entity repo="faction" guid="01a101f8-53bd-7bc9-84cd-ad1b68368f4a">Stems</entity> (council) + <entity repo="character" guid="01a19ed6-235d-7b1f-ab87-bd233a86c8cc">Root</entity> (half-mythical senior leadership) + <entity repo="faction" guid="01a101f8-48af-7a55-bcb0-93e27980095c">Thorns</entity> (enforcers).
 
-**Territory:** Centered in <entity repo="place" guid="01a018a4-086e-73c5-b9ca-65a52a73f25c">Pilsen</entity>, Bridgeport, Back of the Yards (<entity repo="place" guid="6a5b2384-072c-f6a9-b228-107570089917">Chicago</entity> Gray Zone).
+**Territory:** Centered in <entity repo="place" guid="01a018a4-086e-73c5-b9ca-65a52a73f25c">Pilsen</entity>, <entity repo="place" guid="01a1e8aa-95f9-70ef-8dd5-0dd7de811a61">Bridgeport</entity>, <entity repo="place" guid="01a1e8aa-dac2-7bd4-a34b-c81ccfa397f0">Back of the Yards</entity> (<entity repo="place" guid="6a5b2384-072c-f6a9-b228-107570089917">Chicago</entity> Gray Zone).
 Its money reaches north as well: <entity repo="faction" guid="019d6143-a893-7801-860b-0eda6a216393">Lotus</entity> holds pharmacies, clinics and runner routes in <entity repo="place" guid="01a06ee1-95c2-7084-bc60-1d8cb35562ed">Bucktown</entity> and along Clybourn,
 run from the south (Bushido Coda; series read 2026-11-08).
 
