@@ -597,6 +597,24 @@ another thing <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">G
   gathers; the <entity repo="schism_arrival" guid="01a1e7a7-37df-7faa-a343-7b449226ccdd">Welcomers</entity> keep. Nobody who comes back explains the other side.
 - **The schism keeps no will** (01a116b0-a188). The incursions have the wants.
 
+**The Collapse (author 2026-11-16, law 01a1e7ca-096e).** This is the beginning of a complete collapse of physics,
+caused by the Cabal's taps reaching into dimensions it cannot comprehend or control. On the page the cause stays
+subtext and rumor (the existing page-laws hold); the collapse itself is felt in **every** book, with incursions as
+events that cost somebody something, not only texture. Cigarette packs circling in a vortex are texture; a block
+evacuated, a fight broken up by something falling out of the air, a neighbor taken: that is the collapse. Locals
+cope the way people cope with a war, and still call it weather. The narration does not share their calm.
+
+The escalation, which every book pitches to its own year:
+
+| Years | In GLMZ |
+|---|---|
+| 2090s-2150s | Rare and far away. Kentucky goes. Incursions are classified rumors. |
+| 2190s-2210s | A handful of egress events a year in GLMZ. Most incursions are dead on the pavement by the time anyone comes. AAMA files fit in one office. |
+| ~2217 (Steppin' Razor) | About one egress event a month somewhere in the zone. Scavenger crews exist. Thin-spot survivors are news. |
+| ~2225-2226 | Weekly. Thin-spot survivors are ordinary; the first plunderers work the Seams; stranding crews are a job. Insurers start writing schism exclusions into everything. |
+| ~2230 | Several a week. People taken (E5) every month somewhere. Constants slip city-wide for hours at a time: stairs that change count, clocks that disagree, weight that is wrong, sound that carries too far or not at all. AAMA is overwhelmed; ArcSec charges by the egress rating; whole blocks are written off. The word "weather" starts to sound like a lie. |
+| 2231 (The Cabal) | The lake taps close and GLMZ's rate falls, but never back to what it was; the thin spots stay, and Kentucky, Rome and Tequenica keep going. It is the end of one front, not of the collapse. |
+
 **Not a copy (author 2026-11-16).** This is not Lovecraftian lore and copies nothing that came before. Every incursion was
 checked against a survey of ~170 existing otherworldly creatures and gate fictions (Quake's slipgates, Half-Life, Doom,
 Shadowrun, Pacific Rim, Bloodborne, Doctor Who, Miéville, qntm and more; list in the Schism Passages bible). Entries too
@@ -680,11 +698,11 @@ The Interstice is what lies between universes; a Schism is where ours is thin to
 - **The <entity repo="faction" guid="019d6143-a893-7801-860b-0eda6a216393">Lotus Syndicate</entity>** sells humtide recordings, launders miscounted ledgers and buys exotic tissue for the chrome clinics.
 - **<entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">ArcSec</entity>** runs containment when the egress rating is high and the client pays.
 - **Exotic tissue** feeds the cyberware and gene-mod trades: brickleg muscle fiber for myomer labs, stiltgrazer bone for armor.
-- **Stranding crews.** Most incursions die where they land, and the city has learned to treat that as work: AAMA
+- **Stranding crews.** Most incursions die where they land, and the city has learned to treat that as work: <entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity>
   stranding crews triage what comes down, put the suffering ones out of it, and log the dead; some volunteers in
-  the Seams run hospice for the ones that take days to go.
+  <entity repo="place" guid="019d6143-a94e-7740-8aa9-4b82bbd9a223">the Seams</entity> run hospice for the ones that take days to go.
 - **Who owns a thin spot** is a court fight in every district: the CorpoNation whose land it opened on, the
-  AAMA that permits it, or the crew that has scraped it for twenty years.
+  <entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity> that permits it, or the crew that has scraped it for twenty years.
 - **Rift tourism** is a gray industry: the glowing lake, the Joliet ringlock.
 - **Folk archives** of photos and binders get passed down in families who live near a rift.
 - **<entity repo="faction" guid="01a10f60-918b-7f54-aed5-96ab777414e8">The Cabal</entity> knows the whole catalogue.** The CorpoNations are fascinated, and their research arms buy everything
