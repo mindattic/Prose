@@ -3155,6 +3155,15 @@ if (args.Contains("--retype-document-to-vocabulary"))
     return;
 }
 
+// prose --universe <u> --retype-entity --id <guid>[,<guid>...] --to <repo-slug> [--apply]
+// Moves custom-type entities into another custom repository: entity type, record "type", every
+// tag's repo attribute, and the derived rows that copy the type. Dry run without --apply. See RetypeEntityCli.
+if (args.Contains("--retype-entity"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RetypeEntityCli", args);
+    return;
+}
+
 // prose --merge-entity-into-vocabulary --from <sourceGuid> --into <targetVocabularyGuid>
 //     --universe <slug> --term "<term>" --definition "<text>" [--origin "<text>"]
 //     [--usage "<text>"] [--category "<text>"] [--example "<text>"] [--dry-run]

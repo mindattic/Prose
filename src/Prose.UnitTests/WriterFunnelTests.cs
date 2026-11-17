@@ -30,6 +30,7 @@ public class WriterFunnelTests
         ["Prose.Core/Services/NodeWorkbenchService.cs"]        = "the door itself (UpdateBeatTextAsync, DuplicateNodeAsync, CreateNodeFromBeatsAsync, splits)",
         ["Prose.Cli/Cli/NodeBeatWriter.cs"]                     = "--import-book / --reimport: creates rows from a parsed file, stamps Import",
         ["Prose.Core/Services/DuplicateEntityScanService.cs"]   = "entity-tag GUID rewrite on merge, stamps TagMaintenance (RFC 0009 Phase 3b)",
+        ["Prose.Core/Services/EntityRetypeService.cs"]          = "entity-tag repo attribute rewrite on retype, stamps TagMaintenance (PRS-T994)",
         ["Prose.Core/Services/DistributedWorkerCoordinator.cs"] = "worker-generated prose into an EMPTY beat, stamps Generation (RFC 0009 Phase 3b)",
         ["Prose.Core/Services/BeatRebuildService.cs"]           = "re-segments existing text into new rows, stamps StructuralSplit",
         ["Prose.Core/Services/NodeMigrationService.cs"]         = "legacy Chapter/Episode model → Beats, stamps Import",
