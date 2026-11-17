@@ -416,7 +416,7 @@ public class FindingsService
         return i < 0 ? filePath : filePath[..i];
     }
 
-    public IReadOnlyList<Finding> List(FindingStatus? status = null, int limit = 200, string? filePathPrefix = null)
+    public IReadOnlyList<Finding> List(FindingStatus? status = null, int limit = 200, string? filePathPrefix = null, string? altFilePathPrefix = null)
     {
         // Severity ordering: High first, then Medium, then Low. Newest within
         // each bucket. Keeps damning findings at the top of the inbox without
@@ -435,7 +435,7 @@ public class FindingsService
             q = q.Where(f => f.Status == key);
         }
         if (!string.IsNullOrWhiteSpace(filePathPrefix))
-            q = WhereUnderPath(q, filePathPrefix);
+            q = WhereUnderPath(q, filePathPrefix, altFilePathPrefix);
         var rows = q
             .OrderBy(f => f.Severity == "High" ? 0 : f.Severity == "Medium" ? 1 : f.Severity == "Low" ? 2 : 3)
             .ThenByDescending(f => f.DetectedAt)
@@ -551,7 +551,8 @@ public class FindingsService
         FindingCategory? category = null,
         string? summaryPrefix = null,
         string? filePathPrefix = null,
-        CancellationToken ct = default)
+        CancellationToken ct = default,
+        string? altFilePathPrefix = null)
     {
         if (category is null && string.IsNullOrWhiteSpace(summaryPrefix) && string.IsNullOrWhiteSpace(filePathPrefix))
             throw new ArgumentException("BulkSetStatusAsync requires at least one of category/summaryPrefix/filePathPrefix — refusing to sweep the entire inbox unfiltered.");
@@ -560,7 +561,7 @@ public class FindingsService
         var q = db.Findings.Where(f => f.Status == "New" || f.Status == "Triaged");
         if (category is FindingCategory c) { var key = c.ToString(); q = q.Where(f => f.Category == key); }
         if (!string.IsNullOrWhiteSpace(summaryPrefix)) q = q.Where(f => f.Summary.StartsWith(summaryPrefix));
-        if (!string.IsNullOrWhiteSpace(filePathPrefix)) q = WhereUnderPath(q, filePathPrefix);
+        if (!string.IsNullOrWhiteSpace(filePathPrefix)) q = WhereUnderPath(q, filePathPrefix, altFilePathPrefix);
 
         var rows = await q.ToListAsync(ct);
         foreach (var row in rows)
@@ -596,8 +597,25 @@ public class FindingsService
     /// also matched "node:bcoda5", so listing, bulk-dismissing or re-linting one book reached into
     /// another's findings. A prefix that already ends in a separator (or is empty) keeps plain
     /// prefix semantics.
+    ///
+    /// <para><paramref name="altFilePathPrefix"/> (2026-11-10): a node that was renamed, or that
+    /// briefly carried a disambiguating "-{id8hex}" slug suffix at write time, leaves findings on
+    /// disk under that now-dead path. A live node's Id never changes, so FindingsCli computes the
+    /// one deterministic historical form it can reconstruct without a slug-history table —
+    /// "node:{current slug}-{this node's own Id, first 8 hex}" — and passes it here as a second,
+    /// independently delimited alternative. This does not recover a FULL title rename (the book's
+    /// slug word itself changed, e.g. Sparrow was once "the-number-that-works"): that still needs
+    /// --file-prefix with the old slug by hand.</para>
     /// </summary>
-    private static IQueryable<FindingRow> WhereUnderPath(IQueryable<FindingRow> q, string filePathPrefix)
+    private static IQueryable<FindingRow> WhereUnderPath(IQueryable<FindingRow> q, string filePathPrefix, string? altFilePathPrefix = null)
+    {
+        var core = ApplyDelimitedMatch(q, filePathPrefix);
+        if (string.IsNullOrWhiteSpace(altFilePathPrefix)) return core;
+        var alt = ApplyDelimitedMatch(q, altFilePathPrefix);
+        return core.Union(alt);
+    }
+
+    private static IQueryable<FindingRow> ApplyDelimitedMatch(IQueryable<FindingRow> q, string filePathPrefix)
     {
         var delimited = filePathPrefix.Length > 0 && char.IsLetterOrDigit(filePathPrefix[^1]);
         if (!delimited) return q.Where(f => f.FilePath.StartsWith(filePathPrefix));

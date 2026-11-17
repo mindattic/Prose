@@ -90,8 +90,18 @@ public static class FindingsCli
     /// <summary>Resolves a node ref (GUID, Slug, or NodeCode) to its Findings-table FilePath
     /// prefix ("node:{slug}") — same "accept id or slug" convention ContinuityCli's --node uses,
     /// extended to also accept NodeCode since that's the identifier most users actually know
-    /// (see ExportNodeCli's documented Slug-only gotcha).</summary>
-    static async Task<string?> ResolveNodeFilePathPrefixAsync(string nodeRef, IServiceProvider services)
+    /// (see ExportNodeCli's documented Slug-only gotcha).
+    ///
+    /// Also returns an Alt prefix: "node:{slug}-{this node's own Id, first 8 hex}". A node's slug
+    /// sometimes carried a disambiguating "-{id8hex}" suffix at the moment a sweep wrote findings
+    /// against it, and has since been cleaned back to a bare slug by a later rename — leaving those
+    /// findings permanently unreachable by the live slug alone (2026-11-10: discovered via Attendance,
+    /// which had 6 such orphaned rows). The node's Id never changes, so this alt form is always
+    /// computable and safe (it also still requires the CURRENT slug word, so it cannot cross-match a
+    /// sibling book created in the same batch merely because their Ids share a coarse time-prefix).
+    /// It does NOT recover a full title rename (old slug word itself different, e.g. Sparrow was once
+    /// "the-number-that-works") — that still needs --file-prefix with the old slug by hand.</summary>
+    static async Task<(string? Prefix, string? Alt)> ResolveNodeFilePathPrefixAsync(string nodeRef, IServiceProvider services)
     {
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
@@ -100,8 +110,11 @@ public static class FindingsCli
         var node = Guid.TryParse(nodeRef, out var nodeId)
             ? await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId)
             : await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, nodeRef);
-        if (node is null) return null;
-        return $"node:{(string.IsNullOrEmpty(node.Slug) ? node.Id.ToString("N") : node.Slug)}";
+        if (node is null) return (null, null);
+        var slug = string.IsNullOrEmpty(node.Slug) ? node.Id.ToString("N") : node.Slug;
+        var prefix = $"node:{slug}";
+        var alt = $"node:{slug}-{node.Id.ToString("N")[..8]}";
+        return (prefix, alt);
     }
 
     static async Task<int> CmdList(string[] rest, FindingsService store, IServiceProvider services)
@@ -117,11 +130,12 @@ public static class FindingsCli
         }
 
         string? filePathPrefix = null;
+        string? altFilePathPrefix = null;
         var nIdx = Array.IndexOf(rest, "--node");
         if (nIdx >= 0 && nIdx + 1 < rest.Length)
         {
             var nodeRef = rest[nIdx + 1];
-            filePathPrefix = await ResolveNodeFilePathPrefixAsync(nodeRef, services);
+            (filePathPrefix, altFilePathPrefix) = await ResolveNodeFilePathPrefixAsync(nodeRef, services);
             if (filePathPrefix is null) return Fail($"node not found: {nodeRef}");
         }
         // --file-prefix: the raw FilePath prefix, for the case --node cannot serve — a node that
@@ -131,14 +145,14 @@ public static class FindingsCli
         // only). Added 2026-09-22 after "node:bushido-coda" was found to prefix-match both the
         // live book's rows and four deleted clones, making --node unusable as a dismiss filter.
         var fpIdx = Array.IndexOf(rest, "--file-prefix");
-        if (fpIdx >= 0 && fpIdx + 1 < rest.Length) filePathPrefix = rest[fpIdx + 1];
+        if (fpIdx >= 0 && fpIdx + 1 < rest.Length) { filePathPrefix = rest[fpIdx + 1]; altFilePathPrefix = null; }
 
         var limit = 200;
         var lIdx = Array.IndexOf(rest, "--limit");
         if (lIdx >= 0 && lIdx + 1 < rest.Length && int.TryParse(rest[lIdx + 1], out var parsedLimit))
             limit = parsedLimit;
 
-        var items = store.List(filter, limit, filePathPrefix);
+        var items = store.List(filter, limit, filePathPrefix, altFilePathPrefix);
         if (items.Count == 0)
         {
             Console.WriteLine($"[findings] none{(filter is null ? "" : $" with status {filter}")}{(filePathPrefix is null ? "" : $" for {filePathPrefix}")}.");
@@ -226,21 +240,22 @@ public static class FindingsCli
         }
 
         string? filePathPrefix = null;
+        string? altFilePathPrefix = null;
         if (nodeRef != null)
         {
-            filePathPrefix = await ResolveNodeFilePathPrefixAsync(nodeRef, services);
+            (filePathPrefix, altFilePathPrefix) = await ResolveNodeFilePathPrefixAsync(nodeRef, services);
             if (filePathPrefix is null) return Fail($"node not found: {nodeRef}");
         }
         // See CmdList: --file-prefix reaches rows whose node has been renamed or deleted, which
         // --node cannot. Note --prefix matches the SUMMARY and --file-prefix matches the PATH;
         // they are not interchangeable, and the difference matters when sweeping dead rows.
         var fpIdx2 = Array.IndexOf(rest, "--file-prefix");
-        if (fpIdx2 >= 0 && fpIdx2 + 1 < rest.Length) filePathPrefix = rest[fpIdx2 + 1];
+        if (fpIdx2 >= 0 && fpIdx2 + 1 < rest.Length) { filePathPrefix = rest[fpIdx2 + 1]; altFilePathPrefix = null; }
 
         if (category is null && string.IsNullOrWhiteSpace(prefix) && filePathPrefix is null)
             return Fail("bulk-dismiss requires --category and/or --prefix and/or --node and/or --file-prefix");
 
-        var n = await store.BulkSetStatusAsync(FindingStatus.Dismissed, category, prefix, filePathPrefix);
+        var n = await store.BulkSetStatusAsync(FindingStatus.Dismissed, category, prefix, filePathPrefix, altFilePathPrefix: altFilePathPrefix);
         Console.WriteLine($"[findings] dismissed {n} finding(s)"
             + (category is null ? "" : $" [category={category}]")
             + (string.IsNullOrWhiteSpace(prefix) ? "" : $" [prefix=\"{prefix}\"]")
