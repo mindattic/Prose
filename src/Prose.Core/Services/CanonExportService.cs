@@ -238,6 +238,7 @@ public class CanonExportService
     public async Task<ExportResult> ExportAllAsync(CancellationToken ct = default)
     {
         var repos = discovery.GetAllRepos();
+        var unrepoed = await EntitiesOutsideReposAsync(repos, ct);
         var fileName = $"prose-export-{DateTime.Now:yyyyMMdd-HHmmss}.zip";
         var path = Path.Combine(PublishDir, fileName);
 
@@ -255,12 +256,58 @@ public class CanonExportService
                     total++;
                 }
             }
+            foreach (var (type, name, json) in unrepoed)
+            {
+                ct.ThrowIfCancellationRequested();
+                AddJsonEntry(zip, UniqueEntryName(used, $"{Slugify(type)}/{Slugify(name)}"), json);
+                total++;
+            }
             return Task.CompletedTask;
         }, ProseArtifacts.Overwrite, ct);
 
-        log.LogInformation("Exported global archive ({Repos} repos, {N} entries) → {Path}",
-            repos.Count, total, path);
+        log.LogInformation("Exported global archive ({Repos} repos, {Extra} entities of runtime-defined types, {N} entries) → {Path}",
+            repos.Count, unrepoed.Count, total, path);
         return new ExportResult(path, total, new FileInfo(path).Length);
+    }
+
+    /// <summary>Live entities no discovered repository exported: runtime-defined types (schism-entity, organization,
+    /// person, …) that live on the generic Entity spine. Without them "every repo" silently left out entities the
+    /// books tag (PRS-T1008). Each is its stored record plus the entity row's id, name, type and summary.</summary>
+    private async Task<List<(string Type, string Name, string Json)>> EntitiesOutsideReposAsync(
+        Dictionary<string, List<(string Name, string Json)>> repos, CancellationToken ct)
+    {
+        var exported = new HashSet<Guid>();
+        foreach (var (_, json) in repos.Values.SelectMany(e => e))
+        {
+            try
+            {
+                using var doc = JsonDocument.Parse(json);
+                if (doc.RootElement.ValueKind == JsonValueKind.Object && doc.RootElement.TryGetProperty("id", out var idEl)
+                    && idEl.ValueKind == JsonValueKind.String && Guid.TryParse(idEl.GetString(), out var id))
+                    exported.Add(id);
+            }
+            catch (JsonException) { }
+        }
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var universeId = UniverseScope.EffectiveId;
+        var rows = await db.Entities.IgnoreQueryFilters().AsNoTracking()
+            .Where(e => (universeId == Guid.Empty || e.UniverseId == universeId) && e.Status != "archived")
+            .Select(e => new { e.Id, e.EntityType, e.Name, e.Description })
+            .ToListAsync(ct);
+        var result = new List<(string, string, string)>();
+        foreach (var e in rows.Where(r => !exported.Contains(r.Id)))
+        {
+            var node = CanonRecordLoader.Load(db, e.EntityType ?? "", e.Id) as System.Text.Json.Nodes.JsonObject
+                       ?? new System.Text.Json.Nodes.JsonObject();
+            node["id"] ??= e.Id.ToString("N");
+            node["name"] ??= e.Name;
+            node["type"] ??= e.EntityType;
+            if (!string.IsNullOrWhiteSpace(e.Description)) node["description"] ??= e.Description;
+            result.Add((string.IsNullOrWhiteSpace(e.EntityType) ? "untyped" : e.EntityType!, e.Name ?? e.Id.ToString("N"),
+                node.ToJsonString()));
+        }
+        return result;
     }
 
     /// <summary>"{stem}.json", or "{stem}-2.json" and so on when that name is taken. Different names

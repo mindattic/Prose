@@ -27,7 +27,7 @@ GUID_RE = re.compile(r"\b[0-9a-fA-F]{8}-?[0-9a-fA-F]{4}-?[0-9a-fA-F]{4}-?[0-9a-f
 TAG_RE = re.compile(r'<entity repo="([^"]*)" guid="([0-9a-fA-F-]{32,36})">(.*?)</entity>', re.S)
 TITLE_FIELDS = ("name", "title", "term", "headline", "codename")
 HIDDEN_FIELDS = {"id", "rating", "vote_count", "image_prompt", "dalle3_prompt", "changelog", "provenance",
-                 "file_name", "line_count", "headings", "number"}
+                 "file_name", "line_count", "headings", "number", "story_id"}
 SHORT = 140
 INVALID_TITLE = re.compile(r"[#<>\[\]|{}_\x00-\x1f]")
 
@@ -39,6 +39,10 @@ def norm(guid: str) -> str:
 def dashed(guid: str) -> str:
     g = norm(guid)
     return f"{g[:8]}-{g[8:12]}-{g[12:16]}-{g[16:20]}-{g[20:]}"
+
+
+def slug_key(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "_", text.lower()).strip("_")
 
 
 def humanize(key: str) -> str:
@@ -110,6 +114,8 @@ def load_entities(export_zip: Path, interchange: Path | None, repair: Repair) ->
                 name = f"{repo_label(repo)} {guid[:8]}"
             aliases = [a for a in (record.get("aliases") or record.get("common_names") or []) if isinstance(a, str)]
             entities[guid] = Entity(guid, repo, name, record, aliases)
+            # The export names each file after the entity's stored slug, which is what edges point at.
+            record["_slug"] = re.sub(r"-\d+$", "", Path(entry).stem)
     if interchange:
         for e in json.loads(interchange.read_text(encoding="utf-8"))["entities"]:
             guid = norm(e["guid"])
@@ -201,7 +207,14 @@ class Resolver:
 class Renderer:
     def __init__(self, entities: dict[str, Entity], resolver: Resolver, repair: Repair, universe: str):
         self.entities, self.resolver, self.repair, self.universe = entities, resolver, repair, universe
-        self.by_slug = {e.record["_slug"]: e for e in entities.values() if e.record.get("_slug")}
+        self.by_slug: dict[str, Entity] = {}
+        for e in entities.values():  # interchange slugs win over file-name and name-derived ones
+            for key in (e.record.get("_slug"), e.name):
+                if key:
+                    self.by_slug.setdefault(slug_key(key), e)
+        for e in entities.values():
+            if e.record.get("_relations") is not None and e.record.get("_slug"):
+                self.by_slug[slug_key(e.record["_slug"])] = e
         self.linked: set[str] = set()
 
     def link(self, ent: Entity, text: str | None = None) -> str:
@@ -251,7 +264,8 @@ class Renderer:
                 if key == "relationships" and not GUID_RE.fullmatch(name) and not self.resolver.by_name(name):
                     self.repair.add("relationship target not found", owner=owner.title, target=name)
             rest = [f"''{humanize(k)}:'' {self.value(v, owner, k)}" for k, v in value.items()
-                    if k not in ("name", "target", "to", "title", "term") and v not in (None, "", [], {})]
+                    if k not in ("name", "target", "to", "title", "term") and k not in HIDDEN_FIELDS
+                    and v not in (None, "", [], {})]
             return " &mdash; ".join(x for x in [head, "; ".join(rest)] if x)
         if isinstance(value, str) and len(value) <= SHORT:
             return self.short(value, owner, key)
@@ -268,7 +282,7 @@ class Renderer:
             return ", ".join(self.item(v, owner, key) for v in value if v not in (None, ""))
         if isinstance(value, dict):
             return "; ".join(f"''{humanize(k)}:'' {self.value(v, owner, k)}" for k, v in value.items()
-                             if v not in (None, "", [], {}))
+                             if k not in HIDDEN_FIELDS and v not in (None, "", [], {}))
         return escape(str(value))
 
     def page(self, ent: Entity, books: list[str], book_titles: dict[str, str]) -> str:
@@ -293,7 +307,7 @@ class Renderer:
             else:
                 paras = [self.text(p.strip(), ent) for p in str(value).split("\n") if p.strip()]
                 sections.append((humanize(key), "\n\n".join(paras)))
-        related = [(rel.get("kind") or "related", self.by_slug.get(rel.get("to"))) for rel in rec.get("_relations") or []]
+        related = [(rel.get("kind") or "related", self.by_slug.get(slug_key(rel.get("to") or ""))) for rel in rec.get("_relations") or []]
         related = [(kind, t) for kind, t in related if t is not None and t is not ent]
         if related:
             for t in (t for _, t in related):
@@ -393,7 +407,7 @@ def build(args) -> dict[str, str]:
     renderer = Renderer(entities, resolver, repair, args.universe)
     for ent in entities.values():
         for rel in ent.record.get("_relations") or []:
-            if rel.get("to") not in renderer.by_slug:
+            if slug_key(rel.get("to") or "") not in renderer.by_slug:
                 repair.add("edge to a missing entity", owner=ent.title, to=rel.get("to"), kind=rel.get("kind"))
     pages = {}
     phase = args.phase
