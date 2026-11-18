@@ -14,21 +14,24 @@ the wiki at https://mindattic.com/glmz/.
 - 45 records with dashes stored as U+FFFD, restored (PRS-T1006).
 - 844 records reading "a the Gray Zone", all fixed; the 6 beats the gated four un-read were re-read (PRS-T1007).
 - `--export global` skipped 442 entities of runtime-defined types (bestiary, schism-entity, organization, person,
-  event, keepsake), so 30 canon book tags and 4 entity tags pointed at entities that never left the database; it now
-  exports every live entity and names each file by its stored slug, so edge targets resolve (PRS-T1008).
-- `story_id` is a book/story node id, not an entity reference; the wiki no longer reports or links it.
+  event, keepsake) and named files by entity name instead of stored slug; it now exports every live entity by slug, so
+  30 canon book tags, 4 entity tags and 41 of 42 relationship edges resolve (PRS-T1008).
+- 7 Tolliver bestiary `finder` fields pointed at an id that never existed; repointed to Dutch Tolliver. 25 untitled
+  documents titled from their own heading or file name (PRS-T1010).
+- 10 byte-identical duplicate records (8 quotes, 2 documents) merged; the wiki retired their pages (PRS-T1011).
+- 344 of the "duplicate names" are different kinds of thing across repos sharing a name; the wiki disambiguates them
+  with "(Repo)" and they need no action.
 
-## Left for the author (each needs an identity call)
+## Left for the author (each needs an identity or deletion call)
 
-- **duplicate name**: entities sharing a title; the wiki disambiguates with "(Repo)". Merge only after confirming two rows are one identity (`--merge-entity`), or rename (`--set-entity-name`).
-- **relationship names someone with no entity or alias**: a proper name in a typed relationship list that matches nothing. Add it as an alias of the right entity, create the entity, or leave it as text.
-- **relationship to an unnamed person**: "her mother", "an unnamed colleague"; plain text by design, listed for completeness.
-- **one-word name or alias used more as an ordinary word than as a name**: e.g. a character alias "Collective" or "Industries"; tagged only mid-sentence, usually a polluted alias to remove (`--delete-alias`).
-- **field pointing at no entity**: the `finder` of seven Tolliver bestiary entries points at a deleted entity ("Tolliver's lithium carrier"); repoint to an existing entity or clear it.
-- **edge to a missing entity**: a relationship edge whose target was never created; RFC 0007 allows these as future-work stubs.
-- **record without a title**: documents with an empty `title`; the wiki shows the file name.
+- **Taye Anwunobi** exists twice with different role, pronouns and description: one person or two?
+- **relationship names someone with no entity or alias** (271): add the name as an alias of the right entity, create it, or leave it as text.
+- **one-word name or alias used more as an ordinary word than as a name** (327): e.g. a character alias "Collective" or "Industries"; real handles like Bear or Faith are on the list too, so each needs a look (`--delete-alias` for the polluted ones).
+- **928 empty documents**: "(untitled document)" rows holding only tags (no title, file name or body); likely import debris to delete. 52 more have a body but no heading or file name to title them from.
+- **edge to a missing entity** (1): a relationship whose target was never created; RFC 0007 allows these as future-work stubs.
+- "tagged entity missing from the export" lines refer to the merged copies (the tagging dry run predates the merges); they clear on the next `--tag-entity-text` run.
 
-## duplicate name (355)
+## duplicate name (346)
 
 - {"name": "Anchor", "entities": [{"repo": "archetypes", "guid": "019d6143-a55e-794c-bc54-0ac739798e99"}, {"repo": "vocabulary", "guid": "019d6143-aa78-7673-bf31-23ffab0fe661"}]}
 - {"name": "Architect", "entities": [{"repo": "archetypes", "guid": "019d6143-a55e-73ab-a54e-134cad21c560"}, {"repo": "people", "guid": "019e9e4f-1d64-7a7c-ab3d-2db4156810cf"}, {"repo": "synthetics", "guid": "019d6143-a9ea-78e7-9b86-bdbfc4c80ec2"}]}
@@ -58,11 +61,10 @@ the wiki at https://mindattic.com/glmz/.
 - {"name": "Saltline", "entities": [{"repo": "consumer_goods", "guid": "01a19f8d-ae80-7e13-bc29-3e5a308f955d"}, {"repo": "corponations", "guid": "019f529a-76f7-79d1-9f63-c6b28dc2698e"}, {"repo": "entertainment", "guid": "019d6513-b7c5-7111-8663-6c954d8068b0"}]}
 - {"name": "Cinderfall Energy", "entities": [{"repo": "corponations", "guid": "019d6143-a7a8-71d7-b98e-2d131737cb5c"}, {"repo": "places", "guid": "019e7d3e-06b5-782c-81dd-91f74b24a58a"}]}
 - {"name": "Crucible Genomics", "entities": [{"repo": "corponations", "guid": "019d6143-a7a9-7f5b-b8e1-4eb4a0ceb922"}, {"repo": "places", "guid": "019e7d3d-f8c0-79e5-be87-bdb6eba8a4b4"}]}
+- {"name": "The Clybourn Corridor Board", "entities": [{"repo": "documents", "guid": "a3f81c0e-9d4b-72a5-6f1e-03c8b290d547"}, {"repo": "documents", "guid": "a3f9c2e8-47b1-d06f-5a8c-3e7291bd40f6"}]}
 - {"name": "Maintenance Day", "entities": [{"repo": "documents", "guid": "d9815237-51cb-648d-b043-4051524feae3"}, {"repo": "vocabulary", "guid": "019d6143-aac4-7c4e-bf77-2545bd99b430"}]}
 - {"name": "The Gradient Compact", "entities": [{"repo": "documents", "guid": "3d856c19-8582-48be-8efd-4db65a734128"}, {"repo": "factions", "guid": "019d6143-a892-744f-908e-91303b301b34"}]}
-- {"name": "Case File: The Echo", "entities": [{"repo": "documents", "guid": "019d6143-a7df-7055-876b-4f1cfec5ff9a"}, {"repo": "documents", "guid": "019d8227-90a7-7760-bb31-99942e4b99c4"}]}
 - {"name": "The Corridor", "entities": [{"repo": "documents", "guid": "cd0eb807-33a8-6da9-5331-7cca98792ac2"}, {"repo": "places", "guid": "0fb6cf26-aea9-e4d4-06a2-fd40d6bfe217"}]}
-- {"name": "The Ceramic Men: What Is Known", "entities": [{"repo": "documents", "guid": "fd9ebd29-17e3-749f-fc08-83e9544f0071"}, {"repo": "documents", "guid": "019e052b-5c6e-7323-bb3f-bda9da77d224"}]}
 - {"name": "Headcount", "entities": [{"repo": "documents", "guid": "019f43cf-0019-7036-85ad-9fc3ab28a46e"}, {"repo": "vocabulary", "guid": "01a101f8-b70b-74e8-87bc-da7beaa4ab92"}]}
 - {"name": "Consensus", "entities": [{"repo": "entertainment", "guid": "019d6513-b772-704c-afca-fd7e31c545d5"}, {"repo": "synthetics", "guid": "019d6143-a9f2-72a1-be89-723222bd2df1"}]}
 - {"name": "The Render", "entities": [{"repo": "factions", "guid": "019f1d0f-ef25-72d0-b5f2-96f416b42ae9"}, {"repo": "places", "guid": "019d6143-a94d-7e8b-9809-9357f44134d6"}]}
@@ -377,28 +379,10 @@ the wiki at https://mindattic.com/glmz/.
 - {"name": "The Bazaar", "entities": [{"repo": "people", "guid": "019e9e4f-17d3-75fe-ac39-ff9664f968d0"}, {"repo": "synthetics", "guid": "019d6143-a6f7-7f89-b864-3ba688940652"}]}
 - {"name": "Dockside", "entities": [{"repo": "places", "guid": "01a19aa4-4986-7c32-ac2f-87679ad61d3a"}, {"repo": "vocabulary", "guid": "019d6143-aaa0-7b68-9d93-8e4b4729c095"}]}
 - {"name": "The Overhang", "entities": [{"repo": "places", "guid": "01a19aa4-f3cb-7a18-a862-ec3d715a5225"}, {"repo": "vocabulary", "guid": "019d6143-ab02-7010-a9bf-269ea372d732"}]}
-- {"name": "The Spires aren't tall. the Gray Zone is ...", "entities": [{"repo": "quotes", "guid": "c845acec-adf1-ed9e-fb21-15ef99bdf733"}, {"repo": "quotes", "guid": "894a9758-68d4-413f-d211-3ab45c121b9a"}]}
-- {"name": "Ten thousand stories. Not one of them is ...", "entities": [{"repo": "quotes", "guid": "e5af8b73-1e6f-69f9-ee52-184e9b45df52"}, {"repo": "quotes", "guid": "1635212c-011f-b469-6b92-cc1bf71a5bc4"}]}
-- {"name": "She bakes bread in a world that forgot ...", "entities": [{"repo": "quotes", "guid": "a5817f9b-3909-51ce-48c0-35e1076441f6"}, {"repo": "quotes", "guid": "35786d3b-e3eb-16bd-b32a-3b32d839bdd3"}]}
-- {"name": "The city doesn't end. You just stop being ...", "entities": [{"repo": "quotes", "guid": "a20c9656-1388-b826-9ccc-460e6219932c"}, {"repo": "quotes", "guid": "e8cdf98c-08e6-d3e8-bf12-9f4d9330fa05"}]}
-- {"name": "Canada is fine. Everyone in Canada is fine. ...", "entities": [{"repo": "quotes", "guid": "d8d95ea6-f5b6-6fbd-edb0-71965c756629"}, {"repo": "quotes", "guid": "025e4cfd-8f9f-e60c-028b-9087f7cea14f"}]}
-- {"name": "My grandmother's BCI remembers a song I've never ...", "entities": [{"repo": "quotes", "guid": "8f013b06-4490-b5cd-2ac6-7ac890af1452"}, {"repo": "quotes", "guid": "0751e0a5-1b62-287c-a1ff-8c6d2c816ba7"}]}
-- {"name": "I asked the mountain what it wanted. The ...", "entities": [{"repo": "quotes", "guid": "10e2aa95-c2aa-1c91-1426-8c7e89f1899d"}, {"repo": "quotes", "guid": "cea47273-4682-203b-00df-e8b21278e5b8"}]}
-- {"name": "The anomalies aren't breaking the city. The city ...", "entities": [{"repo": "quotes", "guid": "8ab5af87-a2c6-5311-fc54-ba2b37974b57"}, {"repo": "quotes", "guid": "acdad3af-3f5e-83d4-20dd-d0a5e9549ac4"}]}
 
 ## edge to a missing entity (1)
 
 - {"owner": "Boris Johansen", "to": "strix-sunder", "kind": "owns"}
-
-## field pointing at no entity (7)
-
-- {"owner": "Lithium Tender", "field": "finder", "guid": "01a1eada-5396-75ff-bcb1-da71b49935da"}
-- {"owner": "Tolliver's Battery Hen", "field": "finder", "guid": "01a1eada-5396-75ff-bcb1-da71b49935da"}
-- {"owner": "Tolliver's Bottomless Cell", "field": "finder", "guid": "01a1eada-5396-75ff-bcb1-da71b49935da"}
-- {"owner": "Tolliver's Dead Cell", "field": "finder", "guid": "01a1eada-5396-75ff-bcb1-da71b49935da"}
-- {"owner": "Tolliver's Singing Cells", "field": "finder", "guid": "01a1eada-5396-75ff-bcb1-da71b49935da"}
-- {"owner": "Tolliver's Terminal Spark", "field": "finder", "guid": "01a1eada-5396-75ff-bcb1-da71b49935da"}
-- {"owner": "Tolliver's battery lice", "field": "finder", "guid": "01a1eada-5396-75ff-bcb1-da71b49935da"}
 
 ## one-word name or alias used more as an ordinary word than as a name (tagged mid-sentence only) (327)
 
@@ -730,7 +714,7 @@ the wiki at https://mindattic.com/glmz/.
 - {"text": "Zinc"}
 - {"text": "Zirconia"}
 
-## record without a title (1005)
+## record without a title (980)
 
 - {"repo": "documents", "guid": "8a9b0667-6fa0-e712-4537-00198bf793d7", "file": "documents/untitled_document-8a9b06676fa0e712453700198bf793d7.json", "used": null}
 - {"repo": "documents", "guid": "24a6bfbb-0183-2812-68ca-0083012a4e16", "file": "documents/untitled_document-24a6bfbb0183281268ca0083012a4e16.json", "used": null}
@@ -749,7 +733,6 @@ the wiki at https://mindattic.com/glmz/.
 - {"repo": "documents", "guid": "52c27949-05e6-2274-3e13-03744243ea6a", "file": "documents/untitled_document-52c2794905e622743e1303744243ea6a.json", "used": null}
 - {"repo": "documents", "guid": "765d1ed1-0e10-40a1-b7dc-038b75af44bd", "file": "documents/untitled_document-765d1ed10e1040a1b7dc038b75af44bd.json", "used": null}
 - {"repo": "documents", "guid": "2d3dd91d-fe12-4c45-8617-03b54ade38cf", "file": "documents/untitled_document-2d3dd91dfe124c45861703b54ade38cf.json", "used": null}
-- {"repo": "documents", "guid": "a3f81c0e-9d4b-72a5-6f1e-03c8b290d547", "file": "documents/untitled_document-a3f81c0e9d4b72a56f1e03c8b290d547.json", "used": "C tier first payout"}
 - {"repo": "documents", "guid": "9d8535ce-5c11-91f0-e6ee-0471e7a72145", "file": "documents/untitled_document-9d8535ce5c1191f0e6ee0471e7a72145.json", "used": null}
 - {"repo": "documents", "guid": "126c9d8c-ecd7-0a0a-ce6d-04ce641c67a5", "file": "documents/untitled_document-126c9d8cecd70a0ace6d04ce641c67a5.json", "used": null}
 - {"repo": "documents", "guid": "9fc075ae-cf53-3ec2-386e-04ed4741fb3d", "file": "documents/untitled_document-9fc075aecf533ec2386e04ed4741fb3d.json", "used": null}
@@ -781,9 +764,7 @@ the wiki at https://mindattic.com/glmz/.
 - {"repo": "documents", "guid": "c3cf8d38-30a4-4de9-97b2-0bc49d120618", "file": "documents/untitled_document-c3cf8d3830a44de997b20bc49d120618.json", "used": null}
 - {"repo": "documents", "guid": "8fd29c43-17f6-ac93-bc2c-0c2eb5108809", "file": "documents/untitled_document-8fd29c4317f6ac93bc2c0c2eb5108809.json", "used": null}
 - {"repo": "documents", "guid": "d31065dd-6da3-ba6e-7abe-0c3661e4e94a", "file": "documents/untitled_document-d31065dd6da3ba6e7abe0c3661e4e94a.json", "used": null}
-- {"repo": "documents", "guid": "a3f7c219-e04b-8d61-f92a-0c5e7b3d84f1", "file": "documents/untitled_document-a3f7c219e04b8d61f92a0c5e7b3d84f1.json", "used": "The tier trap essay"}
 - {"repo": "documents", "guid": "1cd80d7c-02df-486b-9009-0c6fc360eb93", "file": "documents/untitled_document-1cd80d7c02df486b90090c6fc360eb93.json", "used": null}
-- {"repo": "documents", "guid": "a3f7c2d1-9e4b-8056-f1a3-0c7d2e9b4f81", "file": "documents/untitled_document-a3f7c2d19e4b8056f1a30c7d2e9b4f81.json", "used": "A tier retrospective log"}
 - {"repo": "documents", "guid": "5ac45890-773e-8b0e-1c3f-0ccb388af74f", "file": "documents/untitled_document-5ac45890773e8b0e1c3f0ccb388af74f.json", "used": null}
 - {"repo": "documents", "guid": "ace280fb-5c1a-4bc1-df27-0ce0b1ff2ac9", "file": "documents/untitled_document-ace280fb5c1a4bc1df270ce0b1ff2ac9.json", "used": null}
 - {"repo": "documents", "guid": "50b9cc63-e609-f5fa-f9d8-0d8729a4a243", "file": "documents/untitled_document-50b9cc63e609f5faf9d80d8729a4a243.json", "used": null}
@@ -843,11 +824,8 @@ the wiki at https://mindattic.com/glmz/.
 - {"repo": "documents", "guid": "eed82a89-8467-e08e-77e8-1b77f9fbbd46", "file": "documents/untitled_document-eed82a898467e08e77e81b77f9fbbd46.json", "used": null}
 - {"repo": "documents", "guid": "d320c4fc-4da4-bda7-104b-1b8179a44586", "file": "documents/untitled_document-d320c4fc4da4bda7104b1b8179a44586.json", "used": null}
 - {"repo": "documents", "guid": "d7f2ee71-7953-d227-20c5-1bbf3075604a", "file": "documents/untitled_document-d7f2ee717953d22720c51bbf3075604a.json", "used": null}
-- {"repo": "documents", "guid": "a3f7c2e8-19d0-4b56-f38a-1c09e72d5b84", "file": "documents/untitled_document-a3f7c2e819d04b56f38a1c09e72d5b84.json", "used": "What brokers remember"}
 - {"repo": "documents", "guid": "f89b5264-43f2-681f-fda9-1c29efd6ea68", "file": "documents/untitled_document-f89b526443f2681ffda91c29efd6ea68.json", "used": null}
-- {"repo": "documents", "guid": "a3f7c2e1-d849-b056-f3a2-1c78e94d0b35", "file": "documents/untitled_document-a3f7c2e1d849b056f3a21c78e94d0b35.json", "used": "The burnout pattern"}
 - {"repo": "documents", "guid": "53245450-f95e-d8b0-a470-1c8c9730a31d", "file": "documents/untitled_document-53245450f95ed8b0a4701c8c9730a31d.json", "used": null}
-- {"repo": "documents", "guid": "a3f7c82e-1b09-4d56-f3a2-1c8e7b4d903f", "file": "documents/untitled_document-a3f7c82e1b094d56f3a21c8e7b4d903f.json", "used": "Jobs you never take"}
 - {"repo": "documents", "guid": "043de686-0f8e-0f63-8461-1c9a79488b85", "file": "documents/untitled_document-043de6860f8e0f6384611c9a79488b85.json", "used": null}
 - {"repo": "documents", "guid": "778a6695-1a05-90e3-d9d4-1ca2bbd5cdf8", "file": "documents/untitled_document-778a66951a0590e3d9d41ca2bbd5cdf8.json", "used": null}
 - {"repo": "documents", "guid": "139272e0-5010-5713-7763-1d035a3a61dc", "file": "documents/untitled_document-139272e05010571377631d035a3a61dc.json", "used": null}
@@ -857,7 +835,6 @@ the wiki at https://mindattic.com/glmz/.
 - {"repo": "documents", "guid": "b2f65ba6-2f4f-d81f-44b6-1d853e35ecd8", "file": "documents/untitled_document-b2f65ba62f4fd81f44b61d853e35ecd8.json", "used": null}
 - {"repo": "documents", "guid": "99576cff-48e7-c084-2a9e-1dd2520926af", "file": "documents/untitled_document-99576cff48e7c0842a9e1dd2520926af.json", "used": null}
 - {"repo": "documents", "guid": "05fbab14-99ce-7d84-4097-1dede8281d04", "file": "documents/untitled_document-05fbab1499ce7d8440971dede8281d04.json", "used": null}
-- {"repo": "documents", "guid": "a3f7c2e1-b84d-509f-6a23-1e0c74b8d925", "file": "documents/untitled_document-a3f7c2e1b84d509f6a231e0c74b8d925.json", "used": "Famous freelancer oral history"}
 - {"repo": "documents", "guid": "debe0dc9-26ac-5f38-7031-1e720bd658a0", "file": "documents/untitled_document-debe0dc926ac5f3870311e720bd658a0.json", "used": null}
 - {"repo": "documents", "guid": "24a63c60-42ba-5685-acb3-1ee47e12209b", "file": "documents/untitled_document-24a63c6042ba5685acb31ee47e12209b.json", "used": null}
 - {"repo": "documents", "guid": "024228cc-8a80-414e-b818-1f3d13446f89", "file": "documents/untitled_document-024228cc8a80414eb8181f3d13446f89.json", "used": null}
@@ -985,13 +962,11 @@ the wiki at https://mindattic.com/glmz/.
 - {"repo": "documents", "guid": "40369bb3-f745-27aa-a3ba-3d28975c8e92", "file": "documents/untitled_document-40369bb3f74527aaa3ba3d28975c8e92.json", "used": null}
 - {"repo": "documents", "guid": "50c33df7-7b5a-e0c3-fd35-3d3bae51d418", "file": "documents/untitled_document-50c33df77b5ae0c3fd353d3bae51d418.json", "used": null}
 - {"repo": "documents", "guid": "74d165a4-6b9e-6091-2478-3d42f6b7a63b", "file": "documents/untitled_document-74d165a46b9e609124783d42f6b7a63b.json", "used": null}
-- {"repo": "documents", "guid": "a3f7c2d9-e1b4-086f-5a2c-3d7e9f01b4c8", "file": "documents/untitled_document-a3f7c2d9e1b4086f5a2c3d7e9f01b4c8.json", "used": "Signal network inside view"}
 - {"repo": "documents", "guid": "c602fd09-2280-52e9-4a42-3dd1431435bc", "file": "documents/untitled_document-c602fd09228052e94a423dd1431435bc.json", "used": null}
 - {"repo": "documents", "guid": "a62906cf-1913-333a-55b2-3dd561ecb66f", "file": "documents/untitled_document-a62906cf1913333a55b23dd561ecb66f.json", "used": null}
 - {"repo": "documents", "guid": "55a625ff-a982-0020-815f-3e2fb57ff88f", "file": "documents/untitled_document-55a625ffa9820020815f3e2fb57ff88f.json", "used": null}
 - {"repo": "documents", "guid": "e89a2c3d-4f51-07b6-c2d9-3e50870f4261", "file": "documents/untitled_document-e89a2c3d4f5107b6c2d93e50870f4261.json", "used": null}
 - {"repo": "documents", "guid": "a941384b-120c-e2c9-d79d-3e624ca398e9", "file": "documents/untitled_document-a941384b120ce2c9d79d3e624ca398e9.json", "used": null}
-- {"repo": "documents", "guid": "a3f9c2e8-47b1-d06f-5a8c-3e7291bd40f6", "file": "documents/untitled_document-a3f9c2e847b1d06f5a8c3e7291bd40f6.json", "used": "Signal network fairness debate"}
 - {"repo": "documents", "guid": "b942be2c-5192-4a83-8c8e-3eaa0bac3ead", "file": "documents/untitled_document-b942be2c51924a838c8e3eaa0bac3ead.json", "used": null}
 - {"repo": "documents", "guid": "6ffd400a-a068-2b6c-577e-3ee7a309ff16", "file": "documents/untitled_document-6ffd400aa0682b6c577e3ee7a309ff16.json", "used": null}
 - {"repo": "documents", "guid": "8cf057cc-4881-a331-d249-3ee8e0325bba", "file": "documents/untitled_document-8cf057cc4881a331d2493ee8e0325bba.json", "used": null}
@@ -1055,7 +1030,6 @@ the wiki at https://mindattic.com/glmz/.
 - {"repo": "documents", "guid": "cc7be9d7-c08c-67cf-6ba3-4ae2e1aeb2b5", "file": "documents/untitled_document-cc7be9d7c08c67cf6ba34ae2e1aeb2b5.json", "used": null}
 - {"repo": "documents", "guid": "f5f087d5-8ed4-d3ed-c80c-4afd573b456e", "file": "documents/untitled_document-f5f087d58ed4d3edc80c4afd573b456e.json", "used": null}
 - {"repo": "documents", "guid": "d273214b-86ed-0d3a-a01c-4b30fa24fd8a", "file": "documents/untitled_document-d273214b86ed0d3aa01c4b30fa24fd8a.json", "used": null}
-- {"repo": "documents", "guid": "f12b3e4c-5a69-08d7-e3f0-4b61982c537a", "file": "documents/untitled_document-f12b3e4c5a6908d7e3f04b61982c537a.json", "used": null}
 - {"repo": "documents", "guid": "1814c45e-c930-73f3-7260-4b8a3782693b", "file": "documents/untitled_document-1814c45ec93073f372604b8a3782693b.json", "used": null}
 - {"repo": "documents", "guid": "7a64490f-3d3f-2659-37dd-4bcc56df4839", "file": "documents/untitled_document-7a64490f3d3f265937dd4bcc56df4839.json", "used": null}
 - {"repo": "documents", "guid": "068cc6f6-dfcf-4507-bc16-4bf3f6e7d771", "file": "documents/untitled_document-068cc6f6dfcf4507bc164bf3f6e7d771.json", "used": null}
@@ -1165,7 +1139,6 @@ the wiki at https://mindattic.com/glmz/.
 - {"repo": "documents", "guid": "251c3c6a-b7dc-eb17-143c-67057a6f5061", "file": "documents/untitled_document-251c3c6ab7dceb17143c67057a6f5061.json", "used": null}
 - {"repo": "documents", "guid": "211037c1-650e-5043-4939-6708131dae23", "file": "documents/untitled_document-211037c1650e504349396708131dae23.json", "used": null}
 - {"repo": "documents", "guid": "ad4e6839-3de3-b8c4-d1c5-674047eb572f", "file": "documents/untitled_document-ad4e68393de3b8c4d1c5674047eb572f.json", "used": null}
-- {"repo": "documents", "guid": "c1c3b52c-4508-4f07-983e-674e60bbb779", "file": "documents/untitled_document-c1c3b52c45084f07983e674e60bbb779.json", "used": null}
 - {"repo": "documents", "guid": "9dc43739-e874-d680-c14e-678e9a1be055", "file": "documents/untitled_document-9dc43739e874d680c14e678e9a1be055.json", "used": null}
 - {"repo": "documents", "guid": "4d3f6222-bf18-2d69-b47a-679b393492e2", "file": "documents/untitled_document-4d3f6222bf182d69b47a679b393492e2.json", "used": null}
 - {"repo": "documents", "guid": "b52d09a4-8ae1-8775-d11d-67b7d046aaae", "file": "documents/untitled_document-b52d09a48ae18775d11d67b7d046aaae.json", "used": null}
@@ -1184,7 +1157,6 @@ the wiki at https://mindattic.com/glmz/.
 - {"repo": "documents", "guid": "ab98c997-fd0d-ef63-20a0-6be829fd6330", "file": "documents/untitled_document-ab98c997fd0def6320a06be829fd6330.json", "used": null}
 - {"repo": "documents", "guid": "8f107808-aa5e-9d40-0222-6bf9cce9cf33", "file": "documents/untitled_document-8f107808aa5e9d4002226bf9cce9cf33.json", "used": null}
 - {"repo": "documents", "guid": "f6f423fa-c783-6635-cdc2-6c249fb32006", "file": "documents/untitled_document-f6f423fac7836635cdc26c249fb32006.json", "used": null}
-- {"repo": "documents", "guid": "a3f7c92e-1b08-4d5f-9e2a-6c3d8b1f4e07", "file": "documents/untitled_document-a3f7c92e1b084d5f9e2a6c3d8b1f4e07.json", "used": "Freelancer housing zine"}
 - {"repo": "documents", "guid": "5e99c8fe-2ab0-4f67-bf58-6c5c3f89ad25", "file": "documents/untitled_document-5e99c8fe2ab04f67bf586c5c3f89ad25.json", "used": null}
 - {"repo": "documents", "guid": "b5bc950d-03d3-4dee-a754-6c68a352c9ed", "file": "documents/untitled_document-b5bc950d03d34deea7546c68a352c9ed.json", "used": null}
 - {"repo": "documents", "guid": "0a306abb-09bc-bad5-f527-6cb4e15a207c", "file": "documents/untitled_document-0a306abb09bcbad5f5276cb4e15a207c.json", "used": null}
@@ -1193,7 +1165,6 @@ the wiki at https://mindattic.com/glmz/.
 - {"repo": "documents", "guid": "7005dda1-c208-cb2a-199c-6cd87508d459", "file": "documents/untitled_document-7005dda1c208cb2a199c6cd87508d459.json", "used": null}
 - {"repo": "documents", "guid": "2cbcdb89-45f9-fe47-5d80-6d096112ec7d", "file": "documents/untitled_document-2cbcdb8945f9fe475d806d096112ec7d.json", "used": null}
 - {"repo": "documents", "guid": "19c34829-041b-c442-b04f-6d5cbfa19fb4", "file": "documents/untitled_document-19c34829041bc442b04f6d5cbfa19fb4.json", "used": null}
-- {"repo": "documents", "guid": "18d5e6f7-c8b9-20a1-e5f2-6d83901475c2", "file": "documents/untitled_document-18d5e6f7c8b920a1e5f26d83901475c2.json", "used": null}
 - {"repo": "documents", "guid": "b2a414d1-38f1-a087-2178-6e1b14e3c5bf", "file": "documents/untitled_document-b2a414d138f1a08721786e1b14e3c5bf.json", "used": null}
 - {"repo": "documents", "guid": "80a0f929-eb2a-6bd2-1b01-6e4219c6b8ee", "file": "documents/untitled_document-80a0f929eb2a6bd21b016e4219c6b8ee.json", "used": null}
 - {"repo": "documents", "guid": "23c5428c-067a-6b60-fda2-6e6504cc5602", "file": "documents/untitled_document-23c5428c067a6b60fda26e6504cc5602.json", "used": null}
@@ -1232,7 +1203,20 @@ the wiki at https://mindattic.com/glmz/.
 - {"repo": "documents", "guid": "52b6cf20-1155-cc5b-fcd2-759dfd0e618d", "file": "documents/untitled_document-52b6cf201155cc5bfcd2759dfd0e618d.json", "used": null}
 - {"repo": "documents", "guid": "c10c0901-86a5-56f0-92da-761494501325", "file": "documents/untitled_document-c10c090186a556f092da761494501325.json", "used": null}
 - {"repo": "documents", "guid": "b1fc54df-4046-6fb2-d08f-77494e4528ad", "file": "documents/untitled_document-b1fc54df40466fb2d08f77494e4528ad.json", "used": null}
-- ... 505 more in repair.json
+- {"repo": "documents", "guid": "d6ddf2ac-003f-60a7-88fc-774dca88971d", "file": "documents/untitled_document-d6ddf2ac003f60a788fc774dca88971d.json", "used": null}
+- {"repo": "documents", "guid": "f247effe-6e84-af24-b041-777dddf5f9d6", "file": "documents/untitled_document-f247effe6e84af24b041777dddf5f9d6.json", "used": null}
+- {"repo": "documents", "guid": "922f5cdf-14b1-00e4-e508-77804b28318c", "file": "documents/untitled_document-922f5cdf14b100e4e50877804b28318c.json", "used": null}
+- {"repo": "documents", "guid": "9d3ef2a6-cb74-7cf6-4276-77a3e63eb4cf", "file": "documents/untitled_document-9d3ef2a6cb747cf6427677a3e63eb4cf.json", "used": null}
+- {"repo": "documents", "guid": "2999fe74-100f-7077-1c9f-77b0a8447047", "file": "documents/untitled_document-2999fe74100f70771c9f77b0a8447047.json", "used": null}
+- {"repo": "documents", "guid": "9e07e81f-b67b-1327-8085-77c97872b072", "file": "documents/untitled_document-9e07e81fb67b1327808577c97872b072.json", "used": null}
+- {"repo": "documents", "guid": "9c9de04d-e6d1-dfd8-97ec-77f60e923e4a", "file": "documents/untitled_document-9c9de04de6d1dfd897ec77f60e923e4a.json", "used": null}
+- {"repo": "documents", "guid": "a7c2b5f4-ae36-433e-a6dd-78095575db39", "file": "documents/untitled_document-a7c2b5f4ae36433ea6dd78095575db39.json", "used": null}
+- {"repo": "documents", "guid": "c1650bf7-42b0-a731-aeea-783449ecc506", "file": "documents/untitled_document-c1650bf742b0a731aeea783449ecc506.json", "used": null}
+- {"repo": "documents", "guid": "4f962b82-8d85-6b35-0abd-786885d8fb25", "file": "documents/untitled_document-4f962b828d856b350abd786885d8fb25.json", "used": null}
+- {"repo": "documents", "guid": "3d74308b-70b2-27d2-17d2-7890b92ede28", "file": "documents/untitled_document-3d74308b70b227d217d27890b92ede28.json", "used": null}
+- {"repo": "documents", "guid": "cd95669c-18fb-5810-e97a-78a857b88101", "file": "documents/untitled_document-cd95669c18fb5810e97a78a857b88101.json", "used": null}
+- {"repo": "documents", "guid": "621c85a2-b256-8bfb-5d79-78ed10ea43bf", "file": "documents/untitled_document-621c85a2b2568bfb5d7978ed10ea43bf.json", "used": null}
+- ... 480 more in repair.json
 
 ## relationship names someone with no entity or alias (271)
 
@@ -1573,3 +1557,11 @@ the wiki at https://mindattic.com/glmz/.
 - {"owner": "The Suture Collective", "target": "the Gray Zone community networks"}
 - {"owner": "The Vultures", "target": "Consumer-credit BCI lenders (multiple)"}
 - {"owner": "Yuen-Pak", "target": "a contract worth Φ85,000"}
+
+## tagged entity missing from the export (5)
+
+- {"guid": "019d8227-90a7-7760-bb31-99942e4b99c4", "name": "Case File: The Echo"}
+- {"guid": "fd9ebd29-17e3-749f-fc08-83e9544f0071", "name": "The Ceramic Men: What Is Known"}
+- {"guid": "c845acec-adf1-ed9e-fb21-15ef99bdf733", "name": "(unattributed quote)"}
+- {"guid": "a5817f9b-3909-51ce-48c0-35e1076441f6", "name": "(unattributed quote)"}
+- {"guid": "acdad3af-3f5e-83d4-20dd-d0a5e9549ac4", "name": "The anomalies aren't breaking the city. The city is breaking and the anomalies are what's underneath."}
