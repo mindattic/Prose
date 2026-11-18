@@ -181,6 +181,8 @@ public static class AddAliasCli
 
         db.Add(newRow);
         await db.SaveChangesAsync();
+        // The row bypasses the repositories, whose cached GetAll would keep serving the old alias list.
+        Prose.Core.Services.UniverseScope.BumpEpoch();
 
         Console.WriteLine($"\n[add-alias] Added alias \"{value}\" to {owner.EntityType} '{owner.Name}'.");
         Console.WriteLine("[add-alias] Re-run `prose --tag-entities --slug <slug>` so beat text picks it up.");

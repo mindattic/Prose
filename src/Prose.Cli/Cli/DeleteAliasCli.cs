@@ -124,6 +124,8 @@ public static class DeleteAliasCli
         }
 
         await db.SaveChangesAsync();
+        // The rows bypass the repositories, whose cached GetAll would keep serving the old alias list.
+        Prose.Core.Services.UniverseScope.BumpEpoch();
         Console.WriteLine($"\n[delete-alias] Deleted {deleted} alias row(s) with value \"{value}\".");
         Console.WriteLine("[delete-alias] Re-run `prose --tag-entities --slug <slug>` so beat text drops the stale tag.");
         return 0;
