@@ -189,8 +189,9 @@ if (hosting.IsPublic)
         RefuseToStart("[hub] Hosted mode does not run in the Development environment (ASPNETCORE_ENVIRONMENT / DOTNET_ENVIRONMENT). Not starting.");
         return;
     }
-    // The accounts live in the Prose database; without a configured one the fallback is this PC's LocalDB.
-    if (ProseSqlResilience.ResolveConnectionString(builder.Configuration) == ProseSqlResilience.LocalDbConnectionString)
+    // The accounts live in the Prose database; without a configured one the fallback is the developer
+    // sign-in default (ProseSqlResilience.AzureDeveloperConnectionString), which a deployed Hub must not use.
+    if (ProseSqlResilience.ConfiguredConnectionString(builder.Configuration) is null)
     {
         RefuseToStart("[hub] Hosted mode: no database is configured (ConnectionStrings:Prose, env ConnectionStrings__Prose). Not starting.");
         return;
@@ -219,7 +220,7 @@ builder.Logging.AddSerilog(hubSerilogLogger, dispose: true);
 // roaming root, not the SAME "Prose" database ProseDbContext/LogIssue use — Phase 1 wrote
 // MindAttic_Log into that database; that's superseded. Nothing about the existing file pipeline,
 // LoggingService's search, or LogIssue triage changes. mindAtticLogConnectionString is still
-// resolved (env var → appsettings config → LocalDB "Prose" fallback) because the startup block
+// resolved (env var → appsettings config → the Azure developer default) because the startup block
 // below still needs it to migrate Phase 1's historical rows out of that database.
 var mindAtticLogConnectionString = ProseSqlResilience.ResolveConnectionString(builder.Configuration);
 var mindAtticLogDbPath = MindAttic.Vault.Paths.VaultPaths.LoggingDbPath("Prose.Hub");
@@ -396,7 +397,7 @@ var app = builder.Build();
 // than refusing to start, and this must stay loud, not silently logged and ignored.
 // Wake the database first (PRS-T998). An Azure SQL serverless database pauses when idle and
 // refuses logins for up to about a minute while it resumes; this waits that out (with a console
-// line per retry) before anything is served. Against LocalDB it is one ordinary connection.
+// line per retry) before anything is served. Against a non-Azure server it is one ordinary connection.
 // The same resume-tolerant open backs every later connection too - see ProseSqlResilience.
 ProseSqlResilience.OnRetry = message => Console.WriteLine($"[hub] {message}");
 await ProseSqlResilience.WakeAsync(mindAtticLogConnectionString);

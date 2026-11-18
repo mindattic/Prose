@@ -75,7 +75,8 @@ public static class ServiceCollectionExtensions
     {
         // ── EF Core: SQL Server Prose database ──────────────────────────
         // Connection string priority: env var ConnectionStrings__Prose →
-        // appsettings ConnectionStrings:Prose → LocalDB fallback.
+        // appsettings ConnectionStrings:Prose → the Azure developer default
+        // (ProseSqlResilience.AzureDeveloperConnectionString; no local SQL Server).
         //
         // We register only AddDbContextFactory (singleton). Code that needs a
         // scoped DbContext takes IDbContextFactory and calls CreateDbContext()

@@ -18,7 +18,7 @@ namespace Prose.Cli;
 ///                                              (run AFTER verifying the column-based read path)
 ///
 /// Connection string: env <c>ConnectionStrings__Prose</c> →
-/// appsettings <c>ConnectionStrings:Prose</c> → LocalDB.
+/// appsettings <c>ConnectionStrings:Prose</c> → the Azure developer default.
 /// </summary>
 public static class MigrateSqlCli
 {

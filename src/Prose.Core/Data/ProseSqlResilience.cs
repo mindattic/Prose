@@ -18,14 +18,22 @@ namespace Prose.Core.Data;
 /// Instead the retry sits at the only step a resuming database actually fails - opening the
 /// connection - which happens before any transaction starts and is always safe to repeat.</para>
 ///
-/// <para>Retries apply only when the server is an Azure SQL endpoint. Against LocalDB or any other
-/// SQL Server the open is a single plain attempt, exactly as before.</para>
+/// <para>Retries apply only when the server is an Azure SQL endpoint. Against any other SQL Server
+/// the open is a single plain attempt, exactly as before.</para>
 /// </summary>
 public static class ProseSqlResilience
 {
-    /// <summary>Used when neither the environment nor configuration names a connection string.</summary>
-    public const string LocalDbConnectionString =
-        @"Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;";
+    /// <summary>
+    /// Used when neither the environment nor configuration names a connection string: the shared
+    /// Prose database in Azure SQL, signed in as the developer (<c>az login</c>, Visual Studio or
+    /// any other credential <c>Active Directory Default</c> finds). It holds no secret. There is
+    /// deliberately no local fallback (PRS-T1009): a run with nothing configured lands in the cloud
+    /// database, never on a SQL Server instance on this PC, so development needs none installed.
+    /// Unattended processes get a service-principal string through <c>ConnectionStrings__Prose</c>.
+    /// </summary>
+    public const string AzureDeveloperConnectionString =
+        "Server=tcp:sql-mindattic-f65744.database.windows.net,1433;Database=Prose;" +
+        "Authentication=Active Directory Default;Encrypt=True;Connect Timeout=60;MultipleActiveResultSets=True;";
 
     /// <summary>How long an open keeps retrying while an Azure SQL database resumes.</summary>
     public static readonly TimeSpan MaxWait = TimeSpan.FromMinutes(3);
@@ -35,12 +43,24 @@ public static class ProseSqlResilience
 
     /// <summary>
     /// Connection string priority: env var <c>ConnectionStrings__Prose</c>, then configuration
-    /// <c>ConnectionStrings:Prose</c>, then LocalDB.
+    /// <c>ConnectionStrings:Prose</c>, then <see cref="AzureDeveloperConnectionString"/>.
+    /// A blank value counts as not set.
     /// </summary>
     public static string ResolveConnectionString(IConfiguration? configuration = null) =>
-        Environment.GetEnvironmentVariable("ConnectionStrings__Prose")
-        ?? configuration?.GetConnectionString("Prose")
-        ?? LocalDbConnectionString;
+        ConfiguredConnectionString(configuration) ?? AzureDeveloperConnectionString;
+
+    /// <summary>
+    /// The connection string the environment or configuration names, or null when neither does
+    /// (the caller would then get the developer default). Hosted mode refuses to start on null:
+    /// a deployed Hub must be told its database, not sign in as whoever happens to be logged on.
+    /// </summary>
+    public static string? ConfiguredConnectionString(IConfiguration? configuration = null)
+    {
+        var fromEnvironment = Environment.GetEnvironmentVariable("ConnectionStrings__Prose");
+        if (!string.IsNullOrWhiteSpace(fromEnvironment)) return fromEnvironment;
+        var fromConfiguration = configuration?.GetConnectionString("Prose");
+        return string.IsNullOrWhiteSpace(fromConfiguration) ? null : fromConfiguration;
+    }
 
     /// <summary><c>UseSqlServer</c> plus the resume-tolerant connection open.</summary>
     public static DbContextOptionsBuilder UseProseSqlServer(this DbContextOptionsBuilder options, string connectionString)
@@ -152,7 +172,7 @@ public static class ProseSqlResilience
 
     /// <summary>
     /// Startup step: connects once (waiting out a serverless resume) so the first real request
-    /// doesn't pay for it. A no-op cost against LocalDB beyond one pooled connection.
+    /// doesn't pay for it. Against a non-Azure server it costs one pooled connection.
     /// </summary>
     public static async Task WakeAsync(string connectionString, CancellationToken ct = default)
     {

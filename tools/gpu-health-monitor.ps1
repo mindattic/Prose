@@ -9,8 +9,10 @@ $PollSeconds = 60
 $VllmKey     = $env:VLLM_KEY   # set in environment; never hardcode here
 $WorkDir     = "D:\Projects\MindAttic\Prose"
 $LogFile     = "$WorkDir\gpu-health-monitor.log"
-$DbServer    = "(localdb)\MSSQLLocalDB"
-$DbName      = "Prose"
+# The Prose database is Azure SQL; Open-SS (scripts\gspl_db.ps1) is the one way a script reaches it.
+$eapBefore = $ErrorActionPreference
+. "$WorkDir\scripts\gspl_db.ps1"
+$ErrorActionPreference = $eapBefore   # gspl_db.ps1 sets 'Stop'; this script keeps its own setting
 
 $Pods = @(
     [PSCustomObject]@{
@@ -117,9 +119,16 @@ function Start-ScoringJob($pod) {
 
 function Get-UnratedCount {
     $q = "SELECT COUNT(*) FROM Entities e WHERE e.EntityType NOT IN ('character','person','organization') AND e.IsActive=1 AND NOT EXISTS (SELECT 1 FROM EntityReviewSummaries s WHERE s.EntityId=CAST(e.Id AS nvarchar(50)))"
-    $raw = sqlcmd -S $DbServer -d $DbName -Q $q -h -1 2>$null
-    $line = $raw | Where-Object { $_ -match '^\s*\d+' } | Select-Object -First 1
-    return if ($line) { [int]$line.Trim() } else { -1 }
+    # -1 = the count could not be read (the caller keeps polling), as with the sqlcmd call this replaced.
+    $conn = $null
+    try {
+        $conn = Open-SS
+        return [int](Invoke-SSScalar $conn $q)
+    } catch {
+        return -1
+    } finally {
+        if ($conn) { $conn.Dispose() }
+    }
 }
 
 # ── Main loop ────────────────────────────────────────────────────────────────

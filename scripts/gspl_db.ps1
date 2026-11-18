@@ -1,7 +1,7 @@
 # Shared DB helpers for GSPL scripts. Dot-source it:
 #
 #     . "$PSScriptRoot\gspl_db.ps1"
-#     $conn = Open-SS
+#     $conn = Open-SS            # an OPEN connection to the Azure SQL Prose database
 #     New-SSRow $conn 'PlaceAliases' @{ PlaceId = $id; Position = 0; Value = 'Banias' }
 #
 # WHY THIS EXISTS
@@ -33,19 +33,188 @@ Add-Type -AssemblyName System.Data
 
 $script:SSIdentityCache = @{}
 
+# WHERE THE DATABASE IS (PRS-T1009)
+#
+# Prose lives in Azure SQL (Entra-only sign-in), not on a SQL Server on this PC. Open-SS is the ONE
+# way a script opens a connection, and it returns an OPEN connection to that database. Never build a
+# connection string in a script.
+#
+# Windows PowerShell's System.Data.SqlClient cannot parse "Authentication=Active Directory ...", so
+# Open-SS signs in with an access token (SqlConnection.AccessToken) instead. The token comes from,
+# in order:
+#   1. the service principal in %APPDATA%\MindAttic\Database\providers.json
+#      (AzureSql.TenantId / ClientId / ClientSecret); never printed;
+#   2. the developer's own sign-in:  az account get-access-token --resource https://database.windows.net/
+#      (run `az login` once).
+#
+# The database is serverless and pauses when idle; the first open after a pause takes about a
+# minute. Open-SS retries for up to three minutes and prints one line per retry.
+#
+# Overrides: -ConnectionString, -Server/-Database, or the env var ConnectionStrings__Prose (in that
+# order) name a different target. A LocalDB / localhost / this-PC target is IGNORED with a warning:
+# local SQL Server is retired for Prose, and a stale local string must not send writes to a copy
+# nobody reads.
+$script:SSAzureServer   = 'sql-mindattic-f65744.database.windows.net'
+$script:SSOpenMaxWait   = 180      # seconds an open keeps retrying while the database resumes
+$script:SSToken         = $null
+$script:SSTokenExpires  = [datetime]::MinValue
+
+function Test-SSLocalTarget {
+    param([string]$Server)
+    if (-not $Server) { return $false }
+    $s = ($Server.Trim() -replace '^(tcp|np|lpc):', '')
+    if ($s -match '(?i)^\(localdb\)|^\(local\)|^localhost|^127\.0\.0\.1|^\.($|[\\,])|^\\\\\.\\pipe') { return $true }
+    if ($env:COMPUTERNAME -and $s -match ('(?i)^' + [regex]::Escape($env:COMPUTERNAME) + '($|[\\,])')) { return $true }
+    return $false
+}
+
+function Test-SSAzureTarget {
+    param([string]$Server)
+    return [bool]($Server -match '(?i)\.database\.(windows\.net|usgovcloudapi\.net|chinacloudapi\.cn|cloudapi\.de|fabric\.microsoft\.com)')
+}
+
+# Reads a connection string of any dialect (System.Data.SqlClient would throw on "Authentication=").
+function Get-SSConnectionStringParts {
+    param([Parameter(Mandatory)][string]$ConnectionString)
+    $b = New-Object System.Data.Common.DbConnectionStringBuilder
+    $b.set_ConnectionString($ConnectionString)
+    $get = {
+        param($names)
+        foreach ($n in $names) { if ($b.ContainsKey($n)) { return [string]$b[$n] } }
+        return $null
+    }
+    return @{
+        Server         = & $get @('server', 'data source', 'address', 'addr', 'network address')
+        Database       = & $get @('database', 'initial catalog')
+        Authentication = & $get @('authentication')
+        Password       = & $get @('password', 'pwd')
+    }
+}
+
+# An access token for Azure SQL. Cached for the life of the script. Never written to the host.
+function Get-SSAccessToken {
+    if ($script:SSToken -and [datetime]::UtcNow -lt $script:SSTokenExpires) { return $script:SSToken }
+    $why = New-Object System.Collections.Generic.List[string]
+
+    $file = Join-Path $env:APPDATA 'MindAttic\Database\providers.json'
+    if (Test-Path -LiteralPath $file) {
+        $secret = $null
+        try {
+            $sp = (Get-Content -LiteralPath $file -Raw | ConvertFrom-Json).AzureSql
+            if ($sp -and $sp.TenantId -and $sp.ClientId -and $sp.ClientSecret) {
+                $secret = [string]$sp.ClientSecret
+                [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
+                $body = @{
+                    grant_type    = 'client_credentials'
+                    client_id     = [string]$sp.ClientId
+                    client_secret = $secret
+                    scope         = 'https://database.windows.net/.default'
+                }
+                $r = Invoke-RestMethod -Method Post -Uri ("https://login.microsoftonline.com/" + $sp.TenantId + "/oauth2/v2.0/token") `
+                    -Body $body -ContentType 'application/x-www-form-urlencoded' -TimeoutSec 30
+                if ($r.access_token) {
+                    $script:SSToken = [string]$r.access_token
+                    $script:SSTokenExpires = [datetime]::UtcNow.AddSeconds([Math]::Max(60, [int]$r.expires_in - 300))
+                    return $script:SSToken
+                }
+                $why.Add('service principal: the token endpoint returned no access token')
+            } else {
+                $why.Add('service principal: providers.json has no complete AzureSql.TenantId/ClientId/ClientSecret')
+            }
+        } catch {
+            $m = [string]$_.Exception.Message
+            if ($secret) { $m = $m.Replace($secret, '***') }
+            $why.Add('service principal: ' + $m)
+        }
+    } else {
+        $why.Add("service principal: $file not found")
+    }
+
+    if (Get-Command az -ErrorAction SilentlyContinue) {
+        # Local to this function: az writes warnings to stderr, which 'Stop' would turn into a throw.
+        $ErrorActionPreference = 'Continue'
+        $t = $null
+        try { $t = & az account get-access-token --resource https://database.windows.net/ --query accessToken -o tsv 2>$null } catch { }
+        $t = [string]($t | Select-Object -First 1)
+        if ($LASTEXITCODE -eq 0 -and $t -and $t.Trim()) {
+            $script:SSToken = $t.Trim()
+            $script:SSTokenExpires = [datetime]::UtcNow.AddMinutes(30)
+            return $script:SSToken
+        }
+        $why.Add('az: "az account get-access-token" failed (run "az login")')
+    } else {
+        $why.Add('az: the Azure CLI is not installed')
+    }
+
+    throw ("SS-DB: no access token for Azure SQL. " + ($why -join '; '))
+}
+
+# The SqlException number behind a PowerShell method-call error, or $null.
+function Get-SSSqlErrorNumber {
+    param($ErrorRecord)
+    for ($e = $ErrorRecord.Exception; $null -ne $e; $e = $e.InnerException) {
+        if ($e -is [System.Data.SqlClient.SqlException]) { return $e.Number }
+    }
+    return $null
+}
+
 function Open-SS {
-    param([string]$Server = '(localdb)\MSSQLLocalDB', [string]$Database = 'Prose')
-    # Same source the app uses: the env var ConnectionStrings__Prose wins when it is set and the
-    # caller named no server or database; otherwise the LocalDB string below (PRS-T998).
-    # LIMIT: this is Windows PowerShell's System.Data.SqlClient, which does not understand
-    # "Authentication=Active Directory Default". An Entra-only Azure SQL connection string in
-    # that variable fails here with "Keyword not supported: 'authentication'" - these scripts
-    # cannot reach that database until they move to Microsoft.Data.SqlClient.
-    $cs = "Server=$Server;Database=$Database;Trusted_Connection=True;TrustServerCertificate=True;"
-    if ($env:ConnectionStrings__Prose -and $PSBoundParameters.Count -eq 0) { $cs = $env:ConnectionStrings__Prose }
-    $c = New-Object System.Data.SqlClient.SqlConnection($cs)
-    $c.Open()
-    return $c
+    param([string]$Server, [string]$Database = 'Prose', [string]$ConnectionString)
+
+    $explicit = $null; $from = $null
+    if ($ConnectionString)                 { $explicit = $ConnectionString; $from = '-ConnectionString' }
+    elseif ($Server)                       { $explicit = "Server=$Server;Database=$Database;Trusted_Connection=True;TrustServerCertificate=True;"; $from = '-Server' }
+    elseif ($env:ConnectionStrings__Prose) { $explicit = $env:ConnectionStrings__Prose; $from = 'env ConnectionStrings__Prose' }
+
+    $targetServer = $script:SSAzureServer
+    $targetDb     = $Database
+    $asIs         = $null      # a non-Azure target is opened with its own string, untouched
+    if ($explicit) {
+        $parts = Get-SSConnectionStringParts $explicit
+        if (Test-SSLocalTarget $parts.Server) {
+            Write-Warning ("gspl_db: ignoring $from (server '" + $parts.Server + "' is a local SQL Server; Prose lives in Azure SQL now). Using $($script:SSAzureServer).")
+        } elseif (-not (Test-SSAzureTarget $parts.Server)) {
+            $asIs = $explicit
+        } elseif (-not $parts.Authentication -and $parts.Password) {
+            $asIs = $explicit                      # Azure SQL with a SQL login: nothing to translate
+        } else {
+            $targetServer = $parts.Server
+            if ($parts.Database) { $targetDb = $parts.Database }
+        }
+    }
+
+    if ($asIs) {
+        $c = New-Object System.Data.SqlClient.SqlConnection($asIs)
+        $c.Open()
+        return $c
+    }
+
+    if ($targetServer -notmatch '^(?i)tcp:') { $targetServer = "tcp:$targetServer" }
+    if ($targetServer -notmatch ',\d+$')     { $targetServer = "$targetServer,1433" }
+    $cs = "Server=$targetServer;Database=$targetDb;Encrypt=True;TrustServerCertificate=False;Connect Timeout=60;"
+    $token = Get-SSAccessToken
+
+    # Errors a paused, resuming, failing-over or throttled Azure SQL database answers a login with
+    # (the same list as ProseSqlResilience.IsTransientOpenFailure).
+    $transient = @(40613, 40197, 40501, 40540, 40143, 49918, 49919, 49920, 10928, 10929, 4221, 615, -2, -1, 53, 64, 121, 233, 10053, 10054, 10060)
+    $clock = [System.Diagnostics.Stopwatch]::StartNew()
+    for ($attempt = 1; ; $attempt++) {
+        $c = New-Object System.Data.SqlClient.SqlConnection($cs)
+        $c.AccessToken = $token
+        try {
+            $c.Open()
+            return $c
+        } catch {
+            $c.Dispose()
+            $number = Get-SSSqlErrorNumber $_
+            if ($null -eq $number -or $transient -notcontains $number -or $clock.Elapsed.TotalSeconds -ge $script:SSOpenMaxWait) {
+                throw ("SS-DB: cannot open '$targetDb' on $targetServer" + $(if ($null -ne $number) { " (error $number)" }) + ": " + $_.Exception.Message)
+            }
+            $delay = [Math]::Min(10, 2 * $attempt)
+            Write-Host ("    gspl_db: '$targetDb' is not available yet (error $number, probably resuming); attempt $attempt failed, retrying in ${delay}s")
+            Start-Sleep -Seconds $delay
+        }
+    }
 }
 
 function Get-SSIdentityColumns {

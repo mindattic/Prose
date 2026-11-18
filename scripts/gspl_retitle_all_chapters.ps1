@@ -3,9 +3,8 @@ $OutputEncoding = [System.Text.UTF8Encoding]::new($false)
 [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)
 Add-Type -AssemblyName System.Data
 
-$connStr = "Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;"
-$conn = New-Object System.Data.SqlClient.SqlConnection($connStr)
-$conn.Open()
+. "$PSScriptRoot\gspl_db.ps1"
+$conn = Open-SS
 
 $em = [char]8212
 

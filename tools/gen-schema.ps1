@@ -1,9 +1,9 @@
 $ErrorActionPreference = 'Stop'
-$cs = "Server=(localdb)\MSSQLLocalDB;Database=Prose;Integrated Security=true;TrustServerCertificate=true"
+# Open-SS: the one way a script reaches the Prose database (Azure SQL, access-token sign-in).
+. "$PSScriptRoot\..\scripts\gspl_db.ps1"
 
 function Query($sql) {
-  $cn = New-Object System.Data.SqlClient.SqlConnection $cs
-  $cn.Open()
+  $cn = Open-SS
   $cmd = $cn.CreateCommand()
   $cmd.CommandText = $sql
   $cmd.CommandTimeout = 120

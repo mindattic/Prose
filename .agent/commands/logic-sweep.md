@@ -8,7 +8,7 @@ or reviews from this runbook** — if the user wants a score, they will say so e
 ## Fixed facts
 - **HARD, ABSOLUTE (2026-08-22): nothing reaches the database except through Prose.Hub — reads
   AND writes, no exceptions.** An earlier version of this section instructed running raw `sqlcmd`
-  reads directly against `(localdb)\MSSQLLocalDB` for audit reading — that is retired and must
+  reads directly against the database (then a LocalDB instance; it is Azure SQL now) for audit reading — that is retired and must
   never be resurrected. **The sanctioned bulk-read for audit purposes is `prose --read-beats
   (--slug <slug> | --id <guid>) [--from N] [--to N] [--numbers <csv>] [--format text|json]`**
   — it returns per-beat id/title/text in true reading order through the Hub, plus the beat's

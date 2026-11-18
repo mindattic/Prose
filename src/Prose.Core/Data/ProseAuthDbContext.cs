@@ -30,7 +30,12 @@ public sealed class ProseAuthDbContext(DbContextOptions<ProseAuthDbContext> opti
     }
 }
 
-/// <summary>Design-time factory so <c>dotnet ef migrations add … --context ProseAuthDbContext</c> works.</summary>
+/// <summary>
+/// Design-time factory so <c>dotnet ef migrations add … --context ProseAuthDbContext</c> works.
+/// Same connection resolution as <see cref="ProseDbContextFactory"/>: with nothing configured,
+/// <c>dotnet ef database update --context ProseAuthDbContext</c> now migrates the SHARED CLOUD
+/// database (PRS-T1009), not a local one.
+/// </summary>
 public sealed class ProseAuthDbContextFactory : IDesignTimeDbContextFactory<ProseAuthDbContext>
 {
     public ProseAuthDbContext CreateDbContext(string[] args)

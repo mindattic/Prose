@@ -1,7 +1,8 @@
 Add-Type -AssemblyName System.Data
-$connStr = "Server=(localdb)\MSSQLLocalDB;Database=Prose;Integrated Security=True;"
-$conn = New-Object System.Data.SqlClient.SqlConnection $connStr
-$conn.Open()
+$eapBefore = $ErrorActionPreference
+. "$PSScriptRoot\..\scripts\gspl_db.ps1"
+$ErrorActionPreference = $eapBefore   # gspl_db.ps1 sets 'Stop'; this script keeps its own setting
+$conn = Open-SS
 $cmd = $conn.CreateCommand()
 $cmd.CommandText = @"
 SELECT CAST(bn.SortKey AS INT) AS SK, b.Id AS BeatId, b.Text AS Text,

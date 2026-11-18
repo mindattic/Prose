@@ -253,7 +253,7 @@ Default `Chapter.InWorldDate` writes as `2256-XX-XX`. Helpers convert numeric `c
 
 ## Open questions before I write code
 
-1. **Connection string / instance.** Where does SQL Server live? Need a connection string (or `(localdb)\\MSSQLLocalDB` for dev). Where does the connection string come from in the other projects (`FractionsOfACenter` / `TaxRateCollector`)?
+1. **Connection string / instance.** Where does SQL Server live? Need a connection string. (Answered since: the database is `Prose` on Azure SQL, `sql-mindattic-f65744.database.windows.net`, for development too; there is no LocalDB. See the README's Database section.) Where does the connection string come from in the other projects (`FractionsOfACenter` / `TaxRateCollector`)?
 2. **CharacterStats normalization.** Today they're free-form JSON dicts (`physical: { strength: 3, dexterity: 6, ... }`). Two paths:
    - **JSON column** — fast to migrate, slow to query specific stats.
    - **`CharacterStatValue (CharacterId, StatKey, IntValue)`** — fully indexed, slower to migrate.

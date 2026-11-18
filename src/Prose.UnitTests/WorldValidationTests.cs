@@ -17,10 +17,16 @@ namespace Prose.UnitTests;
 /// the actual canon, so a real defect that slipped into the live data gets caught here even
 /// though the logic itself is already proven elsewhere.
 ///
-/// Skips gracefully (Assert.Ignore) when the dev LocalDB isn't reachable — e.g. a CI runner
-/// with no `(localdb)\MSSQLLocalDB` instance — so this suite never fails a build that simply
-/// lacks the local database; it is meant to be run explicitly, by design, same as the original
-/// (retired) file-based version's documented workflow:
+/// Connects wherever <see cref="ProseSqlResilience.ResolveConnectionString"/> points: env
+/// <c>ConnectionStrings__Prose</c>, else the shared Azure SQL database (PRS-T1009; there is no
+/// LocalDB default any more). READ-ONLY BY CONTRACT: every query here is <c>AsNoTracking</c> and
+/// the rule scan only reads, because this now runs against the real cloud database. A test that
+/// writes does not belong in this fixture (mark it <c>[Explicit]</c> and give it a scratch database).
+///
+/// Skips gracefully (Assert.Ignore) when the database isn't reachable — e.g. a CI runner with
+/// no Azure sign-in — so this suite never fails a build that simply cannot reach the database;
+/// it is meant to be run explicitly, by design, same as the original (retired) file-based
+/// version's documented workflow:
 ///   dotnet test --filter Category=WorldValidation
 /// </summary>
 [TestFixture]
@@ -33,14 +39,10 @@ public class WorldValidationTests
     [OneTimeSetUp]
     public void Setup()
     {
-        var connStr =
-            Environment.GetEnvironmentVariable("ConnectionStrings__Prose")
-            ?? @"Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;";
-
-        var options = new DbContextOptionsBuilder<ProseDbContext>()
-            .UseSqlServer(connStr)
-            .Options;
-        factory = new SimpleDbContextFactory(options);
+        // Same resolution and resume-tolerant open as the app (waits out a paused serverless database).
+        var builder = new DbContextOptionsBuilder<ProseDbContext>();
+        builder.UseProseSqlServer(ProseSqlResilience.ResolveConnectionString());
+        factory = new SimpleDbContextFactory(builder.Options);
 
         try
         {
@@ -52,7 +54,7 @@ public class WorldValidationTests
         catch (Exception ex)
         {
             dbReachable = false;
-            TestContext.Out.WriteLine($"Prose LocalDB not reachable — live validation suite will skip: {ex.Message}");
+            TestContext.Out.WriteLine($"Prose database not reachable — live validation suite will skip: {ex.Message}");
         }
     }
 
@@ -60,7 +62,7 @@ public class WorldValidationTests
     public void SkipIfNoDb()
     {
         if (!dbReachable)
-            Assert.Ignore("Prose LocalDB not reachable in this environment.");
+            Assert.Ignore("Prose database not reachable in this environment.");
     }
 
     // "quote" rows are one-row-per-quotation with Name = the speaker's name, so the same

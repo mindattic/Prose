@@ -2,8 +2,8 @@
 $OutputEncoding = [System.Text.UTF8Encoding]::new($false)
 [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)
 Add-Type -AssemblyName System.Data
-$conn = New-Object System.Data.SqlClient.SqlConnection("Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;")
-$conn.Open()
+. "$PSScriptRoot\gspl_db.ps1"
+$conn = Open-SS
 $em = [char]8212
 function Sha256Hex([string]$t){$s=[System.Security.Cryptography.SHA256]::Create();([System.BitConverter]::ToString($s.ComputeHash([System.Text.Encoding]::UTF8.GetBytes($t.Trim()))) -replace '-','').ToLower()}
 $cmd=$conn.CreateCommand()

@@ -20,7 +20,8 @@
 $ErrorActionPreference = 'Stop'
 
 $ManifestPath = 'D:\Projects\MindAttic\Prose\engine\data\archives\json-prune-2026-05-08\manifest.tsv'
-$ConnString   = 'Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;'
+# Open-SS: the one way a script reaches the Prose database (Azure SQL, access-token sign-in).
+. "$PSScriptRoot\..\..\..\..\scripts\gspl_db.ps1"
 
 if (-not (Test-Path $ManifestPath)) { Write-Error "Manifest not found: $ManifestPath"; exit 1 }
 
@@ -32,8 +33,7 @@ Write-Host "Loaded $($rows.Count) manifest rows."
 function Test-EntityExistsByName {
     param([string]$EntityType, [string]$Name)
     Add-Type -AssemblyName 'System.Data'
-    $conn = New-Object System.Data.SqlClient.SqlConnection $ConnString
-    $conn.Open()
+    $conn = Open-SS
     try {
         $cmd = $conn.CreateCommand()
         $cmd.CommandText = @'

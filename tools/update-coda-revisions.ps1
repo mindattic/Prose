@@ -5,9 +5,10 @@
 Set-StrictMode -Off
 Add-Type -AssemblyName System.Data
 
-$cs = 'Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;'
-$conn = New-Object System.Data.SqlClient.SqlConnection($cs)
-$conn.Open()
+$eapBefore = $ErrorActionPreference
+. "$PSScriptRoot\..\scripts\gspl_db.ps1"
+$ErrorActionPreference = $eapBefore   # gspl_db.ps1 sets 'Stop'; this script keeps its own setting
+$conn = Open-SS
 $qiCmd = $conn.CreateCommand()
 $qiCmd.CommandText = 'SET QUOTED_IDENTIFIER ON'
 [void]$qiCmd.ExecuteNonQuery()
