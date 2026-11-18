@@ -657,7 +657,7 @@ Shadowrun, Pacific Rim, Bloodborne, Doctor Who, Miéville, qntm and more; list i
 close to prior art were replaced. The overused tropes stay out: tentacles, eyes everywhere, madness from sight,
 sleeping gods, cults, hive minds, hell and demons, a lab experiment tearing the gate, world-eaters.
 (Author /goal 2026-11-18, law 01a1ee38-c1f6: *human* orders and cults that grow up around the doors are now welcome; see
-**Mindshine, the Dressed, and the orders** below. Nothing any of them worships ever answers as a god.)
+**Mindshine, the Veiled Ones, and the orders** below. Nothing any of them worships ever answers as a god.)
 
 **The biology test (01a1e75b-0738).** Every named incursion answers four questions, on its record if not on
 the page:
@@ -753,7 +753,7 @@ The Interstice is what lies between universes; a Schism is where ours is thin to
 **Parked for Season 2:** the shortcut universe (author 2026-11-16, page-law 01a1e7b5-e6c7). It is not part of the
 Season 1 world: no rift travel to far places, no rumor of it, and incursions never name it as their source.
 
-### Mindshine, the Dressed, and the orders (author /goal 2026-11-18, PRS-T1016; laws 01a1ee38-c149, 01a1ee38-c1a5, 01a1ee38-c1f6, 01a1ee38-c240)
+### Mindshine, the Veiled Ones, and the orders (author /goal 2026-11-18, PRS-T1016; Veiled Ones renamed PRS-T1019; laws 01a1ee38-c149, 01a1ef9f-a0f7, 01a1ee38-c1f6, 01a1ef9e-0334)
 
 The author asked for an entirely new kind of cosmic-horror integration, woven through every GLMZ book over several
 passes until it is part of the world's organic nature. Three pieces, all classified in Ren's book (code **REN**):
@@ -765,10 +765,12 @@ passes until it is part of the world's organic nature. Three pieces, all classif
   hubs, fevered children, the dying (a mind flares at the end). Sensitives burn brighter. AAMA files say "cognitive
   attraction"; the street says "keep your shine low". **Belief and hypothesis only on the page**: never proved, never a
   meter, and it opens no doors (the Cabal's taps do, as subtext). The horror is not what you see; it is that you are seen.
-- **The Dressed** (bestiary, codex class DRESSED; AAMA "R-forms"; street "it came dressed"; Ren's word "company").
-  Intelligences that come wearing a shape pulled from the viewer's own mind, always slightly wrong: the wrongness is the
-  seam where the translation shows. The Man on the Camel (Joliet, 2217) is the first on file and the model. Never seen
-  whole, never explained, never confirmed friendly, untouched by violence; not ghosts, angels or gods. On file, with the
+- **The Veiled Ones** (formerly "the Dressed", retired 2026-11-18; bestiary, codex class VEILED; AAMA "R-forms"; street "the Veiled Ones", "the veiled"; Ren's word "company").
+  Far-side intelligences of dubious motivation with no physical form, seen only as an archetype of an idea conjured from
+  the watcher's own imagination (the archetype and its act stay constant, the details come from whoever is looking),
+  always slightly wrong somewhere: the wrongness is the
+  seam where the translation shows. The Man on the Camel (Joliet, 2217) is **the Sojourner**, which keeps company with travelers; the AAMA file was built around it and it is the
+  model for all of them. Never seen whole, never explained, motives never confirmed kind or cruel (a kindness may carry a price), untouched by violence; not ghosts, angels or gods. On file, with the
   first year a book may use them: the Lake Walker 2201, the Old Man in the Booth 2206, the Night Nurse 2209, the Ticket
   Man 2214, the Small-Hours Grocer 2219, the Rope Girl 2221, the Borrower 2223, the Stone Mourner 2225, the Write-Off
   Man 2229.
@@ -783,7 +785,7 @@ passes until it is part of the world's organic nature. Three pieces, all classif
   2228 (flats living on skin as moving tattoos).
 
 **The weave** (law 01a1ee38-c240): each book carries the codex creatures by their informal names, the drop and the
-waking whenever one is truly seen, one Dressed encounter at most, several order touches, and mindshine as street
+waking whenever one is truly seen, one Veiled One encounter at most, several order touches, and mindshine as street
 talk, all pitched to the book's year. Pipeline: `Downloads\GLMZ_Bestiary\weave2` (WEAVE2_BRIEF.md, canon_new.json,
 check.py, in\ and out\ per chunk).
 
