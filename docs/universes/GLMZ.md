@@ -753,7 +753,7 @@ The Interstice is what lies between universes; a Schism is where ours is thin to
 **Parked for Season 2:** the shortcut universe (author 2026-11-16, page-law 01a1e7b5-e6c7). It is not part of the
 Season 1 world: no rift travel to far places, no rumor of it, and incursions never name it as their source.
 
-### Mindshine, the Veiled Ones, and the orders (author /goal 2026-11-18, PRS-T1016; Veiled Ones renamed PRS-T1019; laws 01a1ee38-c149, 01a1ef9f-a0f7, 01a1ee38-c1f6, 01a1ef9e-0334)
+### Mindshine, the Veiled Ones, and the orders (author /goal 2026-11-18, PRS-T1016; Veiled Ones PRS-T1019; laws 01a1ee38-c149, 01a1efbe-664e, 01a1ee38-c1f6, 01a1ef9e-0334)
 
 The author asked for an entirely new kind of cosmic-horror integration, woven through every GLMZ book over several
 passes until it is part of the world's organic nature. Three pieces, all classified in Ren's book (code **REN**):
@@ -765,15 +765,24 @@ passes until it is part of the world's organic nature. Three pieces, all classif
   hubs, fevered children, the dying (a mind flares at the end). Sensitives burn brighter. AAMA files say "cognitive
   attraction"; the street says "keep your shine low". **Belief and hypothesis only on the page**: never proved, never a
   meter, and it opens no doors (the Cabal's taps do, as subtext). The horror is not what you see; it is that you are seen.
-- **The Veiled Ones** (formerly "the Dressed", retired 2026-11-18; bestiary, codex class VEILED; AAMA "R-forms"; street "the Veiled Ones", "the veiled"; Ren's word "company").
-  Far-side intelligences of dubious motivation with no physical form, seen only as an archetype of an idea conjured from
-  the watcher's own imagination (the archetype and its act stay constant, the details come from whoever is looking),
-  always slightly wrong somewhere: the wrongness is the
-  seam where the translation shows. The Man on the Camel (Joliet, 2217) is **the Sojourner**, which keeps company with travelers; the AAMA file was built around it and it is the
-  model for all of them. Never seen whole, never explained, motives never confirmed kind or cruel (a kindness may carry a price), untouched by violence; not ghosts, angels or gods. On file, with the
-  first year a book may use them: the Lake Walker 2201, the Old Man in the Booth 2206, the Night Nurse 2209, the Ticket
-  Man 2214, the Small-Hours Grocer 2219, the Rope Girl 2221, the Borrower 2223, the Stone Mourner 2225, the Write-Off
-  Man 2229.
+- **The Veiled Ones** (law 01a1efbe-664e; "the Dressed" retired 2026-11-18, PRS-T1019; bestiary, codex class VEILED; AAMA "R-forms";
+  street "the Veiled Ones"; Ren's word "company"). Entities, and sometimes places, that break the rules of reality and
+  exist anyway. No form of their own: each is seen as an **archetype** imagined from that viewer's own expectation of it.
+  The Night Nurse is always recognizably a nurse, but her scrubs are blue or green, white or black, and she is heavy or
+  thin, according to that one person's idea of a nurse. Witnesses differ on details and agree on the archetype, the act
+  and the **seam** (the one wrong detail everyone sees). Motives dubious: a kindness may carry a price. They exist **only
+  for someone alone, or ignored by everyone around them**; some people cannot see them at all, even beside someone who
+  does. **Show, never tell**: that they come from elsewhere comes through only in context clues (a detail that breaks
+  physics, the seam, a thin spot nearby, the 19 Hz ring, a thing returned changed, a place boarded up by daylight).
+  No one on the page says what they are. Never seen whole; violence passes through them; not ghosts, angels or gods.
+  On file, with the first year a book may use each: **the Traveler** (the Man on the Camel, Joliet 2217, *Steppin'
+  Razor*; keeps company with travelers; the AAMA file was built around it), **the Slogger** 2201 (wades the deep lake;
+  pilots steer by it), **the Old Man in the Booth** 2206 (directions for the lost; the cord runs down through the floor),
+  **the Night Nurse** 2209 (sits with the dying; upside-down watch, thirteen marks), **the Ticket Taker** 2214 (punches
+  your ticket; you miss the next fall), **the Small-Hours Grocer** 2219 (a 3 a.m. corner shop; you pay with a secret and
+  afterward know you had one but not what it was), **the Jump Rope Girl** 2221 (skips on the roofs before a rupture),
+  **the Beggar** 2223 (asks for one small thing and brings it back changed; give once, never twice). **Retired and
+  removed from every book:** the Stone Mourner and the Write-Off Man.
 - **The orders and cults** (faction records). People organize around the doors the way they organize around any war or
   weather. Founding years (a book never predates them): the Sectionists 2196 (Hyde Park scholars assembling the whole
   from slices; the closest go silent), the Clock Wives 2205 (grandmothers' warning network of surveyor clocks and bell
