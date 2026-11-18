@@ -182,6 +182,10 @@ if (hosting.IsPublic)
     // No Prose client process runs next to a hosted Hub, so the idle self-shutdown would stop it every
     // few minutes and the platform would start it again (waking the database each time). Off unless set.
     if (builder.Configuration[HubIdleShutdown.ConfigKey] is null) builder.Configuration[HubIdleShutdown.ConfigKey] = "0";
+    // The console is the host's stdout log file, which nothing rotates. ASP.NET Core's per-request
+    // Information lines (four or five for every request, the platform's keep-alive ping included) would
+    // fill it; warnings and the Hub's own lines stay (PRS-T1012).
+    builder.Logging.AddFilter("Microsoft.AspNetCore", Microsoft.Extensions.Logging.LogLevel.Warning);
     // A Debug-packed MindAttic.Authentication carries a Development-only loopback auto-login. It is inert
     // outside the Development environment; a hosted Hub simply never runs in it.
     if (builder.Environment.IsDevelopment())

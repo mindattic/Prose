@@ -135,6 +135,9 @@ jobs:
         shell: pwsh
         run: az webapp restart -g $env:AZURE_RESOURCE_GROUP -n $env:APP
 
+      # The Hub listens only after its start-up work (database wake, migration and login checks, universe
+      # graph): about 4 minutes from an empty graph cache, measured 2026-11-18. web.config's
+      # startupTimeLimit (900 s) is what lets IIS wait that long; requests wait with it.
       # The one thing that must always hold: nothing is served without a login. A Hub that cannot start
       # (database paused or unreachable, configuration incomplete) answers 5xx, which is also closed, so
       # that is reported and not failed; a 2xx on any of these paths fails the deploy.
@@ -166,4 +169,6 @@ jobs:
           }
           if ($open) { throw "Served without a login: $($open -join ', ')" }
           if ($health.Status -eq 200) { Write-Host 'The Hub is up and every probed path requires a login.' }
-          else { Write-Host "::warning::The Hub is not answering /healthz ($($health.Status)). Nothing is served anonymously, but it is not running: check the database and the app settings." }
+          else { Write-Host "::warning::The Hub is not answering /healthz ($($health.Status)). Nothing is served anonymously, but it is not running: check the database, the app settings and C:\home\LogFiles\stdout_*.log." }
+          # A probe that timed out leaves curl's exit code behind; only the checks above decide this step.
+          exit 0
