@@ -1,0 +1,76 @@
+/* MindAttic Cyberspace theme for MediaWiki (Vector 2022): the mindattic.com palette, Outfit and Attic fonts from
+   MindAttic.Components@V4. Common.js mounts the Cyberspace backdrop; this file only paints the skin. */
+@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 100 900; font-display: swap;
+  src: url('https://cdn.jsdelivr.net/gh/mindattic/MindAttic.Components@V4/web/components/OutfitFont/fonts/outfit-latin.woff2') format('woff2'); }
+@font-face { font-family: 'Attic'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url('https://cdn.jsdelivr.net/gh/mindattic/MindAttic.Components@V4/web/components/AtticFont/fonts/attic.woff2') format('woff2'); }
+
+:root, html, html.skin-theme-clientpref-day, html.skin-theme-clientpref-night, html.skin-theme-clientpref-os {
+  color-scheme: dark;
+  --ma-bg: #0d1117; --ma-bg2: #13161b; --ma-bg3: #1a1e25; --ma-border: #2a2f3a;
+  --ma-text: #e8eaf0; --ma-text2: #9aa0b0; --ma-text3: #5c6275;
+  --ma-red: #e5484d; --ma-red-hi: #ff6b70; --ma-neon: #ff0033;
+  --background-color-base: var(--ma-bg);
+  --background-color-base-fixed: var(--ma-bg);
+  --background-color-neutral: var(--ma-bg3);
+  --background-color-neutral-subtle: var(--ma-bg2);
+  --background-color-interactive: var(--ma-bg3);
+  --background-color-interactive-subtle: var(--ma-bg2);
+  --background-color-disabled-subtle: var(--ma-bg2);
+  --background-color-progressive-subtle: #2a1214;
+  --background-color-backdrop-light: rgba(13, 17, 23, 0.65);
+  --color-base: var(--ma-text);
+  --color-emphasized: #ffffff;
+  --color-subtle: var(--ma-text2);
+  --color-placeholder: var(--ma-text3);
+  --color-disabled: var(--ma-text3);
+  --color-progressive: var(--ma-red-hi);
+  --color-progressive--hover: #ff9094;
+  --color-progressive--active: var(--ma-red);
+  --color-visited: var(--ma-red);
+  --color-destructive: #8f95a3;
+  --color-link-red: #8f95a3;
+  --color-link-red--visited: #7d8391;
+  --border-color-base: var(--ma-border);
+  --border-color-subtle: var(--ma-border);
+  --border-color-muted: var(--ma-border);
+  --border-color-progressive: var(--ma-red);
+}
+
+html, body { background: var(--ma-bg); color: var(--ma-text); }
+body, .mw-body, .vector-menu, .cdx-text-input__input, .vector-search-box-input { font-family: 'Outfit', system-ui, sans-serif; }
+.mw-page-container { background: transparent; }
+.mw-page-container-inner, .vector-header-container .mw-header { position: relative; z-index: 1; }
+.mw-body, .vector-sidebar, .vector-pinned-container, .vector-header-container .mw-header, .mw-footer-container {
+  background: rgba(13, 17, 23, 0.9); }
+.mw-body { padding: 0 1rem 1rem; border: 1px solid var(--ma-border); border-radius: 4px; }
+.mw-body h1, .mw-body .mw-heading1, #firstHeading { font-family: 'Outfit', system-ui, sans-serif; font-weight: 600; color: #fff; }
+.mw-body h2, .mw-body .mw-heading2 { font-family: 'Outfit', system-ui, sans-serif; color: var(--ma-red-hi); border-bottom-color: var(--ma-border); }
+.mw-body h3, .mw-body .mw-heading3 { color: var(--ma-text); }
+.mw-logo-wordmark, .mw-logo-container { font-family: 'Attic', serif; color: var(--ma-neon); letter-spacing: 0.04em; }
+.mw-logo-icon { content: url('https://cdn.jsdelivr.net/gh/mindattic/MindAttic.Components@V4/web/assets/mindattic.com/logos/m-monogram.png'); }
+a { color: var(--color-progressive); }
+a:visited { color: var(--color-visited); }
+a.new, a.new:visited { color: var(--color-link-red); }
+.mw-parser-output a.external { color: var(--ma-red-hi); }
+.toc, .mw-parser-output .toc, .vector-toc, .catlinks, .mw-message-box, table.wikitable, .wikitable > tr > th, .wikitable > * > tr > th {
+  background: var(--ma-bg2); border-color: var(--ma-border); color: var(--ma-text); }
+.wikitable > * > tr > td { border-color: var(--ma-border); }
+pre, code { background: var(--ma-bg3); color: var(--ma-text); border-color: var(--ma-border); }
+::selection { background: rgba(229, 72, 77, 0.45); }
+
+/* prose2wiki infobox */
+.prose-infobox { float: right; clear: right; width: 22em; margin: 0 0 1em 1em; border: 1px solid var(--ma-border);
+  border-top: 2px solid var(--ma-neon); background: var(--ma-bg2); font-size: 88%; box-shadow: 0 0 18px rgba(255, 0, 51, 0.12); }
+.prose-infobox-title { font-size: 125%; font-weight: 600; text-align: center; padding: .5em .4em .2em; color: #fff; }
+.prose-infobox-repo, .prose-infobox-aliases { text-align: center; padding: 0 .4em .4em; color: var(--ma-text2); font-style: italic; }
+.prose-infobox-aliases:empty { display: none; }
+.prose-infobox-rows { width: 100%; border-collapse: collapse; }
+.prose-infobox-rows th { text-align: left; vertical-align: top; padding: .3em .5em; width: 35%; color: var(--ma-text2); font-weight: 500;
+  border-top: 1px solid var(--ma-border); }
+.prose-infobox-rows td { vertical-align: top; padding: .3em .5em; border-top: 1px solid var(--ma-border); }
+@media (max-width: 720px) { .prose-infobox { float: none; width: auto; margin: 0 0 1em 0; } }
+
+/* the backdrop's own layers sit under everything; Common.js adds them */
+.cyberspace-sl-fine, .cyberspace-sl-coarse, .console-bg-host { pointer-events: none; }
+@media print { .cyberspace-sl-fine, .cyberspace-sl-coarse, .console-bg-host { display: none !important; } }

@@ -126,6 +126,24 @@ def load_entities(export_zip: Path, interchange: Path | None, repair: Repair) ->
     return entities
 
 
+def overlay_tagged(path: Path, entities: dict[str, Entity], repair: Repair):
+    """Apply `prose --tag-entity-text --out` output: entity text with <entity> markup, so links come from canon tags."""
+    for guid, v in json.loads(path.read_text(encoding="utf-8")).items():
+        if guid == "_wordLikeNames":
+            for word in v:
+                repair.add("one-word name or alias used more as an ordinary word than as a name (tagged mid-sentence only)", text=word)
+            continue
+        ent = entities.get(norm(guid))
+        if ent is None:
+            repair.add("tagged entity missing from the export", guid=guid, name=v.get("name"))
+            continue
+        for key, value in (v.get("record") or {}).items():
+            ent.record[key] = value
+        summary = v.get("summary")
+        if summary and ent.record.get("description") in (None, "", TAG_RE.sub(r"\3", summary)):
+            ent.record["description"] = summary
+
+
 def load_presence(beats_dir: Path | None, entities: dict[str, Entity], repair: Repair) -> list[str]:
     books: list[str] = []
     if not beats_dir:
@@ -366,6 +384,8 @@ def build(args) -> dict[str, str]:
     out.mkdir(parents=True, exist_ok=True)
     repair = Repair()
     entities = load_entities(Path(args.export_zip), Path(args.interchange) if args.interchange else None, repair)
+    if args.tagged:
+        overlay_tagged(Path(args.tagged), entities, repair)
     books = load_presence(Path(args.beats_dir) if args.beats_dir else None, entities, repair)
     book_titles = json.loads(Path(args.book_titles).read_text(encoding="utf-8")) if args.book_titles else {}
     assign_titles(entities, repair)
@@ -388,6 +408,10 @@ def build(args) -> dict[str, str]:
             if alias_title and resolver.by_name(alias) is ent and alias_title.lower() != ent.title.lower():
                 pages.setdefault(alias_title[0].upper() + alias_title[1:], f"#REDIRECT [[{ent.title}]]\n")
     pages.update(site_pages(args.universe, entities, books, book_titles))
+    if args.theme:
+        theme = Path(__file__).parent / "theme"
+        pages["MediaWiki:Common.css"] = (theme / f"{args.theme}.css").read_text(encoding="utf-8")
+        pages["MediaWiki:Common.js"] = (theme / f"{args.theme}.js").read_text(encoding="utf-8")
     (out / "pages.json").write_text(json.dumps(pages, indent=0, ensure_ascii=False), encoding="utf-8")
     (out / "presence.json").write_text(json.dumps({dashed(e.guid): {"title": e.title, "repo": e.repo, "books": e.books}
                                                    for e in entities.values() if e.books}, indent=1, ensure_ascii=False),
@@ -479,6 +503,8 @@ def main():
     p.add_argument("--interchange")
     p.add_argument("--beats-dir")
     p.add_argument("--book-titles", help="JSON {slug: title}")
+    p.add_argument("--theme", help="skin pages from tools/wiki/theme/<name>.css/.js, e.g. cyberspace")
+    p.add_argument("--tagged", help="prose --tag-entity-text --out file: entity text carrying <entity> tags")
     p.add_argument("--out", required=True)
     p.add_argument("--phase", choices=["1", "2", "all"], default="all",
                    help="1 = entities the canon books name, 2 = the rest")
