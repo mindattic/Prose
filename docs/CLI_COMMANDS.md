@@ -19,7 +19,7 @@
 > deliberate: RFC 0014 §2.4 is about a gate documented as seven checks, coded as six
 > and advertised as five, and this reference is not going to repeat that.
 
-**305 commands.** 30 deactivated. 10 cost-gated. 18 have no description in their dispatch comment (12 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**308 commands.** 30 deactivated. 10 cost-gated. 18 have no description in their dispatch comment (12 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -2063,6 +2063,12 @@ prose --retype-document-to-vocabulary --id <entityGuid> --universe <slug> --term
 
 <sub>handler `RetypeDocumentToVocabularyCli`</sub>
 
+### `--retype-entity`
+
+prose --universe <u> --retype-entity --id <guid>[,<guid>...] --to <repo-slug> [--apply] Moves custom-type entities into another custom repository: entity type, record "type", every tag's repo attribute, and the derived rows that copy the type. Dry run without --apply. See RetypeEntityCli.
+
+<sub>handler `RetypeEntityCli`</sub>
+
 ### `--review-entity` — **DEACTIVATED**
 
 ```
@@ -2266,6 +2272,16 @@ set Node.Author — the pen name exports fall through to instead of "MindAttic".
 
 <sub>handler `SetNodeAuthorCli`</sub>
 
+### `--set-node-code`
+
+```
+prose --set-node-code (--slug <slug|code|id> | --id <id>) --to <CODE> [--apply]
+```
+
+Changes a book's NodeCode (dry run unless --apply); refuses a code another node in the universe holds.
+
+<sub>handler `SetNodeCodeCli`</sub>
+
 ### `--set-node-layout`
 
 prose --set-node-layout --slug <slug> --layout prose|lyrics|screenplay How the book's beats print in every export format — see SetNodeLayoutCli / BeatLayout.
@@ -2394,6 +2410,16 @@ prose --tag-entities (--id <guid> | --slug <slug> | --all) [--dry-run]
 retroactive inline entity-GUID tagging backfill (corpus-trust-recovery Phase 1a/1b).
 
 <sub>handler `TagEntitiesCli`</sub>
+
+### `--tag-entity-text`
+
+```
+prose --universe <u> --tag-entity-text [--type T] [--id G] [--limit N] [--out tagged.json] [--apply]
+```
+
+tag every entity's own prose with <entity> markup, like beats (PRS-T1003). Dry run unless --apply, and --apply never confirms un-reads: a write the read gate would charge is refused and counted.
+
+<sub>handler `TagEntityTextCli`</sub>
 
 ### `--texts-approve`
 

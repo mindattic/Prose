@@ -1753,6 +1753,14 @@ if (args.Contains("--create-archetype"))
     return;
 }
 
+//   prose --set-node-code (--slug <slug|code|id> | --id <id>) --to <CODE> [--apply]
+// Changes a book's NodeCode (dry run unless --apply); refuses a code another node in the universe holds.
+if (args.Contains("--set-node-code"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SetNodeCodeCli", args);
+    return;
+}
+
 //   prose --set-node-version (--slug <slug> | --id <id>) --version <N>
 // Directly sets Node.Version — the counter DocxExportService reads as nextVersion = Version + 1.
 // For continuing a book's real version lineage after its local export folder was reset (e.g. a
