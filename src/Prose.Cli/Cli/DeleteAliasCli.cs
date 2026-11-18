@@ -84,6 +84,7 @@ public static class DeleteAliasCli
 
         var found = 0;
         var deleted = 0;
+        var characters = new HashSet<Guid>();
 
         foreach (var clr in aliasTypes)
         {
@@ -107,6 +108,7 @@ public static class DeleteAliasCli
                 {
                     db.Remove(row);
                     deleted++;
+                    if (clr.Name == "CharacterAlias" && ownerId is Guid characterId) characters.Add(characterId);
                 }
             }
         }
@@ -124,7 +126,10 @@ public static class DeleteAliasCli
         }
 
         await db.SaveChangesAsync();
-        // The rows bypass the repositories, whose cached GetAll would keep serving the old alias list.
+        // The rows bypass the repositories: refresh each character's read model (what exports and by-name reads
+        // serve) and drop the cached GetAll lists, or both keep the old aliases.
+        foreach (var characterId in characters)
+            await CharacterMapper.RefreshReadModelAsync(db, characterId, afterIntentionalWrite: true);
         Prose.Core.Services.UniverseScope.BumpEpoch();
         Console.WriteLine($"\n[delete-alias] Deleted {deleted} alias row(s) with value \"{value}\".");
         Console.WriteLine("[delete-alias] Re-run `prose --tag-entities --slug <slug>` so beat text drops the stale tag.");

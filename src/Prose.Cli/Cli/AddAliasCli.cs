@@ -181,7 +181,10 @@ public static class AddAliasCli
 
         db.Add(newRow);
         await db.SaveChangesAsync();
-        // The row bypasses the repositories, whose cached GetAll would keep serving the old alias list.
+        // The row bypasses the repositories: refresh a character's read model (what exports and by-name reads
+        // serve) and drop the cached GetAll lists, or both keep the old aliases.
+        if (owner.EntityType == "character")
+            await CharacterMapper.RefreshReadModelAsync(db, owner.Id, afterIntentionalWrite: true);
         Prose.Core.Services.UniverseScope.BumpEpoch();
 
         Console.WriteLine($"\n[add-alias] Added alias \"{value}\" to {owner.EntityType} '{owner.Name}'.");
