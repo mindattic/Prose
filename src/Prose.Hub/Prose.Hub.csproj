@@ -18,6 +18,12 @@
          ("referenced project is a self-contained executable") unless both ends of an Exe-to-Exe
          reference agree on this in the csproj itself, not just the command line. -->
     <SelfContained>false</SelfContained>
+    <!-- Only matters behind IIS (Azure App Service on Windows, hosted mode): the published web.config runs
+         the Hub as its own Kestrel process on a loopback port instead of inside the IIS worker. The /app
+         page calls the Hub's own HTTP API and SignalR hub over loopback (Program.cs, AddProseObserverUi),
+         and in-process hosting has no port to call (PRS-T1005). The local Hub is started as Hub.exe and
+         never reads web.config. -->
+    <AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
   <ItemGroup>

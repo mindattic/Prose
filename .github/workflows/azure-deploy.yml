@@ -1,0 +1,169 @@
+name: Build and deploy Prose.Hub to Azure App Service
+
+# The hosted Hub (Hosting:Mode=Public, PRS-T1004): https://mindattic-prose.azurewebsites.net
+#
+#   build   restore from lib/local-packages + nuget.org, publish src/Prose.Hub (no tests: tests run
+#           only when the owner asks, never as a gate)
+#   deploy  log in with GitHub OIDC, check the site settings the Hub depends on, deploy the package,
+#           restart, and prove that nothing is served without a login
+#
+# The app is Windows App Service `mindattic-prose` (resource group MyApps, plan ASP-MyApps-99fe, B1).
+# It runs from the deployed package (WEBSITE_RUN_FROM_PACKAGE=1), so wwwroot is read-only and holds
+# exactly this build; everything the Hub writes lives under C:\home\data (PROSE_DATA_ROOT and the
+# MINDATTIC_VAULT_*_ROOT settings). The published web.config is the startup command: `dotnet .\Hub.dll`,
+# out of process (AspNetCoreHostingModel in Prose.Hub.csproj), which the Hub's /app page needs.
+#
+# Authentication: app registration `prose-github` (Website Contributor on the site), federated
+# credential `github-prose-main`, subject repo:mindattic@6359385/Prose@1192229994:ref:refs/heads/main
+# (GitHub's immutable form: renaming the repo or the branch changes it and every login then fails
+# with AADSTS700213). Repo secrets AZURE_CLIENT_ID / AZURE_TENANT_ID / AZURE_SUBSCRIPTION_ID are ids,
+# not credentials. The app's own settings (database, pepper, allowed users) are set on the App
+# Service and never appear here; the deploy job's "Check the site configuration" step lists the ones
+# the Hub cannot run without, and src/Prose.Hub/Hosting/HubHosting.cs documents every Hosting:* key.
+# The site's managed identity must be a user in the Prose database (db_owner: the Hub migrates its
+# own schema): CREATE USER [mindattic-prose] FROM EXTERNAL PROVIDER;
+#              ALTER ROLE db_owner ADD MEMBER [mindattic-prose];
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+      - 'lib/local-packages/**'
+      - 'NuGet.config'
+      - '.github/workflows/azure-deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write          # azure/login's OIDC flow
+
+concurrency:
+  group: azure-deploy
+  cancel-in-progress: false
+
+env:
+  PUBLISH_PROJECT: src/Prose.Hub/Prose.Hub.csproj
+  AZURE_RESOURCE_GROUP: MyApps
+  APP: mindattic-prose
+  DOTNET_VERSION: '10.x'
+
+jobs:
+  build:
+    runs-on: windows-2025
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      # Every MindAttic.* package comes from the git-tracked lib/local-packages feed. NuGet.config also
+      # lists C:\LocalNuGet, which a runner does not have; --ignore-failed-sources tolerates that.
+      - name: Restore
+        run: dotnet restore ${{ env.PUBLISH_PROJECT }} --ignore-failed-sources
+
+      - name: Publish
+        run: dotnet publish ${{ env.PUBLISH_PROJECT }} -c Release -o publish --no-restore -p:SourceRevisionId=${{ github.sha }}
+
+      # The published web.config is what starts the Hub on App Service. Fail here, not in production,
+      # if it stops naming Hub.dll or goes back to in-process hosting (which breaks /app).
+      - name: Check the startup command
+        shell: pwsh
+        run: |
+          [xml]$config = Get-Content publish/web.config -Raw
+          $core = $config.SelectSingleNode('//aspNetCore')
+          Write-Host "processPath=$($core.processPath) arguments=$($core.arguments) hostingModel=$($core.hostingModel)"
+          if ($core.processPath -ne 'dotnet' -or $core.arguments -ne '.\Hub.dll') { throw 'web.config does not start dotnet .\Hub.dll.' }
+          if ($core.hostingModel -ne 'OutOfProcess') { throw 'web.config is not out-of-process; the /app page needs a loopback port.' }
+
+      - name: Upload app artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: prose-hub
+          path: publish/
+          include-hidden-files: true
+
+  deploy:
+    runs-on: windows-2025
+    needs: build
+    steps:
+      - name: Download app artifact
+        uses: actions/download-artifact@v8
+        with:
+          name: prose-hub
+          path: publish/
+
+      - name: Azure login (OIDC)
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      # Checked, not set: these are the site's own configuration. A deploy
+      # onto a site that lost one of them would start a Hub that cannot work, or one that is not hosted mode.
+      - name: Check the site configuration
+        shell: pwsh
+        run: |
+          $site = az webapp show -g $env:AZURE_RESOURCE_GROUP -n $env:APP --query "{https:httpsOnly}" -o json | ConvertFrom-Json
+          $config = az webapp config show -g $env:AZURE_RESOURCE_GROUP -n $env:APP --query "{ws:webSocketsEnabled, x86:use32BitWorkerProcess, on:alwaysOn}" -o json | ConvertFrom-Json
+          $names = az webapp config appsettings list -g $env:AZURE_RESOURCE_GROUP -n $env:APP --query "[].name" -o tsv
+          $mode = az webapp config appsettings list -g $env:AZURE_RESOURCE_GROUP -n $env:APP --query "[?name=='Hosting__Mode'].value | [0]" -o tsv
+          $problems = @()
+          if (-not $site.https) { $problems += 'HTTPS Only is off.' }
+          if (-not $config.ws) { $problems += 'Web Sockets are off (the Writer and /app are Blazor Server).' }
+          if ($config.x86) { $problems += 'The worker is 32-bit.' }
+          if ($mode -ne 'Public') { $problems += "Hosting__Mode is '$mode', not 'Public'." }
+          foreach ($required in 'Hosting__AllowedHosts', 'Hosting__Auth__AllowedUsers', 'ConnectionStrings__Prose',
+                                'MindAttic__Vault__Security__pepper.v1', 'PROSE_DATA_ROOT',
+                                'MINDATTIC_VAULT_ROAMING_ROOT', 'MINDATTIC_VAULT_LOCAL_ROOT', 'WEBSITE_RUN_FROM_PACKAGE') {
+            if ($names -notcontains $required) { $problems += "App setting $required is missing." }
+          }
+          if ($problems) { throw ("Site configuration:`n  " + ($problems -join "`n  ")) }
+          Write-Host "Site configuration OK (always on: $($config.on))."
+
+      - name: Deploy to Azure App Service
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: ${{ env.APP }}
+          package: publish/
+
+      - name: Restart onto the new build
+        shell: pwsh
+        run: az webapp restart -g $env:AZURE_RESOURCE_GROUP -n $env:APP
+
+      # The one thing that must always hold: nothing is served without a login. A Hub that cannot start
+      # (database paused or unreachable, configuration incomplete) answers 5xx, which is also closed, so
+      # that is reported and not failed; a 2xx on any of these paths fails the deploy.
+      - name: Prove the Hub is closed to anonymous requests
+        shell: pwsh
+        run: |
+          $base = "https://$env:APP.azurewebsites.net"
+          # curl, not Invoke-WebRequest: a 302 must be read, not followed and not turned into an error.
+          function Probe([string]$path) {
+            $out = curl.exe -s -o NUL -w '%{http_code} %{redirect_url}' --max-time 120 -H 'Accept: text/html' "$base$path"
+            $status, $location = "$out".Split(' ', 2)
+            return [pscustomobject]@{ Path = $path; Status = [int]$status; Location = "$location" }
+          }
+          $health = $null
+          for ($i = 1; $i -le 8; $i++) {
+            $health = Probe '/healthz'
+            Write-Host "/healthz attempt $i : $($health.Status) $($health.Location)"
+            if ($health.Status -eq 200) { break }
+            Start-Sleep -Seconds 15
+          }
+          $open = @()
+          foreach ($path in '/', '/writer', '/read', '/repo', '/texts', '/app', '/api/health', '/api/universes',
+                            '/api/logs/recent?take=1', '/hubs/observability/negotiate?negotiateVersion=1', '/index.html') {
+            $r = Probe $path
+            Write-Host ("{0,-55} {1} {2}" -f $r.Path, $r.Status, $r.Location)
+            if ($r.Status -ge 200 -and $r.Status -lt 300) { $open += $r.Path }
+            # A redirect is fine only when it goes to the sign-in page.
+            if ($r.Status -ge 300 -and $r.Status -lt 400 -and $r.Location -notlike "$base/login*") { $open += "$($r.Path) -> $($r.Location)" }
+          }
+          if ($open) { throw "Served without a login: $($open -join ', ')" }
+          if ($health.Status -eq 200) { Write-Host 'The Hub is up and every probed path requires a login.' }
+          else { Write-Host "::warning::The Hub is not answering /healthz ($($health.Status)). Nothing is served anonymously, but it is not running: check the database and the app settings." }

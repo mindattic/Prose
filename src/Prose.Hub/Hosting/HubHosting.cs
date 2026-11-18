@@ -31,7 +31,8 @@ public sealed class HubHostingException(string message) : Exception(message);
 /// survive restarts: it protects the login cookie, the antiforgery tokens and the stored TOTP secrets. Default on
 /// App Service (where <c>HOME</c> is persistent storage): <c>%HOME%\data\Prose\DataProtection-Keys</c>. Required elsewhere.</description></item>
 /// <item><term>Hosting:Urls</term><description>Optional listen URLs. Without it the Hub honours <c>ASPNETCORE_URLS</c> /
-/// <c>ASPNETCORE_HTTP_PORTS</c>, then the platform's <c>PORT</c> / <c>WEBSITES_PORT</c>, then the host's default (IIS in-process).</description></item>
+/// <c>ASPNETCORE_HTTP_PORTS</c>, then IIS out-of-process's <c>ASPNETCORE_PORT</c>, then the platform's <c>PORT</c> /
+/// <c>WEBSITES_PORT</c>, then the host's default (IIS in-process, where /app has no loopback port to call and does not work).</description></item>
 /// <item><term>Hosting:RequireHttps / HttpsPort / HstsMaxAgeDays</term><description>Defaults <c>true</c> / <c>443</c> / <c>365</c>.</description></item>
 /// <item><term>Hosting:TrustForwardedHeaders / ForwardLimit</term><description>Defaults <c>true</c> / <c>1</c>: read the
 /// platform proxy's <c>X-Forwarded-For</c> / <c>X-Forwarded-Proto</c>.</description></item>
@@ -88,8 +89,24 @@ public sealed class HubHosting
     /// </summary>
     public string InternalToken { get; } = Convert.ToHexString(RandomNumberGenerator.GetBytes(32));
 
-    public IReadOnlyDictionary<string, string> InternalHeaders =>
-        new Dictionary<string, string> { [HostedGate.InternalHeader] = InternalToken };
+    public IReadOnlyDictionary<string, string> InternalHeaders
+    {
+        get
+        {
+            var headers = new Dictionary<string, string> { [HostedGate.InternalHeader] = InternalToken };
+            // Behind IIS out-of-process (Azure App Service on Windows) Kestrel answers only requests that carry
+            // the module's pairing token, and answers 400 to anything else, the Hub's own loopback calls
+            // included. The module hands the token to this process alone, in ASPNETCORE_TOKEN (PRS-T1005).
+            if (IisPairingToken is { } pairing) headers[IisPairingHeader] = pairing;
+            return headers;
+        }
+    }
+
+    /// <summary>The header IIS's ASP.NET Core Module sends on every request it forwards (out-of-process hosting).</summary>
+    public const string IisPairingHeader = "MS-ASPNETCORE-TOKEN";
+
+    /// <summary>The module's pairing token; null when the Hub is not behind IIS out-of-process.</summary>
+    public string? IisPairingToken { get; private init; }
 
     /// <summary>Browser origins allowed to open a WebSocket: the allowed hosts, over the scheme the Hub accepts.</summary>
     public IReadOnlyList<string> AllowedOrigins
@@ -183,6 +200,7 @@ public sealed class HubHosting
             TrustForwardedHeaders = trustForwarded,
             ForwardLimit = forwardLimit,
             SelfBaseUrl = self.Length > 0 ? self.TrimEnd('/') : port is { } p ? $"http://127.0.0.1:{p}" : null,
+            IisPairingToken = FirstNonEmpty(env("ASPNETCORE_TOKEN")),
         };
     }
 
@@ -221,6 +239,11 @@ public sealed class HubHosting
         var ports = FirstNonEmpty(config["http_ports"], env("ASPNETCORE_HTTP_PORTS"));
         if (ports is not null)
             return (null, int.TryParse(ports.Split(';', ',')[0].Trim(), out var hp) ? hp : null);
+
+        // IIS out-of-process (App Service on Windows): the module picks the loopback port Kestrel must use
+        // and UseIISIntegration binds it; the Hub only needs the number, for its own /app calls.
+        if (FirstNonEmpty(env("ASPNETCORE_PORT")) is { } iisPort && int.TryParse(iisPort, out var ip) && ip is > 0 and <= 65_535)
+            return (null, ip);
 
         // App Service on Linux and most container platforms name the port instead.
         var platformPort = FirstNonEmpty(env("PORT"), env("WEBSITES_PORT"));
