@@ -24,15 +24,10 @@ name: Build and deploy Prose.Hub to Azure App Service
 # own schema): CREATE USER [mindattic-prose] FROM EXTERNAL PROVIDER;
 #              ALTER ROLE db_owner ADD MEMBER [mindattic-prose];
 
+# Manual only: main takes many commits a day from several agents, and every deploy restarts the hosted Hub
+# (1.5 to 4 minutes down, plus its start-up queries against the live database). Run it when you want the
+# hosted copy updated: gh workflow run azure-deploy.yml --repo mindattic/Prose
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'src/**'
-      - 'lib/local-packages/**'
-      - 'NuGet.config'
-      - '.github/workflows/azure-deploy.yml'
   workflow_dispatch:
 
 permissions:
