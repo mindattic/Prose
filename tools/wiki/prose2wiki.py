@@ -132,8 +132,30 @@ def load_entities(export_zip: Path, interchange: Path | None, repair: Repair) ->
     return entities
 
 
+def same_text(tagged, current) -> bool:
+    """True when a tagged value, with its <entity> markup removed, equals the current canon value."""
+    def strip(x):
+        if isinstance(x, str):
+            return TAG_RE.sub(r"\3", x)
+        if isinstance(x, list):
+            return [strip(i) for i in x]
+        if isinstance(x, dict):
+            return {k: strip(i) for k, i in x.items()}
+        return x
+    return json.dumps(strip(tagged), ensure_ascii=False, sort_keys=True) == json.dumps(current, ensure_ascii=False, sort_keys=True)
+
+
 def overlay_tagged(path: Path, entities: dict[str, Entity], repair: Repair):
     """Apply `prose --tag-entity-text --out` output: entity text with <entity> markup, so links come from canon tags."""
+    stale_count = [0]
+    try:
+        _overlay(path, entities, repair, stale_count)
+    finally:
+        if stale_count[0]:
+            repair.add("tagged fields older than canon (ignored; re-run with -Retag)", count=stale_count[0])
+
+
+def _overlay(path: Path, entities: dict[str, Entity], repair: Repair, stale_count: list[int]):
     for guid, v in json.loads(path.read_text(encoding="utf-8")).items():
         if guid == "_wordLikeNames":
             for word in v:
@@ -141,10 +163,15 @@ def overlay_tagged(path: Path, entities: dict[str, Entity], repair: Repair):
             continue
         ent = entities.get(norm(guid))
         if ent is None:
-            repair.add("tagged entity missing from the export", guid=guid, name=v.get("name"))
+            stale_count[0] += 1  # merged or deleted since the tags were made
             continue
+        # A tagged field is used only while it still says what canon says: an edit made after the tagging run
+        # (a removed relationship, a fixed typo) must not be undone by an older tagged copy.
         for key, value in (v.get("record") or {}).items():
-            ent.record[key] = value
+            if same_text(value, ent.record.get(key)):
+                ent.record[key] = value
+            else:
+                stale_count[0] += 1
         summary = v.get("summary")
         if summary and ent.record.get("description") in (None, "", TAG_RE.sub(r"\3", summary)):
             ent.record["description"] = summary
