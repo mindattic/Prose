@@ -77,13 +77,17 @@ public sealed class HubIdleShutdown : BackgroundService
     /// neither counted nor stamped.</summary>
     public async Task TrackAsync(HttpContext context, Func<Task> next)
     {
-        if (context.Request.Path.StartsWithSegments("/api/health"))
+        // /healthz is hosted mode's bare liveness probe (PRS-T1004); like /api/health it is not activity.
+        if (context.Request.Path.StartsWithSegments("/api/health") || context.Request.Path.StartsWithSegments("/healthz"))
         {
             await next();
             return;
         }
 
         Touch();
+        // A real request is also what keeps periodic background work (HomeStatsRefreshService) running.
+        // Only requests count here, not an open-but-silent client process, so an idle Hub goes quiet.
+        ProseActivity.Touch();
         Interlocked.Increment(ref inFlight);
         try { await next(); }
         finally

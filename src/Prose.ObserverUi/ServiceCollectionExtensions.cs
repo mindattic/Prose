@@ -14,14 +14,18 @@ public static class ServiceCollectionExtensions
     /// registration: the Hub generates the key <em>after</em> the DI container is built, so a key
     /// captured here would be null on the first-ever startup and stay null for the process's life.
     /// Omit only for a host that talks exclusively to unauthenticated endpoints.</param>
+    /// <param name="extraHeaders">Extra headers sent on every HTTP call and on the SignalR connection
+    /// (PRS-T1004). A Hub in hosted mode requires a login on every route; its own in-process UI calls it
+    /// over loopback and identifies itself with a per-process header. Omit everywhere else.</param>
     public static IServiceCollection AddProseObserverUi(this IServiceCollection services, string hubBaseUrl,
-                                                        Func<IServiceProvider, string?>? apiKey = null)
+                                                        Func<IServiceProvider, string?>? apiKey = null,
+                                                        Func<IServiceProvider, IReadOnlyDictionary<string, string>?>? extraHeaders = null)
     {
         // Scoped: one per browser circuit in Blazor Server, one per app instance in MAUI's
         // single root scope — see TabShellState's own doc comment for why that's correct
         // in both hosts without special-casing.
         services.AddScoped<TabShellState>();
-        services.AddScoped(_ => new HubApiClient(hubBaseUrl));
+        services.AddScoped(sp => new HubApiClient(hubBaseUrl, extraHeaders?.Invoke(sp)));
         // Plain HttpClient (not the IHttpClientFactory-based AddHttpClient<T>, which would
         // pull in Microsoft.Extensions.Http just for this) - fine for a personal tool talking
         // to localhost; one instance per scope (per browser circuit / MAUI app instance).
@@ -36,6 +40,8 @@ public static class ServiceCollectionExtensions
             var http = new HttpClient { BaseAddress = new Uri(hubBaseUrl.TrimEnd('/') + "/") };
             var key = apiKey?.Invoke(sp);
             if (!string.IsNullOrEmpty(key)) http.DefaultRequestHeaders.Add("X-Prose-Key", key);
+            if (extraHeaders?.Invoke(sp) is { } extra)
+                foreach (var (name, value) in extra) http.DefaultRequestHeaders.TryAddWithoutValidation(name, value);
             return new ObserverHttpClient(http);
         });
 

@@ -10,8 +10,9 @@ namespace Prose.Core.Services;
 
 /// <summary>
 /// Background service that keeps <see cref="HomeStatsCache"/> populated.
-/// Wakes on startup (immediate refresh), then every
-/// <see cref="RefreshInterval"/> after. Each refresh runs the 26+
+/// Wakes on startup (immediate refresh), then every "Home stats refresh" minutes
+/// (a setting, default 5) while a client has been active inside the "Home stats idle
+/// pause" window (default 15 minutes); see <see cref="ShouldRefresh"/>. Each refresh runs the 26+
 /// SELECT COUNT(*) queries the home-page tiles + /board sub-tiles need;
 /// the page itself just reads from cache, no SQL on the request path.
 ///
@@ -26,31 +27,35 @@ namespace Prose.Core.Services;
 /// </summary>
 public class HomeStatsRefreshService : BackgroundService
 {
-    /// <summary>How often to recompute the counts. 5 min balances freshness
-    /// (a brand-new entity is visible on the home page within a few min) vs
-    /// the cost of running 26 queries (negligible when warm, ~10s when the
-    /// serverless DB has to wake — and the keep-alive pings keep it awake
-    /// indirectly).</summary>
-    public static readonly TimeSpan RefreshInterval = TimeSpan.FromMinutes(5);
-
     // Set BackgroundServices:Enabled=false in App Service config to stop DB keep-alive on zero-user deployments.
     public bool Enabled { get; }
 
     private readonly IServiceProvider sp;
     private readonly HomeStatsCache cache;
     private readonly ILogger<HomeStatsRefreshService> log;
+    private readonly SettingsService settings;
 
     public HomeStatsRefreshService(
         IServiceProvider sp,
         HomeStatsCache cache,
         ILogger<HomeStatsRefreshService> log,
-        IConfiguration configuration)
+        IConfiguration configuration,
+        SettingsService settings)
     {
         this.sp = sp;
         this.cache = cache;
         this.log = log;
+        this.settings = settings;
         Enabled = configuration.GetValue<bool>("BackgroundServices:Enabled", defaultValue: true);
     }
+
+    /// <summary>
+    /// The pure decision for one tick (PRS-T1004): refresh only while the interval is on and a client has
+    /// been active inside the idle window. An idle process must not query the database every few minutes,
+    /// or a serverless database never pauses.
+    /// </summary>
+    public static bool ShouldRefresh(int refreshMinutes, int idleMinutes, DateTime lastActivityUtc, DateTime nowUtc) =>
+        refreshMinutes > 0 && !ProseActivity.IsIdle(TimeSpan.FromMinutes(Math.Max(0, idleMinutes)), lastActivityUtc, nowUtc);
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
@@ -59,15 +64,39 @@ public class HomeStatsRefreshService : BackgroundService
             log.LogInformation("HomeStatsRefreshService disabled (BackgroundServices:Enabled=false).");
             return;
         }
+        if (settings.HomeStatsRefreshMinutes <= 0)
+        {
+            log.LogInformation("HomeStatsRefreshService disabled (Home stats refresh = 0 minutes).");
+            return;
+        }
 
         // Run an immediate refresh so the first home-page hit after startup
         // doesn't see all zeros. Subsequent refreshes are interval-paced.
         await RefreshAsync(stoppingToken);
 
+        var standingDown = false;
         while (!stoppingToken.IsCancellationRequested)
         {
-            try { await Task.Delay(RefreshInterval, stoppingToken); }
+            // Both numbers are settings read on every pass, so a change applies from the next tick.
+            var minutes = settings.HomeStatsRefreshMinutes;
+            if (minutes <= 0)
+            {
+                log.LogInformation("HomeStatsRefreshService stopped (Home stats refresh set to 0 minutes); it starts again with the process.");
+                return;
+            }
+            try { await Task.Delay(TimeSpan.FromMinutes(minutes), stoppingToken); }
             catch (OperationCanceledException) { return; }
+
+            if (!ShouldRefresh(settings.HomeStatsRefreshMinutes, settings.HomeStatsIdleMinutes,
+                    ProseActivity.LastActivityUtc, DateTime.UtcNow))
+            {
+                if (!standingDown)
+                    log.LogInformation("HomeStats refresh standing down: no client activity for {min} min. It resumes with the next request.",
+                        settings.HomeStatsIdleMinutes);
+                standingDown = true;
+                continue;
+            }
+            standingDown = false;
             await RefreshAsync(stoppingToken);
         }
     }
@@ -139,7 +168,7 @@ public class HomeStatsRefreshService : BackgroundService
             // previous values; next interval will retry.
             log.LogWarning(ex,
                 "HomeStats refresh failed after {ms} ms; keeping last known values. Will retry in {min} min.",
-                sw.ElapsedMilliseconds, RefreshInterval.TotalMinutes);
+                sw.ElapsedMilliseconds, settings.HomeStatsRefreshMinutes);
         }
     }
 }

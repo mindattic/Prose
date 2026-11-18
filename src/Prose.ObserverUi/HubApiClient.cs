@@ -35,10 +35,16 @@ public sealed class HubApiClient : IAsyncDisposable
 
     public HubConnectionState State => connection.State;
 
-    public HubApiClient(string hubBaseUrl)
+    /// <param name="headers">Extra request headers for the connection (PRS-T1004): a hosted Hub requires a
+    /// login on every route, so its own in-process UI identifies itself with one. Null or empty = none.</param>
+    public HubApiClient(string hubBaseUrl, IReadOnlyDictionary<string, string>? headers = null)
     {
         connection = new HubConnectionBuilder()
-            .WithUrl($"{hubBaseUrl.TrimEnd('/')}/hubs/observability")
+            .WithUrl($"{hubBaseUrl.TrimEnd('/')}/hubs/observability", options =>
+            {
+                if (headers is null) return;
+                foreach (var (name, value) in headers) options.Headers[name] = value;
+            })
             .WithAutomaticReconnect()
             .Build();
 

@@ -11,7 +11,9 @@ using Prose.Core.Extensions;
 using Prose.Core.Interfaces;
 using Prose.Core.Models.Graph;
 using Prose.Core.Services;
+using Microsoft.AspNetCore.DataProtection;
 using Prose.Hub;
+using Prose.Hub.Hosting;
 using Prose.ObserverUi;
 using Prose.WriterUi;
 using Serilog;
@@ -152,7 +154,51 @@ var builder = WebApplication.CreateBuilder(new WebApplicationOptions
     Args = args,
     ContentRootPath = AppContext.BaseDirectory
 });
-builder.WebHost.UseUrls("http://127.0.0.1:5900");
+
+// Hosted mode (PRS-T1004). Off unless Hosting:Mode=Public (env Hosting__Mode): the default is the
+// local Hub exactly as before - loopback-only and anonymous. In hosted mode the Hub is reachable from
+// the internet, so it binds the way the platform asks, answers only to the configured host names and
+// requires a login for everything (see Hosting/HubHosting.cs for every key, Hosting/HostedGate.cs for
+// the rule). A hosted Hub that is not fully configured does not start: it never falls back to anonymous.
+HubHosting hosting;
+try { hosting = HubHosting.Read(builder.Configuration); }
+catch (HubHostingException ex) { RefuseToStart(ex.Message); return; }
+
+void RefuseToStart(string message)
+{
+    Console.Error.WriteLine(message);
+    hubSerilogLogger.Fatal("{Message}", message);
+    hubSerilogLogger.Dispose();
+    // Exit, not just return: nothing half-built may linger, and the platform should see a failed start at once.
+    Environment.Exit(78); // EX_CONFIG
+}
+
+if (hosting.IsPublic)
+{
+    // Null = the host already has its address (ASPNETCORE_URLS, ASPNETCORE_HTTP_PORTS, or IIS in-process).
+    if (hosting.ListenUrls is { } listenUrls) builder.WebHost.UseUrls(listenUrls);
+    // The Host header is checked by HostedGate against Hosting:AllowedHosts (it has to exempt /healthz and
+    // the Hub's own loopback calls, which the built-in host filter cannot).
+    // No Prose client process runs next to a hosted Hub, so the idle self-shutdown would stop it every
+    // few minutes and the platform would start it again (waking the database each time). Off unless set.
+    if (builder.Configuration[HubIdleShutdown.ConfigKey] is null) builder.Configuration[HubIdleShutdown.ConfigKey] = "0";
+    // A Debug-packed MindAttic.Authentication carries a Development-only loopback auto-login. It is inert
+    // outside the Development environment; a hosted Hub simply never runs in it.
+    if (builder.Environment.IsDevelopment())
+    {
+        RefuseToStart("[hub] Hosted mode does not run in the Development environment (ASPNETCORE_ENVIRONMENT / DOTNET_ENVIRONMENT). Not starting.");
+        return;
+    }
+    // The accounts live in the Prose database; without a configured one the fallback is this PC's LocalDB.
+    if (ProseSqlResilience.ResolveConnectionString(builder.Configuration) == ProseSqlResilience.LocalDbConnectionString)
+    {
+        RefuseToStart("[hub] Hosted mode: no database is configured (ConnectionStrings:Prose, env ConnectionStrings__Prose). Not starting.");
+        return;
+    }
+}
+else
+{
+builder.WebHost.UseUrls(HubHosting.LocalBaseUrl);
 // DNS-rebinding guard (2026-09-29): binding to loopback does not stop a web page on a hostile
 // domain that re-resolves to 127.0.0.1 — its requests arrive here with Host: evil.example, and
 // the default AllowedHosts ("*") accepted them, making every unauthenticated route (the Writer's
@@ -160,6 +206,7 @@ builder.WebHost.UseUrls("http://127.0.0.1:5900");
 // 127.0.0.1 (HubGate.DefaultBaseUrl); anything else gets a 400.
 builder.Services.Configure<Microsoft.AspNetCore.HostFiltering.HostFilteringOptions>(o =>
     o.AllowedHosts = new List<string> { "127.0.0.1", "localhost" });
+}
 
 // Added as ONE additional provider (deliberately no ClearProviders() - unlike Mcp, which
 // needs pure stdio hygiene) - coexists with RingBufferLoggerProvider (registered below) on
@@ -222,8 +269,38 @@ builder.Logging.AddSimpleConsole(
 // forwarded command instead of needing a second, parallel DI container.
 builder.Configuration.AddMindAtticVaultFiles(o => o.Buckets = new[]
     { "LLM", "Brokers", "Tokens", "Subtitles", "Notifications", "AudioStore", "Security" });
+// Hosted: there are no Vault files on the host; its settings are the platform's app settings, which
+// arrive as environment variables. Added again here so they win over anything the line above found.
+if (hosting.IsPublic) builder.Configuration.AddEnvironmentVariables();
 SettingsService.VaultConfiguration = builder.Configuration;
 builder.Services.AddProseServices();
+if (hosting.IsPublic)
+{
+    // The login is MindAttic.Authentication (the same accounts, back-off, audit log and TOTP as every
+    // other MindAttic app), and here its registration is not optional: any failure stops the Hub.
+    try
+    {
+        hosting.EnsureKeyRingWritable();
+        builder.Services.AddMindAtticAuthentication<ProseAuthDbContext>(
+            builder.Configuration,
+            o =>
+            {
+                o.AppName = "Prose";
+                o.IsProduction = true;
+                // The ring must outlive the process: it protects the login cookie, the antiforgery
+                // tokens, the Blazor circuit state and the stored TOTP secrets.
+                o.ConfigureDataProtection = dp => dp.PersistKeysToFileSystem(new DirectoryInfo(hosting.KeyRingPath));
+            });
+        builder.Services.AddHostedGate(hosting);
+    }
+    catch (Exception ex)
+    {
+        RefuseToStart(ex is HubHostingException ? ex.Message
+            : $"[hub] Hosted mode: MindAttic.Authentication could not be registered, so there would be no login. Not starting. ({ex.Message})");
+        return;
+    }
+}
+else
 try
 {
     // AddMindAtticAuthentication itself fail-closes (throws) when IsProduction=true and no
@@ -301,8 +378,11 @@ builder.Services.AddHostedService(sp => sp.GetRequiredService<Prose.Hub.HubIdleS
 builder.Services.AddRazorComponents().AddInteractiveServerComponents();
 // The key is resolved per circuit, not here: it's generated further down (after app.Build()),
 // so anything captured at registration time would be null on a first-ever startup.
-builder.Services.AddProseObserverUi("http://127.0.0.1:5900",
-    sp => sp.GetRequiredService<SettingsService>().HubApiKey);
+// Hosted mode: the same loopback self-call, on whatever port the platform gave, carrying the per-process
+// header HostedGate accepts in place of a browser login (only on a direct loopback connection).
+builder.Services.AddProseObserverUi(hosting.IsPublic ? hosting.SelfBaseUrl ?? HubHosting.LocalBaseUrl : HubHosting.LocalBaseUrl,
+    sp => sp.GetRequiredService<SettingsService>().HubApiKey,
+    hosting.IsPublic ? _ => hosting.InternalHeaders : null);
 builder.Services.AddProseWriterUi();
 
 var app = builder.Build();
@@ -339,6 +419,14 @@ await using (var migrationScope = app.Services.CreateAsyncScope())
     // and a clean no-op on every later startup.
     await MindAttic.Log.Migration.MindAtticLogMigrator.MigrateFromSqlServerAsync(
         migrationDb.Database.GetConnectionString()!, mindAtticLogDbPath, dropSource: true);
+}
+
+// Hosted mode: prove a login is possible before listening (pepper present, auth schema current, an
+// allowed account exists or the first one is seeded). Anything missing stops the Hub here.
+if (hosting.IsPublic)
+{
+    try { await HostedLogin.EnsureReadyAsync(app.Services, hosting, Console.WriteLine); }
+    catch (HubHostingException ex) { RefuseToStart(ex.Message); return; }
 }
 
 // Subscribes ONCE to every Phase-3 event and forwards to ObservabilityHub - see
@@ -388,11 +476,30 @@ app.Lifetime.ApplicationStopping.Register(() =>
 // and are unaffected.
 // First in the pipeline so every request (Writer pages, SignalR streams, commands) counts as activity.
 var idleShutdown = app.Services.GetRequiredService<Prose.Hub.HubIdleShutdown>();
-app.Use((context, next) => idleShutdown.TrackAsync(context, next));
+if (!hosting.IsPublic) app.Use((context, next) => idleShutdown.TrackAsync(context, next));
+if (hosting.IsPublic)
+{
+    // Hosted mode: transport rules first (own loopback calls, forwarded headers, host allow-list, HTTPS,
+    // security headers), browser WebSockets only from the Hub's own origin, then the login gate - ahead of
+    // the static files and every endpoint below, so nothing is served to a request that has not passed it.
+    app.UseHostedTransport(hosting);
+    var hostedWebSockets = new WebSocketOptions();
+    foreach (var origin in hosting.AllowedOrigins) hostedWebSockets.AllowedOrigins.Add(origin);
+    app.UseWebSockets(hostedWebSockets);
+    app.UseHostedLogin(hosting);
+    // Hosted: only a signed-in request is activity. Anonymous traffic (probes, crawlers, the sign-in page)
+    // must not keep the background work, and through it a serverless database, awake.
+    app.Use((context, next) => context.User.Identity?.IsAuthenticated == true
+        ? idleShutdown.TrackAsync(context, next)
+        : next());
+}
+else
 app.UseWebSockets(new WebSocketOptions { AllowedOrigins = { "http://127.0.0.1:5900", "http://localhost:5900" } });
 app.UseDefaultFiles();
 app.UseStaticFiles();
 app.UseAntiforgery(); // required by MapRazorComponents (Phase 5) - found live via /api/logs/recent
+// Hosted mode only: /healthz, the sign-in pages and MindAttic.Authentication's /_ma-auth endpoints.
+if (hosting.IsPublic) app.MapHostedAuthPages(hosting);
 app.MapHub<Prose.Hub.Hubs.ObservabilityHub>("/hubs/observability");
 // Observability plan, Phase 5: App.razor declares @page "/app" itself and is the only
 // routable component (TabShell does client-side tab switching, not URL routing) - so this
@@ -1241,7 +1348,9 @@ app.MapPost("/api/generate-scene", async (GenerateSceneRequest req, OneShotGener
 SetHubWindowTitle();
 HubConsoleEcho.Out.WriteLine();
 HubConsoleEcho.Out.WriteLine("========================================================");
-HubConsoleEcho.Out.WriteLine(" Prose Hub is running — http://127.0.0.1:5900");
+HubConsoleEcho.Out.WriteLine(hosting.IsPublic
+    ? $" Prose Hub is running — HOSTED, login required — {string.Join(", ", hosting.AllowedHosts)}"
+    : " Prose Hub is running — http://127.0.0.1:5900");
 HubConsoleEcho.Out.WriteLine(" Every CLI/MCP command is echoed below as it runs.");
 HubConsoleEcho.Out.WriteLine("========================================================");
 HubConsoleEcho.Out.WriteLine();

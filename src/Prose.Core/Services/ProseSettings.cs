@@ -314,6 +314,14 @@ public sealed class ProseSettings
     [Setting("COROBS entity geometry", Group = "Hub", Order = 2, Help = "RFC 0016's whole new way (prose --corobs enable|disable, /corobs on|off). Off hides it everywhere and deletes nothing.")]
     public bool CorobsEnabled { get; set; } = false;
 
+    [Setting("Home stats refresh (minutes)", Group = "Hub", Order = 3, Help = "How often the entity counts are recounted. 0 turns it off (it starts again with the process). PROSE_HOME_STATS_REFRESH_MINUTES overrides it.")]
+    [SettingRange(0, 1440)]
+    public int HomeStatsRefreshMinutes { get; set; } = 5;
+
+    [Setting("Home stats idle pause (minutes)", Group = "Hub", Order = 4, Help = "The recount is skipped once no client has used Prose for this long, so an idle process lets a serverless database pause. 0 = never skip. PROSE_HOME_STATS_IDLE_MINUTES overrides it.")]
+    [SettingRange(0, 1440)]
+    public int HomeStatsIdleMinutes { get; set; } = 15;
+
     /// <summary>The real Vault store. Tests and scratch storage pass their own store to <see cref="SettingsService"/>.</summary>
     public static JsonSettingsStore<ProseSettings> ForCurrentUser() => JsonSettingsStore<ProseSettings>.ForSettingsApp();
 }

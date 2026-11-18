@@ -906,6 +906,13 @@ public class SettingsService : IDisposable
     /// wiki's Corobs panel is hidden, and nothing is deleted — turning it back on needs no rebuild.</summary>
     public bool CorobsEnabled { get => vault.CorobsEnabled; set { vault.CorobsEnabled = value; ScheduleSave(); } }
 
+    /// <summary>Minutes between HomeStatsRefreshService recounts; 0 = off (PRS-T1004). <c>PROSE_HOME_STATS_REFRESH_MINUTES</c> overrides it.</summary>
+    public int HomeStatsRefreshMinutes { get => int.TryParse(Env("PROSE_HOME_STATS_REFRESH_MINUTES", ""), out var m) && m >= 0 ? m : vault.HomeStatsRefreshMinutes; set { vault.HomeStatsRefreshMinutes = value; ScheduleSave(); } }
+
+    /// <summary>The recount is skipped once no client has been active for this many minutes; 0 = never skip (PRS-T1004).
+    /// <c>PROSE_HOME_STATS_IDLE_MINUTES</c> overrides it.</summary>
+    public int HomeStatsIdleMinutes { get => int.TryParse(Env("PROSE_HOME_STATS_IDLE_MINUTES", ""), out var m) && m >= 0 ? m : vault.HomeStatsIdleMinutes; set { vault.HomeStatsIdleMinutes = value; ScheduleSave(); } }
+
     // ── Review voting ──────────────────────────────────────────────────────────
     /// <summary>Default number of cheap score-only ballots per sampled node review (--ballots).</summary>
     public int ReviewBallots { get => Math.Max(1, vault.ReviewBallots); set { vault.ReviewBallots = Math.Max(1, value); ScheduleSave(); } }
@@ -1533,6 +1540,8 @@ public class SettingsService : IDisposable
         public bool DcmLoggingEnabled { get; set; } = false;
         public bool HubNarrationEnabled { get; set; } = false;
         public bool CorobsEnabled { get; set; } = false;
+        public int HomeStatsRefreshMinutes { get; set; } = 5;
+        public int HomeStatsIdleMinutes { get; set; } = 15;
         public string SmtpHost { get; set; } = "";
         public int SmtpPort { get; set; } = 587;
         public string SmtpUsername { get; set; } = "";
