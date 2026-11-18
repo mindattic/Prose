@@ -427,6 +427,7 @@ def build(args) -> dict[str, str]:
     pages.update(site_pages(args.universe, entities, books, book_titles))
     # An entity renamed since the last build keeps its old page as a redirect, so links and bookmarks still land.
     previous = out / "pages.json"
+    stale: list[str] = []
     if previous.exists():
         marker = re.compile(r"<!-- prose guid ([0-9a-f-]{36}) -->")
         now = {m.group(1): t for t, text in pages.items() if (m := marker.search(text))}
@@ -434,6 +435,9 @@ def build(args) -> dict[str, str]:
             m = marker.search(text)
             if m and old_title not in pages and m.group(1) in now:
                 pages[old_title] = f"#REDIRECT [[{now[m.group(1)]}]]\n"
+            elif m and old_title not in pages:
+                stale.append(old_title)  # its entity is gone (merged or deleted): the page goes too
+    (out / "stale.json").write_text(json.dumps(stale, ensure_ascii=False), encoding="utf-8")
     if args.theme:
         theme = Path(__file__).parent / "theme"
         pages["MediaWiki:Common.css"] = (theme / f"{args.theme}.css").read_text(encoding="utf-8")
@@ -495,6 +499,12 @@ class Wiki:
                 if not p.get("missing") and p.get("revisions"):
                     found[p["title"]] = p["revisions"][0]["slots"]["main"]["content"]
         return found
+
+    def delete(self, titles: list[str], reason: str):
+        for title in titles:
+            r = self.post(action="delete", title=title, reason=reason, token=self.csrf)
+            ok = "delete" in r or r.get("error", {}).get("code") == "missingtitle"
+            print(f"  {'deleted' if ok else 'FAILED to delete'} {title}", flush=True)
 
     def purge(self, titles: list[str], batch: int = 20, workers: int = 1):
         """Re-render pages and refresh their link tables: pages saved before the pages they link to still show those
@@ -573,6 +583,10 @@ def main():
             pages = {t: v for t, v in pages.items() if t in keep or t.startswith(("Template:", "MediaWiki:"))}
         wiki.push(pages, f"prose2wiki: {args.universe} phase {args.phase}",
                                    Path(args.out) / "pushed.json", args.delay, args.workers)
+    if args.push:
+        stale = json.loads((Path(args.out) / "stale.json").read_text(encoding="utf-8"))
+        if stale:
+            wiki.delete(stale, f"prose2wiki: {args.universe} entity no longer exists (merged or deleted)")
     if args.purge:
         wiki.purge([t for t in pages if not t.startswith(("Template:", "MediaWiki:"))], workers=args.workers)
 
