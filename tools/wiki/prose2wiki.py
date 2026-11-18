@@ -470,6 +470,17 @@ class Wiki:
                     found[p["title"]] = p["revisions"][0]["slots"]["main"]["content"]
         return found
 
+    def purge(self, titles: list[str], batch: int = 20, workers: int = 1):
+        """Re-render pages and refresh their link tables: pages saved before the pages they link to still show those
+        links red until purged (the wiki's own job queue gets there eventually, slowly, on shared hosting)."""
+        from concurrent.futures import ThreadPoolExecutor
+        chunks = [titles[i:i + batch] for i in range(0, len(titles), batch)]
+        with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
+            for n, _ in enumerate(pool.map(
+                    lambda c: self.post(action="purge", titles="|".join(c), forcelinkupdate="1"), chunks), 1):
+                if n % 50 == 0 or n == len(chunks):
+                    print(f"  purged {min(n * batch, len(titles))}/{len(titles)}", flush=True)
+
     def push(self, pages: dict[str, str], summary: str, state_path: Path, delay: float, workers: int = 1):
         from concurrent.futures import ThreadPoolExecutor
         state = json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {}
@@ -524,14 +535,20 @@ def main():
     p.add_argument("--delay", type=float, default=0.3, help="seconds between edits")
     p.add_argument("--limit", type=int, help="push at most N pages (a trial run)")
     p.add_argument("--workers", type=int, default=1, help="concurrent page edits (templates always go first, alone)")
+    p.add_argument("--purge", action="store_true", help="after pushing (or alone), re-render every article so links "
+                   "to pages created later stop showing red")
     args = p.parse_args()
     pages = build(args)
+    if args.push or args.purge:
+        wiki = Wiki(Path(args.cred))
     if args.push:
         if args.limit:
             keep = [t for t in pages if not t.startswith(("Template:", "MediaWiki:", "Category:", "Main Page"))][:args.limit]
             pages = {t: v for t, v in pages.items() if t in keep or t.startswith(("Template:", "MediaWiki:"))}
-        Wiki(Path(args.cred)).push(pages, f"prose2wiki: {args.universe} phase {args.phase}",
+        wiki.push(pages, f"prose2wiki: {args.universe} phase {args.phase}",
                                    Path(args.out) / "pushed.json", args.delay, args.workers)
+    if args.purge:
+        wiki.purge([t for t in pages if not t.startswith(("Template:", "MediaWiki:"))], workers=args.workers)
 
 
 if __name__ == "__main__":
