@@ -1028,6 +1028,15 @@ if (args.Contains("--tag-entities"))
     return;
 }
 
+// CLI mode: tag every entity's own prose with <entity> markup, like beats (PRS-T1003). Dry run unless --apply,
+// and --apply never confirms un-reads: a write the read gate would charge is refused and counted.
+//   prose --universe <u> --tag-entity-text [--type T] [--id G] [--limit N] [--out tagged.json] [--apply]
+if (args.Contains("--tag-entity-text"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("TagEntityTextCli", args);
+    return;
+}
+
 // CLI mode: backfill Entities.Status = 'stub' / 'canon' based on BeatEntityMentions.
 //   prose --backfill-stubs
 // Entities with no BeatEntityMentions row → Status='stub' (excluded from universe graph).

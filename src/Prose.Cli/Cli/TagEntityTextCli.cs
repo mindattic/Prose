@@ -1,0 +1,154 @@
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using Microsoft.EntityFrameworkCore;
+using Prose.Core.Data;
+using Prose.Core.Data.Entities;
+using Prose.Core.Services;
+
+namespace Prose.Cli;
+
+/// <summary>
+/// prose --universe &lt;u&gt; --tag-entity-text [--type T] [--id G] [--limit N] [--out tagged.json] [--apply]
+///
+/// Tags every entity's own prose (its summary and the long text fields of its record) with
+/// <c>&lt;entity repo guid&gt;</c> markup, using the same <see cref="EntityMentionScanner"/> index and
+/// rules that tag beats, so an entity links to the entities its text names the way a beat does
+/// (PRS-T1003). Existing tags are stripped first, so a re-run converges instead of nesting.
+///
+/// <para>Dry run by default: nothing is written; with <c>--out</c> the tagged text is saved as
+/// <c>{guid: {"summary": …, "record": {key: value}}}</c> for consumers such as tools/wiki/prose2wiki.py.
+/// <c>--apply</c> writes through <see cref="EntityFieldWriter"/> WITHOUT confirmUnread, so a write that
+/// would un-read beats is refused by the read gate and only counted; those entities need an author
+/// decision about the gate before they can be tagged in place.</para>
+/// </summary>
+public static class TagEntityTextCli
+{
+    static readonly HashSet<string> SkipKeys = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "id", "type", "name", "title", "term", "headline", "codename", "file_name", "aliases", "common_names", "tags",
+        "image_prompt", "dalle3_prompt", "changelog", "provenance", "status", "pronouns", "gender", "species",
+        "rating", "vote_count", "location", "story_id", "category", "subcategory", "tier", "legality",
+    };
+
+    const int MinLength = 25;
+
+    public static async Task<int> RunAsync(string[] args, IServiceProvider services)
+    {
+        var type = Flag(args, "--type");
+        var id = Flag(args, "--id");
+        var outPath = Flag(args, "--out");
+        var apply = args.Contains("--apply");
+        var limit = int.TryParse(Flag(args, "--limit"), out var l) ? l : int.MaxValue;
+        var universeId = UniverseScope.EffectiveId;
+        if (universeId == Guid.Empty)
+        {
+            Console.Error.WriteLine("[tag-entity-text] pass --universe <slug>.");
+            return 2;
+        }
+
+        var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
+        var writer = services.GetRequiredService<EntityFieldWriter>();
+        List<(Guid Id, string Type, string Name)> targets;
+        List<EntityMentionScanner.MentionCandidate> candidates;
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            candidates = await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, null);
+            var q = db.Set<Entity>().AsNoTracking().IgnoreQueryFilters()
+                .Where(e => e.UniverseId == universeId && e.Status != "archived");
+            if (!string.IsNullOrWhiteSpace(type)) q = q.Where(e => e.EntityType == type);
+            if (Guid.TryParse(id, out var one)) q = q.Where(e => e.Id == one);
+            targets = (await q.OrderBy(e => e.EntityType).ThenBy(e => e.Name)
+                    .Select(e => new { e.Id, e.EntityType, e.Name }).ToListAsync())
+                .Take(limit).Select(e => (e.Id, e.EntityType ?? "", e.Name ?? "")).ToList();
+        }
+        Console.WriteLine($"[tag-entity-text] {targets.Count} entities, {candidates.Count} name/alias candidates{(apply ? "" : " (dry run)")}.");
+
+        var output = new JsonObject();
+        int changedEntities = 0, totalTags = 0, written = 0, gated = 0, failed = 0, unreadable = 0;
+        var gatedBeats = 0;
+        foreach (var (entityId, entityType, name) in targets)
+        {
+            var read = await writer.GetFieldsAsync(entityId.ToString());
+            if (!read.Ok) { unreadable++; continue; }
+
+            var tags = 0;
+            var patch = new JsonObject();
+            var summary = Tag(read.Summary, entityId, candidates, ref tags);
+            var summaryChanged = summary != null && summary != read.Summary;
+            if (read.Record is JsonObject record)
+            {
+                foreach (var (key, value) in record)
+                {
+                    if (value == null || SkipKeys.Contains(key)) continue;
+                    var before = value.ToJsonString();
+                    var after = TagNode(value.DeepClone(), key, entityId, candidates, ref tags);
+                    if (after.ToJsonString() != before) patch[key] = after;
+                }
+            }
+            if (!summaryChanged && patch.Count == 0) continue;
+            changedEntities++;
+            totalTags += tags;
+            output[entityId.ToString()] = new JsonObject
+            {
+                ["type"] = entityType,
+                ["name"] = name,
+                ["summary"] = summaryChanged ? summary : null,
+                ["record"] = patch.DeepClone(),
+            };
+            if (!apply) continue;
+
+            var fields = (JsonObject)patch.DeepClone();
+            if (summaryChanged) fields[EntityFieldWriter.SummaryKey] = summary;
+            var r = await writer.SetFieldsAsync(entityId.ToString(), fields.ToJsonString());
+            if (r.Ok) written++;
+            else if (r.UnreadCost > 0) { gated++; gatedBeats += r.UnreadCost; }
+            else { failed++; Console.Error.WriteLine($"[tag-entity-text] {entityType} '{name}' ({entityId}): {r.Error}"); }
+        }
+
+        if (!string.IsNullOrWhiteSpace(outPath))
+        {
+            await File.WriteAllTextAsync(outPath, output.ToJsonString(new JsonSerializerOptions { WriteIndented = true }));
+            Console.WriteLine($"[tag-entity-text] wrote {outPath}");
+        }
+        Console.WriteLine($"[tag-entity-text] {changedEntities} entities gain {totalTags} tags" +
+                          (apply ? $"; written {written}, refused by the read gate {gated} (would un-read {gatedBeats} beat mentions), failed {failed}" : "") +
+                          (unreadable > 0 ? $"; {unreadable} unreadable" : "") + ".");
+        return failed > 0 ? 1 : 0;
+    }
+
+    static JsonNode TagNode(JsonNode node, string key, Guid self, List<EntityMentionScanner.MentionCandidate> candidates, ref int tags)
+    {
+        switch (node)
+        {
+            case JsonValue v when v.TryGetValue<string>(out var s):
+                return JsonValue.Create(Tag(s, self, candidates, ref tags) ?? s)!;
+            case JsonArray a:
+                for (var i = 0; i < a.Count; i++)
+                    if (a[i] != null) a[i] = TagNode(a[i]!.DeepClone(), key, self, candidates, ref tags);
+                return a;
+            case JsonObject o:
+                foreach (var k in o.Select(p => p.Key).ToList())
+                    if (o[k] != null && !SkipKeys.Contains(k)) o[k] = TagNode(o[k]!.DeepClone(), k, self, candidates, ref tags);
+                return o;
+            default:
+                return node;
+        }
+    }
+
+    /// <summary>Re-tags one string from scratch; returns null for text too short to be prose.</summary>
+    static string? Tag(string? text, Guid self, List<EntityMentionScanner.MentionCandidate> candidates, ref int tags)
+    {
+        if (string.IsNullOrWhiteSpace(text)) return null;
+        var plain = BeatMarkup.StripEntityTags(text);
+        if (plain.Length < MinLength || !plain.Contains(' ')) return text;
+        var matches = EntityMentionScanner.Scan(plain, candidates).Where(m => m.EntityId != self).ToList();
+        tags += matches.Count;
+        return EntityMentionScanner.ApplyTags(plain, matches);
+    }
+
+    static string? Flag(string[] args, string name)
+    {
+        var i = Array.IndexOf(args, name);
+        return i >= 0 && i + 1 < args.Length ? args[i + 1] : null;
+    }
+}
