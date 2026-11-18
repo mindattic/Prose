@@ -238,7 +238,10 @@ public class CanonExportService
     public async Task<ExportResult> ExportAllAsync(CancellationToken ct = default)
     {
         var repos = discovery.GetAllRepos();
-        var unrepoed = await EntitiesOutsideReposAsync(repos, ct);
+        var (unrepoed, slugs) = await EntitiesOutsideReposAsync(repos, ct);
+        // Named by the stored Entity.Slug (what edges and the interchange file refer to), else by the name.
+        string Stem(string name, string json) =>
+            IdOf(json) is Guid id && slugs.TryGetValue(id, out var slug) && !string.IsNullOrWhiteSpace(slug) ? slug : Slugify(name);
         var fileName = $"prose-export-{DateTime.Now:yyyyMMdd-HHmmss}.zip";
         var path = Path.Combine(PublishDir, fileName);
 
@@ -252,14 +255,14 @@ public class CanonExportService
                 foreach (var (name, json) in entries)
                 {
                     ct.ThrowIfCancellationRequested();
-                    AddJsonEntry(zip, UniqueEntryName(used, $"{folder}/{Slugify(name)}"), json);
+                    AddJsonEntry(zip, UniqueEntryName(used, $"{folder}/{Stem(name, json)}"), json);
                     total++;
                 }
             }
             foreach (var (type, name, json) in unrepoed)
             {
                 ct.ThrowIfCancellationRequested();
-                AddJsonEntry(zip, UniqueEntryName(used, $"{Slugify(type)}/{Slugify(name)}"), json);
+                AddJsonEntry(zip, UniqueEntryName(used, $"{Slugify(type)}/{Stem(name, json)}"), json);
                 total++;
             }
             return Task.CompletedTask;
@@ -273,27 +276,18 @@ public class CanonExportService
     /// <summary>Live entities no discovered repository exported: runtime-defined types (schism-entity, organization,
     /// person, …) that live on the generic Entity spine. Without them "every repo" silently left out entities the
     /// books tag (PRS-T1008). Each is its stored record plus the entity row's id, name, type and summary.</summary>
-    private async Task<List<(string Type, string Name, string Json)>> EntitiesOutsideReposAsync(
+    private async Task<(List<(string Type, string Name, string Json)> Entities, Dictionary<Guid, string> Slugs)> EntitiesOutsideReposAsync(
         Dictionary<string, List<(string Name, string Json)>> repos, CancellationToken ct)
     {
         var exported = new HashSet<Guid>();
         foreach (var (_, json) in repos.Values.SelectMany(e => e))
-        {
-            try
-            {
-                using var doc = JsonDocument.Parse(json);
-                if (doc.RootElement.ValueKind == JsonValueKind.Object && doc.RootElement.TryGetProperty("id", out var idEl)
-                    && idEl.ValueKind == JsonValueKind.String && Guid.TryParse(idEl.GetString(), out var id))
-                    exported.Add(id);
-            }
-            catch (JsonException) { }
-        }
+            if (IdOf(json) is Guid id) exported.Add(id);
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var universeId = UniverseScope.EffectiveId;
         var rows = await db.Entities.IgnoreQueryFilters().AsNoTracking()
             .Where(e => (universeId == Guid.Empty || e.UniverseId == universeId) && e.Status != "archived")
-            .Select(e => new { e.Id, e.EntityType, e.Name, e.Description })
+            .Select(e => new { e.Id, e.EntityType, e.Name, e.Description, e.Slug })
             .ToListAsync(ct);
         var result = new List<(string, string, string)>();
         foreach (var e in rows.Where(r => !exported.Contains(r.Id)))
@@ -307,8 +301,22 @@ public class CanonExportService
             result.Add((string.IsNullOrWhiteSpace(e.EntityType) ? "untyped" : e.EntityType!, e.Name ?? e.Id.ToString("N"),
                 node.ToJsonString()));
         }
-        return result;
+        return (result, rows.Where(r => !string.IsNullOrWhiteSpace(r.Slug)).ToDictionary(r => r.Id, r => SafeStem(r.Slug!)));
     }
+
+    private static Guid? IdOf(string json)
+    {
+        try
+        {
+            using var doc = JsonDocument.Parse(json);
+            return doc.RootElement.ValueKind == JsonValueKind.Object && doc.RootElement.TryGetProperty("id", out var idEl)
+                   && idEl.ValueKind == JsonValueKind.String && Guid.TryParse(idEl.GetString(), out var id) ? id : null;
+        }
+        catch (JsonException) { return null; }
+    }
+
+    private static string SafeStem(string slug) =>
+        System.Text.RegularExpressions.Regex.Replace(slug.Trim(), @"[\\/:*?""<>|\s]+", "_");
 
     /// <summary>"{stem}.json", or "{stem}-2.json" and so on when that name is taken. Different names
     /// can slug alike ("Ñu" and "Nu"; every all-non-Latin name becomes "unnamed"), and a zip keeps

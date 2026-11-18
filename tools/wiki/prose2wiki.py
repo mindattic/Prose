@@ -262,7 +262,10 @@ class Renderer:
             if name:
                 head = f"'''{self.short(name, owner, key)}'''"
                 if key == "relationships" and not GUID_RE.fullmatch(name) and not self.resolver.by_name(name):
-                    self.repair.add("relationship target not found", owner=owner.title, target=name)
+                    described = (not name[:1].isupper() or re.search(r"unnamed|\(|^(?:Her|His|Their|The|A|An) [a-z]", name)
+                                 is not None)
+                    self.repair.add("relationship to an unnamed person (plain text, fine)" if described
+                                    else "relationship names someone with no entity or alias", owner=owner.title, target=name)
             rest = [f"''{humanize(k)}:'' {self.value(v, owner, k)}" for k, v in value.items()
                     if k not in ("name", "target", "to", "title", "term") and k not in HIDDEN_FIELDS
                     and v not in (None, "", [], {})]
