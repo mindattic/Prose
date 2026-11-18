@@ -425,6 +425,15 @@ def build(args) -> dict[str, str]:
             if alias_title and resolver.by_name(alias) is ent and alias_title.lower() != ent.title.lower():
                 pages.setdefault(alias_title[0].upper() + alias_title[1:], f"#REDIRECT [[{ent.title}]]\n")
     pages.update(site_pages(args.universe, entities, books, book_titles))
+    # An entity renamed since the last build keeps its old page as a redirect, so links and bookmarks still land.
+    previous = out / "pages.json"
+    if previous.exists():
+        marker = re.compile(r"<!-- prose guid ([0-9a-f-]{36}) -->")
+        now = {m.group(1): t for t, text in pages.items() if (m := marker.search(text))}
+        for old_title, text in json.loads(previous.read_text(encoding="utf-8")).items():
+            m = marker.search(text)
+            if m and old_title not in pages and m.group(1) in now:
+                pages[old_title] = f"#REDIRECT [[{now[m.group(1)]}]]\n"
     if args.theme:
         theme = Path(__file__).parent / "theme"
         pages["MediaWiki:Common.css"] = (theme / f"{args.theme}.css").read_text(encoding="utf-8")
