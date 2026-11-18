@@ -36,6 +36,14 @@ $cred = Join-Path $env:APPDATA "MindAttic\Wiki\$Universe.json"
 foreach ($f in @($books, $cred)) { if (-not (Test-Path $f)) { throw "missing $f" } }
 New-Item -ItemType Directory -Force -Path $state, (Join-Path $state 'beats'), (Join-Path $state 'out') | Out-Null
 
+# One sync per universe at a time: two runs share this state folder and would overwrite each other's files.
+try {
+    $lock = [IO.File]::Open((Join-Path $state 'sync.lock'), 'OpenOrCreate', 'ReadWrite', 'None')
+} catch [IO.IOException] {
+    Write-Host "another wiki sync for '$Universe' is already running (lock: $(Join-Path $state 'sync.lock')); not starting a second one."
+    exit 3
+}
+
 function Write-Step([string]$Text) { Write-Host "[$((Get-Date).ToString('HH:mm:ss'))] $Text" }
 
 # ---- the Hub ---------------------------------------------------------------------------------------------------
