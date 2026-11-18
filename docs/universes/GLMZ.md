@@ -656,6 +656,8 @@ checked against a survey of ~170 existing otherworldly creatures and gate fictio
 Shadowrun, Pacific Rim, Bloodborne, Doctor Who, Miéville, qntm and more; list in the Schism Passages bible). Entries too
 close to prior art were replaced. The overused tropes stay out: tentacles, eyes everywhere, madness from sight,
 sleeping gods, cults, hive minds, hell and demons, a lab experiment tearing the gate, world-eaters.
+(Author /goal 2026-11-18, law 01a1ee38-c1f6: *human* orders and cults that grow up around the doors are now welcome; see
+**Mindshine, the Dressed, and the orders** below. Nothing any of them worships ever answers as a god.)
 
 **The biology test (01a1e75b-0738).** Every named incursion answers four questions, on its record if not on
 the page:
@@ -750,6 +752,40 @@ The Interstice is what lies between universes; a Schism is where ours is thin to
 
 **Parked for Season 2:** the shortcut universe (author 2026-11-16, page-law 01a1e7b5-e6c7). It is not part of the
 Season 1 world: no rift travel to far places, no rumor of it, and incursions never name it as their source.
+
+### Mindshine, the Dressed, and the orders (author /goal 2026-11-18, PRS-T1016; laws 01a1ee38-c149, 01a1ee38-c1a5, 01a1ee38-c1f6, 01a1ee38-c240)
+
+The author asked for an entirely new kind of cosmic-horror integration, woven through every GLMZ book over several
+passes until it is part of the world's organic nature. Three pieces, all classified in Ren's book (code **REN**):
+
+- **Mindshine** (vocabulary `mindshine`). What a thinking mind looks like from above or below. Consciousness gathers
+  around complexity like gravity (the foundation law), and to anything on the far side that gathering *shows*: every mind a
+  light, a server hall a bonfire, a crowd a lit window, a SuperMind a sun, Egregore over the lake something none of
+  them can look away from. Incursions that live past the thin spot drift toward mindshine: crowds, data halls, neuretics
+  hubs, fevered children, the dying (a mind flares at the end). Sensitives burn brighter. AAMA files say "cognitive
+  attraction"; the street says "keep your shine low". **Belief and hypothesis only on the page**: never proved, never a
+  meter, and it opens no doors (the Cabal's taps do, as subtext). The horror is not what you see; it is that you are seen.
+- **The Dressed** (bestiary, codex class DRESSED; AAMA "R-forms"; street "it came dressed"; Ren's word "company").
+  Intelligences that come wearing a shape pulled from the viewer's own mind, always slightly wrong: the wrongness is the
+  seam where the translation shows. The Man on the Camel (Joliet, 2217) is the first on file and the model. Never seen
+  whole, never explained, never confirmed friendly, untouched by violence; not ghosts, angels or gods. On file, with the
+  first year a book may use them: the Lake Walker 2201, the Old Man in the Booth 2206, the Night Nurse 2209, the Ticket
+  Man 2214, the Small-Hours Grocer 2219, the Rope Girl 2221, the Borrower 2223, the Stone Mourner 2225, the Write-Off
+  Man 2229.
+- **The orders and cults** (faction records). People organize around the doors the way they organize around any war or
+  weather. Founding years (a book never predates them): the Sectionists 2196 (Hyde Park scholars assembling the whole
+  from slices; the closest go silent), the Clock Wives 2205 (grandmothers' warning network of surveyor clocks and bell
+  chains), the Quiet Bidders 2215 (arcology collectors' auctions of live incursions), the Fallsisters 2219 (hospice for
+  dying incursions), the Dimhouses 2222 (keep your shine low), the Lantern Mothers 2224 (families of the taken; lanterns
+  at rift edges so the taken can find the way back), the Backhaulers 2224 (smugglers who push things and people back
+  through), the Nineteens 2225 (19 Hz raves at rift edges), the Bright Choir 2226 (overclocked neuretic choirs that want
+  to be seen and taken), the Coralheads 2227 (archive-coral users who speak in other people's sentences), the Skinwrit
+  2228 (flats living on skin as moving tattoos).
+
+**The weave** (law 01a1ee38-c240): each book carries the codex creatures by their informal names, the drop and the
+waking whenever one is truly seen, one Dressed encounter at most, several order touches, and mindshine as street
+talk, all pitched to the book's year. Pipeline: `Downloads\GLMZ_Bestiary\weave2` (WEAVE2_BRIEF.md, canon_new.json,
+check.py, in\ and out\ per chunk).
 
 ---
 
