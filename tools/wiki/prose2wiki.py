@@ -470,30 +470,40 @@ class Wiki:
                     found[p["title"]] = p["revisions"][0]["slots"]["main"]["content"]
         return found
 
-    def push(self, pages: dict[str, str], summary: str, state_path: Path, delay: float):
+    def push(self, pages: dict[str, str], summary: str, state_path: Path, delay: float, workers: int = 1):
+        from concurrent.futures import ThreadPoolExecutor
         state = json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {}
         todo = [t for t, text in pages.items() if state.get(t) != hashlib.sha1(text.encode()).hexdigest()]
-        todo.sort(key=lambda t: not t.startswith(("Template:", "MediaWiki:")))  # templates first, or pages cache red links
+        # Templates and site CSS/JS go first and alone: a page saved before its template caches red links.
+        site = [t for t in todo if t.startswith(("Template:", "MediaWiki:"))]
+        rest = [t for t in todo if t not in set(site)]
         print(f"{len(todo)} of {len(pages)} pages changed since the last push", flush=True)
         done = errors = 0
-        for i in range(0, len(todo), 50):
-            batch = todo[i:i + 50]
-            live = self.current(batch)
-            for title in batch:
-                text = pages[title]
-                digest = hashlib.sha1(text.encode()).hexdigest()
-                if live.get(title, "").rstrip() != text.rstrip():
-                    r = self.post(action="edit", title=title, text=text, summary=summary, bot="1",
-                                  token=self.csrf, maxlag="5")
-                    if r.get("edit", {}).get("result") != "Success":
-                        errors += 1
-                        print(f"  FAILED {title}: {r.get('error', r)}", flush=True)
-                        continue
-                    time.sleep(delay)
-                state[title] = digest
-                done += 1
-            state_path.write_text(json.dumps(state), encoding="utf-8")
-            print(f"  {done}/{len(todo)} pushed, {errors} failed", flush=True)
+
+        def save(title: str, live: dict[str, str]) -> tuple[str, str | None]:
+            text = pages[title]
+            if live.get(title, "").rstrip() == text.rstrip():
+                return title, None
+            r = self.post(action="edit", title=title, text=text, summary=summary, bot="1", token=self.csrf, maxlag="5")
+            time.sleep(delay)
+            return title, None if r.get("edit", {}).get("result") == "Success" else str(r.get("error", r))
+
+        with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
+            for group, parallel in ((site, False), (rest, True)):
+                for i in range(0, len(group), 50):
+                    batch = group[i:i + 50]
+                    live = self.current(batch)
+                    results = (pool.map(lambda t: save(t, live), batch) if parallel
+                               else (save(t, live) for t in batch))
+                    for title, error in results:
+                        if error:
+                            errors += 1
+                            print(f"  FAILED {title}: {error}", flush=True)
+                            continue
+                        state[title] = hashlib.sha1(pages[title].encode()).hexdigest()
+                        done += 1
+                    state_path.write_text(json.dumps(state), encoding="utf-8")
+                    print(f"  {done}/{len(todo)} pushed, {errors} failed", flush=True)
 
 
 def main():
@@ -513,6 +523,7 @@ def main():
     p.add_argument("--cred", default=os.path.expandvars(r"%APPDATA%\MindAttic\Wiki\glmz.json"))
     p.add_argument("--delay", type=float, default=0.3, help="seconds between edits")
     p.add_argument("--limit", type=int, help="push at most N pages (a trial run)")
+    p.add_argument("--workers", type=int, default=1, help="concurrent page edits (templates always go first, alone)")
     args = p.parse_args()
     pages = build(args)
     if args.push:
@@ -520,7 +531,7 @@ def main():
             keep = [t for t in pages if not t.startswith(("Template:", "MediaWiki:", "Category:", "Main Page"))][:args.limit]
             pages = {t: v for t, v in pages.items() if t in keep or t.startswith(("Template:", "MediaWiki:"))}
         Wiki(Path(args.cred)).push(pages, f"prose2wiki: {args.universe} phase {args.phase}",
-                                   Path(args.out) / "pushed.json", args.delay)
+                                   Path(args.out) / "pushed.json", args.delay, args.workers)
 
 
 if __name__ == "__main__":
