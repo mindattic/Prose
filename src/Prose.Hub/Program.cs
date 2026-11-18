@@ -400,7 +400,13 @@ var app = builder.Build();
 // line per retry) before anything is served. Against a non-Azure server it is one ordinary connection.
 // The same resume-tolerant open backs every later connection too - see ProseSqlResilience.
 ProseSqlResilience.OnRetry = message => Console.WriteLine($"[hub] {message}");
+// Start-up stages with their elapsed time (PRS-T1012): on a host the console is the stdout log, and this is
+// what says where a slow start went.
+var startupClock = System.Diagnostics.Stopwatch.StartNew();
+void StartupStage(string stage) => Console.WriteLine($"[hub] start-up +{startupClock.Elapsed.TotalSeconds:0} s: {stage}");
+StartupStage("waking the database");
 await ProseSqlResilience.WakeAsync(mindAtticLogConnectionString);
+StartupStage("database awake");
 
 await using (var migrationScope = app.Services.CreateAsyncScope())
 {
@@ -422,6 +428,8 @@ await using (var migrationScope = app.Services.CreateAsyncScope())
         migrationDb.Database.GetConnectionString()!, mindAtticLogDbPath, dropSource: true);
 }
 
+StartupStage("migrations checked");
+
 // Hosted mode: prove a login is possible before listening (pepper present, auth schema current, an
 // allowed account exists or the first one is seeded). Anything missing stops the Hub here.
 if (hosting.IsPublic)
@@ -433,7 +441,9 @@ if (hosting.IsPublic)
 // Subscribes ONCE to every Phase-3 event and forwards to ObservabilityHub - see
 // ObservabilityBridge's own doc comment. Must run after Build() so DI can resolve
 // IHubContext<ObservabilityHub> (registered by AddSignalR/MapHub).
+StartupStage("login checked; loading the universe graph");
 app.Services.GetRequiredService<Prose.Hub.ObservabilityBridge>().Wire();
+StartupStage("universe graph loaded");
 
 // Durability fix (2026-10-07): HubConsoleEcho's lines (the command echo, and CommandNarrator's
 // gloss) used to reach only the live console window - ILoggerFactory doesn't exist until after
@@ -1353,6 +1363,14 @@ HubConsoleEcho.Out.WriteLine(hosting.IsPublic
     ? $" Prose Hub is running — HOSTED, login required — {string.Join(", ", hosting.AllowedHosts)}"
     : " Prose Hub is running — http://127.0.0.1:5900");
 HubConsoleEcho.Out.WriteLine(" Every CLI/MCP command is echoed below as it runs.");
+// How long start-up took before the Hub listens (PRS-T1012). Behind IIS that must stay under web.config's
+// startupTimeLimit, or the process is killed and started again without ever serving.
+try
+{
+    using var self = System.Diagnostics.Process.GetCurrentProcess();
+    HubConsoleEcho.Out.WriteLine($" Start-up took {(DateTime.Now - self.StartTime).TotalSeconds:0} s (UTC {DateTime.UtcNow:HH:mm:ss}).");
+}
+catch (Exception ex) when (ex is InvalidOperationException or System.ComponentModel.Win32Exception or NotSupportedException) { }
 HubConsoleEcho.Out.WriteLine("========================================================");
 HubConsoleEcho.Out.WriteLine();
 
