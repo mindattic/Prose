@@ -726,7 +726,7 @@ epair.md`.
 - {"text": "Zinc"}
 - {"text": "Zirconia"}
 
-## relationship names someone with no entity or alias (70)
+## relationship names someone with no entity or alias (69)
 
 - {"owner": "Aditya Ekwensi", "target": "Sable"}
 - {"owner": "Adnan Najjar", "target": "Unnamed former colleague"}
@@ -763,7 +763,6 @@ epair.md`.
 - {"owner": "Hua", "target": "Mira"}
 - {"owner": "Kael Dunning", "target": "Contract brokers"}
 - {"owner": "Kyle Ellen Corbin", "target": "Sable"}
-- {"owner": "Leone Babineaux", "target": "Valentina Vassilyev-Babineaux"}
 - {"owner": "Leszek Nurzhanov", "target": "Unknown contact in The Spire"}
 - {"owner": "Lucien Kimura", "target": "ECHO"}
 - {"owner": "Marisol McDonald", "target": "The 2225 undergraduate complainant"}
