@@ -31,6 +31,17 @@ public static class TagEntityTextCli
     };
 
     const int MinLength = 25;
+    const int CommonWordUses = 3;
+    static readonly System.Text.RegularExpressions.Regex LowerWord = new(@"(?<![\p{L}'-])\p{Ll}[\p{Ll}'-]*(?![\p{L}])");
+    static readonly System.Text.RegularExpressions.Regex MidCapital = new(@"(?<=[\p{Ll}\p{N},;]\s+)\p{Lu}[\p{L}'-]*(?![\p{L}])");
+
+    static IEnumerable<string> Strings(JsonNode? node) => node switch
+    {
+        JsonValue v when v.TryGetValue<string>(out var s) => [s],
+        JsonArray a => a.SelectMany(Strings),
+        JsonObject o => o.Where(p => !SkipKeys.Contains(p.Key)).SelectMany(p => Strings(p.Value)),
+        _ => [],
+    };
 
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
@@ -61,19 +72,56 @@ public static class TagEntityTextCli
                     .Select(e => new { e.Id, e.EntityType, e.Name }).ToListAsync())
                 .Take(limit).Select(e => (e.Id, e.EntityType ?? "", e.Name ?? "")).ToList();
         }
-        Console.WriteLine($"[tag-entity-text] {targets.Count} entities, {candidates.Count} name/alias candidates{(apply ? "" : " (dry run)")}.");
-
-        var output = new JsonObject();
-        int changedEntities = 0, totalTags = 0, written = 0, gated = 0, failed = 0, unreadable = 0;
-        var gatedBeats = 0;
+        var reads = new List<(Guid Id, string Type, string Name, FieldReadResult Read)>();
+        var unreadable = 0;
         foreach (var (entityId, entityType, name) in targets)
         {
             var read = await writer.GetFieldsAsync(entityId.ToString());
-            if (!read.Ok) { unreadable++; continue; }
+            if (read.Ok) reads.Add((entityId, entityType, name, read));
+            else unreadable++;
+        }
 
+        // Entity text has no per-book incidental rulings, so a one-word name that is also an ordinary word
+        // ("Park", "Hands", "Origin", an alias "Industries") would tag every sentence that starts with it.
+        // The corpus decides: a one-word name the universe's own entity text also uses lowercase is a word.
+        // Mid-sentence capitals can only be names ("asked Bear", "with Silence"), sentence-initial ones can be either, so
+        // a word whose lowercase uses outnumber its mid-sentence capitalized uses is an ordinary word.
+        var lowercase = new Dictionary<string, int>(StringComparer.Ordinal);
+        var midCapital = new Dictionary<string, int>(StringComparer.Ordinal);
+        foreach (var r in reads)
+            foreach (var s in Strings(r.Read.Record).Append(r.Read.Summary ?? ""))
+            {
+                var plain = BeatMarkup.StripEntityTags(s);
+                foreach (System.Text.RegularExpressions.Match m in LowerWord.Matches(plain))
+                    lowercase[m.Value] = lowercase.GetValueOrDefault(m.Value) + 1;
+                foreach (System.Text.RegularExpressions.Match m in MidCapital.Matches(plain))
+                    midCapital[m.Value] = midCapital.GetValueOrDefault(m.Value) + 1;
+            }
+        // A one-word name that is also an ordinary word ("Faith", "Hands", "Transit") is only a name where nothing
+        // else explains the capital: mid-sentence, with lowercase words on both sides. Sentence starts and longer
+        // proper nouns ("Ferrogate Transit") are left untagged.
+        var wordLike = candidates
+            .Where(c => !c.Text.Contains(' ') && c.Text.Length > 0 && char.IsUpper(c.Text[0])
+                        && lowercase.GetValueOrDefault(c.Text.ToLowerInvariant()) >= CommonWordUses)
+            .Select(c => c.Text).ToHashSet(StringComparer.Ordinal);
+        var ordinary = wordLike.Where(w => lowercase.GetValueOrDefault(w.ToLowerInvariant()) > midCapital.GetValueOrDefault(w))
+            .OrderBy(w => w).ToList();
+        Console.WriteLine($"[tag-entity-text] {reads.Count} entities, {candidates.Count} name/alias candidates, " +
+                          $"{wordLike.Count} one-word names that are also ordinary words (tagged mid-sentence only)" +
+                          $"{(apply ? "" : " (dry run)")}.");
+
+        var index = new Index(candidates, wordLike);
+        var output = new JsonObject
+        {
+            ["_wordLikeNames"] = new JsonArray(ordinary.Select(w => (JsonNode)JsonValue.Create(w)!).ToArray()),
+        };
+        int changedEntities = 0, totalTags = 0, written = 0, gated = 0, failed = 0;
+        var gatedBeats = 0;
+        foreach (var (entityId, entityType, name, read) in reads)
+        {
             var tags = 0;
             var patch = new JsonObject();
-            var summary = Tag(read.Summary, entityId, candidates, ref tags);
+            var summary = Tag(read.Summary, entityId, index, ref tags);
             var summaryChanged = summary != null && summary != read.Summary;
             if (read.Record is JsonObject record)
             {
@@ -81,7 +129,7 @@ public static class TagEntityTextCli
                 {
                     if (value == null || SkipKeys.Contains(key)) continue;
                     var before = value.ToJsonString();
-                    var after = TagNode(value.DeepClone(), key, entityId, candidates, ref tags);
+                    var after = TagNode(value.DeepClone(), key, entityId, index, ref tags);
                     if (after.ToJsonString() != before) patch[key] = after;
                 }
             }
@@ -116,19 +164,19 @@ public static class TagEntityTextCli
         return failed > 0 ? 1 : 0;
     }
 
-    static JsonNode TagNode(JsonNode node, string key, Guid self, List<EntityMentionScanner.MentionCandidate> candidates, ref int tags)
+    static JsonNode TagNode(JsonNode node, string key, Guid self, Index index, ref int tags)
     {
         switch (node)
         {
             case JsonValue v when v.TryGetValue<string>(out var s):
-                return JsonValue.Create(Tag(s, self, candidates, ref tags) ?? s)!;
+                return JsonValue.Create(Tag(s, self, index, ref tags) ?? s)!;
             case JsonArray a:
                 for (var i = 0; i < a.Count; i++)
-                    if (a[i] != null) a[i] = TagNode(a[i]!.DeepClone(), key, self, candidates, ref tags);
+                    if (a[i] != null) a[i] = TagNode(a[i]!.DeepClone(), key, self, index, ref tags);
                 return a;
             case JsonObject o:
                 foreach (var k in o.Select(p => p.Key).ToList())
-                    if (o[k] != null && !SkipKeys.Contains(k)) o[k] = TagNode(o[k]!.DeepClone(), k, self, candidates, ref tags);
+                    if (o[k] != null && !SkipKeys.Contains(k)) o[k] = TagNode(o[k]!.DeepClone(), k, self, index, ref tags);
                 return o;
             default:
                 return node;
@@ -136,14 +184,34 @@ public static class TagEntityTextCli
     }
 
     /// <summary>Re-tags one string from scratch; returns null for text too short to be prose.</summary>
-    static string? Tag(string? text, Guid self, List<EntityMentionScanner.MentionCandidate> candidates, ref int tags)
+    static string? Tag(string? text, Guid self, Index index, ref int tags)
     {
         if (string.IsNullOrWhiteSpace(text)) return null;
         var plain = BeatMarkup.StripEntityTags(text);
         if (plain.Length < MinLength || !plain.Contains(' ')) return text;
-        var matches = EntityMentionScanner.Scan(plain, candidates).Where(m => m.EntityId != self).ToList();
+        var matches = EntityMentionScanner.Scan(plain, index.Candidates)
+            .Where(m => m.EntityId != self)
+            .Where(m => !index.WordLike.Contains(plain.Substring(m.Start, m.Length)) || StandsAlone(plain, m.Start, m.Length))
+            .ToList();
         tags += matches.Count;
         return EntityMentionScanner.ApplyTags(plain, matches);
+    }
+
+    sealed record Index(List<EntityMentionScanner.MentionCandidate> Candidates, HashSet<string> WordLike);
+
+    /// <summary>Mid-sentence with lowercase on both sides: "asked Faith quietly", not "Faith held." or "Ferrogate Transit".</summary>
+    static bool StandsAlone(string text, int start, int length)
+    {
+        var i = start - 1;
+        while (i >= 0 && text[i] == ' ') i--;
+        if (i < 0 || !(char.IsLower(text[i]) || char.IsDigit(text[i]) || text[i] is ',' or ';')) return false;
+        var w = i;
+        while (w > 0 && (char.IsLetterOrDigit(text[w - 1]) || text[w - 1] is '\'' or '-')) w--;
+        if (char.IsUpper(text[w])) return false;
+        var j = start + length;
+        if (j < text.Length && (char.IsLetter(text[j]) || text[j] == '-')) return false;
+        while (j < text.Length && text[j] == ' ') j++;
+        return j >= text.Length || !char.IsUpper(text[j]);
     }
 
     static string? Flag(string[] args, string name)
