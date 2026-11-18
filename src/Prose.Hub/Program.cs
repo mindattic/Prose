@@ -44,6 +44,11 @@ using Serilog.Events;
 MindAttic.Legion.MindAtticCredentialStore.AppId = ProseSettings.AppId;
 if (SettingsService.TryRunManifestCommand(args)) return;
 
+// The tray icon (PRS-T1021) needs a console window it can hide; Windows Terminal's can't be, so there the Hub
+// starts itself again in a classic one and this copy ends. Does nothing without a console window of its own
+// (hosted mode, a piped launch, a shared shell).
+if (Prose.Hub.HubTray.RelaunchedInOwnWindow(Prose.Hub.HubConsoleEcho.TrayEnvVar, args)) return;
+
 // Explicit user requirement (2026-08-27): yellow-background console so the Hub's own window is
 // instantly recognizable among other open terminals. Clear() repaints the existing buffer with
 // the new background — setting BackgroundColor alone only colors text written after this point.
@@ -103,6 +108,12 @@ SetHubWindowTitle();
 // REAL writers here (rather than reading Console.Out fresh at each echo call) is required for
 // the echo to stay safe once CliDispatch/ToolDispatch start redirecting Console.Out/Error.
 Prose.Hub.HubConsoleEcho.CaptureOriginal();
+
+// Owner's decision (2026-11-18, PRS-T1021), refining the 2026-08-21 visible-window requirement above: the same
+// window with the same echo, but off the taskbar; an icon in the notification area says what the Hub is doing
+// and brings the window up on a click. PROSE_HUB_TRAY=0 keeps the window as it was, =shown starts it visible.
+var hubStarted = DateTime.Now;
+using var tray = Prose.Hub.HubTray.Start("Prose Hub", Prose.Hub.HubConsoleEcho.TrayEnvVar);
 
 // QuestPDF Community license — required call before the first Document.Create. The Hub is
 // where PDF export actually executes (Prose.Cli/--export-node dispatches here via CliDispatch),
@@ -1367,6 +1378,23 @@ HubConsoleEcho.Out.WriteLine(hosting.IsPublic
     ? $" Prose Hub is running — HOSTED, login required — {string.Join(", ", hosting.AllowedHosts)}"
     : " Prose Hub is running — http://127.0.0.1:5900");
 HubConsoleEcho.Out.WriteLine(" Every CLI/MCP command is echoed below as it runs.");
+if (tray is not null)
+{
+    tray.Info = () =>
+    [
+        $"{HubHosting.LocalBaseUrl}  -  PID {Environment.ProcessId}",
+        $"Up {HubConsoleEcho.Span(DateTime.Now - hubStarted)}  -  {HubConsoleEcho.CommandCount} commands",
+        HubConsoleEcho.LastCommand is { } last ? $"Last: {last}" : "No command yet",
+    ];
+    void Open(string path) => System.Diagnostics.Process.Start(
+        new System.Diagnostics.ProcessStartInfo(HubHosting.LocalBaseUrl.TrimEnd('/') + path) { UseShellExecute = true })?.Dispose();
+    tray.Actions =
+    [
+        new Prose.Hub.HubTrayAction("Open the Writer", () => Open("/writer")),
+        new Prose.Hub.HubTrayAction("Open the observer", () => Open("/app")),
+        new Prose.Hub.HubTrayAction("Stop the Hub", app.Lifetime.StopApplication, "Stop the Prose Hub?"),
+    ];
+}
 // How long start-up took before the Hub listens (PRS-T1012). Behind IIS that must stay under web.config's
 // startupTimeLimit, or the process is killed and started again without ever serving.
 try

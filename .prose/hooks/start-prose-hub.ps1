@@ -91,7 +91,8 @@ try {
 
     if (-not (Test-HubHealthy)) {
         if (Test-Path $deployedExe) {
-            Start-Process -FilePath $deployedExe -WorkingDirectory (Split-Path $deployedExe) -WindowStyle Normal
+            # Minimized (PRS-T1021): the Hub takes its window off the taskbar once its tray icon is up.
+            Start-Process -FilePath $deployedExe -WorkingDirectory (Split-Path $deployedExe) -WindowStyle Minimized
             $startedSomething = $true
         } elseif (Test-Path $proj) {
             # Deployed copy doesn't exist and run.ps1 isn't available/failed - fall back to
@@ -100,7 +101,7 @@ try {
             $exeDir = Join-Path $repoRoot 'src\Prose.Hub\bin\Release\net10.0'
             $exe    = Join-Path $exeDir 'Hub.exe'
             if (Test-Path $exe) {
-                Start-Process -FilePath $exe -WorkingDirectory $exeDir -WindowStyle Normal
+                Start-Process -FilePath $exe -WorkingDirectory $exeDir -WindowStyle Minimized
                 $startedSomething = $true
             } else {
                 Start-Process -FilePath 'dotnet' -ArgumentList @('run', '--project', $proj, '--no-build', '--configuration', 'Release') -WorkingDirectory $repoRoot -WindowStyle Normal

@@ -32,6 +32,22 @@ public static class HubConsoleEcho
 
     private static Microsoft.Extensions.Logging.ILogger? logger;
 
+    /// <summary>The tray icon's knob (PRS-T1021): <c>0</c> = no icon, <c>shown</c> = icon with the window visible at start.</summary>
+    public const string TrayEnvVar = "PROSE_HUB_TRAY";
+
+    private static long commandCount;
+    private static volatile string? lastCommand;
+
+    /// <summary>How many commands have come in since the Hub started (the tray icon shows it).</summary>
+    public static long CommandCount => Interlocked.Read(ref commandCount);
+
+    /// <summary>The latest command and when it came in, e.g. <c>cli search (21:41:07)</c>; null before the first.</summary>
+    public static string? LastCommand => lastCommand;
+
+    /// <summary><c>3d 4h</c>, <c>2h 15m</c> or <c>7m</c>.</summary>
+    public static string Span(TimeSpan span) =>
+        span.TotalDays >= 1 ? $"{(int)span.TotalDays}d {span.Hours}h" : span.TotalHours >= 1 ? $"{(int)span.TotalHours}h {span.Minutes}m" : $"{(int)span.TotalMinutes}m";
+
     /// <summary>Call exactly once, at the very top of Program.cs, before anything else can
     /// possibly redirect Console.Out/Error.</summary>
     public static void CaptureOriginal()
@@ -47,6 +63,8 @@ public static class HubConsoleEcho
 
     public static void LogIn(string source, string label, string detail)
     {
+        Interlocked.Increment(ref commandCount);
+        lastCommand = $"{source} {Clip(label, 60)} ({DateTime.Now:HH:mm:ss})";
         var line = $">>> {source,-4} {label}{(detail.Length > 0 ? "  " + detail : "")}";
         Out.WriteLine($"[{DateTime.Now:HH:mm:ss}] {line}");
         logger?.LogInformation("{Line}", line);
