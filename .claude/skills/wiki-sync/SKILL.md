@@ -18,11 +18,23 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools\wiki\sync-wiki.ps1 -Un
   `mediawiki\LocalSettings.<slug>.php` block, and `deploy.ps1`, which puts theme/settings/logo live and checks them.
   The wiki login is the Vault bucket `%APPDATA%\MindAttic\Wiki\<slug>.json`. A new universe's wiki starts as a copy of
   GLMZ.Wiki with its own books file and login.
-- On change: the Scheduler job `Prose.GLMZ.Wiki.Sync` runs `tools\wiki\wiki-watch.ps1` every 5 minutes. The Hub
-  stamps `%LOCALAPPDATA%\MindAttic\Prose\wiki\changes\<universe>.stamp` after every save that changes what the wiki
-  shows; a person's wiki edit shows up in one API call. Prose changed -> once writing is quiet 5 minutes (at most an
-  hour) it reconciles, then syncs. The wiki changed -> it reconciles. A full sync runs at least daily. Logs:
-  `watch.log`, `sync.log`.
+- By push: the Scheduler job `Prose.GLMZ.Wiki.Sync` keeps `tools\wiki\wiki-watch.ps1 -Daemon` running (at logon,
+  restarted if it dies). The Hub stamps `%LOCALAPPDATA%\MindAttic\Prose\wiki\changes\<universe>.stamp` after every save
+  that changes what the wiki shows, which wakes the watcher within seconds; it looks at the wiki for people's edits
+  every minute (the host cannot call this PC). Prose changed -> once writing is quiet 2 minutes (at most 30) it
+  reconciles, then syncs. The wiki changed -> it reconciles. A full sync runs at least daily. Logs: `watch.log`,
+  `sync.log`. Without -Daemon the script runs one tick.
+- Story checks (`tools\wiki\wikistory.py`): `Book:<T>/Plants` (registered plants and payoffs by chapter),
+  `Book:<T>/Pacing` (chapter lengths, first appearances, plants set/paid), `GLMZ Wiki:Continuity` (the continuity
+  store's open contradictions), and `File:GLMZ graph.json`, the shared graph: every entity, book and chapter with
+  its edges (relations, relationships, appearances, plants, contradictions).
+- Spoilers: text that refers to a book (an entry's paragraphs and list items, a status field as of the entity's last
+  book, a whole Plants page) is wrapped `<span|div class="prose-spoiler" data-book="<slug>">`; `{{Spoiler|book=...}}`
+  for editors. The theme hides them until the reader ticks the book in "Books I've read" (localStorage JSON for
+  visitors, the `userjs-prose-read` option for users); `MediaWiki:Prose-books.json` is that list.
+- Re-reading for the read gate: `--read-beats ... --mark-read --read-by claude` after actually reading; contradictions
+  go in `--read-note add --kind defect` and the beat stays unread. Writing an entity's fields un-reads every beat that
+  mentions it, so batch record edits before a re-read.
 - Reconcile (`tools\wiki\wikireconcile.py`): Prose checks the wiki (every built page live and unchanged, by revision
   sha1, NFC-normalized), the wiki checks Prose (MediaWiki's Wantedpages / Lonelypages / Deadendpages; shared scenes in
   the books vs recorded relationships; one-sided relationships), and edits people make on the wiki become field
