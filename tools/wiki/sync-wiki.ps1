@@ -86,7 +86,13 @@ $out = Invoke-Prose 'ExportCli' @('--export', 'global')
 $zip = [regex]::Match($out, 'wrote:\s*(.+\.zip)').Groups[1].Value.Trim()
 if (-not $zip) { throw "export did not report its file: $out" }
 $lastZip = Join-Path $state 'last-export.txt'
-if (Test-Path $lastZip) { $old = (Get-Content $lastZip -Raw).Trim(); if ($old -and $old -ne $zip -and (Test-Path $old)) { Remove-Item $old } }
+# The previous export goes, unless something is still reading it (a reconciliation check): then it stays for next time.
+if (Test-Path $lastZip) {
+    $old = (Get-Content $lastZip -Raw).Trim()
+    if ($old -and $old -ne $zip -and (Test-Path $old)) {
+        try { Remove-Item $old -ErrorAction Stop } catch { Write-Host "  previous export still in use; left: $old" }
+    }
+}
 Set-Content $lastZip $zip
 
 Write-Step 'exporting relationships (interchange)'
