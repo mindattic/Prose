@@ -43,6 +43,8 @@ try {
     Write-Host "another wiki sync for '$Universe' is already running (lock: $(Join-Path $state 'sync.lock')); not starting a second one."
     exit 3
 }
+# The last run's log, for unattended (Scheduler) runs.
+Start-Transcript -Path (Join-Path $state 'sync.log') -Force | Out-Null
 
 function Write-Step([string]$Text) { Write-Host "[$((Get-Date).ToString('HH:mm:ss'))] $Text" }
 
@@ -108,6 +110,7 @@ $py = @('-I', '-u', (Join-Path $PSScriptRoot 'prose2wiki.py'), '--universe', $Di
 if (-not $NoPush) { $py += '--push' }
 if (-not $NoPush -and -not $NoPurge) { $py += '--purge' }
 Write-Step ($(if ($NoPush) { 'building pages (no push)' } else { 'building and pushing pages' }))
-& python @py
+& python @py 2>&1 | ForEach-Object { "$_" }   # through the pipeline so the transcript keeps python's output
 if ($LASTEXITCODE -ne 0) { throw "prose2wiki exited $LASTEXITCODE" }
 Write-Step "done. Validation report: $(Join-Path $state 'out\repair.md')"
+Stop-Transcript | Out-Null
