@@ -56,6 +56,7 @@ class Story:
         self.u, self.shelf, self.entities, self.r, self.resolver, self.e = universe, shelf, entities, renderer, resolver, escape
         self.plants = load_plants(story) if story else {}
         self.contradictions = load_contradictions(story) if story else []
+        self.story_dir = story
         # (book slug, beat id) -> chapter number: a beat can sit in more than one book
         self.where = {(b.slug, bid): n for b in shelf for n, c in enumerate(b.chapters, 1) for bid in c.beats}
 
@@ -82,7 +83,8 @@ class Story:
             if rows:
                 pages[f"{b.page}/Plants"] = self.plants_page(b, rows)
             pages[f"{b.page}/Pacing"] = self.pacing_page(b, rows)
-        pages[f"Project:Continuity"] = self.continuity_page()
+        notes = self.reading_notes(self.story_dir)
+        pages[f"Project:Continuity"] = self.continuity_page().replace("[[Category:Maintenance]]", notes + "\n[[Category:Maintenance]]")
         return pages
 
     def plants_page(self, b, rows) -> str:
@@ -142,6 +144,41 @@ class Story:
                             f"{len(new)}{': ' + names if new else ''} || {set_in.get(n, 0) or ''} || {paid_in.get(n, 0) or ''}"]
         lines += ["|}", "", "[[Category:Pacing]]"]
         return "\n".join(lines) + "\n"
+
+    def reading_notes(self, story: Path | None) -> str:
+        """Open read-notes per book (defects and questions filed while reading for the read gate), each linked to its
+        chapter: the worklist of contradictions to fix in Prose."""
+        if not story or not (story / "notes").is_dir():
+            return ""
+        note = re.compile(r"^\s*\[(\d+)\]\s+#(\d+)\s+(\w+)\s+(\w+)(\s+\(beat changed since\))?\s+(.*?)\s+\(([0-9a-f-]{36})\)\s*$")
+        e, out, total = self.e, [], collections.Counter()
+        for b in sorted((x for x in self.shelf if x.chapters), key=lambda x: x.order):
+            path = story / "notes" / f"{b.slug}.txt"
+            if not path.exists():
+                continue
+            pos_chapter, k = {}, 0
+            for n, c in enumerate(b.chapters, 1):
+                for _ in c.beats:
+                    k += 1
+                    pos_chapter[k] = n
+            rows = [m for m in (note.match(l) for l in path.read_text(encoding="utf-8-sig").splitlines()) if m]
+            if not rows:
+                continue
+            rows.sort(key=lambda m: (m.group(3) != "defect", int(m.group(1))))
+            out.append(f"=== [[{b.page}|{e(b.title)}]] ===")
+            for m in rows:
+                total[m.group(3)] += 1
+                ch = pos_chapter.get(int(m.group(1)))
+                where = self.chapter_link(b, ch) if ch else f"position {m.group(1)}"
+                out.append(f"* '''{e(m.group(3))}''' &middot; beat #{m.group(2)} in {where}: "
+                           f'<span class="prose-spoiler" data-book="{b.slug}" data-title="{e(b.title)}">{e(m.group(6))}</span>')
+            out.append("")
+        if not out:
+            return ""
+        head = [f"== Found by reading ({total['defect']} defects, {total['question']} questions) ==",
+                "Filed by the readers who re-read every book for Prose's read gate. A '''defect''' beat stays unread (the book "
+                "cannot be exported) until its text or a record is fixed; a '''question''' was read but needs a decision.", ""]
+        return "\n".join(head + out)
 
     def continuity_page(self) -> str:
         e = self.e
