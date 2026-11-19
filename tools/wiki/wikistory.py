@@ -56,8 +56,8 @@ class Story:
         self.u, self.shelf, self.entities, self.r, self.resolver, self.e = universe, shelf, entities, renderer, resolver, escape
         self.plants = load_plants(story) if story else {}
         self.contradictions = load_contradictions(story) if story else []
-        # beat id -> (book, chapter number)
-        self.where = {bid: (b, n) for b in shelf for n, c in enumerate(b.chapters, 1) for bid in c.beats}
+        # (book slug, beat id) -> chapter number: a beat can sit in more than one book
+        self.where = {(b.slug, bid): n for b in shelf for n, c in enumerate(b.chapters, 1) for bid in c.beats}
 
     # ---- helpers -------------------------------------------------------------------------------------------------
     def chapter_link(self, b, n: int | None) -> str:
@@ -65,9 +65,8 @@ class Story:
             return "&mdash;"
         return f"[[{b.chapter_page(n)}|{n}. {self.e(b.chapters[n - 1].heading)}]]"
 
-    def chapter_of(self, beat_id) -> int | None:
-        hit = self.where.get(norm(beat_id))
-        return hit[1] if hit else None
+    def chapter_of(self, b, beat_id) -> int | None:
+        return self.where.get((b.slug, norm(beat_id)))
 
     def entity_link(self, name: str) -> str:
         ent = self.resolver.by_name(name)
@@ -88,7 +87,7 @@ class Story:
 
     def plants_page(self, b, rows) -> str:
         e = self.e
-        rows = sorted(rows, key=lambda r: (self.chapter_of(r.get("PlantBeatId")) or 999, r.get("SortKey") or 0))
+        rows = sorted(rows, key=lambda r: (self.chapter_of(b, r.get("PlantBeatId")) or 999, r.get("SortKey") or 0))
         lines = [f"{{{{DISPLAYTITLE:Plants and payoffs in <i>{e(b.title)}</i>}}}}", "__NOTOC__",
                  f"'''Spoilers.''' Every plant ''[[{b.page}|{e(b.title)}]]'' sets up and where it pays off, as Prose has "
                  f"them registered: {len(rows)} in all. A plant is planted so a re-reader finds it waiting; the payoff "
@@ -96,7 +95,7 @@ class Story:
                  '{| class="wikitable prose-plants"', "! Planted !! What is seeded !! Paid off !! What the reader gets !! Kind"]
         unplaced = 0
         for r in rows:
-            pn, qn = self.chapter_of(r.get("PlantBeatId")), self.chapter_of(r.get("PayoffBeatId"))
+            pn, qn = self.chapter_of(b, r.get("PlantBeatId")), self.chapter_of(b, r.get("PayoffBeatId"))
             unplaced += not pn or not qn
             lines += ["|-", f"| {self.chapter_link(b, pn)} || {e(r.get('PlantDescription') or '')} || "
                             f"{self.chapter_link(b, qn)} || {e(r.get('PayoffDescription') or '')} || {e(r.get('Category') or '')}"]
@@ -111,9 +110,9 @@ class Story:
         e = self.e
         set_in, paid_in = collections.Counter(), collections.Counter()
         for r in plants:
-            if (n := self.chapter_of(r.get("PlantBeatId"))):
+            if (n := self.chapter_of(b, r.get("PlantBeatId"))):
                 set_in[n] += 1
-            if (n := self.chapter_of(r.get("PayoffBeatId"))):
+            if (n := self.chapter_of(b, r.get("PayoffBeatId"))):
                 paid_in[n] += 1
         seen: set[str] = set()
         stats = []
@@ -178,7 +177,7 @@ class Story:
                                              if repo != "none" and norm(g) in self.entities)
                 edges += [{"from": g, "to": cid, "kind": "named_in", "weight": k} for g, k in counts.items()]
             for r in self.plants.get(b.slug) or []:
-                pn, qn = self.chapter_of(r.get("PlantBeatId")), self.chapter_of(r.get("PayoffBeatId"))
+                pn, qn = self.chapter_of(b, r.get("PlantBeatId")), self.chapter_of(b, r.get("PayoffBeatId"))
                 if pn and qn:
                     edges.append({"from": f"chapter:{b.slug}/{pn}", "to": f"chapter:{b.slug}/{qn}", "kind": "plant_payoff",
                                   "category": r.get("Category"), "plant": r.get("PlantDescription"),

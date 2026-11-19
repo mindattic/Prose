@@ -212,7 +212,11 @@ if (Test-Path $storyDir) { $py += @('--story-dir', $storyDir) }
 if (-not $NoPush) { $py += '--push' }
 if (-not $NoPush -and -not $NoPurge) { $py += '--purge' }
 Write-Step ($(if ($NoPush) { 'building pages (no push)' } else { 'building and pushing pages' }))
-& python @py 2>&1 | ForEach-Object { "$_" }   # through the pipeline so the transcript keeps python's output
+# Through the pipeline so the transcript keeps python's output. 'Continue' here: under 'Stop', python's first stderr
+# line (a traceback, a warning) became a terminating error that hid the rest of it.
+$ErrorActionPreference = 'Continue'
+& python @py 2>&1 | ForEach-Object { "$_" }
+$ErrorActionPreference = 'Stop'
 if ($LASTEXITCODE -ne 0) { throw "prose2wiki exited $LASTEXITCODE" }
 Write-Step "done. Validation report: $(Join-Path $state 'out\repair.md')"
 Stop-Transcript | Out-Null
