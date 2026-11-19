@@ -1,9 +1,9 @@
 /* MindAttic Cyberspace theme for MediaWiki (Vector 2022): the mindattic.com palette, Outfit and Attic fonts from
-   MindAttic.Components@V4. Common.js mounts the Cyberspace backdrop; this file only paints the skin. */
+   MindAttic.Components@4234f880055d3365651fcda2ca15ef6307c0d68a. Common.js mounts the Cyberspace backdrop; this file only paints the skin. */
 @font-face { font-family: 'Outfit'; font-style: normal; font-weight: 100 900; font-display: swap;
-  src: url('https://cdn.jsdelivr.net/gh/mindattic/MindAttic.Components@V4/web/components/OutfitFont/fonts/outfit-latin.woff2') format('woff2'); }
+  src: url('https://cdn.jsdelivr.net/gh/mindattic/MindAttic.Components@4234f880055d3365651fcda2ca15ef6307c0d68a/web/components/OutfitFont/fonts/outfit-latin.woff2') format('woff2'); }
 @font-face { font-family: 'Attic'; font-style: normal; font-weight: 400; font-display: swap;
-  src: url('https://cdn.jsdelivr.net/gh/mindattic/MindAttic.Components@V4/web/components/AtticFont/fonts/attic.woff2') format('woff2'); }
+  src: url('https://cdn.jsdelivr.net/gh/mindattic/MindAttic.Components@4234f880055d3365651fcda2ca15ef6307c0d68a/web/components/AtticFont/fonts/attic.woff2') format('woff2'); }
 
 :root, html, html.skin-theme-clientpref-day, html.skin-theme-clientpref-night, html.skin-theme-clientpref-os {
   color-scheme: dark;
@@ -48,7 +48,7 @@ body, .mw-body, .vector-menu, .cdx-text-input__input, .vector-search-box-input {
 .mw-body h2, .mw-body .mw-heading2 { font-family: 'Outfit', system-ui, sans-serif; color: var(--ma-red-hi); border-bottom-color: var(--ma-border); }
 .mw-body h3, .mw-body .mw-heading3 { color: var(--ma-text); }
 .mw-logo-wordmark, .mw-logo-container { font-family: 'Attic', serif; color: var(--ma-neon); letter-spacing: 0.04em; }
-.mw-logo-icon { content: url('https://cdn.jsdelivr.net/gh/mindattic/MindAttic.Components@V4/web/assets/mindattic.com/logos/m-monogram.png'); }
+.mw-logo-icon { content: url('https://cdn.jsdelivr.net/gh/mindattic/MindAttic.Components@4234f880055d3365651fcda2ca15ef6307c0d68a/web/assets/mindattic.com/logos/m-monogram.png'); }
 a { color: var(--color-progressive); }
 a:visited { color: var(--color-visited); }
 a.new, a.new:visited { color: var(--color-link-red); }

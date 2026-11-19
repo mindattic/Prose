@@ -1,9 +1,9 @@
-/* MindAttic Cyberspace backdrop for MediaWiki, mounted the way mindattic.com mounts it: MindAttic.Components@V4's
+/* MindAttic Cyberspace backdrop for MediaWiki, mounted the way mindattic.com mounts it: MindAttic.Components@4234f880055d3365651fcda2ca15ef6307c0d68a's
    circuit-board parallax, scan-lines and effects behind the page, a tap outside the content sparking one effect where
    you tapped. The article (<main>), the header, the pinned side columns and the footer are keep-out zones, so no
    effect spawns over what you read or click. Off for reduced motion and while editing. */
 ( function () {
-	var base = 'https://cdn.jsdelivr.net/gh/mindattic/MindAttic.Components@V4/web/components/';
+	var base = 'https://cdn.jsdelivr.net/gh/mindattic/MindAttic.Components@4234f880055d3365651fcda2ca15ef6307c0d68a/web/components/';
 	var reduced = window.matchMedia && window.matchMedia( '(prefers-reduced-motion: reduce)' ).matches;
 	var editing = /^(edit|submit)$/.test( mw.config.get( 'wgAction' ) );
 	if ( reduced || editing || mw.config.get( 'skin' ) !== 'vector-2022' ) {
