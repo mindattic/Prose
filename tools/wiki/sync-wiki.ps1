@@ -54,7 +54,8 @@ function Test-Hub { try { (Invoke-WebRequest "$hub/api/health" -UseBasicParsing 
 if (-not (Test-Hub)) {
     Write-Step 'starting the Prose Hub'
     Start-Process -FilePath 'C:\Apps\MindAttic\Prose\Hub.exe' -WorkingDirectory 'C:\Apps\MindAttic\Prose' -WindowStyle Minimized
-    $deadline = (Get-Date).AddMinutes(2)
+    # A cold start takes 1-2 minutes, longer while Azure resumes a paused serverless database.
+    $deadline = (Get-Date).AddMinutes(5)
     while (-not (Test-Hub)) { if ((Get-Date) -gt $deadline) { throw 'the Prose Hub did not come up' }; Start-Sleep 3 }
 }
 $key = (Get-Content (Join-Path $env:LOCALAPPDATA 'MindAttic\Prose\Settings.json') -Raw | ConvertFrom-Json).HubApiKey
