@@ -198,8 +198,10 @@ public class ProseDbContext : DbContext
             CarryReceiptsAcrossTagOnlyEdits(tagOnly, LoadReceiptsFor(tagOnly));
             RunWriteGateSyncChecks();
             var events = ClassifyPendingWriteEvents();
+            var wiki = Prose.Core.Services.WikiChangeSignal.Pending(ChangeTracker);
             var result = base.SaveChanges(acceptAllChangesOnSuccess);
             DispatchWriteEvents(events);
+            Prose.Core.Services.WikiChangeSignal.Note(wiki);
             return result;
         }
         finally { replacedBridgeValues.Clear(); }
@@ -214,8 +216,10 @@ public class ProseDbContext : DbContext
             CarryReceiptsAcrossTagOnlyEdits(tagOnly, await LoadReceiptsForAsync(tagOnly, cancellationToken).ConfigureAwait(false));
             await RunWriteGateSyncChecksAsync(cancellationToken).ConfigureAwait(false);
             var events = ClassifyPendingWriteEvents();
+            var wiki = Prose.Core.Services.WikiChangeSignal.Pending(ChangeTracker);
             var result = await base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken).ConfigureAwait(false);
             DispatchWriteEvents(events);
+            Prose.Core.Services.WikiChangeSignal.Note(wiki);
             return result;
         }
         finally { replacedBridgeValues.Clear(); }
