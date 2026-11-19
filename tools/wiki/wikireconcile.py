@@ -271,6 +271,19 @@ def check(args):
         if t in entity_titles:
             rep.add("Dead-end entries: link to nothing (a thin record)", title=t)
 
+    # ---- the wiki as the media store: pictures people uploaded for entries (PRS-T1053) ------------------------------
+    cont = {}
+    while True:
+        r = wiki.get(action="query", list="allimages", aiprop="user|comment|url", ailimit="max", **cont)
+        for img in r.get("query", {}).get("allimages", []):
+            stem, _, ext = img["name"].replace("_", " ").rpartition(".")
+            if ext.lower() in ("png", "jpg", "webp") and stem in entity_titles and human(img):
+                rep.add("Pictures people added to entries (the wiki stores them; Prose can link them)", title=stem,
+                        file=img["name"], user=img.get("user"), url=img.get("url"))
+        if "continue" not in r:
+            break
+        cont = r["continue"]
+
     # ---- the books check the relationships ------------------------------------------------------------------------
     graph(args, st, rep, decisions)
 
