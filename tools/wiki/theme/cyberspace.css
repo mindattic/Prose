@@ -44,6 +44,8 @@ pre, code, kbd, samp, tt, .mw-code { font-family: monospace, monospace; }
 .mw-page-container-inner, .vector-header-container .mw-header { position: relative; z-index: 1; }
 .mw-body, .vector-header-container .mw-header {
   background: rgba(13, 17, 23, 0.9); }
+/* One look: Vector's Automatic/Light/Dark colour choice is off in LocalSettings and hidden here too (PRS-T1051). */
+#skin-client-prefs-skin-theme, .skin-client-prefs-skin-theme { display: none !important; }
 /* The side columns and the footer let the Cyberspace backdrop through (PRS-T1050); only the article stays solid. */
 .vector-column-start, .vector-column-start *, .vector-column-end, .vector-column-end *,
 .mw-footer-container, .mw-footer-container * { background-color: transparent !important; background-image: none !important; }

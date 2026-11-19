@@ -31,3 +31,6 @@ $wgContentNamespaces[] = NS_BOOK;
 $wgNamespacesToBeSearchedDefault[NS_BOOK] = true;
 # Chapter and book pages show their real titles ("Chapter 1 - The Cot", the book title in italics).
 $wgRestrictDisplayTitle = false;
+# One look: the Cyberspace theme. Vector's own Automatic/Light/Dark "Color (beta)" choice is off (PRS-T1051).
+$wgVectorNightMode = [ 'logged_in' => false, 'logged_out' => false, 'beta' => false ];
+$wgDefaultUserOptions['vector-theme'] = 'day';
