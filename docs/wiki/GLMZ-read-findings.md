@@ -395,3 +395,24 @@ ordinary words tagged as entities ("Park" in Hyde Park as Dr. Nadia Park, "the s
 | 23524 | continuity | Fourteen hundred and fourteen feet (431m) to the turn. Not four-twelve like the Colonnade | Puts the Colonnade's turn at 412 m, but the book everywhere else gives it as 1,300ft (400m) (#23379, #23464, #23505). |
 | 23541 | continuity | Here, at 790ft (240m), the stone under his hand was warm. At three hundred it was warmer. At three hundred and ninety, exactly where Sasha had said, it was hot | In #23524 Sasha says the rock first goes warm at 390 m and is hot at 420 m; here it is already warm at 240 m and 'hot' at 390 'exactly where Sasha had said', which doesn't match what she said. |
 | 23439 | text | A table in a Remnant block | Beat title says the table is in a Remnant block (Cleveland), but the beat is set in a horse stall of the dairy barn in the dunes past Gary; the title looks stale. |
+
+## Resolution (PRS-T1034)
+
+Owner decisions (2026-11-18): unit pairs such as "33ft (10m)" are house style and stay; entity-tag mis-links are fixed;
+continuity and entity-record findings are left for the author.
+
+Done through the Hub, every beat re-read after its change: 31 tags moved to the right entity, 31 occurrences marked "not an entity" (Park in Hyde/McKinley/Tinley Park, Grit, Gill, Green onion, Heat, Cut and the like), 4 broken unit conversions rewritten in the scene's own style. That includes six more mis-links of the same kind in Vultures at the Door that the readers had not listed, and every 'Read' ability tag in The Cabal (moved from the archetype to The Read). Tag-only edits kept their read receipts; the text fixes were re-read and receipted; every touched book still reads 0 unread.
+
+Left as they are (9):
+
+| Book | Beat | Why |
+|---|---|---|
+| bushido-coda | 20834 | #20834: who says 'I'll deal with that separately' (Kyle or Breckenridge) is a story/attribution judgment |
+| killing-things-from-other-worlds-01a1e80d | 24007 | #24007 already carries The South Side (Chicago), the right entity; the inconsistency was resolved by retagging #23996 (finding 16) |
+| magenta-gunmetal | 6968 | #6968: 'The Glooms' is the right entity; whether the usage fits the record's definition is an entity-record question for the author |
+| the-cabal | 23744 | #23744: 'carry to her' could be Choi or Selvamani (the sixteen's owner); story judgment |
+| vultures-at-the-door-019ec467 | 21543 | #21543: guid ca1aface-abba-0bad-f00d-1234567890ab is the live Canaryville place record (looks hand-made but is real); tag is correct |
+| vultures-at-the-door-019ec467 | 21647 | #21647: 'them' (Tomas and Levin, a Carrion crew) on The Vultures follows the book's own convention for the crew; one pronoun tag cannot name two characters, so changing it is a judgment |
+| vultures-at-the-door-019ec467 | 21767 | #21767: 'We'/'us' (Tomas and Levin as the Carrion crew) on The Vultures; same reason as #21647 |
+| vultures-at-the-door-019ec467 | 21797 | #21797 already carries The South Side (Chicago), the right entity. Not touched, for follow-up: #21608, #21686, #21837 in this book still tag 'the south side' as Milwaukee's The South Side |
+| the-long-cut | 10362 | the original depth is not recoverable from the text (contradicts the 800m signal range); choosing a number is a story judgment |
