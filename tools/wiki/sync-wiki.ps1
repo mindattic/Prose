@@ -6,6 +6,9 @@
     1. Makes sure the Prose Hub is up (starts C:\Apps\MindAttic\Prose\Hub.exe if not).
     2. Through the Hub: --export global (every live entity), --universe-export (edges), and --read-beats for each
        canon book in tools\wiki\<universe>.books.json (which entities each book names).
+    2b. Each canon book whose text changed: --export-node --preview into the state folder (.md .pdf .epub .docx .txt
+       and the blurb), plus its cover from the publish folder. prose2wiki makes a page per book and per chapter and
+       uploads the cover and the files.
     3. With -Retag, --tag-entity-text as a dry run, so entity text links to the entities it names. It reads every
        entity, which is slow on Azure and spends serverless/free-offer capacity, so by default the last result is reused.
     4. tools\wiki\prose2wiki.py builds the pages, pushes only what changed, deletes pages of entities that no longer
@@ -95,6 +98,39 @@ foreach ($slug in $slugs) {
     [IO.File]::WriteAllText((Join-Path $state "beats\$slug.json"), $json.Substring($start), [Text.UTF8Encoding]::new($false))
 }
 
+# The books themselves: every format, from the database as it is now, into the state folder (a --preview export,
+# which leaves the publish folder alone). Only books whose text changed since their last export are exported again.
+$booksDir = Join-Path $state 'books'
+$publishDir = $null
+try {
+    $settings = Get-Content (Join-Path $env:LOCALAPPDATA 'MindAttic\Prose\Settings.json') -Raw | ConvertFrom-Json
+    $publishDir = $settings.UniverseExportDirectories.$Universe
+} catch { }
+$config = Get-Content $books -Raw | ConvertFrom-Json
+foreach ($slug in $slugs) {
+    $folder = Join-Path $booksDir $slug
+    $source = (Get-FileHash (Join-Path $state "beats\$slug.json") -Algorithm SHA1).Hash
+    $marker = Join-Path $folder 'source.sha1'
+    $current = (Test-Path $marker) -and ((Get-Content $marker -Raw).Trim() -eq $source) -and
+               (Get-ChildItem $folder -Recurse -Filter '*.pdf' -ErrorAction SilentlyContinue)
+    if (-not $current) {
+        Write-Step "exporting the book $slug"
+        if (Test-Path $folder) { Remove-Item $folder -Recurse -Force }
+        New-Item -ItemType Directory -Force -Path $folder | Out-Null
+        $out = Invoke-Prose 'ExportNodeCli' @('--export-node', '--slug', $slug, '--preview', $folder)
+        if ($out -notmatch 'all formats') { Write-Host "  $slug exported only partly: $($out.Trim())" }
+        Set-Content $marker $source
+    }
+    # Its cover: the publish folder's cover.jpg (the one KDP gets), when the book has one.
+    $code = $config.$slug.code
+    if ($publishDir -and $code) {
+        foreach ($name in 'cover.jpg', 'cover.png') {
+            $cover = Join-Path (Join-Path $publishDir $code) $name
+            if (Test-Path $cover) { Copy-Item $cover (Join-Path $folder $name) -Force; break }
+        }
+    }
+}
+
 $tagged = Join-Path $state "$Universe.tagged.json"
 if ($Retag -or -not (Test-Path $tagged)) {
     Write-Step 'tagging entity text (dry run; slow on Azure)'
@@ -107,7 +143,9 @@ if ($Retag -or -not (Test-Path $tagged)) {
 $py = @('-I', '-u', (Join-Path $PSScriptRoot 'prose2wiki.py'), '--universe', $DisplayName, '--export-zip', $zip,
         '--interchange', $interchange, '--beats-dir', (Join-Path $state 'beats'), '--book-titles', $books,
         '--tagged', $tagged, '--out', (Join-Path $state 'out'), '--phase', 'all', '--theme', $Theme,
-        '--cred', $cred, '--workers', $Workers)
+        '--cred', $cred, '--workers', $Workers, '--books-dir', $booksDir)
+$logo = Join-Path $PSScriptRoot "$Universe.logo.png"
+if (Test-Path $logo) { $py += @('--logo', $logo) }
 if (-not $NoPush) { $py += '--push' }
 if (-not $NoPush -and -not $NoPurge) { $py += '--purge' }
 Write-Step ($(if ($NoPush) { 'building pages (no push)' } else { 'building and pushing pages' }))

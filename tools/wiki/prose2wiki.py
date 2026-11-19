@@ -22,6 +22,9 @@ import zipfile
 from dataclasses import dataclass, field
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).parent))
+import wikibooks  # noqa: E402
+
 ZERO_GUID = "00000000000000000000000000000000"
 GUID_RE = re.compile(r"\b[0-9a-fA-F]{8}-?[0-9a-fA-F]{4}-?[0-9a-fA-F]{4}-?[0-9a-fA-F]{4}-?[0-9a-fA-F]{12}\b")
 TAG_RE = re.compile(r'<entity repo="([^"]*)" guid="([0-9a-fA-F-]{32,36})">(.*?)</entity>', re.S)
@@ -360,8 +363,8 @@ class Renderer:
             lines.append("== Appears in ==")
             for book in books:
                 if book in ent.books:
-                    lines.append(f"* [[:Category:Appears in {book_titles.get(book, book.upper())}|"
-                                 f"{book_titles.get(book, book.upper())}]] ({ent.books[book]} mentions)")
+                    title = book_titles.get(book, book.upper())
+                    lines.append(f"* [[Book:{title}|<i>{escape(title)}</i>]] ({ent.books[book]} mentions)")
             lines.append("")
         tags = [t for t in rec.get("tags") or [] if isinstance(t, str)]
         if tags:
@@ -413,14 +416,44 @@ def site_pages(universe: str, entities: dict[str, Entity], books: list[str], boo
     pages["Category:Background"] = f"Entities in the {universe} repositories that no canon book names yet.\n"
     for book in books:
         title = book_titles.get(book, book.upper())
-        pages[f"Category:Appears in {title}"] = f"Entities named in the prose of ''{title}''.\n"
-    rows = "\n".join(f"* [[:Category:{repo_label(r)}|{repo_label(r)}]] &mdash; {n} entries ({canon.get(r, 0)} in the books)"
-                     for r, n in sorted(repos.items(), key=lambda x: repo_label(x[0])))
-    book_rows = "\n".join(f"* [[:Category:Appears in {book_titles.get(b, b.upper())}|{book_titles.get(b, b.upper())}]]" for b in books)
-    pages["Main Page"] = (f"__NOTOC__\nWelcome to the '''{universe} Wiki''', generated from the Prose canon.\n\n"
-                          f"== Repositories ==\n{rows}\n\n== Books ==\n{book_rows}\n\n"
-                          f"See [[:Category:Canon]] for everything the books name, and [[:Category:Background]] for the rest.\n")
+        pages[f"Category:Appears in {title}"] = f"Entities named in the prose of [[Book:{title}|<i>{escape(title)}</i>]].\n"
     return pages
+
+
+def main_page(universe: str, entities: dict[str, Entity], shelf: list, bookr, intro: str, logo: str | None,
+              relations: int) -> str:
+    """The front door: the logo, the series introduction, every book in story order, every repository."""
+    repos = collections.Counter(e.repo for e in entities.values())
+    canon = collections.Counter(e.repo for e in entities.values() if e.books)
+    chapters = sum(len(b.chapters) for b in shelf)
+    stat = lambda n, label: f'<div class="prose-stat"><b>{n:,}</b><span>{label}</span></div>'
+    lines = ["__NOTOC__ __NOEDITSECTION__", "{{DISPLAYTITLE:<span></span>}}", '<div class="prose-hero">']
+    if logo:
+        lines.append(f'<div class="prose-hero-logo">[[File:{logo}|300px|link=|alt={escape(universe)}]]</div>')
+    lines += ['<div class="prose-hero-text">', intro.strip(), "</div>", '<div class="prose-stats">',
+              stat(len(shelf), "books"), stat(chapters, "chapters"), stat(len(entities), "entries"),
+              stat(relations, "relationships"), stat(len(repos), "repositories"), "</div>"]
+    if shelf and shelf[0].chapters:
+        lines.append(f'<div class="prose-read">[[{shelf[0].chapter_page(1)}|Start at the beginning: '
+                     f'<i>{escape(shelf[0].title)}</i>]]</div>')
+    lines += ["</div>", "", "== The books ==",
+              f"Every {escape(universe)} book, free to read here, in story order. Open one for its blurb, its chapters "
+              "and the files to download.", '<div class="prose-shelf">']
+    for i, b in enumerate(shelf, 1):
+        lines.append(f'<div class="prose-shelf-item">{bookr.cover(b, 150)}<div class="prose-shelf-n">{i}</div>'
+                     f'<div class="prose-shelf-title">[[{b.page}|{escape(b.title)}]]</div></div>')
+    lines += ["</div>", "", "== The repositories ==",
+              f"Everything Prose knows about the {escape(universe)}: every person, place, faction and thing the books "
+              "draw on, each with its relationships. Bold numbers count the entries the books name.",
+              '<div class="prose-repos">']
+    for r, n in sorted(repos.items(), key=lambda x: (-x[1], repo_label(x[0]))):
+        lines.append(f'<div class="prose-repo">[[:Category:{repo_label(r)}|{repo_label(r)}]]'
+                     f'<span><b>{canon.get(r, 0):,}</b> in the books &middot; {n:,} in all</span></div>')
+    lines += ["</div>", "", "== Wander ==",
+              '<div class="prose-wander">[[:Category:Canon|Everything the books name]] '
+              "[[:Category:Background|The deep background]] [[Special:Random|A random entry]] "
+              "[[Special:AllPages|Every page]]</div>"]
+    return "\n".join(lines) + "\n"
 
 
 def build(args) -> dict[str, str]:
@@ -431,7 +464,10 @@ def build(args) -> dict[str, str]:
     if args.tagged:
         overlay_tagged(Path(args.tagged), entities, repair)
     books = load_presence(Path(args.beats_dir) if args.beats_dir else None, entities, repair)
-    book_titles = json.loads(Path(args.book_titles).read_text(encoding="utf-8")) if args.book_titles else {}
+    config = wikibooks.book_config(Path(args.book_titles)) if args.book_titles else {}
+    book_titles = {slug: c["title"] for slug, c in config.items()}
+    order = {slug: float(c.get("order") or 99) for slug, c in config.items()}
+    books.sort(key=lambda s: (order.get(s, 99), book_titles.get(s, s)))
     assign_titles(entities, repair)
     resolver = Resolver(entities)
     renderer = Renderer(entities, resolver, repair, args.universe)
@@ -452,6 +488,35 @@ def build(args) -> dict[str, str]:
             if alias_title and resolver.by_name(alias) is ent and alias_title.lower() != ent.title.lower():
                 pages.setdefault(alias_title[0].upper() + alias_title[1:], f"#REDIRECT [[{ent.title}]]\n")
     pages.update(site_pages(args.universe, entities, books, book_titles))
+    # The books themselves: a page per book and per chapter, with their covers and downloads uploaded beside them.
+    shelf = wikibooks.load_books(Path(args.book_titles), Path(args.books_dir) if args.books_dir else None) \
+        if args.book_titles else []
+    files = wikibooks.uploads(args.universe, shelf)
+    sizes = collections.defaultdict(dict)
+    for b in shelf:
+        for ext, _ in wikibooks.DOWNLOADS:
+            name = wikibooks.file_name(args.universe, b, ext)
+            sizes[b.slug].update({ext: len(d) for n, d, _ in files if n == name})
+    bookr = wikibooks.BookRenderer(renderer, escape, args.universe, entities)
+    pages.update(bookr.pages(shelf, sizes))
+    for b in shelf:
+        if b.title not in pages:
+            pages[b.title] = f"#REDIRECT [[{b.page}]]\n"
+        if not b.chapters:
+            repair.add("book with no exported text (not exported yet, or unread beats)", book=b.slug)
+    logo = None
+    if args.logo:
+        logo = f"{args.universe} logo{Path(args.logo).suffix.lower()}"
+        files.append((logo, Path(args.logo).read_bytes(), f"The {args.universe} logo."))
+    intro_path = Path(__file__).parent / f"{args.universe.lower()}.intro.wiki"
+    intro = intro_path.read_text(encoding="utf-8") if intro_path.exists() else \
+        f"Welcome to the '''{args.universe} Wiki''', generated from the Prose canon."
+    relations = sum(1 for e in entities.values() for rel in e.record.get("_relations") or []
+                    if slug_key(rel.get("to") or "") in renderer.by_slug) \
+        + sum(len(e.record["relationships"]) for e in entities.values() if isinstance(e.record.get("relationships"), list))
+    pages["Main Page"] = main_page(args.universe, entities, shelf, bookr, intro, logo, relations)
+    (out / "files.json").write_text(json.dumps({n: wikibooks.sha1(d) for n, d, _ in files}, indent=0), encoding="utf-8")
+    build.files = files
     # An entity renamed since the last build keeps its old page as a redirect, so links and bookmarks still land.
     previous = out / "pages.json"
     stale: list[str] = []
@@ -527,6 +592,41 @@ class Wiki:
                     found[p["title"]] = p["revisions"][0]["slots"]["main"]["content"]
         return found
 
+    def sync_files(self, files: list[tuple[str, bytes, str]]):
+        """Uploads each (name, content, description) whose content the wiki doesn't already hold."""
+        live = {}
+        names = [n for n, _, _ in files]
+        for i in range(0, len(names), 50):
+            r = self.get(action="query", prop="imageinfo", iiprop="sha1", titles="|".join(f"File:{n}" for n in names[i:i + 50]))
+            for p in r.get("query", {}).get("pages", []):
+                if p.get("imageinfo"):
+                    live[p["title"][5:]] = p["imageinfo"][0]["sha1"]
+            for n in r.get("query", {}).get("normalized", []):  # "File:x" -> "File:X"
+                if n["to"][5:] in live:
+                    live[n["from"][5:]] = live[n["to"][5:]]
+        todo = [(n, d, desc) for n, d, desc in files if live.get(n) != wikibooks.sha1(d)]
+        print(f"{len(todo)} of {len(files)} files changed since the last upload", flush=True)
+        failed = 0
+        for name, data, desc in todo:
+            for attempt in range(4):
+                try:
+                    r = self.s.post(self.api, data={"action": "upload", "filename": name, "comment": "prose2wiki",
+                                                    "text": desc, "ignorewarnings": "1", "token": self.csrf,
+                                                    "format": "json", "formatversion": "2"},
+                                    files={"file": (name, data)}, timeout=600).json()
+                    break
+                except Exception as e:
+                    print(f"  retry {name}: {e}", flush=True)
+                    time.sleep(2 ** attempt)
+            else:
+                r = {"error": "network"}
+            ok = r.get("upload", {}).get("result") == "Success"
+            failed += not ok
+            print(f"  {'uploaded' if ok else 'FAILED'} {name} ({wikibooks.size_label(len(data))})"
+                  + ("" if ok else f": {r.get('error', r)}"), flush=True)
+        if failed:
+            print(f"  {failed} upload(s) failed", flush=True)
+
     def delete(self, titles: list[str], reason: str):
         for title in titles:
             r = self.post(action="delete", title=title, reason=reason, token=self.csrf)
@@ -586,7 +686,9 @@ def main():
     p.add_argument("--export-zip", required=True)
     p.add_argument("--interchange")
     p.add_argument("--beats-dir")
-    p.add_argument("--book-titles", help="JSON {slug: title}")
+    p.add_argument("--book-titles", help="JSON {slug: {title, code, order}} (or {slug: title}): the canon books")
+    p.add_argument("--books-dir", help="per-book prose --export-node --preview output (and cover.jpg), one folder per slug")
+    p.add_argument("--logo", help="the universe's logo image, shown on the main page")
     p.add_argument("--theme", help="skin pages from tools/wiki/theme/<name>.css/.js, e.g. cyberspace")
     p.add_argument("--tagged", help="prose --tag-entity-text --out file: entity text carrying <entity> tags")
     p.add_argument("--out", required=True)
@@ -604,6 +706,8 @@ def main():
     pages = build(args)
     if args.push or args.purge:
         wiki = Wiki(Path(args.cred))
+    if args.push and getattr(build, "files", None):
+        wiki.sync_files(build.files)  # before the pages, so their File: and Media: links resolve
     if args.push:
         if args.limit:
             keep = [t for t in pages if not t.startswith(("Template:", "MediaWiki:", "Category:", "Main Page"))][:args.limit]
