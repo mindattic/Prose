@@ -580,6 +580,9 @@ def build(args) -> dict[str, str]:
     bookr = wikibooks.BookRenderer(renderer, escape, args.universe, entities)
     pages.update(bookr.pages(shelf, sizes))
     pages.update(story.pages())
+    timeline = story.timeline(Path(args.story_dir) if getattr(args, "story_dir", None) else None)  # PRS-T1069
+    pages["Timeline"] = story.timeline_page(timeline)
+    pages["MediaWiki:Prose-timeline.json"] = json.dumps(timeline, ensure_ascii=False)
     links = []
     for ent in entities.values():
         for rel in ent.record.get("_relations") or []:

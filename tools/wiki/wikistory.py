@@ -161,6 +161,97 @@ class Story:
         lines.append("[[Category:Maintenance]]")
         return "\n".join(lines) + "\n"
 
+    # ---- the timeline (PRS-T1069) --------------------------------------------------------------------------------
+    def timeline(self, story: Path | None) -> dict:
+        """Events in in-world order: every chapter of every book (dated from Prose's Beat.InWorldDate when the book is
+        stamped; otherwise placed by story order between its dated neighbours and marked approximate), and the
+        records' own dated backstory ("2162 - Born in ..."). The Timeline page's script draws it."""
+        import datetime as dt
+        inworld = {}
+        if story and (story / "inworld").is_dir():
+            for f in (story / "inworld").glob("*.json"):
+                try:
+                    inworld[f.stem] = {norm(r["beatId"]): r.get("inWorldDate") for r in json.loads(f.read_text(encoding="utf-8-sig"))}
+                except (ValueError, KeyError):
+                    pass
+        def parse(s):
+            try:
+                return dt.datetime.fromisoformat(str(s).replace("Z", "")) if s else None
+            except ValueError:
+                return None
+        books = sorted([b for b in self.shelf if b.chapters], key=lambda b: b.order)
+        dated: dict[str, list] = {}
+        for b in books:
+            dates = inworld.get(b.slug) or {}
+            per = []
+            for c in b.chapters:
+                ds = [d for d in (parse(dates.get(x)) for x in c.beats) if d]
+                per.append((min(ds), max(ds)) if ds else None)
+            if any(per):
+                # chapters with no dated beat take their neighbours' dates
+                known = [i for i, p in enumerate(per) if p]
+                for i, p in enumerate(per):
+                    if not p:
+                        j = min(known, key=lambda k: abs(k - i))
+                        per[i] = (per[j][1], per[j][1]) if j < i else (per[j][0], per[j][0])
+                dated[b.slug] = per
+        # Undated books: between the dated books around them in story order (or a year apart when none are dated).
+        spans = {s: (p[0][0], p[-1][1]) for s, p in dated.items()}
+        base = dt.datetime(2217, 1, 1)
+        for i, b in enumerate(books):
+            if b.slug in dated:
+                continue
+            year = getattr(b, "year", None)
+            if year:  # the book's in-world year (books file); books of one year keep their story order inside it
+                same = [x for x in books if getattr(x, "year", None) == year and x.slug not in dated]
+                k = same.index(b)
+                start = dt.datetime(int(year), 1, 1) + dt.timedelta(days=int(330 * k / max(1, len(same))))
+                end = start + dt.timedelta(days=int(330 / max(1, len(same))) - 1)
+            else:
+                prev = next((spans[x.slug] for x in reversed(books[:i]) if x.slug in spans), None)
+                nxt = next((spans[x.slug] for x in books[i + 1:] if x.slug in spans), None)
+                start = prev[1] + dt.timedelta(days=1) if prev else (nxt[0] - dt.timedelta(days=60) if nxt else base + dt.timedelta(days=200 * i))
+                end = min(start + dt.timedelta(days=14), nxt[0]) if nxt and nxt[0] > start else start + dt.timedelta(days=14)
+            n = len(b.chapters)
+            step = (end - start) / max(1, n)
+            dated[b.slug] = [(start + step * k, start + step * (k + 1)) for k in range(n)]
+            spans[b.slug] = (start, end)
+            b._approx = True
+        events = []
+        for b in books:
+            for n, (c, (s, e)) in enumerate(zip(b.chapters, dated[b.slug]), 1):
+                events.append({"book": b.slug, "bookTitle": b.title, "series": b.series, "order": b.order,
+                               "chapter": n, "title": c.heading, "page": b.chapter_page(n),
+                               "start": s.isoformat(timespec="minutes"), "end": e.isoformat(timespec="minutes"),
+                               "approx": bool(getattr(b, "_approx", False))})
+        backstory = []
+        for g, ent in self.entities.items():
+            for ev in ent.record.get("timeline") or []:
+                if not isinstance(ev, dict):
+                    continue
+                text = TAG_RE.sub(r"\3", str(ev.get("event") or ""))
+                m = re.match(r"\s*(2[0-3]\d\d)\s*[—\-:]\s*(.+)", text) or (
+                    re.match(r"\s*(2[0-3]\d\d)", str(ev.get("date") or "")) and re.match(r"\s*(2[0-3]\d\d)()", str(ev.get("date"))))
+                if m:
+                    backstory.append({"year": int(m.group(1)), "entity": ent.title, "text": (m.group(2) or text).strip()[:240],
+                                      "books": sorted(ent.books)})
+        backstory.sort(key=lambda x: (x["year"], x["entity"]))
+        return {"books": [{"slug": b.slug, "title": b.title, "series": b.series, "order": b.order,
+                           "approx": bool(getattr(b, "_approx", False)), "start": spans[b.slug][0].isoformat(timespec="minutes"),
+                           "end": spans[b.slug][1].isoformat(timespec="minutes")} for b in books],
+                "events": events, "backstory": backstory}
+
+    def timeline_page(self, data: dict) -> str:
+        e = self.e
+        dated = sum(1 for b in data["books"] if not b["approx"])
+        lines = ["__NOTOC__ __NOEDITSECTION__", "{{DISPLAYTITLE:Timeline}}",
+                 f"Everything in the {e(self.u)} books in the order it happens in the world, oldest at the top: every "
+                 f"chapter of every book, and the backstory the records date. {dated} of {len(data['books'])} books carry "
+                 "Prose's in-world dates; the rest sit where their story order puts them (marked ''approximate''). "
+                 "Pick the books to show from the list; events of books you haven't marked read stay hidden as spoilers.",
+                 "", '<div id="prose-timeline" class="prose-timeline">Loading the timeline&hellip;</div>']
+        return "\n".join(lines) + "\n"
+
     # ---- the shared graph ----------------------------------------------------------------------------------------
     def graph(self, relationships: list[tuple[str, str, str, str]]) -> dict:
         nodes, edges = [], []
