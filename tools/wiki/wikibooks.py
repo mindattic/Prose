@@ -34,15 +34,17 @@ class Book:
     title: str
     code: str
     order: float
+    series: str = ""
+    collection: bool = False  # its series is a collection (no reading order inside it), not a numbered series
     subtitle: str = ""
     author: str = ""
     description: str = ""
     chapters: list[Chapter] = field(default_factory=list)
     files: dict[str, Path] = field(default_factory=dict)  # ext -> local file
     cover: Path | None = None
+    store_url: str = ""  # its Amazon (KDP) page, when it is published there
 
     @property
-    store_url: str = ""  # its Amazon (KDP) page, when it is published there
     def page(self) -> str:
         return f"{BOOK_NS}:{self.title}"
 
@@ -51,9 +53,15 @@ class Book:
 
 
 def book_config(path: Path) -> dict[str, dict]:
-    """{slug: {title, code, order}}; a bare {slug: title} file still works."""
+    """{slug: {title, code, order, series}}; a bare {slug: title} file still works. Keys starting with _ are not books."""
     raw = json.loads(path.read_text(encoding="utf-8"))
-    return {slug: (v if isinstance(v, dict) else {"title": v}) for slug, v in raw.items()}
+    return {slug: (v if isinstance(v, dict) else {"title": v}) for slug, v in raw.items() if not slug.startswith("_")}
+
+
+def series_list(path: Path) -> list[dict]:
+    """The series in the order the main page shows them: [{name, about}] from the books file's _series (PRS-T1054)."""
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    return [s for s in raw.get("_series") or [] if isinstance(s, dict) and s.get("name")]
 
 
 def parse_md(text: str, book: Book):
@@ -85,17 +93,21 @@ def parse_md(text: str, book: Book):
 
 def load_books(config: Path, books_dir: Path | None) -> list[Book]:
     books = []
+    collections = {s["name"] for s in series_list(config) if s.get("collection")}
     for slug, c in book_config(config).items():
-        book = Book(slug, c["title"], c.get("code") or slug.upper(), float(c.get("order") or 99))
+        book = Book(slug, c["title"], c.get("code") or slug.upper(), float(c.get("order") or 99), c.get("series") or "")
+        book.collection = book.series in collections
         folder = books_dir / slug if books_dir else None
         if folder and folder.is_dir():
             md = sorted(folder.glob("*/* V*.md"), key=lambda p: p.stat().st_mtime)
             if md:
                 parse_md(md[-1].read_text(encoding="utf-8"), book)
-                stem = md[-1].with_suffix("")
+                # The newest file of each format, whatever its version: a partial export (md only, the read gate)
+                # sits beside the published edition's pdf/epub/docx/txt that the sync copied in.
                 for ext, _ in DOWNLOADS:
-                    if stem.with_suffix(f".{ext}").exists():
-                        book.files[ext] = stem.with_suffix(f".{ext}")
+                    found = sorted(md[-1].parent.glob(f"* V*.{ext}"), key=lambda p: p.stat().st_mtime)
+                    if found:
+                        book.files[ext] = found[-1]
                 desc = md[-1].parent / "description.txt"
                 if desc.exists():
                     book.description = desc.read_text(encoding="utf-8").strip()
@@ -175,8 +187,13 @@ class BookRenderer:
                  f'<div class="prose-bookpage-cover">{self.cover(b, 260)}</div>', '<div class="prose-bookpage-info">']
         if b.subtitle:
             lines.append(f'<div class="prose-book-subtitle">{e(b.subtitle)}</div>')
-        lines.append(f'<div class="prose-book-meta">Book {index} of {len(books)} in {e(self.universe)} story order'
-                     + (f" &middot; by {e(b.author)}" if b.author else "") + "</div>")
+        meta = f"Book {index} of {len(books)} in {e(self.universe)} story order"
+        if b.series:
+            mates = [x for x in books if x.series == b.series]
+            meta = (f"[[:Category:{b.series}|{e(b.series)}]]"
+                    + (f", book {mates.index(b) + 1} of {len(mates)}" if len(mates) > 1 and not b.collection else "")
+                    + " &middot; " + meta)
+        lines.append(f'<div class="prose-book-meta">{meta}' + (f" &middot; by {e(b.author)}" if b.author else "") + "</div>")
         for para in [p.strip() for p in b.description.split("\n") if p.strip()]:
             lines += ["", e(para)]
         lines.append("")
@@ -211,6 +228,8 @@ class BookRenderer:
         if nav:
             lines += ["", '<div class="prose-booknav">' + " &middot; ".join(nav) + "</div>"]
         lines += ["", "[[Category:Books]]"]
+        if b.series:
+            lines.append(f"[[Category:{b.series}|{b.order:08.3f}]]")  # sorted in story order within the series
         return "\n".join(lines) + "\n"
 
     def chapter_page(self, b: Book, n: int) -> str:

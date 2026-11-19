@@ -89,7 +89,7 @@ Write-Step 'exporting relationships (interchange)'
 $interchange = Join-Path $state "$Universe.universe.json"
 Invoke-Prose 'UniverseInterchangeCli' @($Universe, $interchange) -Method 'RunExportAsync' -Raw | Out-Null
 
-$slugs = (Get-Content $books -Raw | ConvertFrom-Json).PSObject.Properties.Name
+$slugs = (Get-Content $books -Raw | ConvertFrom-Json).PSObject.Properties.Name | Where-Object { -not $_.StartsWith('_') }  # _series is not a book
 Write-Step "reading $($slugs.Count) canon books"
 foreach ($slug in $slugs) {
     $json = Invoke-Prose 'ReadBeatsCli' @('--read-beats', '--slug', $slug, '--format', 'json')
@@ -131,7 +131,7 @@ foreach ($slug in $slugs) {
     $source = (Get-FileHash (Join-Path $state "beats\$slug.json") -Algorithm SHA1).Hash
     $marker = Join-Path $folder 'source.sha1'
     $current = (Test-Path $marker) -and ((Get-Content $marker -Raw).Trim() -eq $source) -and
-               (Get-ChildItem $folder -Recurse -Filter '*.pdf' -ErrorAction SilentlyContinue)
+               (Get-ChildItem $folder -Recurse -Filter '* V*.md' -ErrorAction SilentlyContinue)
     if (-not $current) {
         Write-Step "exporting the book $slug"
         if (Test-Path $folder) { Remove-Item $folder -Recurse -Force }
@@ -146,6 +146,21 @@ foreach ($slug in $slugs) {
         foreach ($name in 'cover.jpg', 'cover.png') {
             $cover = Join-Path (Join-Path $publishDir $code) $name
             if (Test-Path $cover) { Copy-Item $cover (Join-Path $folder $name) -Force; break }
+    # Downloads the export could not make (the read gate holds back every format but .md while beats are unread):
+    # the published edition from the publish folder, the one that was read and went to KDP. The chapters on the wiki
+    # still follow the latest text.
+    if ($publishDir -and $code -and (Test-Path (Join-Path $publishDir $code))) {
+        $exported = Get-ChildItem $folder -Directory | Select-Object -First 1
+        if ($exported) {
+            foreach ($ext in 'pdf', 'epub', 'docx', 'txt') {
+                if (-not (Get-ChildItem $exported.FullName -Filter "* V*.$ext" -ErrorAction SilentlyContinue)) {
+                    $edition = Get-ChildItem (Join-Path $publishDir $code) -Filter "* V*.$ext" -ErrorAction SilentlyContinue |
+                        Sort-Object LastWriteTime | Select-Object -Last 1
+                    if ($edition) { Copy-Item $edition.FullName $exported.FullName -Force }
+                }
+            }
+        }
+    }
         }
     }
 }

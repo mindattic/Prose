@@ -421,7 +421,7 @@ def site_pages(universe: str, entities: dict[str, Entity], books: list[str], boo
 
 
 def main_page(universe: str, entities: dict[str, Entity], shelf: list, bookr, intro: str, logo: str | None,
-              relations: int) -> str:
+              relations: int, series: list[dict] | None = None) -> str:
     """The front door: the logo, the series introduction, every book in story order, every repository."""
     repos = collections.Counter(e.repo for e in entities.values())
     canon = collections.Counter(e.repo for e in entities.values() if e.books)
@@ -437,12 +437,26 @@ def main_page(universe: str, entities: dict[str, Entity], shelf: list, bookr, in
         lines.append(f'<div class="prose-read">[[{shelf[0].chapter_page(1)}|Start at the beginning: '
                      f'<i>{escape(shelf[0].title)}</i>]]</div>')
     lines += ["</div>", "", "== The books ==",
-              f"Every {escape(universe)} book, free to read here, in story order. Open one for its blurb, its chapters "
-              "and the files to download.", '<div class="prose-shelf">']
-    for i, b in enumerate(shelf, 1):
-        lines.append(f'<div class="prose-shelf-item">{bookr.cover(b, 150)}<div class="prose-shelf-n">{i}</div>'
-                     f'<div class="prose-shelf-title">[[{b.page}|{escape(b.title)}]]</div></div>')
-    lines += ["</div>", "", "== The repositories ==",
+              f"Every {escape(universe)} book, free to read here, by series. The numbers are story order: read them "
+              "in that order to meet everything as it happens. Open one for its blurb, its chapters and the files to "
+              "download."]
+    number = {b.slug: i for i, b in enumerate(shelf, 1)}
+    named = [s for s in series or [] if any(b.series == s["name"] for b in shelf)]
+    groups = [(s["name"], s.get("about") or "", [b for b in shelf if b.series == s["name"]]) for s in named]
+    rest = [b for b in shelf if b.series not in {s["name"] for s in named}]
+    if rest:
+        groups.append(("More books" if groups else "", "", rest))
+    for name, about, books in groups:
+        if name:
+            lines += ["", f"=== [[:Category:{name}|{escape(name)}]] ==="]
+            if about:
+                lines.append(f'<div class="prose-series-about">{escape(about)}</div>')
+        lines.append('<div class="prose-shelf">')
+        for b in books:
+            lines.append(f'<div class="prose-shelf-item">{bookr.cover(b, 150)}<div class="prose-shelf-n">{number[b.slug]}</div>'
+                         f'<div class="prose-shelf-title">[[{b.page}|{escape(b.title)}]]</div></div>')
+        lines.append("</div>")
+    lines += ["", "== The repositories ==",
               f"Everything Prose knows about the {escape(universe)}: every person, place, faction and thing the books "
               "draw on, each with its relationships. Bold numbers count the entries the books name.",
               '<div class="prose-repos">']
@@ -491,6 +505,16 @@ def build(args) -> dict[str, str]:
     # The books themselves: a page per book and per chapter, with their covers and downloads uploaded beside them.
     shelf = wikibooks.load_books(Path(args.book_titles), Path(args.books_dir) if args.books_dir else None) \
         if args.book_titles else []
+    if getattr(args, "store", None) and Path(args.store).exists():
+        store = json.loads(Path(args.store).read_text(encoding="utf-8-sig"))
+        for b in shelf:
+            s = store.get(b.slug) or store.get(b.code.lower()) or {}
+            url = s.get("url") or ""
+            if url and not re.match(r"https://(www\.)?amazon\.[a-z.]+/", url):
+                repair.add("PublishUrl is not a store page (the wiki links the ASIN instead)", book=b.slug, url=url)
+                url = ""
+            # The ASIN is the stable address of the store page; a recorded product URL is the fallback.
+            b.store_url = f"https://www.amazon.com/dp/{s['asin']}" if s.get("asin") else url
     files = wikibooks.uploads(args.universe, shelf)
     sizes = collections.defaultdict(dict)
     for b in shelf:
@@ -505,16 +529,6 @@ def build(args) -> dict[str, str]:
         if not b.chapters:
             repair.add("book with no exported text (not exported yet, or unread beats)", book=b.slug)
     logo = None
-    if getattr(args, "store", None) and Path(args.store).exists():
-        store = json.loads(Path(args.store).read_text(encoding="utf-8-sig"))
-        for b in shelf:
-            s = store.get(b.slug) or store.get(b.code.lower()) or {}
-            url = s.get("url") or ""
-            if url and not re.match(r"https://(www\.)?amazon\.[a-z.]+/", url):
-                repair.add("PublishUrl is not a store page (the wiki links the ASIN instead)", book=b.slug, url=url)
-                url = ""
-            # The ASIN is the stable address of the store page; a recorded product URL is the fallback.
-            b.store_url = f"https://www.amazon.com/dp/{s['asin']}" if s.get("asin") else url
     if args.logo:
         logo = f"{args.universe} logo{Path(args.logo).suffix.lower()}"
         files.append((logo, Path(args.logo).read_bytes(), f"The {args.universe} logo."))
@@ -524,7 +538,17 @@ def build(args) -> dict[str, str]:
     relations = sum(1 for e in entities.values() for rel in e.record.get("_relations") or []
                     if slug_key(rel.get("to") or "") in renderer.by_slug) \
         + sum(len(e.record["relationships"]) for e in entities.values() if isinstance(e.record.get("relationships"), list))
-    pages["Main Page"] = main_page(args.universe, entities, shelf, bookr, intro, logo, relations)
+    series = wikibooks.series_list(Path(args.book_titles)) if args.book_titles else []
+    pages["Main Page"] = main_page(args.universe, entities, shelf, bookr, intro, logo, relations, series)
+    for s in series:  # a category page per series: its blurb; the books list themselves in story order
+        books_in = [b for b in shelf if b.series == s["name"]]
+        if books_in:
+            pages[f"Category:{s['name']}"] = (
+                f"'''{escape(s['name'])}''': {escape(s.get('about') or '')} {len(books_in)} book"
+                f"{'s' if len(books_in) != 1 else ''} of the {escape(args.universe)} series, in story order.\n\n"
+                "[[Category:Series]]\n")
+    if series:
+        pages["Category:Series"] = f"The series of {escape(args.universe)} books.\n"
     (out / "files.json").write_text(json.dumps({n: wikibooks.sha1(d) for n, d, _ in files}, indent=0), encoding="utf-8")
     build.files = files
     # An entity renamed since the last build keeps its old page as a redirect, so links and bookmarks still land.
