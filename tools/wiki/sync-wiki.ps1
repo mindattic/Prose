@@ -141,6 +141,31 @@ try {
     [IO.File]::WriteAllText((Join-Path $storyDir 'plants.json'), ($plants | ConvertTo-Json -Depth 6), [Text.UTF8Encoding]::new($false))
     Write-Step "plants and payoffs: $(($plants.Values | ForEach-Object { $_.Count } | Measure-Object -Sum).Sum)"
 } catch { Write-Host "  plants not read: $($_.Exception.Message)" }
+# Each book's in-world dates (Beat.InWorldDate, stamped by prose --stamp-in-world): the timeline's clock (PRS-T1069).
+$inworldDir = Join-Path $storyDir 'inworld'
+New-Item -ItemType Directory -Force -Path $inworldDir | Out-Null
+$stamped = 0
+foreach ($slug in $slugs) {
+    try {
+        $o = Invoke-Prose 'InWorldCli' @('--in-world', '--slug', $slug, '--json')
+        $i = $o.IndexOf('[')
+        if ($i -ge 0) {
+            $json = $o.Substring($i)
+            [IO.File]::WriteAllText((Join-Path $inworldDir "$slug.json"), $json, [Text.UTF8Encoding]::new($false))
+            if ($json -match '"inWorldDate"\s*:\s*"') { $stamped++ }
+        }
+    } catch { Write-Host "  in-world dates not read for $slug`: $($_.Exception.Message)" }
+}
+Write-Step "in-world dates: $stamped book(s) stamped"
+# The readers' open notes (defects and questions filed while reading for the read gate): the Continuity page's worklist.
+$notesDir = Join-Path $storyDir 'notes'
+New-Item -ItemType Directory -Force -Path $notesDir | Out-Null
+foreach ($slug in $slugs) {
+    try {
+        $o = Invoke-Prose 'ReadStatusCli' @('--read-note', 'list', '--node', $slug, '--status', 'open')
+        [IO.File]::WriteAllText((Join-Path $notesDir "$slug.txt"), $o, [Text.UTF8Encoding]::new($false))
+    } catch { Write-Host "  read-notes not read for $slug`: $($_.Exception.Message)" }
+}
 try {
     # Exit 1 means "there are open contradictions": the list is still the answer.
     $req = @{ handlerClass = 'ContinuityCli'; args = @('--universe', $Universe, '--continuity', 'contradictions'); universe = $Universe; cwd = $repo } | ConvertTo-Json -Depth 4
