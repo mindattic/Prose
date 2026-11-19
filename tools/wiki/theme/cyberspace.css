@@ -42,8 +42,11 @@ html, body, body *, input, button, select, textarea, .mw-body h1, .mw-body h2, .
 pre, code, kbd, samp, tt, .mw-code { font-family: monospace, monospace; }
 .mw-page-container { background: transparent; }
 .mw-page-container-inner, .vector-header-container .mw-header { position: relative; z-index: 1; }
-.mw-body, .vector-sidebar, .vector-pinned-container, .vector-header-container .mw-header, .mw-footer-container {
+.mw-body, .vector-header-container .mw-header {
   background: rgba(13, 17, 23, 0.9); }
+/* The side columns and the footer let the Cyberspace backdrop through (PRS-T1050); only the article stays solid. */
+.vector-column-start, .vector-column-start *, .vector-column-end, .vector-column-end *,
+.mw-footer-container, .mw-footer-container * { background-color: transparent !important; background-image: none !important; }
 .mw-body { padding: 0 1rem 1rem; border: 1px solid var(--ma-border); border-radius: 4px; }
 .mw-body h1, .mw-body .mw-heading1, #firstHeading { font-family: 'Outfit', system-ui, sans-serif; font-weight: 600; color: #fff; }
 .mw-body h2, .mw-body .mw-heading2 { font-family: 'Outfit', system-ui, sans-serif; color: var(--ma-red-hi); border-bottom-color: var(--ma-border); }

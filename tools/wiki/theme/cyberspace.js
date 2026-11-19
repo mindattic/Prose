@@ -1,7 +1,8 @@
 /* MindAttic Cyberspace backdrop for MediaWiki, mounted the way mindattic.com mounts it: MindAttic.Components@4234f880055d3365651fcda2ca15ef6307c0d68a's
    circuit-board parallax, scan-lines and effects behind the page, a tap outside the page sparking one effect where
-   you tapped. The whole page column (header, side columns, article, footer) is a no-effect zone: the engine is told
-   to keep out of it, and its layer is clipped so nothing it draws can reach the column, wanderers and trails included.
+   you tapped. The engine is told to keep its effects out of the whole page column (header, side menus, article,
+   footer); the side columns and footer are see-through, so the circuit board and scan-lines show there, and the
+   effect layer is clipped out of the article itself, so nothing it draws can ever reach the text, wanderers included.
    Off for reduced motion and while editing.
 
    Book chapters (prose2wiki's .prose-book) get zen mode: the chapter alone on a dark or light page, remembered between
@@ -105,6 +106,7 @@
 		return base + 'Cyberspace/assets/circuitboard.0' + n + '.png';
 	} );
 	var column = '.mw-page-container';
+	var article = '.mw-body';
 	window.__cyberspaceKeepoutSelectors = [
 		column, '#content', '.vector-header-container', '.vector-column-start .vector-pinned-container',
 		'.vector-column-end .vector-pinned-container', '.vector-sticky-header', '.mw-footer-container'
@@ -112,10 +114,10 @@
 
 	mw.loader.load( base + 'Cyberspace/frontpage.css', 'text/css' );
 
-	// The effect layer is clipped to the space outside the page column, so no effect is ever drawn over it.
+	// The effect layer is clipped out of the article, so no effect is ever drawn over the text.
 	function clipToMargins() {
 		var host = document.querySelector( '.console-bg-host' );
-		var page = document.querySelector( column );
+		var page = document.querySelector( article ) || document.querySelector( column );
 		if ( !host || !page ) {
 			return;
 		}
@@ -190,7 +192,7 @@
 		window.addEventListener( 'resize', queueClip );
 		window.addEventListener( 'scroll', queueClip, { passive: true } );
 		if ( window.ResizeObserver ) {
-			new window.ResizeObserver( queueClip ).observe( document.querySelector( column ) || document.body );
+			new window.ResizeObserver( queueClip ).observe( document.querySelector( article ) || document.body );
 		}
 		[ 'SacredGeometry/sacred-geometry.js', 'Hyperspace/hyperspace.js', 'Hyperspace/hyperspace-reader.js',
 			'Cyberspace/console-bg.js' ].reduce( function ( chain, path ) {
