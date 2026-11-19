@@ -34,3 +34,5 @@ $wgRestrictDisplayTitle = false;
 # One look: the Cyberspace theme. Vector's own Automatic/Light/Dark "Color (beta)" choice is off (PRS-T1051).
 $wgVectorNightMode = [ 'logged_in' => false, 'logged_out' => false, 'beta' => false ];
 $wgDefaultUserOptions['vector-theme'] = 'day';
+# The project namespace is the wiki's own name, not MediaWiki's default "My wiki" (PRS-T1048).
+$wgMetaNamespace = 'GLMZ_Wiki';

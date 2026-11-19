@@ -17,7 +17,22 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools\wiki\sync-wiki.ps1 -Un
   `<slug>.intro.wiki` (the main page's introduction) and `<slug>.logo.png`. Another universe needs the books file and
   the login before its first sync, plus a MediaWiki with `tools\wiki\mediawiki\LocalSettings.prose2wiki.php` appended
   (uploads, the Book namespace, display titles).
-- Nightly: the Scheduler job `Prose.GLMZ.Wiki.Sync` (00:30) runs it; its last log is `sync.log` in the state folder.
+- On change: the Scheduler job `Prose.GLMZ.Wiki.Sync` runs `tools\wiki\wiki-watch.ps1` every 5 minutes. The Hub
+  stamps `%LOCALAPPDATA%\MindAttic\Prose\wiki\changes\<universe>.stamp` after every save that changes what the wiki
+  shows; a person's wiki edit shows up in one API call. Prose changed -> once writing is quiet 5 minutes (at most an
+  hour) it reconciles, then syncs. The wiki changed -> it reconciles. A full sync runs at least daily. Logs:
+  `watch.log`, `sync.log`.
+- Reconcile (`tools\wiki\wikireconcile.py`): Prose checks the wiki (every built page live and unchanged, by revision
+  sha1, NFC-normalized), the wiki checks Prose (MediaWiki's Wantedpages / Lonelypages / Deadendpages; shared scenes in
+  the books vs recorded relationships; one-sided relationships), and edits people make on the wiki become field
+  proposals with the page held from the sync. Report: `out\reconcile.md` and the wiki page `Project:Reconciliation`.
+  `wikireconcile.py decide <id> --accept|--reject [--type KIND]`, then `wikireconcile.py apply` writes accepted ones
+  through the Hub (`--set-entity-fields`); the next sync carries them back. `check --tidy` deletes pages the sync made
+  that Prose no longer builds (never a person's page).
+- Series: `_series` in the books file ([{name, about}], shelf order) and `"series"` on each book; the main page
+  shows a shelf per series, each book page names its series, each series has a category page.
+- Every wiki change goes live when made (API for pages/CSS/JS, FTPS for LocalSettings/assets), then is verified.
+- The admin account shows as `MindAttic` (renamed from the original login; the Vault file has the current name).
 - `--retag` -> `-Retag`: re-run `--tag-entity-text` (dry run) so entity text links to what it names. It reads every
   entity, which is slow on Azure SQL and spends the serverless free-offer allowance; run it after large entity edits,
   not every sync.

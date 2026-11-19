@@ -258,7 +258,7 @@ def check(args):
                     proposals=len([p for p in rep.proposals if p["title"] == t]), held=t in held)
 
     # ---- the wiki checks Prose: MediaWiki's maintenance reports on the live site ------------------------------------
-    redlinks = querypage(wiki, "Wantedpages")
+    redlinks = [r for r in querypage(wiki, "Wantedpages") if r.get("title") not in set(leftover)]
     for row in redlinks:
         rep.add("Wanted pages: linked, but no entry exists", title=row.get("title"), links=row.get("value"))
     lonely = [r["title"] for r in querypage(wiki, "Lonelypages") if r.get("ns") == 0]
@@ -411,9 +411,11 @@ def report_wikitext(universe: str, rep: Report) -> str:
     lines += ["|}", ""]
     for name, rows in rep.sections.items():
         lines += [f"== {name} ({len(rows)}) =="]
+        # Pages that don't exist are named, not linked: a link would make the report itself a red link source.
+        gone = name.startswith(("Left behind", "Wanted pages", "Built but missing"))
         for r in rows[:200]:
-            bits = [link(v) if k in ("title", "a", "b", "has", "missing") else p_esc(str(v)) for k, v in r.items()
-                    if v not in (None, "", [], False)]
+            bits = [(p_esc(str(v)) if gone else link(v)) if k in ("title", "a", "b", "has", "missing") else p_esc(str(v))
+                    for k, v in r.items() if v not in (None, "", [], False)]
             lines.append("* " + " &middot; ".join(bits))
         if len(rows) > 200:
             lines.append(f"* &hellip; {len(rows) - 200} more")
