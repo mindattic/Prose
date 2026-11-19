@@ -15,7 +15,7 @@ namespace Prose.Cli;
 ///   --search &lt;text&gt;    Filter by case-insensitive substring of title or slug.
 ///   --limit &lt;n&gt;        Show at most N rows.
 ///   --scores            Sort by score descending instead of updated-at; include page estimates.
-///   --json              Emit a JSON array instead of the table.
+///   --json              Emit a JSON array instead of the table (with each book's PublishUrl and Asin).
 ///
 /// Exit codes: 0 — listed (even when empty); 1 — bad args.
 /// </summary>
@@ -65,7 +65,7 @@ public static class ListNodesCli
         if (limit is int lim) query = query.Take(lim);
 
         var nodes = await query
-            .Select(s => new { s.Id, s.Title, s.Slug, s.Kind, s.UniverseId, s.Timeline, s.IsArchived, s.NodeCode, s.Score, s.UpdatedAt, BeatCount = s.BeatNodes.Count(nb => true) })
+            .Select(s => new { s.Id, s.Title, s.Slug, s.Kind, s.UniverseId, s.Timeline, s.IsArchived, s.NodeCode, s.Score, s.UpdatedAt, s.PublishUrl, s.Asin, BeatCount = s.BeatNodes.Count(nb => true) })
             .ToListAsync();
 
         // Word / page count — one join instead of N queries
@@ -83,7 +83,8 @@ public static class ListNodesCli
         {
             charCounts.TryGetValue(s.Id, out var cc);
             var words = cc != null ? (int)(cc.Chars / 5.2) : 0;
-            return new Row(s.Id, s.Title, s.Slug, s.Kind, s.UniverseId, s.Timeline, s.IsArchived, s.NodeCode, s.BeatCount, s.Score, words / 250, s.UpdatedAt);
+            return new Row(s.Id, s.Title, s.Slug, s.Kind, s.UniverseId, s.Timeline, s.IsArchived, s.NodeCode, s.BeatCount, s.Score, words / 250, s.UpdatedAt,
+                s.PublishUrl, s.Asin);
         }).ToList();
 
         if (json)
@@ -119,5 +120,6 @@ public static class ListNodesCli
 
     private record Row(
         Guid Id, string Title, string Slug, string Kind, Guid UniverseId, decimal? Timeline, bool IsArchived,
-        string? Code, int BeatCount, double? Score, int Pages, DateTime UpdatedAt);
+        string? Code, int BeatCount, double? Score, int Pages, DateTime UpdatedAt,
+        string? PublishUrl, string? Asin); // the book's Amazon page, where it is published (the wiki links it)
 }
