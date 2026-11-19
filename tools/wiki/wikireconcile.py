@@ -19,6 +19,7 @@ Commands (state in %LOCALAPPDATA%\\MindAttic\\Prose\\wiki\\<universe>\\):
           Project:Reconciliation. Exit 0. Needs the last sync's out\\pages.json, beats\\, the export and interchange.
   poll    exit 10 when someone other than the sync edited the wiki since the last check, else 0 (one API call).
   decide  <id ...> --accept | --reject [--type KIND]   record a decision on proposals.
+  import  <decisions.json ...>   bulk decisions: [{id, decision, type?, sides: a|b|both, description?}].
   apply   write accepted proposals to Prose through the Hub (--set-entity-fields), then mark them applied.
 """
 from __future__ import annotations
@@ -474,6 +475,26 @@ def decide(args):
     save_json(st / "decisions.json", decisions)
 
 
+def import_decisions(args):
+    """Bulk decisions from a reviewer: a JSON array of {id, decision: accept|reject, type?, sides?, description?}."""
+    st = state_dir(args.universe)
+    decisions = load_json(st / "decisions.json", {})
+    proposals = {p["id"]: p for p in load_json(st / "out" / "reconcile.json", {}).get("proposals", [])}
+    n = collections.Counter()
+    for path in args.ids:
+        for row in json.loads(Path(path).read_text(encoding="utf-8-sig")):
+            p = proposals.get(row.get("id"))
+            if not p or row.get("decision") not in ("accept", "reject"):
+                n["skipped"] += 1
+                continue
+            decisions[p["id"]] = {"decision": row["decision"], "kind": p["kind"], "pair": p.get("pair"),
+                                  "type": row.get("type"), "sides": row.get("sides"), "description": row.get("description"),
+                                  "why": row.get("why"), "at": dt.datetime.now(dt.timezone.utc).isoformat()}
+            n[row["decision"]] += 1
+    save_json(st / "decisions.json", decisions)
+    print(f"imported: {dict(n)}")
+
+
 def hub(handler: str, *args: str, universe: str) -> tuple[int, str]:
     import requests
     settings = json.loads((Path(os.environ["LOCALAPPDATA"]) / "MindAttic" / "Prose" / "Settings.json").read_text(encoding="utf-8-sig"))
@@ -492,7 +513,7 @@ def apply(args):
     decisions = load_json(st / "decisions.json", {})
     report = load_json(st / "out" / "reconcile.json", {})
     zip_path = Path((st / "last-export.txt").read_text(encoding="utf-8").strip())
-    entities = p2w.load_entities(zip_path, None, p2w.Repair())
+    entities = p2w.load_entities(zip_path, None, p2w.Repair())  # current records: an apply adds to what is there
     writes: dict[str, dict] = collections.defaultdict(dict)
     done: list[str] = []
     for p in report.get("proposals", []):
@@ -527,15 +548,27 @@ def apply(args):
             writes[ent.guid][key] = value or None
             done.append(p["id"])
         elif p["kind"] == "relationship":
-            rels = rec.get("relationships")
-            if not isinstance(rels, list):
-                print(f"  {p['id']}: {ent.title} keeps no relationships list; left for a person")
-                continue
-            current = writes[ent.guid].get("relationships") or list(rels)
-            current.append({"name": p["target"], "type": d.get("type") or "associate",
-                            "description": f"Together in {p['shared_beats']} beats of the books."})
-            writes[ent.guid]["relationships"] = current
-            done.append(p["id"])
+            # sides: "a" = the proposal's entry lists the target, "b" = the target lists it, "both" = each the other.
+            other = entities.get(p2w.norm(p.get("target_guid") or ""))
+            sides = d.get("sides") or "a"
+            pairs = ([(ent, p["target"])] if sides in ("a", "both") else []) + \
+                    ([(other, ent.name)] if sides in ("b", "both") and other is not None else [])
+            wrote = False
+            for owner, name in pairs:
+                rels = owner.record.get("relationships")
+                if not isinstance(rels, list):
+                    print(f"  {p['id']}: {owner.name} keeps no relationships list; that side left out")
+                    continue
+                current = writes[owner.guid].get("relationships") or list(rels)
+                if any(isinstance(r, dict) and (r.get("name") or "").lower() == name.lower() for r in current):
+                    wrote = True  # already there
+                    continue
+                current.append({"name": name, "type": d.get("type") or "associate",
+                                "description": d.get("description") or f"Together in {p['shared_beats']} beats of the books."})
+                writes[owner.guid]["relationships"] = current
+                wrote = True
+            if wrote:
+                done.append(p["id"])
     for guid, fields in writes.items():
         with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as f:
             json.dump(fields, f, ensure_ascii=False)
@@ -553,7 +586,7 @@ def apply(args):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    p.add_argument("command", choices=["check", "poll", "decide", "apply"])
+    p.add_argument("command", choices=["check", "poll", "decide", "import", "apply"])
     p.add_argument("ids", nargs="*")
     p.add_argument("--universe", default="glmz")
     p.add_argument("--cred")
@@ -570,6 +603,8 @@ def main():
         check(args)
     elif args.command == "poll":
         sys.exit(poll(args))
+    elif args.command == "import":
+        import_decisions(args)
     elif args.command == "decide":
         if args.accept == args.reject:
             sys.exit("decide needs --accept or --reject")
