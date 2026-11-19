@@ -14,6 +14,13 @@
   --background-color-neutral-subtle: var(--ma-bg2);
   --background-color-interactive: var(--ma-bg3);
   --background-color-interactive-subtle: var(--ma-bg2);
+  /* Quiet buttons (the header's hamburger, menus, dropdowns): Vector's light hover/active greys hid their icons. */
+  --background-color-interactive--hover: rgba(229, 72, 77, 0.14);
+  --background-color-interactive--active: rgba(229, 72, 77, 0.24);
+  --background-color-interactive-subtle--hover: rgba(229, 72, 77, 0.14);
+  --background-color-interactive-subtle--active: rgba(229, 72, 77, 0.24);
+  --background-color-button-quiet--hover: rgba(229, 72, 77, 0.14);
+  --background-color-button-quiet--active: rgba(229, 72, 77, 0.24);
   --background-color-disabled-subtle: var(--ma-bg2);
   --background-color-progressive-subtle: #2a1214;
   --background-color-backdrop-light: rgba(13, 17, 23, 0.65);
@@ -116,6 +123,11 @@ html.prose-zen .prose-chapter-title { display: block; }  /* zen hides the page t
 .prose-zen-toggle button { font: 600 13px 'Outfit', system-ui, sans-serif; padding: 8px 14px; border-radius: 3px; cursor: pointer;
   color: var(--ma-text); background: rgba(19, 22, 27, 0.92); border: 1px solid var(--ma-border); }
 .prose-zen-toggle button:hover { border-color: var(--ma-red); }
+.cdx-button--weight-quiet:hover, .cdx-button--weight-quiet:active, .vector-dropdown-label:hover, .vector-dropdown-label:active,
+label.cdx-button:hover, .vector-header .cdx-button:hover {
+  background-color: rgba(229, 72, 77, 0.14) !important; border-color: transparent !important; }
+.cdx-button--weight-quiet:hover .vector-icon, .vector-dropdown-label:hover .vector-icon, .vector-header .cdx-button:hover .vector-icon {
+  background-color: var(--ma-red-hi) !important; }
 .prose-zen-toggle .prose-zen-shade { display: none; }
 
 /* zen mode: the chapter alone, centered, in a dark or a light page */
