@@ -13,6 +13,7 @@ namespace Prose.Cli;
 ///   prose --read-note add --node X --beat &lt;Beat.Number&gt; --kind defect|question|note --text "…" --read-by &lt;name&gt;
 ///   prose --read-note list --node X [--status open|resolved|all] [--kind k]
 ///   prose --read-note resolve --node X --id &lt;noteId&gt; [--by-beat &lt;Beat.Number&gt;]
+///   prose --read-unmark --node X --beats &lt;#,#&gt;   take back receipts given too soon (those beats are unread again)
 ///
 /// Receipts are written by <c>prose --read-beats … --mark-read --read-by &lt;name&gt;</c>.
 /// Exit codes: 0 ok / all read · 1 bad args · 2 unread beats remain (--read-status).
@@ -28,6 +29,25 @@ public static class ReadStatusCli
         var nodeId = await NodeRefResolver.ResolveAsync(services.GetRequiredService<IDbContextFactory<ProseDbContext>>(), nodeRef);
         if (nodeId == null) { Console.Error.WriteLine($"[read] Node '{nodeRef}' not found."); return 1; }
         var gate = services.GetRequiredService<ReadGateService>();
+
+        if (args.Contains("--read-unmark"))
+        {
+            // Undo a receipt given too soon (a reader marked a range, then found a defect in it): the named beats of
+            // this book go back to unread. Receipts are one row per beat, so this deletes exactly those rows.
+            var numbers = (Flag("--beats") ?? "").Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+                .Select(s => int.TryParse(s.TrimStart('#'), out var n) ? n : -1).Where(n => n > 0).ToHashSet();
+            if (numbers.Count == 0) { Console.Error.WriteLine("[read] usage: --read-unmark --node X --beats <#,#,...>"); return 1; }
+            var dbf = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
+            var bookBeats = (await services.GetRequiredService<NodeWorkbenchService>().GetOrderedBeatsAsync(nodeId.Value))
+                .Where(o => numbers.Contains(o.Beat.Number)).Select(o => o.Beat.Id).Distinct().ToList();
+            await using var db = await dbf.CreateDbContextAsync();
+            var rows = await db.BeatReadReceipts.Where(r => bookBeats.Contains(r.BeatId)).ToListAsync();
+            db.BeatReadReceipts.RemoveRange(rows);
+            await db.SaveChangesAsync();
+            Console.WriteLine($"[read] {rows.Count} receipt(s) removed; beats #{string.Join(", #", numbers.Order())} are unread again " +
+                              $"({bookBeats.Count} found in this book).");
+            return 0;
+        }
 
         if (args.Contains("--read-status"))
         {

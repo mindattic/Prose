@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -1313,7 +1313,7 @@ if (args.Contains("--get-entity-fields") || args.Contains("--set-character-field
 // notes a read filed. Export refuses while any beat is unread; there is no override.
 //   prose --read-status --node <slug|code|guid> [--list]
 //   prose --read-note add|list|resolve --node <x> [--beat N --kind defect|question|note --text "…" --read-by <name>]
-if (args.Contains("--read-status") || args.Contains("--read-note"))
+if (args.Contains("--read-status") || args.Contains("--read-note") || args.Contains("--read-unmark"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("ReadStatusCli", args);
     return;
