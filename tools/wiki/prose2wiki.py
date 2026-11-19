@@ -548,7 +548,7 @@ def build(args) -> dict[str, str]:
 class Wiki:
     def __init__(self, cred_path: Path):
         import requests
-        self.cred = json.loads(cred_path.read_text(encoding="utf-8"))
+        self.cred = json.loads(cred_path.read_text(encoding="utf-8-sig"))  # a Vault file saved by PowerShell 5 has a BOM
         self.api = self.cred["api"]
         self.s = requests.Session()
         self.s.headers["User-Agent"] = "prose2wiki/1.0"
@@ -647,7 +647,13 @@ class Wiki:
     def push(self, pages: dict[str, str], summary: str, state_path: Path, delay: float, workers: int = 1):
         from concurrent.futures import ThreadPoolExecutor
         state = json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {}
-        todo = [t for t, text in pages.items() if state.get(t) != hashlib.sha1(text.encode()).hexdigest()]
+        # Pages a person edited on the wiki whose proposals wikireconcile.py has not had decided yet: the sync does
+        # not write over them (PRS-T1048). held.json maps title -> the held revision id.
+        held_path = state_path.parent / "held.json"
+        held = json.loads(held_path.read_text(encoding="utf-8")) if held_path.exists() else {}
+        if held:
+            print(f"{len(held)} page(s) held for a decision on people's edits (wikireconcile.py)", flush=True)
+        todo = [t for t, text in pages.items() if t not in held and state.get(t) != hashlib.sha1(text.encode()).hexdigest()]
         # Templates and site CSS/JS go first and alone: a page saved before its template caches red links.
         site = [t for t in todo if t.startswith(("Template:", "MediaWiki:"))]
         rest = [t for t in todo if t not in set(site)]
