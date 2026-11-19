@@ -170,6 +170,10 @@ html.prose-zen .prose-zen-toggle .prose-zen-shade { display: inline-block; }
 .prose-shelf-n { position: absolute; top: -8px; left: 50%; margin-left: -88px; width: 26px; height: 26px; line-height: 26px; border-radius: 50%;
   background: var(--ma-neon); color: #fff; font-weight: 700; font-size: 12px; box-shadow: 0 0 10px rgba(255, 0, 51, .6); }
 .prose-shelf-title { margin-top: .55em; font-weight: 600; line-height: 1.25; }
+.prose-series-about { color: var(--ma-text2); margin: -.2em 0 .2em; }
+.prose-actions { display: flex; flex-wrap: wrap; gap: .6em; margin: .8em 0; }
+.prose-actions .prose-read { display: inline-block; margin: 0; }
+.prose-store a.external { background-image: none !important; padding-right: .9em !important; }
 .prose-repos { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: .7em; margin: 1em 0 1.5em; }
 .prose-repo { padding: .7em .9em; border: 1px solid var(--ma-border); border-left: 2px solid var(--ma-red); border-radius: 3px; background: var(--ma-bg2); }
 .prose-repo a { font-weight: 600; font-size: 1.05em; }

@@ -505,6 +505,16 @@ def build(args) -> dict[str, str]:
         if not b.chapters:
             repair.add("book with no exported text (not exported yet, or unread beats)", book=b.slug)
     logo = None
+    if getattr(args, "store", None) and Path(args.store).exists():
+        store = json.loads(Path(args.store).read_text(encoding="utf-8-sig"))
+        for b in shelf:
+            s = store.get(b.slug) or store.get(b.code.lower()) or {}
+            url = s.get("url") or ""
+            if url and not re.match(r"https://(www\.)?amazon\.[a-z.]+/", url):
+                repair.add("PublishUrl is not a store page (the wiki links the ASIN instead)", book=b.slug, url=url)
+                url = ""
+            # The ASIN is the stable address of the store page; a recorded product URL is the fallback.
+            b.store_url = f"https://www.amazon.com/dp/{s['asin']}" if s.get("asin") else url
     if args.logo:
         logo = f"{args.universe} logo{Path(args.logo).suffix.lower()}"
         files.append((logo, Path(args.logo).read_bytes(), f"The {args.universe} logo."))
@@ -720,6 +730,8 @@ def main():
             pages = {t: v for t, v in pages.items() if t in keep or t.startswith(("Template:", "MediaWiki:"))}
         wiki.push(pages, f"prose2wiki: {args.universe} phase {args.phase}",
                                    Path(args.out) / "pushed.json", args.delay, args.workers)
+    p.add_argument("--site-dir", help="the wiki's site repo (<UNIVERSE>.Wiki): theme/, <universe>.intro.wiki")
+    p.add_argument("--store", help="JSON {slug: {url, asin}}: where each book is on sale (Node.PublishUrl / Asin)")
     if args.push:
         stale = json.loads((Path(args.out) / "stale.json").read_text(encoding="utf-8"))
         if stale:

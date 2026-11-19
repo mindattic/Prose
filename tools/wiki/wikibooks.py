@@ -42,6 +42,7 @@ class Book:
     cover: Path | None = None
 
     @property
+    store_url: str = ""  # its Amazon (KDP) page, when it is published there
     def page(self) -> str:
         return f"{BOOK_NS}:{self.title}"
 
@@ -179,8 +180,13 @@ class BookRenderer:
         for para in [p.strip() for p in b.description.split("\n") if p.strip()]:
             lines += ["", e(para)]
         lines.append("")
-        if b.chapters:
-            lines.append(f'<div class="prose-read">[[{b.chapter_page(1)}|Start reading]]</div>')
+        if b.chapters or b.store_url:
+            buttons = []
+            if b.chapters:
+                buttons.append(f'<span class="prose-read">[[{b.chapter_page(1)}|Start reading]]</span>')
+            if b.store_url:
+                buttons.append(f'<span class="prose-read prose-store">[{b.store_url} On Amazon Kindle]</span>')
+            lines.append('<div class="prose-actions">' + " ".join(buttons) + "</div>")
         if b.files:
             links = " ".join(f'<span class="prose-dl">[[Media:{file_name(self.universe, b, ext)}|{label}]]'
                              f'<small>{size_label(sizes[ext])}</small></span>'

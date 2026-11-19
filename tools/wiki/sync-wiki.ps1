@@ -102,6 +102,25 @@ foreach ($slug in $slugs) {
 # which leaves the publish folder alone). Only books whose text changed since their last export are exported again.
 $booksDir = Join-Path $state 'books'
 $publishDir = $null
+# Where each book is on sale: Node.PublishUrl / Asin (the Hub's --list-books --json). A Hub without those columns in
+# its JSON just leaves the wiki without store links.
+$storeFile = Join-Path $state 'books.store.json'
+try {
+    $listed = Invoke-Prose 'ListNodesCli' @('--list-books', '--kind', 'book', '--json')
+    $rows = $listed.Substring($listed.IndexOf('[')) | ConvertFrom-Json
+    $store = @{}
+    # Keyed by slug and by code: the books file names some books by their code (pxl, mxg).
+    foreach ($r in $rows) {
+        if ($r.PublishUrl -or $r.Asin) {
+            $entry = @{ url = $r.PublishUrl; asin = $r.Asin }
+            $store[$r.Slug] = $entry
+            if ($r.Code) { $store[$r.Code.ToLowerInvariant()] = $entry }
+        }
+    }
+    [IO.File]::WriteAllText($storeFile, ($store | ConvertTo-Json -Depth 3), [Text.UTF8Encoding]::new($false))
+    Write-Step "store links for $(@($rows | Where-Object { $_.PublishUrl -or $_.Asin }).Count) published book(s)"
+} catch { Write-Host "  store links not read: $($_.Exception.Message)" }
+
 try {
     $settings = Get-Content (Join-Path $env:LOCALAPPDATA 'MindAttic\Prose\Settings.json') -Raw | ConvertFrom-Json
     $publishDir = $settings.UniverseExportDirectories.$Universe
@@ -153,3 +172,4 @@ Write-Step ($(if ($NoPush) { 'building pages (no push)' } else { 'building and p
 if ($LASTEXITCODE -ne 0) { throw "prose2wiki exited $LASTEXITCODE" }
 Write-Step "done. Validation report: $(Join-Path $state 'out\repair.md')"
 Stop-Transcript | Out-Null
+if (Test-Path $storeFile) { $py += @('--store', $storeFile) }
