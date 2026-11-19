@@ -212,7 +212,9 @@ class BookRenderer:
                 buttons.append(f'<span class="prose-read">[[{b.chapter_page(1)}|Start reading]]</span>')
             if b.store_url:
                 buttons.append(f'<span class="prose-read prose-store">[{b.store_url} On Amazon Kindle]</span>')
-            lines.append('<div class="prose-actions">' + " ".join(buttons) + "</div>")
+            # prose-book-slug: the theme's "Mark as read" button needs the book's id (spoilers, PRS-T1068)
+            lines.append('<div class="prose-actions">' + " ".join(buttons) +
+                         f'<span class="prose-book-slug">{b.slug}</span></div>')
         if b.files:
             links = " ".join(f'<span class="prose-dl">[[Media:{file_name(self.universe, b, ext)}|{label}]]'
                              f'<small>{size_label(sizes[ext])}</small></span>'

@@ -92,6 +92,7 @@ class Story:
                  f"'''Spoilers.''' Every plant ''[[{b.page}|{e(b.title)}]]'' sets up and where it pays off, as Prose has "
                  f"them registered: {len(rows)} in all. A plant is planted so a re-reader finds it waiting; the payoff "
                  "is what they get.", "",
+                 f'<div class="prose-spoiler" data-book="{b.slug}" data-title="{e(b.title)}">',
                  '{| class="wikitable prose-plants"', "! Planted !! What is seeded !! Paid off !! What the reader gets !! Kind"]
         unplaced = 0
         for r in rows:
@@ -99,7 +100,7 @@ class Story:
             unplaced += not pn or not qn
             lines += ["|-", f"| {self.chapter_link(b, pn)} || {e(r.get('PlantDescription') or '')} || "
                             f"{self.chapter_link(b, qn)} || {e(r.get('PayoffDescription') or '')} || {e(r.get('Category') or '')}"]
-        lines.append("|}")
+        lines += ["|}", "</div>"]
         if unplaced:
             lines += ["", f"''{unplaced} of these point at a beat the current text no longer has (moved or cut): "
                           "Prose's registry needs them re-pointed.''"]

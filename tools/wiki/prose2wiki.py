@@ -235,9 +235,46 @@ class Resolver:
         return self.entities.get(guid) if guid else None
 
 
+class Spoilers:
+    """Which book a piece of text spoils (PRS-T1068): the latest book (story order) it refers to by name - "in Wells",
+    "Pieces (2230)", "the Cyberocracy season" - so the reader's "Books I've read" list decides whether it shows."""
+    CONTEXT = r"(?:\b(?:[Ii]n|[Dd]uring|[Aa]fter|[Bb]efore|[Bb]y|[Ff]rom|[Tt]hrough|[Uu]ntil|[Ss]ince|[Oo]f|[Aa]t)\s+(?:the\s+)?)"
+
+    def __init__(self, config: dict[str, dict], series: list[dict]):
+        self.books = {slug: (float(c.get("order") or 99), c["title"]) for slug, c in config.items()}
+        self.patterns = []
+        for slug, (order, title) in self.books.items():
+            t = re.escape(title)
+            # "in Wells", "after <i>Wells</i>", "Wells (2230)"; never "Pixel's" (the character of the same name)
+            rx = re.compile(rf"{self.CONTEXT}(?:<i>|''|\*)?{t}\b(?!['’]s)|\b{t}\s*\((?:c\.\s*)?2\d\d\d")
+            self.patterns.append((rx, slug))
+        for s in series:  # a series named in passing ("the Cyberocracy season") spoils its first book
+            first = min((slug for slug, c in config.items() if c.get("series") == s["name"]),
+                        key=lambda x: self.books[x][0], default=None)
+            if first and len(s["name"]) > 4 and s["name"] not in ("The Novellas", "Standalone novels"):
+                self.patterns.append((re.compile(rf"\b{re.escape(s['name'])}\b"), first))
+
+    def book_of(self, text: str) -> str | None:
+        plain = TAG_RE.sub(r"\3", text or "")
+        hits = [slug for rx, slug in self.patterns if rx.search(plain)]
+        return max(hits, key=lambda s: self.books[s][0]) if hits else None
+
+    def latest(self, slugs) -> str | None:
+        slugs = [s for s in slugs if s in self.books]
+        return max(slugs, key=lambda s: self.books[s][0]) if slugs else None
+
+    def wrap(self, rendered: str, slug: str | None, block: bool = False) -> str:
+        if not slug:
+            return rendered
+        tag = "div" if block else "span"
+        return (f'<{tag} class="prose-spoiler" data-book="{slug}" data-title="{escape(self.books[slug][1])}">'
+                f"{rendered}</{tag}>")
+
+
 class Renderer:
     def __init__(self, entities: dict[str, Entity], resolver: Resolver, repair: Repair, universe: str):
         self.entities, self.resolver, self.repair, self.universe = entities, resolver, repair, universe
+        self.spoilers: Spoilers | None = None  # set by build() once the books are known
         self.by_slug: dict[str, Entity] = {}
         for e in entities.values():  # interchange slugs win over file-name and name-derived ones
             for key in (e.record.get("_slug"), e.name):
@@ -247,6 +284,12 @@ class Renderer:
             if e.record.get("_relations") is not None and e.record.get("_slug"):
                 self.by_slug[slug_key(e.record["_slug"])] = e
         self.linked: set[str] = set()
+
+    def spoil(self, rendered: str, raw, block: bool = False) -> str:
+        """Wrap rendered text that refers to a book in that book's spoiler tag (no-op before build() sets spoilers)."""
+        if not self.spoilers:
+            return rendered
+        return self.spoilers.wrap(rendered, self.spoilers.book_of(json.dumps(raw, ensure_ascii=False) if not isinstance(raw, str) else raw), block)
 
     def link(self, ent: Entity, text: str | None = None) -> str:
         label = text if text is not None else ent.title
@@ -328,18 +371,21 @@ class Renderer:
             if value in (None, "", [], {}):
                 continue
             if isinstance(value, (str, int, float, bool)) and len(str(value)) <= SHORT and "\n" not in str(value):
-                infobox.append((humanize(key), self.value(value, ent, key)))
+                shown = self.value(value, ent, key)
+                if key == "status" and self.spoilers and ent.books:  # alive/dead/missing: as of the last book
+                    shown = self.spoilers.wrap(shown, self.spoilers.latest(ent.books))
+                infobox.append((humanize(key), shown))
             elif isinstance(value, list) and all(isinstance(v, str) and len(v) <= SHORT for v in value) and len(value) <= 12:
                 infobox.append((humanize(key), self.value(value, ent, key)))
             elif isinstance(value, list):
-                body = "\n".join(f"* {self.item(v, ent, key)}" for v in value if v not in (None, ""))
+                body = "\n".join(f"* {self.spoil(self.item(v, ent, key), v)}" for v in value if v not in (None, ""))
                 sections.append((humanize(key), body))
             elif isinstance(value, dict):
                 body = "\n".join(f"; {humanize(k)}\n: {self.value(v, ent, k)}" for k, v in value.items()
                                  if v not in (None, "", [], {}))
                 sections.append((humanize(key), body))
             else:
-                paras = [self.text(p.strip(), ent) for p in str(value).split("\n") if p.strip()]
+                paras = [self.spoil(self.text(p.strip(), ent), p, block=True) for p in str(value).split("\n") if p.strip()]
                 sections.append((humanize(key), "\n\n".join(paras)))
         related = [(rel.get("kind") or "related", self.by_slug.get(slug_key(rel.get("to") or ""))) for rel in rec.get("_relations") or []]
         related = [(kind, t) for kind, t in related if t is not None and t is not ent]
@@ -393,6 +439,8 @@ TEMPLATES = {
     "Template:Infobox entity": """<includeonly><div class="prose-infobox"><div class="prose-infobox-title">{{{title}}}</div>{{#ifexist:File:{{PAGENAME}}.png|<div class="prose-infobox-image">[[File:{{PAGENAME}}.png|300px|{{{title}}}]]</div>|{{#ifexist:File:{{PAGENAME}}.jpg|<div class="prose-infobox-image">[[File:{{PAGENAME}}.jpg|300px|{{{title}}}]]</div>|{{#ifexist:File:{{PAGENAME}}.webp|<div class="prose-infobox-image">[[File:{{PAGENAME}}.webp|300px|{{{title}}}]]</div>}}}}}}<div class="prose-infobox-repo">[[:Category:{{{repo}}}|{{{repo}}}]]</div><div class="prose-infobox-aliases">{{{aliases|}}}</div><table class="prose-infobox-rows"></includeonly><noinclude>Opens an entity infobox. Rows follow as {{tl|Infobox row}}, closed by {{tl|Infobox end}}. Generated by prose2wiki.</noinclude>""",
     "Template:Infobox row": """<includeonly><tr><th>{{{1}}}</th><td>{{{2}}}</td></tr></includeonly><noinclude>One infobox row: label, value.</noinclude>""",
     "Template:Infobox end": """<includeonly></table></div></includeonly><noinclude>Closes {{tl|Infobox entity}}.</noinclude>""",
+    # Spoiler tags (PRS-T1068): {{Spoiler|book=<slug>|text}} hides text until the reader marks that book read.
+    "Template:Spoiler": """<includeonly><span class="prose-spoiler" data-book="{{{book|}}}" data-title="{{{title|{{{book|}}}}}}">{{{1|}}}</span></includeonly><noinclude>Hides a spoiler until the reader marks the book read in \"Books I've read\": <code>{{Spoiler|book=wells|title=Wells|text}}</code>. book is the book's slug.</noinclude>""",
     "Template:Tl": """<includeonly>&#123;&#123;[[Template:{{{1}}}|{{{1}}}]]&#125;&#125;</includeonly>""",
     "MediaWiki:Common.css": """/* prose2wiki infobox (the Cyberspace theme replaces these later) */
 .prose-infobox { float: right; clear: right; width: 22em; margin: 0 0 1em 1em; border: 1px solid #a2a9b1; background: #f8f9fa; font-size: 88%; }
@@ -487,6 +535,7 @@ def build(args) -> dict[str, str]:
     assign_titles(entities, repair)
     resolver = Resolver(entities)
     renderer = Renderer(entities, resolver, repair, args.universe)
+    renderer.spoilers = Spoilers(config, wikibooks.series_list(Path(args.book_titles)) if args.book_titles else [])
     for ent in entities.values():
         for rel in ent.record.get("_relations") or []:
             if slug_key(rel.get("to") or "") not in renderer.by_slug:
@@ -563,6 +612,9 @@ def build(args) -> dict[str, str]:
                     if slug_key(rel.get("to") or "") in renderer.by_slug) \
         + sum(len(e.record["relationships"]) for e in entities.values() if isinstance(e.record.get("relationships"), list))
     series = wikibooks.series_list(Path(args.book_titles)) if args.book_titles else []
+    # The reading list the theme's "Books I've read" menu offers (story order, with series).
+    pages["MediaWiki:Prose-books.json"] = json.dumps([{"slug": b.slug, "title": b.title, "series": b.series, "order": b.order}
+                                                    for b in shelf], ensure_ascii=False, indent=1)
     pages["Main Page"] = main_page(args.universe, entities, shelf, bookr, intro, logo, relations, series)
     for s in series:  # a category page per series: its blurb; the books list themselves in story order
         books_in = [b for b in shelf if b.series == s["name"]]
