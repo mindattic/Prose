@@ -1812,6 +1812,25 @@ if (args.Contains("--timeline"))
     return;
 }
 
+// CLI mode: run the --timeline inference and persist it as Beat.InWorldDate (PRS-T1069). The
+// anchor (in-world Day 1, 00:00) is --start, else derived from the earliest beat whose prose states
+// an absolute date; with neither it refuses (exit 2). Writes InWorldDate only, never Text/TextHash.
+//   prose --stamp-in-world --slug <book> [--start <ISO datetime>] [--dry-run]
+if (args.Contains("--stamp-in-world"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("StampInWorldCli", args);
+    return;
+}
+
+// CLI mode: a book's beats in reading order with their stored in-world dates, as JSON — the feed
+// the GLMZ wiki's cross-book timeline reads. No LLM, no writes (PRS-T1069).
+//   prose --in-world --slug <book> --json
+if (args.Contains("--in-world"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("InWorldCli", args);
+    return;
+}
+
 // CLI mode: print beat text WITH its authoritative POV character attached (sourced fresh
 // from BeatEntityPresence every call, never inferred from prose content). Use this instead
 // of raw sqlcmd/SELECT Text reads whenever a conclusion about character voice, attribution,
