@@ -12,11 +12,12 @@ cd D:\Projects\MindAttic\Prose
 powershell -NoProfile -ExecutionPolicy Bypass -File tools\wiki\sync-wiki.ps1 -Universe glmz
 ```
 
-- Default universe: `glmz`. Its canon books are `tools\wiki\glmz.books.json` (`{slug: {title, code, order}}`, order =
-  story order); its wiki login is the Vault bucket `%APPDATA%\MindAttic\Wiki\glmz.json`. Optional per universe:
-  `<slug>.intro.wiki` (the main page's introduction) and `<slug>.logo.png`. Another universe needs the books file and
-  the login before its first sync, plus a MediaWiki with `tools\wiki\mediawiki\LocalSettings.prose2wiki.php` appended
-  (uploads, the Book namespace, display titles).
+- Default universe: `glmz`. The engine is here (`tools\wiki`); each wiki's **site** is its own repo beside Prose,
+  `<UNIVERSE>.Wiki` (GLMZ: `D:\Projects\MindAttic\GLMZ.Wiki`): `<slug>.books.json` (`{slug: {title, code, order,
+  series}}` + `_series`, order = story order), `<slug>.intro.wiki`, `<slug>.logo.png`, `theme\`, the managed
+  `mediawiki\LocalSettings.<slug>.php` block, and `deploy.ps1`, which puts theme/settings/logo live and checks them.
+  The wiki login is the Vault bucket `%APPDATA%\MindAttic\Wiki\<slug>.json`. A new universe's wiki starts as a copy of
+  GLMZ.Wiki with its own books file and login.
 - On change: the Scheduler job `Prose.GLMZ.Wiki.Sync` runs `tools\wiki\wiki-watch.ps1` every 5 minutes. The Hub
   stamps `%LOCALAPPDATA%\MindAttic\Prose\wiki\changes\<universe>.stamp` after every save that changes what the wiki
   shows; a person's wiki edit shows up in one API call. Prose changed -> once writing is quiet 5 minutes (at most an

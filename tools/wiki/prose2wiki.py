@@ -532,7 +532,8 @@ def build(args) -> dict[str, str]:
     if args.logo:
         logo = f"{args.universe} logo{Path(args.logo).suffix.lower()}"
         files.append((logo, Path(args.logo).read_bytes(), f"The {args.universe} logo."))
-    intro_path = Path(__file__).parent / f"{args.universe.lower()}.intro.wiki"
+    site = Path(args.site_dir) if getattr(args, "site_dir", None) else Path(__file__).parent  # the <UNIVERSE>.Wiki repo
+    intro_path = site / f"{args.universe.lower()}.intro.wiki"
     intro = intro_path.read_text(encoding="utf-8") if intro_path.exists() else \
         f"Welcome to the '''{args.universe} Wiki''', generated from the Prose canon."
     relations = sum(1 for e in entities.values() for rel in e.record.get("_relations") or []
@@ -565,7 +566,7 @@ def build(args) -> dict[str, str]:
                 stale.append(old_title)  # its entity is gone (merged or deleted): the page goes too
     (out / "stale.json").write_text(json.dumps(stale, ensure_ascii=False), encoding="utf-8")
     if args.theme:
-        theme = Path(__file__).parent / "theme"
+        theme = site / "theme"
         pages["MediaWiki:Common.css"] = (theme / f"{args.theme}.css").read_text(encoding="utf-8")
         pages["MediaWiki:Common.js"] = (theme / f"{args.theme}.js").read_text(encoding="utf-8")
     (out / "pages.json").write_text(json.dumps(pages, indent=0, ensure_ascii=False), encoding="utf-8")
@@ -729,6 +730,8 @@ def main():
     p.add_argument("--book-titles", help="JSON {slug: {title, code, order}} (or {slug: title}): the canon books")
     p.add_argument("--books-dir", help="per-book prose --export-node --preview output (and cover.jpg), one folder per slug")
     p.add_argument("--logo", help="the universe's logo image, shown on the main page")
+    p.add_argument("--site-dir", help="the wiki's site repo (<UNIVERSE>.Wiki): theme/, <universe>.intro.wiki")
+    p.add_argument("--store", help="JSON {slug: {url, asin}}: where each book is on sale (Node.PublishUrl / Asin)")
     p.add_argument("--theme", help="skin pages from tools/wiki/theme/<name>.css/.js, e.g. cyberspace")
     p.add_argument("--tagged", help="prose --tag-entity-text --out file: entity text carrying <entity> tags")
     p.add_argument("--out", required=True)
@@ -754,8 +757,6 @@ def main():
             pages = {t: v for t, v in pages.items() if t in keep or t.startswith(("Template:", "MediaWiki:"))}
         wiki.push(pages, f"prose2wiki: {args.universe} phase {args.phase}",
                                    Path(args.out) / "pushed.json", args.delay, args.workers)
-    p.add_argument("--site-dir", help="the wiki's site repo (<UNIVERSE>.Wiki): theme/, <universe>.intro.wiki")
-    p.add_argument("--store", help="JSON {slug: {url, asin}}: where each book is on sale (Node.PublishUrl / Asin)")
     if args.push:
         stale = json.loads((Path(args.out) / "stale.json").read_text(encoding="utf-8"))
         if stale:

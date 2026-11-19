@@ -5,7 +5,7 @@
 .DESCRIPTION
     1. Makes sure the Prose Hub is up (starts C:\Apps\MindAttic\Prose\Hub.exe if not).
     2. Through the Hub: --export global (every live entity), --universe-export (edges), and --read-beats for each
-       canon book in tools\wiki\<universe>.books.json (which entities each book names).
+       canon book in <UNIVERSE>.Wiki\<universe>.books.json, the site repo (which entities each book names).
     2b. Each canon book whose text changed: --export-node --preview into the state folder (.md .pdf .epub .docx .txt
        and the blurb), plus its cover from the publish folder. prose2wiki makes a page per book and per chapter and
        uploads the cover and the files.
@@ -29,12 +29,16 @@ param(
     [int]$Workers = 4,
     [switch]$Retag,
     [switch]$NoPush,
-    [switch]$NoPurge
+    [switch]$NoPurge,
+    # The wiki's site repo (books file, intro, logo, theme): <UNIVERSE>.Wiki beside Prose, e.g. GLMZ.Wiki (PRS-T1052).
+    [string]$Site
 )
 $ErrorActionPreference = 'Stop'
 $repo = Split-Path (Split-Path $PSScriptRoot)
+if (-not $Site) { $Site = Join-Path (Split-Path $repo) "$($Universe.ToUpperInvariant()).Wiki" }
+if (-not (Test-Path (Join-Path $Site "$Universe.books.json"))) { $Site = $PSScriptRoot }  # a universe without a site repo yet
 $state = Join-Path $env:LOCALAPPDATA "MindAttic\Prose\wiki\$Universe"
-$books = Join-Path $PSScriptRoot "$Universe.books.json"
+$books = Join-Path $Site "$Universe.books.json"
 $cred = Join-Path $env:APPDATA "MindAttic\Wiki\$Universe.json"
 foreach ($f in @($books, $cred)) { if (-not (Test-Path $f)) { throw "missing $f" } }
 New-Item -ItemType Directory -Force -Path $state, (Join-Path $state 'beats'), (Join-Path $state 'out') | Out-Null
@@ -98,10 +102,6 @@ foreach ($slug in $slugs) {
     [IO.File]::WriteAllText((Join-Path $state "beats\$slug.json"), $json.Substring($start), [Text.UTF8Encoding]::new($false))
 }
 
-# The books themselves: every format, from the database as it is now, into the state folder (a --preview export,
-# which leaves the publish folder alone). Only books whose text changed since their last export are exported again.
-$booksDir = Join-Path $state 'books'
-$publishDir = $null
 # Where each book is on sale: Node.PublishUrl / Asin (the Hub's --list-books --json). A Hub without those columns in
 # its JSON just leaves the wiki without store links.
 $storeFile = Join-Path $state 'books.store.json'
@@ -121,6 +121,10 @@ try {
     Write-Step "store links for $(@($rows | Where-Object { $_.PublishUrl -or $_.Asin }).Count) published book(s)"
 } catch { Write-Host "  store links not read: $($_.Exception.Message)" }
 
+# The books themselves: every format, from the database as it is now, into the state folder (a --preview export,
+# which leaves the publish folder alone). Only books whose text changed since their last export are exported again.
+$booksDir = Join-Path $state 'books'
+$publishDir = $null
 try {
     $settings = Get-Content (Join-Path $env:LOCALAPPDATA 'MindAttic\Prose\Settings.json') -Raw | ConvertFrom-Json
     $publishDir = $settings.UniverseExportDirectories.$Universe
@@ -142,10 +146,6 @@ foreach ($slug in $slugs) {
     }
     # Its cover: the publish folder's cover.jpg (the one KDP gets), when the book has one.
     $code = $config.$slug.code
-    if ($publishDir -and $code) {
-        foreach ($name in 'cover.jpg', 'cover.png') {
-            $cover = Join-Path (Join-Path $publishDir $code) $name
-            if (Test-Path $cover) { Copy-Item $cover (Join-Path $folder $name) -Force; break }
     # Downloads the export could not make (the read gate holds back every format but .md while beats are unread):
     # the published edition from the publish folder, the one that was read and went to KDP. The chapters on the wiki
     # still follow the latest text.
@@ -161,6 +161,10 @@ foreach ($slug in $slugs) {
             }
         }
     }
+    if ($publishDir -and $code) {
+        foreach ($name in 'cover.jpg', 'cover.png') {
+            $cover = Join-Path (Join-Path $publishDir $code) $name
+            if (Test-Path $cover) { Copy-Item $cover (Join-Path $folder $name) -Force; break }
         }
     }
 }
@@ -177,9 +181,10 @@ if ($Retag -or -not (Test-Path $tagged)) {
 $py = @('-I', '-u', (Join-Path $PSScriptRoot 'prose2wiki.py'), '--universe', $DisplayName, '--export-zip', $zip,
         '--interchange', $interchange, '--beats-dir', (Join-Path $state 'beats'), '--book-titles', $books,
         '--tagged', $tagged, '--out', (Join-Path $state 'out'), '--phase', 'all', '--theme', $Theme,
-        '--cred', $cred, '--workers', $Workers, '--books-dir', $booksDir)
-$logo = Join-Path $PSScriptRoot "$Universe.logo.png"
+        '--cred', $cred, '--workers', $Workers, '--books-dir', $booksDir, '--site-dir', $Site)
+$logo = Join-Path $Site "$Universe.logo.png"
 if (Test-Path $logo) { $py += @('--logo', $logo) }
+if (Test-Path $storeFile) { $py += @('--store', $storeFile) }
 if (-not $NoPush) { $py += '--push' }
 if (-not $NoPush -and -not $NoPurge) { $py += '--purge' }
 Write-Step ($(if ($NoPush) { 'building pages (no push)' } else { 'building and pushing pages' }))
@@ -187,4 +192,3 @@ Write-Step ($(if ($NoPush) { 'building pages (no push)' } else { 'building and p
 if ($LASTEXITCODE -ne 0) { throw "prose2wiki exited $LASTEXITCODE" }
 Write-Step "done. Validation report: $(Join-Path $state 'out\repair.md')"
 Stop-Transcript | Out-Null
-if (Test-Path $storeFile) { $py += @('--store', $storeFile) }
