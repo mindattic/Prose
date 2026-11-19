@@ -121,6 +121,29 @@ try {
     Write-Step "store links for $(@($rows | Where-Object { $_.PublishUrl -or $_.Asin }).Count) published book(s)"
 } catch { Write-Host "  store links not read: $($_.Exception.Message)" }
 
+# The story checks (PRS-T1067): each book's registered plants and payoffs, and the continuity store's open
+# contradictions. Read-only; a failure leaves those pages as they were.
+$storyDir = Join-Path $state 'story'
+New-Item -ItemType Directory -Force -Path $storyDir | Out-Null
+try {
+    $plants = @{}
+    foreach ($slug in $slugs) {
+        $o = Invoke-Prose 'PlantPayoffCli' @('--list-plants', '--slug', $slug, '--json')
+        $i = $o.IndexOf('[')
+        $plants[$slug] = if ($i -ge 0) { @($o.Substring($i) | ConvertFrom-Json) } else { @() }
+    }
+    [IO.File]::WriteAllText((Join-Path $storyDir 'plants.json'), ($plants | ConvertTo-Json -Depth 6), [Text.UTF8Encoding]::new($false))
+    Write-Step "plants and payoffs: $(($plants.Values | ForEach-Object { $_.Count } | Measure-Object -Sum).Sum)"
+} catch { Write-Host "  plants not read: $($_.Exception.Message)" }
+try {
+    # Exit 1 means "there are open contradictions": the list is still the answer.
+    $req = @{ handlerClass = 'ContinuityCli'; args = @('--universe', $Universe, '--continuity', 'contradictions'); universe = $Universe; cwd = $repo } | ConvertTo-Json -Depth 4
+    $headers = @{}; if ($key) { $headers['X-Prose-Key'] = $key }
+    $r = Invoke-RestMethod -Method Post -Uri "$hub/api/cli-invoke" -Headers $headers -Body ([Text.Encoding]::UTF8.GetBytes($req)) -ContentType 'application/json; charset=utf-8' -TimeoutSec 1800
+    [IO.File]::WriteAllText((Join-Path $storyDir 'contradictions.txt'), [string]$r.output, [Text.UTF8Encoding]::new($false))
+    Write-Step "continuity contradictions read"
+} catch { Write-Host "  contradictions not read: $($_.Exception.Message)" }
+
 # The books themselves: every format, from the database as it is now, into the state folder (a --preview export,
 # which leaves the publish folder alone). Only books whose text changed since their last export are exported again.
 $booksDir = Join-Path $state 'books'
@@ -185,6 +208,7 @@ $py = @('-I', '-u', (Join-Path $PSScriptRoot 'prose2wiki.py'), '--universe', $Di
 $logo = Join-Path $Site "$Universe.logo.png"
 if (Test-Path $logo) { $py += @('--logo', $logo) }
 if (Test-Path $storeFile) { $py += @('--store', $storeFile) }
+if (Test-Path $storyDir) { $py += @('--story-dir', $storyDir) }
 if (-not $NoPush) { $py += '--push' }
 if (-not $NoPush -and -not $NoPurge) { $py += '--purge' }
 Write-Step ($(if ($NoPush) { 'building pages (no push)' } else { 'building and pushing pages' }))

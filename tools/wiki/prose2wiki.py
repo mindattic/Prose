@@ -24,6 +24,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 import wikibooks  # noqa: E402
+import wikistory  # noqa: E402
 
 ZERO_GUID = "00000000000000000000000000000000"
 GUID_RE = re.compile(r"\b[0-9a-fA-F]{8}-?[0-9a-fA-F]{4}-?[0-9a-fA-F]{4}-?[0-9a-fA-F]{4}-?[0-9a-fA-F]{12}\b")
@@ -522,8 +523,29 @@ def build(args) -> dict[str, str]:
         for ext, _ in wikibooks.DOWNLOADS:
             name = wikibooks.file_name(args.universe, b, ext)
             sizes[b.slug].update({ext: len(d) for n, d, _ in files if n == name})
+    # The story checks (PRS-T1067): plants and payoffs, pacing, continuity, and the shared graph.
+    story = wikistory.Story(args.universe, shelf, entities, renderer, resolver, escape,
+                            Path(args.story_dir) if getattr(args, "story_dir", None) else None)
+    for b in shelf:
+        b.has_plants = bool(story.plants.get(b.slug))
     bookr = wikibooks.BookRenderer(renderer, escape, args.universe, entities)
     pages.update(bookr.pages(shelf, sizes))
+    pages.update(story.pages())
+    links = []
+    for ent in entities.values():
+        for rel in ent.record.get("_relations") or []:
+            t = renderer.by_slug.get(slug_key(rel.get("to") or ""))
+            if t is not None and t is not ent:
+                links.append((ent.guid, t.guid, "relation", rel.get("kind")))
+        for rel in ent.record.get("relationships") or []:
+            name = rel.get("name") if isinstance(rel, dict) else None
+            t = resolver.by_name(name) if isinstance(name, str) else None
+            if t is not None and t is not ent:
+                links.append((ent.guid, t.guid, "relationship", rel.get("type")))
+    graph = story.graph(links)
+    (out / "graph.json").write_text(json.dumps(graph, ensure_ascii=False), encoding="utf-8")
+    files.append((f"{args.universe} graph.json", json.dumps(graph, ensure_ascii=False).encode("utf-8"),
+                  f"The {args.universe} graph: every entity, book and chapter and the edges between them, from Prose (rebuilt by every sync)."))
     for b in shelf:
         if b.title not in pages:
             pages[b.title] = f"#REDIRECT [[{b.page}]]\n"
@@ -732,6 +754,7 @@ def main():
     p.add_argument("--books-dir", help="per-book prose --export-node --preview output (and cover.jpg), one folder per slug")
     p.add_argument("--logo", help="the universe's logo image, shown on the main page")
     p.add_argument("--site-dir", help="the wiki's site repo (<UNIVERSE>.Wiki): theme/, <universe>.intro.wiki")
+    p.add_argument("--story-dir", help="sync's story folder: plants.json, contradictions.txt (the story checks)")
     p.add_argument("--store", help="JSON {slug: {url, asin}}: where each book is on sale (Node.PublishUrl / Asin)")
     p.add_argument("--theme", help="skin pages from tools/wiki/theme/<name>.css/.js, e.g. cyberspace")
     p.add_argument("--tagged", help="prose --tag-entity-text --out file: entity text carrying <entity> tags")

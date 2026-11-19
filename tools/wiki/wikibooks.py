@@ -26,6 +26,7 @@ TAG_RE = re.compile(r'<entity repo="([^"]*)" guid="([0-9a-fA-F-]{32,36})">(.*?)<
 class Chapter:
     heading: str
     paras: list[str]
+    beats: list[str] = field(default_factory=list)  # beat ids (no dashes) in this chapter, from the export's markers
 
 
 @dataclass
@@ -64,24 +65,32 @@ def series_list(path: Path) -> list[dict]:
     return [s for s in raw.get("_series") or [] if isinstance(s, dict) and s.get("name")]
 
 
+BEAT_ID = re.compile(r"<!-- beat:\d+:([0-9a-fA-F-]{32,36}) -->")
+
+
 def parse_md(text: str, book: Book):
-    text = BEAT_MARK.sub("", text.replace("\r\n", "\n"))
-    head, current = [], None
+    text = text.replace("\r\n", "\n")
+    head, current, waiting = [], None, []  # waiting: beat ids seen before the chapter they open
     for block in re.split(r"\n\s*\n", text):
-        block = block.strip()
+        ids = [i.replace("-", "").lower() for i in BEAT_ID.findall(block)]
+        block = BEAT_MARK.sub("", block).strip()
+        if ids:
+            (current.beats if current is not None else waiting).extend(ids)
         if not block:
             continue
         if block.startswith("## "):
             heading = block[3:].strip()
             # The export opens with a section named after the book (an epigraph or a song): call it what it is.
-            current = Chapter("Opening" if heading.lower() == book.title.lower() else heading, [])
+            current = Chapter("Opening" if heading.lower() == book.title.lower() else heading, [], waiting)
+            waiting = []
             book.chapters.append(current)
             continue
         if current is None and (block.startswith(("# ", "### ")) or re.fullmatch(r"_by (.+)_", block)):
             head.append(block)
             continue
         if current is None:  # a book told in one piece, with no chapter headings
-            current = Chapter(book.title, [])
+            current = Chapter(book.title, [], waiting)
+            waiting = []
             book.chapters.append(current)
         current.paras.append(block)
     for line in head:
@@ -215,6 +224,11 @@ class BookRenderer:
             lines.append('<div class="prose-toc">')
             lines += [f"# [[{b.chapter_page(n)}|{e(c.heading)}]]" for n, c in enumerate(b.chapters, 1)]
             lines += ["</div>", ""]
+        if b.chapters:  # the story checks (wikistory.py): how the book moves and what it sets up
+            craft = [f"[[{b.page}/Pacing|Pacing, chapter by chapter]]"]
+            if getattr(b, "has_plants", False):
+                craft.append(f"[[{b.page}/Plants|Plants and payoffs]] (spoilers)")
+            lines += ['<div class="prose-craft">How it is built: ' + " &middot; ".join(craft) + "</div>", ""]
         lines.append("== In this book ==")
         lines.append(f"''{e(b.title)}'' names {mentions} entries of the {e(self.universe)} wiki: "
                      f"[[:Category:Appears in {b.title}|see them all]].")
