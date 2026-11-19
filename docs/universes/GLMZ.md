@@ -611,7 +611,7 @@ another thing <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">G
 - **Some are docile and stay**: driftbells over the dumps, hush reeds in hospital courts, shellsleepers as pets.
   This is the city's New Weird.
 - **It runs both ways.** Incursions, and the rift itself, take people and things back through. <entity repo="schism-entity" guid="d0068627-05ff-40d8-97ee-d7eba460a57b">The Lure</entity>
-  gathers; the <entity repo="schism_arrival" guid="01a1e7a7-37df-7faa-a343-7b449226ccdd">Welcomers</entity> keep. Nobody who comes back explains the other side.
+  gathers; the <entity repo="bestiary" guid="01a1e7a7-37df-7faa-a343-7b449226ccdd">Welcomers</entity> keep. Nobody who comes back explains the other side.
 - **The schism keeps no will** (01a116b0-a188). The incursions have the wants.
 
 **The Collapse (author 2026-11-16, law 01a1e7ca-096e).** This is the beginning of a complete collapse of physics,
@@ -673,14 +673,14 @@ in the wrong place, not from perfection: a brickleg kills for ten minutes, then 
 
 | Kind | What it is | Examples (records: type `schism_arrival`) |
 |---|---|---|
-| Biological | Life from other chemistry; the commonest, the quickest to die | <entity repo="schism_arrival" guid="01a1e7a7-0087-7d8e-a6d8-b171369b75aa">Pressure Kite</entity>, <entity repo="schism_arrival" guid="01a1e7a7-33b5-700f-835d-3a9b99e4a518">Saint's Mold</entity>, <entity repo="schism_arrival" guid="01a1e7a7-33f2-71fd-96b4-e5ebfa9bcd25">Stiltgrazer</entity>, <entity repo="schism_arrival" guid="01a1e7a7-3420-7f61-80bf-1671f6bd9e1d">Coldcrust</entity>, <entity repo="schism_arrival" guid="01a1e7a7-3455-707a-8ad3-e7b50ac0dad5">Brine Lantern</entity>, <entity repo="schism_arrival" guid="01a1e7a7-3476-758a-87e2-63726e54d250">Brickleg</entity>, <entity repo="schism_arrival" guid="01a1e7a7-34a4-70b2-9c3a-9182c11d2361">Tablecloth</entity>, <entity repo="schism_arrival" guid="01a1e7a7-37a2-76d8-8b8e-2bad49be5c9e">Wallscript</entity>, <entity repo="schism_arrival" guid="01a1e7b7-7152-7a0d-b405-364fe874e3c5">Pressfold</entity> |
-| Mechanical | Built things still running their last task; machines, never alive | <entity repo="schism_arrival" guid="01a1e7a7-3559-7ecb-b567-03d92d30bc47">Gradewalker</entity>, <entity repo="schism_arrival" guid="01a1e7a7-35ac-74e2-982b-457073cb2eba">Surveyor Clock</entity>, <entity repo="schism_arrival" guid="01a1e7a7-35e5-7947-9c8c-0f02868e5f31">Sower Engine</entity>, <entity repo="schism_arrival" guid="01a1e7a7-361f-7ba1-bdf6-3a3b83c400bd">Orphan Hull</entity> |
-| Post-technological | Leavings of makers past machinery | <entity repo="schism_arrival" guid="01a1e7a7-362f-7c3b-8000-e4bc7b5bf5f4">Sorting Engine</entity>, <entity repo="schism_arrival" guid="01a1e7a7-367c-73f5-b5e9-b96c5fca602c">Tellstone</entity>, <entity repo="schism_arrival" guid="01a1e7a7-369b-7638-bab8-52c2fff2e200">Archive Coral</entity>, <entity repo="schism_arrival" guid="01a1e7a7-36be-7c33-81b6-00a6f949f477">Accretor</entity> |
-| Geometric | A shape too large in direction for our space, seen as the slice that crosses it; touches the inside of sealed things (never a dimension number) | <entity repo="schism_arrival" guid="01a1e7a7-36ec-756e-af4d-7e387556e9f3">Pulsebloom</entity>, <entity repo="schism_arrival" guid="01a1e7a7-36fe-7b2b-b6aa-659528b30968">Ringlock</entity>, <entity repo="schism_arrival" guid="01a1e7a7-370f-71a6-a7fe-a1b1aa08e825">Inside Picker</entity>, <entity repo="schism_arrival" guid="01a1e7a7-371f-73c8-93ed-e20eb9d8a9a4">Incomplete</entity> |
-| Energy / field | Patterns in charge, heat, light or vibration, living where infrastructure hums in their range | <entity repo="schism_arrival" guid="01a1e7a7-3731-7b02-93a4-6776cbe8d4cc">Gridcalf</entity>, <entity repo="schism_arrival" guid="01a1e7a7-3742-7cf0-836a-0478e489e056">Humtide</entity>, <entity repo="schism_arrival" guid="01a1e7a7-3752-7b9e-8a27-9146deffbff2">Heatghost</entity> |
-| Informational | A pattern that lives by being copied or counted, not a body | <entity repo="schism_arrival" guid="01a1e7a7-3763-7aa3-b281-9b94c4e33fc7">Catchsong</entity>, <entity repo="schism_arrival" guid="01a1e7a7-3775-7861-b372-9cdc7f4595cb">Miscount</entity> |
-| Colonial | Organized takers, parts of something larger that stayed home; alien in motive, never cartoon-evil | <entity repo="schism_arrival" guid="01a1e7a7-37b1-750b-857d-ce2382f4d235">Lithium Tender</entity>, <entity repo="schism_arrival" guid="01a1e7a7-37df-7faa-a343-7b449226ccdd">Welcomers</entity>, <entity repo="schism_arrival" guid="01a1e7a7-3829-749b-a821-5defaf333832">Salt Callers</entity>, <entity repo="schism_arrival" guid="01a1e7b8-0c5f-7791-b606-1fc2c2bdc9cb">Etchweb</entity> |
-| Docile | The ones that stay and do no harm, kept, named, farmed | <entity repo="schism_arrival" guid="01a1e7a7-37fe-7711-8346-26ff1c9d2fd4">Sumpcalf</entity>, <entity repo="schism_arrival" guid="01a1e7a7-3868-77e2-8a5f-b6f93109b2ea">Driftbell</entity>, <entity repo="schism_arrival" guid="01a1e7a7-38c3-7692-bea1-547f8d164094">Hush Reed</entity>, <entity repo="schism_arrival" guid="01a1e7a7-38f2-7a8b-9391-49168fcf2d3e">Shellsleeper</entity>, <entity repo="schism_arrival" guid="01a1e7a7-3905-7380-8b23-3acadb980a8e">Rustmoss</entity>, <entity repo="schism_arrival" guid="01a1e7b7-7101-7fb0-b1a8-85110fa43c62">Film Skater</entity> |
+| Biological | Life from other chemistry; the commonest, the quickest to die | <entity repo="bestiary" guid="01a1e7a7-0087-7d8e-a6d8-b171369b75aa">Pressure Kite</entity>, <entity repo="bestiary" guid="01a1e7a7-33b5-700f-835d-3a9b99e4a518">Saint's Mold</entity>, <entity repo="bestiary" guid="01a1e7a7-33f2-71fd-96b4-e5ebfa9bcd25">Stiltgrazer</entity>, <entity repo="bestiary" guid="01a1e7a7-3420-7f61-80bf-1671f6bd9e1d">Coldcrust</entity>, <entity repo="bestiary" guid="01a1e7a7-3455-707a-8ad3-e7b50ac0dad5">Brine Lantern</entity>, <entity repo="bestiary" guid="01a1e7a7-3476-758a-87e2-63726e54d250">Brickleg</entity>, <entity repo="bestiary" guid="01a1e7a7-34a4-70b2-9c3a-9182c11d2361">Tablecloth</entity>, <entity repo="bestiary" guid="01a1e7a7-37a2-76d8-8b8e-2bad49be5c9e">Wallscript</entity>, <entity repo="bestiary" guid="01a1e7b7-7152-7a0d-b405-364fe874e3c5">Pressfold</entity> |
+| Mechanical | Built things still running their last task; machines, never alive | <entity repo="bestiary" guid="01a1e7a7-3559-7ecb-b567-03d92d30bc47">Gradewalker</entity>, <entity repo="bestiary" guid="01a1e7a7-35ac-74e2-982b-457073cb2eba">Surveyor Clock</entity>, <entity repo="bestiary" guid="01a1e7a7-35e5-7947-9c8c-0f02868e5f31">Sower Engine</entity>, <entity repo="bestiary" guid="01a1e7a7-361f-7ba1-bdf6-3a3b83c400bd">Orphan Hull</entity> |
+| Post-technological | Leavings of makers past machinery | <entity repo="bestiary" guid="01a1e7a7-362f-7c3b-8000-e4bc7b5bf5f4">Sorting Engine</entity>, <entity repo="bestiary" guid="01a1e7a7-367c-73f5-b5e9-b96c5fca602c">Tellstone</entity>, <entity repo="bestiary" guid="01a1e7a7-369b-7638-bab8-52c2fff2e200">Archive Coral</entity>, <entity repo="bestiary" guid="01a1e7a7-36be-7c33-81b6-00a6f949f477">Accretor</entity> |
+| Geometric | A shape too large in direction for our space, seen as the slice that crosses it; touches the inside of sealed things (never a dimension number) | <entity repo="bestiary" guid="01a1e7a7-36ec-756e-af4d-7e387556e9f3">Pulsebloom</entity>, <entity repo="bestiary" guid="01a1e7a7-36fe-7b2b-b6aa-659528b30968">Ringlock</entity>, <entity repo="bestiary" guid="01a1e7a7-370f-71a6-a7fe-a1b1aa08e825">Inside Picker</entity>, <entity repo="bestiary" guid="01a1e7a7-371f-73c8-93ed-e20eb9d8a9a4">Incomplete</entity> |
+| Energy / field | Patterns in charge, heat, light or vibration, living where infrastructure hums in their range | <entity repo="bestiary" guid="01a1e7a7-3731-7b02-93a4-6776cbe8d4cc">Gridcalf</entity>, <entity repo="bestiary" guid="01a1e7a7-3742-7cf0-836a-0478e489e056">Humtide</entity>, <entity repo="bestiary" guid="01a1e7a7-3752-7b9e-8a27-9146deffbff2">Heatghost</entity> |
+| Informational | A pattern that lives by being copied or counted, not a body | <entity repo="bestiary" guid="01a1e7a7-3763-7aa3-b281-9b94c4e33fc7">Catchsong</entity>, <entity repo="bestiary" guid="01a1e7a7-3775-7861-b372-9cdc7f4595cb">Miscount</entity> |
+| Colonial | Organized takers, parts of something larger that stayed home; alien in motive, never cartoon-evil | <entity repo="bestiary" guid="01a1e7a7-37b1-750b-857d-ce2382f4d235">Lithium Tender</entity>, <entity repo="bestiary" guid="01a1e7a7-37df-7faa-a343-7b449226ccdd">Welcomers</entity>, <entity repo="bestiary" guid="01a1e7a7-3829-749b-a821-5defaf333832">Salt Callers</entity>, <entity repo="bestiary" guid="01a1e7b8-0c5f-7791-b606-1fc2c2bdc9cb">Etchweb</entity> |
+| Docile | The ones that stay and do no harm, kept, named, farmed | <entity repo="bestiary" guid="01a1e7a7-37fe-7711-8346-26ff1c9d2fd4">Sumpcalf</entity>, <entity repo="bestiary" guid="01a1e7a7-3868-77e2-8a5f-b6f93109b2ea">Driftbell</entity>, <entity repo="bestiary" guid="01a1e7a7-38c3-7692-bea1-547f8d164094">Hush Reed</entity>, <entity repo="bestiary" guid="01a1e7a7-38f2-7a8b-9391-49168fcf2d3e">Shellsleeper</entity>, <entity repo="bestiary" guid="01a1e7a7-3905-7380-8b23-3acadb980a8e">Rustmoss</entity>, <entity repo="bestiary" guid="01a1e7b7-7101-7fb0-b1a8-85110fa43c62">Film Skater</entity> |
 
 **Where incursions come from: origin and fit (law 01a1e7b5-dd73).** This is the in-world science
 as <entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity> files it and the street half-understands it. It stays argued over, and no dimension is ever numbered.
@@ -690,10 +690,10 @@ The Interstice is what lies between universes; a Schism is where ours is thin to
   (gravity, pressure, chemistry, handedness, base tone). Most biological and mechanical incursions. Street: "from the side".
 - **(A) Ascendant**: from a higher universe with more directions than ours. We see only the slice that
   crosses our space: separate pieces moving as one, able to touch the inside of sealed things.
-  Street: "from above", "tall ones". Examples: <entity repo="schism_arrival" guid="01a1e7a7-36ec-756e-af4d-7e387556e9f3">Pulsebloom</entity>, <entity repo="schism_arrival" guid="01a1e7a7-36fe-7b2b-b6aa-659528b30968">Ringlock</entity>, <entity repo="schism_arrival" guid="01a1e7a7-370f-71a6-a7fe-a1b1aa08e825">Inside Picker</entity>, <entity repo="schism_arrival" guid="01a1e7a7-371f-73c8-93ed-e20eb9d8a9a4">Incomplete</entity>, <entity repo="schism_arrival" guid="01a1e7a7-37df-7faa-a343-7b449226ccdd">Welcomers</entity>.
+  Street: "from above", "tall ones". Examples: <entity repo="bestiary" guid="01a1e7a7-36ec-756e-af4d-7e387556e9f3">Pulsebloom</entity>, <entity repo="bestiary" guid="01a1e7a7-36fe-7b2b-b6aa-659528b30968">Ringlock</entity>, <entity repo="bestiary" guid="01a1e7a7-370f-71a6-a7fe-a1b1aa08e825">Inside Picker</entity>, <entity repo="bestiary" guid="01a1e7a7-371f-73c8-93ed-e20eb9d8a9a4">Incomplete</entity>, <entity repo="bestiary" guid="01a1e7a7-37df-7faa-a343-7b449226ccdd">Welcomers</entity>.
 - **(D) Descendant**: from a lower universe with fewer directions. These things have no thickness and
   can live only on surfaces (walls, the skin of water, skin) and die if they try to take on depth.
-  Street: "from below", "flats". Examples: <entity repo="schism_arrival" guid="01a1e7a7-37a2-76d8-8b8e-2bad49be5c9e">Wallscript</entity>, <entity repo="schism_arrival" guid="01a1e7b7-7101-7fb0-b1a8-85110fa43c62">Film Skater</entity>, <entity repo="schism_arrival" guid="01a1e7b7-7152-7a0d-b405-364fe874e3c5">Pressfold</entity>, <entity repo="schism_arrival" guid="01a1e7b8-0c5f-7791-b606-1fc2c2bdc9cb">Etchweb</entity>.
+  Street: "from below", "flats". Examples: <entity repo="bestiary" guid="01a1e7a7-37a2-76d8-8b8e-2bad49be5c9e">Wallscript</entity>, <entity repo="bestiary" guid="01a1e7b7-7101-7fb0-b1a8-85110fa43c62">Film Skater</entity>, <entity repo="bestiary" guid="01a1e7b7-7152-7a0d-b405-364fe874e3c5">Pressfold</entity>, <entity repo="bestiary" guid="01a1e7b8-0c5f-7791-b606-1fc2c2bdc9cb">Etchweb</entity>.
   <entity repo="motif" guid="019d6143-a8e2-727a-be75-32648e8aaa47">Rain</entity> running *up* a window is the street sign that one came through nearby.
 - **Fit**: how closely the home physics matches ours, the one number that predicts whether it dies on arrival
   (low), lives on the thin spot (marginal), lives outside a while (middling), or stays (high).
@@ -747,7 +747,7 @@ The Interstice is what lies between universes; a Schism is where ours is thin to
 - **Rift tourism** is a gray industry: the glowing lake, the Joliet ringlock.
 - **Folk archives** of photos and binders get passed down in families who live near a rift.
 - **<entity repo="faction" guid="01a10f60-918b-7f54-aed5-96ab777414e8">The Cabal</entity> knows the whole catalogue.** The CorpoNations are fascinated, and their research arms buy everything
-  that comes through. <entity repo="schism_arrival" guid="01a1e7a7-369b-7638-bab8-52c2fff2e200">Archive coral</entity> is worth more <entity repo="vocabulary" guid="019d6143-aad7-79ad-b18b-52c47f01c4a2">Quanta</entity> per gram than anything else that falls, and every
+  that comes through. <entity repo="bestiary" guid="01a1e7a7-369b-7638-bab8-52c2fff2e200">Archive coral</entity> is worth more <entity repo="vocabulary" guid="019d6143-aad7-79ad-b18b-52c47f01c4a2">Quanta</entity> per gram than anything else that falls, and every
   scrape ends part of whatever is running inside it.
 
 **Parked for Season 2:** the shortcut universe (author 2026-11-16, page-law 01a1e7b5-e6c7). It is not part of the
@@ -755,46 +755,46 @@ Season 1 world: no rift travel to far places, no rumor of it, and incursions nev
 
 ### Mindshine, the Veiled Ones, and the orders (author /goal 2026-11-18, PRS-T1016; Veiled Ones PRS-T1019; laws 01a1ee38-c149, 01a1efbe-664e, 01a1ee38-c1f6, 01a1ef9e-0334)
 
-The author asked for an entirely new kind of cosmic-horror integration, woven through every GLMZ book over several
-passes until it is part of the world's organic nature. Three pieces, all classified in Ren's book (code **REN**):
+The author asked for an entirely new kind of cosmic-horror integration, woven through every <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> book over several
+passes until it is part of the world's organic nature. Three pieces, all classified in <entity repo="character" guid="019ebf4b-d21b-70a8-9193-4ee705e3f80e">Ren</entity>'s book (code **REN**):
 
-- **Mindshine** (vocabulary `mindshine`). What a thinking mind looks like from above or below. Consciousness gathers
+- **Mindshine** (vocabulary `<entity repo="vocabulary" guid="01a1ee37-4aab-78df-a6c5-5e8293c29502">mindshine</entity>`). What a thinking mind looks like from above or below. Consciousness gathers
   around complexity like gravity (the foundation law), and to anything on the far side that gathering *shows*: every mind a
-  light, a server hall a bonfire, a crowd a lit window, a SuperMind a sun, Egregore over the lake something none of
-  them can look away from. Incursions that live past the thin spot drift toward mindshine: crowds, data halls, neuretics
-  hubs, fevered children, the dying (a mind flares at the end). Sensitives burn brighter. AAMA files say "cognitive
+  light, a server hall a bonfire, a crowd a lit window, a SuperMind a sun, <entity repo="place" guid="01a10f60-4159-770f-af38-bda00ff349c7">Egregore</entity> over the lake something none of
+  them can look away from. Incursions that live past the thin spot drift toward <entity repo="vocabulary" guid="01a1ee37-4aab-78df-a6c5-5e8293c29502">mindshine</entity>: crowds, data halls, neuretics
+  hubs, fevered children, the dying (a mind flares at the end). Sensitives burn brighter. <entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity> files say "cognitive
   attraction"; the street says "keep your shine low". **Belief and hypothesis only on the page**: never proved, never a
   meter, and it opens no doors (the Cabal's taps do, as subtext). The horror is not what you see; it is that you are seen.
-- **The Veiled Ones** (law 01a1efbe-664e; "the Dressed" retired 2026-11-18, PRS-T1019; bestiary, codex class VEILED; AAMA "R-forms";
-  street "the Veiled Ones"; Ren's word "company"). Entities, and sometimes places, that break the rules of reality and
+- **The Veiled Ones** (law 01a1efbe-664e; "the Dressed" retired 2026-11-18, PRS-T1019; bestiary, codex class VEILED; <entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity> "R-forms";
+  street "the Veiled Ones"; <entity repo="character" guid="019ebf4b-d21b-70a8-9193-4ee705e3f80e">Ren</entity>'s word "company"). Entities, and sometimes places, that break the rules of reality and
   exist anyway. No form of their own: each is seen as an **archetype** imagined from that viewer's own expectation of it.
-  The Night Nurse is always recognizably a nurse, but her scrubs are blue or green, white or black, and she is heavy or
+  <entity repo="bestiary" guid="01a1ee37-7aff-722c-8537-c1a7e4f5b2b0">The Night Nurse</entity> is always recognizably a nurse, but her scrubs are blue or green, white or black, and she is heavy or
   thin, according to that one person's idea of a nurse. Witnesses differ on details and agree on the archetype, the act
   and the **seam** (the one wrong detail everyone sees). Motives dubious: a kindness may carry a price. They exist **only
   for someone alone, or ignored by everyone around them**; some people cannot see them at all, even beside someone who
   does. **Show, never tell**: that they come from elsewhere comes through only in context clues (a detail that breaks
   physics, the seam, a thin spot nearby, the 19 Hz ring, a thing returned changed, a place boarded up by daylight).
   No one on the page says what they are. Never seen whole; violence passes through them; not ghosts, angels or gods.
-  On file, with the first year a book may use each: **the Traveler** (the Man on the Camel, Joliet 2217, *Steppin'
-  Razor*; keeps company with travelers; the AAMA file was built around it), **the Slogger** 2201 (wades the deep lake;
-  pilots steer by it), **the Old Man in the Booth** 2206 (directions for the lost; the cord runs down through the floor),
-  **the Night Nurse** 2209 (sits with the dying; upside-down watch, thirteen marks), **the Ticket Taker** 2214 (punches
-  your ticket; you miss the next fall), **the Small-Hours Grocer** 2219 (a 3 a.m. corner shop; you pay with a secret and
-  afterward know you had one but not what it was), **the Jump Rope Girl** 2221 (skips on the roofs before a rupture),
+  On file, with the first year a book may use each: **the Traveler** (<entity repo="character" guid="019ef805-5bc8-79bd-bff5-a3e082311bb2">the Man on the Camel</entity>, Joliet 2217, *Steppin'
+  Razor*; keeps company with travelers; the <entity repo="faction" guid="01a01888-168f-7673-a2b7-3bd0b16ea08f">AAMA</entity> file was built around it), **the Slogger** 2201 (wades the deep lake;
+  pilots steer by it), **<entity repo="bestiary" guid="01a1ee37-85ab-736f-9893-260acb64b776">the Old Man in the Booth</entity>** 2206 (directions for the lost; the cord runs down through the floor),
+  **<entity repo="bestiary" guid="01a1ee37-7aff-722c-8537-c1a7e4f5b2b0">the Night Nurse</entity>** 2209 (sits with the dying; upside-down watch, thirteen marks), **<entity repo="bestiary" guid="01a1ee37-7c84-727a-a5fa-b02e72f4020c">the Ticket Taker</entity>** 2214 (punches
+  your ticket; you miss the next fall), **<entity repo="bestiary" guid="01a1ee37-8855-74b3-8b35-5e771e9c1dcf">the Small-Hours Grocer</entity>** 2219 (a 3 a.m. corner shop; you pay with a secret and
+  afterward know you had one but not what it was), **<entity repo="bestiary" guid="01a1ee37-7da4-76de-9178-a9d3d144a008">the Jump Rope Girl</entity>** 2221 (skips on the roofs before a rupture),
   **the Beggar** 2223 (asks for one small thing and brings it back changed; give once, never twice). **Retired and
-  removed from every book:** the Stone Mourner and the Write-Off Man.
+  removed from every book:** the Stone Mourner and the Write-Off <entity repo="character" guid="019e9e4f-1714-79bb-a6bb-8edac5a0b345">Man</entity>.
 - **The orders and cults** (faction records). People organize around the doors the way they organize around any war or
-  weather. Founding years (a book never predates them): the Sectionists 2196 (Hyde Park scholars assembling the whole
-  from slices; the closest go silent), the Clock Wives 2205 (grandmothers' warning network of surveyor clocks and bell
-  chains), the Quiet Bidders 2215 (arcology collectors' auctions of live incursions), the Fallsisters 2219 (hospice for
-  dying incursions), the Dimhouses 2222 (keep your shine low), the Lantern Mothers 2224 (families of the taken; lanterns
-  at rift edges so the taken can find the way back), the Backhaulers 2224 (smugglers who push things and people back
-  through), the Nineteens 2225 (19 Hz raves at rift edges), the Bright Choir 2226 (overclocked neuretic choirs that want
-  to be seen and taken), the Coralheads 2227 (archive-coral users who speak in other people's sentences), the Skinwrit
+  weather. Founding years (a book never predates them): the <entity repo="faction" guid="01a1ee37-b08a-7236-95c8-fb3ed20486c6">Sectionists</entity> 2196 (Hyde <entity repo="character" guid="0260b3a7-2d4f-8e1c-9b50-a637c8de2f10">Park</entity> scholars assembling the whole
+  from slices; the closest go silent), <entity repo="faction" guid="01a1ee37-9d88-7cdf-89b3-23bae17b7fa3">the Clock Wives</entity> 2205 (grandmothers' warning network of surveyor clocks and bell
+  chains), <entity repo="faction" guid="01a1ee37-efd1-7443-9dba-9143248483a3">the Quiet Bidders</entity> 2215 (arcology collectors' auctions of live incursions), the <entity repo="faction" guid="01a1ee37-a788-7494-b851-34c84832bb35">Fallsisters</entity> 2219 (hospice for
+  dying incursions), the Dimhouses 2222 (keep your shine low), <entity repo="faction" guid="01a1ee37-b9d0-7e12-86a1-5dd95b2ae0e4">the Lantern Mothers</entity> 2224 (families of the taken; lanterns
+  at rift edges so the taken can find the way back), the <entity repo="faction" guid="01a1ee37-f89e-7ae4-95f3-cbb1f81fcde9">Backhaulers</entity> 2224 (smugglers who push things and people back
+  through), the <entity repo="faction" guid="01a1ee37-e6b0-7484-aee2-2bc7115b73ba">Nineteens</entity> 2225 (19 Hz raves at rift edges), <entity repo="faction" guid="01a1ee37-cb9c-7127-a9b7-74097faff6b3">the Bright Choir</entity> 2226 (overclocked neuretic choirs that want
+  to be seen and taken), the <entity repo="faction" guid="01a1ee37-d498-7750-aa59-e6ebcbbfeb9b">Coralheads</entity> 2227 (archive-coral users who speak in other people's sentences), the Skinwrit
   2228 (flats living on skin as moving tattoos).
 
 **The weave** (law 01a1ee38-c240): each book carries the codex creatures by their informal names, the drop and the
-waking whenever one is truly seen, one Veiled One encounter at most, several order touches, and mindshine as street
+waking whenever one is truly seen, one Veiled One encounter at most, several order touches, and <entity repo="vocabulary" guid="01a1ee37-4aab-78df-a6c5-5e8293c29502">mindshine</entity> as street
 talk, all pitched to the book's year. Pipeline: `Downloads\GLMZ_Bestiary\weave2` (WEAVE2_BRIEF.md, canon_new.json,
 check.py, in\ and out\ per chunk).
 
