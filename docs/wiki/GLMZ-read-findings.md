@@ -416,3 +416,80 @@ Left as they are (9):
 | vultures-at-the-door-019ec467 | 21767 | #21767: 'We'/'us' (Tomas and Levin as the Carrion crew) on The Vultures; same reason as #21647 |
 | vultures-at-the-door-019ec467 | 21797 | #21797 already carries The South Side (Chicago), the right entity. Not touched, for follow-up: #21608, #21686, #21837 in this book still tag 'the south side' as Milwaukee's The South Side |
 | the-long-cut | 10362 | the original depth is not recoverable from the text (contradicts the 800m signal range); choosing a number is a story judgment |
+
+## Story findings resolved (PRS-T1035)
+
+Owner direction (2026-11-19): fix in Prose first, then sync the wiki. Policy: the entity record follows the books where
+the books agree; a beat changes, minimally, only where it contradicts an earlier book, its own book or a record the
+books uphold; nothing invented. Every touched beat was re-read and receipted; all 23 books read 0 unread afterwards.
+
+66 items: 44 beat-text fixes, 7 record fixes, 1 tag fix, 14 consistent on a closer read (no change).
+
+| Book | Beat | Decision | Detail |
+|---|---|---|---|
+| attendance | 9386 | record-changed | Brickleg record visible_slice and both image prompts: 'size of a large dog' -> 'size of a delivery cart'. The books agree the Brickleg is big (Babineaux's Guide #24001 and #24088 and Every Schism Holds #23707: a delivery cart; #22452: a freight pallet; Attenda |
+| attendance | 16029 | record-changed | Lure record summary: added that the crews who log the schism fences call it the Lure too, because drawing things toward the boundary is all anyone has seen it do (in #16030 the same crews name the Counter). The Counter naming was kept. |
+| attendance | 22193 | record-changed | Lure record summary: added that it cannot tell a person from a wall but can tell a mesh it can use from one it can't. It passes through a finished mind and holds a bargain with a man it can use until he is no longer worth collecting (Milo, Attendance). 'Does n |
+| between-the-lines | 16974 | text-changed | 'Bishop hands him something small' -> 'Bishop shows him something small'. Bishop keeps the scanner and has it raised at bay four in this beat and in #16976. |
+| bushido-coda | 20484 | no-change-misread | This is Kyle's held belief. 20485 overturns it right away ('He had half known since the camphor... a client and a counter were different ledgers'). |
+| bushido-coda | 20644 | no-change-misread | The notation began at the carousel at 18.7 Hz (20547, 20549), comes back at 18.9/18.8 ('Point-two off the carousel') and again at 18.7 (20659). '18.7 Hz notation since the carousel' refers to the first reading. |
+| bushido-coda | 20736 | record-changed | The book is the only source and it says nine. Dr. Nadia Park description + summary: 'for eleven seconds' -> 'for nine seconds'. Re-read+receipted 20736-20747, the-cabal 23752, wells 23431. |
+| bushido-coda | 20768 | no-change-misread | 20590's 30ft is the array-to-Kyle reading across the hall (bench in 2E to his room), not hall width; 'four steps home' fits a 4 m hall. |
+| bushido-coda | 20834 | text-changed | Kyle speaks "I'll deal with that separately." (the Continuity Office is his client; Breckenridge then pivots to the job). Tag only: that 'I' retagged Walt Breckenridge -> Kyle (019d6143-a648); words unchanged. |
+| bushido-coda | 20880 | text-changed | The record says she/her and 20880 agrees. 20838: 'the way, he said, his sister had talked' -> 'the way, she said, her sister had talked'. |
+| crimson-chrome | 6440 | text-changed | 'The good doors in GLMZ wheeze' -> 'The good doors in the zone wheeze'. GLMZ record: residents say GLMZ only on a form; on the street it is the zone. |
+| crimson-chrome | 6447 | text-changed | 'the one place in GLMZ' -> 'the one place in the zone'; 'the only room in GLMZ' -> 'the only room in the zone'. |
+| crimson-chrome | 6536 | text-changed | 'Scout came last off the floor, and stood on the shore road with Gerald' -> 'Scout stood on the shore road with Gerald'. Earlier in the same beat Scout comes up the ramp ahead of the clerks. |
+| crimson-chrome | 6543 | text-changed | 'matte steel that swallowed' -> 'matte polymer that swallowed' (Reibo record: full-size polymer pistol frame with a matte, light-absorbing finish). |
+| crimson-chrome | 6551 | text-changed | 'The GLMZ doesn't stop being' -> 'The zone doesn't stop being' (same splice as the 'came down' fix). |
+| crimson-chrome | 6551 | text-changed | 'because one building came down' -> 'because one building gave up its beds' (the beds were rolled out; the building still stands). |
+| killing-things-from-other-worlds-01a1e80d | 24001 | record-changed | Book says delivery cart in 24001 and 24088; the Brickleg visible_slice and both image prompts now say 'about the size of a delivery cart'. A concurrent edit had already made this change when I came to apply it; I checked it and made no further change. |
+| killing-things-from-other-worlds-01a1e80d | 24024 | record-changed | 24024/24027 agree on cat-sized; Gridcalf visible_slice 'about the size of a calf'->'about the size of a cat', midjourney 'calf-sized'->'cat-sized', nano 'about the size of calves'->'about the size of cats'. Re-read+receipted 24023/24024/24027/24032/24048. |
+| killing-things-from-other-worlds-01a1e80d | 24043 | text-changed | 24043: 'and that afternoon she was at the stove when the first cousins came for Sunday.' -> 'and that Sunday she was at the stove when the first cousins came.' (the morning is a Tuesday per the 2 a.m. Tuesday note and 'thaw Thursday, two days out'). |
+| killing-things-from-other-worlds-01a1e80d | 24046 | text-changed | 24046: "under their wives' names" -> "under their mothers' married names" (matches 24005/24006). |
+| killing-things-from-other-worlds-01a1e80d | 24067 | text-changed | 24067: 'My family lives there. I grew up there.' -> 'My family lives a few decks under it, in the Glooms. I grew up there.' (Canaryville is in the Glooms per 24007; 24026 puts the Glooms below the Seams). |
+| killing-things-from-other-worlds-01a1e80d | 24071 | text-changed | Fixed in 24005, the outlier (24071 and 24088 both say years ago): 'and I never did know what she meant.' -> 'and I never did know what she meant, any more than I had years back, the first time somebody said it to me.' The great-aunt now repeats an old line; 24 |
+| killing-things-from-other-worlds-01a1e80d | 24077 | text-changed | The record is upheld by the-cabal 23706 ('A gray crust') and cxc 6552 ('thinking crust'). Changed the colour in 24077: 'white going to blue at the tips'->'gray going to violet at the tips', 'every white-blue tip'->'every gray-violet tip'. Kept the branching-sl |
+| killing-things-from-other-worlds-01a1e80d | 24086 | text-changed | 24086: 'In the summer of 2229,'->'In the autumn of 2229,' (fell Aug, vanished Oct, sold within a week per 24074/24075). |
+| killing-things-from-other-worlds-01a1e80d | 24086 | no-change-misread | Consistent on a closer read: #24074 never says the coral chain was the first time Paula saw his name; she 'put it with her other notes', which fits her having had him on file since the AAMA file was sold in '24 (six years before 2230, as #24086 says). |
+| killing-things-from-other-worlds-01a1e80d | 24088 | text-changed | Resolved by the 24005 edit (see 24071): somebody first said the line to Ren years back and the great-aunt repeats it; 24088 unchanged. |
+| killing-things-from-other-worlds-01a1e80d | 24091 | text-changed | 24091: 'two weeks before Margitte stood up' -> 'the Sunday before the twenty-second'. |
+| killing-things-from-other-worlds-01a1e80d | 24092 | text-changed | 24092: "The summer of '29, to Axiom." -> "The autumn of '29, to Axiom." |
+| killing-things-from-other-worlds-01a1e80d | 24094 | text-changed | 24094: 'Every door in the city had shut but one.' -> 'Every door in the city was going, and one would go last.'; 'The Hole was the last door open.' -> 'The Hole would be the last door open.' |
+| killing-things-from-other-worlds-01a1e80d | 24108 | text-changed | 24108: 'about the length of her arm'->'about the length of her hand'; "an arm's length of fish"->"a hand's length of fish" (a ten-year-old's hand, close to the record's fist-sized). |
+| magenta-gunmetal | 6968 | text-changed | The right target is The Glooms place entity (01a1e8c3), the bottom of the stack with Canaryville in it, and the Babineaux cousins come from Canaryville. The splice 'A job in The Glooms' -> 'A job in the Glooms' (lower-case house style) removed the wrong GLMZ t |
+| mnemosync | 8125 | no-change-misread | 'GLMZ health data' names an official dataset, the 'on a form' use the GLMZ record allows. It is not a street name for the city. |
+| neon-rust | 7203 | text-changed | 'This year they were promising everybody.' -> 'This year AAMA was promising everybody.' |
+| neon-rust | 7508 | no-change-misread | In context (#7502, #7505), Lace's two fingers are on the cold steel wall beside Vox. The cold reading comes up through Lace's fingers and the POV 'she' is Vox, so Lace is the right name. |
+| neon-rust | 7548 | text-changed | -> 'the first of the two names she had for the twenty-one'. Taye Anwunobi's record makes him an Old Harbor lift survivor, so he is one of the twenty-one; Sefi stays the first name, per her record. |
+| pieces | 23185 | no-change-misread | Pixel record: Detroit is inside the GLMZ and the Seams are the untiered ground everywhere in it, so a Detroit childhood in the Seams fits. Nothing in the beat puts her childhood in Chicago. |
+| pieces | 23302 | no-change-misread | Rampart record: 'never puts his down, though Tavi comes to believe it went into a drawer'. TWD #6744 is Tavi's belief ('Tavi figured'), so Pieces is right. |
+| pieces | 23315 | text-changed | 'in the margins of her log' -> 'in her head'. The margins and the box are Yemina's and Selvamani's log is feed times, but she knows the forty by number (#23196). |
+| pieces | 23329 | no-change-misread | Same as #23302: per Rampart's record he never put his twin down; the drawer is only Tavi's belief in TWD #6744. |
+| pieces | 23346 | text-changed | 'a quiet seam' -> 'a steady seam' (matches Selvamani's 'Steadier since it went', #23194). |
+| read-the-room | 6115 | record-changed | Wolfpack record specifications: 'lock: DNA lock keyed to the registered owner' -> 'lock: none; the gun fires for whoever holds it (Ethan Wolfe fires one taken off Koss's crew in Read the Room)'. The record's own summary and the book already have Ethan firing i |
+| sparrow | 4089 | text-changed | Elias's record: thirteen years indoors; the book: eleven years in the job (six lines). #4089 'the job came with the address thirteen years ago' -> 'the job came two years after the address'. Resolves #4092/#4203/#4210 with no other change. Re-read and receipte |
+| sparrow | 4092 | text-changed | Resolved by the #4089 splice (the job came two years after the address): eleven years in the job, thirteen indoors. |
+| sparrow | 4203 | text-changed | Resolved by the #4089 splice (the job came two years after the address): eleven years in the job, thirteen indoors. |
+| steppin-razor | 8567 | no-change-misread | 8567/8570 describe the dead outer end of the line ('this far out on the line', 'out here'); the working hub/interchange (8561/8565) is in town. Both hold. |
+| steppin-razor | 8602 | no-change-misread | The book calls the figure Sasha sees 'the man on the camel' and 'he' throughout (8597, 8608). The record's narration_voice says she perceives it only as a man on a camel; it/its is the entity's own pronoun. |
+| the-cabal | 23575 | text-changed | 23575 and 23703 (same phrase): 'strawberry-red braid' -> 'dark red braid' (record + bushido-coda 20788). |
+| the-cabal | 23579 | text-changed | 23579: '262ft (80m) to the bottom' -> '131ft (40m) to the bottom' (the book itself says 40 m of water in 23618/23686). |
+| the-cabal | 23603 | text-changed | 23603: 'dented aluminum case, for seven years.' -> 'for eleven years.' (Pixel is 33 in 2230; her mother died the winter she was 23). |
+| the-cabal | 23618 | text-changed | 23618: 'Twenty-three hundred feet (700m) under the bottom of the pyramid.' -> '... (700m) under the lakebed.' (matches the drawing: circle at the bottom of the 700 m root). Same slip in 23703: '2,336ft (712m) under the bottom of a black pyramid' -> '2,336ft (7 |
+| the-cabal | 23647 | text-changed | 23647: "in her mother's square capitals, for seven years." -> 'for eleven years.' |
+| the-cabal | 23686 | no-change-misread | Consistent: the pyramid's 700 m root sits inside the 712 m of rock below the lakebed, so rock, lake and pyramid all lie above the junction (~752 m down). The doubled-depth wording was in 23618/23703, now fixed. |
+| the-cabal | 23693 | text-changed | 23693: 'carried for seven years in her chest' -> 'carried for eleven years in her chest'. |
+| the-cabal | 23703 | no-change-misread | Sparrow states 'thirteen years indoors' in late 2226 (that story runs on to November/January) and gives no start date, so Feb 2231 is about 17 years. No year anchor forces eighteen. |
+| the-cabal | 23711 | text-changed | 23711: 'He had never once fired it.' -> 'He had not fired it since 2226.' 'loaded it in 2227' and 'carried for sixteen years' (since 2215) agree with each other, so I left them. |
+| the-cabal | 23744 | no-change-misread | Raafe Choi is he/him (record), so 'her' cannot be Choi. Choi holds Bear's sixteen names, and Kyle must carry them to Selvamani, who closes cases on the record (23749). The tag was already Selvamani (019ec17b), so no change. |
+| the-cabal | 23751 | text-changed | 23751: '262ft (80m) to the bottom' -> '131ft (40m) to the bottom'. |
+| the-way-down | 6684 | text-changed | 'I never told him that part,' -> 'I never told him the rest of it,'. He told Tavi about the stranger (TWU #6658) but not what he decided that night, which the next lines give. |
+| the-way-up | 6639 | tag-fixed | The dead hauler "Dolores" now carries the not-an-entity mark (per-occurrence tag edit), so Finetti's alias cannot re-link it. |
+| vultures-at-the-door-019ec467 | 21539 | text-changed | 'the Glooms' -> 'the zone'. GLMZ record: residents call it the zone or the city, and the Glooms is the bottom of the stack. The edit also removed the wrong GLMZ link on 'the Glooms'. |
+| vultures-at-the-door-019ec467 | 21804 | text-changed | 'tonight' -> 'last night'. He left Tomas and Levin 'ahead of the dawn' (#21787), and this beat is the morning after. |
+| wells | 23455 | text-changed | 'ARC, the Arcturus Research Center, in Chicago' -> 'ARC, the Aerostatic Regulatory Command, in Chicago' (matches BTL and the ARC faction record 019fed06; no Arcturus Research Center entity exists). |
+| wells | 23470 | text-changed | -> 'The Aerostatic Regulatory Command's checkpoint grid' (ARC owns the checkpoints in BTL and in its record). |
+| wells | 23513 | text-changed | 'five weeks' -> 'two months'. They were together from Pieces #23274 on (about three weeks before the great pump), then three weeks after it, the vault week, Able's evenings, the dunes, the eight-day corridor and the Erie shore. |
+| wells | 23524 | text-changed | 'Not four-twelve like the Colonnade' -> 'Not four hundred like the Colonnade' (the book and the Colonnade Well record both say 400 m). |
+| wells | 23541 | text-changed | 'it was hot, and the hot came through' -> 'it ran a fever, and the fever came through'. Sasha said that at 390 'it's running a fever right in the stone'; the existing 420 heat-through-the-harness line already matches. |
