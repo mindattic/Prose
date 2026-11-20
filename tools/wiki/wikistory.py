@@ -232,6 +232,20 @@ class Story:
                         j = min(known, key=lambda k: abs(k - i))
                         per[i] = (per[j][1], per[j][1]) if j < i else (per[j][0], per[j][0])
                 dated[b.slug] = per
+        # Dated books stamped from the same anchor (1 January of their year, until Prose has real start dates) would all
+        # begin the same day and interleave: a later book in story order starts after the earlier one ends instead,
+        # keeping every chapter's own spacing.
+        last_end = None
+        for b in books:
+            per = dated.get(b.slug)
+            if not per:
+                continue
+            start = min(p[0] for p in per)
+            if last_end and start <= last_end and start.year == last_end.year:
+                shift = (last_end - start) + dt.timedelta(days=1)
+                dated[b.slug] = per = [(s + shift, e + shift) for s, e in per]
+                b._shifted = True
+            last_end = max(p[1] for p in per)
         # Undated books: between the dated books around them in story order (or a year apart when none are dated).
         spans = {s: (p[0][0], p[-1][1]) for s, p in dated.items()}
         base = dt.datetime(2217, 1, 1)
