@@ -90,12 +90,12 @@ public static class BeatTimelineInference
         var directBeats = await LoadBeatsAsync(db, node.Id, episodeTitle: null, ct);
         var chunks = new List<(string? episodeTitle, List<BeatRow> beats)>();
 
-        if (directBeats.Count > 0)
-        {
-            for (int start = 0; start < directBeats.Count; start += ChunkSize)
-                chunks.Add((null, directBeats.Skip(start).Take(ChunkSize).ToList()));
-        }
-        else
+        // A book's own beats (an opening, an epigraph) come first; its chapters follow. Reading only the direct beats
+        // when there were any left Pieces and Wells (one opening beat above their chapters) at "Beats: 1".
+        for (int start = 0; start < directBeats.Count; start += ChunkSize)
+            chunks.Add((null, directBeats.Skip(start).Take(ChunkSize).ToList()));
+        var hasChildren = await db.Nodes.AsNoTracking().IgnoreQueryFilters().AnyAsync(n => n.ParentNodeId == node.Id, ct);
+        if (directBeats.Count == 0 || hasChildren)
         {
             // Descend to LEAF nodes, not just direct children: a split-collection book (Book ->
             // "Chapter N" container with 0 direct beats -> real chapters -> beats) has its real
@@ -108,7 +108,7 @@ public static class BeatTimelineInference
                 .ToDictionaryAsync(s => s.Id, ct);
             var children = leafIds.Where(byId.ContainsKey).Select(id => byId[id]).ToList();
 
-            if (children.Count == 0)
+            if (children.Count == 0 && directBeats.Count == 0)
                 return new Result(node.Title, node.Slug, [], 0, 0, "no beats found (no direct beats and no child episodes)");
 
             output?.WriteLine($"[timeline] book with {children.Count} episode(s)");
