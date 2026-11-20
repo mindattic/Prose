@@ -42,8 +42,11 @@ public static class WikiChangeSignal
 
     static bool Shows(EntityEntry entry) => entry.Entity switch
     {
-        // A beat's words (and tags) are the books' text; its other columns (stale flags, audio, timings) are not.
-        Beat => entry.State != EntityState.Modified || entry.Property(nameof(Beat.Text)).IsModified,
+        // A beat's words (and tags) are the books' text; InWorldDate is the Timeline's clock (PRS-T1069), also shown.
+        // Its other columns (stale flags, audio, timings) are not.
+        Beat => entry.State != EntityState.Modified
+            || entry.Property(nameof(Beat.Text)).IsModified
+            || entry.Property(nameof(Beat.InWorldDate)).IsModified,
         Entity or Record or EntityProperty or Edge or Node or Book => true,
         CharacterAlias or PlaceAlias or FactionAlias or WeaponAlias or CharacterRelationshipRow => true,
         _ => false,
