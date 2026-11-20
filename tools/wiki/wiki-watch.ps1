@@ -92,8 +92,19 @@ function Invoke-Tick([bool]$PollWiki = $true) {
         $wikiPending = $LASTEXITCODE -eq 10
     }
 
+    # After a failed sync, wait before trying again: 30 min, doubling per failure, at most 6 h (PRS-T1076). A sync that
+    # cannot run (e.g. Azure paused the database for the month, so the Hub dies on start) is otherwise retried every few
+    # minutes, each try a Hub launch and a crash dump. The wiki is still looked at meanwhile.
+    $backoff = $false
+    if ($w.PSObject.Properties['failedAt']) {
+        $fails = [int]$w.failures
+        $wait = [Math]::Min(30 * [Math]::Pow(2, [Math]::Max(0, $fails - 1)), 360)
+        $backoff = ($now - (Get-Utc $w.failedAt)).TotalMinutes -lt $wait
+    }
+
     $runSync = $false; $why = ''
-    if ($daily) { $runSync = $true; $why = "daily full sync (last: $(if ($lastSync) { $lastSync.ToString('u') } else { 'never' }))" }
+    if ($backoff) { }
+    elseif ($daily) { $runSync = $true; $why = "daily full sync (last: $(if ($lastSync) { $lastSync.ToString('u') } else { 'never' }))" }
     elseif ($prosePending) {
         $quiet = ($now - $stamp).TotalMinutes -ge $QuietMinutes
         $waited = ($now - (Get-Utc $w.pendingSince)).TotalMinutes -ge $MaxWaitMinutes
@@ -113,7 +124,7 @@ function Invoke-Tick([bool]$PollWiki = $true) {
     if ($code -eq 0) {
         $w = Read-Watch
         Set-Field $w 'lastSyncStart' $start.ToString('o')
-        if ($w.PSObject.Properties['pendingSince']) { $w.PSObject.Properties.Remove('pendingSince') }
+        foreach ($p in 'pendingSince', 'failedAt', 'failures') { if ($w.PSObject.Properties[$p]) { $w.PSObject.Properties.Remove($p) } }
         Save-Watch $w
         Write-Log 'sync done'
         Invoke-Reconcile @()  # the report reflects the wiki as the sync left it
@@ -121,7 +132,12 @@ function Invoke-Tick([bool]$PollWiki = $true) {
         Write-Log 'another sync is running; next time'
         return 0
     } else {
-        Write-Log "sync FAILED ($code); see sync.log"
+        $w = Read-Watch
+        $fails = $(if ($w.PSObject.Properties['failures']) { [int]$w.failures } else { 0 }) + 1
+        Set-Field $w 'failures' $fails
+        Set-Field $w 'failedAt' (Get-Date).ToUniversalTime().ToString('o')
+        Save-Watch $w
+        Write-Log "sync FAILED ($code); see sync.log. Next try in $([Math]::Min(30 * [Math]::Pow(2, $fails - 1), 360)) min"
     }
     return $code
 }
