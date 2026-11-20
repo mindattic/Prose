@@ -253,7 +253,10 @@ class Story:
             if b.slug in dated:
                 continue
             year = getattr(b, "year", None)
-            if year:  # the book's in-world year (books file); books of one year keep their story order inside it
+            known = parse(getattr(b, "start", None))
+            if known:  # the chronology's start date (docs/chronology.md): a fortnight from there, approximate
+                start, end = known, known + dt.timedelta(days=14)
+            elif year:  # the book's in-world year (books file); books of one year keep their story order inside it
                 same = [x for x in books if getattr(x, "year", None) == year and x.slug not in dated]
                 k = same.index(b)
                 start = dt.datetime(int(year), 1, 1) + dt.timedelta(days=int(330 * k / max(1, len(same))))
