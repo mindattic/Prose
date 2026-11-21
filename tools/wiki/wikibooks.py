@@ -107,7 +107,7 @@ def load_books(config: Path, books_dir: Path | None) -> list[Book]:
         book = Book(slug, c["title"], c.get("code") or slug.upper(), float(c.get("order") or 99), c.get("series") or "")
         book.collection = book.series in collections
         book.year = c.get("year")  # in-world year, the timeline's anchor until Prose stamps beat dates (PRS-T1069)
-        book.start = c.get("start")  # in-world start date where the chronology knows it (GLMZ.Wiki docs/chronology.md)
+        book.start = c.get("start")  # in-world start date where the chronology knows it (Prose.Wiki.GLMZ docs/chronology.md)
         folder = books_dir / slug if books_dir else None
         if folder and folder.is_dir():
             md = sorted(folder.glob("*/* V*.md"), key=lambda p: p.stat().st_mtime)

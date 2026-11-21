@@ -5,7 +5,7 @@
 .DESCRIPTION
     1. Makes sure the Prose Hub is up (starts C:\Apps\MindAttic\Prose\Hub.exe if not).
     2. Through the Hub: --export global (every live entity), --universe-export (edges), and --read-beats for each
-       canon book in <UNIVERSE>.Wiki\<universe>.books.json, the site repo (which entities each book names).
+       canon book in Prose.Wiki.<UNIVERSE>\<universe>.books.json, the site repo (which entities each book names).
     2b. Each canon book whose text changed: --export-node --preview into the state folder (.md .pdf .epub .docx .txt
        and the blurb), plus its cover from the publish folder. prose2wiki makes a page per book and per chapter and
        uploads the cover and the files.
@@ -30,12 +30,17 @@ param(
     [switch]$Retag,
     [switch]$NoPush,
     [switch]$NoPurge,
-    # The wiki's site repo (books file, intro, logo, theme): <UNIVERSE>.Wiki beside Prose, e.g. GLMZ.Wiki (PRS-T1052).
+    # The wiki's site repo (books file, intro, logo, theme): Prose.Wiki.<UNIVERSE> beside Prose, e.g. Prose.Wiki.GLMZ
+    # (PRS-T1052; named <UNIVERSE>.Wiki before GLMZ.Wiki GW-T3, still found under that name).
     [string]$Site
 )
 $ErrorActionPreference = 'Stop'
 $repo = Split-Path (Split-Path $PSScriptRoot)
-if (-not $Site) { $Site = Join-Path (Split-Path $repo) "$($Universe.ToUpperInvariant()).Wiki" }
+if (-not $Site) {
+    $Site = Join-Path (Split-Path $repo) "Prose.Wiki.$($Universe.ToUpperInvariant())"
+    $legacy = Join-Path (Split-Path $repo) "$($Universe.ToUpperInvariant()).Wiki"
+    if (-not (Test-Path $Site) -and (Test-Path $legacy)) { $Site = $legacy }
+}
 if (-not (Test-Path (Join-Path $Site "$Universe.books.json"))) { $Site = $PSScriptRoot }  # a universe without a site repo yet
 $state = Join-Path $env:LOCALAPPDATA "MindAttic\Prose\wiki\$Universe"
 $books = Join-Path $Site "$Universe.books.json"
