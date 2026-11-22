@@ -1071,6 +1071,11 @@ are one universe. SpaceGod's Earth is GLMZ's Earth (including the Ascension Teth
 on Isla Isabela), and SpaceGod's space-dwelling Bio Mass is the same organism as the Biomass.
 Keep the two consistent: a change to either side's Biomass lore is made in both.
 
+**The Manalith** (author 2026-11-22, PRS-T1115, author-only, never discussed in any text) — the
+tumbling satellite of GridGame and SpaceGod's observation-only Manalith system may be a chunk of
+Biomass that Halcyon somehow captured, its true self hidden under accreted rock and dust. No story
+states or confirms this. The principle behind it: with cosmic horrors there are always more.
+
 ---
 
 ## Job Vocabulary

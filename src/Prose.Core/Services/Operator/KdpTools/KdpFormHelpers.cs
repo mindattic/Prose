@@ -100,6 +100,11 @@ internal static class KdpFormHelpers
 
             await ctx.Browser.ClickAtPointAsync(centerX, centerY, ct);
             await Task.Delay(300, ct);
+            // KDP's React role=checkbox can swallow the CDP point click (2026-11-19, PRS-T1059),
+            // while a plain element.click() on the same element toggles aria-checked. LocateNextScript
+            // marks the box it chose; if it is still unchecked, click it directly.
+            var fellBack = await ctx.Browser.EvalAsync(ClickMarkedIfUncheckedScript, ct);
+            if (fellBack.Contains("true")) await Task.Delay(300, ct);
             matches.Add(text);
         }
 
@@ -143,6 +148,20 @@ internal static class KdpFormHelpers
         var isProcessing = matches.length > 0;
         var indicator = matches[0] || null;
         return JSON.stringify({ isProcessing: isProcessing, indicator: indicator });
+    })()
+    """;
+
+    private const string TickMarkAttr = "data-prose-tick";
+
+    private static string ClickMarkedIfUncheckedScript => $$"""
+    (function() {
+        var el = document.querySelector('[{{TickMarkAttr}}]');
+        if (!el) return JSON.stringify(false);
+        el.removeAttribute('{{TickMarkAttr}}');
+        var checked = el.tagName === 'INPUT' ? el.checked : el.getAttribute('aria-checked') === 'true';
+        if (checked) return JSON.stringify(false);
+        el.click();
+        return JSON.stringify(true);
     })()
     """;
 
@@ -213,16 +232,38 @@ internal static class KdpFormHelpers
 
         // Match BOTH native <input type=checkbox> AND custom accessible <div role=checkbox>
         // widgets — KDP's real confirm control is the latter, not the former.
+        // A role=checkbox div's own textContent is often just its SVG glyph; KDP (2026-11-19) puts
+        // the label outside it, referenced by aria-labelledby and/or an enclosing <label>.
+        function roleCheckboxTexts(cb) {
+            var texts = [cb.textContent, cb.getAttribute('aria-label')];
+            var ids = (cb.getAttribute('aria-labelledby') || '').split(/\s+/).filter(Boolean);
+            for (var k = 0; k < ids.length; k++) {
+                var target = document.getElementById(ids[k]);
+                if (target) texts.push(target.textContent);
+            }
+            var label = cb.closest('label');
+            if (label) texts.push(label.textContent);
+            return texts.map(function (t) { return (t || '').trim().toLowerCase(); }).filter(Boolean);
+        }
+
+        var stale = document.querySelectorAll('[{{TickMarkAttr}}]');
+        for (var s = 0; s < stale.length; s++) stale[s].removeAttribute('{{TickMarkAttr}}');
+
         var boxes = Array.from(document.querySelectorAll('input[type=checkbox], [role=checkbox]'));
         for (var i = 0; i < boxes.length; i++) {
             var cb = boxes[i];
             if (isChecked(cb)) continue;
-            var texts = cb.tagName === 'INPUT' ? candidateTexts(cb) : [(cb.textContent || '').trim().toLowerCase()];
+            // React keeps a hidden zero-size native input beside the visible role=checkbox; a point
+            // click on it lands nowhere, and matching it first is what spun the loop to MaxIterations.
+            var box = cb.getBoundingClientRect();
+            if (box.width <= 0 || box.height <= 0) continue;
+            var texts = cb.tagName === 'INPUT' ? candidateTexts(cb) : roleCheckboxTexts(cb);
             for (var t = 0; t < texts.length; t++) {
                 for (var j = 0; j < candidates.length; j++) {
                     if (texts[t].indexOf(candidates[j]) !== -1) {
                         cb.scrollIntoView({ block: 'center', inline: 'center' });
                         var point = clickPointFor(cb);
+                        cb.setAttribute('{{TickMarkAttr}}', '1');
                         return JSON.stringify({
                             found: true,
                             text: texts[t].slice(0, 200),
