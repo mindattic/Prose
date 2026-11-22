@@ -467,6 +467,54 @@ When she appears in a scene, describe what she's wearing.
 - **Ferrogate <entity repo="character" guid="019d6143-a5e3-7d36-b881-34f0fd59833d">Aero</entity>** (FA-9) — the transit bus of the sky; boxy, loud, gray-white, reliable; what contractors fly
 - **Cormorant Defense** (CV-7) — <entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">ArcSec</entity> assault VTOL; angular, dark, armored; loud by design; intimidation is the product
 - **<entity repo="character" guid="019f7875-be44-77fd-8fa5-b03669d44e87">Rampart</entity> Ascent** — gray zone VTOL service; reclaimed ex-Ferrogate/ex-Cormorant airframes; every one looks different; no flight log
+- **Ferrogate <entity repo="character" guid="019d6143-a5e3-7d36-b881-34f0fd59833d">Aero</entity> FA-40 heavy lift** (author 2026-11-22, PRS-T1117) — the waste hauler; crews call it the **<entity repo="character" guid="019d6143-a5e3-7d36-b881-34f0fd59833d">Sow</entity>**, the run south is the **gut run**; see *Traffic* below
+
+**Traffic: who moves how** (author 2026-11-22, PRS-T1117) — not everyone walks or takes the
+<entity repo="corponation" guid="0d831459-182f-4efc-9920-bdf9e032c61d">Pulse</entity>. The sky over <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> is always moving, and the street under it never stops. Any exterior shot
+of the city can carry traffic as background the way night scenes carry <entity repo="place" guid="ea28fdd3-7bdc-439b-962c-42cfe5d996ac">the Thread</entity>: a clause is enough.
+
+*The sky is stacked by tier.* Lanes are invisible but everyone knows them, and the overlay draws
+them for anyone who pays for it.
+- **High lanes (Tier 5):** execs fly themselves or are flown: the <entity repo="transportation" guid="019d6143-aa62-7a13-93a9-d54efab092d0">Axiom SkyLux</entity> ("chrome clouds"),
+  the Axiom Apex for anything inter-city, Stratos Aeroworks for the Sky People's private hops. Near
+  silent. Their pads are on arcology crowns and aeroquarter decks behind VTOL-Only Access.
+- **Middle lanes (Tier 3-5):** <entity repo="transportation" guid="019d6143-aa72-7a34-a050-d1ea51e0e211">Sparrow micro-VTOL</entity> air taxis, corporate shuttle VTOLs running fixed
+  campus-to-tower loops, SN Kite freighters, and the steady thrum of <entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">Arcturus</entity> Mule cargo drones.
+- **Low lanes (everyone else):** the **Ferrogate <entity repo="character" guid="019d6143-a5e3-7d36-b881-34f0fd59833d">Aero</entity> FA-9** is the transit bus of the sky, and at
+  shift change it is the **shift-lift**: corponations charter FA-9s by the block to move wage workers
+  between the residential stacks and the plants. Standing room, strap-hung, sixty bodies where the
+  plate says forty, fare docked from pay before it is earned. Boxy, loud, gray-white, always late,
+  always full. Contractors fly the same airframe empty and call that a perk.
+- **No lane at all:** <entity repo="character" guid="019f7875-be44-77fd-8fa5-b03669d44e87">Rampart</entity> Ascent and every other gray-zone flier, transponder optional.
+
+*The gut run.* Waste goes south by air. The **Ferrogate <entity repo="character" guid="019d6143-a5e3-7d36-b881-34f0fd59833d">Aero</entity> FA-40 heavy lift** (the **<entity repo="character" guid="019d6143-a5e3-7d36-b881-34f0fd59833d">Sow</entity>**) is a
+flat-bellied slab of an airframe on four ducted lift fans with a hydrogen turbine for cruise, a
+clamshell belly that opens over the drop, and slung waste cans under it on a release rig. It is
+loud the way a building is loud: a deep four-beat drone you feel in a window before you hear it.
+Corpo contracts are flown by Ferrogate <entity repo="character" guid="019d6143-a5e3-7d36-b881-34f0fd59833d">Aero</entity> crews and by subcontractors under <entity repo="faction" guid="0260c60e-7a18-b1e4-d5f6-a708b9c0d1e2">Carrion Logistics</entity>'
+reclamation licences; the gray-zone end of the trade is reclaimed FA-40s and improvised crane rigs
+flying the same route for cash and no questions. The run is the **gut run**: lift at night from the
+industrial pads, transponders off past the river, south over <entity repo="place" guid="a820b7da-b623-896f-3578-756f5d566663">Kentucky</entity> to the dumping sites on the
+Biomass border, hold a few hundred meters up out of the haze, open the belly, and turn for home
+lighter. From the southern districts the Sows read as a line of running lights droning south under
+<entity repo="place" guid="ea28fdd3-7bdc-439b-962c-42cfe5d996ac">the Thread</entity>, and the same line coming back an hour later, higher. <entity repo="vocabulary" guid="019d6143-aab4-7aba-a9bc-389490351dd5">Gut</entity>-run pilots are well paid,
+never talk about it, and keep the windows sealed; everyone knows what the smell on a returning
+airframe means. It is a job someone in any book could have had.
+
+*The street never stops, and mostly drives itself.* Ground traffic is everywhere and mostly
+automated: <entity repo="corponation" guid="019d6143-a7b4-745d-979d-cc36c3dcf32f">Tessera</entity> AutoCabs and Personal Pods in Tiers 2-4, corporate-issued <entity repo="corponation" guid="019d6143-a7b4-745d-979d-cc36c3dcf32f">Tessera</entity> Nexus town
+cars, Axiom's shuttle buses, <entity repo="transportation" guid="019d6143-aa66-743a-90bd-6fa99fa95117">Ferrogate Heavy Hauler</entity> convoys running the arterials at night like
+luminous caterpillars, Volk V-Series for executives who prefer the ground. Almost everything can
+still be driven by hand, and **who drives is a class signal**:
+- *Autonomy is surveillance.* Every automated ride is logged, analyzed and sold. Operators, Ghost
+  Cab drivers and anyone off the grid drive themselves because a hand on the controls is a ride
+  nobody records.
+- *Driving is old money and old skill.* The rich drive for pleasure (a <entity repo="subsidiary" guid="4d618e43-c81c-897a-a490-ad65a7578145">Sterling-Nakamura</entity> Heritage
+  Roadster on an empty road is a flex no autopilot can buy). The poor drive because the Metro Bus
+  lost its autodrive after the '91 routing hack and the old cars never had it.
+- *A manual machine is a choice.* <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s 2103 <entity repo="transportation" guid="8ce55923-24c2-4100-82dc-9ec3a9576c42">Aries Kimodo MDK</entity> is ridden, never piloted by
+  software: a debadged bike nobody logs, the kind of transportation he can leave somewhere and walk
+  away from.
 
 *Medical & field equipment:*
 - **<entity repo="corponation" guid="019f529a-0e48-7305-b9ad-51112a9c2834">Steadfast Medical Systems</entity>** — licensed-street trauma hardware; SFS-4 field kit (nanocoagulant applicator, synth skin roll, bone-set foam; matte-green case); no pharma; priced for gray zone accessibility
@@ -1046,28 +1094,28 @@ Tierra del Fuego; maintains a protective inward-pointing perimeter; woven into Y
 cosmology. Treat as canonical but unreachable for story purposes.
 
 **<entity repo="place" guid="c55d61df-8b58-fc6b-a3b3-6bf72d04321b">The Biomass</entity>** (author 2026-11-22, PRS-T1111) — a living mass of human-derived flesh (not vegetation)
-covering ~28,000 sq mi of Alabama, Mississippi, Tennessee and southern Kentucky, bounded by the
-Appalachians and the Tombigbee/Mississippi, the Ohio River the last barrier before the GLMZ.
-- *Official story (what everyone in the GLMZ believes):* a slow containment leak in 2147 from a
-  Pinnacle BioSynthetics (Zheng-Dao subsidiary) regeneration lab near Huntsville, of a growth
+covering ~28,000 sq mi of Alabama, Mississippi, <entity repo="place" guid="75121a0f-bfb4-8531-3016-1c5f88aedf84">Tennessee</entity> and southern <entity repo="place" guid="a820b7da-b623-896f-3578-756f5d566663">Kentucky</entity>, bounded by the
+Appalachians and the Tombigbee/Mississippi, the Ohio <entity repo="character" guid="019e9e4f-183b-7977-b5ab-a0260fcb4086">River</entity> the last barrier before the <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>.
+- *Official story (what everyone in the <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> believes):* a slow containment leak in 2147 from a
+  Pinnacle BioSynthetics (Zheng-<entity repo="character" guid="019d6143-a5cd-74af-887c-621a477753bf">Dao</entity> subsidiary) regeneration lab near <entity repo="place" guid="3fbbb2e5-eb1b-8382-80fa-039302a8297f">Huntsville</entity>, of a growth
   factor designated ZD-7741.
-- *True origin (hidden in-world; no GLMZ character knows it unless a book reveals it):* it fell
-  from space near Huntsville, Alabama, ~2147. Enough survived the fall for Pinnacle BioSynthetics
-  to recover it secretly and take it to its secret underground Huntsville lab, where it got loose.
+- *True origin (hidden in-world; no <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> character knows it unless a book reveals it):* it fell
+  from space near <entity repo="place" guid="3fbbb2e5-eb1b-8382-80fa-039302a8297f">Huntsville</entity>, Alabama, ~2147. Enough survived the fall for Pinnacle BioSynthetics
+  to recover it secretly and take it to its secret underground <entity repo="place" guid="3fbbb2e5-eb1b-8382-80fa-039302a8297f">Huntsville</entity> lab, where it got loose.
   It has been eating, consuming and growing ever since. "ZD-7741" is Pinnacle's designation for
   the recovered material; the lab-leak account is the cover story.
 - *The Dump (author 2026-11-22, PRS-T1113; an open secret):* the corponations use the Biomass as
   an all-purpose industrial waste dump, because it takes anything: what it can digest it eats,
   what it can't it closes over and pulls under. Unmarked corpo waste haulers run south at night,
-  transponders off, to dumping sites along the Kentucky border and tip chemical sludge,
+  transponders off, to dumping sites along the <entity repo="place" guid="a820b7da-b623-896f-3578-756f5d566663">Kentucky</entity> border and tip chemical sludge,
   industrial slag, e-waste, failed automata, and sometimes bodies people don't want found. No
   paperwork, because officially no one goes south. Locals who live within an hour of it throw
   things in (a couch, a dead appliance, an unwanted car) just to watch the flesh take them. The
   monitoring stations that logged the growth surges after CAUTERIZE sit downslope of the busiest
   dumping sites more often than chance explains: the dumping may be feeding the growth.
 
-**Shared universe with SpaceGod** (author 2026-11-22, PRS-T1111) — GLMZ and the game SpaceGod
-are one universe. SpaceGod's Earth is GLMZ's Earth (including the Ascension Tether / the Thread
+**Shared universe with SpaceGod** (author 2026-11-22, PRS-T1111) — <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> and the game SpaceGod
+are one universe. SpaceGod's Earth is <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>'s Earth (including <entity repo="document" guid="c6220f91-1e8e-4ca8-9409-20087a4064a4">the Ascension Tether</entity> / <entity repo="place" guid="ea28fdd3-7bdc-439b-962c-42cfe5d996ac">the Thread</entity>
 on Isla Isabela), and SpaceGod's space-dwelling Bio Mass is the same organism as the Biomass.
 Keep the two consistent: a change to either side's Biomass lore is made in both.
 
