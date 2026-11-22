@@ -1056,6 +1056,15 @@ Appalachians and the Tombigbee/Mississippi, the Ohio River the last barrier befo
   to recover it secretly and take it to its secret underground Huntsville lab, where it got loose.
   It has been eating, consuming and growing ever since. "ZD-7741" is Pinnacle's designation for
   the recovered material; the lab-leak account is the cover story.
+- *The Dump (author 2026-11-22, PRS-T1113; an open secret):* the corponations use the Biomass as
+  an all-purpose industrial waste dump, because it takes anything: what it can digest it eats,
+  what it can't it closes over and pulls under. Unmarked corpo waste haulers run south at night,
+  transponders off, to dumping sites along the Kentucky border and tip chemical sludge,
+  industrial slag, e-waste, failed automata, and sometimes bodies people don't want found. No
+  paperwork, because officially no one goes south. Locals who live within an hour of it throw
+  things in (a couch, a dead appliance, an unwanted car) just to watch the flesh take them. The
+  monitoring stations that logged the growth surges after CAUTERIZE sit downslope of the busiest
+  dumping sites more often than chance explains: the dumping may be feeding the growth.
 
 **Shared universe with SpaceGod** (author 2026-11-22, PRS-T1111) — GLMZ and the game SpaceGod
 are one universe. SpaceGod's Earth is GLMZ's Earth (including the Ascension Tether / the Thread
