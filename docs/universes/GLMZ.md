@@ -1045,6 +1045,23 @@ Not hostile, just closed.
 Tierra del Fuego; maintains a protective inward-pointing perimeter; woven into Yahgan
 cosmology. Treat as canonical but unreachable for story purposes.
 
+**<entity repo="place" guid="c55d61df-8b58-fc6b-a3b3-6bf72d04321b">The Biomass</entity>** (author 2026-11-22, PRS-T1111) — a living mass of human-derived flesh (not vegetation)
+covering ~28,000 sq mi of Alabama, Mississippi, Tennessee and southern Kentucky, bounded by the
+Appalachians and the Tombigbee/Mississippi, the Ohio River the last barrier before the GLMZ.
+- *Official story (what everyone in the GLMZ believes):* a slow containment leak in 2147 from a
+  Pinnacle BioSynthetics (Zheng-Dao subsidiary) regeneration lab near Huntsville, of a growth
+  factor designated ZD-7741.
+- *True origin (hidden in-world; no GLMZ character knows it unless a book reveals it):* it fell
+  from space near Huntsville, Alabama, ~2147. Enough survived the fall for Pinnacle BioSynthetics
+  to recover it secretly and take it to its secret underground Huntsville lab, where it got loose.
+  It has been eating, consuming and growing ever since. "ZD-7741" is Pinnacle's designation for
+  the recovered material; the lab-leak account is the cover story.
+
+**Shared universe with SpaceGod** (author 2026-11-22, PRS-T1111) — GLMZ and the game SpaceGod
+are one universe. SpaceGod's Earth is GLMZ's Earth (including the Ascension Tether / the Thread
+on Isla Isabela), and SpaceGod's space-dwelling Bio Mass is the same organism as the Biomass.
+Keep the two consistent: a change to either side's Biomass lore is made in both.
+
 ---
 
 ## Job Vocabulary
