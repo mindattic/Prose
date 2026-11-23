@@ -26,8 +26,9 @@
   --atlas-label: #222;
 }
 
-html, body { height: 100%; }
-body { margin: 0; background: var(--color-bg-2); color: var(--color-fg); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+/* Page-level rules apply only on the Story page: the Writer also loads this sheet for the entry panel. */
+html:has(.story), body:has(.story) { height: 100%; }
+body:has(.story) { margin: 0; background: var(--color-bg-2); color: var(--color-fg); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
 
 .story { display: grid; grid-template-rows: auto auto 1fr auto; height: 100vh; height: 100dvh; }
 .story.with-entry { grid-template-columns: 1fr minmax(320px, 420px); }
@@ -52,7 +53,7 @@ button.chip { cursor: pointer; }
 .count.gold { background: transparent; border: 1px solid #c99a1d; color: var(--story-gold); }
 .tag { font-size: .7rem; padding: 0 .4rem; border-radius: 4px; background: var(--color-bg-4); color: var(--color-fg-muted); }
 .tag.retcon { background: var(--story-gold-bg); color: #1b1300; }
-.dot { display: inline-block; width: .65rem; height: .65rem; border-radius: 50%; vertical-align: middle; }
+.story .dot, .entry-panel .dot { display: inline-block; width: .65rem; height: .65rem; border-radius: 50%; vertical-align: middle; }
 .dot.cat-character { background: var(--cat-character); } .dot.cat-place { background: var(--cat-place); }
 .dot.cat-item { background: var(--cat-item); } .dot.cat-organization { background: var(--cat-organization); }
 .dot.cat-concept { background: var(--cat-concept); }
@@ -111,10 +112,10 @@ button.chip { cursor: pointer; }
 .ms-prose.type-2 { font-size: 1.3rem; line-height: 1.8; max-width: 38rem; }
 .ms-prose p { margin: 0 0 1em; border-radius: 4px; transition: background .6s; }
 .ms-prose p.flash { background: rgba(242, 193, 78, .16); }
-.ent { background: rgba(47, 208, 143, .08); border: 0; padding: 0 .08em; color: inherit; font: inherit; cursor: pointer;
+.ms-prose .ent { background: rgba(47, 208, 143, .08); border: 0; padding: 0 .08em; color: inherit; font: inherit; cursor: pointer;
        text-decoration: underline dotted var(--story-green); text-underline-offset: .2em; border-radius: 2px; }
-.ent:hover { background: rgba(47, 208, 143, .2); }
-.ent.draft { cursor: help; text-decoration-color: var(--story-gold); background: transparent; }
+.ms-prose .ent:hover { background: rgba(47, 208, 143, .2); }
+.ms-prose .ent.draft { cursor: help; text-decoration-color: var(--story-gold); background: transparent; }
 .issue-counter { display: inline-flex; align-items: center; gap: .25rem; padding: .1rem .6rem; border-radius: 999px; border: 1px solid #c99a1d; color: var(--story-gold); background: transparent; cursor: pointer; font: inherit; font-variant-numeric: tabular-nums; }
 
 /* ── Codex ───────────────────────────────────────────────────────────────── */
@@ -283,3 +284,7 @@ blockquote .door { display: inline; width: auto; padding: 0 .3rem; border: 0; ba
 /* RA-T2.2.1.3: a door's sibling link into the Writer at the same beat. */
 .open-writer { display: inline-block; margin-top: .3rem; color: var(--color-fg-muted); text-decoration: none; }
 .open-writer:hover { color: var(--story-green); text-decoration: underline; }
+
+/* RA-T2.2.2: the Writer — highlighted story-bible names, and the entry panel as a column of .body. */
+::highlight(prose-codex) { text-decoration: underline dotted var(--story-green); text-underline-offset: .2em; background-color: rgba(47, 208, 143, .08); }
+.writer .body > .entry-panel { flex: 0 0 380px; max-width: 40vw; }

@@ -192,6 +192,16 @@
                        OnClose="() => findOpen = false" />
         }
 
+        @if (codexEntry is { } entryId && book is not null)
+        {
+            @* RA-T2.2.2.3: a highlighted story-bible name opens its entry beside the prose. *@
+            <StoryEntry @key="entryId" BookId="book.Id" EntityId="entryId"
+                        OnClose="() => codexEntry = null"
+                        OnOpenEntry="id => codexEntry = id"
+                        OnOpenPassage="OpenCodexPassageAsync"
+                        OnChanged="RefreshCodexHighlightsAsync" />
+        }
+
         @if (book is not null && beat is not null)
         {
             <DiscussPanel @ref="discussPanel"
@@ -442,6 +452,31 @@
     [Parameter] public string? Book { get; set; }
     [Parameter] public string? Beat { get; set; }
 
+    // ── Story-bible highlights in the editor (RFC 0019, RA-S2.2.2) ─────────────────────────────
+    private Guid? codexEntry;
+
+    private async Task RefreshCodexHighlightsAsync()
+    {
+        if (book is null || shellRef is null) return;
+        var names = await Writer.GetHighlightNamesAsync(book.Id);
+        try { await JS.InvokeAsync<bool>("proseCodex.set", names, shellRef); }
+        catch (JSException) { /* highlights are a convenience; never fail the editor over them */ }
+        catch (JSDisconnectedException) { connected = false; }
+    }
+
+    [JSInvokable]
+    public Task OpenCodexEntry(string entityId)
+    {
+        if (Guid.TryParse(entityId, out var id)) codexEntry = id;
+        return InvokeAsync(StateHasChanged);
+    }
+
+    private async Task OpenCodexPassageAsync((Guid ChapterId, Guid? BeatId) door)
+    {
+        if (door.BeatId is { } b && spine?.Any(s => s.BeatId == b) == true) await OpenBeatAsync(b);
+        else if (spine?.FirstOrDefault(s => s.ChapterNodeId == door.ChapterId) is { } first) await OpenBeatAsync(first.BeatId);
+    }
+
     private async Task OpenFromLinkAsync()
     {
         if (string.IsNullOrWhiteSpace(Book)) return;
@@ -634,6 +669,7 @@
 
         activity = "Idle";
         if (spine.Count > 0) await OpenBeatAsync(spine[0].BeatId);
+        await RefreshCodexHighlightsAsync();
     }
 
     private async Task OpenBeatAsync(Guid id)

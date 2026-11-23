@@ -29,8 +29,27 @@ public sealed class WriterService(
     Prose.Core.Services.Discussion.RamificationService ramifications,
     Prose.Core.Services.Contradiction.NarrativeContradictionChecker contradictions,
     FindingsService findings,
-    IUniverseContext universe)
+    IUniverseContext universe,
+    Prose.Core.Services.ReadAlong.StoryBibleService storyBible)
 {
+    /// <summary>A kept story-bible name (or alias) the editor highlights (RFC 0019, RA-T2.2.2.1).</summary>
+    public sealed record Highlight(string Name, Guid EntityId);
+
+    /// <summary>Kept entries and their aliases only — a draft is not the author's yet, so the editor
+    /// does not mark it.</summary>
+    public async Task<List<Highlight>> GetHighlightNamesAsync(Guid bookNodeId, CancellationToken ct = default)
+    {
+        try
+        {
+            return (await storyBible.GetHighlightNamesAsync(bookNodeId, includeDrafts: false, ct))
+                .Where(h => h.EntityId is not null).Select(h => new Highlight(h.Name, h.EntityId!.Value)).ToList();
+        }
+        catch (Exception)
+        {
+            return []; // the read-along tables missing (migration not applied) must never break the editor
+        }
+    }
+
     /// <summary>A book the author can open.</summary>
     public sealed record BookListItem(Guid Id, string Slug, string Title, string? NodeCode);
 

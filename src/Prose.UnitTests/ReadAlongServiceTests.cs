@@ -162,6 +162,21 @@ public class ReadAlongServiceTests
     }
 
     [Test]
+    public async Task Highlight_names_include_aliases_and_can_exclude_drafts()
+    {
+        var book = await BookAsync(("One", ["She told no one but Hollis Marsh. Hollis said nothing. Brannoc watched the moor, and Brannoc waited."]));
+        await readAlong.ReadBookAsync(book);
+        var hollis = (await bible.GetDraftsAsync(book, "entry")).Single(d => d.Name == "Hollis Marsh");
+        await bible.KeepAsync(hollis.Id);
+
+        var all = await bible.GetHighlightNamesAsync(book);
+        var kept = await bible.GetHighlightNamesAsync(book, includeDrafts: false);
+        Assert.That(all.Any(n => n.Name == "Brannoc" && n.Draft));
+        Assert.That(kept.Select(n => n.Name), Is.EquivalentTo(new[] { "Hollis Marsh", "Hollis" }));
+        Assert.That(kept.All(n => n.EntityId is not null));
+    }
+
+    [Test]
     public async Task Tossed_drafts_stay_tossed()
     {
         var book = await BookAsync(("One", ["Brannoc watched the moor. Brannoc said nothing."]));

@@ -78,10 +78,11 @@ public sealed class StoryBibleService(IDbContextFactory<ProseDbContext> dbFactor
 
     /// <summary>Every name the manuscript view highlights: kept entries and their confirmed aliases
     /// (linked to the entry), and drafts (unlinked, marked).</summary>
-    public async Task<List<(string Name, Guid? EntityId, bool Draft)>> GetHighlightNamesAsync(Guid bookId, CancellationToken ct = default)
+    public async Task<List<(string Name, Guid? EntityId, bool Draft)>> GetHighlightNamesAsync(Guid bookId, bool includeDrafts = true, CancellationToken ct = default)
     {
         var codex = await GetCodexAsync(bookId, ct);
-        var list = codex.SelectMany(c => c.Items).Select(i => (i.Name, i.IsDraft ? (Guid?)null : i.Id, i.IsDraft)).ToList();
+        var list = codex.SelectMany(c => c.Items).Where(i => includeDrafts || !i.IsDraft)
+            .Select(i => (i.Name, i.IsDraft ? (Guid?)null : i.Id, i.IsDraft)).ToList();
         var kept = codex.SelectMany(c => c.Items).Where(i => !i.IsDraft).Select(i => i.Id).ToList();
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var aliases = await db.StoryFacts.AsNoTracking().IgnoreQueryFilters()
