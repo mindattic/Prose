@@ -1,0 +1,1332 @@
+{
+  "source": "docs/planning/read-along-plan.md",
+  "generatedBy": "tools/planning/tickets.py",
+  "tickets": [
+    {
+      "id": "RA-E1",
+      "level": "epic",
+      "title": "Core read-along",
+      "status": "done",
+      "parent": null
+    },
+    {
+      "id": "RA-F1.1",
+      "level": "feature",
+      "title": "Read-along engine",
+      "status": "done",
+      "parent": "RA-E1"
+    },
+    {
+      "id": "RA-S1.1.1",
+      "level": "story",
+      "title": "Data model and migration",
+      "status": "done",
+      "parent": "RA-F1.1"
+    },
+    {
+      "id": "RA-T1.1.1.1",
+      "level": "task",
+      "title": "`AddReadAlong` migration (six tables)",
+      "status": "done",
+      "parent": "RA-S1.1.1",
+      "estimate": "M",
+      "files": "`src/Prose.Core/Data/Entities/ReadAlong.cs`, `src/Prose.Core/Data/ProseDbContext.cs`, `src/Prose.Core/Migrations/20261123082631_AddReadAlong.cs`",
+      "doneWhen": "the schema is created on SQL Server 2022 with every foreign key accepted."
+    },
+    {
+      "id": "RA-S1.1.2",
+      "level": "story",
+      "title": "Deterministic extraction and reading",
+      "status": "done",
+      "parent": "RA-F1.1"
+    },
+    {
+      "id": "RA-T1.1.2.1",
+      "level": "task",
+      "title": "`StoryFactExtractor`",
+      "status": "done",
+      "parent": "RA-S1.1.2",
+      "estimate": "L",
+      "files": "`src/Prose.Core/Services/ReadAlong/StoryFactExtractor.cs`",
+      "doneWhen": "`StoryFactExtractorTests` passes."
+    },
+    {
+      "id": "RA-T1.1.2.2",
+      "level": "task",
+      "title": "`ReadAlongService` (chapters, drafts, observations, cards, fixed-by-edit, status)",
+      "status": "done",
+      "parent": "RA-S1.1.2",
+      "estimate": "L",
+      "files": "`src/Prose.Core/Services/ReadAlong/ReadAlongService.cs`",
+      "doneWhen": "`ReadAlongServiceTests` passes."
+    },
+    {
+      "id": "RA-F1.2",
+      "level": "feature",
+      "title": "Book surfaces",
+      "status": "done",
+      "parent": "RA-E1"
+    },
+    {
+      "id": "RA-S1.2.1",
+      "level": "story",
+      "title": "Codex, inbox, atlas, ask, brainstorm, import, allowance",
+      "status": "done",
+      "parent": "RA-F1.2"
+    },
+    {
+      "id": "RA-T1.2.1.1",
+      "level": "task",
+      "title": "Core services for each surface",
+      "status": "done",
+      "parent": "RA-S1.2.1",
+      "estimate": "L",
+      "files": "`src/Prose.Core/Services/ReadAlong/*.cs`",
+      "doneWhen": "27 tests pass."
+    },
+    {
+      "id": "RA-T1.2.1.2",
+      "level": "task",
+      "title": "Background job, CLI (`ReadAlongCli`), MCP (`ReadAlongTools`)",
+      "status": "done",
+      "parent": "RA-S1.2.1",
+      "estimate": "M",
+      "files": "`ReadAlongBackgroundService.cs`, `src/Prose.Cli/Cli/ReadAlongCli.cs`, `src/Prose.Mcp/Tools.ReadAlong.cs`",
+      "doneWhen": "every verb is smoke-tested against a local Hub."
+    },
+    {
+      "id": "RA-T1.2.1.3",
+      "level": "task",
+      "title": "Story workspace `/story` and Writer status bar",
+      "status": "done",
+      "parent": "RA-S1.2.1",
+      "estimate": "L",
+      "files": "`src/Prose.WriterUi/Components/Story/*`, `story.css`, `js/story.js`, `WriterShell.razor`",
+      "doneWhen": "the Chromium walk-through (import → read → keep → rule → door → ask → atlas → brainstorm → phone) has no console errors."
+    },
+    {
+      "id": "RA-E2",
+      "level": "epic",
+      "title": "Go live and close the gaps a writer hits first",
+      "status": "open",
+      "parent": null
+    },
+    {
+      "id": "RA-F2.1",
+      "level": "feature",
+      "title": "Live database and paperwork",
+      "status": "open",
+      "parent": "RA-E2"
+    },
+    {
+      "id": "RA-S2.1.1",
+      "level": "story",
+      "title": "The read-along runs against the live database",
+      "status": "open",
+      "parent": "RA-F2.1",
+      "acceptance": "the six tables exist in `Prose` on Azure SQL; the Writer opens with no read-along error; the job logs a sweep."
+    },
+    {
+      "id": "RA-T2.1.1.1",
+      "level": "task",
+      "title": "Commit the reviewable migration script",
+      "status": "open",
+      "parent": "RA-S2.1.1",
+      "estimate": "XS",
+      "files": "`tools/readalong/AddReadAlong.sql` (new)",
+      "do": "generate it with `dotnet ef migrations script 20261105185209_AddCorobs 20261123082631_AddReadAlong --idempotent --context ProseDbContext --project src/Prose.Core -o tools/readalong/AddReadAlong.sql`, and commit it with CRLF endings like the other scripts.",
+      "test": "apply it twice to a local SQL Server 2022 database. The second run must be a no-op.",
+      "doneWhen": "the script is committed and the double apply is clean."
+    },
+    {
+      "id": "RA-T2.1.1.2",
+      "level": "task",
+      "title": "Apply on the first Hub start after 2026-12-01 and verify",
+      "status": "open",
+      "parent": "RA-S2.1.1",
+      "estimate": "XS",
+      "depends": [
+        "RA-T2.1.1.1"
+      ],
+      "files": "none. This is an operation, logged in the factory session.",
+      "do": "\n1. Run `run.ps1 -Apps Hub -Start Hub`. The Hub applies pending migrations at start.\n2. Run `prose --read-along --status --slug <a scratch book>`.\n3. Watch `/api/logs/recent` for \"Read-along sweep\".",
+      "test": "the status command exits 0.",
+      "doneWhen": "the acceptance above holds."
+    },
+    {
+      "id": "RA-S2.1.2",
+      "level": "story",
+      "title": "The work is on record",
+      "status": "open",
+      "parent": "RA-F2.1",
+      "acceptance": "every RA ticket exists as a PRS-T ticket and an engine work order covers the read-along's paths."
+    },
+    {
+      "id": "RA-T2.1.2.1",
+      "level": "task",
+      "title": "Register the tickets from the JSON",
+      "status": "open",
+      "parent": "RA-S2.1.2",
+      "estimate": "S",
+      "files": "`tools/planning/register-tickets.ps1` (new)",
+      "do": "\n1. Read `docs/planning/read-along-tickets.json`.\n2. For each node in id order, call the tickets CLI: kind from the level, title, body from the fields, parent from the id prefix. Check the exact flags with `tickets --help`.\n3. Mark every RA-E1 descendant closed, citing `64e84d3`.\n4. Write the returned PRS-T numbers back into the JSON as `externalId`.",
+      "test": "run it with `-WhatIf`. It prints one command per node and nothing else.",
+      "doneWhen": "`docs/USER_STORIES.md` re-renders with the RA tickets."
+    },
+    {
+      "id": "RA-T2.1.2.2",
+      "level": "task",
+      "title": "Open the engine work order",
+      "status": "open",
+      "parent": "RA-S2.1.2",
+      "estimate": "XS",
+      "depends": [
+        "RA-T2.1.2.1"
+      ],
+      "files": "none (Hub)",
+      "do": "`prose --order add --kind engine` with paths `src/Prose.Core/Services/ReadAlong/**`, `src/Prose.WriterUi/Components/Story/**`, `src/Prose.WriterUi/wwwroot/js/story.js`, `src/Prose.WriterUi/wwwroot/story.css`, `src/Prose.Cli/Cli/ReadAlongCli.cs`, `src/Prose.Mcp/Tools.ReadAlong.cs`, `docs/rfc/0019-read-along.md`, `docs/planning/read-along-*`, and the title \"Read-along Phase 2–4\".",
+      "test": "`prose --order show <id>`.",
+      "doneWhen": "later commits name `WO:<id>`."
+    },
+    {
+      "id": "RA-F2.2",
+      "level": "feature",
+      "title": "From the story to the page",
+      "status": "open",
+      "parent": "RA-E2"
+    },
+    {
+      "id": "RA-S2.2.1",
+      "level": "story",
+      "title": "Any door opens the Writer on the exact beat",
+      "status": "open",
+      "parent": "RA-F2.2",
+      "acceptance": "clicking **✎ Write** in `/story`, or *open in Writer* on a continuity card, opens `/writer` on that book and beat."
+    },
+    {
+      "id": "RA-T2.2.1.1",
+      "level": "task",
+      "title": "`WriterLink` resolver (pure)",
+      "status": "open",
+      "parent": "RA-S2.2.1",
+      "estimate": "XS",
+      "files": "`src/Prose.WriterUi/Services/WriterLink.cs` (new), `src/Prose.UnitTests/WriterLinkTests.cs` (new)",
+      "do": "\n1. Add `static BookListItem? ResolveBook(IEnumerable<BookListItem> books, string? key)`, matching id, then slug, then code, case-insensitive.\n2. Add `static string For(Guid bookId, Guid? beatId)`, returning `/writer?book=<id>&beat=<id>`.",
+      "test": "id, slug and code all resolve; an unknown key gives null; the URL encodes correctly.",
+      "doneWhen": "the tests pass."
+    },
+    {
+      "id": "RA-T2.2.1.2",
+      "level": "task",
+      "title": "`/writer` accepts `book` and `beat`",
+      "status": "open",
+      "parent": "RA-S2.2.1",
+      "estimate": "S",
+      "depends": [
+        "RA-T2.2.1.1"
+      ],
+      "files": "`src/Prose.Hub/Program.cs` (the `/writer` MapGet takes `string? book, string? beat` and passes them as parameters, like `/story`), `src/Prose.Hub/Components/Writer.razor` (`[Parameter] Book`, `Beat`, forwarded to `<WriterShell>`), `src/Prose.WriterUi/Components/WriterShell.razor`",
+      "do": "\n1. Add `[Parameter] string? Book` and `[Parameter] string? Beat` to `WriterShell`.\n2. After `books = await Writer.ListBooksAsync()` (line ~584), resolve `Book` with `WriterLink.ResolveBook` and call `OpenBookAsync`.\n3. If `Beat` parses as a Guid inside that book's spine, call `OpenBeatAsync(beat)`. Otherwise keep the first beat.",
+      "test": "Playwright script `tools/readalong/e2e/writer-deeplink.js` opens `/writer?book=<slug>&beat=<id>` and asserts that the beat textarea holds that beat's text.",
+      "doneWhen": "the e2e script passes against a local Hub."
+    },
+    {
+      "id": "RA-T2.2.1.3",
+      "level": "task",
+      "title": "Story workspace links use it",
+      "status": "open",
+      "parent": "RA-S2.2.1",
+      "estimate": "XS",
+      "depends": [
+        "RA-T2.2.1.2"
+      ],
+      "files": "`StoryManuscript.razor` (✎ Write links to the open chapter's first beat), `StoryContinuity.razor` (a small \"open in Writer\" next to each door), `StoryEntry.razor` (timeline doors get the same)",
+      "do": "build each href with `WriterLink.For(BookId, beatId)`.",
+      "test": "extend the e2e script: a card's \"open in Writer\" lands on the proposed beat.",
+      "doneWhen": "the e2e script passes."
+    },
+    {
+      "id": "RA-S2.2.2",
+      "level": "story",
+      "title": "The Writer highlights story-bible names",
+      "status": "open",
+      "parent": "RA-F2.2",
+      "acceptance": "in Display mode, kept names and aliases carry a dotted underline. Clicking one opens its entry beside the prose. Saving the beat shows no tag diff from the highlights."
+    },
+    {
+      "id": "RA-T2.2.2.1",
+      "level": "task",
+      "title": "`WriterService.GetHighlightNamesAsync`",
+      "status": "open",
+      "parent": "RA-S2.2.2",
+      "estimate": "XS",
+      "files": "`src/Prose.WriterUi/Services/WriterService.cs`",
+      "do": "inject `StoryBibleService` and return `GetHighlightNamesAsync(bookId)` filtered to kept entries (no drafts) as `record Highlight(string Name, Guid EntityId)`.",
+      "test": "covered by the existing `ReadAlongServiceTests` (aliases) plus one assertion that drafts are excluded.",
+      "doneWhen": "the test passes."
+    },
+    {
+      "id": "RA-T2.2.2.2",
+      "level": "task",
+      "title": "Overlay highlights with the CSS Custom Highlight API",
+      "status": "open",
+      "parent": "RA-S2.2.2",
+      "estimate": "M",
+      "depends": [
+        "RA-T2.2.2.1"
+      ],
+      "files": "`src/Prose.WriterUi/wwwroot/js/writer.js`, `src/Prose.WriterUi/wwwroot/writer.css`",
+      "do": "\n1. Add `proseEditor.setHighlights(names)`. It walks the editor's text nodes, builds `Range`s for whole-word matches, and registers them as `CSS.highlights.set('prose-codex', new Highlight(...ranges))`. The DOM and the markup are never touched.\n2. Re-run on input, debounced to 300 ms.\n3. Style `::highlight(prose-codex)` with a dotted underline.\n4. On click, use `document.caretPositionFromPoint`/`caretRangeFromPoint` to find a range containing the caret and call `dotnet.invokeMethodAsync('OpenEntry', id)`.",
+      "test": "Playwright: open a beat that mentions a kept name and assert `CSS.highlights.get('prose-codex').size > 0`; save and assert the status bar shows no \"tags added/removed\".",
+      "doneWhen": "the test passes."
+    },
+    {
+      "id": "RA-T2.2.2.3",
+      "level": "task",
+      "title": "Entry side panel in the Writer",
+      "status": "open",
+      "parent": "RA-S2.2.2",
+      "estimate": "S",
+      "depends": [
+        "RA-T2.2.2.2"
+      ],
+      "files": "`WriterShell.razor` (a `[JSInvokable] OpenEntry(Guid)` that sets `entryOpen`; render `<StoryEntry>` in the third column the Discuss panel uses), `src/Prose.WriterUi/wwwroot/discuss.css` (reuse the column)",
+      "do": "wire `StoryEntry` doors to `OpenBeatAsync` (same book), or to `/story` for another book.",
+      "test": "Playwright: click a highlighted name and assert `.entry-panel h2` shows the name.",
+      "doneWhen": "the test passes."
+    },
+    {
+      "id": "RA-F2.3",
+      "level": "feature",
+      "title": "Manuscript structure",
+      "status": "open",
+      "parent": "RA-E2"
+    },
+    {
+      "id": "RA-S2.3.1",
+      "level": "story",
+      "title": "Scenes in the manuscript tree",
+      "status": "open",
+      "parent": "RA-F2.3",
+      "acceptance": "scenes and sequences show under their chapter. A scene dragged into another chapter moves with its beats, and both chapters show as changed in the reading bar."
+    },
+    {
+      "id": "RA-T2.3.1.1",
+      "level": "task",
+      "title": "Tree includes scene and sequence nodes",
+      "status": "open",
+      "parent": "RA-S2.3.1",
+      "estimate": "S",
+      "files": "`src/Prose.WriterUi/Services/StoryUiService.cs`",
+      "do": "extend `TreeNode` with `string Kind` (`volume|chapter|sequence|scene`). Walk children of chapter nodes that are `SceneNode`/`SequenceNode`, depth-first by `SortKey`.",
+      "test": "`StoryUiServiceTests` (new, SQLite, constructing `StoryUiService` with a stub `NodeWorkbenchService` is not possible, so extract the walk into `static Task<List<TreeNode>> WalkAsync(ProseDbContext, Guid)` and test that). A book with chapter → 2 scenes gives order and depth.",
+      "doneWhen": "the test passes."
+    },
+    {
+      "id": "RA-T2.3.1.2",
+      "level": "task",
+      "title": "Render scenes, drag rules, \"+ Scene\"",
+      "status": "open",
+      "parent": "RA-S2.3.1",
+      "estimate": "M",
+      "depends": [
+        "RA-T2.3.1.1"
+      ],
+      "files": "`StoryManuscript.razor`, `story.css`",
+      "do": "\n1. Render scenes with an indent and a `¶` icon.\n2. Apply the drag rules: a scene dropped on a chapter goes **into** it (`MoveAsync(into:true)`); a scene dropped on a scene goes before it; a chapter can never be dropped into a scene.\n3. Add \"+ Scene\" on a chapter row's hover, using `StoryUiService.AddChapterAsync` generalised to `AddNodeAsync(parentId, title, kind)` with kind `scene`.",
+      "test": "Playwright: drag a scene from chapter 1 into chapter 2 and assert that the tree and the chapter's paragraphs changed.",
+      "doneWhen": "the test passes."
+    },
+    {
+      "id": "RA-T2.3.1.3",
+      "level": "task",
+      "title": "Reading follows the move",
+      "status": "open",
+      "parent": "RA-S2.3.1",
+      "estimate": "XS",
+      "depends": [
+        "RA-T2.3.1.2"
+      ],
+      "files": "`src/Prose.UnitTests/ReadAlongServiceTests.cs`",
+      "do": "add a test. Reparent a `SceneNode` from chapter 1 to chapter 2; `GetChaptersAsync` groups its beats under chapter 2; `UnreadChaptersAsync` returns both chapters.",
+      "doneWhen": "the test passes. No production change is expected; fix the grouping if it fails."
+    },
+    {
+      "id": "RA-S2.3.2",
+      "level": "story",
+      "title": "\"Follow this book\"",
+      "status": "open",
+      "parent": "RA-F2.3",
+      "acceptance": "each book has an explicit on/off for the background job, shown in the reading bar. Off stops sweeps; nothing already read is lost."
+    },
+    {
+      "id": "RA-T2.3.2.1",
+      "level": "task",
+      "title": "`ReadAlongFollow` setting",
+      "status": "open",
+      "parent": "RA-S2.3.2",
+      "estimate": "S",
+      "files": "`src/Prose.Core/Services/ReadAlong/ReadAlongFollow.cs` (new), DI registration",
+      "do": "\n1. Store a dictionary `bookId → bool` under the settings key `readalong.follow`. It is universe-scoped through `SettingsKvStore`.\n2. Add `bool? Get(Guid book)` and `void Set(Guid book, bool on)`.\n3. Add `bool IsFollowed(Guid book, bool readOnce)`, which returns the explicit value, or else `readOnce`.",
+      "test": "unit test with `SettingsKvStore` on SQLite.",
+      "doneWhen": "the test passes."
+    },
+    {
+      "id": "RA-T2.3.2.2",
+      "level": "task",
+      "title": "Sweep honours it",
+      "status": "open",
+      "parent": "RA-S2.3.2",
+      "estimate": "XS",
+      "depends": [
+        "RA-T2.3.2.1"
+      ],
+      "files": "`ReadAlongBackgroundService.cs`",
+      "do": "filter `books` through `IsFollowed`. A book switched on that has never been read is included.",
+      "test": "`ReadAlongServiceTests`: a book with follow=false is not read by `SweepAsync`; a book never read with follow=true is.",
+      "doneWhen": "the test passes."
+    },
+    {
+      "id": "RA-T2.3.2.3",
+      "level": "task",
+      "title": "Switch in UI, CLI and MCP",
+      "status": "open",
+      "parent": "RA-S2.3.2",
+      "estimate": "S",
+      "depends": [
+        "RA-T2.3.2.2"
+      ],
+      "files": "`StoryShell.razor` (a toggle in the reading bar), `ReadAlongCli.cs` (`--read-along --slug X --follow on|off`), `Tools.ReadAlong.cs` (a `follow` parameter on `read_along_status`, or a new `set_read_along_follow`), regenerated `docs/CLI_COMMANDS.md` and `docs/MCP_TOOLS.md`",
+      "test": "CLI smoke against a local Hub.",
+      "doneWhen": "the switch round-trips through all three."
+    },
+    {
+      "id": "RA-F2.4",
+      "level": "feature",
+      "title": "Import fidelity",
+      "status": "open",
+      "parent": "RA-E2"
+    },
+    {
+      "id": "RA-S2.4.1",
+      "level": "story",
+      "title": "Imported prose keeps its formatting and scene breaks",
+      "status": "open",
+      "parent": "RA-F2.4",
+      "acceptance": "italic and bold from Word arrive as `*…*`/`**…**` beat markup, scene breaks survive as their own beat, and a Word round trip keeps the italics."
+    },
+    {
+      "id": "RA-T2.4.1.1",
+      "level": "task",
+      "title": "Runs to inline markup in `ReadDocx`",
+      "status": "open",
+      "parent": "RA-S2.4.1",
+      "estimate": "S",
+      "files": "`src/Prose.Core/Services/ReadAlong/ManuscriptParser.cs`",
+      "do": "\n1. Build each paragraph from `W.Run`s. A run with `RunProperties.Italic` becomes `*text*`, with `Bold` becomes `**text**`, with both becomes `***text***`.\n2. Escape literal `*` in run text as `\\*`, after confirming `ProseInline` supports the escape. If it does not, add escape support there in a separate first commit with a `ProseInlineTests` case.\n3. Merge adjacent runs of the same style.",
+      "test": "`ManuscriptParserTests` (new) builds a docx in memory with OpenXml, with one italic and one bold run, and asserts the paragraph text.",
+      "doneWhen": "the test passes."
+    },
+    {
+      "id": "RA-T2.4.1.2",
+      "level": "task",
+      "title": "Markdown underscores",
+      "status": "open",
+      "parent": "RA-S2.4.1",
+      "estimate": "XS",
+      "depends": [
+        "RA-T2.4.1.1"
+      ],
+      "files": "`ManuscriptParser.cs`",
+      "do": "in `.md`, convert `_x_` to `*x*` and `__x__` to `**x**` at word boundaries.",
+      "test": "a parser test with snake_case words left alone.",
+      "doneWhen": "the test passes."
+    },
+    {
+      "id": "RA-T2.4.1.3",
+      "level": "task",
+      "title": "Scene-break beats",
+      "status": "open",
+      "parent": "RA-S2.4.1",
+      "estimate": "S",
+      "depends": [
+        "RA-T2.4.1.1"
+      ],
+      "files": "`ManuscriptParser.cs` (`ParsedChapter` paragraphs become `ParsedParagraph(string Text, bool SceneBreak)`), `ManuscriptImportService.cs`, `NodeWorkbenchService.AppendBeatsAsync` (accepts a kind per text), `ReadAlongService.GetChaptersAsync` (skips `Kind == \"scene-break\"`), `DocxExportService` (renders `scene-break` as a centred `* * *`; check the other exporters too)",
+      "test": "the parser keeps the break; the importer writes a beat of `Kind = \"scene-break\"`; the read-along ignores it; the docx export contains `* * *`.",
+      "doneWhen": "the tests pass."
+    },
+    {
+      "id": "RA-S2.4.2",
+      "level": "story",
+      "title": "More ways in",
+      "status": "open",
+      "parent": "RA-F2.4",
+      "acceptance": "`.odt`, `.rtf` and `.epub` import, and a folder can be dropped in the browser."
+    },
+    {
+      "id": "RA-T2.4.2.1",
+      "level": "task",
+      "title": "`.odt` reader",
+      "status": "open",
+      "parent": "RA-S2.4.2",
+      "estimate": "S",
+      "depends": [
+        "RA-T2.4.1.3"
+      ],
+      "files": "`ManuscriptParser.cs`",
+      "do": "unzip `content.xml`. `text:h` becomes a heading (outline-level 1 is a volume when it matches the volume regex, otherwise a chapter); `text:p` is text; `text:span` with an italic or bold automatic style becomes markup.",
+      "test": "a fixture `.odt` built in the test (zip + XML).",
+      "doneWhen": "the test passes."
+    },
+    {
+      "id": "RA-T2.4.2.2",
+      "level": "task",
+      "title": "`.rtf` reader",
+      "status": "open",
+      "parent": "RA-S2.4.2",
+      "estimate": "S",
+      "depends": [
+        "RA-T2.4.1.3"
+      ],
+      "files": "`ManuscriptParser.cs`",
+      "do": "write a minimal tokenizer. `\\par` ends a paragraph, `\\i`/`\\i0` and `\\b`/`\\b0` toggle style, groups starting `\\*` are skipped, `\\'hh` and `\\uN?` are unescaped.",
+      "test": "a fixture string.",
+      "doneWhen": "the test passes."
+    },
+    {
+      "id": "RA-T2.4.2.3",
+      "level": "task",
+      "title": "`.epub` reader",
+      "status": "open",
+      "parent": "RA-S2.4.2",
+      "estimate": "S",
+      "depends": [
+        "RA-T2.4.1.3"
+      ],
+      "files": "`ManuscriptParser.cs`",
+      "do": "read `META-INF/container.xml`, then the OPF spine order. Each XHTML item's `h1`/`h2` is a heading, `p` is text, `em`/`i` is italic, `strong`/`b` is bold.",
+      "test": "a fixture epub built in the test.",
+      "doneWhen": "the test passes."
+    },
+    {
+      "id": "RA-T2.4.2.4",
+      "level": "task",
+      "title": "Folder drop in the Import tab",
+      "status": "open",
+      "parent": "RA-S2.4.2",
+      "estimate": "S",
+      "depends": [
+        "RA-T2.4.2.3"
+      ],
+      "files": "`StoryImport.razor`, `story.js`",
+      "do": "add a second `InputFile` with `webkitdirectory`, and a drag-and-drop zone that reads `DataTransferItem.webkitGetAsEntry()` recursively into the same `InputFile` through `DataTransfer`. Extend `accept` with the new extensions.",
+      "test": "Playwright `setInputFiles` with a directory.",
+      "doneWhen": "a folder of three files previews as three chapters."
+    },
+    {
+      "id": "RA-F2.5",
+      "level": "feature",
+      "title": "Getting the book back out",
+      "status": "open",
+      "parent": "RA-E2"
+    },
+    {
+      "id": "RA-D1",
+      "level": "decision",
+      "title": "Word export and the read gate (author decision)",
+      "status": "open",
+      "parent": null,
+      "estimate": "XS",
+      "question": "Prose exports only what has been read (law 9, no override). A freshly imported book is refused until it is read in Read Mode. Which way?",
+      "options": "(a) keep as is: the export page explains and points to Read Mode; (b) let the author mark a chapter read from the Story workspace after it is shown whole, then export; (c) add an \"export what I wrote\" mode for author-written books, which amends law 9.",
+      "record": "`record_ruling` with the choice, then read it back."
+    },
+    {
+      "id": "RA-S2.5.1",
+      "level": "story",
+      "title": "Clearing the read gate from the Story workspace (only if RA-D1 = b)",
+      "status": "open",
+      "parent": "RA-F2.5",
+      "acceptance": "the author marks the open chapter read after it is shown whole, the reading bar shows it as read, and Word export succeeds once every chapter is read."
+    },
+    {
+      "id": "RA-T2.5.1.1",
+      "level": "task",
+      "title": "\"I've read this chapter\" button",
+      "status": "open",
+      "parent": "RA-S2.5.1",
+      "estimate": "S",
+      "depends": [
+        "RA-D1"
+      ],
+      "files": "`StoryManuscript.razor`, `StoryUiService.cs` (`MarkChapterReadAsync(chapterId)` calls `ReadGateService.MarkReadAsync(chapterId, beats.Select(b => (b.Id, b.TextHash)), readBy: \"author\")`)",
+      "do": "show the button only once the chapter has been scrolled to its end (an IntersectionObserver on the last paragraph, in `story.js`), and record the read as the author's.",
+      "test": "a service test: after marking, `ReadGateService.GetStatusAsync` shows 0 unread for that chapter.",
+      "doneWhen": "the test passes and export succeeds in the e2e script."
+    },
+    {
+      "id": "RA-S2.5.2",
+      "level": "story",
+      "title": "Author-written export mode (only if RA-D1 = c)",
+      "status": "open",
+      "parent": "RA-F2.5",
+      "acceptance": "defined by the ruling. This story is written out when RA-D1 is decided; until then it has no tasks to code."
+    },
+    {
+      "id": "RA-E3",
+      "level": "epic",
+      "title": "Read smarter",
+      "status": "open",
+      "parent": null
+    },
+    {
+      "id": "RA-F3.1",
+      "level": "feature",
+      "title": "Measure before adding",
+      "status": "open",
+      "parent": "RA-E3"
+    },
+    {
+      "id": "RA-S3.1.1",
+      "level": "story",
+      "title": "Per-pattern precision is known",
+      "status": "open",
+      "parent": "RA-F3.1",
+      "acceptance": "`docs/planning/read-along-precision.md` holds a precision table from two finished books, with an author verdict on 100 drafts and 50 cards, and every pattern under 80 % is switched off."
+    },
+    {
+      "id": "RA-T3.1.1.1",
+      "level": "task",
+      "title": "Pattern ids on every hit",
+      "status": "open",
+      "parent": "RA-S3.1.1",
+      "estimate": "S",
+      "files": "`StoryFactExtractor.cs`",
+      "do": "give `Pattern` a `string Id` (e.g. `age.was-num`, `eyes.poss-were`). Add `string Pattern` to `FactHit`, `NameHit` (`name.mid-sentence`, `name.titled`, …) and `Relation`, and fill it from every emitter.",
+      "test": "an extractor test asserts every emitted hit has a non-empty, known id.",
+      "doneWhen": "the test passes."
+    },
+    {
+      "id": "RA-T3.1.1.2",
+      "level": "task",
+      "title": "Disable patterns by setting",
+      "status": "open",
+      "parent": "RA-S3.1.1",
+      "estimate": "XS",
+      "depends": [
+        "RA-T3.1.1.1"
+      ],
+      "files": "`StoryFactExtractor.cs` (`Extract(..., IReadOnlySet<string>? disabledPatterns)`), `ReadAlongService.cs` (reads setting `readalong.patterns.disabled`)",
+      "test": "a disabled id produces no hits.",
+      "doneWhen": "the test passes."
+    },
+    {
+      "id": "RA-T3.1.1.3",
+      "level": "task",
+      "title": "Audit sampler `prose --read-along-audit`",
+      "status": "open",
+      "parent": "RA-S3.1.1",
+      "estimate": "M",
+      "depends": [
+        "RA-T3.1.1.1"
+      ],
+      "files": "`src/Prose.Cli/Cli/ReadAlongAuditCli.cs` (new), `Program.cs` dispatch",
+      "do": "\n1. Run the extractor **in memory** over a book's chapters (no writes) and replay the compare logic.\n2. Sample N name hits, N facts and all would-be cards, stratified by pattern, to a CSV: `kind, pattern, subject, attribute, value, quote, chapter, verdict`.\n3. `--score <csv>` reads the author's verdicts and writes the precision table markdown.",
+      "test": "a unit test of the scorer on a 6-row CSV.",
+      "doneWhen": "the scorer test passes and the sampler runs on a local book."
+    },
+    {
+      "id": "RA-T3.1.1.4",
+      "level": "task",
+      "title": "Run the audit on two finished GLMZ books",
+      "status": "open",
+      "parent": "RA-S3.1.1",
+      "estimate": "S",
+      "depends": [
+        "RA-T3.1.1.3",
+        "RA-T2.1.1.2"
+      ],
+      "files": "`docs/planning/read-along-precision.md` (new)",
+      "do": "sample both books, let the author mark verdicts, score, and commit the table. Add the ids under 80 % to `readalong.patterns.disabled`.",
+      "doneWhen": "the acceptance holds."
+    },
+    {
+      "id": "RA-F3.2",
+      "level": "feature",
+      "title": "Recall",
+      "status": "open",
+      "parent": "RA-E3"
+    },
+    {
+      "id": "RA-S3.2.1",
+      "level": "story",
+      "title": "More details are found, at the precision bar",
+      "status": "open",
+      "parent": "RA-F3.2",
+      "acceptance": "every new pattern ships with fixture tests and, after RA-T3.1.1.4's method, at least 80 % precision."
+    },
+    {
+      "id": "RA-T3.2.1.1",
+      "level": "task",
+      "title": "Physical details: height, build, handedness",
+      "status": "open",
+      "parent": "RA-S3.2.1",
+      "estimate": "S",
+      "depends": [
+        "RA-T3.1.1.4"
+      ],
+      "files": "`StoryFactExtractor.cs`",
+      "do": "add patterns `height` (\"stood six feet\", \"was tall/short\" normalized), `build` (lean, broad, slight, stocky), `handed` (\"left-handed\"). All are single-valued. Add `height`, `build` and `handed` to `SingleValued` and `LowercaseAttributes`.",
+      "test": "6 positive and 4 negative fixtures.",
+      "doneWhen": "the tests pass."
+    },
+    {
+      "id": "RA-T3.2.1.2",
+      "level": "task",
+      "title": "Geography: relative location",
+      "status": "open",
+      "parent": "RA-S3.2.1",
+      "estimate": "S",
+      "depends": [
+        "RA-T3.2.1.1"
+      ],
+      "files": "`StoryFactExtractor.cs`",
+      "do": "\"X lay/stood/sat (north|…) of Y\" becomes a relation `north of` plus fact `direction-from:<Y>` = north, single-valued, so a later \"south of Y\" raises a card.",
+      "test": "fixtures and a card test in `ReadAlongServiceTests`.",
+      "doneWhen": "the tests pass."
+    },
+    {
+      "id": "RA-T3.2.1.3",
+      "level": "task",
+      "title": "Unnamed referents",
+      "status": "open",
+      "parent": "RA-S3.2.1",
+      "estimate": "M",
+      "depends": [
+        "RA-T3.2.1.2"
+      ],
+      "files": "`StoryFactExtractor.cs`, `ReadAlongService.cs`",
+      "do": "recurring definite descriptions (\"the girl behind the curtain\", 3 or more times in a book, at least 2 words after \"the\") become draft entries named `(unnamed) girl behind the curtain`, matching `EntityStubFactory.UnnamedPrefix`. Keep it creates the stub through `GetOrCreateUnnamedAsync`.",
+      "test": "a 3-chapter fixture makes one draft; 2 mentions make none.",
+      "doneWhen": "the tests pass."
+    },
+    {
+      "id": "RA-T3.2.1.4",
+      "level": "task",
+      "title": "Dialogue speakers",
+      "status": "open",
+      "parent": "RA-S3.2.1",
+      "estimate": "S",
+      "depends": [
+        "RA-T3.2.1.3"
+      ],
+      "files": "`StoryFactExtractor.cs`",
+      "do": "attribute quoted speech with a tag inside or after the quote (`\"…,\" Sera said`, `\"…\" said the Chancellor`), and use that speaker as the antecedent for the next pronoun after the quote.",
+      "test": "pronoun fixtures through dialogue.",
+      "doneWhen": "the tests pass."
+    },
+    {
+      "id": "RA-D2",
+      "level": "decision",
+      "title": "Differently-worded contradictions (author decision)",
+      "status": "open",
+      "parent": null,
+      "estimate": "XS",
+      "question": "\"needs three months to refill\" against \"dead until spring\" is not caught, because the attributes differ. Catch it how?",
+      "options": "(a) deterministic: normalize rule phrasings (\"until spring\", \"not before X\") into comparable durations; (b) an optional LLM pass that only proposes cards marked \"suggested by model\", off by default, which touches law 7.",
+      "record": "`record_ruling`, then read it back."
+    },
+    {
+      "id": "RA-S3.2.2",
+      "level": "story",
+      "title": "Rule phrasings compared (if RA-D2 = a)",
+      "status": "open",
+      "parent": "RA-F3.2",
+      "acceptance": "\"three months to refill\" and \"dead until spring\" on the same subject raise a world-rule card at 50 % or above."
+    },
+    {
+      "id": "RA-T3.2.2.1",
+      "level": "task",
+      "title": "Season and relative-time normalizer",
+      "status": "open",
+      "parent": "RA-S3.2.2",
+      "estimate": "M",
+      "depends": [
+        "RA-D2"
+      ],
+      "files": "`StoryFactExtractor.cs`",
+      "do": "a pattern `(?<s>…) (is|was) (dead|spent|empty|useless) until (spring|summer|autumn|winter|<month>)` becomes the fact `time to <verb-from-context or 'recover'>` with the value `until <season>`. `Compare` treats `until <season>` against an `N <unit>` duration as a contradiction at 50 %. Explain names both phrasings.",
+      "test": "the RFC 0019 example fixture.",
+      "doneWhen": "the test passes."
+    },
+    {
+      "id": "RA-S3.2.3",
+      "level": "story",
+      "title": "Model-suggested cards (if RA-D2 = b)",
+      "status": "open",
+      "parent": "RA-F3.2",
+      "acceptance": "defined by the ruling. This story is written out when RA-D2 is decided; until then it has no tasks to code."
+    },
+    {
+      "id": "RA-F3.3",
+      "level": "feature",
+      "title": "Coreference",
+      "status": "open",
+      "parent": "RA-E3"
+    },
+    {
+      "id": "RA-S3.3.1",
+      "level": "story",
+      "title": "Pronouns land on the right character",
+      "status": "open",
+      "parent": "RA-F3.3",
+      "acceptance": "a 30-case pronoun fixture passes."
+    },
+    {
+      "id": "RA-T3.3.1.1",
+      "level": "task",
+      "title": "Gender from more evidence",
+      "status": "open",
+      "parent": "RA-S3.3.1",
+      "estimate": "S",
+      "files": "`StoryFactExtractor.cs`",
+      "do": "\"his own\" and \"her own\" after a single named character; kin nouns (\"X's brother Y\" makes Y male); a kept entry's `gender`/`pronouns` fact or record field, passed through `KnownEntry` with a new `char? Gender`.",
+      "test": "fixtures.",
+      "doneWhen": "the tests pass."
+    },
+    {
+      "id": "RA-T3.3.1.2",
+      "level": "task",
+      "title": "Plural \"they\" and the 30-case fixture",
+      "status": "open",
+      "parent": "RA-S3.3.1",
+      "estimate": "S",
+      "depends": [
+        "RA-T3.3.1.1"
+      ],
+      "files": "`StoryFactExtractor.cs`, `src/Prose.UnitTests/PronounFixture.cs` (new)",
+      "do": "\"they\" and \"their\" resolve to the last organization or plural group named, never to a single character. Build the 30-case table test.",
+      "doneWhen": "all 30 pass."
+    },
+    {
+      "id": "RA-F3.4",
+      "level": "feature",
+      "title": "Codex editing",
+      "status": "open",
+      "parent": "RA-E3"
+    },
+    {
+      "id": "RA-S3.4.1",
+      "level": "story",
+      "title": "Rename and recategorize an entry",
+      "status": "open",
+      "parent": "RA-F3.4",
+      "acceptance": "a kept entry can be renamed (the old name becomes an alias) and moved to another category, and its receipts and cards follow."
+    },
+    {
+      "id": "RA-T3.4.1.1",
+      "level": "task",
+      "title": "`StoryBibleService.RenameAsync` / `RecategorizeAsync`",
+      "status": "open",
+      "parent": "RA-S3.4.1",
+      "estimate": "S",
+      "files": "`StoryBibleService.cs`",
+      "do": "\n1. Rename goes through `EntityRenameService.RenameRecordAsync(entityId, type, newName)`. Add an `alias` fact for the old name, update `StoryFacts.SubjectName/SubjectKey` and `ContinuityConflicts.EntityName` in the book.\n2. Recategorize calls `EntityRetypeService.PlanAsync` and applies the plan only when it reports no blockers; otherwise it returns the blockers.",
+      "test": "a service test on SQLite. Rename keeps facts and adds the alias.",
+      "doneWhen": "the test passes."
+    },
+    {
+      "id": "RA-T3.4.1.2",
+      "level": "task",
+      "title": "UI: inline title edit and category select in `StoryEntry`",
+      "status": "open",
+      "parent": "RA-S3.4.1",
+      "estimate": "S",
+      "depends": [
+        "RA-T3.4.1.1"
+      ],
+      "files": "`StoryEntry.razor`",
+      "test": "a Playwright step.",
+      "doneWhen": "a rename shows in the codex and the atlas."
+    },
+    {
+      "id": "RA-S3.4.2",
+      "level": "story",
+      "title": "Merge two entries",
+      "status": "open",
+      "parent": "RA-F3.4",
+      "acceptance": "merging \"Hollis\" into \"Hollis Marsh\" leaves one entry with both aliases and every receipt, and open cards point at the survivor."
+    },
+    {
+      "id": "RA-T3.4.2.1",
+      "level": "task",
+      "title": "`StoryBibleService.MergeAsync(keepId, dropId)`",
+      "status": "open",
+      "parent": "RA-S3.4.2",
+      "estimate": "M",
+      "depends": [
+        "RA-T3.4.1.1"
+      ],
+      "files": "`StoryBibleService.cs`",
+      "do": "\n1. Move `StoryFacts` (`EntityId`, `SubjectKey`) to the keeper; drop exact duplicates and supersede conflicting single values by recency (no card).\n2. Add the dropped name as an alias; repoint `ContinuityConflicts` and `StoryBibleSuggestions`; repoint `BrainstormCards.EntityId`.\n3. Archive the dropped entity if `OriginNodeId == book`; otherwise leave it and only detach it from this book.",
+      "test": "a service test.",
+      "doneWhen": "the acceptance holds."
+    },
+    {
+      "id": "RA-T3.4.2.2",
+      "level": "task",
+      "title": "UI: \"Merge into…\" picker",
+      "status": "open",
+      "parent": "RA-S3.4.2",
+      "estimate": "S",
+      "depends": [
+        "RA-T3.4.2.1"
+      ],
+      "files": "`StoryEntry.razor` (a picker listing codex entries of the same category)",
+      "doneWhen": "the Playwright merge step passes."
+    },
+    {
+      "id": "RA-S3.4.3",
+      "level": "story",
+      "title": "Group and long entries",
+      "status": "open",
+      "parent": "RA-F3.4",
+      "acceptance": "Group is editable inline, and entries with more than 6 details collapse to \"Show all (N more)\"."
+    },
+    {
+      "id": "RA-T3.4.3.1",
+      "level": "task",
+      "title": "Group inline edit and collapse",
+      "status": "open",
+      "parent": "RA-S3.4.3",
+      "estimate": "XS",
+      "files": "`StoryEntry.razor`",
+      "do": "Group is an inline input saved via `SetDetailAsync(..., \"group\", value)`. A `showAll` flag collapses past 6 details.",
+      "doneWhen": "visually checked with a screenshot."
+    },
+    {
+      "id": "RA-F3.5",
+      "level": "feature",
+      "title": "Atlas depth",
+      "status": "open",
+      "parent": "RA-E3"
+    },
+    {
+      "id": "RA-S3.5.1",
+      "level": "story",
+      "title": "Read the map",
+      "status": "open",
+      "parent": "RA-F3.5",
+      "acceptance": "thread labels show on hover, categories can be toggled, stars can be pinned by dragging, and a search box focuses a star."
+    },
+    {
+      "id": "RA-T3.5.1.1",
+      "level": "task",
+      "title": "Labels, category toggles, search",
+      "status": "open",
+      "parent": "RA-S3.5.1",
+      "estimate": "S",
+      "files": "`story.js` (`atlasRender` takes `options { hidden: string[], focus: key }`), `StoryAtlas.razor` (legend entries become toggle buttons; a search input)",
+      "do": "on hover, draw the `type` label at each thread's midpoint for threads touching the hovered star.",
+      "doneWhen": "checked by screenshot."
+    },
+    {
+      "id": "RA-T3.5.1.2",
+      "level": "task",
+      "title": "Pin by dragging a star",
+      "status": "open",
+      "parent": "RA-S3.5.1",
+      "estimate": "S",
+      "depends": [
+        "RA-T3.5.1.1"
+      ],
+      "files": "`story.js`",
+      "do": "a mousedown on a star drags that star, not the view. The pinned position is kept in `localStorage` per book (`prose.atlas.<bookId>`) inside try/catch.",
+      "doneWhen": "a dragged star keeps its place after a reload."
+    },
+    {
+      "id": "RA-S3.5.2",
+      "level": "story",
+      "title": "What the reader knew",
+      "status": "open",
+      "parent": "RA-F3.5",
+      "acceptance": "with the scrubber at chapter N, an opened entry shows only details from chapters 1 to N."
+    },
+    {
+      "id": "RA-T3.5.2.1",
+      "level": "task",
+      "title": "`GetEntryAsync(..., asOfChapter)`",
+      "status": "open",
+      "parent": "RA-S3.5.2",
+      "estimate": "S",
+      "files": "`StoryBibleService.cs`, `StoryEntry.razor` (an `AsOfChapter` parameter), `StoryAtlas.razor` → `StoryShell.razor` (pass the scrubber value through `OnOpenEntry`)",
+      "do": "filter details and timeline to `ChapterIndex <= N`, and show a banner \"as of chapter N\".",
+      "test": "a service test.",
+      "doneWhen": "the test passes."
+    },
+    {
+      "id": "RA-F3.6",
+      "level": "feature",
+      "title": "Ask depth",
+      "status": "open",
+      "parent": "RA-E3"
+    },
+    {
+      "id": "RA-S3.6.1",
+      "level": "story",
+      "title": "Longer, livelier conversations",
+      "status": "open",
+      "parent": "RA-F3.6",
+      "acceptance": "the conversation length is a setting, answers can stream, a card can be asked about, and an answer can go to the board."
+    },
+    {
+      "id": "RA-T3.6.1.1",
+      "level": "task",
+      "title": "Conversation length setting",
+      "status": "open",
+      "parent": "RA-S3.6.1",
+      "estimate": "XS",
+      "files": "`BookChatService.cs` (read `readalong.ask.historyTurns`, default 8, max 40), `StoryImport.razor` Allowance section (add the input)",
+      "doneWhen": "the setting changes how many turns the prompt carries (a unit test on the prompt builder, extracted as `BuildPrompt`)."
+    },
+    {
+      "id": "RA-T3.6.1.2",
+      "level": "task",
+      "title": "\"Ask about this card\"",
+      "status": "open",
+      "parent": "RA-S3.6.1",
+      "estimate": "XS",
+      "files": "`StoryContinuity.razor` (button), `StoryShell.razor` (switch to the Ask tab with a prefilled question), `StoryAsk.razor` (`[Parameter] string? Prefill`)",
+      "doneWhen": "clicking prefills \"Which is right: <existing> or <proposed> for <entity>'s <attribute>?\" in the Ask box."
+    },
+    {
+      "id": "RA-T3.6.1.3",
+      "level": "task",
+      "title": "Save an answer to the board",
+      "status": "open",
+      "parent": "RA-S3.6.1",
+      "estimate": "XS",
+      "files": "`StoryAsk.razor`",
+      "do": "a \"📌 To board\" button calls `BrainstormService.AddAsync(book, firstLine, text, color: \"idea\")`.",
+      "doneWhen": "the card appears on the board."
+    },
+    {
+      "id": "RA-T3.6.1.4",
+      "level": "task",
+      "title": "Streaming answers",
+      "status": "open",
+      "parent": "RA-S3.6.1",
+      "estimate": "M",
+      "depends": [
+        "RA-T3.6.1.1"
+      ],
+      "files": "`src/Prose.Core/Interfaces/ILlmService.cs` (add a default-implemented `IAsyncEnumerable<string> StreamAsync(...)` that yields `GenerateAsync`'s whole result), the Claude provider (a real stream), `BookChatService.AskStreamAsync`, `StoryAsk.razor` (render chunks)",
+      "test": "a unit test with a fake `ILlmService` that yields 3 chunks; the stored message equals their concatenation.",
+      "doneWhen": "the test passes."
+    },
+    {
+      "id": "RA-F3.7",
+      "level": "feature",
+      "title": "Brainstorm depth",
+      "status": "open",
+      "parent": "RA-E3"
+    },
+    {
+      "id": "RA-S3.7.1",
+      "level": "story",
+      "title": "A board you can work on",
+      "status": "open",
+      "parent": "RA-F3.7",
+      "acceptance": "a card can be tied to an entry from a picker, the board zooms and pans, works by touch, and filters by colour."
+    },
+    {
+      "id": "RA-T3.7.1.1",
+      "level": "task",
+      "title": "Entity picker on a card",
+      "status": "open",
+      "parent": "RA-S3.7.1",
+      "estimate": "S",
+      "files": "`StoryBrainstorm.razor`, `BrainstormService.UpdateAsync` (add `entityId` and `clearEntity`)",
+      "doneWhen": "a tied card shows the entry chip, and the chip opens the entry."
+    },
+    {
+      "id": "RA-T3.7.1.2",
+      "level": "task",
+      "title": "Zoom, pan, touch, colour filter",
+      "status": "open",
+      "parent": "RA-S3.7.1",
+      "estimate": "S",
+      "depends": [
+        "RA-T3.7.1.1"
+      ],
+      "files": "`story.js` (a board transform with wheel and pinch), `StoryBrainstorm.razor` (filter chips), `story.css`",
+      "doneWhen": "a Playwright run on an emulated phone drags a card with touch."
+    },
+    {
+      "id": "RA-E4",
+      "level": "epic",
+      "title": "Harden",
+      "status": "open",
+      "parent": null
+    },
+    {
+      "id": "RA-F4.1",
+      "level": "feature",
+      "title": "Reach",
+      "status": "open",
+      "parent": "RA-E4"
+    },
+    {
+      "id": "RA-D3",
+      "level": "decision",
+      "title": "Phone access (author decision)",
+      "status": "open",
+      "parent": null,
+      "estimate": "XS",
+      "question": "the Hub listens only on 127.0.0.1 and hosting was retired on 2026-08-23. The Story workspace is responsive, but a phone cannot reach it. How should it?",
+      "options": "(a) LAN binding behind the API key, with a QR code in the Writer; (b) Remote Control or a tunnel; (c) bring hosting back for `/story` only.",
+      "record": "`record_ruling`, then read it back."
+    },
+    {
+      "id": "RA-S4.1.1",
+      "level": "story",
+      "title": "Phone reaches the Story workspace (shape fixed by RA-D3)",
+      "status": "open",
+      "parent": "RA-F4.1",
+      "acceptance": "defined by the ruling. This story is written out when RA-D3 is decided; until then it has no tasks to code."
+    },
+    {
+      "id": "RA-F4.2",
+      "level": "feature",
+      "title": "Accessibility",
+      "status": "open",
+      "parent": "RA-E4"
+    },
+    {
+      "id": "RA-S4.2.1",
+      "level": "story",
+      "title": "Usable by keyboard and screen reader, in both themes",
+      "status": "open",
+      "parent": "RA-F4.2",
+      "acceptance": "every Story workspace action works from the keyboard, the atlas has a text equivalent, and the light theme passes contrast."
+    },
+    {
+      "id": "RA-T4.2.1.1",
+      "level": "task",
+      "title": "Keyboard reorder and board moves",
+      "status": "open",
+      "parent": "RA-S4.2.1",
+      "estimate": "S",
+      "files": "`StoryManuscript.razor` (Alt+↑/↓ on a focused tree row calls `MoveAsync`), `StoryBrainstorm.razor` (arrow keys move a focused card 10 px; Shift moves 50 px)",
+      "doneWhen": "a Playwright keyboard-only run reorders a chapter."
+    },
+    {
+      "id": "RA-T4.2.1.2",
+      "level": "task",
+      "title": "Atlas text equivalent",
+      "status": "open",
+      "parent": "RA-S4.2.1",
+      "estimate": "XS",
+      "files": "`StoryAtlas.razor`",
+      "do": "a `<details>` \"List view\" with stars grouped by category, each with its threads, honouring the scrubber.",
+      "doneWhen": "a screen-reader name check passes in Playwright (`getByRole('list')`)."
+    },
+    {
+      "id": "RA-T4.2.1.3",
+      "level": "task",
+      "title": "Light-theme contrast and reduced motion",
+      "status": "open",
+      "parent": "RA-S4.2.1",
+      "estimate": "S",
+      "files": "`story.css`, `tools/readalong/e2e/contrast.js` (new)",
+      "do": "a script that computes the WCAG contrast of every text node's colour against its background in both themes and fails under 4.5:1. Fix the tokens it flags. Gate the atlas glow and the flash animation behind `prefers-reduced-motion`.",
+      "doneWhen": "the script passes."
+    },
+    {
+      "id": "RA-F4.3",
+      "level": "feature",
+      "title": "Performance",
+      "status": "open",
+      "parent": "RA-E4"
+    },
+    {
+      "id": "RA-S4.3.1",
+      "level": "story",
+      "title": "Fast on long books",
+      "status": "open",
+      "parent": "RA-F4.3",
+      "acceptance": "a 200-chapter, 400k-word synthetic book reads in under 2 minutes on SQLite, and opening a Writer beat adds under 50 ms of read-along overhead."
+    },
+    {
+      "id": "RA-T4.3.1.1",
+      "level": "task",
+      "title": "Benchmark fixture first",
+      "status": "open",
+      "parent": "RA-S4.3.1",
+      "estimate": "S",
+      "files": "`src/Prose.UnitTests/ReadAlongPerformanceTests.cs` (new, `[Category(\"Slow\")]`)",
+      "do": "generate 200 chapters of templated prose with 60 recurring names, then time `ReadBookAsync` and `IsRememberedAsync`.",
+      "doneWhen": "the baseline numbers are recorded in the test's comment."
+    },
+    {
+      "id": "RA-T4.3.1.2",
+      "level": "task",
+      "title": "Known index once per sweep",
+      "status": "open",
+      "parent": "RA-S4.3.1",
+      "estimate": "S",
+      "depends": [
+        "RA-T4.3.1.1"
+      ],
+      "files": "`ReadAlongService.cs`",
+      "do": "`ReadBookAsync` loads `Known` once and passes it to `ReadChapterCoreAsync`, appending each chapter's new drafts to it in memory.",
+      "doneWhen": "the benchmark improves and all tests pass."
+    },
+    {
+      "id": "RA-T4.3.1.3",
+      "level": "task",
+      "title": "Cheap \"remembered\" check",
+      "status": "open",
+      "parent": "RA-S4.3.1",
+      "estimate": "S",
+      "depends": [
+        "RA-T4.3.1.1"
+      ],
+      "files": "`ReadAlongService.cs`",
+      "do": "`IsRememberedAsync(book, chapter)` computes only that chapter's hash, by walking the chapter node (`NodeWorkbenchService.WalkAsync(db, chapterId, …)`), not the whole book.",
+      "doneWhen": "the benchmark meets the 50 ms bar."
+    },
+    {
+      "id": "RA-T4.3.1.4",
+      "level": "task",
+      "title": "Import in fewer round trips",
+      "status": "open",
+      "parent": "RA-S4.3.1",
+      "estimate": "S",
+      "depends": [
+        "RA-T4.3.1.1"
+      ],
+      "files": "`ManuscriptImportService.cs`, `NodeWorkbenchService.cs`",
+      "do": "add `CreateChaptersWithBeatsAsync(parentId, chapters)`: one transaction per volume that creates the chapter nodes and their beats (reusing the `CreateNodeFromBeatsAsync` logic for SortKey and Number).",
+      "doneWhen": "the 200-chapter import is under 30 s on SQLite."
+    },
+    {
+      "id": "RA-F4.4",
+      "level": "feature",
+      "title": "Reproducible local databases",
+      "status": "open",
+      "parent": "RA-E4"
+    },
+    {
+      "id": "RA-S4.4.1",
+      "level": "story",
+      "title": "One command makes a local Prose database",
+      "status": "open",
+      "parent": "RA-F4.4",
+      "acceptance": "`tools/db/create-local.sh` (and a matching `.ps1`) produces a working local database in Docker, and the Hub starts against it."
+    },
+    {
+      "id": "RA-T4.4.1.1",
+      "level": "task",
+      "title": "Create-from-model script",
+      "status": "open",
+      "parent": "RA-S4.4.1",
+      "estimate": "S",
+      "files": "`tools/db/create-local.sh`, `tools/db/create-local.ps1` (new)",
+      "do": "\n1. Run `dotnet ef dbcontext script` to get the schema.\n2. Apply it with `sqlcmd -I` (QUOTED_IDENTIFIER on).\n3. Stamp `__EFMigrationsHistory` with every `[Migration]` id from the Designer files (ids, not file names, because one differs).\n4. Seed the GLMZ `Universe` row.",
+      "test": "run against `mcr.microsoft.com/mssql/server:2022-latest`, then `/api/health` returns ok.",
+      "doneWhen": "the acceptance holds."
+    },
+    {
+      "id": "RA-T4.4.1.2",
+      "level": "task",
+      "title": "Document and file the replay bug",
+      "status": "open",
+      "parent": "RA-S4.4.1",
+      "estimate": "XS",
+      "depends": [
+        "RA-T4.4.1.1"
+      ],
+      "files": "`README.md` (Building section), a ticket for \"migrations do not replay on an empty database (NodeCode index)\"",
+      "doneWhen": "both are committed."
+    },
+    {
+      "id": "RA-F4.5",
+      "level": "feature",
+      "title": "Operations",
+      "status": "open",
+      "parent": "RA-E4"
+    },
+    {
+      "id": "RA-S4.5.1",
+      "level": "story",
+      "title": "The job is visible and backed up",
+      "status": "open",
+      "parent": "RA-F4.5",
+      "acceptance": "a nightly scheduler run exists, the `/app` dashboard shows the last sweep, and every sweep is a command-ledger row."
+    },
+    {
+      "id": "RA-T4.5.1.1",
+      "level": "task",
+      "title": "Ledger rows for sweeps",
+      "status": "open",
+      "parent": "RA-S4.5.1",
+      "estimate": "XS",
+      "files": "`ReadAlongBackgroundService.cs`",
+      "do": "write a `CommandLedgerEntry` (source `job`, label `read-along.sweep`, duration, chapters read, cost 0) after each sweep that read anything.",
+      "doneWhen": "a test asserts that a row is written."
+    },
+    {
+      "id": "RA-T4.5.1.2",
+      "level": "task",
+      "title": "Dashboard tile",
+      "status": "open",
+      "parent": "RA-S4.5.1",
+      "estimate": "S",
+      "depends": [
+        "RA-T4.5.1.1"
+      ],
+      "files": "`src/Prose.ObserverUi` (a tile that reads the last `read-along.sweep` ledger row and the open-card count across followed books)",
+      "doneWhen": "the tile renders."
+    },
+    {
+      "id": "RA-T4.5.1.3",
+      "level": "task",
+      "title": "Scheduler job spec",
+      "status": "open",
+      "parent": "RA-S4.5.1",
+      "estimate": "XS",
+      "depends": [
+        "RA-T4.5.1.1"
+      ],
+      "files": "`docs/planning/read-along-scheduler.md` (job name `Prose.ReadAlong.Sweep`, nightly 02:41 local, command `prose --read-along --all`, headless). The job itself lives in MindAttic.Scheduler.",
+      "doneWhen": "the spec is committed and the job is added there."
+    },
+    {
+      "id": "RA-F4.6",
+      "level": "feature",
+      "title": "Agents",
+      "status": "open",
+      "parent": "RA-E4"
+    },
+    {
+      "id": "RA-S4.6.1",
+      "level": "story",
+      "title": "Agents know the read-along's rules",
+      "status": "open",
+      "parent": "RA-F4.6",
+      "acceptance": "the protocol says agents may read the codex, cards and atlas, and may keep, toss or rule only on the author's word in the session."
+    },
+    {
+      "id": "RA-T4.6.1.1",
+      "level": "task",
+      "title": "Protocol and prompt alias",
+      "status": "open",
+      "parent": "RA-S4.6.1",
+      "estimate": "XS",
+      "files": "`docs/agent/PROSE_PROTOCOL.md` (a new \"Read-along\" section), `docs/agent/PROMPT_COMMANDS.md` (`/story <book>` runs `read_along_status` plus `continuity_inbox`)",
+      "doneWhen": "both are committed."
+    }
+  ]
+}
