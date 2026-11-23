@@ -46,8 +46,12 @@ things outside the code:
 | Blocked by | Tickets |
 | --- | --- |
 | The live database (Azure SQL is paused until 2026-12-01) | RA-T2.1.1.2, RA-T2.1.2.2 |
-| The author's rulings | RA-D1 → RA-T2.5.1.1 (and RA-S2.5.2); RA-D2 → RA-T3.2.2.1 (and RA-S3.2.3); RA-D3 → RA-S4.1.1 |
+| The author's rulings | RA-D1 → RA-S2.5.1 (b) or RA-S2.5.2 (c); RA-D2 → RA-S3.2.2 (a) or RA-S3.2.3 (b); RA-D3 → RA-S4.1.1 (a), RA-S4.1.2 (b) or RA-S4.1.3 (c) |
 | The author's precision verdicts | RA-T3.1.1.4 (the four recall patterns it was to gate are built; the audit can switch any of them off) |
+
+Every remaining ticket is now written out and ready to code: each branch of the three rulings (RA-S2.5.1/2,
+RA-S3.2.2/3, RA-S4.1.1/2/3), and the follow-ups as **RA-E5** (8 open tasks, ~26 h; two start in other
+repositories). Nothing in RA-E5 or the decision branches is programmed.
 
 The end-to-end scripts are in `tools/readalong/e2e/`. Run them against a Hub with a read-along book; a local
 database comes from `tools/db/create-local.sh`.
@@ -396,7 +400,33 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the test passes and export succeeds in the e2e script.
 
 #### RA-S2.5.2 · Author-written export mode (only if RA-D1 = c)
-*Acceptance:* defined by the ruling. This story is written out when RA-D1 is decided; until then it has no tasks to code.
+*Acceptance:* a book the author marks "author-written" exports to Word with unread beats, the export says so on its title page, and every other book still meets the read gate.
+
+##### RA-T2.5.2.1 · Record the law-9 amendment
+- **Status:** blocked: waits on RA-D1 = c
+- **Est:** XS
+- **Depends:** RA-D1
+- **Files:** none (a factory ruling); `docs/agent/PROSE_PROTOCOL.md` (law 9's text)
+- **Do:** `record_ruling` amending law 9: "no override on the read gate, except a book the author marks author-written, which exports what was written". Read it back. Update the law's line in the protocol.
+- **Done when:** the ruling reads back, and the protocol text matches it.
+
+##### RA-T2.5.2.2 · `Node.AuthorWritten` flag
+- **Status:** blocked: waits on RA-D1 = c
+- **Est:** S
+- **Depends:** RA-T2.5.2.1
+- **Files:** `src/Prose.Core/Data/Entities/Node.cs`, a migration `AddNodeAuthorWritten`, `ManuscriptImportService.cs` (imports default to true), the Story workspace manuscript header (a toggle)
+- **Do:** add a nullable bool column (system-versioned like the rest of `Nodes`), set it on import, and make it switchable in the manuscript view.
+- **Test:** a migration applied with `tools/db/create-local.sh`; a service test that import sets the flag.
+- **Done when:** the flag round-trips through the UI and the database.
+
+##### RA-T2.5.2.3 · `ReadGateService.EnsureReadAsync` honours the flag
+- **Status:** blocked: waits on RA-D1 = c
+- **Est:** S
+- **Depends:** RA-T2.5.2.2
+- **Files:** `src/Prose.Core/Services/ReadGateService.cs`, `DocxExportService.cs` (title-page note "Exported unread at the author's request")
+- **Do:** skip the unread check only for author-written book roots; every other path is unchanged. Add the title-page note.
+- **Test:** `ReadGateTests` — an author-written book with unread beats exports; an ordinary book with unread beats still throws `UnreadBeatsException`.
+- **Done when:** both tests pass.
 
 ---
 
@@ -505,7 +535,31 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the test passes.
 
 #### RA-S3.2.3 · Model-suggested cards (if RA-D2 = b)
-*Acceptance:* defined by the ruling. This story is written out when RA-D2 is decided; until then it has no tasks to code.
+*Acceptance:* with the setting on (off by default), a chapter read also asks the configured LLM for possible disagreements with the book's confirmed details. Each one is filed as a card marked "suggested by model", with both quotes verified to exist verbatim in the prose. The author's rulings work as for any card, and a suggestion with an unverifiable quote is discarded.
+
+##### RA-T3.2.3.1 · Setting and card marker
+- **Status:** blocked: waits on RA-D2 = b
+- **Est:** S
+- **Depends:** RA-D2
+- **Files:** `ReadAlong.cs` (`ContinuityConflict.Source`: `read-along` | `model`), a migration, `ReadAlongService` (shared setting `readalong.model-suggestions`, default off), `StoryContinuity.razor` (a "suggested by model" tag)
+- **Test:** the migration via `create-local.sh`; a service test that the setting defaults to off.
+- **Done when:** the column and the setting exist, and the tag renders.
+
+##### RA-T3.2.3.2 · Suggestion pass with verbatim-quote verification
+- **Status:** blocked: waits on RA-D2 = b
+- **Est:** M
+- **Depends:** RA-T3.2.3.1
+- **Files:** `src/Prose.Core/Services/ReadAlong/ModelSuggestionService.cs` (new)
+- **Do:** for a read chapter, send its text and the confirmed details of the names it mentions. Ask for JSON `[{subject, attribute, existingQuote, newQuote}]`. Keep only items where both quotes occur verbatim in the book's beats. File them at a fixed 40 % confidence, `Source = model`. Log tokens and cost to the command ledger.
+- **Test:** with a fake `ILlmService`, a verifiable suggestion is filed and a fabricated quote is dropped; nothing is called when the setting is off.
+- **Done when:** the tests pass.
+
+##### RA-T3.2.3.3 · Spend gate and audit
+- **Status:** blocked: waits on RA-D2 = b
+- **Est:** S
+- **Depends:** RA-T3.2.3.2
+- **Files:** `ReadAlongAudit.cs` (model cards sampled under pattern `model.suggest`), `CostGateDispatch` (cost gate before a whole-book pass)
+- **Done when:** a whole-book pass asks the cost gate first, and the audit can score model cards like any pattern.
 
 ### RA-F3.3 · Coreference
 
@@ -686,8 +740,47 @@ the tests. All of it shipped in `64e84d3`.
 - **Options:** (a) LAN binding behind the API key, with a QR code in the Writer; (b) Remote Control or a tunnel; (c) bring hosting back for `/story` only.
 - **Record:** `record_ruling`, then read it back.
 
-#### RA-S4.1.1 · Phone reaches the Story workspace (shape fixed by RA-D3)
-*Acceptance:* defined by the ruling. This story is written out when RA-D3 is decided; until then it has no tasks to code.
+#### RA-S4.1.1 · LAN access behind the API key (if RA-D3 = a)
+*Acceptance:* with "Phone access" switched on, the Hub also listens on the home network. Only `/story` and the endpoints it needs answer off-machine, and only with a pairing token. The Writer shows a QR code that opens `/story` on the phone already paired.
+
+##### RA-T4.1.1.1 · Opt-in LAN binding
+- **Status:** blocked: waits on RA-D3 = a
+- **Est:** M
+- **Depends:** RA-D3
+- **Files:** `src/Prose.Hub/Program.cs` (a second URL `http://0.0.0.0:<port>` when `Hub:LanAccess=true`), `src/Prose.Hub/Hosting/` (a middleware that allows only `/story`, `/_blazor`, `/_framework`, `/_content` and `/story/export` from non-loopback addresses)
+- **Test:** with the switch off, a non-loopback request is refused; with it on, `/story` answers and `/api/mcp-invoke` is refused off-machine.
+- **Done when:** both are verified with curl from the container's own non-loopback address.
+
+##### RA-T4.1.1.2 · Pairing token and QR code
+- **Status:** blocked: waits on RA-D3 = a
+- **Est:** M
+- **Depends:** RA-T4.1.1.1
+- **Files:** `SettingsService` (a rotating pairing token), a pairing endpoint that sets a cookie, `WriterShell.razor` (a "Phone" button showing a QR code of `http://<lan-ip>:<port>/pair?t=<token>`; a small QR encoder in `writer.js`, no CDN)
+- **Test:** an e2e on an emulated phone: open the pair URL, then `/story` loads; without the cookie, refused.
+- **Done when:** the e2e passes.
+
+#### RA-S4.1.2 · Remote access through a tunnel (if RA-D3 = b)
+*Acceptance:* a documented, opt-in tunnel exposes only `/story` (same allow-list as RA-T4.1.1.1) with the pairing token required, reachable away from home.
+
+##### RA-T4.1.2.1 · Tunnel recipe and allow-list reuse
+- **Status:** blocked: waits on RA-D3 = b
+- **Est:** M
+- **Depends:** RA-D3
+- **Files:** `docs/planning/read-along-phone.md` (new: the tunnel setup, e.g. a Cloudflare Tunnel or Tailscale Funnel pointed at the LAN port), the allow-list middleware from RA-T4.1.1.1 (built here if a was not chosen), the pairing token
+- **Test:** through the tunnel, `/story` with the token loads; `/api` is refused.
+- **Done when:** the recipe works end to end once.
+
+#### RA-S4.1.3 · Hosted Story workspace (if RA-D3 = c)
+*Acceptance:* a hosted deployment serves `/story` only, behind MindAttic.Authentication, against the same database. The Writer, CLI and MCP stay local.
+
+##### RA-T4.1.3.1 · Hosted mode limited to /story
+- **Status:** blocked: waits on RA-D3 = c
+- **Est:** L
+- **Depends:** RA-D3
+- **Files:** `src/Prose.Hub/Hosting/HostedGate.cs` and `HostedAuthPages.cs` (exist from the retired hosting), the allow-list middleware, the deploy skill's pipeline
+- **Do:** revive hosted mode with a route allow-list of `/story` plus static assets. Sign-in is required. No `/api/cli-invoke` or `/api/mcp-invoke`.
+- **Test:** a staging deploy refuses every non-story route and requires a login.
+- **Done when:** staging passes, and the author approves going live.
 
 ### RA-F4.2 · Accessibility
 
@@ -820,6 +913,91 @@ the tests. All of it shipped in `64e84d3`.
 
 ---
 
+## RA-E5 · Follow-ups found while building
+
+### RA-F5.1 · Literal asterisks (MindAttic.Export)
+
+#### RA-S5.1.1 · An escaped `\*` stays a literal asterisk everywhere
+*Acceptance:* `ProseInline.Parse("a \\*b\\* c")` yields plain text `a *b* c`. Imported text with a real asterisk is escaped on the way in.
+
+##### RA-T5.1.1.1 · Escape support in `ProseInline`
+- **Est:** S
+- **Depends:** —
+- **Files:** MindAttic.Export `Text/ProseInline.cs` and its tests (another repository); then bump the package in `src/Prose.Core/Prose.Core.csproj` and `lib/local-packages`
+- **Do:** treat a backslash-escaped `*` as literal in `Parse` and `StripFormatting`; publish a new package version.
+- **Test:** `ProseInlineTests`: an escaped asterisk is literal, and an unescaped one is unchanged.
+- **Done when:** Prose builds against the new package and its tests pass.
+
+##### RA-T5.1.1.2 · Import escapes literal asterisks
+- **Est:** XS
+- **Depends:** RA-T5.1.1.1
+- **Files:** `ManuscriptParser.cs` (`Markup` and the text readers escape `*` in run text before adding markers)
+- **Test:** a parser test with "2*3" in plain text round-trips.
+- **Done when:** the test passes.
+
+### RA-F5.2 · Streaming answers (MindAttic.Legion)
+
+#### RA-S5.2.1 · Claude answers stream into Ask
+*Acceptance:* Ask shows a Claude answer growing as it is generated, not in one piece.
+
+##### RA-T5.2.1.1 · `LegionClient.StreamAsync`
+- **Est:** M
+- **Depends:** —
+- **Files:** MindAttic.Legion (another repository): a streaming call over the Messages API's server-sent events, keeping retries and the circuit breaker; a new package version
+- **Test:** Legion's own tests with a recorded SSE stream.
+- **Done when:** the package is published.
+
+##### RA-T5.2.1.2 · `ClaudeService.StreamAsync`
+- **Est:** S
+- **Depends:** RA-T5.2.1.1
+- **Files:** `src/Prose.Core/Services/ClaudeService.cs` (override the interface default with Legion's stream)
+- **Test:** an Ask with a configured key shows more than one chunk (manual, logged).
+- **Done when:** observed in the Story workspace.
+
+### RA-F5.3 · Replayable migrations
+
+#### RA-S5.3.1 · An empty server migrates from history
+*Acceptance:* `dotnet ef database update` succeeds on an empty SQL Server 2022, and the live database is unaffected.
+
+##### RA-T5.3.1.1 · Squashed baseline migration
+- **Est:** L
+- **Depends:** —
+- **Files:** `src/Prose.Core/Migrations/` (a baseline generated from the current model, applied only when `__EFMigrationsHistory` is empty; the existing history stays for databases that have it)
+- **Do:** decide the mechanism (a guarded baseline, or a documented `create-local` as the only fresh path), and record the decision as a ruling.
+- **Test:** an empty container migrates; a copy of the live schema reports nothing pending.
+- **Done when:** both hold.
+
+### RA-F5.4 · Pre-existing test failures
+
+#### RA-S5.4.1 · The unit suite is green on Linux and Windows
+*Acceptance:* the 11 failures present before the read-along (`StoreUrlCli` reachability, the ArchiveDirFor/RemotePathFor paths, AllowedHosts, import/export round trip, log parsing) pass, or are marked Windows-only with a reason.
+
+##### RA-T5.4.1.1 · `StoreUrlCli` reachable from the dispatch chain
+- **Est:** XS
+- **Depends:** —
+- **Files:** `src/Prose.Cli/Program.cs` (dispatch `--set-store-url` to `StoreUrlCli`, or delete the class if `--set-store-url` lives elsewhere)
+- **Test:** `EveryHandlerClassIsReachableFromTheDispatchChain`.
+- **Done when:** the test passes.
+
+##### RA-T5.4.1.2 · Path and host tests on Linux
+- **Est:** S
+- **Depends:** RA-T5.4.1.1
+- **Files:** the failing test classes (ExportCleanupService ArchiveDirFor/RemotePathFor, AllowedHosts, import/export round trip, run-log parsing)
+- **Do:** run each on Windows. Fix the real bugs, or mark the test `[Platform("Win")]` with the reason when it tests a Windows-only path rule.
+- **Done when:** the suite is green on both platforms.
+
+### RA-F5.5 · Verify the PowerShell scripts
+
+#### RA-S5.5.1 · Both PowerShell scripts run as written
+*Acceptance:* `register-tickets.ps1 -WhatIf` prints one command per ticket, and `create-local.ps1` makes a database the Hub starts against.
+
+##### RA-T5.5.1.1 · Run them under PowerShell 7
+- **Est:** S
+- **Depends:** —
+- **Files:** `tools/planning/register-tickets.ps1`, `tools/db/create-local.ps1`
+- **Do:** run both on the author's machine (or a container with pwsh). Check the tickets CLI flags with `tickets --help` and adjust `-Template`. Fix anything they turn up.
+- **Done when:** the dry run lists every ticket, and the Hub starts against the new database.
+
 ## Build order at a glance
 
 1. **Unblock:** RA-T2.1.1.1 → RA-T2.1.1.2, RA-T2.1.2.1 → RA-T2.1.2.2.
@@ -827,3 +1005,6 @@ the tests. All of it shipped in `64e84d3`.
 3. **E2:** F2.2 → F2.3 → F2.4 → F2.5.
 4. **E3:** F3.1 must finish before F3.2. F3.3 to F3.7 are independent of each other.
 5. **E4:** F4.3 (benchmark first) can start any time; the rest have no ordering constraints.
+6. **E5:** follow-ups. F5.1 and F5.2 start in other repositories (MindAttic.Export, MindAttic.Legion). F5.3 to F5.5 are independent of each other.
+
+Only the branch matching each ruling is built. The other branches' tickets are closed as "not chosen" when the ruling is recorded.
