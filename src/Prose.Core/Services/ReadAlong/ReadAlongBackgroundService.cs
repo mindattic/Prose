@@ -25,6 +25,7 @@ namespace Prose.Core.Services.ReadAlong;
 public sealed class ReadAlongBackgroundService(
     IDbContextFactory<ProseDbContext> dbFactory,
     ReadAlongService readAlong,
+    ReadAlongFollow follow,
     IConfiguration configuration,
     ILogger<ReadAlongBackgroundService> log) : BackgroundService
 {
@@ -58,8 +59,12 @@ public sealed class ReadAlongBackgroundService(
         List<Guid> books;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            var followed = await db.ChapterReadings.IgnoreQueryFilters().Select(r => r.BookNodeId).Distinct().ToListAsync(ct);
-            books = await db.Nodes.IgnoreQueryFilters().Where(n => followed.Contains(n.Id) && !n.IsArchived).Select(n => n.Id).ToListAsync(ct);
+            // Followed = read once (the default opt-in) or switched on explicitly, minus any switched off.
+            var readOnce = (await db.ChapterReadings.IgnoreQueryFilters().Select(r => r.BookNodeId).Distinct().ToListAsync(ct)).ToHashSet();
+            var choices = follow.All();
+            var candidates = readOnce.Union(choices.Where(c => c.Value).Select(c => c.Key))
+                .Where(id => follow.IsFollowed(id, readOnce.Contains(id))).ToList();
+            books = await db.Nodes.IgnoreQueryFilters().Where(n => candidates.Contains(n.Id) && !n.IsArchived).Select(n => n.Id).ToListAsync(ct);
         }
 
         var read = 0;

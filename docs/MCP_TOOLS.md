@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**330 tools** across **57 tool families.**
+**331 tools** across **57 tool families.**
 
 ## Families
 
@@ -56,7 +56,7 @@
 | [Plant Payoff](#plant-payoff) | 6 |
 | [Prose Text](#prose-text) | 5 |
 | [Quality](#quality) | 5 |
-| [Read Along](#read-along) | 12 |
+| [Read Along](#read-along) | 13 |
 | [Reading](#reading) | 4 |
 | [Repository](#repository) | 3 |
 | [Ruling](#ruling) | 6 |
@@ -2157,6 +2157,13 @@ Rule on a Continuity Inbox card — ONLY when the author has decided: accept-new
 - `cardId` (string, required) — Card id.
 - `action` (string, required) — accept-new | keep-existing | retcon | dismiss
 - `note` (string, optional) — Optional note recorded on the card.
+
+### `set_read_along_follow`
+
+Follow (or stop following) a book with the read-along's background job, which reads each chapter once it stops changing. Only when the author asked. Nothing already read is deleted when following stops.
+
+- `book` (string, required) — Book id, slug or code.
+- `follow` (bool, required) — true to follow, false to stop.
 
 ### `set_story_bible_detail`
 

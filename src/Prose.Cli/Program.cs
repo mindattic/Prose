@@ -378,7 +378,7 @@ string[] BeatSubFlagOwners = ["--wound", "--liberty-report"];
 // ask your book, the brainstorm canvas and the optional reading allowance. Ahead of the other blocks
 // because its --slug/--add/--status/--all/--entry flags are its own. Deterministic; never writes prose.
 //   prose --import-manuscript --path <file|folder> [--title T] [--into <book>] [--read] [--dry-run]
-//   prose --read-along --slug <book> [--chapter <slug>] [--force] [--status] | --read-along --all
+//   prose --read-along --slug <book> [--chapter <slug>] [--force] [--status] [--follow on|off] | --read-along --all
 //   prose --story-bible --slug <book> [--drafts|--keep <id>|--toss <id>|--keep-all|--entry <n>|--add <n>|--set <n> --attr A --value V|--remove <n>]
 //   prose --continuity-inbox --slug <book> [--all|--explain <id>|--rule <id> --action accept-new|keep-existing|retcon|dismiss|--reopen <id>]
 //   prose --story-atlas --slug <book> [--as-of N]     prose --ask-book "Q" --slug <book>

@@ -529,6 +529,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<EntityCreator>();                                          // create_entity (repo-less types: event, …) (PRS-T864)
         // Read-along (RFC 0019): import, automatic story bible, Continuity Inbox, Story Atlas, brainstorm, ask your book.
         services.AddSingleton<Prose.Core.Services.ReadAlong.ReadAlongAllowance>();
+        services.AddSingleton<Prose.Core.Services.ReadAlong.ReadAlongFollow>();
         services.AddSingleton<Prose.Core.Services.ReadAlong.ReadAlongService>();
         services.AddSingleton<Prose.Core.Services.ReadAlong.ReadAlongBackgroundService>();
         services.AddSingleton<Prose.Core.Services.ReadAlong.StoryBibleService>();

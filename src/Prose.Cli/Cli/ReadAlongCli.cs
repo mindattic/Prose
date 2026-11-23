@@ -14,6 +14,7 @@ namespace Prose.Cli;
 ///   prose --import-manuscript --path &lt;file|folder&gt; [--title "T"] [--into &lt;book&gt;] [--read] [--dry-run] [--json]
 ///   prose --read-along --slug &lt;book&gt; [--chapter &lt;slug&gt;] [--force] [--json]
 ///   prose --read-along --slug &lt;book&gt; --status [--json]
+///   prose --read-along --slug &lt;book&gt; --follow on|off     the background job reads this book (or not)
 ///   prose --read-along --all                       one sweep over every followed book (the job, on demand)
 ///   prose --story-bible --slug &lt;book&gt; [--drafts | --keep &lt;id&gt; [--name N] [--category C] | --toss &lt;id&gt; |
 ///         --keep-all [--kind entry|detail] | --entry &lt;name|id&gt; | --add "Name" [--category C] [--description D] |
@@ -117,6 +118,13 @@ public static class ReadAlongCli
         if (Has("--read-along"))
         {
             var ra = sp.GetRequiredService<ReadAlongService>();
+            if (Arg("--follow") is { } followArg)
+            {
+                if (followArg is not ("on" or "off")) { Console.Error.WriteLine("--follow on|off"); return 2; }
+                sp.GetRequiredService<ReadAlongFollow>().Set(book, followArg == "on");
+                Out(new { book, follow = followArg == "on" }, () => Console.WriteLine($"Read-along {(followArg == "on" ? "follows" : "no longer follows")} this book."));
+                return 0;
+            }
             if (Has("--status"))
             {
                 var s = await ra.GetStatusAsync(book);

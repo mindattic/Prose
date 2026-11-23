@@ -64,6 +64,21 @@ public class ReadAlongTools(HubInvoker hub, IServiceProvider sp)
     }
 
     [McpServerTool, Description(
+        "Follow (or stop following) a book with the read-along's background job, which reads each chapter once it " +
+        "stops changing. Only when the author asked. Nothing already read is deleted when following stops.")]
+    public Task<string> SetReadAlongFollow(
+        [Description("Book id, slug or code.")] string book,
+        [Description("true to follow, false to stop.")] bool follow) =>
+        hub.InvokeAsync(nameof(ReadAlongTools), nameof(SetReadAlongFollowImpl), new { book, follow });
+
+    public async Task<string> SetReadAlongFollowImpl(string book, bool follow)
+    {
+        if (await BookAsync(book) is not { } id) return J(new { error = "book_not_found", book });
+        sp.GetRequiredService<ReadAlongFollow>().Set(id, follow);
+        return J(new { ok = true, book = id, follow });
+    }
+
+    [McpServerTool, Description(
         "Import a manuscript (RFC 0019): a .docx/.txt/.md file or a folder of them on the Hub's machine becomes a new book " +
         "(or chapters appended to an existing one) — volumes, chapters found from their headings, one beat per paragraph, " +
         "the words exactly as written. dryRun shows the chapter breaks without writing. read=true reads it along afterwards.")]

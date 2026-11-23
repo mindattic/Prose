@@ -7,6 +7,7 @@
 @inject ReadAlongService ReadAlong
 @inject ContinuityInboxService Inbox
 @inject ReadAlongAllowance Allowance
+@inject ReadAlongFollow Follow
 @inject IJSRuntime JS
 @implements IAsyncDisposable
 
@@ -77,6 +78,9 @@
                     }
                 }
                 <div class="spacer"></div>
+                <label class="small follow" title="Read this book along automatically as chapters change (the background job)">
+                    <input type="checkbox" checked="@following" @onchange="ToggleFollow" /> Follow this book
+                </label>
                 <button class="mini" disabled="@reading" @onclick="() => ReadBookAsync(false)" title="Read every chapter that changed since it was last read">Read along now</button>
                 <button class="mini" @onclick="() => logOpen = !logOpen" aria-expanded="@logOpen">@(logOpen ? "Hide reading log" : "Reading log")</button>
             </div>
@@ -213,6 +217,15 @@
 
     private void SetTab(string key) { tab = key; }
 
+    private bool following;
+
+    private void ToggleFollow(ChangeEventArgs e)
+    {
+        if (book is null) return;
+        following = e.Value is true || string.Equals(e.Value?.ToString(), "true", StringComparison.OrdinalIgnoreCase);
+        Follow.Set(book.Id, following);
+    }
+
     private string? syncedLocation;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -230,6 +243,7 @@
         try
         {
             status = book is null ? null : await ReadAlong.GetStatusAsync(book.Id);
+            following = book is not null && Follow.IsFollowed(book.Id, readOnce: status is { Log.Count: > 0 });
             version++;
             usage = await Allowance.GetUsageAsync();
         }

@@ -209,6 +209,28 @@ public class ReadAlongServiceTests
     }
 
     [Test]
+    public async Task Follow_switch_controls_the_sweep()
+    {
+        var follow = new ReadAlongFollow(new SettingsKvStore(dbFactory));
+        var config = new Microsoft.Extensions.Configuration.ConfigurationBuilder().Build();
+        var job = new ReadAlongBackgroundService(dbFactory, readAlong, follow, config, NullLogger<ReadAlongBackgroundService>.Instance);
+
+        var readBefore = await BookAsync(("One", ["Wren walked the flats. Wren said nothing."]));
+        var neverRead = await BookAsync(("One", ["Kael waited at the gate. Kael said nothing."]));
+        await readAlong.ReadBookAsync(readBefore);
+        await AddChapterAsync(readBefore, "Two", "Wren came back at dusk.");
+
+        Assert.That(follow.IsFollowed(readBefore, readOnce: true), Is.True);
+        follow.Set(readBefore, false);
+        follow.Set(neverRead, true);
+        Assert.That(follow.Get(readBefore), Is.False);
+
+        await job.SweepAsync(TimeSpan.Zero, CancellationToken.None);
+        Assert.That((await readAlong.GetStatusAsync(readBefore)).ChaptersRead, Is.EqualTo(1), "switched off: chapter two is not read");
+        Assert.That((await readAlong.GetStatusAsync(neverRead)).ChaptersRead, Is.EqualTo(1), "switched on: read without a first manual read");
+    }
+
+    [Test]
     public async Task Tossed_drafts_stay_tossed()
     {
         var book = await BookAsync(("One", ["Brannoc watched the moor. Brannoc said nothing."]));
