@@ -64,6 +64,27 @@ public class ReadAlongTools(HubInvoker hub, IServiceProvider sp)
     }
 
     [McpServerTool, Description(
+        "The read-along background job at a glance: when it last swept and what it read (from the command ledger), " +
+        "how many books it follows, and the open continuity cards and pending story-bible drafts across them.")]
+    public Task<string> ReadAlongJobStatus() =>
+        hub.InvokeAsync(nameof(ReadAlongTools), nameof(ReadAlongJobStatusImpl), new { });
+
+    public async Task<string> ReadAlongJobStatusImpl()
+    {
+        await using var db = await sp.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
+        var last = await db.CommandLedgerEntries.AsNoTracking()
+            .Where(r => r.Method == ReadAlongBackgroundService.LedgerLabel).OrderByDescending(r => r.At).FirstOrDefaultAsync();
+        var follow = sp.GetRequiredService<ReadAlongFollow>();
+        var readOnce = (await db.ChapterReadings.IgnoreQueryFilters().Select(r => r.BookNodeId).Distinct().ToListAsync()).ToHashSet();
+        var followed = readOnce.Union(follow.All().Where(c => c.Value).Select(c => c.Key))
+            .Where(id => follow.IsFollowed(id, readOnce.Contains(id))).ToList();
+        var open = await db.ContinuityConflicts.IgnoreQueryFilters().CountAsync(c => followed.Contains(c.BookNodeId) && c.Status == "open");
+        var drafts = await db.StoryBibleSuggestions.IgnoreQueryFilters().CountAsync(s => followed.Contains(s.BookNodeId) && s.Status == "pending");
+        // Shape matches Prose.Hub.Contracts.ReadAlongJobStatusDto (the dashboard tile reads it).
+        return J(new { lastSweepAt = last?.At, lastSweepSummary = last?.OutputSummary, lastSweepMs = last?.DurationMs, followedBooks = followed.Count, openCards = open, pendingDrafts = drafts });
+    }
+
+    [McpServerTool, Description(
         "Follow (or stop following) a book with the read-along's background job, which reads each chapter once it " +
         "stops changing. Only when the author asked. Nothing already read is deleted when following stops.")]
     public Task<string> SetReadAlongFollow(

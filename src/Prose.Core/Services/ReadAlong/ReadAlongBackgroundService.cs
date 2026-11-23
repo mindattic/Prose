@@ -68,17 +68,48 @@ public sealed class ReadAlongBackgroundService(
         }
 
         var read = 0;
+        var sw = System.Diagnostics.Stopwatch.StartNew();
+        var readBooks = new HashSet<Guid>();
         foreach (var bookId in books)
         {
             var due = await readAlong.UnreadChaptersAsync(bookId, ct);
             foreach (var chapter in due.Where(c => DateTime.UtcNow - c.LastEdited >= quiet))
             {
                 var r = await readAlong.ReadChapterAsync(bookId, chapter.ChapterNodeId, ct: ct);
-                if (r.Reason == "allowance") return read;
-                if (!r.Skipped) read++;
+                if (r.Reason == "allowance") { await LedgerAsync(read, readBooks.Count, sw.Elapsed, "stopped at the reading allowance", ct); return read; }
+                if (!r.Skipped) { read++; readBooks.Add(bookId); }
             }
         }
-        if (read > 0) log.LogInformation("Read-along sweep: read {Count} chapter(s).", read);
+        if (read > 0)
+        {
+            log.LogInformation("Read-along sweep: read {Count} chapter(s).", read);
+            await LedgerAsync(read, readBooks.Count, sw.Elapsed, null, ct);
+        }
         return read;
+    }
+
+    /// <summary>The label a sweep's command-ledger row carries (the dashboard tile reads it back).</summary>
+    public const string LedgerLabel = "read-along.sweep";
+
+    /// <summary>RA-T4.5.1.1: a sweep that read anything is a command-ledger row, like every CLI and MCP
+    /// call: source "job", what it read, how long, and that it cost nothing.</summary>
+    private async Task LedgerAsync(int chapters, int books, TimeSpan took, string? note, CancellationToken ct)
+    {
+        try
+        {
+            await using var db = await dbFactory.CreateDbContextAsync(ct);
+            db.CommandLedgerEntries.Add(new CommandLedgerEntry
+            {
+                Source = "job", HandlerClass = nameof(ReadAlongBackgroundService), Method = LedgerLabel, Success = true,
+                DurationMs = took.TotalMilliseconds, Actor = "job:read-along",
+                ArgsJson = System.Text.Json.JsonSerializer.Serialize(new { chapters, books, costUsd = 0 }),
+                OutputSummary = $"read {chapters} chapter(s) in {books} book(s){(note is null ? "" : "; " + note)}",
+            });
+            await db.SaveChangesAsync(ct);
+        }
+        catch (Exception ex) when (ex is not OperationCanceledException)
+        {
+            log.LogWarning(ex, "Read-along sweep: could not write the ledger row");
+        }
     }
 }

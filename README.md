@@ -2,7 +2,7 @@
 
 A local narrative engine for books and games: SQL Server canon for whole fictional universes, a desktop Writer, and a CLI and MCP server so Claude can draft, read and repair novels, and draft and check a game's conversations, crawls, barks and lore, against that canon.
 
-[![.NET 10](https://img.shields.io/badge/.NET-10-512BD4)](https://dotnet.microsoft.com/) [![C#](https://img.shields.io/badge/language-C%23-239120)](https://learn.microsoft.com/dotnet/csharp/) [![SQL Server](https://img.shields.io/badge/canon-SQL%20Server-CC2927)](#database) [![MCP](https://img.shields.io/badge/MCP-331%20tools-6E56CF)](docs/MCP%5FTOOLS.md) [![Platform](https://img.shields.io/badge/platform-Windows-0078D4)](#quick-start) [![Status](https://img.shields.io/badge/status-active%20development-2EA44F)](#limitations)
+[![.NET 10](https://img.shields.io/badge/.NET-10-512BD4)](https://dotnet.microsoft.com/) [![C#](https://img.shields.io/badge/language-C%23-239120)](https://learn.microsoft.com/dotnet/csharp/) [![SQL Server](https://img.shields.io/badge/canon-SQL%20Server-CC2927)](#database) [![MCP](https://img.shields.io/badge/MCP-332%20tools-6E56CF)](docs/MCP%5FTOOLS.md) [![Platform](https://img.shields.io/badge/platform-Windows-0078D4)](#quick-start) [![Status](https://img.shields.io/badge/status-active%20development-2EA44F)](#limitations)
 
 ![Covers of five books written and kept in Prose: Between the Lines, Critical Mass, Tournament, 1381 The Peasants' Revolt and M-101](docs/images/book-covers.jpg)
 
@@ -70,7 +70,7 @@ Every canon row belongs to exactly one universe. Books are a tree of nodes (seri
 
 ### MCP server
 
-331 tools in 57 families, surfaced to any MCP client as `mcp__prose__<name>`. Claude can read and write beats, entities, rulings and work orders, and draft and verify game texts, through the same Hub the CLI uses.
+332 tools in 57 families, surfaced to any MCP client as `mcp__prose__<name>`. Claude can read and write beats, entities, rulings and work orders, and draft and verify game texts, through the same Hub the CLI uses.
 
 ## Quick start
 
@@ -388,7 +388,7 @@ Cost-gated commands spend model money and route through the Hub's cost gate; eve
 
 ## MCP server
 
-`Prose.Mcp` exposes 331 `[McpServerTool]` methods in 57 families. The generated reference, with parameters and descriptions, is [docs/MCP\_TOOLS.md](docs/MCP%5FTOOLS.md). Regenerate it with:
+`Prose.Mcp` exposes 332 `[McpServerTool]` methods in 57 families. The generated reference, with parameters and descriptions, is [docs/MCP\_TOOLS.md](docs/MCP%5FTOOLS.md). Regenerate it with:
 
 ```powershell
 dotnet run --project src/Prose.Mcp -- --export-tools docs/MCP_TOOLS.md

@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**331 tools** across **57 tool families.**
+**332 tools** across **57 tool families.**
 
 ## Families
 
@@ -56,7 +56,7 @@
 | [Plant Payoff](#plant-payoff) | 6 |
 | [Prose Text](#prose-text) | 5 |
 | [Quality](#quality) | 5 |
-| [Read Along](#read-along) | 13 |
+| [Read Along](#read-along) | 14 |
 | [Reading](#reading) | 4 |
 | [Repository](#repository) | 3 |
 | [Ruling](#ruling) | 6 |
@@ -2143,6 +2143,12 @@ Read a book along (RFC 0019): read each chapter in order against everything the 
 - `book` (string, required) — Book id, slug or code.
 - `chapter` (string, optional) — Optional chapter id or slug: read only this chapter.
 - `force` (bool, optional) — Re-read chapters even when unchanged.
+
+### `read_along_job_status`
+
+The read-along background job at a glance: when it last swept and what it read (from the command ledger), how many books it follows, and the open continuity cards and pending story-bible drafts across them.
+
+- _(no parameters)_
 
 ### `read_along_status`
 

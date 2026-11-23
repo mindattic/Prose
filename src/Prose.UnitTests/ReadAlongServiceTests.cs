@@ -226,6 +226,11 @@ public class ReadAlongServiceTests
         Assert.That(follow.Get(readBefore), Is.False);
 
         await job.SweepAsync(TimeSpan.Zero, CancellationToken.None);
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            var row = await db.CommandLedgerEntries.SingleAsync(r => r.Method == ReadAlongBackgroundService.LedgerLabel);
+            Assert.That((row.Source, row.Success, row.OutputSummary), Is.EqualTo(("job", true, "read 1 chapter(s) in 1 book(s)")));
+        }
         Assert.That((await readAlong.GetStatusAsync(readBefore)).ChaptersRead, Is.EqualTo(1), "switched off: chapter two is not read");
         Assert.That((await readAlong.GetStatusAsync(neverRead)).ChaptersRead, Is.EqualTo(1), "switched on: read without a first manual read");
     }

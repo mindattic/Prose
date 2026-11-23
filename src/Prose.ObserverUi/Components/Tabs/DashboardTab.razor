@@ -27,6 +27,28 @@
         }
     </div>
 
+    <div class="dash-card">
+        <h6>Read-along</h6>
+        @if (readAlong is null)
+        {
+            <p class="muted">No status yet.</p>
+        }
+        else
+        {
+            <p>
+                Following <strong>@readAlong.FollowedBooks</strong> book@(readAlong.FollowedBooks == 1 ? "" : "s")
+                · <strong>@readAlong.OpenCards</strong> open continuity card@(readAlong.OpenCards == 1 ? "" : "s")
+                · <strong>@readAlong.PendingDrafts</strong> draft@(readAlong.PendingDrafts == 1 ? "" : "s") waiting
+            </p>
+            <p class="muted">
+                @(readAlong.LastSweepAt is { } at
+                    ? $"Last sweep {at.ToLocalTime():yyyy-MM-dd HH:mm}: {readAlong.LastSweepSummary} ({readAlong.LastSweepMs:F0} ms, no tokens)."
+                    : "The job has not read anything yet.")
+                <a href="/story">Open the Story workspace</a>
+            </p>
+        }
+    </div>
+
     <div class="dash-grid">
         <div class="dash-card">
             <div class="dash-card-head">
@@ -82,6 +104,7 @@
     private string? lastBeatTitle;
 
     private List<CommandLedgerDto> commands = [];
+    private ReadAlongJobStatusDto? readAlong;
     private List<DecisionLedgerDto> decisions = [];
     private string? error;
 
@@ -102,6 +125,8 @@
         {
             commands = await api.GetCommandLogAsync(20);
             decisions = await api.GetDecisionLogAsync(20);
+            try { readAlong = await api.GetReadAlongJobStatusAsync(); }
+            catch (Exception ex) when (ex is InvalidOperationException or System.Text.Json.JsonException) { readAlong = null; }
             error = null;
         }
         catch (HttpRequestException ex) { error = ex.Message; }

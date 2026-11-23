@@ -39,6 +39,9 @@ public sealed class ObserverHttpClient(HttpClient http)
     public Task<List<LogSearchResultDto>> SearchLogsAsync(string? since, string? severity, string? text, int take = 200) =>
         InvokeMcpAsync<List<LogSearchResultDto>>("LedgerTools", "SearchLogs", new { since, severity, text, take });
 
+    public Task<ReadAlongJobStatusDto> GetReadAlongJobStatusAsync() =>
+        InvokeMcpAsync<ReadAlongJobStatusDto>("ReadAlongTools", "ReadAlongJobStatus", new { });
+
     public Task<List<CommandLedgerDto>> GetCommandLogAsync(int take = 20) =>
         InvokeMcpAsync<List<CommandLedgerDto>>("LedgerTools", "CommandLog", new { take });
 

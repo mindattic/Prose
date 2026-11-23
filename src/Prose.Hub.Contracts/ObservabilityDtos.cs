@@ -54,6 +54,12 @@ public sealed record WriteStatusDto(bool IsActive, Guid? NodeId, string? NodeSlu
 
 /// <summary>Dashboard "recent activity" feed row — mirrors <c>CommandLedgerEntry</c>'s
 /// public shape without requiring a Prose.Core reference.</summary>
+/// <summary>The read-along job at a glance (RFC 0019, RA-T4.5.1.2): its last sweep and the bookkeeping
+/// waiting across every followed book.</summary>
+public sealed record ReadAlongJobStatusDto(
+    DateTime? LastSweepAt, string? LastSweepSummary, double? LastSweepMs,
+    int FollowedBooks, int OpenCards, int PendingDrafts);
+
 public sealed record CommandLedgerDto(
     Guid Id, DateTime At, string Source, string HandlerClass, string? Method,
     string? Universe, int? ExitCode, bool Success, double DurationMs,
