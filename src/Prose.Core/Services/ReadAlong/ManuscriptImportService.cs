@@ -68,7 +68,8 @@ public sealed class ManuscriptImportService(
                 ct.ThrowIfCancellationRequested();
                 progress?.Report((done, total, ch.Title));
                 var (chapterId, _) = await workbench.CreateNodeAsync(ch.Title, kind: "chapter", parentNodeId: parent, ct: ct);
-                var beats = await workbench.AppendBeatsAsync(chapterId, ch.Paragraphs, ct: ct);
+                var beats = await workbench.AppendBeatsAsync(chapterId, ch.Paragraphs, ct: ct,
+                    kindOf: t => t == ManuscriptParser.SceneBreakText ? ManuscriptParser.SceneBreakKind : "prose");
                 chapters.Add(new ImportedChapter(chapterId, ch.Title, volume.Title, beats.Count, ch.Words));
                 done++;
             }

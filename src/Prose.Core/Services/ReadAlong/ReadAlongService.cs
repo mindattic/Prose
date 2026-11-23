@@ -85,6 +85,7 @@ public sealed class ReadAlongService(
         {
             var beats = groups[unit];
             var paragraphs = beats
+                .Where(b => b.Beat.Kind != ManuscriptParser.SceneBreakKind)
                 .Select(b => new Paragraph(b.Beat.Id, PlainText(b.Beat.Text)))
                 .Where(p => p.Text.Length > 0)
                 .ToList();

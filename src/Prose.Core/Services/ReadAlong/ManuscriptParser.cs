@@ -14,10 +14,19 @@ namespace Prose.Core.Services.ReadAlong;
 /// </summary>
 public static class ManuscriptParser
 {
+    /// <param name="Paragraphs">Prose paragraphs in order; a scene break is the paragraph
+    /// <see cref="SceneBreakText"/> exactly, and is imported as a beat of kind <see cref="SceneBreakKind"/>.</param>
     public sealed record ParsedChapter(string Title, IReadOnlyList<string> Paragraphs)
     {
-        public int Words => Paragraphs.Sum(CountWords);
+        public int Words => Paragraphs.Where(p => p != SceneBreakText).Sum(CountWords);
     }
+
+    /// <summary>The paragraph that stands for a scene break the author made (RA-T2.4.1.3).</summary>
+    public const string SceneBreakText = "* * *";
+
+    /// <summary><c>Beat.Kind</c> of an imported scene break: kept as its own beat, skipped by the
+    /// read-along, rendered as a centred break by the Word export.</summary>
+    public const string SceneBreakKind = "scene-break";
 
     public sealed record ParsedVolume(string? Title, IReadOnlyList<ParsedChapter> Chapters);
 
@@ -33,6 +42,7 @@ public static class ManuscriptParser
     private enum LineKind { Text, Chapter, Volume, SceneBreak }
 
     private sealed record Line(string Text, LineKind Kind);
+
 
     private static readonly Regex ChapterRx = new(
         @"^\s*(?:#{1,3}\s*)?(?:(?:chapter|ch\.)\s+(?:\d+|[ivxlcdm]+|[a-z]+(?:[-\s][a-z]+)?)\b.*|prologue\b.*|epilogue\b.*|interlude\b.*|afterword\b.*|foreword\b.*)$",
@@ -66,6 +76,7 @@ public static class ManuscriptParser
             void Flush()
             {
                 var text = paragraphs.Where(p => p.Trim().Length > 0).ToList();
+                while (text.Count > 0 && text[^1] == SceneBreakText) text.RemoveAt(text.Count - 1);
                 if (text.Count > 0)
                 {
                     var total = volumes.Sum(v => v.Chapters.Count);
@@ -90,8 +101,8 @@ public static class ManuscriptParser
                         chapterTitle = Tidy(line.Text);
                         break;
                     case LineKind.SceneBreak:
-                        // A scene break is a paragraph boundary the author made on purpose; the
-                        // beats on either side are already separate, so nothing is stored for it.
+                        // Kept (RA-T2.4.1.3): the author put it there. Never leading, never doubled.
+                        if (paragraphs.Count > 0 && paragraphs[^1] != SceneBreakText) paragraphs.Add(SceneBreakText);
                         break;
                     default:
                         paragraphs.Add(line.Text.Trim());
@@ -131,6 +142,7 @@ public static class ManuscriptParser
         foreach (var p in body.Descendants<W.Paragraph>())
         {
             var text = string.Concat(p.Descendants<W.Text>().Select(t => t.Text));
+            var marked = MarkedText(p);
             var style = p.ParagraphProperties?.ParagraphStyleId?.Val?.Value ?? "";
             var pageBreakBefore = p.ParagraphProperties?.PageBreakBefore is not null
                                   || p.Descendants<W.Break>().Any(b => b.Type?.Value == W.BreakValues.Page) && text.Trim().Length < 80;
@@ -142,9 +154,58 @@ public static class ManuscriptParser
             else if (style.StartsWith("Heading2", StringComparison.OrdinalIgnoreCase))
                 lines.Add(new Line(text, LineKind.Chapter));
             else
-                lines.Add(Classify(text, pageBreakBefore));
+            {
+                var line = Classify(text, pageBreakBefore);
+                // Body text keeps its italic and bold (RA-T2.4.1.1); headings and breaks are classified plain.
+                lines.Add(line.Kind == LineKind.Text ? line with { Text = marked } : line);
+            }
         }
         return lines;
+    }
+
+    /// <summary>
+    /// A paragraph's text with Word's italic and bold carried over as the beat's inline markup:
+    /// <c>*italic*</c>, <c>**bold**</c>, <c>***both***</c>. Adjacent runs of one style merge; spaces at a run's
+    /// edges stay outside the markers so "*word* next" never becomes "*word *next".
+    /// <para>Literal asterisks are left as written: <c>ProseInline</c> (MindAttic.Export) has no escape, which
+    /// is true of every beat already in Prose; adding one is a MindAttic.Export change.</para>
+    /// </summary>
+    internal static string MarkedText(W.Paragraph p)
+    {
+        static bool On(DocumentFormat.OpenXml.OpenXmlElement? toggle)
+        {
+            if (toggle is null) return false;
+            var val = toggle.GetAttributes().FirstOrDefault(a => a.LocalName == "val").Value;
+            return val is null || !(val is "0" or "false" or "off");
+        }
+
+        var segments = new List<(string Text, int Style)>(); // style bits: 1 italic, 2 bold
+        foreach (var run in p.Descendants<W.Run>())
+        {
+            var t = string.Concat(run.Elements().Select(e => e switch
+            {
+                W.Text x => x.Text,
+                W.TabChar => "\t",
+                W.Break => " ",
+                _ => "",
+            }));
+            if (t.Length == 0) continue;
+            var rp = run.RunProperties;
+            var style = (On(rp?.Italic) ? 1 : 0) | (On(rp?.Bold) ? 2 : 0);
+            if (segments.Count > 0 && segments[^1].Style == style) segments[^1] = (segments[^1].Text + t, style);
+            else segments.Add((t, style));
+        }
+
+        var sb = new StringBuilder();
+        foreach (var (text, style) in segments)
+        {
+            if (style == 0 || text.Trim().Length == 0) { sb.Append(text); continue; }
+            var marker = style switch { 1 => "*", 2 => "**", _ => "***" };
+            var lead = text.Length - text.TrimStart().Length;
+            var trail = text.Length - text.TrimEnd().Length;
+            sb.Append(text, 0, lead).Append(marker).Append(text.Trim()).Append(marker).Append(text, text.Length - trail, trail);
+        }
+        return sb.ToString();
     }
 
     private static List<Line> ReadText(string text, bool markdown)
@@ -170,13 +231,26 @@ public static class ManuscriptParser
             if (firstKind.Kind != LineKind.Text)
             {
                 lines.Add(firstKind);
-                if (rest.Trim().Length > 0) lines.Add(new Line(Regex.Replace(rest, @"\s*\n\s*", " "), LineKind.Text));
+                if (rest.Trim().Length > 0)
+                {
+                    var restText = Regex.Replace(rest, @"\s*\n\s*", " ");
+                    lines.Add(new Line(markdown ? Underscores(restText) : restText, LineKind.Text));
+                }
                 continue;
             }
-            lines.Add(new Line(Regex.Replace(b, @"\s*\n\s*", " "), LineKind.Text));
+            var para = Regex.Replace(b, @"\s*\n\s*", " ");
+            lines.Add(new Line(markdown ? Underscores(para) : para, LineKind.Text));
         }
         return lines;
     }
+
+    private static readonly Regex DoubleUnderscore = new(@"(?<![\w*])__(?=\S)(.+?)(?<=\S)__(?![\w*])", RegexOptions.Compiled);
+    private static readonly Regex SingleUnderscore = new(@"(?<![\w*])_(?=\S)(.+?)(?<=\S)_(?![\w*])", RegexOptions.Compiled);
+
+    /// <summary>Markdown's underscore emphasis to the beat's asterisk markup (RA-T2.4.1.2):
+    /// <c>__bold__</c> → <c>**bold**</c>, <c>_italic_</c> → <c>*italic*</c>; snake_case words are left alone.</summary>
+    internal static string Underscores(string s) =>
+        SingleUnderscore.Replace(DoubleUnderscore.Replace(s, "**$1**"), "*$1*");
 
     private static Line Classify(string raw, bool pageBreakBefore, bool markdown = false)
     {

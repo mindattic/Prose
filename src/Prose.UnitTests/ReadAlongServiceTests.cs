@@ -231,6 +231,19 @@ public class ReadAlongServiceTests
     }
 
     [Test]
+    public async Task Scene_break_beats_are_not_read_as_prose()
+    {
+        var book = await BookAsync(("One", ["Wren walked.", ManuscriptParser.SceneBreakText, "Kael ran."]));
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            (await db.Beats.SingleAsync(b => b.Text == ManuscriptParser.SceneBreakText)).Kind = ManuscriptParser.SceneBreakKind;
+            await db.SaveChangesAsync();
+        }
+        var ch = (await readAlong.GetChaptersAsync(book)).Single();
+        Assert.That(ch.Paragraphs.Select(p => p.Text), Is.EqualTo(new[] { "Wren walked.", "Kael ran." }));
+    }
+
+    [Test]
     public async Task Tossed_drafts_stay_tossed()
     {
         var book = await BookAsync(("One", ["Brannoc watched the moor. Brannoc said nothing."]));
@@ -328,7 +341,7 @@ public class ReadAlongServiceTests
         Assert.That(m.Volumes.Select(v => v.Title), Is.EqualTo(new[] { "Part One", "Part Two" }));
         var chapters = m.Chapters.ToList();
         Assert.That(chapters.Select(c => c.Title), Is.EqualTo(new[] { "Chapter One: The Broken Gate", "Chapter 2", "Chapter 3: The Crown" }));
-        Assert.That(chapters[0].Paragraphs, Has.Count.EqualTo(2));
+        Assert.That(chapters[0].Paragraphs, Is.EqualTo(new[] { "The fog came off the moor.", ManuscriptParser.SceneBreakText, "She went up the wide street." }));
         Assert.That(chapters[1].Paragraphs.Single(), Is.EqualTo("Kael was three days south."));
     }
 

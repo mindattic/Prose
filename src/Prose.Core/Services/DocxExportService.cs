@@ -149,6 +149,13 @@ public class DocxExportService
                 continue;
             }
 
+            // An imported scene break (RFC 0019, RA-T2.4.1.3): a centred "* * *", never prose.
+            if (string.Equals(beat.Kind, ReadAlong.ManuscriptParser.SceneBreakKind, StringComparison.OrdinalIgnoreCase))
+            {
+                current.Blocks.Add(new RuleBlock());
+                continue;
+            }
+
             var text = BeatMarkup.StripEntityTags(beat.Text).Trim();
             if (text.Length == 0) continue;
             current.Blocks.AddRange(BeatLayout.Blocks(node.Layout, text));

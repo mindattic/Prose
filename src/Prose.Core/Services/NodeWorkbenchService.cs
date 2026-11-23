@@ -1533,7 +1533,10 @@ public class NodeWorkbenchService
     /// <summary>Append many beats to the end of <paramref name="nodeId"/> in one transaction — the
     /// manuscript import path (RFC 0019), where a chapter arrives as a list of paragraphs. Empty
     /// paragraphs are skipped. Returns the new beat ids in order.</summary>
-    public async Task<List<Guid>> AppendBeatsAsync(Guid nodeId, IReadOnlyList<string> texts, bool chapterStartFirst = true, CancellationToken ct = default)
+    /// <param name="kindOf">The beat kind for a paragraph (default "prose"); the import passes
+    /// "scene-break" for its scene-break paragraphs.</param>
+    public async Task<List<Guid>> AppendBeatsAsync(Guid nodeId, IReadOnlyList<string> texts, bool chapterStartFirst = true,
+        CancellationToken ct = default, Func<string, string>? kindOf = null)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         await using var tx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable, ct);
@@ -1552,7 +1555,7 @@ public class NodeWorkbenchService
                     Number = number++,
                     Text = text,
                     TextHash = ComputeTextHash(text),
-                    Kind = "prose",
+                    Kind = kindOf?.Invoke(text) ?? "prose",
                     SceneType = "scene",
                     IsChapterStart = chapterStartFirst && ids.Count == 0 && lastSk == 0.0,
                 };
