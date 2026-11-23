@@ -19,7 +19,7 @@
 > deliberate: RFC 0014 §2.4 is about a gate documented as seven checks, coded as six
 > and advertised as five, and this reference is not going to repeat that.
 
-**308 commands.** 30 deactivated. 10 cost-gated. 18 have no description in their dispatch comment (12 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**310 commands.** 30 deactivated. 10 cost-gated. 18 have no description in their dispatch comment (12 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -1317,6 +1317,16 @@ reimport an edited --publish-md Markdown file back into the DB. Each <!-- beat:N
 
 <sub>handler `ImportMarkdownCli`</sub>
 
+### `--in-world`
+
+```
+prose --in-world --slug <book> --json
+```
+
+a book's beats in reading order with their stored in-world dates, as JSON — the feed the GLMZ wiki's cross-book timeline reads. No LLM, no writes (PRS-T1069).
+
+<sub>handler `InWorldCli`</sub>
+
 ### `--inject-calibration-defects` / `--revert-calibration-defects`
 
 _(no description in the dispatch comment — add one above the guard in `Program.cs`)_
@@ -1827,7 +1837,7 @@ print beat text WITH its authoritative POV character attached (sourced fresh fro
 
 <sub>handler `ReadBeatsCli`</sub>
 
-### `--read-status` / `--read-note`
+### `--read-status` / `--read-note` / `--read-unmark`
 
 ```
 prose --read-status --node <slug|code|guid> [--list]
@@ -2364,6 +2374,16 @@ prose --sql-export --schema --out path  override output path
 dump the entire Prose DB to a re-runnable .sql script.
 
 <sub>handler `SqlExportCli`</sub>
+
+### `--stamp-in-world`
+
+```
+prose --stamp-in-world --slug <book> [--start <ISO datetime>] [--dry-run]
+```
+
+run the --timeline inference and persist it as Beat.InWorldDate (PRS-T1069). The anchor (in-world Day 1, 00:00) is --start, else derived from the earliest beat whose prose states an absolute date; with neither it refuses (exit 2). Writes InWorldDate only, never Text/TextHash.
+
+<sub>handler `StampInWorldCli`</sub>
 
 ### `--start-session`
 

@@ -1,0 +1,111 @@
+@* The Story Atlas: the book's world drawn as one map from what the read-along read. Hover a star to
+   preview it, click to open its entry, drag the timeline back to see the world as the reader knew it
+   at that chapter. Nobody diagrams anything. *@
+@using Prose.Core.Services.ReadAlong
+@inject StoryAtlasService Atlas
+@inject IJSRuntime JS
+@implements IDisposable
+
+<div class="atlas">
+    <div class="atlas-head">
+        <h2>Story map</h2>
+        <span class="muted">@VisibleCount entities · @(asOf <= 0 ? "as of the whole story" : $"as of chapter {asOf}")</span>
+        <div class="legend">
+            @foreach (var c in StoryFactExtractor.Categories)
+            {
+                <span><span class="dot cat-@c"></span> @StoryCodex.Plural(c)</span>
+            }
+        </div>
+        <div class="spacer"></div>
+        <label class="small"><input type="checkbox" checked="@drafts" @onchange="ToggleDraftsAsync" /> Drafts</label>
+    </div>
+    <div class="atlas-stage">
+        <canvas @ref="canvas" class="atlas-canvas" aria-label="Story map: @VisibleCount entries. Use the codex for a text list."></canvas>
+        <div class="atlas-tip" hidden></div>
+        <div class="atlas-zoom">
+            <button class="mini" @onclick="() => ZoomAsync(1.25)" aria-label="Zoom in">+</button>
+            <button class="mini" @onclick="() => ZoomAsync(0.8)" aria-label="Zoom out">−</button>
+            <button class="mini" @onclick="() => ZoomAsync(0)" aria-label="Reset view">⤢</button>
+        </div>
+        <p class="atlas-hint muted small">Hover to preview · click a star to open it · drag to pan · scroll to zoom</p>
+        @if (data is { Stars.Count: 0 })
+        {
+            <div class="atlas-empty">The map draws itself from what the read-along has read. Read your book along to see it.</div>
+        }
+    </div>
+    @if (data is { Chapters.Count: > 0 })
+    {
+        <div class="scrubber">
+            <div class="scrub-label">
+                @if (asOf <= 0) { <b class="now">Now</b> <span class="muted">present — the whole story</span> }
+                else { <b>Chapter @asOf</b> <span class="muted">— @(data.Chapters.FirstOrDefault(c => c.Index == asOf)?.Title)</span> }
+            </div>
+            <div class="scrub-bars" aria-hidden="true">
+                @foreach (var c in data.Chapters)
+                {
+                    var max = Math.Max(1, data.Chapters.Max(x => x.NewStars));
+                    <span style="height:@(8 + 22 * c.NewStars / max)px" class="@(asOf > 0 && c.Index > asOf ? "dim" : "")" title="@c.Title: @c.NewStars new"></span>
+                }
+            </div>
+            <input type="range" min="1" max="@(data.Chapters.Count + 1)" value="@(asOf <= 0 ? data.Chapters.Count + 1 : asOf)"
+                   @oninput="ScrubAsync" aria-label="Story as of chapter" />
+            <div class="scrub-ticks muted small">
+                @foreach (var c in data.Chapters.Where((c, i) => i % Math.Max(1, data.Chapters.Count / 4) == 0))
+                {
+                    <span>@c.Index</span>
+                }
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter, EditorRequired] public Guid BookId { get; set; }
+    [Parameter] public EventCallback<Guid> OnOpenEntry { get; set; }
+    [Parameter] public EventCallback OnOpenDraft { get; set; }
+
+    private ElementReference canvas;
+    private StoryAtlasService.Atlas? data;
+    private int asOf;
+    private bool drafts = true;
+    private DotNetObjectReference<StoryAtlas>? self;
+
+    private int VisibleCount => data is null ? 0 : data.Stars.Count(s => asOf <= 0 || s.FirstChapter <= asOf);
+
+    protected override async Task OnInitializedAsync() => data = await Atlas.GetAsync(BookId, includeDrafts: drafts);
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (data is null) return;
+        self ??= DotNetObjectReference.Create(this);
+        try { await JS.InvokeVoidAsync("proseStory.atlasRender", canvas, data, asOf, self); }
+        catch (JSException) { }
+    }
+
+    private async Task ScrubAsync(ChangeEventArgs e)
+    {
+        if (data is null || !int.TryParse(e.Value?.ToString(), out var v)) return;
+        asOf = v > data.Chapters.Count ? 0 : v;
+        await Task.CompletedTask;
+    }
+
+    private async Task ToggleDraftsAsync()
+    {
+        drafts = !drafts;
+        data = await Atlas.GetAsync(BookId, includeDrafts: drafts);
+    }
+
+    private async Task ZoomAsync(double f)
+    {
+        try { await JS.InvokeVoidAsync("proseStory.atlasZoom", canvas, f); } catch (JSException) { }
+    }
+
+    [JSInvokable]
+    public async Task OpenStar(string key, string? entityId)
+    {
+        if (Guid.TryParse(entityId, out var id)) await OnOpenEntry.InvokeAsync(id);
+        else await OnOpenDraft.InvokeAsync();
+    }
+
+    public void Dispose() => self?.Dispose();
+}

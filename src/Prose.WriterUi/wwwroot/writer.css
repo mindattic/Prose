@@ -1226,3 +1226,15 @@ button.primary:disabled { background: var(--color-disabled-bg); border-color: va
     text-decoration: underline wavy #d9534f;
     text-decoration-skip-ink: none;
 }
+
+/* ── Read-along (RFC 0019) ─────────────────────────────────────────────────────────────────── */
+.statusbar .readalong-ok { color: var(--color-ok, #2fd08f); }
+.statusbar .issue-counter {
+    display: inline-flex; align-items: center; gap: .25rem; padding: 0 .55rem; border-radius: 999px;
+    border: 1px solid #c99a1d; color: #f2c14e; text-decoration: none; font-variant-numeric: tabular-nums;
+}
+.statusbar .issue-counter:hover { background: rgba(242, 193, 78, .12); }
+.statusbar a.mini { text-decoration: none; }
+/* Focus mode: the room cleared — just the page and the status line. */
+.writer.focus .menubar, .writer.focus nav.spine { display: none; }
+.writer.focus .pane { max-width: 46rem; margin: 0 auto; }

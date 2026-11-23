@@ -1,0 +1,280 @@
+@* The manuscript, as the read-along sees it: the tree of volumes and chapters (reorder by dragging),
+   and the open chapter with every story-bible name highlighted — a click opens the entry. Writing
+   happens in the Writer; this pane reads. *@
+@using System.Text.RegularExpressions
+@using Prose.Core.Services.ReadAlong
+@inject StoryUiService StoryUi
+@inject ReadAlongService ReadAlong
+@inject StoryBibleService Bible
+@inject IJSRuntime JS
+
+<div class="ms @(focus ? "focus" : "")">
+    <aside class="ms-tree" aria-label="Manuscript">
+        <div class="ms-tree-head">
+            <h2>Manuscript</h2>
+            <button class="mini" @onclick="AddChapterAsync" title="Add a chapter at the end">+ Chapter</button>
+        </div>
+        @if (tree is null)
+        {
+            <p class="muted">Loading…</p>
+        }
+        else if (tree.Count == 0)
+        {
+            <p class="muted">No chapters yet. Add one, or import your manuscript.</p>
+        }
+        else
+        {
+            <ol class="ms-list" @ondragover:preventDefault="true">
+                @foreach (var n in tree)
+                {
+                    var words = chapters?.FirstOrDefault(c => c.ChapterNodeId == n.Id)?.Words;
+                    <li class="ms-node @(n.IsVolume ? "volume" : "") @(n.Id == current?.ChapterNodeId ? "on" : "") @(dragOver == n.Id ? "drop" : "")"
+                        style="--depth:@n.Depth" draggable="true"
+                        @ondragstart="() => dragging = n.Id" @ondragend="() => { dragging = null; dragOver = null; }"
+                        @ondragenter="() => dragOver = n.Id" @ondrop="() => DropAsync(n)">
+                        @if (renaming == n.Id)
+                        {
+                            <input class="ms-rename" @bind="renameText" @bind:event="oninput"
+                                   @onkeydown="e => RenameKeyAsync(e, n.Id)" @onblur="() => CommitRenameAsync(n.Id)" aria-label="Chapter title" />
+                        }
+                        else
+                        {
+                            <button class="ms-open" @onclick="() => Open(n.Id)" @ondblclick="() => BeginRename(n)" title="Drag to reorder · double-click to rename">
+                                <span class="ms-ico" aria-hidden="true">@(n.IsVolume ? "▸" : "§")</span>
+                                <span class="ms-title">@n.Title</span>
+                                @if (words is > 0)
+                                {
+                                    <span class="ms-words">@words.Value.ToString("N0")</span>
+                                }
+                            </button>
+                        }
+                    </li>
+                }
+                <li class="ms-end @(dragOver == Guid.Empty ? "drop" : "")" @ondragenter="() => dragOver = Guid.Empty" @ondrop="DropAtEndAsync">Drop here to move to the end</li>
+            </ol>
+        }
+    </aside>
+
+    <section class="ms-page" aria-label="Chapter">
+        @if (current is null)
+        {
+            <div class="story-empty"><p>Choose a chapter.</p></div>
+        }
+        else
+        {
+            <div class="ms-head">
+                <button class="mini" @onclick="() => focus = !focus" aria-pressed="@focus" title="Focus mode">@(focus ? "⇤ Tree" : "⇥ Focus")</button>
+                <h2 class="ms-chapter-title">@current.Title</h2>
+                <div class="spacer"></div>
+                @if (OpenCards > 0)
+                {
+                    <button class="issue-counter" @onclick="OnOpenContinuity" title="@OpenCards continuity card(s) waiting">⚠ @OpenCards</button>
+                }
+                <a class="mini" href="@($"/story/export/{BookId}.docx")" title="Export the whole book to Word" download>⤓ Word</a>
+                <a class="mini" href="/writer" title="Write this chapter in the Writer">✎ Write</a>
+                <button class="mini" @onclick="CycleType" title="Typography">Aa</button>
+            </div>
+            <div class="ms-status">
+                <span class="ok">✓ Saved</span>
+                @if (remembered)
+                {
+                    <span class="ok">✓ Prose remembered this chapter</span>
+                }
+                else
+                {
+                    <span class="muted">Not read along yet</span>
+                    <button class="mini" disabled="@readingChapter" @onclick="ReadThisAsync">@(readingChapter ? "Reading…" : "Read this chapter")</button>
+                }
+                <div class="spacer"></div>
+                <span class="muted">@current.Words.ToString("N0") words · @Math.Max(1, (int)Math.Ceiling(current.Words / 230.0)) min read</span>
+            </div>
+            @if (lastRead is not null)
+            {
+                <div class="banner info" role="status">
+                    Read @lastRead.Title — @(lastRead.Met.Count == 0 ? "no one new" : "met " + string.Join(", ", lastRead.Met)) · @lastRead.Details story details
+                    @if (lastRead.Contradictions > 0) { <span class="gold"> · @lastRead.Contradictions possible contradiction(s)</span> }
+                    <button class="mini" @onclick="() => lastRead = null">✕</button>
+                </div>
+            }
+            <article class="ms-prose type-@typeIndex">
+                @foreach (var p in current.Paragraphs)
+                {
+                    <p id="beat-@p.BeatId">
+                        @foreach (var seg in Segments(p.Text))
+                        {
+                            if (seg.Id is { } eid)
+                            {
+                                <button class="ent" @onclick="() => OnOpenEntry.InvokeAsync(eid)" title="Open @seg.Text in the codex">@seg.Text</button>
+                            }
+                            else if (seg.Draft)
+                            {
+                                <span class="ent draft" title="A story-bible draft waiting for your OK (Codex)">@seg.Text</span>
+                            }
+                            else
+                            {
+                                @seg.Text
+                            }
+                        }
+                    </p>
+                }
+            </article>
+        }
+    </section>
+</div>
+
+@code {
+    [Parameter, EditorRequired] public Guid BookId { get; set; }
+    [Parameter] public Guid? ChapterId { get; set; }
+    [Parameter] public Guid? BeatId { get; set; }
+    [Parameter] public int OpenCards { get; set; }
+    /// <summary>Bumped by the shell whenever the read-along's state changes (a chapter read, a
+    /// draft kept), so the highlights and the "remembered" tick follow.</summary>
+    [Parameter] public int Version { get; set; }
+    private int loadedVersion;
+    [Parameter] public EventCallback<Guid> OnOpenEntry { get; set; }
+    [Parameter] public EventCallback OnChanged { get; set; }
+    [Parameter] public EventCallback OnOpenContinuity { get; set; }
+
+    private List<StoryUiService.TreeNode>? tree;
+    private List<ReadAlongService.BookChapter>? chapters;
+    private ReadAlongService.BookChapter? current;
+    private bool remembered;
+    private bool focus;
+    private int typeIndex;
+    private bool readingChapter;
+    private ReadAlongService.ChapterReadResult? lastRead;
+    private Guid? dragging, dragOver, renaming;
+    private string renameText = "";
+    private Regex? names;
+    private Dictionary<string, (Guid? Id, bool Draft)> nameIndex = new();
+    private Guid? scrolledTo;
+
+    protected override async Task OnInitializedAsync() { loadedVersion = Version; await LoadAsync(); }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (chapters is not null && Version != loadedVersion)
+        {
+            loadedVersion = Version;
+            await LoadAsync();
+            return;
+        }
+        if (chapters is not null && ChapterId is { } cid && current?.ChapterNodeId != cid)
+        {
+            Open(cid);
+            await RefreshRememberedAsync();
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (BeatId is { } b && scrolledTo != b && current is not null)
+        {
+            try { if (await JS.InvokeAsync<bool>("proseStory.scrollToBeat", b.ToString())) scrolledTo = b; }
+            catch (JSException) { }
+        }
+    }
+
+    private async Task LoadAsync()
+    {
+        tree = await StoryUi.GetTreeAsync(BookId);
+        chapters = await ReadAlong.GetChaptersAsync(BookId);
+        nameIndex = new(StringComparer.Ordinal);
+        foreach (var (name, id, draft) in (await Bible.GetHighlightNamesAsync(BookId)).OrderBy(n => n.Draft))
+        {
+            var bare = name.StartsWith("the ", StringComparison.OrdinalIgnoreCase) ? name[4..] : name;
+            if (bare.Length < 2) continue;
+            nameIndex.TryAdd(bare, (id, draft));
+        }
+        names = nameIndex.Count == 0 ? null : new Regex(
+            @"(?<![\p{L}])(" + string.Join("|", nameIndex.Keys.OrderByDescending(k => k.Length).Select(Regex.Escape)) + @")(?![\p{L}])",
+            RegexOptions.CultureInvariant);
+        current = (ChapterId is { } cid ? chapters.FirstOrDefault(c => c.ChapterNodeId == cid) : null) ?? chapters.FirstOrDefault();
+        await RefreshRememberedAsync();
+    }
+
+    private void Open(Guid id)
+    {
+        if (chapters?.FirstOrDefault(c => c.ChapterNodeId == id) is { } c) { current = c; lastRead = null; _ = RefreshAndRenderAsync(); }
+    }
+
+    private async Task RefreshAndRenderAsync() { await RefreshRememberedAsync(); StateHasChanged(); }
+
+    private async Task RefreshRememberedAsync()
+    {
+        remembered = current is not null && await ReadAlong.IsRememberedAsync(BookId, current.ChapterNodeId);
+    }
+
+    private async Task ReadThisAsync()
+    {
+        if (current is null) return;
+        readingChapter = true;
+        try { lastRead = await ReadAlong.ReadChapterAsync(BookId, current.ChapterNodeId); }
+        finally { readingChapter = false; }
+        await LoadAsync();
+        await OnChanged.InvokeAsync();
+    }
+
+    private sealed record Seg(string Text, Guid? Id, bool Draft);
+
+    private IEnumerable<Seg> Segments(string text)
+    {
+        if (names is null) { yield return new Seg(text, null, false); yield break; }
+        var at = 0;
+        foreach (Match m in names.Matches(text))
+        {
+            if (m.Index > at) yield return new Seg(text[at..m.Index], null, false);
+            var (id, draft) = nameIndex[m.Value];
+            yield return new Seg(m.Value, id, draft);
+            at = m.Index + m.Length;
+        }
+        if (at < text.Length) yield return new Seg(text[at..], null, false);
+    }
+
+    private void CycleType() => typeIndex = (typeIndex + 1) % 3;
+
+    private async Task DropAsync(StoryUiService.TreeNode target)
+    {
+        var moving = dragging;
+        dragging = null; dragOver = null;
+        if (moving is not { } id || id == target.Id) return;
+        await StoryUi.MoveAsync(id, target.Id, into: target.IsVolume && target.Id != id && tree!.First(t => t.Id == id).ParentId != target.Id && !tree!.First(t => t.Id == id).IsVolume);
+        await LoadAsync();
+        await OnChanged.InvokeAsync();
+    }
+
+    private async Task DropAtEndAsync()
+    {
+        var moving = dragging;
+        dragging = null; dragOver = null;
+        if (moving is not { } id) return;
+        await StoryUi.MoveToEndAsync(id, BookId);
+        await LoadAsync();
+        await OnChanged.InvokeAsync();
+    }
+
+    private async Task AddChapterAsync()
+    {
+        var n = (tree?.Count(t => !t.IsVolume) ?? 0) + 1;
+        var id = await StoryUi.AddChapterAsync(BookId, $"Chapter {n}");
+        await LoadAsync();
+        renaming = id;
+        renameText = $"Chapter {n}";
+    }
+
+    private void BeginRename(StoryUiService.TreeNode n) { renaming = n.Id; renameText = n.Title; }
+
+    private async Task RenameKeyAsync(KeyboardEventArgs e, Guid id)
+    {
+        if (e.Key == "Enter") await CommitRenameAsync(id);
+        else if (e.Key == "Escape") renaming = null;
+    }
+
+    private async Task CommitRenameAsync(Guid id)
+    {
+        if (renaming != id) return;
+        renaming = null;
+        await StoryUi.RenameAsync(id, renameText);
+        await LoadAsync();
+    }
+}

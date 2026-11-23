@@ -1,0 +1,136 @@
+@* Ask your book: a conversation about the manuscript, answered from it, with doors onto the exact
+   passages. It talks plot; it never writes the book. *@
+@using Prose.Core.Services.ReadAlong
+@inject BookChatService Chat
+@inject ReadAlongAllowance Allowance
+
+<div class="ask">
+    <div class="ask-log" aria-live="polite">
+        @if (history is null)
+        {
+            <p class="muted">Loading…</p>
+        }
+        else if (history.Count == 0)
+        {
+            <div class="story-empty">
+                <p>Ask what a character knows, when a thread last came up, or whether your timeline actually holds. The answers cite your own chapters.</p>
+                <div class="ask-examples">
+                    @foreach (var ex in Examples)
+                    {
+                        <button class="chip" @onclick="() => AskAsync(ex)">@ex</button>
+                    }
+                </div>
+            </div>
+        }
+        else
+        {
+            @foreach (var m in history)
+            {
+                <div class="msg @m.Role">
+                    <div class="msg-text">@m.Text</div>
+                    @if (m.Doors.Count > 0)
+                    {
+                        <div class="doors">
+                            @foreach (var d in m.Doors)
+                            {
+                                <button class="door pill" @onclick="() => OnOpenPassage.InvokeAsync((d.ChapterNodeId, d.BeatId))">
+                                    <span class="q" aria-hidden="true">❝</span>
+                                    <b>@Short(d.ChapterTitle, 26)</b>
+                                    <span class="sep">·</span>
+                                    <i>“@Short(d.Quote, 30)”</i>
+                                    <span aria-hidden="true">›</span>
+                                </button>
+                            }
+                        </div>
+                    }
+                </div>
+            }
+            @if (asking)
+            {
+                <div class="msg assistant"><span class="spin" aria-hidden="true"></span> Reading back through your chapters…</div>
+            }
+        }
+    </div>
+    <form class="ask-input" @onsubmit="SubmitAsync" @onsubmit:preventDefault="true">
+        <textarea @bind="question" @bind:event="oninput" rows="2" placeholder="Ask about your story…" aria-label="Ask about your story"
+                  @onkeydown="KeyAsync"></textarea>
+        <button class="send" type="submit" disabled="@(asking || string.IsNullOrWhiteSpace(question))" aria-label="Send">↑</button>
+    </form>
+    <div class="ask-foot muted small">
+        It talks plot with you; it will never write your prose.
+        @if (usage is { QuestionLimit: > 0 })
+        {
+            <span> · @usage.QuestionsAsked of @usage.QuestionLimit questions</span>
+        }
+        @if (history is { Count: > 0 })
+        {
+            <button class="linkish small" @onclick="ClearAsync">Clear conversation</button>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter, EditorRequired] public Guid BookId { get; set; }
+    [Parameter] public EventCallback<(Guid ChapterId, Guid? BeatId)> OnOpenPassage { get; set; }
+    [Parameter] public EventCallback<Guid> OnOpenEntry { get; set; }
+    [Parameter] public EventCallback OnChanged { get; set; }
+
+    private static readonly string[] Examples =
+    [
+        "Who knows the most about the main secret so far?",
+        "When did the oldest thread last come up?",
+        "Does my timeline hold between the first and last chapters?",
+    ];
+
+    private List<BookChatService.Message>? history;
+    private ReadAlongAllowance.Usage? usage;
+    private string question = "";
+    private bool asking;
+
+    protected override async Task OnInitializedAsync()
+    {
+        history = await Chat.HistoryAsync(BookId);
+        usage = await Allowance.GetUsageAsync();
+    }
+
+    private async Task KeyAsync(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter" && !e.ShiftKey) await SubmitAsync();
+    }
+
+    private Task SubmitAsync() => AskAsync(question);
+
+    private async Task AskAsync(string q)
+    {
+        q = q.Trim();
+        if (q.Length == 0 || asking) return;
+        asking = true;
+        question = "";
+        history ??= [];
+        history.Add(new BookChatService.Message(Guid.Empty, "user", q, [], DateTime.UtcNow));
+        StateHasChanged();
+        try
+        {
+            var a = await Chat.AskAsync(BookId, q);
+            history = a.Refused is null ? await Chat.HistoryAsync(BookId) : [.. history, a.Reply];
+        }
+        catch (Exception ex)
+        {
+            history.Add(new BookChatService.Message(Guid.Empty, "assistant", "I couldn't answer that: " + ex.Message, [], DateTime.UtcNow));
+        }
+        finally
+        {
+            asking = false;
+            usage = await Allowance.GetUsageAsync();
+            await OnChanged.InvokeAsync();
+        }
+    }
+
+    private async Task ClearAsync()
+    {
+        await Chat.ClearAsync(BookId);
+        history = [];
+    }
+
+    private static string Short(string s, int n) => s.Length <= n ? s : s[..n].TrimEnd() + "…";
+}

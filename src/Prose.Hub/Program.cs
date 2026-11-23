@@ -561,6 +561,38 @@ app.MapGet("/repo/{type}/{slug}", (string type, string slug, string? at) =>
     new Microsoft.AspNetCore.Http.HttpResults.RazorComponentResult<Prose.Hub.Components.Wiki>(
         new { Type = type, Slug = slug, At = at }));
 
+// The Story workspace (RFC 0019), at /story. Same explicit-endpoint reasoning as /writer. The
+// read-along's surfaces for one book: manuscript tree, codex (automatic story bible), Continuity
+// Inbox, ask your book, Story Atlas, brainstorm canvas and manuscript import. ?book=<id|slug|code>
+// &tab=manuscript|codex|continuity|ask|atlas|brainstorm|import.
+app.MapGet("/story", (string? book, string? tab) =>
+    new Microsoft.AspNetCore.Http.HttpResults.RazorComponentResult<Prose.Hub.Components.Story>(
+        new { Book = book, Tab = tab }));
+// The whole book to Word, formatting intact — the Story workspace's export button. Local Hub only
+// (127.0.0.1), like every page it serves.
+// The read gate stands (Law 9, no override): a book with unread beats is refused with the gate's own
+// words and a pointer to Read Mode, never exported around it.
+app.MapGet("/story/export/{bookId:guid}.docx", async (Guid bookId, DocxExportService docx, CancellationToken ct) =>
+{
+    try
+    {
+        var path = await docx.ExportNodeAsync(bookId, author: null, ct);
+        return File.Exists(path)
+            ? Results.File(path, "application/vnd.openxmlformats-officedocument.wordprocessingml.document", Path.GetFileName(path))
+            : Results.NotFound();
+    }
+    catch (UnreadBeatsException ex)
+    {
+        return Results.Content(
+            "<!doctype html><meta charset=utf-8><title>Not exported</title><body style=\"font:16px system-ui;max-width:40rem;margin:3rem auto;line-height:1.5\">" +
+            "<h1>Not exported yet</h1><p>" + System.Net.WebUtility.HtmlEncode(ex.Message) + "</p>" +
+            "<p>Prose exports only what has been read as it stands. Read the book in <a href=\"/read\">Read Mode</a> " +
+            "(or <code>prose --read-beats --slug &lt;book&gt; --mark-read</code>), then export again.</p>" +
+            "<p><a href=\"javascript:history.back()\">Back</a></p></body>",
+            "text/html", statusCode: 409);
+    }
+});
+
 // Game texts (RFC 0018 §9, PRS-T922), at /texts. Same explicit-endpoint reasoning as /writer and /repo. Browse a
 // universe's prose-text/1 texts by kind, key or entity, see each text's versions and findings, and work the approval
 // queue (bulk approve by kind through the PRS-T918 service, previewed first, always the author's click and name).

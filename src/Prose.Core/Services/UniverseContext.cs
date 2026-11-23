@@ -163,6 +163,8 @@ public static class UniverseScope
             "current_universe", // the global default-universe selector — inherently cross-universe
             "operator.byokeys", // BYO LLM credentials for the tool-calling operator loop — a
                                  // machine-wide credential, not per-universe content.
+            "readalong.allowance", // the read-along's optional reading/question limits (RFC 0019) —
+                                    // one author, one machine, every universe.
         };
 }
 

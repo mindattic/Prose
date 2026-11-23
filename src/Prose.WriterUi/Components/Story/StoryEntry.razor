@@ -1,0 +1,195 @@
+@* One story-bible entry beside the manuscript: aliases, group, description, every detail with its
+   receipt ("Why?" opens the sentence and chapter that put it there), the timeline of every value it
+   has had (superseded and retconned values included), its links, and detail drafts waiting. *@
+@using Prose.Core.Services.ReadAlong
+@inject StoryBibleService Bible
+
+<aside class="entry-panel" aria-label="Story bible entry">
+    @if (entry is null)
+    {
+        <p class="muted">Loading…</p>
+    }
+    else
+    {
+        <header class="entry-head">
+            <span class="dot cat-@entry.Category" aria-hidden="true"></span>
+            <h2>@entry.Name</h2>
+            <span class="muted small">@entry.Category · @entry.Mentions mention@(entry.Mentions == 1 ? "" : "s")</span>
+            <div class="spacer"></div>
+            <button class="mini" @onclick="OnClose" aria-label="Close the entry">✕</button>
+        </header>
+        <div class="entry-tabs" role="tablist">
+            <button role="tab" aria-selected="@(view == "details")" class="@(view == "details" ? "on" : "")" @onclick='() => view = "details"'>Details</button>
+            <button role="tab" aria-selected="@(view == "timeline")" class="@(view == "timeline" ? "on" : "")" @onclick='() => view = "timeline"'>Timeline</button>
+        </div>
+
+        @if (view == "details")
+        {
+            <dl class="entry-fields">
+                <dt>Aliases</dt>
+                <dd>@if (entry.Aliases.Count == 0) { <span class="muted">—</span> } else { @foreach (var a in entry.Aliases) { <span class="chip">@a</span> } }</dd>
+                <dt>Group</dt>
+                <dd>@(entry.Group ?? "—")</dd>
+                <dt>Description</dt>
+                <dd>
+                    @if (editingDescription)
+                    {
+                        <textarea @bind="description" rows="4" aria-label="Description"></textarea>
+                        <button class="mini" @onclick="SaveDescriptionAsync">Save</button>
+                        <button class="mini" @onclick="() => editingDescription = false">Cancel</button>
+                    }
+                    else
+                    {
+                        <span>@(entry.Description ?? "")</span>
+                        <button class="mini" @onclick="BeginEditDescription">Edit</button>
+                    }
+                </dd>
+            </dl>
+
+            <h3 class="rule"><span>Attributes</span></h3>
+            @if (entry.Details.Count == 0)
+            {
+                <p class="muted">No details kept yet.</p>
+            }
+            <ul class="entry-details">
+                @foreach (var d in entry.Details)
+                {
+                    <li>
+                        <span class="attr">@StoryFactExtractor.Label(d.Attribute)</span>
+                        <span class="val">@d.Value</span>
+                        @if (d.Source == "retcon") { <span class="tag retcon">retcon</span> }
+                        @if (d.Source == "author") { <span class="tag">by hand</span> }
+                        <button class="mini ghost" @onclick="() => DeleteAsync(d.FactId)" title="Delete this detail" aria-label="Delete @d.Attribute">🗑</button>
+                        @if (d.Quote.Length > 0)
+                        {
+                            <button class="why" @onclick="() => Toggle(d.FactId)">❝ @(open.Contains(d.FactId) ? "Hide source" : "Why?")</button>
+                            @if (open.Contains(d.FactId))
+                            {
+                                <blockquote>“@d.Quote”
+                                    @if (d.ChapterNodeId is { } ch)
+                                    {
+                                        <button class="door" @onclick="() => OnOpenPassage.InvokeAsync((ch, d.BeatId))">@d.ChapterTitle.ToUpperInvariant() ›</button>
+                                    }
+                                </blockquote>
+                            }
+                        }
+                    </li>
+                }
+            </ul>
+            <form class="entry-add" @onsubmit="AddDetailAsync" @onsubmit:preventDefault="true">
+                <input @bind="newAttr" placeholder="attribute (age, eyes, role…)" aria-label="Attribute" />
+                <input @bind="newValue" placeholder="value" aria-label="Value" />
+                <button class="mini" type="submit">+ Detail</button>
+            </form>
+
+            @if (entry.Links.Count > 0)
+            {
+                <h3 class="rule"><span>Connections</span></h3>
+                <ul class="entry-links">
+                    @foreach (var l in entry.Links)
+                    {
+                        <li>
+                            <span class="muted">@l.Type</span>
+                            @if (l.EntityId is { } lid) { <button class="linkish" @onclick="() => OnOpenEntry.InvokeAsync(lid)">@l.Name</button> } else { <span>@l.Name</span> }
+                        </li>
+                    }
+                </ul>
+            }
+
+            @if (entry.PendingDetails.Count > 0)
+            {
+                <h3 class="rule"><span>New details waiting</span></h3>
+                @foreach (var p in entry.PendingDetails)
+                {
+                    <div class="draft-mini">
+                        @foreach (var a in p.Attributes) { <span><b>@a.Key</b> @a.Value</span> }
+                        <blockquote>“@p.Quote” <span class="muted">— @p.ChapterTitle</span></blockquote>
+                        <button class="keep small" @onclick="() => KeepAsync(p.Id)">✓ Keep it</button>
+                        <button class="toss small" @onclick="() => TossAsync(p.Id)">Not quite</button>
+                    </div>
+                }
+            }
+
+            <footer class="entry-foot">
+                @if (confirmDelete)
+                {
+                    <span>Remove @entry.Name from this book's bible?</span>
+                    <button class="danger-btn mini" @onclick="RemoveAsync">Remove</button>
+                    <button class="mini" @onclick="() => confirmDelete = false">Keep</button>
+                }
+                else
+                {
+                    <button class="danger-btn mini" @onclick="() => confirmDelete = true">Delete</button>
+                }
+            </footer>
+        }
+        else
+        {
+            <ol class="entry-timeline">
+                @foreach (var t in entry.Timeline)
+                {
+                    <li class="@(t.SupersededAt is not null ? "superseded" : "")">
+                        <span class="when">@(t.ChapterIndex > 0 ? $"Ch {t.ChapterIndex}" : "—")</span>
+                        <span class="attr">@StoryFactExtractor.Label(t.Attribute)</span>
+                        <span class="val">@t.Value</span>
+                        @if (t.SupersededAt is not null) { <span class="tag">replaced</span> }
+                        @if (t.Source == "retcon") { <span class="tag retcon">retcon</span> }
+                        @if (t.Quote.Length > 0 && t.ChapterNodeId is { } ch)
+                        {
+                            <button class="door" @onclick="() => OnOpenPassage.InvokeAsync((ch, t.BeatId))" title="@t.Quote">❝ @t.ChapterTitle</button>
+                        }
+                    </li>
+                }
+            </ol>
+        }
+    }
+</aside>
+
+@code {
+    [Parameter, EditorRequired] public Guid BookId { get; set; }
+    [Parameter, EditorRequired] public Guid EntityId { get; set; }
+    [Parameter] public EventCallback OnClose { get; set; }
+    [Parameter] public EventCallback<Guid> OnOpenEntry { get; set; }
+    [Parameter] public EventCallback<(Guid ChapterId, Guid? BeatId)> OnOpenPassage { get; set; }
+    [Parameter] public EventCallback OnChanged { get; set; }
+
+    private StoryBibleService.Entry? entry;
+    private string view = "details";
+    private readonly HashSet<Guid> open = [];
+    private bool editingDescription, confirmDelete;
+    private string description = "", newAttr = "", newValue = "";
+
+    protected override async Task OnParametersSetAsync() => entry = await Bible.GetEntryAsync(BookId, EntityId);
+
+    private void BeginEditDescription() { editingDescription = true; description = entry?.Description ?? ""; }
+
+    private void Toggle(Guid id) { if (!open.Remove(id)) open.Add(id); }
+
+    private async Task ReloadAsync() { entry = await Bible.GetEntryAsync(BookId, EntityId); await OnChanged.InvokeAsync(); }
+
+    private async Task SaveDescriptionAsync()
+    {
+        await Bible.SetDescriptionAsync(EntityId, description);
+        editingDescription = false;
+        await ReloadAsync();
+    }
+
+    private async Task AddDetailAsync()
+    {
+        if (string.IsNullOrWhiteSpace(newAttr) || string.IsNullOrWhiteSpace(newValue)) return;
+        await Bible.SetDetailAsync(BookId, EntityId, newAttr, newValue);
+        newAttr = ""; newValue = "";
+        await ReloadAsync();
+    }
+
+    private async Task DeleteAsync(Guid factId) { await Bible.DeleteDetailAsync(factId); await ReloadAsync(); }
+    private async Task KeepAsync(Guid id) { await Bible.KeepAsync(id); await ReloadAsync(); }
+    private async Task TossAsync(Guid id) { await Bible.TossAsync(id); await ReloadAsync(); }
+
+    private async Task RemoveAsync()
+    {
+        await Bible.RemoveEntryAsync(BookId, EntityId);
+        await OnChanged.InvokeAsync();
+        await OnClose.InvokeAsync();
+    }
+}

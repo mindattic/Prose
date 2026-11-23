@@ -55,6 +55,9 @@ public static class ServiceCollectionExtensions
         services.AddHostedService<AudioReconciliationBackgroundService>();
         // Global search index warmup.
         services.AddHostedService<GlobalSearchWarmupService>();
+        // The read-along (RFC 0019): reads each followed book's changed chapters once they sit still.
+        // Deterministic and local — no LLM, no tokens. ReadAlong:Enabled=false turns it off.
+        services.AddHostedService(sp => sp.GetRequiredService<Prose.Core.Services.ReadAlong.ReadAlongBackgroundService>());
         // DEACTIVATED 2026-09-22 (RFC 0014, author ruling). Once-a-day continuity
         // contradiction re-scan: unattended, unmetered LLM spend, zero applied findings
         // in 30,745 rows. The service class is intact — uncomment to restore.
@@ -524,6 +527,16 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<EntityFieldWriter>();                                      // set_entity_fields (every repository type)
         services.AddSingleton<CorporateHierarchyService>();                              // prose --corp / get_corp_* (PRS-T819): ownership, forces, Tier ladder
         services.AddSingleton<EntityCreator>();                                          // create_entity (repo-less types: event, …) (PRS-T864)
+        // Read-along (RFC 0019): import, automatic story bible, Continuity Inbox, Story Atlas, brainstorm, ask your book.
+        services.AddSingleton<Prose.Core.Services.ReadAlong.ReadAlongAllowance>();
+        services.AddSingleton<Prose.Core.Services.ReadAlong.ReadAlongService>();
+        services.AddSingleton<Prose.Core.Services.ReadAlong.ReadAlongBackgroundService>();
+        services.AddSingleton<Prose.Core.Services.ReadAlong.StoryBibleService>();
+        services.AddSingleton<Prose.Core.Services.ReadAlong.ContinuityInboxService>();
+        services.AddSingleton<Prose.Core.Services.ReadAlong.StoryAtlasService>();
+        services.AddSingleton<Prose.Core.Services.ReadAlong.BrainstormService>();
+        services.AddSingleton<Prose.Core.Services.ReadAlong.BookChatService>();
+        services.AddSingleton<Prose.Core.Services.ReadAlong.ManuscriptImportService>();
         services.AddSingleton<CanonMaintenanceService>();                                // entity slug, edge, orphan tag, obligation corrections
         services.AddSingleton<Prose.Core.Services.Factory.WorkOrderService>(sp => new Prose.Core.Services.Factory.WorkOrderService(
             sp.GetRequiredService<IDbContextFactory<ProseDbContext>>(),

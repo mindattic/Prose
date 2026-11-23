@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**318 tools** across **56 tool families.**
+**330 tools** across **57 tool families.**
 
 ## Families
 
@@ -56,6 +56,7 @@
 | [Plant Payoff](#plant-payoff) | 6 |
 | [Prose Text](#prose-text) | 5 |
 | [Quality](#quality) | 5 |
+| [Read Along](#read-along) | 12 |
 | [Reading](#reading) | 4 |
 | [Repository](#repository) | 3 |
 | [Ruling](#ruling) | 6 |
@@ -2080,6 +2081,108 @@ Update review-voting settings. Pass only the fields you want to change — omit 
 Scan arbitrary prose against every world rule (no city police, no Behemoth-as-alive, no 'the Shelf' district, no wedding-cake tier architecture, no Ferrogate-as-railroad, no metro/city police, no phi/Greek-letter confusion). Returns the list of matched violations with the surrounding context. Call this on a chapter draft BEFORE delivering it — catches rule slips Claude might miss.
 
 - `text` (string, required) — The prose to scan. Pass an entire chapter or a single beat.
+
+## Read Along
+
+<sub>`ReadAlongTools`</sub>
+
+### `ask_book`
+
+Ask a book a question about itself (what a character knows, when a thread last came up, whether the timeline holds). Answered from the manuscript, with doors: the chapters and exact passages it leans on. Never writes prose. Counts against the optional question allowance.
+
+- `book` (string, required) — Book id, slug or code.
+- `question` (string, required) — The question.
+
+### `brainstorm`
+
+A book's brainstorm canvas: list cards, or add one (title, body, color: plain|idea|question|plot|character|world). Cards are the author's free notes — never canon, never fed to the story bible.
+
+- `book` (string, required) — Book id, slug or code.
+- `addTitle` (string, optional) — Optional: add a card with this title.
+- `body` (string, optional) — Body for the new card.
+- `color` (string, optional) — Color for the new card.
+
+### `continuity_inbox`
+
+A book's Continuity Inbox: every place the story disagrees with itself, each card quoting both lines with their chapters, the kind (contradiction | updated) and a confidence. status: open (default) | all. explain=<card id> returns why the two lines disagree.
+
+- `book` (string, required) — Book id, slug or code.
+- `status` (string, optional) — open | all
+- `explain` (string, optional) — Optional card id to explain.
+
+### `decide_story_bible_draft`
+
+Rule on a story-bible draft — ONLY when the author has said which (this is their decision, not an agent's): decision 'keep' (Keep it: the draft becomes an entry / a confirmed detail; name and category may correct it) or 'toss' (Not quite: gone for good, never suggested again).
+
+- `draftId` (string, required) — Draft id.
+- `decision` (string, required) — keep | toss
+- `name` (string, optional) — Optional corrected name (keep only).
+- `category` (string, optional) — Optional corrected category (keep only).
+
+### `import_manuscript`
+
+Import a manuscript (RFC 0019): a .docx/.txt/.md file or a folder of them on the Hub's machine becomes a new book (or chapters appended to an existing one) — volumes, chapters found from their headings, one beat per paragraph, the words exactly as written. dryRun shows the chapter breaks without writing. read=true reads it along afterwards.
+
+- `path` (string, required) — Absolute path to a file or folder.
+- `title` (string, optional) — Book title (default: the file name).
+- `intoBook` (string, optional) — Optional existing book (id/slug) to append chapters to.
+- `read` (bool, optional) — Read the book along after importing.
+- `dryRun` (bool, optional) — Preview only: nothing is written.
+
+### `read_allowance`
+
+The read-along's optional allowance: words read and questions asked so far, and the limits (0 = unlimited, the default). Pass wordLimit/questionLimit (>= 0) to change them; -1 leaves a limit as it is.
+
+- `wordLimit` (int, optional)
+- `questionLimit` (int, optional)
+
+### `read_along`
+
+Read a book along (RFC 0019): read each chapter in order against everything the book has said so far, drafting story-bible entries for new names and details (each with the sentence it came from) and filing a Continuity Inbox card when a new line disagrees with an earlier one. Chapters already read as they stand are skipped unless force. Deterministic, no LLM, never writes prose. Returns the reading log.
+
+- `book` (string, required) — Book id, slug or code.
+- `chapter` (string, optional) — Optional chapter id or slug: read only this chapter.
+- `force` (bool, optional) — Re-read chapters even when unchanged.
+
+### `read_along_status`
+
+The read-along's status for a book: chapters read as they stand vs changed since, words read, the reading log (who each chapter introduced, how many story details, possible contradictions), pending story-bible drafts and open Continuity Inbox cards.
+
+- `book` (string, required) — Book id, slug or code.
+
+### `rule_continuity_card`
+
+Rule on a Continuity Inbox card — ONLY when the author has decided: accept-new (the later line is the story), keep-existing (the earlier line is; the disagreeing prose is the author's to fix), retcon (deliberate change: new value is canon, old stays as history) or dismiss (both right in context).
+
+- `cardId` (string, required) — Card id.
+- `action` (string, required) — accept-new | keep-existing | retcon | dismiss
+- `note` (string, optional) — Optional note recorded on the card.
+
+### `set_story_bible_detail`
+
+Write a story-bible detail by hand for an entry (author-sourced, confirmed, protected from later chapters), or add a new entry when entry does not exist yet and category is given.
+
+- `book` (string, required) — Book id, slug or code.
+- `entry` (string, required) — Entry name or entity id.
+- `attribute` (string, required) — Attribute, e.g. age, eyes, role, alias, group.
+- `value` (string, required) — Value.
+- `category` (string, optional) — Category for a new entry: character | place | item | organization | concept.
+
+### `story_atlas`
+
+The Story Atlas: a book's world as a graph drawn from what the read-along read — stars (entries with category, first chapter, mentions) and threads (stated relationships and pairs that share paragraphs), with chapter ticks. asOfChapter scrubs back to what the reader knew at that chapter.
+
+- `book` (string, required) — Book id, slug or code.
+- `asOfChapter` (int, optional) — Optional 1-based chapter index; 0 = the whole story.
+- `includeDrafts` (bool, optional) — Include names still waiting for Keep it.
+
+### `story_bible`
+
+A book's story bible (codex): entries by category (character, place, item, organization, concept), drafts marked. With entry=<name or id>, one entry: aliases, description, every detail with its receipt (quote + chapter), its timeline (superseded and retconned values included), links, and detail drafts waiting. With drafts=true, every pending draft with the sentences behind it.
+
+- `book` (string, required) — Book id, slug or code.
+- `entry` (string, optional) — Optional entry name or entity id.
+- `drafts` (bool, optional) — List pending drafts instead of the codex.
 
 ## Reading
 

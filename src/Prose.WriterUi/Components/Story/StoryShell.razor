@@ -1,0 +1,319 @@
+@* The Story workspace (RFC 0019), at /story. Everything the read-along keeps for a book, beside the
+   manuscript it grew out of: the codex (automatic story bible), the Continuity Inbox, ask your
+   book, the Story Atlas, the brainstorm canvas and manuscript import. The prose itself is written
+   in the Writer; nothing on this page writes a word of it. *@
+@using Prose.Core.Services.ReadAlong
+@inject StoryUiService StoryUi
+@inject ReadAlongService ReadAlong
+@inject ContinuityInboxService Inbox
+@inject ReadAlongAllowance Allowance
+@inject IJSRuntime JS
+@implements IAsyncDisposable
+
+<div class="story @(entry is not null ? "with-entry" : "")">
+    <header class="story-top">
+        <a class="story-back" href="/writer" title="Back to the Writer">‹ Writer</a>
+        <label class="visually-hidden" for="story-book">Book</label>
+        <select id="story-book" class="story-book" value="@(book?.Id.ToString() ?? "")" @onchange="PickBookAsync">
+            <option value="">Choose a book…</option>
+            @if (books is not null)
+            {
+                @foreach (var b in books)
+                {
+                    <option value="@b.Id">@b.Title@(b.Code is null ? "" : $" ({b.Code})")</option>
+                }
+            }
+        </select>
+        <nav class="story-tabs" aria-label="Story workspace">
+            @foreach (var (key, label) in Tabs)
+            {
+                <button class="story-tab @(tab == key ? "on" : "")" aria-current="@(tab == key ? "page" : null)" @onclick="() => SetTab(key)">
+                    @label
+                    @if (key == "codex" && status is { PendingSuggestions: > 0 })
+                    {
+                        <span class="count">@status.PendingSuggestions</span>
+                    }
+                    @if (key == "continuity" && status is { OpenConflicts: > 0 })
+                    {
+                        <span class="count gold">⚠ @status.OpenConflicts</span>
+                    }
+                </button>
+            }
+        </nav>
+        <div class="spacer"></div>
+        @if (usage is not null && (usage.WordLimit > 0 || usage.QuestionLimit > 0))
+        {
+            <span class="muted usage" title="The read-along's optional allowance (Import tab → Allowance)">
+                @(usage.WordLimit > 0 ? $"{usage.WordsRead:N0}/{usage.WordLimit:N0} words read" : "")
+                @(usage.QuestionLimit > 0 ? $" · {usage.QuestionsAsked}/{usage.QuestionLimit} questions" : "")
+            </span>
+        }
+    </header>
+
+    @if (book is not null && (reading || status is { ChaptersTotal: > 0 }))
+    {
+        <section class="reading-bar" aria-live="polite">
+            <div class="reading-line">
+                @if (reading && progress is not null)
+                {
+                    <span class="spin" aria-hidden="true"></span>
+                    <span>Prose is reading your story — @progress.Done of @progress.Total chapters</span>
+                    @foreach (var n in progress.RecentlyMet)
+                    {
+                        <span class="chip">@n</span>
+                    }
+                }
+                else if (status is not null)
+                {
+                    <span class="ok">✓</span>
+                    <span>Read @status.ChaptersRead of @status.ChaptersTotal chapters@(status.ChaptersStale > 0 ? $" ({status.ChaptersStale} changed since)" : "") · @status.WordsRead.ToString("N0") words</span>
+                    @if (status.PendingSuggestions > 0)
+                    {
+                        <span class="muted">· @status.PendingSuggestions waiting for your OK</span>
+                    }
+                    @foreach (var n in status.RecentlyMet)
+                    {
+                        <span class="chip">@n</span>
+                    }
+                }
+                <div class="spacer"></div>
+                <button class="mini" disabled="@reading" @onclick="() => ReadBookAsync(false)" title="Read every chapter that changed since it was last read">Read along now</button>
+                <button class="mini" @onclick="() => logOpen = !logOpen" aria-expanded="@logOpen">@(logOpen ? "Hide reading log" : "Reading log")</button>
+            </div>
+            @if (logOpen && status is not null)
+            {
+                <ol class="reading-log">
+                    @foreach (var l in status.Log)
+                    {
+                        <li>
+                            <button class="linkish" @onclick="() => OpenPassage(l.ChapterNodeId, null)">
+                                <span class="@(l.Current ? "ok" : "stale")">@(l.Current ? "✓" : "↻")</span>
+                                @l.Title
+                            </button>
+                            <span class="muted">— @MetText(l.Met) · @l.Details story detail@(l.Details == 1 ? "" : "s")</span>
+                            @if (l.Contradictions > 0)
+                            {
+                                <span class="gold"> · @l.Contradictions possible contradiction@(l.Contradictions == 1 ? "" : "s")</span>
+                            }
+                        </li>
+                    }
+                    @if (reading && progress?.Current is { } cur)
+                    {
+                        <li class="reading-now"><span class="spin" aria-hidden="true"></span> Reading @cur…</li>
+                    }
+                </ol>
+            }
+        </section>
+    }
+
+    <main class="story-main" id="story-main" tabindex="-1">
+        @if (error is not null)
+        {
+            <div class="banner danger" role="alert">@error <button class="mini" @onclick="() => error = null">✕</button></div>
+        }
+        @if (book is null && tab != "import")
+        {
+            <div class="story-empty">
+                <h1>Prose has read every one.</h1>
+                <p>Choose a book above, or <button class="linkish" @onclick='() => SetTab("import")'>import the one you're already writing</button>.
+                   The read-along reads it first page to last, keeps your story bible, and catches the small contradictions that creep in somewhere around chapter twenty. It never writes a word of your book.</p>
+            </div>
+        }
+        else
+        {
+            @switch (tab)
+            {
+                case "manuscript":
+                    <StoryManuscript @key="book!.Id" BookId="book!.Id" ChapterId="openChapter" BeatId="openBeat" OpenCards="status?.OpenConflicts ?? 0" Version="version"
+                                     OnOpenEntry="OpenEntryAsync" OnChanged="RefreshAsync" OnOpenContinuity='() => SetTab("continuity")' />
+                    break;
+                case "codex":
+                    <StoryCodex @key="book!.Id" BookId="book!.Id" OnOpenEntry="OpenEntryAsync" OnChanged="RefreshAsync" OnOpenPassage="OpenDoor" />
+                    break;
+                case "continuity":
+                    <StoryContinuity @key="book!.Id" BookId="book!.Id" OnChanged="RefreshAsync" OnOpenPassage="OpenDoor" OnOpenEntry="OpenEntryAsync" />
+                    break;
+                case "ask":
+                    <StoryAsk @key="book!.Id" BookId="book!.Id" OnOpenPassage="OpenDoor" OnOpenEntry="OpenEntryAsync" OnChanged="RefreshUsageAsync" />
+                    break;
+                case "atlas":
+                    <StoryAtlas @key="book!.Id" BookId="book!.Id" OnOpenEntry="OpenEntryAsync" OnOpenDraft='() => SetTab("codex")' />
+                    break;
+                case "brainstorm":
+                    <StoryBrainstorm @key="book!.Id" BookId="book!.Id" OnOpenEntry="OpenEntryAsync" />
+                    break;
+                case "import":
+                    <StoryImport CurrentBook="book" OnImported="ImportedAsync" OnAllowanceChanged="RefreshUsageAsync" />
+                    break;
+            }
+        }
+    </main>
+
+    @if (entry is not null && book is not null)
+    {
+        <StoryEntry @key="entry.Value" BookId="book.Id" EntityId="entry.Value" OnClose="() => entry = null"
+                    OnOpenPassage="OpenDoor" OnOpenEntry="OpenEntryAsync" OnChanged="RefreshAsync" />
+    }
+
+    @* Phone layout: the tabs move to a bottom bar, the way a writer on the bus reaches them. *@
+    <nav class="story-bottom" aria-label="Story workspace (compact)">
+        <a href="/writer">Editor</a>
+        <button class="@(tab == "brainstorm" ? "on" : "")" @onclick='() => SetTab("brainstorm")'>Notes</button>
+        <button class="@(tab == "ask" ? "on" : "")" @onclick='() => SetTab("ask")'>Chat</button>
+        <button class="@(tab == "codex" ? "on" : "")" @onclick='() => SetTab("codex")'>Codex</button>
+        <button class="@(tab == "atlas" ? "on" : "")" @onclick='() => SetTab("atlas")'>Story</button>
+    </nav>
+</div>
+
+@code {
+    [Parameter] public string? Book { get; set; }
+    [Parameter] public string? Tab { get; set; }
+
+    private static readonly (string Key, string Label)[] Tabs =
+    [
+        ("manuscript", "Manuscript"), ("codex", "Codex"), ("continuity", "Continuity"), ("ask", "Ask"),
+        ("atlas", "Atlas"), ("brainstorm", "Brainstorm"), ("import", "Import"),
+    ];
+
+    private List<StoryUiService.BookItem>? books;
+    private StoryUiService.BookItem? book;
+    private string tab = "manuscript";
+    private ReadAlongService.BookReadingStatus? status;
+    private ReadAlongAllowance.Usage? usage;
+    private bool reading;
+    private bool logOpen;
+    private ReadAlongService.ReadProgress? progress;
+    private Guid? entry;
+    private Guid? openChapter;
+    private Guid? openBeat;
+    private string? error;
+    private int version;
+    private CancellationTokenSource? cts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        books = await StoryUi.ListBooksAsync();
+        if (Tabs.Any(t => t.Key == Tab)) tab = Tab!;
+        if (Book is not null)
+            book = books.FirstOrDefault(b => b.Id.ToString() == Book || string.Equals(b.Slug, Book, StringComparison.OrdinalIgnoreCase)
+                                           || string.Equals(b.Code, Book, StringComparison.OrdinalIgnoreCase));
+        if (book is not null) StoryUi.Pin(book.UniverseId);
+        else if (Tab is null) tab = "import";
+        await RefreshAsync();
+    }
+
+    private async Task PickBookAsync(ChangeEventArgs e)
+    {
+        book = books?.FirstOrDefault(b => b.Id.ToString() == e.Value?.ToString());
+        entry = null; openChapter = null; openBeat = null; logOpen = false;
+        if (book is not null) StoryUi.Pin(book.UniverseId);
+        if (tab == "import" && book is not null) tab = "manuscript";
+        await RefreshAsync();
+    }
+
+    private void SetTab(string key) { tab = key; }
+
+    private string? syncedLocation;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        var loc = $"{book?.Slug}|{tab}";
+        if (loc == syncedLocation) return;
+        syncedLocation = loc;
+        try { await JS.InvokeVoidAsync("proseStory.setLocation", book?.Slug, tab); }
+        catch (JSException) { }
+        catch (JSDisconnectedException) { }
+    }
+
+    private async Task RefreshAsync()
+    {
+        try
+        {
+            status = book is null ? null : await ReadAlong.GetStatusAsync(book.Id);
+            version++;
+            usage = await Allowance.GetUsageAsync();
+        }
+        catch (Exception ex)
+        {
+            status = null;
+            error = "The read-along's tables are not there yet — apply the AddReadAlong migration (run.ps1 migrates on start). " + ex.Message;
+        }
+        StateHasChanged();
+    }
+
+    private async Task RefreshUsageAsync()
+    {
+        usage = await Allowance.GetUsageAsync();
+        StateHasChanged();
+    }
+
+    private async Task ReadBookAsync(bool force)
+    {
+        if (book is null || reading) return;
+        reading = true;
+        logOpen = true;
+        cts = new CancellationTokenSource();
+        var bookId = book.Id;
+        var p = new Progress<ReadAlongService.ReadProgress>(rp =>
+        {
+            progress = rp;
+            _ = InvokeAsync(async () =>
+            {
+                if (book?.Id == bookId) status = await ReadAlong.GetStatusAsync(bookId);
+                StateHasChanged();
+            });
+        });
+        try
+        {
+            var results = await ReadAlong.ReadBookAsync(bookId, force, p, cts.Token);
+            if (results.Any(r => r.Reason == "allowance"))
+                error = "Stopped at the reading allowance. Everything already read stays; raise the limit under Import → Allowance to keep reading.";
+        }
+        catch (OperationCanceledException) { }
+        catch (Exception ex) { error = "Reading failed: " + ex.Message; }
+        finally
+        {
+            reading = false;
+            progress = null;
+            await RefreshAsync();
+        }
+    }
+
+    private async Task ImportedAsync(Guid bookId)
+    {
+        books = await StoryUi.ListBooksAsync();
+        book = books.FirstOrDefault(b => b.Id == bookId);
+        if (book is not null) StoryUi.Pin(book.UniverseId);
+        await RefreshAsync();
+        tab = "manuscript";
+        StateHasChanged();
+        await ReadBookAsync(false);
+    }
+
+    private Task OpenEntryAsync(Guid entityId)
+    {
+        entry = entityId;
+        StateHasChanged();
+        return Task.CompletedTask;
+    }
+
+    private void OpenDoor((Guid ChapterId, Guid? BeatId) door) => OpenPassage(door.ChapterId, door.BeatId);
+
+    private void OpenPassage(Guid chapterId, Guid? beatId)
+    {
+        openChapter = chapterId;
+        openBeat = beatId;
+        tab = "manuscript";
+        StateHasChanged();
+    }
+
+    private static string MetText(IReadOnlyList<string> met) =>
+        met.Count == 0 ? "no one new" : met.Count <= 3 ? "met " + string.Join(", ", met) : $"met {string.Join(", ", met.Take(2))} and {met.Count - 2} more";
+
+    public ValueTask DisposeAsync()
+    {
+        cts?.Cancel();
+        cts?.Dispose();
+        return ValueTask.CompletedTask;
+    }
+}

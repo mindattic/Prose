@@ -84,6 +84,12 @@ public class ProseDbContext : DbContext
                 case BeatServiceLog bsl when bsl.UniverseId == Guid.Empty: bsl.UniverseId = target; break;
                 case BeatModeLog bml when bml.UniverseId == Guid.Empty:    bml.UniverseId = target; break;
                 case DiscussionThread dt when dt.UniverseId == Guid.Empty: dt.UniverseId = target; break;
+                case ChapterReading cr when cr.UniverseId == Guid.Empty: cr.UniverseId = target; break;
+                case StoryBibleSuggestion sbs when sbs.UniverseId == Guid.Empty: sbs.UniverseId = target; break;
+                case StoryFact sf when sf.UniverseId == Guid.Empty: sf.UniverseId = target; break;
+                case ContinuityConflict cc when cc.UniverseId == Guid.Empty: cc.UniverseId = target; break;
+                case BrainstormCard bc when bc.UniverseId == Guid.Empty: bc.UniverseId = target; break;
+                case BookChatMessage bcm when bcm.UniverseId == Guid.Empty: bcm.UniverseId = target; break;
                 case CorporateOwnership co when co.UniverseId == Guid.Empty: co.UniverseId = target; break;
                 case CorporateForce cf when cf.UniverseId == Guid.Empty:     cf.UniverseId = target; break;
                 // Config rows: operational/shared keys are tagged with the SHARED sentinel so every
@@ -741,6 +747,16 @@ public class ProseDbContext : DbContext
     public DbSet<BeatContribution>       BeatContributions       => Set<BeatContribution>();
     public DbSet<BeatReadNote>           BeatReadNotes           => Set<BeatReadNote>();
 
+    // Read-along (RFC 0019): the engine reads what the author wrote and keeps the books — the
+    // reading log, story-bible drafts, kept facts with receipts, the Continuity Inbox, the
+    // brainstorm canvas and the ask-your-book conversation. Never writes prose.
+    public DbSet<ChapterReading>         ChapterReadings         => Set<ChapterReading>();
+    public DbSet<StoryBibleSuggestion>   StoryBibleSuggestions   => Set<StoryBibleSuggestion>();
+    public DbSet<StoryFact>              StoryFacts              => Set<StoryFact>();
+    public DbSet<ContinuityConflict>     ContinuityConflicts     => Set<ContinuityConflict>();
+    public DbSet<BrainstormCard>         BrainstormCards         => Set<BrainstormCard>();
+    public DbSet<BookChatMessage>        BookChatMessages        => Set<BookChatMessage>();
+
     // The Novel Factory (RFC 0015): law, verifications, work orders, sessions, exports.
     public DbSet<Ruling>                 Rulings                 => Set<Ruling>();
     public DbSet<SpellingWord>           SpellingWords           => Set<SpellingWord>();
@@ -1259,6 +1275,86 @@ public class ProseDbContext : DbContext
             e.Property(x => x.Mode).HasMaxLength(50).IsRequired();
             e.Property(x => x.DetectionMethod).HasMaxLength(50).IsRequired();
             e.HasOne<Beat>().WithMany().HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        // ── Read-along (RFC 0019) ─────────────────────────────────────────────
+        // Every row hangs off a BOOK root and cascades with it. Beat and chapter references are
+        // deliberately plain columns, not foreign keys: a receipt that outlives its beat still
+        // reads as a quote, and a deleted chapter must never be blocked by its reading log.
+        b.Entity<ChapterReading>(e =>
+        {
+            e.ToTable("ChapterReadings");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.ChapterTitle).HasMaxLength(400).IsRequired();
+            e.Property(x => x.ContentHash).HasMaxLength(64).IsRequired();
+            e.Property(x => x.Status).HasMaxLength(20).IsRequired();
+            e.Property(x => x.MetJson).IsRequired();
+            e.HasOne<Node>().WithMany().HasForeignKey(x => x.BookNodeId).OnDelete(DeleteBehavior.Cascade);
+        });
+        b.Entity<StoryBibleSuggestion>(e =>
+        {
+            e.ToTable("StoryBibleSuggestions");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Kind).HasMaxLength(20).IsRequired();
+            e.Property(x => x.Category).HasMaxLength(40).IsRequired();
+            e.Property(x => x.Name).HasMaxLength(200).IsRequired();
+            e.Property(x => x.Fingerprint).HasMaxLength(400).IsRequired();
+            e.Property(x => x.Status).HasMaxLength(20).IsRequired();
+            e.Property(x => x.AttributesJson).IsRequired();
+            e.Property(x => x.Quote).IsRequired();
+            e.HasOne<Node>().WithMany().HasForeignKey(x => x.BookNodeId).OnDelete(DeleteBehavior.Cascade);
+        });
+        b.Entity<StoryFact>(e =>
+        {
+            e.ToTable("StoryFacts");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Attribute).HasMaxLength(80).IsRequired();
+            e.Property(x => x.Value).HasMaxLength(400).IsRequired();
+            e.Property(x => x.SubjectKey).HasMaxLength(200).IsRequired();
+            e.Property(x => x.SubjectName).HasMaxLength(200).IsRequired();
+            e.Property(x => x.Category).HasMaxLength(40).IsRequired();
+            e.Property(x => x.Source).HasMaxLength(20).IsRequired();
+            e.Property(x => x.Quote).IsRequired();
+            e.HasOne<Node>().WithMany().HasForeignKey(x => x.BookNodeId).OnDelete(DeleteBehavior.Cascade);
+            // NoAction, not Cascade: SQL Server refuses two cascade paths into one table (the
+            // book and the entity). The read-along deletes an entry's facts itself.
+            e.HasOne<Entity>().WithMany().HasForeignKey(x => x.EntityId).IsRequired(false).OnDelete(DeleteBehavior.NoAction);
+        });
+        b.Entity<ContinuityConflict>(e =>
+        {
+            e.ToTable("ContinuityConflicts");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.EntityName).HasMaxLength(200).IsRequired();
+            e.Property(x => x.Kind).HasMaxLength(20).IsRequired();
+            e.Property(x => x.Category).HasMaxLength(40).IsRequired();
+            e.Property(x => x.Attribute).HasMaxLength(80).IsRequired();
+            e.Property(x => x.ExistingValue).HasMaxLength(400).IsRequired();
+            e.Property(x => x.ProposedValue).HasMaxLength(400).IsRequired();
+            e.Property(x => x.ExistingChapterTitle).HasMaxLength(400).IsRequired();
+            e.Property(x => x.ProposedChapterTitle).HasMaxLength(400).IsRequired();
+            e.Property(x => x.Fingerprint).HasMaxLength(400).IsRequired();
+            e.Property(x => x.Status).HasMaxLength(20).IsRequired();
+            e.Property(x => x.Note).HasMaxLength(1000);
+            e.HasIndex(x => new { x.BookNodeId, x.Fingerprint });
+            e.HasOne<Node>().WithMany().HasForeignKey(x => x.BookNodeId).OnDelete(DeleteBehavior.Cascade);
+        });
+        b.Entity<BrainstormCard>(e =>
+        {
+            e.ToTable("BrainstormCards");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Title).HasMaxLength(200).IsRequired();
+            e.Property(x => x.Body).IsRequired();
+            e.Property(x => x.Color).HasMaxLength(20).IsRequired();
+            e.HasOne<Node>().WithMany().HasForeignKey(x => x.BookNodeId).OnDelete(DeleteBehavior.Cascade);
+        });
+        b.Entity<BookChatMessage>(e =>
+        {
+            e.ToTable("BookChatMessages");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Role).HasMaxLength(16).IsRequired();
+            e.Property(x => x.Text).IsRequired();
+            e.Property(x => x.DoorsJson).IsRequired();
+            e.HasOne<Node>().WithMany().HasForeignKey(x => x.BookNodeId).OnDelete(DeleteBehavior.Cascade);
         });
 
         // ── Discussions ──────────────────────────────────────────────────────

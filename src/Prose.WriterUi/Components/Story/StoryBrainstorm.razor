@@ -1,0 +1,113 @@
+@* The brainstorm canvas: free cards the author places by hand. Drag a card by its handle, thread it
+   to another, tie it to a codex entry. Never canon, never read by anything. *@
+@using Prose.Core.Services.ReadAlong
+@inject BrainstormService Brainstorm
+@inject StoryBibleService Bible
+@inject IJSRuntime JS
+@implements IDisposable
+
+<div class="brainstorm">
+    <div class="section-head">
+        <h2>Brainstorm</h2>
+        <span class="muted small">Your notes. Never canon, never read into the story bible.</span>
+        <div class="spacer"></div>
+        @foreach (var c in BrainstormService.Colors.Skip(1))
+        {
+            <button class="mini bs-new bs-@c" @onclick="() => AddAsync(c)">+ @c</button>
+        }
+    </div>
+    <div class="bs-board" @ref="board">
+        <svg class="bs-links" aria-hidden="true">
+            @if (cards is not null)
+            {
+                @foreach (var c in cards.Where(c => c.LinkedCardId is not null))
+                {
+                    var o = cards.FirstOrDefault(x => x.Id == c.LinkedCardId);
+                    if (o is null) continue;
+                    <line x1="@(c.X + 110)" y1="@(c.Y + 40)" x2="@(o.X + 110)" y2="@(o.Y + 40)" />
+                }
+            }
+        </svg>
+        @if (cards is not null)
+        {
+            @foreach (var c in cards)
+            {
+                <div class="bs-card bs-@c.Color @(linking == c.Id ? "linking" : "")" data-id="@c.Id" style="left:@(c.X)px; top:@(c.Y)px" @key="c.Id">
+                    <div class="bs-handle" title="Drag">⠿ <span>@c.Color</span>
+                        <button class="ghost" @onclick="() => LinkAsync(c)" title="@(linking is null ? "Thread this card to another" : "Thread to this card")">⟷</button>
+                        <button class="ghost" @onclick="() => DeleteAsync(c)" aria-label="Delete card">✕</button>
+                    </div>
+                    <input class="bs-title" value="@c.Title" @onchange="e => SaveAsync(c, title: e.Value?.ToString())" aria-label="Card title" />
+                    <textarea class="bs-body" rows="3" @onchange="e => SaveAsync(c, body: e.Value?.ToString())" aria-label="Card notes">@c.Body</textarea>
+                    @if (c.EntityId is { } eid && entityNames.TryGetValue(eid, out var en))
+                    {
+                        <button class="chip" @onclick="() => OnOpenEntry.InvokeAsync(eid)">@en</button>
+                    }
+                </div>
+            }
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter, EditorRequired] public Guid BookId { get; set; }
+    [Parameter] public EventCallback<Guid> OnOpenEntry { get; set; }
+
+    private ElementReference board;
+    private List<BrainstormService.Card>? cards;
+    private Dictionary<Guid, string> entityNames = [];
+    private Guid? linking;
+    private DotNetObjectReference<StoryBrainstorm>? self;
+
+    protected override async Task OnInitializedAsync()
+    {
+        cards = await Brainstorm.ListAsync(BookId);
+        entityNames = (await Bible.GetCodexAsync(BookId)).SelectMany(c => c.Items).Where(i => !i.IsDraft).ToDictionary(i => i.Id, i => i.Name);
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender) return;
+        self = DotNetObjectReference.Create(this);
+        try { await JS.InvokeVoidAsync("proseStory.boardInit", board, self); } catch (JSException) { }
+    }
+
+    [JSInvokable]
+    public async Task MoveCard(string id, double x, double y)
+    {
+        if (!Guid.TryParse(id, out var gid)) return;
+        await Brainstorm.UpdateAsync(gid, x: x, y: y);
+        cards = await Brainstorm.ListAsync(BookId);
+        StateHasChanged();
+    }
+
+    private async Task AddAsync(string color)
+    {
+        var n = cards?.Count ?? 0;
+        await Brainstorm.AddAsync(BookId, color == "question" ? "What if…?" : "New " + color, "", 30 + (n % 5) * 240, 30 + (n / 5) * 170, color);
+        cards = await Brainstorm.ListAsync(BookId);
+    }
+
+    private async Task SaveAsync(BrainstormService.Card c, string? title = null, string? body = null)
+    {
+        await Brainstorm.UpdateAsync(c.Id, title: title, body: body);
+        cards = await Brainstorm.ListAsync(BookId);
+    }
+
+    private async Task LinkAsync(BrainstormService.Card c)
+    {
+        if (linking is null) { linking = c.Id; return; }
+        if (linking == c.Id) { await Brainstorm.UpdateAsync(c.Id, clearLink: true); }
+        else await Brainstorm.UpdateAsync(linking.Value, linkedCardId: c.Id);
+        linking = null;
+        cards = await Brainstorm.ListAsync(BookId);
+    }
+
+    private async Task DeleteAsync(BrainstormService.Card c)
+    {
+        await Brainstorm.DeleteAsync(c.Id);
+        cards = await Brainstorm.ListAsync(BookId);
+    }
+
+    public void Dispose() => self?.Dispose();
+}

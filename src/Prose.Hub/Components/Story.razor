@@ -1,0 +1,38 @@
+@* No @page here, for the same reason Writer.razor has none: Prose.Hub maps Blazor with
+   MapRazorComponents<App>() and App.razor carries no <Router>, so EVERY discovered page route
+   renders App.razor. Program.cs gives this component its own endpoint (/story) instead. *@
+@using Microsoft.AspNetCore.Components.Web
+@using Prose.WriterUi.Components.Story
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <base href="/" />
+    <title>Prose Story</title>
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('prose.writer.theme');
+                document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+            } catch (e) { /* blocked site data — the dark default in the markup stands */ }
+        })();
+    </script>
+    <link rel="stylesheet" href="_content/Prose.WriterUi/tokens.css?v=@AssetVersion" />
+    <link rel="stylesheet" href="_content/Prose.WriterUi/writer.css?v=@AssetVersion" />
+    <link rel="stylesheet" href="_content/Prose.WriterUi/story.css?v=@AssetVersion" />
+    <script src="_content/Prose.WriterUi/js/theme.js?v=@AssetVersion"></script>
+    <script src="_content/Prose.WriterUi/js/story.js?v=@AssetVersion"></script>
+    <HeadOutlet @rendermode="RenderMode.InteractiveServer" />
+</head>
+<body>
+    <StoryShell Book="@Book" Tab="@Tab" @rendermode="RenderMode.InteractiveServer" />
+    <script src="_framework/blazor.web.js"></script>
+</body>
+</html>
+
+@code {
+    [Parameter] public string? Book { get; set; }
+    [Parameter] public string? Tab { get; set; }
+    private static string AssetVersion => HubAssets.Version;
+}

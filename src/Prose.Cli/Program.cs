@@ -373,6 +373,23 @@ string?[] HistoryLeadingOwners = ["--cost", "--texts-get"];
 string[] FamilySubFlagOwners = ["--repair-slugs"];
 string[] BeatSubFlagOwners = ["--wound", "--liberty-report"];
 
+// CLI mode: the read-along (RFC 0019) — import a manuscript, read a book along, the automatic story
+// bible (drafts, Keep it / Not quite, entries with receipts), the Continuity Inbox, the Story Atlas,
+// ask your book, the brainstorm canvas and the optional reading allowance. Ahead of the other blocks
+// because its --slug/--add/--status/--all/--entry flags are its own. Deterministic; never writes prose.
+//   prose --import-manuscript --path <file|folder> [--title T] [--into <book>] [--read] [--dry-run]
+//   prose --read-along --slug <book> [--chapter <slug>] [--force] [--status] | --read-along --all
+//   prose --story-bible --slug <book> [--drafts|--keep <id>|--toss <id>|--keep-all|--entry <n>|--add <n>|--set <n> --attr A --value V|--remove <n>]
+//   prose --continuity-inbox --slug <book> [--all|--explain <id>|--rule <id> --action accept-new|keep-existing|retcon|dismiss|--reopen <id>]
+//   prose --story-atlas --slug <book> [--as-of N]     prose --ask-book "Q" --slug <book>
+//   prose --brainstorm --slug <book> [--add T|--delete <id>]     prose --read-allowance [--words N] [--questions N]
+if (new[] { "--import-manuscript", "--read-along", "--story-bible", "--continuity-inbox", "--story-atlas", "--ask-book", "--brainstorm", "--read-allowance" }
+        .Any(args.Contains))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ReadAlongCli", args);
+    return;
+}
+
 // CLI mode: COROBS geometry (RFC 0016, PRS-T863) — the master switch and the store: enable,
 // disable, status, build, patterns, rules, cue, confirm, reject, resolve, dismiss, explain. Ahead
 // of every other block because its own --ruling/--order/--entity/--pattern/--rule flags belong to

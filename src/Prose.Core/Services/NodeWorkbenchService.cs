@@ -1530,6 +1530,48 @@ public class NodeWorkbenchService
         return true;
     }
 
+    /// <summary>Append many beats to the end of <paramref name="nodeId"/> in one transaction — the
+    /// manuscript import path (RFC 0019), where a chapter arrives as a list of paragraphs. Empty
+    /// paragraphs are skipped. Returns the new beat ids in order.</summary>
+    public async Task<List<Guid>> AppendBeatsAsync(Guid nodeId, IReadOnlyList<string> texts, bool chapterStartFirst = true, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        await using var tx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable, ct);
+        try
+        {
+            var lastSk = await db.BeatNodes.Where(sb => sb.NodeId == nodeId).Select(sb => (double?)sb.SortKey).MaxAsync(ct) ?? 0.0;
+            var number = await NextBeatNumberAsync(db, ct);
+            var ids = new List<Guid>(texts.Count);
+            foreach (var raw in texts)
+            {
+                var text = TextSanitizerService.Sanitize((raw ?? "").Trim());
+                if (text.Length == 0) continue;
+                var beat = new Beat
+                {
+                    Id = Guid.CreateVersion7(),
+                    Number = number++,
+                    Text = text,
+                    TextHash = ComputeTextHash(text),
+                    Kind = "prose",
+                    SceneType = "scene",
+                    IsChapterStart = chapterStartFirst && ids.Count == 0 && lastSk == 0.0,
+                };
+                lastSk += 100.0;
+                db.Beats.Add(beat);
+                db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = lastSk });
+                ids.Add(beat.Id);
+            }
+            await db.SaveChangesAsync(ct);
+            await tx.CommitAsync(ct);
+            return ids;
+        }
+        catch
+        {
+            await tx.RollbackAsync(CancellationToken.None);
+            throw;
+        }
+    }
+
     /// <summary>Insert a brand-new empty beat into <paramref name="nodeId"/>
     /// at a fractional SortKey just after <paramref name="afterBeatId"/>.
     /// Pass <c>null</c> for <paramref name="afterBeatId"/> to insert at the

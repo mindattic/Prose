@@ -9,10 +9,12 @@
 @inject Prose.Core.Services.Spelling.SpellingService Spelling
 @inject ReadAloudUiService ReadAloud
 @inject SettingsUiService SettingsUi
+@inject Prose.Core.Services.ReadAlong.ReadAlongService ReadAlong
+@inject Prose.Core.Services.ReadAlong.ContinuityInboxService ContinuityInbox
 @inject IJSRuntime JS
 @implements IAsyncDisposable
 
-<div class="writer">
+<div class="writer @(focusMode ? "focus" : "")">
 
     <a class="skip-link" href="#beat-pane">Skip to the beat</a>
 
@@ -227,9 +229,36 @@
             <button class="mini" @onclick="() => sweepNote = null"
                     aria-label="Dismiss the consistency check result">✕</button>
         }
+        @if (book is not null)
+        {
+            @* The read-along (RFC 0019): whether this chapter has been read as it stands, and how
+               many continuity cards wait — the gold counter. Both open the Story workspace. *@
+            <span class="sep">·</span>
+            @if (remembered == true)
+            {
+                <span class="muted readalong-ok" title="The read-along has read this chapter as it stands">✓ Remembered this chapter</span>
+            }
+            else if (remembered == false)
+            {
+                <span class="muted" title="The read-along reads a chapter a few minutes after it stops changing">Not read along yet</span>
+            }
+            @if (openCards > 0)
+            {
+                <a class="issue-counter" href="@($"/story?book={book.Id}&tab=continuity")"
+                   title="@openCards continuity card@(openCards == 1 ? "" : "s") waiting in the Continuity Inbox">⚠ @openCards</a>
+            }
+            <a class="mini" href="@($"/story?book={book.Id}")" title="Story workspace: codex, continuity, atlas, brainstorm, ask your book">Story</a>
+            <button class="mini" @onclick="() => focusMode = !focusMode" aria-pressed="@focusMode"
+                    title="Focus mode: just you and the page">@(focusMode ? "Exit focus" : "Focus")</button>
+        }
         @if (beat is not null)
         {
             <div class="spacer"></div>
+            @if (chapterWords > 0)
+            {
+                <span class="muted">@chapterWords.ToString("N0") words in chapter · @Math.Max(1, (int)Math.Ceiling(chapterWords / 230.0)) min read</span>
+                <span class="sep">·</span>
+            }
             <span class="muted">@WordCount words</span>
             <span class="sep">·</span>
             <span class="muted">v@(beat.Version)</span>
@@ -291,6 +320,31 @@
 }
 
 @code {
+    // Read-along (RFC 0019) status for the open chapter.
+    private bool? remembered;
+    private int openCards;
+    private int chapterWords;
+    private bool focusMode;
+
+    private async Task RefreshReadAlongAsync()
+    {
+        if (book is null || beat is null) return;
+        var chapterId = beat.ChapterNodeId;
+        chapterWords = spine?.Where(s => s.ChapterNodeId == chapterId).Sum(s => s.Words) ?? 0;
+        try
+        {
+            remembered = await ReadAlong.IsRememberedAsync(book.Id, chapterId);
+            openCards = await ContinuityInbox.CountOpenAsync(book.Id);
+        }
+        catch (Exception)
+        {
+            // Status, not function: a read-along table missing (migration not yet applied) must
+            // never take the editor down.
+            remembered = null;
+            openCards = 0;
+        }
+    }
+
     private List<WriterService.BookListItem>? books;
     private WriterService.BookListItem? book;
     private List<WriterService.SpineItem>? spine;
@@ -600,6 +654,7 @@
 
         beat = opened;
         draft = beat?.Text ?? "";
+        await RefreshReadAlongAsync();
     }
 
     /// <summary>
@@ -824,6 +879,7 @@
         // was refused would report on text that is not in the book.
         if (problems.Count > 0 || conflict is not null) return;
 
+        await RefreshReadAlongAsync();
         activity = "Checking what that changed…";
         StateHasChanged();
         try

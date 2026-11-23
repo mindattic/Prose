@@ -1,0 +1,193 @@
+@* The codex: the automatic story bible. Drafts first — each one waits for Keep it or Not quite, and
+   nothing in a draft reaches an entry, the atlas or an answer until it is kept. Then the entries
+   by category. Entries can be added by hand; the read-along keeps up. *@
+@using Prose.Core.Services.ReadAlong
+@inject StoryBibleService Bible
+
+<div class="codex">
+    <section class="codex-drafts" aria-label="Story bible drafts">
+        <div class="section-head">
+            <h2>Waiting for your OK <span class="muted">@(drafts?.Count ?? 0)</span></h2>
+            <div class="spacer"></div>
+            @if (drafts is { Count: > 1 })
+            {
+                <button class="mini" @onclick="KeepAllAsync" title="Keep every draft below (each is still recorded as your decision)">Keep all</button>
+            }
+        </div>
+        @if (drafts is null)
+        {
+            <p class="muted">Loading…</p>
+        }
+        else if (drafts.Count == 0)
+        {
+            <p class="muted">Nothing waiting. New names and details appear here as the read-along meets them.</p>
+        }
+        else
+        {
+            @foreach (var d in drafts)
+            {
+                <article class="draft-card" @key="d.Id">
+                    <header>
+                        <span class="draft-cat">@(d.Kind == "detail" ? "New detail · " : "")@Plural(d.Category)</span>
+                        <span class="draft-tag">✦ Story bible draft</span>
+                    </header>
+                    @if (editing == d.Id)
+                    {
+                        <div class="draft-edit">
+                            <input @bind="editName" aria-label="Name" />
+                            <select @bind="editCategory" aria-label="Category">
+                                @foreach (var c in StoryFactExtractor.Categories) { <option value="@c">@c</option> }
+                            </select>
+                        </div>
+                    }
+                    else
+                    {
+                        <h3>@if (d.EntityId is { } eid) { <button class="linkish" @onclick="() => OnOpenEntry.InvokeAsync(eid)">@d.Name</button> } else { @d.Name }</h3>
+                    }
+                    @if (d.Attributes.Count > 0)
+                    {
+                        <dl class="draft-attrs">
+                            @foreach (var a in d.Attributes)
+                            {
+                                <dt>@a.Key</dt>
+                                <dd>@a.Value <button class="why" title="@a.Quote" @onclick="() => Toggle(d.Id, a.Key)">❝ Why?</button>
+                                    @if (open.Contains((d.Id, a.Key)))
+                                    {
+                                        <blockquote>“@a.Quote” <span class="muted">— @d.ChapterTitle</span></blockquote>
+                                    }
+                                </dd>
+                            }
+                        </dl>
+                    }
+                    else if (d.Quote.Length > 0)
+                    {
+                        <blockquote class="draft-quote">“@Short(d.Quote)” <span class="muted">— @d.ChapterTitle</span></blockquote>
+                    }
+                    <footer>
+                        <button class="keep" @onclick="() => KeepAsync(d)">✓ Keep it</button>
+                        <button class="toss" @onclick="() => TossAsync(d)">Not quite</button>
+                        @if (d.Kind == "entry")
+                        {
+                            <button class="mini" @onclick="() => BeginEdit(d)" title="Correct the name or category before keeping">Edit</button>
+                        }
+                        @if (d.BeatId is { } b && d.ChapterNodeId is { } ch)
+                        {
+                            <button class="mini" @onclick="() => OnOpenPassage.InvokeAsync((ch, b))" title="Open the passage">❝ @d.ChapterTitle</button>
+                        }
+                        <span class="muted small">nothing final until you say so</span>
+                    </footer>
+                </article>
+            }
+        }
+    </section>
+
+    <section class="codex-entries" aria-label="Codex">
+        <div class="section-head">
+            <h2>Codex <span class="muted">@(codex?.Sum(c => c.Items.Count(i => !i.IsDraft)) ?? 0)</span></h2>
+            <div class="spacer"></div>
+            <button class="mini" @onclick="() => adding = !adding" aria-expanded="@adding">+ Entry</button>
+        </div>
+        @if (adding)
+        {
+            <form class="codex-add" @onsubmit="AddAsync" @onsubmit:preventDefault="true">
+                <input @bind="newName" placeholder="Name" aria-label="New entry name" />
+                <select @bind="newCategory" aria-label="Category">
+                    @foreach (var c in StoryFactExtractor.Categories) { <option value="@c">@c</option> }
+                </select>
+                <input @bind="newDescription" placeholder="Description (optional)" aria-label="Description" />
+                <button class="primary" type="submit">Add</button>
+            </form>
+        }
+        <input class="codex-filter" placeholder="Filter…" @bind="filter" @bind:event="oninput" aria-label="Filter the codex" />
+        @if (codex is not null)
+        {
+            @foreach (var cat in codex)
+            {
+                var items = cat.Items.Where(i => !i.IsDraft && (filter.Length == 0 || i.Name.Contains(filter, StringComparison.OrdinalIgnoreCase))).ToList();
+                if (items.Count == 0) continue;
+                <details open>
+                    <summary><span class="dot cat-@cat.Category"></span> @Plural(cat.Category) <span class="muted">@items.Count</span></summary>
+                    <ul class="codex-list">
+                        @foreach (var i in items)
+                        {
+                            <li>
+                                <button class="linkish" @onclick="() => OnOpenEntry.InvokeAsync(i.Id)">@i.Name</button>
+                                @if (i.Facts > 0) { <span class="muted small">@i.Facts details</span> }
+                                @if (i.PendingDetails > 0) { <span class="count">@i.PendingDetails new</span> }
+                                @if (i.FirstChapter > 0) { <span class="muted small">· from ch @i.FirstChapter</span> }
+                            </li>
+                        }
+                    </ul>
+                </details>
+            }
+        }
+    </section>
+</div>
+
+@code {
+    [Parameter, EditorRequired] public Guid BookId { get; set; }
+    [Parameter] public EventCallback<Guid> OnOpenEntry { get; set; }
+    [Parameter] public EventCallback OnChanged { get; set; }
+    [Parameter] public EventCallback<(Guid ChapterId, Guid? BeatId)> OnOpenPassage { get; set; }
+
+    private List<StoryBibleService.Draft>? drafts;
+    private List<StoryBibleService.CodexCategory>? codex;
+    private readonly HashSet<(Guid, string)> open = [];
+    private Guid? editing;
+    private string editName = "", editCategory = "character";
+    private bool adding;
+    private string newName = "", newCategory = "character", newDescription = "";
+    private string filter = "";
+
+    protected override async Task OnInitializedAsync() => await LoadAsync();
+
+    private async Task LoadAsync()
+    {
+        drafts = await Bible.GetDraftsAsync(BookId);
+        codex = await Bible.GetCodexAsync(BookId);
+    }
+
+    private void Toggle(Guid id, string key) { if (!open.Remove((id, key))) open.Add((id, key)); }
+
+    private void BeginEdit(StoryBibleService.Draft d) { editing = d.Id; editName = d.Name; editCategory = d.Category; }
+
+    private async Task KeepAsync(StoryBibleService.Draft d)
+    {
+        var r = editing == d.Id ? await Bible.KeepAsync(d.Id, editName, editCategory) : await Bible.KeepAsync(d.Id);
+        editing = null;
+        await LoadAsync();
+        await OnChanged.InvokeAsync();
+    }
+
+    private async Task TossAsync(StoryBibleService.Draft d)
+    {
+        await Bible.TossAsync(d.Id);
+        await LoadAsync();
+        await OnChanged.InvokeAsync();
+    }
+
+    private async Task KeepAllAsync()
+    {
+        await Bible.KeepAllAsync(BookId);
+        await LoadAsync();
+        await OnChanged.InvokeAsync();
+    }
+
+    private async Task AddAsync()
+    {
+        if (string.IsNullOrWhiteSpace(newName)) return;
+        var id = await Bible.AddEntryAsync(BookId, newName, newCategory, newDescription);
+        newName = ""; newDescription = ""; adding = false;
+        await LoadAsync();
+        await OnChanged.InvokeAsync();
+        await OnOpenEntry.InvokeAsync(id);
+    }
+
+    internal static string Plural(string c) => c switch
+    {
+        "character" => "Characters", "place" => "Locations", "item" => "Items", "organization" => "Organizations", "concept" => "Concepts",
+        _ => c,
+    };
+
+    private static string Short(string s) => s.Length <= 220 ? s : s[..220] + "…";
+}

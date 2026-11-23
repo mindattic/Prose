@@ -2,7 +2,7 @@
 
 A local narrative engine for books and games: SQL Server canon for whole fictional universes, a desktop Writer, and a CLI and MCP server so Claude can draft, read and repair novels, and draft and check a game's conversations, crawls, barks and lore, against that canon.
 
-[![.NET 10](https://img.shields.io/badge/.NET-10-512BD4)](https://dotnet.microsoft.com/) [![C#](https://img.shields.io/badge/language-C%23-239120)](https://learn.microsoft.com/dotnet/csharp/) [![SQL Server](https://img.shields.io/badge/canon-SQL%20Server-CC2927)](#database) [![MCP](https://img.shields.io/badge/MCP-318%20tools-6E56CF)](docs/MCP%5FTOOLS.md) [![Platform](https://img.shields.io/badge/platform-Windows-0078D4)](#quick-start) [![Status](https://img.shields.io/badge/status-active%20development-2EA44F)](#limitations)
+[![.NET 10](https://img.shields.io/badge/.NET-10-512BD4)](https://dotnet.microsoft.com/) [![C#](https://img.shields.io/badge/language-C%23-239120)](https://learn.microsoft.com/dotnet/csharp/) [![SQL Server](https://img.shields.io/badge/canon-SQL%20Server-CC2927)](#database) [![MCP](https://img.shields.io/badge/MCP-330%20tools-6E56CF)](docs/MCP%5FTOOLS.md) [![Platform](https://img.shields.io/badge/platform-Windows-0078D4)](#quick-start) [![Status](https://img.shields.io/badge/status-active%20development-2EA44F)](#limitations)
 
 ![Covers of five books written and kept in Prose: Between the Lines, Critical Mass, Tournament, 1381 The Peasants' Revolt and M-101](docs/images/book-covers.jpg)
 
@@ -28,7 +28,11 @@ Prose.Hub is an ASP.NET Core process bound to `127.0.0.1:5900`. It is the only p
 
 ### The Writer
 
-`Writer.exe` is a WPF + WebView2 window that finds or starts the Hub and opens its `/writer` page. The editor itself (`Prose.WriterUi`) is compiled into the Hub, with a book editor, a reader view (`/read`), a canon browser (`/repo`) and the game texts view (`/texts`). `Launcher.exe` is a small picker that opens the Writer or the KDP publishing app, starting the Hub first when needed.
+`Writer.exe` is a WPF + WebView2 window that finds or starts the Hub and opens its `/writer` page. The editor itself (`Prose.WriterUi`) is compiled into the Hub, with a book editor, a reader view (`/read`), a canon browser (`/repo`), the game texts view (`/texts`) and the Story workspace (`/story`). `Launcher.exe` is a small picker that opens the Writer or the KDP publishing app, starting the Hub first when needed.
+
+### The read-along and the Story workspace
+
+RFC 0019: Prose reads a manuscript the way a reader does, chapter by chapter in order, and keeps the books, without writing a word of it. Import one Word document or a folder of them (or `.txt`/`.md`); chapter breaks are found on their own. The read-along drafts a story bible from the prose (every character, place, item, organization and concept, each detail quoting the sentence that put it there); nothing is final until the author clicks **Keep it** or **Not quite**. Each new chapter is checked against everything before it, and every disagreement (the scar that switched eyes, the siege that was three years ago and then two, the grey cloak that turned black) becomes a Continuity Inbox card that quotes both lines and waits for the author's ruling: accept new, keep existing, retcon or dismiss. The **Story Atlas** draws the world as a map you can scrub back to any chapter, **Ask** answers questions about the book with doors to the exact passages, and the **brainstorm canvas** holds free cards. The Story workspace is at `/story`; the Writer's status bar shows whether the open chapter has been read as it stands and a gold ⚠ count of open cards. Extraction is deterministic (no LLM, no tokens), and a background job reads each followed book's changed chapters once they sit still. See [RFC 0019](docs/rfc/0019-read-along.md).
 
 ### The observability dashboard
 
@@ -66,7 +70,7 @@ Every canon row belongs to exactly one universe. Books are a tree of nodes (seri
 
 ### MCP server
 
-318 tools in 56 families, surfaced to any MCP client as `mcp__prose__<name>`. Claude can read and write beats, entities, rulings and work orders, and draft and verify game texts, through the same Hub the CLI uses.
+330 tools in 57 families, surfaced to any MCP client as `mcp__prose__<name>`. Claude can read and write beats, entities, rulings and work orders, and draft and verify game texts, through the same Hub the CLI uses.
 
 ## Quick start
 
@@ -287,7 +291,7 @@ Relationships that are only true for part of a story are `Edges` rows with `Stor
 
 `prose.cmd` at the repo root runs `dotnet run --project src/Prose.Cli -- <args>`. Most commands need a universe: `--universe <slug>` or `PROSE_UNIVERSE`.
 
-The full, generated reference is [docs/CLI\_COMMANDS.md](docs/CLI%5FCOMMANDS.md): 290 commands, 30 deactivated, 10 cost-gated. Regenerate it with `prose --export-commands`, which runs without a Hub. The tables below are a guide to the commands you will use most.
+The full, generated reference is [docs/CLI\_COMMANDS.md](docs/CLI%5FCOMMANDS.md): 310 commands, 30 deactivated, 10 cost-gated. Regenerate it with `prose --export-commands`, which runs without a Hub. The tables below are a guide to the commands you will use most.
 
 ### Factory and reading
 
@@ -302,6 +306,17 @@ The full, generated reference is [docs/CLI\_COMMANDS.md](docs/CLI%5FCOMMANDS.md)
 | `--read-note add`, `list`, `resolve` | defects, questions and notes filed during a read |
 | `--set-character-fields`, `--set-entity-fields` | the world's write path, JSON Merge Patch with read-back |
 | `--verify-entity begin`, `commit` | station F1 |
+
+### The read-along
+
+| Command | What it does |
+| --- | --- |
+| `--import-manuscript --path <file\|folder> [--read] [--dry-run]` | bring a Word/text/Markdown manuscript in as volumes, chapters and beats, then read it along |
+| `--read-along --slug <book> [--status]`, `--read-along --all` | read changed chapters (or show the reading log); `--all` is the background job's sweep |
+| `--story-bible --slug <book> [--drafts\|--keep <id>\|--toss <id>\|--keep-all\|--entry <name>\|--add <name>\|--set …]` | the automatic story bible: drafts, Keep it / Not quite, entries with receipts |
+| `--continuity-inbox --slug <book> [--explain <id>\|--rule <id> --action accept-new\|keep-existing\|retcon\|dismiss]` | the Continuity Inbox |
+| `--story-atlas --slug <book> [--as-of N]`, `--ask-book "Q" --slug <book>`, `--brainstorm --slug <book>` | the atlas, ask your book, the brainstorm canvas |
+| `--read-allowance [--words N] [--questions N]` | optional reading and question limits (0 = unlimited) |
 
 ### Books and beats
 
@@ -373,7 +388,7 @@ Cost-gated commands spend model money and route through the Hub's cost gate; eve
 
 ## MCP server
 
-`Prose.Mcp` exposes 318 `[McpServerTool]` methods in 56 families. The generated reference, with parameters and descriptions, is [docs/MCP\_TOOLS.md](docs/MCP%5FTOOLS.md). Regenerate it with:
+`Prose.Mcp` exposes 330 `[McpServerTool]` methods in 57 families. The generated reference, with parameters and descriptions, is [docs/MCP\_TOOLS.md](docs/MCP%5FTOOLS.md). Regenerate it with:
 
 ```powershell
 dotnet run --project src/Prose.Mcp -- --export-tools docs/MCP_TOOLS.md
@@ -420,6 +435,8 @@ The schema reference, `docs/schema.md`, is generated by `tools/gen-schema.ps1` a
 | `MarkdownFiles` | system-versioned mirror of the repo's Markdown files |
 | `Universe`, `UniverseProfiles` | registered universes and their profiles |
 | `PlantPayoffs`, `GlossaryTerms` | plant and payoff registry; universe glossary |
+| `ChapterReadings`, `StoryBibleSuggestions`, `StoryFacts`, `ContinuityConflicts` | the read-along (RFC 0019): the reading log, story-bible drafts, facts with receipts, the Continuity Inbox |
+| `BrainstormCards`, `BookChatMessages` | the brainstorm canvas and the ask-your-book conversation |
 
 Raw T-SQL under `src/Prose.Core/Data/Sql/` is mostly historical. If a fresh database lacks rows from one of those scripts, register it in `SqlSeedService.Seeds` and run it with `prose --seed <name>`; never apply it by hand.
 
@@ -650,6 +667,7 @@ Ten invention disclosures describe systems in the engine as designed. They are p
 - [docs/CRAFT\_SCIENCES.md](docs/CRAFT%5FSCIENCES.md): the sources behind the craft doctrine (the doctrine itself, `CRAFT.md` and `DELIGHT.md`, is generated).
 - [docs/EXPORTS.md](docs/EXPORTS.md), [docs/LEDGER.md](docs/LEDGER.md) and [docs/FINDING-CODES.md](docs/FINDING-CODES.md): export retention and rendering, the story ledger, and finding codes and their suppression.
 - [docs/CLI\_COMMANDS.md](docs/CLI%5FCOMMANDS.md) and [docs/MCP\_TOOLS.md](docs/MCP%5FTOOLS.md): generated command and tool references.
+- [RFC 0019](docs/rfc/0019-read-along.md): the read-along — import, the automatic story bible, the Continuity Inbox, the Story Atlas, ask your book and the brainstorm canvas.
 - [docs/CONDUIT.md](docs/CONDUIT.md) and [RFC 0018](docs/rfc/0018-game-writing-first-class.md): how games keep their story in Prose, and game writing as a first-class mode.
 - [docs/rfc](docs/rfc): open design notes (decided ones are folded into the bible and deleted).
 - [src/README.md](src/README.md): the solution map.

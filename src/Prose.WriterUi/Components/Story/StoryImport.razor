@@ -1,0 +1,147 @@
+@* Bring the book you already have: one Word document or a whole folder of them (or text and
+   Markdown). Chapter breaks are found on their own and shown before anything is written; the words
+   go in exactly as written; then the read-along reads it first page to last. *@
+@using Prose.Core.Services.ReadAlong
+@inject ManuscriptImportService Importer
+@inject StoryUiService StoryUi
+@inject ReadAlongAllowance Allowance
+
+<div class="import">
+    <section>
+        <h2>Bring the book you already have</h2>
+        <p class="muted">Drop in one Word document, or a whole folder of them. Prose finds your chapter breaks on its own and reads in order, first page to last — the same way your readers will. Anything that exports to Word works.</p>
+
+        <label class="drop">
+            <InputFile OnChange="PickAsync" multiple accept=".docx,.txt,.md,.markdown" />
+            <span>@(files.Count == 0 ? "Choose .docx, .txt or .md files (pick every file in a folder to bring the folder)" : $"{files.Count} file(s) chosen · {files.Sum(f => f.Content.Length) / 1024:N0} KB")</span>
+        </label>
+
+        <div class="import-form">
+            <label>Title <input @bind="title" placeholder="@(preview?.Title ?? "From the file name")" /></label>
+            <label>Into
+                <select @bind="intoMode">
+                    <option value="new">a new book</option>
+                    @if (CurrentBook is not null) { <option value="current">the end of @CurrentBook.Title</option> }
+                </select>
+            </label>
+            @if (intoMode == "new" && universes is not null)
+            {
+                <label>Universe
+                    <select @bind="universeId">
+                        @foreach (var u in universes) { <option value="@u.Id">@u.Name</option> }
+                    </select>
+                </label>
+            }
+        </div>
+
+        @if (error is not null) { <div class="banner danger" role="alert">@error</div> }
+
+        @if (preview is not null)
+        {
+            <div class="import-preview">
+                <h3>@preview.Title <span class="muted">— @preview.Chapters.Count() chapters, @preview.Words.ToString("N0") words</span></h3>
+                <ol>
+                    @foreach (var v in preview.Volumes)
+                    {
+                        @if (v.Title is not null) { <li class="vol">@v.Title</li> }
+                        @foreach (var c in v.Chapters)
+                        {
+                            <li>@c.Title <span class="muted">· @c.Paragraphs.Count paragraphs · @c.Words.ToString("N0") words</span></li>
+                        }
+                    }
+                </ol>
+                <button class="primary" disabled="@importing" @onclick="ImportAsync">@(importing ? $"Importing… {done}/{total}" : "Import and read along")</button>
+                <span class="muted small">Your words never train anything, and the whole book stays yours.</span>
+            </div>
+        }
+    </section>
+
+    <section class="allowance">
+        <h2>Allowance</h2>
+        <p class="muted small">Optional limits on how much the read-along reads and how many questions your book answers. 0 means unlimited (the default — this is your machine). Reaching a limit deletes nothing; it just stops reading new chapters until you raise it.</p>
+        @if (usage is not null)
+        {
+            <p>@usage.WordsRead.ToString("N0") words read · @usage.QuestionsAsked questions asked</p>
+        }
+        <div class="import-form">
+            <label>Word limit <input type="number" min="0" step="1000" @bind="wordLimit" /></label>
+            <label>Question limit <input type="number" min="0" @bind="questionLimit" /></label>
+            <button class="mini" @onclick="SaveAllowanceAsync">Save</button>
+        </div>
+    </section>
+</div>
+
+@code {
+    [Parameter] public StoryUiService.BookItem? CurrentBook { get; set; }
+    [Parameter] public EventCallback<Guid> OnImported { get; set; }
+    [Parameter] public EventCallback OnAllowanceChanged { get; set; }
+
+    private readonly List<ManuscriptParser.InputFile> files = [];
+    private ManuscriptParser.ParsedManuscript? preview;
+    private List<StoryUiService.UniverseItem>? universes;
+    private Guid universeId;
+    private string title = "";
+    private string intoMode = "new";
+    private string? error;
+    private bool importing;
+    private int done, total;
+    private ReadAlongAllowance.Usage? usage;
+    private int wordLimit, questionLimit;
+
+    private const long MaxFileBytes = 50L * 1024 * 1024;
+
+    protected override async Task OnInitializedAsync()
+    {
+        universes = await StoryUi.ListUniversesAsync();
+        universeId = CurrentBook?.UniverseId ?? universes.FirstOrDefault()?.Id ?? Guid.Empty;
+        var limits = Allowance.Get();
+        wordLimit = limits.WordLimit;
+        questionLimit = limits.QuestionLimit;
+        usage = await Allowance.GetUsageAsync();
+    }
+
+    private async Task PickAsync(InputFileChangeEventArgs e)
+    {
+        error = null;
+        files.Clear();
+        try
+        {
+            foreach (var f in e.GetMultipleFiles(500))
+            {
+                await using var s = f.OpenReadStream(MaxFileBytes);
+                using var ms = new MemoryStream();
+                await s.CopyToAsync(ms);
+                files.Add(new ManuscriptParser.InputFile(f.Name, ms.ToArray()));
+            }
+            preview = ManuscriptImportService.Preview(files, string.IsNullOrWhiteSpace(title) ? null : title);
+            if (!preview.Chapters.Any()) { error = "No prose found in those files."; preview = null; }
+        }
+        catch (Exception ex) { error = "Could not read the files: " + ex.Message; preview = null; }
+    }
+
+    private async Task ImportAsync()
+    {
+        if (files.Count == 0) return;
+        importing = true;
+        error = null;
+        try
+        {
+            Guid? into = intoMode == "current" ? CurrentBook?.Id : null;
+            StoryUi.Pin(intoMode == "current" && CurrentBook is not null ? CurrentBook.UniverseId : universeId);
+            var progress = new Progress<(int Done, int Total, string Chapter)>(p => { done = p.Done; total = p.Total; _ = InvokeAsync(StateHasChanged); });
+            var result = await Importer.ImportAsync(files, string.IsNullOrWhiteSpace(title) ? null : title, into, progress);
+            files.Clear();
+            preview = null;
+            await OnImported.InvokeAsync(result.BookId);
+        }
+        catch (Exception ex) { error = "Import failed: " + ex.Message; }
+        finally { importing = false; }
+    }
+
+    private async Task SaveAllowanceAsync()
+    {
+        Allowance.Set(new ReadAlongAllowance.Limits(wordLimit, questionLimit));
+        usage = await Allowance.GetUsageAsync();
+        await OnAllowanceChanged.InvokeAsync();
+    }
+}

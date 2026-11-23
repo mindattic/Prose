@@ -1,0 +1,120 @@
+@* The Continuity Inbox: every place the story disagrees with itself, both lines quoted, each quote
+   a door onto its passage. The author rules; the read-along never does. *@
+@using Prose.Core.Services.ReadAlong
+@inject ContinuityInboxService Inbox
+
+<div class="continuity">
+    <div class="section-head">
+        <h2>Continuity</h2>
+        <span class="muted">@(cards?.Count(c => c.Status == "open") ?? 0) thing@((cards?.Count(c => c.Status == "open") ?? 0) == 1 ? "" : "s") worth a look.</span>
+        <div class="spacer"></div>
+        <label class="small"><input type="checkbox" checked="@showAll" @onchange="ToggleAllAsync" /> Show ruled cards</label>
+    </div>
+
+    @if (cards is null)
+    {
+        <p class="muted">Loading…</p>
+    }
+    else if (cards.Count == 0)
+    {
+        <div class="story-empty"><p>Your story agrees with itself — as far as the read-along has read. It checks every chapter against everything before it once the chapter is written.</p></div>
+    }
+    else
+    {
+        @foreach (var group in cards.GroupBy(c => c.EntityName))
+        {
+            <h3 class="entity-group">@group.Key.ToUpperInvariant()</h3>
+            @foreach (var c in group)
+            {
+                <article class="conflict-card @(c.Status != "open" ? "ruled" : "")" @key="c.Id">
+                    <header>
+                        <span class="kind @c.Kind">@(c.Kind == "updated" ? "Updated" : "Contradiction")</span>
+                        <span class="muted">@c.Confidence%</span>
+                        <span class="muted small">· @c.Category · @StoryFactExtractor.Label(c.Attribute)</span>
+                        @if (c.Status != "open") { <span class="tag">@c.Status</span> }
+                    </header>
+                    <section class="side existing">
+                        <div class="label">EXISTING</div>
+                        <div class="value">@c.ExistingValue</div>
+                        <button class="door" @onclick="() => Door(c.Existing)">
+                            <span class="q" aria-hidden="true">❝</span>
+                            <span class="door-text"><b>@c.Existing.ChapterTitle</b><i>“@c.Existing.Quote”</i></span>
+                            <span aria-hidden="true">›</span>
+                        </button>
+                    </section>
+                    <section class="side proposed">
+                        <div class="label">PROPOSED</div>
+                        <div class="value">@c.ProposedValue</div>
+                        <button class="door" @onclick="() => Door(c.Proposed)">
+                            <span class="q" aria-hidden="true">❝</span>
+                            <span class="door-text"><b>@c.Proposed.ChapterTitle</b><i>“@c.Proposed.Quote”</i></span>
+                            <span aria-hidden="true">›</span>
+                        </button>
+                    </section>
+                    @if (c.Status == "open")
+                    {
+                        <div class="actions">
+                            <button class="accept" @onclick='() => RuleAsync(c, "accept-new")'>✓ Accept new</button>
+                            <button class="keep-existing" @onclick='() => RuleAsync(c, "keep-existing")'>⛨ Keep existing</button>
+                            <button class="retcon" @onclick='() => RuleAsync(c, "retcon")'>↺ Retcon</button>
+                            <button class="dismiss" @onclick='() => RuleAsync(c, "dismiss")'>✕ Dismiss</button>
+                            <button class="explain" @onclick="() => ExplainAsync(c)">✦ Explain</button>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="actions"><button class="mini" @onclick="() => ReopenAsync(c)">Re-open</button></div>
+                    }
+                    @if (explanations.TryGetValue(c.Id, out var why))
+                    {
+                        <p class="explanation">@why</p>
+                    }
+                    @if (c.Proposed.ChapterNodeId is { } pc)
+                    {
+                        <button class="linkish small" @onclick="() => Door(c.Proposed)">↗ @c.Proposed.ChapterTitle</button>
+                    }
+                </article>
+            }
+        }
+    }
+</div>
+
+@code {
+    [Parameter, EditorRequired] public Guid BookId { get; set; }
+    [Parameter] public EventCallback OnChanged { get; set; }
+    [Parameter] public EventCallback<Guid> OnOpenEntry { get; set; }
+    [Parameter] public EventCallback<(Guid ChapterId, Guid? BeatId)> OnOpenPassage { get; set; }
+
+    private List<ContinuityInboxService.Card>? cards;
+    private bool showAll;
+    private readonly Dictionary<Guid, string> explanations = [];
+
+    protected override async Task OnInitializedAsync() => await LoadAsync();
+
+    private async Task LoadAsync() => cards = await Inbox.ListAsync(BookId, showAll ? "all" : "open");
+
+    private async Task ToggleAllAsync() { showAll = !showAll; await LoadAsync(); }
+
+    private async Task RuleAsync(ContinuityInboxService.Card c, string action)
+    {
+        await Inbox.ResolveAsync(c.Id, action);
+        await LoadAsync();
+        await OnChanged.InvokeAsync();
+    }
+
+    private async Task ReopenAsync(ContinuityInboxService.Card c)
+    {
+        await Inbox.ReopenAsync(c.Id);
+        await LoadAsync();
+        await OnChanged.InvokeAsync();
+    }
+
+    private async Task ExplainAsync(ContinuityInboxService.Card c)
+    {
+        if (explanations.Remove(c.Id)) return;
+        explanations[c.Id] = await Inbox.ExplainAsync(c.Id) ?? "";
+    }
+
+    private Task Door(ContinuityInboxService.Door d) =>
+        d.ChapterNodeId is { } ch ? OnOpenPassage.InvokeAsync((ch, d.BeatId)) : Task.CompletedTask;
+}

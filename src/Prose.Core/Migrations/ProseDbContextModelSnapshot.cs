@@ -1840,6 +1840,41 @@ namespace Prose.Core.Migrations
                     b.ToTable("BookChapterOrder");
                 });
 
+            modelBuilder.Entity("Prose.Core.Data.Entities.BookChatMessage", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("BookNodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DoorsJson")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("nvarchar(16)");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("UniverseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BookNodeId", "CreatedAt");
+
+                    b.ToTable("BookChatMessages", (string)null);
+                });
+
             modelBuilder.Entity("Prose.Core.Data.Entities.BookMotif", b =>
                 {
                     b.Property<Guid>("Id")
@@ -2088,6 +2123,57 @@ namespace Prose.Core.Migrations
                     b.HasIndex("NodeId", "ReadAt");
 
                     b.ToTable("BookSequentialReads");
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.BrainstormCard", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Body")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("BookNodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Color")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("EntityId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("LinkedCardId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<Guid>("UniverseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("X")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Y")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BookNodeId");
+
+                    b.ToTable("BrainstormCards", (string)null);
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CalibrationInjection", b =>
@@ -2490,6 +2576,67 @@ namespace Prose.Core.Migrations
                     b.HasIndex("ChapterId", "Position");
 
                     b.ToTable("ChapterCharacters");
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.ChapterReading", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("BookNodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("ChapterIndex")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("ChapterNodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ChapterTitle")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
+
+                    b.Property<string>("ContentHash")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<int>("ContradictionCount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DetailCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Error")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MetJson")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ReadAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<Guid>("UniverseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Words")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ChapterNodeId");
+
+                    b.HasIndex("BookNodeId", "ReadAt");
+
+                    b.ToTable("ChapterReadings", (string)null);
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Character", b =>
@@ -4147,6 +4294,116 @@ namespace Prose.Core.Migrations
                         .IsUnique();
 
                     b.ToTable("ContinuityCompatibilityJudgments");
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.ContinuityConflict", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Attribute")
+                        .IsRequired()
+                        .HasMaxLength(80)
+                        .HasColumnType("nvarchar(80)");
+
+                    b.Property<Guid>("BookNodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.Property<int>("Confidence")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("EntityId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("EntityName")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<Guid?>("ExistingBeatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("ExistingChapterNodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ExistingChapterTitle")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
+
+                    b.Property<Guid?>("ExistingFactId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ExistingQuote")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ExistingValue")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
+
+                    b.Property<string>("Fingerprint")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
+
+                    b.Property<string>("Kind")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("Note")
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<Guid?>("ProposedBeatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("ProposedChapterNodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ProposedChapterTitle")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
+
+                    b.Property<string>("ProposedQuote")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ProposedValue")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
+
+                    b.Property<DateTime?>("ResolvedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<Guid>("UniverseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BookNodeId", "Fingerprint");
+
+                    b.HasIndex("BookNodeId", "Status");
+
+                    b.ToTable("ContinuityConflicts", (string)null);
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ContinuityExtractionCursor", b =>
@@ -11430,6 +11687,154 @@ namespace Prose.Core.Migrations
                     b.ToTable("SpellingWords", (string)null);
                 });
 
+            modelBuilder.Entity("Prose.Core.Data.Entities.StoryBibleSuggestion", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("AttributesJson")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("BeatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("BookNodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.Property<Guid?>("ChapterNodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DecidedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("EntityId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Fingerprint")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
+
+                    b.Property<string>("Kind")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("Quote")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<Guid>("UniverseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BookNodeId", "Fingerprint");
+
+                    b.HasIndex("BookNodeId", "Status");
+
+                    b.ToTable("StoryBibleSuggestions", (string)null);
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.StoryFact", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Attribute")
+                        .IsRequired()
+                        .HasMaxLength(80)
+                        .HasColumnType("nvarchar(80)");
+
+                    b.Property<Guid?>("BeatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("BookNodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.Property<int>("ChapterIndex")
+                        .HasColumnType("int");
+
+                    b.Property<Guid?>("ChapterNodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("Confirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("EntityId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Quote")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Source")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("SubjectKey")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("SubjectName")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<Guid?>("SuggestionId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("SupersededAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("UniverseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Value")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BookNodeId", "SubjectKey");
+
+                    b.HasIndex("EntityId", "Attribute");
+
+                    b.ToTable("StoryFacts", (string)null);
+                });
+
             modelBuilder.Entity("Prose.Core.Data.Entities.StructuralReading", b =>
                 {
                     b.Property<Guid>("BeatId")
@@ -13511,6 +13916,15 @@ namespace Prose.Core.Migrations
                     b.Navigation("Chapter");
                 });
 
+            modelBuilder.Entity("Prose.Core.Data.Entities.BookChatMessage", b =>
+                {
+                    b.HasOne("Prose.Core.Data.Entities.Node", null)
+                        .WithMany()
+                        .HasForeignKey("BookNodeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("Prose.Core.Data.Entities.BookMotif", b =>
                 {
                     b.HasOne("Prose.Core.Data.Entities.Node", "Node")
@@ -13549,6 +13963,15 @@ namespace Prose.Core.Migrations
                     b.Navigation("Book");
 
                     b.Navigation("Character");
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.BrainstormCard", b =>
+                {
+                    b.HasOne("Prose.Core.Data.Entities.Node", null)
+                        .WithMany()
+                        .HasForeignKey("BookNodeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CanonDocument", b =>
@@ -13598,6 +14021,15 @@ namespace Prose.Core.Migrations
                     b.Navigation("Chapter");
 
                     b.Navigation("Character");
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.ChapterReading", b =>
+                {
+                    b.HasOne("Prose.Core.Data.Entities.Node", null)
+                        .WithMany()
+                        .HasForeignKey("BookNodeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Character", b =>
@@ -13982,6 +14414,15 @@ namespace Prose.Core.Migrations
                         .IsRequired();
 
                     b.Navigation("ConsumerGood");
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.ContinuityConflict", b =>
+                {
+                    b.HasOne("Prose.Core.Data.Entities.Node", null)
+                        .WithMany()
+                        .HasForeignKey("BookNodeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Contract", b =>
@@ -15513,6 +15954,29 @@ namespace Prose.Core.Migrations
                         .IsRequired();
 
                     b.Navigation("Entity");
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.StoryBibleSuggestion", b =>
+                {
+                    b.HasOne("Prose.Core.Data.Entities.Node", null)
+                        .WithMany()
+                        .HasForeignKey("BookNodeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.StoryFact", b =>
+                {
+                    b.HasOne("Prose.Core.Data.Entities.Node", null)
+                        .WithMany()
+                        .HasForeignKey("BookNodeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Prose.Core.Data.Entities.Entity", null)
+                        .WithMany()
+                        .HasForeignKey("EntityId")
+                        .OnDelete(DeleteBehavior.NoAction);
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Subsidiary", b =>

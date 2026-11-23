@@ -44,6 +44,9 @@ public static class ServiceCollectionExtensions
         // RFC 0018 (PRS-T922): the game texts view at /texts. Explicit about the universe, so it needs no pin; Scoped
         // for one lifetime across this library.
         services.AddScoped<TextsUiService>();
+        // RFC 0019: the Story workspace at /story (manuscript tree, import, Word export). The read-along
+        // services it shows are Core singletons; this is the per-circuit plumbing around them.
+        services.AddScoped<StoryUiService>();
         return services;
     }
 }
