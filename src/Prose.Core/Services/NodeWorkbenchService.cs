@@ -1188,7 +1188,7 @@ public class NodeWorkbenchService
 
     /// <summary>Title → URL slug stem (lowercase, non-alphanumerics to hyphens).
     /// Callers append a short id suffix for global uniqueness.</summary>
-    private static string Slugify(string s)
+    internal static string Slugify(string s)
     {
         if (string.IsNullOrWhiteSpace(s)) return "node";
         var ascii = Regex.Replace(s.ToLowerInvariant(), "[^a-z0-9]+", "-").Trim('-');
@@ -1528,6 +1528,64 @@ public class NodeWorkbenchService
         await db.SaveChangesAsync(ct);
         log.LogInformation("Node {Slug} canon = {Canon}", node.Slug, canon);
         return true;
+    }
+
+    /// <summary>
+    /// Create chapters (with their beats) under <paramref name="parentId"/> in ONE transaction — the
+    /// manuscript import's path for a whole volume (RFC 0019, RA-T4.3.1.4). Same node shape as
+    /// <see cref="CreateNodeAsync"/> (slug "title-xxxxxxxx", parent's universe, 100-step SortKeys after
+    /// the existing children) and the same beat shape as <see cref="AppendBeatsAsync"/>.
+    /// </summary>
+    public static async Task<List<(Guid ChapterId, int Beats)>> CreateChaptersWithBeatsAsync(
+        ProseDbContext db, Guid parentId, IReadOnlyList<(string Title, IReadOnlyList<string> Paragraphs)> chapters,
+        Func<string, string>? kindOf = null, CancellationToken ct = default)
+    {
+        await using var tx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable, ct);
+        try
+        {
+            var universeId = await db.Nodes.IgnoreQueryFilters().Where(n => n.Id == parentId).Select(n => n.UniverseId).FirstAsync(ct);
+            var sort = await db.Nodes.IgnoreQueryFilters().Where(n => n.ParentNodeId == parentId).Select(n => (double?)n.SortKey).MaxAsync(ct) ?? 0;
+            var number = await NextBeatNumberAsync(db, ct);
+            var result = new List<(Guid, int)>(chapters.Count);
+            var now = DateTime.UtcNow;
+            foreach (var (title, paragraphs) in chapters)
+            {
+                var node = NodeFactory.Create("chapter");
+                node.Id = Guid.CreateVersion7();
+                node.Slug = $"{Slugify(title)}-{node.Id.ToString("N")[..8]}";
+                node.Title = string.IsNullOrWhiteSpace(title) ? "Chapter" : title.Trim();
+                node.ParentNodeId = parentId;
+                node.UniverseId = universeId;
+                node.SortKey = sort += 100.0;
+                node.CreatedAt = now;
+                node.UpdatedAt = now;
+                db.Nodes.Add(node);
+                double sk = 0;
+                var count = 0;
+                foreach (var raw in paragraphs)
+                {
+                    var text = TextSanitizerService.Sanitize((raw ?? "").Trim());
+                    if (text.Length == 0) continue;
+                    var beat = new Beat
+                    {
+                        Id = Guid.CreateVersion7(), Number = number++, Text = text, TextHash = ComputeTextHash(text),
+                        Kind = kindOf?.Invoke(text) ?? "prose", SceneType = "scene", IsChapterStart = count == 0,
+                    };
+                    db.Beats.Add(beat);
+                    db.BeatNodes.Add(new BeatNode { NodeId = node.Id, BeatId = beat.Id, SortKey = sk += 100.0 });
+                    count++;
+                }
+                result.Add((node.Id, count));
+            }
+            await db.SaveChangesAsync(ct);
+            await tx.CommitAsync(ct);
+            return result;
+        }
+        catch
+        {
+            await tx.RollbackAsync(CancellationToken.None);
+            throw;
+        }
     }
 
     /// <summary>Append many beats to the end of <paramref name="nodeId"/> in one transaction — the

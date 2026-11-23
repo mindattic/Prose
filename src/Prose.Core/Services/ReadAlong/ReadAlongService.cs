@@ -139,11 +139,19 @@ public sealed class ReadAlongService(
         var chapters = await GetChaptersAsync(bookId, ct);
         var results = new List<ChapterReadResult>();
         var recentlyMet = new List<string>();
+        // RA-T4.3.1.2: the known-entity index (every canon entity of the universe, plus drafts) is loaded
+        // once for the whole book and grown with each chapter's new drafts, not reloaded per chapter.
+        Known known;
+        await using (var db0 = await dbFactory.CreateDbContextAsync(ct))
+        {
+            var universeId = await db0.Nodes.IgnoreQueryFilters().Where(n => n.Id == bookId).Select(n => n.UniverseId).FirstAsync(ct);
+            known = await LoadKnownAsync(db0, bookId, universeId, ct);
+        }
         for (var i = 0; i < chapters.Count; i++)
         {
             ct.ThrowIfCancellationRequested();
             progress?.Report(new ReadProgress(i, chapters.Count, chapters[i].Title, results.LastOrDefault(), recentlyMet.TakeLast(6).ToList()));
-            var r = await ReadChapterCoreAsync(bookId, chapters[i], force, ct);
+            var r = await ReadChapterCoreAsync(bookId, chapters[i], force, ct, known);
             results.Add(r);
             recentlyMet.AddRange(r.Met);
             if (r.Reason == "allowance") break;
@@ -174,7 +182,7 @@ public sealed class ReadAlongService(
         return chapters.Where(c => c.Paragraphs.Count > 0 && !(hashes.TryGetValue(c.ChapterNodeId, out var h) && h.Contains(c.ContentHash))).ToList();
     }
 
-    private async Task<ChapterReadResult> ReadChapterCoreAsync(Guid bookId, BookChapter chapter, bool force, CancellationToken ct)
+    private async Task<ChapterReadResult> ReadChapterCoreAsync(Guid bookId, BookChapter chapter, bool force, CancellationToken ct, Known? preloaded = null)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var universeId = await db.Nodes.IgnoreQueryFilters().Where(n => n.Id == bookId).Select(n => n.UniverseId).FirstAsync(ct);
@@ -190,7 +198,7 @@ public sealed class ReadAlongService(
             return new ChapterReadResult(chapter.ChapterNodeId, chapter.Index, chapter.Title, true, "allowance", [], 0, 0, chapter.Words);
 
         // ── What the bible already holds ─────────────────────────────────────────────────
-        var known = await LoadKnownAsync(db, bookId, universeId, ct);
+        var known = preloaded ?? await LoadKnownAsync(db, bookId, universeId, ct);
         var tossed = (await db.StoryBibleSuggestions.IgnoreQueryFilters()
                 .Where(s => s.BookNodeId == bookId && s.Status == ReadAlongStatus.Tossed && s.Kind == "entry")
                 .Select(s => s.Name).ToListAsync(ct))
@@ -256,6 +264,7 @@ public sealed class ReadAlongService(
             db.StoryBibleSuggestions.Add(s);
             entryByKey[key] = s;
             met.Add(name);
+            known.Entries.Add(new KnownEntry(null, name, category, []));
             return s;
         }
 
@@ -516,13 +525,46 @@ public sealed class ReadAlongService(
 
     /// <summary>Whether the read-along has read this chapter as it stands right now — the editor's
     /// "remembered this chapter" tick.</summary>
+    /// <para>RA-T4.3.1.3: hashes only this chapter (its own subtree, minus any nested chapters, which are
+    /// their own units), so the Writer can ask on every beat it opens without walking the whole book.</para>
     public async Task<bool> IsRememberedAsync(Guid bookId, Guid chapterNodeId, CancellationToken ct = default)
     {
-        var chapter = (await GetChaptersAsync(bookId, ct)).FirstOrDefault(c => c.ChapterNodeId == chapterNodeId);
-        if (chapter is null) return false;
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        return await db.ChapterReadings.IgnoreQueryFilters().AnyAsync(r =>
-            r.ChapterNodeId == chapterNodeId && r.ContentHash == chapter.ContentHash && r.Status == ReadAlongStatus.Done, ct);
+        var reading = await db.ChapterReadings.AsNoTracking().IgnoreQueryFilters()
+            .Where(r => r.ChapterNodeId == chapterNodeId && r.BookNodeId == bookId && r.Status == ReadAlongStatus.Done)
+            .Select(r => r.ContentHash).ToListAsync(ct);
+        if (reading.Count == 0) return false;
+        var hash = chapterNodeId == bookId
+            ? (await GetChaptersAsync(bookId, ct)).FirstOrDefault(c => c.ChapterNodeId == chapterNodeId)?.ContentHash
+            : await ChapterHashAsync(db, chapterNodeId, ct);
+        return hash is not null && reading.Contains(hash);
+    }
+
+    /// <summary>The content hash of one chapter unit, computed from its own subtree: the same value
+    /// <see cref="GetChaptersAsync"/> gives it.</summary>
+    private static async Task<string?> ChapterHashAsync(ProseDbContext db, Guid chapterNodeId, CancellationToken ct)
+    {
+        var acc = new List<NodeWorkbenchService.OrderedBeat>();
+        await NodeWorkbenchService.WalkAsync(db, chapterNodeId, acc, [], false, ct);
+        var leafIds = acc.Select(a => a.NodeId).Where(id => id != chapterNodeId).Distinct().ToList();
+        // A beat under a deeper chapter belongs to that chapter's unit, not this one.
+        var nodes = new Dictionary<Guid, Node>();
+        var frontier = leafIds;
+        while (frontier.Count > 0)
+        {
+            var batch = await db.Nodes.AsNoTracking().IgnoreQueryFilters().Where(n => frontier.Contains(n.Id)).ToListAsync(ct);
+            foreach (var n in batch) nodes[n.Id] = n;
+            frontier = batch.Where(n => n.ParentNodeId is { } p && p != chapterNodeId && !nodes.ContainsKey(p))
+                            .Select(n => n.ParentNodeId!.Value).Distinct().ToList();
+        }
+        bool Mine(Guid leaf)
+        {
+            for (var cur = leaf; cur != chapterNodeId && nodes.TryGetValue(cur, out var n); cur = n.ParentNodeId ?? chapterNodeId)
+                if (n is ChapterNode) return false;
+            return true;
+        }
+        var beats = acc.Where(a => a.NodeId == chapterNodeId || Mine(a.NodeId)).ToList();
+        return beats.Count == 0 ? null : HashOf(beats.Select(b => b.Beat.TextHash ?? Beat.ComputeHash(b.Beat.Text)));
     }
 
     public static ReadingDetail Detail(string json)

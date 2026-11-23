@@ -63,15 +63,19 @@ public sealed class ManuscriptImportService(
             if (volume.Title is not null)
                 (parent, _) = await workbench.CreateNodeAsync(volume.Title, kind: "chapter", parentNodeId: bookId, ct: ct);
 
-            foreach (var ch in volume.Chapters)
+            // RA-T4.3.1.4: a volume's chapters and beats in one transaction, in batches so progress moves.
+            foreach (var batch in volume.Chapters.Chunk(25))
             {
                 ct.ThrowIfCancellationRequested();
-                progress?.Report((done, total, ch.Title));
-                var (chapterId, _) = await workbench.CreateNodeAsync(ch.Title, kind: "chapter", parentNodeId: parent, ct: ct);
-                var beats = await workbench.AppendBeatsAsync(chapterId, ch.Paragraphs, ct: ct,
-                    kindOf: t => t == ManuscriptParser.SceneBreakText ? ManuscriptParser.SceneBreakKind : "prose");
-                chapters.Add(new ImportedChapter(chapterId, ch.Title, volume.Title, beats.Count, ch.Words));
-                done++;
+                progress?.Report((done, total, batch[0].Title));
+                List<(Guid ChapterId, int Beats)> made;
+                await using (var db = await dbFactory.CreateDbContextAsync(ct))
+                    made = await NodeWorkbenchService.CreateChaptersWithBeatsAsync(db, parent,
+                        batch.Select(c => (c.Title, c.Paragraphs)).ToList(),
+                        t => t == ManuscriptParser.SceneBreakText ? ManuscriptParser.SceneBreakKind : "prose", ct);
+                for (var k = 0; k < batch.Length; k++)
+                    chapters.Add(new ImportedChapter(made[k].ChapterId, batch[k].Title, volume.Title, made[k].Beats, batch[k].Words));
+                done += batch.Length;
             }
         }
         progress?.Report((done, total, ""));
