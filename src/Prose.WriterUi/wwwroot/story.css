@@ -299,3 +299,7 @@ blockquote .door { display: inline; width: auto; padding: 0 .3rem; border: 0; ba
 .drop { display: flex; flex-direction: column; align-items: center; gap: .5rem; }
 .drop label { display: flex; align-items: center; gap: .5rem; cursor: pointer; }
 .drop.over { border-color: var(--story-green); background: rgba(47, 208, 143, .06); }
+/* RA-F3.4: codex editing in the entry panel. */
+.entry-rename, .entry-group, .entry-cat { background: var(--color-bg-4); color: var(--color-fg); border: 1px solid var(--color-border-input); border-radius: var(--radius); padding: .2rem .4rem; }
+.entry-group { width: 100%; box-sizing: border-box; }
+.entry-head h2 { cursor: text; }

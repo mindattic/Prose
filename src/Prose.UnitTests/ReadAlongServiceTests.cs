@@ -244,6 +244,51 @@ public class ReadAlongServiceTests
     }
 
     [Test]
+    public async Task Rename_keeps_receipts_and_makes_the_old_name_an_alias()
+    {
+        var book = await BookAsync(("One", ["Wren crossed the flats. She was nineteen."]));
+        await readAlong.ReadBookAsync(book);
+        var id = (await bible.KeepAsync((await bible.GetDraftsAsync(book, "entry")).Single(d => d.Name == "Wren").Id)).EntityId!.Value;
+        Assert.That((await bible.RenameAsync(book, id, "Wren Ashby")).Ok);
+        var e = await bible.GetEntryAsync(book, id);
+        Assert.That(e!.Name, Is.EqualTo("Wren Ashby"));
+        Assert.That(e.Aliases, Does.Contain("Wren"));
+        Assert.That(e.Details.Single(d => d.Attribute == "age").Quote, Is.EqualTo("She was nineteen."));
+    }
+
+    [Test]
+    public async Task Recategorize_an_untagged_entry_made_from_this_book()
+    {
+        var book = await BookAsync(("One", ["Wren crossed the Undertow. Wren crossed the Undertow again."]));
+        await readAlong.ReadBookAsync(book);
+        var d = (await bible.GetDraftsAsync(book, "entry")).Single(x => x.Name == "the Undertow");
+        var id = (await bible.KeepAsync(d.Id)).EntityId!.Value;
+        Assert.That((await bible.RecategorizeAsync(book, id, "concept")).Ok);
+        Assert.That((await bible.GetEntryAsync(book, id))!.Category, Is.EqualTo("concept"));
+        Assert.That((await bible.RecategorizeAsync(book, id, "nonsense")).Ok, Is.False);
+    }
+
+    [Test]
+    public async Task Merge_moves_receipts_aliases_and_cards_to_the_keeper()
+    {
+        var book = await BookAsync(("One", ["Hollis watched the tide. Hollis's eyes were grey. Hollis said nothing."]),
+                                   ("Two", ["Tobin Marsh came home. Tobin Marsh was thirty. Tobin Marsh's eyes were green."]));
+        await readAlong.ReadBookAsync(book);
+        await bible.KeepAllAsync(book);
+        var codex = (await bible.GetCodexAsync(book)).SelectMany(c => c.Items).ToList();
+        var keep = codex.Single(i => i.Name == "Tobin Marsh").Id;
+        var drop = codex.Single(i => i.Name == "Hollis").Id;
+
+        Assert.That((await bible.MergeAsync(book, keep, drop)).Ok);
+        var e = await bible.GetEntryAsync(book, keep);
+        Assert.That(e!.Aliases, Does.Contain("Hollis"));
+        Assert.That(e.Details.Single(d => d.Attribute == "eyes").Value, Is.EqualTo("green"), "the later chapter's value stands");
+        Assert.That(e.Timeline.Any(t => t.Attribute == "eyes" && t.Value == "grey" && t.SupersededAt != null), "the other is history");
+        Assert.That(e.Details.Any(d => d.Attribute == "age"));
+        Assert.That((await bible.GetCodexAsync(book)).SelectMany(c => c.Items).Any(i => i.Id == drop), Is.False);
+    }
+
+    [Test]
     public async Task Tossed_drafts_stay_tossed()
     {
         var book = await BookAsync(("One", ["Brannoc watched the moor. Brannoc said nothing."]));

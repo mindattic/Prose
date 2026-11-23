@@ -103,6 +103,9 @@ public sealed class StoryBibleService(IDbContextFactory<ProseDbContext> dbFactor
                      .Where(r => r.BookNodeId == bookId).Select(r => r.MetJson).ToListAsync(ct))
             foreach (var m in ReadAlongService.Detail(json).Mentions)
                 if (m.EntityId is { } id) ids.Add(id);
+        // Entries merged away from this book's codex (RA-T3.4.2.1).
+        ids.ExceptWith(await db.StoryBibleSuggestions.AsNoTracking().IgnoreQueryFilters()
+            .Where(x => x.BookNodeId == bookId && x.Kind == "merged" && x.EntityId != null).Select(x => x.EntityId!.Value).ToListAsync(ct));
         return ids;
     }
 
@@ -422,6 +425,152 @@ public sealed class StoryBibleService(IDbContextFactory<ProseDbContext> dbFactor
         }
         await db.SaveChangesAsync(ct);
         return true;
+    }
+
+    // ── Codex editing (RA-F3.4) ──────────────────────────────────────────────────────────────
+
+    public sealed record EditResult(bool Ok, string? Error);
+
+    /// <summary>Rename an entry. The record's name changes (and the typed row's, when it has one); the old
+    /// name becomes a confirmed alias, so the read-along still knows it on the page. The prose is never
+    /// touched: renaming the entry is bookkeeping, rewriting the book is the author's.</summary>
+    public async Task<EditResult> RenameAsync(Guid bookId, Guid entityId, string newName, CancellationToken ct = default)
+    {
+        newName = (newName ?? "").Trim();
+        if (newName.Length == 0) return new(false, "a name is required");
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var e = await db.Entities.IgnoreQueryFilters().FirstOrDefaultAsync(x => x.Id == entityId, ct);
+        if (e is null) return new(false, "entry not found");
+        if (e.Name == newName) return new(true, null);
+        var oldName = e.Name;
+        e.Name = newName;
+        e.ModifiedAt = DateTime.UtcNow;
+        switch (e.EntityType)
+        {
+            case "character": if (await db.Characters.FindAsync([entityId], ct) is { } c) c.Name = newName; break;
+            case "place": if (await db.Places.FindAsync([entityId], ct) is { } pl) pl.Name = newName; break;
+            case "faction": if (await db.Factions.FindAsync([entityId], ct) is { } f) f.Name = newName; break;
+            case "equipment": if (await db.EquipmentItems.FindAsync([entityId], ct) is { } eq) eq.Name = newName; break;
+        }
+        var newKey = Key(newName);
+        foreach (var f in await db.StoryFacts.IgnoreQueryFilters().Where(f => f.EntityId == entityId).ToListAsync(ct))
+        {
+            f.SubjectName = ReadAlongService.Trim(newName, 200);
+            f.SubjectKey = ReadAlongService.Trim(newKey, 200);
+        }
+        foreach (var c in await db.ContinuityConflicts.IgnoreQueryFilters().Where(c => c.EntityId == entityId).ToListAsync(ct))
+            c.EntityName = ReadAlongService.Trim(newName, 200);
+        db.StoryFacts.Add(new StoryFact
+        {
+            UniverseId = e.UniverseId, BookNodeId = bookId, EntityId = entityId, SubjectKey = newKey, SubjectName = newName,
+            Attribute = "alias", Value = oldName, Quote = "", Source = "author", Confirmed = true, Category = "character",
+        });
+        await db.SaveChangesAsync(ct);
+        return new(true, null);
+    }
+
+    /// <summary>Move an entry to another category. Built-in engine types (character, place, faction,
+    /// equipment) cannot be retyped once prose tags or edges reference them (the engine's retype service
+    /// refuses them), so this changes type directly only for an entry this book's read-along made that
+    /// nothing references yet; otherwise it says why not.</summary>
+    public async Task<EditResult> RecategorizeAsync(Guid bookId, Guid entityId, string category, CancellationToken ct = default)
+    {
+        if (!Categories.Contains(category)) return new(false, $"category must be one of: {string.Join(", ", Categories)}");
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var e = await db.Entities.IgnoreQueryFilters().FirstOrDefaultAsync(x => x.Id == entityId, ct);
+        if (e is null) return new(false, "entry not found");
+        var newType = ReadAlongService.EntityTypeOf(category);
+        if (e.EntityType == newType) return new(true, null);
+        if (e.OriginNodeId != bookId)
+            return new(false, $"{e.Name} came from the universe's canon, not this book; change its type in the canon browser (/repo).");
+        if (await db.BeatEntityMentions.AnyAsync(m => m.EntityId == entityId, ct)
+            || await db.Edges.IgnoreQueryFilters().AnyAsync(x => x.SourceId == entityId || x.TargetId == entityId, ct))
+            return new(false, $"{e.Name} is already tagged in prose or linked by edges; change its type in the canon browser (/repo).");
+        if (await db.Entities.IgnoreQueryFilters().AnyAsync(x => x.Id != entityId && x.UniverseId == e.UniverseId && x.EntityType == newType && x.Slug == e.Slug, ct))
+            return new(false, $"a {newType} with slug '{e.Slug}' already exists; merge into it instead.");
+
+        switch (e.EntityType)
+        {
+            case "character": if (await db.Characters.FindAsync([entityId], ct) is { } c) db.Characters.Remove(c); break;
+            case "place": if (await db.Places.FindAsync([entityId], ct) is { } pl) db.Places.Remove(pl); break;
+            case "faction": if (await db.Factions.FindAsync([entityId], ct) is { } f) db.Factions.Remove(f); break;
+            case "equipment": if (await db.EquipmentItems.FindAsync([entityId], ct) is { } eq) db.EquipmentItems.Remove(eq); break;
+        }
+        e.EntityType = newType;
+        e.ModifiedAt = DateTime.UtcNow;
+        EntityStubFactory.AddSubtypeRow(db, newType, entityId, e.Name);
+        await db.SaveChangesAsync(ct);
+        return new(true, null);
+    }
+
+    /// <summary>Merge one entry into another (RA-T3.4.2.1): the dropped entry's details, aliases, cards,
+    /// drafts and brainstorm ties move to the keeper; exact duplicates go, and where both held a
+    /// single-valued detail the most recent chapter's stands and the other is kept as superseded history.
+    /// The dropped name becomes an alias. An entry made from this book is archived; one from the
+    /// universe's canon is only detached from this book.</summary>
+    public async Task<EditResult> MergeAsync(Guid bookId, Guid keepId, Guid dropId, CancellationToken ct = default)
+    {
+        if (keepId == dropId) return new(false, "an entry cannot be merged into itself");
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var keep = await db.Entities.IgnoreQueryFilters().FirstOrDefaultAsync(x => x.Id == keepId, ct);
+        var drop = await db.Entities.IgnoreQueryFilters().FirstOrDefaultAsync(x => x.Id == dropId, ct);
+        if (keep is null || drop is null) return new(false, "entry not found");
+
+        var keepKey = Key(keep.Name);
+        var keptFacts = await db.StoryFacts.IgnoreQueryFilters().Where(f => f.EntityId == keepId && f.SupersededAt == null).ToListAsync(ct);
+        var moving = await db.StoryFacts.IgnoreQueryFilters().Where(f => f.EntityId == dropId && f.BookNodeId == bookId).ToListAsync(ct);
+        var now = DateTime.UtcNow;
+        foreach (var f in moving)
+        {
+            if (keptFacts.Any(k => k.Attribute == f.Attribute && string.Equals(k.Value, f.Value, StringComparison.OrdinalIgnoreCase)))
+            {
+                db.StoryFacts.Remove(f);
+                continue;
+            }
+            f.EntityId = keepId;
+            f.SubjectName = ReadAlongService.Trim(keep.Name, 200);
+            f.SubjectKey = ReadAlongService.Trim(keepKey, 200);
+            if (f.SupersededAt is null && IsSingleValued(f.Attribute)
+                && keptFacts.FirstOrDefault(k => k.Attribute == f.Attribute) is { } rival)
+            {
+                if (f.ChapterIndex >= rival.ChapterIndex) rival.SupersededAt = now;
+                else f.SupersededAt = now;
+            }
+        }
+        db.StoryFacts.Add(new StoryFact
+        {
+            UniverseId = keep.UniverseId, BookNodeId = bookId, EntityId = keepId, SubjectKey = keepKey, SubjectName = keep.Name,
+            Attribute = "alias", Value = drop.Name, Quote = "", Source = "author", Confirmed = true, Category = "character",
+        });
+        foreach (var c in await db.ContinuityConflicts.IgnoreQueryFilters().Where(c => c.BookNodeId == bookId && c.EntityId == dropId).ToListAsync(ct))
+        {
+            c.EntityId = keepId;
+            c.EntityName = ReadAlongService.Trim(keep.Name, 200);
+        }
+        foreach (var sgg in await db.StoryBibleSuggestions.IgnoreQueryFilters().Where(x => x.BookNodeId == bookId && x.EntityId == dropId).ToListAsync(ct))
+        {
+            sgg.EntityId = keepId;
+            sgg.Name = ReadAlongService.Trim(keep.Name, 200);
+        }
+        foreach (var card in await db.BrainstormCards.IgnoreQueryFilters().Where(x => x.BookNodeId == bookId && x.EntityId == dropId).ToListAsync(ct))
+            card.EntityId = keepId;
+        if (drop.OriginNodeId == bookId)
+        {
+            drop.Status = "archived";
+            drop.ModifiedAt = now;
+        }
+        else
+        {
+            // Canon from the universe is not archived for one book's sake: this book's codex stops listing it.
+            db.StoryBibleSuggestions.Add(new StoryBibleSuggestion
+            {
+                UniverseId = keep.UniverseId, BookNodeId = bookId, Kind = "merged", Category = ReadAlongService.CategoryOf(drop.EntityType),
+                Name = ReadAlongService.Trim(drop.Name, 200), EntityId = dropId, Quote = "", Fingerprint = $"merged|{dropId:N}",
+                Status = ReadAlongStatus.Tossed, DecidedAt = now,
+            });
+        }
+        await db.SaveChangesAsync(ct);
+        return new(true, null);
     }
 
     private static async Task<Dictionary<Guid, string>> TitlesAsync(ProseDbContext db, IEnumerable<Guid> ids, CancellationToken ct)

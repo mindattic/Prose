@@ -13,8 +13,19 @@
     {
         <header class="entry-head">
             <span class="dot cat-@entry.Category" aria-hidden="true"></span>
-            <h2>@entry.Name</h2>
-            <span class="muted small">@entry.Category · @entry.Mentions mention@(entry.Mentions == 1 ? "" : "s")</span>
+            @if (renaming)
+            {
+                <input class="entry-rename" @bind="newName" @bind:event="oninput" @onkeydown="RenameKeyAsync" aria-label="Entry name" />
+                <button class="mini" @onclick="SaveRenameAsync">Save</button>
+            }
+            else
+            {
+                <h2 @ondblclick="BeginRename" title="Double-click to rename">@entry.Name</h2>
+            }
+            <select class="entry-cat" value="@entry.Category" @onchange="RecategorizeAsync" aria-label="Category">
+                @foreach (var c in StoryFactExtractor.Categories) { <option value="@c">@c</option> }
+            </select>
+            <span class="muted small">@entry.Mentions mention@(entry.Mentions == 1 ? "" : "s")</span>
             <div class="spacer"></div>
             <button class="mini" @onclick="OnClose" aria-label="Close the entry">✕</button>
         </header>
@@ -29,7 +40,8 @@
                 <dt>Aliases</dt>
                 <dd>@if (entry.Aliases.Count == 0) { <span class="muted">—</span> } else { @foreach (var a in entry.Aliases) { <span class="chip">@a</span> } }</dd>
                 <dt>Group</dt>
-                <dd>@(entry.Group ?? "—")</dd>
+                <dd><input class="entry-group" value="@(entry.Group ?? "")" placeholder="e.g. Antagonists, Main Party"
+                           @onchange="SaveGroupAsync" aria-label="Group" /></dd>
                 <dt>Description</dt>
                 <dd>
                     @if (editingDescription)
@@ -52,7 +64,7 @@
                 <p class="muted">No details kept yet.</p>
             }
             <ul class="entry-details">
-                @foreach (var d in entry.Details)
+                @foreach (var d in showAllDetails ? entry.Details : entry.Details.Take(6))
                 {
                     <li>
                         <span class="attr">@StoryFactExtractor.Label(d.Attribute)</span>
@@ -76,6 +88,10 @@
                     </li>
                 }
             </ul>
+            @if (entry.Details.Count > 6)
+            {
+                <button class="linkish small" @onclick="() => showAllDetails = !showAllDetails">@(showAllDetails ? "Show fewer" : $"Show all ({entry.Details.Count - 6} more)")</button>
+            }
             <form class="entry-add" @onsubmit="AddDetailAsync" @onsubmit:preventDefault="true">
                 <input @bind="newAttr" placeholder="attribute (age, eyes, role…)" aria-label="Attribute" />
                 <input @bind="newValue" placeholder="value" aria-label="Value" />
@@ -110,7 +126,21 @@
                 }
             }
 
+            @if (editError is not null) { <p class="banner danger small" role="alert">@editError</p> }
             <footer class="entry-foot">
+                @if (merging)
+                {
+                    <select @bind="mergeInto" aria-label="Merge into">
+                        <option value="">Merge into…</option>
+                        @foreach (var o in mergeOptions) { <option value="@o.Id">@o.Name</option> }
+                    </select>
+                    <button class="mini" disabled="@(mergeInto.Length == 0)" @onclick="MergeAsync">Merge</button>
+                    <button class="mini" @onclick="() => merging = false">Cancel</button>
+                }
+                else
+                {
+                    <button class="mini" @onclick="BeginMergeAsync" title="Fold this entry into another (its details, aliases and cards move there)">Merge into…</button>
+                }
                 @if (confirmDelete)
                 {
                     <span>Remove @entry.Name from this book's bible?</span>
@@ -161,6 +191,64 @@
     private string description = "", newAttr = "", newValue = "";
 
     protected override async Task OnParametersSetAsync() => entry = await Bible.GetEntryAsync(BookId, EntityId);
+
+    private bool renaming, merging, showAllDetails;
+    private string newName = "", mergeInto = "";
+    private string? editError;
+    private List<StoryBibleService.CodexItem> mergeOptions = [];
+
+    private void BeginRename() { renaming = true; newName = entry?.Name ?? ""; }
+
+    private async Task RenameKeyAsync(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter") await SaveRenameAsync();
+        else if (e.Key == "Escape") renaming = false;
+    }
+
+    private async Task SaveRenameAsync()
+    {
+        var r = await Bible.RenameAsync(BookId, EntityId, newName);
+        editError = r.Error;
+        renaming = !r.Ok;
+        await ReloadAsync();
+    }
+
+    private async Task RecategorizeAsync(ChangeEventArgs e)
+    {
+        var r = await Bible.RecategorizeAsync(BookId, EntityId, e.Value?.ToString() ?? "");
+        editError = r.Error;
+        await ReloadAsync();
+    }
+
+    private async Task SaveGroupAsync(ChangeEventArgs e)
+    {
+        var v = e.Value?.ToString()?.Trim() ?? "";
+        if (v.Length > 0) await Bible.SetDetailAsync(BookId, EntityId, "group", v);
+        await ReloadAsync();
+    }
+
+    private async Task BeginMergeAsync()
+    {
+        var codex = await Bible.GetCodexAsync(BookId);
+        mergeOptions = codex.SelectMany(c => c.Items)
+            .Where(i => !i.IsDraft && i.Id != EntityId && i.Category == entry?.Category)
+            .OrderBy(i => i.Name, StringComparer.OrdinalIgnoreCase).ToList();
+        mergeInto = "";
+        merging = true;
+    }
+
+    private async Task MergeAsync()
+    {
+        if (!Guid.TryParse(mergeInto, out var keep)) return;
+        var r = await Bible.MergeAsync(BookId, keep, EntityId);
+        editError = r.Error;
+        merging = false;
+        if (r.Ok)
+        {
+            await OnChanged.InvokeAsync();
+            await OnOpenEntry.InvokeAsync(keep);
+        }
+    }
 
     private void BeginEditDescription() { editingDescription = true; description = entry?.Description ?? ""; }
 

@@ -55,6 +55,15 @@ public static class EntityStubFactory
 
         // Add a matching subtype row when one is known. Each subtype has its own PK = Id; we just
         // need Id + Name — the rest is backfilled by the canonical importer or a UI edit.
+        AddSubtypeRow(db, entityType, id, name);
+        await db.SaveChangesAsync(ct);
+        return id;
+    }
+
+    /// <summary>The minimal typed row a stub of <paramref name="entityType"/> needs (Id + Name). No-op for
+    /// types without a strict subtype table. Public for the read-along's recategorize (RA-T3.4.1.1).</summary>
+    public static void AddSubtypeRow(ProseDbContext db, string entityType, Guid id, string name)
+    {
         switch (entityType)
         {
             case "character":      db.Characters     .Add(new Character     { Id = id, Name = name }); break;
@@ -70,8 +79,6 @@ public static class EntityStubFactory
             case "ammunition":     db.Ammunitions    .Add(new Ammunition    { Id = id, Name = name }); break;
             // Other types either lack a strict subtype table or use generic Entity rows directly.
         }
-        await db.SaveChangesAsync(ct);
-        return id;
     }
 
     /// <summary>An unnamed referent's stub: <c>"(unnamed) …"</c>, described only by the verbatim
