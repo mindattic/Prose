@@ -16,7 +16,19 @@
             <button class="mini bs-new bs-@c" @onclick="() => AddAsync(c)">+ @c</button>
         }
     </div>
+    <div class="bs-tools">
+        <span class="muted small">Show:</span>
+        @foreach (var c in BrainstormService.Colors)
+        {
+            <button class="chip bs-filter bs-@c @(hiddenColors.Contains(c) ? "off" : "")" aria-pressed="@(!hiddenColors.Contains(c))" @onclick="() => ToggleColor(c)">@c</button>
+        }
+        <div class="spacer"></div>
+        <button class="mini" @onclick='() => JS.InvokeVoidAsync("proseStory.boardZoom", board, 1.2)' aria-label="Zoom in">+</button>
+        <button class="mini" @onclick='() => JS.InvokeVoidAsync("proseStory.boardZoom", board, 1 / 1.2)' aria-label="Zoom out">−</button>
+        <button class="mini" @onclick='() => JS.InvokeVoidAsync("proseStory.boardZoom", board, 0)' aria-label="Reset zoom">⤢</button>
+    </div>
     <div class="bs-board" @ref="board">
+      <div class="bs-plane">
         <svg class="bs-links" aria-hidden="true">
             @if (cards is not null)
             {
@@ -30,7 +42,7 @@
         </svg>
         @if (cards is not null)
         {
-            @foreach (var c in cards)
+            @foreach (var c in cards.Where(c => !hiddenColors.Contains(c.Color)))
             {
                 <div class="bs-card bs-@c.Color @(linking == c.Id ? "linking" : "")" data-id="@c.Id" style="left:@(c.X)px; top:@(c.Y)px" @key="c.Id">
                     <div class="bs-handle" title="Drag">⠿ <span>@c.Color</span>
@@ -39,13 +51,27 @@
                     </div>
                     <input class="bs-title" value="@c.Title" @onchange="e => SaveAsync(c, title: e.Value?.ToString())" aria-label="Card title" />
                     <textarea class="bs-body" rows="3" @onchange="e => SaveAsync(c, body: e.Value?.ToString())" aria-label="Card notes">@c.Body</textarea>
-                    @if (c.EntityId is { } eid && entityNames.TryGetValue(eid, out var en))
-                    {
-                        <button class="chip" @onclick="() => OnOpenEntry.InvokeAsync(eid)">@en</button>
-                    }
+                    <div class="bs-entity">
+                        @if (c.EntityId is { } eid && entityNames.TryGetValue(eid, out var en))
+                        {
+                            <button class="chip" @onclick="() => OnOpenEntry.InvokeAsync(eid)">@en</button>
+                            <button class="ghost small" @onclick="() => TieAsync(c, null)" aria-label="Untie from @en">✕</button>
+                        }
+                        else
+                        {
+                            <select class="bs-tie" @onchange="e => TieAsync(c, e.Value?.ToString())" aria-label="Tie to a codex entry">
+                                <option value="">Tie to an entry…</option>
+                                @foreach (var (id, name) in entityNames.OrderBy(x => x.Value, StringComparer.OrdinalIgnoreCase))
+                                {
+                                    <option value="@id">@name</option>
+                                }
+                            </select>
+                        }
+                    </div>
                 </div>
             }
         }
+      </div>
     </div>
 </div>
 
@@ -57,6 +83,15 @@
     private List<BrainstormService.Card>? cards;
     private Dictionary<Guid, string> entityNames = [];
     private Guid? linking;
+    private readonly HashSet<string> hiddenColors = [];
+    private void ToggleColor(string c) { if (!hiddenColors.Remove(c)) hiddenColors.Add(c); }
+
+    private async Task TieAsync(BrainstormService.Card c, string? entity)
+    {
+        if (Guid.TryParse(entity, out var id)) await Brainstorm.UpdateAsync(c.Id, entityId: id);
+        else await Brainstorm.UpdateAsync(c.Id, clearEntity: true);
+        cards = await Brainstorm.ListAsync(BookId);
+    }
     private DotNetObjectReference<StoryBrainstorm>? self;
 
     protected override async Task OnInitializedAsync()

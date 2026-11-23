@@ -310,3 +310,11 @@ blockquote .door { display: inline; width: auto; padding: 0 .3rem; border: 0; ba
 /* RA-F3.6 */
 .actions .ask-card { grid-column: 1 / -1; }
 .msg .to-board { margin-top: .3rem; color: var(--color-fg-muted); }
+/* RA-T3.7.1: board world, filters, entity tie. */
+.bs-board { touch-action: none; cursor: grab; }
+.bs-plane { position: absolute; inset: 0; transform-origin: 0 0; }
+.bs-tools { display: flex; align-items: center; gap: .3rem; flex-wrap: wrap; margin-bottom: .4rem; }
+.bs-filter.off { opacity: .35; text-decoration: line-through; }
+.bs-entity { display: flex; align-items: center; gap: .2rem; margin-top: .2rem; }
+.bs-tie { background: transparent; color: var(--color-fg-muted); border: 1px dashed var(--color-border-strong); border-radius: var(--radius); font-size: .75rem; max-width: 100%; }
+.bs-card { cursor: auto; }

@@ -247,27 +247,62 @@
         // ── Brainstorm board ──────────────────────────────────────────────────────────────
         boardInit(board, dotnet) {
             if (board._proseBoard) { board._proseBoard.dotnet = dotnet; return; }
-            const st = { dotnet, card: null };
+            // RA-T3.7.1.2: the board is a world (.bs-plane) under a pan/zoom transform. Cards drag by their
+            // handle (mouse, pen or touch — pointer events), the empty board pans, the wheel or a pinch zooms.
+            const st = { dotnet, card: null, pan: null, z: 1, tx: 0, ty: 0, touches: new Map(), pinch: null };
             board._proseBoard = st;
+            const world = () => board.querySelector('.bs-plane');
+            const apply = () => { const w = world(); if (w) w.style.transform = `translate(${st.tx}px, ${st.ty}px) scale(${st.z})`; };
+            st.apply = apply;
             board.addEventListener('pointerdown', e => {
+                st.touches.set(e.pointerId, { x: e.clientX, y: e.clientY });
+                if (st.touches.size === 2) {
+                    const [a, b] = [...st.touches.values()];
+                    st.pinch = { d: Math.hypot(a.x - b.x, a.y - b.y), z: st.z }; st.card = null; st.pan = null; return;
+                }
                 const handle = e.target.closest('.bs-handle');
-                if (!handle) return;
-                const card = handle.closest('.bs-card');
-                st.card = card; st.sx = e.clientX; st.sy = e.clientY;
-                st.ox = parseFloat(card.style.left) || 0; st.oy = parseFloat(card.style.top) || 0;
-                card.setPointerCapture(e.pointerId); card.classList.add('dragging');
-                e.preventDefault();
+                if (handle && !e.target.closest('button')) {
+                    const card = handle.closest('.bs-card');
+                    st.card = card; st.sx = e.clientX; st.sy = e.clientY;
+                    st.ox = parseFloat(card.style.left) || 0; st.oy = parseFloat(card.style.top) || 0;
+                    try { card.setPointerCapture(e.pointerId); } catch (_) { } card.classList.add('dragging');
+                    e.preventDefault(); return;
+                }
+                if (!e.target.closest('.bs-card')) { st.pan = { x: e.clientX, y: e.clientY, tx: st.tx, ty: st.ty }; try { board.setPointerCapture(e.pointerId); } catch (_) { } }
             });
             board.addEventListener('pointermove', e => {
-                if (!st.card) return;
-                st.card.style.left = Math.max(0, st.ox + e.clientX - st.sx) + 'px';
-                st.card.style.top = Math.max(0, st.oy + e.clientY - st.sy) + 'px';
+                if (st.touches.has(e.pointerId)) st.touches.set(e.pointerId, { x: e.clientX, y: e.clientY });
+                if (st.pinch && st.touches.size === 2) {
+                    const [a, b] = [...st.touches.values()];
+                    st.z = Math.min(3, Math.max(0.3, st.pinch.z * Math.hypot(a.x - b.x, a.y - b.y) / st.pinch.d)); apply(); return;
+                }
+                if (st.card) {
+                    st.card.style.left = Math.max(0, st.ox + (e.clientX - st.sx) / st.z) + 'px';
+                    st.card.style.top = Math.max(0, st.oy + (e.clientY - st.sy) / st.z) + 'px';
+                } else if (st.pan) {
+                    st.tx = st.pan.tx + e.clientX - st.pan.x; st.ty = st.pan.ty + e.clientY - st.pan.y; apply();
+                }
             });
-            board.addEventListener('pointerup', () => {
+            const up = e => {
+                st.touches.delete(e.pointerId);
+                if (st.touches.size < 2) st.pinch = null;
+                st.pan = null;
                 if (!st.card) return;
                 const c = st.card; st.card = null; c.classList.remove('dragging');
                 st.dotnet.invokeMethodAsync('MoveCard', c.dataset.id, parseFloat(c.style.left) || 0, parseFloat(c.style.top) || 0);
-            });
+            };
+            board.addEventListener('pointerup', up);
+            board.addEventListener('pointercancel', up);
+            board.addEventListener('wheel', e => {
+                if (!e.ctrlKey && !e.metaKey) return; // plain wheel scrolls; Ctrl+wheel zooms
+                e.preventDefault();
+                st.z = Math.min(3, Math.max(0.3, st.z * (e.deltaY < 0 ? 1.1 : 1 / 1.1))); apply();
+            }, { passive: false });
+        },
+        boardZoom(board, factor) {
+            const st = board && board._proseBoard; if (!st) return;
+            if (factor === 0) { st.z = 1; st.tx = 0; st.ty = 0; } else st.z = Math.min(3, Math.max(0.3, st.z * factor));
+            st.apply();
         },
 
         // Import drop zone (RA-T2.4.2.4): files or whole folders dropped anywhere on the zone are read

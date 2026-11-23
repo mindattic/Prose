@@ -37,7 +37,8 @@ public sealed class BrainstormService(IDbContextFactory<ProseDbContext> dbFactor
     }
 
     public async Task<bool> UpdateAsync(Guid id, string? title = null, string? body = null, double? x = null, double? y = null,
-        string? color = null, Guid? linkedCardId = null, bool clearLink = false, CancellationToken ct = default)
+        string? color = null, Guid? linkedCardId = null, bool clearLink = false, CancellationToken ct = default,
+        Guid? entityId = null, bool clearEntity = false)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var c = await db.BrainstormCards.IgnoreQueryFilters().FirstOrDefaultAsync(x0 => x0.Id == id, ct);
@@ -47,6 +48,8 @@ public sealed class BrainstormService(IDbContextFactory<ProseDbContext> dbFactor
         if (x is { } nx) c.X = nx;
         if (y is { } ny) c.Y = ny;
         if (color is not null && Colors.Contains(color)) c.Color = color;
+        if (clearEntity) c.EntityId = null;
+        else if (entityId is { } eid) c.EntityId = eid;
         if (clearLink) c.LinkedCardId = null;
         else if (linkedCardId is { } l && l != id) c.LinkedCardId = l;
         c.UpdatedAt = DateTime.UtcNow;
