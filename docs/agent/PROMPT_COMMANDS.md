@@ -14,6 +14,7 @@ CLI/MCP twins (RFC 0015); a host may bind any UI syntax to those operations.
 | `/show <tuple>` | `cli --show` | Resolve and display an entity or book |
 | `/dcm` | `mcp doc_context_status` | Inspect active Dynamic Context Memory |
 | `/logic-sweep` | `cli --logic-sweep` | Run the continuity audit and convergence workflow |
+| `/story <book>` | `cli --read-along --slug <book> --status` then `cli --continuity-inbox --slug <book>` (MCP `read_along_status`, `continuity_inbox`) | The read-along at a glance: reading log, drafts waiting, open continuity cards. Read-only; ruling is the author's (RFC 0019) |
 | `/commit` | `git review-and-commit` | Review, stage named files, create a new commit, verify status, and push when authorized |
 
 A client integration should translate its slash command into one runner invocation or MCP call.

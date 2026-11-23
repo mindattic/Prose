@@ -82,6 +82,24 @@ A Audio for the book. `prose --factory status --node <book>` shows the matrix.
   The read gate marks a beat unread when its text changes, when it moves, or when an entity it
   mentions changes. Re-read the flagged beats before pressing.
 
+## The read-along (RFC 0019)
+
+The read-along reads a book and keeps its story bible, Continuity Inbox, atlas and brainstorm board. It never
+writes prose, and neither does an agent working with it.
+
+- **Read freely.** `read_along_status`, `story_bible` (codex, entries with receipts, drafts), `continuity_inbox`,
+  `story_atlas`, `brainstorm`, `read_along_job_status`, and `ask_book` for questions about the manuscript.
+- **Reading a book** (`read_along`, `import_manuscript` with `dryRun` first) is allowed when the task calls for it;
+  it is deterministic and costs no tokens. An import that writes needs an explicit universe.
+- **The author decides; the agent does not.** `decide_story_bible_draft` (Keep it / Not quite),
+  `rule_continuity_card` (accept new / keep existing / retcon / dismiss), `set_story_bible_detail`, merging or
+  recategorizing entries, and `set_read_along_follow` are run only when the author has said which, in this
+  session. Report what the inbox and drafts show; do not clear them.
+- **Prose fixes go through the line.** A continuity card points at prose to fix: archive, then splice with a dry
+  run, then re-read (the laws above). The read-along closes the card as *fixed* when it re-reads the changed line.
+- **The read gate stands.** The read-along's reading is bookkeeping, not a read receipt, and never counts toward
+  law 9.
+
 ## Transport-neutral operation envelope
 
 Every adapter should preserve this envelope, whether it is MCP, CLI, or HTTP:
