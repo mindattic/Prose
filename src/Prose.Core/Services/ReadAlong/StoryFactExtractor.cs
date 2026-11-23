@@ -51,7 +51,12 @@ public static class StoryFactExtractor
     /// <summary>A stated relationship between two subjects.</summary>
     public sealed record Relation(string FromName, string FromKey, string Type, string ToName, string ToKey, string Quote, Guid BeatId, string Pattern = "");
 
-    public sealed record Result(IReadOnlyList<NameHit> Names, IReadOnlyList<FactHit> Facts, IReadOnlyList<Relation> Relations);
+    /// <param name="Unnamed">Descriptions of unnamed people met in the chapter (key, display, quote, beat);
+    /// the read-along drafts one once it has recurred three times in the book (RA-T3.2.1.3).</param>
+    public sealed record Result(IReadOnlyList<NameHit> Names, IReadOnlyList<FactHit> Facts, IReadOnlyList<Relation> Relations,
+        IReadOnlyList<UnnamedHit>? Unnamed = null);
+
+    public sealed record UnnamedHit(string Key, string Display, string Quote, Guid BeatId);
 
     // ── Vocabulary ──────────────────────────────────────────────────────────────────────────
 
@@ -68,12 +73,12 @@ public static class StoryFactExtractor
     private static readonly HashSet<string> SingleValued = new(StringComparer.OrdinalIgnoreCase)
     {
         "age", "eyes", "left eye", "right eye", "hair", "scar", "born", "status", "years-ago",
-        "direction", "companion", "role",
+        "direction", "companion", "role", "height", "build", "handed",
     };
 
     private static readonly HashSet<string> LowercaseAttributes = new(StringComparer.OrdinalIgnoreCase)
     {
-        "eyes", "hair", "scar", "direction", "companion", "carries", "role",
+        "eyes", "hair", "scar", "direction", "companion", "carries", "role", "height", "build", "handed",
     };
 
     /// <summary>One value at a time: the fixed set, every world-rule duration ("time to refill"),
@@ -81,6 +86,7 @@ public static class StoryFactExtractor
     public static bool IsSingleValued(string attribute) =>
         SingleValued.Contains(attribute)
         || attribute.StartsWith("time to ", StringComparison.Ordinal)
+        || attribute.StartsWith("direction from ", StringComparison.Ordinal)
         || ItemAttribute.IsMatch(attribute);
 
     private static readonly Regex ItemAttribute = new("^" + Items + "$", RegexOptions.Compiled | RegexOptions.CultureInvariant);
@@ -146,6 +152,10 @@ public static class StoryFactExtractor
         _ => null,
     };
 
+    /// <summary>The engine's prefix for an unnamed referent's stub (EntityStubFactory.UnnamedPrefix): the
+    /// leading "(" keeps the mention scanner from tagging a lowercase phrase across the corpus.</summary>
+    public const string EntityStubFactoryPrefix = "(unnamed) ";
+
     private static readonly HashSet<string> FemaleTitles = new(StringComparer.OrdinalIgnoreCase)
         { "Lady", "Queen", "Dame", "Mistress", "Mother", "Sister", "Princess", "Duchess", "Countess", "Baroness", "Mrs", "Ms", "Miss", "Empress", "Aunt" };
     private static readonly HashSet<string> MaleTitles = new(StringComparer.OrdinalIgnoreCase)
@@ -191,7 +201,7 @@ public static class StoryFactExtractor
     public static IReadOnlyList<string> PatternIds =>
         FactPatterns.Select(p => p.Id)
             .Concat(["item.look", "item.carries", "rule.duration", "kin.1", "kin.2", "feeling.1", "member.1", "lives.1",
-                     "evidence.speaks", "alias.fold", "name.known", "name.mid-sentence", "name.repeated", "name.titled",
+                     "geo.1", "name.unnamed", "evidence.speaks", "alias.fold", "name.known", "name.mid-sentence", "name.repeated", "name.titled",
                      "name.suffix", "name.signal"])
             .ToList();
 
@@ -225,6 +235,12 @@ public static class StoryFactExtractor
         new("years-ago", R(@"\b(?<s>the\s+[A-Z][\p{L}'’-]+(?:\s+(?:of\s+)?[A-Z][\p{L}'’-]+)*)\s*,?\s+(?:was\s+|had\s+been\s+|happened\s+|ended\s+|fell\s+)?(?<v>" + NumWords + @")\s+years\s+(?:ago|before|earlier)"), "timeline", 80, CatConcept),
 
         new("direction", R(@"\b(?<s>(?:[Tt]he\s+)" + PlaceNouns + @"|[A-Z][\p{L}'’-]+(?:\s+[A-Z][\p{L}'’-]+)*)\s+(?:faced|faces|opened|opens|looked|looks)\s+(?:to\s+the\s+|toward\s+the\s+|towards\s+the\s+)?(?<v>north|south|east|west|northeast|northwest|southeast|southwest)\b"), "place", 85, CatPlace),
+
+        // RA-T3.2.1.1: physical details.
+        new("height", R(@"\b" + Subj + @"\s+(?:stood|was)\s+(?<v>" + NumWords + @"\s+(?:feet|foot)(?:\s+(?:and\s+)?" + NumWords + @"(?:\s+inches?)?)?)(?:\s+tall)?\b"), "character", 80, CatCharacter),
+        new("height", R(@"\b" + Subj + @"\s+was\s+(?:very\s+|unusually\s+)?(?<v>tall|short|towering|tiny)\s*(?=[.,;!?""”]|$|\s+(?:and|but|for)\b)"), "character", 65, CatCharacter),
+        new("build", R(@"\b" + Subj + @"\s+was\s+(?:a\s+)?(?:very\s+)?(?<v>lean|broad|slight|stocky|heavyset|wiry|gaunt|burly|thickset|slender)\b"), "character", 70, CatCharacter),
+        new("handed", R(@"\b" + Subj + @"\s+was\s+(?<v>left|right)-handed\b"), "character", 85, CatCharacter),
     ]);
 
     // Possessed items: "her grey cloak", "Elena's staff". Attribute = the item; value = its look.
@@ -233,6 +249,12 @@ public static class StoryFactExtractor
     private static readonly Regex ItemOwned = R(Poss + @"\s+(?<item>" + Items + @")\b");
 
     // World rules: "the staff needs three months to refill".
+    // RA-T3.2.1.2: "Merrow Point lay three miles north of the Salt Road".
+    private static readonly Regex Geography = R(@"\b(?<s>(?:[Tt]he\s+)?" + NameCore + @")\s+(?:lay|lies|stood|stands|sat|sits|was|is)\s+(?:(?:a\s+day['’]s\s+ride|a\s+mile|" + NumWords + @"\s+(?:miles|leagues|days?['’]?\s+ride))\s+)?(?:to\s+the\s+)?(?<v>north|south|east|west|northeast|northwest|southeast|southwest)\s+of\s+(?<o>(?:the\s+)?" + NameCore + ")");
+
+    // RA-T3.2.1.3: recurring descriptions of someone the prose never names ("the girl behind the curtain").
+    private static readonly Regex Unnamed = R(@"\b[Tt]he\s+(?<d>(?:[a-z]+\s+){0,2}(?:girl|boy|man|woman|stranger|child|rider|scout|soldier|priest|priestess|archivist|visitor|figure|bearer|watchman|guard|hunter|widow|beggar|courier)(?:\s+(?:behind|with|in|from|at|by|on|under)\s+(?:the\s+|a\s+|her\s+|his\s+)?[a-z]+)?)\b");
+
     private static readonly Regex Duration = R(@"\b(?:(?<s>[Tt]he\s+" + Items + @"|[Hh]er\s+" + Items + @"|[Hh]is\s+" + Items + @"|" + NameCore + @"))\s+(?:needs|needed|takes|took|requires|required|would\s+need|would\s+take)\s+(?<v>" + NumWords + @"\s+(?:hours?|days?|weeks?|months?|years?|nights?))\s+to\s+(?<verb>[a-z]+)");
 
     private static readonly Regex KinA = R(Poss + @"\s+(?<rel>" + Kin + @"),?\s+(?<o>" + NameCore + ")");
@@ -240,7 +262,7 @@ public static class StoryFactExtractor
     private static readonly Regex Feel = R(@"\b" + Subj + @"\s+(?:had\s+(?:always\s+)?)?(?<rel>" + Feelings + @")\s+(?<o>(?:the\s+)?" + NameCore + ")");
     private static readonly Regex Member = R(@"\b(?<s>" + NameCore + @"),?\s+(?:a|an|the)\s+(?:member|agent|knight|soldier|servant|captain|officer|envoy|spy|priest|priestess|scholar|archivist)\s+of\s+(?<o>(?:the\s+)?" + NameCore + ")");
     private static readonly Regex Lives = R(@"\b" + Subj + @"\s+(?:lived|lives|ruled|rules|dwelt|served)\s+(?:in|at|over)\s+(?<o>(?:the\s+)?" + NameCore + ")");
-    private static readonly Regex Speaks = R(@"(?:\b(?:said|asked|replied|whispered|shouted|answered|muttered|called)\s+(?<s>" + NameCore + @")\b|\b(?<s2>" + NameCore + @")\s+(?:said|asked|replied|whispered|shouted|answered|muttered|nodded|smiled|laughed)\b)");
+    private static readonly Regex Speaks = R(@"(?:\b(?:said|asked|replied|whispered|shouted|answered|muttered|called)\s+(?<s>(?:the\s+)?" + NameCore + @")\b|\b(?<s2>" + NameCore + @")\s+(?:said|asked|replied|whispered|shouted|answered|muttered|nodded|smiled|laughed)\b)");
 
     private static readonly Regex CharacterSignal = R(@"^\s*(?:[a-z]{2,}ed\b|said|asked|replied|whispered|shouted|answered|muttered|nodded|smiled|laughed|frowned|sighed|turned|looked|crossed|walked|ran|stood|sat|watched|waited|stepped|moved|leaned|paused|knelt|arrived|talked|spoke|returned|knew|thought|felt|wanted|reached|lowered|raised|shook|grinned|wept|cried|swore|drew|held|took|gave|came|went|had|was)\b");
     private static readonly Regex PlacePreposition = R(@"\b(?:in|at|into|from|toward|towards|through|across|to|near|inside|outside|beyond|reached|entered|left)\s+(?:the\s+)?$");
@@ -309,7 +331,7 @@ public static class StoryFactExtractor
                 if (words.Length == 0) continue;
                 raw = string.Join(' ', words);
 
-                var display = hasThe && !Titles.Contains(words[0]) ? "the " + raw : raw;
+                var display = hasThe && (!Titles.Contains(words[0]) || words.Length == 1) ? "the " + raw : raw;
                 var key = Key(display);
                 if (key.Length < 2) continue;
 
@@ -321,7 +343,9 @@ public static class StoryFactExtractor
 
                 if (words.Length == 1)
                 {
-                    if (Stop.Contains(words[0]) || Titles.Contains(words[0])) continue;
+                    // A lone title is a name only as "the Chancellor" (a role used as a name), never bare.
+                    if (Stop.Contains(words[0]) && !Titles.Contains(words[0])) continue;
+                    if (Titles.Contains(words[0]) && !hasThe) continue;
                     if (lowerWords.Contains(words[0].ToLowerInvariant())) continue; // "Frost lay…" / "frost" elsewhere
                 }
                 if (tossedKeys.Contains(key)) continue;
@@ -389,6 +413,7 @@ public static class StoryFactExtractor
         (string Name, string Key, Guid? Id, string Category)? lastGroup = null;
         foreach (var k in known)
             if (k.Gender is { } kg) gender.TryAdd(Key(k.Name), kg);
+        var unnamed = new List<UnnamedHit>();
         var lastParagraph = -1;
         var paragraphNamedCharacter = false;
 
@@ -497,6 +522,23 @@ public static class StoryFactExtractor
                 var type = m.Value.Contains(" of ", StringComparison.Ordinal) && !Regex.IsMatch(m.Value, @"\b(?:lived|lives|ruled|rules|dwelt|served)\b") ? "member of" : "lives in";
                 relations.Add(new Relation(a.Name, a.Key, type, b.Name, b.Key, text, beatId, type == "member of" ? "member.1" : "lives.1"));
             }
+            foreach (Match m in On("geo.1", Geography, text))
+            {
+                var a = Resolve(m.Groups["s"].Value, false) ?? NewThing(m.Groups["s"].Value, CatPlace, tossedKeys);
+                var b = Resolve(m.Groups["o"].Value, false) ?? NewThing(m.Groups["o"].Value, CatPlace, tossedKeys);
+                if (a is null || b is null || a.Key == b.Key) continue;
+                var dir = m.Groups["v"].Value.ToLowerInvariant();
+                relations.Add(new Relation(a.Name, a.Key, dir + " of", b.Name, b.Key, text, beatId, "geo.1"));
+                Add(a, "direction from " + b.Name, dir, 80, "place", false, CatPlace, pid: "geo.1");
+            }
+            if (!Off("name.unnamed"))
+                foreach (Match m in Unnamed.Matches(text))
+                {
+                    var d = Regex.Replace(m.Groups["d"].Value.ToLowerInvariant(), @"\s+", " ");
+                    if (d.Split(' ').Length < 2) continue; // "the girl" alone is too thin to be one person
+                    var display = EntityStubFactoryPrefix + d;
+                    if (!tossedKeys.Contains(Key(display))) unnamed.Add(new UnnamedHit(Key(display), display, text, beatId));
+                }
             foreach (Match m in Speaks.Matches(text))
             {
                 var raw = m.Groups["s"].Success ? m.Groups["s"].Value : m.Groups["s2"].Value;
@@ -536,6 +578,17 @@ public static class StoryFactExtractor
                 paragraphNamedCharacter = true;
                 if (lastCharacter is { } prev && prev.Key != s.Key) previousCharacter = prev;
                 lastCharacter = (s.Name, s.Key, s.EntityId);
+            }
+            // RA-T3.2.1.4: in a line of dialogue the speaker, not a name inside the quote, is who "she"
+            // means next: Sera said, "Kael is late." She sighed. → Sera.
+            if (Speaks.Match(text) is { Success: true } said)
+            {
+                var sp = Resolve(said.Groups["s"].Success ? said.Groups["s"].Value : said.Groups["s2"].Value, false);
+                if (sp is { Category: CatCharacter })
+                {
+                    if (lastCharacter is { } lc2 && lc2.Key != sp.Key) previousCharacter = lc2;
+                    lastCharacter = (sp.Name, sp.Key, sp.EntityId);
+                }
             }
 
             Subject? ResolveMatch(Match m)
@@ -583,7 +636,7 @@ public static class StoryFactExtractor
             foreach (var (alias, quote, beatId) in c.Aliases)
                 if (!Off("alias.fold")) facts.Add(new FactHit(c.Display, c.Key, null, c.Category, "alias", alias, quote, beatId, 70, "character", true, Pattern: "alias.fold"));
 
-        return new Result(names, Dedupe(facts), relations);
+        return new Result(names, Dedupe(facts), relations, unnamed);
     }
 
     private static List<FactHit> Dedupe(List<FactHit> facts) =>

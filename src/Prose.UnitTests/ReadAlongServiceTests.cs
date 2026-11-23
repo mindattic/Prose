@@ -350,6 +350,28 @@ public class ReadAlongServiceTests
     }
 
     [Test]
+    public async Task A_direction_that_changes_raises_a_place_card()
+    {
+        var book = await BookAsync(("One", ["Merrow Point lay north of the Salt Road."]), ("Two", ["Merrow Point lay south of the Salt Road."]));
+        await readAlong.ReadBookAsync(book);
+        var card = (await inbox.ListAsync(book)).Single();
+        Assert.That((card.Category, card.ExistingValue, card.ProposedValue), Is.EqualTo(("place", "north", "south")));
+    }
+
+    [Test]
+    public async Task An_unnamed_person_is_drafted_after_three_sightings_in_the_book_not_two()
+    {
+        var book = await BookAsync(("One", ["The girl behind the curtain watched Wren."]), ("Two", ["The girl behind the curtain was gone."]));
+        await readAlong.ReadBookAsync(book);
+        Assert.That((await bible.GetDraftsAsync(book, "entry")).Any(d => d.Name.StartsWith("(unnamed)")), Is.False, "two sightings");
+        await AddChapterAsync(book, "Three", "Kael saw the girl behind the curtain again.");
+        await readAlong.ReadBookAsync(book);
+        var draft = (await bible.GetDraftsAsync(book, "entry")).Single(d => d.Name.StartsWith("(unnamed)"));
+        Assert.That((draft.Name, draft.Category), Is.EqualTo(("(unnamed) girl behind the curtain", "character")));
+        Assert.That((await bible.KeepAsync(draft.Id)).Ok, Is.True);
+    }
+
+    [Test]
     public async Task Tossed_drafts_stay_tossed()
     {
         var book = await BookAsync(("One", ["Brannoc watched the moor. Brannoc said nothing."]));

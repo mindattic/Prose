@@ -275,6 +275,21 @@ public sealed class ReadAlongService(
             EnsureEntry(first.Name, first.Key, first.Category, first.Quote, first.BeatId);
         }
 
+        // RA-T3.2.1.3: someone the prose keeps describing but never names ("the girl behind the curtain")
+        // becomes a draft once the description has recurred three times in the book.
+        var unnamedHere = (result.Unnamed ?? []).GroupBy(u => u.Key).ToList();
+        if (unnamedHere.Count > 0)
+        {
+            var priorCounts = new Dictionary<string, int>(StringComparer.Ordinal);
+            foreach (var json in await db.ChapterReadings.AsNoTracking().IgnoreQueryFilters()
+                         .Where(x => x.BookNodeId == bookId && x.ChapterNodeId != chapter.ChapterNodeId).Select(x => x.MetJson).ToListAsync(ct))
+                foreach (var u in Detail(json).Unnamed ?? [])
+                    if (u.Length >= 3 && int.TryParse(u[2], out var n)) priorCounts[u[0]] = priorCounts.GetValueOrDefault(u[0]) + n;
+            foreach (var g in unnamedHere)
+                if (priorCounts.GetValueOrDefault(g.Key) + g.Count() >= 3 && !tossed.Contains(g.Key))
+                    EnsureEntry(g.First().Display, g.Key, CatCharacter, g.First().Quote, g.First().BeatId);
+        }
+
         // Details → observations, drafts and continuity cards.
         foreach (var f in result.Facts.OrderBy(f => f.Evidence))
         {
@@ -389,7 +404,8 @@ public sealed class ReadAlongService(
         {
             UniverseId = universeId, BookNodeId = bookId, ChapterNodeId = chapter.ChapterNodeId, ChapterIndex = chapter.Index,
             ChapterTitle = Trim(chapter.Title, 400), ContentHash = chapter.ContentHash, Words = chapter.Words,
-            MetJson = JsonSerializer.Serialize(new ReadingDetail(met.Distinct().ToList(), mentions, pairs), Json),
+            MetJson = JsonSerializer.Serialize(new ReadingDetail(met.Distinct().ToList(), mentions, pairs,
+                unnamedHere.Select(g => new[] { g.Key, g.First().Display, g.Count().ToString() }).ToList()), Json),
             DetailCount = details, ContradictionCount = contradictions, Status = ReadAlongStatus.Done,
         });
 
@@ -417,7 +433,8 @@ public sealed class ReadAlongService(
     public sealed record Mention(string Key, string Name, string Category, Guid? EntityId, int Count);
 
     /// <summary>What a reading stores beyond its counts.</summary>
-    public sealed record ReadingDetail(List<string> Met, List<Mention> Mentions, List<string[]> Pairs);
+    /// <param name="Unnamed">Unnamed-referent sightings in the chapter: [key, display, count] (RA-T3.2.1.3).</param>
+    public sealed record ReadingDetail(List<string> Met, List<Mention> Mentions, List<string[]> Pairs, List<string[]>? Unnamed = null);
 
     private sealed record Known(List<KnownEntry> Entries);
 

@@ -190,3 +190,56 @@ public class StoryFactExtractorPatternIdTests
         Assert.That(r.Facts.Any(f => f.Pattern == "eyes.1"), Is.True, "others still fire");
     }
 }
+
+/// <summary>RA-S3.2.1: more details found (physical, geography, unnamed people, dialogue speakers).</summary>
+[TestFixture]
+public class StoryFactExtractorRecallTests
+{
+    private static StoryFactExtractor.Result X(params string[] ps) =>
+        StoryFactExtractor.Extract(ps.Select(t => new StoryFactExtractor.Paragraph(Guid.NewGuid(), t)).ToList(), []);
+
+    [TestCase("Kael watched the gate. Kael stood six feet tall.", "height", "six feet")]
+    [TestCase("Kael watched the gate. Kael stood six feet two inches tall.", "height", "six feet two inches")]
+    [TestCase("Wren crossed the yard. She was tall.", "height", "tall")]
+    [TestCase("Kael watched the gate. Kael was a wiry man with old hands.", "build", "wiry")]
+    [TestCase("Maren Doyle sat down. Maren Doyle was broad across the shoulders.", "build", "broad")]
+    [TestCase("Kael watched the gate. Kael was left-handed.", "handed", "left")]
+    public void Physical_details_are_found(string text, string attr, string value)
+    {
+        var f = X(text).Facts.Single(x => x.Attribute == attr);
+        Assert.That(f.Value, Is.EqualTo(value));
+    }
+
+    [TestCase("Kael watched the gate. Kael was tall enough to see over it.", "height")]
+    [TestCase("Kael watched the gate. Kael was short of breath.", "height")]
+    [TestCase("Kael watched the gate. Kael was broadly right.", "build")]
+    [TestCase("Kael watched the gate. The road was left behind.", "handed")]
+    public void Lookalikes_are_not(string text, string attr) =>
+        Assert.That(X(text).Facts.Any(x => x.Attribute == attr), Is.False);
+
+    [Test]
+    public void Geography_is_a_relation_and_a_single_valued_direction()
+    {
+        var r = X("Merrow Point lay three miles north of the Salt Road.");
+        Assert.That(r.Relations.Any(x => x.FromName == "Merrow Point" && x.Type == "north of" && x.ToKey == "salt road"));
+        var f = r.Facts.Single(x => x.Attribute.StartsWith("direction from"));
+        Assert.That((f.Value, f.Multi), Is.EqualTo(("north", false)));
+    }
+
+    [Test]
+    public void Unnamed_descriptions_are_reported_but_a_bare_noun_is_not()
+    {
+        var r = X("The girl behind the curtain watched. The old man waited. The girl said nothing.");
+        Assert.That(r.Unnamed!.Select(u => u.Display), Does.Contain("(unnamed) girl behind the curtain").And.Contain("(unnamed) old man"));
+        Assert.That(r.Unnamed!.Any(u => u.Display == "(unnamed) girl"), Is.False);
+    }
+
+    [Test]
+    public void The_dialogue_speaker_is_the_next_pronoun_not_a_name_in_the_quote()
+    {
+        var r = X("Sera Vane said, \"Kael Doyle is late again.\" Her eyes were violet.");
+        Assert.That(r.Facts.Single(f => f.Attribute == "eyes").SubjectName, Is.EqualTo("Sera Vane"));
+        var r2 = X("\"Kael Doyle is late,\" said the Chancellor. His eyes were grey.");
+        Assert.That(r2.Facts.Single(f => f.Attribute == "eyes").SubjectName, Is.EqualTo("the Chancellor"));
+    }
+}
