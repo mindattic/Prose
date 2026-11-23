@@ -215,6 +215,37 @@
             });
         },
 
+        // Import drop zone (RA-T2.4.2.4): files or whole folders dropped anywhere on the zone are read
+        // (folders recursively) and handed to the files input, which Blazor's InputFile then reads.
+        importDrop(zone, inputId) {
+            if (!zone || zone._proseDrop) return;
+            zone._proseDrop = true;
+            const readEntry = entry => new Promise(resolve => {
+                if (entry.isFile) entry.file(f => resolve([f]), () => resolve([]));
+                else if (entry.isDirectory) {
+                    const reader = entry.createReader(), all = [];
+                    const next = () => reader.readEntries(async batch => {
+                        if (!batch.length) { resolve((await Promise.all(all.map(readEntry))).flat()); return; }
+                        all.push(...batch); next();
+                    }, () => resolve([]));
+                    next();
+                } else resolve([]);
+            });
+            zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('over'); });
+            zone.addEventListener('dragleave', () => zone.classList.remove('over'));
+            zone.addEventListener('drop', async e => {
+                e.preventDefault(); zone.classList.remove('over');
+                const items = [...(e.dataTransfer.items || [])].map(i => i.webkitGetAsEntry && i.webkitGetAsEntry()).filter(Boolean);
+                const files = items.length ? (await Promise.all(items.map(readEntry))).flat() : [...e.dataTransfer.files];
+                const input = document.getElementById(inputId);
+                if (!input || !files.length) return;
+                const dt = new DataTransfer();
+                files.forEach(f => dt.items.add(f));
+                input.files = dt.files;
+                input.dispatchEvent(new Event('change', { bubbles: true }));
+            });
+        },
+
         // Keep the address bar in step with the open book and tab, so a reload or a shared link
         // opens the same view. replaceState: no history entry per tab click.
         setLocation(book, tab) {

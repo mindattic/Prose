@@ -5,16 +5,24 @@
 @inject ManuscriptImportService Importer
 @inject StoryUiService StoryUi
 @inject ReadAlongAllowance Allowance
+@inject IJSRuntime JS
 
 <div class="import">
     <section>
         <h2>Bring the book you already have</h2>
         <p class="muted">Drop in one Word document, or a whole folder of them. Prose finds your chapter breaks on its own and reads in order, first page to last — the same way your readers will. Anything that exports to Word works.</p>
 
-        <label class="drop">
-            <InputFile OnChange="PickAsync" multiple accept=".docx,.txt,.md,.markdown" />
-            <span>@(files.Count == 0 ? "Choose .docx, .txt or .md files (pick every file in a folder to bring the folder)" : $"{files.Count} file(s) chosen · {files.Sum(f => f.Content.Length) / 1024:N0} KB")</span>
-        </label>
+        <div class="drop" @ref="dropZone">
+            <label>
+                <InputFile id="import-files" OnChange="PickAsync" multiple accept="@Accept" />
+                <span>Choose files</span>
+            </label>
+            <label>
+                <InputFile id="import-folder" OnChange="PickAsync" multiple webkitdirectory="" directory="" />
+                <span>or a whole folder</span>
+            </label>
+            <span class="muted">@(files.Count == 0 ? "…or drop files or a folder here. Word (.docx), OpenDocument (.odt), Rich Text (.rtf), EPUB, text and Markdown." : $"{files.Count} file(s) chosen · {files.Sum(f => f.Content.Length) / 1024:N0} KB")</span>
+        </div>
 
         <div class="import-form">
             <label>Title <input @bind="title" placeholder="@(preview?.Title ?? "From the file name")" /></label>
@@ -89,6 +97,16 @@
     private int wordLimit, questionLimit;
 
     private const long MaxFileBytes = 50L * 1024 * 1024;
+    private const string Accept = ".docx,.odt,.rtf,.epub,.txt,.md,.markdown";
+    private static readonly string[] Supported = [".docx", ".odt", ".rtf", ".epub", ".txt", ".md", ".markdown"];
+    private ElementReference dropZone;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender) return;
+        try { await JS.InvokeVoidAsync("proseStory.importDrop", dropZone, "import-files"); }
+        catch (JSException) { }
+    }
 
     protected override async Task OnInitializedAsync()
     {
@@ -108,6 +126,8 @@
         {
             foreach (var f in e.GetMultipleFiles(500))
             {
+                // A folder brings everything in it; keep the manuscript files, skip the rest (and Word's ~$ locks).
+                if (!Supported.Contains(Path.GetExtension(f.Name).ToLowerInvariant()) || f.Name.StartsWith("~$")) continue;
                 await using var s = f.OpenReadStream(MaxFileBytes);
                 using var ms = new MemoryStream();
                 await s.CopyToAsync(ms);

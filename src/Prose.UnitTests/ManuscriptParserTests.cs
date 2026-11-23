@@ -77,4 +77,71 @@ public class ManuscriptParserTests
         Assert.That(ch.Paragraphs, Is.EqualTo(new[] { "First.", ManuscriptParser.SceneBreakText, "Second." }));
         Assert.That(ch.Words, Is.EqualTo(2), "a break is not words");
     }
+
+    // ── RA-S2.4.2: more ways in ─────────────────────────────────────────────────────────────
+
+    private static byte[] Zip(params (string Path, string Content)[] entries)
+    {
+        using var ms = new MemoryStream();
+        using (var zip = new System.IO.Compression.ZipArchive(ms, System.IO.Compression.ZipArchiveMode.Create, true))
+            foreach (var (path, content) in entries)
+            {
+                using var w = new StreamWriter(zip.CreateEntry(path).Open(), new UTF8Encoding(false));
+                w.Write(content);
+            }
+        return ms.ToArray();
+    }
+
+    [Test]
+    public void Odt_headings_paragraphs_and_styled_spans()
+    {
+        const string content = """
+            <?xml version="1.0" encoding="UTF-8"?>
+            <office:document-content xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+              xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+              xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0">
+              <office:automatic-styles>
+                <style:style style:name="T1" style:family="text"><style:text-properties fo:font-style="italic"/></style:style>
+                <style:style style:name="T2" style:family="text"><style:text-properties fo:font-weight="bold"/></style:style>
+              </office:automatic-styles>
+              <office:body><office:text>
+                <text:h text:outline-level="1">Part One</text:h>
+                <text:h text:outline-level="2">Chapter 1: Salt</text:h>
+                <text:p>She read <text:span text:style-name="T1">The Ledger</text:span><text:s/>and said <text:span text:style-name="T2">no</text:span>.</text:p>
+              </office:text></office:body>
+            </office:document-content>
+            """;
+        var m = ManuscriptParser.Parse([new ManuscriptParser.InputFile("b.odt", Zip(("content.xml", content.Trim())))]);
+        Assert.That(m.Volumes.Single().Title, Is.EqualTo("Part One"));
+        var ch = m.Chapters.Single();
+        Assert.That(ch.Title, Is.EqualTo("Chapter 1: Salt"));
+        Assert.That(ch.Paragraphs.Single(), Is.EqualTo("She read *The Ledger* and said **no**."));
+    }
+
+    [Test]
+    public void Rtf_paragraphs_styles_escapes_and_skipped_destinations()
+    {
+        const string rtf = @"{\rtf1\ansi\uc1{\fonttbl{\f0 Times;}}{\*\generator Word;}\pard Chapter 1\par
+\pard She read {\i The Ledger} and said {\b no}\'85 caf\u233?\par
+\pard Second \i line\i0  here.\par}";
+        var ch = ManuscriptParser.Parse([new ManuscriptParser.InputFile("b.rtf", Encoding.Latin1.GetBytes(rtf))]).Chapters.Single();
+        Assert.That(ch.Title, Is.EqualTo("Chapter 1"));
+        Assert.That(ch.Paragraphs[0], Is.EqualTo("She read *The Ledger* and said **no**… café"));
+        Assert.That(ch.Paragraphs[1], Is.EqualTo("Second *line* here."));
+    }
+
+    [Test]
+    public void Epub_spine_order_headings_and_inline_styles()
+    {
+        string X(string title, string body) => $"<?xml version=\"1.0\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><title>{title}</title></head><body>{body}</body></html>";
+        var epub = Zip(
+            ("META-INF/container.xml", "<?xml version=\"1.0\"?><container xmlns=\"urn:oasis:names:tc:opendocument:xmlns:container\"><rootfiles><rootfile full-path=\"OEBPS/book.opf\"/></rootfiles></container>"),
+            ("OEBPS/book.opf", "<?xml version=\"1.0\"?><package xmlns=\"http://www.idpf.org/2007/opf\"><manifest><item id=\"b\" href=\"b.xhtml\"/><item id=\"a\" href=\"a.xhtml\"/></manifest><spine><itemref idref=\"a\"/><itemref idref=\"b\"/></spine></package>"),
+            ("OEBPS/a.xhtml", X("A", "<h2>Chapter 1</h2><p>She read <em>The Ledger</em>.</p>")),
+            ("OEBPS/b.xhtml", X("The Second", "<p>It said <strong>no</strong>.</p>")));
+        var chapters = ManuscriptParser.Parse([new ManuscriptParser.InputFile("b.epub", epub)]).Chapters.ToList();
+        Assert.That(chapters.Select(c => c.Title), Is.EqualTo(new[] { "Chapter 1", "The Second" }));
+        Assert.That(chapters[0].Paragraphs.Single(), Is.EqualTo("She read *The Ledger*."));
+        Assert.That(chapters[1].Paragraphs.Single(), Is.EqualTo("It said **no**."));
+    }
 }

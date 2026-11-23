@@ -79,10 +79,10 @@ public sealed class ManuscriptImportService(
         return new ImportResult(bookId, slug, parsed.Title, chapters, parsed.Words);
     }
 
-    /// <summary>Read every supported file in a folder (not recursive): .docx, .txt, .md.</summary>
+    /// <summary>Read every supported file in a folder (not recursive): .docx, .odt, .rtf, .epub, .txt, .md.</summary>
     public static List<ManuscriptParser.InputFile> FilesFrom(string path)
     {
-        string[] exts = [".docx", ".txt", ".md", ".markdown"];
+        string[] exts = [".docx", ".txt", ".md", ".markdown", ".odt", ".rtf", ".epub"];
         if (File.Exists(path)) return [new ManuscriptParser.InputFile(Path.GetFileName(path), File.ReadAllBytes(path))];
         if (!Directory.Exists(path)) throw new FileNotFoundException($"No file or folder at {path}");
         return Directory.EnumerateFiles(path)
