@@ -137,6 +137,7 @@
                         @if (t.Quote.Length > 0 && t.ChapterNodeId is { } ch)
                         {
                             <button class="door" @onclick="() => OnOpenPassage.InvokeAsync((ch, t.BeatId))" title="@t.Quote">❝ @t.ChapterTitle</button>
+                            @if (t.BeatId is { } tBeat) { <a class="open-writer small" href="@WriterLink.For(BookId, tBeat)" title="Open in the Writer">✎</a> }
                         }
                     </li>
                 }

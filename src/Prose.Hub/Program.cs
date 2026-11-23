@@ -537,8 +537,10 @@ app.MapRazorComponents<Prose.Hub.Components.App>().AddInteractiveServerRenderMod
 // the root component and has no <Router>, every route MapRazorComponents discovers renders
 // App.razor, so a @page "/writer" would answer 200 with the observability page. A component
 // result is its own document and sidesteps the root entirely.
-app.MapGet("/writer", () =>
-    new Microsoft.AspNetCore.Http.HttpResults.RazorComponentResult<Prose.Hub.Components.Writer>());
+// ?book=<id|slug|code>&beat=<id> opens that book on that beat (RFC 0019, RA-S2.2.1).
+app.MapGet("/writer", (string? book, string? beat) =>
+    new Microsoft.AspNetCore.Http.HttpResults.RazorComponentResult<Prose.Hub.Components.Writer>(
+        new { Book = book, Beat = beat }));
 
 // Read Mode, at /read. Same explicit-endpoint reasoning as /writer above. The book straight
 // through, read or listened to, with NO discussion panel and no analysis affordance of any kind —

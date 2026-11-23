@@ -279,3 +279,7 @@ blockquote .door { display: inline; width: auto; padding: 0 .3rem; border: 0; ba
   .story-bottom a, .story-bottom button { display: flex; align-items: center; justify-content: center; background: none; border: 0; color: var(--color-fg-muted); padding: .7rem 0; text-decoration: none; font: inherit; font-size: .82rem; }
   .story-bottom .on { color: var(--story-green); }
 }
+
+/* RA-T2.2.1.3: a door's sibling link into the Writer at the same beat. */
+.open-writer { display: inline-block; margin-top: .3rem; color: var(--color-fg-muted); text-decoration: none; }
+.open-writer:hover { color: var(--story-green); text-decoration: underline; }

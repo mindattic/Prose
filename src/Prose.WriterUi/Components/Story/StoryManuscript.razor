@@ -71,7 +71,7 @@
                     <button class="issue-counter" @onclick="OnOpenContinuity" title="@OpenCards continuity card(s) waiting">⚠ @OpenCards</button>
                 }
                 <a class="mini" href="@($"/story/export/{BookId}.docx")" title="Export the whole book to Word" download>⤓ Word</a>
-                <a class="mini" href="/writer" title="Write this chapter in the Writer">✎ Write</a>
+                <a class="mini" href="@WriterLink.For(BookId, current.Paragraphs.FirstOrDefault()?.BeatId)" title="Write this chapter in the Writer">✎ Write</a>
                 <button class="mini" @onclick="CycleType" title="Typography">Aa</button>
             </div>
             <div class="ms-status">

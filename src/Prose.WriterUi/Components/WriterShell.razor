@@ -433,6 +433,29 @@
         // is already open, and it is the shell that knows which book to search.
         shellRef ??= DotNetObjectReference.Create(this);
         await JsVoidAsync("proseHotkeys.registerShell", shellRef);
+
+        await OpenFromLinkAsync();
+    }
+
+    // RA-S2.2.1: /writer?book=<id|slug|code>&beat=<id> opens that book on that beat — every door in the
+    // Story workspace lands here.
+    [Parameter] public string? Book { get; set; }
+    [Parameter] public string? Beat { get; set; }
+
+    private async Task OpenFromLinkAsync()
+    {
+        if (string.IsNullOrWhiteSpace(Book)) return;
+        books ??= await Writer.ListBooksAsync();
+        if (WriterLink.ResolveBook(books, Book) is not { } linked)
+        {
+            activity = $"No book \"{Book}\" — choose one from the menu.";
+            StateHasChanged();
+            return;
+        }
+        await OpenBookAsync(linked);
+        if (Guid.TryParse(Beat, out var beatLink) && beatLink != beatId && spine?.Any(s => s.BeatId == beatLink) == true)
+            await OpenBeatAsync(beatLink);
+        StateHasChanged();
     }
 
     private DotNetObjectReference<WriterShell>? shellRef;

@@ -34,12 +34,14 @@
     <HeadOutlet @rendermode="RenderMode.InteractiveServer" />
 </head>
 <body>
-    <WriterShell @rendermode="RenderMode.InteractiveServer" />
+    <WriterShell Book="@Book" Beat="@Beat" @rendermode="RenderMode.InteractiveServer" />
     <script src="_framework/blazor.web.js"></script>
 </body>
 </html>
 
 @code {
+    [Parameter] public string? Book { get; set; }
+    [Parameter] public string? Beat { get; set; }
     // Shared with /repo so the two root documents cannot drift — see HubAssets for why a stale
     // asset here is a frozen window, not a cosmetic problem.
     private static string AssetVersion => HubAssets.Version;

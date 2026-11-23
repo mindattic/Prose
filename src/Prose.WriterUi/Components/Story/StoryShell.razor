@@ -12,7 +12,7 @@
 
 <div class="story @(entry is not null ? "with-entry" : "")">
     <header class="story-top">
-        <a class="story-back" href="/writer" title="Back to the Writer">‹ Writer</a>
+        <a class="story-back" href="@(book is null ? "/writer" : WriterLink.For(book.Id))" title="Back to the Writer">‹ Writer</a>
         <label class="visually-hidden" for="story-book">Book</label>
         <select id="story-book" class="story-book" value="@(book?.Id.ToString() ?? "")" @onchange="PickBookAsync">
             <option value="">Choose a book…</option>
@@ -157,7 +157,7 @@
 
     @* Phone layout: the tabs move to a bottom bar, the way a writer on the bus reaches them. *@
     <nav class="story-bottom" aria-label="Story workspace (compact)">
-        <a href="/writer">Editor</a>
+        <a href="@(book is null ? "/writer" : WriterLink.For(book.Id))">Editor</a>
         <button class="@(tab == "brainstorm" ? "on" : "")" @onclick='() => SetTab("brainstorm")'>Notes</button>
         <button class="@(tab == "ask" ? "on" : "")" @onclick='() => SetTab("ask")'>Chat</button>
         <button class="@(tab == "codex" ? "on" : "")" @onclick='() => SetTab("codex")'>Codex</button>
