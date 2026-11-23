@@ -571,6 +571,14 @@ powershell -ExecutionPolicy Bypass -File src\tools\launch-app.ps1 -App writer   
 
 `run.ps1` republishes an app only when its exe is missing or one of its source files (its project plus every project it references) is newer than the deployed exe; `-Force` republishes with a clean rebuild. It stops only the apps it replaces and publishes through `%LOCALAPPDATA%\Prose\build-artifacts`, so it never fights a running MCP server for `bin\`. It writes `C:\Apps\MindAttic\Prose\run.bat`, which the desktop shortcuts point at: `run.bat Hub`, `run.bat Writer`, `run.bat Launcher`, or no argument for every app and the Launcher. It opens a menu: 1) Deploy & Run republishes (`run.ps1 -Force`) and then starts the app; 2) Run starts the deployed build without redeploying. Deploy & Run falls back to the existing build if the repo is gone or the publish fails. `Directory.Build.props` excludes `obj_*` and `bin_*` folders so isolated builds from parallel sessions do not collide.
 
+A local database for development or tests, in Docker (no cloud, no shared data):
+
+```bash
+tools/db/create-local.sh ProseLocal        # or: tools/db/create-local.ps1 -Database ProseLocal
+```
+
+It builds the schema from the current EF model, marks every migration applied and seeds the GLMZ universe, then prints the `ConnectionStrings__Prose` to use. It exists because the migration history cannot be replayed onto an empty server: an early migration indexes `Nodes.NodeCode` while the column is still `nvarchar(max)`, which SQL Server refuses ("invalid for use as a key column"). The live database never hit this because it was migrated step by step as the history was written. A squashed baseline migration would fix it properly; until then, use this script for any fresh database.
+
 After editing any Codex file under `docs/`:
 
 ```powershell
