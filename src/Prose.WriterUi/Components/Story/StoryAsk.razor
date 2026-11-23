@@ -3,6 +3,7 @@
 @using Prose.Core.Services.ReadAlong
 @inject BookChatService Chat
 @inject ReadAlongAllowance Allowance
+@inject BrainstormService Brainstorm
 
 <div class="ask">
     <div class="ask-log" aria-live="polite">
@@ -28,6 +29,10 @@
             {
                 <div class="msg @m.Role">
                     <div class="msg-text">@m.Text</div>
+                    @if (m.Role == "assistant" && m.Id != Guid.Empty)
+                    {
+                        <button class="linkish small to-board" @onclick="() => ToBoardAsync(m)" title="Keep this answer as a card on the brainstorm board">@(pinned.Contains(m.Id) ? "📌 On the board" : "📌 To board")</button>
+                    }
                     @if (m.Doors.Count > 0)
                     {
                         <div class="doors">
@@ -47,7 +52,10 @@
             }
             @if (asking)
             {
-                <div class="msg assistant"><span class="spin" aria-hidden="true"></span> Reading back through your chapters…</div>
+                <div class="msg assistant">
+                    @if (streamed.Length > 0) { <div class="msg-text">@streamed</div> }
+                    else { <span class="spin" aria-hidden="true"></span> <span>Reading back through your chapters…</span> }
+                </div>
             }
         }
     </div>
@@ -74,6 +82,23 @@
     [Parameter] public EventCallback<(Guid ChapterId, Guid? BeatId)> OnOpenPassage { get; set; }
     [Parameter] public EventCallback<Guid> OnOpenEntry { get; set; }
     [Parameter] public EventCallback OnChanged { get; set; }
+    /// <summary>A question to put in the box when the tab opens ("Ask about this card").</summary>
+    [Parameter] public string? Prefill { get; set; }
+    private string? usedPrefill;
+    private string streamed = "";
+    private readonly HashSet<Guid> pinned = [];
+
+    protected override void OnParametersSet()
+    {
+        if (!string.IsNullOrWhiteSpace(Prefill) && Prefill != usedPrefill) { question = Prefill; usedPrefill = Prefill; }
+    }
+
+    private async Task ToBoardAsync(BookChatService.Message m)
+    {
+        if (!pinned.Add(m.Id)) return;
+        var first = m.Text.Split('\n', StringSplitOptions.RemoveEmptyEntries).FirstOrDefault() ?? "Answer";
+        await Brainstorm.AddAsync(BookId, first.Length > 80 ? first[..80] + "…" : first, m.Text, color: "idea");
+    }
 
     private static readonly string[] Examples =
     [
@@ -111,7 +136,8 @@
         StateHasChanged();
         try
         {
-            var a = await Chat.AskAsync(BookId, q);
+            streamed = "";
+            var a = await Chat.AskAsync(BookId, q, onChunk: chunk => { streamed += chunk; _ = InvokeAsync(StateHasChanged); });
             history = a.Refused is null ? await Chat.HistoryAsync(BookId) : [.. history, a.Reply];
         }
         catch (Exception ex)
@@ -121,6 +147,7 @@
         finally
         {
             asking = false;
+            streamed = "";
             usage = await Allowance.GetUsageAsync();
             await OnChanged.InvokeAsync();
         }

@@ -308,6 +308,42 @@ public class ReadAlongServiceTests
         Assert.That(then.Details.Any(d => d.Attribute == "age"), Is.False, "chapter two had not happened yet");
     }
 
+    private sealed class ChunkingLlm : Prose.Core.Interfaces.ILlmService
+    {
+        public string? LastPrompt;
+        public Task<bool> IsConfiguredAsync() => Task.FromResult(true);
+        public Task<string> GenerateAsync(string system, string user, double temperature = 0.8, int maxTokens = 4096, string? model = null, CancellationToken ct = default)
+            => throw new InvalidOperationException("streaming path expected");
+        public async IAsyncEnumerable<string> StreamAsync(string system, string user, double temperature = 0.8, int maxTokens = 4096, string? model = null,
+            [System.Runtime.CompilerServices.EnumeratorCancellation] CancellationToken ct = default)
+        {
+            LastPrompt = user;
+            foreach (var c in new[] { "Sera knows ", "about the Sight ", "[P1]." }) { await Task.Yield(); yield return c; }
+        }
+    }
+
+    [Test]
+    public async Task Ask_streams_chunks_and_stores_their_concatenation_and_honours_the_history_setting()
+    {
+        var book = await BookAsync(("One", ["Sera Vane lowered her voice. Sera Vane had the Sight."]));
+        await readAlong.ReadBookAsync(book);
+        var llm = new ChunkingLlm();
+        var sp = new ServiceCollection().AddSingleton<Prose.Core.Interfaces.ILlmService>(llm).BuildServiceProvider();
+        var kv = new SettingsKvStore(dbFactory);
+        var streaming = new BookChatService(dbFactory, readAlong, allowance, sp, NullLogger<BookChatService>.Instance, kv) { HistoryTurns = 1 };
+
+        for (var i = 0; i < 3; i++) await streaming.AskAsync(book, $"What does Sera Vane know? ({i})");
+        var chunks = new List<string>();
+        var a = await streaming.AskAsync(book, "And Sera Vane now?", onChunk: chunks.Add);
+
+        Assert.That(chunks, Has.Count.EqualTo(3));
+        Assert.That(a.UsedLlm, Is.True);
+        Assert.That(a.Reply.Text, Is.EqualTo("Sera knows about the Sight."), "citations stripped, chunks joined");
+        Assert.That(a.Reply.Doors, Is.Not.Empty);
+        Assert.That(llm.LastPrompt!.Split('\n').Count(l => l.StartsWith("USER:")), Is.EqualTo(1), "one turn of history = one user line");
+        Assert.That(streaming.HistoryTurns, Is.EqualTo(1));
+    }
+
     [Test]
     public async Task Tossed_drafts_stay_tossed()
     {

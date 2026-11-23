@@ -67,6 +67,7 @@
                             <button class="retcon" @onclick='() => RuleAsync(c, "retcon")'>↺ Retcon</button>
                             <button class="dismiss" @onclick='() => RuleAsync(c, "dismiss")'>✕ Dismiss</button>
                             <button class="explain" @onclick="() => ExplainAsync(c)">✦ Explain</button>
+                            <button class="ask-card" @onclick="() => OnAskAbout.InvokeAsync(AskText(c))">💬 Ask about this card</button>
                         </div>
                     }
                     else
@@ -91,6 +92,10 @@
     [Parameter, EditorRequired] public Guid BookId { get; set; }
     [Parameter] public EventCallback OnChanged { get; set; }
     [Parameter] public EventCallback<Guid> OnOpenEntry { get; set; }
+    [Parameter] public EventCallback<string> OnAskAbout { get; set; }
+
+    private static string AskText(ContinuityInboxService.Card c) =>
+        $"Which is right for {c.EntityName}'s {StoryFactExtractor.Label(c.Attribute)}: \"{c.ExistingValue}\" ({c.Existing.ChapterTitle}) or \"{c.ProposedValue}\" ({c.Proposed.ChapterTitle})?";
     [Parameter] public EventCallback<(Guid ChapterId, Guid? BeatId)> OnOpenPassage { get; set; }
 
     private List<ContinuityInboxService.Card>? cards;

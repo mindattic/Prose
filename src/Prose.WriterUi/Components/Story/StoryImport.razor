@@ -5,6 +5,7 @@
 @inject ManuscriptImportService Importer
 @inject StoryUiService StoryUi
 @inject ReadAlongAllowance Allowance
+@inject BookChatService Chat
 @inject IJSRuntime JS
 
 <div class="import">
@@ -74,6 +75,7 @@
         <div class="import-form">
             <label>Word limit <input type="number" min="0" step="1000" @bind="wordLimit" /></label>
             <label>Question limit <input type="number" min="0" @bind="questionLimit" /></label>
+            <label title="How many earlier turns an answer sees (longer conversations, more context)">Conversation memory (turns) <input type="number" min="1" max="40" @bind="historyTurns" /></label>
             <button class="mini" @onclick="SaveAllowanceAsync">Save</button>
         </div>
     </section>
@@ -94,7 +96,7 @@
     private bool importing;
     private int done, total;
     private ReadAlongAllowance.Usage? usage;
-    private int wordLimit, questionLimit;
+    private int wordLimit, questionLimit, historyTurns = BookChatService.DefaultHistoryTurns;
 
     private const long MaxFileBytes = 50L * 1024 * 1024;
     private const string Accept = ".docx,.odt,.rtf,.epub,.txt,.md,.markdown";
@@ -114,6 +116,7 @@
         universeId = CurrentBook?.UniverseId ?? universes.FirstOrDefault()?.Id ?? Guid.Empty;
         var limits = Allowance.Get();
         wordLimit = limits.WordLimit;
+        historyTurns = Chat.HistoryTurns;
         questionLimit = limits.QuestionLimit;
         usage = await Allowance.GetUsageAsync();
     }
@@ -161,6 +164,7 @@
     private async Task SaveAllowanceAsync()
     {
         Allowance.Set(new ReadAlongAllowance.Limits(wordLimit, questionLimit));
+        Chat.HistoryTurns = historyTurns;
         usage = await Allowance.GetUsageAsync();
         await OnAllowanceChanged.InvokeAsync();
     }

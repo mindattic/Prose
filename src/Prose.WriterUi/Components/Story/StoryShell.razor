@@ -135,10 +135,10 @@
                     <StoryCodex @key="book!.Id" BookId="book!.Id" OnOpenEntry="OpenEntryAsync" OnChanged="RefreshAsync" OnOpenPassage="OpenDoor" />
                     break;
                 case "continuity":
-                    <StoryContinuity @key="book!.Id" BookId="book!.Id" OnChanged="RefreshAsync" OnOpenPassage="OpenDoor" OnOpenEntry="OpenEntryAsync" />
+                    <StoryContinuity @key="book!.Id" BookId="book!.Id" OnChanged="RefreshAsync" OnAskAbout="AskAbout" OnOpenPassage="OpenDoor" OnOpenEntry="OpenEntryAsync" />
                     break;
                 case "ask":
-                    <StoryAsk @key="book!.Id" BookId="book!.Id" OnOpenPassage="OpenDoor" OnOpenEntry="OpenEntryAsync" OnChanged="RefreshUsageAsync" />
+                    <StoryAsk @key="book!.Id" BookId="book!.Id" Prefill="@askPrefill" OnOpenPassage="OpenDoor" OnOpenEntry="OpenEntryAsync" OnChanged="RefreshUsageAsync" />
                     break;
                 case "atlas":
                     <StoryAtlas @key="book!.Id" BookId="book!.Id" OnOpenEntry="OpenEntryAsync" OnOpenEntryAsOf="OpenEntryAsOfAsync" OnOpenDraft='() => SetTab("codex")' />
@@ -305,6 +305,9 @@
     }
 
     private int? entryAsOf;
+    private string? askPrefill;
+
+    private void AskAbout(string question) { askPrefill = question; tab = "ask"; StateHasChanged(); }
 
     private Task OpenEntryAsOfAsync((Guid EntityId, int AsOfChapter) x)
     {

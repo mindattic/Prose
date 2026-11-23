@@ -164,6 +164,7 @@ public static class UniverseScope
             "operator.byokeys", // BYO LLM credentials for the tool-calling operator loop — a
                                  // machine-wide credential, not per-universe content.
             "readalong.patterns.disabled", // extractor patterns switched off after the precision audit (RA-T3.1.1.2)
+            "readalong.ask.historyTurns", // how much conversation an Ask answer sees (RA-T3.6.1.1)
             "readalong.follow",    // per-book "Follow this book" for the read-along job; book ids are global
             "readalong.allowance", // the read-along's optional reading/question limits (RFC 0019) —
                                     // one author, one machine, every universe.

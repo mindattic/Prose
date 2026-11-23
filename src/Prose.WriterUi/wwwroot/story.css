@@ -307,3 +307,6 @@ blockquote .door { display: inline; width: auto; padding: 0 .3rem; border: 0; ba
 .legend-toggle { background: none; border: 0; color: var(--color-fg-muted); font: inherit; font-size: .8rem; cursor: pointer; padding: .1rem .3rem; border-radius: var(--radius); }
 .legend-toggle.off { opacity: .4; text-decoration: line-through; }
 .atlas-search { background: var(--color-bg-4); color: var(--color-fg); border: 1px solid var(--color-border-input); border-radius: var(--radius); padding: .2rem .5rem; width: 12rem; }
+/* RA-F3.6 */
+.actions .ask-card { grid-column: 1 / -1; }
+.msg .to-board { margin-top: .3rem; color: var(--color-fg-muted); }

@@ -26,8 +26,19 @@ public sealed class BookChatService(
     ReadAlongService readAlong,
     ReadAlongAllowance allowance,
     IServiceProvider services,
-    ILogger<BookChatService> log)
+    ILogger<BookChatService> log,
+    SettingsKvStore? settings = null)
 {
+    /// <summary>Settings key: how many earlier turns an answer sees (default 8, at most 40).</summary>
+    public const string HistoryTurnsKey = "readalong.ask.historyTurns";
+    public const int DefaultHistoryTurns = 8, MaxHistoryTurns = 40;
+
+    public int HistoryTurns
+    {
+        get => Math.Clamp(settings?.Get<int?>(HistoryTurnsKey) ?? DefaultHistoryTurns, 1, MaxHistoryTurns);
+        set => settings?.Set(HistoryTurnsKey, Math.Clamp(value, 1, MaxHistoryTurns));
+    }
+
     public sealed record Door(Guid BeatId, Guid ChapterNodeId, string ChapterTitle, int ChapterIndex, string Quote, Guid? EntityId = null);
 
     public sealed record Message(Guid Id, string Role, string Text, IReadOnlyList<Door> Doors, DateTime CreatedAt);
@@ -62,8 +73,11 @@ public sealed class BookChatService(
 
     /// <param name="historyTurns">How much of the conversation the answer sees. "Room for much
     /// longer conversations" is this number.</param>
-    public async Task<Answer> AskAsync(Guid bookId, string question, int historyTurns = 8, int maxDoors = 6, CancellationToken ct = default)
+    /// <param name="onChunk">Called with each piece of the answer as the model produces it (streaming).</param>
+    public async Task<Answer> AskAsync(Guid bookId, string question, int? historyTurns = null, int maxDoors = 6, CancellationToken ct = default,
+        Action<string>? onChunk = null)
     {
+        var turns = Math.Clamp(historyTurns ?? HistoryTurns, 1, MaxHistoryTurns);
         question = (question ?? "").Trim();
         if (question.Length == 0) throw new ArgumentException("question is required", nameof(question));
 
@@ -80,7 +94,7 @@ public sealed class BookChatService(
             return new Answer(refusedQ, refusedA, false, "allowance");
         }
 
-        var history = await HistoryAsync(bookId, historyTurns * 2, ct);
+        var history = await HistoryAsync(bookId, turns * 2, ct);
         var userRow = new BookChatMessage { UniverseId = universeId, BookNodeId = bookId, Role = "user", Text = question };
         db.BookChatMessages.Add(userRow);
         await db.SaveChangesAsync(ct);
@@ -135,26 +149,14 @@ public sealed class BookChatService(
         {
             try
             {
-                var prompt = new StringBuilder();
-                if (factLines.Count > 0)
+                var prompt = BuildPrompt(factLines, top.Select(t => (t.Door, t.Text)).ToList(), history, question);
+                var sb = new StringBuilder();
+                await foreach (var chunk in llm.StreamAsync(SystemPrompt, prompt, temperature: 0.3, maxTokens: 1200, ct: ct))
                 {
-                    prompt.AppendLine("STORY BIBLE (details the author has confirmed):");
-                    foreach (var l in factLines) prompt.AppendLine("- " + l);
-                    prompt.AppendLine();
+                    sb.Append(chunk);
+                    onChunk?.Invoke(chunk);
                 }
-                prompt.AppendLine("PASSAGES FROM THE MANUSCRIPT:");
-                for (var i = 0; i < top.Count; i++)
-                    prompt.AppendLine($"[P{i + 1}] {top[i].Door.ChapterTitle} (chapter {top[i].Door.ChapterIndex}): {Snip(top[i].Text, 900)}");
-                prompt.AppendLine();
-                if (history.Count > 0)
-                {
-                    prompt.AppendLine("CONVERSATION SO FAR:");
-                    foreach (var h in history) prompt.AppendLine($"{h.Role.ToUpperInvariant()}: {Snip(h.Text, 600)}");
-                    prompt.AppendLine();
-                }
-                prompt.Append("AUTHOR'S QUESTION: ").Append(question);
-
-                text = (await llm.GenerateAsync(SystemPrompt, prompt.ToString(), temperature: 0.3, maxTokens: 1200, ct: ct)).Trim();
+                text = sb.ToString().Trim();
                 usedLlm = true;
                 var cited = Regex.Matches(text, @"\[P(\d+)\]").Select(m => int.Parse(m.Groups[1].Value) - 1)
                     .Where(i => i >= 0 && i < top.Count).Distinct().ToList();
@@ -181,6 +183,32 @@ public sealed class BookChatService(
         db.BookChatMessages.Add(replyRow);
         await db.SaveChangesAsync(ct);
         return new Answer(ToMessage(userRow), ToMessage(replyRow), usedLlm, null);
+    }
+
+    /// <summary>The model's prompt: confirmed details, numbered passages, the conversation so far (as
+    /// many turns as the caller passes), and the question. Extracted so its shape is testable.</summary>
+    internal static string BuildPrompt(IReadOnlyList<string> factLines, IReadOnlyList<(Door Door, string Text)> passages,
+        IReadOnlyList<Message> history, string question)
+    {
+        var prompt = new StringBuilder();
+        if (factLines.Count > 0)
+        {
+            prompt.AppendLine("STORY BIBLE (details the author has confirmed):");
+            foreach (var l in factLines) prompt.AppendLine("- " + l);
+            prompt.AppendLine();
+        }
+        prompt.AppendLine("PASSAGES FROM THE MANUSCRIPT:");
+        for (var i = 0; i < passages.Count; i++)
+            prompt.AppendLine($"[P{i + 1}] {passages[i].Door.ChapterTitle} (chapter {passages[i].Door.ChapterIndex}): {Snip(passages[i].Text, 900)}");
+        prompt.AppendLine();
+        if (history.Count > 0)
+        {
+            prompt.AppendLine("CONVERSATION SO FAR:");
+            foreach (var h in history) prompt.AppendLine($"{h.Role.ToUpperInvariant()}: {Snip(h.Text, 600)}");
+            prompt.AppendLine();
+        }
+        prompt.Append("AUTHOR'S QUESTION: ").Append(question);
+        return prompt.ToString();
     }
 
     private const string SystemPrompt =
