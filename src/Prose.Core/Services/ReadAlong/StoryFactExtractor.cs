@@ -29,17 +29,17 @@ public static class StoryFactExtractor
     public sealed record Paragraph(Guid BeatId, string Text);
 
     /// <summary>A name met in the chapter. <see cref="IsNew"/> when no entry has it yet.</summary>
-    public sealed record NameHit(string Name, string Key, string Category, Guid? EntityId, Guid BeatId, string Quote, bool IsNew);
+    public sealed record NameHit(string Name, string Key, string Category, Guid? EntityId, Guid BeatId, string Quote, bool IsNew, string Pattern = "");
 
     /// <summary>A stated detail about a subject. <see cref="ContinuityCategory"/> is which family of
     /// contradiction it can raise; <see cref="Multi"/> attributes accumulate and never conflict.</summary>
     public sealed record FactHit(
         string SubjectName, string SubjectKey, Guid? EntityId, string SubjectCategory,
         string Attribute, string Value, string Quote, Guid BeatId, int Confidence,
-        string ContinuityCategory, bool Multi, bool Evidence = false);
+        string ContinuityCategory, bool Multi, bool Evidence = false, string Pattern = "");
 
     /// <summary>A stated relationship between two subjects.</summary>
-    public sealed record Relation(string FromName, string FromKey, string Type, string ToName, string ToKey, string Quote, Guid BeatId);
+    public sealed record Relation(string FromName, string FromKey, string Type, string ToName, string ToKey, string Quote, Guid BeatId, string Pattern = "");
 
     public sealed record Result(IReadOnlyList<NameHit> Names, IReadOnlyList<FactHit> Facts, IReadOnlyList<Relation> Relations);
 
@@ -157,11 +157,30 @@ public static class StoryFactExtractor
 
     // ── Fact patterns ───────────────────────────────────────────────────────────────────────
 
-    private sealed record Pattern(string Attribute, Regex Rx, string Continuity, int Confidence, string? SubjectCategory = null, bool Multi = false);
+    private sealed record Pattern(string Attribute, Regex Rx, string Continuity, int Confidence, string? SubjectCategory = null, bool Multi = false)
+    {
+        /// <summary>Stable id, "<attribute>.<n>" in declaration order (RA-T3.1.1.1).</summary>
+        public string Id { get; init; } = "";
+    }
+
+    private static Pattern[] Number(Pattern[] ps)
+    {
+        var seen = new Dictionary<string, int>();
+        return ps.Select(p => p with { Id = $"{p.Attribute}.{(seen[p.Attribute] = seen.GetValueOrDefault(p.Attribute) + 1)}" }).ToArray();
+    }
+
+    /// <summary>Every pattern id the extractor can emit — fact patterns, item/rule/relation emitters and
+    /// name-acceptance reasons. Disabling an id (or its family, the part before the dot) switches it off.</summary>
+    public static IReadOnlyList<string> PatternIds =>
+        FactPatterns.Select(p => p.Id)
+            .Concat(["item.look", "item.carries", "rule.duration", "kin.1", "kin.2", "feeling.1", "member.1", "lives.1",
+                     "evidence.speaks", "alias.fold", "name.known", "name.mid-sentence", "name.repeated", "name.titled",
+                     "name.suffix", "name.signal"])
+            .ToList();
 
     private static Regex R(string p) => new(p, RegexOptions.Compiled | RegexOptions.CultureInvariant);
 
-    private static readonly Pattern[] FactPatterns =
+    private static readonly Pattern[] FactPatterns = Number(
     [
         new("age", R(@"\b" + Subj + @"\s+(?:was|is|had\s+been|turned)\s+(?<v>" + NumWords + @")(?:\s+years?\s+old)?\s*(?=[.,;!?""”]|$|\s+(?:now|then|that\s+year|this\s+year|when|and\s+(?:had|was|she|he)))"), "character", 85, CatCharacter),
         new("age", R(@"\b(?<v>" + NumWords + @")-year-old\s+(?<s>" + NameCore + ")"), "character", 85, CatCharacter),
@@ -189,7 +208,7 @@ public static class StoryFactExtractor
         new("years-ago", R(@"\b(?<s>the\s+[A-Z][\p{L}'’-]+(?:\s+(?:of\s+)?[A-Z][\p{L}'’-]+)*)\s*,?\s+(?:was\s+|had\s+been\s+|happened\s+|ended\s+|fell\s+)?(?<v>" + NumWords + @")\s+years\s+(?:ago|before|earlier)"), "timeline", 80, CatConcept),
 
         new("direction", R(@"\b(?<s>(?:[Tt]he\s+)" + PlaceNouns + @"|[A-Z][\p{L}'’-]+(?:\s+[A-Z][\p{L}'’-]+)*)\s+(?:faced|faces|opened|opens|looked|looks)\s+(?:to\s+the\s+|toward\s+the\s+|towards\s+the\s+)?(?<v>north|south|east|west|northeast|northwest|southeast|southwest)\b"), "place", 85, CatPlace),
-    ];
+    ]);
 
     // Possessed items: "her grey cloak", "Elena's staff". Attribute = the item; value = its look.
     private static readonly Regex ItemLook = R(Poss + @"\s+(?:(?<adj>" + Colors + "|" + Materials + @")\s+)(?<item>" + Items + @")\b");
@@ -217,9 +236,13 @@ public static class StoryFactExtractor
     public static Result Extract(
         IReadOnlyList<Paragraph> paragraphs,
         IReadOnlyList<KnownEntry> known,
-        IReadOnlySet<string>? tossedKeys = null)
+        IReadOnlySet<string>? tossedKeys = null,
+        IReadOnlySet<string>? disabledPatterns = null)
     {
         tossedKeys ??= new HashSet<string>();
+        var disabled = disabledPatterns ?? new HashSet<string>();
+        bool Off(string id) => disabled.Contains(id) || (id.Contains('.') && disabled.Contains(id[..id.IndexOf('.')]));
+        IEnumerable<Match> On(string id, Regex rx, string input) => Off(id) ? [] : rx.Matches(input);
 
         // Name index: key → entry, plus every alias and every first name of a multi-word character.
         var index = new Dictionary<string, KnownEntry>(StringComparer.Ordinal);
@@ -275,7 +298,7 @@ public static class StoryFactExtractor
 
                 if (index.TryGetValue(key, out var hit) || (words.Length > 1 && index.TryGetValue(Key(words[^1]), out hit) && Titles.Contains(words[0])))
                 {
-                    names.Add(new NameHit(hit.Name, Key(hit.Name), hit.Category, hit.EntityId, beatId, text, false));
+                    if (!Off("name.known")) names.Add(new NameHit(hit.Name, Key(hit.Name), hit.Category, hit.EntityId, beatId, text, false, "name.known"));
                     continue;
                 }
 
@@ -299,10 +322,15 @@ public static class StoryFactExtractor
         var accepted = new Dictionary<string, Candidate>(StringComparer.Ordinal);
         foreach (var c in candidates.Values)
         {
-            var multi = c.Display.Contains(' ');
-            if (c.MidSentence >= 1 || c.Count >= 2
-                || c.Titled || c.SuffixCategory is not null || c.CharacterScore > 0)
-                accepted[c.Key] = c;
+            // The first reason that holds and is not switched off is the name's pattern.
+            string? reason = new (bool Holds, string Id)[]
+            {
+                (c.MidSentence >= 1, "name.mid-sentence"), (c.Count >= 2, "name.repeated"), (c.Titled, "name.titled"),
+                (c.SuffixCategory is not null, "name.suffix"), (c.CharacterScore > 0, "name.signal"),
+            }.FirstOrDefault(x => x.Holds && !Off(x.Id)).Id;
+            if (reason is null) continue;
+            c.Reason = reason;
+            accepted[c.Key] = c;
         }
         // "Hollis" beside "Hollis Marsh", "Aldous" beside "Captain Aldous": one person, not two. A
         // single word that is the first or last word of an established multi-word character name
@@ -332,7 +360,7 @@ public static class StoryFactExtractor
 
         foreach (var c in accepted.Values)
             foreach (var o in c.Occurrences)
-                names.Add(new NameHit(c.Display, c.Key, c.Category, null, o.BeatId, o.Sentence, true));
+                names.Add(new NameHit(c.Display, c.Key, c.Category, null, o.BeatId, o.Sentence, true, c.Reason));
 
         // Pass 2: facts and relations, with pronouns resolved to the last character on the page.
         var facts = new List<FactHit>();
@@ -369,15 +397,16 @@ public static class StoryFactExtractor
 
             // Pronoun antecedent BEFORE this sentence's own facts, so "She was twenty-eight." after
             // "Elena crossed…" resolves to Elena; then update from this sentence's names.
-            void Add(Subject s, string attr, string value, int confidence, string continuity, bool multi, string? subjectCategory, bool evidence = false)
+            void Add(Subject s, string attr, string value, int confidence, string continuity, bool multi, string? subjectCategory, bool evidence = false, string pid = "")
             {
+                if (pid.Length > 0 && Off(pid)) return;
                 value = NormalizeValue(attr, value);
                 if (value.Length == 0 || value.Length > 200) return;
                 var cat = s.Category;
                 if (subjectCategory is not null && s.EntityId is null && !index.ContainsKey(s.Key) && cat == CatConcept)
                     cat = subjectCategory;
                 facts.Add(new FactHit(s.Name, s.Key, s.EntityId, cat, attr, value, text, beatId,
-                    Math.Clamp(confidence - (s.ViaPronoun ? 15 : 0), 5, 99), continuity, multi || !IsSingleValued(attr), evidence));
+                    Math.Clamp(confidence - (s.ViaPronoun ? 15 : 0), 5, 99), continuity, multi || !IsSingleValued(attr), evidence, pid));
             }
 
             foreach (var p in FactPatterns)
@@ -392,7 +421,7 @@ public static class StoryFactExtractor
                         subj = Resolve(raw, false) ?? NewThing(raw, p.SubjectCategory ?? CatConcept, tossedKeys);
                         if (subj is null) continue;
                     }
-                    Add(subj, p.Attribute, m.Groups["v"].Value, p.Confidence, p.Continuity, p.Multi, p.SubjectCategory);
+                    Add(subj, p.Attribute, m.Groups["v"].Value, p.Confidence, p.Continuity, p.Multi, p.SubjectCategory, pid: p.Id);
                 }
             }
 
@@ -400,13 +429,13 @@ public static class StoryFactExtractor
             {
                 var owner = ResolveMatch(m);
                 if (owner is null) continue;
-                Add(owner, m.Groups["item"].Value.ToLowerInvariant(), m.Groups["adj"].Value, 75, "description", false, null);
+                Add(owner, m.Groups["item"].Value.ToLowerInvariant(), m.Groups["adj"].Value, 75, "description", false, null, pid: "item.look");
             }
             foreach (Match m in ItemOwned.Matches(text))
             {
                 var owner = ResolveMatch(m);
                 if (owner is null || owner.Category != CatCharacter) continue;
-                Add(owner, "carries", m.Groups["item"].Value.ToLowerInvariant(), 60, "item", true, null);
+                Add(owner, "carries", m.Groups["item"].Value.ToLowerInvariant(), 60, "item", true, null, pid: "item.carries");
             }
             foreach (Match m in Duration.Matches(text))
             {
@@ -414,31 +443,31 @@ public static class StoryFactExtractor
                 var thing = Regex.Replace(rawS, @"^(?:[Tt]he|[Hh]er|[Hh]is)\s+", "");
                 var subj = Resolve(rawS, false) ?? Resolve("the " + thing, false) ?? NewThing("the " + thing.ToLowerInvariant(), CatItem, tossedKeys);
                 if (subj is null) continue;
-                Add(subj, "time to " + m.Groups["verb"].Value.ToLowerInvariant(), m.Groups["v"].Value, 80, "world-rule", false, CatItem);
+                Add(subj, "time to " + m.Groups["verb"].Value.ToLowerInvariant(), m.Groups["v"].Value, 80, "world-rule", false, CatItem, pid: "rule.duration");
             }
 
-            foreach (Match m in KinA.Matches(text).Concat(KinB.Matches(text)))
+            foreach (Match m in On("kin.1", KinA, text).Concat(On("kin.2", KinB, text)))
             {
                 var a = ResolveMatch(m);
                 var b = Resolve(m.Groups["o"].Value, false);
                 if (a is null || b is null || a.Key == b.Key) continue;
-                relations.Add(new Relation(a.Name, a.Key, m.Groups["rel"].Value.ToLowerInvariant(), b.Name, b.Key, text, beatId));
-                Add(a, m.Groups["rel"].Value.ToLowerInvariant(), b.Name, 80, "character", true, CatCharacter);
+                relations.Add(new Relation(a.Name, a.Key, m.Groups["rel"].Value.ToLowerInvariant(), b.Name, b.Key, text, beatId, "kin.1"));
+                Add(a, m.Groups["rel"].Value.ToLowerInvariant(), b.Name, 80, "character", true, CatCharacter, pid: "kin.1");
             }
-            foreach (Match m in Feel.Matches(text))
+            foreach (Match m in On("feeling.1", Feel, text))
             {
                 var a = ResolveMatch(m);
                 var b = Resolve(m.Groups["o"].Value, false);
                 if (a is null || b is null || a.Key == b.Key) continue;
-                relations.Add(new Relation(a.Name, a.Key, m.Groups["rel"].Value.ToLowerInvariant(), b.Name, b.Key, text, beatId));
+                relations.Add(new Relation(a.Name, a.Key, m.Groups["rel"].Value.ToLowerInvariant(), b.Name, b.Key, text, beatId, "feeling.1"));
             }
-            foreach (Match m in Member.Matches(text).Concat(Lives.Matches(text)))
+            foreach (Match m in On("member.1", Member, text).Concat(On("lives.1", Lives, text)))
             {
                 var a = ResolveMatch(m);
                 var b = Resolve(m.Groups["o"].Value, false);
                 if (a is null || b is null || a.Key == b.Key) continue;
                 var type = m.Value.Contains(" of ", StringComparison.Ordinal) && !Regex.IsMatch(m.Value, @"\b(?:lived|lives|ruled|rules|dwelt|served)\b") ? "member of" : "lives in";
-                relations.Add(new Relation(a.Name, a.Key, type, b.Name, b.Key, text, beatId));
+                relations.Add(new Relation(a.Name, a.Key, type, b.Name, b.Key, text, beatId, type == "member of" ? "member.1" : "lives.1"));
             }
             foreach (Match m in Speaks.Matches(text))
             {
@@ -446,7 +475,7 @@ public static class StoryFactExtractor
                 var subj = Resolve(raw, false);
                 if (subj is null || subj.Category != CatCharacter) continue;
                 // Evidence only: never a draft, never shown — it exists to meet a "dead" fact.
-                Add(subj, "status", "acts on the page", 50, "character", false, CatCharacter, evidence: true);
+                Add(subj, "status", "acts on the page", 50, "character", false, CatCharacter, evidence: true, pid: "evidence.speaks");
             }
 
             // Gender, learned from the prose: a sentence that opens "She…"/"He…" right after a
@@ -501,7 +530,7 @@ public static class StoryFactExtractor
 
         foreach (var c in accepted.Values)
             foreach (var (alias, quote, beatId) in c.Aliases)
-                facts.Add(new FactHit(c.Display, c.Key, null, c.Category, "alias", alias, quote, beatId, 70, "character", true));
+                if (!Off("alias.fold")) facts.Add(new FactHit(c.Display, c.Key, null, c.Category, "alias", alias, quote, beatId, 70, "character", true, Pattern: "alias.fold"));
 
         return new Result(names, Dedupe(facts), relations);
     }
@@ -529,6 +558,7 @@ public static class StoryFactExtractor
         public int Count { get; set; }
         public int MidSentence { get; set; }
         public int CharacterScore { get; set; }
+        public string Reason { get; set; } = "";
         public int PlaceScore { get; set; }
         public string? SuffixCategory { get; set; }
         public bool Titled { get; set; }

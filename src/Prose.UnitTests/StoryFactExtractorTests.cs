@@ -159,3 +159,34 @@ public class StoryFactExtractorSingleValueTests
     public void Relations_and_lists_accumulate(string attr) =>
         Assert.That(StoryFactExtractor.IsSingleValued(attr), Is.False);
 }
+
+[TestFixture]
+public class StoryFactExtractorPatternIdTests
+{
+    private static readonly StoryFactExtractor.Paragraph[] Sample =
+    [
+        new(Guid.NewGuid(), "Wren crossed the flats with her lantern. She was nineteen. Wren's eyes were grey."),
+        new(Guid.NewGuid(), "Wren's brother, Hollis Marsh, laughed. Hollis said nothing. Hollis hated the Tidewardens."),
+        new(Guid.NewGuid(), "Four years since the Siege. The lantern needs three nights to recharge. Wren pulled her grey coat tight."),
+    ];
+
+    [Test]
+    public void Every_hit_carries_a_known_pattern_id()
+    {
+        var r = StoryFactExtractor.Extract(Sample, []);
+        var known = StoryFactExtractor.PatternIds.ToHashSet();
+        Assert.That(r.Names.Select(n => n.Pattern).Concat(r.Facts.Select(f => f.Pattern)).Concat(r.Relations.Select(x => x.Pattern)),
+            Is.All.Matches<string>(p => known.Contains(p)));
+        Assert.That(r.Facts.Select(f => f.Pattern), Does.Contain("age.1").And.Contain("eyes.1").And.Contain("rule.duration"));
+    }
+
+    [Test]
+    public void A_disabled_pattern_or_family_produces_no_hits()
+    {
+        var r = StoryFactExtractor.Extract(Sample, [], disabledPatterns: new HashSet<string> { "age.1", "kin", "item" });
+        Assert.That(r.Facts.Any(f => f.Pattern == "age.1"), Is.False);
+        Assert.That(r.Facts.Any(f => f.Pattern.StartsWith("kin") || f.Pattern.StartsWith("item")), Is.False);
+        Assert.That(r.Relations.Any(x => x.Pattern.StartsWith("kin")), Is.False);
+        Assert.That(r.Facts.Any(f => f.Pattern == "eyes.1"), Is.True, "others still fire");
+    }
+}

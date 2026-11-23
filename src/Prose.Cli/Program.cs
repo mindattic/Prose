@@ -383,6 +383,16 @@ string[] BeatSubFlagOwners = ["--wound", "--liberty-report"];
 //   prose --continuity-inbox --slug <book> [--all|--explain <id>|--rule <id> --action accept-new|keep-existing|retcon|dismiss|--reopen <id>]
 //   prose --story-atlas --slug <book> [--as-of N]     prose --ask-book "Q" --slug <book>
 //   prose --brainstorm --slug <book> [--add T|--delete <id>]     prose --read-allowance [--words N] [--questions N]
+// CLI mode: the read-along precision audit (RFC 0019, RA-S3.1.1) — replay a book in memory, sample what the
+// extractor would draft per pattern for the author to mark, then score the marks. Read-only.
+//   prose --read-along-audit --slug <book> [--sample 100] --out <file.csv>
+//   prose --read-along-audit --score <file.csv> [--out <table.md>] [--apply]
+if (args.Contains("--read-along-audit"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ReadAlongAuditCli", args);
+    return;
+}
+
 if (new[] { "--import-manuscript", "--read-along", "--story-bible", "--continuity-inbox", "--story-atlas", "--ask-book", "--brainstorm", "--read-allowance" }
         .Any(args.Contains))
 {

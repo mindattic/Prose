@@ -22,8 +22,16 @@ namespace Prose.Core.Services.ReadAlong;
 public sealed class ReadAlongService(
     IDbContextFactory<ProseDbContext> dbFactory,
     ReadAlongAllowance allowance,
-    ILogger<ReadAlongService> log)
+    ILogger<ReadAlongService> log,
+    SettingsKvStore? settings = null)
 {
+    /// <summary>Settings key for extractor patterns switched off after the precision audit
+    /// (RA-T3.1.1.2): a list of pattern ids or families ("age.2", "kin").</summary>
+    public const string DisabledPatternsKey = "readalong.patterns.disabled";
+
+    private IReadOnlySet<string> DisabledPatterns() =>
+        (settings?.Get<List<string>>(DisabledPatternsKey) ?? []).ToHashSet(StringComparer.Ordinal);
+
     public static readonly JsonSerializerOptions Json = new(JsonSerializerDefaults.Web);
 
     // ── Book structure ──────────────────────────────────────────────────────────────────────
@@ -191,7 +199,7 @@ public sealed class ReadAlongService(
                 .Where(s => s.BookNodeId == bookId && s.Status == ReadAlongStatus.Tossed && s.Kind == "detail")
                 .Select(s => s.Fingerprint).ToListAsync(ct)).ToHashSet();
 
-        var result = Extract(chapter.Paragraphs, known.Entries, tossed);
+        var result = Extract(chapter.Paragraphs, known.Entries, tossed, DisabledPatterns());
 
         // Earlier facts about these subjects: this book's, and the same entities' in any book.
         var subjectKeys = result.Facts.Select(f => f.SubjectKey).Distinct().ToList();

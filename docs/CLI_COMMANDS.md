@@ -19,7 +19,7 @@
 > deliberate: RFC 0014 §2.4 is about a gate documented as seven checks, coded as six
 > and advertised as five, and this reference is not going to repeat that.
 
-**310 commands.** 30 deactivated. 10 cost-gated. 18 have no description in their dispatch comment (12 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**311 commands.** 30 deactivated. 10 cost-gated. 18 have no description in their dispatch comment (12 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -1826,6 +1826,23 @@ render a node to Markdown or PDF in Downloads. Markdown output embeds <!-- beat:
 prose --publish-readiness --slug <slug> [--json] docs/LOGIC.md §9's six-check publish-readiness convergence gate as a single readout (2026-08-30) — see BookHealthService.PublishReadinessAsync and PublishReadinessCli.cs. Read-only, no LLM calls, no cost gate needed.
 
 <sub>handler `PublishReadinessCli`</sub>
+
+### `--read-along-audit`
+
+```
+prose --import-manuscript --path <file|folder> [--title T] [--into <book>] [--read] [--dry-run]
+prose --read-along --slug <book> [--chapter <slug>] [--force] [--status] [--follow on|off] | --read-along --all
+prose --story-bible --slug <book> [--drafts|--keep <id>|--toss <id>|--keep-all|--entry <n>|--add <n>|--set <n> --attr A --value V|--remove <n>]
+prose --continuity-inbox --slug <book> [--all|--explain <id>|--rule <id> --action accept-new|keep-existing|retcon|dismiss|--reopen <id>]
+prose --story-atlas --slug <book> [--as-of N]     prose --ask-book "Q" --slug <book>
+prose --brainstorm --slug <book> [--add T|--delete <id>]     prose --read-allowance [--words N] [--questions N]
+prose --read-along-audit --slug <book> [--sample 100] --out <file.csv>
+prose --read-along-audit --score <file.csv> [--out <table.md>] [--apply]
+```
+
+the read-along (RFC 0019) — import a manuscript, read a book along, the automatic story bible (drafts, Keep it / Not quite, entries with receipts), the Continuity Inbox, the Story Atlas, ask your book, the brainstorm canvas and the optional reading allowance. Ahead of the other blocks because its --slug/--add/--status/--all/--entry flags are its own. Deterministic; never writes prose. CLI mode: the read-along precision audit (RFC 0019, RA-S3.1.1) — replay a book in memory, sample what the extractor would draft per pattern for the author to mark, then score the marks. Read-only.
+
+<sub>handler `ReadAlongAuditCli`</sub>
 
 ### `--read-beats`
 
