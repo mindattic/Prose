@@ -614,7 +614,7 @@
       "id": "RA-S3.2.1",
       "level": "story",
       "title": "More details are found, at the precision bar",
-      "status": "blocked",
+      "status": "done",
       "parent": "RA-F3.2",
       "acceptance": "every new pattern ships with fixture tests and, after RA-T3.1.1.4's method, at least 80 % precision."
     },
@@ -622,12 +622,9 @@
       "id": "RA-T3.2.1.1",
       "level": "task",
       "title": "Physical details: height, build, handedness",
-      "status": "blocked",
+      "status": "done",
       "parent": "RA-S3.2.1",
       "estimate": "S",
-      "depends": [
-        "RA-T3.1.1.4"
-      ],
       "files": "`StoryFactExtractor.cs`",
       "do": "add patterns `height` (\"stood six feet\", \"was tall/short\" normalized), `build` (lean, broad, slight, stocky), `handed` (\"left-handed\"). All are single-valued. Add `height`, `build` and `handed` to `SingleValued` and `LowercaseAttributes`.",
       "test": "6 positive and 4 negative fixtures.",
@@ -637,12 +634,9 @@
       "id": "RA-T3.2.1.2",
       "level": "task",
       "title": "Geography: relative location",
-      "status": "blocked",
+      "status": "done",
       "parent": "RA-S3.2.1",
       "estimate": "S",
-      "depends": [
-        "RA-T3.2.1.1"
-      ],
       "files": "`StoryFactExtractor.cs`",
       "do": "\"X lay/stood/sat (north|…) of Y\" becomes a relation `north of` plus fact `direction-from:<Y>` = north, single-valued, so a later \"south of Y\" raises a card.",
       "test": "fixtures and a card test in `ReadAlongServiceTests`.",
@@ -652,12 +646,9 @@
       "id": "RA-T3.2.1.3",
       "level": "task",
       "title": "Unnamed referents",
-      "status": "blocked",
+      "status": "done",
       "parent": "RA-S3.2.1",
       "estimate": "M",
-      "depends": [
-        "RA-T3.2.1.2"
-      ],
       "files": "`StoryFactExtractor.cs`, `ReadAlongService.cs`",
       "do": "recurring definite descriptions (\"the girl behind the curtain\", 3 or more times in a book, at least 2 words after \"the\") become draft entries named `(unnamed) girl behind the curtain`, matching `EntityStubFactory.UnnamedPrefix`. Keep it creates the stub through `GetOrCreateUnnamedAsync`.",
       "test": "a 3-chapter fixture makes one draft; 2 mentions make none.",
@@ -667,12 +658,9 @@
       "id": "RA-T3.2.1.4",
       "level": "task",
       "title": "Dialogue speakers",
-      "status": "blocked",
+      "status": "done",
       "parent": "RA-S3.2.1",
       "estimate": "S",
-      "depends": [
-        "RA-T3.2.1.3"
-      ],
       "files": "`StoryFactExtractor.cs`",
       "do": "attribute quoted speech with a tag inside or after the quote (`\"…,\" Sera said`, `\"…\" said the Chancellor`), and use that speaker as the antecedent for the next pronoun after the quote.",
       "test": "pronoun fixtures through dialogue.",

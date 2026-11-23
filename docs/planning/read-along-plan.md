@@ -47,7 +47,7 @@ things outside the code:
 | --- | --- |
 | The live database (Azure SQL is paused until 2026-12-01) | RA-T2.1.1.2, RA-T2.1.2.2 |
 | The author's rulings | RA-D1 → RA-T2.5.1.1 (and RA-S2.5.2); RA-D2 → RA-T3.2.2.1 (and RA-S3.2.3); RA-D3 → RA-S4.1.1 |
-| The author's precision verdicts | RA-T3.1.1.4 → RA-T3.2.1.1 to RA-T3.2.1.4 (measure before adding) |
+| The author's precision verdicts | RA-T3.1.1.4 (the four recall patterns it was to gate are built; the audit can switch any of them off) |
 
 The end-to-end scripts are in `tools/readalong/e2e/`. Run them against a Hub with a read-along book; a local
 database comes from `tools/db/create-local.sh`.
@@ -450,7 +450,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* every new pattern ships with fixture tests and, after RA-T3.1.1.4's method, at least 80 % precision.
 
 ##### RA-T3.2.1.1 · Physical details: height, build, handedness
-- **Status:** blocked: waits on RA-T3.1.1.4 (measure before adding)
+- **Status:** done 2920611 (built ahead of the RA-T3.1.1.4 audit, which measures these patterns too and can switch any of them off)
 - **Est:** S
 - **Depends:** RA-T3.1.1.4
 - **Files:** `StoryFactExtractor.cs`
@@ -459,7 +459,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the tests pass.
 
 ##### RA-T3.2.1.2 · Geography: relative location
-- **Status:** blocked: waits on RA-T3.1.1.4
+- **Status:** done 2920611 (built ahead of the RA-T3.1.1.4 audit, which measures these patterns too and can switch any of them off)
 - **Est:** S
 - **Depends:** RA-T3.2.1.1
 - **Files:** `StoryFactExtractor.cs`
@@ -468,7 +468,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the tests pass.
 
 ##### RA-T3.2.1.3 · Unnamed referents
-- **Status:** blocked: waits on RA-T3.1.1.4
+- **Status:** done 2920611 (built ahead of the RA-T3.1.1.4 audit, which measures these patterns too and can switch any of them off)
 - **Est:** M
 - **Depends:** RA-T3.2.1.2
 - **Files:** `StoryFactExtractor.cs`, `ReadAlongService.cs`
@@ -477,7 +477,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the tests pass.
 
 ##### RA-T3.2.1.4 · Dialogue speakers
-- **Status:** blocked: waits on RA-T3.1.1.4
+- **Status:** done 2920611 (built ahead of the RA-T3.1.1.4 audit, which measures these patterns too and can switch any of them off)
 - **Est:** S
 - **Depends:** RA-T3.2.1.3
 - **Files:** `StoryFactExtractor.cs`
