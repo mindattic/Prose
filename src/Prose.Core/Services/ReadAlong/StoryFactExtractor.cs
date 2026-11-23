@@ -23,7 +23,17 @@ public static class StoryFactExtractor
     // ── Inputs and outputs ──────────────────────────────────────────────────────────────────
 
     /// <summary>An entry the story bible already has (kept entity or pending draft).</summary>
-    public sealed record KnownEntry(Guid? EntityId, string Name, string Category, IReadOnlyList<string> Aliases);
+    /// <param name="Gender">'f' or 'm' when the bible records it (a kept "gender"/"pronouns" detail), so
+    /// pronouns skip the wrong character from the first sentence on.</param>
+    public sealed record KnownEntry(Guid? EntityId, string Name, string Category, IReadOnlyList<string> Aliases, char? Gender = null);
+
+    /// <summary>'f', 'm' or null for a recorded gender or pronoun value ("she/her", "female", "he", "male").</summary>
+    public static char? GenderOf(string? value) => (value ?? "").Trim().ToLowerInvariant() switch
+    {
+        var v when v.StartsWith("she") || v is "f" or "female" or "woman" or "girl" => 'f',
+        var v when v.StartsWith("he") || v is "m" or "male" or "man" or "boy" => 'm',
+        _ => null,
+    };
 
     /// <summary>One beat of plain text (entity tags and formatting already stripped).</summary>
     public sealed record Paragraph(Guid BeatId, string Text);
@@ -102,7 +112,7 @@ public static class StoryFactExtractor
     private const string Subj = "(?<s>" + NameCore + "|[Ss]he|[Hh]e)";
 
     // Possessor: "Elena's", "her", "his".
-    private const string Poss = "(?:(?<s>" + NameCore + ")['’]s|(?<p>[Hh]er|[Hh]is))";
+    private const string Poss = "(?:(?<s>" + NameCore + ")['’]s|(?<p>[Hh]er|[Hh]is|[Tt]heir))";
 
     private static readonly HashSet<string> Stop = new(StringComparer.OrdinalIgnoreCase)
     {
@@ -127,6 +137,13 @@ public static class StoryFactExtractor
         "Lord","Lady","Captain","King","Queen","Sir","Dame","Master","Mistress","Doctor","Dr","Father","Mother","Brother","Sister",
         "Prince","Princess","Duke","Duchess","Count","Countess","Baron","Baroness","Chancellor","General","Commander","Sergeant",
         "Lieutenant","Professor","Mr","Mrs","Ms","Miss","Emperor","Empress","Archbishop","Bishop","Saint","Uncle","Aunt",
+    };
+
+    private static char? KinGender(string rel) => rel.ToLowerInvariant() switch
+    {
+        "sister" or "mother" or "daughter" or "wife" or "aunt" or "grandmother" or "niece" => 'f',
+        "brother" or "father" or "son" or "husband" or "uncle" or "grandfather" or "nephew" => 'm',
+        _ => null,
     };
 
     private static readonly HashSet<string> FemaleTitles = new(StringComparer.OrdinalIgnoreCase)
@@ -225,7 +242,7 @@ public static class StoryFactExtractor
     private static readonly Regex Lives = R(@"\b" + Subj + @"\s+(?:lived|lives|ruled|rules|dwelt|served)\s+(?:in|at|over)\s+(?<o>(?:the\s+)?" + NameCore + ")");
     private static readonly Regex Speaks = R(@"(?:\b(?:said|asked|replied|whispered|shouted|answered|muttered|called)\s+(?<s>" + NameCore + @")\b|\b(?<s2>" + NameCore + @")\s+(?:said|asked|replied|whispered|shouted|answered|muttered|nodded|smiled|laughed)\b)");
 
-    private static readonly Regex CharacterSignal = R(@"^\s*(?:said|asked|replied|whispered|shouted|answered|muttered|nodded|smiled|laughed|frowned|sighed|turned|looked|crossed|walked|ran|stood|sat|watched|waited|stepped|moved|leaned|paused|knelt|arrived|talked|spoke|returned|knew|thought|felt|wanted|reached|lowered|raised|shook|grinned|wept|cried|swore|drew|held|took|gave|came|went|had|was)\b");
+    private static readonly Regex CharacterSignal = R(@"^\s*(?:[a-z]{2,}ed\b|said|asked|replied|whispered|shouted|answered|muttered|nodded|smiled|laughed|frowned|sighed|turned|looked|crossed|walked|ran|stood|sat|watched|waited|stepped|moved|leaned|paused|knelt|arrived|talked|spoke|returned|knew|thought|felt|wanted|reached|lowered|raised|shook|grinned|wept|cried|swore|drew|held|took|gave|came|went|had|was)\b");
     private static readonly Regex PlacePreposition = R(@"\b(?:in|at|into|from|toward|towards|through|across|to|near|inside|outside|beyond|reached|entered|left)\s+(?:the\s+)?$");
 
     // ── Entry point ─────────────────────────────────────────────────────────────────────────
@@ -369,7 +386,11 @@ public static class StoryFactExtractor
         (string Name, string Key, Guid? Id)? previousCharacter = null;
         var gender = new Dictionary<string, char>(StringComparer.Ordinal);
         var namedInLast = new List<string>();
+        (string Name, string Key, Guid? Id, string Category)? lastGroup = null;
+        foreach (var k in known)
+            if (k.Gender is { } kg) gender.TryAdd(Key(k.Name), kg);
         var lastParagraph = -1;
+        var paragraphNamedCharacter = false;
 
         Subject? Resolve(string? raw, bool pronoun)
         {
@@ -379,7 +400,7 @@ public static class StoryFactExtractor
             raw = raw.Trim();
             if (raw.EndsWith("'s", StringComparison.Ordinal) || raw.EndsWith("’s", StringComparison.Ordinal)) raw = raw[..^2];
             var words = raw.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-            while (words.Length > 1 && Stop.Contains(words[0]) && !words[0].Equals("the", StringComparison.OrdinalIgnoreCase)) words = words[1..];
+            while (words.Length > 1 && Stop.Contains(words[0]) && !Titles.Contains(words[0]) && !words[0].Equals("the", StringComparison.OrdinalIgnoreCase)) words = words[1..];
             raw = string.Join(' ', words);
             var key = Key(raw);
             if (key.Length < 2 || tossedKeys.Contains(key)) return null;
@@ -392,7 +413,12 @@ public static class StoryFactExtractor
 
         foreach (var (beatId, text, para) in sentences)
         {
-            if (para != lastParagraph && para - lastParagraph > 1) lastCharacter = null; // a gap breaks the thread
+            // A gap, or a whole paragraph that named no character, breaks the thread: "She" after it is no one's.
+            if (para != lastParagraph)
+            {
+                if (para - lastParagraph > 1 || (lastParagraph >= 0 && !paragraphNamedCharacter)) { lastCharacter = null; previousCharacter = null; }
+                paragraphNamedCharacter = false;
+            }
             lastParagraph = para;
 
             // Pronoun antecedent BEFORE this sentence's own facts, so "She was twenty-eight." after
@@ -452,6 +478,8 @@ public static class StoryFactExtractor
                 var b = Resolve(m.Groups["o"].Value, false);
                 if (a is null || b is null || a.Key == b.Key) continue;
                 relations.Add(new Relation(a.Name, a.Key, m.Groups["rel"].Value.ToLowerInvariant(), b.Name, b.Key, text, beatId, "kin.1"));
+                // "Wren's brother, Hollis" says Hollis is male (RA-T3.3.1.1).
+                if (KinGender(m.Groups["rel"].Value) is { } kg2) gender.TryAdd(b.Key, kg2);
                 Add(a, m.Groups["rel"].Value.ToLowerInvariant(), b.Name, 80, "character", true, CatCharacter, pid: "kin.1");
             }
             foreach (Match m in On("feeling.1", Feel, text))
@@ -484,16 +512,28 @@ public static class StoryFactExtractor
             if (startPronoun.Success && namedInLast.Count == 1)
                 gender.TryAdd(namedInLast[0], startPronoun.Groups[1].Value == "She" ? 'f' : 'm');
 
+            // "Wren had her own reasons": a possessive "own" after exactly one named character (RA-T3.3.1.1).
+            var own = Regex.Match(text, @"\b(her|his)\s+own\b", RegexOptions.IgnoreCase);
+            if (own.Success)
+            {
+                var before = CapRun.Matches(text[..own.Index]).Cast<Match>()
+                    .Select(m => Resolve(m.Groups["n"].Value, false)).Where(x => x is { Category: CatCharacter }).Select(x => x!.Key).Distinct().ToList();
+                if (before.Count == 1) gender.TryAdd(before[0], own.Groups[1].Value.ToLowerInvariant() == "her" ? 'f' : 'm');
+            }
+
             // Who "she" means in the next sentence: the last character named in this one.
             namedInLast.Clear();
             foreach (Match m in CapRun.Matches(text))
             {
                 var s = Resolve(m.Groups["n"].Value, false);
+                if (s is not null && (s.Category == CatOrganization || (s.Key.EndsWith('s') && m.Groups["the"].Success && s.Category != CatCharacter)))
+                    lastGroup = (s.Name, s.Key, s.EntityId, s.Category);
                 if (s is null || s.Category != CatCharacter) continue;
                 var words = m.Groups["n"].Value.Split(' ');
                 if (FemaleTitles.Contains(words[0])) gender.TryAdd(s.Key, 'f');
                 else if (MaleTitles.Contains(words[0])) gender.TryAdd(s.Key, 'm');
                 if (!namedInLast.Contains(s.Key)) namedInLast.Add(s.Key);
+                paragraphNamedCharacter = true;
                 if (lastCharacter is { } prev && prev.Key != s.Key) previousCharacter = prev;
                 lastCharacter = (s.Name, s.Key, s.EntityId);
             }
@@ -512,19 +552,30 @@ public static class StoryFactExtractor
             // A character whose gender the prose has already shown is skipped for the other pronoun.
             Subject? ResolvePronoun(string pronoun, int at)
             {
-                var g = pronoun.ToLowerInvariant() is "she" or "her" ? 'f' : 'm';
-                foreach (var cand in CapRun.Matches(text[..at]).Cast<Match>().Reverse())
+                // "their" is a group's, never one character's (RA-T3.3.1.2): the nearest organization or
+                // plural group earlier in the sentence, else the last one on the page.
+                if (pronoun.Equals("their", StringComparison.OrdinalIgnoreCase))
                 {
-                    var c = Resolve(cand.Groups["n"].Value, false);
-                    if (c is null || c.Category != CatCharacter) continue;
-                    if (gender.TryGetValue(c.Key, out var cg) && cg != g) continue;
-                    return c with { ViaPronoun = true };
+                    foreach (var cand in CapRun.Matches(text[..at]).Cast<Match>().Reverse())
+                    {
+                        var c = Resolve(cand.Groups["n"].Value, false);
+                        if (c is not null && (c.Category == CatOrganization || (c.Key.EndsWith('s') && c.Category != CatCharacter)))
+                            return c with { ViaPronoun = true };
+                    }
+                    return lastGroup is { } lg0 ? new Subject(lg0.Name, lg0.Key, lg0.Id, lg0.Category, true) : null;
                 }
-                if (lastCharacter is { } lc && !(gender.TryGetValue(lc.Key, out var lg) && lg != g))
-                    return new Subject(lc.Name, lc.Key, lc.Id, CatCharacter, true);
-                if (previousCharacter is { } pc && !(gender.TryGetValue(pc.Key, out var pg) && pg != g))
-                    return new Subject(pc.Name, pc.Key, pc.Id, CatCharacter, true);
-                return null;
+                var g = pronoun.ToLowerInvariant() is "she" or "her" ? 'f' : 'm';
+                // Candidates by recency: earlier in this sentence (nearest first), then the last two
+                // characters on the page. A candidate KNOWN to match the pronoun wins over a nearer one of
+                // unknown gender; a known mismatch is never chosen.
+                var cands = new List<Subject>();
+                foreach (var cand in CapRun.Matches(text[..at]).Cast<Match>().Reverse())
+                    if (Resolve(cand.Groups["n"].Value, false) is { Category: CatCharacter } c && cands.All(x => x.Key != c.Key)) cands.Add(c);
+                if (lastCharacter is { } lc && cands.All(x => x.Key != lc.Key)) cands.Add(new Subject(lc.Name, lc.Key, lc.Id, CatCharacter, false));
+                if (previousCharacter is { } pc && cands.All(x => x.Key != pc.Key)) cands.Add(new Subject(pc.Name, pc.Key, pc.Id, CatCharacter, false));
+                var pick = cands.FirstOrDefault(x => gender.TryGetValue(x.Key, out var xg) && xg == g)
+                        ?? cands.FirstOrDefault(x => !gender.ContainsKey(x.Key));
+                return pick is null ? null : pick with { ViaPronoun = true };
             }
         }
 
@@ -587,7 +638,8 @@ public static class StoryFactExtractor
         if (matched.EndsWith("'s", StringComparison.Ordinal) || matched.EndsWith("’s", StringComparison.Ordinal)) after = "'s" + after;
         var before = sentence[..index];
         if (CharacterSignal.IsMatch(after) || Regex.IsMatch(after, @"^['’]s\s+(?:eyes|hair|face|hand|hands|voice|mother|father|brother|sister)\b")) c.CharacterScore++;
-        if (Regex.IsMatch(before, @"\b(?:said|asked|told|replied)\s*$")) c.CharacterScore++;
+        if (Regex.IsMatch(before, @"\b(?:said|asked|told|replied|met|found|watched|followed)\s*$")) c.CharacterScore++;
+        if (Regex.IsMatch(before, @"\b(?:spoke|said|talked|whispered|nodded|turned|wrote|called|lied)\s+to\s+$")) { c.CharacterScore += 2; }
         if (PlacePreposition.IsMatch(before)) c.PlaceScore++;
     }
 

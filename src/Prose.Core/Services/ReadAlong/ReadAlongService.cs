@@ -428,8 +428,12 @@ public sealed class ReadAlongService(
                 .Select(f => new { f.EntityId, f.Value }).ToListAsync(ct))
             .GroupBy(a => a.EntityId!.Value).ToDictionary(g => g.Key, g => g.Select(x => x.Value).ToList());
 
+        var genders = (await db.StoryFacts.AsNoTracking().IgnoreQueryFilters()
+                .Where(f => f.UniverseId == universeId && f.EntityId != null && (f.Attribute == "gender" || f.Attribute == "pronouns") && f.Confirmed && f.SupersededAt == null)
+                .Select(f => new { f.EntityId, f.Value }).ToListAsync(ct))
+            .GroupBy(f => f.EntityId!.Value).ToDictionary(g => g.Key, g => GenderOf(g.Last().Value));
         var list = entities
-            .Select(e => new KnownEntry(e.Id, e.Name, CategoryOf(e.EntityType), aliases.GetValueOrDefault(e.Id) ?? []))
+            .Select(e => new KnownEntry(e.Id, e.Name, CategoryOf(e.EntityType), aliases.GetValueOrDefault(e.Id) ?? [], genders.GetValueOrDefault(e.Id)))
             .ToList();
         var pending = await db.StoryBibleSuggestions.AsNoTracking().IgnoreQueryFilters()
             .Where(s => s.BookNodeId == bookId && s.Kind == "entry" && s.Status == ReadAlongStatus.Pending)
