@@ -28,7 +28,7 @@
                 @foreach (var n in tree)
                 {
                     var words = chapters?.FirstOrDefault(c => c.ChapterNodeId == n.Id)?.Words;
-                    <li class="ms-node @(n.IsVolume ? "volume" : "") @(n.Id == current?.ChapterNodeId ? "on" : "") @(dragOver == n.Id ? "drop" : "")"
+                    <li class="ms-node @n.Kind @(n.Id == current?.ChapterNodeId || (n.IsScene && n.ParentId == current?.ChapterNodeId && openScene == n.Id) ? "on" : "") @(dragOver == n.Id ? "drop" : "")"
                         style="--depth:@n.Depth" draggable="true"
                         @ondragstart="() => dragging = n.Id" @ondragend="() => { dragging = null; dragOver = null; }"
                         @ondragenter="() => dragOver = n.Id" @ondrop="() => DropAsync(n)">
@@ -40,13 +40,17 @@
                         else
                         {
                             <button class="ms-open" @onclick="() => Open(n.Id)" @ondblclick="() => BeginRename(n)" title="Drag to reorder · double-click to rename">
-                                <span class="ms-ico" aria-hidden="true">@(n.IsVolume ? "▸" : "§")</span>
+                                <span class="ms-ico" aria-hidden="true">@(n.IsVolume ? "▸" : n.IsScene ? "¶" : "§")</span>
                                 <span class="ms-title">@n.Title</span>
                                 @if (words is > 0)
                                 {
                                     <span class="ms-words">@words.Value.ToString("N0")</span>
                                 }
                             </button>
+                            @if (n.Kind == "chapter")
+                            {
+                                <button class="ms-add-scene" @onclick="() => AddSceneAsync(n)" title="Add a scene to @n.Title" aria-label="Add a scene to @n.Title">+¶</button>
+                            }
                         }
                     </li>
                 }
@@ -193,9 +197,29 @@
         await RefreshRememberedAsync();
     }
 
+    private Guid? openScene;
+
     private void Open(Guid id)
     {
+        // A scene opens its chapter (the read-along's unit) and scrolls to the scene's first paragraph.
+        openScene = null;
+        var node = tree?.FirstOrDefault(t => t.Id == id);
+        if (node is { IsScene: true })
+        {
+            openScene = id;
+            var chapterId = tree!.TakeWhile(t => t.Id != id).LastOrDefault(t => t.Kind == "chapter" && t.Depth < node.Depth)?.Id;
+            if (chapterId is { } ch) id = ch;
+        }
         if (chapters?.FirstOrDefault(c => c.ChapterNodeId == id) is { } c) { current = c; lastRead = null; _ = RefreshAndRenderAsync(); }
+    }
+
+    private async Task AddSceneAsync(StoryUiService.TreeNode chapter)
+    {
+        var n = tree!.Count(t => t.IsScene && t.ParentId == chapter.Id) + 1;
+        var id = await StoryUi.AddNodeAsync(chapter.Id, $"Scene {n}", "scene");
+        await LoadAsync();
+        renaming = id;
+        renameText = $"Scene {n}";
     }
 
     private async Task RefreshAndRenderAsync() { await RefreshRememberedAsync(); StateHasChanged(); }
@@ -238,7 +262,13 @@
         var moving = dragging;
         dragging = null; dragOver = null;
         if (moving is not { } id || id == target.Id) return;
-        await StoryUi.MoveAsync(id, target.Id, into: target.IsVolume && target.Id != id && tree!.First(t => t.Id == id).ParentId != target.Id && !tree!.First(t => t.Id == id).IsVolume);
+        var mover = tree!.First(t => t.Id == id);
+        // Rules (RA-T2.3.1.2): a scene dropped on a chapter goes INTO it; a scene on a scene goes before
+        // it; a chapter is never dropped into a scene; a chapter on a volume goes into the volume.
+        if (!mover.IsScene && target.IsScene) return;
+        var into = mover.IsScene ? target.Kind == "chapter"
+                 : target.IsVolume && mover.ParentId != target.Id && !mover.IsVolume;
+        await StoryUi.MoveAsync(id, target.Id, into: into);
         await LoadAsync();
         await OnChanged.InvokeAsync();
     }

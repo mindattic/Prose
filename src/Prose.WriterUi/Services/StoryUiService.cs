@@ -23,7 +23,11 @@ public sealed class StoryUiService(
 
     public sealed record UniverseItem(Guid Id, string Slug, string Name);
 
-    public sealed record TreeNode(Guid Id, string Title, Guid? ParentId, double SortKey, bool IsVolume, int Depth);
+    /// <param name="Kind">volume (a chapter holding chapters) | chapter | sequence | scene.</param>
+    public sealed record TreeNode(Guid Id, string Title, Guid? ParentId, double SortKey, bool IsVolume, int Depth, string Kind = "chapter")
+    {
+        public bool IsScene => Kind is "scene" or "sequence";
+    }
 
     public async Task<List<BookItem>> ListBooksAsync(CancellationToken ct = default)
     {
@@ -48,23 +52,37 @@ public sealed class StoryUiService(
         if (universeId != Guid.Empty) universe.SetFlowUniverse(universeId);
     }
 
-    /// <summary>The book's volumes and chapters (not scenes) in reading order.</summary>
+    /// <summary>The book's volumes, chapters, sequences and scenes in reading order.</summary>
     public async Task<List<TreeNode>> GetTreeAsync(Guid bookId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
+        return await WalkAsync(db, bookId, ct);
+    }
+
+    /// <summary>The tree walk, separate so it can be tested on any ProseDbContext (RA-T2.3.1.1).
+    /// Book-kind children are draft buckets and are skipped, as every reading-order walk does.</summary>
+    public static async Task<List<TreeNode>> WalkAsync(ProseDbContext db, Guid bookId, CancellationToken ct = default)
+    {
         var all = new List<TreeNode>();
         async Task Walk(Guid parent, int depth)
         {
+            if (depth > 6) return;
             var kids = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
                 .Where(n => n.ParentNodeId == parent && n.Kind != "book")
                 .OrderBy(n => n.SortKey).ThenBy(n => n.Id)
-                .Select(n => new { n.Id, n.Title, n.ParentNodeId, n.SortKey, IsChapter = n is ChapterNode })
                 .ToListAsync(ct);
-            foreach (var k in kids.Where(k => k.IsChapter))
+            foreach (var k in kids)
             {
-                var hasChapterKids = await db.Nodes.IgnoreQueryFilters().AnyAsync(n => n.ParentNodeId == k.Id && n is ChapterNode, ct);
-                all.Add(new TreeNode(k.Id, k.Title, k.ParentNodeId, k.SortKey, hasChapterKids, depth));
-                if (hasChapterKids && depth < 4) await Walk(k.Id, depth + 1);
+                if (k is not (ChapterNode or SceneNode or SequenceNode)) continue;
+                var hasChapterKids = k is ChapterNode && await db.Nodes.IgnoreQueryFilters().AnyAsync(n => n.ParentNodeId == k.Id && n is ChapterNode, ct);
+                var kind = k switch
+                {
+                    SceneNode => "scene",
+                    SequenceNode => "sequence",
+                    _ => hasChapterKids ? "volume" : "chapter",
+                };
+                all.Add(new TreeNode(k.Id, k.Title, k.ParentNodeId, k.SortKey, hasChapterKids, depth, kind));
+                await Walk(k.Id, depth + 1);
             }
         }
         await Walk(bookId, 0);
@@ -100,9 +118,16 @@ public sealed class StoryUiService(
         await workbench.ReparentNodeAsync(nodeId, parentId, max + 100, ct);
     }
 
-    public async Task<Guid> AddChapterAsync(Guid parentId, string title, CancellationToken ct = default)
+    public Task<Guid> AddChapterAsync(Guid parentId, string title, CancellationToken ct = default) =>
+        AddNodeAsync(parentId, title, "chapter", ct);
+
+    /// <summary>A new chapter or scene (kind "chapter" | "scene") at the end of its parent, with one
+    /// empty beat so it opens in the Writer.</summary>
+    public async Task<Guid> AddNodeAsync(Guid parentId, string title, string kind, CancellationToken ct = default)
     {
-        var (id, _) = await workbench.CreateNodeAsync(string.IsNullOrWhiteSpace(title) ? "New chapter" : title.Trim(), kind: "chapter", parentNodeId: parentId, ct: ct);
+        kind = kind == "scene" ? "scene" : "chapter";
+        var (id, _) = await workbench.CreateNodeAsync(string.IsNullOrWhiteSpace(title) ? (kind == "scene" ? "New scene" : "New chapter") : title.Trim(),
+            kind: kind, parentNodeId: parentId, ct: ct);
         // A chapter is written in the Writer; give it its first (empty) beat so it opens there.
         await workbench.InsertBeatAsync(id, null, "", ct);
         return id;

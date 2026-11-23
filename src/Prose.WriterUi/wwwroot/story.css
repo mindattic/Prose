@@ -288,3 +288,9 @@ blockquote .door { display: inline; width: auto; padding: 0 .3rem; border: 0; ba
 /* RA-T2.2.2: the Writer — highlighted story-bible names, and the entry panel as a column of .body. */
 ::highlight(prose-codex) { text-decoration: underline dotted var(--story-green); text-underline-offset: .2em; background-color: rgba(47, 208, 143, .08); }
 .writer .body > .entry-panel { flex: 0 0 380px; max-width: 40vw; }
+
+/* RA-T2.3.1.2: scenes in the manuscript tree. */
+.ms-node { position: relative; }
+.ms-node.scene .ms-open, .ms-node.sequence .ms-open { font-size: .9rem; color: var(--color-fg-soft, var(--color-fg)); }
+.ms-add-scene { position: absolute; right: .2rem; top: .25rem; display: none; background: var(--color-bg-4); border: 0; color: var(--color-fg-muted); border-radius: var(--radius); font-size: .72rem; padding: .05rem .35rem; cursor: pointer; }
+.ms-node:hover .ms-add-scene, .ms-add-scene:focus { display: block; }

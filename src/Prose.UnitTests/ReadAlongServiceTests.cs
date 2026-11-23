@@ -177,6 +177,38 @@ public class ReadAlongServiceTests
     }
 
     [Test]
+    public async Task A_scene_moved_to_another_chapter_is_read_with_it_and_both_chapters_are_due()
+    {
+        var book = await BookAsync(("One", ["Wren crossed the flats."]), ("Two", ["Kael waited at the gate."]));
+        Guid sceneId;
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            var one = await db.Nodes.SingleAsync(n => n.Title == "One");
+            var scene = new SceneNode { Id = Guid.NewGuid(), ParentNodeId = one.Id, Title = "Night", Slug = "night-" + Guid.NewGuid().ToString("N")[..6], SortKey = 500, UniverseId = Universe.GlmzId };
+            db.Nodes.Add(scene);
+            var beat = new Beat { Id = Guid.NewGuid(), Number = number++, Text = "Maren watched the tide turn.", TextHash = Beat.ComputeHash("Maren watched the tide turn.") };
+            db.Beats.Add(beat);
+            db.BeatNodes.Add(new BeatNode { NodeId = scene.Id, BeatId = beat.Id, SortKey = 100 });
+            await db.SaveChangesAsync();
+            sceneId = scene.Id;
+        }
+        var before = await readAlong.GetChaptersAsync(book);
+        Assert.That(before.Single(c => c.Title == "One").Paragraphs.Count, Is.EqualTo(2), "a scene folds into its chapter");
+        await readAlong.ReadBookAsync(book);
+        Assert.That(await readAlong.UnreadChaptersAsync(book), Is.Empty);
+
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            var two = await db.Nodes.SingleAsync(n => n.Title == "Two");
+            (await db.Nodes.SingleAsync(n => n.Id == sceneId)).ParentNodeId = two.Id;
+            await db.SaveChangesAsync();
+        }
+        var after = await readAlong.GetChaptersAsync(book);
+        Assert.That(after.Single(c => c.Title == "Two").Paragraphs.Count, Is.EqualTo(2));
+        Assert.That((await readAlong.UnreadChaptersAsync(book)).Select(c => c.Title), Is.EquivalentTo(new[] { "One", "Two" }));
+    }
+
+    [Test]
     public async Task Tossed_drafts_stay_tossed()
     {
         var book = await BookAsync(("One", ["Brannoc watched the moor. Brannoc said nothing."]));
