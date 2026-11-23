@@ -39,7 +39,8 @@
                         }
                         else
                         {
-                            <button class="ms-open" @onclick="() => Open(n.Id)" @ondblclick="() => BeginRename(n)" title="Drag to reorder · double-click to rename">
+                            <button class="ms-open" data-node="@n.Id" @onclick="() => Open(n.Id)" @ondblclick="() => BeginRename(n)" @onkeydown="e => TreeKeyAsync(e, n)"
+                                    aria-keyshortcuts="Alt+ArrowUp Alt+ArrowDown" title="Drag (or Alt+↑/↓) to reorder · double-click to rename">
                                 <span class="ms-ico" aria-hidden="true">@(n.IsVolume ? "▸" : n.IsScene ? "¶" : "§")</span>
                                 <span class="ms-title">@n.Title</span>
                                 @if (words is > 0)
@@ -211,6 +212,26 @@
             if (chapterId is { } ch) id = ch;
         }
         if (chapters?.FirstOrDefault(c => c.ChapterNodeId == id) is { } c) { current = c; lastRead = null; _ = RefreshAndRenderAsync(); }
+    }
+
+    // RA-T4.2.1.1: reorder from the keyboard. Alt+↑ moves a row before its previous sibling, Alt+↓ after
+    // its next one; focus stays on the moved row.
+    private async Task TreeKeyAsync(KeyboardEventArgs e, StoryUiService.TreeNode n)
+    {
+        if (!e.AltKey || e.Key is not ("ArrowUp" or "ArrowDown") || tree is null) return;
+        var siblings = tree.Where(t => t.ParentId == n.ParentId && t.Depth == n.Depth).ToList();
+        var i = siblings.FindIndex(t => t.Id == n.Id);
+        if (e.Key == "ArrowUp" && i > 0) await StoryUi.MoveAsync(n.Id, siblings[i - 1].Id);
+        else if (e.Key == "ArrowDown" && i >= 0 && i < siblings.Count - 1)
+        {
+            if (i + 2 < siblings.Count) await StoryUi.MoveAsync(n.Id, siblings[i + 2].Id);
+            else if (n.ParentId is { } parent) await StoryUi.MoveToEndAsync(n.Id, parent);
+        }
+        else return;
+        await LoadAsync();
+        await OnChanged.InvokeAsync();
+        StateHasChanged();
+        try { await JS.InvokeVoidAsync("proseStory.focusSelector", $".ms-open[data-node='{n.Id}']"); } catch (JSException) { }
     }
 
     private async Task AddSceneAsync(StoryUiService.TreeNode chapter)

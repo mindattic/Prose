@@ -45,7 +45,8 @@
             @foreach (var c in cards.Where(c => !hiddenColors.Contains(c.Color)))
             {
                 <div class="bs-card bs-@c.Color @(linking == c.Id ? "linking" : "")" data-id="@c.Id" style="left:@(c.X)px; top:@(c.Y)px" @key="c.Id">
-                    <div class="bs-handle" title="Drag">⠿ <span>@c.Color</span>
+                    <div class="bs-handle" title="Drag, or focus and use the arrow keys (Shift for bigger steps)" tabindex="0" role="button"
+                         aria-label="Move card @c.Title" @onkeydown="e => CardKeyAsync(e, c)">⠿ <span>@c.Color</span>
                         <button class="ghost" @onclick="() => LinkAsync(c)" title="@(linking is null ? "Thread this card to another" : "Thread to this card")">⟷</button>
                         <button class="ghost" @onclick="() => DeleteAsync(c)" aria-label="Delete card">✕</button>
                     </div>
@@ -85,6 +86,16 @@
     private Guid? linking;
     private readonly HashSet<string> hiddenColors = [];
     private void ToggleColor(string c) { if (!hiddenColors.Remove(c)) hiddenColors.Add(c); }
+
+    // RA-T4.2.1.1: arrow keys move a focused card 10px (Shift: 50px).
+    private async Task CardKeyAsync(KeyboardEventArgs e, BrainstormService.Card c)
+    {
+        var step = e.ShiftKey ? 50 : 10;
+        var (dx, dy) = e.Key switch { "ArrowLeft" => (-step, 0), "ArrowRight" => (step, 0), "ArrowUp" => (0, -step), "ArrowDown" => (0, step), _ => (0, 0) };
+        if (dx == 0 && dy == 0) return;
+        await Brainstorm.UpdateAsync(c.Id, x: Math.Max(0, c.X + dx), y: Math.Max(0, c.Y + dy));
+        cards = await Brainstorm.ListAsync(BookId);
+    }
 
     private async Task TieAsync(BrainstormService.Card c, string? entity)
     {

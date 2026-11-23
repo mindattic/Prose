@@ -18,7 +18,7 @@
   --font-reading: "Literata", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
 }
 :root[data-theme="light"] {
-  --story-green: #137a52;
+  --story-green: #0f6b47;
   --story-green-bg: #dff3ea;
   --story-gold: #8a6200;
   --story-red-bg: #fbe9ea;
@@ -318,3 +318,17 @@ blockquote .door { display: inline; width: auto; padding: 0 .3rem; border: 0; ba
 .bs-entity { display: flex; align-items: center; gap: .2rem; margin-top: .2rem; }
 .bs-tie { background: transparent; color: var(--color-fg-muted); border: 1px dashed var(--color-border-strong); border-radius: var(--radius); font-size: .75rem; max-width: 100%; }
 .bs-card { cursor: auto; }
+/* RA-F4.2: list view, focus rings, reduced motion. */
+.atlas-list { margin-top: .5rem; }
+.atlas-list summary { cursor: pointer; color: var(--color-fg-muted); }
+.atlas-list h3 { font-size: .85rem; margin: .6rem 0 .2rem; }
+.atlas-list ul { margin: 0; padding-left: 1.2rem; }
+.bs-handle:focus-visible, .ms-open:focus-visible { outline: 2px solid var(--story-green); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  .ms-prose p { transition: none; }
+  .ms-prose p.flash { background: rgba(242, 193, 78, .16); }
+  .story *, .entry-panel * { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
+}
+/* RA-T4.2.1.3 contrast fixes (tools/readalong/e2e/contrast.js). */
+.ms-node.on .ms-words, .ms-node.on .ms-ico { color: var(--color-fg); }
+:root[data-theme="light"] .actions .accept, :root[data-theme="light"] .keep, :root[data-theme="light"] .send:not(:disabled) { color: #fff; }

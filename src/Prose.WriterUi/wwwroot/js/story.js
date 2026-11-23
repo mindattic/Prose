@@ -99,7 +99,8 @@
             if (!visible(s)) return;
             const p = pos.get(s.key), col = CATEGORY_COLORS[s.category] || '#aaa';
             const r = (4 + Math.min(10, Math.sqrt(s.mentions) * 1.4)) * (s.key === hover ? 1.35 : 1);
-            const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, r * 5);
+            const calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, r * (calm ? 1.5 : 5));
             g.addColorStop(0, col + '55'); g.addColorStop(1, col + '00');
             ctx.fillStyle = g; ctx.beginPath(); ctx.arc(p.x, p.y, r * 5, 0, Math.PI * 2); ctx.fill();
             ctx.globalAlpha = s.draft ? 0.5 : 1;
@@ -305,6 +306,8 @@
             st.apply();
         },
 
+        focusSelector(sel) { const el = document.querySelector(sel); if (el) el.focus(); },
+
         // Import drop zone (RA-T2.4.2.4): files or whole folders dropped anywhere on the zone are read
         // (folders recursively) and handed to the files input, which Blazor's InputFile then reads.
         importDrop(zone, inputId) {
@@ -351,7 +354,8 @@
         scrollToBeat(beatId) {
             const el = document.getElementById('beat-' + beatId);
             if (!el) return false;
-            el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+            const calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            el.scrollIntoView({ block: 'center', behavior: calm ? 'auto' : 'smooth' });
             el.classList.add('flash');
             setTimeout(() => el.classList.remove('flash'), 2200);
             return true;
