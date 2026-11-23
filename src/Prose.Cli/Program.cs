@@ -1849,6 +1849,16 @@ if (args.Contains("--stamp-in-world"))
     return;
 }
 
+// CLI mode: correct a book's PublishUrl/Asin to its Amazon store page without recording a publication
+// (the wiki's reconcile found Neon & Rust's link pointing at the wrong page). StoreUrlCli existed but
+// nothing dispatched to it (RA-T5.4.1.1).
+//   prose --set-store-url --slug <slug|code> --url <https://www.amazon.com/dp/ASIN>
+if (args.Contains("--set-store-url"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("StoreUrlCli", args);
+    return;
+}
+
 // CLI mode: a book's beats in reading order with their stored in-world dates, as JSON — the feed
 // the GLMZ wiki's cross-book timeline reads. No LLM, no writes (PRS-T1069).
 //   prose --in-world --slug <book> --json

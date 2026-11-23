@@ -18,7 +18,9 @@ public class HubHostingTests
 
     private static IConfiguration Config(params (string Key, string Value)[] values) =>
         new ConfigurationBuilder()
-            .AddInMemoryCollection(values.Select(v => new KeyValuePair<string, string?>(v.Key, v.Value)))
+            // Later values win (an override passed to Hosted() replaces its default), as configuration
+            // layers do; AddInMemoryCollection itself throws on a repeated key.
+            .AddInMemoryCollection(values.GroupBy(v => v.Key).Select(g => new KeyValuePair<string, string?>(g.Key, g.Last().Value)))
             .Build();
 
     private static HubHosting Hosted(params (string Key, string Value)[] extra) =>

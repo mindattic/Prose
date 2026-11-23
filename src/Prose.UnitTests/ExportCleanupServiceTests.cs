@@ -11,7 +11,7 @@ namespace Prose.UnitTests;
 [TestFixture]
 public class ExportCleanupServiceTests
 {
-    [Test]
+    [Test, Platform("Win", Reason = "Windows drive paths (D:\\...): System.IO.Path on Linux treats them as one file name")]
     public void ArchiveDirFor_flat_NodeCode_book_is_a_sibling_of_the_universe_folder()
     {
         var baseDir = @"D:\Projects\MindAttic\ePub\MindAttic\GLMZ";
@@ -20,7 +20,7 @@ public class ExportCleanupServiceTests
             Is.EqualTo(@"D:\Projects\MindAttic\ePub\MindAttic\Archives\GLMZ\ATTE"));
     }
 
-    [Test]
+    [Test, Platform("Win", Reason = "Windows drive paths (D:\\...): System.IO.Path on Linux treats them as one file name")]
     public void ArchiveDirFor_mirrors_legacy_series_nesting()
     {
         var baseDir = @"D:\Projects\MindAttic\ePub\MindAttic\SET";
@@ -29,7 +29,7 @@ public class ExportCleanupServiceTests
             Is.EqualTo(@"D:\Projects\MindAttic\ePub\MindAttic\Archives\SET\Philosophy and Technology\Manuscript"));
     }
 
-    [Test]
+    [Test, Platform("Win", Reason = "Windows drive paths (D:\\...): System.IO.Path on Linux treats them as one file name")]
     public void ArchiveDirFor_tolerates_a_trailing_separator_on_baseDir()
     {
         var baseDir = @"D:\Projects\MindAttic\ePub\MindAttic\GLMZ\";
@@ -38,7 +38,7 @@ public class ExportCleanupServiceTests
             Is.EqualTo(@"D:\Projects\MindAttic\ePub\MindAttic\Archives\GLMZ\ATTE"));
     }
 
-    [Test]
+    [Test, Platform("Win", Reason = "Windows drive paths (D:\\...): System.IO.Path on Linux treats them as one file name")]
     public void RemotePathFor_mirrors_ArchiveDirFor_as_a_forward_slash_ftp_path()
     {
         var baseDir = @"D:\Projects\MindAttic\ePub\MindAttic\GLMZ";
@@ -46,7 +46,7 @@ public class ExportCleanupServiceTests
         Assert.That(WebPublishService.RemotePathFor(baseDir, nodeDir), Is.EqualTo("/mindattic.com/GLMZ/ATTE"));
     }
 
-    [Test]
+    [Test, Platform("Win", Reason = "Windows drive paths (D:\\...): System.IO.Path on Linux treats them as one file name")]
     public void RemotePathFor_mirrors_legacy_series_nesting_as_forward_slashes()
     {
         var baseDir = @"D:\Projects\MindAttic\ePub\MindAttic\SET";

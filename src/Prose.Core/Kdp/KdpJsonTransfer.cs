@@ -509,7 +509,10 @@ public sealed class KdpJsonTransfer
 public static class KdpRunLogFormat
 {
     public const string FinishedMessage = "Run finished.";
-    public static string NewLine => Environment.NewLine;
+    /// <summary>CRLF, pinned like <see cref="KdpJsonTransfer"/>'s JSON: the run logs KdpPublish writes are CRLF
+    /// files, and a render must reproduce them byte for byte on any OS (Environment.NewLine made the
+    /// round trip pass only on Windows).</summary>
+    public const string NewLine = "\r\n";
 
     private static readonly Regex EntryStart = new(@"^\[(?<at>\d{4}-\d\d-\d\d \d\d:\d\d:\d\d)Z\] ", RegexOptions.Compiled);
     private static readonly Regex EntrySplit = new(@"\r?\n(?=\[\d{4}-\d\d-\d\d \d\d:\d\d:\d\dZ\] )", RegexOptions.Compiled);
