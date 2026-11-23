@@ -9,6 +9,8 @@ updated: 2026-11-23
 
 # Read-along: plan and tickets {#SS-PLAN-READ-ALONG}
 
+The per-ticket files, one per ticket in nested folders (epic/feature/story/task), are in [`read-along-tickets/`](read-along-tickets/README.md), generated with `--tree`.
+
 The full plan for the read-along: Prose reads a manuscript chapter by chapter and keeps the story bible,
 the continuity checks, the map and the conversation, **without writing a word of the book**. The design is
 [RFC 0019](../rfc/0019-read-along.md). The machine-readable copy of this tree is
