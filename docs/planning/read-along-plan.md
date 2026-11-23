@@ -64,9 +64,7 @@ database comes from `tools/db/create-local.sh`.
   Claude answers arrive as one chunk until Legion can stream.
 - **F-3 · Prose migrations:** the history cannot replay onto an empty server (the NodeCode index). Squash a
   baseline; until then use `tools/db/create-local.sh`.
-- **F-4 · Pre-existing test failures on Linux:** the full suite has the same 11 failures before and after this
-  work. `StoreUrlCli` is unreachable from the dispatch chain, and the other ten are Windows-path, allowed-host,
-  import/export and log-parsing tests.
+- **F-4 · Pre-existing test failures on Linux:** fixed (RA-S5.4.1). The full suite is now green on Linux.
 
 ---
 
@@ -921,6 +919,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* `ProseInline.Parse("a \\*b\\* c")` yields plain text `a *b* c`. Imported text with a real asterisk is escaped on the way in.
 
 ##### RA-T5.1.1.1 · Escape support in `ProseInline`
+- **Status:** blocked: lives in MindAttic.Export, another repository, and needs a package published
 - **Est:** S
 - **Depends:** —
 - **Files:** MindAttic.Export `Text/ProseInline.cs` and its tests (another repository); then bump the package in `src/Prose.Core/Prose.Core.csproj` and `lib/local-packages`
@@ -929,6 +928,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** Prose builds against the new package and its tests pass.
 
 ##### RA-T5.1.1.2 · Import escapes literal asterisks
+- **Status:** blocked: waits on RA-T5.1.1.1
 - **Est:** XS
 - **Depends:** RA-T5.1.1.1
 - **Files:** `ManuscriptParser.cs` (`Markup` and the text readers escape `*` in run text before adding markers)
@@ -941,6 +941,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* Ask shows a Claude answer growing as it is generated, not in one piece.
 
 ##### RA-T5.2.1.1 · `LegionClient.StreamAsync`
+- **Status:** blocked: lives in MindAttic.Legion, another repository, and needs a package published
 - **Est:** M
 - **Depends:** —
 - **Files:** MindAttic.Legion (another repository): a streaming call over the Messages API's server-sent events, keeping retries and the circuit breaker; a new package version
@@ -948,6 +949,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the package is published.
 
 ##### RA-T5.2.1.2 · `ClaudeService.StreamAsync`
+- **Status:** blocked: waits on RA-T5.2.1.1
 - **Est:** S
 - **Depends:** RA-T5.2.1.1
 - **Files:** `src/Prose.Core/Services/ClaudeService.cs` (override the interface default with Legion's stream)
@@ -960,6 +962,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* `dotnet ef database update` succeeds on an empty SQL Server 2022, and the live database is unaffected.
 
 ##### RA-T5.3.1.1 · Squashed baseline migration
+- **Status:** blocked: the mechanism is a decision for the author (recorded as a ruling on the live factory); the interim path, tools/db/create-local.sh, is built (RA-T4.4.1.1)
 - **Est:** L
 - **Depends:** —
 - **Files:** `src/Prose.Core/Migrations/` (a baseline generated from the current model, applied only when `__EFMigrationsHistory` is empty; the existing history stays for databases that have it)
@@ -973,6 +976,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* the 11 failures present before the read-along (`StoreUrlCli` reachability, the ArchiveDirFor/RemotePathFor paths, AllowedHosts, import/export round trip, log parsing) pass, or are marked Windows-only with a reason.
 
 ##### RA-T5.4.1.1 · `StoreUrlCli` reachable from the dispatch chain
+- **Status:** done 4e17f0b
 - **Est:** XS
 - **Depends:** —
 - **Files:** `src/Prose.Cli/Program.cs` (dispatch `--set-store-url` to `StoreUrlCli`, or delete the class if `--set-store-url` lives elsewhere)
@@ -980,6 +984,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the test passes.
 
 ##### RA-T5.4.1.2 · Path and host tests on Linux
+- **Status:** done 4e17f0b (HubHosting helper and KDP CRLF were real bugs, fixed; the five drive-letter path tests are marked Windows-only; full suite 3,589 passed, 0 failed on Linux)
 - **Est:** S
 - **Depends:** RA-T5.4.1.1
 - **Files:** the failing test classes (ExportCleanupService ArchiveDirFor/RemotePathFor, AllowedHosts, import/export round trip, run-log parsing)
@@ -992,6 +997,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* `register-tickets.ps1 -WhatIf` prints one command per ticket, and `create-local.ps1` makes a database the Hub starts against.
 
 ##### RA-T5.5.1.1 · Run them under PowerShell 7
+- **Status:** blocked: needs PowerShell 7; installing it in this container was not permitted
 - **Est:** S
 - **Depends:** —
 - **Files:** `tools/planning/register-tickets.ps1`, `tools/db/create-local.ps1`

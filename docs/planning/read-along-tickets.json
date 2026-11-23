@@ -1392,21 +1392,21 @@
       "id": "RA-E5",
       "level": "epic",
       "title": "Follow-ups found while building",
-      "status": "open",
+      "status": "blocked",
       "parent": null
     },
     {
       "id": "RA-F5.1",
       "level": "feature",
       "title": "Literal asterisks (MindAttic.Export)",
-      "status": "open",
+      "status": "blocked",
       "parent": "RA-E5"
     },
     {
       "id": "RA-S5.1.1",
       "level": "story",
       "title": "An escaped `\\*` stays a literal asterisk everywhere",
-      "status": "open",
+      "status": "blocked",
       "parent": "RA-F5.1",
       "acceptance": "`ProseInline.Parse(\"a \\\\*b\\\\* c\")` yields plain text `a *b* c`. Imported text with a real asterisk is escaped on the way in."
     },
@@ -1414,7 +1414,7 @@
       "id": "RA-T5.1.1.1",
       "level": "task",
       "title": "Escape support in `ProseInline`",
-      "status": "open",
+      "status": "blocked",
       "parent": "RA-S5.1.1",
       "estimate": "S",
       "files": "MindAttic.Export `Text/ProseInline.cs` and its tests (another repository); then bump the package in `src/Prose.Core/Prose.Core.csproj` and `lib/local-packages`",
@@ -1426,7 +1426,7 @@
       "id": "RA-T5.1.1.2",
       "level": "task",
       "title": "Import escapes literal asterisks",
-      "status": "open",
+      "status": "blocked",
       "parent": "RA-S5.1.1",
       "estimate": "XS",
       "depends": [
@@ -1440,14 +1440,14 @@
       "id": "RA-F5.2",
       "level": "feature",
       "title": "Streaming answers (MindAttic.Legion)",
-      "status": "open",
+      "status": "blocked",
       "parent": "RA-E5"
     },
     {
       "id": "RA-S5.2.1",
       "level": "story",
       "title": "Claude answers stream into Ask",
-      "status": "open",
+      "status": "blocked",
       "parent": "RA-F5.2",
       "acceptance": "Ask shows a Claude answer growing as it is generated, not in one piece."
     },
@@ -1455,7 +1455,7 @@
       "id": "RA-T5.2.1.1",
       "level": "task",
       "title": "`LegionClient.StreamAsync`",
-      "status": "open",
+      "status": "blocked",
       "parent": "RA-S5.2.1",
       "estimate": "M",
       "files": "MindAttic.Legion (another repository): a streaming call over the Messages API's server-sent events, keeping retries and the circuit breaker; a new package version",
@@ -1466,7 +1466,7 @@
       "id": "RA-T5.2.1.2",
       "level": "task",
       "title": "`ClaudeService.StreamAsync`",
-      "status": "open",
+      "status": "blocked",
       "parent": "RA-S5.2.1",
       "estimate": "S",
       "depends": [
@@ -1480,14 +1480,14 @@
       "id": "RA-F5.3",
       "level": "feature",
       "title": "Replayable migrations",
-      "status": "open",
+      "status": "blocked",
       "parent": "RA-E5"
     },
     {
       "id": "RA-S5.3.1",
       "level": "story",
       "title": "An empty server migrates from history",
-      "status": "open",
+      "status": "blocked",
       "parent": "RA-F5.3",
       "acceptance": "`dotnet ef database update` succeeds on an empty SQL Server 2022, and the live database is unaffected."
     },
@@ -1495,7 +1495,7 @@
       "id": "RA-T5.3.1.1",
       "level": "task",
       "title": "Squashed baseline migration",
-      "status": "open",
+      "status": "blocked",
       "parent": "RA-S5.3.1",
       "estimate": "L",
       "files": "`src/Prose.Core/Migrations/` (a baseline generated from the current model, applied only when `__EFMigrationsHistory` is empty; the existing history stays for databases that have it)",
@@ -1507,14 +1507,14 @@
       "id": "RA-F5.4",
       "level": "feature",
       "title": "Pre-existing test failures",
-      "status": "open",
+      "status": "done",
       "parent": "RA-E5"
     },
     {
       "id": "RA-S5.4.1",
       "level": "story",
       "title": "The unit suite is green on Linux and Windows",
-      "status": "open",
+      "status": "done",
       "parent": "RA-F5.4",
       "acceptance": "the 11 failures present before the read-along (`StoreUrlCli` reachability, the ArchiveDirFor/RemotePathFor paths, AllowedHosts, import/export round trip, log parsing) pass, or are marked Windows-only with a reason."
     },
@@ -1522,7 +1522,7 @@
       "id": "RA-T5.4.1.1",
       "level": "task",
       "title": "`StoreUrlCli` reachable from the dispatch chain",
-      "status": "open",
+      "status": "done",
       "parent": "RA-S5.4.1",
       "estimate": "XS",
       "files": "`src/Prose.Cli/Program.cs` (dispatch `--set-store-url` to `StoreUrlCli`, or delete the class if `--set-store-url` lives elsewhere)",
@@ -1533,12 +1533,9 @@
       "id": "RA-T5.4.1.2",
       "level": "task",
       "title": "Path and host tests on Linux",
-      "status": "open",
+      "status": "done",
       "parent": "RA-S5.4.1",
       "estimate": "S",
-      "depends": [
-        "RA-T5.4.1.1"
-      ],
       "files": "the failing test classes (ExportCleanupService ArchiveDirFor/RemotePathFor, AllowedHosts, import/export round trip, run-log parsing)",
       "do": "run each on Windows. Fix the real bugs, or mark the test `[Platform(\"Win\")]` with the reason when it tests a Windows-only path rule.",
       "doneWhen": "the suite is green on both platforms."
@@ -1547,14 +1544,14 @@
       "id": "RA-F5.5",
       "level": "feature",
       "title": "Verify the PowerShell scripts",
-      "status": "open",
+      "status": "blocked",
       "parent": "RA-E5"
     },
     {
       "id": "RA-S5.5.1",
       "level": "story",
       "title": "Both PowerShell scripts run as written",
-      "status": "open",
+      "status": "blocked",
       "parent": "RA-F5.5",
       "acceptance": "`register-tickets.ps1 -WhatIf` prints one command per ticket, and `create-local.ps1` makes a database the Hub starts against."
     },
@@ -1562,7 +1559,7 @@
       "id": "RA-T5.5.1.1",
       "level": "task",
       "title": "Run them under PowerShell 7",
-      "status": "open",
+      "status": "blocked",
       "parent": "RA-S5.5.1",
       "estimate": "S",
       "files": "`tools/planning/register-tickets.ps1`, `tools/db/create-local.ps1`",
