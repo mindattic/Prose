@@ -37,12 +37,32 @@ Every task names its files, its steps, its test and its *Done when*, so it can b
 reading anything but this file and the files it names. Laws that bind every task: never write prose (RFC 0009), no LLM
 judges (law 7), no override on the read gate (law 9), every repo change under an open work order (law 3).
 
-## Status
+## Status (2026-11-23)
 
-- **RA-E1** (Phase 1) is **done**: commit `64e84d3` on `claude/nifty-mayer-ov2vgx`.
-- Everything under **RA-E2 to RA-E4** is **open** and not started.
-- **Three decisions** gate parts of the open work: RA-D1 (Word export and the read gate), RA-D2 (differently-worded
-  contradictions) and RA-D3 (phone access).
+Every task that could be built and verified in this environment is **built**, each closed by the commit named
+on its Status line, with its test or end-to-end check passing. What remains is **blocked**, and only by
+things outside the code:
+
+| Blocked by | Tickets |
+| --- | --- |
+| The live database (Azure SQL is paused until 2026-12-01) | RA-T2.1.1.2, RA-T2.1.2.2 |
+| The author's rulings | RA-D1 → RA-T2.5.1.1 (and RA-S2.5.2); RA-D2 → RA-T3.2.2.1 (and RA-S3.2.3); RA-D3 → RA-S4.1.1 |
+| The author's precision verdicts | RA-T3.1.1.4 → RA-T3.2.1.1 to RA-T3.2.1.4 (measure before adding) |
+
+The end-to-end scripts are in `tools/readalong/e2e/`. Run them against a Hub with a read-along book; a local
+database comes from `tools/db/create-local.sh`.
+
+### Follow-ups found while building (outside this repository)
+
+- **F-1 · MindAttic.Export:** `ProseInline` has no escape for a literal `*`. Imported text with a real asterisk is
+  read as emphasis, as it already is for every beat. Add `\*`.
+- **F-2 · MindAttic.Legion:** no streaming call. Ask's streaming path is in place (`ILlmService.StreamAsync`), but
+  Claude answers arrive as one chunk until Legion can stream.
+- **F-3 · Prose migrations:** the history cannot replay onto an empty server (the NodeCode index). Squash a
+  baseline; until then use `tools/db/create-local.sh`.
+- **F-4 · Pre-existing test failures on Linux:** the full suite has the same 11 failures before and after this
+  work. `StoreUrlCli` is unreachable from the dispatch chain, and the other ten are Windows-path, allowed-host,
+  import/export and log-parsing tests.
 
 ---
 
@@ -99,6 +119,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* the six tables exist in `Prose` on Azure SQL; the Writer opens with no read-along error; the job logs a sweep.
 
 ##### RA-T2.1.1.1 · Commit the reviewable migration script
+- **Status:** done 179180a
 - **Est:** XS
 - **Depends:** —
 - **Files:** `tools/readalong/AddReadAlong.sql` (new)
@@ -107,6 +128,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the script is committed and the double apply is clean.
 
 ##### RA-T2.1.1.2 · Apply on the first Hub start after 2026-12-01 and verify
+- **Status:** blocked: Azure SQL is paused until 2026-12-01; apply on the first Hub start after that
 - **Est:** XS
 - **Depends:** RA-T2.1.1.1
 - **Files:** none. This is an operation, logged in the factory session.
@@ -121,6 +143,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* every RA ticket exists as a PRS-T ticket and an engine work order covers the read-along's paths.
 
 ##### RA-T2.1.2.1 · Register the tickets from the JSON
+- **Status:** done 179180a (script written; not run here: no PowerShell in this container. Run it with -WhatIf first)
 - **Est:** S
 - **Depends:** —
 - **Files:** `tools/planning/register-tickets.ps1` (new)
@@ -133,6 +156,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** `docs/USER_STORIES.md` re-renders with the RA tickets.
 
 ##### RA-T2.1.2.2 · Open the engine work order
+- **Status:** blocked: needs the live Hub and database
 - **Est:** XS
 - **Depends:** RA-T2.1.2.1
 - **Files:** none (Hub)
@@ -146,6 +170,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* clicking **✎ Write** in `/story`, or *open in Writer* on a continuity card, opens `/writer` on that book and beat.
 
 ##### RA-T2.2.1.1 · `WriterLink` resolver (pure)
+- **Status:** done 4a631a4
 - **Est:** XS
 - **Depends:** —
 - **Files:** `src/Prose.WriterUi/Services/WriterLink.cs` (new), `src/Prose.UnitTests/WriterLinkTests.cs` (new)
@@ -156,6 +181,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the tests pass.
 
 ##### RA-T2.2.1.2 · `/writer` accepts `book` and `beat`
+- **Status:** done 4a631a4
 - **Est:** S
 - **Depends:** RA-T2.2.1.1
 - **Files:** `src/Prose.Hub/Program.cs` (the `/writer` MapGet takes `string? book, string? beat` and passes them as parameters, like `/story`), `src/Prose.Hub/Components/Writer.razor` (`[Parameter] Book`, `Beat`, forwarded to `<WriterShell>`), `src/Prose.WriterUi/Components/WriterShell.razor`
@@ -167,6 +193,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the e2e script passes against a local Hub.
 
 ##### RA-T2.2.1.3 · Story workspace links use it
+- **Status:** done 4a631a4
 - **Est:** XS
 - **Depends:** RA-T2.2.1.2
 - **Files:** `StoryManuscript.razor` (✎ Write links to the open chapter's first beat), `StoryContinuity.razor` (a small "open in Writer" next to each door), `StoryEntry.razor` (timeline doors get the same)
@@ -178,6 +205,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* in Display mode, kept names and aliases carry a dotted underline. Clicking one opens its entry beside the prose. Saving the beat shows no tag diff from the highlights.
 
 ##### RA-T2.2.2.1 · `WriterService.GetHighlightNamesAsync`
+- **Status:** done e918eb0
 - **Est:** XS
 - **Depends:** —
 - **Files:** `src/Prose.WriterUi/Services/WriterService.cs`
@@ -186,6 +214,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the test passes.
 
 ##### RA-T2.2.2.2 · Overlay highlights with the CSS Custom Highlight API
+- **Status:** done e918eb0
 - **Est:** M
 - **Depends:** RA-T2.2.2.1
 - **Files:** `src/Prose.WriterUi/wwwroot/js/writer.js`, `src/Prose.WriterUi/wwwroot/writer.css`
@@ -198,6 +227,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the test passes.
 
 ##### RA-T2.2.2.3 · Entry side panel in the Writer
+- **Status:** done e918eb0
 - **Est:** S
 - **Depends:** RA-T2.2.2.2
 - **Files:** `WriterShell.razor` (a `[JSInvokable] OpenEntry(Guid)` that sets `entryOpen`; render `<StoryEntry>` in the third column the Discuss panel uses), `src/Prose.WriterUi/wwwroot/discuss.css` (reuse the column)
@@ -211,6 +241,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* scenes and sequences show under their chapter. A scene dragged into another chapter moves with its beats, and both chapters show as changed in the reading bar.
 
 ##### RA-T2.3.1.1 · Tree includes scene and sequence nodes
+- **Status:** done 006ea6e
 - **Est:** S
 - **Depends:** —
 - **Files:** `src/Prose.WriterUi/Services/StoryUiService.cs`
@@ -219,6 +250,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the test passes.
 
 ##### RA-T2.3.1.2 · Render scenes, drag rules, "+ Scene"
+- **Status:** done 006ea6e
 - **Est:** M
 - **Depends:** RA-T2.3.1.1
 - **Files:** `StoryManuscript.razor`, `story.css`
@@ -230,6 +262,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the test passes.
 
 ##### RA-T2.3.1.3 · Reading follows the move
+- **Status:** done 006ea6e
 - **Est:** XS
 - **Depends:** RA-T2.3.1.2
 - **Files:** `src/Prose.UnitTests/ReadAlongServiceTests.cs`
@@ -240,6 +273,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* each book has an explicit on/off for the background job, shown in the reading bar. Off stops sweeps; nothing already read is lost.
 
 ##### RA-T2.3.2.1 · `ReadAlongFollow` setting
+- **Status:** done 139b035
 - **Est:** S
 - **Depends:** —
 - **Files:** `src/Prose.Core/Services/ReadAlong/ReadAlongFollow.cs` (new), DI registration
@@ -251,6 +285,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the test passes.
 
 ##### RA-T2.3.2.2 · Sweep honours it
+- **Status:** done 139b035
 - **Est:** XS
 - **Depends:** RA-T2.3.2.1
 - **Files:** `ReadAlongBackgroundService.cs`
@@ -259,6 +294,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the test passes.
 
 ##### RA-T2.3.2.3 · Switch in UI, CLI and MCP
+- **Status:** done 139b035
 - **Est:** S
 - **Depends:** RA-T2.3.2.2
 - **Files:** `StoryShell.razor` (a toggle in the reading bar), `ReadAlongCli.cs` (`--read-along --slug X --follow on|off`), `Tools.ReadAlong.cs` (a `follow` parameter on `read_along_status`, or a new `set_read_along_follow`), regenerated `docs/CLI_COMMANDS.md` and `docs/MCP_TOOLS.md`
@@ -271,6 +307,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* italic and bold from Word arrive as `*…*`/`**…**` beat markup, scene breaks survive as their own beat, and a Word round trip keeps the italics.
 
 ##### RA-T2.4.1.1 · Runs to inline markup in `ReadDocx`
+- **Status:** done dfce2ad (no escape for a literal *: ProseInline in MindAttic.Export has none; follow-up F-1)
 - **Est:** S
 - **Depends:** —
 - **Files:** `src/Prose.Core/Services/ReadAlong/ManuscriptParser.cs`
@@ -282,6 +319,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the test passes.
 
 ##### RA-T2.4.1.2 · Markdown underscores
+- **Status:** done dfce2ad
 - **Est:** XS
 - **Depends:** RA-T2.4.1.1
 - **Files:** `ManuscriptParser.cs`
@@ -290,6 +328,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the test passes.
 
 ##### RA-T2.4.1.3 · Scene-break beats
+- **Status:** done dfce2ad
 - **Est:** S
 - **Depends:** RA-T2.4.1.1
 - **Files:** `ManuscriptParser.cs` (`ParsedChapter` paragraphs become `ParsedParagraph(string Text, bool SceneBreak)`), `ManuscriptImportService.cs`, `NodeWorkbenchService.AppendBeatsAsync` (accepts a kind per text), `ReadAlongService.GetChaptersAsync` (skips `Kind == "scene-break"`), `DocxExportService` (renders `scene-break` as a centred `* * *`; check the other exporters too)
@@ -300,6 +339,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* `.odt`, `.rtf` and `.epub` import, and a folder can be dropped in the browser.
 
 ##### RA-T2.4.2.1 · `.odt` reader
+- **Status:** done 8082825
 - **Est:** S
 - **Depends:** RA-T2.4.1.3
 - **Files:** `ManuscriptParser.cs`
@@ -308,6 +348,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the test passes.
 
 ##### RA-T2.4.2.2 · `.rtf` reader
+- **Status:** done 8082825
 - **Est:** S
 - **Depends:** RA-T2.4.1.3
 - **Files:** `ManuscriptParser.cs`
@@ -316,6 +357,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the test passes.
 
 ##### RA-T2.4.2.3 · `.epub` reader
+- **Status:** done 8082825
 - **Est:** S
 - **Depends:** RA-T2.4.1.3
 - **Files:** `ManuscriptParser.cs`
@@ -324,6 +366,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the test passes.
 
 ##### RA-T2.4.2.4 · Folder drop in the Import tab
+- **Status:** done 8082825
 - **Est:** S
 - **Depends:** RA-T2.4.2.3
 - **Files:** `StoryImport.razor`, `story.js`
@@ -334,6 +377,7 @@ the tests. All of it shipped in `64e84d3`.
 ### RA-F2.5 · Getting the book back out
 
 ##### RA-D1 · Word export and the read gate (author decision)
+- **Status:** blocked: the author's ruling
 - **Est:** XS
 - **Question:** Prose exports only what has been read (law 9, no override). A freshly imported book is refused until it is read in Read Mode. Which way?
 - **Options:** (a) keep as is: the export page explains and points to Read Mode; (b) let the author mark a chapter read from the Story workspace after it is shown whole, then export; (c) add an "export what I wrote" mode for author-written books, which amends law 9.
@@ -343,6 +387,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* the author marks the open chapter read after it is shown whole, the reading bar shows it as read, and Word export succeeds once every chapter is read.
 
 ##### RA-T2.5.1.1 · "I've read this chapter" button
+- **Status:** blocked: waits on RA-D1
 - **Est:** S
 - **Depends:** RA-D1
 - **Files:** `StoryManuscript.razor`, `StoryUiService.cs` (`MarkChapterReadAsync(chapterId)` calls `ReadGateService.MarkReadAsync(chapterId, beats.Select(b => (b.Id, b.TextHash)), readBy: "author")`)
@@ -363,6 +408,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* `docs/planning/read-along-precision.md` holds a precision table from two finished books, with an author verdict on 100 drafts and 50 cards, and every pattern under 80 % is switched off.
 
 ##### RA-T3.1.1.1 · Pattern ids on every hit
+- **Status:** done 6d037a1
 - **Est:** S
 - **Depends:** —
 - **Files:** `StoryFactExtractor.cs`
@@ -371,6 +417,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the test passes.
 
 ##### RA-T3.1.1.2 · Disable patterns by setting
+- **Status:** done 6d037a1
 - **Est:** XS
 - **Depends:** RA-T3.1.1.1
 - **Files:** `StoryFactExtractor.cs` (`Extract(..., IReadOnlySet<string>? disabledPatterns)`), `ReadAlongService.cs` (reads setting `readalong.patterns.disabled`)
@@ -378,6 +425,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the test passes.
 
 ##### RA-T3.1.1.3 · Audit sampler `prose --read-along-audit`
+- **Status:** done 6d037a1
 - **Est:** M
 - **Depends:** RA-T3.1.1.1
 - **Files:** `src/Prose.Cli/Cli/ReadAlongAuditCli.cs` (new), `Program.cs` dispatch
@@ -389,6 +437,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the scorer test passes and the sampler runs on a local book.
 
 ##### RA-T3.1.1.4 · Run the audit on two finished GLMZ books
+- **Status:** blocked: needs the author's verdicts on two finished GLMZ books (and the live database)
 - **Est:** S
 - **Depends:** RA-T3.1.1.3, RA-T2.1.1.2
 - **Files:** `docs/planning/read-along-precision.md` (new)
@@ -401,6 +450,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* every new pattern ships with fixture tests and, after RA-T3.1.1.4's method, at least 80 % precision.
 
 ##### RA-T3.2.1.1 · Physical details: height, build, handedness
+- **Status:** blocked: waits on RA-T3.1.1.4 (measure before adding)
 - **Est:** S
 - **Depends:** RA-T3.1.1.4
 - **Files:** `StoryFactExtractor.cs`
@@ -409,6 +459,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the tests pass.
 
 ##### RA-T3.2.1.2 · Geography: relative location
+- **Status:** blocked: waits on RA-T3.1.1.4
 - **Est:** S
 - **Depends:** RA-T3.2.1.1
 - **Files:** `StoryFactExtractor.cs`
@@ -417,6 +468,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the tests pass.
 
 ##### RA-T3.2.1.3 · Unnamed referents
+- **Status:** blocked: waits on RA-T3.1.1.4
 - **Est:** M
 - **Depends:** RA-T3.2.1.2
 - **Files:** `StoryFactExtractor.cs`, `ReadAlongService.cs`
@@ -425,6 +477,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the tests pass.
 
 ##### RA-T3.2.1.4 · Dialogue speakers
+- **Status:** blocked: waits on RA-T3.1.1.4
 - **Est:** S
 - **Depends:** RA-T3.2.1.3
 - **Files:** `StoryFactExtractor.cs`
@@ -433,6 +486,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the tests pass.
 
 ##### RA-D2 · Differently-worded contradictions (author decision)
+- **Status:** blocked: the author's ruling
 - **Est:** XS
 - **Question:** "needs three months to refill" against "dead until spring" is not caught, because the attributes differ. Catch it how?
 - **Options:** (a) deterministic: normalize rule phrasings ("until spring", "not before X") into comparable durations; (b) an optional LLM pass that only proposes cards marked "suggested by model", off by default, which touches law 7.
@@ -442,6 +496,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* "three months to refill" and "dead until spring" on the same subject raise a world-rule card at 50 % or above.
 
 ##### RA-T3.2.2.1 · Season and relative-time normalizer
+- **Status:** blocked: waits on RA-D2
 - **Est:** M
 - **Depends:** RA-D2
 - **Files:** `StoryFactExtractor.cs`
@@ -458,6 +513,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* a 30-case pronoun fixture passes.
 
 ##### RA-T3.3.1.1 · Gender from more evidence
+- **Status:** done ac93472
 - **Est:** S
 - **Depends:** —
 - **Files:** `StoryFactExtractor.cs`
@@ -466,6 +522,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the tests pass.
 
 ##### RA-T3.3.1.2 · Plural "they" and the 30-case fixture
+- **Status:** done ac93472
 - **Est:** S
 - **Depends:** RA-T3.3.1.1
 - **Files:** `StoryFactExtractor.cs`, `src/Prose.UnitTests/PronounFixture.cs` (new)
@@ -478,6 +535,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* a kept entry can be renamed (the old name becomes an alias) and moved to another category, and its receipts and cards follow.
 
 ##### RA-T3.4.1.1 · `StoryBibleService.RenameAsync` / `RecategorizeAsync`
+- **Status:** done 785c1ea
 - **Est:** S
 - **Depends:** —
 - **Files:** `StoryBibleService.cs`
@@ -488,6 +546,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the test passes.
 
 ##### RA-T3.4.1.2 · UI: inline title edit and category select in `StoryEntry`
+- **Status:** done 785c1ea
 - **Est:** S
 - **Depends:** RA-T3.4.1.1
 - **Files:** `StoryEntry.razor`
@@ -498,6 +557,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* merging "Hollis" into "Hollis Marsh" leaves one entry with both aliases and every receipt, and open cards point at the survivor.
 
 ##### RA-T3.4.2.1 · `StoryBibleService.MergeAsync(keepId, dropId)`
+- **Status:** done 785c1ea
 - **Est:** M
 - **Depends:** RA-T3.4.1.1
 - **Files:** `StoryBibleService.cs`
@@ -509,6 +569,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the acceptance holds.
 
 ##### RA-T3.4.2.2 · UI: "Merge into…" picker
+- **Status:** done 785c1ea
 - **Est:** S
 - **Depends:** RA-T3.4.2.1
 - **Files:** `StoryEntry.razor` (a picker listing codex entries of the same category)
@@ -518,6 +579,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* Group is editable inline, and entries with more than 6 details collapse to "Show all (N more)".
 
 ##### RA-T3.4.3.1 · Group inline edit and collapse
+- **Status:** done 785c1ea
 - **Est:** XS
 - **Depends:** —
 - **Files:** `StoryEntry.razor`
@@ -530,6 +592,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* thread labels show on hover, categories can be toggled, stars can be pinned by dragging, and a search box focuses a star.
 
 ##### RA-T3.5.1.1 · Labels, category toggles, search
+- **Status:** done 1831626
 - **Est:** S
 - **Depends:** —
 - **Files:** `story.js` (`atlasRender` takes `options { hidden: string[], focus: key }`), `StoryAtlas.razor` (legend entries become toggle buttons; a search input)
@@ -537,6 +600,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** checked by screenshot.
 
 ##### RA-T3.5.1.2 · Pin by dragging a star
+- **Status:** done 1831626
 - **Est:** S
 - **Depends:** RA-T3.5.1.1
 - **Files:** `story.js`
@@ -547,6 +611,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* with the scrubber at chapter N, an opened entry shows only details from chapters 1 to N.
 
 ##### RA-T3.5.2.1 · `GetEntryAsync(..., asOfChapter)`
+- **Status:** done 1831626
 - **Est:** S
 - **Depends:** —
 - **Files:** `StoryBibleService.cs`, `StoryEntry.razor` (an `AsOfChapter` parameter), `StoryAtlas.razor` → `StoryShell.razor` (pass the scrubber value through `OnOpenEntry`)
@@ -560,18 +625,21 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* the conversation length is a setting, answers can stream, a card can be asked about, and an answer can go to the board.
 
 ##### RA-T3.6.1.1 · Conversation length setting
+- **Status:** done 62dc44e
 - **Est:** XS
 - **Depends:** —
 - **Files:** `BookChatService.cs` (read `readalong.ask.historyTurns`, default 8, max 40), `StoryImport.razor` Allowance section (add the input)
 - **Done when:** the setting changes how many turns the prompt carries (a unit test on the prompt builder, extracted as `BuildPrompt`).
 
 ##### RA-T3.6.1.2 · "Ask about this card"
+- **Status:** done 62dc44e
 - **Est:** XS
 - **Depends:** —
 - **Files:** `StoryContinuity.razor` (button), `StoryShell.razor` (switch to the Ask tab with a prefilled question), `StoryAsk.razor` (`[Parameter] string? Prefill`)
 - **Done when:** clicking prefills "Which is right: <existing> or <proposed> for <entity>'s <attribute>?" in the Ask box.
 
 ##### RA-T3.6.1.3 · Save an answer to the board
+- **Status:** done 62dc44e
 - **Est:** XS
 - **Depends:** —
 - **Files:** `StoryAsk.razor`
@@ -579,6 +647,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the card appears on the board.
 
 ##### RA-T3.6.1.4 · Streaming answers
+- **Status:** done 62dc44e (the path streams; the Claude provider yields one chunk until MindAttic.Legion can stream; follow-up F-2)
 - **Est:** M
 - **Depends:** RA-T3.6.1.1
 - **Files:** `src/Prose.Core/Interfaces/ILlmService.cs` (add a default-implemented `IAsyncEnumerable<string> StreamAsync(...)` that yields `GenerateAsync`'s whole result), the Claude provider (a real stream), `BookChatService.AskStreamAsync`, `StoryAsk.razor` (render chunks)
@@ -591,12 +660,14 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* a card can be tied to an entry from a picker, the board zooms and pans, works by touch, and filters by colour.
 
 ##### RA-T3.7.1.1 · Entity picker on a card
+- **Status:** done 628f4ed
 - **Est:** S
 - **Depends:** —
 - **Files:** `StoryBrainstorm.razor`, `BrainstormService.UpdateAsync` (add `entityId` and `clearEntity`)
 - **Done when:** a tied card shows the entry chip, and the chip opens the entry.
 
 ##### RA-T3.7.1.2 · Zoom, pan, touch, colour filter
+- **Status:** done 628f4ed
 - **Est:** S
 - **Depends:** RA-T3.7.1.1
 - **Files:** `story.js` (a board transform with wheel and pinch), `StoryBrainstorm.razor` (filter chips), `story.css`
@@ -609,6 +680,7 @@ the tests. All of it shipped in `64e84d3`.
 ### RA-F4.1 · Reach
 
 ##### RA-D3 · Phone access (author decision)
+- **Status:** blocked: the author's ruling
 - **Est:** XS
 - **Question:** the Hub listens only on 127.0.0.1 and hosting was retired on 2026-08-23. The Story workspace is responsive, but a phone cannot reach it. How should it?
 - **Options:** (a) LAN binding behind the API key, with a QR code in the Writer; (b) Remote Control or a tunnel; (c) bring hosting back for `/story` only.
@@ -623,12 +695,14 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* every Story workspace action works from the keyboard, the atlas has a text equivalent, and the light theme passes contrast.
 
 ##### RA-T4.2.1.1 · Keyboard reorder and board moves
+- **Status:** done 3c43068
 - **Est:** S
 - **Depends:** —
 - **Files:** `StoryManuscript.razor` (Alt+↑/↓ on a focused tree row calls `MoveAsync`), `StoryBrainstorm.razor` (arrow keys move a focused card 10 px; Shift moves 50 px)
 - **Done when:** a Playwright keyboard-only run reorders a chapter.
 
 ##### RA-T4.2.1.2 · Atlas text equivalent
+- **Status:** done 3c43068
 - **Est:** XS
 - **Depends:** —
 - **Files:** `StoryAtlas.razor`
@@ -636,6 +710,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** a screen-reader name check passes in Playwright (`getByRole('list')`).
 
 ##### RA-T4.2.1.3 · Light-theme contrast and reduced motion
+- **Status:** done 3c43068
 - **Est:** S
 - **Depends:** —
 - **Files:** `story.css`, `tools/readalong/e2e/contrast.js` (new)
@@ -648,6 +723,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* a 200-chapter, 400k-word synthetic book reads in under 2 minutes on SQLite, and opening a Writer beat adds under 50 ms of read-along overhead.
 
 ##### RA-T4.3.1.1 · Benchmark fixture first
+- **Status:** done 7fe52e8
 - **Est:** S
 - **Depends:** —
 - **Files:** `src/Prose.UnitTests/ReadAlongPerformanceTests.cs` (new, `[Category("Slow")]`)
@@ -655,6 +731,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the baseline numbers are recorded in the test's comment.
 
 ##### RA-T4.3.1.2 · Known index once per sweep
+- **Status:** done 7fe52e8
 - **Est:** S
 - **Depends:** RA-T4.3.1.1
 - **Files:** `ReadAlongService.cs`
@@ -662,6 +739,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the benchmark improves and all tests pass.
 
 ##### RA-T4.3.1.3 · Cheap "remembered" check
+- **Status:** done 7fe52e8
 - **Est:** S
 - **Depends:** RA-T4.3.1.1
 - **Files:** `ReadAlongService.cs`
@@ -669,6 +747,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the benchmark meets the 50 ms bar.
 
 ##### RA-T4.3.1.4 · Import in fewer round trips
+- **Status:** done 7fe52e8
 - **Est:** S
 - **Depends:** RA-T4.3.1.1
 - **Files:** `ManuscriptImportService.cs`, `NodeWorkbenchService.cs`
@@ -681,6 +760,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* `tools/db/create-local.sh` (and a matching `.ps1`) produces a working local database in Docker, and the Hub starts against it.
 
 ##### RA-T4.4.1.1 · Create-from-model script
+- **Status:** done ddc5403 (.sh verified; .ps1 not run here)
 - **Est:** S
 - **Depends:** —
 - **Files:** `tools/db/create-local.sh`, `tools/db/create-local.ps1` (new)
@@ -693,6 +773,7 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** the acceptance holds.
 
 ##### RA-T4.4.1.2 · Document and file the replay bug
+- **Status:** done ddc5403 (documented in README; a squashed baseline is follow-up F-3)
 - **Est:** XS
 - **Depends:** RA-T4.4.1.1
 - **Files:** `README.md` (Building section), a ticket for "migrations do not replay on an empty database (NodeCode index)"
@@ -704,6 +785,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* a nightly scheduler run exists, the `/app` dashboard shows the last sweep, and every sweep is a command-ledger row.
 
 ##### RA-T4.5.1.1 · Ledger rows for sweeps
+- **Status:** done 7a13274
 - **Est:** XS
 - **Depends:** —
 - **Files:** `ReadAlongBackgroundService.cs`
@@ -711,12 +793,14 @@ the tests. All of it shipped in `64e84d3`.
 - **Done when:** a test asserts that a row is written.
 
 ##### RA-T4.5.1.2 · Dashboard tile
+- **Status:** done 7a13274
 - **Est:** S
 - **Depends:** RA-T4.5.1.1
 - **Files:** `src/Prose.ObserverUi` (a tile that reads the last `read-along.sweep` ledger row and the open-card count across followed books)
 - **Done when:** the tile renders.
 
 ##### RA-T4.5.1.3 · Scheduler job spec
+- **Status:** done 7a13274 (spec written; the job itself goes in MindAttic.Scheduler)
 - **Est:** XS
 - **Depends:** RA-T4.5.1.1
 - **Files:** `docs/planning/read-along-scheduler.md` (job name `Prose.ReadAlong.Sweep`, nightly 02:41 local, command `prose --read-along --all`, headless). The job itself lives in MindAttic.Scheduler.
@@ -728,6 +812,7 @@ the tests. All of it shipped in `64e84d3`.
 *Acceptance:* the protocol says agents may read the codex, cards and atlas, and may keep, toss or rule only on the author's word in the session.
 
 ##### RA-T4.6.1.1 · Protocol and prompt alias
+- **Status:** done 22efe7a
 - **Est:** XS
 - **Depends:** —
 - **Files:** `docs/agent/PROSE_PROTOCOL.md` (a new "Read-along" section), `docs/agent/PROMPT_COMMANDS.md` (`/story <book>` runs `read_along_status` plus `continuity_inbox`)

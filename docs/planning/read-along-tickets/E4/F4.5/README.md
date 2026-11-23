@@ -1,9 +1,9 @@
 # RA-F4.5 · Operations
 
 - **Level:** feature
-- **Status:** open
+- **Status:** done
 - **Parent:** RA-E4 · Harden
 
 ## Children (build in this order)
 
-1. RA-S4.5.1 · The job is visible and backed up (open)
+1. RA-S4.5.1 · The job is visible and backed up (done)

@@ -64,13 +64,28 @@ def parse(text):
     # A task marked "- **Status:** done", or anything under a DONE ancestor, is done.
     by_id = {n["id"]: n for n in nodes}
     for n in nodes:
-        if n["fields"].get("Status", "").lower() == "done":
+        st = n["fields"].get("Status", "").lower()
+        if st.startswith("done"):
             n["status"] = "done"
+        elif st.startswith("blocked"):
+            n["status"] = "blocked"
         p = parent_id(n["id"])
         while p is not None and n["status"] != "done":
             if by_id.get(p, {}).get("status") == "done":
                 n["status"] = "done"
             p = parent_id(p)
+    # Roll up: a story, feature or epic is done when every child is; blocked when none is open and some are blocked.
+    for n in sorted(nodes, key=lambda x: -len(x["id"])):
+        if n["level"] in ("task", "decision") or n["status"] == "done":
+            continue
+        kids = [m for m in nodes if parent_id(m["id"]) == n["id"]]
+        if not kids and n["level"] == "story" and "written out when" in n["fields"].get("Acceptance", ""):
+            n["status"] = "blocked"  # gated on a decision; its tasks are written when the author rules
+            continue
+        if kids and all(k["status"] == "done" for k in kids):
+            n["status"] = "done"
+        elif kids and all(k["status"] in ("done", "blocked") for k in kids):
+            n["status"] = "blocked"
     return nodes
 
 
@@ -210,9 +225,10 @@ def main(argv):
     for n in nodes:
         counts[n["level"]] = counts.get(n["level"], 0) + 1
     open_tasks = [n for n in nodes if n["level"] == "task" and n["status"] == "open"]
+    tally = {s: sum(1 for n in nodes if n["level"] == "task" and n["status"] == s) for s in ("done", "open", "blocked")}
     est = {"XS": 0.5, "S": 2, "M": 4.5, "L": 12}
     hours = sum(est.get(n["fields"].get("Est", ""), 0) for n in open_tasks)
-    print(f"{plan.name}: " + ", ".join(f"{v} {k[:-1] + 'ies' if k.endswith('y') else k + 's'}" for k, v in counts.items()) + f"; {len(open_tasks)} open tasks (~{hours:.0f} h)")
+    print(f"{plan.name}: " + ", ".join(f"{v} {k[:-1] + 'ies' if k.endswith('y') else k + 's'}" for k, v in counts.items()) + f"; tasks: {tally['done']} done, {tally['open']} open, {tally['blocked']} blocked (~{hours:.0f} h open)")
     if errs:
         print("\n".join("  ✗ " + e for e in errs))
         return 1
