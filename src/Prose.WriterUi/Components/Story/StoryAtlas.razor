@@ -10,12 +10,18 @@
     <div class="atlas-head">
         <h2>Story map</h2>
         <span class="muted">@VisibleCount entities · @(asOf <= 0 ? "as of the whole story" : $"as of chapter {asOf}")</span>
-        <div class="legend">
+        <div class="legend" role="group" aria-label="Show categories">
             @foreach (var c in StoryFactExtractor.Categories)
             {
-                <span><span class="dot cat-@c"></span> @StoryCodex.Plural(c)</span>
+                <button class="legend-toggle @(hidden.Contains(c) ? "off" : "")" aria-pressed="@(!hidden.Contains(c))" @onclick="() => ToggleCategory(c)">
+                    <span class="dot cat-@c"></span> @StoryCodex.Plural(c)
+                </button>
             }
         </div>
+        <input class="atlas-search" list="atlas-names" placeholder="Find a star…" @bind="search" @bind:event="oninput" aria-label="Find a star" />
+        <datalist id="atlas-names">
+            @if (data is not null) { @foreach (var st in data.Stars) { <option value="@st.Name"></option> } }
+        </datalist>
         <div class="spacer"></div>
         <label class="small"><input type="checkbox" checked="@drafts" @onchange="ToggleDraftsAsync" /> Drafts</label>
     </div>
@@ -62,6 +68,14 @@
 @code {
     [Parameter, EditorRequired] public Guid BookId { get; set; }
     [Parameter] public EventCallback<Guid> OnOpenEntry { get; set; }
+    /// <summary>Opens an entry as the reader knew it at the scrubbed chapter (RA-T3.5.2.1).</summary>
+    [Parameter] public EventCallback<(Guid EntityId, int AsOfChapter)> OnOpenEntryAsOf { get; set; }
+    private readonly HashSet<string> hidden = [];
+    private string search = "";
+    private void ToggleCategory(string c) { if (!hidden.Remove(c)) hidden.Add(c); }
+    private string? FocusKey => string.IsNullOrWhiteSpace(search) || data is null ? null
+        : data.Stars.FirstOrDefault(s => s.Name.Equals(search.Trim(), StringComparison.OrdinalIgnoreCase))?.Key
+          ?? data.Stars.FirstOrDefault(s => s.Name.Contains(search.Trim(), StringComparison.OrdinalIgnoreCase))?.Key;
     [Parameter] public EventCallback OnOpenDraft { get; set; }
 
     private ElementReference canvas;
@@ -70,7 +84,7 @@
     private bool drafts = true;
     private DotNetObjectReference<StoryAtlas>? self;
 
-    private int VisibleCount => data is null ? 0 : data.Stars.Count(s => asOf <= 0 || s.FirstChapter <= asOf);
+    private int VisibleCount => data is null ? 0 : data.Stars.Count(s => (asOf <= 0 || s.FirstChapter <= asOf) && !hidden.Contains(s.Category));
 
     protected override async Task OnInitializedAsync() => data = await Atlas.GetAsync(BookId, includeDrafts: drafts);
 
@@ -78,7 +92,7 @@
     {
         if (data is null) return;
         self ??= DotNetObjectReference.Create(this);
-        try { await JS.InvokeVoidAsync("proseStory.atlasRender", canvas, data, asOf, self); }
+        try { await JS.InvokeVoidAsync("proseStory.atlasRender", canvas, data, asOf, self, new { hidden = hidden.ToArray(), focus = FocusKey, bookKey = BookId.ToString("N") }); }
         catch (JSException) { }
     }
 
@@ -103,7 +117,11 @@
     [JSInvokable]
     public async Task OpenStar(string key, string? entityId)
     {
-        if (Guid.TryParse(entityId, out var id)) await OnOpenEntry.InvokeAsync(id);
+        if (Guid.TryParse(entityId, out var id))
+        {
+            if (asOf > 0 && OnOpenEntryAsOf.HasDelegate) await OnOpenEntryAsOf.InvokeAsync((id, asOf));
+            else await OnOpenEntry.InvokeAsync(id);
+        }
         else await OnOpenDraft.InvokeAsync();
     }
 

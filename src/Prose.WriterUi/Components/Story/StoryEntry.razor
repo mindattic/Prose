@@ -29,6 +29,10 @@
             <div class="spacer"></div>
             <button class="mini" @onclick="OnClose" aria-label="Close the entry">✕</button>
         </header>
+        @if (AsOfChapter is { } n)
+        {
+            <p class="banner info small" role="status">As the reader knew it at chapter @n.</p>
+        }
         <div class="entry-tabs" role="tablist">
             <button role="tab" aria-selected="@(view == "details")" class="@(view == "details" ? "on" : "")" @onclick='() => view = "details"'>Details</button>
             <button role="tab" aria-selected="@(view == "timeline")" class="@(view == "timeline" ? "on" : "")" @onclick='() => view = "timeline"'>Timeline</button>
@@ -179,6 +183,8 @@
 @code {
     [Parameter, EditorRequired] public Guid BookId { get; set; }
     [Parameter, EditorRequired] public Guid EntityId { get; set; }
+    /// <summary>Show only what the reader knew by this chapter (from the atlas scrubber).</summary>
+    [Parameter] public int? AsOfChapter { get; set; }
     [Parameter] public EventCallback OnClose { get; set; }
     [Parameter] public EventCallback<Guid> OnOpenEntry { get; set; }
     [Parameter] public EventCallback<(Guid ChapterId, Guid? BeatId)> OnOpenPassage { get; set; }
@@ -190,7 +196,7 @@
     private bool editingDescription, confirmDelete;
     private string description = "", newAttr = "", newValue = "";
 
-    protected override async Task OnParametersSetAsync() => entry = await Bible.GetEntryAsync(BookId, EntityId);
+    protected override async Task OnParametersSetAsync() => entry = await Bible.GetEntryAsync(BookId, EntityId, AsOfChapter);
 
     private bool renaming, merging, showAllDetails;
     private string newName = "", mergeInto = "";
@@ -254,7 +260,7 @@
 
     private void Toggle(Guid id) { if (!open.Remove(id)) open.Add(id); }
 
-    private async Task ReloadAsync() { entry = await Bible.GetEntryAsync(BookId, EntityId); await OnChanged.InvokeAsync(); }
+    private async Task ReloadAsync() { entry = await Bible.GetEntryAsync(BookId, EntityId, AsOfChapter); await OnChanged.InvokeAsync(); }
 
     private async Task SaveDescriptionAsync()
     {

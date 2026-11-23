@@ -303,3 +303,7 @@ blockquote .door { display: inline; width: auto; padding: 0 .3rem; border: 0; ba
 .entry-rename, .entry-group, .entry-cat { background: var(--color-bg-4); color: var(--color-fg); border: 1px solid var(--color-border-input); border-radius: var(--radius); padding: .2rem .4rem; }
 .entry-group { width: 100%; box-sizing: border-box; }
 .entry-head h2 { cursor: text; }
+/* RA-T3.5.1.1: atlas category toggles and search. */
+.legend-toggle { background: none; border: 0; color: var(--color-fg-muted); font: inherit; font-size: .8rem; cursor: pointer; padding: .1rem .3rem; border-radius: var(--radius); }
+.legend-toggle.off { opacity: .4; text-decoration: line-through; }
+.atlas-search { background: var(--color-bg-4); color: var(--color-fg); border: 1px solid var(--color-border-input); border-radius: var(--radius); padding: .2rem .5rem; width: 12rem; }

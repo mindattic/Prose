@@ -75,7 +75,8 @@
         ctx.save();
         ctx.translate(view.x, view.y);
         ctx.scale(view.k, view.k);
-        const visible = s => asOf <= 0 || s.firstChapter <= asOf;
+        const hidden = (state.options && state.options.hidden) || [];
+        const visible = s => (asOf <= 0 || s.firstChapter <= asOf) && !hidden.includes(s.category);
         const byKey = new Map(data.stars.map(s => [s.key, s]));
 
         ctx.lineWidth = 0.9 / view.k;
@@ -86,6 +87,12 @@
             const near = hover && (hover === t.from || hover === t.to);
             ctx.strokeStyle = near ? 'rgba(255,255,255,0.85)' : (t.type === 'appears with' ? 'rgba(255,255,255,0.18)' : 'rgba(255,255,255,0.55)');
             ctx.beginPath(); ctx.moveTo(pa.x, pa.y); ctx.lineTo(pb.x, pb.y); ctx.stroke();
+            // RA-T3.5.1.1: name the relationship on the threads of the star under the pointer.
+            if (near && t.type !== 'appears with') {
+                ctx.fillStyle = 'rgba(242,193,78,0.95)';
+                ctx.font = `${11 / view.k}px system-ui, sans-serif`;
+                ctx.fillText(t.type, (pa.x + pb.x) / 2 + 3 / view.k, (pa.y + pb.y) / 2 - 3 / view.k);
+            }
         });
 
         data.stars.forEach(s => {
@@ -99,6 +106,10 @@
             ctx.fillStyle = col; ctx.beginPath(); ctx.arc(p.x, p.y, r, 0, Math.PI * 2); ctx.fill();
             if (s.draft) { ctx.strokeStyle = col; ctx.setLineDash([2 / view.k, 2 / view.k]); ctx.beginPath(); ctx.arc(p.x, p.y, r + 3, 0, Math.PI * 2); ctx.stroke(); ctx.setLineDash([]); }
             ctx.globalAlpha = 1;
+            if (state.options && state.options.focus === s.key) {
+                ctx.strokeStyle = '#f2c14e'; ctx.lineWidth = 2 / view.k;
+                ctx.beginPath(); ctx.arc(p.x, p.y, r + 7 / view.k, 0, Math.PI * 2); ctx.stroke();
+            }
             ctx.fillStyle = css.getPropertyValue('--atlas-label') || '#e8e8e8';
             ctx.font = `${13 / view.k}px system-ui, sans-serif`;
             ctx.fillText(s.name, p.x + r + 4 / view.k, p.y + 4 / view.k);
@@ -116,11 +127,28 @@
         state.view = { k, x: pad + (w - pad * 2 - labelRoom - (x1 - x0) * k) / 2 - x0 * k, y: pad + (h - pad * 2 - (y1 - y0) * k) / 2 - y0 * k };
     }
 
+    // Pinned star positions, per book, in this browser only (try/catch: storage can be blocked).
+    function pinKey(state) { return 'prose.atlas.' + ((state.options && state.options.bookKey) || 'book'); }
+    function savePins(state) {
+        try {
+            const pins = JSON.parse(localStorage.getItem(pinKey(state)) || '{}');
+            state.data.stars.forEach(s => { const p = state.pos.get(s.key); if (p && p.pinned) pins[s.key] = [p.x, p.y]; });
+            localStorage.setItem(pinKey(state), JSON.stringify(pins));
+        } catch (e) { /* a preference, never worth failing over */ }
+    }
+    function applyPins(state) {
+        try {
+            const pins = JSON.parse(localStorage.getItem(pinKey(state)) || '{}');
+            Object.entries(pins).forEach(([k, xy]) => { const p = state.pos.get(k); if (p) { p.x = xy[0]; p.y = xy[1]; p.pinned = true; } });
+        } catch (e) { }
+    }
+
     function starAt(state, mx, my) {
         const x = (mx - state.view.x) / state.view.k, y = (my - state.view.y) / state.view.k;
         let best = null, bestD = 14 / state.view.k;
         state.data.stars.forEach(s => {
             if (state.asOf > 0 && s.firstChapter > state.asOf) return;
+            if (state.options && (state.options.hidden || []).includes(s.category)) return;
             const p = state.pos.get(s.key), d = Math.hypot(p.x - x, p.y - y);
             if (d < bestD) { best = s; bestD = d; }
         });
@@ -128,7 +156,8 @@
     }
 
     window.proseStory = {
-        atlasRender(canvas, data, asOf, dotnet) {
+        // options: { hidden: [category], focus: starKey|null, bookKey: string } (RA-T3.5.1)
+        atlasRender(canvas, data, asOf, dotnet, options) {
             let state = atlases.get(canvas);
             const w = canvas.clientWidth || 800, h = canvas.clientHeight || 600;
             if (!state) {
@@ -137,6 +166,14 @@
                 const tip = canvas.parentElement.querySelector('.atlas-tip');
                 canvas.addEventListener('mousemove', e => {
                     const r = canvas.getBoundingClientRect();
+                    if (state.dragStar) {
+                        // RA-T3.5.1.2: a star dragged is a star pinned.
+                        const p = state.pos.get(state.dragStar);
+                        p.x = (e.clientX - r.left - state.view.x) / state.view.k;
+                        p.y = (e.clientY - r.top - state.view.y) / state.view.k;
+                        state.starMoved = true;
+                        draw(state); return;
+                    }
                     if (state.drag) {
                         state.view.x = state.drag.vx + (e.clientX - state.drag.x);
                         state.view.y = state.drag.vy + (e.clientY - state.drag.y);
@@ -155,8 +192,21 @@
                         } else tip.hidden = true;
                     }
                 });
-                canvas.addEventListener('mousedown', e => { state.drag = { x: e.clientX, y: e.clientY, vx: state.view.x, vy: state.view.y, moved: false }; });
+                canvas.addEventListener('mousedown', e => {
+                    const r = canvas.getBoundingClientRect();
+                    const hit = starAt(state, e.clientX - r.left, e.clientY - r.top);
+                    if (hit) { state.dragStar = hit.key; state.starMoved = false; state.downAt = { x: e.clientX, y: e.clientY }; return; }
+                    state.drag = { x: e.clientX, y: e.clientY, vx: state.view.x, vy: state.view.y, moved: false };
+                });
                 window.addEventListener('mouseup', e => {
+                    if (state.dragStar) {
+                        const key = state.dragStar, moved = state.starMoved && Math.hypot(e.clientX - state.downAt.x, e.clientY - state.downAt.y) > 4;
+                        state.dragStar = null;
+                        if (moved) { state.pos.get(key).pinned = true; savePins(state); return; }
+                        const s = state.data.stars.find(x => x.key === key);
+                        if (s && state.dotnet) state.dotnet.invokeMethodAsync('OpenStar', s.key, s.entityId || null);
+                        return;
+                    }
                     if (!state.drag) return;
                     const moved = Math.hypot(e.clientX - state.drag.x, e.clientY - state.drag.y) > 4;
                     state.drag = null;
@@ -175,8 +225,13 @@
                 new ResizeObserver(() => draw(state)).observe(canvas);
             }
             const keysChanged = !state.pos || data.stars.some(s => !state.pos.has(s.key));
-            state.data = data; state.asOf = asOf; state.dotnet = dotnet;
-            if (keysChanged) { state.pos = layout(data.stars, data.threads, w, h); fit(state, w, h); }
+            const prevFocus = state.options && state.options.focus;
+            state.data = data; state.asOf = asOf; state.dotnet = dotnet; state.options = options || {};
+            if (keysChanged) { state.pos = layout(data.stars, data.threads, w, h); applyPins(state); fit(state, w, h); }
+            if (state.options.focus && state.options.focus !== prevFocus && state.pos.has(state.options.focus)) {
+                const p = state.pos.get(state.options.focus);
+                state.view.x = w / 2 - p.x * state.view.k; state.view.y = h / 2 - p.y * state.view.k;
+            }
             draw(state);
         },
         atlasZoom(canvas, factor) {

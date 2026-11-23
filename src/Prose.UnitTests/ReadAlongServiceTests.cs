@@ -289,6 +289,26 @@ public class ReadAlongServiceTests
     }
 
     [Test]
+    public async Task An_entry_as_of_an_earlier_chapter_shows_what_the_reader_knew_then()
+    {
+        var book = await BookAsync(
+            ("One", ["Kael said nothing. Kael's eyes were grey."]),
+            ("Two", ["Kael waited. Kael was thirty."]),
+            ("Three", ["Kael turned. Kael's eyes were green."]));
+        await readAlong.ReadBookAsync(book);
+        await bible.KeepAllAsync(book);
+        var card = (await inbox.ListAsync(book)).Single();
+        await inbox.ResolveAsync(card.Id, "accept-new");
+        var id = (await bible.GetCodexAsync(book)).SelectMany(c => c.Items).Single(i => i.Name == "Kael").Id;
+
+        var now = await bible.GetEntryAsync(book, id);
+        var then = await bible.GetEntryAsync(book, id, asOfChapter: 1);
+        Assert.That(now!.Details.Single(d => d.Attribute == "eyes").Value, Is.EqualTo("green"));
+        Assert.That(then!.Details.Single(d => d.Attribute == "eyes").Value, Is.EqualTo("grey"));
+        Assert.That(then.Details.Any(d => d.Attribute == "age"), Is.False, "chapter two had not happened yet");
+    }
+
+    [Test]
     public async Task Tossed_drafts_stay_tossed()
     {
         var book = await BookAsync(("One", ["Brannoc watched the moor. Brannoc said nothing."]));

@@ -276,7 +276,9 @@ public sealed class StoryBibleService(IDbContextFactory<ProseDbContext> dbFactor
 
     // ── Entries ─────────────────────────────────────────────────────────────────────────────
 
-    public async Task<Entry?> GetEntryAsync(Guid bookId, Guid entityId, CancellationToken ct = default)
+    /// <param name="asOfChapter">Only what the reader knew by this chapter of this book (details and
+    /// timeline from chapters 1..N; hand-written details, which have no chapter, always show).</param>
+    public async Task<Entry?> GetEntryAsync(Guid bookId, Guid entityId, int? asOfChapter = null, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var e = await db.Entities.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(x => x.Id == entityId, ct);
@@ -286,6 +288,15 @@ public sealed class StoryBibleService(IDbContextFactory<ProseDbContext> dbFactor
             .Where(f => f.EntityId == entityId && (f.Confirmed || f.SupersededAt != null))
             .OrderBy(f => f.BookNodeId != bookId).ThenBy(f => f.ChapterIndex).ThenBy(f => f.CreatedAt)
             .ToListAsync(ct);
+        if (asOfChapter is { } n)
+        {
+            facts = facts.Where(f => f.BookNodeId == bookId && f.ChapterIndex <= n).ToList();
+            // As of chapter N, a value superseded only by a LATER chapter was still current then.
+            var later = facts.Where(f => f.SupersededAt != null).ToList();
+            foreach (var f in later) f.SupersededAt = null;
+            foreach (var g in facts.Where(f => f.Confirmed || f.Source == "retcon").GroupBy(f => f.Attribute).Where(g => IsSingleValued(g.Key)))
+                foreach (var older in g.OrderByDescending(f => f.ChapterIndex).Skip(1)) older.SupersededAt = DateTime.MinValue;
+        }
         var titles = await TitlesAsync(db, facts.Where(f => f.ChapterNodeId != null).Select(f => f.ChapterNodeId!.Value), ct);
         Receipt R(StoryFact f) => new(f.Id, f.Attribute, f.Value, f.Quote, f.BeatId, f.ChapterNodeId,
             f.ChapterNodeId is { } c ? titles.GetValueOrDefault(c, "") : "", f.ChapterIndex, f.Source, f.Confirmed, f.SupersededAt);

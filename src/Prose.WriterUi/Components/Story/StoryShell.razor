@@ -141,7 +141,7 @@
                     <StoryAsk @key="book!.Id" BookId="book!.Id" OnOpenPassage="OpenDoor" OnOpenEntry="OpenEntryAsync" OnChanged="RefreshUsageAsync" />
                     break;
                 case "atlas":
-                    <StoryAtlas @key="book!.Id" BookId="book!.Id" OnOpenEntry="OpenEntryAsync" OnOpenDraft='() => SetTab("codex")' />
+                    <StoryAtlas @key="book!.Id" BookId="book!.Id" OnOpenEntry="OpenEntryAsync" OnOpenEntryAsOf="OpenEntryAsOfAsync" OnOpenDraft='() => SetTab("codex")' />
                     break;
                 case "brainstorm":
                     <StoryBrainstorm @key="book!.Id" BookId="book!.Id" OnOpenEntry="OpenEntryAsync" />
@@ -155,7 +155,7 @@
 
     @if (entry is not null && book is not null)
     {
-        <StoryEntry @key="entry.Value" BookId="book.Id" EntityId="entry.Value" OnClose="() => entry = null"
+        <StoryEntry @key="(entry.Value, entryAsOf)" BookId="book.Id" EntityId="entry.Value" AsOfChapter="entryAsOf" OnClose="() => entry = null"
                     OnOpenPassage="OpenDoor" OnOpenEntry="OpenEntryAsync" OnChanged="RefreshAsync" />
     }
 
@@ -304,8 +304,19 @@
         await ReadBookAsync(false);
     }
 
+    private int? entryAsOf;
+
+    private Task OpenEntryAsOfAsync((Guid EntityId, int AsOfChapter) x)
+    {
+        entry = x.EntityId;
+        entryAsOf = x.AsOfChapter;
+        StateHasChanged();
+        return Task.CompletedTask;
+    }
+
     private Task OpenEntryAsync(Guid entityId)
     {
+        entryAsOf = null;
         entry = entityId;
         StateHasChanged();
         return Task.CompletedTask;
