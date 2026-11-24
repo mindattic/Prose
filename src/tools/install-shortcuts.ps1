@@ -59,7 +59,7 @@ $shortcuts = @(
     # The game builds and plays from its repo (no C:\Apps deploy); the icon is the packaged
     # build's exe, falling back to run.bat's own icon until tools\package.ps1 has made one.
     @{ Name = 'Playground';   Bat = "$mindAttic\Unreal.Playground\run.bat"; Args = ''; Icon = "$mindAttic\Unreal.Playground\Builds\Cpp\Windows\Unreal.Playground.Cpp.exe"
-       Desc = 'Build & Run, or Run, Unreal.Playground (filmed by MindAttic.Capture)' }
+       Desc = 'Build & Run, or Run, Unreal.Playground (filmed by MindAttic.Media.Capture)' }
 )
 
 if (-not (Test-Path $Desktop)) {
