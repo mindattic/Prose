@@ -22,7 +22,7 @@ namespace Prose.Core.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("MindAttic.Media.MediaItem", b =>
+            modelBuilder.Entity("MindAttic.Storage.MediaItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

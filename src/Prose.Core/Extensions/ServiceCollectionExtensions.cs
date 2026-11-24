@@ -6,7 +6,7 @@ using System.Net;
 using System.Net.Http;
 using MindAttic.Legion;
 using MindAttic.Legion.Providers;
-using MindAttic.Media;
+using MindAttic.Storage;
 using Prose.Core.Data;
 using Prose.Core.Interfaces;
 using Prose.Core.Services;

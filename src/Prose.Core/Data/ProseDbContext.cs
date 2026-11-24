@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using MindAttic.Media;
+using MindAttic.Storage;
 using Prose.Core.Data.Entities;
 using Prose.Core.Services;
 using ContractEntity = Prose.Core.Data.Entities.Contract;

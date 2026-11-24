@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MindAttic.Media;
+using MindAttic.Storage;
 using Prose.Core.Data;
 
 namespace Prose.Cli;
