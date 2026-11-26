@@ -59,23 +59,17 @@ public partial class MainWindow : Window
 
     /// <summary>KdpPublish's own absolute deploy location — decoupled into its own repo
     /// (github.com/mindattic/KdpPublish) 2026-10-04, with its own deploy pipeline publishing
-    /// standalone here rather than side by side with this app under <see cref="Here"/>.
-    /// Its run.bat is preferred: it offers 1) Deploy &amp; Run (redeploy from source, then start)
-    /// or 2) Run (start the deployed KdpPublish.exe). The exe is the fallback.</summary>
-    private const string KdpPublishDir = @"C:\Apps\KdpPublish";
-    private static readonly string[] KdpPublishCandidates =
-    [
-        Path.Combine(KdpPublishDir, "run.bat"),
-        Path.Combine(KdpPublishDir, "KdpPublish.exe"),
-    ];
+    /// standalone here rather than side by side with this app under <see cref="Here"/>: the
+    /// Release copy that the KdpPublish repo's run.ps1 menu (1 Redeploy) installs.</summary>
+    private const string KdpPublishDir = @"R:\MindAttic\Apps\KdpPublish\Release";
 
     private async void OpenKdp(object sender, RoutedEventArgs e)
     {
         if (!await EnsureHubAsync()) return;
-        var target = KdpPublishCandidates.FirstOrDefault(File.Exists);
-        if (target is null)
+        var target = Path.Combine(KdpPublishDir, "KdpPublish.exe");
+        if (!File.Exists(target))
         {
-            HubStatus.Text = $"KdpPublish is not deployed in {KdpPublishDir}. Deploy it from the KdpPublish repo (run.ps1).";
+            HubStatus.Text = $"KdpPublish is not deployed in {KdpPublishDir}. Deploy it from the KdpPublish repo (run.bat, 1 Redeploy).";
             return;
         }
         Process.Start(new ProcessStartInfo(target) { WorkingDirectory = KdpPublishDir, UseShellExecute = true });

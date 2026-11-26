@@ -81,7 +81,7 @@ powershell -ExecutionPolicy Bypass -File src\tools\launch-app.ps1 -App writer   
   (`run.bat Hub` / `Writer` / `Launcher`; no argument = all, then open the Launcher), which
   opens a menu: 1) Deploy & Run (`run.ps1 -Force`, then start) or 2) Run (start the deployed exe).
 - `src/tools/install-shortcuts.ps1` points the desktop icons at that `run.bat` (and at
-  `C:\Apps\KdpPublish\run.bat`, `C:\Apps\IdiotProof\run.bat` for the other repos).
+  `KdpPublish\run.bat` in its own repo, `C:\Apps\IdiotProof\run.bat` for the other repos).
 - `src/Prose.Hub/tools/run.ps1` is a legacy forwarder to `run.ps1 -Apps Hub`.
 - `Directory.Build.props` excludes `obj_*`/`bin_*` folders so isolated builds from concurrent
   sessions (`-p:BaseIntermediateOutputPath=obj_<tag>\`) do not collide.

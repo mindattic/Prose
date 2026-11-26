@@ -52,8 +52,8 @@ $shortcuts = @(
        Desc = 'Deploy & Run, or Run, the Prose Hub (serves /writer and /repo)' }
     @{ Name = 'Deploy Prose'; Bat = $prose;                          Args = '';       Icon = "$mindAttic\Prose\assets\M.ico"
        Desc = 'Deploy & Run every Prose app, or Run the launcher' }
-    @{ Name = 'KdpPublish';   Bat = 'C:\Apps\KdpPublish\run.bat'; Args = '';       Icon = "$mindAttic\Prose\assets\kdp.ico"
-       Desc = 'Deploy & Run, or Run, KdpPublish' }
+    @{ Name = 'KdpPublish';   Bat = "$mindAttic\KdpPublish\run.bat"; Args = '';    Icon = "$mindAttic\Prose\assets\kdp.ico"
+       Desc = 'Redeploy, Run Debug or Run Release KdpPublish' }
     @{ Name = 'IdiotProof';   Bat = 'C:\Apps\IdiotProof\run.bat'; Args = '';       Icon = "$mindAttic\IdiotProof\idiotproof.ico"
        Desc = 'Deploy & Run, or Run, IdiotProof (Monitor + Blazor)' }
     # The game builds and plays from its repo (no C:\Apps deploy); the icon is the packaged

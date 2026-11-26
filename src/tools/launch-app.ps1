@@ -44,7 +44,7 @@ $v3   = Split-Path $PSScriptRoot
 $catalog = @{
     writer   = @{ Exe = "$root\Writer.exe";                      Name = 'Writer';     Proc = 'Writer' }
     hub      = @{ Exe = "$root\Hub.exe";                         Name = 'Hub';        Proc = 'Hub' }
-    kdp      = @{ Exe = 'C:\Apps\KdpPublish\KdpPublish.exe';     Name = 'KdpPublish'; Proc = 'KdpPublish' }
+    kdp      = @{ Exe = 'R:\MindAttic\Apps\KdpPublish\Release\KdpPublish.exe'; Name = 'KdpPublish'; Proc = 'KdpPublish' }
     launcher = @{ Exe = "$root\Launcher.exe";                    Name = 'Launcher';   Proc = 'Launcher' }
 }
 

@@ -101,13 +101,14 @@ If the combined Republish + New-listing set is empty, report that and stop — n
 
 Only after confirmation. Never run a stale build (this bit a past session — a multi-day-stale
 `Prose.KdpPublish.exe` silently missing a whole feature). KdpPublish is its own repo now, deployed
-to `C:\Apps\KdpPublish\`; its `run.bat`, given arguments, skips its Deploy & Run / Run menu, redeploys if the source changed, then starts
-`KdpPublish.exe` with the arguments it was given. Pass the confirmed comma-separated codes as
+to `R:\MindAttic\Apps\KdpPublish\{Debug,Release}` by its `run.bat` (the MindAttic standard run menu);
+`-Redeploy -RunDebug` skips the menu, rebuilds both copies from source, then starts the Debug
+`KdpPublish.exe` with the remaining arguments. Pass the confirmed comma-separated codes as
 `argv[0]` — this drives the exact same `RunSelectedAsync` automation the app's own "Start" button
 triggers, no separate/lesser code path:
 
 ```
-C:\Apps\KdpPublish\run.bat "CODE1,CODE2,CODE3"
+D:\Projects\MindAttic\KdpPublish\run.bat -Redeploy -RunDebug "CODE1,CODE2,CODE3"
 ```
 
 This opens a real WPF window + WebView2 pane and does not block the shell — it needs an interactive

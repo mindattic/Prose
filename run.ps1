@@ -37,7 +37,7 @@
 
     KdpPublish is NOT built here. It was decoupled into its own repo 2026-10-04
     (github.com/mindattic/KdpPublish) with its own deploy pipeline, publishing standalone to
-    C:\Apps\KdpPublish\ (C:\Apps\KdpPublish\run.bat). The Launcher still opens it from there
+    R:\MindAttic\Apps\KdpPublish\Release (its repo's run.bat menu). The Launcher opens it from there
     (Prose.Launcher\MainWindow.xaml.cs's OpenKdp).
 
 .PARAMETER Apps

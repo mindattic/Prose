@@ -542,7 +542,7 @@ Prose/
 dotnet build src\Prose.slnx
 ```
 
-Publish the desktop apps to `C:\Apps\MindAttic\Prose\` (Hub.exe, Writer.exe, Launcher.exe; KdpPublish has its own repo and deploys to `C:\Apps\KdpPublish\`):
+Publish the desktop apps to `C:\Apps\MindAttic\Prose\` (Hub.exe, Writer.exe, Launcher.exe; KdpPublish has its own repo and deploys to `R:\MindAttic\Apps\KdpPublish\`):
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File run.ps1                           # all three, only what changed

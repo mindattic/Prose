@@ -2,7 +2,7 @@
 
 Republishes **Hub, Writer and Launcher** to `C:\Apps\MindAttic\Prose\` (each only if its source
 changed since it was last deployed), then restarts the Hub so the session is talking to the build
-you just made. KdpPublish is its own repo now and deploys to `C:\Apps\KdpPublish\` — not part of this.
+you just made. KdpPublish is its own repo now and deploys to `R:\MindAttic\Apps\KdpPublish\` from its own `run.bat` — not part of this.
 
 Use it after changing any C# under `src/`. The SessionStart hook
 (`.prose/hooks/start-prose-hub.ps1`) only ever redeploys **the Hub**, and only when source is newer

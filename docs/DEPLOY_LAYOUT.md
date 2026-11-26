@@ -12,7 +12,7 @@ Spike note, 2026-11-26. Azure is decommissioned (MAT-T297); Prose's data is loca
    - `src/tools/launch-app.ps1`, `src/tools/install-shortcuts.ps1`
    - `src/Prose.Hub/tools/run.ps1` (comments), `.prose/hooks/start-prose-hub.ps1`, `.prose/hooks/factory-start.ps1`
    - `.agent/commands/{launch,redeploy,kdp-publish}.md`, `.claude/skills/{launch,redeploy}/SKILL.md`, README.md, src/README.md, docs/CONDUIT.md
-   - KdpPublish stays in `C:\Apps\KdpPublish` (own repo); the Launcher's `KdpPublishDir` is a separate move.
+   - KdpPublish (own repo) deploys to `R:\MindAttic\Apps\KdpPublish\{Debug,Release}`; the Launcher's `KdpPublishDir` points at the Release copy (MAT-T309).
 5. **Flat layout constraint.** Hub, Writer and Launcher share one folder: Hub owns `wwwroot\`, Writer and Launcher find `Hub.exe` beside them. The shared `Publish-DotNet` already publishes several projects into one folder, but Hub is a Web project (Release = self-contained, not single-file) while Writer/Launcher are single-file; in one folder this works but the Hub is long-lived and Writer/Launcher must not stop it when only they redeploy (run.ps1's per-app stop, change detection and `-Start` semantics). `Publish-AppConfig` stops everything running from the target and swaps the whole folder, which would kill a running Hub on every Writer redeploy.
 
 ## Recommendation
