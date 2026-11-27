@@ -72,7 +72,7 @@ All characters are new to production. Entry states are world-state-derived, not 
 
 | Character | Entry State |
 |---|---|
-| Dame Lyra M-101 | Ocipheus Knight, 3 infusions, fully loyal to House and Liturgy; Transmutation researcher with strong institutional trust; has never questioned the intake protocol she has contributed to |
+| Dame Lyra | Ocipheus Knight, 3 infusions, fully loyal to House and Liturgy; Transmutation researcher with strong institutional trust; has never questioned the intake protocol she has contributed to |
 | <entity repo="character" guid="019f5753-0243-7c19-829a-e6ac26d2b696">Orim Zebulun</entity> | Contracted minor scryer, no House, 60 years of working for all Houses; knows Scrying's cost and has chosen complicity; wide-world knowledge; curious |
 | Rowe (<entity repo="character" guid="01a21a4b-74ca-7b35-97e6-ac49762eb893">Soren Rowe</entity>) | <entity repo="place" guid="01a018a4-aaf9-71d1-85e7-a64df7a05ddd">Sphere 31</entity> origin; 7 months in <entity repo="place" guid="019f9174-8a29-75f0-b492-b78133f5cda8">Verlaine</entity> service after piercing; 3 weeks deserting; no Entos language; carries memories of his origin world but cannot communicate them yet |
 | <entity repo="character" guid="019f5753-e544-76a0-9b79-51f1a1fd1f58">Kressida Haun</entity> | <entity repo="place" guid="019f9174-aa45-7114-baf8-a8d2e47d7ec8">Atrament</entity> battle-rig pilot, active service, <entity repo="place" guid="019f5766-2284-7f9c-9d6c-1317d65a03d1">Schmalburg</entity> garrison; rig intact; no existential crisis yet — she's a functioning soldier |
@@ -85,7 +85,7 @@ All characters are new to production. Entry states are world-state-derived, not 
 
 | Character | Exit State | Notes |
 |---|---|---|
-| Dame Lyra M-101 | Knight who has refused a Liturgy writ in front of witnesses; faith in the Liturgy's institutional legitimacy collapsed; retains three new companions and the Relic; politically dangerous now | Her certainty is gone; her competence is intact |
+| Dame Lyra | Knight who has refused a Liturgy writ in front of witnesses; faith in the Liturgy's institutional legitimacy collapsed; retains three new companions and the Relic; politically dangerous now | Her certainty is gone; her competence is intact |
 | <entity repo="character" guid="019f5753-0243-7c19-829a-e6ac26d2b696">Orim Zebulun</entity> | Still contracted; still alive; has now listened to Rowe's full testimony and can no longer claim not to have heard it directly. What he does with that is open | Complicity now conscious rather than chosen-not-to-examine |
 | Rowe (<entity repo="character" guid="01a21a4b-74ca-7b35-97e6-ac49762eb893">Soren Rowe</entity>) | Functional Entos speaker (basic); has given full testimony about <entity repo="place" guid="01a018a4-aaf9-71d1-85e7-a64df7a05ddd">Sphere 31</entity> intake; is in Ocipheus with no legal status but Lyra's informal protection | His testimony is now on record in at least two people's memory |
 | <entity repo="character" guid="019f5753-e544-76a0-9b79-51f1a1fd1f58">Kressida Haun</entity> | Fused to BR-7; no surgery available; in Ocipheus; technically a deserter from <entity repo="place" guid="019f9174-aa45-7114-baf8-a8d2e47d7ec8">Atrament</entity> service; adapting to permanent partial-machine existence | Cannot return to <entity repo="place" guid="019f9174-aa45-7114-baf8-a8d2e47d7ec8">Atrament</entity>; her future is unresolved |
@@ -178,7 +178,7 @@ All entities must be seeded before prose begins.
 ### Characters
 | Entity | Type | Species | Notes |
 |---|---|---|---|
-| Dame Lyra M-101 | character | human | Ocipheus Knight; 3 infusions; female; ~6'5"; Transmutation researcher; POV |
+| Dame Lyra | character | human | Ocipheus Knight; 3 infusions; female; ~6'5"; Transmutation researcher; POV |
 | <entity repo="character" guid="019f5753-0243-7c19-829a-e6ac26d2b696">Orim Zebulun</entity> | character | human | Old man; <entity repo="place" guid="019f9174-c45b-70c0-b1c5-78192245f86a">Calyx</entity> origin; minor scryer; no House; contracted |
 | Rowe (<entity repo="character" guid="01a21a4b-74ca-7b35-97e6-ac49762eb893">Soren Rowe</entity>) | character | human | <entity repo="place" guid="01a018a4-aaf9-71d1-85e7-a64df7a05ddd">Sphere 31</entity> origin; <entity repo="place" guid="019f9174-8a29-75f0-b492-b78133f5cda8">Verlaine</entity> deserter; male; no Entos language at start |
 | <entity repo="character" guid="019f5753-e544-76a0-9b79-51f1a1fd1f58">Kressida Haun</entity> | character | human | <entity repo="place" guid="019f9174-aa45-7114-baf8-a8d2e47d7ec8">Atrament</entity> battle-rig pilot; female; fused to BR-7; cannot be removed |
