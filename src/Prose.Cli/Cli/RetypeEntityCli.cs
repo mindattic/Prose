@@ -18,13 +18,14 @@ public static class RetypeEntityCli
         var universeSlug = Flag(args, "--universe");
         var idsArg = Flag(args, "--id");
         var toType = Flag(args, "--to")?.Trim();
+        var description = Flag(args, "--description");
         var apply = args.Contains("--apply");
         var ids = (idsArg ?? "").Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
             .Select(s => Guid.TryParse(s, out var g) ? g : (Guid?)null).ToList();
 
         if (string.IsNullOrWhiteSpace(universeSlug) || string.IsNullOrWhiteSpace(toType) || ids.Count == 0 || ids.Any(g => g == null))
         {
-            Console.Error.WriteLine("Usage: prose --universe <u> --retype-entity --id <guid>[,<guid>...] --to <repo-slug> [--apply]");
+            Console.Error.WriteLine("Usage: prose --universe <u> --retype-entity --id <guid>[,<guid>...] --to <repo-slug> [--description <text>] [--apply]");
             return 2;
         }
 
@@ -52,7 +53,7 @@ public static class RetypeEntityCli
                 if (!plan.Ok) failures++;
                 continue;
             }
-            var r = await svc.ApplyAsync(universeId, id, toType);
+            var r = await svc.ApplyAsync(universeId, id, toType, description: description);
             Print(r.Plan);
             if (!r.Plan.Ok) { failures++; continue; }
             Console.WriteLine($"    read back: entity type={r.EntityTypeBack ?? "(none)"}, record type={r.RecordTypeBack ?? "(no record)"}, " +

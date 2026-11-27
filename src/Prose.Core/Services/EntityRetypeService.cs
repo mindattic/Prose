@@ -2,6 +2,7 @@ using System.Text.Json.Nodes;
 using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
+using Prose.Core.Data.Entities;
 
 namespace Prose.Core.Services;
 
@@ -10,7 +11,8 @@ namespace Prose.Core.Services;
 /// <c>EntityType</c>, the <c>"type"</c> key of its <c>Records.Json</c>, the <c>repo</c> attribute
 /// of every <c>&lt;entity&gt;</c> tag carrying its guid in its universe's beats, and the derived rows
 /// that copy the type (<c>BeatEntityMentions</c>, <c>ContinuityClaims</c>, the review tables,
-/// <c>DistributedWorkQueue</c>). One transaction per entity.
+/// <c>DistributedWorkQueue</c>). One transaction per entity. The one built-in move is character to
+/// automaton (PRS-T1173): the typed <c>Characters</c> row is replaced by an <c>Automata</c> row.
 ///
 /// <para>Beat text is changed only inside the matching opening tags, through EF, so
 /// <c>ProseDbContext</c> re-stamps <c>TextHash</c> and carries read receipts across what is a
@@ -32,18 +34,25 @@ public sealed class EntityRetypeService(IDbContextFactory<ProseDbContext> dbFact
         || EntityFieldWriter.Repositories.ContainsKey(type)
         || CanonRecordLoader.MappedTypes.Contains(type);
 
+    /// <summary>The one built-in move this service allows: a character that is really an automaton.</summary>
+    public static bool IsCharacterToAutomaton(string fromType, string toType) =>
+        string.Equals(fromType, "character", StringComparison.Ordinal) && string.Equals(toType, "automaton", StringComparison.Ordinal);
+
     public async Task<EntityRetypePlan> PlanAsync(Guid universeId, Guid entityId, string toType, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var entity = await db.Entities.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(e => e.Id == entityId, ct);
         if (entity == null) return EntityRetypePlan.Fail(entityId, "entity_not_found");
         if (entity.UniverseId != universeId) return EntityRetypePlan.Fail(entityId, "entity_not_in_universe", entity.Name, entity.EntityType);
-        if (!await db.RepositoryDefinitions.AsNoTracking().AnyAsync(r => r.Slug == toType, ct))
-            return EntityRetypePlan.Fail(entityId, $"target_repository_not_found: {toType}", entity.Name, entity.EntityType);
-        if (IsBuiltIn(toType))
-            return EntityRetypePlan.Fail(entityId, $"target_is_built_in: {toType}", entity.Name, entity.EntityType);
-        if (IsBuiltIn(entity.EntityType))
-            return EntityRetypePlan.Fail(entityId, $"source_is_built_in: {entity.EntityType}", entity.Name, entity.EntityType);
+        if (!IsCharacterToAutomaton(entity.EntityType, toType))
+        {
+            if (!await db.RepositoryDefinitions.AsNoTracking().AnyAsync(r => r.Slug == toType, ct))
+                return EntityRetypePlan.Fail(entityId, $"target_repository_not_found: {toType}", entity.Name, entity.EntityType);
+            if (IsBuiltIn(toType))
+                return EntityRetypePlan.Fail(entityId, $"target_is_built_in: {toType}", entity.Name, entity.EntityType);
+            if (IsBuiltIn(entity.EntityType))
+                return EntityRetypePlan.Fail(entityId, $"source_is_built_in: {entity.EntityType}", entity.Name, entity.EntityType);
+        }
         if (string.Equals(entity.EntityType, toType, StringComparison.Ordinal))
             return EntityRetypePlan.Fail(entityId, "already_that_type", entity.Name, entity.EntityType);
         if (await db.Entities.IgnoreQueryFilters().AnyAsync(e => e.Id != entityId && e.UniverseId == universeId
@@ -70,7 +79,7 @@ public sealed class EntityRetypeService(IDbContextFactory<ProseDbContext> dbFact
         return found.FirstOrDefault() == 1;
     }
 
-    public async Task<EntityRetypeResult> ApplyAsync(Guid universeId, Guid entityId, string toType, CancellationToken ct = default)
+    public async Task<EntityRetypeResult> ApplyAsync(Guid universeId, Guid entityId, string toType, CancellationToken ct = default, string? description = null)
     {
         var plan = await PlanAsync(universeId, entityId, toType, ct);
         if (!plan.Ok) return new EntityRetypeResult(plan, false, null, null, -1, plan.Error);
@@ -85,6 +94,15 @@ public sealed class EntityRetypeService(IDbContextFactory<ProseDbContext> dbFact
             var entity = await db.Entities.IgnoreQueryFilters().FirstAsync(e => e.Id == entityId, ct);
             entity.EntityType = toType;
             entity.ModifiedAt = DateTime.UtcNow;
+
+            if (IsCharacterToAutomaton(from, toType))
+            {
+                // The character row's child tables cascade with it; the automaton row shares the entity's id.
+                await db.CharacterReadModels.Where(c => c.CharacterId == entityId).ExecuteDeleteAsync(ct);
+                await db.Characters.Where(c => c.Id == entityId).ExecuteDeleteAsync(ct);
+                if (!await db.Automata.AnyAsync(a => a.Id == entityId, ct))
+                    db.Automata.Add(new Automaton { Id = entityId, Name = entity.Name, Description = description ?? "" });
+            }
 
             var record = await db.Records.IgnoreQueryFilters().FirstOrDefaultAsync(r => r.EntityId == entityId, ct);
             if (record != null && JsonNode.Parse(record.Json) is JsonObject json)

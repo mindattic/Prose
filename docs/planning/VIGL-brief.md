@@ -194,7 +194,7 @@ All entities must be seeded before prose begins.
 | <entity repo="place" guid="246906e3-d617-4e88-b734-6569ae90b6a7">Ocipheus Station</entity> | place | Ocipheus | Vigil installation; archive; where story opens and ends |
 | <entity repo="place" guid="019f5765-d5b5-72c0-b609-1d49a61e8533">Eirene's Gate</entity> | place | (Wall) | <entity repo="place" guid="019f9174-f887-7408-8005-91b9955c25fa">Sinter</entity> perimeter checkpoint; named for fallen <entity repo="place" guid="019f9174-f887-7408-8005-91b9955c25fa">Sinter</entity> champion |
 | <entity repo="place" guid="019f5765-fb7d-7406-84f8-8dc1cc9d7d55">Bressant</entity> | place | <entity repo="place" guid="019f9174-8a29-75f0-b492-b78133f5cda8">Verlaine</entity> | River transit city; grain warehouse district; <entity repo="place" guid="8a59b060-a498-4f11-a6e6-7ca1e141fa93">Archival Gate</entity> |
-| <entity repo="place" guid="019f5766-2284-7f9c-9d6c-1317d65a03d1">Schmalburg</entity> | place | <entity repo="place" guid="019f9174-aa45-7114-baf8-a8d2e47d7ec8">Atrament</entity> | Rhine forge-city; Heloth yards; rail depot; Battle of Small Fortress site |
+| <entity repo="place" guid="019f5766-2284-7f9c-9d6c-1317d65a03d1">Schmalburg</entity> | place | <entity repo="place" guid="019f9174-aa45-7114-baf8-a8d2e47d7ec8">Atrament</entity> | Rhine forge-city; <entity repo="automaton" guid="019f63b6-1015-716b-9ccc-82edbc7c5d35">Heloth</entity> yards; rail depot; Battle of Small Fortress site |
 | <entity repo="place" guid="019f5766-5411-7f09-b6c4-3b5080bc27ad">Sal Vento</entity> | place | Lacerta | Cliff smuggler city; sea-cave anchorage; *Meridian* mooring |
 | <entity repo="place" guid="019f5766-78c9-7009-9a65-48df25cfbc79">Caer Glas Moor</entity> | place | <entity repo="place" guid="019f9174-db18-7f47-8d08-10dc45ee472c">Pallor</entity> | Northern Hebrides coast; Owain's position; <entity repo="place" guid="019f5766-9a34-7d81-a448-d2e41726f5b8">Twr Brennid</entity> nearby |
 | <entity repo="place" guid="019f5766-9a34-7d81-a448-d2e41726f5b8">Twr Brennid</entity> | place | <entity repo="place" guid="019f9174-db18-7f47-8d08-10dc45ee472c">Pallor</entity> | Pre-Compact ruined tower on <entity repo="place" guid="019f5766-78c9-7009-9a65-48df25cfbc79">Caer Glas Moor</entity> |
@@ -218,8 +218,8 @@ All entities must be seeded before prose begins.
 ### Technology
 | Entity | Type | Notes |
 |---|---|---|
-| Heloth construct (freight variant) | technology | 3m biped; steam-chemical; freight/construction; Wall maintenance |
-| Battle rig (BR-7 class) | technology | <entity repo="place" guid="019f9174-aa45-7114-baf8-a8d2e47d7ec8">Atrament</entity>; Heloth chassis + weapons + plating; Kressida fused to hers |
+| <entity repo="automaton" guid="019f63b6-1015-716b-9ccc-82edbc7c5d35">Heloth</entity> construct (freight variant) | technology | 3m biped; steam-chemical; freight/construction; Wall maintenance |
+| Battle rig (BR-7 class) | technology | <entity repo="place" guid="019f9174-aa45-7114-baf8-a8d2e47d7ec8">Atrament</entity>; <entity repo="automaton" guid="019f63b6-1015-716b-9ccc-82edbc7c5d35">Heloth</entity> chassis + weapons + plating; Kressida fused to hers |
 | <entity repo="place" guid="019f9174-aa45-7114-baf8-a8d2e47d7ec8">Atrament</entity> rail | technology | Scried 19th-century rail; Rhine-analog valley lines |
 
 ### Weapons
@@ -252,7 +252,7 @@ All entities must be seeded before prose begins.
 |---|---|---|
 | <entity repo="place" guid="019f9174-8a29-75f0-b492-b78133f5cda8">Verlaine</entity> deepvine | flora | Sphere-origin vine; purple-black leaves; produces wine with blue tinge; established in <entity repo="place" guid="019f9174-8a29-75f0-b492-b78133f5cda8">Verlaine</entity> wine-country for 400 years |
 | Silverthorn hedge | flora | Sphere-origin hedgerow; silver filament leaves catch sound; faint harmonic in wind |
-| Forge Hearth ember-fungi | flora | <entity repo="place" guid="019f9174-aa45-7114-baf8-a8d2e47d7ec8">Atrament</entity>; feeds on Heloth chemical exhaust; bioluminescent orange; grows on construct discharge ports |
+| Forge Hearth ember-fungi | flora | <entity repo="place" guid="019f9174-aa45-7114-baf8-a8d2e47d7ec8">Atrament</entity>; feeds on <entity repo="automaton" guid="019f63b6-1015-716b-9ccc-82edbc7c5d35">Heloth</entity> chemical exhaust; bioluminescent orange; grows on construct discharge ports |
 | <entity repo="place" guid="019f9174-db18-7f47-8d08-10dc45ee472c">Pallor</entity> night-heather | flora | Hybrid of 4 Sphere-origin heather varieties; blooms at night; phosphorescent pink-white |
 | <entity repo="place" guid="019f9174-f887-7408-8005-91b9955c25fa">Sinter</entity> crawler | fauna | <entity repo="place" guid="019f9174-f887-7408-8005-91b9955c25fa">Sinter</entity> overflow; 6-legged; ash-pale; no eyes; bioelectric navigation; pack predator |
 | Channel drift-bell | fauna | Marine; Sphere-origin; pneumatic chambers produce above-water sound during feeding; translucent bell body |
