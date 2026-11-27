@@ -1,7 +1,15 @@
 # Biomass weave plan: the true origin and corpo waste dumping in the GLMZ books
 
 Tickets: PRS-T1114 (weave plan) and PRS-T1118 (waste-hauler pilots), under story PRS-T1112.
-Status: proposals only. No beat or entity has been changed.
+Status: approved by Ryan 2026-11-26 and applied under PRS-T1188. Landed: #1 (Bushido Coda),
+#2 (Magenta & Gunmetal), #4 (in The Way Up, the renamed High Five), #5 (Vultures at the Door,
+adjusted: the yard and sealed hub are gone from the rewritten opening, so the line follows "the
+rendering plant" and drops the hub), #6 (Neon & Rust), #7 (Attendance, at the end of the yard
+paragraph, which now runs past the anchor), #8 (Death Whispers, merged into the rewritten "Arcturus ran
+security that far south" sentence). Not landed: #3, because Death Whispers no longer has the
+husk-sinking passage it hangs on. The supporting details are in `docs/universes/GLMZ.md`
+("Gut-run details"). Contradiction #6 is already fixed in the current text. Contradictions 1-4 and
+the Boiler and Cetin entity notes are split to a child ticket of PRS-T1188.
 
 ## Before applying
 

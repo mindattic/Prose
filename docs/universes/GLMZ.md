@@ -501,6 +501,14 @@ lighter. From the southern districts the Sows read as a line of running lights d
 never talk about it, and keep the windows sealed; everyone knows what the smell on a returning
 airframe means. It is a job someone in any book could have had.
 
+*Gut-run details* (author 2026-11-26, PRS-T1188, from `docs/planning/biomass-weave.md`). **"The meat"**
+is street slang for the Biomass; the echo of Carrion's "meat run" is deliberate, since what Carrion
+can't render goes to the meat. **Can crews** are the day labor that seal and sling the waste cans
+under the Sows at the pads: thirty quanta a day against courier work's eleven, and you cough for a
+year. Arcturus gunships fly escort on the gut run. Renko Moss grew up in **E-town** (Elizabethtown,
+KY), under an hour north of the Biomass's leading edge, where kids sneak out to the line on run
+nights to watch the Sows open up. Boiler flew two years of gut runs before Arcturus took him on.
+
 *The street never stops, and mostly drives itself.* Ground traffic is everywhere and mostly
 automated: <entity repo="corponation" guid="019d6143-a7b4-745d-979d-cc36c3dcf32f">Tessera</entity> AutoCabs and Personal Pods in Tiers 2-4, corporate-issued <entity repo="corponation" guid="019d6143-a7b4-745d-979d-cc36c3dcf32f">Tessera</entity> Nexus town
 cars, Axiom's shuttle buses, <entity repo="transportation" guid="019d6143-aa66-743a-90bd-6fa99fa95117">Ferrogate Heavy Hauler</entity> convoys running the arterials at night like

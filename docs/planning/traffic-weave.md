@@ -1,7 +1,14 @@
 # Traffic weave plan: VTOL and ground traffic as background in the GLMZ books
 
 Ticket: PRS-T1119 (weave plan), under story PRS-T1116. Canon: PRS-T1117.
-Status: proposals only. No beat or entity has been changed.
+Status: approved by Ryan 2026-11-26 and applied under PRS-T1188. All ten landed. Adjusted to the
+current text: #1 (the elevated is now a walkway, so "Above the walkway", placed at the paragraph's
+end), #3 (Pixel now says "station exit" and "Chicago"), #4 (the Narrows paragraph was rewritten
+as the Clybourn Corridor's south edge; the convoy is its own paragraph after it, and "which was the
+rest of the arrangement" became "and nothing that drove itself kept a record of him"), #5 (the
+crown-pads sentence closes the paragraph, after the new Corridor-surcharge clause), #9 (the anchor
+now ends "and his hands slowed the bike anyway", so the clause hangs there). The Crestwood anchor
+contradiction is already fixed in the current text of The Way Up.
 
 ## Before applying
 
